@@ -75,25 +75,25 @@ Percentage of deployments causing failures in production
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 1 Podcast Prompt](../notebooklm-prompts/meeting-1-podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 1 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts/meeting-1-video-prompt.md)
+Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts/video-prompt.md)
 
 ---
 
 ## 🎧 Listen to the Meeting 1 Podcast
 
 <audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.mp3" type="audio/mpeg">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/podcast.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio>
 
 ## 📺 Watch the Meeting 1 Video
 
-<video controls width="100%" poster="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video-poster.jpg">
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" type="video/mp4">
+<video controls width="100%" poster="/accelerate-devex-book-club-notebooklm/assets/media/video-poster.jpg">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
