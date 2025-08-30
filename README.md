@@ -1,88 +1,137 @@
 # Accelerate DevEx Book Club
 
-A structured approach to implementing high-performing DevOps practices through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim.
+A structured Jekyll-based GitHub Pages site and resource hub for a DevOps book club focused on "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. All visuals and content are AI-generated or curated for podcasts, video, and learning materials.
 
-## 🚀 Quick Start
+---
 
-**📖 Main Guide:** [book-club-guide.md](book-club-guide.md) - Complete overview and getting started  
-**🌐 Interactive Site:** [GitHub Pages](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) - Full website experience  
-**📚 Meeting Materials:** [meeting-resources/](meeting-resources/) - Detailed session guides  
+## 🚀 Project Name and Description
 
-## 📁 Repository Structure
+**Accelerate DevEx Book Club**  
+A resource hub and interactive site for learning and implementing high-performing DevOps practices, organized around the "Accelerate" book. Features meeting guides, AI-generated podcasts/videos, and practical activities.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Jekyll** (static site generator, GitHub Pages)
+- **SCSS/CSS/HTML/SVG/JavaScript** (web-native visuals, responsive design)
+- **Markdown** (content, guides, prompts)
+- **Font Libraries**: Google Fonts (Roboto, Inter, Poppins), Font Awesome (via CDN)
+- **No backend/server code**; all logic is client-side or static
+
+---
+
+## 🏗️ Project Architecture
+
+- **docs/**: Main Jekyll site (layouts, assets, content)
+- **meeting-resources/**: Guides for each book club session
+- **notebooklm-prompts/**: Prompts for AI-generated podcasts/videos
+- **book-club-materials/**: Supporting resources and activities
+- **All visuals**: Implemented with CSS/SVG/HTML, not static images
+
+---
+
+## 🚦 Getting Started
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/mhenke/accelerate-devex-book-club-notebooklm.git
+   ```
+2. Edit SCSS in `docs/assets/main.scss` (YAML front matter required)
+3. Push changes to GitHub; Jekyll auto-compiles and deploys via GitHub Pages
+4. Access the site at:  
+   `https://mhenke.github.io/accelerate-devex-book-club-notebooklm/`
+
+---
+
+## 📁 Project Structure
 
 ```
 accelerate-devex-book-club-notebooklm/
-├── README.md                    # This overview
-├── book-club-guide.md          # Main entry point and complete guide
-├── meeting-resources/          # Meeting guides and session materials
+├── README.md
+├── book-club-guide.md
+├── meeting-resources/
 │   ├── meeting-1-guide.md
-│   ├── meeting-2-guide.md
-│   ├── meeting-3-guide.md
-│   └── meeting-4-guide.md
-├── book-club-materials/        # Supporting resources
-│   ├── between-meetings.md     # Activities between sessions
-│   ├── extensions.md          # Post-club learning paths
-│   └── discussion-practices.md # Facilitation guidelines
-├── notebooklm-prompts/        # Content generation
-│   ├── README.md
+│   └── ...
+├── book-club-materials/
+│   ├── between-meetings.md
+│   └── ...
+├── notebooklm-prompts/
 │   ├── meeting-*-podcast-prompt.md
-│   ├── meeting-*-video-prompt.md
-│   └── [guidelines and prompts]
-└── docs/                      # GitHub Pages website
-    ├── index.md
-    ├── _config.yml
-    └── [website files]
+│   └── ...
+├── docs/
+│   ├── index.md
+│   ├── _config.yml
+│   ├── _meetings/
+│   ├── assets/
+│   └── ...
+└── resources/
+    ├── meetings/
+    └── ...
 ```
 
-## 📖 About This Book Club
+---
 
-**Duration:** 2 Months | **Format:** 4 Biweekly 1-Hour Sessions | **Theme-Based Structure**
+## ✨ Key Features
 
-This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application. Each meeting focuses on core themes that build upon each other, culminating in actionable insights for improving developer experience.
+- Structured meeting guides and session materials
+- AI-generated podcasts and video prompts
+- DORA metrics infographic and interactive visuals
+- Accessible, responsive design
+- All content and visuals are web-native and modern
 
-### Meeting Overview
-1. **Foundation** - DORA metrics and speed vs stability myth
-2. **Culture & CD** - Westrum culture types and continuous delivery
-3. **Architecture** - Loosely coupled systems and team autonomy  
-4. **Leadership** - Transformational leadership and learning culture
+---
 
-## 🎯 Success Metrics
+## 🔄 Development Workflow
 
-By the end of this book club, participants will:
-- ✅ Understand and explain the four DORA metrics
-- ✅ Identify specific organizational bottlenecks and improvements
-- ✅ Implement practices from each session in their daily work
-- ✅ Recognize culture's impact on technical performance
-- ✅ Have concrete next steps for organizational transformation
+- Edit content and styles in Markdown and SCSS files
+- Use semantic HTML and ARIA for accessibility
+- Responsive design required for all components
+- No build scripts; rely on Jekyll/GitHub Pages for compilation
+- Branching: Standard GitHub flow (feature branches, PRs)
 
-## 🛠️ How to Use This Repository
+---
 
-### For Facilitators
-1. Review [book-club-guide.md](book-club-guide.md) for complete overview
-2. Use [meeting-resources/](meeting-resources/) for session planning
-3. Generate supplementary content with [notebooklm-prompts/](notebooklm-prompts/)
-4. Share the [GitHub Pages site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) with participants
+## 🧑‍💻 Coding Standards
 
-### For Participants  
-1. Start with the [interactive website](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/)
-2. Follow the meeting schedule in [book-club-guide.md](book-club-guide.md)
-3. Use [book-club-materials/](book-club-materials/) for between-session activities
+- All visuals: CSS/SVG/HTML/JS (no static images except fallback)
+- Use color palette and font guidelines for branding
+- Semantic HTML and ARIA for accessibility
+- Responsive, maintainable SCSS (see `docs/assets/main.scss`)
+- AI-generated content is clearly marked and attributed
 
-### For Self-Study
-All materials work for individual learning - follow the structured progression through meetings and use the reflection questions and action items.
+---
+
+## 🧪 Testing
+
+- Manual validation of site build and visual output
+- Accessibility and responsive design checks
+- No automated test suite (static site)
+
+---
 
 ## 🤝 Contributing
 
-This is an open resource for the DevOps and developer experience community. Contributions welcome for:
-- Additional meeting formats or variations
-- Industry-specific adaptations
-- Improved facilitation guides
-- Additional content generation prompts
+Contributions welcome for:
+- New meeting formats or session guides
+- Additional AI-generated content prompts
+- Improved accessibility and design
+- See code exemplars and instructions in `.github/copilot-instructions.md`
+
+---
 
 ## 📄 License
 
-This work is licensed under MIT License - see [LICENSE](LICENSE) file for details.
+MIT License (see LICENSE file)
 
-## 🙏 Attribution
+---
 
-Based on "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations" by Nicole Forsgren, Jez Humble, and Gene Kim.
+## 📚 References & Links
+
+- [Book Club Guide](book-club-guide.md)
+- [Interactive Site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/)
+- [Meeting Resources](meeting-resources/)
+- [AI Prompts](notebooklm-prompts/)
+- [SCSS Main Stylesheet](docs/assets/main.scss)
+
+---
