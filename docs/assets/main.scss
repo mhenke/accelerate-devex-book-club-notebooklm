@@ -1419,7 +1419,7 @@ pre {
 }
 
 /* Tablet screens */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .meeting-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -1428,18 +1428,6 @@ pre {
   .metrics-categories {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-}
-
-/* Medium tablet screens */
-@media (max-width: 768px) {
-  .meeting-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
-  
-  .meeting-card {
-    padding: 1.5rem;
   }
 }
 
@@ -1900,8 +1888,8 @@ pre {
   }
 }
 
-/* Mobile adjustments */
-@media (max-width: 640px) {
+/* Mobile screens */
+@media (max-width: 767px) {
   .wrapper {
     margin: 1rem;
     padding: 1rem;
@@ -1940,8 +1928,8 @@ pre {
   }
 
   .meeting-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .resource-grid {
@@ -2067,18 +2055,6 @@ pre {
     transform: none;
     justify-content: center;
     margin-top: 2rem;
-  }
-}
-
-/* Small mobile screens - single column */
-@media (max-width: 480px) {
-  .meeting-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .meeting-card {
-    padding: 1.25rem;
   }
 }
 
