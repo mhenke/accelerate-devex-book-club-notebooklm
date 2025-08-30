@@ -36,6 +36,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Lead Time</h4>
         <p>Time from code commit to production deployment</p>
         <span class="tooltip">Measures how quickly code moves from commit to production.</span>
+        <div class="meeting-title">Meeting 1: Foundation</div>
       </div>
       <div class="metric-card deployment-frequency">
         <div class="metric-icon">
@@ -44,6 +45,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Deployment Frequency</h4>
         <p>How often code gets deployed to production</p>
         <span class="tooltip">Tracks how frequently you release to production.</span>
+        <div class="meeting-title">Meeting 2: Culture & CD</div>
       </div>
       <div class="metric-card recovery-time">
         <div class="metric-icon">
@@ -52,6 +54,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Mean Time to Recovery</h4>
         <p>How quickly service is restored after incidents</p>
         <span class="tooltip">Measures time to restore service after a failure.</span>
+        <div class="meeting-title">Meeting 3: Architecture</div>
       </div>
       <div class="metric-card fail-rate">
         <div class="metric-icon">
@@ -60,6 +63,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Change Fail Rate</h4>
         <p>Percentage of deployments causing failures</p>
         <span class="tooltip">Shows the rate of failed changes in production.</span>
+        <div class="meeting-title">Meeting 4: Leadership</div>
       </div>
   </div>
 </div>
@@ -81,6 +85,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Foundation</h4>
         <p>DORA Metrics</p>
       </div>
+      <div class="meeting-title">Meeting 1: Foundation</div>
     </div>
     <div class="timeline-node node-2">
       <div class="node-circle">2</div>
@@ -88,6 +93,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Culture & CD</h4>
         <p>Continuous Delivery</p>
       </div>
+      <div class="meeting-title">Meeting 2: Culture & CD</div>
     </div>
     <div class="timeline-node node-3">
       <div class="node-circle">3</div>
@@ -95,6 +101,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Architecture</h4>
         <p>Lean Management</p>
       </div>
+      <div class="meeting-title">Meeting 3: Architecture</div>
     </div>
     <div class="timeline-node node-4">
       <div class="node-circle">4</div>
@@ -102,6 +109,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Leadership</h4>
         <p>Transformation</p>
       </div>
+      <div class="meeting-title">Meeting 4: Leadership</div>
     </div>
   </div>
 </div>
@@ -172,6 +180,21 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
     </div>
   </div>
 </div>
+
+<section class="book-cover-section">
+  <h3 class="required-reading">Required Reading</h3>
+  <div class="book-cover-3d">
+    <div class="book-image"></div>
+  </div>
+  <div class="book-actions">
+    <button class="buy-now">Buy Now</button>
+    <div class="purchase-icons">
+      <span class="icon-amazon" title="Amazon"></span>
+      <span class="icon-google" title="Google Books"></span>
+      <span class="icon-local" title="Local Bookstore"></span>
+    </div>
+  </div>
+</section>
 
 <div class="success-metrics">
 <h2>🚀 Success Metrics</h2>
