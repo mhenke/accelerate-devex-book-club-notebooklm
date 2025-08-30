@@ -33,21 +33,25 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       <div class="metric-icon">⏱️</div>
       <h4>Lead Time</h4>
       <p>Time from code commit to production deployment</p>
+      <div class="metric-tooltip">Lead time for changes is the amount of time it takes a commit to get into production. Elite performers have lead times of less than one hour.</div>
     </div>
     <div class="metric-card deployment-frequency">
       <div class="metric-icon">🚀</div>
       <h4>Deployment Frequency</h4>
       <p>How often code gets deployed to production</p>
+      <div class="metric-tooltip">Deployment frequency is how often an organization successfully releases to production. Elite performers deploy on demand, multiple times per day.</div>
     </div>
     <div class="metric-card recovery-time">
       <div class="metric-icon">🔧</div>
       <h4>Mean Time to Recovery</h4>
       <p>How quickly service is restored after incidents</p>
+      <div class="metric-tooltip">Mean time to recovery measures how long it takes to recover from a failure in production. Elite performers can restore service in less than one hour.</div>
     </div>
     <div class="metric-card fail-rate">
       <div class="metric-icon">⚠️</div>
       <h4>Change Fail Rate</h4>
       <p>Percentage of deployments causing failures</p>
+      <div class="metric-tooltip">Change failure rate is the percentage of deployments causing a failure in production. Elite performers have change failure rates of 0-15%.</div>
     </div>
   </div>
 </div>
@@ -57,6 +61,85 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 - **Continuous delivery practices** that improve both performance and culture
 - **Architecture patterns** that enable team autonomy
 - **Leadership practices** that create psychological safety and innovation
+
+<div class="culture-transformation">
+  <h3>Westrum Culture Transformation</h3>
+  <div class="culture-stages">
+    <div class="culture-stage pathological">
+      <div class="culture-icon">🔴</div>
+      <h4>Pathological</h4>
+      <ul>
+        <li>Information is hoarded</li>
+        <li>Messengers are shot</li>
+        <li>Responsibilities are shirked</li>
+        <li>Failure leads to scapegoating</li>
+      </ul>
+    </div>
+    <div class="transformation-arrow">
+      <div class="arrow-line"></div>
+      <div class="arrow-head">→</div>
+    </div>
+    <div class="culture-stage bureaucratic">
+      <div class="culture-icon">🟡</div>
+      <h4>Bureaucratic</h4>
+      <ul>
+        <li>Information may be ignored</li>
+        <li>Messengers are tolerated</li>
+        <li>Responsibilities are compartmentalized</li>
+        <li>Failure leads to justice</li>
+      </ul>
+    </div>
+    <div class="transformation-arrow">
+      <div class="arrow-line"></div>
+      <div class="arrow-head">→</div>
+    </div>
+    <div class="culture-stage generative">
+      <div class="culture-icon">🟢</div>
+      <h4>Generative</h4>
+      <ul>
+        <li>Information is actively sought</li>
+        <li>Messengers are trained</li>
+        <li>Responsibilities are shared</li>
+        <li>Failure leads to inquiry</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="devops-practices-wheel">
+  <h3>DevOps Practices for High Performance</h3>
+  <div class="wheel-container">
+    <div class="wheel-center">
+      <div class="center-text">High<br>Performance</div>
+    </div>
+    <div class="wheel-spokes">
+      <div class="spoke spoke-1" data-practice="Continuous Integration">
+        <div class="spoke-line"></div>
+        <div class="spoke-label">CI</div>
+      </div>
+      <div class="spoke spoke-2" data-practice="Automated Testing">
+        <div class="spoke-line"></div>
+        <div class="spoke-label">Testing</div>
+      </div>
+      <div class="spoke spoke-3" data-practice="Deployment Automation">
+        <div class="spoke-line"></div>
+        <div class="spoke-label">Deploy</div>
+      </div>
+      <div class="spoke spoke-4" data-practice="Monitoring & Observability">
+        <div class="spoke-line"></div>
+        <div class="spoke-label">Monitor</div>
+      </div>
+      <div class="spoke spoke-5" data-practice="Version Control">
+        <div class="spoke-line"></div>
+        <div class="spoke-label">VCS</div>
+      </div>
+      <div class="spoke spoke-6" data-practice="Configuration Management">
+        <div class="spoke-line"></div>
+        <div class="spoke-label">Config</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## 📅 Meeting Schedule
 
@@ -156,6 +239,14 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <div class="book-spine"></div>
       </div>
       <h3>Required Reading</h3>
+      <div class="purchase-options">
+        <div class="purchase-icons">
+          <span class="purchase-icon amazon" title="Amazon">📚</span>
+          <span class="purchase-icon kindle" title="Kindle">📱</span>
+          <span class="purchase-icon audiobook" title="Audiobook">🎧</span>
+          <span class="purchase-icon physical" title="Physical Book">📖</span>
+        </div>
+      </div>
       <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
     </div>
   </div>
@@ -192,5 +283,9 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </p>
 
 <div class="ai-attribution">
-  <p>🤖 This book club content was created with AI assistance from Claude and NotebookLM to enhance your learning experience.</p>
+  <div class="ai-icons">
+    <span class="ai-icon claude" title="Claude AI">🤖</span>
+    <span class="ai-icon notebooklm" title="NotebookLM">📚</span>
+  </div>
+  <p>This book club content was created with AI assistance from <strong>Claude</strong> and <strong>NotebookLM</strong> to enhance your learning experience.</p>
 </div>
