@@ -820,8 +820,8 @@ pre {
 }
 
 .metrics-categories {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -869,8 +869,8 @@ pre {
 }
 
 .metrics-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
@@ -1422,6 +1422,11 @@ pre {
 @media (max-width: 1024px) {
   .meeting-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .metrics-categories {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
@@ -1976,6 +1981,7 @@ pre {
   }
 
   .metrics-categories {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   
@@ -1988,7 +1994,6 @@ pre {
   }
   
   .metrics-group {
-    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
