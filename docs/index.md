@@ -12,15 +12,15 @@ title: Home
     <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
   </div>
   <div class="hero-metrics">
-    <a href="{{ '/meetings/' | relative_url }}" class="metric-icon">
+    <a href="{{ '/meetings' | relative_url }}" class="metric-icon">
       <i class="fas fa-calendar-alt"></i>
       <span>Meetings</span>
     </a>
-    <a href="{{ '/resources/' | relative_url }}" class="metric-icon">
+    <a href="{{ '/resources' | relative_url }}" class="metric-icon">
       <i class="fas fa-book-open"></i>
       <span>Resources</span>
     </a>
-    <a href="{{ '/prompts/' | relative_url }}" class="metric-icon">
+    <a href="{{ '/prompts' | relative_url }}" class="metric-icon">
       <i class="fas fa-microphone-alt"></i>
       <span>AI Content</span>
     </a>
@@ -247,19 +247,19 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   <div class="resource-card">
     <h3><i class="fas fa-book"></i> Meeting Materials</h3>
     <p>Detailed agendas, discussion questions, and action items for each session.</p>
-    <a href="/meetings/" class="resource-link">View Meeting Guides →</a>
+    <a href="{{ '/meetings' | relative_url }}" class="resource-link">View Meeting Guides →</a>
   </div>
 
   <div class="resource-card">
     <h3><i class="fas fa-headphones"></i> Audio & Video Content</h3>
     <p>NotebookLM prompts for creating podcasts and videos to supplement your reading.</p>
-    <a href="/prompts/" class="resource-link">Content Generation →</a>
+    <a href="{{ '/prompts' | relative_url }}" class="resource-link">Content Generation →</a>
   </div>
 
   <div class="resource-card">
     <h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
     <p>Activities, reflection questions, and experiments to try between sessions.</p>
-    <a href="/resources/" class="resource-link">Additional Resources →</a>
+    <a href="{{ '/resources' | relative_url }}" class="resource-link">Additional Resources →</a>
   </div>
 
   <div class="resource-card book-required">
