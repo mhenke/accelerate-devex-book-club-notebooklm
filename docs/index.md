@@ -376,23 +376,23 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
     <div class="ai-attribution__tools">
       <div class="ai-tool">
         <i class="fas fa-brain" aria-hidden="true"></i>
-        <span>Claude</span>
+        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
       </div>
       <div class="ai-tool">
         <i class="fas fa-code" aria-hidden="true"></i>
-        <span>Claude Code</span>
+        <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
       </div>
       <div class="ai-tool">
         <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-        <span>NotebookLM</span>
+        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
       </div>
       <div class="ai-tool">
         <i class="fas fa-palette" aria-hidden="true"></i>
-        <span>Napkin AI</span>
+        <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
       </div>
       <div class="ai-tool">
         <i class="fab fa-github" aria-hidden="true"></i>
-        <span>GitHub Copilot</span>
+        <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
       </div>
     </div>
   </div>
