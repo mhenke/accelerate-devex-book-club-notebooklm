@@ -10,95 +10,119 @@ dora_color: '#4CAF50'
 
 ## Pre-Reading Assignment
 
-**Chapters:** 5-8 (Continued Research Findings)
+**Chapters 5-8:** Architecture • Infosec • Management • Product Development
 
-- Chapter 5: Architecture
-- Chapter 6: Integrating Infosec into the Delivery Lifecycle
-- Chapter 7: Management Practices for Software
-- Chapter 8: Product Development
+## Westrum's Organizational Culture Types
 
-## Core Concepts to Explore
+<div class="culture-types-diagram">
+  <div class="culture-card pathological">
+    <div class="culture-icon">⚠️</div>
+    <h3>Pathological</h3>
+    <p class="culture-subtitle">Power-Oriented</p>
+    <ul class="culture-traits">
+      <li>❌ Low cooperation</li>
+      <li>🔫 Messengers shot</li>
+      <li>🙅 Responsibility shirked</li>
+    </ul>
+  </div>
+  
+  <div class="culture-card bureaucratic">
+    <div class="culture-icon">📋</div>
+    <h3>Bureaucratic</h3>
+    <p class="culture-subtitle">Rule-Oriented</p>
+    <ul class="culture-traits">
+      <li>📊 Modest cooperation</li>
+      <li>😐 Messengers neglected</li>
+      <li>📏 Narrow responsibilities</li>
+    </ul>
+  </div>
+  
+  <div class="culture-card generative">
+    <div class="culture-icon">🚀</div>
+    <h3>Generative</h3>
+    <p class="culture-subtitle">Performance-Oriented</p>
+    <ul class="culture-traits">
+      <li>✅ High cooperation</li>
+      <li>🎓 Messengers trained</li>
+      <li>🤝 Risks shared</li>
+    </ul>
+  </div>
+</div>
 
-### 1. Organizational Culture Types (Westrum's Typology)
+## Culture Transformation
 
-#### ⚠️ Pathological (Power-Oriented)
+<div class="transformation-flow">
+  <div class="flow-step">
+    <div class="step-icon">🎯</div>
+    <h4>Act Your Way</h4>
+    <p>Behavioral changes</p>
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">
+    <div class="step-icon">🔄</div>
+    <h4>Into Better Culture</h4>
+    <p>Cultural transformation</p>
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">
+    <div class="step-icon">📈</div>
+    <h4>Higher Performance</h4>
+    <p>Measurable results</p>
+  </div>
+</div>
 
-- Low cooperation
-- Messengers shot
-- Responsibility shirked
+## Continuous Delivery Core Principles
 
-#### 📋 Bureaucratic (Rule-Oriented)
-
-- Modest cooperation
-- Messengers neglected
-- Narrow responsibilities
-
-#### 🚀 Generative (Performance-Oriented)
-
-- High cooperation
-- Messengers trained
-- Risks shared, bridging encouraged
-
-### 2. "Act Your Way into a Better Culture"
-
-- **Behavioral Change Drives Cultural Change:** How implementing practices transforms organizational culture
-- **Practical Application:** Concrete actions that shift culture toward generative
-- **Evidence:** Research showing DevOps practices improve both performance and culture
-
-### 3. Continuous Delivery as Disciplined Approach
-
-- **Definition:** Getting changes of all kinds into production safely, quickly, and sustainably
-- **Comprehensive Scope:** Features, configuration changes, bug fixes, experiments
-- **Foundation:** The "engine that drives all of this" high performance
-
-### 4. Core CD Principles and Practices
-
-#### 🏗️ Build Quality In
-
-Starting with quality rather than inspecting it later
-
-#### 📦 Work in Small Batches
-
-Breaking tasks into manageable, testable units
-
-#### 🤖 Automate Repetitive Tasks
-
-Freeing humans for creative problem-solving
-
-#### 📂 Version Control Everything
-
-All production artifacts under version control
-
-#### 🌳 Trunk-Based Development
-
-Short-lived branches and frequent integration
-
-#### 🧪 Comprehensive Test Automation
-
-Automated testing at multiple levels
-
-#### 📊 Proactive Monitoring
-
-Observability and alerting for rapid problem detection
+<div class="cd-principles-grid">
+  <div class="principle-card quality">
+    <div class="principle-icon">🏗️</div>
+    <h4>Build Quality In</h4>
+    <p>Start with quality, don't inspect later</p>
+  </div>
+  
+  <div class="principle-card batches">
+    <div class="principle-icon">📦</div>
+    <h4>Small Batches</h4>
+    <p>Manageable, testable units</p>
+  </div>
+  
+  <div class="principle-card automation">
+    <div class="principle-icon">🤖</div>
+    <h4>Automate Tasks</h4>
+    <p>Free humans for creative work</p>
+  </div>
+  
+  <div class="principle-card version">
+    <div class="principle-icon">📂</div>
+    <h4>Version Control</h4>
+    <p>All artifacts under control</p>
+  </div>
+  
+  <div class="principle-card trunk">
+    <div class="principle-icon">🌳</div>
+    <h4>Trunk-Based Dev</h4>
+    <p>Short branches, frequent integration</p>
+  </div>
+  
+  <div class="principle-card testing">
+    <div class="principle-icon">🧪</div>
+    <h4>Test Automation</h4>
+    <p>Automated testing at all levels</p>
+  </div>
+</div>
 
 ## Discussion Questions
 
-1. **Culture Assessment:** Using Westrum's model, how would you categorize your current organizational culture?
-2. **Cultural Transformation Examples:** What behavioral changes have you seen that shifted culture?
-3. **CD Maturity:** Which continuous delivery practices is your organization currently implementing?
-4. **Automation Opportunities:** What repetitive tasks could be automated to improve developer experience?
-
-## Real-World Applications
-
-- Share examples of successful cultural shifts through practice implementation
-- Discuss barriers to continuous delivery adoption
-- Identify quick wins for improving CD practices
+1. **Culture Assessment:** Where is your organization on Westrum's model?
+2. **Behavioral Shifts:** What practices could shift your culture?
+3. **CD Gaps:** Which CD principles need improvement?
+4. **Quick Wins:** What could be automated this month?
 
 ## Action Items for Next Meeting
 
-- [ ] Observe and document culture type indicators in your daily work
-- [ ] Identify one repetitive task that could be automated
-- [ ] Experiment with working in smaller batches on current projects
+- [ ] Identify your team's culture type using Westrum's model
+- [ ] Find one repetitive task to automate
+- [ ] Practice working in smaller batches on current work
 
 ## Supplementary Content
 
@@ -126,3 +150,206 @@ Create a visual overview with the [Meeting 2 Video Prompt](../notebooklm-prompts
 	Your browser does not support the video tag.
 </video>
 
+<style>
+/* Culture Types Diagram */
+.culture-types-diagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+  max-width: 1000px;
+}
+
+.culture-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.culture-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.culture-card.pathological {
+  border-color: #f44336;
+}
+
+.culture-card.pathological::before {
+  background: linear-gradient(90deg, #f44336, #d32f2f);
+}
+
+.culture-card.bureaucratic {
+  border-color: #ff9800;
+}
+
+.culture-card.bureaucratic::before {
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+}
+
+.culture-card.generative {
+  border-color: #4caf50;
+}
+
+.culture-card.generative::before {
+  background: linear-gradient(90deg, #4caf50, #388e3c);
+}
+
+.culture-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.culture-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.culture-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.culture-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.culture-traits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.culture-traits li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* Transformation Flow */
+.transformation-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  border-radius: 16px;
+  border: 2px solid #4caf50;
+}
+
+.flow-step {
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.flow-step h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2e7d32;
+  font-size: 1.1rem;
+}
+
+.flow-step p {
+  color: #4caf50;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.flow-arrow {
+  font-size: 2rem;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* CD Principles Grid */
+.cd-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.principle-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #4caf50;
+}
+
+.principle-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.principle-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.principle-card h4 {
+  margin: 0 0 0.75rem 0;
+  color: #2e7d32;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.principle-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .culture-types-diagram {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .transformation-flow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .flow-arrow {
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+  }
+  
+  .cd-principles-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .culture-card, .principle-card {
+    padding: 1.5rem;
+  }
+}
+</style>
