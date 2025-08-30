@@ -12,29 +12,29 @@
 
 ## 2. DORA Metrics Infographic
 
-- [ ] Build a 2x2 CSS grid with rounded rectangles.
-- [ ] Assign distinct background colors for each metric.
-- [ ] Add metric icons (SVG or icon font).
-- [ ] Include bold metric names and definitions.
-- [ ] Add hover tooltips for metric explanations.
+- [x] Build a 2x2 CSS grid with rounded rectangles.
+- [x] Assign distinct background colors for each metric.
+- [x] Add metric icons (SVG or icon font).
+- [x] Include bold metric names and definitions.
+- [x] Add hover tooltips for metric explanations.
 
 ## 3. Meeting Timeline Graphic
 
-- [ ] Create a horizontal CSS flexbox timeline.
-- [ ] Use circular nodes for meetings (numbered 1-4).
-- [ ] Add meeting titles below each node.
-- [ ] Connect nodes with a dotted CSS line.
-- [ ] Add subtle box-shadow for depth.
-- [ ] Animate node highlights on hover.
+- [x] Create a horizontal CSS flexbox timeline.
+- [x] Use circular nodes for meetings (numbered 1-4).
+- [x] Add meeting titles below each node.
+- [x] Connect nodes with a dotted CSS line.
+- [x] Add subtle box-shadow for depth.
+- [x] Animate node highlights on hover.
 
 ## 4. Book Cover Integration
 
-- [ ] Use a 3D CSS transform for book image (if possible).
-- [ ] Add a gradient background (light gray to white).
-- [ ] Place a prominent "Buy Now" button below.
-- [ ] Add small purchase option icons (SVG/icons).
-- [ ] Add "Required Reading" header above.
-- [ ] Apply realistic CSS drop shadow.
+- [x] Use a 3D CSS transform for book image (if possible).
+- [x] Add a gradient background (light gray to white).
+- [x] Place a prominent "Buy Now" button below.
+- [x] Add small purchase option icons (SVG/icons).
+- [x] Add "Required Reading" header above.
+- [x] Apply realistic CSS drop shadow.
 
 ## 5. Culture Transformation Diagram
 

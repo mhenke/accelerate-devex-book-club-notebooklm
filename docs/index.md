@@ -29,22 +29,22 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <div class="dora-metrics-visual">
   <h3>The Four DORA Metrics</h3>
   <div class="metrics-grid">
-    <div class="metric-card lead-time">
+    <div class="metric-card lead-time" data-tooltip="High performers: < 1 hour | Low performers: > 1 month">
       <div class="metric-icon">⏱️</div>
       <h4>Lead Time</h4>
       <p>Time from code commit to production deployment</p>
     </div>
-    <div class="metric-card deployment-frequency">
+    <div class="metric-card deployment-frequency" data-tooltip="High performers: Multiple per day | Low performers: < Monthly">
       <div class="metric-icon">🚀</div>
       <h4>Deployment Frequency</h4>
       <p>How often code gets deployed to production</p>
     </div>
-    <div class="metric-card recovery-time">
+    <div class="metric-card recovery-time" data-tooltip="High performers: < 1 hour | Low performers: > 6 months">
       <div class="metric-icon">🔧</div>
       <h4>Mean Time to Recovery</h4>
       <p>How quickly service is restored after incidents</p>
     </div>
-    <div class="metric-card fail-rate">
+    <div class="metric-card fail-rate" data-tooltip="High performers: 0-15% | Low performers: 46-60%">
       <div class="metric-icon">⚠️</div>
       <h4>Change Fail Rate</h4>
       <p>Percentage of deployments causing failures</p>
@@ -156,7 +156,15 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <div class="book-spine"></div>
       </div>
       <h3>Required Reading</h3>
-      <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
+      <div class="purchase-options">
+        <div class="purchase-icons">
+          <span class="purchase-icon" title="Amazon">🛒</span>
+          <span class="purchase-icon" title="Digital">📱</span>
+          <span class="purchase-icon" title="Audiobook">🎧</span>
+          <span class="purchase-icon" title="Library">📖</span>
+        </div>
+        <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Buy Now</a>
+      </div>
     </div>
   </div>
 </div>
