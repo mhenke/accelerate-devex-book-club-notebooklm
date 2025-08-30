@@ -99,10 +99,7 @@ h6 {
 h1 {
   font-size: 2.75rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--header-dark-navy), var(--header-light-navy));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-dark);
   border-bottom: 3px solid var(--accent-coral);
   padding-bottom: 0.75rem;
   margin-bottom: 2rem;
@@ -199,19 +196,23 @@ h2 {
 .hero-content h1 {
   font-size: 4.5rem;
   margin-bottom: 1.5rem;
-  color: var(--text-white);
-  border: none;
+  color: var(--text-white) !important;
+  border: none !important;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  padding-bottom: 0 !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--text-white) !important;
 }
 
 .hero-content h1:hover {
   transform: translateY(-3px);
   text-shadow: 0 4px 30px var(--accent-coral);
+  color: var(--text-white) !important;
 }
 
 .hero-subtitle {

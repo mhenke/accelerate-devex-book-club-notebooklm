@@ -1,12 +1,15 @@
 ---
 layout: meeting
-title: "Meeting 2: Cultivating Culture"
-subtitle: "Embracing Continuous Delivery"
-week: "Week 3"
-duration: "1 Hour"
-chapters: "Chapters 5-8 (Continued Research Findings)"
-order: 2
+title: "Meeting 2: Culture & CD"
+subtitle: "Cultivating Culture and Embracing Continuous Delivery"
+week: 3
+chapters: "5-8"
+dora_color: "#4CAF50"
 ---
+
+# Meeting 2: Cultivating Culture and Embracing Continuous Delivery
+
+**Week 3 | Duration:** 1 Hour
 
 ## Pre-Reading Assignment
 
@@ -20,34 +23,20 @@ order: 2
 
 ### 1. Organizational Culture Types (Westrum's Typology)
 
-<div class="culture-types">
-  <div class="culture-card pathological">
-    <h4>⚠️ Pathological (Power-Oriented)</h4>
-    <ul>
-      <li>Low cooperation</li>
-      <li>Messengers shot</li>
-      <li>Responsibility shirked</li>
-    </ul>
-  </div>
-  
-  <div class="culture-card bureaucratic">
-    <h4>📋 Bureaucratic (Rule-Oriented)</h4>
-    <ul>
-      <li>Modest cooperation</li>
-      <li>Messengers neglected</li>
-      <li>Narrow responsibilities</li>
-    </ul>
-  </div>
-  
-  <div class="culture-card generative">
-    <h4>🚀 Generative (Performance-Oriented)</h4>
-    <ul>
-      <li>High cooperation</li>
-      <li>Messengers trained</li>
-      <li>Risks shared, bridging encouraged</li>
-    </ul>
-  </div>
-</div>
+#### ⚠️ Pathological (Power-Oriented)
+- Low cooperation
+- Messengers shot
+- Responsibility shirked
+
+#### 📋 Bureaucratic (Rule-Oriented)
+- Modest cooperation
+- Messengers neglected
+- Narrow responsibilities
+
+#### 🚀 Generative (Performance-Oriented)
+- High cooperation
+- Messengers trained
+- Risks shared, bridging encouraged
 
 ### 2. "Act Your Way into a Better Culture"
 - **Behavioral Change Drives Cultural Change:** How implementing practices transforms organizational culture
@@ -61,37 +50,26 @@ order: 2
 
 ### 4. Core CD Principles and Practices
 
-<div class="cd-practices">
-  <div class="practice-item">
-    <h5>🏗️ Build Quality In</h5>
-    <p>Starting with quality rather than inspecting it later</p>
-  </div>
-  
-  <div class="practice-item">
-    <h5>📦 Work in Small Batches</h5>
-    <p>Breaking tasks into manageable, testable units</p>
-  </div>
-  
-  <div class="practice-item">
-    <h5>🤖 Automate Repetitive Tasks</h5>
-    <p>Freeing humans for creative problem-solving</p>
-  </div>
-  
-  <div class="practice-item">
-    <h5>📂 Version Control Everything</h5>
-    <p>All production artifacts under version control</p>
-  </div>
-  
-  <div class="practice-item">
-    <h5>🌳 Trunk-Based Development</h5>
-    <p>Short-lived branches and frequent integration</p>
-  </div>
-  
-  <div class="practice-item">
-    <h5>🧪 Comprehensive Test Automation</h5>
-    <p>Automated testing at multiple levels</p>
-  </div>
-</div>
+#### 🏗️ Build Quality In
+Starting with quality rather than inspecting it later
+
+#### 📦 Work in Small Batches
+Breaking tasks into manageable, testable units
+
+#### 🤖 Automate Repetitive Tasks
+Freeing humans for creative problem-solving
+
+#### 📂 Version Control Everything
+All production artifacts under version control
+
+#### 🌳 Trunk-Based Development
+Short-lived branches and frequent integration
+
+#### 🧪 Comprehensive Test Automation
+Automated testing at multiple levels
+
+#### 📊 Proactive Monitoring
+Observability and alerting for rapid problem detection
 
 ## Discussion Questions
 
@@ -111,75 +89,15 @@ order: 2
 - [ ] Identify one repetitive task that could be automated
 - [ ] Experiment with working in smaller batches on current projects
 
----
-
-## 🎧 Supplementary Content
+## Supplementary Content
 
 ### Audio Podcast
-Generate a discussion podcast using our [Meeting 2 Podcast Prompt](/prompts/meeting-2-podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 2 Podcast Prompt](../notebooklm-prompts/meeting-2-podcast-prompt.md)
 
 ### Video Summary  
-Create a visual overview with our [Meeting 2 Video Prompt](/prompts/meeting-2-video-prompt.md)
+Create a visual overview with the [Meeting 2 Video Prompt](../notebooklm-prompts/meeting-2-video-prompt.md)
 
-<style>
-.culture-types {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
+## Navigation
 
-.culture-card {
-  border: 2px solid;
-  border-radius: 8px;
-  padding: 1.5rem;
-  background: #fff;
-}
-
-.culture-card.pathological {
-  border-color: #d73a49;
-  background: #ffeef0;
-}
-
-.culture-card.bureaucratic {
-  border-color: #f66a0a;
-  background: #fff8f0;
-}
-
-.culture-card.generative {
-  border-color: #28a745;
-  background: #f0fff4;
-}
-
-.culture-card h4 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.culture-card ul {
-  margin-bottom: 0;
-}
-
-.cd-practices {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.practice-item {
-  border-left: 4px solid #0366d6;
-  padding-left: 1rem;
-  margin: 1rem 0;
-}
-
-.practice-item h5 {
-  margin: 0 0 0.5rem 0;
-  color: #0366d6;
-}
-
-.practice-item p {
-  margin: 0;
-  color: #586069;
-}
-</style>
+- Previous: [Meeting 1: Laying the Foundation](meeting-1-guide.md)
+- Next: [Meeting 3: Architecture, Autonomy, and Lean Thinking](meeting-3-guide.md)
