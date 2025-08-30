@@ -1,136 +1,62 @@
 ---
 layout: default
-title: Meeting Schedule
+title: Meetings
 ---
 
 # Meeting Schedule
 
-Our 4-meeting journey through "Accelerate" is designed to build understanding progressively, with each session focusing on key themes that enable organizational transformation.
+Our book club consists of four focused sessions over 2 months, each building upon the previous meeting's insights.
 
-<div class="meeting-timeline">
-  {% assign meetings = site.meetings | sort: "order" %}
+<div class="meeting-grid">
+  {% assign meetings = site.meetings | sort: "week" %}
   {% for meeting in meetings %}
-    <div class="timeline-item">
-      <div class="timeline-marker">{{ meeting.order }}</div>
-      <div class="timeline-content">
-        <h3><a href="{{ meeting.url }}">{{ meeting.title }}</a></h3>
-        <p class="meeting-meta">{{ meeting.week }} • {{ meeting.duration }}</p>
-        <p class="chapters">{{ meeting.chapters }}</p>
-        <p>{{ meeting.subtitle }}</p>
+    <div class="meeting-card">
+      <div class="meeting-icon" style="color: {{ meeting.dora_color }}">
+        {% case forloop.index %}
+          {% when 1 %}<i class="fas fa-chart-line"></i>
+          {% when 2 %}<i class="fas fa-sync-alt"></i>
+          {% when 3 %}<i class="fas fa-building"></i>
+          {% when 4 %}<i class="fas fa-users"></i>
+        {% endcase %}
       </div>
+      <h3><a href="{{ meeting.url }}">{{ meeting.title }}</a></h3>
+      <p><strong>Week {{ meeting.week }}</strong> • Chapters {{ meeting.chapters }}</p>
+      <p>{{ meeting.subtitle }}</p>
     </div>
   {% endfor %}
 </div>
 
 ## Meeting Structure
 
-Each session follows a consistent structure designed to maximize learning and practical application:
+Each 1-hour session follows a consistent format:
 
-### Pre-Meeting Preparation
-- **Reading Assignment:** 3-4 chapters from "Accelerate"
-- **Optional Content:** Audio podcasts and video summaries using our [NotebookLM prompts](/prompts/)
-- **Reflection:** Questions and activities from our [between-meetings guide](/resources/between-meetings/)
+- **Check-in** (5 minutes) - Share key insights from reading
+- **Core Discussion** (40 minutes) - Dive deep into key concepts
+- **Action Planning** (10 minutes) - Define concrete next steps
+- **Wrap-up** (5 minutes) - Confirm next session preparation
 
-### During the Meeting (1 Hour)
-- **Opening (10 minutes):** Check-in on previous action items and current challenges
-- **Core Discussion (35 minutes):** Deep dive into key concepts with practical examples
-- **Action Planning (15 minutes):** Identify specific experiments and commitments
+## Between Sessions
 
-### Post-Meeting Follow-up
-- **Individual Action Items:** Small experiments to try before the next session
-- **Team Discussions:** Continue conversations with your immediate team
-- **Progress Tracking:** Document learnings and obstacles encountered
-
-## Success Metrics
-
-By the end of our 4-meeting journey, participants will have:
-
-- ✅ **Understanding:** Clear grasp of the four DORA metrics and their importance
-- ✅ **Assessment:** Identified specific bottlenecks in their current processes
-- ✅ **Action:** Implemented at least one improvement from each session
-- ✅ **Culture:** Increased awareness of how technical practices affect culture
-- ✅ **Plan:** Concrete next steps for continued organizational transformation
+- **Reflection Questions** - Process insights from each meeting
+- **Practical Exercises** - Apply concepts in your work environment
+- **Community Discussion** - Share experiences with fellow participants
 
 ---
 
-**Ready to begin?** Start with [Meeting 1: Laying the Foundation](/meetings/meeting-1/) to understand the research foundation and measurement approach that makes everything else possible.
-
-<style>
-.meeting-timeline {
-  position: relative;
-  margin: 2rem 0;
-}
-
-.meeting-timeline::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #e1e4e8;
-}
-
-.timeline-item {
-  position: relative;
-  margin: 2rem 0;
-  padding-left: 60px;
-}
-
-.timeline-marker {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  background: #0366d6;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.timeline-content {
-  background: #f8f9fa;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 1.5rem;
-}
-
-.timeline-content h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-content h3 a {
-  text-decoration: none;
-  color: #0366d6;
-}
-
-.timeline-content h3 a:hover {
-  text-decoration: underline;
-}
-
-.meeting-meta {
-  color: #586069;
-  font-weight: 500;
-  margin: 0.5rem 0;
-}
-
-.chapters {
-  background: #fff;
-  border: 1px solid #d1d5da;
-  border-radius: 4px;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  font-size: 0.9em;
-  color: #586069;
-}
-
-.timeline-content p:last-child {
-  margin-bottom: 0;
-}
-</style>
+<div class="resource-links">
+  <h3><i class="fas fa-book"></i> Additional Resources</h3>
+  
+  <div class="resource-grid">
+    <a href="/resources/" class="resource-link-card">
+      <i class="fas fa-clipboard-list"></i>
+      <strong>Between Meetings</strong>
+      <span>Activities and reflection questions</span>
+    </a>
+    
+    <a href="/prompts/" class="resource-link-card">
+      <i class="fas fa-microphone-alt"></i>
+      <strong>AI Content</strong>
+      <span>Generate podcasts and videos</span>
+    </a>
+  </div>
+</div>
