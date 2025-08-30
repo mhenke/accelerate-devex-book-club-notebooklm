@@ -5,8 +5,8 @@ title: Home
 
 <div class="hero-banner">
   <div class="hero-content">
-    <h1>Accelerate DevEx<br>Book Club</h1>
-    <p class="hero-subtitle">Building High Performing Technology Organizations</p>
+    <h1>Building High Performing<br>Technology Organizations</h1>
+    <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
   </div>
   <div class="hero-metrics">
     <div class="metric-icon"><i class="fas fa-clock"></i></div>
