@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#4CAF50'
 ---
 
-# Meeting 2: Cultivating Culture and Embracing Continuous Delivery
-
-**Week 3 | Duration:** 1 Hour
-
 ## Pre-Reading Assignment
 
 **Chapters:** 5-8 (Continued Research Findings)
@@ -130,7 +126,3 @@ Create a visual overview with the [Meeting 2 Video Prompt](../notebooklm-prompts
 	Your browser does not support the video tag.
 </video>
 
-## Navigation
-
-- Previous: [Meeting 1: Laying the Foundation](meeting-1-guide.md)
-- Next: [Meeting 3: Architecture, Autonomy, and Lean Thinking](meeting-3-guide.md)

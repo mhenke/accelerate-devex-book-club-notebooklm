@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#F44336'
 ---
 
-# Meeting 4: Leadership, Security, and Continuous Learning
-
-**Week 7 | Duration:** 1 Hour
-
 ## Pre-Reading Assignment
 
 **Chapters:** 13-15 (Transformation and Advanced Topics)
@@ -140,7 +136,3 @@ Congratulations! You've completed the structured book club journey. Continue you
 - [Extension Resources](../book-club-materials/extensions.md)
 - [Post-Book Club Activities](../book-club-materials/)
 
-## Navigation
-
-- Previous: [Meeting 3: Architecture, Autonomy, and Lean Thinking](meeting-3-guide.md)
-- Return to: [Book Club Guide](../book-club-guide.md)
