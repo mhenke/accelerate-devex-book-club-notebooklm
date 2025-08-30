@@ -451,7 +451,7 @@ h2 {
 /* Meeting cards styling */
 .meeting-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin: 2rem 0;
 }
@@ -1418,6 +1418,14 @@ pre {
   }
 }
 
+/* Tablet - 2 columns */
+@media (max-width: 1024px) {
+  .meeting-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 900px) {
   .culture-diagram__container {
     flex-direction: column;
@@ -1916,7 +1924,7 @@ pre {
 
   .meeting-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .resource-grid {
