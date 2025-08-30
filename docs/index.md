@@ -58,6 +58,104 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 - **Architecture patterns** that enable team autonomy
 - **Leadership practices** that create psychological safety and innovation
 
+## 🔄 Culture Transformation Journey
+
+<div class="culture-transformation">
+  <div class="culture-stage pathological">
+    <div class="culture-icon">🔴</div>
+    <h4>Pathological</h4>
+    <div class="culture-characteristics">
+      <p>• Information is hidden</p>
+      <p>• Messengers are shot</p>
+      <p>• Failure is punished</p>
+      <p>• Novelty is crushed</p>
+    </div>
+  </div>
+  
+  <div class="culture-arrow">
+    <span class="arrow-text">Transform</span>
+    <div class="arrow">→</div>
+  </div>
+  
+  <div class="culture-stage bureaucratic">
+    <div class="culture-icon">🟡</div>
+    <h4>Bureaucratic</h4>
+    <div class="culture-characteristics">
+      <p>• Information may be ignored</p>
+      <p>• Messengers are tolerated</p>
+      <p>• Failure leads to justice</p>
+      <p>• Novelty creates problems</p>
+    </div>
+  </div>
+  
+  <div class="culture-arrow">
+    <span class="arrow-text">Evolve</span>
+    <div class="arrow">→</div>
+  </div>
+  
+  <div class="culture-stage generative">
+    <div class="culture-icon">🟢</div>
+    <h4>Generative</h4>
+    <div class="culture-characteristics">
+      <p>• Information is actively sought</p>
+      <p>• Messengers are trained</p>
+      <p>• Failure leads to inquiry</p>
+      <p>• Novelty is implemented</p>
+    </div>
+  </div>
+</div>
+
+## ⚙️ DevOps Practices Wheel
+
+<div class="devops-wheel-container">
+  <div class="devops-wheel">
+    <div class="wheel-center">
+      <h4>High Performance</h4>
+      <p>Organizations</p>
+    </div>
+    
+    <div class="wheel-spoke spoke-1" data-practice="Continuous Integration">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">CI</div>
+    </div>
+    
+    <div class="wheel-spoke spoke-2" data-practice="Continuous Delivery">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">CD</div>
+    </div>
+    
+    <div class="wheel-spoke spoke-3" data-practice="Test Automation">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">Test</div>
+    </div>
+    
+    <div class="wheel-spoke spoke-4" data-practice="Monitoring & Observability">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">Monitor</div>
+    </div>
+    
+    <div class="wheel-spoke spoke-5" data-practice="Infrastructure as Code">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">IaC</div>
+    </div>
+    
+    <div class="wheel-spoke spoke-6" data-practice="Trunk-based Development">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">Trunk</div>
+    </div>
+    
+    <div class="wheel-spoke spoke-7" data-practice="Loosely Coupled Architecture">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">Architecture</div>
+    </div>
+    
+    <div class="wheel-spoke spoke-8" data-practice="Team Empowerment">
+      <div class="spoke-line"></div>
+      <div class="spoke-label">Teams</div>
+    </div>
+  </div>
+</div>
+
 ## 📅 Meeting Schedule
 
 <div class="timeline-visual">
@@ -200,5 +298,10 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </p>
 
 <div class="ai-attribution">
-  <p>🤖 This book club content was created with AI assistance from Claude and NotebookLM to enhance your learning experience.</p>
+  <div class="ai-icons">
+    <div class="ai-icon claude-icon" title="Claude AI">🧠</div>
+    <div class="ai-icon notebooklm-icon" title="NotebookLM">📓</div>
+  </div>
+  <p>AI-Generated Content</p>
+  <p class="ai-description">This book club content was created with AI assistance from Claude and NotebookLM to enhance your learning experience.</p>
 </div>

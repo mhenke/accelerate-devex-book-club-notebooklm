@@ -862,11 +862,12 @@ pre {
 .ai-attribution {
   text-align: center;
   margin: 3rem 0 2rem 0;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, var(--light-blue), #f0f8ff);
-  border: 2px solid var(--primary-blue);
+  padding: 2rem;
+  background: rgba(225, 245, 254, 0.8);
+  border: 2px solid rgba(3, 102, 214, 0.3);
   border-radius: 12px;
   position: relative;
+  backdrop-filter: blur(5px);
 }
 
 .ai-attribution::before {
@@ -880,9 +881,293 @@ pre {
   font-size: 1.5rem;
 }
 
+.ai-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ai-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.claude-icon {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.notebooklm-icon {
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  color: white;
+  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+}
+
+.ai-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
 .ai-attribution p {
-  margin: 0;
+  margin: 0.5rem 0;
   color: var(--text-dark);
+  font-weight: 600;
+}
+
+.ai-attribution .ai-description {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Culture Transformation Diagram */
+.culture-transformation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.culture-stage {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.culture-stage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.culture-stage.pathological {
+  border-left: 6px solid #dc3545;
+}
+
+.culture-stage.bureaucratic {
+  border-left: 6px solid #ffc107;
+}
+
+.culture-stage.generative {
+  border-left: 6px solid #28a745;
+}
+
+.culture-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.culture-stage h4 {
+  color: var(--text-dark);
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.culture-characteristics {
+  text-align: left;
+}
+
+.culture-characteristics p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+.culture-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.culture-arrow:hover {
+  opacity: 1;
+}
+
+.arrow-text {
+  font-size: 0.8rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* DevOps Practices Wheel */
+.devops-wheel-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  padding: 2rem;
+}
+
+.devops-wheel {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 3px solid var(--primary-blue);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e3f2fd, #f8f9ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wheel-center {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(3, 102, 214, 0.3);
+}
+
+.wheel-center h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.wheel-center p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.wheel-spoke {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spoke-line {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, var(--primary-blue), var(--success-green));
+  top: 25px;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.spoke-label {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: var(--primary-blue);
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 2px solid var(--primary-blue);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* Position each spoke around the circle */
+.spoke-1 { transform: rotate(0deg); }
+.spoke-2 { transform: rotate(45deg); }
+.spoke-3 { transform: rotate(90deg); }
+.spoke-4 { transform: rotate(135deg); }
+.spoke-5 { transform: rotate(180deg); }
+.spoke-6 { transform: rotate(225deg); }
+.spoke-7 { transform: rotate(270deg); }
+.spoke-8 { transform: rotate(315deg); }
+
+/* Hover effects */
+.wheel-spoke:hover {
+  z-index: 5;
+}
+
+.wheel-spoke:hover .spoke-line {
+  height: 110px;
+  background: linear-gradient(to bottom, var(--success-green), var(--primary-blue));
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.wheel-spoke:hover .spoke-label {
+  background: var(--success-green);
+  color: white;
+  transform: translateX(-50%) scale(1.1);
+  border-color: var(--success-green);
+}
+
+/* Tooltip for practice details */
+.wheel-spoke::after {
+  content: attr(data-practice);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-dark);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 20;
+}
+
+.wheel-spoke:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
   font-size: 0.95rem;
   font-weight: 500;
 }
@@ -1109,6 +1394,49 @@ pre {
     transform: none;
     justify-content: center;
     margin-top: 2rem;
+  }
+
+  .culture-transformation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .culture-arrow {
+    transform: rotate(90deg);
+    margin: 0.5rem 0;
+  }
+
+  .culture-stage {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .devops-wheel {
+    width: 300px;
+    height: 300px;
+  }
+
+  .wheel-center {
+    width: 90px;
+    height: 90px;
+  }
+
+  .wheel-center h4 {
+    font-size: 0.9rem;
+  }
+
+  .wheel-center p {
+    font-size: 0.7rem;
+  }
+
+  .spoke-line {
+    height: 80px;
+    top: 20px;
+  }
+
+  .spoke-label {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
   }
 }
 
