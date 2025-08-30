@@ -1,11 +1,4 @@
-# TODO L- [- [x] Make banner responsive for mobile.
-
-- [x] Animate icons or text for interactivity (hover effects).
-
-## 2. DORA Metrics Infographicdd four DORA metric icons along the bottom (SVG/icons).
-
-- [x] Make banner responsive for mobile.
-- [ ] Animate icons or text for interactivity (hover effects).: CSS & Interactive Implementation for Book Club Visuals
+# TODO: CSS & Interactive Implementation for Book Club Visuals
 
 ## 1. Hero Banner
 
@@ -14,8 +7,8 @@
 - [x] Overlay a subtle circuit board pattern using SVG/CSS (opacity 20%).
 - [x] Add a rocket/upward arrow icon (SVG or icon font) on the right.
 - [x] Add four DORA metric icons along the bottom (SVG/icons).
-- [ ] Make banner responsive for mobile.
-- [ ] Animate icons or text for interactivity (e.g., hover effects).
+- [x] Make banner responsive for mobile.
+- [x] Animate icons or text for interactivity (hover effects).
 
 ## 2. DORA Metrics Infographic
 
