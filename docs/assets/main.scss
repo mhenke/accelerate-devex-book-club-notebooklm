@@ -1345,6 +1345,23 @@ pre {
   }
 }
 
+/* Medium screens - ensure timeline stays 2-column */
+@media (max-width: 767px) and (min-width: 641px) {
+  .timeline-nodes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .timeline-node {
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: 280px;
+  }
+  
+  .timeline-line {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .culture-diagram__container {
     flex-direction: column;
@@ -1803,7 +1820,7 @@ pre {
 }
 
 /* Mobile screens */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .wrapper {
     margin: 1rem;
     padding: 1rem;
