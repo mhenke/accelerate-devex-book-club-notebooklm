@@ -11,6 +11,12 @@
 
 /* Modern Book Club Theme - Professional Color Palette */
 :root {
+  /* Modern Responsive Breakpoints - 2025 Standards */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px; 
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  
   /* Header Gradient Colors */
   --header-dark-navy: #1a1a2e;
   --header-light-navy: #16213e;
@@ -146,7 +152,7 @@ h2 {
   border-radius: 0 0 2rem 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .hero-banner {
     padding: 2.5rem 0.5rem;
     font-size: 1rem;
@@ -319,7 +325,7 @@ h2 {
   opacity: 0.9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .hero-headline {
     font-size: 2.8rem !important;
   }
@@ -1103,7 +1109,7 @@ pre {
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .ai-attribution {
     flex-direction: column;
     text-align: center;
@@ -1323,8 +1329,8 @@ pre {
   }
 }
 
-/* Tablet screens */
-@media (max-width: 1023px) {
+/* Large Tablet and below (991.98px and down) */
+@media (max-width: 991.98px) {
   .metrics-categories {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -1345,8 +1351,8 @@ pre {
   }
 }
 
-/* Medium screens - ensure timeline stays 2-column */
-@media (max-width: 767px) and (min-width: 641px) {
+/* Tablet range - 2 column layout (576px to 767.98px) */
+@media (max-width: 767.98px) and (min-width: 576px) {
   .timeline-nodes {
     flex-wrap: wrap;
     justify-content: center;
@@ -1362,7 +1368,8 @@ pre {
   }
 }
 
-@media (max-width: 900px) {
+/* Tablet and below (767.98px and down) */
+@media (max-width: 767.98px) {
   .culture-diagram__container {
     flex-direction: column;
     gap: 1.5rem;
@@ -1511,7 +1518,7 @@ pre {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .devops-wheel {
     width: 300px;
     height: 300px;
@@ -1539,7 +1546,7 @@ pre {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   .devops-wheel-section {
     padding: 2rem 1rem;
   }
@@ -1748,7 +1755,7 @@ pre {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .devops-cycle {
     width: 300px;
     height: 300px;
@@ -1781,7 +1788,7 @@ pre {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   .devops-cycle-section {
     padding: 2rem 1rem;
   }
@@ -1819,8 +1826,8 @@ pre {
   }
 }
 
-/* Mobile screens */
-@media (max-width: 640px) {
+/* Mobile phones (575.98px and down) */
+@media (max-width: 575.98px) {
   .wrapper {
     margin: 1rem;
     padding: 1rem;
@@ -1957,7 +1964,7 @@ pre {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   .hero-banner {
     padding: 3rem 1rem;
   }
