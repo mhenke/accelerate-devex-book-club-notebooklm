@@ -3,8 +3,12 @@ layout: default
 title: Home
 ---
 
-# Accelerate DevEx Book Club
-*Building and Scaling High Performing Technology Organizations*
+<div class="hero-banner">
+  <div class="hero-content">
+    <h1>Accelerate DevEx Book Club</h1>
+    <p class="hero-subtitle">Building and Scaling High Performing Technology Organizations</p>
+  </div>
+</div>
 
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
 
@@ -16,6 +20,10 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 ## 🎯 What You'll Learn
 
+<div class="dora-metrics-section">
+  <img src="{{ '/assets/images/infographics/dora-metrics.png' | relative_url }}" alt="The Four DORA Metrics" class="responsive-image">
+</div>
+
 - **The Four DORA Metrics** that define high-performing teams
 - How to **debunk the speed vs. stability myth**
 - **Organizational culture types** and how to drive transformation
@@ -25,26 +33,42 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 ## 📅 Meeting Schedule
 
+<div class="meeting-timeline-image">
+  <img src="{{ '/assets/images/infographics/meeting-timeline.png' | relative_url }}" alt="4-Meeting Timeline" class="responsive-image">
+</div>
+
 <div class="meeting-grid">
   <div class="meeting-card">
+    <div class="meeting-icon">
+      <img src="{{ '/assets/images/icons/meeting-1-icon.png' | relative_url }}" alt="Meeting 1 Icon">
+    </div>
     <h3><a href="/meetings/meeting-1/">Meeting 1: Foundation</a></h3>
     <p><strong>Week 1</strong> • Chapters 1-4</p>
     <p>DORA metrics and debunking the speed vs. stability myth</p>
   </div>
   
   <div class="meeting-card">
+    <div class="meeting-icon">
+      <img src="{{ '/assets/images/icons/meeting-2-icon.png' | relative_url }}" alt="Meeting 2 Icon">
+    </div>
     <h3><a href="/meetings/meeting-2/">Meeting 2: Culture & CD</a></h3>
     <p><strong>Week 3</strong> • Chapters 5-8</p>
     <p>Westrum culture types and continuous delivery practices</p>
   </div>
   
   <div class="meeting-card">
+    <div class="meeting-icon">
+      <img src="{{ '/assets/images/icons/meeting-3-icon.png' | relative_url }}" alt="Meeting 3 Icon">
+    </div>
     <h3><a href="/meetings/meeting-3/">Meeting 3: Architecture</a></h3>
     <p><strong>Week 5</strong> • Chapters 9-12</p>
     <p>Loosely coupled systems and lean management</p>
   </div>
   
   <div class="meeting-card">
+    <div class="meeting-icon">
+      <img src="{{ '/assets/images/icons/meeting-4-icon.png' | relative_url }}" alt="Meeting 4 Icon">
+    </div>
     <h3><a href="/meetings/meeting-4/">Meeting 4: Leadership</a></h3>
     <p><strong>Week 7</strong> • Chapters 13-15</p>
     <p>Transformational leadership and continuous learning</p>
@@ -53,14 +77,27 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 ## 🛠️ Resources
 
-### [📖 Meeting Materials](/meetings/)
-Detailed agendas, discussion questions, and action items for each session.
+<div class="resources-section">
+  <div class="book-display">
+    <img src="{{ '/assets/images/books/accelerate-book-display.png' | relative_url }}" alt="Accelerate Book" class="book-image">
+    <p><strong>Required Reading</strong></p>
+    <a href="#" class="btn btn-secondary">📚 Get the Book</a>
+  </div>
+  
+  <div class="resources-list">
+    <h3>📖 Meeting Materials</h3>
+    <p>Detailed agendas, discussion questions, and action items for each session.</p>
+    <a href="/meetings/" class="resource-link">View Meeting Guides →</a>
 
-### [🎧 Audio & Video Content](/prompts/)
-NotebookLM prompts for creating podcasts and videos to supplement your reading.
+    <h3>🎧 Audio & Video Content</h3>
+    <p>NotebookLM prompts for creating podcasts and videos to supplement your reading.</p>
+    <a href="/prompts/" class="resource-link">Content Generation →</a>
 
-### [📋 Between Meetings](/resources/)
-Activities, reflection questions, and experiments to try between sessions.
+    <h3>📋 Between Meetings</h3>
+    <p>Activities, reflection questions, and experiments to try between sessions.</p>
+    <a href="/resources/" class="resource-link">Additional Resources →</a>
+  </div>
+</div>
 
 <div class="success-metrics">
 <h2>🚀 Success Metrics</h2>
@@ -91,3 +128,8 @@ Activities, reflection questions, and experiments to try between sessions.
 <p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
   Ready to transform your organization into a high-performing technology team?
 </p>
+
+<div class="ai-attribution">
+  <img src="{{ '/assets/images/icons/ai-generated-badge.png' | relative_url }}" alt="AI Generated Content Badge" class="ai-badge">
+  <p>This book club content was created with AI assistance from Claude and NotebookLM to enhance your learning experience.</p>
+</div>
