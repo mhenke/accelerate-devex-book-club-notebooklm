@@ -216,6 +216,58 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </blockquote>
 </div>
 
+<!-- Culture Transformation Diagram -->
+<section class="culture-diagram" aria-label="Culture Transformation Diagram">
+  <h2 class="culture-diagram__header">Culture Transformation Journey</h2>
+  <div class="culture-diagram__container">
+    <div class="culture-box culture-box--red" aria-label="Pathological Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Exclamation Circle (Pathological) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="#F44336" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="18" fill="#F44336" font-family="Poppins, sans-serif">!</text></svg>
+      </span>
+      <h3>Pathological</h3>
+      <ul>
+        <li>Power-oriented</li>
+        <li>Low trust</li>
+        <li>Blame culture</li>
+      </ul>
+    </div>
+    <span class="culture-arrow" aria-hidden="true">
+      <!-- SVG: Arrow Right -->
+      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#FF9800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    <div class="culture-box culture-box--orange" aria-label="Bureaucratic Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Clipboard List (Bureaucratic) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="20" height="20" rx="4" stroke="#FF9800" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#FF9800" font-family="Poppins, sans-serif">≡</text></svg>
+      </span>
+      <h3>Bureaucratic</h3>
+      <ul>
+        <li>Rule-oriented</li>
+        <li>Moderate trust</li>
+        <li>Process focus</li>
+      </ul>
+    </div>
+    <span class="culture-arrow" aria-hidden="true">
+      <!-- SVG: Arrow Right -->
+      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    <div class="culture-box culture-box--green" aria-label="Generative Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Lightbulb (Generative) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><ellipse cx="16" cy="18" rx="10" ry="12" stroke="#4CAF50" stroke-width="2"/><rect x="13" y="26" width="6" height="4" rx="2" fill="#4CAF50"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#4CAF50" font-family="Poppins, sans-serif">💡</text></svg>
+      </span>
+      <h3>Generative</h3>
+      <ul>
+        <li>Performance-oriented</li>
+        <li>High trust</li>
+        <li>Innovation focus</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- End Culture Transformation Diagram -->
+
 ---
 
 <p style="text-align: center; margin-top: 2rem;">
