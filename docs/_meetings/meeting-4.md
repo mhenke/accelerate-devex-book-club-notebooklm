@@ -4,6 +4,7 @@ title: 'Meeting 4: Leadership'
 subtitle: 'Leadership, Security, and Continuous Learning'
 week: 7
 chapters: '13-15'
+duration: '1 Hour'
 dora_color: '#F44336'
 ---
 
