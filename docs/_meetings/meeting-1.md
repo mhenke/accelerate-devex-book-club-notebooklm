@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#2196F3'
 ---
 
-# Meeting 1: Laying the Foundation – The Myth and the Measurement
-
-**Week 1 | Duration:** 1 Hour
-
 ## Pre-Reading Assignment
 
 **Chapters:** 1-4 (Introduction and What We Found)
@@ -98,6 +94,3 @@ Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts
 	Your browser does not support the video tag.
 </video>
 
-## Next Session
-
-[Meeting 2: Cultivating Culture and Embracing Continuous Delivery](meeting-2-guide.md)
