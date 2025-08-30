@@ -261,20 +261,6 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
 </div>
 
-<section class="book-cover-section">
-  <h3 class="required-reading">Required Reading</h3>
-  <div class="book-cover-3d">
-    <div class="book-image"></div>
-  </div>
-  <div class="book-actions">
-    <button class="buy-now">Buy Now</button>
-    <div class="purchase-icons">
-      <span class="icon-amazon" title="Amazon"></span>
-      <span class="icon-google" title="Google Books"></span>
-      <span class="icon-local" title="Local Bookstore"></span>
-    </div>
-  </div>
-</section>
 
 <div class="success-metrics">
 <h2><i class="fas fa-rocket"></i> Success Metrics</h2>
