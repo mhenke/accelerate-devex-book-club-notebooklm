@@ -1,3 +1,18 @@
+// Section Accent Header
+.section-accent {
+  border-left: 4px solid var(--accent-teal);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--header-dark-navy);
+  background: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 ---
 ---
 
@@ -11,9 +26,10 @@
 
 /* Modern Book Club Theme - Professional Color Palette */
 :root {
-  /* Clean 2-Breakpoint System - 2025 Standards */
-  --tablet: 768px; 
-  --desktop: 1024px;
+  /* Clean 3-Breakpoint System - 2025 Standards */
+  --mobile: 768px;
+  --tablet: 1024px;
+  --desktop: 1200px;
   
   /* Header Gradient Colors */
   --header-dark-navy: #1a1a2e;
@@ -1327,8 +1343,8 @@ pre {
   }
 }
 
-/* Tablet and below (1023px and down) */
-@media (max-width: 1023px) {
+/* Tablet and below (1199px and down) */
+@media (max-width: 1199px) {
   .metrics-categories {
     grid-template-columns: 1fr;
     gap: 1.5rem;
