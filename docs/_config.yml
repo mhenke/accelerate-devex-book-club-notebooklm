@@ -25,10 +25,10 @@ highlighter: rouge
 collections:
   meetings:
     output: true
-    permalink: /:collection/:name/
+    permalink: /meetings/:name/
   resources:
     output: true
-    permalink: /:collection/:name/
+    permalink: /resources/:name/
 
 # Defaults
 defaults:
