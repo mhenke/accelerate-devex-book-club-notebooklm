@@ -1,3 +1,12 @@
+---
+layout: meeting
+title: "Meeting 4: Leadership"
+subtitle: "Leadership, Security, and Continuous Learning"
+week: 7
+chapters: "13-15"
+dora_color: "#F44336"
+---
+
 # Meeting 4: Leadership, Security, and Continuous Learning
 
 **Week 7 | Duration:** 1 Hour

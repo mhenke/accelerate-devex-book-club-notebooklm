@@ -1,3 +1,12 @@
+---
+layout: meeting
+title: "Meeting 3: Architecture"
+subtitle: "Architecture, Autonomy, and Lean Thinking"
+week: 5
+chapters: "9-12"
+dora_color: "#FF9800"
+---
+
 # Meeting 3: Architecture, Autonomy, and Lean Thinking
 
 **Week 5 | Duration:** 1 Hour
