@@ -8,13 +8,11 @@ title: Home
 
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
 
-## 📚 About the Book Club
-
-**Duration:** 2 Months  
-**Format:** 4 Biweekly 1-Hour Sessions  
-**Approach:** Theme-Based Structure  
-
-This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.
+<div class="quick-start">
+<h2>📚 About the Book Club</h2>
+<p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
+<p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
+</div>
 
 ## 🎯 What You'll Learn
 
@@ -64,55 +62,32 @@ NotebookLM prompts for creating podcasts and videos to supplement your reading.
 ### [📋 Between Meetings](/resources/)
 Activities, reflection questions, and experiments to try between sessions.
 
-## 🚀 Success Metrics
+<div class="success-metrics">
+<h2>🚀 Success Metrics</h2>
+<p>By the end of this book club, participants will be able to:</p>
+<ul>
+<li>Articulate and explain the four DORA metrics</li>
+<li>Identify specific organizational bottlenecks and improvement opportunities</li>
+<li>Implement action items from sessions in their daily work</li>
+<li>Understand culture's impact on technical performance</li>
+<li>Have concrete next steps for organizational transformation</li>
+</ul>
+</div>
 
-By the end of this book club, participants will be able to:
-- ✅ Articulate and explain the four DORA metrics
-- ✅ Identify specific organizational bottlenecks and improvement opportunities
-- ✅ Implement action items from sessions in their daily work
-- ✅ Understand culture's impact on technical performance
-- ✅ Have concrete next steps for organizational transformation
-
-## 🎯 The Key Question
-
-Throughout our journey, we'll return to this central reflection:
-
-> **"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
+<div class="key-question">
+<h2>The Key Question</h2>
+<p>Throughout our journey, we'll return to this central reflection:</p>
+<blockquote>
+"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
+</blockquote>
+</div>
 
 ---
 
-**Ready to get started?** Begin with [Meeting 1: Laying the Foundation](/meetings/meeting-1/) and join us in transforming your organization into a high-performing technology team.
+<p style="text-align: center; margin-top: 2rem;">
+  <a href="/meetings/meeting-1/" class="btn">🚀 Get Started with Meeting 1</a>
+</p>
 
-<style>
-.meeting-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.meeting-card {
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 1rem;
-  background: #f8f9fa;
-}
-
-.meeting-card h3 {
-  margin-top: 0;
-  color: #0366d6;
-}
-
-.meeting-card h3 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.meeting-card h3 a:hover {
-  text-decoration: underline;
-}
-
-.meeting-card p {
-  margin: 0.5rem 0;
-}
-</style>
+<p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
+  Ready to transform your organization into a high-performing technology team?
+</p>
