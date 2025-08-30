@@ -1,7 +1,7 @@
 title: Accelerate DevEx Book Club
-description: A structured approach to implementing high-performing DevOps practices
+description: A structured approach to implementing high-performing DevOps practices through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim
 baseurl: ""
-url: ""
+url: "https://mhenke.github.io/accelerate-devex-book-club-notebooklm"
 
 # Theme
 theme: minima
