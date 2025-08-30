@@ -1,12 +1,15 @@
 ---
 layout: meeting
-title: "Meeting 1: Laying the Foundation"
-subtitle: "The Myth and the Measurement"
-week: "Week 1"
-duration: "1 Hour"
-chapters: "Chapters 1-4 (Introduction and What We Found)"
-order: 1
+title: "Meeting 1: Foundation"
+subtitle: "Laying the Foundation – The Myth and the Measurement"
+week: 1
+chapters: "1-4"
+dora_color: "#2196F3"
 ---
+
+# Meeting 1: Laying the Foundation – The Myth and the Measurement
+
+**Week 1 | Duration:** 1 Hour
 
 ## Pre-Reading Assignment
 
@@ -35,27 +38,17 @@ order: 1
 
 ### 4. The Four DORA Metrics
 
-<div class="metrics-grid">
-  <div class="metric-card">
-    <h4>📈 Delivery Lead Time</h4>
-    <p>Time from code commit to production deployment</p>
-  </div>
-  
-  <div class="metric-card">
-    <h4>🚀 Deployment Frequency</h4>
-    <p>How often code gets deployed to production</p>
-  </div>
-  
-  <div class="metric-card">
-    <h4>⏱️ Time to Restore Service</h4>
-    <p>How quickly service is restored after incidents</p>
-  </div>
-  
-  <div class="metric-card">
-    <h4>❌ Change Fail Rate</h4>
-    <p>Percentage of deployments causing failures in production</p>
-  </div>
-</div>
+#### 📈 Delivery Lead Time
+Time from code commit to production deployment
+
+#### 🚀 Deployment Frequency
+How often code gets deployed to production
+
+#### ⏱️ Time to Restore Service
+How quickly service is restored after incidents
+
+#### ❌ Change Fail Rate
+Percentage of deployments causing failures in production
 
 ## Discussion Questions
 
@@ -70,40 +63,14 @@ order: 1
 - [ ] Identify your biggest deployment pain point
 - [ ] Observe one example of speed vs. stability trade-off thinking in your organization
 
----
-
-## 🎧 Supplementary Content
+## Supplementary Content
 
 ### Audio Podcast
-Generate a discussion podcast using our [Meeting 1 Podcast Prompt](/prompts/meeting-1-podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 1 Podcast Prompt](../notebooklm-prompts/meeting-1-podcast-prompt.md)
 
 ### Video Summary  
-Create a visual overview with our [Meeting 1 Video Prompt](/prompts/meeting-1-video-prompt.md)
+Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts/meeting-1-video-prompt.md)
 
-<style>
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
+## Next Session
 
-.metric-card {
-  border: 1px solid #d1d5da;
-  border-radius: 6px;
-  padding: 1rem;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.metric-card h4 {
-  margin-top: 0;
-  color: #0366d6;
-  font-size: 1.1em;
-}
-
-.metric-card p {
-  margin-bottom: 0;
-  color: #586069;
-}
-</style>
+[Meeting 2: Cultivating Culture and Embracing Continuous Delivery](meeting-2-guide.md)
