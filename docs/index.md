@@ -305,3 +305,23 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   <p>AI-Generated Content</p>
   <p class="ai-description">This book club content was created with AI assistance from Claude and NotebookLM to enhance your learning experience.</p>
 </div>
+
+<!-- Social Media Preview Layout (Hidden, for OG image generation) -->
+<div class="social-preview" style="display: none;">
+  <div class="social-hero">
+    <div class="social-gradient"></div>
+    <div class="social-content">
+      <h1>Accelerate DevEx Book Club</h1>
+      <p>Building High Performing Technology Organizations</p>
+      <div class="social-badges">
+        <span class="social-badge">🚀 4 Meetings</span>
+        <span class="social-badge">📖 15 Chapters</span>
+        <span class="social-badge">🎯 DORA Metrics</span>
+      </div>
+    </div>
+    <div class="social-branding">
+      <div class="github-mark">⚡</div>
+      <span>github.com</span>
+    </div>
+  </div>
+</div>
