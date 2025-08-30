@@ -3,7 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.title | default: site.title }}" />
+    <meta property="og:description" content="{{ page.description | default: site.description }}" />
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png" />
+    
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    
     <link
       rel="stylesheet"
       href="/accelerate-devex-book-club-notebooklm/assets/main.css"
@@ -14,6 +33,22 @@
     />
   </head>
   <body>
-    {{ content }}
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header-content">
+          <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+          
+          <nav class="site-nav">
+            {% for page in site.header_pages %}
+              <a class="page-link" href="{{ page | relative_url }}">{{ page | replace: '.md', '' | capitalize }}</a>
+            {% endfor %}
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <main class="page-content">
+      {{ content }}
+    </main>
   </body>
 </html>

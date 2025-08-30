@@ -31,7 +31,10 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   <div class="metrics-grid">
       <div class="metric-card lead-time">
         <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/><path d="M12 6v6l4 2" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="#2196F3" stroke="#ffffff" stroke-width="2"/>
+            <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
         </div>
         <h4>Lead Time</h4>
         <p>Time from code commit to production deployment</p>
@@ -310,7 +313,12 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
     <div class="culture-box culture-box--green" aria-label="Generative Culture">
       <span class="culture-icon" aria-hidden="true">
         <!-- SVG: Lightbulb (Generative) -->
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><ellipse cx="16" cy="18" rx="10" ry="12" stroke="#4CAF50" stroke-width="2"/><rect x="13" y="26" width="6" height="4" rx="2" fill="#4CAF50"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#4CAF50" font-family="Poppins, sans-serif">💡</text></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <ellipse cx="16" cy="18" rx="10" ry="12" stroke="#4CAF50" stroke-width="2"/>
+          <rect x="13" y="26" width="6" height="4" rx="2" fill="#4CAF50"/>
+          <circle cx="16" cy="16" r="6" fill="none" stroke="#4CAF50" stroke-width="2"/>
+          <path d="M16 12v8M12 16h8" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+        </svg>
       </span>
       <h3>Generative</h3>
       <ul>
