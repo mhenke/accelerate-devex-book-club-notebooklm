@@ -9,22 +9,22 @@ title: Home
     <p class="hero-subtitle">Building High Performing Technology Organizations</p>
   </div>
   <div class="hero-metrics">
-    <div class="metric-icon">⏱️</div>
-    <div class="metric-icon">🚀</div>
-    <div class="metric-icon">🔧</div>
-    <div class="metric-icon">❌</div>
+    <div class="metric-icon"><i class="fas fa-clock"></i></div>
+    <div class="metric-icon"><i class="fas fa-rocket"></i></div>
+    <div class="metric-icon"><i class="fas fa-tools"></i></div>
+    <div class="metric-icon"><i class="fas fa-exclamation-triangle"></i></div>
   </div>
 </div>
 
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
 
 <div class="quick-start">
-<h2>📚 About the Book Club</h2>
+<h2><i class="fas fa-book"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
 
-## 🎯 What You'll Learn
+## <i class="fas fa-bullseye"></i> What You'll Learn
 
 <div class="dora-metrics-visual">
   <h3>The Four DORA Metrics</h3>
@@ -74,7 +74,62 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 - **Architecture patterns** that enable team autonomy
 - **Leadership practices** that create psychological safety and innovation
 
-## 📅 Meeting Schedule
+<!-- DevOps Practices Wheel -->
+<section class="devops-wheel-section" aria-label="DevOps Practices Wheel">
+  <h2 class="devops-wheel__header">High Performance DevOps Practices</h2>
+  <div class="devops-wheel" aria-label="DevOps Practices Wheel">
+    <div class="wheel-center">
+      <h3>High<br>Performance</h3>
+    </div>
+    
+    <div class="practice-spoke practice-ci" style="--angle: 0deg;">
+      <div class="spoke-line"></div>
+      <div class="spoke-icon">
+        <i class="fas fa-code-branch" aria-hidden="true"></i>
+      </div>
+      <div class="spoke-label">Continuous<br>Integration</div>
+    </div>
+    
+    <div class="practice-spoke practice-testing" style="--angle: 72deg;">
+      <div class="spoke-line"></div>
+      <div class="spoke-icon">
+        <i class="fas fa-flask" aria-hidden="true"></i>
+      </div>
+      <div class="spoke-label">Automated<br>Testing</div>
+    </div>
+    
+    <div class="practice-spoke practice-monitoring" style="--angle: 144deg;">
+      <div class="spoke-line"></div>
+      <div class="spoke-icon">
+        <i class="fas fa-chart-area" aria-hidden="true"></i>
+      </div>
+      <div class="spoke-label">Monitoring &<br>Observability</div>
+    </div>
+    
+    <div class="practice-spoke practice-version" style="--angle: 216deg;">
+      <div class="spoke-line"></div>
+      <div class="spoke-icon">
+        <i class="fab fa-git-alt" aria-hidden="true"></i>
+      </div>
+      <div class="spoke-label">Version<br>Control</div>
+    </div>
+    
+    <div class="practice-spoke practice-deployment" style="--angle: 288deg;">
+      <div class="spoke-line"></div>
+      <div class="spoke-icon">
+        <i class="fas fa-rocket" aria-hidden="true"></i>
+      </div>
+      <div class="spoke-label">Deployment<br>Automation</div>
+    </div>
+  </div>
+  
+  <p class="devops-wheel__description">
+    High-performing teams excel in all five key DevOps practices, creating a virtuous cycle of continuous improvement and innovation.
+  </p>
+</section>
+<!-- End DevOps Practices Wheel -->
+
+## <i class="fas fa-calendar-alt"></i> Meeting Schedule
 
 <div class="timeline-visual">
   <div class="timeline-line"></div>
@@ -144,23 +199,23 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
 </div>
 
-## 🛠️ Resources
+## <i class="fas fa-tools"></i> Resources
 
 <div class="resources-grid">
   <div class="resource-card">
-    <h3>📖 Meeting Materials</h3>
+    <h3><i class="fas fa-book"></i> Meeting Materials</h3>
     <p>Detailed agendas, discussion questions, and action items for each session.</p>
     <a href="/meetings/" class="resource-link">View Meeting Guides →</a>
   </div>
 
   <div class="resource-card">
-    <h3>🎧 Audio & Video Content</h3>
+    <h3><i class="fas fa-headphones"></i> Audio & Video Content</h3>
     <p>NotebookLM prompts for creating podcasts and videos to supplement your reading.</p>
     <a href="/prompts/" class="resource-link">Content Generation →</a>
   </div>
 
   <div class="resource-card">
-    <h3>📋 Between Meetings</h3>
+    <h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
     <p>Activities, reflection questions, and experiments to try between sessions.</p>
     <a href="/resources/" class="resource-link">Additional Resources →</a>
   </div>
@@ -197,7 +252,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </section>
 
 <div class="success-metrics">
-<h2>🚀 Success Metrics</h2>
+<h2><i class="fas fa-rocket"></i> Success Metrics</h2>
 <p>By the end of this book club, participants will be able to:</p>
 <ul>
 <li>Articulate and explain the four DORA metrics</li>
@@ -271,7 +326,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 ---
 
 <p style="text-align: center; margin-top: 2rem;">
-  <a href="/meetings/meeting-1/" class="btn">🚀 Get Started with Meeting 1</a>
+  <a href="/meetings/meeting-1/" class="btn"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
 </p>
 
 <p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
@@ -279,5 +334,21 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </p>
 
 <div class="ai-attribution">
-  <p>🤖 This book club content was created with AI assistance from Claude and NotebookLM to enhance your learning experience.</p>
+  <div class="ai-attribution__icon">
+    <i class="fas fa-robot" aria-hidden="true"></i>
+  </div>
+  <div class="ai-attribution__content">
+    <h4 class="ai-attribution__title">AI-Generated Content</h4>
+    <p class="ai-attribution__text">This book club content was created with AI assistance from <strong>Claude</strong> and <strong>NotebookLM</strong> to enhance your learning experience.</p>
+    <div class="ai-attribution__tools">
+      <div class="ai-tool">
+        <i class="fas fa-brain" aria-hidden="true"></i>
+        <span>Claude</span>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+        <span>NotebookLM</span>
+      </div>
+    </div>
+  </div>
 </div>
