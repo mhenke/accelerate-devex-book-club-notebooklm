@@ -252,46 +252,33 @@ h2 {
 }
 
 .hero-metrics .metric-icon {
+  width: 60px;
+  height: 60px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: var(--text-white);
+  color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s ease;
-  padding: 1rem;
-  border-radius: 12px;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-metrics .metric-icon i {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: var(--accent-coral);
+  font-size: 1.8rem;
 }
 
 .hero-metrics .metric-icon span {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-white);
-  opacity: 0.9;
+  display: none;
 }
 
 .hero-metrics .metric-icon:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.15);
-  border-color: var(--accent-coral);
+  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-white);
+  border-color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
-}
-
-.hero-metrics .metric-icon:hover i {
-  color: var(--accent-teal);
-  transform: scale(1.1);
-}
-
-.hero-metrics .metric-icon:hover span {
-  opacity: 1;
 }
 
 /* Hero metrics icons now use inline SVG - background images removed */
@@ -342,20 +329,16 @@ h2 {
   }
   
   .hero-metrics {
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 1.5rem;
   }
   
   .hero-metrics .metric-icon {
-    padding: 0.8rem;
+    width: 50px;
+    height: 50px;
   }
   
   .hero-metrics .metric-icon i {
     font-size: 1.5rem;
-  }
-  
-  .hero-metrics .metric-icon span {
-    font-size: 0.8rem;
   }
 }
 
