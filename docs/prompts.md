@@ -19,8 +19,8 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <h3>Meeting 1: Foundation</h3>
     <p><strong>DORA Metrics & Speed vs. Stability</strong></p>
     <div class="prompt-links">
-      <a href="#meeting-1-podcast" class="btn btn-secondary">Podcast Prompt</a>
-      <a href="#meeting-1-video" class="btn">Video Prompt</a>
+      <a href="#podcast" class="btn btn-secondary">Podcast Prompt</a>
+      <a href="#video" class="btn">Video Prompt</a>
     </div>
   </div>
   
@@ -31,8 +31,8 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <h3>Meeting 2: Culture & CD</h3>
     <p><strong>Westrum Culture & Continuous Delivery</strong></p>
     <div class="prompt-links">
-      <a href="#meeting-2-podcast" class="btn btn-secondary">Podcast Prompt</a>
-      <a href="#meeting-2-video" class="btn">Video Prompt</a>
+      <a href="#podcast" class="btn btn-secondary">Podcast Prompt</a>
+      <a href="#video" class="btn">Video Prompt</a>
     </div>
   </div>
   
@@ -44,7 +44,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <p><strong>Loose Coupling & Team Autonomy</strong></p>
     <div class="prompt-links">
       <a href="#meeting-3-podcast" class="btn btn-secondary">Podcast Prompt</a>
-      <a href="#meeting-3-video" class="btn">Video Prompt</a>
+      <a href="#video" class="btn">Video Prompt</a>
     </div>
   </div>
   
@@ -55,8 +55,8 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <h3>Meeting 4: Leadership</h3>
     <p><strong>Transformational Leadership</strong></p>
     <div class="prompt-links">
-      <a href="#meeting-4-podcast" class="btn btn-secondary">Podcast Prompt</a>
-      <a href="#meeting-4-video" class="btn">Video Prompt</a>
+      <a href="#podcast" class="btn btn-secondary">Podcast Prompt</a>
+      <a href="#video" class="btn">Video Prompt</a>
     </div>
   </div>
 </div>
@@ -72,12 +72,14 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
 ## General Guidelines
 
 ### Content Quality Standards
+
 - **Accuracy**: All content should reflect the book's core principles
-- **Accessibility**: Use clear language accessible to diverse technical backgrounds  
+- **Accessibility**: Use clear language accessible to diverse technical backgrounds
 - **Engagement**: Include real-world examples and practical applications
 - **Time Management**: Keep podcasts 15-20 minutes, videos 10-15 minutes
 
 ### Best Practices
+
 - **Pre-Meeting**: Use content to prime discussions and highlight key concepts
 - **Post-Meeting**: Reinforce learning and provide alternative perspectives
 - **Supplementary**: Never replace actual book reading or group discussion
@@ -87,7 +89,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
 
 ## Podcast Prompts
 
-### Meeting 1: Foundation {#meeting-1-podcast}
+### Meeting 1: Foundation {#podcast}
 
 ```
 Create a 15-minute podcast discussing the foundational concepts from "Accelerate" chapters 1-4. Focus on:
@@ -110,7 +112,7 @@ Create a 15-minute podcast discussing the foundational concepts from "Accelerate
 Keep the tone conversational and include concrete examples. Address common skepticism about DevOps practices.
 ```
 
-### Meeting 2: Culture & CD {#meeting-2-podcast}
+### Meeting 2: Culture & CD {#podcast}
 
 ```
 Create a 18-minute podcast exploring organizational culture and continuous delivery from "Accelerate" chapters 5-8:
@@ -156,7 +158,7 @@ Create a 16-minute podcast about architecture and team organization from "Accele
 Focus on practical advice for technical leaders and architects.
 ```
 
-### Meeting 4: Leadership {#meeting-4-video}
+### Meeting 4: Leadership {#video}
 
 ```
 Create a 12-minute video presentation on transformational leadership from "Accelerate" chapters 13-15:
@@ -183,7 +185,7 @@ Include visual examples and case studies from high-performing organizations.
 
 ## Video Prompts
 
-### Meeting 1: Foundation {#meeting-1-video}
+### Meeting 1: Foundation {#video}
 
 ```
 Create a 10-minute educational video introducing DORA metrics:
@@ -191,7 +193,7 @@ Create a 10-minute educational video introducing DORA metrics:
 Structure:
 - **Opening** (1 min): Hook with deployment horror story
 - **DORA Overview** (3 min): Visual explanation of each metric
-- **Research Findings** (4 min): Key insights from the State of DevOps reports  
+- **Research Findings** (4 min): Key insights from the State of DevOps reports
 - **Getting Started** (2 min): First steps for measurement
 
 Visual elements:
@@ -203,14 +205,14 @@ Visual elements:
 Target audience: Technical teams new to DevOps metrics
 ```
 
-### Meeting 2: Culture & CD {#meeting-2-video}
+### Meeting 2: Culture & CD {#video}
 
 ```
 Create a 12-minute video exploring organizational culture transformation:
 
 Structure:
 - **Culture Types Explained** (4 min): Visual representation of Westrum model
-- **CD Practices Demo** (5 min): Show automated pipeline in action  
+- **CD Practices Demo** (5 min): Show automated pipeline in action
 - **Transformation Journey** (3 min): Timeline of typical culture change
 
 Visual elements:
