@@ -45,7 +45,7 @@ Reusable templates for documentation:
 
 1. Start with `/activities/discussion-practices.md` to understand facilitation best practices
 2. Use `/assessments/` tools to establish baseline measurements
-3. Follow the `/meetings/` guides for each session
+3. Follow the [`/accelerate-devex-book-club-notebooklm/meetings/`](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/) guides for each session
 4. Track progress with `/templates/`
 5. Continue learning with `/extensions/` resources
 
