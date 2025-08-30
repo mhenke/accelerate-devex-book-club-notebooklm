@@ -1323,6 +1323,20 @@ pre {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+  
+  .timeline-nodes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .timeline-node {
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: 300px;
+  }
+  
+  .timeline-line {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
