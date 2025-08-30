@@ -56,6 +56,53 @@ h2::before {
   font-size: 1.5rem;
 }
 
+/* Hero Banner */
+.hero-banner {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background-image: url('{{ "/assets/images/hero/hero-banner.png" | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  margin: -2rem -1rem 2rem -1rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 26, 46, 0.7);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  border: none;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.9);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
 /* Header and Navigation */
 .site-header {
   background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
@@ -99,6 +146,94 @@ h2::before {
   border-radius: 8px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+/* Image styling */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dora-metrics-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--light-blue);
+  border-radius: 12px;
+  border: 2px solid var(--primary-blue);
+}
+
+.meeting-timeline-image {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.meeting-icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.meeting-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Resources section */
+.resources-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+
+.book-display {
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.book-image {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.book-display p {
+  font-weight: 600;
+  color: var(--book-brown);
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.resources-list h3 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.resource-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+  color: var(--dark-blue);
 }
 
 /* Meeting cards styling */
@@ -357,6 +492,28 @@ pre {
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
+/* AI Attribution */
+.ai-attribution {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  padding: 1.5rem;
+  background: var(--light-blue);
+  border: 1px solid var(--primary-blue);
+  border-radius: 8px;
+}
+
+.ai-badge {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.ai-attribution p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
 /* Footer styling */
 .site-footer {
   background: var(--text-dark);
@@ -376,6 +533,19 @@ pre {
     padding: 1rem;
   }
   
+  .hero-banner {
+    padding: 2rem 1rem;
+    margin: -1rem -1rem 1rem -1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
   .meeting-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -383,6 +553,28 @@ pre {
   
   .resource-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .resources-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .book-display {
+    order: -1;
+  }
+  
+  .book-image {
+    max-width: 150px;
+  }
+  
+  .dora-metrics-section {
+    padding: 1rem;
+  }
+  
+  .meeting-icon img {
+    width: 50px;
+    height: 50px;
   }
   
   h1 {
