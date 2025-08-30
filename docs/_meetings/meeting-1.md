@@ -4,6 +4,7 @@ title: 'Meeting 1: Foundation'
 subtitle: 'Laying the Foundation – The Myth and the Measurement'
 week: 1
 chapters: '1-4'
+duration: '1 Hour'
 dora_color: '#2196F3'
 ---
 
