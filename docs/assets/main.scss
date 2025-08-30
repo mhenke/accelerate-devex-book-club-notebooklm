@@ -1,6 +1,7 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 @import "minima";
 
 /* Custom Book Club Theme */
@@ -58,7 +59,7 @@ h2::before {
 
 /* Hero Banner */
 .hero-banner {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: white;
   padding: 6rem 2rem;
   margin: -2rem -1rem 3rem -1rem;
@@ -67,15 +68,36 @@ h2::before {
   overflow: hidden;
 }
 
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+    linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.05) 40%, rgba(255,255,255,0.05) 60%, transparent 60%);
+  background-size: 40px 40px, 40px 40px, 80px 80px;
+  opacity: 0.2;
+  z-index: 1;
+}
+
 .hero-banner::after {
-  content: '🚀';
+  content: '';
   position: absolute;
   right: 4rem;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 6rem;
+  width: 80px;
+  height: 80px;
   opacity: 0.3;
-  color: #7fb3d3;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 24 24'%3E%3Cpath d='M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2M12 21.5C13.38 20.12 14.5 18.53 15.31 16.75L12 14L8.69 16.75C9.5 18.53 10.62 20.12 12 21.5Z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 }
 
 .hero-content {
@@ -90,8 +112,8 @@ h2::before {
   margin-bottom: 1.5rem;
   color: white;
   border: none;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  font-weight: 300;
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
@@ -99,9 +121,9 @@ h2::before {
 .hero-subtitle {
   font-size: 1.5rem;
   color: #b8d4ea;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 /* DORA Metrics Icons */
