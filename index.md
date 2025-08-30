@@ -34,8 +34,8 @@ This book club follows the book's own principle of breaking work into small, man
     <p><strong>Week 1</strong> • Chapters 1-4</p>
     <p>DORA metrics and debunking the speed vs. stability myth</p>
     <p>
-      <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/video.mp4" target="_blank">🎬 Meeting 1 Video (.mp4)</a><br>
-      <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/podcast.m4a" target="_blank">🎧 Meeting 1 Podcast (.m4a)</a>
+  <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/meeting-video.mp4" target="_blank">🎬 Meeting 1 Video (.mp4)</a><br>
+  <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/meeting-podcast.m4a" target="_blank">🎧 Meeting 1 Podcast (.m4a)</a>
     </p>
   </div>
   
@@ -43,6 +43,10 @@ This book club follows the book's own principle of breaking work into small, man
   <h3><a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/">Meeting 2: Culture & CD</a></h3>
     <p><strong>Week 3</strong> • Chapters 5-8</p>
     <p>Westrum culture types and continuous delivery practices</p>
+    <p>
+      <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/video.mp4" target="_blank">🎬 Meeting 2 Video (.mp4)</a><br>
+      <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/podcast.m4a" target="_blank">🎧 Meeting 2 Podcast (.m4a)</a>
+    </p>
   </div>
   
   <div class="meeting-card">
