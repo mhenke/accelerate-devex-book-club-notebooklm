@@ -153,18 +153,18 @@ dora_color: '#FF9800'
     <p>Identify team dependencies that slow you down:</p>
     <div class="dependency-examples">
       <label class="dependency-item high-impact">
-        <input type="checkbox" name="dependency-type" value="shared-database">
-        <span class="dependency-checkmark"></span>
+        <input type="radio" name="dependency-type" value="shared-database">
+        <span class="radio-mark"></span>
         <i class="fas fa-circle" style="color: #f44336;"></i> Shared database
       </label>
       <label class="dependency-item medium-impact">
-        <input type="checkbox" name="dependency-type" value="release-coordination">
-        <span class="dependency-checkmark"></span>
+        <input type="radio" name="dependency-type" value="release-coordination">
+        <span class="radio-mark"></span>
         <i class="fas fa-circle" style="color: #ffc107;"></i> Release coordination
       </label>
       <label class="dependency-item low-impact">
-        <input type="checkbox" name="dependency-type" value="independent-services">
-        <span class="dependency-checkmark"></span>
+        <input type="radio" name="dependency-type" value="independent-services">
+        <span class="radio-mark"></span>
         <i class="fas fa-circle" style="color: #4caf50;"></i> Independent services
       </label>
     </div>
@@ -198,23 +198,23 @@ dora_color: '#FF9800'
     <p>How do you currently track work in progress?</p>
     <div class="wip-options">
       <label class="wip-option">
-        <input type="checkbox" name="wip-method" value="task-lists">
-        <span class="checkmark"></span>
+        <input type="radio" name="wip-method" value="task-lists">
+        <span class="radio-mark"></span>
         <i class="fas fa-clipboard-list"></i> Task lists
       </label>
       <label class="wip-option">
-        <input type="checkbox" name="wip-method" value="kanban">
-        <span class="checkmark"></span>
+        <input type="radio" name="wip-method" value="kanban">
+        <span class="radio-mark"></span>
         <i class="fas fa-columns"></i> Kanban board
       </label>
       <label class="wip-option">
-        <input type="checkbox" name="wip-method" value="sprint">
-        <span class="checkmark"></span>
+        <input type="radio" name="wip-method" value="sprint">
+        <span class="radio-mark"></span>
         <i class="fas fa-chart-line"></i> Sprint board
       </label>
       <label class="wip-option">
-        <input type="checkbox" name="wip-method" value="none">
-        <span class="checkmark"></span>
+        <input type="radio" name="wip-method" value="none">
+        <span class="radio-mark"></span>
         <i class="fas fa-question"></i> No tracking
       </label>
     </div>
@@ -236,9 +236,9 @@ dora_color: '#FF9800'
 
 ## Action Items for Next Meeting
 
-- [ ] Map one architectural dependency that slows your team
-- [ ] Experiment with WIP limits on your current board
-- [ ] Identify one approval process for peer review
+[ ] Map one architectural dependency that slows your team
+[ ] Experiment with WIP limits on your current board
+[ ] Identify one approval process for peer review
 
 <style>
 /* Architecture Comparison */
@@ -504,17 +504,17 @@ dora_color: '#FF9800'
   gap: 0.5rem;
 }
 
-.dependency-item input[type="checkbox"] {
+.dependency-item input[type="radio"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.dependency-item .dependency-checkmark {
+.dependency-item .radio-mark {
   width: 16px;
   height: 16px;
   border: 2px solid #ddd;
-  border-radius: 3px;
+  border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
   flex-shrink: 0;
@@ -525,24 +525,23 @@ dora_color: '#FF9800'
   border-left: 4px solid #f44336;
 }
 
-.dependency-item.high-impact .dependency-checkmark {
+.dependency-item.high-impact .radio-mark {
   border-color: #f44336;
 }
 
-.dependency-item.high-impact input:checked ~ .dependency-checkmark {
+.dependency-item.high-impact input:checked ~ .radio-mark {
   background: #f44336;
 }
 
-.dependency-item.high-impact input:checked ~ .dependency-checkmark:after {
+.dependency-item.high-impact input:checked ~ .radio-mark:after {
   content: "";
   position: absolute;
-  top: 1px;
-  left: 4px;
-  width: 4px;
+  top: 2px;
+  left: 2px;
+  width: 8px;
   height: 8px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  border-radius: 50%;
+  background: white;
 }
 
 .dependency-item.high-impact:has(input:checked) {
@@ -555,24 +554,23 @@ dora_color: '#FF9800'
   border-left: 4px solid #ffc107;
 }
 
-.dependency-item.medium-impact .dependency-checkmark {
+.dependency-item.medium-impact .radio-mark {
   border-color: #ffc107;
 }
 
-.dependency-item.medium-impact input:checked ~ .dependency-checkmark {
+.dependency-item.medium-impact input:checked ~ .radio-mark {
   background: #ffc107;
 }
 
-.dependency-item.medium-impact input:checked ~ .dependency-checkmark:after {
+.dependency-item.medium-impact input:checked ~ .radio-mark:after {
   content: "";
   position: absolute;
-  top: 1px;
-  left: 4px;
-  width: 4px;
+  top: 2px;
+  left: 2px;
+  width: 8px;
   height: 8px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  border-radius: 50%;
+  background: white;
 }
 
 .dependency-item.medium-impact:has(input:checked) {
@@ -585,24 +583,23 @@ dora_color: '#FF9800'
   border-left: 4px solid #4caf50;
 }
 
-.dependency-item.low-impact .dependency-checkmark {
+.dependency-item.low-impact .radio-mark {
   border-color: #4caf50;
 }
 
-.dependency-item.low-impact input:checked ~ .dependency-checkmark {
+.dependency-item.low-impact input:checked ~ .radio-mark {
   background: #4caf50;
 }
 
-.dependency-item.low-impact input:checked ~ .dependency-checkmark:after {
+.dependency-item.low-impact input:checked ~ .radio-mark:after {
   content: "";
   position: absolute;
-  top: 1px;
-  left: 4px;
-  width: 4px;
+  top: 2px;
+  left: 2px;
+  width: 8px;
   height: 8px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  border-radius: 50%;
+  background: white;
 }
 
 .dependency-item.low-impact:has(input:checked) {
@@ -698,40 +695,35 @@ dora_color: '#FF9800'
   transform: scale(1.02);
 }
 
-.wip-option input[type="checkbox"] {
+.wip-option input[type="radio"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.wip-option .checkmark {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  height: 16px;
+.wip-option .radio-mark {
   width: 16px;
-  background-color: #fff;
-  border: 2px solid #ddd;
-  border-radius: 3px;
+  height: 16px;
+  border: 2px solid #ff9800;
+  border-radius: 50%;
+  background: white;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
-.wip-option input:checked ~ .checkmark {
-  background-color: #4caf50;
-  border-color: #4caf50;
+.wip-option input:checked ~ .radio-mark {
+  background: #ff9800;
 }
 
-.wip-option input:checked ~ .checkmark:after {
+.wip-option input:checked ~ .radio-mark:after {
   content: "";
   position: absolute;
-  display: block;
-  left: 4px;
-  top: 1px;
-  width: 4px;
+  top: 2px;
+  left: 2px;
+  width: 8px;
   height: 8px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  border-radius: 50%;
+  background: white;
 }
 
 .wip-option input:checked {
@@ -740,9 +732,9 @@ dora_color: '#FF9800'
 }
 
 .wip-option:has(input:checked) {
-  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
-  border-color: #4caf50;
-  color: #2e7d32;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-color: #ff9800;
+  color: #e65100;
 }
 
 /* Responsive Design */
@@ -919,43 +911,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
   
-  // Add event listeners for dependency checkboxes
-  document.querySelectorAll('input[name="dependency-type"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
+  // Add event listeners for dependency radio buttons
+  document.querySelectorAll('input[name="dependency-type"]').forEach(radio => {
+    radio.addEventListener('change', function() {
       const feedback = document.getElementById('dependency-feedback');
       const info = dependencyInfo[this.value];
-      
-      if (this.checked) {
-        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-        feedback.classList.add('active');
-      } else {
-        // Check if any dependencies are still selected
-        const anyChecked = document.querySelector('input[name="dependency-type"]:checked');
-        if (!anyChecked) {
-          feedback.innerHTML = '<p>Select dependencies to understand their impact on software delivery performance.</p>';
-          feedback.classList.remove('active');
-        }
-      }
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
     });
   });
 
-  // Add event listeners for WIP method checkboxes
-  document.querySelectorAll('input[name="wip-method"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
+  // Add event listeners for WIP method radio buttons
+  document.querySelectorAll('input[name="wip-method"]').forEach(radio => {
+    radio.addEventListener('change', function() {
       const feedback = document.getElementById('wip-feedback');
       const info = wipInfo[this.value];
-      
-      if (this.checked) {
-        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-        feedback.classList.add('active');
-      } else {
-        // Check if any WIP methods are still selected
-        const anyChecked = document.querySelector('input[name="wip-method"]:checked');
-        if (!anyChecked) {
-          feedback.innerHTML = '<p>Select your WIP tracking methods to learn about their effectiveness in lean software delivery.</p>';
-          feedback.classList.remove('active');
-        }
-      }
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
     });
   });
 });
