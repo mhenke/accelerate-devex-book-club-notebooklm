@@ -117,11 +117,11 @@ Systematic reflection and lesson sharing
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 4 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 4 Podcast Prompt](podcast-prompt.md)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 4 Video Prompt](../notebooklm-prompts/video-prompt.md)
+Create a visual overview with the [Meeting 4 Video Prompt](video-prompt.md)
 
 ## 🚀 Next Steps
 
