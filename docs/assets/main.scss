@@ -556,11 +556,7 @@ h2 {
   margin-top: 0;
 }
 
-.success-metrics h2::before {
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  content: '\f05b';
-}
+/* Removed duplicate icon - HTML already contains rocket icon */
 
 .success-metrics ul {
   list-style: none;
