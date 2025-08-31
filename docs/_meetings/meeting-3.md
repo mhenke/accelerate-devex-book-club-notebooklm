@@ -312,8 +312,6 @@ dora_color: '#FF9800'
 [ ] Identify one change approval step that could be streamlined
 [ ] Observe and document burnout risk factors in your environment
 
-## 🧭 Navigation
-
 <style>
 /* Meeting Navigation */
 .meeting-navigation {
