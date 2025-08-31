@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#F44336'
 ---
 
-## Pre-Reading Assignment
-
-**Chapters 13-15:** Effective Leadership • High Performance & Job Satisfaction • Transformation
-
 ## Transformational Leadership in Action
 
 <div class="leadership-pillars">
