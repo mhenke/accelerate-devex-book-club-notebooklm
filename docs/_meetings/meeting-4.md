@@ -1,9 +1,9 @@
 ---
 layout: meeting
-title: 'Meeting 4: Leadership'
-subtitle: 'Leadership, Security, and Continuous Learning'
+title: 'Meeting 4: Leadership & Transformation'
+subtitle: 'Leadership, Research Methods & Transformation'
 week: 7
-chapters: '13-15'
+chapters: '11, 16, Conclusion'
 duration: '1 Hour'
 dora_color: '#F44336'
 ---
@@ -295,11 +295,22 @@ dora_color: '#F44336'
 
 ## Discussion Questions
 
-1. **Leadership Assessment:** What transformational leadership behaviors do you see in your organization?
-2. **Security Integration:** How early in your development process is security considered?
-3. **Diversity State:** What is the current state of diversity and inclusion in your teams?
-4. **Experimentation Culture:** How much time and space exists for trying new approaches?
-5. **Learning from Failures:** How does your organization currently handle and learn from failures?
+1. **Leadership Assessment:** What transformational leadership behaviors do you see in your organization? Which are missing?
+2. **Investment in Learning:** How does your organization currently invest in developing team capabilities?
+3. **ING Practices:** Which practices from the ING case study could work in your context? What would need adaptation?
+4. **Transformation Readiness:** What's your organization's appetite for the discipline and patience required for real transformation?
+
+## Culminating Reflection
+
+**The Single Smallest Change Question:** "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
+
+## Final Action Items and Commitments
+
+[ ] Each participant commits to implementing one specific capability from the 24 capabilities
+[ ] Identify small experiments to try over next 2-4 weeks
+[ ] Establish how to track progress on DORA metrics
+[ ] Plan monthly check-ins to share results and continued learning
+[ ] Decide on next book or continuing with State of DevOps Reports
 
 ## <i class="fas fa-rocket"></i> Next Steps
 

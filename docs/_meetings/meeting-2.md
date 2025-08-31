@@ -1,9 +1,9 @@
 ---
 layout: meeting
-title: 'Meeting 2: Culture & CD'
-subtitle: 'Cultivating Culture and Embracing Continuous Delivery'
+title: 'Meeting 2: Technical Excellence'
+subtitle: 'Technical Excellence & Continuous Delivery'
 week: 3
-chapters: '5-8'
+chapters: '4-6'
 duration: '1 Hour'
 dora_color: '#4CAF50'
 ---
@@ -217,16 +217,16 @@ dora_color: '#4CAF50'
 
 ## Discussion Questions
 
-1. **Culture Assessment:** Where is your organization on Westrum's model?
-2. **Behavioral Shifts:** What practices could shift your culture?
-3. **CD Gaps:** Which CD principles need improvement?
-4. **Quick Wins:** What could be automated this month?
+1. **CD Maturity Assessment:** Which CD practices is your organization currently implementing well/poorly?
+2. **Architecture Dependencies:** What prevents your team from deploying independently?
+3. **Tool Autonomy:** How much freedom do teams have in tool selection? What are the constraints?
+4. **Security Integration:** How early in your development process is security considered?
 
 ## Action Items for Next Meeting
 
-[ ] Identify your team's culture type using Westrum's model
-[ ] Find one repetitive task to automate
-[ ] Practice working in smaller batches on current work
+[ ] Identify one manual process that could be automated
+[ ] Map current dependencies that prevent independent deployment
+[ ] Experiment with one CD practice (trunk-based development, test automation, etc.)
 
 <style>
 /* Culture Types Diagram */
