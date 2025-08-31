@@ -12,46 +12,46 @@ dora_color: '#F44336'
 
 <div class="leadership-pillars">
   <div class="pillar-card vision">
-    <div class="pillar-icon">🎯</div>
+    <div class="pillar-icon"><i class="fas fa-bullseye"></i></div>
     <h3>Vision</h3>
     <p class="pillar-subtitle">Inspiring Direction</p>
     <ul class="pillar-traits">
-      <li>🌟 Clear future state</li>
-      <li>💭 Compelling communication</li>
-      <li>🚀 Motivational messaging</li>
+      <li><i class="fas fa-star"></i> Clear future state</li>
+      <li><i class="fas fa-comment"></i> Compelling communication</li>
+      <li><i class="fas fa-rocket"></i> Motivational messaging</li>
     </ul>
   </div>
   
   <div class="pillar-card stimulation">
-    <div class="pillar-icon">💡</div>
+    <div class="pillar-icon"><i class="fas fa-lightbulb"></i></div>
     <h3>Intellectual Stimulation</h3>
     <p class="pillar-subtitle">Challenge & Innovation</p>
     <ul class="pillar-traits">
-      <li>❓ Question assumptions</li>
-      <li>🔬 Encourage experimentation</li>
-      <li>💡 Foster creativity</li>
+      <li><i class="fas fa-question-circle"></i> Question assumptions</li>
+      <li><i class="fas fa-microscope"></i> Encourage experimentation</li>
+      <li><i class="fas fa-lightbulb"></i> Foster creativity</li>
     </ul>
   </div>
   
   <div class="pillar-card support">
-    <div class="pillar-icon">🤝</div>
+    <div class="pillar-icon"><i class="fas fa-handshake"></i></div>
     <h3>Supportive Leadership</h3>
     <p class="pillar-subtitle">Individual Care</p>
     <ul class="pillar-traits">
-      <li>👥 Personal attention</li>
-      <li>🎓 Development focus</li>
-      <li>❤️ Genuine concern</li>
+      <li><i class="fas fa-users"></i> Personal attention</li>
+      <li><i class="fas fa-graduation-cap"></i> Development focus</li>
+      <li><i class="fas fa-heart"></i> Genuine concern</li>
     </ul>
   </div>
   
   <div class="pillar-card recognition">
-    <div class="pillar-icon">🏆</div>
+    <div class="pillar-icon"><i class="fas fa-trophy"></i></div>
     <h3>Personal Recognition</h3>
     <p class="pillar-subtitle">Achievement Celebration</p>
     <ul class="pillar-traits">
-      <li>👏 Acknowledge contributions</li>
-      <li>🎉 Celebrate successes</li>
-      <li>📈 Public recognition</li>
+      <li><i class="fas fa-hands-clapping"></i> Acknowledge contributions</li>
+      <li><i class="fas fa-party-horn"></i> Celebrate successes</li>
+      <li><i class="fas fa-chart-line"></i> Public recognition</li>
     </ul>
   </div>
 </div>
@@ -60,15 +60,15 @@ dora_color: '#F44336'
 
 <div class="security-evolution">
   <div class="security-approach traditional">
-    <div class="approach-icon">🚪</div>
+    <div class="approach-icon"><i class="fas fa-door-closed"></i></div>
     <h3>Traditional Security</h3>
     <div class="approach-content">
       <p><strong>Gate-Based Approach</strong></p>
       <ul>
-        <li>🚫 Security as final gate</li>
-        <li>👮 Separate security team</li>
-        <li>🐌 Late-stage testing</li>
-        <li>⚖️ Security vs speed trade-off</li>
+        <li><i class="fas fa-ban"></i> Security as final gate</li>
+        <li><i class="fas fa-user-shield"></i> Separate security team</li>
+        <li><i class="fas fa-turtle"></i> Late-stage testing</li>
+        <li><i class="fas fa-balance-scale"></i> Security vs speed trade-off</li>
       </ul>
     </div>
   </div>
@@ -76,15 +76,15 @@ dora_color: '#F44336'
   <div class="evolution-arrow">⬅️</div>
   
   <div class="security-approach shift-left">
-    <div class="approach-icon">⬅️</div>
+    <div class="approach-icon"><i class="fas fa-arrow-left"></i></div>
     <h3>Shift-Left Security</h3>
     <div class="approach-content">
       <p><strong>Integrated Throughout</strong></p>
       <ul>
-        <li>🔄 Security in every stage</li>
-        <li>🤝 Embedded security experts</li>
-        <li>🤖 Automated security testing</li>
-        <li>🚀 Security enables speed</li>
+        <li><i class="fas fa-sync-alt"></i> Security in every stage</li>
+        <li><i class="fas fa-handshake"></i> Embedded security experts</li>
+        <li><i class="fas fa-robot"></i> Automated security testing</li>
+        <li><i class="fas fa-rocket"></i> Security enables speed</li>
       </ul>
     </div>
   </div>
@@ -95,7 +95,7 @@ dora_color: '#F44336'
 <div class="learning-cycle">
   <div class="cycle-step experiment">
     <div class="step-number">1</div>
-    <div class="step-icon">🧪</div>
+    <div class="step-icon"><i class="fas fa-flask"></i></div>
     <h4>Experiment</h4>
     <p>Try new ideas & technologies</p>
   </div>
@@ -104,7 +104,7 @@ dora_color: '#F44336'
   
   <div class="cycle-step measure">
     <div class="step-number">2</div>
-    <div class="step-icon">📊</div>
+    <div class="step-icon"><i class="fas fa-chart-bar"></i></div>
     <h4>Measure</h4>
     <p>Collect data & feedback</p>
   </div>
@@ -113,7 +113,7 @@ dora_color: '#F44336'
   
   <div class="cycle-step learn">
     <div class="step-number">3</div>
-    <div class="step-icon">🎓</div>
+    <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
     <h4>Learn</h4>
     <p>Extract insights & lessons</p>
   </div>
@@ -122,7 +122,7 @@ dora_color: '#F44336'
   
   <div class="cycle-step improve">
     <div class="step-number">4</div>
-    <div class="step-icon">📈</div>
+    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
     <h4>Improve</h4>
     <p>Apply learnings & iterate</p>
   </div>
@@ -132,7 +132,7 @@ dora_color: '#F44336'
 
 <div class="transformation-challenge">
   <div class="challenge-question">
-    <div class="question-icon">💭</div>
+    <div class="question-icon"><i class="fas fa-comment-dots"></i></div>
     <h3>The Single Smallest Change Question</h3>
     <blockquote>
       "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
@@ -141,7 +141,7 @@ dora_color: '#F44336'
   
   <div class="challenge-examples">
     <div class="example-category">
-      <h4>🔧 Technical Examples</h4>
+      <h4><i class="fas fa-tools"></i> Technical Examples</h4>
       <div class="example-items">
         <div class="example-item">Add one automated test</div>
         <div class="example-item">Create deployment checklist</div>
@@ -150,7 +150,7 @@ dora_color: '#F44336'
     </div>
     
     <div class="example-category">
-      <h4>👥 Process Examples</h4>
+      <h4><i class="fas fa-users"></i> Process Examples</h4>
       <div class="example-items">
         <div class="example-item">Peer review before deploy</div>
         <div class="example-item">Document rollback steps</div>
@@ -159,7 +159,7 @@ dora_color: '#F44336'
     </div>
     
     <div class="example-category">
-      <h4>📢 Communication Examples</h4>
+      <h4><i class="fas fa-bullhorn"></i> Communication Examples</h4>
       <div class="example-items">
         <div class="example-item">Notify stakeholders earlier</div>
         <div class="example-item">Share deployment status</div>
@@ -173,7 +173,7 @@ dora_color: '#F44336'
 
 <div class="commitment-tracker">
   <div class="commitment-card individual">
-    <div class="commitment-icon">🎯</div>
+    <div class="commitment-icon"><i class="fas fa-bullseye"></i></div>
     <h4>Individual Commitment</h4>
     <p>One specific practice you'll implement:</p>
     <div class="commitment-input">
@@ -182,7 +182,7 @@ dora_color: '#F44336'
   </div>
   
   <div class="commitment-card team">
-    <div class="commitment-icon">👥</div>
+    <div class="commitment-icon"><i class="fas fa-users"></i></div>
     <h4>Team Experiment</h4>
     <p>Small experiment to try this week:</p>
     <div class="commitment-input">
@@ -191,7 +191,7 @@ dora_color: '#F44336'
   </div>
   
   <div class="commitment-card measurement">
-    <div class="commitment-icon">📊</div>
+    <div class="commitment-icon"><i class="fas fa-chart-bar"></i></div>
     <h4>Measurement Plan</h4>
     <p>How you'll track progress:</p>
     <div class="commitment-input">
@@ -200,36 +200,36 @@ dora_color: '#F44336'
   </div>
 </div>
 
-## 🎯 Book Club Journey Complete!
+## <i class="fas fa-bullseye"></i> Book Club Journey Complete!
 
 <div class="journey-completion">
   <div class="completion-badge">
-    <div class="badge-icon">🏆</div>
+    <div class="badge-icon"><i class="fas fa-trophy"></i></div>
     <h3>Congratulations!</h3>
     <p>You've completed the Accelerate DevOps transformation journey</p>
   </div>
   
   <div class="next-steps-grid">
     <div class="next-step">
-      <div class="step-icon">📚</div>
+      <div class="step-icon"><i class="fas fa-book"></i></div>
       <h4>Continue Learning</h4>
       <p>Explore advanced topics and related books</p>
     </div>
     
     <div class="next-step">
-      <div class="step-icon">🤝</div>
+      <div class="step-icon"><i class="fas fa-handshake"></i></div>
       <h4>Share Knowledge</h4>
       <p>Teach others what you've learned</p>
     </div>
     
     <div class="next-step">
-      <div class="step-icon">🔄</div>
+      <div class="step-icon"><i class="fas fa-sync-alt"></i></div>
       <h4>Keep Iterating</h4>
       <p>Apply continuous improvement to your practices</p>
     </div>
     
     <div class="next-step">
-      <div class="step-icon">📈</div>
+      <div class="step-icon"><i class="fas fa-chart-line"></i></div>
       <h4>Measure Impact</h4>
       <p>Track your DORA metrics improvement</p>
     </div>
@@ -237,21 +237,31 @@ dora_color: '#F44336'
 </div>
 
 
-## 🎧 Listen to the Meeting 4 Podcast
+## <i class="fas fa-headphones"></i> Listen to the Meeting 4 Podcast
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-## 📺 Watch the Meeting 4 Video
+## <i class="fas fa-video"></i> Watch the Meeting 4 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## 🚀 Next Steps
+---
+
+## Discussion Questions
+
+1. **Leadership Assessment:** What transformational leadership behaviors do you see in your organization?
+2. **Security Integration:** How early in your development process is security considered?
+3. **Diversity State:** What is the current state of diversity and inclusion in your teams?
+4. **Experimentation Culture:** How much time and space exists for trying new approaches?
+5. **Learning from Failures:** How does your organization currently handle and learn from failures?
+
+## <i class="fas fa-rocket"></i> Next Steps
 
 Congratulations! You've completed the structured book club journey. Continue your transformation with:
 

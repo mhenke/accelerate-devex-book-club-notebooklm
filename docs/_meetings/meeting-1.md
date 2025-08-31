@@ -12,28 +12,28 @@ dora_color: '#2196F3'
 
 <div class="dora-metrics-grid">
   <div class="metric-card lead-time">
-    <div class="metric-icon">📈</div>
+    <div class="metric-icon"><i class="fas fa-chart-line"></i></div>
     <h3>Delivery Lead Time</h3>
     <p class="metric-description">Time from code commit to production deployment</p>
     <div class="metric-goal">Goal: Hours/Days not Weeks/Months</div>
   </div>
   
   <div class="metric-card deploy-frequency">
-    <div class="metric-icon">🚀</div>
+    <div class="metric-icon"><i class="fas fa-rocket"></i></div>
     <h3>Deployment Frequency</h3>
     <p class="metric-description">How often code gets deployed to production</p>
     <div class="metric-goal">Goal: Multiple times per day</div>
   </div>
   
   <div class="metric-card restore-time">
-    <div class="metric-icon">⏱️</div>
+    <div class="metric-icon"><i class="fas fa-clock"></i></div>
     <h3>Time to Restore Service</h3>
     <p class="metric-description">How quickly service is restored after incidents</p>
     <div class="metric-goal">Goal: Under 1 hour</div>
   </div>
   
   <div class="metric-card change-fail">
-    <div class="metric-icon">❌</div>
+    <div class="metric-icon"><i class="fas fa-exclamation-triangle"></i></div>
     <h3>Change Fail Rate</h3>
     <p class="metric-description">Percentage of deployments causing failures</p>
     <div class="metric-goal">Goal: 0-15%</div>
@@ -44,14 +44,14 @@ dora_color: '#2196F3'
 
 <div class="myth-buster">
   <div class="myth-side">
-    <div class="myth-icon">❌</div>
+    <div class="myth-icon"><i class="fas fa-times-circle"></i></div>
     <h3>Old Thinking</h3>
     <div class="myth-content">
       <p><strong>Either Fast OR Stable</strong></p>
       <ul>
-        <li>🐌 Slow = Safe</li>
-        <li>🏃 Fast = Risky</li>
-        <li>⚖️ Must choose one</li>
+        <li><i class="fas fa-turtle"></i> Slow = Safe</li>
+        <li><i class="fas fa-running"></i> Fast = Risky</li>
+        <li><i class="fas fa-balance-scale"></i> Must choose one</li>
       </ul>
     </div>
   </div>
@@ -61,14 +61,14 @@ dora_color: '#2196F3'
   </div>
   
   <div class="reality-side">
-    <div class="reality-icon">✅</div>
+    <div class="reality-icon"><i class="fas fa-check-circle"></i></div>
     <h3>Research Reality</h3>
     <div class="reality-content">
       <p><strong>Both Fast AND Stable</strong></p>
       <ul>
-        <li>⚡ Speed enables stability</li>
-        <li>🛡️ Stability enables speed</li>
-        <li>📊 High performers excel at both</li>
+        <li><i class="fas fa-bolt"></i> Speed enables stability</li>
+        <li><i class="fas fa-shield-alt"></i> Stability enables speed</li>
+        <li><i class="fas fa-chart-bar"></i> High performers excel at both</li>
       </ul>
     </div>
   </div>
@@ -78,7 +78,7 @@ dora_color: '#2196F3'
 
 <div class="deployment-flow">
   <div class="flow-problem">
-    <div class="problem-icon">😰</div>
+    <div class="problem-icon"><i class="fas fa-frown"></i></div>
     <h4>Deployment Anxiety</h4>
     <ul>
       <li>Fear before releases</li>
@@ -90,7 +90,7 @@ dora_color: '#2196F3'
   <div class="flow-arrow">→</div>
   
   <div class="flow-solution">
-    <div class="solution-icon">🎯</div>
+    <div class="solution-icon"><i class="fas fa-bullseye"></i></div>
     <h4>DevOps Practices</h4>
     <ul>
       <li>Automated pipelines</li>
@@ -102,7 +102,7 @@ dora_color: '#2196F3'
   <div class="flow-arrow">→</div>
   
   <div class="flow-result">
-    <div class="result-icon">🎉</div>
+    <div class="result-icon"><i class="fas fa-trophy"></i></div>
     <h4>Confident Deployments</h4>
     <ul>
       <li>Predictable releases</li>
@@ -116,32 +116,32 @@ dora_color: '#2196F3'
 
 <div class="insights-grid">
   <div class="insight-card">
-    <div class="insight-icon">🔬</div>
+    <div class="insight-icon"><i class="fas fa-microscope"></i></div>
     <h4>Evidence-Based</h4>
     <p>Rigorous research backing all findings</p>
   </div>
   
   <div class="insight-card">
-    <div class="insight-icon">🏆</div>
+    <div class="insight-icon"><i class="fas fa-medal"></i></div>
     <h4>Competitive Advantage</h4>
     <p>Software delivery capability drives success</p>
   </div>
   
   <div class="insight-card">
-    <div class="insight-icon">🚫</div>
+    <div class="insight-icon"><i class="fas fa-user-check"></i></div>
     <h4>Process Not People</h4>
     <p>Anxiety signals inefficiency, not failure</p>
   </div>
 </div>
 
-## 🎧 Listen to the Meeting 1 Podcast
+## <i class="fas fa-headphones"></i> Listen to the Meeting 1 Podcast
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-## 📺 Watch the Meeting 1 Video
+## <i class="fas fa-video"></i> Watch the Meeting 1 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" type="video/mp4">
