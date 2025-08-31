@@ -456,6 +456,17 @@ h2 {
   text-decoration: underline;
 }
 
+.meeting-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.meeting-link:hover {
+  color: var(--accent-coral);
+  text-decoration: underline;
+}
+
 /* Resources section */
 .resources-section {
   display: grid;
