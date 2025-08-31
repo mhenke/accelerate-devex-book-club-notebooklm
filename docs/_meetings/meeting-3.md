@@ -22,7 +22,6 @@ dora_color: '#FF9800'
 	Your browser does not support the audio element.
 </audio>
 
-
 ## Lean Management Principles in Action
 
 <div class="lean-principles-board">
@@ -314,21 +313,6 @@ dora_color: '#FF9800'
 [ ] Observe and document burnout risk factors in your environment
 
 ## 🧭 Navigation
-
-<div class="meeting-navigation">
-  <div class="nav-item prev">
-    <a href="meeting-2.html">
-      <i class="fas fa-arrow-left"></i>
-      <span>Previous: Technical Excellence & Continuous Delivery</span>
-    </a>
-  </div>
-  <div class="nav-item next">
-    <a href="meeting-4.html">
-      <span>Next: Leadership & Transformation</span>
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
 
 <style>
 /* Meeting Navigation */
