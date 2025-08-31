@@ -707,18 +707,3 @@ layout: default
   font-weight: 600;
 }
 </style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Find Discussion Questions sections and add class to their ol elements
-  const headings = document.querySelectorAll('h2');
-  headings.forEach(heading => {
-    if (heading.textContent.includes('Discussion Questions')) {
-      const nextOl = heading.nextElementSibling;
-      if (nextOl && nextOl.tagName === 'OL') {
-        nextOl.classList.add('discussion-questions-list');
-      }
-    }
-  });
-});
-</script>
