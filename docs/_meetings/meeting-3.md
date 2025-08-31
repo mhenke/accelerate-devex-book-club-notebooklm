@@ -183,10 +183,6 @@ dora_color: '#FF9800'
 - [ ] Experiment with WIP limits on your current board
 - [ ] Identify one approval process for peer review
 
-## Supplementary Content
-
-Generate additional content using the [NotebookLM prompts](../../resources/meetings/)
-
 ---
 
 ## 🎧 Listen to the Meeting 3 Podcast
