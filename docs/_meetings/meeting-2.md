@@ -285,21 +285,119 @@ dora_color: '#9C27B0'
   </div>
 
   <div class="checkpoint-card tool-autonomy">
-    <div class="checkpoint-icon"><i class="fas fa-palette"></i></div>
-    <h4>Tool Freedom</h4>
-    <p>Rate your team's tool selection autonomy:</p>
+    <div class="checkpoint-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
+    <h4 id="tool-autonomy-title">Tool Freedom</h4>
+    <p id="tool-autonomy-desc">Rate your team's tool selection autonomy:</p>
     <div class="autonomy-slider">
       <div class="slider-labels">
-        <span>Restricted</span>
-        <span>Flexible</span>
-        <span>Full Freedom</span>
+        <span id="slider-label-restricted">Restricted</span>
+        <span id="slider-label-flexible">Flexible</span>
+        <span id="slider-label-freedom">Full Freedom</span>
       </div>
-      <div class="slider-track" id="tool-slider">
-        <div class="slider-thumb" id="tool-thumb"></div>
+      <div class="slider-track" id="tool-slider" role="slider" 
+           aria-labelledby="tool-autonomy-title" 
+           aria-describedby="tool-autonomy-desc slider-feedback"
+           aria-valuemin="0" 
+           aria-valuemax="100" 
+           aria-valuenow="50"
+           aria-valuetext="Flexible tool selection"
+           tabindex="0">
+        <div class="slider-thumb" id="tool-thumb" aria-hidden="true"></div>
       </div>
-      <div class="slider-feedback" id="slider-feedback">
+      <div class="slider-feedback" id="slider-feedback" aria-live="polite" aria-atomic="true">
         <p>Move the slider to assess your team's tool autonomy level</p>
       </div>
+    </div>
+  </div>
+  
+  <div class="checkpoint-card culture-assessment">
+    <div class="checkpoint-icon"><i class="fas fa-users"></i></div>
+    <h4 id="culture-assessment-title">Organizational Culture Assessment</h4>
+    <p id="culture-assessment-desc">Based on Westrum's model, which culture type best describes your organization?</p>
+    <fieldset class="assessment-buttons" role="radiogroup" aria-labelledby="culture-assessment-title" aria-describedby="culture-assessment-desc">
+      <legend class="sr-only">Organizational Culture Type</legend>
+      <label class="assessment-btn pathological">
+        <input type="radio" name="culture-type" value="pathological" aria-describedby="culture-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        Pathological (Power-Oriented)
+      </label>
+      <label class="assessment-btn bureaucratic">
+        <input type="radio" name="culture-type" value="bureaucratic" aria-describedby="culture-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        Bureaucratic (Rule-Oriented)
+      </label>
+      <label class="assessment-btn generative">
+        <input type="radio" name="culture-type" value="generative" aria-describedby="culture-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        Generative (Performance-Oriented)
+      </label>
+    </fieldset>
+    <div class="feedback-area" id="culture-feedback" aria-live="polite" aria-atomic="true">
+      <p>Select your organization's culture type to understand its impact on performance.</p>
+    </div>
+  </div>
+  
+  <div class="checkpoint-card practice-selection">
+    <div class="checkpoint-icon"><i class="fas fa-seedling"></i></div>
+    <h4 id="practice-selection-title">Cultural Practice Priority</h4>
+    <p id="practice-selection-desc">Which practice would have the biggest positive impact on your team culture?</p>
+    <fieldset class="practice-selector" role="radiogroup" aria-labelledby="practice-selection-title" aria-describedby="practice-selection-desc">
+      <legend class="sr-only">Priority Cultural Practice</legend>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="peer-review" aria-describedby="practice-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-handshake" aria-hidden="true"></i> Peer Review Over Approval Boards
+      </label>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="transparent-metrics" aria-describedby="practice-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-chart-bar" aria-hidden="true"></i> Transparent Metrics Sharing
+      </label>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="learning-failures" aria-describedby="practice-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i> Learning from Failures
+      </label>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="rapid-feedback" aria-describedby="practice-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-sync-alt" aria-hidden="true"></i> Rapid Feedback Loops
+      </label>
+    </fieldset>
+    <div class="feedback-area" id="practice-feedback" aria-live="polite" aria-atomic="true">
+      <p>Choose the cultural practice that would benefit your team most.</p>
+    </div>
+  </div>
+  
+  <div class="checkpoint-card cd-priority">
+    <div class="checkpoint-icon"><i class="fas fa-rocket"></i></div>
+    <h4 id="cd-priority-title">CD Practice Priority</h4>
+    <p id="cd-priority-desc">Which continuous delivery practice should your team focus on first?</p>
+    <fieldset class="cd-selector" role="radiogroup" aria-labelledby="cd-priority-title" aria-describedby="cd-priority-desc">
+      <legend class="sr-only">Priority CD Practice</legend>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="build-quality" aria-describedby="cd-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-tools" aria-hidden="true"></i> Build Quality In
+      </label>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="small-batches" aria-describedby="cd-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-box" aria-hidden="true"></i> Work in Small Batches
+      </label>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="automate" aria-describedby="cd-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-robot" aria-hidden="true"></i> Automate Repetitive Tasks
+      </label>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="trunk-based" aria-describedby="cd-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-code-branch" aria-hidden="true"></i> Trunk-Based Development
+      </label>
+    </fieldset>
+    <div class="feedback-area" id="cd-feedback" aria-live="polite" aria-atomic="true">
+      <p>Select the CD practice to focus on for specific implementation guidance.</p>
     </div>
   </div>
 </div>
@@ -1739,19 +1837,30 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateSlider(clientX) {
       const rect = slider.getBoundingClientRect();
       const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+      updateSliderValue(percentage);
+    }
+    
+    function updateSliderValue(percentage) {
       thumb.style.left = percentage + '%';
       
-      let level, color;
+      let level, color, valueText;
       if (percentage < 33) {
         level = 'restricted';
         color = '#f44336';
+        valueText = 'Restricted tool selection';
       } else if (percentage < 67) {
         level = 'flexible';
         color = '#ffc107';
+        valueText = 'Flexible tool selection';
       } else {
         level = 'freedom';
         color = '#4caf50';
+        valueText = 'Full tool freedom';
       }
+      
+      // Update ARIA attributes
+      slider.setAttribute('aria-valuenow', Math.round(percentage));
+      slider.setAttribute('aria-valuetext', valueText);
       
       thumb.style.borderColor = color;
       feedback.style.borderLeftColor = color;
@@ -1804,6 +1913,48 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     document.addEventListener('touchend', stopDrag);
+    
+    // Keyboard support for accessibility
+    slider.addEventListener('keydown', (e) => {
+      let currentValue = parseInt(slider.getAttribute('aria-valuenow'));
+      let newValue = currentValue;
+      
+      switch(e.key) {
+        case 'ArrowLeft':
+        case 'ArrowDown':
+          newValue = Math.max(0, currentValue - 5);
+          e.preventDefault();
+          break;
+        case 'ArrowRight':
+        case 'ArrowUp':
+          newValue = Math.min(100, currentValue + 5);
+          e.preventDefault();
+          break;
+        case 'Home':
+          newValue = 0;
+          e.preventDefault();
+          break;
+        case 'End':
+          newValue = 100;
+          e.preventDefault();
+          break;
+        case 'PageDown':
+          newValue = Math.max(0, currentValue - 10);
+          e.preventDefault();
+          break;
+        case 'PageUp':
+          newValue = Math.min(100, currentValue + 10);
+          e.preventDefault();
+          break;
+      }
+      
+      if (newValue !== currentValue) {
+        updateSliderValue(newValue);
+      }
+    });
+    
+    // Initialize slider with default value
+    updateSliderValue(50);
   }
 });
 </script>
