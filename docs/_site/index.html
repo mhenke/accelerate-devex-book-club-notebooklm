@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:description" content="A structured approach to implementing high-performing DevOps practices through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim" />
+    <meta property="og:url" content="http://0.0.0.0:4001/accelerate-devex-book-club-notebooklm/" />
+    <meta property="og:site_name" content="Accelerate DevEx Book Club" />
+    <meta property="og:image" content="http://0.0.0.0:4001/accelerate-devex-book-club-notebooklm/assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Home" />
+    <meta name="twitter:description" content="A structured approach to implementing high-performing DevOps practices through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim" />
+    <meta name="twitter:image" content="http://0.0.0.0:4001/accelerate-devex-book-club-notebooklm/assets/images/og-preview.png" />
+    
+    <meta name="description" content="A structured approach to implementing high-performing DevOps practices through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim" />
+    
+    <link
+      rel="stylesheet"
+      href="/accelerate-devex-book-club-notebooklm/assets/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="page-content">
+      <div class="hero-banner">
+  <div class="hero-content">
+    <h1 class="hero-headline">Building High Performing<br />Technology Organizations</h1>
+    <div class="site-title">
+      <h2>Accelerate DevEx Book Club</h2>
+    </div>
+    <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
+  </div>
+  <div class="hero-metrics">
+    <a href="/accelerate-devex-book-club-notebooklm/meetings" class="metric-icon">
+      <i class="fas fa-calendar-alt"></i>
+      <span>Meetings</span>
+    </a>
+    <a href="/accelerate-devex-book-club-notebooklm/resources" class="metric-icon">
+      <i class="fas fa-book-open"></i>
+      <span>Resources</span>
+    </a>
+    <a href="/accelerate-devex-book-club-notebooklm/prompts" class="metric-icon">
+      <i class="fas fa-microphone-alt"></i>
+      <span>AI Content</span>
+    </a>
+  </div>
+</div>
+
+<p>Welcome to our structured 2-month journey through “Accelerate” by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.</p>
+
+<div class="quick-start">
+<h2><i class="fas fa-book"></i> About the Book Club</h2>
+<p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
+<p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
+</div>
+
+<h2 class="section-accent"><i class="fas fa-bullseye"></i> What You'll Learn</h2>
+
+<div class="dora-metrics-visual">
+  <h3>The Four DORA Metrics</h3>
+  
+  <div class="metrics-categories">
+    <div class="metrics-category speed-category">
+      <div class="category-header">
+        <div class="category-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#2196F3" />
+          </svg>
+        </div>
+        <h4 class="category-title">Speed</h4>
+      </div>
+      <div class="metrics-group">
+        <div class="metric-card lead-time">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#2196F3" stroke="#ffffff" stroke-width="2" />
+              <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h5>Lead Time</h5>
+          <p>Time from code commit to production deployment</p>
+        </div>
+        <div class="metric-card deployment-frequency">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#4CAF50" stroke="#ffffff" stroke-width="2" />
+              <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M12 7l-3 3M12 7l3 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h5>Deployment Frequency</h5>
+          <p>How often code gets deployed to production</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-category stability-category">
+      <div class="category-header">
+        <div class="category-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FF9800" />
+          </svg>
+        </div>
+        <h4 class="category-title">Stability</h4>
+      </div>
+      <div class="metrics-group">
+        <div class="metric-card recovery-time">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#FF9800" stroke="#ffffff" stroke-width="2" />
+              <path d="M12 6.5l2.5 5 5.5 0.8-4 3.9 0.9 5.7-4.9-2.6-4.9 2.6 0.9-5.7-4-3.9 5.5-0.8z" fill="#ffffff" />
+            </svg>
+          </div>
+          <h5>Mean Time to Recovery</h5>
+          <p>How quickly service is restored after incidents</p>
+        </div>
+        <div class="metric-card fail-rate">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#F44336" stroke="#ffffff" stroke-width="2" />
+              <path d="M12 7v6M12 15h0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+              <circle cx="12" cy="15" r="1" fill="#ffffff" />
+            </svg>
+          </div>
+          <h5>Change Fail Rate</h5>
+          <p>Percentage of deployments causing failures</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<ul>
+  <li>How to <strong>debunk the speed vs. stability myth</strong></li>
+  <li><strong>Organizational culture types</strong> and how to drive transformation</li>
+  <li><strong>Continuous delivery practices</strong> that improve both performance and culture</li>
+  <li><strong>Architecture patterns</strong> that enable team autonomy</li>
+  <li><strong>Leadership practices</strong> that create psychological safety and innovation</li>
+</ul>
+
+<!-- DevOps Virtuous Cycle -->
+<section class="devops-cycle-section" aria-label="DevOps Virtuous Cycle">
+  <h2 class="devops-cycle__header">DevOps Virtuous Cycle</h2>
+  <div class="devops-cycle" aria-label="DevOps Virtuous Cycle">
+    <!-- Center Circle -->
+    <div class="cycle-center">
+      <div class="center-content">
+        <h3>Accelerate</h3>
+        <p>Delivery</p>
+      </div>
+    </div>
+    
+    <!-- Circular Flow Path -->
+    <div class="cycle-path">
+      <svg class="cycle-svg" viewBox="0 0 400 400">
+        <!-- Background circle -->
+        <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+        <!-- Flow arrows -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="var(--accent-coral)" />
+          </marker>
+        </defs>
+        <!-- Arrow paths -->
+        <path d="M 350 200 A 150 150 0 0 1 283 342" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8" />
+        <path d="M 283 342 A 150 150 0 0 1 117 342" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8" />
+        <path d="M 117 342 A 150 150 0 0 1 50 200" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8" />
+        <path d="M 50 200 A 150 150 0 0 1 117 58" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8" />
+        <path d="M 117 58 A 150 150 0 0 1 283 58" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8" />
+        <path d="M 283 58 A 150 150 0 0 1 350 200" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8" />
+      </svg>
+    </div>
+    
+    <!-- Practice Nodes -->
+    <div class="cycle-node" data-position="plan" style="--angle: 0deg;">
+      <div class="node-content">
+        <i class="fas fa-clipboard-list"></i>
+        <span>Plan</span>
+      </div>
+    </div>
+    
+    <div class="cycle-node" data-position="code" style="--angle: 60deg;">
+      <div class="node-content">
+        <i class="fas fa-code"></i>
+        <span>Code</span>
+      </div>
+    </div>
+    
+    <div class="cycle-node" data-position="build" style="--angle: 120deg;">
+      <div class="node-content">
+        <i class="fas fa-hammer"></i>
+        <span>Build</span>
+      </div>
+    </div>
+    
+    <div class="cycle-node" data-position="test" style="--angle: 180deg;">
+      <div class="node-content">
+        <i class="fas fa-flask"></i>
+        <span>Test</span>
+      </div>
+    </div>
+    
+    <div class="cycle-node" data-position="release" style="--angle: 240deg;">
+      <div class="node-content">
+        <i class="fas fa-rocket"></i>
+        <span>Release</span>
+      </div>
+    </div>
+    
+    <div class="cycle-node" data-position="monitor" style="--angle: 300deg;">
+      <div class="node-content">
+        <i class="fas fa-chart-line"></i>
+        <span>Monitor</span>
+      </div>
+    </div>
+  </div>
+  
+  <p class="devops-cycle__description">
+    Continuous delivery practices create a virtuous cycle where each phase feeds into the next, accelerating value delivery and organizational learning.
+  </p>
+</section>
+<!-- End DevOps Virtuous Cycle -->
+
+<h2 class="section-accent"><i class="fas fa-calendar-alt"></i> Meeting Schedule</h2>
+
+<div class="timeline-visual">
+  <div class="timeline-line"></div>
+  <div class="timeline-nodes">
+    <div class="timeline-node node-1">
+      <div class="node-circle">1</div>
+      <div class="node-content">
+        <h4>Foundation</h4>
+        <p>DORA Metrics</p>
+      </div>
+      <div class="meeting-title">Meeting 1: Foundation</div>
+    </div>
+    <div class="timeline-node node-2">
+      <div class="node-circle">2</div>
+      <div class="node-content">
+        <h4>Culture &amp; CD</h4>
+        <p>Continuous Delivery</p>
+      </div>
+      <div class="meeting-title">Meeting 2: Culture &amp; CD</div>
+    </div>
+    <div class="timeline-node node-3">
+      <div class="node-circle">3</div>
+      <div class="node-content">
+        <h4>Architecture</h4>
+        <p>Lean Management</p>
+      </div>
+      <div class="meeting-title">Meeting 3: Architecture</div>
+    </div>
+    <div class="timeline-node node-4">
+      <div class="node-circle">4</div>
+      <div class="node-content">
+        <h4>Leadership</h4>
+        <p>Transformation</p>
+      </div>
+      <div class="meeting-title">Meeting 4: Leadership</div>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-accent"><i class="fas fa-tools"></i> Resources</h2>
+
+<div class="resources-grid">
+  <div class="resource-card">
+    <h3><i class="fas fa-book"></i> Meeting Materials</h3>
+    <p>Detailed agendas, discussion questions, and action items for each session.</p>
+    <a href="/accelerate-devex-book-club-notebooklm/meetings" class="resource-link">View Meeting Guides →</a>
+  </div>
+
+  <div class="resource-card">
+    <h3><i class="fas fa-headphones"></i> Audio &amp; Video Content</h3>
+    <p>NotebookLM prompts for creating podcasts and videos to supplement your reading.</p>
+    <a href="/accelerate-devex-book-club-notebooklm/prompts" class="resource-link">Content Generation →</a>
+  </div>
+
+  <div class="resource-card">
+    <h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
+    <p>Activities, reflection questions, and experiments to try between sessions.</p>
+    <a href="/accelerate-devex-book-club-notebooklm/resources" class="resource-link">Additional Resources →</a>
+  </div>
+
+  <div class="resource-card book-required">
+    <div class="book-visual">
+      <div class="book-3d">
+        <div class="book-cover">
+          <h4>ACCELERATE</h4>
+          <p class="book-authors">Forsgren • Humble • Kim</p>
+          <div class="book-subtitle">The Science of Lean Software and DevOps</div>
+        </div>
+        <div class="book-spine"></div>
+      </div>
+      <h3>Required Reading</h3>
+      <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
+    </div>
+  </div>
+</div>
+
+<div class="success-metrics">
+<h2><i class="fas fa-rocket"></i> Success Metrics</h2>
+<p>By the end of this book club, participants will be able to:</p>
+<ul>
+<li>Articulate and explain the four DORA metrics</li>
+<li>Identify specific organizational bottlenecks and improvement opportunities</li>
+<li>Implement action items from sessions in their daily work</li>
+<li>Understand culture's impact on technical performance</li>
+<li>Have concrete next steps for organizational transformation</li>
+</ul>
+</div>
+
+<div class="key-question">
+<h2>The Key Question</h2>
+<p>Throughout our journey, we'll return to this central reflection:</p>
+<blockquote>
+"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
+</blockquote>
+</div>
+
+<!-- Culture Transformation Diagram -->
+<section class="culture-diagram" aria-label="Culture Transformation Diagram">
+  <h2 class="culture-diagram__header">Culture Transformation Journey</h2>
+  <div class="culture-diagram__container">
+    <div class="culture-box culture-box--red" aria-label="Pathological Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Exclamation Circle (Pathological) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="#F44336" stroke-width="2" /><text x="16" y="21" text-anchor="middle" font-size="18" fill="#F44336" font-family="Poppins, sans-serif">!</text></svg>
+      </span>
+      <h3>Pathological</h3>
+      <ul>
+        <li>Power-oriented</li>
+        <li>Low trust</li>
+        <li>Blame culture</li>
+      </ul>
+    </div>
+    <span class="culture-arrow" aria-hidden="true">
+      <!-- SVG: Arrow Right -->
+      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#FF9800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    </span>
+    <div class="culture-box culture-box--orange" aria-label="Bureaucratic Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Clipboard List (Bureaucratic) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="20" height="20" rx="4" stroke="#FF9800" stroke-width="2" /><text x="16" y="21" text-anchor="middle" font-size="16" fill="#FF9800" font-family="Poppins, sans-serif">≡</text></svg>
+      </span>
+      <h3>Bureaucratic</h3>
+      <ul>
+        <li>Rule-oriented</li>
+        <li>Moderate trust</li>
+        <li>Process focus</li>
+      </ul>
+    </div>
+    <span class="culture-arrow" aria-hidden="true">
+      <!-- SVG: Arrow Right -->
+      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    </span>
+    <div class="culture-box culture-box--green" aria-label="Generative Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Lightbulb (Generative) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <ellipse cx="16" cy="18" rx="10" ry="12" stroke="#4CAF50" stroke-width="2" />
+          <rect x="13" y="26" width="6" height="4" rx="2" fill="#4CAF50" />
+          <circle cx="16" cy="16" r="6" fill="none" stroke="#4CAF50" stroke-width="2" />
+          <path d="M16 12v8M12 16h8" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </span>
+      <h3>Generative</h3>
+      <ul>
+        <li>Performance-oriented</li>
+        <li>High trust</li>
+        <li>Innovation focus</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- End Culture Transformation Diagram -->
+
+<hr />
+
+<p style="text-align: center; margin-top: 2rem;">
+  <a href="/accelerate-devex-book-club-notebooklm/accelerate-devex-book-club-notebooklm/meetings/meeting-1/" class="btn"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
+</p>
+
+<p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
+  Ready to transform your organization into a high-performing technology team?
+</p>
+
+<div class="ai-attribution">
+  <div class="ai-attribution__icon">
+    <i class="fas fa-robot" aria-hidden="true"></i>
+  </div>
+  <div class="ai-attribution__content">
+    <h4 class="ai-attribution__title">AI-Generated Content</h4>
+    <p class="ai-attribution__text">This book club content was created with AI assistance from <strong>Claude</strong>, <strong>Claude Code</strong>, <strong>NotebookLM</strong>, <strong>Napkin AI</strong>, and <strong>GitHub Copilot</strong> to enhance your learning experience.</p>
+    <div class="ai-attribution__tools">
+      <div class="ai-tool">
+        <i class="fas fa-brain" aria-hidden="true"></i>
+        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-palette" aria-hidden="true"></i>
+        <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fab fa-github" aria-hidden="true"></i>
+        <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+  </body>
+</html>
