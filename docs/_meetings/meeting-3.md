@@ -8,19 +8,7 @@ duration: '1 Hour'
 dora_color: '#FF9800'
 ---
 
-## <i class="fas fa-video"></i> Watch the Meeting 3 Video
-
-<video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
-
-## <i class="fas fa-headphones"></i> Listen to the Meeting 3 Podcast
-
-<audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
+{% include media-controls.html meeting_number="3" %}
 
 ## Lean Management Principles in Action
 
@@ -1140,59 +1128,34 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize with default message
   updateSlider(slider.getBoundingClientRect().left + (slider.getBoundingClientRect().width * 0.5));
   
-  // Dependency feedback content from Accelerate research
-  const dependencyInfo = {
-    "shared-database": {
-      title: "Shared Database Dependency",
-      content: "Shared databases create tight coupling between teams and services. According to Accelerate research, this significantly impacts deployment frequency and lead time. Teams must coordinate changes, creating bottlenecks and reducing autonomy. Consider database-per-service patterns or careful schema evolution strategies."
-    },
-    "release-coordination": {
-      title: "Release Coordination Dependency", 
-      content: "When teams must coordinate releases, it indicates architectural coupling and reduces deployment frequency. The Accelerate book emphasizes that high-performing teams can deploy independently. Consider trunk-based development, feature flags, and backward-compatible API changes to eliminate coordination needs."
-    },
-    "independent-services": {
-      title: "Independent Services",
-      content: "Independent services enable loose coupling and autonomous team operation. This architectural pattern correlates with high software delivery performance in Accelerate research. Teams can test, deploy, and scale services independently, leading to faster lead times and higher deployment frequency."
-    }
-  };
-
-  const wipInfo = {
-    "task-lists": {
-      title: "Task Lists for WIP Tracking",
-      content: "Simple task lists provide basic visibility but lack flow optimization. While better than no tracking, they don't enforce WIP limits or highlight bottlenecks. Consider evolving to visual systems that limit work in progress and make flow problems visible."
-    },
-    "kanban": {
-      title: "Kanban Boards",
-      content: "Kanban boards excel at visualizing flow and limiting WIP. They align with lean principles from manufacturing that influenced DevOps practices. The visual nature helps identify bottlenecks and optimize flow. According to Accelerate research, teams that limit batch sizes and visualize work achieve better performance."
-    },
-    "sprint": {
-      title: "Sprint/Scrum Boards", 
-      content: "Sprint boards provide time-boxed visibility and can work well when integrated with continuous delivery practices. The key is maintaining small batch sizes within sprints. Accelerate research shows that working in small batches - regardless of framework - correlates with higher performance."
-    },
-    "none": {
-      title: "No WIP Tracking",
-      content: "Without WIP visualization, teams lose critical visibility into flow and bottlenecks. This makes it difficult to identify improvement opportunities and limits the ability to optimize delivery. Consider implementing basic Kanban visualization as a first step toward better flow management."
-    }
-  };
+  // Get shared data for this meeting
+  const meetingData = {{ site.data.meeting_data.meeting_3 | jsonify }};
   
-  // Add event listeners for dependency radio buttons
-  document.querySelectorAll('input[name="dependency-type"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('dependency-feedback');
-      const info = dependencyInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
+  // Set up shared assessment handlers
+  function setupRadioHandler(name, infoObject, feedbackId) {
+    const radios = document.querySelectorAll(`input[name="${name}"]`);
+    const feedbackArea = document.getElementById(feedbackId);
+    
+    radios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.checked) {
+          const info = infoObject[this.value];
+          if (info && feedbackArea) {
+            feedbackArea.innerHTML = `
+              <div class="feedback-content">
+                <h5>${info.title}</h5>
+                <p>${info.content}</p>
+              </div>
+            `;
+            feedbackArea.classList.add('active');
+          }
+        }
+      });
     });
-  });
+  }
 
-  // Add event listeners for WIP method radio buttons
-  document.querySelectorAll('input[name="wip-method"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('wip-feedback');
-      const info = wipInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
-    });
-  });
+  // Set up handlers for each assessment type
+  setupRadioHandler('dependency-type', meetingData.dependency_info, 'dependency-feedback');
+  setupRadioHandler('wip-method', meetingData.wip_info, 'wip-feedback');
 });
 </script>

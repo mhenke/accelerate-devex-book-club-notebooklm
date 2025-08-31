@@ -8,19 +8,7 @@ duration: '1 Hour'
 dora_color: '#F44336'
 ---
 
-## <i class="fas fa-video"></i> Watch the Meeting 4 Video
-
-<video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
-
-## <i class="fas fa-headphones"></i> Listen to the Meeting 4 Podcast
-
-<audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
+{% include media-controls.html meeting_number="4" %}
 
 ## Transformational Leadership in Action
 
@@ -1056,54 +1044,33 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Feedback content from Accelerate research and DevOps best practices
-  const changeInfo = {
-    "automated-test": {
-      title: "Add One Automated Test",
-      content: "Start with the smallest possible test to begin building confidence in deployments. According to Accelerate research, test automation is one of the key technical practices that drive software delivery performance. Even a single test reduces manual verification and begins establishing the safety net needed for frequent deployments."
-    },
-    "deployment-checklist": {
-      title: "Create Deployment Checklist", 
-      content: "A simple checklist ensures consistency and reduces errors during deployments. This process improvement helps establish standard work, a key lean principle. It also reduces cognitive load on team members and makes deployments more predictable, supporting higher deployment frequency over time."
-    },
-    "monitoring-alert": {
-      title: "Set Up Monitoring Alert",
-      content: "Monitoring and observability are essential for reducing Mean Time to Restore (MTTR), one of the four DORA metrics. A single alert for a critical system component provides early warning of issues and enables faster response. This supports both stability and the confidence needed for more frequent deployments."
-    },
-    "peer-review": {
-      title: "Peer Review Before Deploy",
-      content: "Peer review increases deployment confidence through shared knowledge and catches potential issues before production. This practice balances speed with safety, supporting both high deployment frequency and low change failure rate. It also builds team capability and reduces bus factor risks."
-    },
-    "rollback-steps": {
-      title: "Document Rollback Steps",
-      content: "Clear rollback procedures reduce Mean Time to Restore when issues occur. This preparation enables teams to deploy with confidence, knowing they can quickly revert if needed. Documentation also enables any team member to perform rollbacks, reducing dependency on specific individuals."
-    },
-    "deployment-window": {
-      title: "Schedule Deployment Window",
-      content: "While not the end goal, scheduled windows can be a stepping stone toward continuous deployment. They provide predictability and allow for focused attention during deployments. Over time, as confidence grows through other improvements, these windows can be shortened and eventually eliminated."
-    },
-    "notify-stakeholders": {
-      title: "Notify Stakeholders Earlier",
-      content: "Communication reduces surprises and builds trust with stakeholders. Early notification allows stakeholders to prepare for changes and provide feedback before deployment. This practice supports the cultural aspects of DevOps transformation and helps build organization-wide support for frequent deployments."
-    },
-    "share-status": {
-      title: "Share Deployment Status",
-      content: "Transparent communication about deployment status builds trust and enables rapid response if issues arise. Status sharing also celebrates successful deployments and builds momentum for continuous improvement. It supports the generative culture characteristics identified in Westrum's research."
-    },
-    "deployment-dashboard": {
-      title: "Create Deployment Dashboard",
-      content: "Visual dashboards make deployment information accessible to all stakeholders and support data-driven decision making. Dashboards can track DORA metrics over time and highlight improvement trends. This visibility supports both technical and cultural aspects of DevOps transformation."
-    }
-  };
-
-  // Add event listeners for smallest change radio buttons
-  document.querySelectorAll('input[name="smallest-change"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('change-feedback');
-      const info = changeInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
+  // Get shared data for this meeting
+  const meetingData = {{ site.data.meeting_data.meeting_4 | jsonify }};
+  
+  // Set up shared assessment handlers
+  function setupRadioHandler(name, infoObject, feedbackId) {
+    const radios = document.querySelectorAll(`input[name="${name}"]`);
+    const feedbackArea = document.getElementById(feedbackId);
+    
+    radios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.checked) {
+          const info = infoObject[this.value];
+          if (info && feedbackArea) {
+            feedbackArea.innerHTML = `
+              <div class="feedback-content">
+                <h5>${info.title}</h5>
+                <p>${info.content}</p>
+              </div>
+            `;
+            feedbackArea.classList.add('active');
+          }
+        }
+      });
     });
-  });
+  }
+
+  // Set up handlers for each assessment type
+  setupRadioHandler('smallest-change', meetingData.change_info, 'change-feedback');
 });
 </script>

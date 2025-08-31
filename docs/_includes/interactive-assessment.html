@@ -1,0 +1,67 @@
+<!-- Interactive assessment script for meeting pages -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get data for this meeting from Jekyll data
+  const meetingData = {{ site.data.meeting_data[include.meeting_key] | jsonify }};
+  
+  // Generic function to handle radio button change events
+  function setupRadioHandler(name, infoObject, feedbackId) {
+    const radios = document.querySelectorAll(`input[name="${name}"]`);
+    const feedbackArea = document.getElementById(feedbackId);
+    
+    radios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.checked) {
+          const info = infoObject[this.value];
+          if (info && feedbackArea) {
+            feedbackArea.innerHTML = `
+              <div class="feedback-content">
+                <h5>${info.title}</h5>
+                <p>${info.content}</p>
+              </div>
+            `;
+            feedbackArea.classList.add('active');
+          }
+        }
+      });
+    });
+  }
+
+  // Set up handlers for each assessment type based on available data
+  if (meetingData.dora_info) {
+    setupRadioHandler('dora-performance', meetingData.dora_info, 'dora-feedback');
+  }
+  
+  if (meetingData.confidence_info) {
+    setupRadioHandler('deployment-confidence', meetingData.confidence_info, 'confidence-feedback');
+  }
+  
+  if (meetingData.priority_info) {
+    setupRadioHandler('improvement-focus', meetingData.priority_info, 'priority-feedback');
+  }
+  
+  if (meetingData.culture_info) {
+    setupRadioHandler('culture-type', meetingData.culture_info, 'culture-feedback');
+  }
+  
+  if (meetingData.practice_info) {
+    setupRadioHandler('cultural-practice', meetingData.practice_info, 'practice-feedback');
+  }
+  
+  if (meetingData.cd_info) {
+    setupRadioHandler('cd-priority', meetingData.cd_info, 'cd-feedback');
+  }
+  
+  if (meetingData.dependency_info) {
+    setupRadioHandler('dependency-type', meetingData.dependency_info, 'dependency-feedback');
+  }
+  
+  if (meetingData.wip_info) {
+    setupRadioHandler('wip-method', meetingData.wip_info, 'wip-feedback');
+  }
+  
+  if (meetingData.change_info) {
+    setupRadioHandler('smallest-change', meetingData.change_info, 'change-feedback');
+  }
+});
+</script>

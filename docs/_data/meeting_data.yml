@@ -1,0 +1,135 @@
+# Shared data structures for meeting content
+# JavaScript data objects that were duplicated across meeting files
+
+meeting_1:
+  dora_info:
+    high:
+      title: "High-Performing Team"
+      content: "Your team demonstrates elite software delivery performance! High-performing organizations deploy multiple times per day, have lead times under one hour, restore service in under an hour, and have change failure rates under 15%. Focus on maintaining these practices and sharing knowledge with other teams."
+    medium:
+      title: "Medium-Performing Team"
+      content: "Your team shows solid DevOps practices with room for improvement. Medium performers typically deploy weekly to monthly, have lead times of days to weeks, and change failure rates of 16-45%. Focus on reducing batch sizes, improving test automation, and increasing deployment frequency."
+    low:
+      title: "Low-Performing Team"
+      content: "Your team has significant opportunities to improve software delivery performance. Low performers typically deploy monthly to annually, have lead times of months to years, and high change failure rates. Start with small improvements: version control, basic automation, and regular deployment practice."
+
+  confidence_info:
+    anxious:
+      title: "Deployment Anxiety is a Warning Sign"
+      content: "According to Accelerate research, deployment pain is not inevitable—it's a signal of poor practices. Anxiety indicates manual processes, large batch sizes, and insufficient testing. Start with small improvements: add one test, create a deployment checklist, or implement basic monitoring."
+    neutral:
+      title: "Manageable Deployments with Improvement Potential"
+      content: "Your team manages deployments but still experiences tension. This suggests some good practices are in place but opportunities remain. Focus on increasing deployment frequency, reducing batch sizes, and building more comprehensive automated testing to move toward confident deployments."
+    confident:
+      title: "Confident Deployment Culture"
+      content: "Excellent! Confident, routine deployments indicate strong DevOps practices. Your team likely has good test automation, deployment automation, and monitoring. Continue refining these practices and help other teams achieve similar confidence through knowledge sharing."
+
+  priority_info:
+    lead-time:
+      title: "Improve Lead Time"
+      content: "Lead time measures the time from code commit to production. To improve: reduce batch sizes, implement trunk-based development, automate testing and deployment pipelines, and eliminate manual approval processes. Small, frequent changes reduce lead time significantly."
+    deploy-frequency:
+      title: "Increase Deployment Frequency"
+      content: "Deployment frequency indicates your ability to deliver value quickly. To improve: work in smaller batches, implement feature flags, improve automated testing, and reduce dependencies between teams. Start by deploying weekly, then progress to daily deployments."
+    restore-time:
+      title: "Reduce Mean Time to Restore"
+      content: "Faster recovery from failures is crucial for stability. To improve: implement comprehensive monitoring and alerting, practice incident response procedures, improve rollback capabilities, and maintain good documentation. Preparation enables rapid response when issues occur."
+    change-fail:
+      title: "Lower Change Failure Rate"
+      content: "High change failure rates indicate quality issues in your delivery process. To improve: implement comprehensive automated testing, use test-driven development, improve code review processes, and implement continuous integration. Quality must be built in, not inspected later."
+
+meeting_2:
+  culture_info:
+    pathological:
+      title: "Pathological (Power-Oriented) Culture"
+      content: "Characterized by large amounts of fear and threat. Information is hoarded and withheld for political reasons, or distorted to make individuals look better. These organizations show low cooperation across groups and a culture of blame. According to Westrum's research, pathological cultures correlate with poor performance and higher failure rates."
+    bureaucratic:
+      title: "Bureaucratic (Rule-Oriented) Culture"
+      content: "Rule-oriented culture where rules and processes are valued over mission accomplishment. While more stable than pathological cultures, bureaucratic cultures still show modest cooperation and limited information sharing. These cultures often have extensive approval processes that slow down delivery."
+    generative:
+      title: "Generative (Performance-Oriented) Culture"
+      content: "Focuses fully on the mission with high cooperation and trust. Features good information flow, collaboration between teams, and conscious inquiry. According to Accelerate research, generative cultures predict both software delivery performance and organizational performance, leading to higher market share, productivity, and profitability."
+
+  practice_info:
+    peer-review:
+      title: "Peer Review Over Approval Boards"
+      content: "Lightweight approval processes with team ownership enable faster decisions and shared responsibility. This practice reduces bureaucratic overhead while maintaining quality, fostering trust and collaboration. Teams become more autonomous and can respond quickly to change."
+    transparent-metrics:
+      title: "Transparent Metrics Sharing"
+      content: "Open sharing of performance data creates accountability and drives improvement. When teams can see how their work impacts key metrics like deployment frequency and lead time, it enables data-driven decisions and continuous improvement. Transparency builds trust and alignment."
+    learning-failures:
+      title: "Learning from Failures"
+      content: "Treating failures as learning opportunities rather than blame events is crucial for psychological safety. When teams conduct blameless post-mortems and share lessons learned, it prevents future issues and builds organizational resilience. This practice is essential for high-performing cultures."
+    rapid-feedback:
+      title: "Rapid Feedback Loops"
+      content: "Short feedback cycles from customers, monitoring, and automated testing enable quick course correction. Fast feedback reduces risk, improves quality, and accelerates learning. This practice supports continuous delivery and helps teams deliver value more effectively."
+
+  cd_info:
+    build-quality:
+      title: "Build Quality In"
+      content: "Quality should be built into the process from the start, not inspected later. This requires reliable test automation at all levels (unit, API, UI), continuous testing throughout development, and automated tests running against every commit. This practice reduces rework and increases confidence in deployments."
+    small-batches:
+      title: "Work in Small Batches"
+      content: "Slice work into small pieces completed in a week or less. This applies at feature and product levels to achieve short lead times and faster feedback loops. Working in small batches enables rapid customer feedback and data-driven hypothesis testing, reducing risk and improving outcomes."
+    automate:
+      title: "Automate Repetitive Tasks"
+      content: "Computers perform repetitive tasks; people solve problems. Automate regression testing and software deployments to reduce the cost of pushing changes. Automation frees teams to focus on solving customer problems and reduces human error in repetitive processes."
+    trunk-based:
+      title: "Trunk-Based Development"
+      content: "Developers merge small, frequent updates to a main branch with short-lived feature branches. This practice streamlines merging and integration, enabling continuous integration and delivery. High-performing teams keep branches short-lived and integrate regularly with automated testing."
+
+meeting_3:
+  dependency_info:
+    shared-database:
+      title: "Shared Database Dependency"
+      content: "Shared databases create tight coupling between teams and services. According to Accelerate research, this significantly impacts deployment frequency and lead time. Teams must coordinate changes, creating bottlenecks and reducing autonomy. Consider database-per-service patterns or careful schema evolution strategies."
+    release-coordination:
+      title: "Release Coordination Dependency"
+      content: "When teams must coordinate releases, it indicates architectural coupling and reduces deployment frequency. The Accelerate book emphasizes that high-performing teams can deploy independently. Consider trunk-based development, feature flags, and backward-compatible API changes to eliminate coordination needs."
+    independent-services:
+      title: "Independent Services"
+      content: "Independent services enable loose coupling and autonomous team operation. This architectural pattern correlates with high software delivery performance in Accelerate research. Teams can test, deploy, and scale services independently, leading to faster lead times and higher deployment frequency."
+
+  wip_info:
+    task-lists:
+      title: "Task Lists for WIP Tracking"
+      content: "Simple task lists provide basic visibility but lack flow optimization. While better than no tracking, they don't enforce WIP limits or highlight bottlenecks. Consider evolving to visual systems that limit work in progress and make flow problems visible."
+    kanban:
+      title: "Kanban Boards"
+      content: "Kanban boards excel at visualizing flow and limiting WIP. They align with lean principles from manufacturing that influenced DevOps practices. The visual nature helps identify bottlenecks and optimize flow. According to Accelerate research, teams that limit batch sizes and visualize work achieve better performance."
+    sprint:
+      title: "Sprint/Scrum Boards"
+      content: "Sprint boards provide time-boxed visibility and can work well when integrated with continuous delivery practices. The key is maintaining small batch sizes within sprints. Accelerate research shows that working in small batches - regardless of framework - correlates with higher performance."
+    none:
+      title: "No WIP Tracking"
+      content: "Without WIP visualization, teams lose critical visibility into flow and bottlenecks. This makes it difficult to identify improvement opportunities and limits the ability to optimize delivery. Consider implementing basic Kanban visualization as a first step toward better flow management."
+
+meeting_4:
+  change_info:
+    automated-test:
+      title: "Add One Automated Test"
+      content: "Start with the smallest possible test to begin building confidence in deployments. According to Accelerate research, test automation is one of the key technical practices that drive software delivery performance. Even a single test reduces manual verification and begins establishing the safety net needed for frequent deployments."
+    deployment-checklist:
+      title: "Create Deployment Checklist"
+      content: "A simple checklist ensures consistency and reduces errors during deployments. This process improvement helps establish standard work, a key lean principle. It also reduces cognitive load on team members and makes deployments more predictable, supporting higher deployment frequency over time."
+    monitoring-alert:
+      title: "Set Up Monitoring Alert"
+      content: "Monitoring and observability are essential for reducing Mean Time to Restore (MTTR), one of the four DORA metrics. A single alert for a critical system component provides early warning of issues and enables faster response. This supports both stability and the confidence needed for more frequent deployments."
+    peer-review:
+      title: "Peer Review Before Deploy"
+      content: "Peer review increases deployment confidence through shared knowledge and catches potential issues before production. This practice balances speed with safety, supporting both high deployment frequency and low change failure rate. It also builds team capability and reduces bus factor risks."
+    rollback-steps:
+      title: "Document Rollback Steps"
+      content: "Clear rollback procedures reduce Mean Time to Restore when issues occur. This preparation enables teams to deploy with confidence, knowing they can quickly revert if needed. Documentation also enables any team member to perform rollbacks, reducing dependency on specific individuals."
+    deployment-window:
+      title: "Schedule Deployment Window"
+      content: "While not the end goal, scheduled windows can be a stepping stone toward continuous deployment. They provide predictability and allow for focused attention during deployments. Over time, as confidence grows through other improvements, these windows can be shortened and eventually eliminated."
+    notify-stakeholders:
+      title: "Notify Stakeholders Earlier"
+      content: "Communication reduces surprises and builds trust with stakeholders. Early notification allows stakeholders to prepare for changes and provide feedback before deployment. This practice supports the cultural aspects of DevOps transformation and helps build organization-wide support for frequent deployments."
+    share-status:
+      title: "Share Deployment Status"
+      content: "Transparent communication about deployment status builds trust and enables rapid response if issues arise. Status sharing also celebrates successful deployments and builds momentum for continuous improvement. It supports the generative culture characteristics identified in Westrum's research."
+    deployment-dashboard:
+      title: "Create Deployment Dashboard"
+      content: "Visual dashboards make deployment information accessible to all stakeholders and support data-driven decision making. Dashboards can track DORA metrics over time and highlight improvement trends. This visibility supports both technical and cultural aspects of DevOps transformation."
