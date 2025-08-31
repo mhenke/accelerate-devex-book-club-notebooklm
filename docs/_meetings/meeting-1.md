@@ -276,8 +276,6 @@ dora_color: '#2196F3'
 [ ] Identify your biggest deployment pain point
 [ ] Observe examples of pathological, bureaucratic, or generative culture behaviors
 
-## 🧭 Navigation
-
 <style>
 /* Meeting Navigation */
 .meeting-navigation {

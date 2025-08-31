@@ -365,8 +365,6 @@ Congratulations! You've completed the structured book club journey. Continue you
   </div>
 </div>
 
-## 🧭 Navigation
-
 <style>
 /* Meeting Navigation */
 .meeting-navigation {
