@@ -412,8 +412,9 @@ layout: default
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .nav-link {
@@ -500,9 +501,11 @@ layout: default
 .meeting-progress {
   text-align: center;
   width: 100%;
-  margin-top: 2rem;
-  padding: 0;
+  margin-top: 2.5rem;
+  padding: 1rem 0 0 0;
   clear: both;
+  border-top: 1px solid var(--border-light);
+  display: block;
 }
 
 .progress-bar {
@@ -589,7 +592,8 @@ layout: default
   }
   
   .meeting-progress {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
   }
   
   .progress-bar {
