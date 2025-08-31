@@ -152,9 +152,24 @@ dora_color: '#FF9800'
     <h4>Dependency Mapping</h4>
     <p>Identify team dependencies that slow you down:</p>
     <div class="dependency-examples">
-      <div class="dependency-item"><i class="fas fa-circle" style="color: #f44336;"></i> Shared database</div>
-      <div class="dependency-item"><i class="fas fa-circle" style="color: #ffc107;"></i> Release coordination</div>
-      <div class="dependency-item"><i class="fas fa-circle" style="color: #4caf50;"></i> Independent services</div>
+      <label class="dependency-item high-impact">
+        <input type="checkbox" name="dependency-type" value="shared-database">
+        <span class="dependency-checkmark"></span>
+        <i class="fas fa-circle" style="color: #f44336;"></i> Shared database
+      </label>
+      <label class="dependency-item medium-impact">
+        <input type="checkbox" name="dependency-type" value="release-coordination">
+        <span class="dependency-checkmark"></span>
+        <i class="fas fa-circle" style="color: #ffc107;"></i> Release coordination
+      </label>
+      <label class="dependency-item low-impact">
+        <input type="checkbox" name="dependency-type" value="independent-services">
+        <span class="dependency-checkmark"></span>
+        <i class="fas fa-circle" style="color: #4caf50;"></i> Independent services
+      </label>
+    </div>
+    <div class="feedback-area" id="dependency-feedback">
+      <p>Select dependencies to understand their impact on software delivery performance.</p>
     </div>
   </div>
   
@@ -202,6 +217,9 @@ dora_color: '#FF9800'
         <span class="checkmark"></span>
         <i class="fas fa-question"></i> No tracking
       </label>
+    </div>
+    <div class="feedback-area" id="wip-feedback">
+      <p>Select your WIP tracking methods to learn about their effectiveness in lean software delivery.</p>
     </div>
   </div>
 </div>
@@ -474,26 +492,122 @@ dora_color: '#FF9800'
 }
 
 .dependency-item {
+  position: relative;
   padding: 0.75rem;
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.dependency-item:nth-child(1) {
+.dependency-item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dependency-item .dependency-checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.dependency-item.high-impact {
   background: linear-gradient(135deg, #ffebee, #ffcdd2);
   border-left: 4px solid #f44336;
 }
 
-.dependency-item:nth-child(2) {
+.dependency-item.high-impact .dependency-checkmark {
+  border-color: #f44336;
+}
+
+.dependency-item.high-impact input:checked ~ .dependency-checkmark {
+  background: #f44336;
+}
+
+.dependency-item.high-impact input:checked ~ .dependency-checkmark:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.dependency-item.high-impact:has(input:checked) {
+  background: linear-gradient(135deg, #ffcdd2, #ffabab);
+  border-left-color: #d32f2f;
+}
+
+.dependency-item.medium-impact {
   background: linear-gradient(135deg, #fff8e1, #ffecb3);
   border-left: 4px solid #ffc107;
 }
 
-.dependency-item:nth-child(3) {
+.dependency-item.medium-impact .dependency-checkmark {
+  border-color: #ffc107;
+}
+
+.dependency-item.medium-impact input:checked ~ .dependency-checkmark {
+  background: #ffc107;
+}
+
+.dependency-item.medium-impact input:checked ~ .dependency-checkmark:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.dependency-item.medium-impact:has(input:checked) {
+  background: linear-gradient(135deg, #ffecb3, #ffe082);
+  border-left-color: #f57c00;
+}
+
+.dependency-item.low-impact {
   background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
   border-left: 4px solid #4caf50;
+}
+
+.dependency-item.low-impact .dependency-checkmark {
+  border-color: #4caf50;
+}
+
+.dependency-item.low-impact input:checked ~ .dependency-checkmark {
+  background: #4caf50;
+}
+
+.dependency-item.low-impact input:checked ~ .dependency-checkmark:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.dependency-item.low-impact:has(input:checked) {
+  background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+  border-left-color: #388e3c;
 }
 
 /* Tool Autonomy Slider */
@@ -769,5 +883,80 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize with default message
   updateSlider(slider.getBoundingClientRect().left + (slider.getBoundingClientRect().width * 0.5));
+  
+  // Dependency feedback content from Accelerate research
+  const dependencyInfo = {
+    "shared-database": {
+      title: "Shared Database Dependency",
+      content: "Shared databases create tight coupling between teams and services. According to Accelerate research, this significantly impacts deployment frequency and lead time. Teams must coordinate changes, creating bottlenecks and reducing autonomy. Consider database-per-service patterns or careful schema evolution strategies."
+    },
+    "release-coordination": {
+      title: "Release Coordination Dependency", 
+      content: "When teams must coordinate releases, it indicates architectural coupling and reduces deployment frequency. The Accelerate book emphasizes that high-performing teams can deploy independently. Consider trunk-based development, feature flags, and backward-compatible API changes to eliminate coordination needs."
+    },
+    "independent-services": {
+      title: "Independent Services",
+      content: "Independent services enable loose coupling and autonomous team operation. This architectural pattern correlates with high software delivery performance in Accelerate research. Teams can test, deploy, and scale services independently, leading to faster lead times and higher deployment frequency."
+    }
+  };
+
+  const wipInfo = {
+    "task-lists": {
+      title: "Task Lists for WIP Tracking",
+      content: "Simple task lists provide basic visibility but lack flow optimization. While better than no tracking, they don't enforce WIP limits or highlight bottlenecks. Consider evolving to visual systems that limit work in progress and make flow problems visible."
+    },
+    "kanban": {
+      title: "Kanban Boards",
+      content: "Kanban boards excel at visualizing flow and limiting WIP. They align with lean principles from manufacturing that influenced DevOps practices. The visual nature helps identify bottlenecks and optimize flow. According to Accelerate research, teams that limit batch sizes and visualize work achieve better performance."
+    },
+    "sprint": {
+      title: "Sprint/Scrum Boards", 
+      content: "Sprint boards provide time-boxed visibility and can work well when integrated with continuous delivery practices. The key is maintaining small batch sizes within sprints. Accelerate research shows that working in small batches - regardless of framework - correlates with higher performance."
+    },
+    "none": {
+      title: "No WIP Tracking",
+      content: "Without WIP visualization, teams lose critical visibility into flow and bottlenecks. This makes it difficult to identify improvement opportunities and limits the ability to optimize delivery. Consider implementing basic Kanban visualization as a first step toward better flow management."
+    }
+  };
+  
+  // Add event listeners for dependency checkboxes
+  document.querySelectorAll('input[name="dependency-type"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      const feedback = document.getElementById('dependency-feedback');
+      const info = dependencyInfo[this.value];
+      
+      if (this.checked) {
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        feedback.classList.add('active');
+      } else {
+        // Check if any dependencies are still selected
+        const anyChecked = document.querySelector('input[name="dependency-type"]:checked');
+        if (!anyChecked) {
+          feedback.innerHTML = '<p>Select dependencies to understand their impact on software delivery performance.</p>';
+          feedback.classList.remove('active');
+        }
+      }
+    });
+  });
+
+  // Add event listeners for WIP method checkboxes
+  document.querySelectorAll('input[name="wip-method"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      const feedback = document.getElementById('wip-feedback');
+      const info = wipInfo[this.value];
+      
+      if (this.checked) {
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        feedback.classList.add('active');
+      } else {
+        // Check if any WIP methods are still selected
+        const anyChecked = document.querySelector('input[name="wip-method"]:checked');
+        if (!anyChecked) {
+          feedback.innerHTML = '<p>Select your WIP tracking methods to learn about their effectiveness in lean software delivery.</p>';
+          feedback.classList.remove('active');
+        }
+      }
+    });
+  });
 });
 </script>
