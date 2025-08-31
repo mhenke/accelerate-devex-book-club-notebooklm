@@ -257,9 +257,11 @@ dora_color: '#2196F3'
 
 ## Action Items for Next Meeting
 
-[ ] Begin informal tracking of one DORA metric for your team
-[ ] Identify your biggest deployment pain point
-[ ] Observe examples of pathological, bureaucratic, or generative culture behaviors
+<ul class="action-items">
+<li>[ ] Begin informal tracking of one DORA metric for your team</li>
+<li>[ ] Identify your biggest deployment pain point</li>
+<li>[ ] Observe examples of pathological, bureaucratic, or generative culture behaviors</li>
+</ul>
 
 <style>
 /* Meeting Navigation */
@@ -1144,6 +1146,29 @@ h3 i, h4 i {
   .stat-item {
     font-size: 0.8rem;
   }
+}
+
+/* Action Items Styling */
+.action-items {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.action-items li {
+  display: block;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-coral);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.action-items li:hover {
+  background: linear-gradient(135deg, #e9ecef, #dee2e6);
+  transform: translateX(4px);
 }
 </style>
 
