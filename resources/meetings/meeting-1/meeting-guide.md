@@ -66,11 +66,11 @@ Percentage of deployments causing failures in production
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 1 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 1 Podcast Prompt](podcast-prompt.md)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts/video-prompt.md)
+Create a visual overview with the [Meeting 1 Video Prompt](video-prompt.md)
 
 ## Next Session
 
