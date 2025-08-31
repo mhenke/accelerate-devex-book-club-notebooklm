@@ -240,9 +240,6 @@ dora_color: '#F44336'
   </div>
 </div>
 
-## Supplementary Content
-
-Generate additional content using the [NotebookLM prompts](../../resources/meetings/)
 
 ## 🎧 Listen to the Meeting 4 Podcast
 

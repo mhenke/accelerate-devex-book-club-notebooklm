@@ -151,10 +151,6 @@ dora_color: '#2196F3'
 - [ ] Identify your biggest deployment pain point
 - [ ] Find one example of speed vs stability thinking
 
-## Supplementary Content
-
-Generate additional content using the [NotebookLM prompts](../../resources/meetings/)
-
 ---
 
 ## 🎧 Listen to the Meeting 1 Podcast
