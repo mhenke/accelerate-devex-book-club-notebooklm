@@ -173,14 +173,6 @@ dora_color: '#FF9800'
   </div>
 </div>
 
-## Action Items for Next Meeting
-
-- [ ] Map one architectural dependency that slows your team
-- [ ] Experiment with WIP limits on your current board
-- [ ] Identify one approval process for peer review
-
----
-
 ## 🎧 Listen to the Meeting 3 Podcast
 
 <audio controls>
@@ -194,6 +186,14 @@ dora_color: '#FF9800'
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
+
+---
+
+## Action Items for Next Meeting
+
+- [ ] Map one architectural dependency that slows your team
+- [ ] Experiment with WIP limits on your current board
+- [ ] Identify one approval process for peer review
 
 <style>
 /* Architecture Comparison */
