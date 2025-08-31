@@ -330,6 +330,33 @@ layout: default
   margin-top: 4rem;
 }
 
+/* Media instruction styling */
+.meeting-content h2:contains("Listen to") + p,
+.meeting-content h2:contains("Watch the") + p {
+  background: linear-gradient(135deg, #f8f4ff, #f0e8ff);
+  border: 1px solid #e1bee7;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0 2rem 0;
+  font-style: italic;
+  color: #6a1b9a;
+  box-shadow: 0 2px 8px rgba(156, 39, 176, 0.1);
+}
+
+.meeting-content h2:contains("Listen to") + p a,
+.meeting-content h2:contains("Watch the") + p a {
+  color: #8e24aa;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #ce93d8;
+}
+
+.meeting-content h2:contains("Listen to") + p a:hover,
+.meeting-content h2:contains("Watch the") + p a:hover {
+  color: #6a1b9a;
+  text-decoration-color: #9c27b0;
+}
+
 /* Audio/Video Styling */
 .meeting-content audio,
 .meeting-content video {
