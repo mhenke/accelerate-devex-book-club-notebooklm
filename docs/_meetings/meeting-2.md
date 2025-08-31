@@ -22,7 +22,6 @@ dora_color: '#4CAF50'
 	Your browser does not support the audio element.
 </audio>
 
-
 ## Architecture: Loosely Coupled Systems Enable Team Independence
 
 <div class="architecture-comparison">
@@ -59,26 +58,42 @@ dora_color: '#4CAF50'
   </div>
 </div>
 
-## Culture Transformation
+## Tool Autonomy & CD Maturity Assessment
 
-<div class="transformation-flow">
-  <div class="flow-step">
-    <div class="step-icon"><i class="fas fa-bullseye"></i></div>
-    <h4>Act Your Way</h4>
-    <p>Behavioral changes</p>
+<div class="tool-autonomy-impact">
+  <div class="autonomy-stat">
+    <div class="stat-icon"><i class="fas fa-palette"></i></div>
+    <div class="stat-content">
+      <h4>Tool Choice Freedom</h4>
+      <p>Teams that choose their own tools are:</p>
+      <div class="impact-metrics">
+        <div class="metric-point">
+          <i class="fas fa-chart-line"></i>
+          <span>Higher performing</span>
+        </div>
+        <div class="metric-point">
+          <i class="fas fa-smile"></i>
+          <span>More satisfied</span>
+        </div>
+        <div class="metric-point">
+          <i class="fas fa-lightbulb"></i>
+          <span>More innovative</span>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="flow-arrow">→</div>
-  <div class="flow-step">
-    <div class="step-icon"><i class="fas fa-sync-alt"></i></div>
-    <h4>Into Better Culture</h4>
-    <p>Cultural transformation</p>
-  </div>
-  <div class="flow-arrow">→</div>
-  <div class="flow-step">
-    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
-    <h4>Higher Performance</h4>
-    <p>Measurable results</p>
-  </div>
+</div>
+
+## CD Maturity Assessment
+
+<div class="cd-maturity-assessment">
+  <h4>How mature are your CD practices?</h4>
+  <ul>
+    <li>Which CD practices is your organization currently implementing well/poorly?</li>
+    <li>What prevents your team from deploying independently?</li>
+    <li>How much freedom do teams have in tool selection? What are the constraints?</li>
+    <li>How early in your development process is security considered?</li>
+  </ul>
 </div>
 
 ## Continuous Delivery Core Principles
@@ -258,66 +273,15 @@ dora_color: '#4CAF50'
 ## Interactive Learning Checkpoint
 
 <div class="learning-checkpoint">
-  <div class="checkpoint-card behavioral-shifts">
-    <div class="checkpoint-icon"><i class="fas fa-sync-alt"></i></div>
-    <h4>Behavioral Shifts</h4>
-    <p>Which practice could shift your culture?</p>
-    <div class="practice-options">
-      <label class="practice-item">
-        <input type="radio" name="cultural-practice" value="peer-review">
-        <span class="radio-mark"></span>
-        <i class="fas fa-handshake"></i> Peer review over approval boards
-      </label>
-      <label class="practice-item">
-        <input type="radio" name="cultural-practice" value="transparent-metrics">
-        <span class="radio-mark"></span>
-        <i class="fas fa-chart-bar"></i> Transparent metrics sharing
-      </label>
-      <label class="practice-item">
-        <input type="radio" name="cultural-practice" value="learning-failures">
-        <span class="radio-mark"></span>
-        <i class="fas fa-graduation-cap"></i> Learning from failures
-      </label>
-      <label class="practice-item">
-        <input type="radio" name="cultural-practice" value="rapid-feedback">
-        <span class="radio-mark"></span>
-        <i class="fas fa-bolt"></i> Rapid feedback loops
-      </label>
-    </div>
-    <div class="feedback-area" id="practice-feedback">
-      <p>Select a practice to understand how it can drive cultural transformation.</p>
-    </div>
-  </div>
-  
-  <div class="checkpoint-card cd-gaps">
-    <div class="checkpoint-icon"><i class="fas fa-bullseye"></i></div>
-    <h4>CD Priority</h4>
-    <p>Which principle needs immediate attention?</p>
-    <div class="cd-selector">
-      <label class="cd-option">
-        <input type="radio" name="cd-priority" value="build-quality">
-        <span class="radio-mark"></span>
-        <i class="fas fa-tools"></i> Build Quality In
-      </label>
-      <label class="cd-option">
-        <input type="radio" name="cd-priority" value="small-batches">
-        <span class="radio-mark"></span>
-        <i class="fas fa-box"></i> Small Batches
-      </label>
-      <label class="cd-option">
-        <input type="radio" name="cd-priority" value="automate">
-        <span class="radio-mark"></span>
-        <i class="fas fa-robot"></i> Automate Tasks
-      </label>
-      <label class="cd-option">
-        <input type="radio" name="cd-priority" value="trunk-based">
-        <span class="radio-mark"></span>
-        <i class="fas fa-code-branch"></i> Trunk-Based Dev
-      </label>
-    </div>
-    <div class="feedback-area" id="cd-feedback">
-      <p>Select a CD principle to learn about its importance and implementation.</p>
-    </div>
+  <div class="checkpoint-card cd-maturity">
+    <div class="checkpoint-icon"><i class="fas fa-chart-line"></i></div>
+    <h4>CD Maturity Assessment</h4>
+    <p>Reflect on your team's strengths and gaps in CD practices.</p>
+    <ul>
+      <li>Automate one manual process</li>
+      <li>Map dependencies blocking independent deployment</li>
+      <li>Experiment with trunk-based development or test automation</li>
+    </ul>
   </div>
 </div>
 
