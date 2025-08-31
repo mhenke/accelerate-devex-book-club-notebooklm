@@ -478,9 +478,9 @@ dora_color: '#9C27B0'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
   border-radius: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #9c27b0;
 }
 
 .resource-category {
@@ -489,24 +489,24 @@ dora_color: '#9C27B0'
   padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #2196f3;
+  border-left: 4px solid #9c27b0;
 }
 
 .resource-category:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
+  box-shadow: 0 8px 25px rgba(156, 39, 176, 0.2);
 }
 
 .resource-icon {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #2196f3;
+  color: #9c27b0;
 }
 
 .resource-category h4 {
   margin: 0 0 1rem 0;
-  color: #1565c0;
+  color: #4a148c;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -527,12 +527,12 @@ dora_color: '#9C27B0'
 }
 
 .resource-category li:hover {
-  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  background: linear-gradient(135deg, #9c27b0, #ba68c8);
   transform: translateX(4px);
 }
 
 .resource-category a {
-  color: #1565c0;
+  color: #4a148c;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -552,9 +552,9 @@ dora_color: '#9C27B0'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
   border-radius: 16px;
-  border: 2px solid #ff9800;
+  border: 2px solid #9c27b0;
 }
 
 .arch-side {
@@ -602,7 +602,7 @@ dora_color: '#9C27B0'
 .vs-divider {
   font-size: 2rem;
   font-weight: bold;
-  color: #ff9800;
+  color: #9c27b0;
   background: white;
   width: 60px;
   height: 60px;
@@ -610,7 +610,7 @@ dora_color: '#9C27B0'
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #ff9800;
+  border: 3px solid #9c27b0;
 }
 
 /* Wall of Confusion Section */
@@ -621,9 +621,9 @@ dora_color: '#9C27B0'
   align-items: center;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #ffebee, #f8bbd9);
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
   border-radius: 16px;
-  border: 2px solid #e91e63;
+  border: 2px solid #9c27b0;
 }
 
 .confusion-problem, .confusion-solution {
@@ -637,12 +637,12 @@ dora_color: '#9C27B0'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #e91e63;
+  color: #9c27b0;
 }
 
 .confusion-problem h4, .confusion-solution h4 {
   margin: 0 0 1rem 0;
-  color: #ad1457;
+  color: #4a148c;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -683,9 +683,9 @@ dora_color: '#9C27B0'
   align-items: center;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
   border-radius: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #9c27b0;
 }
 
 .security-approach {
@@ -699,12 +699,12 @@ dora_color: '#9C27B0'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #2196f3;
+  color: #9c27b0;
 }
 
 .security-approach h4 {
   margin: 0 0 1rem 0;
-  color: #1565c0;
+  color: #4a148c;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -720,7 +720,7 @@ dora_color: '#9C27B0'
 
 .vs-arrow {
   font-size: 2rem;
-  color: #2196f3;
+  color: #9c27b0;
   font-weight: bold;
 }
 
@@ -812,9 +812,9 @@ dora_color: '#9C27B0'
 .tool-autonomy-impact {
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
   border-radius: 16px;
-  border: 2px solid #ffc107;
+  border: 2px solid #9c27b0;
 }
 
 .autonomy-stat {
@@ -829,13 +829,13 @@ dora_color: '#9C27B0'
 
 .stat-icon {
   font-size: 3rem;
-  color: #ffc107;
+  color: #9c27b0;
   flex-shrink: 0;
 }
 
 .stat-content h4 {
   margin: 0 0 1rem 0;
-  color: #f57c00;
+  color: #4a148c;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -862,7 +862,7 @@ dora_color: '#9C27B0'
 }
 
 .metric-point i {
-  color: #ffc107;
+  color: #9c27b0;
 }
 
 /* Transformation Flow */
