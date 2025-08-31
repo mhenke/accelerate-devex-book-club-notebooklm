@@ -134,21 +134,6 @@ dora_color: '#2196F3'
   </div>
 </div>
 
-## Discussion Questions
-
-1. **DORA Assessment:** Rate your organization on each metric (High/Medium/Low)
-2. **Deployment Pain:** What makes your team nervous about releases?
-3. **Speed vs Stability:** Where have you seen this false trade-off?
-4. **Quick Wins:** Which metric could improve fastest?
-
-## Action Items for Next Meeting
-
-- [ ] Track one DORA metric for your team this week
-- [ ] Identify your biggest deployment pain point
-- [ ] Find one example of speed vs stability thinking
-
----
-
 ## 🎧 Listen to the Meeting 1 Podcast
 
 <audio controls>
@@ -162,6 +147,21 @@ dora_color: '#2196F3'
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
+
+---
+
+## Discussion Questions
+
+1. **DORA Assessment:** Rate your organization on each metric (High/Medium/Low)
+2. **Deployment Pain:** What makes your team nervous about releases?
+3. **Speed vs Stability:** Where have you seen this false trade-off?
+4. **Quick Wins:** Which metric could improve fastest?
+
+## Action Items for Next Meeting
+
+- [ ] Track one DORA metric for your team this week
+- [ ] Identify your biggest deployment pain point
+- [ ] Find one example of speed vs stability thinking
 
 <style>
 /* DORA Metrics Grid */

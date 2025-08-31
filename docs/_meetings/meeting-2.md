@@ -146,14 +146,6 @@ dora_color: '#4CAF50'
   </div>
 </div>
 
-## Action Items for Next Meeting
-
-- [ ] Identify your team's culture type using Westrum's model
-- [ ] Find one repetitive task to automate
-- [ ] Practice working in smaller batches on current work
-
----
-
 ## 🎧 Listen to the Meeting 2 Podcast
 
 <audio controls>
@@ -167,6 +159,14 @@ dora_color: '#4CAF50'
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
+
+---
+
+## Action Items for Next Meeting
+
+- [ ] Identify your team's culture type using Westrum's model
+- [ ] Find one repetitive task to automate
+- [ ] Practice working in smaller batches on current work
 
 <style>
 /* Culture Types Diagram */
