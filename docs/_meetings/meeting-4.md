@@ -290,7 +290,6 @@ dora_color: '#F44336'
   </div>
 </div>
 
-
 ---
 
 ## Discussion Questions
@@ -367,19 +366,6 @@ Congratulations! You've completed the structured book club journey. Continue you
 </div>
 
 ## 🧭 Navigation
-
-<div class="meeting-navigation">
-  <div class="nav-item prev">
-    <a href="meeting-3.html">
-      <i class="fas fa-arrow-left"></i>
-      <span>Previous: Management & Sustainability</span>
-    </a>
-  </div>
-  <div class="nav-item next">
-    <i class="fas fa-flag-checkered"></i>
-    <span>Final Meeting - Transformation Complete!</span>
-  </div>
-</div>
 
 <style>
 /* Meeting Navigation */
