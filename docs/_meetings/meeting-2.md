@@ -213,6 +213,70 @@ dora_color: '#4CAF50'
   </div>
 </div>
 
+## Real-World Applications
+
+<div class="real-world-applications">
+  <div class="application-card automation-examples">
+    <div class="application-icon"><i class="fas fa-robot"></i></div>
+    <h4>Automation Success Stories</h4>
+    <p>Share examples from your experience:</p>
+    <div class="example-prompts">
+      <div class="prompt-item">
+        <i class="fas fa-lightbulb"></i>
+        <span>What manual process did you recently automate? What was the impact?</span>
+      </div>
+      <div class="prompt-item">
+        <i class="fas fa-chart-line"></i>
+        <span>How did test automation change your team's deployment confidence?</span>
+      </div>
+      <div class="prompt-item">
+        <i class="fas fa-clock"></i>
+        <span>What task took hours manually but now takes minutes with automation?</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="application-card architecture-decisions">
+    <div class="application-icon"><i class="fas fa-sitemap"></i></div>
+    <h4>Architectural Decisions</h4>
+    <p>Discuss decisions that impacted team independence:</p>
+    <div class="example-prompts">
+      <div class="prompt-item">
+        <i class="fas fa-check-circle"></i>
+        <span>Which architectural changes improved your team's deployment frequency?</span>
+      </div>
+      <div class="prompt-item">
+        <i class="fas fa-times-circle"></i>
+        <span>What dependencies currently prevent independent deployments?</span>
+      </div>
+      <div class="prompt-item">
+        <i class="fas fa-puzzle-piece"></i>
+        <span>How did microservices or modular design affect your delivery speed?</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="application-card security-practices">
+    <div class="application-icon"><i class="fas fa-shield-alt"></i></div>
+    <h4>Security Integration</h4>
+    <p>Examine security practices that impact delivery:</p>
+    <div class="example-prompts">
+      <div class="prompt-item">
+        <i class="fas fa-fast-forward"></i>
+        <span>Which security practices actually speed up delivery?</span>
+      </div>
+      <div class="prompt-item">
+        <i class="fas fa-turtle"></i>
+        <span>What security requirements currently slow down your team?</span>
+      </div>
+      <div class="prompt-item">
+        <i class="fas fa-balance-scale"></i>
+        <span>How do you balance security compliance with delivery speed?</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## Discussion Questions
@@ -414,6 +478,93 @@ dora_color: '#4CAF50'
   line-height: 1.4;
 }
 
+/* Real-World Applications */
+.real-world-applications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-radius: 16px;
+  border: 2px solid #ff9800;
+}
+
+.application-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #4caf50;
+}
+
+.application-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.application-icon {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+.application-card h4 {
+  margin: 0 0 1rem 0;
+  color: #e65100;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.application-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.example-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.prompt-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.prompt-item:hover {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  transform: translateX(4px);
+}
+
+.prompt-item i {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+  color: #ff9800;
+}
+
+.prompt-item:hover i {
+  color: white;
+}
+
+.prompt-item span {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .culture-types-diagram {
@@ -436,6 +587,16 @@ dora_color: '#4CAF50'
   }
   
   .culture-card, .principle-card {
+    padding: 1.5rem;
+  }
+  
+  .real-world-applications {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .application-card {
     padding: 1.5rem;
   }
 }

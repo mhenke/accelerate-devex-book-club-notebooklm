@@ -79,6 +79,20 @@ dora_color: '#2196F3'
     <h3>Research Reality</h3>
     <div class="reality-content">
       <p><strong>Both Fast AND Stable</strong></p>
+      <div class="performance-stats">
+        <div class="stat-item">
+          <i class="fas fa-rocket"></i>
+          <strong>46x</strong> more frequent deployments
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-clock"></i>
+          <strong>440x</strong> faster lead time
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-tools"></i>
+          <strong>170x</strong> faster recovery
+        </div>
+      </div>
       <ul>
         <li><i class="fas fa-bolt"></i> Speed enables stability</li>
         <li><i class="fas fa-shield-alt"></i> Stability enables speed</li>
@@ -1066,10 +1080,54 @@ dora_color: '#2196F3'
   flex-shrink: 0;
 }
 
+/* Performance Statistics Styling */
+.performance-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-top: 2px solid #e3f2fd;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: #1565c0;
+  font-weight: 500;
+}
+
+.stat-item i {
+  font-size: 1.2rem;
+  color: #2196f3;
+}
+
+.stat-item strong {
+  font-size: 1.1rem;
+  color: #1565c0;
+}
+
 @media (max-width: 768px) {
   .culture-types-diagram {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  
+  .performance-stats {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .stat-item {
+    font-size: 0.8rem;
   }
 }
 </style>

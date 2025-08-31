@@ -144,6 +144,23 @@ dora_color: '#FF9800'
   </div>
 </div>
 
+## Microsoft Research: Work-Life Balance Impact
+
+<div class="microsoft-stats">
+  <div class="stat-highlight">
+    <div class="stat-icon"><i class="fas fa-balance-scale"></i></div>
+    <div class="stat-content">
+      <div class="stat-numbers">
+        <span class="before-stat">38%</span>
+        <i class="fas fa-arrow-right"></i>
+        <span class="after-stat">75%</span>
+      </div>
+      <h4>Work-Life Balance Satisfaction</h4>
+      <p>Microsoft teams implementing DevOps practices saw dramatic improvements in work-life balance satisfaction scores</p>
+    </div>
+  </div>
+</div>
+
 ## Team Architecture Assessment
 
 <div class="architecture-assessment">
@@ -220,6 +237,97 @@ dora_color: '#FF9800'
     </div>
     <div class="feedback-area" id="wip-feedback">
       <p>Select your WIP tracking methods to learn about their effectiveness in lean software delivery.</p>
+    </div>
+  </div>
+</div>
+
+## Practical Exercises
+
+<div class="practical-exercises">
+  <div class="exercise-card dependency-mapping">
+    <div class="exercise-icon"><i class="fas fa-project-diagram"></i></div>
+    <h4>Dependency Mapping Exercise</h4>
+    <p>Map current dependencies between teams and systems:</p>
+    <div class="exercise-steps">
+      <div class="step-item">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h5>Identify Your Services</h5>
+          <p>List all services/systems your team owns or depends on</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h5>Map Dependencies</h5>
+          <p>Draw connections showing which services depend on others</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h5>Rate Impact</h5>
+          <p>Color-code dependencies: Red (blocks deployment), Yellow (coordination required), Green (independent)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="exercise-card bottleneck-identification">
+    <div class="exercise-icon"><i class="fas fa-funnel-dollar"></i></div>
+    <h4>Bottleneck Identification</h4>
+    <p>Identify bottlenecks in current change approval processes:</p>
+    <div class="exercise-steps">
+      <div class="step-item">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h5>Map Current Process</h5>
+          <p>Document every step from code commit to production deployment</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h5>Time Each Step</h5>
+          <p>Record average time for each approval/review stage</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h5>Find Bottlenecks</h5>
+          <p>Identify which steps take longest or block progress most frequently</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="exercise-card wip-assessment">
+    <div class="exercise-icon"><i class="fas fa-clipboard-check"></i></div>
+    <h4>WIP Limits Assessment</h4>
+    <p>Assess current WIP limits and visualization practices:</p>
+    <div class="exercise-steps">
+      <div class="step-item">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h5>Count Current WIP</h5>
+          <p>Inventory all work currently in progress across team members</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h5>Visualize Flow</h5>
+          <p>Create a simple board showing To Do, Doing, Blocked, Done columns</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h5>Set WIP Limits</h5>
+          <p>Establish limits for each column based on team size and capacity</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -439,6 +547,198 @@ dora_color: '#FF9800'
 
 .formula-result h4 {
   color: #2e7d32;
+}
+
+/* Microsoft Stats */
+.microsoft-stats {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+  border-radius: 16px;
+  border: 2px solid #3f51b5;
+}
+
+.stat-highlight {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 8px 25px rgba(63, 81, 181, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stat-highlight:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(63, 81, 181, 0.2);
+}
+
+.stat-icon {
+  font-size: 3.5rem;
+  color: #3f51b5;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-numbers {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.before-stat {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f44336;
+  background: linear-gradient(135deg, #ffebee, #ffcdd2);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #f44336;
+}
+
+.after-stat {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4caf50;
+  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #4caf50;
+}
+
+.stat-numbers i {
+  font-size: 1.5rem;
+  color: #3f51b5;
+}
+
+.stat-content h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1a237e;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Practical Exercises */
+.practical-exercises {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  border-radius: 16px;
+  border: 2px solid #9c27b0;
+}
+
+.exercise-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #9c27b0;
+}
+
+.exercise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(156, 39, 176, 0.2);
+}
+
+.exercise-icon {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #9c27b0;
+}
+
+.exercise-card h4 {
+  margin: 0 0 1rem 0;
+  color: #7b1fa2;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.exercise-card > p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.exercise-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.step-item:hover {
+  background: linear-gradient(135deg, #9c27b0, #8e24aa);
+  color: white;
+  transform: translateX(4px);
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h5 {
+  margin: 0 0 0.5rem 0;
+  color: #7b1fa2;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.step-item:hover .step-content h5 {
+  color: white;
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #666;
+}
+
+.step-item:hover .step-content p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Architecture Assessment */
@@ -771,6 +1071,37 @@ dora_color: '#FF9800'
   
   .wip-options {
     grid-template-columns: 1fr;
+  }
+  
+  .stat-highlight {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .stat-numbers {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .before-stat, .after-stat {
+    font-size: 2rem;
+  }
+  
+  .practical-exercises {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .exercise-card {
+    padding: 1.5rem;
+  }
+  
+  .step-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
   }
 }
 
