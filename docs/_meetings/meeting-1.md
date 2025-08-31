@@ -151,81 +151,84 @@ dora_color: '#2196F3'
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card dora-assessment">
-    <h4><i class="fas fa-chart-line"></i> DORA Metrics Assessment</h4>
-    <p>Rate your team's current performance on the four key metrics:</p>
-    <div class="assessment-buttons">
+    <h4 id="dora-assessment-title"><i class="fas fa-chart-line" aria-hidden="true"></i> DORA Metrics Assessment</h4>
+    <p id="dora-assessment-desc">Rate your team's current performance on the four key metrics:</p>
+    <fieldset class="assessment-buttons" role="radiogroup" aria-labelledby="dora-assessment-title" aria-describedby="dora-assessment-desc">
+      <legend class="sr-only">DORA Metrics Performance Level</legend>
       <label class="assessment-btn high-performance">
-        <input type="radio" name="dora-performance" value="high">
-        <span class="radio-mark"></span>
+        <input type="radio" name="dora-performance" value="high" aria-describedby="dora-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
         High Performance
       </label>
       <label class="assessment-btn medium-performance">
-        <input type="radio" name="dora-performance" value="medium">
-        <span class="radio-mark"></span>
+        <input type="radio" name="dora-performance" value="medium" aria-describedby="dora-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
         Medium Performance
       </label>
       <label class="assessment-btn low-performance">
-        <input type="radio" name="dora-performance" value="low">
-        <span class="radio-mark"></span>
+        <input type="radio" name="dora-performance" value="low" aria-describedby="dora-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
         Low Performance
       </label>
-    </div>
-    <div class="feedback-area" id="dora-feedback">
+    </fieldset>
+    <div class="feedback-area" id="dora-feedback" aria-live="polite" aria-atomic="true">
       <p>Select your team's performance level to understand improvement opportunities.</p>
     </div>
   </div>
   
   <div class="checkpoint-card deployment-anxiety">
-    <h4><i class="fas fa-heart"></i> Deployment Confidence</h4>
-    <p>How does your team feel about deployments?</p>
-    <div class="confidence-options">
+    <h4 id="deployment-confidence-title"><i class="fas fa-heart" aria-hidden="true"></i> Deployment Confidence</h4>
+    <p id="deployment-confidence-desc">How does your team feel about deployments?</p>
+    <fieldset class="confidence-options" role="radiogroup" aria-labelledby="deployment-confidence-title" aria-describedby="deployment-confidence-desc">
+      <legend class="sr-only">Deployment Confidence Level</legend>
       <label class="confidence-item anxious">
-        <input type="radio" name="deployment-confidence" value="anxious">
-        <span class="radio-mark"></span>
-        <i class="fas fa-frown"></i> Anxious & Stressful
+        <input type="radio" name="deployment-confidence" value="anxious" aria-describedby="confidence-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-frown" aria-hidden="true"></i> Anxious & Stressful
       </label>
       <label class="confidence-item neutral">
-        <input type="radio" name="deployment-confidence" value="neutral">
-        <span class="radio-mark"></span>
-        <i class="fas fa-meh"></i> Manageable but Tense
+        <input type="radio" name="deployment-confidence" value="neutral" aria-describedby="confidence-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-meh" aria-hidden="true"></i> Manageable but Tense
       </label>
       <label class="confidence-item confident">
-        <input type="radio" name="deployment-confidence" value="confident">
-        <span class="radio-mark"></span>
-        <i class="fas fa-smile"></i> Confident & Routine
+        <input type="radio" name="deployment-confidence" value="confident" aria-describedby="confidence-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-smile" aria-hidden="true"></i> Confident & Routine
       </label>
-    </div>
-    <div class="feedback-area" id="confidence-feedback">
+    </fieldset>
+    <div class="feedback-area" id="confidence-feedback" aria-live="polite" aria-atomic="true">
       <p>Select how your team feels about deployments to get targeted improvement suggestions.</p>
     </div>
   </div>
   
   <div class="checkpoint-card improvement-priority">
-    <h4><i class="fas fa-bullseye"></i> Improvement Priority</h4>
-    <p>Which DORA metric should your team focus on first?</p>
-    <div class="priority-selector">
+    <h4 id="improvement-priority-title"><i class="fas fa-bullseye" aria-hidden="true"></i> Improvement Priority</h4>
+    <p id="improvement-priority-desc">Which DORA metric should your team focus on first?</p>
+    <fieldset class="priority-selector" role="radiogroup" aria-labelledby="improvement-priority-title" aria-describedby="improvement-priority-desc">
+      <legend class="sr-only">Priority DORA Metric for Improvement</legend>
       <label class="priority-option">
-        <input type="radio" name="improvement-focus" value="lead-time">
-        <span class="radio-mark"></span>
-        <i class="fas fa-chart-line"></i> Lead Time
+        <input type="radio" name="improvement-focus" value="lead-time" aria-describedby="priority-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-chart-line" aria-hidden="true"></i> Lead Time
       </label>
       <label class="priority-option">
-        <input type="radio" name="improvement-focus" value="deploy-frequency">
-        <span class="radio-mark"></span>
-        <i class="fas fa-rocket"></i> Deploy Frequency
+        <input type="radio" name="improvement-focus" value="deploy-frequency" aria-describedby="priority-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-rocket" aria-hidden="true"></i> Deploy Frequency
       </label>
       <label class="priority-option">
-        <input type="radio" name="improvement-focus" value="restore-time">
-        <span class="radio-mark"></span>
-        <i class="fas fa-clock"></i> Restore Time
+        <input type="radio" name="improvement-focus" value="restore-time" aria-describedby="priority-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-clock" aria-hidden="true"></i> Restore Time
       </label>
       <label class="priority-option">
-        <input type="radio" name="improvement-focus" value="change-fail">
-        <span class="radio-mark"></span>
-        <i class="fas fa-exclamation-triangle"></i> Change Fail Rate
+        <input type="radio" name="improvement-focus" value="change-fail" aria-describedby="priority-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Change Fail Rate
       </label>
-    </div>
-    <div class="feedback-area" id="priority-feedback">
+    </fieldset>
+    <div class="feedback-area" id="priority-feedback" aria-live="polite" aria-atomic="true">
       <p>Choose which metric needs the most attention to get specific improvement strategies.</p>
     </div>
   </div>

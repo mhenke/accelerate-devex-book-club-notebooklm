@@ -2036,10 +2036,46 @@ pre {
 /* Focus states for keyboard navigation */
 a:focus,
 button:focus,
-.btn:focus {
+.btn:focus,
+input:focus {
   outline: 2px solid var(--primary-blue);
   outline-offset: 2px;
   box-shadow: 0 0 0 2px var(--accent-teal);
+}
+
+/* Enhanced focus states for interactive elements */
+input[type="radio"]:focus + .radio-mark {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--accent-teal);
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Fieldset and legend styling for radio groups */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset.assessment-buttons,
+fieldset.confidence-options,
+fieldset.priority-selector {
+  display: inherit;
+  flex-direction: inherit;
+  gap: inherit;
 }
 
 /* High contrast mode support */
@@ -2048,6 +2084,12 @@ button:focus,
     --background-light: #000000;
     --text-dark: #ffffff;
     --border-color: #ffffff;
+  }
+  
+  /* Enhanced focus indicators in high contrast mode */
+  input[type="radio"]:focus + .radio-mark {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
   }
 }
 
