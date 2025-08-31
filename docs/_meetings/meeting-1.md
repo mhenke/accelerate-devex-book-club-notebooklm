@@ -102,44 +102,16 @@ dora_color: '#2196F3'
   </div>
 </div>
 
-## Westrum's Organizational Culture Types
+## Culture Assessment
 
-<div class="culture-types-diagram">
-  <div class="culture-card pathological">
-    <div class="culture-icon"><i class="fas fa-exclamation-triangle"></i></div>
-    <h3>Pathological</h3>
-    <p class="culture-subtitle">Power-Oriented</p>
-    <ul class="culture-traits">
-      <li><i class="fas fa-times"></i> Low cooperation</li>
-      <li><i class="fas fa-user-slash"></i> Messengers shot</li>
-      <li><i class="fas fa-hand-paper"></i> Responsibility shirked</li>
-      <li><i class="fas fa-eye-slash"></i> Information hoarded</li>
-    </ul>
-  </div>
-  
-  <div class="culture-card bureaucratic">
-    <div class="culture-icon"><i class="fas fa-clipboard-list"></i></div>
-    <h3>Bureaucratic</h3>
-    <p class="culture-subtitle">Rule-Oriented</p>
-    <ul class="culture-traits">
-      <li><i class="fas fa-chart-bar"></i> Modest cooperation</li>
-      <li><i class="fas fa-user-times"></i> Messengers neglected</li>
-      <li><i class="fas fa-ruler"></i> Narrow responsibilities</li>
-      <li><i class="fas fa-file-alt"></i> Rules over mission</li>
-    </ul>
-  </div>
-  
-  <div class="culture-card generative">
-    <div class="culture-icon"><i class="fas fa-rocket"></i></div>
-    <h3>Generative</h3>
-    <p class="culture-subtitle">Performance-Oriented</p>
-    <ul class="culture-traits">
-      <li><i class="fas fa-check"></i> High cooperation</li>
-      <li><i class="fas fa-graduation-cap"></i> Messengers trained</li>
-      <li><i class="fas fa-handshake"></i> Risks shared</li>
-      <li><i class="fas fa-bullseye"></i> Mission focused</li>
-    </ul>
-  </div>
+<div class="culture-assessment">
+  <h4>Assess Your Organization's Culture</h4>
+  <ul>
+    <li>Pathological: Power-oriented, low cooperation, blame culture</li>
+    <li>Bureaucratic: Rule-oriented, modest cooperation, rules over mission</li>
+    <li>Generative: Performance-oriented, high cooperation, mission focused</li>
+  </ul>
+  <p>Use Westrum's model to identify your team's culture type and discuss how it impacts delivery performance.</p>
 </div>
 
 ## Deployment Pain → Solution Flow
