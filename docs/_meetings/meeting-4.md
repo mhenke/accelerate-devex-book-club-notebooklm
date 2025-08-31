@@ -593,7 +593,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 }
 
 .pillar-subtitle {
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
   font-style: italic;
@@ -743,7 +743,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 .cycle-step p {
   margin: 0;
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.9rem;
 }
 
@@ -824,7 +824,7 @@ Congratulations! You've completed the structured book club journey. Continue you
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #666;
+  color: var(--text-medium);
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -914,7 +914,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 }
 
 .commitment-card p {
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -964,7 +964,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 .completion-badge p {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--text-medium);
   margin: 0;
 }
 
@@ -1006,7 +1006,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 .next-step p {
   margin: 0;
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.9rem;
 }
 

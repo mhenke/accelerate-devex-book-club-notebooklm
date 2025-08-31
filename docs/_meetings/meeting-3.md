@@ -444,7 +444,7 @@ dora_color: '#FF9800'
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #666;
+  color: var(--text-medium);
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -504,7 +504,7 @@ dora_color: '#FF9800'
 .formula-component p, .formula-result p {
   margin: 0;
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-medium);
 }
 
 .formula-plus, .formula-equals {
@@ -598,7 +598,7 @@ dora_color: '#FF9800'
 
 .stat-content p {
   margin: 0;
-  color: #666;
+  color: var(--text-medium);
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -645,7 +645,7 @@ dora_color: '#FF9800'
 }
 
 .exercise-card > p {
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: 500;
@@ -706,7 +706,7 @@ dora_color: '#FF9800'
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.4;
-  color: #666;
+  color: var(--text-medium);
 }
 
 .step-item:hover .step-content p {
@@ -751,7 +751,7 @@ dora_color: '#FF9800'
 }
 
 .assessment-card p {
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -888,7 +888,7 @@ dora_color: '#FF9800'
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 0.5rem;
 }
 
@@ -932,7 +932,7 @@ dora_color: '#FF9800'
 .slider-feedback p {
   margin: 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-medium);
   font-weight: 500;
 }
 
