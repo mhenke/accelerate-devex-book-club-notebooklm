@@ -124,59 +124,87 @@ dora_color: '#FF9800'
 
 <div class="architecture-assessment">
   <div class="assessment-card dependency-map">
-    <div class="assessment-icon"><i class="fas fa-map"></i></div>
-    <h4>Dependency Mapping</h4>
-    <p>Identify team dependencies that slow you down:</p>
-    <div class="dependency-examples">
+    <div class="assessment-icon"><i class="fas fa-map" aria-hidden="true"></i></div>
+    <h4 id="dependency-mapping-title">Dependency Mapping</h4>
+    <p id="dependency-mapping-desc">Identify team dependencies that slow you down:</p>
+    <fieldset class="dependency-examples" role="radiogroup" aria-labelledby="dependency-mapping-title" aria-describedby="dependency-mapping-desc">
+      <legend class="sr-only">Team Dependency Type</legend>
       <label class="dependency-item high-impact">
-        <input type="radio" name="dependency-type" value="shared-database">
-        <span class="radio-mark"></span>
-        <i class="fas fa-circle" style="color: #f44336;"></i> Shared database
+        <input type="radio" name="dependency-type" value="shared-database" aria-describedby="dependency-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-circle" style="color: #f44336;" aria-hidden="true"></i> Shared database
       </label>
       <label class="dependency-item medium-impact">
-        <input type="radio" name="dependency-type" value="release-coordination">
-        <span class="radio-mark"></span>
-        <i class="fas fa-circle" style="color: #ffc107;"></i> Release coordination
+        <input type="radio" name="dependency-type" value="release-coordination" aria-describedby="dependency-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-circle" style="color: #ffc107;" aria-hidden="true"></i> Release coordination
       </label>
       <label class="dependency-item low-impact">
-        <input type="radio" name="dependency-type" value="independent-services">
-        <span class="radio-mark"></span>
-        <i class="fas fa-circle" style="color: #4caf50;"></i> Independent services
+        <input type="radio" name="dependency-type" value="independent-services" aria-describedby="dependency-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-circle" style="color: #4caf50;" aria-hidden="true"></i> Independent services
       </label>
-    </div>
-    <div class="feedback-area" id="dependency-feedback">
+    </fieldset>
+    <div class="feedback-area" id="dependency-feedback" aria-live="polite" aria-atomic="true">
       <p>Select dependencies to understand their impact on software delivery performance.</p>
     </div>
   </div>
   
   <div class="assessment-card wip-current">
-    <div class="assessment-icon"><i class="fas fa-chart-bar"></i></div>
-    <h4>WIP Visualization</h4>
-    <p>How do you currently track work in progress?</p>
-    <div class="wip-options">
+    <div class="assessment-icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
+    <h4 id="wip-visualization-title">WIP Visualization</h4>
+    <p id="wip-visualization-desc">How do you currently track work in progress?</p>
+    <fieldset class="wip-options" role="radiogroup" aria-labelledby="wip-visualization-title" aria-describedby="wip-visualization-desc">
+      <legend class="sr-only">Work in Progress Tracking Method</legend>
       <label class="wip-option">
-        <input type="radio" name="wip-method" value="task-lists">
-        <span class="radio-mark"></span>
-        <i class="fas fa-clipboard-list"></i> Task lists
+        <input type="radio" name="wip-method" value="task-lists" aria-describedby="wip-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-clipboard-list" aria-hidden="true"></i> Task lists
       </label>
       <label class="wip-option">
-        <input type="radio" name="wip-method" value="kanban">
-        <span class="radio-mark"></span>
-        <i class="fas fa-columns"></i> Kanban board
+        <input type="radio" name="wip-method" value="kanban" aria-describedby="wip-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-columns" aria-hidden="true"></i> Kanban board
       </label>
       <label class="wip-option">
-        <input type="radio" name="wip-method" value="sprint">
-        <span class="radio-mark"></span>
-        <i class="fas fa-chart-line"></i> Sprint board
+        <input type="radio" name="wip-method" value="sprint" aria-describedby="wip-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-chart-line" aria-hidden="true"></i> Sprint board
       </label>
       <label class="wip-option">
-        <input type="radio" name="wip-method" value="none">
-        <span class="radio-mark"></span>
-        <i class="fas fa-question"></i> No tracking
+        <input type="radio" name="wip-method" value="none" aria-describedby="wip-feedback">
+        <span class="radio-mark" aria-hidden="true"></span>
+        <i class="fas fa-question" aria-hidden="true"></i> No tracking
       </label>
-    </div>
-    <div class="feedback-area" id="wip-feedback">
+    </fieldset>
+    <div class="feedback-area" id="wip-feedback" aria-live="polite" aria-atomic="true">
       <p>Select your WIP tracking methods to learn about their effectiveness in lean software delivery.</p>
+    </div>
+  </div>
+  
+  <div class="assessment-card tool-autonomy">
+    <div class="assessment-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
+    <h4 id="tool-autonomy-title">Team Tool Autonomy</h4>
+    <p id="tool-autonomy-desc">Rate your team's tool selection autonomy:</p>
+    <div class="autonomy-slider">
+      <div class="slider-labels">
+        <span id="slider-label-restricted">Restricted</span>
+        <span id="slider-label-flexible">Flexible</span>
+        <span id="slider-label-freedom">Full Freedom</span>
+      </div>
+      <div class="slider-track" id="tool-slider" role="slider" 
+           aria-labelledby="tool-autonomy-title" 
+           aria-describedby="tool-autonomy-desc slider-feedback"
+           aria-valuemin="0" 
+           aria-valuemax="100" 
+           aria-valuenow="50"
+           aria-valuetext="Flexible tool selection"
+           tabindex="0">
+        <div class="slider-thumb" id="tool-thumb" aria-hidden="true"></div>
+      </div>
+      <div class="slider-feedback" id="slider-feedback" aria-live="polite" aria-atomic="true">
+        <p>Move the slider to assess your team's tool autonomy level</p>
+      </div>
     </div>
   </div>
 </div>
@@ -1071,19 +1099,30 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateSlider(clientX) {
     const rect = slider.getBoundingClientRect();
     const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+    updateSliderValue(percentage);
+  }
+  
+  function updateSliderValue(percentage) {
     thumb.style.left = percentage + '%';
     
-    let level, color;
+    let level, color, valueText;
     if (percentage < 33) {
       level = 'restricted';
       color = '#f44336';
+      valueText = 'Restricted tool selection';
     } else if (percentage < 67) {
       level = 'flexible';
       color = '#ffc107';
+      valueText = 'Flexible tool selection';
     } else {
       level = 'freedom';
       color = '#4caf50';
+      valueText = 'Full tool freedom';
     }
+    
+    // Update ARIA attributes
+    slider.setAttribute('aria-valuenow', Math.round(percentage));
+    slider.setAttribute('aria-valuetext', valueText);
     
     thumb.style.borderColor = color;
     feedback.style.borderLeftColor = color;
@@ -1137,8 +1176,47 @@ document.addEventListener('DOMContentLoaded', function() {
   
   document.addEventListener('touchend', stopDrag);
   
-  // Initialize with default message
-  updateSlider(slider.getBoundingClientRect().left + (slider.getBoundingClientRect().width * 0.5));
+  // Keyboard support for accessibility
+  slider.addEventListener('keydown', (e) => {
+    let currentValue = parseInt(slider.getAttribute('aria-valuenow'));
+    let newValue = currentValue;
+    
+    switch(e.key) {
+      case 'ArrowLeft':
+      case 'ArrowDown':
+        newValue = Math.max(0, currentValue - 5);
+        e.preventDefault();
+        break;
+      case 'ArrowRight':
+      case 'ArrowUp':
+        newValue = Math.min(100, currentValue + 5);
+        e.preventDefault();
+        break;
+      case 'Home':
+        newValue = 0;
+        e.preventDefault();
+        break;
+      case 'End':
+        newValue = 100;
+        e.preventDefault();
+        break;
+      case 'PageDown':
+        newValue = Math.max(0, currentValue - 10);
+        e.preventDefault();
+        break;
+      case 'PageUp':
+        newValue = Math.min(100, currentValue + 10);
+        e.preventDefault();
+        break;
+    }
+    
+    if (newValue !== currentValue) {
+      updateSliderValue(newValue);
+    }
+  });
+  
+  // Initialize slider with default value
+  updateSliderValue(50);
   
   // Dependency feedback content from Accelerate research
   const dependencyInfo = {

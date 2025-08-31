@@ -2063,6 +2063,24 @@ input[type="radio"]:focus + .radio-mark {
   border: 0;
 }
 
+/* Skip navigation for keyboard users */
+.skip-nav {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--header-dark-navy);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.skip-nav:focus {
+  top: 0;
+}
+
 /* Fieldset and legend styling for radio groups */
 fieldset {
   border: none;
@@ -2074,7 +2092,10 @@ fieldset.assessment-buttons,
 fieldset.confidence-options,
 fieldset.priority-selector,
 fieldset.practice-selector,
-fieldset.cd-selector {
+fieldset.cd-selector,
+fieldset.dependency-examples,
+fieldset.wip-options,
+fieldset.challenge-examples {
   display: inherit;
   flex-direction: inherit;
   gap: inherit;
@@ -2109,6 +2130,22 @@ fieldset.cd-selector {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+}
+
+fieldset.dependency-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+fieldset.wip-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+fieldset.challenge-examples {
+  display: block; /* This maintains the original layout structure */
 }
 
 /* High contrast mode support */

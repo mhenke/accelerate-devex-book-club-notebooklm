@@ -11,20 +11,20 @@ title: Home
     </div>
     <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
   </div>
-  <div class="hero-metrics">
-    <a href="{{ '/meetings' | relative_url }}" class="metric-icon">
-      <i class="fas fa-calendar-alt"></i>
+  <nav class="hero-metrics" aria-label="Main navigation">
+    <a href="{{ '/meetings' | relative_url }}" class="metric-icon" aria-label="Navigate to Meetings page">
+      <i class="fas fa-calendar-alt" aria-hidden="true"></i>
       <span>Meetings</span>
     </a>
-    <a href="{{ '/resources' | relative_url }}" class="metric-icon">
-      <i class="fas fa-book-open"></i>
+    <a href="{{ '/resources' | relative_url }}" class="metric-icon" aria-label="Navigate to Resources page">
+      <i class="fas fa-book-open" aria-hidden="true"></i>
       <span>Resources</span>
     </a>
-    <a href="{{ '/prompts' | relative_url }}" class="metric-icon">
-      <i class="fas fa-microphone-alt"></i>
+    <a href="{{ '/prompts' | relative_url }}" class="metric-icon" aria-label="Navigate to AI Content page">
+      <i class="fas fa-microphone-alt" aria-hidden="true"></i>
       <span>AI Content</span>
     </a>
-  </div>
+  </nav>
 </div>
 
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.

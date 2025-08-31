@@ -33,7 +33,10 @@
     />
   </head>
   <body>
-    <main class="page-content">
+    <!-- Skip navigation for keyboard users -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <main id="main-content" class="page-content">
       {{ content }}
     </main>
   </body>

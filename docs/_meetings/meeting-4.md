@@ -146,79 +146,80 @@ dora_color: '#F44336'
 
 <div class="transformation-challenge">
   <div class="challenge-question">
-    <div class="question-icon"><i class="fas fa-comment-dots"></i></div>
-    <h3>The Single Smallest Change Question</h3>
-    <blockquote>
+    <div class="question-icon"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+    <h3 id="smallest-change-title">The Single Smallest Change Question</h3>
+    <blockquote id="smallest-change-desc">
       "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
     </blockquote>
   </div>
   
-  <div class="challenge-examples">
+  <fieldset class="challenge-examples" role="radiogroup" aria-labelledby="smallest-change-title" aria-describedby="smallest-change-desc">
+    <legend class="sr-only">Select the smallest change that would help your deployment process</legend>
     <div class="example-category">
-      <h4><i class="fas fa-tools"></i> Technical Examples</h4>
+      <h4><i class="fas fa-tools" aria-hidden="true"></i> Technical Examples</h4>
       <div class="example-items">
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="automated-test">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="automated-test" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Add one automated test
         </label>
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="deployment-checklist">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="deployment-checklist" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Create deployment checklist
         </label>
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="monitoring-alert">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="monitoring-alert" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Set up monitoring alert
         </label>
       </div>
     </div>
     
     <div class="example-category">
-      <h4><i class="fas fa-users"></i> Process Examples</h4>
+      <h4><i class="fas fa-users" aria-hidden="true"></i> Process Examples</h4>
       <div class="example-items">
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="peer-review">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="peer-review" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Peer review before deploy
         </label>
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="rollback-steps">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="rollback-steps" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Document rollback steps
         </label>
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="deployment-window">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="deployment-window" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Schedule deployment window
         </label>
       </div>
     </div>
     
     <div class="example-category">
-      <h4><i class="fas fa-bullhorn"></i> Communication Examples</h4>
+      <h4><i class="fas fa-bullhorn" aria-hidden="true"></i> Communication Examples</h4>
       <div class="example-items">
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="notify-stakeholders">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="notify-stakeholders" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Notify stakeholders earlier
         </label>
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="share-status">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="share-status" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Share deployment status
         </label>
         <label class="example-item">
-          <input type="radio" name="smallest-change" value="deployment-dashboard">
-          <span class="radio-mark"></span>
+          <input type="radio" name="smallest-change" value="deployment-dashboard" aria-describedby="change-feedback">
+          <span class="radio-mark" aria-hidden="true"></span>
           Create deployment dashboard
         </label>
       </div>
     </div>
-  </div>
+  </fieldset>
   
-  <div class="feedback-area" id="change-feedback">
+  <div class="feedback-area" id="change-feedback" aria-live="polite" aria-atomic="true">
     <p>Select a smallest change option to understand its impact and implementation approach.</p>
   </div>
 </div>
