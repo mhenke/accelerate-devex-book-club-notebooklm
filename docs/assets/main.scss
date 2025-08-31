@@ -447,6 +447,13 @@ h2 {
   color: #2196f3;
   font-weight: 500;
   letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.meeting-title:hover {
+  color: var(--hover-coral);
+  text-decoration: underline;
 }
 
 /* Resources section */
