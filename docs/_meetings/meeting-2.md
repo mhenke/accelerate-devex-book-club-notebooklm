@@ -8,19 +8,19 @@ duration: '1 Hour'
 dora_color: '#4CAF50'
 ---
 
-## <i class="fas fa-headphones"></i> Listen to the Meeting 2 Podcast
-
-<audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
-
 ## <i class="fas fa-video"></i> Watch the Meeting 2 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
+
+## <i class="fas fa-headphones"></i> Listen to the Meeting 2 Podcast
+
+<audio controls>
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-podcast.m4a" type="audio/x-m4a">
+	Your browser does not support the audio element.
+</audio>
 
 ## Westrum's Organizational Culture Types
 

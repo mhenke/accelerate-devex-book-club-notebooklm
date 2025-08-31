@@ -8,19 +8,19 @@ duration: '1 Hour'
 dora_color: '#F44336'
 ---
 
-## <i class="fas fa-headphones"></i> Listen to the Meeting 4 Podcast
-
-<audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
-
 ## <i class="fas fa-video"></i> Watch the Meeting 4 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
+
+## <i class="fas fa-headphones"></i> Listen to the Meeting 4 Podcast
+
+<audio controls>
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
+	Your browser does not support the audio element.
+</audio>
 
 ## Transformational Leadership in Action
 
