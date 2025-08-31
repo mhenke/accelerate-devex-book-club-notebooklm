@@ -149,25 +149,6 @@ dora_color: '#FF9800'
     </div>
   </div>
   
-  <div class="assessment-card tool-autonomy">
-    <div class="assessment-icon"><i class="fas fa-palette"></i></div>
-    <h4>Tool Freedom</h4>
-    <p>Rate your team's tool selection autonomy:</p>
-    <div class="autonomy-slider">
-      <div class="slider-labels">
-        <span>Restricted</span>
-        <span>Flexible</span>
-        <span>Full Freedom</span>
-      </div>
-      <div class="slider-track" id="tool-slider">
-        <div class="slider-thumb" id="tool-thumb"></div>
-      </div>
-      <div class="slider-feedback" id="slider-feedback">
-        <p>Move the slider to assess your team's tool autonomy level</p>
-      </div>
-    </div>
-  </div>
-  
   <div class="assessment-card wip-current">
     <div class="assessment-icon"><i class="fas fa-chart-bar"></i></div>
     <h4>WIP Visualization</h4>
