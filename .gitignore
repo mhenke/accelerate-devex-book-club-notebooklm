@@ -1,0 +1,30 @@
+# Jekyll build files
+docs/_site/
+_site/
+
+# Jekyll cache
+.jekyll-cache/
+
+# Sass cache
+.sass-cache/
+
+# Node modules
+node_modules/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
