@@ -303,9 +303,11 @@ dora_color: '#FF9800'
 
 ## Action Items for Next Meeting
 
-[ ] Experiment with visualizing work using simple kanban board
-[ ] Identify one change approval step that could be streamlined
-[ ] Observe and document burnout risk factors in your environment
+<ul class="action-items">
+<li>[ ] Experiment with visualizing work using simple kanban board</li>
+<li>[ ] Identify one change approval step that could be streamlined</li>
+<li>[ ] Observe and document burnout risk factors in your environment</li>
+</ul>
 
 <style>
 /* Meeting Navigation */
@@ -1046,6 +1048,29 @@ dora_color: '#FF9800'
   .lean-principles-board {
     grid-template-columns: 1fr;
   }
+}
+
+/* Action Items Styling */
+.action-items {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.action-items li {
+  display: block;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-coral);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.action-items li:hover {
+  background: linear-gradient(135deg, #e9ecef, #dee2e6);
+  transform: translateX(4px);
 }
 </style>
 
