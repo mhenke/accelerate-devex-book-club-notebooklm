@@ -19,11 +19,15 @@ All visuals are implemented using **web-native technologies** (SCSS, CSS, SVG, H
 - `docs/` - Main Jekyll website source files
   - `index.md` - Homepage with hero banner, DORA metrics, meeting overview
   - `_layouts/` - Jekyll layouts (default, meeting, resource)
+  - `_meetings/` - Four meeting pages (meeting-1.md to meeting-4.md) with interactive elements
   - `assets/main.scss` - Main stylesheet with modern design system
   - `_config.yml` - Jekyll configuration
-- `meeting-resources/` - Session guides for each book club meeting
-- `notebooklm-prompts/` - AI content generation prompts and guidelines
-- `book-club-materials/` - Supporting activities and discussion guides
+- `resources/` - Comprehensive resource collection including:
+  - `plan/` - Updated book club plan with corrected chapter mappings
+  - `meetings/` - Individual meeting guides and NotebookLM prompts
+  - `activities/` - Discussion practices and between-meeting activities
+  - `assessments/` - DORA metrics and culture assessment worksheets
+  - `templates/` - Meeting notes and retrospective formats
 
 ### Design System
 - **Color palette:** Dark navy blue (#1a1a2e) to light blue (#16213e) gradients for headers
@@ -78,27 +82,47 @@ This is a standard Jekyll site served by GitHub Pages:
 ## Collections and Navigation
 
 ### Jekyll Collections
-- **_meetings collection:** Four structured meetings (`meeting-1.md` to `meeting-4.md`)
+- **_meetings collection:** Four structured meetings with corrected chapter mappings:
+  - Meeting 1 (Week 1): Chapters 1-3 - Foundation, DORA Metrics, Westrum Culture Types
+  - Meeting 2 (Week 3): Chapters 4-6 - Technical Excellence & Continuous Delivery
+  - Meeting 3 (Week 5): Chapters 7-10 - Management, Product Development & Sustainability  
+  - Meeting 4 (Week 7): Chapters 11, 16, Conclusion - Leadership & Transformation
   - Each has layout: meeting, title, subtitle, chapters, duration, dora_color
-  - Contains visual sections, discussion questions, action items
-  - Media sections with podcast/video generation instructions
-- **_resources collection:** Additional educational materials
+  - Contains interactive learning checkpoints with radio buttons and dynamic feedback
+  - Media sections with HTML5 audio/video controls and generation instructions
+- **_resources collection:** Additional educational materials and templates
 - Navigation configured in `_config.yml` with header_pages
 
 ### Meeting Page Structure
 All meeting pages follow consistent format:
-- Pre-reading assignment
-- Visual concept sections (DORA metrics, culture types, etc.)
-- Discussion questions
-- Action items
-- Supplementary content section
-- Media sections with generation instructions and HTML5 audio/video controls
+- Media sections (video first, then podcast) with HTML5 controls
+- Visual concept sections with interactive elements:
+  - Meeting 1: DORA metrics cards, Westrum culture types, speed vs stability myth-busting
+  - Meeting 2: Continuous delivery principles, culture transformation flow, CD core principles
+  - Meeting 3: Lean management practices, WIP visualization, dependency mapping
+  - Meeting 4: Transformational leadership, ING case study practices
+- Interactive Learning Checkpoints with radio buttons, feedback areas, and research-backed content
+- Discussion questions aligned with book club plan learning objectives  
+- Action items that bridge between meetings and support progressive learning
+- Custom CSS styling with meeting-specific color themes and responsive design
 
 ## Important Notes
 
 - **No build scripts:** Relies on Jekyll/GitHub Pages for compilation
 - **Site serves from subpath:** `/accelerate-devex-book-club-notebooklm/`
-- **Copilot instructions available** in `.github/copilot-instructions.md` with detailed visual guidance
-- **All content is educational** focused on DevOps practices and organizational transformation
-- **Four-meeting structure** covering DORA metrics, culture, architecture, and leadership themes
+- **Updated plan available** in `resources/plan/plan.md` with corrected chapter mappings and learning objectives
+- **NotebookLM prompts** in `resources/plan/audio.md` and `resources/plan/video.md` for AI-generated content
+- **All content is educational** focused on DevOps practices and organizational transformation based on Accelerate research
+- **Four-meeting structure** with biweekly cadence (Weeks 1, 3, 5, 7) covering foundation, technical practices, management, and leadership
+- **24 capabilities framework** referenced throughout for practical transformation guidance
+- **Interactive elements** use JavaScript for dynamic feedback based on Accelerate book research findings
 - **Commit and push changes immediately** for GitHub Pages deployment
+
+## Recent Updates
+
+- Corrected all meeting chapter mappings to align with updated book club plan
+- Added Westrum's Organizational Culture Types section to Meeting 1
+- Updated discussion questions and action items across all meetings
+- Enhanced interactive learning checkpoints with research-backed feedback
+- Improved UX with consistent spacing, fonts, and responsive design
+- Fixed action items formatting to display on separate rows
