@@ -242,11 +242,11 @@ dora_color: '#F44336'
 
 ## Supplementary Content
 
-Generate additional content using the [NotebookLM prompts](../notebooklm-prompts/)
+Generate additional content using the [NotebookLM prompts](../../resources/meetings/)
 
 ## 🎧 Listen to the Meeting 4 Podcast
 
-<p>Generate a discussion podcast using the <a href="../notebooklm-prompts/podcast-prompt.md">Meeting 4 Podcast Prompt</a></p>
+<p>Generate a discussion podcast using the <a href="../../resources/meetings/meeting-4/podcast-prompt.md">Meeting 4 Podcast Prompt</a></p>
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
@@ -255,7 +255,7 @@ Generate additional content using the [NotebookLM prompts](../notebooklm-prompts
 
 ## 📺 Watch the Meeting 4 Video
 
-<p>Create a visual overview with the <a href="../notebooklm-prompts/video-prompt.md">Meeting 4 Video Prompt</a></p>
+<p>Create a visual overview with the <a href="../../resources/meetings/meeting-4/video-prompt.md">Meeting 4 Video Prompt</a></p>
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
