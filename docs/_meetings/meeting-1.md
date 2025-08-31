@@ -86,6 +86,10 @@ dora_color: '#2196F3'
           <i class="fas fa-tools"></i>
           <strong>170x</strong> faster recovery
         </div>
+        <div class="stat-item">
+          <i class="fas fa-shield-alt"></i>
+          <strong>5x</strong> lower change fail rate
+        </div>
       </div>
       <ul>
         <li><i class="fas fa-bolt"></i> Speed enables stability</li>
