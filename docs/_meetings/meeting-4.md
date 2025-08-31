@@ -316,10 +316,202 @@ dora_color: '#F44336'
 
 Congratulations! You've completed the structured book club journey. Continue your transformation with:
 
-- [Extension Resources](../book-club-materials/extensions.md)
-- [Post-Book Club Activities](../book-club-materials/)
+- [Extension Resources](../../resources/extensions/extensions.md)
+- [Post-Book Club Activities](../../resources/extensions/README.md)
+
+## 📚 Advanced Reading & Professional Development
+
+<div class="advanced-learning-section">
+  <div class="learning-track">
+    <div class="track-icon"><i class="fas fa-book"></i></div>
+    <h4>Essential DevOps Books</h4>
+    <ul>
+      <li><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592" target="_blank">The Phoenix Project</a> - Gene Kim et al.</li>
+      <li><a href="https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912" target="_blank">Continuous Delivery</a> - Jez Humble & David Farley</li>
+      <li><a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002" target="_blank">The DevOps Handbook</a> - Gene Kim et al.</li>
+      <li><a href="https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" target="_blank">Team Topologies</a> - Matthew Skelton & Manuel Pais</li>
+    </ul>
+  </div>
+  
+  <div class="learning-track">
+    <div class="track-icon"><i class="fas fa-certificate"></i></div>
+    <h4>Professional Certifications</h4>
+    <ul>
+      <li><a href="https://aws.amazon.com/certification/certified-devops-engineer-professional/" target="_blank">AWS Certified DevOps Engineer</a></li>
+      <li><a href="https://cloud.google.com/certification/cloud-devops-engineer" target="_blank">Google Professional Cloud DevOps Engineer</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/learn/certifications/devops-engineer/" target="_blank">Microsoft Azure DevOps Engineer Expert</a></li>
+      <li><a href="https://www.devopsinstitute.com/certifications/" target="_blank">DevOps Institute Certifications</a></li>
+    </ul>
+  </div>
+  
+  <div class="learning-track">
+    <div class="track-icon"><i class="fas fa-graduation-cap"></i></div>
+    <h4>Online Courses</h4>
+    <ul>
+      <li><a href="https://www.coursera.org/professional-certificates/ibm-devops-and-software-engineering" target="_blank">IBM DevOps Professional Certificate</a> (Coursera)</li>
+      <li><a href="https://www.coursera.org/specializations/continuous-delivery-devops" target="_blank">Continuous Delivery & DevOps</a> (University of Virginia)</li>
+      <li><a href="https://www.edx.org/course/introduction-to-devops" target="_blank">Introduction to DevOps</a> (Linux Foundation)</li>
+    </ul>
+  </div>
+  
+  <div class="learning-track">
+    <div class="track-icon"><i class="fas fa-chart-line"></i></div>
+    <h4>DORA & Research Resources</h4>
+    <ul>
+      <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a></li>
+      <li><a href="https://dora.dev/" target="_blank">DORA Research Program</a></li>
+      <li><a href="https://www.atlassian.com/devops/frameworks/dora-metrics" target="_blank">DORA Metrics Implementation Guide</a></li>
+      <li><a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a></li>
+    </ul>
+  </div>
+</div>
+
+## 🧭 Navigation
+
+<div class="meeting-navigation">
+  <div class="nav-item prev">
+    <a href="meeting-3.html">
+      <i class="fas fa-arrow-left"></i>
+      <span>Previous: Management & Sustainability</span>
+    </a>
+  </div>
+  <div class="nav-item next">
+    <i class="fas fa-flag-checkered"></i>
+    <span>Final Meeting - Transformation Complete!</span>
+  </div>
+</div>
 
 <style>
+/* Meeting Navigation */
+.meeting-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border-radius: 16px;
+  border: 2px solid #9ca3af;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #4b5563;
+}
+
+.nav-item.prev {
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+  border: 2px solid #8b5cf6;
+}
+
+.nav-item.prev:hover {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+  transform: translateX(-4px);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.nav-item.next {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 2px solid #f59e0b;
+  color: #92400e;
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-item i {
+  font-size: 1.2rem;
+}
+
+/* Advanced Learning Section */
+.advanced-learning-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  border-radius: 16px;
+  border: 2px solid #4caf50;
+}
+
+.learning-track {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #4caf50;
+}
+
+.learning-track:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2);
+}
+
+.track-icon {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4caf50;
+}
+
+.learning-track h4 {
+  margin: 0 0 1rem 0;
+  color: #2e7d32;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.learning-track ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.learning-track li {
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.learning-track li:hover {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  transform: translateX(4px);
+}
+
+.learning-track a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.learning-track a:hover {
+  color: white;
+}
+
+.learning-track li:hover a {
+  color: white;
+}
+
 /* Leadership Pillars */
 .leadership-pillars {
   display: grid;
@@ -820,6 +1012,16 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .advanced-learning-section {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .learning-track {
+    padding: 1.5rem;
+  }
+  
   .leadership-pillars {
     grid-template-columns: 1fr;
     gap: 1.5rem;

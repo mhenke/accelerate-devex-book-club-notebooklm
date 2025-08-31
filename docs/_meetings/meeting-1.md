@@ -304,7 +304,74 @@ dora_color: '#2196F3'
 [ ] Identify your biggest deployment pain point
 [ ] Observe examples of pathological, bureaucratic, or generative culture behaviors
 
+## 🧭 Navigation
+
+<div class="meeting-navigation">
+  <div class="nav-item prev">
+    <i class="fas fa-arrow-left"></i>
+    <span>Previous: None (Starting point)</span>
+  </div>
+  <div class="nav-item next">
+    <a href="meeting-2.html">
+      <span>Next: Technical Excellence & Continuous Delivery</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
 <style>
+/* Meeting Navigation */
+.meeting-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border-radius: 16px;
+  border: 2px solid #9ca3af;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #4b5563;
+}
+
+.nav-item.prev {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 2px solid #cbd5e1;
+}
+
+.nav-item.next {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border: 2px solid #3b82f6;
+}
+
+.nav-item.next:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-item i {
+  font-size: 1.2rem;
+}
+
 /* Interactive Learning Checkpoint */
 .learning-checkpoint {
   display: grid;
