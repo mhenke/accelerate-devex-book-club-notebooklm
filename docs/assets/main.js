@@ -496,20 +496,31 @@ document.addEventListener('DOMContentLoaded', function() {
   const path = window.location.pathname;
   let meetingId = null;
 
-  if (path.includes('meeting-1')) {
+  // More flexible URL pattern matching for Jekyll sites
+  if (path.includes('meeting-1') || path.includes('meeting1')) {
     meetingId = 'meeting1';
-  } else if (path.includes('meeting-2')) {
+  } else if (path.includes('meeting-2') || path.includes('meeting2')) {
     meetingId = 'meeting2';
-  } else if (path.includes('meeting-3')) {
+  } else if (path.includes('meeting-3') || path.includes('meeting3')) {
     meetingId = 'meeting3';
-  } else if (path.includes('meeting-4')) {
+  } else if (path.includes('meeting-4') || path.includes('meeting4')) {
     meetingId = 'meeting4';
   }
 
+  // Also check for data attributes on body or html elements
+  if (!meetingId) {
+    const bodyMeeting = document.body.getAttribute('data-meeting');
+    const htmlMeeting = document.documentElement.getAttribute('data-meeting');
+    meetingId = bodyMeeting || htmlMeeting;
+  }
+
+  // Initialize the appropriate meeting configuration
   if (meetingId && MeetingConfigs[meetingId]) {
+    console.log(`Initializing ${meetingId} components`);
     MeetingComponents.init(MeetingConfigs[meetingId]);
   } else {
     // Initialize common formatters for non-meeting pages
+    console.log('Initializing common formatters');
     ActionItemsFormatter.init();
     DiscussionQuestionsFormatter.init();
   }
