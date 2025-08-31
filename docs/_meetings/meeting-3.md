@@ -427,9 +427,9 @@ dora_color: '#FF9800'
   gap: 1rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #ff9800;
   flex-wrap: wrap;
 }
 
@@ -458,7 +458,7 @@ dora_color: '#FF9800'
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
   font-weight: 600;
-  color: #1565c0;
+  color: #e65100;
 }
 
 .formula-component p, .formula-result p {
@@ -474,20 +474,20 @@ dora_color: '#FF9800'
 }
 
 .formula-result {
-  border: 3px solid #4caf50;
+  border: 3px solid #ff9800;
 }
 
 .formula-result h4 {
-  color: #2e7d32;
+  color: #e65100;
 }
 
 /* Microsoft Stats */
 .microsoft-stats {
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #3f51b5;
+  border: 2px solid #ff9800;
 }
 
 .stat-highlight {
@@ -497,18 +497,18 @@ dora_color: '#FF9800'
   display: flex;
   align-items: center;
   gap: 2rem;
-  box-shadow: 0 8px 25px rgba(63, 81, 181, 0.1);
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .stat-highlight:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(63, 81, 181, 0.2);
+  box-shadow: 0 12px 35px rgba(255, 152, 0, 0.2);
 }
 
 .stat-icon {
   font-size: 3.5rem;
-  color: #3f51b5;
+  color: #ff9800;
   text-align: center;
   flex-shrink: 0;
 }
@@ -570,9 +570,9 @@ dora_color: '#FF9800'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #9c27b0;
+  border: 2px solid #ff9800;
 }
 
 .exercise-card {
@@ -581,24 +581,24 @@ dora_color: '#FF9800'
   padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #9c27b0;
+  border-left: 4px solid #ff9800;
 }
 
 .exercise-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(156, 39, 176, 0.2);
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.2);
 }
 
 .exercise-icon {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #9c27b0;
+  color: #ff9800;
 }
 
 .exercise-card h4 {
   margin: 0 0 1rem 0;
-  color: #7b1fa2;
+  color: #e65100;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
