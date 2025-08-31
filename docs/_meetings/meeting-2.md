@@ -22,40 +22,40 @@ dora_color: '#4CAF50'
 	Your browser does not support the audio element.
 </audio>
 
-## Westrum's Organizational Culture Types
 
-<div class="culture-types-diagram">
-  <div class="culture-card pathological">
-    <div class="culture-icon"><i class="fas fa-exclamation-triangle"></i></div>
-    <h3>Pathological</h3>
-    <p class="culture-subtitle">Power-Oriented</p>
-    <ul class="culture-traits">
-      <li><i class="fas fa-times"></i> Low cooperation</li>
-      <li><i class="fas fa-user-slash"></i> Messengers shot</li>
-      <li><i class="fas fa-hand-paper"></i> Responsibility shirked</li>
-    </ul>
+## Architecture: Loosely Coupled Systems Enable Team Independence
+
+<div class="architecture-comparison">
+  <div class="arch-side tight-coupled">
+    <div class="arch-icon"><i class="fas fa-link"></i></div>
+    <h3>Tightly Coupled</h3>
+    <div class="arch-content">
+      <p><strong>High Dependencies</strong></p>
+      <ul>
+        <li><i class="fas fa-ban"></i> Teams block each other</li>
+        <li><i class="fas fa-phone"></i> Constant coordination needed</li>
+        <li><i class="fas fa-turtle"></i> Slower deployment cycles</li>
+        <li><i class="fas fa-fire"></i> Cascading failures</li>
+      </ul>
+    </div>
   </div>
   
-  <div class="culture-card bureaucratic">
-    <div class="culture-icon"><i class="fas fa-clipboard-list"></i></div>
-    <h3>Bureaucratic</h3>
-    <p class="culture-subtitle">Rule-Oriented</p>
-    <ul class="culture-traits">
-      <li><i class="fas fa-chart-bar"></i> Modest cooperation</li>
-      <li><i class="fas fa-user-times"></i> Messengers neglected</li>
-      <li><i class="fas fa-ruler"></i> Narrow responsibilities</li>
-    </ul>
+  <div class="vs-divider">
+    <span>VS</span>
   </div>
   
-  <div class="culture-card generative">
-    <div class="culture-icon"><i class="fas fa-rocket"></i></div>
-    <h3>Generative</h3>
-    <p class="culture-subtitle">Performance-Oriented</p>
-    <ul class="culture-traits">
-      <li><i class="fas fa-check"></i> High cooperation</li>
-      <li><i class="fas fa-graduation-cap"></i> Messengers trained</li>
-      <li><i class="fas fa-handshake"></i> Risks shared</li>
-    </ul>
+  <div class="arch-side loose-coupled">
+    <div class="arch-icon"><i class="fas fa-puzzle-piece"></i></div>
+    <h3>Loosely Coupled</h3>
+    <div class="arch-content">
+      <p><strong>Independent Teams</strong></p>
+      <ul>
+        <li><i class="fas fa-check"></i> Autonomous team work</li>
+        <li><i class="fas fa-rocket"></i> Faster feature delivery</li>
+        <li><i class="fas fa-shield-alt"></i> Isolated failures</li>
+        <li><i class="fas fa-chart-line"></i> Better scalability</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -121,35 +121,143 @@ dora_color: '#4CAF50'
   </div>
 </div>
 
-## Interactive Learning Checkpoint
+## Breaking the "Wall of Confusion"
 
-<div class="learning-checkpoint">
-  <div class="checkpoint-card culture-assessment">
-    <div class="checkpoint-icon"><i class="fas fa-chart-bar"></i></div>
-    <h4>Culture Assessment</h4>
-    <p>Rate your organization on Westrum's model:</p>
-    <div class="assessment-buttons">
-      <label class="assessment-btn pathological">
-        <input type="radio" name="culture-type" value="pathological">
-        <span class="radio-mark"></span>
-        Pathological
-      </label>
-      <label class="assessment-btn bureaucratic">
-        <input type="radio" name="culture-type" value="bureaucratic">
-        <span class="radio-mark"></span>
-        Bureaucratic
-      </label>
-      <label class="assessment-btn generative">
-        <input type="radio" name="culture-type" value="generative">
-        <span class="radio-mark"></span>
-        Generative
-      </label>
-    </div>
-    <div class="feedback-area" id="culture-feedback">
-      <p>Select a culture type to learn more about its characteristics and impact on performance.</p>
+<div class="wall-confusion-section">
+  <div class="confusion-problem">
+    <div class="problem-icon"><i class="fas fa-wall-brick"></i></div>
+    <h4>Traditional Silos</h4>
+    <ul>
+      <li><i class="fas fa-code"></i> Development optimizes for <strong>throughput</strong></li>
+      <li><i class="fas fa-server"></i> Operations optimizes for <strong>stability</strong></li>
+      <li><i class="fas fa-times-circle"></i> Conflicting incentives create friction</li>
+      <li><i class="fas fa-handshake-slash"></i> Blame culture emerges from misalignment</li>
+    </ul>
+  </div>
+  
+  <div class="arrow-breakthrough">
+    <i class="fas fa-arrow-right"></i>
+    <span>CD Solution</span>
+  </div>
+  
+  <div class="confusion-solution">
+    <div class="solution-icon"><i class="fas fa-hands-helping"></i></div>
+    <h4>System-Level Outcomes</h4>
+    <ul>
+      <li><i class="fas fa-bullseye"></i> Shared responsibility for <strong>both</strong> speed and stability</li>
+      <li><i class="fas fa-chart-line"></i> Metrics that reward collaboration</li>
+      <li><i class="fas fa-tools"></i> Technical practices that enable both goals</li>
+      <li><i class="fas fa-seedling"></i> Culture transformation through behavioral change</li>
+    </ul>
+  </div>
+</div>
+
+## Security: Shift Left for Speed AND Safety
+
+<div class="security-shift-comparison">
+  <div class="security-approach traditional">
+    <div class="approach-icon"><i class="fas fa-shield-alt"></i></div>
+    <h4>Traditional: Bolt-On Security</h4>
+    <div class="security-problems">
+      <div class="problem-item">
+        <i class="fas fa-clock"></i>
+        <span>Security review at the end</span>
+      </div>
+      <div class="problem-item">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>50% more remediation time</span>
+      </div>
+      <div class="problem-item">
+        <i class="fas fa-turtle"></i>
+        <span>Delayed releases</span>
+      </div>
     </div>
   </div>
   
+  <div class="vs-arrow">→</div>
+  
+  <div class="security-approach integrated">
+    <div class="approach-icon"><i class="fas fa-lock"></i></div>
+    <h4>Shift-Left: Built-In Security</h4>
+    <div class="security-benefits">
+      <div class="benefit-item">
+        <i class="fas fa-rocket"></i>
+        <span>Security checks in CI/CD pipeline</span>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-chart-line"></i>
+        <span>50% faster remediation</span>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-balance-scale"></i>
+        <span>Better security AND faster delivery</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Conway's Law & Team Structure
+
+<div class="conway-law-section">
+  <div class="law-statement">
+    <div class="law-icon"><i class="fas fa-quote-left"></i></div>
+    <blockquote>
+      "Organizations design systems that mirror their communication structures"
+    </blockquote>
+    <cite>— Melvin Conway, 1967</cite>
+  </div>
+  
+  <div class="conway-examples">
+    <div class="example-card">
+      <div class="example-icon"><i class="fas fa-sitemap"></i></div>
+      <h4>Traditional Organization</h4>
+      <p><strong>Structure:</strong> Separate dev, QA, ops teams</p>
+      <p><strong>Result:</strong> Monolithic systems with handoff bottlenecks</p>
+    </div>
+    
+    <div class="arrow-transform">
+      <i class="fas fa-sync-alt"></i>
+      <span>Inverse Conway</span>
+    </div>
+    
+    <div class="example-card">
+      <div class="example-icon"><i class="fas fa-users"></i></div>
+      <h4>Cross-Functional Teams</h4>
+      <p><strong>Structure:</strong> Full-stack teams with all skills</p>
+      <p><strong>Result:</strong> Loosely coupled, independently deployable services</p>
+    </div>
+  </div>
+</div>
+
+## Tool Autonomy Drives Performance
+
+<div class="tool-autonomy-impact">
+  <div class="autonomy-stat">
+    <div class="stat-icon"><i class="fas fa-palette"></i></div>
+    <div class="stat-content">
+      <h4>Tool Choice Freedom</h4>
+      <p>Teams that choose their own tools are:</p>
+      <div class="impact-metrics">
+        <div class="metric-point">
+          <i class="fas fa-chart-line"></i>
+          <span>Higher performing</span>
+        </div>
+        <div class="metric-point">
+          <i class="fas fa-smile"></i>
+          <span>More satisfied</span>
+        </div>
+        <div class="metric-point">
+          <i class="fas fa-lightbulb"></i>
+          <span>More innovative</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Interactive Learning Checkpoint
+
+<div class="learning-checkpoint">
   <div class="checkpoint-card behavioral-shifts">
     <div class="checkpoint-icon"><i class="fas fa-sync-alt"></i></div>
     <h4>Behavioral Shifts</h4>
@@ -292,104 +400,501 @@ dora_color: '#4CAF50'
 [ ] Map current dependencies that prevent independent deployment
 [ ] Experiment with one CD practice (trunk-based development, test automation, etc.)
 
+## 🔗 Related Resources
+
+<div class="related-resources">
+  <div class="resource-category">
+    <div class="resource-icon"><i class="fas fa-tools"></i></div>
+    <h4>CI/CD Tools & Platforms</h4>
+    <ul>
+      <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> - Workflow automation</li>
+      <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a> - Open source automation server</li>
+      <li><a href="https://circleci.com/" target="_blank">CircleCI</a> - Continuous integration platform</li>
+      <li><a href="https://argoproj.github.io/cd/" target="_blank">Argo CD</a> - GitOps continuous delivery</li>
+    </ul>
+  </div>
+  
+  <div class="resource-category">
+    <div class="resource-icon"><i class="fas fa-shield-alt"></i></div>
+    <h4>Security Integration</h4>
+    <ul>
+      <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps</a> - Security guidelines</li>
+      <li><a href="https://snyk.io/" target="_blank">Snyk</a> - Developer security platform</li>
+      <li><a href="https://github.com/features/security" target="_blank">GitHub Security</a> - Built-in security features</li>
+      <li><a href="https://www.sonarqube.org/" target="_blank">SonarQube</a> - Code quality and security</li>
+    </ul>
+  </div>
+</div>
+
+## 🧭 Navigation
+
+<div class="meeting-navigation">
+  <div class="nav-item prev">
+    <a href="meeting-1.html">
+      <i class="fas fa-arrow-left"></i>
+      <span>Previous: Foundation & DORA Metrics</span>
+    </a>
+  </div>
+  <div class="nav-item next">
+    <a href="meeting-3.html">
+      <span>Next: Management & Sustainability</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
 <style>
-/* Culture Types Diagram */
-.culture-types-diagram {
+/* Meeting Navigation */
+.meeting-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border-radius: 16px;
+  border: 2px solid #9ca3af;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #4b5563;
+}
+
+.nav-item.prev {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 2px solid #f59e0b;
+}
+
+.nav-item.prev:hover {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  transform: translateX(-4px);
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.nav-item.next {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border: 2px solid #3b82f6;
+}
+
+.nav-item.next:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-item i {
+  font-size: 1.2rem;
+}
+
+/* Related Resources */
+.related-resources {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin: 3rem 0;
-  max-width: 1000px;
-}
-
-.culture-card {
-  background: white;
-  border-radius: 16px;
   padding: 2rem;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-radius: 16px;
+  border: 2px solid #2196f3;
+}
+
+.resource-category {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: 3px solid transparent;
-  position: relative;
-  overflow: hidden;
+  border-left: 4px solid #2196f3;
 }
 
-.culture-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-}
-
-.culture-card.pathological {
-  border-color: #f44336;
-}
-
-.culture-card.pathological::before {
-  background: linear-gradient(90deg, #f44336, #d32f2f);
-}
-
-.culture-card.bureaucratic {
-  border-color: #ff9800;
-}
-
-.culture-card.bureaucratic::before {
-  background: linear-gradient(90deg, #ff9800, #f57c00);
-}
-
-.culture-card.generative {
-  border-color: #4caf50;
-}
-
-.culture-card.generative::before {
-  background: linear-gradient(90deg, #4caf50, #388e3c);
-}
-
-.culture-card:hover {
+.resource-category:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
 }
 
-.culture-icon {
-  font-size: 3rem;
+.resource-icon {
+  font-size: 2.5rem;
+  text-align: center;
   margin-bottom: 1rem;
-  display: block;
+  color: #2196f3;
 }
 
-.culture-card h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.5rem;
-  font-weight: 700;
+.resource-category h4 {
+  margin: 0 0 1rem 0;
+  color: #1565c0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
 }
 
-.culture-subtitle {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-.culture-traits {
+.resource-category ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.culture-traits li {
-  padding: 0.4rem 0;
+.resource-category li {
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.resource-category li:hover {
+  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  transform: translateX(4px);
+}
+
+.resource-category a {
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: 500;
   font-size: 0.9rem;
-  text-align: left;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.resource-category li:hover a {
+  color: white;
+}
+
+/* Architecture Comparison */
+.architecture-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-radius: 16px;
+  border: 2px solid #ff9800;
+}
+
+.arch-side {
+  flex: 1;
+  text-align: center;
+}
+
+.arch-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.arch-side h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.tight-coupled h3 {
+  color: #d32f2f;
+}
+
+.loose-coupled h3 {
+  color: #2e7d32;
+}
+
+.arch-content p {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.arch-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.arch-content li {
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.vs-divider {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff9800;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ff9800;
+}
+
+/* Wall of Confusion Section */
+.wall-confusion-section {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffebee, #f8bbd9);
+  border-radius: 16px;
+  border: 2px solid #e91e63;
+}
+
+.confusion-problem, .confusion-solution {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.problem-icon, .solution-icon {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #e91e63;
+}
+
+.confusion-problem h4, .confusion-solution h4 {
+  margin: 0 0 1rem 0;
+  color: #ad1457;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.confusion-problem ul, .confusion-solution ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.confusion-problem li, .confusion-solution li {
+  padding: 0.5rem 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
-.culture-traits li i {
-  width: 16px;
+.arrow-breakthrough {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.arrow-breakthrough i {
+  font-size: 2rem;
+}
+
+/* Security Shift Comparison */
+.security-shift-comparison {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-radius: 16px;
+  border: 2px solid #2196f3;
+}
+
+.security-approach {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.approach-icon {
+  font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 1rem;
+  color: #2196f3;
+}
+
+.security-approach h4 {
+  margin: 0 0 1rem 0;
+  color: #1565c0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.problem-item, .benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.vs-arrow {
+  font-size: 2rem;
+  color: #2196f3;
+  font-weight: bold;
+}
+
+/* Conway's Law Section */
+.conway-law-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  border-radius: 16px;
+  border: 2px solid #9c27b0;
+}
+
+.law-statement {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.law-icon {
+  font-size: 2rem;
+  color: #9c27b0;
+  margin-bottom: 1rem;
+}
+
+.law-statement blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #7b1fa2;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.law-statement cite {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.conway-examples {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.example-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.example-icon {
+  font-size: 2rem;
+  color: #9c27b0;
+  margin-bottom: 1rem;
+}
+
+.example-card h4 {
+  margin: 0 0 1rem 0;
+  color: #7b1fa2;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.example-card p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.arrow-transform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9c27b0;
+  font-weight: bold;
+}
+
+.arrow-transform i {
+  font-size: 2rem;
+}
+
+/* Tool Autonomy Impact */
+.tool-autonomy-impact {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  border-radius: 16px;
+  border: 2px solid #ffc107;
+}
+
+.autonomy-stat {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.stat-icon {
+  font-size: 3rem;
+  color: #ffc107;
   flex-shrink: 0;
+}
+
+.stat-content h4 {
+  margin: 0 0 1rem 0;
+  color: #f57c00;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.stat-content p {
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-weight: 500;
+}
+
+.impact-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric-point {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.metric-point i {
+  color: #ffc107;
 }
 
 /* Transformation Flow */
@@ -567,9 +1072,59 @@ dora_color: '#4CAF50'
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .culture-types-diagram {
+  .architecture-comparison {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .vs-divider {
+    transform: rotate(90deg);
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .wall-confusion-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  
+  .arrow-breakthrough {
+    transform: rotate(90deg);
+  }
+  
+  .security-shift-comparison {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .vs-arrow {
+    transform: rotate(90deg);
+  }
+  
+  .conway-examples {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .arrow-transform {
+    transform: rotate(90deg);
+  }
+  
+  .autonomy-stat {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .related-resources {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .resource-category {
+    padding: 1.5rem;
   }
   
   .transformation-flow {
@@ -586,7 +1141,7 @@ dora_color: '#4CAF50'
     grid-template-columns: 1fr;
   }
   
-  .culture-card, .principle-card {
+  .principle-card {
     padding: 1.5rem;
   }
   
