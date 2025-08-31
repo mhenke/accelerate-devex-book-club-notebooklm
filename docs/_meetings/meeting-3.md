@@ -78,32 +78,27 @@ dora_color: '#FF9800'
 
 <div class="satisfaction-formula">
   <div class="formula-component">
-    <div class="component-icon"><i class="fas fa-bullseye"></i></div>
-    <h4>Meaningful Work</h4>
+    <h4><i class="fas fa-bullseye"></i> Meaningful Work</h4>
     <p>Appropriate challenges</p>
   </div>
   <div class="formula-plus">+</div>
   <div class="formula-component">
-    <div class="component-icon"><i class="fas fa-graduation-cap"></i></div>
-    <h4>Learning</h4>
+    <h4><i class="fas fa-graduation-cap"></i> Learning</h4>
     <p>Growth opportunities</p>
   </div>
   <div class="formula-plus">+</div>
   <div class="formula-component">
-    <div class="component-icon"><i class="fas fa-handshake"></i></div>
-    <h4>Support</h4>
+    <h4><i class="fas fa-handshake"></i> Support</h4>
     <p>Team culture</p>
   </div>
   <div class="formula-plus">+</div>
   <div class="formula-component">
-    <div class="component-icon"><i class="fas fa-tools"></i></div>
-    <h4>Right Tools</h4>
+    <h4><i class="fas fa-tools"></i> Right Tools</h4>
     <p>Resource access</p>
   </div>
   <div class="formula-equals">=</div>
   <div class="formula-result">
-    <div class="result-icon"><i class="fas fa-smile"></i></div>
-    <h4>High Satisfaction</h4>
+    <h4><i class="fas fa-smile"></i> High Satisfaction</h4>
     <p>Better performance</p>
   </div>
 </div>
