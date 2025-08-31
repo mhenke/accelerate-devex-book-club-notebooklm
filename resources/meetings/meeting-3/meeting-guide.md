@@ -88,7 +88,7 @@ Generate a discussion podcast using the [Meeting 3 Podcast Prompt](../notebooklm
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts/video-prompt.md)
+Create a visual overview with the [Meeting 3 Video Prompt](video-prompt.md)
 
 ## Navigation
 
