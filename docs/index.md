@@ -212,7 +212,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Foundation</h4>
         <p>DORA Metrics</p>
       </div>
-      <div class="meeting-title">Meeting 1: Foundation</div>
+      <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-title">Meeting 1: Foundation</a>
     </div>
     <div class="timeline-node node-2">
       <div class="node-circle">2</div>
@@ -220,7 +220,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Culture & CD</h4>
         <p>Continuous Delivery</p>
       </div>
-      <div class="meeting-title">Meeting 2: Culture & CD</div>
+      <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-title">Meeting 2: Culture & CD</a>
     </div>
     <div class="timeline-node node-3">
       <div class="node-circle">3</div>
@@ -228,7 +228,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Architecture</h4>
         <p>Lean Management</p>
       </div>
-      <div class="meeting-title">Meeting 3: Architecture</div>
+      <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-title">Meeting 3: Architecture</a>
     </div>
     <div class="timeline-node node-4">
       <div class="node-circle">4</div>
@@ -236,7 +236,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Leadership</h4>
         <p>Transformation</p>
       </div>
-      <div class="meeting-title">Meeting 4: Leadership</div>
+      <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-title">Meeting 4: Leadership</a>
     </div>
   </div>
 </div>

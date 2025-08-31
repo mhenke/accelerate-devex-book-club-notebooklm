@@ -508,7 +508,7 @@ layout: default
 /* Responsive Design */
 @media (max-width: 768px) {
   .meeting-hero {
-    padding: 4rem 1rem 2rem;
+    padding: 4rem 1.5rem 2rem;
     margin: -2rem -0.5rem 0 -0.5rem;
   }
   
@@ -526,19 +526,24 @@ layout: default
     font-size: 3rem;
   }
   
+  .meeting-hero {
+    padding: 4rem 1.5rem 2rem;
+    margin: -2rem -0.5rem 0 -0.5rem;
+  }
+  
   .meeting-container {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     margin-top: 1rem;
   }
   
   .meeting-content h2 {
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
   
   .meeting-content h3 {
     font-size: 1.3rem;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
   }
   
   .nav-links {
@@ -553,6 +558,32 @@ layout: default
   .nav-link.next {
     margin-left: 0;
     flex-direction: row;
+  }
+}
+
+/* Very small mobile devices (480px and down) */
+@media (max-width: 480px) {
+  .meeting-hero {
+    padding: 3rem 2rem 2rem !important;
+    margin: -2rem -0.5rem 0 -0.5rem;
+  }
+  
+  .meeting-container {
+    padding: 2rem 2rem !important;
+    margin-top: 1rem;
+  }
+  
+  .meeting-content h2 {
+    padding: 1rem 2rem !important;
+  }
+  
+  .meeting-content h3 {
+    padding: 0.75rem 2rem !important;
+  }
+  
+  .wrapper {
+    margin: 0.5rem;
+    padding: 1rem 2rem !important;
   }
 }
 
