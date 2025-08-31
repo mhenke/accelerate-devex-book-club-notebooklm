@@ -16,7 +16,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <div class="meeting-icon" style="color: #2196F3">
       <i class="fas fa-podcast"></i>
     </div>
-    <h3>Meeting 1: Foundation</h3>
+    <h3><a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-link">Meeting 1: Foundation</a></h3>
     <p><strong>DORA Metrics & Speed vs. Stability</strong></p>
     <div class="prompt-links">
       <a href="#podcast" class="btn btn-secondary">Podcast Prompt</a>
@@ -28,7 +28,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <div class="meeting-icon" style="color: #4CAF50">
       <i class="fas fa-podcast"></i>
     </div>
-    <h3>Meeting 2: Culture & CD</h3>
+    <h3><a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-link">Meeting 2: Culture & CD</a></h3>
     <p><strong>Westrum Culture & Continuous Delivery</strong></p>
     <div class="prompt-links">
       <a href="#podcast" class="btn btn-secondary">Podcast Prompt</a>
@@ -40,7 +40,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <div class="meeting-icon" style="color: #FF9800">
       <i class="fas fa-podcast"></i>
     </div>
-    <h3>Meeting 3: Architecture</h3>
+    <h3><a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-link">Meeting 3: Architecture</a></h3>
     <p><strong>Loose Coupling & Team Autonomy</strong></p>
     <div class="prompt-links">
       <a href="#meeting-3-podcast" class="btn btn-secondary">Podcast Prompt</a>
@@ -52,7 +52,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
     <div class="meeting-icon" style="color: #F44336">
       <i class="fas fa-podcast"></i>
     </div>
-    <h3>Meeting 4: Leadership</h3>
+    <h3><a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-link">Meeting 4: Leadership</a></h3>
     <p><strong>Transformational Leadership</strong></p>
     <div class="prompt-links">
       <a href="#podcast" class="btn btn-secondary">Podcast Prompt</a>
