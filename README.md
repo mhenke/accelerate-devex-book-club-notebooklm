@@ -23,11 +23,17 @@ A resource hub and interactive site for learning and implementing high-performin
 
 ## 🏗️ Project Architecture
 
-- **docs/**: Main Jekyll site (layouts, assets, content)
-- **meeting-resources/**: Guides for each book club session
-- **notebooklm-prompts/**: Prompts for AI-generated podcasts/videos
-- **book-club-materials/**: Supporting resources and activities
-- **All visuals**: Implemented with CSS/SVG/HTML, not static images
+- **docs/**: Main Jekyll site with layouts, assets, and meeting pages
+  - **_meetings/**: Four interactive meeting pages with corrected chapter mappings
+  - **_layouts/**: Jekyll layouts (default, meeting, resource)
+  - **assets/**: SCSS stylesheets with modern design system
+- **resources/**: Comprehensive resource collection
+  - **plan/**: Updated book club plan with corrected chapter mappings and NotebookLM prompts
+  - **meetings/**: Individual meeting guides and AI generation prompts
+  - **activities/**: Discussion practices and between-meeting activities
+  - **assessments/**: DORA metrics and culture assessment worksheets
+  - **templates/**: Meeting notes and retrospective formats
+- **All visuals**: Implemented with CSS/SVG/HTML/JavaScript, not static images
 
 ---
 
@@ -49,36 +55,43 @@ A resource hub and interactive site for learning and implementing high-performin
 ```
 accelerate-devex-book-club-notebooklm/
 ├── README.md
+├── CLAUDE.md
 ├── book-club-guide.md
-├── meeting-resources/
-│   ├── meeting-1-guide.md
-│   └── ...
-├── book-club-materials/
-│   ├── between-meetings.md
-│   └── ...
-├── notebooklm-prompts/
-│   ├── meeting-*-podcast-prompt.md
-│   └── ...
-├── docs/
-│   ├── index.md
-│   ├── _config.yml
-│   ├── _meetings/
-│   ├── assets/
-│   └── ...
-└── resources/
-    ├── meetings/
-    └── ...
+├── docs/                          # Main Jekyll site
+│   ├── index.md                   # Homepage with hero banner
+│   ├── _config.yml               # Jekyll configuration
+│   ├── _meetings/                # Four interactive meeting pages
+│   │   ├── meeting-1.md          # Week 1: Chapters 1-3 (Foundation)
+│   │   ├── meeting-2.md          # Week 3: Chapters 4-6 (Technical Excellence)
+│   │   ├── meeting-3.md          # Week 5: Chapters 7-10 (Management)
+│   │   └── meeting-4.md          # Week 7: Chapters 11,16 (Leadership)
+│   ├── _layouts/                 # Jekyll layouts
+│   └── assets/                   # SCSS stylesheets
+├── resources/                     # Comprehensive resource collection
+│   ├── plan/                     # Updated book club plan
+│   │   ├── plan.md              # Corrected chapter mappings
+│   │   ├── audio.md             # NotebookLM podcast prompts
+│   │   └── video.md             # NotebookLM video prompts
+│   ├── meetings/                 # Individual meeting resources
+│   ├── activities/               # Discussion practices
+│   ├── assessments/              # DORA metrics worksheets
+│   └── templates/                # Meeting notes templates
+└── .github/                      # GitHub configuration
+    └── copilot-instructions.md   # Visual design guidance
 ```
 
 ---
 
 ## ✨ Key Features
 
-- Structured meeting guides and session materials
-- AI-generated podcasts and video prompts
-- DORA metrics infographic and interactive visuals
-- Accessible, responsive design
-- All content and visuals are web-native and modern
+- **Four structured meetings** with corrected chapter mappings aligned to book content
+- **Interactive learning checkpoints** with radio buttons and research-backed feedback
+- **Visual concept sections**: DORA metrics, Westrum culture types, CD principles, lean practices
+- **AI-generated content prompts** for NotebookLM podcasts and videos
+- **Comprehensive resources**: assessments, templates, activities, and discussion guides
+- **24 capabilities framework** integration for practical DevOps transformation
+- **Responsive design** with meeting-specific color themes and modern web technologies
+- **Biweekly structure** (Weeks 1, 3, 5, 7) supporting progressive learning
 
 ---
 
@@ -129,10 +142,11 @@ MIT License (see LICENSE file)
 
 ## 📚 References & Links
 
-- [Book Club Guide](book-club-guide.md)
+- [Updated Book Club Plan](resources/plan/plan.md) - Corrected chapter mappings and learning objectives
 - [Interactive Site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/)
-- [Meeting Resources](meeting-resources/)
-- [AI Prompts](notebooklm-prompts/)
+- [Meeting Pages](docs/_meetings/) - Four interactive meeting pages
+- [NotebookLM Prompts](resources/plan/) - AI generation prompts for audio and video
+- [Assessment Tools](resources/assessments/) - DORA metrics and culture worksheets
 - [SCSS Main Stylesheet](docs/assets/main.scss)
 
 ---
