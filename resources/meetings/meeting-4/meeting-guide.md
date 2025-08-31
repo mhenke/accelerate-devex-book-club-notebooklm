@@ -1,14 +1,16 @@
-# Meeting 4: Leadership, Security, and Continuous Learning
+# Meeting 4: Leadership, Research Methods & Transformation
 
 **Week 7 | Duration:** 1 Hour
 
 ## Pre-Reading Assignment
 
-**Chapters:** 13-15 (Transformation and Advanced Topics)
+**Chapters:** 11, 16, and Conclusion (Leaders and Managers, High-Performance Leadership case study, wrap-up)
 
-- Chapter 13: Effective Leadership
-- Chapter 14: High Performance and Job Satisfaction
-- Chapter 15: Transformation
+- Chapter 11: Leaders and Managers - Transformational leadership characteristics
+- Chapter 16: High-Performance Leadership and Management - ING Netherlands case study  
+- Conclusion: Summary and call to action
+
+**Skip Chapters 12-15:** Research methodology (optional reading for interested members)
 
 ## Core Concepts to Explore
 
