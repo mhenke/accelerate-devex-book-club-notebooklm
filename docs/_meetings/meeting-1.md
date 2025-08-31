@@ -389,7 +389,7 @@ dora_color: '#2196F3'
 }
 
 .checkpoint-card p {
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 1.5rem;
 }
 
@@ -673,7 +673,7 @@ dora_color: '#2196F3'
 .feedback-area p {
   margin: 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-medium);
   line-height: 1.4;
 }
 
@@ -790,7 +790,7 @@ dora_color: '#2196F3'
 }
 
 .metric-description {
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.95rem;
   line-height: 1.4;
   margin-bottom: 1rem;
@@ -960,7 +960,7 @@ dora_color: '#2196F3'
 }
 
 .insight-card p {
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.9rem;
   margin: 0;
   line-height: 1.4;
@@ -1092,7 +1092,7 @@ dora_color: '#2196F3'
 }
 
 .culture-subtitle {
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
   font-style: italic;

@@ -753,7 +753,7 @@ dora_color: '#4CAF50'
 }
 
 .law-statement cite {
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.9rem;
 }
 
@@ -838,7 +838,7 @@ dora_color: '#4CAF50'
 
 .stat-content p {
   margin: 0 0 1rem 0;
-  color: #666;
+  color: var(--text-medium);
   font-weight: 500;
 }
 
@@ -854,7 +854,7 @@ dora_color: '#4CAF50'
   gap: 0.5rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #666;
+  color: var(--text-medium);
 }
 
 .metric-point i {
@@ -941,7 +941,7 @@ dora_color: '#4CAF50'
 }
 
 .principle-card p {
-  color: #666;
+  color: var(--text-medium);
   font-size: 0.9rem;
   margin: 0;
   line-height: 1.4;
@@ -989,7 +989,7 @@ dora_color: '#4CAF50'
 }
 
 .application-card p {
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: 500;
@@ -1164,7 +1164,7 @@ dora_color: '#4CAF50'
 }
 
 .checkpoint-card p {
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 1.5rem;
 }
 
@@ -1331,7 +1331,7 @@ dora_color: '#4CAF50'
 .feedback-area p {
   margin: 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-medium);
   line-height: 1.4;
 }
 
