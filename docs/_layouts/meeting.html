@@ -481,15 +481,21 @@ layout: default
 /* Progress Indicator */
 .meeting-progress {
   text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0;
+  clear: both;
 }
 
 .progress-bar {
   width: 100%;
-  height: 6px;
+  height: 8px;
   background: var(--background-light);
-  border-radius: 3px;
+  border-radius: 4px;
   overflow: hidden;
   margin-bottom: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-light);
 }
 
 .progress-fill {
@@ -497,12 +503,15 @@ layout: default
   background: linear-gradient(90deg, var(--primary-blue), var(--accent-teal));
   border-radius: 3px;
   transition: width 0.5s ease;
+  box-shadow: 0 1px 3px rgba(33, 150, 243, 0.3);
 }
 
 .progress-text {
   color: var(--text-medium);
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin: 0;
 }
 
 /* Responsive Design */
@@ -553,6 +562,19 @@ layout: default
   .nav-link.next {
     margin-left: 0;
     flex-direction: row;
+  }
+  
+  .meeting-progress {
+    margin-top: 1.5rem;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .progress-text {
+    font-size: 0.9rem;
   }
 }
 
