@@ -199,7 +199,7 @@ h2 {
 
 @media (max-width: 576px) {
   .hero-banner {
-    padding: 2.5rem 0.5rem;
+    padding: 2.5rem 1.5rem;
     font-size: 1rem;
   }
   .hero-banner::after {
@@ -212,6 +212,11 @@ h2 {
   }
   .hero-content h2 {
     font-size: 1.2rem;
+  }
+  
+  .wrapper {
+    margin: 0.5rem;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -1871,8 +1876,8 @@ pre {
 /* Mobile (767px and down) */
 @media (max-width: 767px) {
   .wrapper {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1rem 0.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .hero-banner {
@@ -2030,6 +2035,26 @@ pre {
     transform: none;
     justify-content: center;
     margin-top: 2rem;
+  }
+}
+
+/* Very small mobile devices (480px and down) - Extra spacing for readability */
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 0.5rem;
+    padding: 1rem 2rem !important;
+  }
+  
+  .hero-banner {
+    padding: 2.5rem 2rem !important;
+  }
+  
+  .hero-content {
+    padding: 0 1rem;
+  }
+  
+  body {
+    font-size: 15px; /* Slightly smaller font on very small screens */
   }
 }
 
