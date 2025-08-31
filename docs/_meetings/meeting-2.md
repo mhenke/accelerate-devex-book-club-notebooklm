@@ -390,24 +390,7 @@ dora_color: '#4CAF50'
   </div>
 </div>
 
-# <<<<<<< HEAD
-
 ## 🧭 Navigation
-
-<div class="meeting-navigation">
-  <div class="nav-item prev">
-    <a href="meeting-1.html">
-      <i class="fas fa-arrow-left"></i>
-      <span>Previous: Foundation & DORA Metrics</span>
-    </a>
-  </div>
-  <div class="nav-item next">
-    <a href="meeting-3.html">
-      <span>Next: Management & Sustainability</span>
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
 
 <style>
 /* Meeting Navigation */

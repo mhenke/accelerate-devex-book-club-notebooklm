@@ -312,24 +312,7 @@ dora_color: '#FF9800'
 [ ] Identify one change approval step that could be streamlined
 [ ] Observe and document burnout risk factors in your environment
 
-# <<<<<<< HEAD
-
 ## 🧭 Navigation
-
-<div class="meeting-navigation">
-  <div class="nav-item prev">
-    <a href="meeting-2.html">
-      <i class="fas fa-arrow-left"></i>
-      <span>Previous: Technical Excellence & Continuous Delivery</span>
-    </a>
-  </div>
-  <div class="nav-item next">
-    <a href="meeting-4.html">
-      <span>Next: Leadership & Transformation</span>
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
 
 <style>
 /* Meeting Navigation */
