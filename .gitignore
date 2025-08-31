@@ -1,0 +1,30 @@
+# Jekyll build output
+docs/_site/
+
+# Jekyll dependencies
+docs/Gemfile.lock
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Node modules (if any)
+node_modules/
+
+# Ruby gems (if local development)
+vendor/
+.bundle/
+
+# Logs
+*.log
