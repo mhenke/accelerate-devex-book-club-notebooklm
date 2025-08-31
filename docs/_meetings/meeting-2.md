@@ -156,16 +156,12 @@ dora_color: '#4CAF50'
 
 ## 🎧 Listen to the Meeting 2 Podcast
 
-<p>Generate a discussion podcast using the <a href="../../resources/meetings/meeting-2/podcast-prompt.md">Meeting 2 Podcast Prompt</a></p>
-
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
 ## 📺 Watch the Meeting 2 Video
-
-<p>Create a visual overview with the <a href="../../resources/meetings/meeting-2/video-prompt.md">Meeting 2 Video Prompt</a></p>
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-video.mp4" type="video/mp4">

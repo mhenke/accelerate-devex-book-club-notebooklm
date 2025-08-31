@@ -183,16 +183,12 @@ dora_color: '#FF9800'
 
 ## 🎧 Listen to the Meeting 3 Podcast
 
-<p>Generate a discussion podcast using the <a href="../../resources/meetings/meeting-3/podcast-prompt.md">Meeting 3 Podcast Prompt</a></p>
-
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
 ## 📺 Watch the Meeting 3 Video
-
-<p>Create a visual overview with the <a href="../../resources/meetings/meeting-3/video-prompt.md">Meeting 3 Video Prompt</a></p>
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
