@@ -1154,4 +1154,37 @@ h3 i, h4 i {
 }
 </style>
 
-{% include interactive-assessment.html meeting_key="meeting_1" %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get shared data for this meeting
+  const meetingData = {{ site.data.meeting_data.meeting_1 | jsonify }};
+  
+  // Set up shared assessment handlers
+  function setupRadioHandler(name, infoObject, feedbackId) {
+    const radios = document.querySelectorAll(`input[name="${name}"]`);
+    const feedbackArea = document.getElementById(feedbackId);
+    
+    radios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.checked) {
+          const info = infoObject[this.value];
+          if (info && feedbackArea) {
+            feedbackArea.innerHTML = `
+              <div class="feedback-content">
+                <h5>${info.title}</h5>
+                <p>${info.content}</p>
+              </div>
+            `;
+            feedbackArea.classList.add('active');
+          }
+        }
+      });
+    });
+  }
+
+  // Set up handlers for each assessment type
+  setupRadioHandler('dora-performance', meetingData.dora_info, 'dora-feedback');
+  setupRadioHandler('deployment-confidence', meetingData.confidence_info, 'confidence-feedback');
+  setupRadioHandler('improvement-focus', meetingData.priority_info, 'priority-feedback');
+});
+</script>
