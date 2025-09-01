@@ -1,0 +1,61 @@
+# GitHub Actions CI/CD Pipeline for Jekyll Site Testing
+name: Jekyll Site Test Suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          working-directory: ./docs
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          cd docs
+          bundle install
+          cd ..
+          npm install
+
+      - name: Build Jekyll site
+        run: |
+          cd docs
+          bundle exec jekyll build --destination ../_site
+
+      - name: HTML validation
+        run: npx html-validate "_site/**/*.html"
+
+      - name: CSS validation
+        run: npx stylelint "docs/assets/**/*.scss" "docs/**/*.html"
+
+      - name: Accessibility testing
+        run: npx pa11y-ci --sitemap http://localhost:4000/sitemap.xml
+
+      - name: JavaScript linting
+        run: npx eslint "docs/**/*.{js,html}" --ext .js,.html
+
+      - name: Link checking
+        run: npx hyperlink "_site/**/*.html"
+
+      - name: Visual regression testing
+        run: npx percy exec -- npm run test:visual
+
+      - name: Interactive component testing
+        run: npm run test:interactive

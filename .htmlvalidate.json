@@ -1,0 +1,30 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "no-trailing-whitespace": "error",
+    "attribute-boolean-style": "error",
+    "attribute-empty-style": "error",
+    "doctype-style": "error",
+    "element-permitted-content": "error",
+    "element-required-attributes": "error",
+    "id-pattern": {
+      "pattern": "kebab-case"
+    },
+    "input-missing-label": "error",
+    "no-conditional-comment": "error",
+    "no-deprecated-attr": "error",
+    "no-duplicate-id": "error",
+    "no-redundant-for": "error",
+    "no-redundant-role": "error",
+    "prefer-native-element": "error",
+    "script-type": "error",
+    "valid-autocomplete": "error",
+    "void-style": "error",
+    "wcag/h32": "error",
+    "wcag/h37": "error"
+  },
+  "elements": ["html5"],
+  "transform": {
+    "^.*\\.md$": "html-validate:document"
+  }
+}
