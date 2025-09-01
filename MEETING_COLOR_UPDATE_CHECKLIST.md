@@ -77,6 +77,7 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] Reduce section margins from `3rem` to `2rem`
 - [ ] Reduce section padding from `2rem` to `1.5rem`
 - [ ] Remove excessive whitespace and line breaks
+- [ ] Remove random horizontal rules (`---` or `<hr>`) that don't belong
 - [ ] Consolidate nested div structures where possible
 - [ ] Remove unused CSS classes after structural changes (`.principle-icon`, `.application-icon`, etc.)
 
