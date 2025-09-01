@@ -22,7 +22,26 @@ dora_color: '#2196F3'
 	Your browser does not support the audio element.
 </audio>
 
-## The Four DORA Metrics
+## Key Insights
+
+<div class="insights-grid">
+  <div class="insight-card">
+    <h4><i class="fas fa-microscope"></i> Evidence-Based</h4>
+    <p>Rigorous research backing all findings</p>
+  </div>
+  
+  <div class="insight-card">
+    <h4><i class="fas fa-medal"></i> Competitive Advantage</h4>
+    <p>Software delivery capability drives success</p>
+  </div>
+  
+  <div class="insight-card">
+    <h4><i class="fas fa-user-check"></i> Process Not People</h4>
+    <p>Anxiety signals inefficiency, not failure</p>
+  </div>
+</div>
+
+### The Four DORA Metrics
 
 <div class="dora-metrics-grid">
   <div class="metric-card lead-time">
@@ -50,7 +69,7 @@ dora_color: '#2196F3'
   </div>
 </div>
 
-## Speed vs Stability: The Myth Busted
+### Speed vs Stability: The Myth Busted
 
 <div class="myth-buster">
   <div class="myth-side">
@@ -228,25 +247,6 @@ dora_color: '#2196F3'
     <div class="feedback-area" id="priority-feedback">
       <p>Choose which metric needs the most attention to get specific improvement strategies.</p>
     </div>
-  </div>
-</div>
-
-## Key Insights
-
-<div class="insights-grid">
-  <div class="insight-card">
-    <h4><i class="fas fa-microscope"></i> Evidence-Based</h4>
-    <p>Rigorous research backing all findings</p>
-  </div>
-  
-  <div class="insight-card">
-    <h4><i class="fas fa-medal"></i> Competitive Advantage</h4>
-    <p>Software delivery capability drives success</p>
-  </div>
-  
-  <div class="insight-card">
-    <h4><i class="fas fa-user-check"></i> Process Not People</h4>
-    <p>Anxiety signals inefficiency, not failure</p>
   </div>
 </div>
 
