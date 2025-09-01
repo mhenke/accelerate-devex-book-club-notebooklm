@@ -688,7 +688,7 @@ dora_color: '#059669'
   padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
-  border: 2px solid #9c27b0;
+  border: 2px solid #059669;
 }
 
 .law-statement {
@@ -833,7 +833,7 @@ dora_color: '#059669'
   padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #fce4ec);
   border-radius: 16px;
-  border: 2px solid #9c27b0;
+  border: 2px solid #059669;
 }
 
 .flow-step {
@@ -1382,7 +1382,7 @@ dora_color: '#059669'
 .practice-item .radio-mark {
   width: 18px;
   height: 18px;
-  border: 2px solid #9c27b0;
+  border: 2px solid #059669;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -1406,7 +1406,7 @@ dora_color: '#059669'
 }
 
 .practice-item:hover {
-  background: linear-gradient(135deg, #9c27b0, #ba68c8);
+  background: linear-gradient(135deg, #059669, #047857);
   color: white;
   transform: translateX(4px);
   box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
@@ -1451,7 +1451,7 @@ dora_color: '#059669'
 .cd-option .radio-mark {
   width: 18px;
   height: 18px;
-  border: 2px solid #9c27b0;
+  border: 2px solid #059669;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -1476,7 +1476,7 @@ dora_color: '#059669'
 }
 
 .cd-option:hover {
-  background: linear-gradient(135deg, #9c27b0, #ba68c8);
+  background: linear-gradient(135deg, #059669, #047857);
   color: white;
   border-color: #059669;
   transform: translateY(-2px);
