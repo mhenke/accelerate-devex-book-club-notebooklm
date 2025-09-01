@@ -87,6 +87,7 @@
 - [ ] **Duplicate Content Removal** (search for duplicate IDs and sections)
 - [ ] **Content Quality Assurance** (preserve all educational content)
 - [ ] **Media Element Validation** (ensure video/audio elements remain functional)
+- [ ] **Related Resources Link Validation** (ensure all resource sections have proper working links)
 
 ### Step 4: Cross-Page Navigation Updates (CRITICAL)
 
@@ -460,6 +461,95 @@
 - [ ] Run after every major structural change
 - [ ] Check specific file paths that were modified
 - [ ] Address errors before proceeding to next step
+
+## Related Resources Link Validation Protocol
+
+### Required Resource Categories with Links
+
+**Execute comprehensive link validation for "Related Resources" sections:**
+
+#### Meeting 1: Foundation & DORA Metrics Resources
+- [ ] **DORA Research Links**
+  - [ ] [2024 State of DevOps Report](https://dora.dev/research/2024/dora-report/) - Latest DORA findings
+  - [ ] [DORA Research Program](https://dora.dev/) - Official DORA website
+  - [ ] [DORA Quick Check Assessment](https://dora.dev/quickcheck/) - Self-assessment tool
+  - [ ] [DORA Capabilities Overview](https://dora.dev/capabilities/) - Technical and cultural capabilities
+- [ ] **Westrum Culture Resources**
+  - [ ] [Westrum Organizational Culture Types](https://dora.dev/capabilities/generative-organizational-culture/) - DORA culture guide
+  - [ ] [IT Revolution Westrum Model](https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/) - Detailed explanation
+  - [ ] [Generative Culture Assessment](https://continuousdelivery.com/implementing/culture/) - Implementation guide
+
+#### Meeting 2: Technical Excellence Resources  
+- [ ] **Continuous Delivery Links**
+  - [ ] [GitHub Actions](https://github.com/features/actions) - Workflow automation
+  - [ ] [Jenkins](https://www.jenkins.io/) - Open source automation server
+  - [ ] [Continuous Delivery Book](https://continuousdelivery.com/) - Jez Humble's site
+- [ ] **DevOps Platform Resources**
+  - [ ] Platform engineering implementation guides
+  - [ ] CI/CD best practices documentation
+  - [ ] Infrastructure as Code resources
+
+#### Meeting 3: Management & Product Development Resources
+- [ ] **Lean Management Links**
+  - [ ] Lean product development methodologies
+  - [ ] Work in Progress (WIP) management tools
+  - [ ] Value stream mapping resources
+- [ ] **Team Organization Resources**
+  - [ ] Team Topologies patterns
+  - [ ] Conway's Law implications
+  - [ ] Cross-functional team guidance
+
+#### Meeting 4: Leadership & Transformation Resources
+- [ ] **Leadership Resources**
+  - [ ] [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) - Gene Kim et al.
+  - [ ] [Continuous Delivery](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) - Jez Humble & David Farley
+  - [ ] [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002) - Gene Kim et al.
+  - [ ] [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) - Matthew Skelton & Manuel Pais
+- [ ] **Certification Resources**
+  - [ ] [AWS Certified DevOps Engineer](https://aws.amazon.com/certification/certified-devops-engineer-professional/)
+  - [ ] [Google Professional Cloud DevOps Engineer](https://cloud.google.com/certification/cloud-devops-engineer)
+  - [ ] [Microsoft Azure DevOps Engineer Expert](https://docs.microsoft.com/en-us/learn/certifications/devops-engineer/)
+  - [ ] [DevOps Institute Certifications](https://www.devopsinstitute.com/certifications/)
+- [ ] **Training Resources**
+  - [ ] [IBM DevOps Professional Certificate](https://www.coursera.org/professional-certificates/ibm-devops-and-software-engineering) (Coursera)
+  - [ ] [Continuous Delivery & DevOps](https://www.coursera.org/specializations/continuous-delivery-devops) (University of Virginia)
+  - [ ] [Introduction to DevOps](https://www.edx.org/course/introduction-to-devops) (Linux Foundation)
+
+### Link Validation Protocol
+
+**Execute for each meeting page:**
+
+- [ ] **Verify all links are clickable**: Check HTML anchor tag formatting
+- [ ] **Test external links**: Ensure all URLs return 200 status codes
+- [ ] **Validate target="_blank"**: All external links open in new tabs
+- [ ] **Check link descriptions**: All links have descriptive text
+- [ ] **Organize by categories**: Resources grouped logically (Books, Certifications, Training, etc.)
+- [ ] **Update copyright years**: Ensure resource dates are current (2024 where applicable)
+- [ ] **Add context descriptions**: Each link includes brief explanation of value
+- [ ] **Validate accessibility**: Links meet WCAG standards for descriptive text
+
+### Resource Discovery Search Patterns
+
+**Use these patterns to find and validate existing resources:**
+
+- [ ] **Search for existing links**: `grep -r "https://" docs/_meetings/`
+- [ ] **Find resource sections**: `grep -r "Resources\|Further Reading\|Related Resources" docs/_meetings/`
+- [ ] **Check for broken patterns**: `grep -r "\[.*\](\s*)" docs/_meetings/` (empty link targets)
+- [ ] **Validate HTML structure**: `grep -r '<li><a href=' docs/_meetings/`
+- [ ] **Find sections missing links**: `grep -A 10 -B 2 "Related Resources\|Further Reading" docs/_meetings/ | grep -v "http"`
+- [ ] **Check for placeholder text**: `grep -r "Coming soon\|TBD\|TODO" docs/_meetings/`
+- [ ] **Find resource categories without links**: `grep -A 5 "### \|#### " docs/_meetings/ | grep -B 2 -A 3 "Resources\|Books\|Tools\|Certifications"`
+
+### Missing Link Detection and Addition
+
+**If resources section lacks links:**
+
+- [ ] **Search meeting content**: Identify topics covered in meeting
+- [ ] **Map to resource categories**: Match topics to standard resource types
+- [ ] **Add official documentation**: Include authoritative sources first
+- [ ] **Add community resources**: Include well-regarded community guides
+- [ ] **Include assessment tools**: Add practical assessment/implementation tools
+- [ ] **Provide multiple formats**: Include articles, videos, courses, books
 
 ## Final Validation Protocol (Execute Before Commit)
 
