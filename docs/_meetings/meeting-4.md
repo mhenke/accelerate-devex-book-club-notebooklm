@@ -1,1027 +1,261 @@
 ---
 layout: meeting
 title: 'Meeting 4: Leadership & Transformation'
-subtitle: 'Leadership, Research Methods & Transformation'
+subtitle: 'Transformational Leadership, ING Case Study, & Make It Your Own'
 week: 7
 chapters: '11, 16, Conclusion'
 duration: '1 Hour'
 dora_color: '#7c3aed'
 ---
 
-## <i class="fas fa-video"></i> Watch the Meeting 4 Video
+# Meeting 4: Leadership & Transformation
+**Week 7 | Duration:** 1 Hour
 
-<video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+### Pre-Reading Assignment
+**Chapters:** 11, 16, and Conclusion (Transformational Leadership, ING Case Study, Wrap-up)
+- **Chapter 11:** Leaders and Managers - Transformational leadership characteristics and impact
+- **Chapter 16:** High-Performance Leadership and Management - ING Netherlands transformation case study
+- **Conclusion:** Summary and transformation guidance
 
-## <i class="fas fa-headphones"></i> Listen to the Meeting 4 Podcast
+### **Note:** Chapters 12-15 (research methodology) are optional reading for interested members but not required for book club discussion.
 
-<audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
+---
+
+## Media Content
+**Video and Podcast:** Leadership & Transformation focus
+
+---
 
 ## Key Insights
 
-### Transformational Leadership in Action
+### 1. Transformational Leadership - Five Dimensions That Drive Performance
+- **Vision:** Clear understanding of where organization is going in 5 years
+- **Inspirational Communication:** Motivates and inspires even in uncertain/changing environments
+- **Intellectual Stimulation:** Challenges team members to think about problems in new ways
+- **Supportive Leadership:** Demonstrates care and consideration for followers' personal needs and feelings  
+- **Personal Recognition:** Praises and acknowledges achievements, personally compliments outstanding work
 
-<div class="leadership-pillars">
-  <div class="pillar-card vision">
-    <div class="pillar-icon"><i class="fas fa-bullseye"></i></div>
-    <h3>Vision</h3>
-    <p class="pillar-subtitle">Inspiring Direction</p>
-    <ul class="pillar-traits">
-      <li><i class="fas fa-star"></i> Clear future state</li>
-      <li><i class="fas fa-comment"></i> Compelling communication</li>
-      <li><i class="fas fa-rocket"></i> Motivational messaging</li>
-    </ul>
-  </div>
-  
-  <div class="pillar-card stimulation">
-    <div class="pillar-icon"><i class="fas fa-lightbulb"></i></div>
-    <h3>Intellectual Stimulation</h3>
-    <p class="pillar-subtitle">Challenge & Innovation</p>
-    <ul class="pillar-traits">
-      <li><i class="fas fa-question-circle"></i> Question assumptions</li>
-      <li><i class="fas fa-microscope"></i> Encourage experimentation</li>
-      <li><i class="fas fa-lightbulb"></i> Foster creativity</li>
-    </ul>
-  </div>
-  
-  <div class="pillar-card support">
-    <div class="pillar-icon"><i class="fas fa-handshake"></i></div>
-    <h3>Supportive Leadership</h3>
-    <p class="pillar-subtitle">Individual Care</p>
-    <ul class="pillar-traits">
-      <li><i class="fas fa-users"></i> Personal attention</li>
-      <li><i class="fas fa-graduation-cap"></i> Development focus</li>
-      <li><i class="fas fa-heart"></i> Genuine concern</li>
-    </ul>
-  </div>
-  
-  <div class="pillar-card recognition">
-    <div class="pillar-icon"><i class="fas fa-trophy"></i></div>
-    <h3>Personal Recognition</h3>
-    <p class="pillar-subtitle">Achievement Celebration</p>
-    <ul class="pillar-traits">
-      <li><i class="fas fa-hands-clapping"></i> Acknowledge contributions</li>
-      <li><i class="fas fa-party-horn"></i> Celebrate successes</li>
-      <li><i class="fas fa-chart-line"></i> Public recognition</li>
-    </ul>
-  </div>
-</div>
+**Research Finding:** High-performing teams reported strongest transformational leadership across all dimensions. Teams with weakest leaders only half as likely to be high performers.
 
+### 2. Leadership's Indirect Impact - Enabling vs. Commanding
+- **Key Insight:** Leaders alone cannot achieve high DevOps outcomes - they enable teams to implement practices
+- **Investment Areas:** Training budgets, conference attendance, hack days, internal DevOps conferences, 20% time
+- **Manager's Role:** Connecting strategic objectives to team work, removing obstacles, making performance visible
+- **Cultural Foundation:** Creating environment where continuous experimentation and learning is daily work
 
-### The Learning & Experimentation Cycle
+### 3. ING Netherlands Case Study - Learning Organization in Practice
 
-<div class="learning-cycle">
-  <div class="cycle-step experiment">
-    <div class="step-number">1</div>
-    <div class="step-icon"><i class="fas fa-flask"></i></div>
-    <h4>Experiment</h4>
-    <p>Try new ideas & technologies</p>
-  </div>
-  
-  <div class="cycle-arrow">→</div>
-  
-  <div class="cycle-step measure">
-    <div class="step-number">2</div>
-    <div class="step-icon"><i class="fas fa-chart-bar"></i></div>
-    <h4>Measure</h4>
-    <p>Collect data & feedback</p>
-  </div>
-  
-  <div class="cycle-arrow">→</div>
-  
-  <div class="cycle-step learn">
-    <div class="step-number">3</div>
-    <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
-    <h4>Learn</h4>
-    <p>Extract insights & lessons</p>
-  </div>
-  
-  <div class="cycle-arrow">→</div>
-  
-  <div class="cycle-step improve">
-    <div class="step-number">4</div>
-    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
-    <h4>Improve</h4>
-    <p>Apply learnings & iterate</p>
-  </div>
-</div>
+#### Obeya Rooms - Visual Management at Scale
+- **Leadership Obeya:** Large glass-walled rooms where tribe leads visualize work, priorities, action items
+- **Four Strategic Zones:** Strategic improvement, performance monitoring, portfolio roadmap, leadership actions
+- **Color Coding:** Red/green system makes problems immediately visible
+- **Squad Obeyas:** Each team has own visual workspace showing goals, performance, gaps, problems, demand, WIP
 
-### The Transformation Challenge
+#### Tribe/Squad Organizational Structure  
+- **Tribes:** Lines of business organized around value streams (e.g., Mortgage Services Tribe)
+- **Squads:** Self-steering cross-functional teams for distinct customer missions (e.g., Mortgage Application Squad)
+- **BizDevOps:** Engineers and marketers collaborating as single team with shared customer value understanding
+- **Two Pizza Rule:** Teams sized so no more than two pizzas needed to feed them
+- **Chapters:** Cross-squad discipline groups (e.g., Data Analytics Chapter) for knowledge sharing
 
-<div class="transformation-challenge">
-  <div class="challenge-question">
-    <div class="question-icon"><i class="fas fa-comment-dots"></i></div>
-    <h3>The Single Smallest Change Question</h3>
-    <blockquote>
-      "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
-    </blockquote>
-  </div>
-  
-  <div class="challenge-examples">
-    <div class="example-category">
-      <h4><i class="fas fa-tools"></i> Technical Examples</h4>
-      <div class="example-items">
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="automated-test">
-          <span class="radio-mark"></span>
-          Add one automated test
-        </label>
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="deployment-checklist">
-          <span class="radio-mark"></span>
-          Create deployment checklist
-        </label>
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="monitoring-alert">
-          <span class="radio-mark"></span>
-          Set up monitoring alert
-        </label>
-      </div>
-    </div>
-    
-    <div class="example-category">
-      <h4><i class="fas fa-users"></i> Process Examples</h4>
-      <div class="example-items">
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="peer-review">
-          <span class="radio-mark"></span>
-          Peer review before deploy
-        </label>
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="rollback-steps">
-          <span class="radio-mark"></span>
-          Document rollback steps
-        </label>
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="deployment-window">
-          <span class="radio-mark"></span>
-          Schedule deployment window
-        </label>
-      </div>
-    </div>
-    
-    <div class="example-category">
-      <h4><i class="fas fa-bullhorn"></i> Communication Examples</h4>
-      <div class="example-items">
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="notify-stakeholders">
-          <span class="radio-mark"></span>
-          Notify stakeholders earlier
-        </label>
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="share-status">
-          <span class="radio-mark"></span>
-          Share deployment status
-        </label>
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="deployment-dashboard">
-          <span class="radio-mark"></span>
-          Create deployment dashboard
-        </label>
-      </div>
-    </div>
-  </div>
-  
-  <div class="feedback-area" id="change-feedback">
-    <p>Select a smallest change option to understand its impact and implementation approach.</p>
-  </div>
-</div>
+#### Catchball Communication - Information Flow Standard Work
+- **Daily Stand-ups:** Problems identified but not solved in meeting - escalated through proper channels
+- **Vertical Flow:** Squad → IT-area lead → Tribe lead → Senior leadership
+- **Horizontal Flow:** Between squads, chapters, centers of expertise  
+- **Rapid Resolution:** Problems remain visualized until resolved, solutions flow back down quickly
 
-### Your Transformation Commitment
+### 4. Coaching Culture and Transformation Discipline
 
-<div class="commitment-tracker">
-  <div class="commitment-card individual">
-    <div class="commitment-icon"><i class="fas fa-bullseye"></i></div>
-    <h4>Individual Commitment</h4>
-    <p>One specific practice you'll implement:</p>
-    <div class="commitment-input">
-      <textarea placeholder="I commit to..." rows="3"></textarea>
-    </div>
-  </div>
-  
-  <div class="commitment-card team">
-    <div class="commitment-icon"><i class="fas fa-users"></i></div>
-    <h4>Team Experiment</h4>
-    <p>Small experiment to try this week:</p>
-    <div class="commitment-input">
-      <textarea placeholder="Our team will try..." rows="3"></textarea>
-    </div>
-  </div>
-  
-  <div class="commitment-card measurement">
-    <div class="commitment-icon"><i class="fas fa-chart-bar"></i></div>
-    <h4>Measurement Plan</h4>
-    <p>How you'll track progress:</p>
-    <div class="commitment-input">
-      <textarea placeholder="We'll measure by..." rows="3"></textarea>
-    </div>
-  </div>
-</div>
+#### Leaders as Coaches - Behavioral Shift
+- **From Command-and-Control to Coaching:** "Help me understand the problems you're encountering"
+- **Key Questions:** "What can I do to better support you and the team?" vs "Why isn't this getting done?"
+- **Developing People:** Focus on ability to improve and innovate, not just current job function
+- **Psychological Safety:** "If quality isn't there, don't release. I'll cover your back." - Creates ownership
 
-## <i class="fas fa-bullseye"></i> Book Club Journey Complete!
+#### Internal Coaching Development
+- **Lean Leadership Expertise Squad:** Small team of internal coaches (5 people at ING)
+- **Leveraged Effect:** Coaches train leaders, who coach team members, scaling culture change
+- **Going Deep Before Wide:** Discipline to focus on thorough transformation before scaling
+- **Mentoring Programs:** Being piloted within tribes for expansion
 
-<div class="journey-completion">
-  <div class="completion-badge">
-    <div class="badge-icon"><i class="fas fa-trophy"></i></div>
-    <h3>Congratulations!</h3>
-    <p>You've completed the Accelerate DevOps transformation journey</p>
-  </div>
-  
-  <div class="next-steps-grid">
-    <div class="next-step">
-      <div class="step-icon"><i class="fas fa-book"></i></div>
-      <h4>Continue Learning</h4>
-      <p>Explore advanced topics and related books</p>
-    </div>
-    
-    <div class="next-step">
-      <div class="step-icon"><i class="fas fa-handshake"></i></div>
-      <h4>Share Knowledge</h4>
-      <p>Teach others what you've learned</p>
-    </div>
-    
-    <div class="next-step">
-      <div class="step-icon"><i class="fas fa-sync-alt"></i></div>
-      <h4>Keep Iterating</h4>
-      <p>Apply continuous improvement to your practices</p>
-    </div>
-    
-    <div class="next-step">
-      <div class="step-icon"><i class="fas fa-chart-line"></i></div>
-      <h4>Measure Impact</h4>
-      <p>Track your DORA metrics improvement</p>
-    </div>
-  </div>
-</div>
+### 5. "Make It Your Own" Philosophy - Sustainable Transformation
+
+#### Experimentation Over Implementation
+- **Don't Copy Practices:** Study successful models but adapt to your unique culture and context
+- **Problem-Solving Evolution:** ING tried A3, Kata, Lean startup, then created their own blended approach
+- **Standard Work Creation:** Teams experiment to find best practices, then standardize and share learning
+- **Continuous Evolution:** Standards reevaluated and improved as conditions change
+
+#### Transformation Mindset Requirements
+- **Learn How to Learn:** Creating environment for shared organizational learning
+- **Practice Discipline:** Recording time usage, trying uncomfortable new behaviors
+- **Practice Patience:** Decades-old patterns take time to change into new habits and culture
+- **Practice Practice:** Learn, succeed, fail, learn, adjust, repeat - rhythm and routine
+
+### 6. Security Integration (Brief Review)
+- **Shift-Left Approach:** Security throughout development lifecycle, not final gate
+- **Performance + Security:** Building security in improves both delivery performance and security quality
+- **High Performers:** Spend 50% less time on security remediation than low performers
+
+---
+
+## ING Transformation Lessons
+
+### What Made ING's Transformation Successful
+- **Leader Learning First:** Management team had to become learning team before helping others learn
+- **Behavioral Change Drives Culture:** "When you change the way you work, you change the routines, you create different culture"
+- **Quality-First Mindset:** "Speed with quality" - sometimes take longer initially but stay green vs others going back to red
+- **Senior Support:** "Senior management is very happy with us" - providing air cover for transformation
+
+### Key Transformation Challenges
+- **Scaling Pressure:** Discipline to go deep before going wide despite pressure to scale quickly
+- **Dispersed Teams:** Experimenting with maintaining collaboration across countries
+- **Impatience:** "You get impatient wanting to speed their learning but...they have to have their own learning"
 
 ---
 
 ## Discussion Questions
 
-1. **Leadership Assessment:** What transformational leadership behaviors do you see in your organization? Which are missing?
-2. **Investment in Learning:** How does your organization currently invest in developing team capabilities?
-3. **ING Practices:** Which practices from the ING case study could work in your context? What would need adaptation?
-4. **Transformation Readiness:** What's your organization's appetite for the discipline and patience required for real transformation?
+### Transformational Leadership Assessment
+1. **Leadership Characteristics:** Which of the five transformational leadership dimensions are strongest/weakest in your organization? How do current leaders inspire and support vs command and control?
+
+2. **Investment in Learning:** How does your organization currently invest in developing team capabilities? What gaps exist in training budgets, conference attendance, or experimentation time?
+
+### ING Model Application  
+3. **Visual Management:** How might elements of ING's Obeya rooms be adapted to your context? What strategic objectives, performance gaps, and problems would benefit from visual management?
+
+4. **Team Structure:** Could aspects of ING's tribe/squad structure improve collaboration and customer focus in your organization? What would need to change?
+
+5. **Communication Flow:** How does problem escalation and resolution currently work in your teams? Where could "catchball" communication patterns improve information flow?
+
+### Transformation Discipline
+6. **Coaching vs Commanding:** What would it look like for leaders in your organization to shift toward asking supportive questions rather than giving direct orders?
+
+7. **"Make It Your Own":** How can your team adopt a philosophy of experimentation and adaptation rather than copying practices? What from ING's approach resonates most with your context?
+
+8. **Transformation Readiness:** Does your organization have the discipline and patience required for sustainable culture change? What are the biggest obstacles?
+
+---
+
+## Practical Exercises
+
+### 1. Team Obeya Design
+**Exercise:** Sketch a visual management board for your team
+- Strategic objectives and current status
+- Performance metrics and gaps (red/green coding)
+- Current problems and escalation paths  
+- Work in progress and bottlenecks
+- Actions and ownership
+
+### 2. Coaching Questions Practice
+**Exercise:** Role-play leadership scenarios
+- Partner A presents a team obstacle or challenge
+- Partner B practices asking open-ended, supportive coaching questions
+- Focus on "What can I do to support you?" vs solving the problem directly
+- Debrief on how this felt different from typical management interactions
+
+### 3. "Adapt, Don't Copy" Planning
+**Exercise:** Choose one ING practice and adapt it
+- Select specific practice (Obeya, catchball, squad structure, etc.)
+- Identify what would need modification for your context
+- Plan small experiment to test adapted version
+- Define success metrics and learning objectives
+
+### 4. Transformation Readiness Assessment  
+**Exercise:** Evaluate organizational change capacity
+- Rate current leadership characteristics (1-5 scale) across five dimensions
+- Identify biggest gaps in transformation discipline/patience
+- Assess investment in learning and development
+- Plan specific leadership behavior changes
+
+---
+
+## Action Items and Commitments
+
+### Individual Leadership Commitments
+- **Coaching Practice:** Use at least one supportive coaching question this week instead of giving direct instruction
+- **Learning Investment:** Identify one way to invest in your team's capability development (training, conference, experimentation time)
+- **Visual Management:** Create simple visual display of your team's current work and problems
+- **Transformation Discipline:** Choose one recurring process and work with team to define "standard work" approach
+
+### Team Experiments
+- **Blameless Learning:** Conduct one "failure leads to inquiry" discussion about recent setback, focusing purely on system improvement
+- **Communication Flow:** Map current problem escalation process and identify one improvement
+- **Standard Work Development:** Define team's current best practice for one recurring activity (stand-ups, deployments, code review)
+
+### Organizational Assessment
+- **Leadership Characteristic Gap Analysis:** Identify which transformational leadership dimensions need development
+- **ING Practice Adaptation:** Choose one element from ING case study to pilot in adapted form
+- **Investment Planning:** Propose specific budget/time allocation for team learning and experimentation
+
+---
 
 ## Culminating Reflection
 
-**The Single Smallest Change Question:** "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
+### The Single Smallest Change Question
+**"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
 
-## Final Action Items and Commitments
+This question embodies the entire Accelerate philosophy:
+- Start small and build momentum
+- Focus on concrete, measurable improvement  
+- Address real pain points that teams experience
+- Create conditions for continuous improvement
 
-<ul class="action-items">
-<li>[ ] Each participant commits to implementing one specific capability from the 24 capabilities</li>
-<li>[ ] Identify small experiments to try over next 2-4 weeks</li>
-<li>[ ] Establish how to track progress on DORA metrics</li>
-<li>[ ] Plan monthly check-ins to share results and continued learning</li>
-<li>[ ] Decide on next book or continuing with State of DevOps Reports</li>
-</ul>
+### Your Transformation Journey
+- What one capability from the 24 capabilities framework will you focus on first?
+- How will you measure progress using DORA metrics?
+- What leadership behaviors will you commit to changing?
+- How will you "make it your own" rather than copying practices?
 
-## <i class="fas fa-rocket"></i> Next Steps
+---
 
-Congratulations! You've completed the structured book club journey. Continue your transformation with:
+## Success Metrics for Book Club Journey
 
-- [Extension Resources](../../resources/extensions/extensions.md)
-- [Post-Book Club Activities](../../resources/extensions/README.md)
+### Knowledge and Understanding
+- Participants can articulate and explain the four DORA metrics and their team's current performance
+- Teams understand the 24 capabilities framework and have identified improvement priorities  
+- Clear grasp of how culture, technical practices, and leadership interconnect
 
-## 📚 Advanced Reading & Professional Development
+### Practical Application
+- Action items from all four sessions are being actively implemented with measurement
+- Small experiments are underway using book's research-backed practices
+- Teams have concrete transformation plan with regular reflection and adjustment
 
-<div class="advanced-learning-section">
-  <div class="learning-track">
-    <div class="track-icon"><i class="fas fa-book"></i></div>
-    <h4>Essential DevOps Books</h4>
-    <ul>
-      <li><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592" target="_blank">The Phoenix Project</a> - Gene Kim et al.</li>
-      <li><a href="https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912" target="_blank">Continuous Delivery</a> - Jez Humble & David Farley</li>
-      <li><a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002" target="_blank">The DevOps Handbook</a> - Gene Kim et al.</li>
-      <li><a href="https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" target="_blank">Team Topologies</a> - Matthew Skelton & Manuel Pais</li>
-    </ul>
-  </div>
-  
-  <div class="learning-track">
-    <div class="track-icon"><i class="fas fa-certificate"></i></div>
-    <h4>Professional Certifications</h4>
-    <ul>
-      <li><a href="https://aws.amazon.com/certification/certified-devops-engineer-professional/" target="_blank">AWS Certified DevOps Engineer</a></li>
-      <li><a href="https://cloud.google.com/certification/cloud-devops-engineer" target="_blank">Google Professional Cloud DevOps Engineer</a></li>
-      <li><a href="https://docs.microsoft.com/en-us/learn/certifications/devops-engineer/" target="_blank">Microsoft Azure DevOps Engineer Expert</a></li>
-      <li><a href="https://www.devopsinstitute.com/certifications/" target="_blank">DevOps Institute Certifications</a></li>
-    </ul>
-  </div>
-  
-  <div class="learning-track">
-    <div class="track-icon"><i class="fas fa-graduation-cap"></i></div>
-    <h4>Online Courses</h4>
-    <ul>
-      <li><a href="https://www.coursera.org/professional-certificates/ibm-devops-and-software-engineering" target="_blank">IBM DevOps Professional Certificate</a> (Coursera)</li>
-      <li><a href="https://www.coursera.org/specializations/continuous-delivery-devops" target="_blank">Continuous Delivery & DevOps</a> (University of Virginia)</li>
-      <li><a href="https://www.edx.org/course/introduction-to-devops" target="_blank">Introduction to DevOps</a> (Linux Foundation)</li>
-    </ul>
-  </div>
-  
-  <div class="learning-track">
-    <div class="track-icon"><i class="fas fa-chart-line"></i></div>
-    <h4>DORA & Research Resources</h4>
-    <ul>
-      <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a></li>
-      <li><a href="https://dora.dev/" target="_blank">DORA Research Program</a></li>
-      <li><a href="https://www.atlassian.com/devops/frameworks/dora-metrics" target="_blank">DORA Metrics Implementation Guide</a></li>
-      <li><a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a></li>
-    </ul>
-  </div>
-</div>
+### Culture and Mindset
+- Increased psychological safety for discussing deployment pain, failures, and improvement needs
+- Shift toward evidence-based thinking about what drives performance
+- Commitment to continuous learning and adaptation vs one-time implementation
 
-<style>
-/* Meeting Navigation */
-.meeting-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
-  border-radius: 16px;
-  border: 2px solid #9ca3af;
-}
+---
 
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  color: #4b5563;
-}
+## Advanced Reading & Professional Development
 
-.nav-item.prev {
-  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
-  border: 2px solid #8b5cf6;
-}
+### Essential Next Books
+- **The Phoenix Project** - Narrative illustration of DevOps transformation
+- **The DevOps Handbook** - Detailed implementation guidance from same research team
+- **Team Topologies** - Modern approach to organizing teams for fast flow
 
-.nav-item.prev:hover {
-  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-  color: white;
-  transform: translateX(-4px);
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-}
+### Research Resources
+- **Annual State of DevOps Reports** - Latest findings and industry trends
+- **DORA Research** - Additional studies and measurement guidance
+- **DevOps Research and Assessment (DORA)** - Ongoing research program
 
-.nav-item.next {
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
-  border: 2px solid #f59e0b;
-  color: #92400e;
-}
+### Professional Development
+- **DevOps Enterprise Summit** - Leading transformation conference
+- **Internal DevOps Conferences** - Host your own using ING's format
+- **Lean/Agile Coaching Certification** - Develop internal coaching capability
 
-.nav-item a {
-  color: inherit;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
+**Remember:** The goal isn't to implement DevOps practices, but to develop capabilities for continuous improvement and learning. As ING learned: "You have to understand why, not just copy the behaviors."
 
-.nav-item i {
-  font-size: 1.2rem;
-}
+---
 
-/* Advanced Learning Section */
-.advanced-learning-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
-  border-radius: 16px;
-  border: 2px solid #4caf50;
-}
+## Book Club Journey Complete
 
-.learning-track {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border-left: 4px solid #4caf50;
-}
+Congratulations on completing the Accelerate DevEx Book Club! You now have:
+- Evidence-based framework for measuring and improving software delivery performance
+- Understanding of how technical practices, culture, and leadership interconnect  
+- Real-world examples of successful transformation (Microsoft, ING, others)
+- 24 specific capabilities to focus improvement efforts
+- Research-backed confidence that high performance is achievable for any organization
 
-.learning-track:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2);
-}
-
-.track-icon {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #4caf50;
-}
-
-.learning-track h4 {
-  margin: 0 0 1rem 0;
-  color: #2e7d32;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.learning-track ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.learning-track li {
-  margin: 0.75rem 0;
-  padding: 0.5rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.learning-track li:hover {
-  background: linear-gradient(135deg, #4caf50, #66bb6a);
-  transform: translateX(4px);
-}
-
-.learning-track a {
-  color: #2e7d32;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.learning-track a:hover {
-  color: white;
-}
-
-.learning-track li:hover a {
-  color: white;
-}
-
-/* Leadership Pillars */
-.leadership-pillars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 3rem 0;
-  max-width: 1000px;
-}
-
-.pillar-card {
-  background: white;
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 3px solid transparent;
-  position: relative;
-  overflow: hidden;
-}
-
-.pillar-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-}
-
-.pillar-card.vision {
-  border-color: #7c3aed;
-}
-
-.pillar-card.vision::before {
-  background: linear-gradient(90deg, #7c3aed, #6d28d9);
-}
-
-.pillar-card.stimulation {
-  border-color: #ff9800;
-}
-
-.pillar-card.stimulation::before {
-  background: linear-gradient(90deg, #ff9800, #f57c00);
-}
-
-.pillar-card.support {
-  border-color: #4caf50;
-}
-
-.pillar-card.support::before {
-  background: linear-gradient(90deg, #4caf50, #388e3c);
-}
-
-.pillar-card.recognition {
-  border-color: #2196f3;
-}
-
-.pillar-card.recognition::before {
-  background: linear-gradient(90deg, #2196f3, #1976d2);
-}
-
-.pillar-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-.pillar-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.pillar-card h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #333;
-}
-
-.pillar-subtitle {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-.pillar-traits {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.pillar-traits li {
-  padding: 0.5rem 0;
-  font-size: 0.95rem;
-  text-align: left;
-}
-
-
-.approach-content p {
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.approach-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.approach-content li {
-  padding: 0.3rem 0;
-  font-size: 0.95rem;
-}
-
-.evolution-arrow {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #7c3aed;
-  background: white;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid #7c3aed;
-  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
-}
-
-/* Learning Cycle */
-.learning-cycle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
-  border-radius: 20px;
-  border: 2px solid #4caf50;
-  flex-wrap: wrap;
-}
-
-.cycle-step {
-  background: white;
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  min-width: 180px;
-  border: 3px solid #4caf50;
-}
-
-.cycle-step:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 35px rgba(76, 175, 80, 0.3);
-}
-
-.step-number {
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  width: 30px;
-  height: 30px;
-  background: #7c3aed;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.step-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.cycle-step h4 {
-  margin: 0 0 0.5rem 0;
-  color: #2e7d32;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.cycle-step p {
-  margin: 0;
-  color: #666;
-  font-size: 0.9rem;
-}
-
-.cycle-arrow {
-  font-size: 2rem;
-  color: #4caf50;
-  font-weight: bold;
-}
-
-/* Transformation Challenge */
-.transformation-challenge {
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-radius: 16px;
-  border: 2px solid #ff9800;
-}
-
-.challenge-question {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.question-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.challenge-question h3 {
-  color: #e65100;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.challenge-question blockquote {
-  background: white;
-  padding: 2rem;
-  border-left: 4px solid #ff9800;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #e65100;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin: 0;
-}
-
-.challenge-examples {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.example-category {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.example-category h4 {
-  margin: 0 0 1rem 0;
-  color: #e65100;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.example-items {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.example-item {
-  position: relative;
-  padding: 0.75rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.example-item input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.example-item .radio-mark {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #ff9800;
-  border-radius: 50%;
-  background: white;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-}
-
-.example-item input:checked ~ .radio-mark {
-  background: #ff9800;
-}
-
-.example-item input:checked ~ .radio-mark:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-.example-item:hover {
-  background: linear-gradient(135deg, #ff9800, #f57c00);
-  color: white;
-  transform: translateX(4px);
-}
-
-.example-item:has(input:checked) {
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-left: 4px solid #ff9800;
-  color: #e65100;
-  font-weight: 600;
-}
-
-/* Commitment Tracker */
-.commitment-tracker {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.commitment-card {
-  background: white;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border-left: 4px solid #7c3aed;
-}
-
-.commitment-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.2);
-}
-
-.commitment-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
-  text-align: center;
-}
-
-.commitment-card h4 {
-  margin: 0 0 1rem 0;
-  color: #5b21b6;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.commitment-card p {
-  color: #666;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.commitment-input textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-family: inherit;
-  font-size: 0.9rem;
-  resize: vertical;
-  transition: border-color 0.3s ease;
-}
-
-.commitment-input textarea:focus {
-  outline: none;
-  border-color: #7c3aed;
-}
-
-/* Journey Completion */
-.journey-completion {
-  margin: 4rem 0;
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  border-radius: 20px;
-  border: 3px solid #2196f3;
-  text-align: center;
-}
-
-.completion-badge {
-  margin-bottom: 3rem;
-}
-
-.badge-icon {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 4px 8px rgba(33, 150, 243, 0.3));
-}
-
-.completion-badge h3 {
-  color: #1565c0;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.completion-badge p {
-  font-size: 1.2rem;
-  color: #666;
-  margin: 0;
-}
-
-.next-steps-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.next-step {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.next-step:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
-  border-color: #2196f3;
-}
-
-.next-step .step-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.next-step h4 {
-  margin: 0 0 0.5rem 0;
-  color: #1565c0;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.next-step p {
-  margin: 0;
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .advanced-learning-section {
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
-    gap: 1.5rem;
-  }
-  
-  .learning-track {
-    padding: 1.5rem;
-  }
-  
-  .leadership-pillars {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  
-  .learning-cycle {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .cycle-arrow {
-    transform: rotate(90deg);
-    font-size: 1.5rem;
-  }
-  
-  .challenge-examples {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .commitment-tracker {
-    grid-template-columns: 1fr;
-  }
-  
-  .next-steps-grid {
-    grid-template-columns: 1fr;
-  }
-  
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Feedback content from Accelerate research and DevOps best practices
-  const changeInfo = {
-    "automated-test": {
-      title: "Add One Automated Test",
-      content: "Start with the smallest possible test to begin building confidence in deployments. According to Accelerate research, test automation is one of the key technical practices that drive software delivery performance. Even a single test reduces manual verification and begins establishing the safety net needed for frequent deployments."
-    },
-    "deployment-checklist": {
-      title: "Create Deployment Checklist", 
-      content: "A simple checklist ensures consistency and reduces errors during deployments. This process improvement helps establish standard work, a key lean principle. It also reduces cognitive load on team members and makes deployments more predictable, supporting higher deployment frequency over time."
-    },
-    "monitoring-alert": {
-      title: "Set Up Monitoring Alert",
-      content: "Monitoring and observability are essential for reducing Mean Time to Restore (MTTR), one of the four DORA metrics. A single alert for a critical system component provides early warning of issues and enables faster response. This supports both stability and the confidence needed for more frequent deployments."
-    },
-    "peer-review": {
-      title: "Peer Review Before Deploy",
-      content: "Peer review increases deployment confidence through shared knowledge and catches potential issues before production. This practice balances speed with safety, supporting both high deployment frequency and low change failure rate. It also builds team capability and reduces bus factor risks."
-    },
-    "rollback-steps": {
-      title: "Document Rollback Steps",
-      content: "Clear rollback procedures reduce Mean Time to Restore when issues occur. This preparation enables teams to deploy with confidence, knowing they can quickly revert if needed. Documentation also enables any team member to perform rollbacks, reducing dependency on specific individuals."
-    },
-    "deployment-window": {
-      title: "Schedule Deployment Window",
-      content: "While not the end goal, scheduled windows can be a stepping stone toward continuous deployment. They provide predictability and allow for focused attention during deployments. Over time, as confidence grows through other improvements, these windows can be shortened and eventually eliminated."
-    },
-    "notify-stakeholders": {
-      title: "Notify Stakeholders Earlier",
-      content: "Communication reduces surprises and builds trust with stakeholders. Early notification allows stakeholders to prepare for changes and provide feedback before deployment. This practice supports the cultural aspects of DevOps transformation and helps build organization-wide support for frequent deployments."
-    },
-    "share-status": {
-      title: "Share Deployment Status",
-      content: "Transparent communication about deployment status builds trust and enables rapid response if issues arise. Status sharing also celebrates successful deployments and builds momentum for continuous improvement. It supports the generative culture characteristics identified in Westrum's research."
-    },
-    "deployment-dashboard": {
-      title: "Create Deployment Dashboard",
-      content: "Visual dashboards make deployment information accessible to all stakeholders and support data-driven decision making. Dashboards can track DORA metrics over time and highlight improvement trends. This visibility supports both technical and cultural aspects of DevOps transformation."
-    }
-  };
-
-  // Add event listeners for smallest change radio buttons
-  document.querySelectorAll('input[name="smallest-change"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('change-feedback');
-      const info = changeInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
-    });
-  });
-});
-</script>
+The journey of transformation is just beginning. Continue practicing the discipline of continuous learning, experimentation, and improvement that makes high-performing organizations successful.
