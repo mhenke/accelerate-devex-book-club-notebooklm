@@ -1,0 +1,34 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
+  "rules": {
+    "color-hex-length": "long",
+    "color-hex-case": "lower",
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-trailing-semicolon": "always",
+    "indentation": 2,
+    "max-nesting-depth": 4,
+    "selector-max-compound-selectors": 4,
+    "selector-max-id": 2,
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute", "class"]
+      }
+    ],
+    "shorthand-property-no-redundant-values": true,
+    "value-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9]*$",
+    "scss/selector-no-redundant-nesting-selector": true,
+    "media-query-no-invalid": true,
+    "custom-property-pattern": "^[a-z][a-zA-Z0-9]*$"
+  },
+  "ignoreFiles": ["_site/**/*", "node_modules/**/*"],
+  "overrides": [
+    {
+      "files": ["**/*.html"],
+      "customSyntax": "postcss-html"
+    }
+  ]
+}
