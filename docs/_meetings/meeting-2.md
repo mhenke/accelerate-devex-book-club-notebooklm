@@ -323,8 +323,6 @@ dora_color: '#0F766E'
 
 ## Related Resources
 
-## Related Resources
-
 ### CI/CD Tools & Platforms
 
 - [GitHub Actions](https://github.com/features/actions) — Workflow automation
