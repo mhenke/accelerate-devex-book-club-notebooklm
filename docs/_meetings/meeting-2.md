@@ -277,8 +277,7 @@ dora_color: '#059669'
 
 <div class="real-world-applications">
   <div class="application-card automation-examples">
-    <div class="application-icon"><i class="fas fa-robot"></i></div>
-    <h4>Automation Success Stories</h4>
+    <h4><i class="fas fa-robot"></i> Automation Success Stories</h4>
     <p>Share examples from your experience:</p>
     <div class="example-prompts">
       <div class="prompt-item">
@@ -297,8 +296,7 @@ dora_color: '#059669'
   </div>
   
   <div class="application-card architecture-decisions">
-    <div class="application-icon"><i class="fas fa-sitemap"></i></div>
-    <h4>Architectural Decisions</h4>
+    <h4><i class="fas fa-sitemap"></i> Architectural Decisions</h4>
     <p>Discuss decisions that impacted team independence:</p>
     <div class="example-prompts">
       <div class="prompt-item">
@@ -317,8 +315,7 @@ dora_color: '#059669'
   </div>
   
   <div class="application-card security-practices">
-    <div class="application-icon"><i class="fas fa-shield-alt"></i></div>
-    <h4>Security Integration</h4>
+    <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
     <p>Examine security practices that impact delivery:</p>
     <div class="example-prompts">
       <div class="prompt-item">
@@ -358,8 +355,7 @@ dora_color: '#059669'
 
 <div class="related-resources">
   <div class="resource-category">
-    <div class="resource-icon"><i class="fas fa-tools"></i></div>
-    <h4>CI/CD Tools & Platforms</h4>
+    <h4><i class="fas fa-tools"></i> CI/CD Tools & Platforms</h4>
     <ul>
       <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> - Workflow automation</li>
       <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a> - Open source automation server</li>
@@ -369,8 +365,7 @@ dora_color: '#059669'
   </div>
   
   <div class="resource-category">
-    <div class="resource-icon"><i class="fas fa-shield-alt"></i></div>
-    <h4>Security Integration</h4>
+    <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
     <ul>
       <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps</a> - Security guidelines</li>
       <li><a href="https://snyk.io/" target="_blank">Snyk</a> - Developer security platform</li>
@@ -466,12 +461,6 @@ dora_color: '#059669'
   box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
 }
 
-.resource-icon {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #059669;
-}
 
 .resource-category h4 {
   margin: 0 0 1rem 0;
@@ -941,12 +930,6 @@ dora_color: '#059669'
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.application-icon {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #059669;
-}
 
 .application-card h4 {
   margin: 0 0 1rem 0;
