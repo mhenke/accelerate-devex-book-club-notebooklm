@@ -5,7 +5,7 @@ subtitle: 'Management, Product Development & Sustainability'
 week: 5
 chapters: '7-10'
 duration: '1 Hour'
-dora_color: '#ea580c'
+dora_color: '#D97706'
 ---
 
 ## <i class="fas fa-video"></i> Watch the Meeting 3 Video
@@ -797,7 +797,7 @@ dora_color: '#ea580c'
   padding: 1.5rem;
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #d97706;
+  border: 2px solid #D97706;
 }
 
 .checkpoint-card {
@@ -814,11 +814,11 @@ dora_color: '#ea580c'
 .checkpoint-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 35px rgba(217, 119, 6, 0.2);
-  border-color: #d97706;
+  border-color: #D97706;
 }
 
 .checkpoint-card h4 {
-  color: #92400e;
+  color: #B45309;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
@@ -854,7 +854,7 @@ dora_color: '#ea580c'
 .assessment-btn .radio-mark {
   width: 18px;
   height: 18px;
-  border: 2px solid #d97706;
+  border: 2px solid #D97706;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -862,7 +862,7 @@ dora_color: '#ea580c'
 }
 
 .assessment-btn input:checked ~ .radio-mark {
-  background: #d97706;
+  background: #D97706;
 }
 
 .assessment-btn input:checked ~ .radio-mark:after {
@@ -877,15 +877,15 @@ dora_color: '#ea580c'
 }
 
 .assessment-btn:hover {
-  background: linear-gradient(135deg, #d97706, #b45309);
+  background: linear-gradient(135deg, #D97706, #b45309);
   color: white;
   transform: translateX(4px);
 }
 
 .assessment-btn:has(input:checked) {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-left: 4px solid #d97706;
-  color: #92400e;
+  border-left: 4px solid #D97706;
+  color: #B45309;
   font-weight: 600;
 }
 
@@ -921,7 +921,7 @@ dora_color: '#ea580c'
 .burnout-factor .checkbox-mark {
   width: 16px;
   height: 16px;
-  border: 2px solid #d97706;
+  border: 2px solid #D97706;
   border-radius: 3px;
   background: white;
   transition: all 0.3s ease;
@@ -929,7 +929,7 @@ dora_color: '#ea580c'
 }
 
 .burnout-factor input:checked ~ .checkbox-mark {
-  background: #d97706;
+  background: #D97706;
 }
 
 .burnout-factor input:checked ~ .checkbox-mark:after {
@@ -943,15 +943,15 @@ dora_color: '#ea580c'
 }
 
 .burnout-factor:hover {
-  background: linear-gradient(135deg, #d97706, #b45309);
+  background: linear-gradient(135deg, #D97706, #b45309);
   color: white;
   transform: translateX(4px);
 }
 
 .burnout-factor:has(input:checked) {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-left: 4px solid #d97706;
-  color: #92400e;
+  border-left: 4px solid #D97706;
+  color: #B45309;
   font-weight: 600;
 }
 
@@ -966,11 +966,11 @@ dora_color: '#ea580c'
 
 .feedback-area.active {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-left: 4px solid #d97706;
+  border-left: 4px solid #D97706;
 }
 
 .feedback-area h5 {
-  color: #92400e;
+  color: #B45309;
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
   font-weight: 600;
@@ -1079,7 +1079,7 @@ dora_color: '#ea580c'
 }
 
 .column-header {
-  background: linear-gradient(135deg, #ea580c, #c2410c);
+  background: linear-gradient(135deg, #D97706, #B45309);
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -1113,7 +1113,7 @@ dora_color: '#ea580c'
 }
 
 .principle-item:hover {
-  background: linear-gradient(135deg, #ea580c, #c2410c);
+  background: linear-gradient(135deg, #D97706, #B45309);
   color: white;
   transform: translateX(4px);
 }
@@ -1173,7 +1173,7 @@ dora_color: '#ea580c'
 .formula-plus, .formula-equals {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ea580c;
+  color: #D97706;
 }
 
 .formula-result {
@@ -1390,7 +1390,7 @@ dora_color: '#ea580c'
   padding: 2rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #ea580c;
+  border-left: 4px solid #D97706;
 }
 
 .assessment-card:hover {
@@ -1407,7 +1407,7 @@ dora_color: '#ea580c'
 
 .assessment-card h4 {
   margin: 0 0 1rem 0;
-  color: #9a3412;
+  color: #B45309;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -1510,7 +1510,7 @@ dora_color: '#ea580c'
 
 .dependency-item.medium-impact:has(input:checked) {
   background: linear-gradient(135deg, #ffecb3, #ffe082);
-  border-left-color: #c2410c;
+  border-left-color: #B45309;
 }
 
 .dependency-item.low-impact {
@@ -1567,7 +1567,7 @@ dora_color: '#ea580c'
   width: 20px;
   height: 20px;
   background: white;
-  border: 3px solid #ea580c;
+  border: 3px solid #D97706;
   border-radius: 50%;
   position: absolute;
   top: -7px;
@@ -1579,7 +1579,7 @@ dora_color: '#ea580c'
 
 .slider-thumb:hover {
   transform: scale(1.2);
-  border-color: #9a3412;
+  border-color: #B45309;
 }
 
 .slider-feedback {
@@ -1587,7 +1587,7 @@ dora_color: '#ea580c'
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 8px;
-  border-left: 4px solid #ea580c;
+  border-left: 4px solid #D97706;
   min-height: 60px;
   transition: all 0.3s ease;
 }
@@ -1624,9 +1624,9 @@ dora_color: '#ea580c'
 }
 
 .wip-option:hover {
-  background: linear-gradient(135deg, #ea580c, #c2410c);
+  background: linear-gradient(135deg, #D97706, #B45309);
   color: white;
-  border-color: #9a3412;
+  border-color: #B45309;
   transform: scale(1.02);
 }
 
@@ -1639,7 +1639,7 @@ dora_color: '#ea580c'
 .wip-option .radio-mark {
   width: 16px;
   height: 16px;
-  border: 2px solid #ea580c;
+  border: 2px solid #D97706;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -1647,7 +1647,7 @@ dora_color: '#ea580c'
 }
 
 .wip-option input:checked ~ .radio-mark {
-  background: #ea580c;
+  background: #D97706;
 }
 
 .wip-option input:checked ~ .radio-mark:after {
@@ -1668,8 +1668,8 @@ dora_color: '#ea580c'
 
 .wip-option:has(input:checked) {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-color: #ea580c;
-  color: #9a3412;
+  border-color: #D97706;
+  color: #B45309;
 }
 
 /* Responsive Design */
@@ -1883,8 +1883,10 @@ document.addEventListener('DOMContentLoaded', function() {
     radio.addEventListener('change', function() {
       const feedback = document.getElementById('dependency-feedback');
       const info = dependencyInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
+      if (info) {
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        feedback.classList.add('active');
+      }
     });
   });
 
@@ -1893,8 +1895,10 @@ document.addEventListener('DOMContentLoaded', function() {
     radio.addEventListener('change', function() {
       const feedback = document.getElementById('wip-feedback');
       const info = wipInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
+      if (info) {
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        feedback.classList.add('active');
+      }
     });
   });
 
