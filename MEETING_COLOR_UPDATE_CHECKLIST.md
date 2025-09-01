@@ -32,10 +32,20 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] Container border colors (`border:`, `border-left:`, `border-top:`)
 - [ ] Icon colors in headers and content areas
 - [ ] Text colors for all heading levels (h1, h2, h3, h4, h5, h6)
+- [ ] Link colors (often in `color:` declarations for `a` tags)
 - [ ] Interactive element colors (buttons, form controls, radio buttons)
 - [ ] Hover state backgrounds and color transitions
 - [ ] Divider elements (arrows, VS symbols, separators)
 - [ ] Card accents and highlights
+
+#### D. Layout Compactness (Match Meeting 1 Style)
+- [ ] Move icons inline with headers: `<h4><i class="fas fa-icon"></i> Title</h4>`
+- [ ] Remove separate icon divs: `<div class="icon-class"><i...></i></div>`
+- [ ] Reduce section margins from `3rem` to `2rem`
+- [ ] Reduce section padding from `2rem` to `1.5rem`
+- [ ] Remove excessive whitespace and line breaks
+- [ ] Consolidate nested div structures where possible
+- [ ] Remove unused CSS classes after structural changes
 
 ### 3. Content Quality Assurance
 - [ ] Remove any duplicate sections or content blocks
@@ -132,6 +142,14 @@ This is a generic checklist for updating color schemes across any page and fixin
 - Check for `border: 2px solid` declarations that need updating
 - Verify `border-left: 4px solid` accent colors match theme
 - Use grep/search to find all background gradient patterns in the file
+
+### Issue: Missed Link Colors
+**Causes:** Link colors often in separate selectors, easy to overlook during color updates
+**Solutions:**
+- Search for all `a {` and `.class a {` selectors 
+- Look for `color:` declarations in link-related CSS
+- Check hover states for links: `:hover`, `:focus`, `:active`
+- Verify both default link colors and contextual link colors match theme
 
 ### Issue: Duplicate Content Appearing
 **Causes:** Copy-paste errors, merge conflicts, template duplication
