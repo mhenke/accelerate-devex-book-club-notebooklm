@@ -114,48 +114,40 @@ dora_color: '#059669'
       <li><i class="fas fa-server"></i> Operations optimizes for <strong>stability</strong></li>
       <li><i class="fas fa-times-circle"></i> Conflicting incentives create friction</li>
       <li><i class="fas fa-handshake-slash"></i> Blame culture emerges from misalignment</li>
-    </ul>
-  </div>
   
-  <div class="arrow-breakthrough">
-    <i class="fas fa-arrow-right"></i>
-    <span>CD Solution</span>
-  </div>
-  
-  <div class="confusion-solution">
-    <h4><i class="fas fa-hands-helping"></i> System-Level Outcomes</h4>
-    <ul>
-      <li><i class="fas fa-bullseye"></i> Shared responsibility for <strong>both</strong> speed and stability</li>
-      <li><i class="fas fa-chart-line"></i> Metrics that reward collaboration</li>
-      <li><i class="fas fa-tools"></i> Technical practices that enable both goals</li>
-      <li><i class="fas fa-seedling"></i> Culture transformation through behavioral change</li>
-    </ul>
-  </div>
-</div>
+### Security: Traditional vs Shift-Left
 
-### Security: Shift Left for Speed AND Safety
-
-<div class="security-shift-comparison">
+<div class="security-evolution">
   <div class="security-approach traditional">
-    <h4><i class="fas fa-shield-alt"></i> Traditional: Bolt-On Security</h4>
-    <div class="security-problems">
-      <div class="problem-item">
-        <i class="fas fa-clock"></i>
-        <span>Security review at the end</span>
-      </div>
-      <div class="problem-item">
-        <i class="fas fa-exclamation-triangle"></i>
-        <span>50% more remediation time</span>
-      </div>
-      <div class="problem-item">
-        <i class="fas fa-turtle"></i>
-        <span>Delayed releases</span>
-      </div>
+    <div class="approach-icon"><i class="fas fa-door-closed"></i></div>
+    <h3>Traditional Security</h3>
+    <div class="approach-content">
+      <p><strong>Gate-Based Approach</strong></p>
+      <ul>
+        <li><i class="fas fa-ban"></i> Security as final gate</li>
+        <li><i class="fas fa-user-shield"></i> Separate security team</li>
+        <li><i class="fas fa-turtle"></i> Late-stage testing</li>
+        <li><i class="fas fa-balance-scale"></i> Security vs speed trade-off</li>
+      </ul>
     </div>
   </div>
   
-  <div class="vs-arrow">→</div>
+  <div class="evolution-arrow">⬅️</div>
   
+  <div class="security-approach shift-left">
+    <div class="approach-icon"><i class="fas fa-arrow-left"></i></div>
+    <h3>Shift-Left Security</h3>
+    <div class="approach-content">
+      <p><strong>Integrated Throughout</strong></p>
+      <ul>
+        <li><i class="fas fa-sync-alt"></i> Security in every stage</li>
+        <li><i class="fas fa-handshake"></i> Embedded security experts</li>
+        <li><i class="fas fa-robot"></i> Automated security testing</li>
+        <li><i class="fas fa-rocket"></i> Security enables speed</li>
+      </ul>
+    </div>
+  </div>
+</div>
   <div class="security-approach integrated">
     <h4><i class="fas fa-lock"></i> Shift-Left: Built-In Security</h4>
     <div class="security-benefits">

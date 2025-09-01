@@ -1,12 +1,10 @@
----
 layout: meeting
 title: 'Meeting 4: Leadership & Transformation'
-subtitle: 'Leadership, Research Methods & Transformation'
+subtitle: 'ING Obeya, Coaching Culture & Transformation Discipline'
 week: 7
 chapters: '11, 16, Conclusion'
 duration: '1 Hour'
 dora_color: '#7c3aed'
----
 
 ## <i class="fas fa-video"></i> Watch the Meeting 4 Video
 
@@ -85,36 +83,6 @@ dora_color: '#7c3aed'
         <li><i class="fas fa-user-shield"></i> Separate security team</li>
         <li><i class="fas fa-turtle"></i> Late-stage testing</li>
         <li><i class="fas fa-balance-scale"></i> Security vs speed trade-off</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="evolution-arrow">⬅️</div>
-  
-  <div class="security-approach shift-left">
-    <div class="approach-icon"><i class="fas fa-arrow-left"></i></div>
-    <h3>Shift-Left Security</h3>
-    <div class="approach-content">
-      <p><strong>Integrated Throughout</strong></p>
-      <ul>
-        <li><i class="fas fa-sync-alt"></i> Security in every stage</li>
-        <li><i class="fas fa-handshake"></i> Embedded security experts</li>
-        <li><i class="fas fa-robot"></i> Automated security testing</li>
-        <li><i class="fas fa-rocket"></i> Security enables speed</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-### The Learning & Experimentation Cycle
-
-<div class="learning-cycle">
-  <div class="cycle-step experiment">
-    <div class="step-number">1</div>
-    <div class="step-icon"><i class="fas fa-flask"></i></div>
-    <h4>Experiment</h4>
-    <p>Try new ideas & technologies</p>
-  </div>
   
   <div class="cycle-arrow">→</div>
   
@@ -131,39 +99,53 @@ dora_color: '#7c3aed'
     <div class="step-number">3</div>
     <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
     <h4>Learn</h4>
-    <p>Extract insights & lessons</p>
-  </div>
-  
-  <div class="cycle-arrow">→</div>
-  
-  <div class="cycle-step improve">
-    <div class="step-number">4</div>
-    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
-    <h4>Improve</h4>
-    <p>Apply learnings & iterate</p>
-  </div>
-</div>
 
-### The Transformation Challenge
+### ING's Obeya Rooms & Tribe/Squad Structure
 
-<div class="transformation-challenge">
-  <div class="challenge-question">
-    <div class="question-icon"><i class="fas fa-comment-dots"></i></div>
-    <h3>The Single Smallest Change Question</h3>
-    <blockquote>
-      "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
-    </blockquote>
+  <div class="ing-obeya-tribe">
+    <div class="obeya-card">
+      <h3><i class="fas fa-building"></i> Obeya Rooms</h3>
+      <p>Obeya rooms at ING are physical and virtual spaces for cross-functional teams to collaborate, visualize work, and align on goals. They foster transparency, rapid feedback, and shared ownership of outcomes.</p>
+      <ul>
+        <li><i class="fas fa-users"></i> Cross-functional collaboration</li>
+        <li><i class="fas fa-chart-line"></i> Visual management of progress</li>
+        <li><i class="fas fa-bullseye"></i> Focus on outcomes, not just outputs</li>
+      </ul>
+    </div>
+    <div class="tribe-card">
+      <h3><i class="fas fa-layer-group"></i> Tribe & Squad Structure</h3>
+      <p>ING organizes teams into tribes and squads, enabling autonomy, mastery, and purpose. Squads are empowered to make decisions, experiment, and deliver value quickly.</p>
+      <ul>
+        <li><i class="fas fa-rocket"></i> Autonomous squads</li>
+        <li><i class="fas fa-sync-alt"></i> Rapid experimentation</li>
+        <li><i class="fas fa-hands-helping"></i> Shared coaching and support</li>
+      </ul>
+    </div>
   </div>
-  
-  <div class="challenge-examples">
-    <div class="example-category">
-      <h4><i class="fas fa-tools"></i> Technical Examples</h4>
-      <div class="example-items">
-        <label class="example-item">
-          <input type="radio" name="smallest-change" value="automated-test">
-          <span class="radio-mark"></span>
-          Add one automated test
-        </label>
+
+### Coaching Culture & Transformation Discipline
+
+  <div class="coaching-culture-section">
+    <h3><i class="fas fa-chalkboard-teacher"></i> Coaching Culture</h3>
+    <p>Transformation at ING is supported by a strong coaching culture. Leaders act as coaches, helping teams reflect, learn, and grow. Discipline in transformation means sticking with new practices long enough to see results, even when progress feels slow.</p>
+    <ul>
+      <li><i class="fas fa-user-friends"></i> Leaders as coaches, not just managers</li>
+      <li><i class="fas fa-hourglass-half"></i> Patience and discipline in change</li>
+      <li><i class="fas fa-lightbulb"></i> Continuous learning and feedback</li>
+    </ul>
+  </div>
+
+### "Make It Your Own" Philosophy
+
+  <div class="make-your-own-section">
+    <h3><i class="fas fa-paint-brush"></i> Make It Your Own</h3>
+    <p>ING encourages teams to adapt DevOps and transformation practices to their unique context. The "Make it your own" philosophy means experimenting, learning, and customizing approaches to fit team needs and organizational culture.</p>
+    <ul>
+      <li><i class="fas fa-flask"></i> Experiment with new practices</li>
+      <li><i class="fas fa-cogs"></i> Customize tools and processes</li>
+      <li><i class="fas fa-heart"></i> Build ownership and pride in change</li>
+    </ul>
+  </div>
         <label class="example-item">
           <input type="radio" name="smallest-change" value="deployment-checklist">
           <span class="radio-mark"></span>

@@ -134,6 +134,16 @@
 - [ ] **Inline styles**: `style="[^"]*(?:background|color|border)[^"]*"`
 - [ ] **CSS custom properties**: `--[\w-]+\s*:\s*[^;]+`
 
+### Related Resources Detection Patterns
+
+**Use these patterns to check for missing or incomplete resources:**
+
+- [ ] **Check for Related Resources sections**: `## Related Resources|## Further Reading|## Resources`
+- [ ] **Find pages without resources**: `grep -L "## Related Resources\|## Further Reading\|## Resources" docs/_meetings/*.md`
+- [ ] **Find empty resource sections**: `## Related Resources[\s\n]*## [^R]` (section followed by another non-resource section)
+- [ ] **Check for placeholder content**: `Coming soon\|TBD\|TODO\|Add resources here`
+- [ ] **Find Action Items sections**: `## Action Items` (to determine placement for new resources)`
+
 ### Advanced Edge Case Detection
 
 **Critical patterns often missed:**
@@ -542,14 +552,118 @@
 
 ### Missing Link Detection and Addition
 
-**If resources section lacks links:**
+**If resources section lacks links or doesn't exist:**
 
-- [ ] **Search meeting content**: Identify topics covered in meeting
-- [ ] **Map to resource categories**: Match topics to standard resource types
-- [ ] **Add official documentation**: Include authoritative sources first
+- [ ] **Check if Related Resources section exists**: Search for `## Related Resources` or similar heading
+- [ ] **If section missing**: Add new Related Resources section before Action Items
+- [ ] **Reference plan.md content**: Use `/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/resources/plan/plan.md` to determine appropriate resources
+- [ ] **Map meeting topics to resources**: Match meeting content to resource categories
+- [ ] **Add official documentation**: Include authoritative sources first (DORA, DevOps Research)
 - [ ] **Add community resources**: Include well-regarded community guides
 - [ ] **Include assessment tools**: Add practical assessment/implementation tools
 - [ ] **Provide multiple formats**: Include articles, videos, courses, books
+
+### Meeting-Specific Resource Templates (Based on plan.md)
+
+**Use these templates when adding missing Related Resources sections:**
+
+#### Meeting 1: Foundation & DORA Metrics Template
+```markdown
+## Related Resources
+
+### DORA Research & Metrics
+- [2024 State of DevOps Report](https://dora.dev/research/2024/dora-report/) - Latest DORA research findings
+- [DORA Research Program](https://dora.dev/) - Official DORA website and resources
+- [DORA Quick Check Assessment](https://dora.dev/quickcheck/) - Self-assessment tool for teams
+- [Four Keys Metrics Implementation](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance) - Google Cloud guide
+
+### Westrum Organizational Culture
+- [Generative Organizational Culture](https://dora.dev/capabilities/generative-organizational-culture/) - DORA culture capability guide
+- [Westrum's Model in Tech Organizations](https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/) - IT Revolution analysis
+- [Culture Implementation Guide](https://continuousdelivery.com/implementing/culture/) - Continuous Delivery resource
+
+### Speed vs Stability Research
+- [High Performance Software Teams](https://dora.dev/research/) - Research on high-performing teams
+- [DevOps Performance Metrics](https://www.atlassian.com/devops/frameworks/dora-metrics) - Atlassian DORA metrics guide
+```
+
+#### Meeting 2: Technical Excellence Template
+```markdown
+## Related Resources
+
+### Continuous Delivery Practices
+- [Continuous Delivery Book](https://continuousdelivery.com/) - Jez Humble's comprehensive resource
+- [GitHub Actions](https://github.com/features/actions) - Workflow automation platform
+- [Jenkins](https://www.jenkins.io/) - Open source automation server
+- [Trunk-based Development](https://trunkbaseddevelopment.com/) - Development approach guide
+
+### Architecture & Conway's Law
+- [Loosely Coupled Architecture](https://dora.dev/capabilities/loosely-coupled-architecture/) - DORA architecture guidance
+- [Team Topologies](https://teamtopologies.com/) - Matthew Skelton & Manuel Pais resources
+- [Conway's Law Explained](https://www.thoughtworks.com/insights/articles/demystifying-conways-law) - ThoughtWorks analysis
+
+### Security Integration
+- [Shift Left Security](https://dora.dev/capabilities/shifting-left-on-security/) - DORA security practices
+- [DevSecOps Implementation](https://www.devsecops.org/) - Community resources
+- [NIST DevSecOps Guidelines](https://csrc.nist.gov/Projects/ssdf) - Federal security framework
+```
+
+#### Meeting 3: Management & Sustainability Template
+```markdown
+## Related Resources
+
+### Lean Management Practices
+- [Lean Software Development](https://www.lean.org/lexicon-terms/lean-software-development/) - Lean Enterprise Institute
+- [Kanban Guide](https://www.atlassian.com/agile/kanban) - Work visualization practices
+- [WIP Limits Implementation](https://kanbanize.com/kanban-resources/getting-started/what-is-wip) - Work in Progress management
+
+### Product Development
+- [Lean Product Playbook](https://leanstartup.co/playbook/) - Eric Ries methodology
+- [Value Stream Mapping](https://www.lean.org/lexicon-terms/value-stream-mapping/) - Process visualization
+- [Customer Development](https://steveblank.com/category/customer-development/) - Steve Blank resources
+
+### Burnout Prevention
+- [Making Work Sustainable](https://dora.dev/capabilities/) - DORA sustainability practices
+- [Burnout Research](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases) - WHO definition and guidance
+- [Microsoft Burnout Study](https://www.microsoft.com/en-us/worklab/burnout-research) - Research on developer burnout
+```
+
+#### Meeting 4: Leadership & Transformation Template  
+```markdown
+## Related Resources
+
+### Transformational Leadership
+- [Transformational Leadership Guide](https://dora.dev/capabilities/transformational-leadership/) - DORA leadership practices
+- [ING Transformation Case Study](https://www.mckinsey.com/industries/financial-services/our-insights/ings-agile-transformation) - McKinsey analysis
+- [Leadership in DevOps](https://itrevolution.com/articles/leadership-in-devops/) - IT Revolution insights
+
+### Books & Further Reading
+- [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) - Gene Kim et al.
+- [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002) - Gene Kim et al.
+- [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) - Matthew Skelton & Manuel Pais
+- [Continuous Delivery](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) - Jez Humble & David Farley
+
+### Certification & Training
+- [AWS DevOps Engineer Professional](https://aws.amazon.com/certification/certified-devops-engineer-professional/) - Cloud certification
+- [Google Cloud DevOps Engineer](https://cloud.google.com/certification/cloud-devops-engineer) - Professional certification
+- [DevOps Institute Certifications](https://www.devopsinstitute.com/certifications/) - Industry certifications
+- [IBM DevOps Professional Certificate](https://www.coursera.org/professional-certificates/ibm-devops-and-software-engineering) - Coursera program
+
+### Research & Reports
+- [2024 State of DevOps Report](https://dora.dev/research/2024/dora-report/) - Latest annual research
+- [DORA Capabilities Catalog](https://dora.dev/capabilities/) - Complete capability reference
+- [24 Capabilities Self-Assessment](https://dora.dev/quickcheck/) - Team assessment tool
+```
+
+### Resource Section Placement Protocol
+
+**When adding Related Resources section:**
+
+- [ ] **Position before Action Items**: Insert Related Resources section before ## Action Items
+- [ ] **Use consistent formatting**: Follow existing heading hierarchy (## Related Resources, ### Category)
+- [ ] **Add proper spacing**: Include blank lines before and after section
+- [ ] **Match page styling**: Use same link format as other sections (`[Text](URL) - Description`)
+- [ ] **Include target="_blank"**: For external links, add `target="_blank"` attribute when using HTML format
 
 ## Final Validation Protocol (Execute Before Commit)
 
