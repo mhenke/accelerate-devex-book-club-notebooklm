@@ -5,7 +5,7 @@ subtitle: 'Management, Product Development & Sustainability'
 week: 5
 chapters: '7-10'
 duration: '1 Hour'
-dora_color: '#ea580c'
+dora_color: '#d97706'
 ---
 
 ## <i class="fas fa-video"></i> Watch the Meeting 3 Video
@@ -284,6 +284,23 @@ dora_color: '#ea580c'
 4. **Burnout Indicators:** What signs of deployment pain or burnout do you observe in your team?
 5. **Employee Engagement:** How would your team score on employee Net Promoter Score?
 
+## Related Resources
+
+### Lean Management Practices
+- [Lean Software Development](https://www.lean.org/lexicon-terms/lean-software-development/) - Lean Enterprise Institute
+- [Kanban Guide](https://www.atlassian.com/agile/kanban) - Work visualization practices
+- [WIP Limits Implementation](https://kanbanize.com/kanban-resources/getting-started/what-is-wip) - Work in Progress management
+
+### Product Development
+- [Lean Product Playbook](https://leanstartup.co/playbook/) - Eric Ries methodology
+- [Value Stream Mapping](https://www.lean.org/lexicon-terms/value-stream-mapping/) - Process visualization
+- [Customer Development](https://steveblank.com/category/customer-development/) - Steve Blank resources
+
+### Burnout Prevention
+- [Making Work Sustainable](https://dora.dev/capabilities/) - DORA sustainability practices
+- [Burnout Research](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases) - WHO definition and guidance
+- [Microsoft Burnout Study](https://www.microsoft.com/en-us/worklab/burnout-research) - Research on developer burnout
+
 ## Action Items for Next Meeting
 
 <ul class="action-items">
@@ -378,7 +395,7 @@ dora_color: '#ea580c'
 }
 
 .column-header {
-  background: linear-gradient(135deg, #ea580c, #c2410c);
+  background: linear-gradient(135deg, #d97706, #b45309);
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -412,7 +429,7 @@ dora_color: '#ea580c'
 }
 
 .principle-item:hover {
-  background: linear-gradient(135deg, #ea580c, #c2410c);
+  background: linear-gradient(135deg, #d97706, #b45309);
   color: white;
   transform: translateX(4px);
 }
@@ -472,7 +489,7 @@ dora_color: '#ea580c'
 .formula-plus, .formula-equals {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ea580c;
+  color: #d97706;
 }
 
 .formula-result {
@@ -689,7 +706,7 @@ dora_color: '#ea580c'
   padding: 2rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #ea580c;
+  border-left: 4px solid #d97706;
 }
 
 .assessment-card:hover {
@@ -706,7 +723,7 @@ dora_color: '#ea580c'
 
 .assessment-card h4 {
   margin: 0 0 1rem 0;
-  color: #9a3412;
+  color: #92400e;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -809,7 +826,7 @@ dora_color: '#ea580c'
 
 .dependency-item.medium-impact:has(input:checked) {
   background: linear-gradient(135deg, #ffecb3, #ffe082);
-  border-left-color: #c2410c;
+  border-left-color: #b45309;
 }
 
 .dependency-item.low-impact {
@@ -866,7 +883,7 @@ dora_color: '#ea580c'
   width: 20px;
   height: 20px;
   background: white;
-  border: 3px solid #ea580c;
+  border: 3px solid #d97706;
   border-radius: 50%;
   position: absolute;
   top: -7px;
@@ -878,7 +895,7 @@ dora_color: '#ea580c'
 
 .slider-thumb:hover {
   transform: scale(1.2);
-  border-color: #9a3412;
+  border-color: #92400e;
 }
 
 .slider-feedback {
@@ -886,7 +903,7 @@ dora_color: '#ea580c'
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 8px;
-  border-left: 4px solid #ea580c;
+  border-left: 4px solid #d97706;
   min-height: 60px;
   transition: all 0.3s ease;
 }
@@ -923,9 +940,9 @@ dora_color: '#ea580c'
 }
 
 .wip-option:hover {
-  background: linear-gradient(135deg, #ea580c, #c2410c);
+  background: linear-gradient(135deg, #d97706, #b45309);
   color: white;
-  border-color: #9a3412;
+  border-color: #92400e;
   transform: scale(1.02);
 }
 
@@ -938,7 +955,7 @@ dora_color: '#ea580c'
 .wip-option .radio-mark {
   width: 16px;
   height: 16px;
-  border: 2px solid #ea580c;
+  border: 2px solid #d97706;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -946,7 +963,7 @@ dora_color: '#ea580c'
 }
 
 .wip-option input:checked ~ .radio-mark {
-  background: #ea580c;
+  background: #d97706;
 }
 
 .wip-option input:checked ~ .radio-mark:after {
@@ -967,8 +984,8 @@ dora_color: '#ea580c'
 
 .wip-option:has(input:checked) {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-color: #ea580c;
-  color: #9a3412;
+  border-color: #d97706;
+  color: #92400e;
 }
 
 /* Responsive Design */
@@ -1012,12 +1029,12 @@ dora_color: '#ea580c'
   
   .practical-exercises {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
-    gap: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
   }
   
   .exercise-card {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .step-item {
