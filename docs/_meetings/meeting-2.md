@@ -60,9 +60,8 @@ dora_color: '#059669'
 
 <div class="tool-autonomy-impact">
   <div class="autonomy-stat">
-    <div class="stat-icon"><i class="fas fa-palette"></i></div>
     <div class="stat-content">
-      <h4>Tool Choice Freedom</h4>
+      <h4><i class="fas fa-palette"></i> Tool Choice Freedom</h4>
       <p>Teams that choose their own tools are:</p>
       <div class="impact-metrics">
         <div class="metric-point">
@@ -132,8 +131,7 @@ dora_color: '#059669'
 
 <div class="wall-confusion-section">
   <div class="confusion-problem">
-    <div class="problem-icon"><i class="fas fa-wall-brick"></i></div>
-    <h4>Traditional Silos</h4>
+    <h4><i class="fas fa-wall-brick"></i> Traditional Silos</h4>
     <ul>
       <li><i class="fas fa-code"></i> Development optimizes for <strong>throughput</strong></li>
       <li><i class="fas fa-server"></i> Operations optimizes for <strong>stability</strong></li>
@@ -148,8 +146,7 @@ dora_color: '#059669'
   </div>
   
   <div class="confusion-solution">
-    <div class="solution-icon"><i class="fas fa-hands-helping"></i></div>
-    <h4>System-Level Outcomes</h4>
+    <h4><i class="fas fa-hands-helping"></i> System-Level Outcomes</h4>
     <ul>
       <li><i class="fas fa-bullseye"></i> Shared responsibility for <strong>both</strong> speed and stability</li>
       <li><i class="fas fa-chart-line"></i> Metrics that reward collaboration</li>
@@ -163,8 +160,7 @@ dora_color: '#059669'
 
 <div class="security-shift-comparison">
   <div class="security-approach traditional">
-    <div class="approach-icon"><i class="fas fa-shield-alt"></i></div>
-    <h4>Traditional: Bolt-On Security</h4>
+    <h4><i class="fas fa-shield-alt"></i> Traditional: Bolt-On Security</h4>
     <div class="security-problems">
       <div class="problem-item">
         <i class="fas fa-clock"></i>
@@ -184,8 +180,7 @@ dora_color: '#059669'
   <div class="vs-arrow">→</div>
   
   <div class="security-approach integrated">
-    <div class="approach-icon"><i class="fas fa-lock"></i></div>
-    <h4>Shift-Left: Built-In Security</h4>
+    <h4><i class="fas fa-lock"></i> Shift-Left: Built-In Security</h4>
     <div class="security-benefits">
       <div class="benefit-item">
         <i class="fas fa-rocket"></i>
@@ -238,8 +233,7 @@ dora_color: '#059669'
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card cd-maturity">
-    <div class="checkpoint-icon"><i class="fas fa-chart-line"></i></div>
-    <h4>CD Maturity Assessment</h4>
+    <h4><i class="fas fa-chart-line"></i> CD Maturity Assessment</h4>
     <p>Reflect on your team's strengths and gaps in CD practices.</p>
     <ul>
       <li>Automate one manual process</li>
@@ -249,8 +243,7 @@ dora_color: '#059669'
   </div>
 
   <div class="checkpoint-card tool-autonomy">
-    <div class="checkpoint-icon"><i class="fas fa-palette"></i></div>
-    <h4>Tool Freedom</h4>
+    <h4><i class="fas fa-palette"></i> Tool Freedom</h4>
     <p>Rate your team's tool selection autonomy:</p>
     <div class="autonomy-slider">
       <div class="slider-labels">
@@ -579,13 +572,6 @@ dora_color: '#059669'
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.problem-icon, .solution-icon {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #059669;
-}
-
 .confusion-problem h4, .confusion-solution h4 {
   margin: 0 0 1rem 0;
   color: #047857;
@@ -639,13 +625,6 @@ dora_color: '#059669'
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.approach-icon {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #059669;
 }
 
 .security-approach h4 {
@@ -761,12 +740,6 @@ dora_color: '#059669'
   display: flex;
   align-items: center;
   gap: 2rem;
-}
-
-.stat-icon {
-  font-size: 3rem;
-  color: #059669;
-  flex-shrink: 0;
 }
 
 .stat-content h4 {
@@ -1079,11 +1052,6 @@ dora_color: '#059669'
   border-color: #059669;
 }
 
-.checkpoint-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
 
 .checkpoint-card h4 {
   margin: 0 0 1rem 0;
