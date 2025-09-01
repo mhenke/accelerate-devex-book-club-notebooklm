@@ -24,80 +24,157 @@ dora_color: '#D97706'
 
 ## Key Insights
 
-### Lean Management Principles in Action
+### Lean vs Traditional Management
 
-<div class="lean-principles-board">
-  <div class="principle-column wip">
-    <div class="column-header">
-      <div class="column-icon"><i class="fas fa-traffic-light"></i></div>
-    <h4><i class="fas fa-traffic-light"></i> Limit WIP</h4>
-    </div>
-    <div class="principle-cards">
-      <div class="principle-item">Focus on fewer items</div>
-      <div class="principle-item">Reduce context switching</div>
-      <div class="principle-item">Drive process improvement</div>
-    </div>
-  </div>
-  
-  <div class="principle-column visualize">
-    <div class="column-header">
-      <div class="column-icon"><i class="fas fa-eye"></i></div>
-    <h4><i class="fas fa-eye"></i> Visualize Work</h4>
-    </div>
-    <div class="principle-cards">
-      <div class="principle-item">Kanban boards</div>
-      <div class="principle-item">Burndown charts</div>
-      <div class="principle-item">Team dashboards</div>
+<div class="management-comparison">
+  <div class="mgmt-side traditional">
+    <h3><i class="fas fa-clipboard-list"></i> Traditional Management</h3>
+    <div class="mgmt-content">
+      <p><strong>Command & Control</strong></p>
+      <ul>
+        <li><i class="fas fa-user-tie"></i> Approval-heavy processes</li>
+        <li><i class="fas fa-exclamation-triangle"></i> Blame-oriented culture</li>
+        <li><i class="fas fa-hourglass-half"></i> Slow decision making</li>
+        <li><i class="fas fa-chart-line-down"></i> Focus on individual metrics</li>
+      </ul>
     </div>
   </div>
   
-  <div class="principle-column approval">
-    <div class="column-header">
-      <div class="column-icon"><i class="fas fa-users"></i></div>
-    <h4><i class="fas fa-users"></i> Peer Review</h4>
-    </div>
-    <div class="principle-cards">
-      <div class="principle-item">Lightweight approval</div>
-      <div class="principle-item">Team ownership</div>
-      <div class="principle-item">Faster decisions</div>
-    </div>
+  <div class="vs-divider">
+    <span>VS</span>
   </div>
   
-  <div class="principle-column feedback">
-    <div class="column-header">
-      <div class="column-icon"><i class="fas fa-sync-alt"></i></div>
-    <h4><i class="fas fa-sync-alt"></i> Fast Feedback</h4>
-    </div>
-    <div class="principle-cards">
-      <div class="principle-item">Customer input</div>
-      <div class="principle-item">Quick iterations</div>
-      <div class="principle-item">Data-driven choices</div>
+  <div class="mgmt-side lean">
+    <h3><i class="fas fa-rocket"></i> Lean Management</h3>
+    <div class="mgmt-content">
+      <p><strong>Enable & Empower</strong></p>
+      <ul>
+        <li><i class="fas fa-users"></i> Peer review processes</li>
+        <li><i class="fas fa-graduation-cap"></i> Learning from failures</li>
+        <li><i class="fas fa-tachometer-alt"></i> Fast feedback loops</li>
+        <li><i class="fas fa-chart-line"></i> System-level outcomes</li>
+      </ul>
     </div>
   </div>
 </div>
 
-### Employee Satisfaction Formula
+### Employee Satisfaction: The Four Pillars
 
-<div class="satisfaction-formula">
-  <div class="formula-component">
-    <h4><i class="fas fa-bullseye"></i> Meaningful Work</h4>
-    <p>Appropriate challenges</p>
+<svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" aria-label="Employee Satisfaction Framework">
+  <rect x="10" y="10" width="880" height="260" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="4"/>
+  <text x="450" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">Employee Satisfaction = Performance</text>
+  
+  <!-- Pillar 1: Meaningful Work -->
+  <rect x="70" y="70" width="160" height="120" rx="12" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
+  <text x="150" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Meaningful Work</text>
+  <text x="150" y="115" text-anchor="middle" font-size="11" fill="#92400e">Challenging &amp;</text>
+  <text x="150" y="130" text-anchor="middle" font-size="11" fill="#92400e">Purposeful Tasks</text>
+  <circle cx="150" cy="155" r="15" fill="#d97706"/>
+  <text x="150" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">1</text>
+  
+  <!-- Pillar 2: Learning -->
+  <rect x="260" y="70" width="160" height="120" rx="12" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
+  <text x="340" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Learning</text>
+  <text x="340" y="115" text-anchor="middle" font-size="11" fill="#92400e">Growth &amp;</text>
+  <text x="340" y="130" text-anchor="middle" font-size="11" fill="#92400e">Development</text>
+  <circle cx="340" cy="155" r="15" fill="#d97706"/>
+  <text x="340" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">2</text>
+  
+  <!-- Pillar 3: Support -->
+  <rect x="450" y="70" width="160" height="120" rx="12" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+  <text x="530" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Support</text>
+  <text x="530" y="115" text-anchor="middle" font-size="11" fill="#92400e">Team Culture &amp;</text>
+  <text x="530" y="130" text-anchor="middle" font-size="11" fill="#92400e">Psychological Safety</text>
+  <circle cx="530" cy="155" r="15" fill="#d97706"/>
+  <text x="530" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">3</text>
+  
+  <!-- Pillar 4: Tools -->
+  <rect x="640" y="70" width="160" height="120" rx="12" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+  <text x="720" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Right Tools</text>
+  <text x="720" y="115" text-anchor="middle" font-size="11" fill="#92400e">Resources &amp;</text>
+  <text x="720" y="130" text-anchor="middle" font-size="11" fill="#92400e">Technology Access</text>
+  <circle cx="720" cy="155" r="15" fill="#d97706"/>
+  <text x="720" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">4</text>
+  
+  <!-- Connection arrows -->
+  <line x1="230" y1="130" x2="260" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
+  <line x1="420" y1="130" x2="450" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
+  <line x1="610" y1="130" x2="640" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
+  
+  <!-- Research Finding -->
+  <text x="450" y="225" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Research Finding</text>
+  <text x="450" y="245" text-anchor="middle" font-size="12" fill="#92400e">Teams scoring high on all four pillars are 2.2x more likely</text>
+  <text x="450" y="260" text-anchor="middle" font-size="12" fill="#92400e">to recommend their organization as a great place to work</text>
+  
+  <defs>
+    <marker id="arrow-amber" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#d97706" />
+    </marker>
+  </defs>
+</svg>
+
+### Deployment Pain Spectrum
+
+<div class="deployment-pain-comparison">
+  <div class="pain-side high-pain">
+    <h4><i class="fas fa-fire"></i> High Deployment Pain</h4>
+    <div class="pain-indicators">
+      <div class="pain-item">
+        <i class="fas fa-clock"></i>
+        <span>Hours/days to deploy</span>
+      </div>
+      <div class="pain-item">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>Frequent rollbacks</span>
+      </div>
+      <div class="pain-item">
+        <i class="fas fa-user-clock"></i>
+        <span>Weekend deployments</span>
+      </div>
+      <div class="pain-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>All-hands meetings</span>
+      </div>
+    </div>
+    <div class="pain-score">
+      <span class="score-number">7-10</span>
+      <span class="score-label">Pain Level</span>
+    </div>
   </div>
-  <div class="formula-plus">+</div>
-  <div class="formula-component">
-    <h4><i class="fas fa-graduation-cap"></i> Learning</h4>
-    <p>Growth opportunities</p>
+  
+  <div class="pain-arrow">→</div>
+  
+  <div class="pain-side low-pain">
+    <h4><i class="fas fa-check-circle"></i> Low Deployment Pain</h4>
+    <div class="pain-indicators">
+      <div class="pain-item">
+        <i class="fas fa-tachometer-alt"></i>
+        <span>Minutes to deploy</span>
+      </div>
+      <div class="pain-item">
+        <i class="fas fa-shield-check"></i>
+        <span>Reliable releases</span>
+      </div>
+      <div class="pain-item">
+        <i class="fas fa-calendar-check"></i>
+        <span>Business hours only</span>
+      </div>
+      <div class="pain-item">
+        <i class="fas fa-coffee"></i>
+        <span>Normal workday</span>
+      </div>
+    </div>
+    <div class="pain-score">
+      <span class="score-number">1-3</span>
+      <span class="score-label">Pain Level</span>
+    </div>
   </div>
-  <div class="formula-plus">+</div>
-  <div class="formula-component">
-    <h4><i class="fas fa-handshake"></i> Support</h4>
-    <p>Team culture</p>
-  </div>
-  <div class="formula-plus">+</div>
-  <div class="formula-component">
-    <h4><i class="fas fa-tools"></i> Right Tools</h4>
-    <p>Resource access</p>
-  </div>
+</div>
+
+<div class="research-finding">
+  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
+  <p>Teams with low deployment pain are <strong>3x more likely</strong> to have sustainable work practices and higher job satisfaction. Deployment pain directly correlates with work-life balance.</p>
+</div>
   <div class="formula-equals">=</div>
   <div class="formula-result">
     <h4><i class="fas fa-smile"></i> High Satisfaction</h4>
@@ -656,70 +733,184 @@ dora_color: '#D97706'
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card lean-assessment">
-    <h4><i class="fas fa-chart-line"></i> Lean Management Assessment</h4>
-    <p>How would you rate your team's current lean management maturity?</p>
+    <h4><i class="fas fa-chart-line"></i> Lean Management Maturity</h4>
+    <p>Rate your team's current lean management practices:</p>
     <div class="assessment-buttons">
       <label class="assessment-btn high-performance">
         <input type="radio" name="lean-maturity" value="high">
         <span class="radio-mark"></span>
-        Advanced Lean
+        <strong>Advanced Lean</strong><br>
+        <small>Peer review, fast feedback, data-driven decisions</small>
       </label>
       <label class="assessment-btn medium-performance">
         <input type="radio" name="lean-maturity" value="medium">
         <span class="radio-mark"></span>
-        Developing Lean
+        <strong>Developing Lean</strong><br>
+        <small>Some lean practices, mixed approval processes</small>
       </label>
       <label class="assessment-btn low-performance">
         <input type="radio" name="lean-maturity" value="low">
         <span class="radio-mark"></span>
-        Traditional Management
+        <strong>Traditional Management</strong><br>
+        <small>Heavy approval, command & control</small>
       </label>
     </div>
     <div class="feedback-area" id="lean-feedback">
-      <p>Select your current maturity level to see research-backed insights and improvement suggestions.</p>
+      <p><i class="fas fa-info-circle"></i> Select your current maturity level to see research-backed insights and improvement strategies.</p>
     </div>
   </div>
   
-  <div class="checkpoint-card burnout-assessment">
-    <h4><i class="fas fa-user-check"></i> Burnout Risk Assessment</h4>
-    <p>Evaluate your team's current burnout risk factors:</p>
-    <div class="burnout-checklist">
-      <label class="burnout-factor">
-        <input type="checkbox" name="burnout-risk" value="workload">
-        <span class="checkbox-mark"></span>
-        Work overload (consistently working overtime)
+  <div class="checkpoint-card deployment-assessment">
+    <h4><i class="fas fa-rocket"></i> Deployment Pain Level</h4>
+    <p>How painful are your deployments on a 1-10 scale?</p>
+    <div class="assessment-buttons">
+      <label class="assessment-btn high-performance">
+        <input type="radio" name="deployment-pain" value="low">
+        <span class="radio-mark"></span>
+        <strong>Low Pain (1-3)</strong><br>
+        <small>Minutes to deploy, business hours, reliable</small>
       </label>
-      <label class="burnout-factor">
-        <input type="checkbox" name="burnout-risk" value="control">
-        <span class="checkbox-mark"></span>
-        Lack of control (can't influence work decisions)
+      <label class="assessment-btn medium-performance">
+        <input type="radio" name="deployment-pain" value="medium">
+        <span class="radio-mark"></span>
+        <strong>Medium Pain (4-6)</strong><br>
+        <small>Hours to deploy, some coordination needed</small>
       </label>
-      <label class="burnout-factor">
-        <input type="checkbox" name="burnout-risk" value="rewards">
-        <span class="checkbox-mark"></span>
-        Insufficient rewards (recognition, compensation)
-      </label>
-      <label class="burnout-factor">
-        <input type="checkbox" name="burnout-risk" value="community">
-        <span class="checkbox-mark"></span>
-        Breakdown of community (poor relationships)
-      </label>
-      <label class="burnout-factor">
-        <input type="checkbox" name="burnout-risk" value="fairness">
-        <span class="checkbox-mark"></span>
-        Absence of fairness (unfair treatment)
-      </label>
-      <label class="burnout-factor">
-        <input type="checkbox" name="burnout-risk" value="values">
-        <span class="checkbox-mark"></span>
-        Value conflicts (personal vs organizational)
+      <label class="assessment-btn low-performance">
+        <input type="radio" name="deployment-pain" value="high">
+        <span class="radio-mark"></span>
+        <strong>High Pain (7-10)</strong><br>
+        <small>Days to deploy, weekend work, frequent rollbacks</small>
       </label>
     </div>
-    <div class="feedback-area" id="burnout-feedback">
-      <p>Check applicable burnout risk factors to see targeted prevention strategies based on Maslach's research.</p>
+    <div class="feedback-area" id="deployment-feedback">
+      <p><i class="fas fa-info-circle"></i> Rate your deployment pain to see improvement strategies and performance correlations.</p>
+    </div>
+  </div>
+  
+  <div class="checkpoint-card satisfaction-assessment">
+    <h4><i class="fas fa-users"></i> Employee Satisfaction Check</h4>
+    <p>Evaluate your team's satisfaction factors:</p>
+    <div class="satisfaction-checklist">
+      <label class="satisfaction-factor">
+        <input type="checkbox" name="satisfaction-factors" value="meaningful">
+        <span class="checkbox-mark"></span>
+        <strong>Meaningful Work:</strong> Challenging, purposeful tasks
+      </label>
+      <label class="satisfaction-factor">
+        <input type="checkbox" name="satisfaction-factors" value="learning">
+        <span class="checkbox-mark"></span>
+        <strong>Learning Opportunities:</strong> Growth and development
+      </label>
+      <label class="satisfaction-factor">
+        <input type="checkbox" name="satisfaction-factors" value="support">
+        <span class="checkbox-mark"></span>
+        <strong>Team Support:</strong> Psychological safety, good culture
+      </label>
+      <label class="satisfaction-factor">
+        <input type="checkbox" name="satisfaction-factors" value="tools">
+        <span class="checkbox-mark"></span>
+        <strong>Right Tools:</strong> Access to necessary resources
+      </label>
+    </div>
+    <div class="satisfaction-score">
+      <div class="score-display">
+        <span class="score-number" id="satisfaction-score">0</span>
+        <span class="score-total">/4</span>
+        <div class="score-label">Satisfaction Pillars</div>
+      </div>
+    </div>
+    <div class="feedback-area" id="satisfaction-feedback">
+      <p><i class="fas fa-info-circle"></i> Check all factors present in your team to see satisfaction level and recommendations.</p>
     </div>
   </div>
 </div>
+
+<script>
+// Enhanced Interactive Learning Checkpoint for Meeting 3
+document.addEventListener('DOMContentLoaded', function() {
+  // Lean Management Assessment
+  const leanInputs = document.querySelectorAll('input[name="lean-maturity"]');
+  const leanFeedback = document.getElementById('lean-feedback');
+  
+  leanInputs.forEach(input => {
+    input.addEventListener('change', function() {
+      let feedback = '';
+      switch(this.value) {
+        case 'high':
+          feedback = '<div class="feedback-content success"><i class="fas fa-trophy"></i><strong>Excellent!</strong> Your team demonstrates advanced lean practices. Research shows teams like yours are 2.5x more likely to exceed performance goals. Focus on: <ul><li>Sharing best practices with other teams</li><li>Measuring and improving lead times</li><li>Experimenting with new lean techniques</li></ul></div>';
+          break;
+        case 'medium':
+          feedback = '<div class="feedback-content warning"><i class="fas fa-chart-line"></i><strong>Good Progress!</strong> You\'re on the right track with developing lean practices. To advance: <ul><li>Implement peer review for all changes</li><li>Establish regular retrospectives with action items</li><li>Create visual work boards and limit WIP</li><li>Reduce approval cycles where possible</li></ul></div>';
+          break;
+        case 'low':
+          feedback = '<div class="feedback-content info"><i class="fas fa-rocket"></i><strong>Great Opportunity!</strong> Traditional management can be transformed with proven lean practices. Start with: <ul><li>Pilot peer review for low-risk changes</li><li>Visualize current work and bottlenecks</li><li>Measure and track cycle times</li><li>Implement small batch deliveries</li></ul></div>';
+          break;
+      }
+      leanFeedback.innerHTML = feedback;
+    });
+  });
+  
+  // Deployment Pain Assessment
+  const deploymentInputs = document.querySelectorAll('input[name="deployment-pain"]');
+  const deploymentFeedback = document.getElementById('deployment-feedback');
+  
+  deploymentInputs.forEach(input => {
+    input.addEventListener('change', function() {
+      let feedback = '';
+      switch(this.value) {
+        case 'low':
+          feedback = '<div class="feedback-content success"><i class="fas fa-check-circle"></i><strong>Outstanding!</strong> Low deployment pain correlates with 3x higher delivery performance. Your practices likely include: automated testing, deployment pipelines, and feature flags. <strong>Maintain:</strong> continuous improvement, monitoring, and team satisfaction.</div>';
+          break;
+        case 'medium':
+          feedback = '<div class="feedback-content warning"><i class="fas fa-tools"></i><strong>Improvement Opportunity!</strong> Medium pain suggests partial automation. Key improvements: <ul><li>Automate more deployment steps</li><li>Implement comprehensive testing</li><li>Add deployment monitoring and rollback capabilities</li><li>Practice deployment during normal hours</li></ul></div>';
+          break;
+        case 'high':
+          feedback = '<div class="feedback-content danger"><i class="fas fa-exclamation-triangle"></i><strong>Critical Area!</strong> High deployment pain significantly impacts team wellbeing and performance. Immediate actions: <ul><li>Map current deployment process and pain points</li><li>Start with small, automated improvements</li><li>Implement basic CI/CD pipeline</li><li>Create deployment checklist and runbooks</li></ul></div>';
+          break;
+      }
+      deploymentFeedback.innerHTML = feedback;
+    });
+  });
+  
+  // Employee Satisfaction Assessment
+  const satisfactionInputs = document.querySelectorAll('input[name="satisfaction-factors"]');
+  const satisfactionScore = document.getElementById('satisfaction-score');
+  const satisfactionFeedback = document.getElementById('satisfaction-feedback');
+  
+  function updateSatisfactionScore() {
+    const checkedFactors = document.querySelectorAll('input[name="satisfaction-factors"]:checked');
+    const score = checkedFactors.length;
+    satisfactionScore.textContent = score;
+    
+    let feedback = '';
+    let feedbackClass = '';
+    
+    if (score === 4) {
+      feedbackClass = 'success';
+      feedback = '<div class="feedback-content success"><i class="fas fa-star"></i><strong>Exceptional Team Environment!</strong> All four satisfaction pillars are present. Research shows teams like yours are 2.2x more likely to recommend their organization and have significantly lower turnover rates. Focus on maintaining these strengths and mentoring other teams.</div>';
+    } else if (score === 3) {
+      feedbackClass = 'warning';
+      feedback = '<div class="feedback-content warning"><i class="fas fa-thumbs-up"></i><strong>Strong Foundation!</strong> You have most satisfaction factors in place. Identify and address the missing pillar(s) to achieve maximum team performance and retention. Each additional pillar significantly improves outcomes.</div>';
+    } else if (score === 2) {
+      feedbackClass = 'info';
+      feedback = '<div class="feedback-content info"><i class="fas fa-chart-line"></i><strong>Mixed Results!</strong> You have some satisfaction factors but significant gaps remain. Focus on the missing pillars as they compound each other. Teams with all four factors show dramatically better performance and retention.</div>';
+    } else if (score === 1) {
+      feedbackClass = 'warning';
+      feedback = '<div class="feedback-content warning"><i class="fas fa-flag"></i><strong>Early Stage!</strong> Only one satisfaction pillar is present. This represents a major opportunity for improvement. Start by addressing the most achievable missing factors - often tools and support are easier to improve than meaningful work.</div>';
+    } else {
+      feedbackClass = 'danger';
+      feedback = '<div class="feedback-content danger"><i class="fas fa-exclamation-circle"></i><strong>Critical Attention Needed!</strong> No satisfaction pillars are present, indicating high risk for turnover and poor performance. Immediate action required across all four areas. Consider starting with team support and tools as these can show quick wins.</div>';
+    }
+    
+    satisfactionFeedback.innerHTML = feedback;
+  }
+  
+  satisfactionInputs.forEach(input => {
+    input.addEventListener('change', updateSatisfactionScore);
+  });
+});
+</script>
 
 ## Discussion Questions
 
@@ -1554,60 +1745,7 @@ dora_color: '#D97706'
   border-left-color: #B45309;
 }
 
-/* Tool Autonomy Slider */
-.autonomy-slider {
-  margin-top: 1rem;
-}
-
-.slider-labels {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  color: #666;
-  margin-bottom: 0.5rem;
-}
-
-.slider-track {
-  height: 6px;
-  background: linear-gradient(90deg, #f44336, #ffc107, #4caf50);
-  border-radius: 3px;
-  position: relative;
-  cursor: pointer;
-}
-
-.slider-thumb {
-  width: 20px;
-  height: 20px;
-  background: white;
-  border: 3px solid #D97706;
-  border-radius: 50%;
-  position: absolute;
-  top: -7px;
-  left: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  user-select: none;
-}
-
-.slider-thumb:hover {
-  transform: scale(1.2);
-  border-color: #B45309;
-}
-
-.slider-feedback {
-  margin-top: 1rem;
-  background: linear-gradient(90deg, #fff3e0, #D97706, #B45309);
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
-  border-left: 4px solid #D97706;
-  min-height: 60px;
-  transition: all 0.3s ease;
-}
-
-.slider-feedback p {
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-radius: 8px;
-  border-left: 4px solid #D97706;
+/* Responsive Design for Mobile */
   min-height: 60px;
   transition: all 0.3s ease;
 
@@ -1762,99 +1900,6 @@ dora_color: '#D97706'
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const slider = document.getElementById('tool-slider');
-  const thumb = document.getElementById('tool-thumb');
-  const feedback = document.getElementById('slider-feedback');
-  
-  let isDragging = false;
-  
-  const feedbackMessages = {
-    restricted: {
-      title: "Restricted Tool Selection",
-      content: "Teams must use pre-approved tools only. This can limit innovation but ensures standardization and security compliance. Common in highly regulated environments."
-    },
-    flexible: {
-      title: "Flexible Tool Selection", 
-      content: "Teams have some choice in tools within defined categories or approval processes. Balances innovation with governance. Allows experimentation with oversight."
-    },
-    freedom: {
-      title: "Full Tool Freedom",
-      content: "Teams can choose any tools that help them deliver value. Maximizes autonomy and innovation but requires strong practices around security and integration."
-    }
-  };
-  
-  function updateSlider(clientX) {
-    const rect = slider.getBoundingClientRect();
-    const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
-    thumb.style.left = percentage + '%';
-    
-    let level, color;
-    if (percentage < 33) {
-      level = 'restricted';
-      color = '#f44336';
-    } else if (percentage < 67) {
-      level = 'flexible';
-      color = '#ffc107';
-    } else {
-      level = 'freedom';
-      color = '#4caf50';
-    }
-    
-    thumb.style.borderColor = color;
-    feedback.style.borderLeftColor = color;
-    feedback.innerHTML = `<h5 style="margin: 0 0 0.5rem 0; color: ${color}; font-size: 1rem;">${feedbackMessages[level].title}</h5><p style="margin: 0; font-size: 0.85rem; line-height: 1.4;">${feedbackMessages[level].content}</p>`;
-  }
-  
-  function startDrag(clientX) {
-    isDragging = true;
-    updateSlider(clientX);
-    document.body.style.userSelect = 'none';
-  }
-  
-  function stopDrag() {
-    isDragging = false;
-    document.body.style.userSelect = '';
-  }
-  
-  // Mouse events
-  thumb.addEventListener('mousedown', (e) => {
-    e.preventDefault();
-    startDrag(e.clientX);
-  });
-  
-  slider.addEventListener('click', (e) => {
-    if (!isDragging) {
-      updateSlider(e.clientX);
-    }
-  });
-  
-  document.addEventListener('mousemove', (e) => {
-    if (isDragging) {
-      e.preventDefault();
-      updateSlider(e.clientX);
-    }
-  });
-  
-  document.addEventListener('mouseup', stopDrag);
-  
-  // Touch events for mobile
-  thumb.addEventListener('touchstart', (e) => {
-    e.preventDefault();
-    startDrag(e.touches[0].clientX);
-  });
-  
-  document.addEventListener('touchmove', (e) => {
-    if (isDragging) {
-      e.preventDefault();
-      updateSlider(e.touches[0].clientX);
-    }
-  });
-  
-  document.addEventListener('touchend', stopDrag);
-  
-  // Initialize with default message
-  updateSlider(slider.getBoundingClientRect().left + (slider.getBoundingClientRect().width * 0.5));
-  
   // Dependency feedback content from Accelerate research
   const dependencyInfo = {
     "shared-database": {
