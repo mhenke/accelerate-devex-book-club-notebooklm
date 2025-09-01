@@ -29,8 +29,7 @@ dora_color: '#d97706'
 <div class="lean-principles-board">
   <div class="principle-column wip">
     <div class="column-header">
-      <div class="column-icon"><i class="fas fa-traffic-light"></i></div>
-      <h4>Limit WIP</h4>
+      <h4><i class="fas fa-traffic-light"></i> Limit WIP</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Focus on fewer items</div>
@@ -41,8 +40,7 @@ dora_color: '#d97706'
   
   <div class="principle-column visualize">
     <div class="column-header">
-      <div class="column-icon"><i class="fas fa-eye"></i></div>
-      <h4>Visualize Work</h4>
+      <h4><i class="fas fa-eye"></i> Visualize Work</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Kanban boards</div>
@@ -53,8 +51,7 @@ dora_color: '#d97706'
   
   <div class="principle-column approval">
     <div class="column-header">
-      <div class="column-icon"><i class="fas fa-users"></i></div>
-      <h4>Peer Review</h4>
+      <h4><i class="fas fa-users"></i> Peer Review</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Lightweight approval</div>
@@ -65,8 +62,7 @@ dora_color: '#d97706'
   
   <div class="principle-column feedback">
     <div class="column-header">
-      <div class="column-icon"><i class="fas fa-sync-alt"></i></div>
-      <h4>Fast Feedback</h4>
+      <h4><i class="fas fa-sync-alt"></i> Fast Feedback</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Customer input</div>
@@ -126,8 +122,7 @@ dora_color: '#d97706'
 
 <div class="architecture-assessment">
   <div class="assessment-card dependency-map">
-    <div class="assessment-icon"><i class="fas fa-map"></i></div>
-    <h4>Dependency Mapping</h4>
+    <h4><i class="fas fa-map"></i> Dependency Mapping</h4>
     <p>Identify team dependencies that slow you down:</p>
     <div class="dependency-examples">
       <label class="dependency-item high-impact">
@@ -152,8 +147,7 @@ dora_color: '#d97706'
   </div>
   
   <div class="assessment-card wip-current">
-    <div class="assessment-icon"><i class="fas fa-chart-bar"></i></div>
-    <h4>WIP Visualization</h4>
+    <h4><i class="fas fa-chart-bar"></i> WIP Visualization</h4>
     <p>How do you currently track work in progress?</p>
     <div class="wip-options">
       <label class="wip-option">
@@ -187,8 +181,7 @@ dora_color: '#d97706'
 
 <div class="practical-exercises">
   <div class="exercise-card dependency-mapping">
-    <div class="exercise-icon"><i class="fas fa-project-diagram"></i></div>
-    <h4>Dependency Mapping Exercise</h4>
+    <h4><i class="fas fa-project-diagram"></i> Dependency Mapping Exercise</h4>
     <p>Map current dependencies between teams and systems:</p>
     <div class="exercise-steps">
       <div class="step-item">
@@ -216,8 +209,7 @@ dora_color: '#d97706'
   </div>
   
   <div class="exercise-card bottleneck-identification">
-    <div class="exercise-icon"><i class="fas fa-funnel-dollar"></i></div>
-    <h4>Bottleneck Identification</h4>
+    <h4><i class="fas fa-funnel-dollar"></i> Bottleneck Identification</h4>
     <p>Identify bottlenecks in current change approval processes:</p>
     <div class="exercise-steps">
       <div class="step-item">
@@ -245,8 +237,7 @@ dora_color: '#d97706'
   </div>
   
   <div class="exercise-card wip-assessment">
-    <div class="exercise-icon"><i class="fas fa-clipboard-check"></i></div>
-    <h4>WIP Limits Assessment</h4>
+    <h4><i class="fas fa-clipboard-check"></i> WIP Limits Assessment</h4>
     <p>Assess current WIP limits and visualization practices:</p>
     <div class="exercise-steps">
       <div class="step-item">
