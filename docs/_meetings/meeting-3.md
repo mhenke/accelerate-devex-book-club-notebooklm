@@ -30,7 +30,7 @@ dora_color: '#D97706'
   <div class="principle-column wip">
     <div class="column-header">
       <div class="column-icon"><i class="fas fa-traffic-light"></i></div>
-      <h4>Limit WIP</h4>
+    <h4><i class="fas fa-traffic-light"></i> Limit WIP</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Focus on fewer items</div>
@@ -42,7 +42,7 @@ dora_color: '#D97706'
   <div class="principle-column visualize">
     <div class="column-header">
       <div class="column-icon"><i class="fas fa-eye"></i></div>
-      <h4>Visualize Work</h4>
+    <h4><i class="fas fa-eye"></i> Visualize Work</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Kanban boards</div>
@@ -54,7 +54,7 @@ dora_color: '#D97706'
   <div class="principle-column approval">
     <div class="column-header">
       <div class="column-icon"><i class="fas fa-users"></i></div>
-      <h4>Peer Review</h4>
+    <h4><i class="fas fa-users"></i> Peer Review</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Lightweight approval</div>
@@ -66,7 +66,7 @@ dora_color: '#D97706'
   <div class="principle-column feedback">
     <div class="column-header">
       <div class="column-icon"><i class="fas fa-sync-alt"></i></div>
-      <h4>Fast Feedback</h4>
+    <h4><i class="fas fa-sync-alt"></i> Fast Feedback</h4>
     </div>
     <div class="principle-cards">
       <div class="principle-item">Customer input</div>
@@ -277,11 +277,13 @@ dora_color: '#D97706'
   </div>
 </div>
 
+## eNPS Assessment
+
 <div class="enps-assessment">
   <div class="enps-content">
     <div class="enps-header">
       <div class="enps-icon"><i class="fas fa-chart-line"></i></div>
-      <h4>Employee Net Promoter Score (eNPS)</h4>
+      <h4><i class="fas fa-chart-line"></i> Employee Net Promoter Score (eNPS)</h4>
       <p>High-performing teams are 2.2x more likely to recommend their organization as a great place to work</p>
     </div>
     
@@ -310,7 +312,7 @@ dora_color: '#D97706'
   </div>
 </div>
 
-### Microsoft Research: Work-Life Balance Impact
+## Microsoft Stats
 
 <div class="microsoft-stats">
   <div class="stat-highlight">
@@ -333,37 +335,37 @@ dora_color: '#D97706'
   <div class="risk-factors-grid">
     <div class="risk-factor-card overload">
       <div class="risk-icon"><i class="fas fa-weight"></i></div>
-      <h5>Work Overload</h5>
+      <h5><i class="fas fa-weight"></i> Work Overload</h5>
       <p>Job demands exceed human limits</p>
     </div>
     
     <div class="risk-factor-card control">
       <div class="risk-icon"><i class="fas fa-hand-paper"></i></div>
-      <h5>Lack of Control</h5>
+      <h5><i class="fas fa-hand-paper"></i> Lack of Control</h5>
       <p>Unable to influence job decisions</p>
     </div>
     
     <div class="risk-factor-card rewards">
       <div class="risk-icon"><i class="fas fa-gift"></i></div>
-      <h5>Insufficient Rewards</h5>
+      <h5><i class="fas fa-gift"></i> Insufficient Rewards</h5>
       <p>Financial, institutional, or social</p>
     </div>
     
     <div class="risk-factor-card community">
       <div class="risk-icon"><i class="fas fa-users-slash"></i></div>
-      <h5>Breakdown of Community</h5>
+      <h5><i class="fas fa-users-slash"></i> Breakdown of Community</h5>
       <p>Unsupportive workplace environment</p>
     </div>
     
     <div class="risk-factor-card fairness">
       <div class="risk-icon"><i class="fas fa-balance-scale-right"></i></div>
-      <h5>Absence of Fairness</h5>
+      <h5><i class="fas fa-balance-scale-right"></i> Absence of Fairness</h5>
       <p>Unfair decision-making processes</p>
     </div>
     
     <div class="risk-factor-card values">
       <div class="risk-icon"><i class="fas fa-compass"></i></div>
-      <h5>Value Conflicts</h5>
+      <h5><i class="fas fa-compass"></i> Value Conflicts</h5>
       <p>Mismatch between org and personal values</p>
     </div>
   </div>
@@ -405,17 +407,17 @@ dora_color: '#D97706'
       <label class="dependency-item high-impact">
         <input type="radio" name="dependency-type" value="shared-database">
         <span class="radio-mark"></span>
-        <i class="fas fa-circle" style="color: #f44336;"></i> Shared database
+    <i class="fas fa-circle" style="color: #D97706;"></i> Shared database
       </label>
       <label class="dependency-item medium-impact">
         <input type="radio" name="dependency-type" value="release-coordination">
         <span class="radio-mark"></span>
-        <i class="fas fa-circle" style="color: #ffc107;"></i> Release coordination
+    <i class="fas fa-circle" style="color: #B45309;"></i> Release coordination
       </label>
       <label class="dependency-item low-impact">
         <input type="radio" name="dependency-type" value="independent-services">
         <span class="radio-mark"></span>
-        <i class="fas fa-circle" style="color: #4caf50;"></i> Independent services
+    <i class="fas fa-circle" style="color: #fff3e0;"></i> Independent services
       </label>
     </div>
     <div class="feedback-area" id="dependency-feedback">
@@ -481,7 +483,7 @@ dora_color: '#D97706'
         <div class="step-number">3</div>
         <div class="step-content">
           <h5>Rate Impact</h5>
-          <p>Color-code dependencies: Red (blocks deployment), Yellow (coordination required), Green (independent)</p>
+            <p>Color-code dependencies: Amber (blocks deployment), Deep Amber (coordination required), Light Amber (independent)</p>
         </div>
       </div>
     </div>
@@ -722,13 +724,15 @@ dora_color: '#D97706'
 ## Discussion Questions
 
 ### Lean Management (Chapter 7)
+
 1. **Change Approval Effectiveness:** How does your current change approval process compare to the research findings? Are external approvals actually improving stability or just slowing delivery?
 
 2. **WIP Limits & Visualization:** How does your team currently manage and visualize work in progress? What bottlenecks become visible when you track WIP carefully?
 
 3. **Data-Driven Decisions:** How often does your team use monitoring data to make business decisions versus just responding to alerts?
 
-### Product Development (Chapter 8)  
+### Product Development (Chapter 8)
+
 4. **Small Batch Assessment:** How large are your typical feature releases? Could work be broken into smaller, more frequent deliveries?
 
 5. **Customer Feedback Loop:** How quickly does customer feedback reach development teams and influence product decisions?
@@ -736,11 +740,13 @@ dora_color: '#D97706'
 6. **Team Experimentation Authority:** Do development teams have authority to adjust requirements based on what they learn, or must they seek external approval?
 
 ### Work Sustainability (Chapter 9)
+
 7. **Deployment Pain Reality:** On a scale of 1-10, how painful are your deployments? What specific factors contribute to anxiety or stress?
 
 8. **Sustainability Connection:** How have technical practices like continuous delivery impacted your team's work-life balance and stress levels?
 
 ### Employee Satisfaction (Chapter 10)
+
 9. **eNPS Assessment:** If you surveyed your team anonymously, what percentage would recommend your organization as a great place to work?
 
 10. **Burnout Risk Factors:** Which of Maslach's six organizational risk factors for burnout are most present in your team? What could leadership do to address them?
@@ -748,6 +754,7 @@ dora_color: '#D97706'
 11. **Diversity & Performance:** How does team diversity in your organization correlate with delivery performance and business outcomes?
 
 ### Integration Questions
+
 12. **Virtuous Cycle:** How do you see the connections between lean management practices, product development approaches, deployment pain, and employee satisfaction in your organization?
 
 13. **Biggest Opportunity:** Based on all four chapters, where do you see the biggest opportunity for improvement that could impact both delivery performance and team wellbeing?
@@ -755,6 +762,7 @@ dora_color: '#D97706'
 ## Action Items for Next Meeting
 
 ### Lean Management (Chapter 7)
+
 <ul class="action-items">
 <li>[ ] Implement simple WIP visualization (kanban board or dashboard)</li>
 <li>[ ] Identify one change approval step that could use peer review instead of external approval</li>
@@ -762,6 +770,7 @@ dora_color: '#D97706'
 </ul>
 
 ### Product Development (Chapter 8)
+
 <ul class="action-items">
 <li>[ ] Break one upcoming feature into deliverable pieces smaller than one week</li>
 <li>[ ] Establish one new channel for rapid customer feedback</li>
@@ -769,6 +778,7 @@ dora_color: '#D97706'
 </ul>
 
 ### Work Sustainability (Chapter 9)
+
 <ul class="action-items">
 <li>[ ] Identify the single smallest change that could make your next deployment less painful</li>
 <li>[ ] Document current deployment anxiety level (1-10) and main pain points</li>
@@ -776,6 +786,7 @@ dora_color: '#D97706'
 </ul>
 
 ### Employee Satisfaction (Chapter 10)
+
 <ul class="action-items">
 <li>[ ] Conduct informal eNPS assessment with your team</li>
 <li>[ ] Address one of the six burnout risk factors most affecting your team</li>
@@ -783,6 +794,7 @@ dora_color: '#D97706'
 </ul>
 
 ### Integration Goal
+
 <ul class="action-items">
 <li>[ ] Choose one practice that addresses multiple chapters (e.g., automated deployment reducing both pain and improving satisfaction)</li>
 </ul>
@@ -1014,31 +1026,31 @@ dora_color: '#D97706'
   border-radius: 12px;
   font-weight: 500;
   transition: all 0.3s ease;
-  color: #4b5563;
+  color: #B45309;
 }
 
 .nav-item.prev {
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-  border: 2px solid #16a34a;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border: 2px solid #D97706;
 }
 
 .nav-item.prev:hover {
-  background: linear-gradient(135deg, #16a34a, #15803d);
-  color: white;
+  background: linear-gradient(135deg, #D97706, #B45309);
+  color: #fff3e0;
   transform: translateX(-4px);
-  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
 }
 
 .nav-item.next {
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border: 2px solid #3b82f6;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border: 2px solid #D97706;
 }
 
 .nav-item.next:hover {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  color: white;
+  background: linear-gradient(135deg, #D97706, #B45309);
+  color: #fff3e0;
   transform: translateX(4px);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
 }
 
 .nav-item a {
@@ -1058,11 +1070,11 @@ dora_color: '#D97706'
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #4caf50;
+  border: 2px solid #D97706;
 }
 
 .principle-column {
@@ -1101,20 +1113,20 @@ dora_color: '#D97706'
 }
 
 .principle-item {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   padding: 0.75rem;
   margin-bottom: 0.5rem;
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #666;
+  color: #B45309;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .principle-item:hover {
   background: linear-gradient(135deg, #D97706, #B45309);
-  color: white;
+  color: #fff3e0;
   transform: translateX(4px);
 }
 
@@ -1128,11 +1140,11 @@ dora_color: '#D97706'
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #D97706;
   flex-wrap: wrap;
 }
 
@@ -1177,20 +1189,20 @@ dora_color: '#D97706'
 }
 
 .formula-result {
-  border: 3px solid #4caf50;
+  border: 3px solid #D97706;
 }
 
 .formula-result h4 {
-  color: #2e7d32;
+  color: #B45309;
 }
 
 /* Microsoft Stats */
 .microsoft-stats {
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #3f51b5;
+  border: 2px solid #D97706;
 }
 
 .stat-highlight {
@@ -1200,18 +1212,18 @@ dora_color: '#D97706'
   display: flex;
   align-items: center;
   gap: 2rem;
-  box-shadow: 0 8px 25px rgba(63, 81, 181, 0.1);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.1);
   transition: all 0.3s ease;
 }
 
 .stat-highlight:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(63, 81, 181, 0.2);
+  box-shadow: 0 12px 35px rgba(217, 119, 6, 0.2);
 }
 
 .stat-icon {
   font-size: 3.5rem;
-  color: #3f51b5;
+  color: #D97706;
   text-align: center;
   flex-shrink: 0;
 }
@@ -1230,21 +1242,21 @@ dora_color: '#D97706'
 .before-stat {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #f44336;
-  background: linear-gradient(135deg, #ffebee, #ffcdd2);
+  color: #B45309;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   padding: 0.5rem 1rem;
   border-radius: 12px;
-  border: 2px solid #f44336;
+  border: 2px solid #D97706;
 }
 
 .after-stat {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #4caf50;
-  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+  color: #B45309;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   padding: 0.5rem 1rem;
   border-radius: 12px;
-  border: 2px solid #4caf50;
+  border: 2px solid #D97706;
 }
 
 .stat-numbers i {
@@ -1271,11 +1283,11 @@ dora_color: '#D97706'
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #D97706;
 }
 
 .exercise-card {
@@ -1284,7 +1296,7 @@ dora_color: '#D97706'
   padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #059669;
+  border-left: 4px solid #D97706;
 }
 
 .exercise-card:hover {
@@ -1296,12 +1308,12 @@ dora_color: '#D97706'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #059669;
+  color: #D97706;
 }
 
 .exercise-card h4 {
   margin: 0 0 1rem 0;
-  color: #7b1fa2;
+  color: #B45309;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -1325,13 +1337,13 @@ dora_color: '#D97706'
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .step-item:hover {
-  background: linear-gradient(135deg, #059669, #047857);
+  background: linear-gradient(135deg, #D97706, #B45309);
   color: white;
   transform: translateX(4px);
 }
@@ -1340,7 +1352,7 @@ dora_color: '#D97706'
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #059669, #047857);
+  background: linear-gradient(135deg, #D97706, #B45309);
   color: white;
   display: flex;
   align-items: center;
@@ -1356,13 +1368,13 @@ dora_color: '#D97706'
 
 .step-content h5 {
   margin: 0 0 0.5rem 0;
-  color: #7b1fa2;
+  color: #B45309;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .step-item:hover .step-content h5 {
-  color: white;
+  color: #fff3e0;
 }
 
 .step-content p {
@@ -1381,7 +1393,7 @@ dora_color: '#D97706'
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .assessment-card {
@@ -1456,16 +1468,16 @@ dora_color: '#D97706'
 }
 
 .dependency-item.high-impact {
-  background: linear-gradient(135deg, #ffebee, #ffcdd2);
-  border-left: 4px solid #f44336;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-left: 4px solid #D97706;
 }
 
 .dependency-item.high-impact .radio-mark {
-  border-color: #f44336;
+  border-color: #D97706;
 }
 
 .dependency-item.high-impact input:checked ~ .radio-mark {
-  background: #f44336;
+  background: #D97706;
 }
 
 .dependency-item.high-impact input:checked ~ .radio-mark:after {
@@ -1480,21 +1492,21 @@ dora_color: '#D97706'
 }
 
 .dependency-item.high-impact:has(input:checked) {
-  background: linear-gradient(135deg, #ffcdd2, #ffabab);
-  border-left-color: #d32f2f;
+  background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+  border-left-color: #B45309;
 }
 
 .dependency-item.medium-impact {
-  background: linear-gradient(135deg, #fff8e1, #ffecb3);
-  border-left: 4px solid #ffc107;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-left: 4px solid #D97706;
 }
 
 .dependency-item.medium-impact .radio-mark {
-  border-color: #ffc107;
+  border-color: #D97706;
 }
 
 .dependency-item.medium-impact input:checked ~ .radio-mark {
-  background: #ffc107;
+  background: #D97706;
 }
 
 .dependency-item.medium-impact input:checked ~ .radio-mark:after {
@@ -1509,21 +1521,21 @@ dora_color: '#D97706'
 }
 
 .dependency-item.medium-impact:has(input:checked) {
-  background: linear-gradient(135deg, #ffecb3, #ffe082);
+  background: linear-gradient(135deg, #ffe0b2, #fff3e0);
   border-left-color: #B45309;
 }
 
 .dependency-item.low-impact {
-  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
-  border-left: 4px solid #4caf50;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-left: 4px solid #D97706;
 }
 
 .dependency-item.low-impact .radio-mark {
-  border-color: #4caf50;
+  border-color: #D97706;
 }
 
 .dependency-item.low-impact input:checked ~ .radio-mark {
-  background: #4caf50;
+  background: #D97706;
 }
 
 .dependency-item.low-impact input:checked ~ .radio-mark:after {
@@ -1538,8 +1550,8 @@ dora_color: '#D97706'
 }
 
 .dependency-item.low-impact:has(input:checked) {
-  background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
-  border-left-color: #388e3c;
+  background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+  border-left-color: #B45309;
 }
 
 /* Tool Autonomy Slider */
@@ -1584,7 +1596,7 @@ dora_color: '#D97706'
 
 .slider-feedback {
   margin-top: 1rem;
-  padding: 1rem;
+  background: linear-gradient(90deg, #fff3e0, #D97706, #B45309);
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 8px;
   border-left: 4px solid #D97706;
@@ -1593,11 +1605,11 @@ dora_color: '#D97706'
 }
 
 .slider-feedback p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 500;
-}
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-radius: 8px;
+  border-left: 4px solid #D97706;
+  min-height: 60px;
+  transition: all 0.3s ease;
 
 /* WIP Options */
 .wip-options {
@@ -1609,7 +1621,7 @@ dora_color: '#D97706'
 .wip-option {
   position: relative;
   padding: 0.75rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -1625,7 +1637,7 @@ dora_color: '#D97706'
 
 .wip-option:hover {
   background: linear-gradient(135deg, #D97706, #B45309);
-  color: white;
+  color: #fff3e0;
   border-color: #B45309;
   transform: scale(1.02);
 }
