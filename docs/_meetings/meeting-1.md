@@ -427,16 +427,16 @@ dora_color: '#1E3A8A'
 }
 
 .assessment-btn.high-performance {
-  border-color: #4caf50;
-  color: #388e3c;
+  border-color: #1E3A8A;
+  color: #1e40af;
 }
 
 .assessment-btn.high-performance .radio-mark {
-  border-color: #4caf50;
+  border-color: #1E3A8A;
 }
 
 .assessment-btn.high-performance input:checked ~ .radio-mark {
-  background: #4caf50;
+  background: #1E3A8A;
 }
 
 .assessment-btn.high-performance input:checked ~ .radio-mark:after {
@@ -451,22 +451,22 @@ dora_color: '#1E3A8A'
 }
 
 .assessment-btn.high-performance:has(input:checked) {
-  background: #e8f5e8;
-  border-color: #388e3c;
-  color: #388e3c;
+  background: #dbeafe;
+  border-color: #1e40af;
+  color: #1e40af;
 }
 
 .assessment-btn.medium-performance {
-  border-color: #ff9800;
-  color: #f57c00;
+  border-color: #1E3A8A;
+  color: #1e40af;
 }
 
 .assessment-btn.medium-performance .radio-mark {
-  border-color: #ff9800;
+  border-color: #1E3A8A;
 }
 
 .assessment-btn.medium-performance input:checked ~ .radio-mark {
-  background: #ff9800;
+  background: #1E3A8A;
 }
 
 .assessment-btn.medium-performance input:checked ~ .radio-mark:after {
@@ -481,9 +481,9 @@ dora_color: '#1E3A8A'
 }
 
 .assessment-btn.medium-performance:has(input:checked) {
-  background: #fff8e1;
-  border-color: #f57c00;
-  color: #f57c00;
+  background: #dbeafe;
+  border-color: #1e40af;
+  color: #1e40af;
 }
 
 .assessment-btn.low-performance {
@@ -511,7 +511,7 @@ dora_color: '#1E3A8A'
 }
 
 .assessment-btn.low-performance:has(input:checked) {
-  background: #ffebee;
+  background: #dbeafe;
   border-color: #d32f2f;
   color: #d32f2f;
 }
@@ -679,8 +679,8 @@ dora_color: '#1E3A8A'
 }
 
 .feedback-area.active {
-  border-left-color: #4caf50;
-  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  border-left-color: #1E3A8A;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
 }
 
 /* Responsive Design for Checkpoint */
@@ -742,19 +742,19 @@ dora_color: '#1E3A8A'
 }
 
 .metric-card.deploy-frequency {
-  border-color: #4caf50;
+  border-color: #1E3A8A;
 }
 
 .metric-card.deploy-frequency::before {
-  background: linear-gradient(90deg, #4caf50, #388e3c);
+  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
 }
 
 .metric-card.restore-time {
-  border-color: #ff9800;
+  border-color: #1E3A8A;
 }
 
 .metric-card.restore-time::before {
-  background: linear-gradient(90deg, #ff9800, #f57c00);
+  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
 }
 
 .metric-card.change-fail {
@@ -813,9 +813,9 @@ h3 i, h4 i {
   gap: 1.5rem;
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
   border-radius: 12px;
-  border: 2px solid #ff9800;
+  border: 2px solid #1E3A8A;
 }
 
 .myth-side, .reality-side {
@@ -863,7 +863,7 @@ h3 i, h4 i {
 .vs-divider {
   font-size: 2rem;
   font-weight: bold;
-  color: #ff9800;
+  color: #1E3A8A;
   background: white;
   width: 60px;
   height: 60px;
@@ -871,7 +871,7 @@ h3 i, h4 i {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #ff9800;
+  border: 3px solid #1E3A8A;
 }
 
 /* Deployment Flow */
@@ -1051,27 +1051,27 @@ h3 i, h4 i {
 }
 
 .culture-card.bureaucratic {
-  border-color: #ff9800;
+  border-color: #1E3A8A;
 }
 
 .culture-card.bureaucratic::before {
-  background: linear-gradient(90deg, #ff9800, #f57c00);
+  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
 }
 
 .culture-card.bureaucratic .culture-icon {
-  color: #ff9800;
+  color: #1E3A8A;
 }
 
 .culture-card.generative {
-  border-color: #4caf50;
+  border-color: #1E3A8A;
 }
 
 .culture-card.generative::before {
-  background: linear-gradient(90deg, #4caf50, #388e3c);
+  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
 }
 
 .culture-card.generative .culture-icon {
-  color: #4caf50;
+  color: #1E3A8A;
 }
 
 .culture-card:hover {
