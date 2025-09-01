@@ -453,9 +453,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #059669;
 }
 
 .resource-category {
@@ -464,7 +464,7 @@ dora_color: '#059669'
   padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #2196f3;
+  border-left: 4px solid #059669;
 }
 
 .resource-category:hover {
@@ -476,7 +476,7 @@ dora_color: '#059669'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #2196f3;
+  color: #059669;
 }
 
 .resource-category h4 {
@@ -502,7 +502,7 @@ dora_color: '#059669'
 }
 
 .resource-category li:hover {
-  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  background: linear-gradient(135deg, #059669, #047857);
   transform: translateX(4px);
 }
 
@@ -596,9 +596,9 @@ dora_color: '#059669'
   align-items: center;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #ffebee, #f8bbd9);
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
-  border: 2px solid #e91e63;
+  border: 2px solid #059669;
 }
 
 .confusion-problem, .confusion-solution {
@@ -612,12 +612,12 @@ dora_color: '#059669'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #e91e63;
+  color: #059669;
 }
 
 .confusion-problem h4, .confusion-solution h4 {
   margin: 0 0 1rem 0;
-  color: #ad1457;
+  color: #047857;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -642,7 +642,7 @@ dora_color: '#059669'
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: #e91e63;
+  color: #059669;
   font-weight: bold;
 }
 
@@ -658,9 +658,9 @@ dora_color: '#059669'
   align-items: center;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #059669;
 }
 
 .security-approach {
@@ -674,7 +674,7 @@ dora_color: '#059669'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #2196f3;
+  color: #059669;
 }
 
 .security-approach h4 {
@@ -695,7 +695,7 @@ dora_color: '#059669'
 
 .vs-arrow {
   font-size: 2rem;
-  color: #2196f3;
+  color: #059669;
   font-weight: bold;
 }
 
