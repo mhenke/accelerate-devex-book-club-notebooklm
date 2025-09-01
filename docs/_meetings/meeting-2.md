@@ -8,14 +8,14 @@ duration: '1 Hour'
 dora_color: '#059669'
 ---
 
-## <i class="fas fa-video"></i> Watch the Meeting 2 Video
+## Watch the Meeting 2 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## <i class="fas fa-headphones"></i> Listen to the Meeting 2 Podcast
+## Listen to the Meeting 2 Podcast
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-podcast.m4a" type="audio/x-m4a">
@@ -26,8 +26,7 @@ dora_color: '#059669'
 
 <div class="architecture-comparison">
   <div class="arch-side tight-coupled">
-    <div class="arch-icon"><i class="fas fa-link"></i></div>
-    <h3>Tightly Coupled</h3>
+    <h3><i class="fas fa-link"></i> Tightly Coupled</h3>
     <div class="arch-content">
       <p><strong>High Dependencies</strong></p>
       <ul>
@@ -44,8 +43,7 @@ dora_color: '#059669'
   </div>
   
   <div class="arch-side loose-coupled">
-    <div class="arch-icon"><i class="fas fa-puzzle-piece"></i></div>
-    <h3>Loosely Coupled</h3>
+    <h3><i class="fas fa-puzzle-piece"></i> Loosely Coupled</h3>
     <div class="arch-content">
       <p><strong>Independent Teams</strong></p>
       <ul>
@@ -209,17 +207,15 @@ dora_color: '#059669'
 
 <div class="conway-law-section">
   <div class="law-statement">
-    <div class="law-icon"><i class="fas fa-quote-left"></i></div>
     <blockquote>
-      "Organizations design systems that mirror their communication structures"
+      <i class="fas fa-quote-left"></i> "Organizations design systems that mirror their communication structures"
     </blockquote>
     <cite>— Melvin Conway, 1967</cite>
   </div>
   
   <div class="conway-examples">
     <div class="example-card">
-      <div class="example-icon"><i class="fas fa-sitemap"></i></div>
-      <h4>Traditional Organization</h4>
+      <h4><i class="fas fa-sitemap"></i> Traditional Organization</h4>
       <p><strong>Structure:</strong> Separate dev, QA, ops teams</p>
       <p><strong>Result:</strong> Monolithic systems with handoff bottlenecks</p>
     </div>
@@ -230,8 +226,7 @@ dora_color: '#059669'
     </div>
     
     <div class="example-card">
-      <div class="example-icon"><i class="fas fa-users"></i></div>
-      <h4>Cross-Functional Teams</h4>
+      <h4><i class="fas fa-users"></i> Cross-Functional Teams</h4>
       <p><strong>Structure:</strong> Full-stack teams with all skills</p>
       <p><strong>Result:</strong> Loosely coupled, independently deployable services</p>
     </div>
@@ -520,11 +515,6 @@ dora_color: '#059669'
   text-align: center;
 }
 
-.arch-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
 
 .arch-side h3 {
   margin: 0 0 1rem 0;
@@ -700,11 +690,6 @@ dora_color: '#059669'
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.law-icon {
-  font-size: 2rem;
-  color: #059669;
-  margin-bottom: 1rem;
-}
 
 .law-statement blockquote {
   font-size: 1.2rem;
@@ -734,11 +719,6 @@ dora_color: '#059669'
   text-align: center;
 }
 
-.example-icon {
-  font-size: 2rem;
-  color: #059669;
-  margin-bottom: 1rem;
-}
 
 .example-card h4 {
   margin: 0 0 1rem 0;
