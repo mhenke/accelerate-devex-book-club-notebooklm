@@ -5,7 +5,7 @@ subtitle: 'Technical Excellence & Continuous Delivery'
 week: 3
 chapters: '4-6'
 duration: '1 Hour'
-dora_color: '#059669'
+dora_color: '#0F766E'
 ---
 
 ## Watch the Meeting 2 Video
@@ -406,9 +406,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .resource-category {
@@ -417,7 +417,7 @@ dora_color: '#059669'
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #059669;
+  border-left: 4px solid #0F766E;
 }
 
 .resource-category:hover {
@@ -449,12 +449,12 @@ dora_color: '#059669'
 }
 
 .resource-category li:hover {
-  background: linear-gradient(135deg, #059669, #047857);
+  background: linear-gradient(135deg, #0F766E, #134e4a);
   transform: translateX(4px);
 }
 
 .resource-category a {
-  color: #047857;
+  color: #134e4a;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -474,9 +474,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .arch-side {
@@ -496,7 +496,7 @@ dora_color: '#059669'
 }
 
 .loose-coupled h3 {
-  color: #064e3b;
+  color: #134e4a;
 }
 
 .arch-content p {
@@ -519,7 +519,7 @@ dora_color: '#059669'
 .vs-divider {
   font-size: 2rem;
   font-weight: bold;
-  color: #059669;
+  color: #0F766E;
   background: white;
   width: 60px;
   height: 60px;
@@ -527,7 +527,7 @@ dora_color: '#059669'
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #059669;
+  border: 3px solid #0F766E;
 }
 
 /* Wall of Confusion Section */
@@ -538,9 +538,9 @@ dora_color: '#059669'
   align-items: center;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .confusion-problem, .confusion-solution {
@@ -552,7 +552,7 @@ dora_color: '#059669'
 
 .confusion-problem h4, .confusion-solution h4 {
   margin: 0 0 1rem 0;
-  color: #047857;
+  color: #134e4a;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -577,7 +577,7 @@ dora_color: '#059669'
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: #059669;
+  color: #0F766E;
   font-weight: bold;
 }
 
@@ -593,9 +593,9 @@ dora_color: '#059669'
   align-items: center;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .security-approach {
@@ -623,7 +623,7 @@ dora_color: '#059669'
 
 .vs-arrow {
   font-size: 2rem;
-  color: #059669;
+  color: #0F766E;
   font-weight: bold;
 }
 
@@ -631,9 +631,9 @@ dora_color: '#059669'
 .conway-law-section {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .law-statement {
@@ -649,7 +649,7 @@ dora_color: '#059669'
 .law-statement blockquote {
   font-size: 1.2rem;
   font-style: italic;
-  color: #065f46;
+  color: #134e4a;
   margin: 1rem 0;
   font-weight: 500;
 }
@@ -677,7 +677,7 @@ dora_color: '#059669'
 
 .example-card h4 {
   margin: 0 0 1rem 0;
-  color: #065f46;
+  color: #134e4a;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -693,7 +693,7 @@ dora_color: '#059669'
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: #059669;
+  color: #0F766E;
   font-weight: bold;
 }
 
@@ -705,9 +705,9 @@ dora_color: '#059669'
 .tool-autonomy-impact {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .autonomy-stat {
@@ -722,7 +722,7 @@ dora_color: '#059669'
 
 .stat-content h4 {
   margin: 0 0 1rem 0;
-  color: #047857;
+  color: #134e4a;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -749,7 +749,7 @@ dora_color: '#059669'
 }
 
 .metric-point i {
-  color: #059669;
+  color: #0F766E;
 }
 
 /* Transformation Flow */
@@ -760,9 +760,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #fce4ec);
+  background: linear-gradient(135deg, #f0fdfa, #fce4ec);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .flow-step {
@@ -779,19 +779,19 @@ dora_color: '#059669'
 
 .flow-step h4 {
   margin: 0 0 0.5rem 0;
-  color: #064e3b;
+  color: #134e4a;
   font-size: 1.1rem;
 }
 
 .flow-step p {
-  color: #059669;
+  color: #0F766E;
   font-size: 0.9rem;
   margin: 0;
 }
 
 .flow-arrow {
   font-size: 2rem;
-  color: #059669;
+  color: #0F766E;
   font-weight: bold;
 }
 
@@ -810,7 +810,7 @@ dora_color: '#059669'
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border-left: 4px solid #059669;
+  border-left: 4px solid #0F766E;
 }
 
 .principle-card:hover {
@@ -821,7 +821,7 @@ dora_color: '#059669'
 
 .principle-card h4 {
   margin: 0 0 0.75rem 0;
-  color: #064e3b;
+  color: #134e4a;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -840,9 +840,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 16px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .application-card {
@@ -851,7 +851,7 @@ dora_color: '#059669'
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #059669;
+  border-left: 4px solid #0F766E;
 }
 
 .application-card:hover {
@@ -862,7 +862,7 @@ dora_color: '#059669'
 
 .application-card h4 {
   margin: 0 0 1rem 0;
-  color: #047857;
+  color: #134e4a;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -892,7 +892,7 @@ dora_color: '#059669'
 }
 
 .prompt-item:hover {
-  background: linear-gradient(135deg, #059669, #047857);
+  background: linear-gradient(135deg, #0F766E, #134e4a);
   color: white;
   transform: translateX(4px);
 }
@@ -901,7 +901,7 @@ dora_color: '#059669'
   flex-shrink: 0;
   font-size: 1.1rem;
   margin-top: 0.1rem;
-  color: #059669;
+  color: #0F766E;
 }
 
 .prompt-item:hover i {
@@ -1018,9 +1018,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   border-radius: 20px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
 }
 
 .checkpoint-card {
@@ -1038,13 +1038,13 @@ dora_color: '#059669'
 .checkpoint-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 35px rgba(5, 150, 105, 0.2);
-  border-color: #059669;
+  border-color: #0F766E;
 }
 
 
 .checkpoint-card h4 {
   margin: 0 0 1rem 0;
-  color: #064e3b;
+  color: #134e4a;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -1085,7 +1085,7 @@ dora_color: '#059669'
   width: 22px;
   height: 22px;
   background: white;
-  border: 3px solid #059669;
+  border: 3px solid #0F766E;
   border-radius: 50%;
   cursor: grab;
   transition: border-color 0.3s ease;
@@ -1098,7 +1098,7 @@ dora_color: '#059669'
 
 .slider-feedback {
   background: #f8f9fa;
-  border-left: 4px solid #059669;
+  border-left: 4px solid #0F766E;
   border-radius: 8px;
   padding: 1rem;
   min-height: 60px;
@@ -1218,16 +1218,16 @@ dora_color: '#059669'
 }
 
 .assessment-btn.generative {
-  border-color: #059669;
-  color: #047857;
+  border-color: #0F766E;
+  color: #134e4a;
 }
 
 .assessment-btn.generative .radio-mark {
-  border-color: #059669;
+  border-color: #0F766E;
 }
 
 .assessment-btn.generative input:checked ~ .radio-mark {
-  background: #059669;
+  background: #0F766E;
 }
 
 .assessment-btn.generative input:checked ~ .radio-mark:after {
@@ -1242,15 +1242,15 @@ dora_color: '#059669'
 }
 
 .assessment-btn.generative:hover {
-  background: #059669;
+  background: #0F766E;
   color: white;
   transform: scale(1.02);
 }
 
 .assessment-btn.generative:has(input:checked) {
-  background: #dcfce7;
-  border-color: #047857;
-  color: #047857;
+  background: #f0fdfa;
+  border-color: #134e4a;
+  color: #134e4a;
 }
 
 /* Feedback Areas */
@@ -1280,8 +1280,8 @@ dora_color: '#059669'
 }
 
 .feedback-area.active {
-  border-color: #059669;
-  background: linear-gradient(135deg, #dcfce7, #fce4ec);
+  border-color: #0F766E;
+  background: linear-gradient(135deg, #f0fdfa, #fce4ec);
   box-shadow: 0 4px 15px rgba(5, 150, 105, 0.2);
 }
 
@@ -1297,7 +1297,7 @@ dora_color: '#059669'
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
-  border-left: 4px solid #059669;
+  border-left: 4px solid #0F766E;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
@@ -1317,7 +1317,7 @@ dora_color: '#059669'
 .practice-item .radio-mark {
   width: 18px;
   height: 18px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -1326,7 +1326,7 @@ dora_color: '#059669'
 }
 
 .practice-item input:checked ~ .radio-mark {
-  background: #059669;
+  background: #0F766E;
 }
 
 .practice-item input:checked ~ .radio-mark:after {
@@ -1341,16 +1341,16 @@ dora_color: '#059669'
 }
 
 .practice-item:hover {
-  background: linear-gradient(135deg, #059669, #047857);
+  background: linear-gradient(135deg, #0F766E, #134e4a);
   color: white;
   transform: translateX(4px);
   box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 }
 
 .practice-item:has(input:checked) {
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-  border-left-color: #064e3b;
-  color: #064e3b;
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  border-left-color: #134e4a;
+  color: #134e4a;
 }
 
 /* CD Selector */
@@ -1386,7 +1386,7 @@ dora_color: '#059669'
 .cd-option .radio-mark {
   width: 18px;
   height: 18px;
-  border: 2px solid #059669;
+  border: 2px solid #0F766E;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -1395,8 +1395,8 @@ dora_color: '#059669'
 }
 
 .cd-option input:checked ~ .radio-mark {
-  background: #059669;
-  border-color: #059669;
+  background: #0F766E;
+  border-color: #0F766E;
 }
 
 .cd-option input:checked ~ .radio-mark:after {
@@ -1411,17 +1411,17 @@ dora_color: '#059669'
 }
 
 .cd-option:hover {
-  background: linear-gradient(135deg, #059669, #047857);
+  background: linear-gradient(135deg, #0F766E, #134e4a);
   color: white;
-  border-color: #059669;
+  border-color: #0F766E;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(5, 150, 105, 0.3);
 }
 
 .cd-option:has(input:checked) {
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-  border-color: #059669;
-  color: #064e3b;
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  border-color: #0F766E;
+  color: #134e4a;
   font-weight: 600;
   box-shadow: 0 4px 15px rgba(5, 150, 105, 0.2);
 }
@@ -1631,7 +1631,7 @@ document.addEventListener('DOMContentLoaded', function() {
         color = '#ffc107';
       } else {
         level = 'freedom';
-        color = '#4caf50';
+        color = '#0F766E';
       }
       
       thumb.style.borderColor = color;
