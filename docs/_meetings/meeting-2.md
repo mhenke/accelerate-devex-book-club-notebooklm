@@ -344,7 +344,7 @@ dora_color: '#059669'
 <li>[ ] Experiment with one CD practice (trunk-based development, test automation, etc.)</li>
 </ul>
 
-## 🔗 Related Resources
+## Related Resources
 
 <div class="related-resources">
   <div class="resource-category">
