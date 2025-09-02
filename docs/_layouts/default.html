@@ -52,44 +52,8 @@
     <!-- Skip navigation for screen readers -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <!-- Site header with improved navigation -->
-    <header class="site-header" role="banner">
-      <nav class="site-nav" role="navigation" aria-label="Main navigation">
-        <a href="{{ '/' | relative_url }}" class="site-title" aria-label="Home - {{ site.title }}">
-          {{ site.title }}
-        </a>
-        
-        <div class="nav-links">
-          {% for page_path in site.header_pages %}
-            {% assign nav_page = site.pages | where: "path", page_path | first %}
-            {% if nav_page.title %}
-              <a href="{{ nav_page.url | relative_url }}" 
-                 class="nav-link"
-                 {% if page.url == nav_page.url %}aria-current="page"{% endif %}>
-                {{ nav_page.title }}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </nav>
-    </header>
-
     <main id="main-content" class="page-content" role="main">
       {{ content }}
     </main>
-    
-    <footer class="site-footer" role="contentinfo">
-      <div class="footer-content">
-        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. Built with Jekyll and enhanced with AI.</p>
-        <div class="footer-links">
-          <a href="{{ '/resources/' | relative_url }}" aria-label="Additional resources">Resources</a>
-          <a href="{{ '/prompts/' | relative_url }}" aria-label="AI content generation">AI Content</a>
-          <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm" 
-             target="_blank" 
-             rel="noopener noreferrer"
-             aria-label="View source code on GitHub">GitHub</a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

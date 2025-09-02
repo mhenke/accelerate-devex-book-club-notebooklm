@@ -2611,115 +2611,8 @@ button:focus,
 
 /* Performance and Mobile Enhancements */
 
-/* Enhanced Navigation and Header */
-.site-header {
-  background: linear-gradient(135deg, var(--header-dark-navy), var(--header-light-navy));
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.site-nav {
-  max-width: var(--desktop, 1200px);
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.site-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.site-title:hover {
-  color: var(--accent-teal);
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: white;
-  background: rgba(122, 218, 209, 0.2);
-  transform: translateY(-2px);
-}
-
-.nav-link[aria-current="page"] {
-  background: var(--accent-teal);
-  color: var(--text-dark);
-  font-weight: 600;
-}
-
-/* Enhanced Footer */
-.footer-content {
-  max-width: var(--desktop, 1200px);
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.footer-links {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-weight: 500;
-}
-
-.footer-links a:hover {
-  color: var(--accent-teal);
-}
-
 /* Mobile-First Responsive Design Improvements */
 @media screen and (max-width: 768px) {
-  .site-nav {
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .nav-links {
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .nav-link {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem;
-  }
   
   .hero-banner {
     padding: 2rem 1rem;
@@ -2762,30 +2655,9 @@ button:focus,
     padding: 0 1rem;
   }
   
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  }
-  
-  .footer-links {
-    gap: 1.5rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .site-title {
-    font-size: 1.3rem;
-  }
-  
-  .nav-links {
-    gap: 0.5rem;
-  }
-  
-  .nav-link {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.85rem;
-  }
   
   .hero-headline {
     font-size: 1.8rem;
@@ -2817,7 +2689,6 @@ button:focus,
 }
 
 @media (prefers-contrast: high) {
-  .nav-link:hover,
   .ai-tool:hover,
   .metric-card:hover {
     outline: 3px solid currentColor;
@@ -2855,7 +2726,6 @@ button:focus,
 
 /* Touch Target Optimization for Mobile */
 @media (pointer: coarse) {
-  .nav-link,
   .btn,
   .ai-tool,
   .timeline-node,
@@ -2890,8 +2760,6 @@ button:focus,
 
 /* Print Styles */
 @media print {
-  .site-header,
-  .site-footer,
   .skip-link {
     display: none;
   }
