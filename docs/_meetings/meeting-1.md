@@ -240,26 +240,51 @@ dora_color: '#1E3A8A'
   <div class="checkpoint-card culture-assessment">
     <h4><i class="fas fa-users"></i> Culture Assessment</h4>
     <p>Assess your organization's culture type using Westrum's model:</p>
-    <div class="culture-options">
-      <label class="culture-item pathological">
-        <input type="radio" name="culture-type" value="pathological">
-        <span class="radio-mark"></span>
-        <i class="fas fa-skull-crossbones"></i> Pathological<br>
-        <span class="culture-desc">Power-oriented, low cooperation, blame culture</span>
-      </label>
-      <label class="culture-item bureaucratic">
-        <input type="radio" name="culture-type" value="bureaucratic">
-        <span class="radio-mark"></span>
-        <i class="fas fa-gavel"></i> Bureaucratic<br>
-        <span class="culture-desc">Rule-oriented, modest cooperation, rules over mission</span>
-      </label>
-      <label class="culture-item generative">
-        <input type="radio" name="culture-type" value="generative">
-        <span class="radio-mark"></span>
-        <i class="fas fa-seedling"></i> Generative<br>
-        <span class="culture-desc">Performance-oriented, high cooperation, mission focused</span>
-      </label>
+    
+    <div class="culture-selector">
+      <div class="culture-option pathological-option">
+        <input type="radio" name="culture-type" value="pathological" id="culture-pathological">
+        <label for="culture-pathological">
+          <span class="radio-mark"></span>
+          <div class="option-content">
+            <div class="option-header">
+              <i class="fas fa-exclamation-triangle"></i>
+              <strong>Pathological</strong>
+            </div>
+            <div class="option-description">Power-oriented, low cooperation, blame culture</div>
+          </div>
+        </label>
+      </div>
+      
+      <div class="culture-option bureaucratic-option">
+        <input type="radio" name="culture-type" value="bureaucratic" id="culture-bureaucratic">
+        <label for="culture-bureaucratic">
+          <span class="radio-mark"></span>
+          <div class="option-content">
+            <div class="option-header">
+              <i class="fas fa-clipboard-list"></i>
+              <strong>Bureaucratic</strong>
+            </div>
+            <div class="option-description">Rule-oriented, modest cooperation, rules over mission</div>
+          </div>
+        </label>
+      </div>
+      
+      <div class="culture-option generative-option">
+        <input type="radio" name="culture-type" value="generative" id="culture-generative">
+        <label for="culture-generative">
+          <span class="radio-mark"></span>
+          <div class="option-content">
+            <div class="option-header">
+              <i class="fas fa-rocket"></i>
+              <strong>Generative</strong>
+            </div>
+            <div class="option-description">Performance-oriented, high cooperation, mission focused</div>
+          </div>
+        </label>
+      </div>
     </div>
+    
     <div class="feedback-area" id="culture-feedback">
       <p>Select your organization's culture type to see how it impacts delivery performance.</p>
     </div>
@@ -701,6 +726,153 @@ dora_color: '#1E3A8A'
 .feedback-area.active {
   border-left-color: #1E3A8A;
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+}
+
+/* Culture Assessment Styling */
+.culture-selector {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.culture-option {
+  position: relative;
+}
+
+.culture-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.culture-option label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.culture-option .radio-mark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #64748b;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.culture-option input:checked ~ label .radio-mark {
+  background: #1E3A8A;
+  border-color: #1E3A8A;
+}
+
+.culture-option input:checked ~ label .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+}
+
+.culture-option .option-content {
+  flex: 1;
+}
+
+.culture-option .option-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.culture-option .option-header i {
+  width: 16px;
+  text-align: center;
+}
+
+.culture-option .option-description {
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.culture-option label:hover {
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  border-color: #0ea5e9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+}
+
+.culture-option input:checked ~ label {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border-color: #1E3A8A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.15);
+}
+
+.culture-option input:checked ~ label .option-header {
+  color: #1E3A8A;
+}
+
+.culture-option input:checked ~ label .option-description {
+  color: #3730a3;
+}
+
+/* Specific culture type colors */
+.pathological-option input:checked ~ label {
+  background: linear-gradient(135deg, #fef2f2, #fecaca);
+  border-color: #dc2626;
+}
+
+.pathological-option input:checked ~ label .radio-mark {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.pathological-option input:checked ~ label .option-header {
+  color: #dc2626;
+}
+
+.bureaucratic-option input:checked ~ label {
+  background: linear-gradient(135deg, #fef3c7, #fbbf24);
+  border-color: #d97706;
+}
+
+.bureaucratic-option input:checked ~ label .radio-mark {
+  background: #d97706;
+  border-color: #d97706;
+}
+
+.bureaucratic-option input:checked ~ label .option-header {
+  color: #d97706;
+}
+
+.generative-option input:checked ~ label {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border-color: #16a34a;
+}
+
+.generative-option input:checked ~ label .radio-mark {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.generative-option input:checked ~ label .option-header {
+  color: #16a34a;
 }
 
 /* Responsive Design for Checkpoint */
