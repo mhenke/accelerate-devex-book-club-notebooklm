@@ -40,7 +40,7 @@ nav_order: 6
         <div class="finding-pill meeting-1-theme"><i class="fas fa-users"></i> Generative culture = 2x better performance</div>
         <div class="finding-pill meeting-1-theme"><i class="fas fa-clock"></i> Lead time under 1 hour for elite teams</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-check"></i> Culture Assessment Complete</div>
+      <div class="achievement-badge"><i class="fas fa-chart-bar"></i> DORA Metrics Baseline Established</div>
     </div>
   </div>
   
@@ -54,7 +54,7 @@ nav_order: 6
         <div class="finding-pill meeting-2-theme"><i class="fas fa-shield-alt"></i> Security integration improves performance</div>
         <div class="finding-pill meeting-2-theme"><i class="fas fa-sync"></i> Fast feedback reduces risk & improves quality</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-check"></i> CD Pipeline Designed</div>
+      <div class="achievement-badge"><i class="fas fa-rocket"></i> Technical Excellence Achieved</div>
     </div>
   </div>
   
@@ -68,7 +68,7 @@ nav_order: 6
         <div class="finding-pill meeting-3-theme"><i class="fas fa-thumbs-up"></i> High performers 2.2x more likely to recommend workplace</div>
         <div class="finding-pill meeting-3-theme"><i class="fas fa-fire-extinguisher"></i> Fix environment, not people for burnout</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-check"></i> WIP Limits Optimized</div>
+      <div class="achievement-badge"><i class="fas fa-balance-scale"></i> Lean Management Mastered</div>
     </div>
   </div>
   
@@ -82,7 +82,7 @@ nav_order: 6
         <div class="finding-pill meeting-4-theme"><i class="fas fa-comments"></i> ING: Coaching vs commanding drives success</div>
         <div class="finding-pill meeting-4-theme"><i class="fas fa-lightbulb"></i> Transformational leadership enables team autonomy</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-check"></i> Change Strategy Ready</div>
+      <div class="achievement-badge"><i class="fas fa-crown"></i> Leadership Transformation Unlocked</div>
     </div>
   </div>
 </div>
