@@ -1,7 +1,7 @@
 ---
 layout: meeting
 title: 'Meeting 4: Leadership & Transformation'
-subtitle: 'Transformational Leadership, ING Case Study, & Make It Your Own'
+subtitle: 'Transformational Leadership, ING Case Study, &amp; Make It Your Own'
 week: 7
 chapters: '11, 16, Conclusion'
 duration: '1 Hour'
