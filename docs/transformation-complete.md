@@ -161,28 +161,28 @@ nav_order: 6
 <div class="reflection-section">
   <h3>What was your biggest transformation insight?</h3>
   <div class="reflection-options">
-    <label class="reflection-option">
+    <label class="reflection-option high-performance">
       <input type="radio" name="insight" value="culture">
       <span class="option-content">
         <strong>Culture trumps process</strong><br>
         Psychological safety and learning culture are foundational
       </span>
     </label>
-    <label class="reflection-option">
+    <label class="reflection-option high-performance">
       <input type="radio" name="insight" value="technical">
       <span class="option-content">
         <strong>Technical practices enable speed</strong><br>
         Automation and quality practices accelerate delivery
       </span>
     </label>
-    <label class="reflection-option">
+    <label class="reflection-option medium-performance">
       <input type="radio" name="insight" value="measurement">
       <span class="option-content">
         <strong>Measurement drives improvement</strong><br>
         DORA metrics provide objective transformation guidance
       </span>
     </label>
-    <label class="reflection-option">
+    <label class="reflection-option high-performance">
       <input type="radio" name="insight" value="leadership">
       <span class="option-content">
         <strong>Leadership creates conditions</strong><br>
@@ -695,18 +695,53 @@ nav_order: 6
 
 .reflection-option {
   display: block;
-  background: white;
   padding: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 2px solid #e9ecef;
+  border: 2px solid transparent;
 }
 
-.reflection-option:hover {
-  border-color: #7adad1;
+.reflection-option.high-performance {
+  background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+  border-color: #28a745;
+  color: #155724;
+}
+
+.reflection-option.high-performance:hover,
+.reflection-option.high-performance:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+}
+
+.reflection-option.medium-performance {
+  background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+  border-color: #ffc107;
+  color: #856404;
+}
+
+.reflection-option.medium-performance:hover,
+.reflection-option.medium-performance:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+}
+
+.reflection-option.low-performance {
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.reflection-option.low-performance:hover,
+.reflection-option.low-performance:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
 }
 
 .reflection-option input[type="radio"] {
@@ -714,12 +749,7 @@ nav_order: 6
 }
 
 .reflection-option input[type="radio"]:checked + .option-content {
-  color: #1a1a2e;
-}
-
-.reflection-option:has(input[type="radio"]:checked) {
-  border-color: #28a745;
-  background: #f8fff8;
+  color: inherit;
 }
 
 .reflection-feedback {

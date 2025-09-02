@@ -2389,19 +2389,50 @@ button:focus,
   border-color: #d97706;
 }
 
+/* Traffic Light System - Green/Yellow/Red */
 .assessment-btn.high-performance {
-  background: #f0fdf4;
-  border-color: #bbf7d0;
+  background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+  border: 2px solid #28a745;
+  color: #155724;
+  transition: all 0.3s ease;
+}
+
+.assessment-btn.high-performance:hover,
+.assessment-btn.high-performance:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
 }
 
 .assessment-btn.medium-performance {
-  background: #fffbeb;
-  border-color: #fed7aa;
+  background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+  border: 2px solid #ffc107;
+  color: #856404;
+  transition: all 0.3s ease;
+}
+
+.assessment-btn.medium-performance:hover,
+.assessment-btn.medium-performance:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
 }
 
 .assessment-btn.low-performance {
-  background: #fef2f2;
-  border-color: #fecaca;
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+  border: 2px solid #dc3545;
+  color: #721c24;
+  transition: all 0.3s ease;
+}
+
+.assessment-btn.low-performance:hover,
+.assessment-btn.low-performance:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
 }
 
 .assessment-btn input[type='radio'] {
@@ -2409,8 +2440,8 @@ button:focus,
 }
 
 .assessment-btn input[type='radio']:checked + .radio-mark {
-  background: #d97706;
-  border-color: #d97706;
+  background: currentColor;
+  border-color: currentColor;
 }
 
 .assessment-btn input[type='radio']:checked + .radio-mark::after {
