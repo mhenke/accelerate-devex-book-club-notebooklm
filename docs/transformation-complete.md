@@ -230,6 +230,69 @@ nav_order: 6
   </div>
 </div>
 
+## 🚀 AI-Enhanced Learning Celebration
+
+<div class="ai-learning-celebration">
+  <h3>AI-Generated Learning Content You've Experienced</h3>
+  <p>Throughout your transformation journey, you've engaged with AI-enhanced content designed to accelerate your learning and provide multiple perspectives on DevOps practices.</p>
+  
+  <div class="ai-content-showcase">
+    <div class="ai-content-card">
+      <div class="ai-content-icon">
+        <i class="fas fa-microphone-alt"></i>
+      </div>
+      <h4>Podcast Content</h4>
+      <p>AI-generated discussions and interviews created with <strong>NotebookLM</strong> to provide audio learning experiences for each meeting topic.</p>
+      <div class="ai-tools-used">
+        <div class="ai-tool">
+          <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+          <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ai-content-card">
+      <div class="ai-content-icon">
+        <i class="fas fa-video"></i>
+      </div>
+      <h4>Video Explanations</h4>
+      <p>Visual learning content and concept explanations generated to support different learning styles and reinforce key DevOps principles.</p>
+      <div class="ai-tools-used">
+        <div class="ai-tool">
+          <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+          <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
+        </div>
+        <div class="ai-tool">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+          <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ai-content-card">
+      <div class="ai-content-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h4>Interactive Elements</h4>
+      <p>Dynamic learning checkpoints, visual components, and interactive exercises crafted with AI assistance to enhance engagement.</p>
+      <div class="ai-tools-used">
+        <div class="ai-tool">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+          <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
+        </div>
+        <div class="ai-tool">
+          <i class="fas fa-code" aria-hidden="true"></i>
+          <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
+        </div>
+        <div class="ai-tool">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## 📚 Continue Your Journey
 
 <div class="continue-journey">
@@ -265,6 +328,16 @@ nav_order: 6
         <li>DORA Community of Practice</li>
       </ul>
     </div>
+    
+    <div class="resource-card ai-enhanced">
+      <h4>🤖 AI-Enhanced Learning</h4>
+      <ul>
+        <li><a href="/accelerate-devex-book-club-notebooklm/prompts/">Generate more content with NotebookLM</a></li>
+        <li>Create custom discussion prompts</li>
+        <li>Generate team-specific scenarios</li>
+        <li>Build organization assessment tools</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -278,6 +351,38 @@ nav_order: 6
     <div class="celebration-cta">
       <a href="/accelerate-devex-book-club-notebooklm/" class="btn btn-primary">Return to Home</a>
       <a href="/accelerate-devex-book-club-notebooklm/resources/" class="btn btn-secondary">Browse Resources</a>
+    </div>
+  </div>
+</div>
+
+<div class="ai-attribution">
+  <div class="ai-attribution__icon">
+    <i class="fas fa-robot" aria-hidden="true"></i>
+  </div>
+  <div class="ai-attribution__content">
+    <h4 class="ai-attribution__title">AI-Enhanced Learning Experience</h4>
+    <p class="ai-attribution__text">This comprehensive book club experience was created with AI assistance from <strong>Claude</strong>, <strong>Claude Code</strong>, <strong>NotebookLM</strong>, <strong>Napkin AI</strong>, and <strong>GitHub Copilot</strong> to enhance your DevOps transformation journey.</p>
+    <div class="ai-attribution__tools">
+      <div class="ai-tool">
+        <i class="fas fa-brain" aria-hidden="true"></i>
+        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-palette" aria-hidden="true"></i>
+        <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fab fa-github" aria-hidden="true"></i>
+        <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
+      </div>
     </div>
   </div>
 </div>
@@ -457,6 +562,121 @@ nav_order: 6
 
 .achievement-list li:last-child {
   border-bottom: none;
+}
+
+.ai-learning-celebration {
+  background: linear-gradient(135deg, rgba(135, 211, 209, 0.1), rgba(122, 218, 209, 0.05));
+  border: 2px solid var(--accent-teal, #7adad1);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+.ai-learning-celebration h3 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ai-learning-celebration > p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #586069;
+  font-size: 1.1rem;
+}
+
+.ai-content-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ai-content-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  border-top: 4px solid #7adad1;
+}
+
+.ai-content-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7adad1, #28a745);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(122, 218, 209, 0.3);
+}
+
+.ai-content-card h4 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.ai-content-card p {
+  color: #586069;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.ai-tools-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.ai-tool {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(122, 218, 209, 0.1);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1a1a2e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.ai-tool:hover {
+  background: rgba(122, 218, 209, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(122, 218, 209, 0.2);
+}
+
+.ai-tool a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ai-tool a:hover {
+  text-decoration: none;
+}
+
+.resource-card.ai-enhanced {
+  border-top-color: #7adad1;
+  background: linear-gradient(135deg, rgba(122, 218, 209, 0.05), rgba(255, 255, 255, 1));
+}
+
+.resource-card.ai-enhanced a {
+  color: #1a1a2e;
+  text-decoration: none;
+  border-bottom: 1px solid #7adad1;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.resource-card.ai-enhanced a:hover {
+  border-bottom-color: #28a745;
 }
 
 .reflection-section {
