@@ -371,7 +371,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
   <div class="ai-attribution__content">
     <h4 class="ai-attribution__title">AI-Generated Content</h4>
-    <p class="ai-attribution__text">This book club content was created with AI assistance from <strong>Claude</strong>, <strong>Claude Code</strong>, <strong>NotebookLM</strong>, <strong>Napkin AI</strong>, and <strong>GitHub Copilot</strong> to enhance your learning experience.</p>
+    <p class="ai-attribution__text">This book club content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong> to enhance your learning experience.</p>
     <div class="ai-attribution__tools">
       <div class="ai-tool">
         <i class="fas fa-brain" aria-hidden="true"></i>
