@@ -1457,5 +1457,38 @@ document.addEventListener('DOMContentLoaded', function() {
       feedback.classList.add('active');
     });
   });
+
+  // Culture assessment feedback content
+  const cultureInfo = {
+    pathological: {
+      title: "Pathological Culture (Type A)",
+      content: "Organizations with pathological culture tend to have lower software delivery performance. This culture is characterized by low cooperation, messengers being 'shot', shared responsibility being discouraged, and failure leading to scapegoating. Research shows these organizations typically have longer lead times, higher change failure rates, and slower recovery times. Focus on building psychological safety and encouraging learning from failures.",
+      impact: "📉 Lower delivery performance, higher failure rates"
+    },
+    bureaucratic: {
+      title: "Bureaucratic Culture (Type B)", 
+      content: "Bureaucratic cultures show modest cooperation but are rule-oriented rather than mission-focused. These organizations often have medium software delivery performance with room for improvement. While better than pathological cultures, they can still benefit from reducing red tape, encouraging innovation, and focusing more on outcomes than processes.",
+      impact: "📊 Medium delivery performance, process-heavy"
+    },
+    generative: {
+      title: "Generative Culture (Type C)",
+      content: "Congratulations! Generative culture is strongly correlated with high software delivery performance. Organizations with generative culture encourage high cooperation, treat failures as learning opportunities, encourage risk-taking, and focus on mission accomplishment. Research shows these organizations have faster lead times, higher deployment frequency, lower change failure rates, and faster recovery times.",
+      impact: "📈 High delivery performance, continuous improvement"
+    }
+  };
+
+  // Add event listeners for culture assessment
+  document.querySelectorAll('input[name="culture-type"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('culture-feedback');
+      const info = cultureInfo[this.value];
+      feedback.innerHTML = `
+        <h5>${info.title}</h5>
+        <p><strong>${info.impact}</strong></p>
+        <p>${info.content}</p>
+      `;
+      feedback.classList.add('active');
+    });
+  });
 });
 </script>
