@@ -214,28 +214,28 @@ nav_order: 6
 <div class="reflection-section">
   <h3>What was your biggest transformation insight?</h3>
   <div class="reflection-options">
-    <label class="reflection-option high-performance">
-      <input type="radio" name="insight" value="culture">
-      <span class="option-content">
-        <strong>Culture trumps process</strong><br>
-        Psychological safety and learning culture are foundational
-      </span>
-    </label>
-    <label class="reflection-option high-performance">
-      <input type="radio" name="insight" value="technical">
-      <span class="option-content">
-        <strong>Technical practices enable speed</strong><br>
-        Automation and quality practices accelerate delivery
-      </span>
-    </label>
-    <label class="reflection-option medium-performance">
+    <label class="reflection-option meeting-1-insight">
       <input type="radio" name="insight" value="measurement">
       <span class="option-content">
         <strong>Measurement drives improvement</strong><br>
         DORA metrics provide objective transformation guidance
       </span>
     </label>
-    <label class="reflection-option high-performance">
+    <label class="reflection-option meeting-2-insight">
+      <input type="radio" name="insight" value="technical">
+      <span class="option-content">
+        <strong>Technical practices enable speed</strong><br>
+        Automation and quality practices accelerate delivery
+      </span>
+    </label>
+    <label class="reflection-option meeting-3-insight">
+      <input type="radio" name="insight" value="sustainability">
+      <span class="option-content">
+        <strong>Sustainability prevents burnout</strong><br>
+        Lean management and work-life balance drive performance
+      </span>
+    </label>
+    <label class="reflection-option meeting-4-insight">
       <input type="radio" name="insight" value="leadership">
       <span class="option-content">
         <strong>Leadership creates conditions</strong><br>
@@ -885,6 +885,62 @@ nav_order: 6
   box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
 }
 
+.reflection-option.meeting-1-insight {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border-color: #1E3A8A;
+  color: #1e3a8a;
+}
+
+.reflection-option.meeting-1-insight:hover,
+.reflection-option.meeting-1-insight:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
+}
+
+.reflection-option.meeting-2-insight {
+  background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+  border-color: #0F766E;
+  color: #0f766e;
+}
+
+.reflection-option.meeting-2-insight:hover,
+.reflection-option.meeting-2-insight:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #0F766E, #14B8A6);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.4);
+}
+
+.reflection-option.meeting-3-insight {
+  background: linear-gradient(135deg, #fed7aa, #fdba74);
+  border-color: #D97706;
+  color: #d97706;
+}
+
+.reflection-option.meeting-3-insight:hover,
+.reflection-option.meeting-3-insight:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #D97706, #F59E0B);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.4);
+}
+
+.reflection-option.meeting-4-insight {
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.reflection-option.meeting-4-insight:hover,
+.reflection-option.meeting-4-insight:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+}
+
 .reflection-option input[type="radio"] {
   display: none;
 }
@@ -1079,13 +1135,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const feedbackElement = document.getElementById('insight-feedback');
   
   const feedbackMessages = {
-    culture: {
-      message: "Excellent insight! Culture is indeed the foundation of high performance.",
+    measurement: {
+      message: "Perfect understanding! Measurement provides the objective guide for improvement.",
       nextSteps: [
-        "Start measuring psychological safety in your team",
-        "Practice blameless incident reviews", 
-        "Create learning opportunities from failures",
-        "Foster information sharing and collaboration"
+        "Establish DORA metrics baseline for your team",
+        "Create dashboards for visibility",
+        "Set improvement targets based on industry benchmarks", 
+        "Review metrics regularly in team retrospectives"
       ]
     },
     technical: {
@@ -1097,13 +1153,13 @@ document.addEventListener('DOMContentLoaded', function() {
         "Practice infrastructure as code"
       ]
     },
-    measurement: {
-      message: "Perfect understanding! Measurement provides the objective guide for improvement.",
+    sustainability: {
+      message: "Excellent insight! Sustainable practices prevent burnout and improve long-term performance.",
       nextSteps: [
-        "Establish DORA metrics baseline for your team",
-        "Create dashboards for visibility",
-        "Set improvement targets based on industry benchmarks", 
-        "Review metrics regularly in team retrospectives"
+        "Implement WIP limits and visual management",
+        "Address organizational burnout risk factors",
+        "Focus on work-life balance and employee satisfaction",
+        "Build lean management practices into daily workflow"
       ]
     },
     leadership: {
