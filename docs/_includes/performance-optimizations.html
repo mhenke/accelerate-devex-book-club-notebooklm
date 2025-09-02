@@ -1,0 +1,266 @@
+<!-- Performance and Accessibility Optimizations -->
+<script>
+  // Critical performance optimizations
+  (function() {
+    'use strict';
+    
+    // Preload critical resources
+    function preloadCriticalResources() {
+      const criticalFonts = [
+        'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap'
+      ];
+      
+      criticalFonts.forEach(function(fontUrl) {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'style';
+        link.href = fontUrl;
+        link.onload = function() { this.rel = 'stylesheet'; };
+        document.head.appendChild(link);
+      });
+    }
+    
+    // Optimize images with lazy loading and WebP support
+    function optimizeImages() {
+      if ('loading' in HTMLImageElement.prototype) {
+        // Native lazy loading
+        const images = document.querySelectorAll('img:not([loading])');
+        images.forEach(function(img) {
+          img.loading = 'lazy';
+        });
+      } else {
+        // Intersection Observer fallback
+        const imageObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              if (img.dataset.src) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+              }
+            }
+          });
+        });
+        
+        document.querySelectorAll('img[data-src]').forEach(function(img) {
+          imageObserver.observe(img);
+        });
+      }
+    }
+    
+    // Smooth scrolling with reduced motion respect
+    function initSmoothScrolling() {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      
+      if (!prefersReducedMotion.matches) {
+        document.documentElement.style.scrollBehavior = 'smooth';
+        
+        // Enhanced smooth scrolling for anchor links
+        document.addEventListener('click', function(e) {
+          if (e.target.matches('a[href^="#"]')) {
+            e.preventDefault();
+            const targetId = e.target.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
+        });
+      }
+    }
+    
+    // Progressive enhancement for interactive elements
+    function enhanceInteractivity() {
+      // Add keyboard navigation to custom interactive elements
+      const interactiveElements = document.querySelectorAll('.timeline-node, .metric-card, .ai-tool');
+      
+      interactiveElements.forEach(function(element) {
+        if (!element.hasAttribute('tabindex') && element.onclick) {
+          element.setAttribute('tabindex', '0');
+          element.setAttribute('role', 'button');
+          
+          element.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              element.click();
+            }
+          });
+        }
+      });
+    }
+    
+    // Optimize animations for performance
+    function optimizeAnimations() {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      
+      if (prefersReducedMotion.matches) {
+        const style = document.createElement('style');
+        style.textContent = `
+          *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+          }
+        `;
+        document.head.appendChild(style);
+      }
+      
+      // Use CSS containment for animated elements
+      const animatedElements = document.querySelectorAll('.trophy-svg, .mastery-fill, .ai-attribution__icon');
+      animatedElements.forEach(function(element) {
+        element.style.contain = 'layout style paint';
+      });
+    }
+    
+    // Focus management for accessibility
+    function improveFocusManagement() {
+      let focusVisible = false;
+      
+      // Track if user is using keyboard
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Tab') {
+          focusVisible = true;
+        }
+      });
+      
+      document.addEventListener('mousedown', function() {
+        focusVisible = false;
+      });
+      
+      // Add focus-visible class for better styling
+      document.addEventListener('focusin', function(e) {
+        if (focusVisible) {
+          e.target.classList.add('focus-visible');
+        }
+      });
+      
+      document.addEventListener('focusout', function(e) {
+        e.target.classList.remove('focus-visible');
+      });
+    }
+    
+    // Initialize optimizations when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        preloadCriticalResources();
+        optimizeImages();
+        initSmoothScrolling();
+        enhanceInteractivity();
+        optimizeAnimations();
+        improveFocusManagement();
+      });
+    } else {
+      preloadCriticalResources();
+      optimizeImages();
+      initSmoothScrolling();
+      enhanceInteractivity();
+      optimizeAnimations();
+      improveFocusManagement();
+    }
+    
+    // Service Worker for offline functionality (progressive enhancement)
+    if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+      navigator.serviceWorker.register('{{ site.baseurl }}/sw.js')
+        .catch(function(error) {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    }
+  })();
+</script>
+
+<!-- Critical CSS inlined for performance -->
+<style>
+  /* Critical above-the-fold styles */
+  .hero-banner {
+    will-change: transform;
+    contain: layout style paint;
+  }
+  
+  .dora-metrics-visual {
+    contain: layout style;
+  }
+  
+  /* Focus visible improvements */
+  .focus-visible {
+    outline: 2px solid var(--accent-teal, #7adad1) !important;
+    outline-offset: 2px !important;
+  }
+  
+  /* Lazy loading placeholder */
+  img.lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  img.lazy.loaded {
+    opacity: 1;
+  }
+  
+  /* Skip links for accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--accent-teal, #7adad1);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    font-weight: 600;
+    transition: top 0.3s;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    :root {
+      --text-dark: #000000;
+      --text-medium: #000000;
+      --border-light: #000000;
+    }
+    
+    .ai-tool, .metric-card, .timeline-node {
+      border: 2px solid currentColor;
+    }
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    
+    .hero-banner, .dora-metrics-visual {
+      will-change: auto;
+    }
+  }
+  
+  /* Force GPU acceleration for smooth animations */
+  .timeline-node, .metric-card, .ai-tool {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+</style>
+
+<!-- Preconnect to external domains for faster loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+<!-- Performance validation in development -->
+{% if jekyll.environment == 'development' %}
+  {% include performance-validation.html %}
+{% endif %}

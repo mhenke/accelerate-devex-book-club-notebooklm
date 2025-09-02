@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7adad1">
     <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- Performance optimizations -->
+    {% include performance-optimizations.html %}
+    
     <!-- Open Graph / Social Media Preview -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page.title | default: site.title }}">
@@ -21,17 +26,70 @@
     <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png">
 
     <meta name="description" content="{{ page.description | default: site.description }}">
+    
+    <!-- Accessibility -->
+    <meta name="color-scheme" content="light">
+    
+    <!-- Progressive Web App -->
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
 
+    <!-- Optimized CSS loading -->
     <link
       rel="stylesheet"
-      href="/accelerate-devex-book-club-notebooklm/assets/main.css">
+      href="{{ '/assets/main.css' | relative_url }}"
+      media="screen">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      media="screen"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
   </head>
   <body>
-    <main class="page-content">
+    <!-- Skip navigation for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Site header with improved navigation -->
+    <header class="site-header" role="banner">
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}" class="site-title" aria-label="Home - {{ site.title }}">
+          {{ site.title }}
+        </a>
+        
+        <div class="nav-links">
+          {% for page_path in site.header_pages %}
+            {% assign nav_page = site.pages | where: "path", page_path | first %}
+            {% if nav_page.title %}
+              <a href="{{ nav_page.url | relative_url }}" 
+                 class="nav-link"
+                 {% if page.url == nav_page.url %}aria-current="page"{% endif %}>
+                {{ nav_page.title }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="page-content" role="main">
       {{ content }}
     </main>
+    
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. Built with Jekyll and enhanced with AI.</p>
+        <div class="footer-links">
+          <a href="{{ '/resources/' | relative_url }}" aria-label="Additional resources">Resources</a>
+          <a href="{{ '/prompts/' | relative_url }}" aria-label="AI content generation">AI Content</a>
+          <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="View source code on GitHub">GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

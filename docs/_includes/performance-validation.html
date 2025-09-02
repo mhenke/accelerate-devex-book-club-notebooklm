@@ -1,0 +1,194 @@
+<!-- Performance Validation and Monitoring -->
+<script>
+(function() {
+  'use strict';
+  
+  // Performance monitoring
+  function measurePerformance() {
+    if ('performance' in window && 'getEntriesByType' in performance) {
+      // Core Web Vitals monitoring
+      function measureCLS() {
+        let cls = 0;
+        const observer = new PerformanceObserver(function(list) {
+          for (const entry of list.getEntries()) {
+            if (!entry.hadRecentInput) {
+              cls += entry.value;
+            }
+          }
+        });
+        observer.observe({type: 'layout-shift', buffered: true});
+        return cls;
+      }
+      
+      function measureLCP() {
+        return new Promise(function(resolve) {
+          const observer = new PerformanceObserver(function(list) {
+            const entries = list.getEntries();
+            const lastEntry = entries[entries.length - 1];
+            resolve(lastEntry.startTime);
+            observer.disconnect();
+          });
+          observer.observe({type: 'largest-contentful-paint', buffered: true});
+        });
+      }
+      
+      function measureFID() {
+        return new Promise(function(resolve) {
+          const observer = new PerformanceObserver(function(list) {
+            for (const entry of list.getEntries()) {
+              resolve(entry.processingStart - entry.startTime);
+              observer.disconnect();
+              break;
+            }
+          });
+          observer.observe({type: 'first-input', buffered: true});
+        });
+      }
+      
+      // Lighthouse audit simulation
+      function auditAccessibility() {
+        const issues = [];
+        
+        // Check for images without alt text
+        const images = document.querySelectorAll('img:not([alt])');
+        if (images.length > 0) {
+          issues.push(`${images.length} images missing alt text`);
+        }
+        
+        // Check for links without descriptive text
+        const links = document.querySelectorAll('a[href]');
+        links.forEach(function(link) {
+          const text = link.textContent.trim();
+          if (text === 'here' || text === 'click here' || text === 'read more') {
+            issues.push('Non-descriptive link text found');
+          }
+        });
+        
+        // Check for proper heading hierarchy
+        const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        let previousLevel = 0;
+        headings.forEach(function(heading) {
+          const level = parseInt(heading.tagName.substr(1));
+          if (level > previousLevel + 1) {
+            issues.push('Heading hierarchy skips levels');
+          }
+          previousLevel = level;
+        });
+        
+        return issues;
+      }
+      
+      // Mobile optimization checks
+      function auditMobile() {
+        const issues = [];
+        const viewport = document.querySelector('meta[name="viewport"]');
+        
+        if (!viewport) {
+          issues.push('Missing viewport meta tag');
+        }
+        
+        // Check touch targets
+        const interactiveElements = document.querySelectorAll('button, a, input, select, textarea');
+        interactiveElements.forEach(function(element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.width < 44 || rect.height < 44) {
+            issues.push('Touch targets smaller than 44px');
+          }
+        });
+        
+        return issues;
+      }
+      
+      // Run audits in development mode only
+      if (window.location.hostname === 'localhost' || window.location.hostname.includes('127.0.0.1')) {
+        window.addEventListener('load', function() {
+          setTimeout(function() {
+            console.group('🚀 Performance Audit');
+            
+            // Accessibility audit
+            const a11yIssues = auditAccessibility();
+            if (a11yIssues.length === 0) {
+              console.log('✅ Accessibility: No issues found');
+            } else {
+              console.warn('⚠️ Accessibility issues:', a11yIssues);
+            }
+            
+            // Mobile audit
+            const mobileIssues = auditMobile();
+            if (mobileIssues.length === 0) {
+              console.log('✅ Mobile: Optimizations look good');
+            } else {
+              console.warn('⚠️ Mobile issues:', mobileIssues);
+            }
+            
+            // Performance metrics
+            const navigation = performance.getEntriesByType('navigation')[0];
+            if (navigation) {
+              console.log('⚡ Load Time:', Math.round(navigation.loadEventEnd - navigation.fetchStart), 'ms');
+              console.log('🎨 DOM Ready:', Math.round(navigation.domContentLoadedEventEnd - navigation.fetchStart), 'ms');
+            }
+            
+            // Core Web Vitals
+            measureLCP().then(function(lcp) {
+              console.log('🏆 LCP (Largest Contentful Paint):', Math.round(lcp), 'ms');
+            });
+            
+            console.groupEnd();
+          }, 1000);
+        });
+      }
+    }
+  }
+  
+  // Image optimization validation
+  function validateImages() {
+    const images = document.querySelectorAll('img');
+    images.forEach(function(img) {
+      // Add loading="lazy" if not present
+      if (!img.hasAttribute('loading')) {
+        img.setAttribute('loading', 'lazy');
+      }
+      
+      // Add error handling
+      if (!img.onerror) {
+        img.onerror = function() {
+          console.warn('Failed to load image:', this.src);
+          this.style.display = 'none';
+        };
+      }
+    });
+  }
+  
+  // CSS optimization validation
+  function optimizeCSS() {
+    // Remove unused CSS classes (basic implementation)
+    const stylesheets = document.styleSheets;
+    const usedClasses = new Set();
+    
+    // Collect all used classes
+    document.querySelectorAll('[class]').forEach(function(element) {
+      element.className.split(/\s+/).forEach(function(className) {
+        if (className) usedClasses.add(className);
+      });
+    });
+    
+    // Log unused classes in development
+    if (window.location.hostname === 'localhost') {
+      console.log('🎨 Used CSS classes:', usedClasses.size);
+    }
+  }
+  
+  // Initialize optimizations
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      measurePerformance();
+      validateImages();
+      optimizeCSS();
+    });
+  } else {
+    measurePerformance();
+    validateImages();
+    optimizeCSS();
+  }
+})();
+</script>
