@@ -2579,6 +2579,20 @@ button:focus,
   margin-bottom: 0.25rem;
 }
 
+/* Feedback and Readiness Styles for JavaScript-generated content */
+.feedback-title,
+.readiness-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.feedback-content,
+.readiness-advice {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 /* Mobile responsiveness for checkpoints */
 @media (max-width: 768px) {
   .learning-checkpoint {
