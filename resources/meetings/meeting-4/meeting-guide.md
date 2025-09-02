@@ -14,93 +14,42 @@
 
 ## Core Concepts to Explore
 
-### 1. Transformational Leadership Characteristics
+### 1. Transformational Leadership - Five Key Characteristics
 
-#### 🎯 Vision
+- **Vision:** Clear understanding of where organization is going in 5 years
+- **Inspirational Communication:** Motivates even in uncertain/changing environments
+- **Intellectual Stimulation:** Challenges followers to think about problems in new ways
+- **Supportive Leadership:** Demonstrates care for followers' personal needs and feelings
+- **Personal Recognition:** Acknowledges achievements and compliments outstanding work
 
-Providing clear direction and inspiring communication about the future
+### 2. Leadership's Indirect Impact
 
-#### 💡 Intellectual Stimulation
+- **Key Finding:** Leaders alone cannot achieve high DevOps outcomes
+- **Enablement Role:** Leadership enables teams to implement technical and lean practices
+- **Investment Areas:** Training budgets, conference attendance, hack days, 20% time, internal DevOps conferences
+- **Manager's Role:** Connecting strategic objectives to team work, removing obstacles
 
-Challenging assumptions and encouraging innovation
+### 3. ING Netherlands Case Study - Learning Organization in Practice
 
-#### 📢 Inspirational Communication
+- **Obeya Rooms:** Visual management spaces showing strategic objectives, performance gaps, problems
+- **Tribe/Squad Structure:** Cross-functional BizDevOps teams following "Two Pizza Rule"
+- **Catchball Communication:** Vertical and horizontal information flow between levels
+- **Standard Work:** Teams experiment to find best practices, then standardize and share
+- **Coaching Culture:** Leaders as coaches, focusing on developing people
 
-Motivating others through compelling vision
+### 4. Transformation Principles - "Make It Your Own"
 
-#### 🤝 Supportive Leadership
-
-Caring about followers as individuals
-
-#### 🏆 Personal Recognition
-
-Acknowledging and celebrating achievements
-
-### 2. Integrating Security (Shift-Left)
-
-#### Traditional Security vs Shift-Left Security
-
-**🚪 Traditional Security:**
-
-- Security as final gate
-- Separate security team
-- Late-stage security testing
-- Security vs. speed trade-off
-
-**⬅️ Shift-Left Security:**
-
-- Security throughout lifecycle
-- Integrated security experts
-- Automated security testing
-- Security enables speed
-
-### 3. Employee Satisfaction and Diversity
-
-#### 📊 Performance Benefits
-
-Diverse teams achieve better performance and business outcomes
-
-#### 🤗 Inclusion Requirements
-
-Creating environments where all team members feel valued
-
-#### 💪 Identity Alignment
-
-Employees identifying with organizational values
-
-#### 📈 Net Promoter Score (eNPS)
-
-Measuring employee loyalty and satisfaction
-
-### 4. Embracing Experimentation and Learning
-
-#### 🧪 Continuous Learning
-
-Encouraging teams to try new ideas and technologies
-
-#### ⏰ Innovation Time
-
-Allocating time for exploration (e.g., 20% time)
-
-#### ✨ Failure as Learning
-
-Celebrating both successes and failures as learning opportunities
-
-#### 🔍 Data-Driven Improvement
-
-Using feedback to identify areas for improvement
-
-#### 🔄 Regular Retrospectives
-
-Systematic reflection and lesson sharing
+- **Learn How to Learn:** Creating environment for shared organizational learning
+- **Go Deep Before Wide:** Focus on thorough transformation before scaling
+- **Practice, Patience, Discipline:** Rhythm and routine until new habits form culture
+- **Evidence-Based Experimentation:** Try, measure, learn, adjust, repeat
 
 ## Discussion Questions
 
-1. **Leadership Assessment:** What transformational leadership behaviors do you see in your organization?
-2. **Security Integration:** How early in your development process is security considered?
-3. **Diversity State:** What is the current state of diversity and inclusion in your teams?
-4. **Experimentation Culture:** How much time and space exists for trying new approaches?
-5. **Learning from Failures:** How does your organization currently handle and learn from failures?
+1. **Leadership Assessment:** What transformational leadership behaviors do you see in your organization? Which are missing?
+2. **Investment in Learning:** How does your organization currently invest in developing team capabilities?
+3. **ING Practices:** Which practices from the ING case study could work in your context? What would need adaptation?
+4. **Transformation Readiness:** What's your organization's appetite for the discipline and patience required for real transformation?
 
 ## Culminating Reflection
 
@@ -108,12 +57,13 @@ Systematic reflection and lesson sharing
 
 > **"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
 
-## Action Items and Commitments
+## Final Action Items and Commitments
 
-1. **Individual Commitments:** Each participant commits to implementing one specific practice discussed
-2. **Team Experiments:** Identify small experiments to try in the coming weeks
-3. **Measurement Plan:** Establish how you'll track progress on improvements
-4. **Follow-up Strategy:** Plan for sharing results and continued learning
+1. **Individual Commitments:** Each participant commits to implementing one specific 24 capabilities from the book
+2. **Team Experiments:** Identify small experiments to try over next 2-4 weeks
+3. **Measurement Plan:** Establish how to track progress on DORA metrics
+4. **Follow-up Strategy:** Plan monthly check-ins to share results and continued learning
+5. **Next Steps:** Decide on next book or continuing with State of DevOps Reports
 
 ## Supplementary Content
 
@@ -134,5 +84,4 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 ## Navigation
 
-- Previous: [Meeting 3: Architecture, Autonomy, and Lean Thinking](meeting-3-guide.md)
-- Return to: [Book Club Guide](../book-club-guide.md)
+- Previous: [Meeting 3: Management, Product Development & Sustainability](../meeting-3/meeting-guide.md)
