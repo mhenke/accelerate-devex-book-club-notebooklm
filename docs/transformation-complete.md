@@ -508,13 +508,17 @@ nav_order: 6
 }
 
 .achievement-badge {
-  display: inline-block;
+  display: block;
   background: #28a745;
   color: white;
-  padding: 0.3rem 0.8rem;
+  padding: 0.8rem 1rem;
   border-radius: 15px;
   font-size: 0.9rem;
-  margin-top: 0.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .key-findings {
