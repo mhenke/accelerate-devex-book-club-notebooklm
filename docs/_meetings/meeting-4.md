@@ -1227,32 +1227,6 @@ This question embodies the entire Accelerate philosophy:
   color: #4c1d95;
   font-weight: 500;
 }
-
-.btn-transformation-complete {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--meeting-4-primary), var(--meeting-4-darker));
-  color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
-}
-
-.btn-transformation-complete:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
-  text-decoration: none;
-  color: white;
-}
-
-.btn-transformation-complete i {
-  font-size: 1.2rem;
-}
 </style>
 
 <script>
@@ -1381,9 +1355,4 @@ You've completed your DevOps transformation journey through "Accelerate"! You no
       <li><i class="fas fa-check"></i> Cultural transformation strategies</li>
     </ul>
   </div>
-  
-  <a href="{{ '/transformation-complete/' | relative_url }}" class="btn btn-transformation-complete">
-    <i class="fas fa-trophy"></i>
-    Final Meeting Transformation Complete!
-  </a>
 </div>
