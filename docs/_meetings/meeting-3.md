@@ -915,81 +915,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Discussion Questions
 
-### Lean Management (Chapter 7)
-
-1. **Change Approval Effectiveness:** How does your current change approval process compare to the research findings? Are external approvals actually improving stability or just slowing delivery?
-
-2. **WIP Limits & Visualization:** How does your team currently manage and visualize work in progress? What bottlenecks become visible when you track WIP carefully?
-
-3. **Data-Driven Decisions:** How often does your team use monitoring data to make business decisions versus just responding to alerts?
-
-### Product Development (Chapter 8)
-
-4. **Small Batch Assessment:** How large are your typical feature releases? Could work be broken into smaller, more frequent deliveries?
-
-5. **Customer Feedback Loop:** How quickly does customer feedback reach development teams and influence product decisions?
-
-6. **Team Experimentation Authority:** Do development teams have authority to adjust requirements based on what they learn, or must they seek external approval?
-
-### Work Sustainability (Chapter 9)
-
-7. **Deployment Pain Reality:** On a scale of 1-10, how painful are your deployments? What specific factors contribute to anxiety or stress?
-
-8. **Sustainability Connection:** How have technical practices like continuous delivery impacted your team's work-life balance and stress levels?
-
-### Employee Satisfaction (Chapter 10)
-
-9. **eNPS Assessment:** If you surveyed your team anonymously, what percentage would recommend your organization as a great place to work?
-
-10. **Burnout Risk Factors:** Which of Maslach's six organizational risk factors for burnout are most present in your team? What could leadership do to address them?
-
-11. **Diversity & Performance:** How does team diversity in your organization correlate with delivery performance and business outcomes?
-
-### Integration Questions
-
-12. **Virtuous Cycle:** How do you see the connections between lean management practices, product development approaches, deployment pain, and employee satisfaction in your organization?
-
-13. **Biggest Opportunity:** Based on all four chapters, where do you see the biggest opportunity for improvement that could impact both delivery performance and team wellbeing?
+1. **Lean Management Assessment:** Which lean management practices do you currently use? What's missing?
+2. **WIP Visualization:** How does your team currently visualize work and quality metrics?
+3. **Change Approval Reality:** Describe your current change approval process - who's involved and how long does it take?
+4. **Deployment Pain Check:** On a scale of 1-10, how painful are your deployments? What causes the anxiety?
+5. **Employee Engagement:** How would your team score on employee Net Promoter Score?
+6. **Burnout Indicators:** What signs of deployment pain or burnout do you observe in your team?
 
 ## Action Items for Next Meeting
 
-### Lean Management (Chapter 7)
-
 <ul class="action-items">
-<li>[ ] Implement simple WIP visualization (kanban board or dashboard)</li>
-<li>[ ] Identify one change approval step that could use peer review instead of external approval</li>
-<li>[ ] Set up one monitoring metric that helps make business decisions (not just alerts)</li>
-</ul>
-
-### Product Development (Chapter 8)
-
-<ul class="action-items">
-<li>[ ] Break one upcoming feature into deliverable pieces smaller than one week</li>
-<li>[ ] Establish one new channel for rapid customer feedback</li>
-<li>[ ] Give your team authority to modify one specification without external approval</li>
-</ul>
-
-### Work Sustainability (Chapter 9)
-
-<ul class="action-items">
-<li>[ ] Identify the single smallest change that could make your next deployment less painful</li>
-<li>[ ] Document current deployment anxiety level (1-10) and main pain points</li>
-<li>[ ] Automate one manual step in your deployment process</li>
-</ul>
-
-### Employee Satisfaction (Chapter 10)
-
-<ul class="action-items">
+<li>[ ] Experiment with visualizing work using simple kanban board</li>
+<li>[ ] Identify one change approval step that could be streamlined</li>
+<li>[ ] Observe and document burnout risk factors in your environment</li>
 <li>[ ] Conduct informal eNPS assessment with your team</li>
-<li>[ ] Address one of the six burnout risk factors most affecting your team</li>
-<li>[ ] Ensure team members have access to tools and resources they need</li>
+<li>[ ] Choose one practice that improves both delivery performance and team wellbeing</li>
 </ul>
 
-### Integration Goal
+## Related Resources
 
-<ul class="action-items">
-<li>[ ] Choose one practice that addresses multiple chapters (e.g., automated deployment reducing both pain and improving satisfaction)</li>
-</ul>
+### Lean Management & WIP Visualization
+
+- [Kanban Boards](https://www.atlassian.com/agile/kanban/boards) — Visual work tracking
+- [WIP Limits Guide](https://kanbanize.com/lean-management/improvement/what-is-wip) — Theory of constraints
+- [Value Stream Mapping](https://www.lean.org/lexicon-terms/value-stream-mapping/) — Process visualization
+
+### Employee Satisfaction & Burnout Prevention
+
+- [eNPS Calculator](https://blog.officevibe.com/employee-net-promoter-score) — Employee engagement measurement
+- [Christina Maslach Research](https://www.mindgarden.com/maslach-burnout-toolkit/) — Burnout assessment tools
+- [Psychological Safety](https://rework.withgoogle.com/guides/understanding-team-effectiveness/) — Google's research on team effectiveness
+
+### Deployment & DevOps Culture
+
+- [DevOps Assessment](https://dora.dev/devops-capabilities/) — DORA capabilities model
+- [Deployment Frequency](https://github.com/dora-team/fourkeys) — Four Keys project for DORA metrics
 
 ---
 
