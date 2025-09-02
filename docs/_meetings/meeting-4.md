@@ -31,22 +31,22 @@ dora_color: '#7c3aed'
     <h4><i class="fas fa-eye"></i> Vision</h4>
     <p>Clear understanding of where organization is going in 5 years</p>
   </div>
-  
+
   <div class="dimension-card communication">
     <h4><i class="fas fa-bullhorn"></i> Inspirational Communication</h4>
     <p>Motivates and inspires even in uncertain/changing environments</p>
   </div>
-  
+
   <div class="dimension-card stimulation">
     <h4><i class="fas fa-lightbulb"></i> Intellectual Stimulation</h4>
     <p>Challenges team members to think about problems in new ways</p>
   </div>
-  
+
   <div class="dimension-card support">
     <h4><i class="fas fa-heart"></i> Supportive Leadership</h4>
     <p>Demonstrates care and consideration for followers' personal needs</p>
   </div>
-  
+
   <div class="dimension-card recognition">
     <h4><i class="fas fa-award"></i> Personal Recognition</h4>
     <p>Praises and acknowledges achievements, personally compliments work</p>
@@ -63,50 +63,50 @@ dora_color: '#7c3aed'
 <svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" aria-label="ING Transformation Framework">
 	<rect x="10" y="10" width="880" height="260" rx="20" fill="#f5f3ff" stroke="#7c3aed" stroke-width="4"/>
 	<text x="450" y="40" text-anchor="middle" font-size="24" fill="#6d28d9" font-family="Poppins, Inter, sans-serif">ING Transformation Framework</text>
-	
+
 	<!-- Tribes Level -->
 	<rect x="50" y="70" width="200" height="80" rx="12" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
 	<text x="150" y="95" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">Tribes</text>
 	<text x="150" y="115" text-anchor="middle" font-size="12" fill="#fff">Lines of Business</text>
 	<text x="150" y="130" text-anchor="middle" font-size="12" fill="#fff">Value Streams</text>
-	
+
 	<!-- Squads Level -->
 	<rect x="280" y="70" width="200" height="80" rx="12" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
 	<text x="380" y="95" text-anchor="middle" font-size="16" fill="#6d28d9" font-weight="bold">Squads</text>
 	<text x="380" y="115" text-anchor="middle" font-size="12" fill="#6d28d9">Cross-Functional Teams</text>
 	<text x="380" y="130" text-anchor="middle" font-size="12" fill="#6d28d9">Customer Missions</text>
-	
+
 	<!-- Chapters Level -->
 	<rect x="510" y="70" width="200" height="80" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
 	<text x="610" y="95" text-anchor="middle" font-size="16" fill="#7c3aed" font-weight="bold">Chapters</text>
 	<text x="610" y="115" text-anchor="middle" font-size="12" fill="#7c3aed">Knowledge Sharing</text>
 	<text x="610" y="130" text-anchor="middle" font-size="12" fill="#7c3aed">Discipline Groups</text>
-	
+
 	<!-- Obeya Rooms -->
 	<rect x="740" y="70" width="120" height="80" rx="12" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
 	<text x="800" y="95" text-anchor="middle" font-size="14" fill="#7c3aed" font-weight="bold">Obeya</text>
 	<text x="800" y="110" text-anchor="middle" font-size="11" fill="#7c3aed">Visual</text>
 	<text x="800" y="125" text-anchor="middle" font-size="11" fill="#7c3aed">Management</text>
-	
+
 	<!-- Arrows -->
 	<line x1="250" y1="110" x2="280" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
 	<line x1="480" y1="110" x2="510" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
 	<line x1="710" y1="110" x2="740" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
-	
+
 	<!-- Catchball Communication -->
 	<text x="450" y="180" text-anchor="middle" font-size="18" fill="#6d28d9" font-weight="bold">Catchball Communication</text>
 	<rect x="120" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
 	<text x="190" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Daily Stand-ups</text>
-	
+
 	<rect x="280" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
 	<text x="350" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Vertical Flow</text>
-	
+
 	<rect x="440" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
 	<text x="510" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Horizontal Flow</text>
-	
+
 	<rect x="600" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
 	<text x="670" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Rapid Resolution</text>
-	
+
 	<defs>
 		<marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
 			<path d="M0,0 L10,5 L0,10 Z" fill="#7c3aed" />
@@ -126,9 +126,9 @@ dora_color: '#7c3aed'
       <li><i class="fas fa-chart-line"></i> Metrics without context</li>
     </ul>
   </div>
-  
+
   <div class="vs-arrow">→</div>
-  
+
   <div class="impact-side transformational">
     <h4><i class="fas fa-hands-helping"></i> Transformational Leadership</h4>
     <ul>
@@ -150,12 +150,12 @@ dora_color: '#7c3aed'
       <p>"You need to fix this issue."</p>
     </div>
   </div>
-  
+
   <div class="arrow-transform">
     <i class="fas fa-sync-alt"></i>
     <span>Transform to</span>
   </div>
-  
+
   <div class="coaching-after">
     <h4><i class="fas fa-comments"></i> Coaching Approach</h4>
     <div class="quote-box">
@@ -332,7 +332,7 @@ dora_color: '#7c3aed'
 
 ## Practical Exercises
 
-### 1. Team Obeya Design
+### 1. Team Obeya Design {#team-obeya-design}
 
 **Exercise:** Sketch a visual management board for your team
 
@@ -342,7 +342,7 @@ dora_color: '#7c3aed'
 - Work in progress and bottlenecks
 - Actions and ownership
 
-### 2. Coaching Questions Practice
+### 2. Coaching Questions Practice {#coaching-questions-practice}
 
 **Exercise:** Role-play leadership scenarios
 
@@ -351,7 +351,7 @@ dora_color: '#7c3aed'
 - Focus on "What can I do to support you?" vs solving the problem directly
 - Debrief on how this felt different from typical management interactions
 
-### 3. "Adapt, Don't Copy" Planning
+### 3. "Adapt, Don't Copy" Planning {#adapt-dont-copy-planning}
 
 **Exercise:** Choose one ING practice and adapt it
 
@@ -360,7 +360,7 @@ dora_color: '#7c3aed'
 - Plan small experiment to test adapted version
 - Define success metrics and learning objectives
 
-### 4. Transformation Readiness Assessment
+### 4. Transformation Readiness Assessment {#transformation-readiness-assessment}
 
 **Exercise:** Evaluate organizational change capacity
 
@@ -1121,58 +1121,58 @@ This question embodies the entire Accelerate philosophy:
     gap: 1.5rem;
     padding: 1rem;
   }
-  
+
   .vs-arrow {
     transform: rotate(90deg);
   }
-  
+
   .coaching-transformation {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1rem;
   }
-  
+
   .arrow-transform {
     transform: rotate(90deg);
   }
-  
+
   .learning-checkpoint {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1rem;
   }
-  
+
   .checkpoint-card {
     padding: 1rem;
   }
-  
+
   .readiness-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .assessment-buttons {
     gap: 0.75rem;
   }
-  
+
   .assessment-btn {
     padding: 0.875rem 1rem;
     font-size: 0.9rem;
   }
-  
+
   .coaching-options {
     gap: 0.75rem;
   }
-  
+
   .coaching-option {
     padding: 0.875rem;
     font-size: 0.85rem;
   }
-  
+
   .feedback-area {
     padding: 1rem;
     min-height: 60px;
   }
-  
+
   .feedback-area p {
     font-size: 0.85rem;
   }
@@ -1217,7 +1217,7 @@ document.addEventListener('DOMContentLoaded', function() {
       content: "This question demonstrates transformational leadership by seeking to understand rather than blame. It creates psychological safety and focuses on system-level problems rather than individual performance."
     },
     directive: {
-      title: "Directive Management Approach", 
+      title: "Directive Management Approach",
       content: "This question focuses on accountability but may create blame culture and reduce psychological safety. Consider reframing to understand obstacles and provide support rather than seeking blame."
     },
     enabling: {
@@ -1249,14 +1249,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Transformation readiness calculator
   const readinessCheckboxes = document.querySelectorAll('input[name="readiness"]');
   const readinessScore = document.getElementById('readiness-score');
-  
+
   if (readinessCheckboxes.length > 0 && readinessScore) {
     readinessCheckboxes.forEach(checkbox => {
       checkbox.addEventListener('change', function() {
         const checkedBoxes = document.querySelectorAll('input[name="readiness"]:checked');
         const score = checkedBoxes.length;
         const percentage = (score / readinessCheckboxes.length) * 100;
-        
+
         let level, color, advice;
         if (percentage >= 75) {
           level = "High Readiness";
@@ -1271,8 +1271,8 @@ document.addEventListener('DOMContentLoaded', function() {
           color = "#ef4444";
           advice = "Focus on building foundational transformation capabilities. Start with learning investment and experimentation culture.";
         }
-        
-        readinessScore.innerHTML = `<h5 style="margin: 0 0 0.5rem 0; color: ${color}; font-size: 1rem;">${level} (${score}/4 factors)</h5><p style="margin: 0; font-size: 0.85rem; line-height: 1.4;">${advice}</p>`;
+
+        readinessScore.innerHTML = `<h5 class="readiness-title" style="color: ${color};">${level} (${score}/4 factors)</h5><p class="readiness-advice">${advice}</p>`;
         readinessScore.classList.add('active');
       });
     });
