@@ -473,66 +473,6 @@ dora_color: '#D97706'
   </div>
 </div>
 
-## Team Architecture Assessment
-
-<div class="architecture-assessment">
-  <div class="assessment-card dependency-map">
-    <div class="assessment-icon"><i class="fas fa-map"></i></div>
-    <h4>Dependency Mapping</h4>
-    <p>Identify team dependencies that slow you down:</p>
-    <div class="dependency-examples">
-      <label class="dependency-item high-impact">
-        <input type="radio" name="dependency-type" value="shared-database">
-        <span class="radio-mark"></span>
-    <i class="fas fa-circle" style="color: #D97706;"></i> Shared database
-      </label>
-      <label class="dependency-item medium-impact">
-        <input type="radio" name="dependency-type" value="release-coordination">
-        <span class="radio-mark"></span>
-    <i class="fas fa-circle" style="color: #B45309;"></i> Release coordination
-      </label>
-      <label class="dependency-item low-impact">
-        <input type="radio" name="dependency-type" value="independent-services">
-        <span class="radio-mark"></span>
-    <i class="fas fa-circle" style="color: #fff3e0;"></i> Independent services
-      </label>
-    </div>
-    <div class="feedback-area" id="dependency-feedback">
-      <p>Select dependencies to understand their impact on software delivery performance.</p>
-    </div>
-  </div>
-
-  <div class="assessment-card wip-current">
-    <div class="assessment-icon"><i class="fas fa-chart-bar"></i></div>
-    <h4>WIP Visualization</h4>
-    <p>How do you currently track work in progress?</p>
-    <div class="wip-options">
-      <label class="wip-option">
-        <input type="radio" name="wip-method" value="task-lists">
-        <span class="radio-mark"></span>
-        <i class="fas fa-clipboard-list"></i> Task lists
-      </label>
-      <label class="wip-option">
-        <input type="radio" name="wip-method" value="kanban">
-        <span class="radio-mark"></span>
-        <i class="fas fa-columns"></i> Kanban board
-      </label>
-      <label class="wip-option">
-        <input type="radio" name="wip-method" value="sprint">
-        <span class="radio-mark"></span>
-        <i class="fas fa-chart-line"></i> Sprint board
-      </label>
-      <label class="wip-option">
-        <input type="radio" name="wip-method" value="none">
-        <span class="radio-mark"></span>
-        <i class="fas fa-question"></i> No tracking
-      </label>
-    </div>
-    <div class="feedback-area" id="wip-feedback">
-      <p>Select your WIP tracking methods to learn about their effectiveness in lean software delivery.</p>
-    </div>
-  </div>
-</div>
 
 ## Practical Exercises
 
@@ -824,6 +764,67 @@ dora_color: '#D97706'
       <p><i class="fas fa-info-circle"></i> Check all factors present in your team to see satisfaction level and recommendations.</p>
     </div>
   </div>
+
+  <div class="checkpoint-card architecture-assessment">
+    <h4><i class="fas fa-project-diagram"></i> Team Architecture Assessment</h4>
+    <p>Evaluate your team's architectural dependencies and work tracking:</p>
+    
+    <div class="architecture-subsection">
+      <h5><i class="fas fa-map"></i> Dependency Mapping</h5>
+      <p>What type of dependencies slow your team down most?</p>
+      <div class="assessment-buttons">
+        <label class="assessment-btn low-performance">
+          <input type="radio" name="dependency-type" value="shared-database">
+          <span class="radio-mark"></span>
+          <strong>Shared Database</strong><br>
+          <small>Multiple teams modify same database schema</small>
+        </label>
+        <label class="assessment-btn medium-performance">
+          <input type="radio" name="dependency-type" value="release-coordination">
+          <span class="radio-mark"></span>
+          <strong>Release Coordination</strong><br>
+          <small>Cross-team coordination for releases</small>
+        </label>
+        <label class="assessment-btn high-performance">
+          <input type="radio" name="dependency-type" value="independent-services">
+          <span class="radio-mark"></span>
+          <strong>Independent Services</strong><br>
+          <small>Loosely coupled, independently deployable</small>
+        </label>
+      </div>
+      <div class="feedback-area" id="dependency-feedback">
+        <p><i class="fas fa-info-circle"></i> Select your primary dependency type to understand its impact on delivery performance.</p>
+      </div>
+    </div>
+
+    <div class="architecture-subsection">
+      <h5><i class="fas fa-chart-bar"></i> WIP Visualization</h5>
+      <p>How does your team currently track work in progress?</p>
+      <div class="assessment-buttons">
+        <label class="assessment-btn low-performance">
+          <input type="radio" name="wip-method" value="none">
+          <span class="radio-mark"></span>
+          <strong>No Tracking</strong><br>
+          <small>Work status not visualized or limited WIP</small>
+        </label>
+        <label class="assessment-btn medium-performance">
+          <input type="radio" name="wip-method" value="task-lists">
+          <span class="radio-mark"></span>
+          <strong>Task Lists</strong><br>
+          <small>Basic lists, limited flow visualization</small>
+        </label>
+        <label class="assessment-btn high-performance">
+          <input type="radio" name="wip-method" value="kanban">
+          <span class="radio-mark"></span>
+          <strong>Kanban Board</strong><br>
+          <small>Visual flow with WIP limits and metrics</small>
+        </label>
+      </div>
+      <div class="feedback-area" id="wip-feedback">
+        <p><i class="fas fa-info-circle"></i> Select your WIP tracking method to learn about its effectiveness for lean delivery.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -989,3 +990,19 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul class="action-items">
 <li>[ ] Choose one practice that addresses multiple chapters (e.g., automated deployment reducing both pain and improving satisfaction)</li>
 </ul>
+
+---
+
+## AI-Generated Content
+
+This content is powered by several AI systems working together:
+- <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong> for content curation and meeting guide development
+- <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong> for podcast audio generation
+- <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong> for video summary creation
+
+The foundational content is based on research from "Accelerate: The Science of Lean Software and DevOps" with enhancements for interactive learning.
+
+<div class="ai-content-pills">
+  <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" class="ai-pill claude">Claude</a>
+  <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" class="ai-pill notebooklm">NotebookLM</a>
+</div>
