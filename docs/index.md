@@ -241,6 +241,31 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
 </div>
 
+<h2 class="section-accent"><i class="fas fa-trophy"></i> Transformation Complete</h2>
+
+<div class="transformation-complete-grid">
+  <div class="transformation-card">
+    <div class="trophy-icon">
+      <svg viewBox="0 0 100 100" class="trophy-svg">
+        <defs>
+          <linearGradient id="trophy-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <path d="M50 15 L35 25 L35 45 L50 55 L65 45 L65 25 Z" fill="url(#trophy-gradient)"/>
+        <rect x="45" y="55" width="10" height="20" fill="url(#trophy-gradient)"/>
+        <rect x="35" y="75" width="30" height="5" fill="url(#trophy-gradient)"/>
+        <circle cx="30" cy="35" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
+        <circle cx="70" cy="35" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3><i class="fas fa-graduation-cap"></i> Congratulations!</h3>
+    <p>You've completed your DevOps transformation journey! Celebrate your achievement and review your progress through all four meetings.</p>
+    <a href="{{ '/transformation-complete/' | relative_url }}" class="resource-link completion-link">View Your Achievement →</a>
+  </div>
+</div>
+
 <h2 class="section-accent"><i class="fas fa-tools"></i> Resources</h2>
 
 <div class="resources-grid">

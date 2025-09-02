@@ -2835,3 +2835,105 @@ button:focus,
     font-size: 0.8em;
   }
 }
+
+/* Transformation Complete Section */
+.transformation-complete-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transformation-card {
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  border: 2px solid #f59e0b;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.transformation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f59e0b, #d97706, #92400e);
+}
+
+.transformation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(245, 158, 11, 0.25);
+  border-color: #d97706;
+}
+
+.trophy-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.trophy-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 8px rgba(255, 215, 0, 0.3));
+}
+
+.transformation-card h3 {
+  color: #92400e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.transformation-card h3 i {
+  color: #f59e0b;
+}
+
+.transformation-card p {
+  color: #78716c;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.completion-link {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.completion-link:hover {
+  background: linear-gradient(135deg, #d97706, #92400e);
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .transformation-card {
+    padding: 1.5rem;
+  }
+  
+  .trophy-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
