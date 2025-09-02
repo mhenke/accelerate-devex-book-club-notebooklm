@@ -164,36 +164,47 @@ nav_order: 6
 ## <i class="fas fa-graduation-cap"></i> Key Learnings & Achievements
 
 <div class="learning-highlights">
-  <div class="learning-category">
-    <h3><i class="fas fa-tools"></i> Technical Capabilities</h3>
+  <div class="learning-category meeting-1-theme">
+    <h3><i class="fas fa-chart-bar"></i> Foundation & Measurement</h3>
     <ul class="achievement-list">
-      <li><i class="fas fa-check-circle"></i> Version control best practices</li>
-      <li><i class="fas fa-check-circle"></i> Deployment automation strategies</li>
+      <li><i class="fas fa-check-circle"></i> DORA metrics baseline established</li>
+      <li><i class="fas fa-check-circle"></i> Westrum culture assessment completed</li>
+      <li><i class="fas fa-check-circle"></i> Performance correlation understanding</li>
+      <li><i class="fas fa-check-circle"></i> Elite vs low performer gap analysis</li>
+      <li><i class="fas fa-check-circle"></i> Deployment pain evaluation</li>
+    </ul>
+  </div>
+  
+  <div class="learning-category meeting-2-theme">
+    <h3><i class="fas fa-rocket"></i> Technical Excellence</h3>
+    <ul class="achievement-list">
+      <li><i class="fas fa-check-circle"></i> Continuous delivery practices mastered</li>
+      <li><i class="fas fa-check-circle"></i> Speed with stability principles applied</li>
+      <li><i class="fas fa-check-circle"></i> Security integration strategies</li>
       <li><i class="fas fa-check-circle"></i> Test automation frameworks</li>
-      <li><i class="fas fa-check-circle"></i> Architecture for testability</li>
-      <li><i class="fas fa-check-circle"></i> Database change management</li>
+      <li><i class="fas fa-check-circle"></i> Fast feedback loop implementation</li>
     </ul>
   </div>
   
-  <div class="learning-category">
-    <h3><i class="fas fa-star"></i> Cultural Transformation</h3>
+  <div class="learning-category meeting-3-theme">
+    <h3><i class="fas fa-balance-scale"></i> Lean Management</h3>
     <ul class="achievement-list">
-      <li><i class="fas fa-check-circle"></i> Psychological safety principles</li>
-      <li><i class="fas fa-check-circle"></i> Learning organization practices</li>
-      <li><i class="fas fa-check-circle"></i> Information flow optimization</li>
-      <li><i class="fas fa-check-circle"></i> Collaboration breakthrough methods</li>
-      <li><i class="fas fa-check-circle"></i> Trust-building strategies</li>
-    </ul>
-  </div>
-  
-  <div class="learning-category">
-    <h3><i class="fas fa-bolt"></i> Process Excellence</h3>
-    <ul class="achievement-list">
-      <li><i class="fas fa-check-circle"></i> Lean product development</li>
-      <li><i class="fas fa-check-circle"></i> Visual management systems</li>
       <li><i class="fas fa-check-circle"></i> WIP optimization techniques</li>
-      <li><i class="fas fa-check-circle"></i> Customer feedback loops</li>
-      <li><i class="fas fa-check-circle"></i> Continuous improvement mindset</li>
+      <li><i class="fas fa-check-circle"></i> Visual management systems</li>
+      <li><i class="fas fa-check-circle"></i> Burnout prevention strategies</li>
+      <li><i class="fas fa-check-circle"></i> Employee satisfaction drivers</li>
+      <li><i class="fas fa-check-circle"></i> Sustainable work practices</li>
+    </ul>
+  </div>
+
+  <div class="learning-category meeting-4-theme">
+    <h3><i class="fas fa-crown"></i> Leadership Transformation</h3>
+    <ul class="achievement-list">
+      <li><i class="fas fa-check-circle"></i> Five transformational dimensions</li>
+      <li><i class="fas fa-check-circle"></i> Coaching vs commanding approach</li>
+      <li><i class="fas fa-check-circle"></i> ING transformation insights</li>
+      <li><i class="fas fa-check-circle"></i> Team autonomy enablement</li>
+      <li><i class="fas fa-check-circle"></i> Change strategy development</li>
     </ul>
   </div>
 </div>
@@ -631,8 +642,8 @@ nav_order: 6
 
 .learning-highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   margin: 3rem 0;
 }
 
@@ -646,6 +657,38 @@ nav_order: 6
 .learning-category h3 {
   margin-bottom: 1rem;
   color: #1a1a2e;
+}
+
+.learning-category.meeting-1-theme {
+  border-left: 4px solid #1E3A8A;
+}
+
+.learning-category.meeting-1-theme h3 {
+  color: #1E3A8A;
+}
+
+.learning-category.meeting-2-theme {
+  border-left: 4px solid #0F766E;
+}
+
+.learning-category.meeting-2-theme h3 {
+  color: #0F766E;
+}
+
+.learning-category.meeting-3-theme {
+  border-left: 4px solid #D97706;
+}
+
+.learning-category.meeting-3-theme h3 {
+  color: #D97706;
+}
+
+.learning-category.meeting-4-theme {
+  border-left: 4px solid #7c3aed;
+}
+
+.learning-category.meeting-4-theme h3 {
+  color: #7c3aed;
 }
 
 .achievement-list {
