@@ -224,6 +224,34 @@ dora_color: '#0F766E'
     </div>
   </div>
 
+  <div class="checkpoint-card security-integration">
+    <h4><i class="fas fa-shield-alt"></i> Security Integration Assessment</h4>
+    <p>Rate how well security is integrated into your delivery process:</p>
+    <div class="assessment-buttons">
+      <label class="assessment-btn high-performance">
+        <input type="radio" name="security-integration" value="high">
+        <span class="radio-mark"></span>
+        <strong>Shift-Left Security</strong><br>
+        <small>Security built into development process, automated security testing, developer security training</small>
+      </label>
+      <label class="assessment-btn medium-performance">
+        <input type="radio" name="security-integration" value="medium">
+        <span class="radio-mark"></span>
+        <strong>Some Integration</strong><br>
+        <small>Security reviews at key milestones, some automated tools, occasional security training</small>
+      </label>
+      <label class="assessment-btn low-performance">
+        <input type="radio" name="security-integration" value="low">
+        <span class="radio-mark"></span>
+        <strong>Security Gate</strong><br>
+        <small>Security team reviews at end, manual security checks, separate security processes</small>
+      </label>
+    </div>
+    <div class="feedback-area" id="security-feedback">
+      <p>Select your security integration level to see improvement strategies and performance impacts.</p>
+    </div>
+  </div>
+
   <div class="checkpoint-card tool-autonomy">
     <h4><i class="fas fa-palette"></i> Tool Freedom</h4>
     <p>Rate your team's tool selection autonomy:</p>
@@ -1497,6 +1525,88 @@ dora_color: '#0F766E'
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // CD Maturity Assessment functionality
+  const cdMaturityInputs = document.querySelectorAll('input[name="cd-maturity"]');
+  const cdMaturityFeedback = document.getElementById('cd-maturity-feedback');
+  
+  const cdMaturityInfo = {
+    high: {
+      title: "🚀 High CD Maturity - Elite Performer",
+      content: "Excellent! Your organization demonstrates advanced CD practices. Focus on: continuous improvement culture, sharing knowledge across teams, and measuring outcomes. Elite performers deploy 208x more frequently with 106x faster lead times.",
+      bgColor: "linear-gradient(135deg, #e8f8f5, #d1f2eb)",
+      textColor: "#155724"
+    },
+    medium: {
+      title: "⚡ Medium CD Maturity - Strong Foundation", 
+      content: "Good progress! You have solid foundations in place. Priority improvements: increase deployment frequency, automate more manual steps, strengthen trunk-based development. Focus on reducing batch sizes and feedback loops.",
+      bgColor: "linear-gradient(135deg, #fff3cd, #ffeaa7)",
+      textColor: "#856404"
+    },
+    low: {
+      title: "🔧 Low CD Maturity - Major Opportunity",
+      content: "Significant opportunity for improvement! Start with: version control for everything, basic CI/CD pipeline, automated testing, smaller batch sizes. Research shows CD practices strongly predict both delivery performance and organizational outcomes.",
+      bgColor: "linear-gradient(135deg, #f8d7da, #f5c6cb)",
+      textColor: "#721c24"
+    }
+  };
+  
+  cdMaturityInputs.forEach(input => {
+    input.addEventListener('change', function() {
+      const info = cdMaturityInfo[this.value];
+      cdMaturityFeedback.style.background = info.bgColor;
+      cdMaturityFeedback.style.color = info.textColor;
+      cdMaturityFeedback.style.border = `2px solid ${this.value === 'high' ? '#28a745' : this.value === 'medium' ? '#ffc107' : '#dc3545'}`;
+      cdMaturityFeedback.innerHTML = `
+        <div style="padding: 0.5rem 0;">
+          <h5 style="margin: 0 0 1rem 0; color: inherit;">${info.title}</h5>
+          <p style="margin: 0; line-height: 1.5;">${info.content}</p>
+        </div>
+      `;
+      cdMaturityFeedback.classList.add('active');
+    });
+  });
+
+  // Security Integration Assessment functionality
+  const securityIntegrationInputs = document.querySelectorAll('input[name="security-integration"]');
+  const securityFeedback = document.getElementById('security-feedback');
+  
+  const securityInfo = {
+    high: {
+      title: "🛡️ Shift-Left Security - High Performance",
+      content: "Excellent security integration! Organizations with integrated security practices achieve 50% fewer security incidents while maintaining high delivery performance. Continue with: threat modeling, security champions program, and automated compliance checks.",
+      bgColor: "linear-gradient(135deg, #e8f8f5, #d1f2eb)",
+      textColor: "#155724"
+    },
+    medium: {
+      title: "🔒 Some Integration - Good Progress",
+      content: "Solid foundation! You're on the right track. Next steps: increase security automation, train developers on security, implement security testing in CI/CD pipeline. Focus on shifting security activities earlier in development lifecycle.",
+      bgColor: "linear-gradient(135deg, #fff3cd, #ffeaa7)",
+      textColor: "#856404"
+    },
+    low: {
+      title: "⚠️ Security Gate - Improvement Needed",
+      content: "Security gates create bottlenecks and reduce delivery performance. Research shows this approach leads to both security issues AND slower delivery. Start with: developer security training, automated security scanning, and collaborative security reviews.",
+      bgColor: "linear-gradient(135deg, #f8d7da, #f5c6cb)",
+      textColor: "#721c24"
+    }
+  };
+  
+  securityIntegrationInputs.forEach(input => {
+    input.addEventListener('change', function() {
+      const info = securityInfo[this.value];
+      securityFeedback.style.background = info.bgColor;
+      securityFeedback.style.color = info.textColor;
+      securityFeedback.style.border = `2px solid ${this.value === 'high' ? '#28a745' : this.value === 'medium' ? '#ffc107' : '#dc3545'}`;
+      securityFeedback.innerHTML = `
+        <div style="padding: 0.5rem 0;">
+          <h5 style="margin: 0 0 1rem 0; color: inherit;">${info.title}</h5>
+          <p style="margin: 0; line-height: 1.5;">${info.content}</p>
+        </div>
+      `;
+      securityFeedback.classList.add('active');
+    });
+  });
+
   // Feedback content from Accelerate book
   const cultureInfo = {
     pathological: {
