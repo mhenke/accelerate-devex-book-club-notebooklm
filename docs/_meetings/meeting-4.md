@@ -128,7 +128,7 @@ dora_color: '#7c3aed'
     </ul>
   </div>
 
-  <div class="vs-arrow">→</div>
+  <div class="vs-arrow"><i class="fas fa-arrow-right"></i></div>
 
   <div class="impact-side transformational">
     <h4><i class="fas fa-hands-helping"></i> Transformational Leadership</h4>
@@ -465,21 +465,21 @@ This question embodies the entire Accelerate philosophy:
 
 ### Leadership & Transformation
 
-- [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) — Narrative illustration of DevOps transformation
-- [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) — Modern approach to organizing teams for fast flow
-- [The Lean Startup](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898) — Experimentation and adaptation methodology
+- [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) - Narrative illustration of DevOps transformation
+- [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) - Modern approach to organizing teams for fast flow
+- [The Lean Startup](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898) - Experimentation and adaptation methodology
 
 ### Coaching & Development
 
-- [Coaching Agile Teams](https://www.amazon.com/Coaching-Agile-Teams-ScrumMasters-Addison-Wesley/dp/0321637704) — Leadership coaching in agile environments
-- [The Culture Code](https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0804176981) — Building high-performance culture
-- [DevOps Enterprise Summit](https://events.itrevolution.com/) — Leading transformation conference
+- [Coaching Agile Teams](https://www.amazon.com/Coaching-Agile-Teams-ScrumMasters-Addison-Wesley/dp/0321637704) - Leadership coaching in agile environments
+- [The Culture Code](https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0804176981) - Building high-performance culture
+- [DevOps Enterprise Summit](https://events.itrevolution.com/) - Leading transformation conference
 
 ### Research & Measurement
 
-- [Annual State of DevOps Reports](https://dora.dev/research/2024/dora-report/) — Latest DORA findings and industry trends
-- [DORA Capabilities Overview](https://dora.dev/capabilities/) — Technical and cultural capabilities framework
-- [DevOps Research and Assessment (DORA)](https://dora.dev/) — Ongoing research program and measurement tools
+- [Annual State of DevOps Reports](https://dora.dev/research/2024/dora-report/) - Latest DORA findings and industry trends
+- [DORA Capabilities Overview](https://dora.dev/capabilities/) - Technical and cultural capabilities framework
+- [DevOps Research and Assessment (DORA)](https://dora.dev/) - Ongoing research program and measurement tools
 
 <style>
 /* Purple Color Scheme for Meeting 4 */
@@ -951,7 +951,9 @@ This question embodies the entire Accelerate philosophy:
 }
 
 .readiness-checkbox input:checked ~ .checkbox-mark:after {
-  content: "✓";
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   position: absolute;
   top: -2px;
   left: 2px;
@@ -1365,7 +1367,7 @@ The journey of transformation is just beginning. Continue practicing the discipl
 
 ---
 
-## 🎉 Congratulations!
+## <i class="fas fa-trophy"></i> Congratulations!
 
 You've completed your DevOps transformation journey through "Accelerate"! You now have the research-backed knowledge and practical tools to build high-performing technology organizations.
 
@@ -1373,10 +1375,10 @@ You've completed your DevOps transformation journey through "Accelerate"! You no
   <div class="completion-message">
     <h3>Your transformation toolkit is ready:</h3>
     <ul>
-      <li>✓ DORA metrics framework for measuring performance</li>
-      <li>✓ 24 technical and cultural capabilities</li>
-      <li>✓ Transformational leadership principles</li>
-      <li>✓ Cultural transformation strategies</li>
+      <li><i class="fas fa-check"></i> DORA metrics framework for measuring performance</li>
+      <li><i class="fas fa-check"></i> 24 technical and cultural capabilities</li>
+      <li><i class="fas fa-check"></i> Transformational leadership principles</li>
+      <li><i class="fas fa-check"></i> Cultural transformation strategies</li>
     </ul>
   </div>
   
