@@ -193,6 +193,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <span>Monitor</span>
       </div>
     </div>
+
   </div>
 
   <p class="devops-cycle__description">
