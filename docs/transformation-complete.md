@@ -520,20 +520,22 @@ nav_order: 6
 .key-findings {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.8rem;
   margin: 1rem 0 0.5rem 0;
+  align-items: center;
 }
 
 .finding-pill {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.3rem 0.8rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
   color: white;
-  margin: 0.2rem 0;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .finding-pill.meeting-1-theme {
@@ -990,11 +992,11 @@ nav_order: 6
   
   .finding-pill {
     font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.7rem;
   }
   
   .key-findings {
-    gap: 0.3rem;
+    gap: 0.5rem;
   }
   
   .celebration-cta {
