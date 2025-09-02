@@ -1,0 +1,12 @@
+# Playwright test outputs
+playwright-report/
+test-results/
+test-results.json
+test-results.xml
+package-lock.json
+*-snapshots/
+node_modules/
+
+# Test artifacts
+*.log
+coverage/
