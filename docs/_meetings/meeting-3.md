@@ -956,19 +956,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Related Resources
 
-### Lean Management & WIP Visualization
+### Lean Management & Team Performance
 
-- [Kanban Boards](https://www.atlassian.com/agile/kanban/boards) — Visual work tracking
-- [WIP Limits Guide](https://kanbanize.com/lean-management/improvement/what-is-wip) — Theory of constraints
-- [Value Stream Mapping](https://www.lean.org/lexicon-terms/value-stream-mapping/) — Process visualization
-
-### Employee Satisfaction & Burnout Prevention
-
+- [Kanban Boards](https://www.atlassian.com/agile/kanban/boards) — Visual work tracking and WIP limits
+- [Value Stream Mapping](https://www.lean.org/lexicon-terms/value-stream-mapping/) — End-to-end process visualization
 - [eNPS Calculator](https://blog.officevibe.com/employee-net-promoter-score) — Employee engagement measurement
-- [Christina Maslach Research](https://www.mindgarden.com/maslach-burnout-toolkit/) — Burnout assessment tools
-- [Psychological Safety](https://rework.withgoogle.com/guides/understanding-team-effectiveness/) — Google's research on team effectiveness
+- [Psychological Safety Guide](https://rework.withgoogle.com/guides/understanding-team-effectiveness/) — Google's team effectiveness research
+- [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) — Modern team organization patterns
 
-### Deployment & DevOps Culture
+### DevOps Culture & Assessment
 
-- [DevOps Assessment](https://dora.dev/devops-capabilities/) — DORA capabilities model
-- [Deployment Frequency](https://github.com/dora-team/fourkeys) — Four Keys project for DORA metrics
+- [DORA Capabilities](https://dora.dev/devops-capabilities/) — DevOps maturity assessment
+- [Four Keys Project](https://github.com/dora-team/fourkeys) — DORA metrics implementation
+- [Burnout Prevention Toolkit](https://www.mindgarden.com/maslach-burnout-toolkit/) — Christina Maslach's research tools
