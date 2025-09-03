@@ -16,6 +16,698 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+/* Page Hero Component */
+.page-hero {
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cpattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'%3e%3cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.1'/%3e%3c/pattern%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23grid)' /%3e%3c/svg%3e");
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-icon {
+  font-size: 4rem;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: var(--text-white);
+  opacity: 0.9;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Insight Card Grid */
+.insight-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Resource Item Styling */
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-list li {
+  margin-bottom: 0.5rem;
+}
+
+.resource-list a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resource-list a:hover {
+  color: var(--accent-teal);
+  text-decoration: underline;
+}
+
+/* Meeting Resource Cards */
+.meeting-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.meeting-resource-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.meeting-resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.meeting-resource-card .meeting-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.meeting-resource-card h4 {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.resource-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text-medium);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.resource-item:hover {
+  background: var(--background-light);
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+/* Process Steps */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.step-number {
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content strong {
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.step-content p {
+  color: var(--text-medium);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Guidelines Grid */
+.guidelines-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.guideline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.guideline-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.guideline-item ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1rem;
+}
+
+.guideline-item li {
+  margin-bottom: 0.25rem;
+  color: var(--text-medium);
+}
+
+/* Safety Practices */
+.safety-practices {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.practice-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(122, 218, 209, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-teal);
+}
+
+.practice-item i {
+  color: var(--accent-teal);
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.practice-item strong {
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.practice-item p {
+  color: var(--text-medium);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Facilitation Techniques */
+.facilitation-techniques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.technique-card {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.technique-card:hover {
+  border-color: var(--accent-teal);
+  box-shadow: 0 4px 15px rgba(122, 218, 209, 0.1);
+}
+
+.technique-card h4 {
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.technique-card h4 i {
+  color: var(--primary-blue);
+}
+
+.technique-card p {
+  color: var(--text-medium);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Exercise Timeline */
+.exercise-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.exercise-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-blue),
+    var(--accent-teal)
+  );
+}
+
+.exercise-week {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.week-marker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.week-content {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+}
+
+.week-content strong {
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.week-content ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.week-content li {
+  color: var(--text-medium);
+  margin-bottom: 0.25rem;
+}
+
+/* Book List */
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.book-list li {
+  margin-bottom: 0.5rem;
+  color: var(--text-medium);
+}
+
+.book-list strong {
+  color: var(--text-dark);
+}
+
+/* Development Paths */
+.development-paths,
+.monitoring-practices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.path-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(76, 175, 80, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid var(--success-green);
+}
+
+.path-item i {
+  color: var(--success-green);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.path-item span {
+  color: var(--text-medium);
+  font-size: 0.9rem;
+}
+
+/* Performance Levels in DORA Metrics */
+.performance-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.perf-level {
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.perf-level.elite {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.perf-level.high {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.perf-level.medium {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.perf-level.low {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+/* Culture Types */
+.culture-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.culture-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid var(--border-light);
+}
+
+.culture-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.culture-card.pathological {
+  border-color: var(--danger-red);
+}
+
+.culture-card.pathological:hover {
+  box-shadow: 0 8px 25px rgba(244, 67, 54, 0.2);
+}
+
+.culture-card.bureaucratic {
+  border-color: var(--dora-orange);
+}
+
+.culture-card.bureaucratic:hover {
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.2);
+}
+
+.culture-card.generative {
+  border-color: var(--success-green);
+}
+
+.culture-card.generative:hover {
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2);
+}
+
+.culture-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.culture-card.pathological .culture-icon {
+  color: var(--danger-red);
+}
+
+.culture-card.bureaucratic .culture-icon {
+  color: var(--dora-orange);
+}
+
+.culture-card.generative .culture-icon {
+  color: var(--success-green);
+}
+
+.culture-card h4 {
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.culture-card p {
+  color: var(--text-medium);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Prompt Container */
+.prompt-container {
+  background: white;
+  border-radius: 12px;
+  padding: 0;
+  margin: 2rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--border-light);
+  overflow: hidden;
+}
+
+.prompt-container.video {
+  border-color: var(--dora-orange);
+}
+
+.prompt-header {
+  background: linear-gradient(
+    135deg,
+    var(--background-light),
+    var(--background-off-white)
+  );
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.prompt-container.video .prompt-header {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 152, 0, 0.1),
+    rgba(245, 124, 0, 0.05)
+  );
+}
+
+.prompt-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.prompt-meta h4 {
+  color: var(--text-dark);
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.prompt-meta p {
+  color: var(--text-medium);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.prompt-content {
+  padding: 0;
+}
+
+.prompt-content pre {
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background: var(--text-dark);
+}
+
+.prompt-content code {
+  background: none;
+  color: #f8f8f2;
+  padding: 1.5rem;
+  display: block;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Resource Icon */
+.resource-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Intro Text */
+.intro-text {
+  font-size: 1.1rem;
+  color: var(--text-medium);
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.intro-text a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.intro-text a:hover {
+  color: var(--accent-teal);
+  text-decoration: underline;
+}
+
+/* Reflection Items */
+.reflection-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.reflection-item {
+  padding: 1rem;
+  background: rgba(33, 150, 243, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary-blue);
+}
+
+.reflection-item strong {
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.reflection-item strong i {
+  color: var(--primary-blue);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 3rem 1rem;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .page-container {
+    padding: 0 1rem;
+  }
+
+  .insight-card-grid,
+  .meeting-resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-timeline::before {
+    left: 15px;
+  }
+
+  .week-marker {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .culture-types {
+    grid-template-columns: 1fr;
+  }
+
+  .facilitation-techniques {
+    grid-template-columns: 1fr;
+  }
+
+  .guidelines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guideline-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 /* End of main SCSS file */
 /*
  * Performance and Accessibility Optimizations

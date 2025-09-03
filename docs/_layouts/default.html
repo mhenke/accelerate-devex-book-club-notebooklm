@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#7adad1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7adad1" />
     <title>{{ page.title | default: site.title }}</title>
-    
+
     <!-- Performance optimizations -->
     {% include performance-optimizations.html %}
-    
+
     <!-- RSS Feed Discovery -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Podcast Feed" href="{{ site.url }}{{ site.baseurl }}/podcast.xml">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Video Feed" href="{{ site.url }}{{ site.baseurl }}/videos.xml">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Complete Media Feed" href="{{ site.url }}{{ site.baseurl }}/media-feed.xml">
-    
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }} - Podcast Feed"
+      href="{{ site.url }}{{ site.baseurl }}/podcast.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }} - Video Feed"
+      href="{{ site.url }}{{ site.baseurl }}/videos.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }} - Complete Media Feed"
+      href="{{ site.url }}{{ site.baseurl }}/media-feed.xml"
+    />
+
     <!-- Open Graph / Social Media Preview -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ page.title | default: site.title }}">
-    <meta property="og:description" content="{{ page.description | default: site.description }}">
-    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta
+      property="og:description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta
+      property="og:url"
+      content="{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta
+      property="og:image"
+      content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
-    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta
+      name="twitter:image"
+      content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png"
+    />
 
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description }}"
+    />
+
     <!-- Accessibility -->
-    <meta name="color-scheme" content="light">
-    
+    <meta name="color-scheme" content="light" />
+
     <!-- Progressive Web App -->
-    <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
 
     <!-- Optimized CSS loading -->
     <link
       rel="stylesheet"
       href="{{ '/assets/main.css' | relative_url }}"
-      media="screen">
+      media="screen"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       media="screen"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer">
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Skip navigation for screen readers -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <main id="main-content" class="page-content" role="main">
       {{ content }}
     </main>

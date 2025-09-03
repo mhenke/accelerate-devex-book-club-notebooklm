@@ -4,331 +4,249 @@ title: "You're Offline"
 permalink: /offline/
 ---
 
-<div class="offline-page">
-  <div class="offline-content">
-    <div class="offline-icon">
-      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="60" cy="60" r="50" fill="#7adad1" opacity="0.1"/>
-        <path d="M60 20C76.5 20 90 33.5 90 50C90 66.5 76.5 80 60 80C43.5 80 30 66.5 30 50C30 33.5 43.5 20 60 20Z" stroke="#7adad1" stroke-width="3" fill="none"/>
-        <path d="M45 50L55 60L75 40" stroke="#7adad1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="60" cy="95" r="4" fill="#7adad1"/>
-        <path d="M35 95H85" stroke="#7adad1" stroke-width="2" stroke-linecap="round"/>
+<div
+  class="page-hero"
+  style="background: linear-gradient(135deg, #7adad1 0%, #6bc7bf 100%)"
+>
+  <div class="hero-content">
+    <div class="hero-icon offline-icon">
+      <svg
+        width="120"
+        height="120"
+        viewBox="0 0 120 120"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="60" cy="60" r="50" fill="currentColor" opacity="0.2" />
+        <path
+          d="M60 20C76.5 20 90 33.5 90 50C90 66.5 76.5 80 60 80C43.5 80 30 66.5 30 50C30 33.5 43.5 20 60 20Z"
+          stroke="currentColor"
+          stroke-width="3"
+          fill="none"
+        />
+        <path
+          d="M45 50L55 60L75 40"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <circle cx="60" cy="95" r="4" fill="currentColor" />
+        <path
+          d="M35 95H85"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
       </svg>
     </div>
-    
-    <h1>You're Currently Offline</h1>
-    <p>Don't worry! You can still access some content while offline.</p>
-    
-    <div class="offline-features">
-      <h2>Available Offline:</h2>
-      <ul>
-        <li><strong>Previously visited pages</strong> - Browse pages you've already loaded</li>
-        <li><strong>DORA Metrics reference</strong> - Key metrics definitions and goals</li>
-        <li><strong>Meeting notes</strong> - Take notes that will sync when you're back online</li>
-        <li><strong>Resources</strong> - Core DevOps practices and principles</li>
-      </ul>
+    <h1 class="page-title">You're Currently Offline</h1>
+    <p class="page-subtitle">
+      Don't worry! You can still access some content while offline.
+    </p>
+  </div>
+</div>
+
+<div class="page-container">
+  <div class="section-accent">
+    <i class="fas fa-check-circle"></i>
+    Available Offline
+  </div>
+
+  <div class="insights-grid">
+    <div class="insight-card">
+      <h4><i class="fas fa-eye"></i> Previously Visited Pages</h4>
+      <p>Browse pages you've already loaded during your session</p>
     </div>
-    
-    <div class="offline-tips">
-      <h2>While You're Offline:</h2>
-      <div class="tips-grid">
-        <div class="tip-card">
-          <div class="tip-icon">📖</div>
-          <h3>Review Your Notes</h3>
-          <p>Perfect time to review your meeting notes and action items from previous sessions.</p>
-        </div>
-        
-        <div class="tip-card">
-          <div class="tip-icon">🎯</div>
-          <h3>Practice DORA Metrics</h3>
-          <p>Quiz yourself on the four key metrics: Lead Time, Deployment Frequency, MTTR, and Change Fail Rate.</p>
-        </div>
-        
-        <div class="tip-card">
-          <div class="tip-icon">💡</div>
-          <h3>Plan Your Implementation</h3>
-          <p>Think about which DevOps practices you want to implement in your organization first.</p>
-        </div>
-        
-        <div class="tip-card">
-          <div class="tip-icon">🚀</div>
-          <h3>Reflect on Progress</h3>
-          <p>Consider your team's current performance and identify the biggest improvement opportunities.</p>
-        </div>
+
+    <div class="insight-card">
+      <h4><i class="fas fa-chart-bar"></i> DORA Metrics Reference</h4>
+      <p>Key metrics definitions and performance goals</p>
+    </div>
+
+    <div class="insight-card">
+      <h4><i class="fas fa-sticky-note"></i> Meeting Notes</h4>
+      <p>Take notes that will sync when you're back online</p>
+    </div>
+
+    <div class="insight-card">
+      <h4><i class="fas fa-book-open"></i> Core Resources</h4>
+      <p>Essential DevOps practices and principles</p>
+    </div>
+  </div>
+
+  <div class="section-accent">
+    <i class="fas fa-lightbulb"></i>
+    While You're Offline
+  </div>
+
+  <div class="learning-checkpoint">
+    <div class="checkpoint-card">
+      <h4><i class="fas fa-book"></i> Review Your Notes</h4>
+      <p>
+        Perfect time to review your meeting notes and action items from previous
+        sessions.
+      </p>
+      <div class="offline-tip">
+        <i class="fas fa-arrow-right"></i>
+        <span>Reflect on key insights and implementation plans</span>
       </div>
     </div>
-    
-    <div class="offline-actions">
-      <button onclick="window.history.back()" class="btn btn-primary">
-        <i class="fas fa-arrow-left"></i> Go Back
-      </button>
-      
-      <button onclick="window.location.reload()" class="btn btn-secondary">
-        <i class="fas fa-sync-alt"></i> Try Again
-      </button>
-      
-      <a href="/accelerate-devex-book-club-notebooklm/" class="btn btn-outline">
-        <i class="fas fa-home"></i> Home
-      </a>
+
+    <div class="checkpoint-card">
+      <h4><i class="fas fa-chart-line"></i> Practice DORA Metrics</h4>
+      <p>
+        Quiz yourself on the four key metrics: Lead Time, Deployment Frequency,
+        MTTR, and Change Fail Rate.
+      </p>
+      <div class="offline-tip">
+        <i class="fas fa-arrow-right"></i>
+        <span>Test your understanding of performance benchmarks</span>
+      </div>
     </div>
+
+    <div class="checkpoint-card">
+      <h4><i class="fas fa-rocket"></i> Plan Your Implementation</h4>
+      <p>
+        Think about which DevOps practices you want to implement in your
+        organization first.
+      </p>
+      <div class="offline-tip">
+        <i class="fas fa-arrow-right"></i>
+        <span>Prioritize transformation initiatives</span>
+      </div>
+    </div>
+
+    <div class="checkpoint-card">
+      <h4><i class="fas fa-trophy"></i> Reflect on Progress</h4>
+      <p>
+        Consider your team's current performance and identify the biggest
+        improvement opportunities.
+      </p>
+      <div class="offline-tip">
+        <i class="fas fa-arrow-right"></i>
+        <span>Assess your transformation journey</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="offline-actions">
+    <button onclick="window.history.back()" class="btn btn-primary">
+      <i class="fas fa-arrow-left"></i> Go Back
+    </button>
+
+    <button onclick="window.location.reload()" class="btn btn-secondary">
+      <i class="fas fa-sync-alt"></i> Try Again
+    </button>
+
+    <a href="/accelerate-devex-book-club-notebooklm/" class="btn">
+      <i class="fas fa-home"></i> Home
+    </a>
   </div>
 </div>
 
 <style>
-.offline-page {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
-.offline-content {
-  max-width: 800px;
-  text-align: center;
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.offline-icon {
-  margin-bottom: 2rem;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.8; }
-}
-
-.offline-content h1 {
-  color: #1a1a2e;
-  margin-bottom: 1rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-}
-
-.offline-content p {
-  font-size: 1.2rem;
-  color: #586069;
-  margin-bottom: 3rem;
-}
-
-.offline-features {
-  background: linear-gradient(135deg, rgba(122, 218, 209, 0.1), rgba(122, 218, 209, 0.05));
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 2rem 0;
-  text-align: left;
-}
-
-.offline-features h2 {
-  color: #1a1a2e;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.offline-features ul {
-  list-style: none;
-  padding: 0;
-}
-
-.offline-features li {
-  padding: 0.8rem 0;
-  border-bottom: 1px solid rgba(122, 218, 209, 0.2);
-  color: #586069;
-  font-size: 1.1rem;
-}
-
-.offline-features li:last-child {
-  border-bottom: none;
-}
-
-.offline-features strong {
-  color: #1a1a2e;
-}
-
-.offline-tips {
-  margin: 3rem 0;
-}
-
-.offline-tips h2 {
-  color: #1a1a2e;
-  margin-bottom: 2rem;
-}
-
-.tips-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.tip-card {
-  background: white;
-  border: 2px solid #f0f0f0;
-  border-radius: 12px;
-  padding: 1.5rem;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.tip-card:hover {
-  border-color: #7adad1;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(122, 218, 209, 0.15);
-}
-
-.tip-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.tip-card h3 {
-  color: #1a1a2e;
-  margin-bottom: 0.8rem;
-  font-size: 1.2rem;
-}
-
-.tip-card p {
-  color: #586069;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.offline-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
-
-.btn {
-  padding: 0.8rem 2rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: inherit;
-  min-height: 44px;
-}
-
-.btn-primary {
-  background: #7adad1;
-  color: #1a1a2e;
-}
-
-.btn-primary:hover {
-  background: #6bc7bf;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(122, 218, 209, 0.3);
-}
-
-.btn-secondary {
-  background: #586069;
-  color: white;
-}
-
-.btn-secondary:hover {
-  background: #495057;
-  transform: translateY(-2px);
-}
-
-.btn-outline {
-  background: transparent;
-  color: #7adad1;
-  border: 2px solid #7adad1;
-}
-
-.btn-outline:hover {
-  background: #7adad1;
-  color: #1a1a2e;
-  transform: translateY(-2px);
-}
-
-/* Mobile optimizations */
-@media (max-width: 768px) {
-  .offline-content {
-    padding: 2rem 1.5rem;
-  }
-  
-  .offline-content h1 {
-    font-size: 2rem;
-  }
-  
-  .tips-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .offline-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn {
-    width: 200px;
-    justify-content: center;
-  }
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
   .offline-icon {
-    animation: none;
+    animation: pulse 2s infinite;
+    color: #1a1a2e;
   }
-  
-  .tip-card:hover {
-    transform: none;
+
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
   }
-  
-  .btn:hover {
-    transform: none;
+
+  .offline-tip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: linear-gradient(
+      135deg,
+      rgba(122, 218, 209, 0.1),
+      rgba(122, 218, 209, 0.05)
+    );
+    border-radius: 8px;
+    color: var(--text-medium);
+    font-size: 0.9rem;
   }
-}
+
+  .offline-tip i {
+    color: var(--accent-teal);
+  }
+
+  .offline-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0 2rem;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .offline-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .offline-actions .btn {
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .offline-icon {
+      animation: none;
+    }
+  }
 </style>
 
 <script>
-// Check if back online
-window.addEventListener('online', function() {
-  const notification = document.createElement('div');
-  notification.innerHTML = `
+  // Check if back online
+  window.addEventListener('online', function () {
+    const notification = document.createElement('div');
+    notification.innerHTML = `
     <div style="
       position: fixed;
       top: 20px;
       right: 20px;
-      background: #28a745;
+      background: var(--success-green);
       color: white;
       padding: 1rem 2rem;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       z-index: 1000;
       font-weight: 600;
+      font-family: var(--font-family);
     ">
       <i class="fas fa-wifi"></i> You're back online!
     </div>
   `;
-  document.body.appendChild(notification);
-  
-  setTimeout(function() {
-    notification.remove();
-    window.location.reload();
-  }, 3000);
-});
+    document.body.appendChild(notification);
 
-// Add ripple effect to buttons
-document.querySelectorAll('.btn').forEach(function(button) {
-  button.addEventListener('click', function(e) {
-    const ripple = document.createElement('span');
-    ripple.style.cssText = `
+    setTimeout(function () {
+      notification.remove();
+      window.location.reload();
+    }, 3000);
+  });
+
+  // Add ripple effect to buttons
+  document.querySelectorAll('.btn').forEach(function (button) {
+    button.addEventListener('click', function (e) {
+      const ripple = document.createElement('span');
+      ripple.style.cssText = `
       position: absolute;
       border-radius: 50%;
       background: rgba(255,255,255,0.6);
@@ -336,27 +254,27 @@ document.querySelectorAll('.btn').forEach(function(button) {
       animation: ripple 0.6s linear;
       pointer-events: none;
     `;
-    
-    const rect = button.getBoundingClientRect();
-    const size = Math.max(rect.width, rect.height);
-    const x = e.clientX - rect.left - size / 2;
-    const y = e.clientY - rect.top - size / 2;
-    
-    ripple.style.width = ripple.style.height = size + 'px';
-    ripple.style.left = x + 'px';
-    ripple.style.top = y + 'px';
-    
-    button.style.position = 'relative';
-    button.style.overflow = 'hidden';
-    button.appendChild(ripple);
-    
-    setTimeout(() => ripple.remove(), 600);
-  });
-});
 
-// Add keyframes for ripple animation
-const style = document.createElement('style');
-style.textContent = `
+      const rect = button.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
+
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = x + 'px';
+      ripple.style.top = y + 'px';
+
+      button.style.position = 'relative';
+      button.style.overflow = 'hidden';
+      button.appendChild(ripple);
+
+      setTimeout(() => ripple.remove(), 600);
+    });
+  });
+
+  // Add keyframes for ripple animation
+  const style = document.createElement('style');
+  style.textContent = `
   @keyframes ripple {
     to {
       transform: scale(4);
@@ -364,5 +282,5 @@ style.textContent = `
     }
   }
 `;
-document.head.appendChild(style);
+  document.head.appendChild(style);
 </script>

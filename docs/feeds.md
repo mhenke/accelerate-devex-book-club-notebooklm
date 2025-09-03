@@ -13,6 +13,7 @@ Subscribe to our RSS feeds to get the latest podcast episodes and videos deliver
 ## <i class="fas fa-podcast"></i> Podcast Feeds
 
 ### Audio Podcast Feed
+
 Subscribe to get audio-only podcast episodes covering each meeting's content:
 
 <div class="feed-subscription-box">
@@ -42,6 +43,7 @@ Subscribe to get audio-only podcast episodes covering each meeting's content:
 ## <i class="fas fa-video"></i> Video Feeds
 
 ### Video Content Feed
+
 Subscribe to get video presentations for each meeting:
 
 <div class="feed-subscription-box">
@@ -68,6 +70,7 @@ Subscribe to get video presentations for each meeting:
 ## <i class="fas fa-download"></i> Complete Media Feed
 
 ### Combined Audio & Video Feed
+
 Get everything in one feed - both podcast episodes and videos:
 
 <div class="feed-subscription-box">
@@ -147,6 +150,7 @@ Download individual audio and video files directly:
 ## <i class="fas fa-question-circle"></i> How to Use RSS Feeds
 
 ### For Podcasts:
+
 1. **Copy the Podcast RSS URL** from above
 2. **Open your podcast app** (Apple Podcasts, Spotify, Google Podcasts, etc.)
 3. **Look for "Add Podcast" or "Subscribe"** option
@@ -154,12 +158,14 @@ Download individual audio and video files directly:
 5. **New episodes will download automatically** when published
 
 ### For Videos:
+
 1. **Copy the Video RSS URL** from above
 2. **Use an RSS reader** (Feedly, Inoreader, etc.) or video aggregator
 3. **Add the feed** to get notifications of new video content
 4. **Click through to watch or download** videos directly
 
 ### For Both:
+
 - Use the **Complete Media Feed** to get everything in one subscription
 - Perfect for RSS readers that handle both audio and video content
 
@@ -168,6 +174,7 @@ Download individual audio and video files directly:
 ## <i class="fas fa-mobile-alt"></i> Recommended Apps
 
 ### Podcast Apps:
+
 - **Apple Podcasts** (iOS/macOS)
 - **Spotify** (Cross-platform)
 - **Google Podcasts** (Android/Web)
@@ -175,6 +182,7 @@ Download individual audio and video files directly:
 - **Pocket Casts** (Cross-platform)
 
 ### RSS Readers:
+
 - **Feedly** (Web/Mobile)
 - **Inoreader** (Web/Mobile)
 - **NewsBlur** (Web/Mobile)

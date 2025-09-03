@@ -1,7 +1,7 @@
 title: Accelerate DevEx Book Club
 description: A structured approach to implementing high-performing DevOps practices through &quot;Accelerate&quot; by Nicole Forsgren, Jez Humble, and Gene Kim
-baseurl: "/accelerate-devex-book-club-notebooklm"
-url: "https://mhenke.github.io"
+baseurl: '/accelerate-devex-book-club-notebooklm'
+url: 'https://mhenke.github.io'
 
 # Theme
 theme: minima
@@ -47,12 +47,12 @@ collections:
 # Defaults
 defaults:
   - scope:
-      path: ""
-      type: "meetings"
+      path: ''
+      type: 'meetings'
     values:
-      layout: "meeting"
+      layout: 'meeting'
   - scope:
-      path: ""
-      type: "resources"
+      path: ''
+      type: 'resources'
     values:
-      layout: "resource"
+      layout: 'resource'
