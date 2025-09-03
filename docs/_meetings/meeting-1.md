@@ -196,7 +196,6 @@ dora_color: '#1E3A8A'
         <span class="radio-mark"></span>
         <i class="fas fa-meh"></i> Manageable but Tense
       </label>
-      <label class="confidence-item confident">
         <input type="radio" name="deployment-confidence" value="confident">
         <span class="radio-mark"></span>
         <i class="fas fa-smile"></i> Confident & Routine
@@ -288,8 +287,8 @@ dora_color: '#1E3A8A'
     <div class="feedback-area" id="culture-feedback">
       <p>Select your organization's culture type to see how it impacts delivery performance.</p>
     </div>
+
   </div>
-</div>
 </div>
 
 ---
@@ -311,24 +310,35 @@ dora_color: '#1E3A8A'
 
 ## Related Resources
 
-### DORA Research & Assessment
+<div class="related-resources">
+  <div class="resource-category">
+    <h3><i class="fas fa-chart-line"></i> DORA Research & Assessment</h3>
+    <ul class="resource-links">
+      <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a> - Latest DORA findings and industry benchmarks</li>
+      <li><a href="https://dora.dev/" target="_blank">DORA Research Program</a> - Official DORA website with comprehensive research</li>
+      <li><a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a> - Self-assessment tool for your team</li>
+      <li><a href="https://dora.dev/capabilities/" target="_blank">DORA Capabilities Overview</a> - Technical and cultural capabilities framework</li>
+    </ul>
+  </div>
 
-- [2024 State of DevOps Report](https://dora.dev/research/2024/dora-report/) - Latest DORA findings and industry benchmarks
-- [DORA Research Program](https://dora.dev/) - Official DORA website with comprehensive research
-- [DORA Quick Check Assessment](https://dora.dev/quickcheck/) - Self-assessment tool for your team
-- [DORA Capabilities Overview](https://dora.dev/capabilities/) - Technical and cultural capabilities framework
+  <div class="resource-category">
+    <h3><i class="fas fa-users"></i> Westrum Organizational Culture</h3>
+    <ul class="resource-links">
+      <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>
+      <li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank">IT Revolution Westrum Model</a> - Detailed explanation of culture types</li>
+      <li><a href="https://continuousdelivery.com/implementing/culture/" target="_blank">Generative Culture Assessment</a> - Practical culture implementation guide</li>
+    </ul>
+  </div>
 
-### Westrum Organizational Culture
-
-- [Westrum Organizational Culture Types](https://dora.dev/capabilities/generative-organizational-culture/) - DORA culture implementation guide
-- [IT Revolution Westrum Model](https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/) - Detailed explanation of culture types
-- [Generative Culture Assessment](https://continuousdelivery.com/implementing/culture/) - Practical culture implementation guide
-
-### Foundation Books & Resources
-
-- [Accelerate Book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) - The source material for our book club
-- [State of DevOps Report Archive](https://dora.dev/research/) - Historical DevOps research and trends
-- [DevOps Research and Assessment](https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance) - Google Cloud DORA insights
+  <div class="resource-category">
+    <h3><i class="fas fa-book"></i> Foundation Books & Resources</h3>
+    <ul class="resource-links">
+      <li><a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" target="_blank">Accelerate Book</a> - The source material for our book club</li>
+      <li><a href="https://dora.dev/research/" target="_blank">State of DevOps Report Archive</a> - Historical DevOps research and trends</li>
+      <li><a href="https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance" target="_blank">DevOps Research and Assessment</a> - Google Cloud DORA insights</li>
+    </ul>
+  </div>
+</div>
 
 <style>
 /* Meeting Navigation */
@@ -908,12 +918,14 @@ dora_color: '#1E3A8A'
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .metric-card::before {
@@ -926,27 +938,27 @@ dora_color: '#1E3A8A'
 }
 
 .metric-card.lead-time {
-  border-color: #1E3A8A;
+  border-color: #2196F3;
 }
 
 .metric-card.lead-time::before {
-  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
+  background: linear-gradient(90deg, #2196F3, #1976d2);
 }
 
 .metric-card.deploy-frequency {
-  border-color: #1E3A8A;
+  border-color: #4CAF50;
 }
 
 .metric-card.deploy-frequency::before {
-  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
+  background: linear-gradient(90deg, #4CAF50, #388e3c);
 }
 
 .metric-card.restore-time {
-  border-color: #1E3A8A;
+  border-color: #FF9800;
 }
 
 .metric-card.restore-time::before {
-  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
+  background: linear-gradient(90deg, #FF9800, #f57c00);
 }
 
 .metric-card.change-fail {
@@ -979,22 +991,30 @@ h3 i, h4 i {
   font-size: 1.2rem;
   font-weight: 700;
   color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .metric-description {
   color: #666;
   font-size: 0.9rem;
   line-height: 1.4;
-  margin-bottom: 0.75rem;
+  margin-bottom: auto;
+  flex-grow: 1;
 }
 
 .metric-goal {
-  background: rgba(30, 58, 138, 0.1);
-  color: #1d4ed8;
-  padding: 0.4rem 0.8rem;
-  border-radius: 16px;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #d1d5db;
+  margin-top: 1rem;
 }
 
 /* Myth Buster Section */
@@ -1171,7 +1191,7 @@ h3 i, h4 i {
   }
 
   .vs-divider {
-    transform: rotate(90deg);
+    transform: none;
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
@@ -1373,6 +1393,103 @@ h3 i, h4 i {
   display: block;
   padding: 0.5rem 0;
   font-weight: 500;
+}
+
+/* Related Resources Compact Styling */
+.related-resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #dee2e6;
+}
+
+.resource-category {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.resource-category h3 {
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 0.5rem;
+}
+
+.resource-category h3 i {
+  margin-right: 0.5rem;
+  color: #1E3A8A;
+}
+
+.resource-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-links li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.resource-links a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.resource-links a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.resource-links li::before {
+  content: "▶";
+  color: #1E3A8A;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Responsive adjustments for Related Resources */
+@media (max-width: 768px) {
+  .related-resources {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .resource-category {
+    padding: 1.25rem;
+  }
+  
+  .resource-category h3 {
+    font-size: 1rem;
+  }
+  
+  .resource-links li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .related-resources {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .resource-category {
+    padding: 1rem;
+  }
 }
 </style>
 
