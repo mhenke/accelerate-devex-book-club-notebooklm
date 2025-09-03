@@ -20,9 +20,6 @@ dora_color: '#1E3A8A'
 	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" download class="download-btn">
 		<i class="fas fa-download"></i> Download Video
 	</a>
-	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" target="_blank" class="stream-btn">
-		<i class="fas fa-external-link-alt"></i> Open in New Tab
-	</a>
 </div>
 </div>
 
@@ -37,9 +34,6 @@ dora_color: '#1E3A8A'
 <div class="media-download-controls">
 	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.m4a" download class="download-btn">
 		<i class="fas fa-download"></i> Download Audio
-	</a>
-	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.m4a" target="_blank" class="stream-btn">
-		<i class="fas fa-external-link-alt"></i> Open in New Tab
 	</a>
 </div>
 </div>
