@@ -960,6 +960,21 @@ pre {
   margin: 2rem 0;
 }
 
+/* Consistent metric goal box */
+.metric-goal {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
 .dora-metrics-visual h3 {
   text-align: center;
   color: var(--primary-blue);
