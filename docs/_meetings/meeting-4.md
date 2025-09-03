@@ -166,7 +166,7 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
-#### Transformation Mindset Requirements
+### Transformation Mindset Requirements
 
 - **Learn How to Learn:** Creating environment for shared organizational learning
 - **Practice Discipline:** Recording time usage, trying uncomfortable new behaviors
@@ -769,6 +769,8 @@ This question embodies the entire Accelerate philosophy:
   align-items: center;
   gap: 0.75rem;
   text-align: left;
+  min-height: 60px;
+  min-width: 44px;
 }
 
 .assessment-btn input[type="radio"] {
@@ -778,8 +780,8 @@ This question embodies the entire Accelerate philosophy:
 }
 
 .assessment-btn .radio-mark {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border: 2px solid #ddd;
   border-radius: 50%;
   background: white;
@@ -927,6 +929,8 @@ This question embodies the entire Accelerate philosophy:
   font-size: 0.9rem;
   font-weight: 500;
   width: 100%;
+  min-height: 60px;
+  min-width: 44px;
 }
 
 .readiness-checkbox input[type="checkbox"] {
@@ -936,8 +940,8 @@ This question embodies the entire Accelerate philosophy:
 }
 
 .checkbox-mark {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border: 2px solid var(--meeting-4-primary);
   border-radius: 4px;
   background: white;
@@ -1038,6 +1042,8 @@ This question embodies the entire Accelerate philosophy:
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  min-height: 60px;
+  min-width: 44px;
 }
 
 .coaching-option input[type="radio"] {
@@ -1047,8 +1053,8 @@ This question embodies the entire Accelerate philosophy:
 }
 
 .coaching-option .radio-mark {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border: 2px solid var(--meeting-4-primary);
   border-radius: 50%;
   background: white;
@@ -1160,6 +1166,8 @@ This question embodies the entire Accelerate philosophy:
   .assessment-btn {
     padding: 0.875rem 1rem;
     font-size: 0.9rem;
+    min-height: 60px;
+    min-width: 44px;
   }
 
   .coaching-options {
@@ -1169,6 +1177,8 @@ This question embodies the entire Accelerate philosophy:
   .coaching-option {
     padding: 0.875rem;
     font-size: 0.85rem;
+    min-height: 60px;
+    min-width: 44px;
   }
 
   .feedback-area {
