@@ -307,8 +307,6 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
----
-
 ### Discussion Questions
 
 1. **Current State Assessment:** How would you rate your team on each DORA metric?
