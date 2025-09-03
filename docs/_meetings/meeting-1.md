@@ -290,7 +290,6 @@ dora_color: '#1E3A8A'
 
   </div>
 </div>
-</div>
 
 ---
 
