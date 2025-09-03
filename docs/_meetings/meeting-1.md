@@ -196,7 +196,6 @@ dora_color: '#1E3A8A'
         <span class="radio-mark"></span>
         <i class="fas fa-meh"></i> Manageable but Tense
       </label>
-      <label class="confidence-item confident">
         <input type="radio" name="deployment-confidence" value="confident">
         <span class="radio-mark"></span>
         <i class="fas fa-smile"></i> Confident & Routine
@@ -288,6 +287,7 @@ dora_color: '#1E3A8A'
     <div class="feedback-area" id="culture-feedback">
       <p>Select your organization's culture type to see how it impacts delivery performance.</p>
     </div>
+
   </div>
 </div>
 </div>
