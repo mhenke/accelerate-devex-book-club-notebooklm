@@ -10,17 +10,39 @@ dora_color: '#D97706'
 
 ### Watch the Meeting 3 Video {#watch-meeting-3-video}
 
+<div class="media-container">
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
+<div class="media-download-controls">
+	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" download class="download-btn">
+		<i class="fas fa-download"></i> Download Video
+	</a>
+	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" target="_blank" class="stream-btn">
+		<i class="fas fa-external-link-alt"></i> Open in New Tab
+	</a>
+</div>
+</div>
+
 ### Listen to the Meeting 3 Podcast {#listen-meeting-3-podcast}
 
+<div class="media-container">
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
+
+<div class="media-download-controls">
+	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" download class="download-btn">
+		<i class="fas fa-download"></i> Download Audio
+	</a>
+	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" target="_blank" class="stream-btn">
+		<i class="fas fa-external-link-alt"></i> Open in New Tab
+	</a>
+</div>
+</div>
 
 ### Key Insights
 
