@@ -1399,7 +1399,7 @@ h3 i, h4 i {
 /* Related Resources Compact Styling */
 .related-resources {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
@@ -1460,16 +1460,16 @@ h3 i, h4 i {
   font-size: 0.8rem;
 }
 
-/* Mobile responsive for Related Resources */
+/* Responsive adjustments for Related Resources */
 @media (max-width: 768px) {
   .related-resources {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
   }
   
   .resource-category {
-    padding: 1rem;
+    padding: 1.25rem;
   }
   
   .resource-category h3 {
@@ -1479,6 +1479,17 @@ h3 i, h4 i {
   .resource-links li {
     font-size: 0.85rem;
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .related-resources {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .resource-category {
+    padding: 1rem;
   }
 }
 </style>
