@@ -46,8 +46,7 @@ layout: null
     {% assign meetings = site.meetings | sort: 'week' %}
     {% for meeting in meetings %}
       {% assign podcast_file = 'meeting-' | append: meeting.week | append: '-podcast.m4a' %}
-      {% assign podcast_path = '/assets/media/' | append: podcast_file %}
-      {% assign full_podcast_url = site.url | append: site.baseurl | append: podcast_path %}
+  {% assign full_podcast_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: podcast_file %}
       
       <item>
         <title>{{ meeting.title | xml_escape }}</title>

@@ -116,10 +116,10 @@ Download individual audio and video files directly:
           <small>M4A Format</small>
         </div>
         <div class="download-actions">
-          <a href="{{ site.baseurl }}/assets/media/meeting-{{ meeting.week }}-podcast.m4a" download class="download-btn">
+          <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-{{ meeting.week }}-podcast.m4a" download class="download-btn">
             <i class="fas fa-download"></i> Download
           </a>
-          <a href="{{ site.baseurl }}/assets/media/meeting-{{ meeting.week }}-podcast.m4a" target="_blank" class="stream-btn">
+          <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-{{ meeting.week }}-podcast.m4a" target="_blank" class="stream-btn">
             <i class="fas fa-play"></i> Stream
           </a>
         </div>
@@ -132,10 +132,10 @@ Download individual audio and video files directly:
           <small>MP4 Format</small>
         </div>
         <div class="download-actions">
-          <a href="{{ site.baseurl }}/assets/media/meeting-{{ meeting.week }}-video.mp4" download class="download-btn">
+          <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-{{ meeting.week }}-video.mp4" download class="download-btn">
             <i class="fas fa-download"></i> Download
           </a>
-          <a href="{{ site.baseurl }}/assets/media/meeting-{{ meeting.week }}-video.mp4" target="_blank" class="stream-btn">
+          <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-{{ meeting.week }}-video.mp4" target="_blank" class="stream-btn">
             <i class="fas fa-play"></i> Stream
           </a>
         </div>
