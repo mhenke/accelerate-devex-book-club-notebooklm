@@ -1,0 +1,116 @@
+// Grid System - Responsive Layout Components
+// ==========================================
+// Flexible grid system for consistent layouts
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  
+  @include tablet-up {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+.container--narrow {
+  max-width: 800px;
+}
+
+.container--wide {
+  max-width: 1400px;
+}
+
+// Grid system
+.grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.grid--2-col {
+  @include tablet-up {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid--3-col {
+  @include tablet-up {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  @include desktop-up {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid--4-col {
+  @include tablet-up {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  @include desktop-up {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Auto-fit grid with minimum column width
+.grid--auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+  &.grid--auto-fit--small {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  &.grid--auto-fit--large {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+// Flexbox utilities
+.flex {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.flex--center {
+  @include flex-center;
+}
+
+.flex--between {
+  @include flex-between;
+}
+
+.flex--column {
+  @include flex-column;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+// Responsive flex direction
+.flex--mobile-column {
+  flex-direction: column;
+  
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+// Gap utilities
+.gap-sm { gap: var(--spacing-sm); }
+.gap-md { gap: var(--spacing-md); }
+.gap-lg { gap: var(--spacing-lg); }
+.gap-xl { gap: var(--spacing-xl); }
+
+// Section spacing
+.section {
+  padding: var(--spacing-2xl) 0;
+  
+  &.section--sm {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  &.section--lg {
+    padding: var(--spacing-3xl) 0;
+  }
+}

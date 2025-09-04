@@ -1,0 +1,218 @@
+// Badge & Label Components  
+// =========================
+// Reusable badges, pills, and label systems
+
+// Base Badge Component
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.2;
+  
+  i {
+    font-size: 0.9rem;
+  }
+}
+
+// Achievement Badge
+.achievement-badge {
+  @extend .badge;
+  @include touch-target-44px;
+  
+  background: var(--success-green);
+  color: var(--text-white);
+  font-weight: var(--font-weight-semibold);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+  width: 100%;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  
+  &:hover {
+    background: var(--success-green);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  }
+}
+
+// Meeting Meta Badge
+.meeting-meta-badge {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.meeting-week,
+.meeting-duration {
+  @extend .badge;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+// Chapters Badge  
+.chapters-badge {
+  @extend .badge;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: var(--font-size-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  
+  i {
+    font-size: 1rem;
+  }
+}
+
+// Finding Pills (themed by meeting)
+.key-findings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  align-items: center;
+}
+
+.finding-pill {
+  @extend .badge;
+  @include touch-target-44px;
+  
+  color: var(--text-white);
+  font-weight: var(--font-weight-medium);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.finding-pill.meeting-1-theme {
+  background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+  
+  &:hover {
+    background: linear-gradient(135deg, #1E40AF, #2563EB);
+  }
+}
+
+.finding-pill.meeting-2-theme {
+  background: linear-gradient(135deg, #0F766E, #14B8A6);
+  
+  &:hover {
+    background: linear-gradient(135deg, #115E59, #0D9488);
+  }
+}
+
+.finding-pill.meeting-3-theme {
+  background: linear-gradient(135deg, #D97706, #F59E0B);
+  
+  &:hover {
+    background: linear-gradient(135deg, #B45309, #D97706);
+  }
+}
+
+.finding-pill.meeting-4-theme {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  
+  &:hover {
+    background: linear-gradient(135deg, #6d28d9, #8b5cf6);
+  }
+}
+
+// Status Labels
+.status-label {
+  @extend .badge;
+  
+  &.completed {
+    background: var(--success-green);
+    color: var(--text-white);
+  }
+  
+  &.in-progress {
+    background: var(--dora-orange);
+    color: var(--text-white);
+  }
+  
+  &.not-started {
+    background: var(--text-light);
+    color: var(--text-white);
+  }
+  
+  &.high-priority {
+    background: var(--danger-red);
+    color: var(--text-white);
+  }
+}
+
+// Research Finding Badge
+.research-finding {
+  background: linear-gradient(135deg, var(--accent-sage), var(--accent-teal));
+  color: var(--text-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-xl) 0;
+  text-align: center;
+  
+  h4 {
+    color: var(--text-white);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    
+    i {
+      font-size: 1.2rem;
+    }
+  }
+  
+  p {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+  }
+  
+  strong {
+    font-weight: var(--font-weight-bold);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Performance Level Indicators
+.perf-level {
+  @extend .badge;
+  font-size: var(--font-size-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-weight: var(--font-weight-semibold);
+  
+  &.elite {
+    background: var(--success-green);
+    color: var(--text-white);
+    border: 2px solid var(--success-green);
+  }
+  
+  &.high {
+    background: var(--primary-blue);
+    color: var(--text-white);
+    border: 2px solid var(--primary-blue);
+  }
+  
+  &.medium {
+    background: var(--dora-orange);
+    color: var(--text-white);
+    border: 2px solid var(--dora-orange);
+  }
+  
+  &.low {
+    background: var(--danger-red);
+    color: var(--text-white);
+    border: 2px solid var(--danger-red);
+  }
+}

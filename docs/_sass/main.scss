@@ -17,8 +17,8 @@
 // 3. COMPONENTS - Reusable UI components (loaded async after critical)
 // Note: These will be imported conditionally based on performance budget
 
-// @import 'components/buttons'; // Button variations and states - TODO: Create
-// @import 'components/cards'; // Card components and variations - TODO: Create
+@import 'components/buttons'; // Button variations and states - CREATED
+@import 'components/cards'; // Card components and variations - CREATED
 @import 'components/navigation'; // Site navigation and menus - EXISTS
 // @import 'components/forms'; // Form elements and validation - TODO: Create
 // @import 'components/modals'; // Modal dialogs and overlays - TODO: Create
@@ -27,7 +27,7 @@
 // 4. LAYOUT - Major layout components (loaded after critical)
 @import 'layout/header'; // Site header and branding - EXISTS
 // @import 'layout/footer'; // Site footer - TODO: Create
-// @import 'layout/grid'; // Grid system and containers - TODO: Create
+@import 'layout/grid'; // Grid system and containers - CREATED
 // @import 'layout/sidebar'; // Sidebar layouts - TODO: Create
 
 // 5. PAGES - Page-specific styles (loaded per page as needed)
@@ -45,15 +45,19 @@
 // @import 'base/helpers'; // Utility classes - TODO: Create
 
 // Extended component styles
+@import 'components/assessments'; // Assessment forms and feedback
+@import 'components/timelines'; // Timeline and progress components
+@import 'components/badges'; // Badge and label components
+@import 'components/headers'; // Header and banner components
+@import 'components/metrics'; // DORA metrics and visualizations
+@import 'components/media'; // Media containers and players
+@import 'components/navigation-patterns'; // Navigation components and patterns
 // @import 'components/ai-content'; // AI-generated content styling - TODO: Create
-// @import 'components/dora-advanced'; // Advanced DORA visualizations - TODO: Create
-// @import 'components/assessments'; // Assessment forms and feedback - TODO: Create
 // @import 'components/animations'; // Non-critical animations - TODO: Create
 
 // Existing meeting-specific components
 @import 'components/meeting-content'; // Meeting content styles - EXISTS
 @import 'components/meeting-layout'; // Meeting layout styles - EXISTS
-@import 'components/media'; // Images, videos, embeds
 
 // =============================================================================
 // PERFORMANCE MONITORING & DEBUGGING

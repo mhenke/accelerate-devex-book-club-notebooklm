@@ -1,0 +1,59 @@
+// Media Container Component - Video & Audio Controls
+// =================================================
+// Reusable media player with download controls
+
+.media-container {
+  background: var(--background-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px var(--shadow-light);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+  border: 1px solid var(--border-light);
+}
+
+.media-container video,
+.media-container audio {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+}
+
+.media-download-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-md);
+}
+
+.download-btn {
+  @include touch-target-44px;
+  @include button-primary;
+  
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--accent-coral);
+  color: var(--text-white);
+  text-decoration: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.2s ease;
+  
+  &:hover,
+  &:focus {
+    background: var(--hover-coral);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
+    text-decoration: none;
+    color: var(--text-white);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--accent-coral);
+    outline-offset: 2px;
+  }
+  
+  i {
+    font-size: 1rem;
+  }
+}
