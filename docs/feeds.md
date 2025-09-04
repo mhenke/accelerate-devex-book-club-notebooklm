@@ -193,7 +193,7 @@ Download individual audio and video files directly:
 .feed-subscription-box {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border: 2px solid #dee2e6;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   margin: 1.5rem 0;
 }
@@ -306,7 +306,7 @@ Download individual audio and video files directly:
 .download-card {
   background: white;
   border: 2px solid #dee2e6;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;

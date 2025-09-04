@@ -9,7 +9,11 @@
   padding-left: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light)) !important;
+  background: linear-gradient(
+    135deg,
+    var(--meeting-bg),
+    var(--meeting-light)
+  ) !important;
   padding: 1rem 1rem 1rem 2rem;
   border-radius: 6px 8px 8px 6px;
   position: relative;
@@ -22,7 +26,11 @@
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(to bottom, var(--meeting-primary), var(--meeting-hover)) !important;
+  background: linear-gradient(
+    to bottom,
+    var(--meeting-primary),
+    var(--meeting-hover)
+  ) !important;
   border-radius: 2px;
 }
 
@@ -36,7 +44,11 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  background: linear-gradient(135deg, var(--meeting-bg), var(--background-white)) !important;
+  background: linear-gradient(
+    135deg,
+    var(--meeting-bg),
+    var(--background-white)
+  ) !important;
   border-radius: 8px;
   border-left: 3px solid var(--meeting-primary) !important;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -56,7 +68,11 @@
 
 /* Modern Cards for Content Sections */
 .meeting-content ul {
-  background: linear-gradient(135deg, var(--meeting-bg), var(--background-white)) !important;
+  background: linear-gradient(
+    135deg,
+    var(--meeting-bg),
+    var(--background-white)
+  ) !important;
   border-radius: 10px;
   padding: 0.75rem;
   border-left: 3px solid var(--meeting-primary) !important;
@@ -72,11 +88,19 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, var(--meeting-primary), transparent) !important;
+  background: linear-gradient(
+    90deg,
+    var(--meeting-primary),
+    transparent
+  ) !important;
 }
 
 .meeting-content ol {
-  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light)) !important;
+  background: linear-gradient(
+    135deg,
+    var(--meeting-bg),
+    var(--meeting-light)
+  ) !important;
   border-radius: 10px;
   padding: 0.75rem;
   border-left: 3px solid var(--meeting-primary) !important;
@@ -92,7 +116,11 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, var(--meeting-primary), transparent) !important;
+  background: linear-gradient(
+    90deg,
+    var(--meeting-primary),
+    transparent
+  ) !important;
 }
 
 .meeting-content li {
@@ -103,7 +131,7 @@
 
 /* Discussion Questions Special Styling */
 .meeting-content h2:has(+ ol),
-.meeting-content h2:contains("Discussion Questions") {
+.meeting-content h2:contains('Discussion Questions') {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border-left-color: var(--meeting-primary);
 }
@@ -114,25 +142,25 @@
 }
 
 /* Action Items Special Styling */
-.meeting-content h2:contains("Action Items") {
+.meeting-content h2:contains('Action Items') {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border-left-color: var(--meeting-primary);
 }
 
 /* Enhanced Media Sections */
-.meeting-content h2:contains("Listen to"),
-.meeting-content h2:contains("Watch the") {
+.meeting-content h2:contains('Listen to'),
+.meeting-content h2:contains('Watch the') {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border-left-color: var(--meeting-primary);
   margin-top: 4rem;
 }
 
 /* Media instruction styling */
-.meeting-content h2:contains("Listen to") + p,
-.meeting-content h2:contains("Watch the") + p {
+.meeting-content h2:contains('Listen to') + p,
+.meeting-content h2:contains('Watch the') + p {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border: 1px solid var(--meeting-border);
-  border-radius: 12px;
+
   padding: 1rem 1.5rem;
   margin: 1rem 0 2rem;
   font-style: italic;
@@ -140,16 +168,16 @@
   box-shadow: 0 2px 8px var(--meeting-border);
 }
 
-.meeting-content h2:contains("Listen to") + p a,
-.meeting-content h2:contains("Watch the") + p a {
+.meeting-content h2:contains('Listen to') + p a,
+.meeting-content h2:contains('Watch the') + p a {
   color: var(--meeting-primary);
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: var(--meeting-light);
 }
 
-.meeting-content h2:contains("Listen to") + p a:hover,
-.meeting-content h2:contains("Watch the") + p a:hover {
+.meeting-content h2:contains('Listen to') + p a:hover,
+.meeting-content h2:contains('Watch the') + p a:hover {
   color: var(--meeting-hover);
   text-decoration-color: var(--meeting-primary);
 }
@@ -163,7 +191,8 @@
   flex-wrap: wrap;
 }
 
-.download-btn, .stream-btn {
+.download-btn,
+.stream-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -178,13 +207,21 @@
 }
 
 .download-btn {
-  background: linear-gradient(135deg, var(--meeting-primary), var(--meeting-hover));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-primary),
+    var(--meeting-hover)
+  );
   color: white;
   border-color: var(--meeting-primary);
 }
 
 .download-btn:hover {
-  background: linear-gradient(135deg, var(--meeting-hover), var(--meeting-primary));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-hover),
+    var(--meeting-primary)
+  );
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -203,7 +240,8 @@
   box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
 }
 
-.download-btn i, .stream-btn i {
+.download-btn i,
+.stream-btn i {
   font-size: 1rem;
 }
 
@@ -221,7 +259,7 @@
 .meeting-content audio,
 .meeting-content video {
   width: 100%;
-  border-radius: 12px;
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   margin: 1rem 0;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -237,7 +275,7 @@
   border-left: 4px solid var(--meeting-primary);
   margin: 1.5rem 0;
   padding: 1.5rem;
-  border-radius: 12px;
+
   font-style: italic;
   font-size: 1.1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);

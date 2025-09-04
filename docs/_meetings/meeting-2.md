@@ -398,7 +398,7 @@ dora_color: '#0F766E'
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 1.5rem;
-  border-radius: 12px;
+  
   font-weight: 500;
   transition: all 0.3s ease;
   color: #4b5563;
@@ -454,7 +454,7 @@ dora_color: '#0F766E'
 
 .resource-category {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -586,7 +586,7 @@ dora_color: '#0F766E'
 
 .confusion-problem, .confusion-solution {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -641,7 +641,7 @@ dora_color: '#0F766E'
 
 .security-approach {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -682,7 +682,7 @@ dora_color: '#0F766E'
   margin-bottom: 2rem;
   padding: 1.5rem;
   background: white;
-  border-radius: 12px;
+  
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -716,7 +716,7 @@ dora_color: '#0F766E'
 
 .example-card {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -760,7 +760,7 @@ dora_color: '#0F766E'
 
 .autonomy-stat {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -853,7 +853,7 @@ dora_color: '#0F766E'
 
 .principle-card {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -896,7 +896,7 @@ dora_color: '#0F766E'
 
 .application-card {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -1187,7 +1187,7 @@ dora_color: '#0F766E'
   min-height: 48px;
   padding: 1rem 1.5rem;
   border: 2px solid #ddd;
-  border-radius: 12px;
+  
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1329,7 +1329,7 @@ dora_color: '#0F766E'
   margin-top: 1.5rem;
   padding: 1.25rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border: 2px solid #dee2e6;
   min-height: 80px;
   transition: all 0.3s ease;
@@ -1369,7 +1369,7 @@ dora_color: '#0F766E'
   min-height: 48px;
   padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border-left: 4px solid #0F766E;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -1439,7 +1439,7 @@ dora_color: '#0F766E'
   min-height: 48px;
   padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border: 2px solid #dee2e6;
   transition: all 0.3s ease;
   cursor: pointer;
