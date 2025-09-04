@@ -1177,6 +1177,7 @@ h2 {
   z-index: 2;
 }
 
+/* Hero metrics icons are links, not buttons - override any button styling */
 .hero-metrics .metric-icon {
   width: 60px;
   height: 60px;
@@ -1211,11 +1212,12 @@ h2 {
   text-decoration: none;
 }
 
-/* Enforce a single, consistent circular icon style for hero metrics */
+/* Enforce a single, consistent circular icon style for hero metrics - override button styles */
 .hero-metrics .metric-icon {
   width: 60px !important;
   height: 60px !important;
   min-height: 60px !important;
+  min-width: 60px !important;
   padding: 0 !important;
   border-radius: 50% !important;
   display: flex !important;
@@ -1224,9 +1226,25 @@ h2 {
   gap: 0.5rem !important;
   background: rgba(255, 255, 255, 0.1) !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  /* Override any button styling that might be inherited */
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: normal !important;
+  font-family: inherit !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
 }
 
-/* Prevent the hero subtitle from overlapping the metrics on large screens */
+/* Prevent overlap between subtitle and metrics across all screen sizes */
+@media (max-width: 767px) {
+  .hero-subtitle {
+    margin-bottom: 3.5rem;
+  }
+  .hero-metrics {
+    bottom: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero-subtitle {
     margin-bottom: 4.5rem;
@@ -1309,10 +1327,12 @@ h2 {
     gap: 1.5rem;
   }
 
+  /* Mobile hero metrics - override any conflicting styles */
   .hero-metrics .metric-icon {
     width: 70px !important;
     height: 70px !important;
     min-height: 70px !important;
+    min-width: 70px !important;
     padding: 0 !important;
     border-radius: 50% !important;
     display: flex !important;
@@ -1320,6 +1340,11 @@ h2 {
     align-items: center !important;
     justify-content: center !important;
     gap: 0.3rem !important;
+    /* Reset any button styles that might interfere */
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    font-weight: normal !important;
+    box-shadow: none !important;
   }
 
   .hero-metrics .metric-icon i {
@@ -3767,6 +3792,7 @@ button:focus,
     justify-content: center;
   }
 
+  /* Very small screen hero metrics - override any conflicting button styles */
   .hero-metrics .metric-icon {
     width: 65px !important;
     height: 65px !important;
@@ -3780,6 +3806,12 @@ button:focus,
     align-items: center !important;
     justify-content: center !important;
     gap: 0.2rem !important;
+    /* Reset button styles that might interfere */
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    font-weight: normal !important;
+    box-shadow: none !important;
+    font-family: inherit !important;
   }
 
   .hero-metrics .metric-icon i {
@@ -3793,13 +3825,12 @@ button:focus,
     white-space: nowrap;
     margin-top: 0;
   }
-  }
+}
 
-  .welcome-start {
-    padding: 1rem;
-    margin: 0.5rem 0;
-    font-size: 0.95rem;
-  }
+.welcome-start {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
 }
 
 /* Accessibility Enhancements */
