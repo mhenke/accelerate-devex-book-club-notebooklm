@@ -20,7 +20,7 @@ Subscribe to get audio-only podcast episodes covering each meeting's content:
   <div class="feed-url-container">
     <label for="podcast-feed-url">Podcast RSS URL:</label>
     <input type="text" id="podcast-feed-url" value="{{ site.url }}{{ site.baseurl }}/podcast.xml" readonly>
-    <button onclick="copyToClipboard('podcast-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyToClipboard('podcast-feed-url')" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
@@ -50,7 +50,7 @@ Subscribe to get video presentations for each meeting:
   <div class="feed-url-container">
     <label for="video-feed-url">Video RSS URL:</label>
     <input type="text" id="video-feed-url" value="{{ site.url }}{{ site.baseurl }}/videos.xml" readonly>
-    <button onclick="copyToClipboard('video-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyToClipboard('video-feed-url')" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
@@ -77,7 +77,7 @@ Get everything in one feed - both podcast episodes and videos:
   <div class="feed-url-container">
     <label for="complete-feed-url">Complete Media RSS URL:</label>
     <input type="text" id="complete-feed-url" value="{{ site.url }}{{ site.baseurl }}/media-feed.xml" readonly>
-    <button onclick="copyToClipboard('complete-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyToClipboard('complete-feed-url')" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
