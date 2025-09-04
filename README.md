@@ -1,13 +1,17 @@
 # Accelerate DevEx Book Club
 
-A structured Jekyll-based GitHub Pages site and resource hub for a DevOps book club focused on "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. All visuals and content are AI-generated or curated for podcasts, video, and learning materials.
+A structured Jekyll-based GitHub Pages site and resource hub for a DevOps book club focused on "Accelerate" 
+by Nicole Forsgren, Jez Humble, and Gene Kim. All visuals and content are AI-generated or curated for 
+podcasts, video, and learning materials.
 
 ---
 
 ## 🚀 Project Name and Description
 
 **Accelerate DevEx Book Club**  
-A resource hub and interactive site for learning and implementing high-performing DevOps practices, organized around the "Accelerate" book. Features meeting guides, AI-generated podcasts/videos, and practical activities.
+A resource hub and interactive site for learning and implementing high-performing DevOps practices, 
+organized around the "Accelerate" book. Features meeting guides, AI-generated podcasts/videos, and 
+practical activities.
 
 ---
 
@@ -54,7 +58,7 @@ A resource hub and interactive site for learning and implementing high-performin
 
 ## 📁 Project Structure
 
-```
+```text
 accelerate-devex-book-club-notebooklm/
 ├── README.md
 ├── CLAUDE.md
