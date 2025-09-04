@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages with LFS
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -18,14 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout with LFS
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          lfs: true
           
-      - name: Checkout LFS objects
-        run: git lfs checkout
-        
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
