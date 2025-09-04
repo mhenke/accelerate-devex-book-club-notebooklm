@@ -37,7 +37,9 @@
 ## How to Cite This Guide
 
 When referencing this guide, please use:
-"mhenke. (2024). Accelerate DevEx Book Club Guide. GitHub. <https://github.com/mhenke/accelerate-devex-book-club-notebooklm>. Based on 'Accelerate' by Forsgren, Humble, and Kim, created using Google NotebookLM and Claude (Anthropic) with human curation."
+"mhenke. (2024). Accelerate DevEx Book Club Guide. GitHub. 
+<https://github.com/mhenke/accelerate-devex-book-club-notebooklm>. Based on 'Accelerate' by Forsgren, Humble, and 
+Kim, created using Google NotebookLM and Claude (Anthropic) with human curation."
 
 ## Contributing
 
