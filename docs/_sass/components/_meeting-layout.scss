@@ -4,7 +4,7 @@
 .meeting-hero {
   color: white;
   padding: 6rem 2rem 4rem;
-  margin: -2rem -1rem 0 -1rem;
+  margin: -2rem -1rem 0;
   position: relative;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -254,7 +254,7 @@
 .meeting-progress {
   text-align: center;
   width: 100%;
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem 0 0;
   border-top: 1px solid var(--border-light);
   grid-row: 2;
 }
@@ -306,7 +306,7 @@
 @media (max-width: 768px) {
   .meeting-hero {
     padding: 4rem 1rem 2rem;
-    margin: -2rem -0.5rem 0 -0.5rem;
+    margin: -2rem -0.5rem 0;
   }
 
   .meeting-title {

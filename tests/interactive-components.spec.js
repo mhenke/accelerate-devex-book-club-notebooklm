@@ -1,4 +1,5 @@
 import AxeBuilder from '@axe-core/playwright';
+import { percySnapshot } from '@percy/playwright';
 import { expect, test } from '@playwright/test';
 
 test.describe('Interactive Components - Meeting Pages', () => {
@@ -23,6 +24,10 @@ test.describe('Interactive Components - Meeting Pages', () => {
     const feedback = page.locator('#dora-feedback');
     await expect(feedback).toHaveClass(/active/);
     await expect(feedback).toContainText('High Performers');
+
+    // Percy visual snapshot
+    await page.evaluate(() => window.scrollTo(0, 0)); // Ensure consistent viewport
+  await percySnapshot(page, 'DORA Performance Assessment');
   });
 
   test('Deployment Confidence Assessment', async ({ page }) => {
