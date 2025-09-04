@@ -18,50 +18,63 @@ This book club follows the book's own principle of breaking work into small, man
 ## Meeting Schedule
 
 ### Meeting 1: Laying the Foundation – The Myth and the Measurement
+
 **Week 1 | Duration:** 1 Hour  
 **Chapters:** 1-3 (Accelerate, Measuring Performance, Measuring and Changing Culture)
+
 - Core concepts: DORA metrics, Westrum culture types, speed vs stability myth, deployment pain
 - Interactive page: [docs/_meetings/meeting-1.md](docs/_meetings/meeting-1.md)
 
 ### Meeting 2: Technical Excellence & Continuous Delivery
+
 **Week 3 | Duration:** 1 Hour  
 **Chapters:** 4-6 (Technical Practices, Architecture, Integrating Infosec)
+
 - Core concepts: Continuous delivery practices, loosely coupled architecture, shift-left security
 - Interactive page: [docs/_meetings/meeting-2.md](docs/_meetings/meeting-2.md)
 
 ### Meeting 3: Management, Product Development & Sustainability
+
 **Week 5 | Duration:** 1 Hour  
 **Chapters:** 7-10 (Management Practices, Product Development, Making Work Sustainable, Employee Satisfaction)
+
 - Core concepts: Lean management, WIP limits, change approval processes, burnout prevention
 - Interactive page: [docs/_meetings/meeting-3.md](docs/_meetings/meeting-3.md)
 
 ### Meeting 4: Leadership, Research Methods & Transformation
+
 **Week 7 | Duration:** 1 Hour  
 **Chapters:** 11, 16, Conclusion (Leaders and Managers, High-Performance Leadership case study, wrap-up)
+
 - Core concepts: Transformational leadership, ING case study, transformation principles, 24 capabilities
 - Interactive page: [docs/_meetings/meeting-4.md](docs/_meetings/meeting-4.md)
 
 ## Resources
 
 ### Book Club Plan & Prompts
+
 - [resources/plan/plan.md](resources/plan/plan.md) - Updated book club plan with corrected chapter mappings
 - [resources/plan/audio.md](resources/plan/audio.md) - NotebookLM podcast generation prompts  
 - [resources/plan/video.md](resources/plan/video.md) - NotebookLM video generation prompts
 
 ### Interactive Meeting Pages
+
 - [docs/_meetings/](docs/_meetings/) - Four interactive meeting pages with visual elements and learning checkpoints
 
 ### Assessment & Templates
+
 - [resources/assessments/](resources/assessments/) - DORA metrics and culture assessment worksheets
 - [resources/templates/](resources/templates/) - Meeting notes and retrospective formats
 - [resources/activities/](resources/activities/) - Discussion practices and between-meeting activities
 
 ### Interactive Website
+
 - [GitHub Pages Site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) - Full interactive experience with modern design
 
 ## Success Metrics
 
 By the end of this book club, participants will be able to:
+
 - ✅ Articulate and explain the four DORA metrics and their current team performance
 - ✅ Identify specific bottlenecks and improvement opportunities using the 24 capabilities framework  
 - ✅ Implement action items from sessions with measurement and regular reflection
