@@ -157,7 +157,8 @@
 .flow-problem,
 .flow-solution,
 .flow-result {
-  @extend .card;
+  @extend %card;
+
   text-align: center;
 
   h4 {

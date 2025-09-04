@@ -35,12 +35,14 @@
 
 .hero-title {
   @include heading-xl;
+
   margin-bottom: var(--spacing-md);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
   @include text-lg;
+
   opacity: 0.9;
   margin-bottom: var(--spacing-lg);
   max-width: 600px;

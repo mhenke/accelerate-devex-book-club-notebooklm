@@ -2,7 +2,8 @@
 // =======================================
 // Reusable card styles for metrics, content, and interactive elements
 
-.card {
+// Base Card Placeholder
+%card {
   background: var(--background-white);
   border: 1px solid var(--border-light);
   border-radius: var(--border-radius);
@@ -12,7 +13,6 @@
 
   // Performance optimization with CSS containment
   contain: layout style paint;
-
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
@@ -21,9 +21,14 @@
   }
 }
 
+// Base Card Class (extends placeholder)
+.card {
+  @extend %card;
+}
+
 // Interactive cards (touch target compliant)
 .card--interactive {
-  @extend .card;
+  @extend %card;
   @include touch-target-44px;
 
   cursor: pointer;
@@ -44,6 +49,7 @@
 
   .card__title {
     @include text-lg;
+
     font-weight: var(--font-weight-semibold);
     color: var(--text-dark);
     margin-bottom: var(--spacing-md);
