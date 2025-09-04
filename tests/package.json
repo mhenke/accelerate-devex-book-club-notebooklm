@@ -8,7 +8,9 @@
     "test:ui": "dotenv -e ../.env -- playwright test --ui",
     "test:debug": "dotenv -e ../.env -- playwright test --debug",
     "test:ci": "playwright test",
-    "test:percy": "dotenv -e ../.env -- playwright test",
+    "test:percy": "dotenv -e ../.env -- percy exec -- playwright test",
+    "test:percy-local": "dotenv -e ../.env -- percy exec -- playwright test --headed",
+    "test:visual-only": "dotenv -e ../.env -- playwright test visual-regression.spec.js",
     "test:report": "playwright show-report",
     "test:codegen": "dotenv -e ../.env -- playwright codegen",
     "install-browsers": "playwright install"

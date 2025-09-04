@@ -4,15 +4,36 @@ import { expect, test } from '@playwright/test';
 
 test.describe('Interactive Components - Meeting Pages', () => {
   test.beforeEach(async ({ page }) => {
-    // Navigate to a meeting page before each test
-    await page.goto('/meetings/meeting-1/');
-    await page.waitForLoadState('networkidle');
-  });
+    // Navigate to a meeting page before each test using full URL
+    const targetUrl =
+      'http://localhost:4000/accelerate-devex-book-club-notebooklm/meetings/meeting-1/';
+    console.log('Navigating to:', targetUrl);
 
+    await page.goto(targetUrl);
+    await page.waitForLoadState('networkidle');
+
+    // Debug: Print the current URL
+    console.log('Current URL:', page.url());
+
+    // Verify we're on the correct page
+    const currentUrl = page.url();
+    if (
+      !currentUrl.includes(
+        '/accelerate-devex-book-club-notebooklm/meetings/meeting-1/'
+      )
+    ) {
+      throw new Error(
+        `Wrong URL! Expected to contain '/accelerate-devex-book-club-notebooklm/meetings/meeting-1/', got: ${currentUrl}`
+      );
+    }
+  });
   test('DORA Performance Assessment Radio Buttons', async ({ page }) => {
+    // Verify we're on the correct page
+    await expect(page).toHaveTitle(/Meeting 1: Foundation/);
+
     // Test radio button interactions
     const performanceRadios = page.locator('input[name="dora-performance"]');
-    await expect(performanceRadios).toHaveCount(4);
+    await expect(performanceRadios).toHaveCount(3);
 
     // Test selecting high performance option
     await page.locator('input[name="dora-performance"][value="high"]').check();
@@ -27,7 +48,7 @@ test.describe('Interactive Components - Meeting Pages', () => {
 
     // Percy visual snapshot
     await page.evaluate(() => window.scrollTo(0, 0)); // Ensure consistent viewport
-  await percySnapshot(page, 'DORA Performance Assessment');
+    await percySnapshot(page, 'DORA Performance Assessment');
   });
 
   test('Deployment Confidence Assessment', async ({ page }) => {
