@@ -722,6 +722,10 @@
 @import 'minima';
 @import 'minima/custom-styles';
 
+// Component imports
+@import 'components/meeting-layout';
+@import 'components/meeting-content';
+
 /* Performance: Critical CSS is inlined, non-critical styles loaded progressively */
 
 /* Global CSS Foundation - Prevent Horizontal Scroll */
