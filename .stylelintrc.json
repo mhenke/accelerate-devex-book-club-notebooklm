@@ -25,7 +25,6 @@
         "ignore": ["attribute", "class"]
       }
     ],
-    "shorthand-property-no-redundant-values": true,
     "value-no-vendor-prefix": [
       true,
       {
@@ -44,7 +43,6 @@
     "scss/dollar-variable-default": null,
     "scss/no-global-function-names": null,
     "scss/at-use-no-unnamespaced": null,
-    "media-query-no-invalid": true,
     "custom-property-pattern": "^[a-z][a-zA-Z0-9-]*$",
     "property-no-unknown": [
       true,
@@ -85,7 +83,7 @@
     "font-family-no-missing-generic-family-keyword": null
   },
   "ignoreFiles": [
-    "docs/_site/**/*", 
+    "docs/_site/**/*",
     "docs/node_modules/**/*",
     "docs/vendor/**/*",
     "docs/.jekyll-cache/**/*"
@@ -96,6 +94,12 @@
       "customSyntax": "postcss-html",
       "rules": {
         "no-empty-source": null
+      }
+    },
+    {
+      "files": ["**/*.scss"],
+      "rules": {
+        "media-query-no-invalid": null
       }
     }
   ]

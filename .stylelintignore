@@ -1,0 +1,15 @@
+# Stylelint ignore file for Jekyll project
+
+# Jekyll assets with front matter (can't be parsed as pure SCSS)
+
+docs/assets/main.scss
+
+# Jekyll build output
+
+docs/\_site/**/\*
+docs/.jekyll-cache/**/_
+docs/vendor/\*\*/_
+
+# Node modules
+
+node_modules/\*_/_

@@ -1,7 +1,29 @@
 ---
 ---
 
-// Section Accent Header
+// Main SCSS Entry Point - Critical Rendering Path Optimized
+// ===========================================================
+// Jekyll/GitHub Pages compatible entry point for modular CSS architecture
+// This file orchestrates the compilation of our SCSS 7-1-lite structure
+
+// =============================================================================
+// CRITICAL RENDERING PATH OPTIMIZATION - PHASE 1
+// =============================================================================
+
+// 1. ABSTRACTS - Design tokens and utilities (no CSS output)
+@import 'abstracts/tokens'; // Design system tokens
+@import 'abstracts/mixins'; // Utility mixins and functions
+
+// 2. BASE - Critical above-the-fold styles
+@import 'base/critical'; // Critical CSS for hero, DORA metrics, typography
+
+// =============================================================================
+// TEMPORARY: LEGACY STYLES (TO BE REFACTORED)
+// =============================================================================
+// These styles will be gradually moved to the modular architecture
+// during the refactoring process. This ensures no visual regressions.
+
+// Section Accent Header - LEGACY (move to components/headers.scss)
 .section-accent {
   border-left: 4px solid var(--accent-teal);
   padding-left: 1rem;
