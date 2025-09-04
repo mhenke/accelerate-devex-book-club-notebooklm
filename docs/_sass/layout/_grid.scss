@@ -6,7 +6,7 @@
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-md);
-  
+
   @include tablet-up {
     padding: 0 var(--spacing-lg);
   }
@@ -36,7 +36,7 @@
   @include tablet-up {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  
+
   @include desktop-up {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -46,7 +46,7 @@
   @include tablet-up {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
+
   @include desktop-up {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -55,11 +55,11 @@
 // Auto-fit grid with minimum column width
 .grid--auto-fit {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  
+
   &.grid--auto-fit--small {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
+
   &.grid--auto-fit--large {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
@@ -90,26 +90,34 @@
 // Responsive flex direction
 .flex--mobile-column {
   flex-direction: column;
-  
+
   @include tablet-up {
     flex-direction: row;
   }
 }
 
 // Gap utilities
-.gap-sm { gap: var(--spacing-sm); }
-.gap-md { gap: var(--spacing-md); }
-.gap-lg { gap: var(--spacing-lg); }
-.gap-xl { gap: var(--spacing-xl); }
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+.gap-md {
+  gap: var(--spacing-md);
+}
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+.gap-xl {
+  gap: var(--spacing-xl);
+}
 
 // Section spacing
 .section {
   padding: var(--spacing-2xl) 0;
-  
+
   &.section--sm {
     padding: var(--spacing-lg) 0;
   }
-  
+
   &.section--lg {
     padding: var(--spacing-3xl) 0;
   }

@@ -1,37 +1,39 @@
 <!-- Performance and Accessibility Optimizations -->
 <script>
   // Critical performance optimizations
-  (function() {
+  (function () {
     'use strict';
-    
+
     // Preload critical resources
     function preloadCriticalResources() {
       const criticalFonts = [
-        'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap'
+        'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap',
       ];
-      
-      criticalFonts.forEach(function(fontUrl) {
+
+      criticalFonts.forEach(function (fontUrl) {
         const link = document.createElement('link');
         link.rel = 'preload';
         link.as = 'style';
         link.href = fontUrl;
-        link.onload = function() { this.rel = 'stylesheet'; };
+        link.onload = function () {
+          this.rel = 'stylesheet';
+        };
         document.head.appendChild(link);
       });
     }
-    
+
     // Optimize images with lazy loading and WebP support
     function optimizeImages() {
       if ('loading' in HTMLImageElement.prototype) {
         // Native lazy loading
         const images = document.querySelectorAll('img:not([loading])');
-        images.forEach(function(img) {
+        images.forEach(function (img) {
           img.loading = 'lazy';
         });
       } else {
         // Intersection Observer fallback
-        const imageObserver = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
+        const imageObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
             if (entry.isIntersecting) {
               const img = entry.target;
               if (img.dataset.src) {
@@ -42,49 +44,53 @@
             }
           });
         });
-        
-        document.querySelectorAll('img[data-src]').forEach(function(img) {
+
+        document.querySelectorAll('img[data-src]').forEach(function (img) {
           imageObserver.observe(img);
         });
       }
     }
-    
+
     // Smooth scrolling with reduced motion respect
     function initSmoothScrolling() {
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-      
+      const prefersReducedMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+      );
+
       if (!prefersReducedMotion.matches) {
         document.documentElement.style.scrollBehavior = 'smooth';
-        
+
         // Enhanced smooth scrolling for anchor links
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
           if (e.target.matches('a[href^="#"]')) {
             e.preventDefault();
             const targetId = e.target.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
               targetElement.scrollIntoView({
                 behavior: 'smooth',
-                block: 'start'
+                block: 'start',
               });
             }
           }
         });
       }
     }
-    
+
     // Progressive enhancement for interactive elements
     function enhanceInteractivity() {
       // Add keyboard navigation to custom interactive elements
-      const interactiveElements = document.querySelectorAll('.timeline-node, .metric-card, .ai-tool');
-      
-      interactiveElements.forEach(function(element) {
+      const interactiveElements = document.querySelectorAll(
+        '.timeline-node, .metric-card, .ai-tool'
+      );
+
+      interactiveElements.forEach(function (element) {
         if (!element.hasAttribute('tabindex') && element.onclick) {
           element.setAttribute('tabindex', '0');
           element.setAttribute('role', 'button');
-          
-          element.addEventListener('keydown', function(e) {
+
+          element.addEventListener('keydown', function (e) {
             if (e.key === 'Enter' || e.key === ' ') {
               e.preventDefault();
               element.click();
@@ -93,11 +99,13 @@
         }
       });
     }
-    
+
     // Optimize animations for performance
     function optimizeAnimations() {
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-      
+      const prefersReducedMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+      );
+
       if (prefersReducedMotion.matches) {
         const style = document.createElement('style');
         style.textContent = `
@@ -109,81 +117,85 @@
         `;
         document.head.appendChild(style);
       }
-      
+
       // Use CSS containment for animated elements
-      const animatedElements = document.querySelectorAll('.trophy-svg, .mastery-fill, .ai-attribution__icon');
-      animatedElements.forEach(function(element) {
+      const animatedElements = document.querySelectorAll(
+        '.trophy-svg, .mastery-fill, .ai-attribution__icon'
+      );
+      animatedElements.forEach(function (element) {
         element.style.contain = 'layout style paint';
       });
-      
+
       // Dynamic will-change management to prevent memory overconsumption
       optimizeWillChange();
     }
-    
+
     // Dynamic will-change optimization - replaces static CSS declarations
     function optimizeWillChange() {
-      const interactiveElements = document.querySelectorAll('.timeline-node, .metric-card, .hero-banner, .dora-metrics-visual, .timeline-visual, .ai-tool');
-      
-      interactiveElements.forEach(function(element) {
+      const interactiveElements = document.querySelectorAll(
+        '.timeline-node, .metric-card, .hero-banner, .dora-metrics-visual, .timeline-visual, .ai-tool'
+      );
+
+      interactiveElements.forEach(function (element) {
         // Add will-change on interaction start
-        element.addEventListener('mouseenter', function() {
+        element.addEventListener('mouseenter', function () {
           this.style.willChange = 'transform';
         });
-        
-        element.addEventListener('focusin', function() {
+
+        element.addEventListener('focusin', function () {
           this.style.willChange = 'transform';
         });
-        
+
         // Remove will-change after interaction
-        element.addEventListener('mouseleave', function() {
+        element.addEventListener('mouseleave', function () {
           this.style.willChange = 'auto';
         });
-        
-        element.addEventListener('focusout', function() {
+
+        element.addEventListener('focusout', function () {
           this.style.willChange = 'auto';
         });
-        
+
         // Clean up after animations complete
-        element.addEventListener('animationend', function() {
+        element.addEventListener('animationend', function () {
           this.style.willChange = 'auto';
         });
-        
-        element.addEventListener('transitionend', function() {
+
+        element.addEventListener('transitionend', function () {
           this.style.willChange = 'auto';
         });
       });
     }
-    
+
     // Focus management for accessibility
     function improveFocusManagement() {
       let focusVisible = false;
-      
+
       // Track if user is using keyboard
-      document.addEventListener('keydown', function(e) {
+      document.addEventListener('keydown', function (e) {
         if (e.key === 'Tab') {
           focusVisible = true;
         }
       });
-      
-      document.addEventListener('mousedown', function() {
+
+      document.addEventListener('mousedown', function () {
         focusVisible = false;
       });
-      
+
       // Add focus-visible class for better styling
-      document.addEventListener('focusin', function(e) {
+      document.addEventListener('focusin', function (e) {
         if (focusVisible) {
           e.target.classList.add('focus-visible');
         }
       });
-      
-      document.addEventListener('focusout', function(e) {
+
+      document.addEventListener('focusout', function (e) {
         e.target.classList.remove('focus-visible');
       });
     }
-    
+
     // Initialize optimizations when DOM is ready
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function () {
         preloadCriticalResources();
         optimizeImages();
         initSmoothScrolling();
@@ -201,7 +213,7 @@
       improveFocusManagement();
       loadProgressiveCSS();
     }
-    
+
     // Progressive CSS loading for non-critical styles
     function loadProgressiveCSS() {
       // Load non-critical CSS after initial render
@@ -209,21 +221,21 @@
         '{{ "/assets/css/print.css" | relative_url }}',
         // Add more non-critical stylesheets here
       ];
-      
+
       // Wait for initial render before loading non-critical CSS
-      requestIdleCallback(function() {
-        nonCriticalStyles.forEach(function(styleUrl) {
+      requestIdleCallback(function () {
+        nonCriticalStyles.forEach(function (styleUrl) {
           const link = document.createElement('link');
           link.rel = 'stylesheet';
           link.href = styleUrl;
           link.media = 'print';
-          link.onload = function() {
+          link.onload = function () {
             this.media = 'all';
           };
           document.head.appendChild(link);
         });
       });
-      
+
       // Preload additional resources on user interaction
       let interactionPreloaded = false;
       function preloadOnInteraction() {
@@ -231,30 +243,34 @@
           return;
         }
         interactionPreloaded = true;
-        
+
         // Preload resources that might be needed on interaction
         const resourcesOnInteraction = [
           // Add URLs for resources needed on user interaction
         ];
-        
-        resourcesOnInteraction.forEach(function(url) {
+
+        resourcesOnInteraction.forEach(function (url) {
           const link = document.createElement('link');
           link.rel = 'prefetch';
           link.href = url;
           document.head.appendChild(link);
         });
       }
-      
+
       // Trigger preload on first user interaction
-      ['mousedown', 'touchstart', 'keydown'].forEach(function(event) {
-        document.addEventListener(event, preloadOnInteraction, { once: true, passive: true });
+      ['mousedown', 'touchstart', 'keydown'].forEach(function (event) {
+        document.addEventListener(event, preloadOnInteraction, {
+          once: true,
+          passive: true,
+        });
       });
     }
-    
+
     // Service Worker for offline functionality (progressive enhancement)
     if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
-      navigator.serviceWorker.register('{{ site.baseurl }}/sw.js')
-        .catch(function(error) {
+      navigator.serviceWorker
+        .register('{{ site.baseurl }}/sw.js')
+        .catch(function (error) {
           console.log('ServiceWorker registration failed: ', error);
         });
     }
@@ -268,27 +284,27 @@
     will-change: transform;
     contain: layout style paint;
   }
-  
+
   .dora-metrics-visual {
     contain: layout style;
   }
-  
+
   /* Focus visible improvements */
   .focus-visible {
     outline: 2px solid var(--accent-teal, #7adad1) !important;
     outline-offset: 2px !important;
   }
-  
+
   /* Lazy loading placeholder */
   img.lazy {
     opacity: 0;
     transition: opacity 0.3s;
   }
-  
+
   img.lazy.loaded {
     opacity: 1;
   }
-  
+
   /* Skip links for accessibility */
   .skip-link {
     position: absolute;
@@ -303,11 +319,11 @@
     font-weight: 600;
     transition: top 0.3s;
   }
-  
+
   .skip-link:focus {
     top: 6px;
   }
-  
+
   /* High contrast mode support */
   @media (prefers-contrast: high) {
     :root {
@@ -315,40 +331,46 @@
       --text-medium: #000000;
       --border-light: #000000;
     }
-    
-    .ai-tool, .metric-card, .timeline-node {
+
+    .ai-tool,
+    .metric-card,
+    .timeline-node {
       border: 2px solid currentColor;
     }
   }
-  
+
   /* Reduced motion support */
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
-    
-    .hero-banner, .dora-metrics-visual {
+
+    .hero-banner,
+    .dora-metrics-visual {
       will-change: auto;
     }
   }
-  
+
   /* Force GPU acceleration for smooth animations */
-  .timeline-node, .metric-card, .ai-tool {
+  .timeline-node,
+  .metric-card,
+  .ai-tool {
     transform: translateZ(0);
     backface-visibility: hidden;
   }
 </style>
 
 <!-- Preconnect to external domains for faster loading -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
-<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
 <!-- Performance validation in development -->
-{% if jekyll.environment == 'development' %}
-  {% include performance-validation.html %}
-{% endif %}
+{% if jekyll.environment == 'development' %} {% include
+performance-validation.html %} {% endif %}

@@ -19,12 +19,12 @@
   position: relative;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   }
-  
+
   .metric-icon {
     width: 60px;
     height: 60px;
@@ -36,21 +36,21 @@
     font-size: 1.5rem;
     color: var(--text-white);
   }
-  
+
   .metric-title {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--spacing-md) 0;
     color: var(--text-primary);
   }
-  
+
   .metric-description {
     color: var(--text-secondary);
     font-size: var(--font-size-base);
     line-height: 1.6;
     margin-bottom: var(--spacing-md);
   }
-  
+
   .metric-value {
     background: var(--bg-light);
     padding: var(--spacing-md);
@@ -66,7 +66,7 @@
   .metric-icon {
     background: var(--dora-blue);
   }
-  
+
   &:hover {
     border-color: var(--dora-blue);
   }
@@ -76,7 +76,7 @@
   .metric-icon {
     background: var(--dora-green);
   }
-  
+
   &:hover {
     border-color: var(--dora-green);
   }
@@ -86,7 +86,7 @@
   .metric-icon {
     background: var(--dora-orange);
   }
-  
+
   &:hover {
     border-color: var(--dora-orange);
   }
@@ -96,7 +96,7 @@
   .metric-icon {
     background: var(--dora-red);
   }
-  
+
   &:hover {
     border-color: var(--dora-red);
   }
@@ -116,33 +116,33 @@
   text-align: center;
   color: var(--text-white);
   position: relative;
-  
+
   h4 {
     margin: 0 0 var(--spacing-md) 0;
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
   }
-  
+
   .level-description {
     font-size: var(--font-size-base);
     opacity: 0.95;
     line-height: 1.5;
   }
-  
+
   &.elite {
-    background: linear-gradient(135deg, var(--success-green), #2E7D32);
+    background: linear-gradient(135deg, var(--success-green), #2e7d32);
   }
-  
+
   &.high {
-    background: linear-gradient(135deg, var(--primary-blue), #1976D2);
+    background: linear-gradient(135deg, var(--primary-blue), #1976d2);
   }
-  
+
   &.medium {
-    background: linear-gradient(135deg, var(--dora-orange), #F57C00);
+    background: linear-gradient(135deg, var(--dora-orange), #f57c00);
   }
-  
+
   &.low {
-    background: linear-gradient(135deg, var(--danger-red), #D32F2F);
+    background: linear-gradient(135deg, var(--danger-red), #d32f2f);
   }
 }
 
@@ -161,49 +161,57 @@
   padding: var(--spacing-lg);
   text-align: center;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   }
-  
+
   .result-score {
     font-size: 3rem;
     font-weight: var(--font-weight-bold);
     line-height: 1;
     margin: 0 0 var(--spacing-md) 0;
   }
-  
+
   .result-label {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--spacing-sm) 0;
   }
-  
+
   .result-description {
     color: var(--text-secondary);
     font-size: var(--font-size-base);
     line-height: 1.5;
   }
-  
+
   &.excellent {
     border-color: var(--success-green);
-    .result-score { color: var(--success-green); }
+    .result-score {
+      color: var(--success-green);
+    }
   }
-  
+
   &.good {
     border-color: var(--primary-blue);
-    .result-score { color: var(--primary-blue); }
+    .result-score {
+      color: var(--primary-blue);
+    }
   }
-  
+
   &.needs-improvement {
     border-color: var(--dora-orange);
-    .result-score { color: var(--dora-orange); }
+    .result-score {
+      color: var(--dora-orange);
+    }
   }
-  
+
   &.poor {
     border-color: var(--danger-red);
-    .result-score { color: var(--danger-red); }
+    .result-score {
+      color: var(--danger-red);
+    }
   }
 }
 
@@ -220,7 +228,7 @@
   padding: var(--spacing-lg);
   background: var(--bg-light);
   border-radius: var(--border-radius);
-  
+
   .stat-number {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: var(--font-weight-bold);
@@ -228,7 +236,7 @@
     display: block;
     line-height: 1.2;
   }
-  
+
   .stat-label {
     font-size: var(--font-size-sm);
     color: var(--text-secondary);
@@ -236,30 +244,30 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
-  
+
   .stat-trend {
     font-size: var(--font-size-sm);
     margin-top: var(--spacing-xs);
-    
+
     &.positive {
       color: var(--success-green);
-      
+
       &::before {
         content: '↗ ';
       }
     }
-    
+
     &.negative {
       color: var(--danger-red);
-      
+
       &::before {
         content: '↘ ';
       }
     }
-    
+
     &.neutral {
       color: var(--text-secondary);
-      
+
       &::before {
         content: '→ ';
       }
@@ -270,33 +278,37 @@
 // Progress Indicators
 .progress-indicator {
   margin: var(--spacing-lg) 0;
-  
+
   .progress-label {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: var(--spacing-sm);
-    
+
     .progress-title {
       font-weight: var(--font-weight-semibold);
     }
-    
+
     .progress-percentage {
       font-size: var(--font-size-sm);
       color: var(--text-secondary);
     }
   }
-  
+
   .progress-bar {
     width: 100%;
     height: 8px;
     background: var(--border-light);
     border-radius: 4px;
     overflow: hidden;
-    
+
     .progress-fill {
       height: 100%;
-      background: linear-gradient(90deg, var(--primary-blue), var(--success-green));
+      background: linear-gradient(
+        90deg,
+        var(--primary-blue),
+        var(--success-green)
+      );
       border-radius: 4px;
       transition: width 0.6s ease;
     }
@@ -314,18 +326,18 @@
   border: 1px solid var(--border-light);
   border-radius: var(--border-radius);
   margin: var(--spacing-md) 0;
-  
+
   .before-metric,
   .after-metric {
     text-align: center;
-    
+
     .metric-value {
       font-size: var(--font-size-xl);
       font-weight: var(--font-weight-bold);
       display: block;
       margin-bottom: var(--spacing-xs);
     }
-    
+
     .metric-label {
       font-size: var(--font-size-sm);
       color: var(--text-secondary);
@@ -333,15 +345,15 @@
       letter-spacing: 0.5px;
     }
   }
-  
+
   .before-metric .metric-value {
     color: var(--danger-red);
   }
-  
+
   .after-metric .metric-value {
     color: var(--success-green);
   }
-  
+
   .comparison-arrow {
     font-size: 1.5rem;
     color: var(--primary-blue);

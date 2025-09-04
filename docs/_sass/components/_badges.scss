@@ -1,4 +1,4 @@
-// Badge & Label Components  
+// Badge & Label Components
 // =========================
 // Reusable badges, pills, and label systems
 
@@ -14,7 +14,7 @@
   text-align: center;
   white-space: nowrap;
   line-height: 1.2;
-  
+
   i {
     font-size: 0.9rem;
   }
@@ -24,7 +24,7 @@
 .achievement-badge {
   @extend .badge;
   @include touch-target-44px;
-  
+
   background: var(--success-green);
   color: var(--text-white);
   font-weight: var(--font-weight-semibold);
@@ -32,7 +32,7 @@
   width: 100%;
   justify-content: center;
   margin-bottom: var(--spacing-md);
-  
+
   &:hover {
     background: var(--success-green);
     transform: translateY(-1px);
@@ -56,7 +56,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-// Chapters Badge  
+// Chapters Badge
 .chapters-badge {
   @extend .badge;
   background: rgba(255, 255, 255, 0.1);
@@ -64,7 +64,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: var(--font-size-md);
   padding: var(--spacing-md) var(--spacing-lg);
-  
+
   i {
     font-size: 1rem;
   }
@@ -82,12 +82,12 @@
 .finding-pill {
   @extend .badge;
   @include touch-target-44px;
-  
+
   color: var(--text-white);
   font-weight: var(--font-weight-medium);
   border-radius: 20px;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -95,32 +95,32 @@
 }
 
 .finding-pill.meeting-1-theme {
-  background: linear-gradient(135deg, #1E3A8A, #3B82F6);
-  
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+
   &:hover {
-    background: linear-gradient(135deg, #1E40AF, #2563EB);
+    background: linear-gradient(135deg, #1e40af, #2563eb);
   }
 }
 
 .finding-pill.meeting-2-theme {
-  background: linear-gradient(135deg, #0F766E, #14B8A6);
-  
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+
   &:hover {
-    background: linear-gradient(135deg, #115E59, #0D9488);
+    background: linear-gradient(135deg, #115e59, #0d9488);
   }
 }
 
 .finding-pill.meeting-3-theme {
-  background: linear-gradient(135deg, #D97706, #F59E0B);
-  
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+
   &:hover {
-    background: linear-gradient(135deg, #B45309, #D97706);
+    background: linear-gradient(135deg, #b45309, #d97706);
   }
 }
 
 .finding-pill.meeting-4-theme {
   background: linear-gradient(135deg, #7c3aed, #a78bfa);
-  
+
   &:hover {
     background: linear-gradient(135deg, #6d28d9, #8b5cf6);
   }
@@ -129,22 +129,22 @@
 // Status Labels
 .status-label {
   @extend .badge;
-  
+
   &.completed {
     background: var(--success-green);
     color: var(--text-white);
   }
-  
+
   &.in-progress {
     background: var(--dora-orange);
     color: var(--text-white);
   }
-  
+
   &.not-started {
     background: var(--text-light);
     color: var(--text-white);
   }
-  
+
   &.high-priority {
     background: var(--danger-red);
     color: var(--text-white);
@@ -159,7 +159,7 @@
   border-radius: var(--border-radius);
   margin: var(--spacing-xl) 0;
   text-align: center;
-  
+
   h4 {
     color: var(--text-white);
     margin-bottom: var(--spacing-md);
@@ -167,18 +167,18 @@
     align-items: center;
     justify-content: center;
     gap: var(--spacing-sm);
-    
+
     i {
       font-size: 1.2rem;
     }
   }
-  
+
   p {
     margin: 0;
     font-size: var(--font-size-lg);
     line-height: 1.6;
   }
-  
+
   strong {
     font-weight: var(--font-weight-bold);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -191,25 +191,25 @@
   font-size: var(--font-size-lg);
   padding: var(--spacing-md) var(--spacing-lg);
   font-weight: var(--font-weight-semibold);
-  
+
   &.elite {
     background: var(--success-green);
     color: var(--text-white);
     border: 2px solid var(--success-green);
   }
-  
+
   &.high {
     background: var(--primary-blue);
     color: var(--text-white);
     border: 2px solid var(--primary-blue);
   }
-  
+
   &.medium {
     background: var(--dora-orange);
     color: var(--text-white);
     border: 2px solid var(--dora-orange);
   }
-  
+
   &.low {
     background: var(--danger-red);
     color: var(--text-white);
