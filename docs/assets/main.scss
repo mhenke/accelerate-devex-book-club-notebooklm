@@ -720,6 +720,7 @@
 
 // Jekyll theme partial import (minimal)
 @import 'minima';
+@import 'minima/custom-styles';
 
 /* Performance: Critical CSS is inlined, non-critical styles loaded progressively */
 
@@ -1067,7 +1068,6 @@ h2 {
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 30px var(--shadow-medium);
-  border-radius: 0 0 2rem 2rem;
   width: 100%;
   max-width: 100vw;
 }
@@ -1148,7 +1148,7 @@ h2 {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   font-family: 'Inter', sans-serif;
   animation: fadeInUp 1s ease-out 0.3s both;
   letter-spacing: 0.02em;
@@ -1186,7 +1186,6 @@ h2 {
   justify-content: center;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
-  transition: all 0.3s ease;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -1206,11 +1205,44 @@ h2 {
 }
 
 .hero-metrics .metric-icon:hover {
-  transform: scale(1.15);
   background: rgba(255, 255, 255, 0.2);
   color: var(--text-white);
   border-color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
+}
+
+/* Enforce a single, consistent circular icon style for hero metrics */
+.hero-metrics .metric-icon {
+  width: 60px !important;
+  height: 60px !important;
+  min-height: 60px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Prevent the hero subtitle from overlapping the metrics on large screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-subtitle {
+    margin-bottom: 4.5rem;
+  }
+  .hero-metrics {
+    bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-subtitle {
+    margin-bottom: 5rem;
+  }
+  .hero-metrics {
+    bottom: 3rem;
+  }
 }
 
 /* Hero metrics icons now use inline SVG - background images removed */
@@ -1278,12 +1310,20 @@ h2 {
   }
 
   .hero-metrics .metric-icon {
-    width: 50px;
-    height: 50px;
+    width: 70px !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.3rem !important;
   }
 
   .hero-metrics .metric-icon i {
-    font-size: 1.5rem;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -2578,7 +2618,6 @@ pre {
   .wheel-center {
     width: 90px;
     height: 90px;
-    font-size: 0.85rem;
   }
 
   .practice-spoke {
@@ -2893,7 +2932,20 @@ pre {
   }
 
   .hero-metrics .metric-icon {
-    font-size: 2rem;
+    width: 70px !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.3rem !important;
+  }
+
+  .hero-metrics .metric-icon i {
+    font-size: 1.2rem !important;
   }
 
   .resource-grid {
@@ -2997,7 +3049,7 @@ pre {
 @media (max-width: 767px) {
   .hero-banner {
     padding: 3rem 1rem;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
     margin: 0 0 4rem 0;
   }
 
@@ -3026,16 +3078,29 @@ pre {
   }
 
   .hero-metrics .metric-icon {
-    width: 80px;
-    height: auto;
-    border-radius: 12px;
-    padding: 0.75rem 0.5rem;
-    min-height: 80px;
+    width: 70px !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.3rem !important;
+  }
+
+  .hero-metrics .metric-icon i {
+    font-size: 1.2rem !important;
   }
 
   .hero-metrics .metric-icon span {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.6rem !important;
+    line-height: 1.1;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 0;
   }
 
   .welcome-start {
@@ -3703,15 +3768,31 @@ button:focus,
   }
 
   .hero-metrics .metric-icon {
-    width: 70px;
-    min-width: 70px;
-    padding: 0.5rem;
+    width: 65px !important;
+    height: 65px !important;
+    min-height: 65px !important;
+    min-width: 65px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
     flex: 0 0 auto;
-    min-height: 70px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.2rem !important;
+  }
+
+  .hero-metrics .metric-icon i {
+    font-size: 1.1rem !important;
   }
 
   .hero-metrics .metric-icon span {
-    font-size: 0.65rem;
+    font-size: 0.55rem !important;
+    line-height: 1.1;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 0;
+  }
   }
 
   .welcome-start {
