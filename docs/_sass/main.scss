@@ -17,37 +17,42 @@
 // 3. COMPONENTS - Reusable UI components (loaded async after critical)
 // Note: These will be imported conditionally based on performance budget
 
-@import 'components/buttons'; // Button variations and states
-@import 'components/cards'; // Card components and variations
-@import 'components/navigation'; // Site navigation and menus
-@import 'components/forms'; // Form elements and validation
-@import 'components/modals'; // Modal dialogs and overlays
+// @import 'components/buttons'; // Button variations and states - TODO: Create
+// @import 'components/cards'; // Card components and variations - TODO: Create
+@import 'components/navigation'; // Site navigation and menus - EXISTS
+// @import 'components/forms'; // Form elements and validation - TODO: Create
+// @import 'components/modals'; // Modal dialogs and overlays - TODO: Create
+@import 'components/hero'; // Hero banner component - EXISTS
 
 // 4. LAYOUT - Major layout components (loaded after critical)
-@import 'layout/header'; // Site header and branding
-@import 'layout/footer'; // Site footer
-@import 'layout/grid'; // Grid system and containers
-@import 'layout/sidebar'; // Sidebar layouts
+@import 'layout/header'; // Site header and branding - EXISTS
+// @import 'layout/footer'; // Site footer - TODO: Create
+// @import 'layout/grid'; // Grid system and containers - TODO: Create
+// @import 'layout/sidebar'; // Sidebar layouts - TODO: Create
 
 // 5. PAGES - Page-specific styles (loaded per page as needed)
-@import 'pages/home'; // Homepage specific styles
-@import 'pages/meetings'; // Meeting pages
-@import 'pages/resources'; // Resource pages
+// @import 'pages/home'; // Homepage specific styles - TODO: Create
+// @import 'pages/meetings'; // Meeting pages - TODO: Create
+// @import 'pages/resources'; // Resource pages - TODO: Create
 
 // =============================================================================
 // NON-CRITICAL STYLES (Loaded after above-the-fold content)
 // =============================================================================
 
 // Reset and normalize (non-critical parts)
-@import 'base/reset'; // Complete reset beyond critical
-@import 'base/typography'; // Extended typography styles
-@import 'base/helpers'; // Utility classes
+// @import 'base/reset'; // Complete reset beyond critical - TODO: Create
+// @import 'base/typography'; // Extended typography styles - TODO: Create
+// @import 'base/helpers'; // Utility classes - TODO: Create
 
 // Extended component styles
-@import 'components/ai-content'; // AI-generated content styling
-@import 'components/dora-advanced'; // Advanced DORA visualizations
-@import 'components/assessments'; // Assessment forms and feedback
-@import 'components/animations'; // Non-critical animations
+// @import 'components/ai-content'; // AI-generated content styling - TODO: Create
+// @import 'components/dora-advanced'; // Advanced DORA visualizations - TODO: Create
+// @import 'components/assessments'; // Assessment forms and feedback - TODO: Create
+// @import 'components/animations'; // Non-critical animations - TODO: Create
+
+// Existing meeting-specific components
+@import 'components/meeting-content'; // Meeting content styles - EXISTS
+@import 'components/meeting-layout'; // Meeting layout styles - EXISTS
 @import 'components/media'; // Images, videos, embeds
 
 // =============================================================================

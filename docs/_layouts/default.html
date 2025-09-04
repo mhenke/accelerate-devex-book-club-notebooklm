@@ -80,19 +80,50 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
 
-    <!-- Optimized CSS loading -->
+    <!-- Critical CSS - Inlined for optimal performance -->
+    {% comment %} Note: For full implementation, critical CSS should be generated during build {% endcomment %}
+    <style>
+      /* Critical above-the-fold styles - extracted from main.scss */
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { font-size: 16px; line-height: 1.6; }
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+      .skip-link { position: absolute; top: -40px; left: 6px; background: #ff7f50; color: white; padding: 8px; text-decoration: none; }
+      .skip-link:focus { top: 6px; }
+    </style>
+
+    <!-- Non-critical CSS - Deferred loading -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="{{ '/assets/main.css' | relative_url }}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
       media="screen"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{ '/assets/main.css' | relative_url }}"
+        media="screen"
+      />
+    </noscript>
+
+    <!-- Font Awesome - Preload for performance -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      media="screen"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+    </noscript>
   </head>
   <body>
     <!-- Skip navigation for screen readers -->
