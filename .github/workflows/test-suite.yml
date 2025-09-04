@@ -54,8 +54,28 @@ jobs:
       - name: Link checking
         run: npx hyperlink "_site/**/*.html"
 
-      - name: Visual regression testing
-        run: npx percy exec -- npm run test:visual
+      - name: Install Playwright dependencies
+        run: |
+          cd tests
+          npm install
+          npx playwright install --with-deps
+
+      - name: Start Jekyll server for testing
+        run: |
+          cd docs
+          bundle exec jekyll serve --detach --port 4000
+          sleep 5
+
+      - name: Visual regression testing with Percy
+        run: |
+          cd tests
+          npm run test:ci
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
       - name: Interactive component testing
-        run: npm run test:interactive
+        run: |
+          cd tests
+          npm run test:ci
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
