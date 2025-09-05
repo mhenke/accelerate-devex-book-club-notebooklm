@@ -407,22 +407,14 @@ Include real organizational examples and practical next steps.</code></pre>
 
 ---
 
-<div class="ai-attribution">
+---
+
+<footer class="ai-attribution" markdown="0">
   <div class="ai-attribution__icon">
-    <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+    <i class="fas fa-robot" aria-hidden="true"></i>
   </div>
   <div class="ai-attribution__content">
-    <h4 class="ai-attribution__title">AI-Enhanced Learning</h4>
-    <p class="ai-attribution__text">These prompts were designed with <strong>Claude</strong> to help you create engaging supplementary content with <strong>NotebookLM</strong>.</p>
-    <div class="ai-attribution__tools">
-      <div class="ai-tool">
-        <i class="fas fa-brain" aria-hidden="true"></i>
-        <span>Claude</span>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-        <span>NotebookLM</span>
-      </div>
-    </div>
+    <h4 class="ai-attribution__title">AI-Generated Content</h4>
+    <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
   </div>
-</div>
+</footer>
