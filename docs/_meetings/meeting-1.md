@@ -1441,36 +1441,6 @@ h3 i, h4 i {
   color: #1E3A8A;
 }
 
-.resource-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.resource-links li {
-  margin-bottom: 0.75rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.resource-links a {
-  color: #1e40af;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.resource-links a:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
-}
-
-.resource-links li::before {
-  content: "▶";
-  color: #1E3A8A;
-  margin-right: 0.5rem;
-  font-size: 0.8rem;
-}
 
 /* Responsive adjustments for Related Resources */
 @media (max-width: 768px) {
