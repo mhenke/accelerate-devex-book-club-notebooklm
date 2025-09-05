@@ -115,7 +115,7 @@ Download individual audio and video files directly:
           <span>Podcast Audio</span>
           <small>M4A Format</small>
         </div>
-        <div class="download-actions">
+        <div class="download-actions" markdown="0">
           <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-{{ meeting.week }}-podcast.m4a" download class="download-btn">
             <i class="fas fa-download"></i> Download
           </a>
@@ -131,7 +131,7 @@ Download individual audio and video files directly:
           <span>Video Content</span>
           <small>MP4 Format</small>
         </div>
-        <div class="download-actions">
+        <div class="download-actions" markdown="0">
           <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-{{ meeting.week }}-video.mp4" download class="download-btn">
             <i class="fas fa-download"></i> Download
           </a>
@@ -393,36 +393,16 @@ Download individual audio and video files directly:
   gap: 0.5rem;
 }
 
-.download-btn, .stream-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.download-btn {
-  background: #007bff;
-  color: white;
-}
-
-.download-btn:hover {
-  background: #0056b3;
-  color: white;
-}
-
+/* Buttons use main stylesheet - download-btn and stream-btn are defined there */
 .stream-btn {
-  background: #28a745;
-  color: white;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: var(--text-white);
 }
 
 .stream-btn:hover {
-  background: #1e7e34;
-  color: white;
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
 }
 
 /* Responsive Design */

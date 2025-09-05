@@ -28,7 +28,7 @@ title: AI Content Generation
       </div>
       <h3>Meeting 1: Foundation</h3>
       <p><strong>DORA Metrics & Speed vs. Stability</strong></p>
-      <div class="prompt-links">
+      <div class="prompt-links" markdown="0">
         <a href="#podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
@@ -44,7 +44,7 @@ title: AI Content Generation
       </div>
       <h3>Meeting 2: Culture & CD</h3>
       <p><strong>Westrum Culture & Continuous Delivery</strong></p>
-      <div class="prompt-links">
+      <div class="prompt-links" markdown="0">
         <a href="#podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
@@ -60,7 +60,7 @@ title: AI Content Generation
       </div>
       <h3>Meeting 3: Architecture</h3>
       <p><strong>Loose Coupling & Team Autonomy</strong></p>
-      <div class="prompt-links">
+      <div class="prompt-links" markdown="0">
         <a href="#meeting-3-podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
@@ -76,7 +76,7 @@ title: AI Content Generation
       </div>
       <h3>Meeting 4: Leadership</h3>
       <p><strong>Transformational Leadership</strong></p>
-      <div class="prompt-links">
+      <div class="prompt-links" markdown="0">
         <a href="#podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
