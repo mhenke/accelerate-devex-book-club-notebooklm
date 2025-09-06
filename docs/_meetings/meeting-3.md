@@ -261,77 +261,7 @@ dora_color: '#D97706'
   </defs>
 </svg>
 
-### Deployment Pain Transformation Spectrum
 
-<svg width="100%" height="300" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" aria-label="Deployment Pain to Sustainability Transformation">
-  <rect x="10" y="10" width="980" height="280" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="3"/>
-  <text x="500" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">From Deployment Pain to Work Sustainability</text>
-
-  <!-- Pain Signals Side -->
-  <rect x="50" y="70" width="300" height="180" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
-  <circle cx="200" cy="100" r="20" fill="#dc2626"/>
-  <circle cx="200" cy="106" r="8" fill="white"/>
-  <text x="200" y="109" text-anchor="middle" font-size="10" fill="#dc2626" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f071</text>
-  <text x="200" y="130" text-anchor="middle" font-size="18" fill="#dc2626" font-weight="bold">Deployment Pain Signals</text>
-  
-  <text x="70" y="155" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f186</tspan> Deployments outside business hours</text>
-  <text x="70" y="175" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f256</tspan> Manual deployment processes</text>
-  <text x="70" y="195" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f362</tspan> Complex team handoffs</text>
-  <text x="70" y="215" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f21e</tspan> Engineer anxiety before pushes</text>
-  
-  <text x="200" y="230" text-anchor="middle" font-size="14" fill="#dc2626" font-weight="bold" font-style="italic">High Pain = Lower Performance + Burnout Risk</text>
-
-  <!-- Transformation Arrow -->
-  <line x1="350" y1="160" x2="450" y2="160" stroke="#d97706" stroke-width="6" marker-end="url(#arrow-transform)"/>
-  <text x="400" y="145" text-anchor="middle" font-size="14" fill="#d97706" font-weight="bold">Transform</text>
-  <text x="400" y="180" text-anchor="middle" font-size="12" fill="#d97706">Microsoft: 38% → 75%</text>
-  <text x="400" y="195" text-anchor="middle" font-size="12" fill="#d97706">work-life satisfaction</text>
-
-  <!-- Sustainable Practices Side -->
-  <rect x="470" y="70" width="300" height="180" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
-  <circle cx="620" cy="100" r="20" fill="#16a34a"/>
-  <circle cx="620" cy="106" r="8" fill="white"/>
-  <text x="620" y="109" text-anchor="middle" font-size="10" fill="#16a34a" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f4d8</text>
-  <text x="620" y="130" text-anchor="middle" font-size="18" fill="#16a34a" font-weight="bold">Sustainable Practices</text>
-  
-  <text x="490" y="155" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f544</tspan> Automation eliminates manual steps</text>
-  <text x="490" y="175" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f017</tspan> Frequent deployments, business hours</text>
-  <text x="490" y="195" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f3ed</tspan> Built-in quality and testing</text>
-  <text x="490" y="215" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f0f4</tspan> Normal workday deployments</text>
-  
-  <text x="620" y="230" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="bold" font-style="italic">Low Pain = High Performance + Work-Life Balance</text>
-
-  <!-- Bottom Research Finding -->
-
-<text x="500" y="275" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Teams with low deployment pain are 3x more likely to have sustainable work practices</text>
-
-  <defs>
-    <marker id="arrow-transform" markerWidth="15" markerHeight="15" refX="7" refY="7" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L15,7 L0,14 Z" fill="#d97706" />
-    </marker>
-  </defs>
-</svg>
-
-### Employee Satisfaction Impact
-
-<div class="research-finding" markdown="0">
-  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
-  <p>High-performing teams are <strong>2.2x more likely</strong> to recommend their organization as a great place to work. Four key factors drive satisfaction: meaningful work, right tools, values alignment, and team diversity.</p>
-</div>
-
-### Microsoft DevOps Impact
-
-<div class="research-finding" markdown="0">
-  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
-  <p>Microsoft teams implementing DevOps practices saw <strong>38% → 75% improvement</strong> in work-life balance satisfaction. Teams with low deployment pain are <strong>3x more likely</strong> to have sustainable work practices and higher job satisfaction.</p>
-</div>
-
-### Burnout Prevention Strategy
-
-<div class="research-finding" markdown="0">
-  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
-  <p>Maslach identified six organizational risk factors for burnout: work overload, lack of control, insufficient rewards, community breakdown, absence of fairness, and value conflicts. <strong>Fix the environment, not the person</strong> - environmental changes are more effective than individual interventions.</p>
-</div>
 
 <style>
 /* eNPS Assessment Styling */
