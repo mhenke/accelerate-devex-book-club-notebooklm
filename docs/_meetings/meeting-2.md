@@ -419,43 +419,39 @@ dora_color: '#0F766E'
 
 ### Action Items for Next Meeting
 
-<div class="action-items-grid" markdown="0">
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+<div class="action-checklist" markdown="0">
+  <p class="checklist-intro">Ready to level up your CD practices? Check off these game-changing actions before our next session!</p>
+  
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-1" class="action-checkbox">
+    <label for="action-1" class="action-label">
       <i class="fas fa-robot"></i>
-      <h4>Automate Manual Process</h4>
-    </div>
-    <p><strong>Identify one manual process that could be automated</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Look for repetitive deployment or testing tasks</span>
-      <span>• Consider configuration management automation</span>
-      <span>• Start small - choose something achievable in 1-2 weeks</span>
+      <strong>Automate ONE painful manual process</strong> - What task makes your team groan every time?
+    </label>
+    <div class="action-details">
+      Look for repetitive deployment, testing, or configuration tasks. Start small and achievable - pick something you can automate in 1-2 weeks. Quick wins build momentum.
     </div>
   </div>
 
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-2" class="action-checkbox">
+    <label for="action-2" class="action-label">
       <i class="fas fa-project-diagram"></i>
-      <h4>Map Dependencies</h4>
-    </div>
-    <p><strong>Map current dependencies that prevent independent deployment</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Document shared databases and services</span>
-      <span>• Identify coordination requirements with other teams</span>
-      <span>• Note infrastructure and release dependencies</span>
+      <strong>Map your dependency hell</strong> - What stops your team from deploying independently?
+    </label>
+    <div class="action-details">
+      Document shared databases, services, and coordination requirements with other teams. Note infrastructure dependencies. Make the invisible visible.
     </div>
   </div>
 
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-3" class="action-checkbox">
+    <label for="action-3" class="action-label">
       <i class="fas fa-flask"></i>
-      <h4>Try CD Practice</h4>
-    </div>
-    <p><strong>Experiment with one CD practice (trunk-based development, test automation, etc.)</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Choose based on current maturity level</span>
-      <span>• Set measurable goals for the experiment</span>
-      <span>• Plan to share results with team in next meeting</span>
+      <strong>Experiment with ONE CD practice</strong> - What will you try: trunk-based dev, test automation, or feature flags?
+    </label>
+    <div class="action-details">
+      Choose based on your team's current maturity level. Set measurable goals and timeline. Plan to share results and learnings with your team next meeting.
     </div>
   </div>
 </div>
