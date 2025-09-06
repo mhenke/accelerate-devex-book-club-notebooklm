@@ -724,8 +724,7 @@ h3 {
   border-left: 4px solid #7c3aed;
   background: linear-gradient(135deg, #f5f3ff, #ede9fe);
   padding: 1rem 1.5rem;
-  margin: 2rem 0 1.5rem 0;
-  color: #6d28d9;
+  margin: 0;
   font-weight: 600;
 }
 

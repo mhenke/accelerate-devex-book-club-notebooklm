@@ -1127,8 +1127,7 @@ h3 {
   border-left: 4px solid #d97706;
   background: linear-gradient(135deg, #fff7ed, #fef3c7);
   padding: 1rem 1.5rem;
-  margin: 2rem 0 1.5rem 0;
-  color: #92400e;
+  margin: 0;
   font-weight: 600;
 }
 
@@ -1228,7 +1227,7 @@ h3 {
 }
 
 .action-item-card {
-  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  background: linear-gradient(135deg, #fff7ed, #e9ecef);
   padding: 1.5rem;
   border-top: 4px solid #d97706;
   box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
