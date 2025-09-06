@@ -264,7 +264,7 @@ dora_color: '#0F766E'
         <small>Security team reviews at end, manual security checks, separate security processes</small>
       </label>
     </div>
-    <div class="feedback-area" id="security-feedback">
+    <div class="feedback-area" id="checkpoint-feedback">
       <p>Select your security integration level to see improvement strategies and performance impacts.</p>
     </div>
   </div>
@@ -1828,7 +1828,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Security Integration Assessment functionality
   const securityIntegrationInputs = document.querySelectorAll('input[name="security-integration"]');
-  const securityFeedback = document.getElementById('security-feedback');
+  const securityFeedback = document.getElementById('checkpoint-feedback');
   
   const securityInfo = {
     high: {
