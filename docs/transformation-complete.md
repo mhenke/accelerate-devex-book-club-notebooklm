@@ -421,6 +421,16 @@ nav_order: 6
 </footer>
 
 <style>
+/* H3 Themed Styling */
+h3 {
+  border-left: 4px solid #FFD700;
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  color: #d97706;
+  font-weight: 600;
+}
+
 .celebration-header {
   text-align: center;
   margin: 2rem 0;
