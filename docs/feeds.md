@@ -2,11 +2,11 @@
 layout: default
 title: RSS Feeds & Downloads
 permalink: /feeds/
-
 # <i class="fas fa-rss"></i> RSS Feeds & Media Downloads
 
 Subscribe to our RSS feeds to get the latest podcast episodes and videos delivered automatically, or download individual files directly.
-
+# End YAML front matter
+---
 
 ## <i class="fas fa-podcast"></i> Podcast Feeds
 
@@ -17,15 +17,11 @@ Subscribe to get audio-only podcast episodes covering each meeting's content:
 <div class="feed-subscription-box">
 <p style="text-align: center; margin-top: 2rem;">
   <a href="/accelerate-devex-book-club-notebooklm/feeds/" class="btn btn-feeds">Explore RSS Feeds & Downloads</a>
-</p>
   <div class="feed-url-container">
     <label for="podcast-feed-url">Podcast RSS URL:</label>
     <input type="text" id="podcast-feed-url" value="{{ site.url }}{{ site.baseurl }}/podcast.xml" readonly>
-    <button type="button" onclick="copyToClipboard('podcast-feed-url')" class="copy-btn">
-      <i class="fas fa-copy"></i> Copy
-    </button>
-  </div>
-  
+# End YAML front matter
+---
   <div class="feed-actions">
     <a href="{{ site.baseurl }}/podcast.xml" class="feed-link" target="_blank">
       <i class="fas fa-rss"></i> View RSS Feed
@@ -189,244 +185,314 @@ Download individual audio and video files directly:
 - **NewsBlur** (Web/Mobile)
 - **RSS Guard** (Desktop)
 
-<style>
-/* Feed Subscription Styling */
+/_ Feed Subscription Styling _/
 .feed-subscription-box {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border: 2px solid #dee2e6;
-  
-  padding: 1.5rem;
-  margin: 1.5rem 0;
+background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+border: 2px solid #dee2e6;
+
+padding: 1.5rem;
+margin: 1.5rem 0;
 }
 
 .feed-url-container {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
+align-items: center;
+gap: 0.75rem;
+margin-bottom: 1rem;
+flex-wrap: wrap;
 }
 
 .feed-url-container label {
-  font-weight: 600;
-  color: #495057;
+font-weight: 600;
+color: #495057;
+
+---
+
+layout: default
+title: RSS Feeds & Downloads
+permalink: /feeds/
+
+---
+
+# <i class="fas fa-rss"></i> RSS Feeds & Media Downloads
+
+Subscribe to our RSS feeds to get the latest podcast episodes and videos delivered automatically, or download individual files directly.
+
+## <i class="fas fa-podcast"></i> Podcast Feeds
+
+### Audio Podcast Feed
+
+Subscribe to get audio-only podcast episodes covering each meeting's content:
+
+<div class="feed-subscription-box">
+<p style="text-align: center; margin-top: 2rem;">
+  <a href="/accelerate-devex-book-club-notebooklm/feeds/" class="btn btn-feeds">Explore RSS Feeds & Downloads</a>
+</p>
   white-space: nowrap;
 }
 
 .feed-url-container input {
-  flex: 1;
-  padding: 0.75rem;
-  border: 1px solid #ced4da;
-  border-radius: 6px;
-  font-family: 'Courier New', monospace;
-  font-size: 0.9rem;
-  background: white;
-  min-width: 300px;
+flex: 1;
+padding: 0.75rem;
+border: 1px solid #ced4da;
+border-radius: 6px;
+font-family: 'Courier New', monospace;
+font-size: 0.9rem;
+background: white;
+min-width: 300px;
 }
 
 .copy-btn {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  white-space: nowrap;
+background: #007bff;
+color: white;
+border: none;
+padding: 0.75rem 1rem;
+border-radius: 6px;
+cursor: pointer;
+transition: background 0.2s ease;
+white-space: nowrap;
 }
 
 .copy-btn:hover {
-  background: #0056b3;
+background: #0056b3;
 }
 
-.feed-actions {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+display: flex;
+
+---
+
+layout: default
+title: "RSS Feeds & Downloads"
+permalink: /feeds/
+
+---
+
+flex-wrap: wrap;
 }
 
 .feed-link, .subscribe-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.75rem 1rem;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 500;
+transition: all 0.2s ease;
 }
 
-  background: #28a745;
-  color: white;
+background: #28a745;
+color: white;
 }
+
 ---
+
 .subscribe-link.spotify {
-  background: #1db954;
-  color: white;
+background: #1db954;
+color: white;
 }
 
 .subscribe-link.spotify:hover {
-  background: #1ed760;
-  color: white;
+background: #1ed760;
+color: white;
 }
 
 .subscribe-link.youtube {
-  background: #ff0000;
+background: #ff0000;
+color: white;
+}
+
+## .subscribe-link.youtube:hover {
+
+layout: default
+title: RSS Feeds & Downloads
+permalink: /feeds/
+
+---
+
+# <i class="fas fa-rss"></i> RSS Feeds & Media Downloads
+
+Subscribe to our RSS feeds to get the latest podcast episodes and videos delivered automatically, or download individual files directly.
+
+## <i class="fas fa-podcast"></i> Podcast Feeds
+
+### Audio Podcast Feed
+
+Subscribe to get audio-only podcast episodes covering each meeting's content:
+
+<div class="feed-subscription-box">
+<p style="text-align: center; margin-top: 2rem;">
+  <a href="/accelerate-devex-book-club-notebooklm/feeds/" class="btn btn-feeds">Explore RSS Feeds & Downloads</a>
+</p>
+  <div class="feed-url-container">
+    <label for="podcast-feed-url">Podcast RSS URL:</label>
+    <input type="text" id="podcast-feed-url" value="{{ site.url }}{{ site.baseurl }}/podcast.xml" readonly>
+    <button type="button" onclick="copyToClipboard('podcast-feed-url')" class="copy-btn">
+      <i class="fas fa-copy"></i> Copy
+    </button>
+  </div>
+  
+  <div class="feed-actions">
+    <a href="{{ site.baseurl }}/podcast.xml" class="feed-link" target="_blank">
+      <i class="fas fa-rss"></i> View RSS Feed
+    </a>
+    <a href="https://podcasts.apple.com/podcast/subscribe?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="subscribe-link apple" target="_blank">
+      <i class="fab fa-apple"></i> Apple Podcasts
+    </a>
+    <a href="https://open.spotify.com/show/rss?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="subscribe-link spotify" target="_blank">
+      <i class="fab fa-spotify"></i> Spotify
+    </a>
+  </div>
+</div>
   color: white;
 }
 
-.subscribe-link.youtube:hover {
-  background: #cc0000;
-  color: white;
-}
-
-/* Downloads Grid */
+/_ Downloads Grid _/
 .downloads-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap: 1.5rem;
+margin: 2rem 0;
 }
 
 .download-card {
-  background: white;
-  border: 2px solid #dee2e6;
-  
-  padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+background: white;
+border: 2px solid #dee2e6;
+
+padding: 1.5rem;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .download-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+transform: translateY(-2px);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .download-header h3 {
-  margin: 0 0 0.5rem 0;
-  color: #495057;
-  font-size: 1.2rem;
+margin: 0 0 0.5rem 0;
+color: #495057;
+font-size: 1.2rem;
 }
 
 .download-header p {
-  margin: 0 0 1rem 0;
-  color: #6c757d;
-  font-style: italic;
+margin: 0 0 1rem 0;
+color: #6c757d;
+font-style: italic;
 }
 
 .meeting-meta {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+display: flex;
+gap: 1rem;
+margin-bottom: 1rem;
 }
 
 .meeting-week, .meeting-chapters {
-  background: #e9ecef;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #495057;
+background: #e9ecef;
+padding: 0.25rem 0.75rem;
+border-radius: 20px;
+font-size: 0.85rem;
+font-weight: 500;
+color: #495057;
 }
 
 .download-options {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
 }
 
 .download-option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  background: #f8f9fa;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+border: 1px solid #dee2e6;
+border-radius: 8px;
+background: #f8f9fa;
 }
 
 .download-option.audio {
-  border-left: 4px solid #28a745;
+border-left: 4px solid #28a745;
 }
 
 .download-option.video {
-  border-left: 4px solid #dc3545;
+border-left: 4px solid #dc3545;
 }
 
 .download-info {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+display: flex;
+align-items: center;
+gap: 0.75rem;
 }
 
 .download-info i {
-  font-size: 1.2rem;
-  color: #495057;
+font-size: 1.2rem;
+color: #495057;
 }
 
 .download-info span {
-  font-weight: 500;
-  color: #495057;
+font-weight: 500;
+color: #495057;
 }
 
 .download-info small {
-  color: #6c757d;
+color: #6c757d;
 }
 
 .download-actions {
-  display: flex;
-  gap: 0.5rem;
+display: flex;
+gap: 0.5rem;
 }
 
-/* Buttons use main stylesheet - download-btn and stream-btn are defined there */
+/_ Buttons use main stylesheet - download-btn and stream-btn are defined there _/
 .stream-btn {
-  background: linear-gradient(135deg, #16a34a, #15803d);
-  color: var(--text-white);
+background: linear-gradient(135deg, #16a34a, #15803d);
+color: var(--text-white);
 }
 
 .stream-btn:hover {
-  background: linear-gradient(135deg, #15803d, #16a34a);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+background: linear-gradient(135deg, #15803d, #16a34a);
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
 }
 
-/* Responsive Design */
+/_ Responsive Design _/
 @media (max-width: 768px) {
-  .downloads-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .download-option {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: stretch;
-  }
-  
-  .download-actions {
-    justify-content: center;
-  }
-  
-  .feed-url-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .feed-url-container input {
-    min-width: auto;
-  }
-  
-  .feed-actions {
-    justify-content: center;
-  }
+.downloads-grid {
+grid-template-columns: 1fr;
 }
 
-/* Copy to clipboard feedback */
+.download-option {
+flex-direction: column;
+gap: 1rem;
+align-items: stretch;
+}
+
+.download-actions {
+justify-content: center;
+}
+
+.feed-url-container {
+flex-direction: column;
+align-items: stretch;
+}
+
+.feed-url-container input {
+min-width: auto;
+}
+
+.feed-actions {
+justify-content: center;
+}
+}
+
+/_ Copy to clipboard feedback _/
 .copy-btn.copied {
-  background: #28a745;
+background: #28a745;
 }
 
 .copy-btn.copied::after {
-  content: " ✓";
+content: " ✓";
 }
 </style>
 
