@@ -1101,7 +1101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="related-resources" markdown="0">
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-users"></i> Lean Management & Team Performance</h3>
+    <h4><i class="fas fa-users"></i> Lean Management & Team Performance</h4>
     <ul class="resource-links">
       <li><a href="https://www.atlassian.com/agile/kanban/boards" target="_blank">Kanban Boards</a> - Visual work tracking and WIP limits implementation</li>
       <li><a href="https://www.lean.org/lexicon-terms/value-stream-mapping/" target="_blank">Value Stream Mapping</a> - End-to-end process visualization techniques</li>
@@ -1112,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-chart-line"></i> DevOps Culture & Assessment</h3>
+    <h4><i class="fas fa-chart-line"></i> DevOps Culture & Assessment</h4>
     <ul class="resource-links">
       <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DORA Capabilities</a> - DevOps maturity assessment and capability framework</li>
       <li><a href="https://github.com/dora-team/fourkeys" target="_blank">Four Keys Project</a> - DORA metrics implementation and tracking tools</li>
@@ -1142,9 +1142,8 @@ h3 {
 
 .discussion-card {
   background: linear-gradient(135deg, #fff7ed, #fef3c7);
-  border-radius: 16px;
   padding: 1.5rem;
-  border-left: 5px solid #d97706;
+  border-top: 4px solid #d97706;
   box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
   transition: all 0.3s ease;
   position: relative;
@@ -1154,7 +1153,7 @@ h3 {
 .discussion-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
-  border-left-color: #92400e;
+  border-top-color: #92400e;
 }
 
 .discussion-header {
@@ -1171,7 +1170,6 @@ h3 {
 
 .discussion-header h4 {
   margin: 0;
-  color: #92400e;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1197,6 +1195,30 @@ h3 {
   line-height: 1.4;
 }
 
+/* Discussion Questions Styling */
+.discussion-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.discussion-card {
+  background: linear-gradient(135deg, #fff7ed, #e9ecef);
+  padding: 1.5rem;
+  border-top: 4px solid #d97706;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.discussion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
+  border-top-color: #92400e;
+}
+
 /* Action Items Styling */
 .action-items-grid {
   display: grid;
@@ -1207,9 +1229,8 @@ h3 {
 
 .action-item-card {
   background: linear-gradient(135deg, #fff7ed, #fef3c7);
-  border-radius: 16px;
   padding: 1.5rem;
-  border-left: 5px solid #d97706;
+  border-top: 4px solid #d97706;
   box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
   transition: all 0.3s ease;
   position: relative;
@@ -1219,7 +1240,7 @@ h3 {
 .action-item-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
-  border-left-color: #92400e;
+  border-top-color: #92400e;
 }
 
 .action-header {
@@ -1236,7 +1257,6 @@ h3 {
 
 .action-header h4 {
   margin: 0;
-  color: #92400e;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1270,14 +1290,13 @@ h3 {
   margin: 2rem 0;
   background: linear-gradient(135deg, #fff7ed, #fef3c7);
   padding: 2rem;
-  border-radius: 20px;
   border: 2px solid #d97706;
 }
 
 .resource-category {
   background: white;
-  border-radius: 12px;
   padding: 1.5rem;
+  border-top: 4px solid #d97706;
   box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
   transition: all 0.3s ease;
 }
@@ -1287,8 +1306,7 @@ h3 {
   box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
 }
 
-.resource-category h3 {
-  color: #d97706;
+.resource-category h4 {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
@@ -1296,7 +1314,7 @@ h3 {
   padding-bottom: 0.5rem;
 }
 
-.resource-category h3 i {
+.resource-category h4 i {
   margin-right: 0.5rem;
   color: #92400e;
 }
@@ -1337,7 +1355,7 @@ h3 {
     padding: 1.25rem;
   }
   
-  .resource-category h3 {
+  .resource-category h4 {
     font-size: 1rem;
   }
   

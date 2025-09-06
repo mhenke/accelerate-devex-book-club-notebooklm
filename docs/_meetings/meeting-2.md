@@ -464,7 +464,7 @@ dora_color: '#0F766E'
 
 <div class="related-resources" markdown="0">
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-tools"></i> CI/CD Tools & Platforms</h3>
+    <h4><i class="fas fa-tools"></i> CI/CD Tools & Platforms</h4>
     <ul class="resource-links">
       <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> - Workflow automation and CI/CD platform</li>
       <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a> - Open source automation server for CI/CD pipelines</li>
@@ -474,7 +474,7 @@ dora_color: '#0F766E'
   </div>
 
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-shield-alt"></i> Security Integration</h3>
+    <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
     <ul class="resource-links">
       <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps Guidelines</a> - Security integration best practices</li>
       <li><a href="https://snyk.io/" target="_blank">Snyk</a> - Developer security platform for vulnerability scanning</li>
@@ -1672,7 +1672,7 @@ h3 {
 }
 
 .discussion-card {
-  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  background: linear-gradient(135deg, #f0fdfa, #e9ecef);
   padding: 1.5rem;
   border-top: 4px solid #0F766E;
   box-shadow: 0 4px 15px rgba(15, 118, 110, 0.1);
@@ -1701,7 +1701,6 @@ h3 {
 
 .discussion-header h4 {
   margin: 0;
-  color: #134e4a;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1736,7 +1735,7 @@ h3 {
 }
 
 .action-item-card {
-  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  background: linear-gradient(135deg, #f0fdfa, #e9ecef);
   padding: 1.5rem;
   border-top: 4px solid #0F766E;
   box-shadow: 0 4px 15px rgba(15, 118, 110, 0.1);
@@ -1765,7 +1764,6 @@ h3 {
 
 .action-header h4 {
   margin: 0;
-  color: #134e4a;
   font-size: 1.1rem;
   font-weight: 600;
 }
