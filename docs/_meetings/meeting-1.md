@@ -434,7 +434,7 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
-
+<style>
 /* Interactive Learning Checkpoint */
 .learning-checkpoint {
   display: grid;
