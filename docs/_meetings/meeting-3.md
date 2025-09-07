@@ -261,8 +261,6 @@ dora_color: '#D97706'
   </defs>
 </svg>
 
-
-
 <style>
 /* eNPS Assessment Styling */
 .score-selector {
@@ -986,40 +984,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Action Items for Next Meeting
 
-<div class="action-checklist" markdown="0">
-  <p class="checklist-intro">Time to put lean management into action! Check off these wellbeing-boosting challenges:</p>
-  
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-1" class="action-checkbox">
-    <label for="action-1" class="action-label">
-      <i class="fas fa-columns"></i>
-      <strong>Create a visual work board</strong> - Can you see everything your team is juggling right now?
-    </label>
-    <div class="action-details">
-      Set up simple To Do, In Progress, Done columns. Add WIP limits to prevent overload. Start tracking cycle time to spot bottlenecks. Make work visible, make problems obvious.
-    </div>
-  </div>
+Time to put lean management into action! Try these wellbeing-boosting challenges:
 
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-2" class="action-checkbox">
-    <label for="action-2" class="action-label">
-      <i class="fas fa-chart-line"></i>
-      <strong>Run an eNPS pulse check</strong> - Would your teammates recommend your org as a great place to work?
-    </label>
-    <div class="action-details">
-      Ask the magic question: "On a scale 0-10, how likely are you to recommend our organization as a great place to work?" Follow up with "What would make it better?" Listen deeply to the answers.
-    </div>
-  </div>
+- **Create a visual work board:** Can you see everything your team is juggling right now?
 
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-3" class="action-checkbox">
-    <label for="action-3" class="action-label">
-      <i class="fas fa-heart"></i>
-      <strong>Pick ONE practice that boosts both performance AND wellbeing</strong> - What will reduce stress while improving delivery?
-    </label>
-    <div class="action-details">
-      Consider deployment automation to eliminate weekend work, blameless post-mortems to build psychological safety, or work visualization to reduce context switching. Focus on practices that help people AND performance.
-    </div>
+  - Set up simple To Do, In Progress, Done columns. Add WIP limits to prevent overload. Start tracking cycle time to spot bottlenecks. Make work visible, make problems obvious.
+
+- **Run an eNPS pulse check:** Would your teammates recommend your org as a great place to work?
+
+  - Ask the magic question: "On a scale 0-10, how likely are you to recommend our organization as a great place to work?" Follow up with "What would make it better?" Listen deeply to the answers.
+
+- **Pick ONE practice that boosts both performance AND wellbeing:** What will reduce stress while improving delivery?
+Consider deployment automation to eliminate weekend work, blameless post-mortems to build psychological safety, or work visualization to reduce context switching. Focus on practices that help people AND performance.
+</div>
   </div>
 </div>
 

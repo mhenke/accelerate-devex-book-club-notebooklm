@@ -374,42 +374,25 @@ dora_color: '#1E3A8A'
 
 ### Action Items for Next Meeting
 
-<div class="action-checklist" markdown="0">
-  <p class="checklist-intro">Before our next meeting, challenge yourself with these action-oriented tasks. Check off each one as you complete it!</p>
-  
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-1" class="action-checkbox">
-    <label for="action-1" class="action-label">
-      <i class="fas fa-chart-line"></i>
-      <strong>Start tracking ONE DORA metric this week</strong> - Which metric will reveal your team's biggest opportunity?
-    </label>
-    <div class="action-details">
-      Pick deployment frequency, lead time, MTTR, or change failure rate. Use a simple spreadsheet or notes. The goal is baseline measurement, not perfection.
-    </div>
-  </div>
+Before our next meeting, challenge yourself with these action-oriented tasks:
 
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-2" class="action-checkbox">
-    <label for="action-2" class="action-label">
-      <i class="fas fa-exclamation-triangle"></i>
-      <strong>Document your #1 deployment pain point</strong> - What makes your team anxious before releases?
-    </label>
-    <div class="action-details">
-      Write down the manual steps, coordination needed, and how it impacts work-life balance. Be specific about what happens when things go wrong.
-    </div>
-  </div>
+- **Start tracking ONE DORA metric this week:** Which metric will reveal your team's biggest opportunity?
 
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-3" class="action-checkbox">
-    <label for="action-3" class="action-label">
-      <i class="fas fa-users"></i>
-      <strong>Culture detective mode: Observe 3 team interactions</strong> - Are you pathological, bureaucratic, or generative?
-    </label>
-    <div class="action-details">
-      Watch how failures are discussed in meetings. Note information sharing patterns. Do you see blame or learning? Cooperation or silos?
+  - Pick deployment frequency, lead time, MTTR, or change failure rate. Use a simple spreadsheet or notes. The goal is baseline measurement, not perfection.
+
+- **Document your #1 deployment pain point:** What makes your team anxious before releases?
+  - Write down the manual steps, coordination needed, and how it impacts work-life balance. Be specific about what happens when things go wrong.
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="action-3" class="action-checkbox">
+      <label for="action-3" class="action-label">
+        <i class="fas fa-users"></i>
+        <strong>Culture detective mode: Observe 3 team interactions</strong> - Are you pathological, bureaucratic, or generative?
+      </label>
+      <div class="action-details">
+        Watch how failures are discussed in meetings. Note information sharing patterns. Do you see blame or learning? Cooperation or silos?
+      </div>
     </div>
   </div>
-</div>
 
 ### Related Resources
 
@@ -417,19 +400,19 @@ dora_color: '#1E3A8A'
   <div class="resource-card" markdown="0">
     <h4><i class="fas fa-chart-line"></i> DORA Research & Assessment</h4>
     <ul>
-      <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a></li>
-      <li><a href="https://dora.dev/" target="_blank">DORA Research Program</a></li>
-      <li><a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a></li>
-      <li><a href="https://dora.dev/capabilities/" target="_blank">DORA Capabilities Overview</a></li>
+  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a></li>
+  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/" target="_blank">DORA Research Program</a></li>
+  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a></li>
+  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/capabilities/" target="_blank">DORA Capabilities Overview</a></li>
     </ul>
   </div>
 
   <div class="resource-card" markdown="0">
     <h4><i class="fas fa-users"></i> Westrum Organizational Culture</h4>
     <ul>
-      <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a></li>
-      <li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank">IT Revolution Westrum Model</a></li>
-      <li><a href="https://continuousdelivery.com/implementing/culture/" target="_blank">Generative Culture Assessment</a></li>
+  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a></li>
+  <li><span aria-hidden="true">•</span> <a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank">IT Revolution Westrum Model</a></li>
+  <li><span aria-hidden="true">•</span> <a href="https://continuousdelivery.com/implementing/culture/" target="_blank">Generative Culture Assessment</a></li>
     </ul>
   </div>
 </div>

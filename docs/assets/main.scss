@@ -13,10 +13,10 @@
   /* Colors */
   --header-dark-navy: #1a1a2e;
   --header-light-blue: #16213e;
-  --accent-coral: #FF7F50;
-  --accent-gold: #D7BA89;
+  --accent-coral: #ff7f50;
+  --accent-gold: #d7ba89;
   --accent-teal: #7adad1;
-  --accent-sage: #8B9EB7;
+  --accent-sage: #8b9eb7;
   --text-white: #ffffff;
   --text-dark: #333333;
   --text-medium: #666666;
@@ -27,30 +27,30 @@
   --border-medium: #dee2e6;
   --shadow-light: rgba(0, 0, 0, 0.1);
   --shadow-medium: rgba(0, 0, 0, 0.15);
-  
+
   /* Meeting Theme Colors */
-  --meeting-1-color: #2196F3;
-  --meeting-2-color: #4CAF50;
-  --meeting-3-color: #FF9800;
-  --meeting-4-color: #F44336;
-  
+  --meeting-1-color: #2196f3;
+  --meeting-2-color: #4caf50;
+  --meeting-3-color: #ff9800;
+  --meeting-4-color: #f44336;
+
   /* Additional Theme Colors */
-  --gradient-orange: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+  --gradient-orange: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
   --gradient-teal: linear-gradient(135deg, #7adad1 0%, #6bc7bf 100%);
-  --gradient-gold: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-  
+  --gradient-gold: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+
   /* Typography */
   --font-heading: 'Poppins', 'Inter', sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
-  
+
   /* Border Radius */
   --radius-sm: 8px;
   --radius-md: 16px;
@@ -75,17 +75,30 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 var(--spacing-sm) 0;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
 
 p {
   margin: 0 0 var(--spacing-sm) 0;
@@ -111,7 +124,11 @@ a:hover {
   margin-bottom: var(--spacing-xl);
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--header-dark-navy) 0%,
+    var(--header-light-blue) 100%
+  );
 }
 
 /* Page Hero Variants */
@@ -250,15 +267,15 @@ a:hover {
 
 /* Dynamic Color Classes for JavaScript */
 .color-success {
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 .color-warning {
-  color: #FF9800;
+  color: #ff9800;
 }
 
 .color-danger {
-  color: #F44336;
+  color: #f44336;
 }
 
 .color-primary {
@@ -387,10 +404,18 @@ a:hover {
   height: 4px;
 }
 
-.metric-card.lead-time::before { background: linear-gradient(90deg, #2196F3, #1976d2); }
-.metric-card.deployment-frequency::before { background: linear-gradient(90deg, #4CAF50, #388e3c); }
-.metric-card.recovery-time::before { background: linear-gradient(90deg, #FF9800, #f57c00); }
-.metric-card.fail-rate::before { background: linear-gradient(90deg, #f44336, #d32f2f); }
+.metric-card.lead-time::before {
+  background: linear-gradient(90deg, #2196f3, #1976d2);
+}
+.metric-card.deployment-frequency::before {
+  background: linear-gradient(90deg, #4caf50, #388e3c);
+}
+.metric-card.recovery-time::before {
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+}
+.metric-card.fail-rate::before {
+  background: linear-gradient(90deg, #f44336, #d32f2f);
+}
 
 .metric-card:hover {
   transform: translateY(-6px);
@@ -400,7 +425,6 @@ a:hover {
 .metric-icon {
   font-size: 3rem;
   margin-bottom: var(--spacing-sm);
-  display: block;
 }
 
 .metric-title {
@@ -450,10 +474,18 @@ a:hover {
   height: 4px;
 }
 
-.highlight-card.meeting-1::before { background: linear-gradient(90deg, var(--meeting-1-color), #3B82F6); }
-.highlight-card.meeting-2::before { background: linear-gradient(90deg, var(--meeting-2-color), #14B8A6); }
-.highlight-card.meeting-3::before { background: linear-gradient(90deg, var(--meeting-3-color), #F59E0B); }
-.highlight-card.meeting-4::before { background: linear-gradient(90deg, var(--meeting-4-color), #A78BFA); }
+.highlight-card.meeting-1::before {
+  background: linear-gradient(90deg, var(--meeting-1-color), #3b82f6);
+}
+.highlight-card.meeting-2::before {
+  background: linear-gradient(90deg, var(--meeting-2-color), #14b8a6);
+}
+.highlight-card.meeting-3::before {
+  background: linear-gradient(90deg, var(--meeting-3-color), #f59e0b);
+}
+.highlight-card.meeting-4::before {
+  background: linear-gradient(90deg, var(--meeting-4-color), #a78bfa);
+}
 
 .highlight-card:hover {
   transform: translateY(-4px);
@@ -481,7 +513,7 @@ a:hover {
   font-size: 1rem;
   min-height: 48px;
   min-width: 48px;
-  
+
   /* Meeting badge specific styling */
   background: linear-gradient(135deg, var(--accent-teal), var(--accent-sage));
   color: var(--text-white);
@@ -510,7 +542,7 @@ a:hover {
 
 /* Meeting-specific badge colors */
 .meeting-1 .meeting-badge {
-  background: linear-gradient(135deg, #1E3A8A, #2563eb);
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
   box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
 }
 
@@ -519,7 +551,7 @@ a:hover {
 }
 
 .meeting-2 .meeting-badge {
-  background: linear-gradient(135deg, #0F766E, #14b8a6);
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
   box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
 }
 
@@ -528,7 +560,7 @@ a:hover {
 }
 
 .meeting-3 .meeting-badge {
-  background: linear-gradient(135deg, #D97706, #f59e0b);
+  background: linear-gradient(135deg, #d97706, #f59e0b);
   box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
 }
 
@@ -537,7 +569,7 @@ a:hover {
 }
 
 .meeting-4 .meeting-badge {
-  background: linear-gradient(135deg, #7C2D12, #dc2626);
+  background: linear-gradient(135deg, #7c2d12, #dc2626);
   box-shadow: 0 4px 12px rgba(124, 45, 18, 0.3);
 }
 
@@ -592,7 +624,7 @@ a:hover {
   gap: var(--spacing-xs);
 }
 
-.radio-option input[type="radio"] {
+.radio-option input[type='radio'] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -614,7 +646,7 @@ a:hover {
 }
 
 .radio-option input:checked ~ .radio-mark:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 2px;
   left: 2px;
@@ -649,12 +681,20 @@ a:hover {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--meeting-1-color), var(--meeting-2-color));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-1-color),
+    var(--meeting-2-color)
+  );
   color: var(--text-white);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--meeting-2-color), var(--meeting-1-color));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-2-color),
+    var(--meeting-1-color)
+  );
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
 }
@@ -671,13 +711,13 @@ a:hover {
 }
 
 .btn-meeting-1 {
-  background: linear-gradient(135deg, #1E3A8A, #2563eb);
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
   color: var(--text-white);
   box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
 }
 
 .btn-meeting-1:hover {
-  background: linear-gradient(135deg, #2563eb, #1E3A8A);
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
   box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
   color: var(--text-white);
 }
@@ -691,7 +731,11 @@ a:hover {
   padding: var(--spacing-xl) var(--spacing-lg);
   margin: 0 0 var(--spacing-xl) 0;
   color: var(--text-white);
-  background: linear-gradient(135deg, var(--meeting-1-color) 0%, var(--meeting-2-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--meeting-1-color) 0%,
+    var(--meeting-2-color) 100%
+  );
   box-shadow: 0 8px 32px rgba(30, 58, 138, 0.3);
   overflow: hidden;
 }
@@ -786,12 +830,12 @@ a:hover {
 }
 
 .chapter-icon::before {
-  content: "📖";
+  content: '📖';
   font-style: normal;
 }
 
-.chapter-icon[data-icon="book"]::before {
-  content: "📖";
+.chapter-icon[data-icon='book']::before {
+  content: '📖';
 }
 
 .meeting-icon {
@@ -820,24 +864,24 @@ a:hover {
   font-style: normal;
 }
 
-.meeting-icon-span[data-icon="rocket"]::before {
-  content: "🚀";
+.meeting-icon-span[data-icon='rocket']::before {
+  content: '🚀';
 }
 
-.meeting-icon-span[data-icon="users"]::before {
-  content: "👥";
+.meeting-icon-span[data-icon='users']::before {
+  content: '👥';
 }
 
-.meeting-icon-span[data-icon="sitemap"]::before {
-  content: "🗺️";
+.meeting-icon-span[data-icon='sitemap']::before {
+  content: '🗺️';
 }
 
-.meeting-icon-span[data-icon="crown"]::before {
-  content: "👑";
+.meeting-icon-span[data-icon='crown']::before {
+  content: '👑';
 }
 
-.meeting-icon-span[data-icon="book"]::before {
-  content: "📖";
+.meeting-icon-span[data-icon='book']::before {
+  content: '📖';
 }
 
 /* Responsive meeting hero */
@@ -846,23 +890,23 @@ a:hover {
     padding: var(--spacing-lg) var(--spacing-md);
     text-align: center;
   }
-  
+
   .meeting-title {
     font-size: 2rem;
   }
-  
+
   .meeting-subtitle {
     font-size: 1.125rem;
     max-width: 100%;
   }
-  
+
   .meeting-icon {
     position: static;
     margin: var(--spacing-lg) auto 0;
     width: 60px;
     height: 60px;
   }
-  
+
   .meeting-icon .fas,
   .meeting-icon-span {
     font-size: 1.5rem;
@@ -897,7 +941,11 @@ a:hover {
   align-items: center;
   gap: var(--spacing-sm);
   padding: var(--spacing-md) var(--spacing-lg);
-  background: linear-gradient(135deg, var(--meeting-1-color), var(--meeting-2-color));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-1-color),
+    var(--meeting-2-color)
+  );
   color: var(--text-white);
   text-decoration: none;
   border-radius: var(--radius-md);
@@ -923,11 +971,15 @@ a:hover {
 }
 
 .nav-link.back-to-main {
-  background: linear-gradient(135deg, var(--accent-teal), var(--meeting-2-color));
+  background: linear-gradient(
+    135deg,
+    var(--accent-teal),
+    var(--meeting-2-color)
+  );
 }
 
 .nav-link.meeting-1 {
-  background: linear-gradient(135deg, #1E3A8A, #2563eb);
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
 }
 
 .nav-link.meeting-1:hover {
@@ -935,7 +987,7 @@ a:hover {
 }
 
 .nav-link.meeting-2 {
-  background: linear-gradient(135deg, #0F766E, #14b8a6);
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
 }
 
 .nav-link.meeting-2:hover {
@@ -943,7 +995,7 @@ a:hover {
 }
 
 .nav-link.meeting-3 {
-  background: linear-gradient(135deg, #D97706, #f59e0b);
+  background: linear-gradient(135deg, #d97706, #f59e0b);
 }
 
 .nav-link.meeting-3:hover {
@@ -951,7 +1003,7 @@ a:hover {
 }
 
 .nav-link.meeting-4 {
-  background: linear-gradient(135deg, #7C2D12, #dc2626);
+  background: linear-gradient(135deg, #7c2d12, #dc2626);
 }
 
 .nav-link.meeting-4:hover {
@@ -1009,7 +1061,11 @@ a:hover {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--meeting-1-color), var(--meeting-2-color));
+  background: linear-gradient(
+    90deg,
+    var(--meeting-1-color),
+    var(--meeting-2-color)
+  );
   border-radius: 4px;
   transition: width 0.3s ease;
 }
@@ -1027,27 +1083,27 @@ a:hover {
     margin: var(--spacing-lg) 0;
     padding: var(--spacing-md);
   }
-  
+
   .nav-links {
     flex-direction: column;
     gap: var(--spacing-sm);
   }
-  
+
   .nav-link {
     min-width: auto;
     width: 100%;
     justify-content: center;
   }
-  
+
   .nav-content {
     align-items: center !important;
   }
-  
+
   .meeting-progress {
     flex-direction: column;
     gap: var(--spacing-sm);
   }
-  
+
   .progress-bar {
     max-width: 100%;
   }
@@ -1115,7 +1171,11 @@ a:hover {
   margin-bottom: var(--spacing-xl);
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--header-dark-navy) 0%,
+    var(--header-light-blue) 100%
+  );
   color: var(--text-white);
   text-align: center;
 }
@@ -1169,7 +1229,6 @@ a:hover {
 }
 
 .hero-metrics .metric-icon {
-  display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--text-white);
@@ -1394,7 +1453,7 @@ a:hover {
 }
 
 .foundation-resources li::before {
-  content: "•";
+  content: '•';
   position: absolute;
   left: 0;
   color: var(--meeting-1-color);
@@ -1416,21 +1475,45 @@ a:hover {
    7. UTILITY CLASSES
    ============================================================================= */
 
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 
-.mb-sm { margin-bottom: var(--spacing-sm); }
-.mb-md { margin-bottom: var(--spacing-md); }
-.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-sm {
+  margin-bottom: var(--spacing-sm);
+}
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}
 
-.mt-sm { margin-top: var(--spacing-sm); }
-.mt-md { margin-top: var(--spacing-md); }
-.mt-lg { margin-top: var(--spacing-lg); }
+.mt-sm {
+  margin-top: var(--spacing-sm);
+}
+.mt-md {
+  margin-top: var(--spacing-md);
+}
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
 
-.p-sm { padding: var(--spacing-sm); }
-.p-md { padding: var(--spacing-md); }
-.p-lg { padding: var(--spacing-lg); }
+.p-sm {
+  padding: var(--spacing-sm);
+}
+.p-md {
+  padding: var(--spacing-md);
+}
+.p-lg {
+  padding: var(--spacing-lg);
+}
 
 /* =============================================================================
    8. MEDIA COMPONENTS (VIDEO/AUDIO) 
@@ -1475,16 +1558,24 @@ a:hover {
   font-size: 1rem;
   min-height: 48px;
   min-width: 48px;
-  
+
   /* Download button specific styling */
-  background: linear-gradient(135deg, var(--meeting-primary, var(--accent-coral)), var(--meeting-hover, #ff6b47));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-primary, var(--accent-coral)),
+    var(--meeting-hover, #ff6b47)
+  );
   color: var(--text-white);
   box-shadow: 0 4px 12px var(--meeting-light, rgba(255, 127, 80, 0.3));
 }
 
 .download-btn:hover,
 .download-btn:focus {
-  background: linear-gradient(135deg, var(--meeting-hover, #ff6b47), var(--meeting-primary, var(--accent-coral)));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-hover, #ff6b47),
+    var(--meeting-primary, var(--accent-coral))
+  );
   transform: translateY(-2px);
   box-shadow: 0 8px 25px var(--meeting-light, rgba(255, 127, 80, 0.4));
   text-decoration: none;
@@ -1517,7 +1608,7 @@ a:hover {
   font-size: 1rem;
   min-height: 48px;
   min-width: 48px;
-  
+
   /* Stream button specific styling */
   background: linear-gradient(135deg, #16a34a, #15803d);
   color: var(--text-white);
@@ -1551,92 +1642,98 @@ a:hover {
   .page-hero {
     padding: var(--spacing-lg) var(--spacing-sm);
   }
-  
+
   .page-title {
     font-size: 2rem;
   }
-  
+
   .page-container {
     padding: 0 var(--spacing-sm);
   }
-  
+
   .dora-metrics-grid,
   .highlight-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-sm);
   }
-  
+
   .learning-checkpoint {
     grid-template-columns: 1fr;
     padding: var(--spacing-sm);
   }
-  
+
   .ai-attribution {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .section-accent {
     font-size: 1.5rem;
   }
-  
+
   .media-container {
     padding: var(--spacing-md);
     margin: var(--spacing-lg) 0;
   }
-  
+
   .download-btn {
     padding: var(--spacing-sm) var(--spacing-lg);
     min-width: 140px;
     font-size: 0.95rem;
   }
-  
+
   .hero-metrics {
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
   }
-  
+
   .hero-metrics .metric-icon {
     min-width: 120px;
     flex: 1;
     max-width: 140px;
   }
-  
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  h3 { font-size: 1.25rem; }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
   .page-hero {
     padding: var(--spacing-md) var(--spacing-sm);
   }
-  
+
   .page-title {
     font-size: 1.75rem;
   }
-  
+
   .metric-card,
   .highlight-card,
   .checkpoint-card {
     padding: var(--spacing-sm);
   }
-  
+
   .btn {
     width: 100%;
     justify-content: center;
   }
-  
+
   .hero-metrics {
     gap: var(--spacing-sm);
     margin-top: var(--spacing-md);
   }
-  
+
   .hero-metrics .metric-icon {
     min-width: 100px;
     max-width: 120px;
   }
-  
+
   .hero-metrics .metric-icon span {
     font-size: 0.8rem;
   }
@@ -1651,15 +1748,15 @@ a:hover {
     background: none !important;
     color: var(--text-dark) !important;
   }
-  
+
   .page-hero::before {
     display: none;
   }
-  
+
   .btn {
     display: none;
   }
-  
+
   .ai-attribution {
     border: 1px solid var(--border-medium);
     background: none;
