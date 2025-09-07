@@ -775,9 +775,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const leanFeedback = document.getElementById('lean-feedback');
 
   leanInputs.forEach(input => {
-    input.addEventListener('change', function() {
-      let feedback = '';
-      switch(this.value) {
+      input.addEventListener('change', function() {
+        let feedback = '';
+        switch(this.value) {
         case 'high':
           feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-trophy"></i><strong>Excellent!</strong> Your team demonstrates advanced lean practices. Research shows teams like yours are 2.5x more likely to exceed performance goals. Focus on: <ul><li>Sharing best practices with other teams</li><li>Measuring and improving lead times</li><li>Experimenting with new lean techniques</li></ul></div>';
           break;
@@ -787,9 +787,9 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'low':
           feedback = '<div class="feedback-content info" markdown="0"><i class="fas fa-rocket"></i><strong>Great Opportunity!</strong> Traditional management can be transformed with proven lean practices. Start with: <ul><li>Pilot peer review for low-risk changes</li><li>Visualize current work and bottlenecks</li><li>Measure and track cycle times</li><li>Implement small batch deliveries</li></ul></div>';
           break;
-      }
-      leanFeedback.innerHTML = feedback;
-    });
+        }
+        leanFeedback.innerHTML = feedback;
+      });
   });
 
   // Deployment Pain Assessment
@@ -797,9 +797,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const deploymentFeedback = document.getElementById('deployment-feedback');
 
   deploymentInputs.forEach(input => {
-    input.addEventListener('change', function() {
-      let feedback = '';
-      switch(this.value) {
+      input.addEventListener('change', function() {
+        let feedback = '';
+        switch(this.value) {
         case 'low':
           feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-check-circle"></i><strong>Outstanding!</strong> Low deployment pain correlates with 3x higher delivery performance. Your practices likely include: automated testing, deployment pipelines, and feature flags. <strong>Maintain:</strong> continuous improvement, monitoring, and team satisfaction.</div>';
           break;
@@ -809,9 +809,9 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'high':
           feedback = '<div class="feedback-content danger" markdown="0"><i class="fas fa-exclamation-triangle"></i><strong>Critical Area!</strong> High deployment pain significantly impacts team wellbeing and performance. Immediate actions: <ul><li>Map current deployment process and pain points</li><li>Start with small, automated improvements</li><li>Implement basic CI/CD pipeline</li><li>Create deployment checklist and runbooks</li></ul></div>';
           break;
-      }
-      deploymentFeedback.innerHTML = feedback;
-    });
+        }
+        deploymentFeedback.innerHTML = feedback;
+      });
   });
 
   // Employee Satisfaction Assessment
@@ -820,35 +820,35 @@ document.addEventListener('DOMContentLoaded', function() {
   const satisfactionFeedback = document.getElementById('satisfaction-feedback');
 
   function updateSatisfactionScore() {
-    const checkedFactors = document.querySelectorAll('input[name="satisfaction-factors"]:checked');
-    const score = checkedFactors.length;
-    satisfactionScore.textContent = score;
+      const checkedFactors = document.querySelectorAll('input[name="satisfaction-factors"]:checked');
+      const score = checkedFactors.length;
+      satisfactionScore.textContent = score;
 
-    let feedback = '';
-    let feedbackClass = '';
+      let feedback = '';
+      let feedbackClass = '';
 
-    if (score === 4) {
-      feedbackClass = 'success';
-      feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-star"></i><strong>Exceptional Team Environment!</strong> All four satisfaction pillars are present. Research shows teams like yours are 2.2x more likely to recommend their organization and have significantly lower turnover rates. Focus on maintaining these strengths and mentoring other teams.</div>';
-    } else if (score === 3) {
-      feedbackClass = 'warning';
-      feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-thumbs-up"></i><strong>Strong Foundation!</strong> You have most satisfaction factors in place. Identify and address the missing pillar(s) to achieve maximum team performance and retention. Each additional pillar significantly improves outcomes.</div>';
-    } else if (score === 2) {
-      feedbackClass = 'info';
-      feedback = '<div class="feedback-content info" markdown="0"><i class="fas fa-chart-line"></i><strong>Mixed Results!</strong> You have some satisfaction factors but significant gaps remain. Focus on the missing pillars as they compound each other. Teams with all four factors show dramatically better performance and retention.</div>';
-    } else if (score === 1) {
-      feedbackClass = 'warning';
-      feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-flag"></i><strong>Early Stage!</strong> Only one satisfaction pillar is present. This represents a major opportunity for improvement. Start by addressing the most achievable missing factors - often tools and support are easier to improve than meaningful work.</div>';
-    } else {
-      feedbackClass = 'danger';
-      feedback = '<div class="feedback-content danger" markdown="0"><i class="fas fa-exclamation-circle"></i><strong>Critical Attention Needed!</strong> No satisfaction pillars are present, indicating high risk for turnover and poor performance. Immediate action required across all four areas. Consider starting with team support and tools as these can show quick wins.</div>';
-    }
+      if (score === 4) {
+        feedbackClass = 'success';
+        feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-star"></i><strong>Exceptional Team Environment!</strong> All four satisfaction pillars are present. Research shows teams like yours are 2.2x more likely to recommend their organization and have significantly lower turnover rates. Focus on maintaining these strengths and mentoring other teams.</div>';
+      } else if (score === 3) {
+        feedbackClass = 'warning';
+        feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-thumbs-up"></i><strong>Strong Foundation!</strong> You have most satisfaction factors in place. Identify and address the missing pillar(s) to achieve maximum team performance and retention. Each additional pillar significantly improves outcomes.</div>';
+      } else if (score === 2) {
+        feedbackClass = 'info';
+        feedback = '<div class="feedback-content info" markdown="0"><i class="fas fa-chart-line"></i><strong>Mixed Results!</strong> You have some satisfaction factors but significant gaps remain. Focus on the missing pillars as they compound each other. Teams with all four factors show dramatically better performance and retention.</div>';
+      } else if (score === 1) {
+        feedbackClass = 'warning';
+        feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-flag"></i><strong>Early Stage!</strong> Only one satisfaction pillar is present. This represents a major opportunity for improvement. Start by addressing the most achievable missing factors - often tools and support are easier to improve than meaningful work.</div>';
+      } else {
+        feedbackClass = 'danger';
+        feedback = '<div class="feedback-content danger" markdown="0"><i class="fas fa-exclamation-circle"></i><strong>Critical Attention Needed!</strong> No satisfaction pillars are present, indicating high risk for turnover and poor performance. Immediate action required across all four areas. Consider starting with team support and tools as these can show quick wins.</div>';
+      }
 
-    satisfactionFeedback.innerHTML = feedback;
+      satisfactionFeedback.innerHTML = feedback;
   }
 
   satisfactionInputs.forEach(input => {
-    input.addEventListener('change', updateSatisfactionScore);
+      input.addEventListener('change', updateSatisfactionScore);
   });
 
   // eNPS Assessment
@@ -856,32 +856,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const enpsFeedback = document.getElementById('enps-feedback');
 
   const enpsInfo = {
-    '0': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Strong Detractor (Score: 0)</strong><br>This indicates significant workplace dissatisfaction. <strong>Critical areas to address:</strong> leadership support, work-life balance, meaningful work opportunities, and psychological safety. Research shows scores this low correlate with high turnover and poor delivery performance.</div>' },
-    '1': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 1)</strong><br>Serious workplace concerns exist. <strong>Focus on:</strong> addressing burnout risk factors, improving management practices, ensuring adequate resources and tools. Teams with detractor scores struggle with retention and productivity.</div>' },
-    '2': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 2)</strong><br>Significant dissatisfaction present. <strong>Key improvements needed:</strong> management support, meaningful work assignment, team culture, and reducing bureaucratic obstacles. Low scores correlate with reduced performance.</div>' },
-    '3': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 3)</strong><br>Below-average workplace satisfaction. <strong>Address:</strong> career development opportunities, feedback mechanisms, workload management, and team dynamics. This level indicates substantial improvement potential.</div>' },
-    '4': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 4)</strong><br>Moderate dissatisfaction with workplace. <strong>Improve:</strong> recognition practices, autonomy levels, learning opportunities, and communication patterns. Teams can move from this level with focused interventions.</div>' },
-    '5': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 5)</strong><br>Neutral-negative sentiment. <strong>Focus on:</strong> increasing engagement through better tools, clearer mission alignment, reduced friction in processes, and improved leadership support.</div>' },
-    '6': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 6)</strong><br>Slightly below neutral. <strong>Opportunities:</strong> enhance team collaboration, provide better growth paths, address process inefficiencies, and strengthen psychological safety.</div>' },
-    '7': { category: 'passive', content: '<div class="feedback-content warning" markdown="0"><i class="fas fa-minus-circle"></i><strong>Passive (Score: 7)</strong><br>Satisfied but not enthusiastic. <strong>To increase engagement:</strong> provide stretch assignments, improve recognition, enhance learning opportunities, and foster innovation culture. Passives can become promoters with attention.</div>' },
-    '8': { category: 'passive', content: '<div class="feedback-content warning" markdown="0"><i class="fas fa-minus-circle"></i><strong>Passive (Score: 8)</strong><br>Generally positive but not fully engaged. <strong>Enhancement areas:</strong> career development, team autonomy, meaningful project work, and leadership visibility. Close to promoter level with focused improvements.</div>' },
-    '9': { category: 'promoter', content: '<div class="feedback-content success" markdown="0"><i class="fas fa-thumbs-up"></i><strong>Promoter (Score: 9)</strong><br>Strong workplace satisfaction! <strong>Maintain and amplify:</strong> current positive practices, recognition programs, team culture, and growth opportunities. Research shows promoters correlate with 2.2x higher delivery performance.</div>' },
-    '10': { category: 'promoter', content: '<div class="feedback-content success" markdown="0"><i class="fas fa-star"></i><strong>Strong Promoter (Score: 10)</strong><br>Exceptional workplace experience! You\'re experiencing the characteristics of high-performing teams. <strong>Share success:</strong> mentor other teams, document effective practices, and continue cultivating this positive environment.</div>' }
+      '0': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Strong Detractor (Score: 0)</strong><br>This indicates significant workplace dissatisfaction. <strong>Critical areas to address:</strong> leadership support, work-life balance, meaningful work opportunities, and psychological safety. Research shows scores this low correlate with high turnover and poor delivery performance.</div>' },
+      '1': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 1)</strong><br>Serious workplace concerns exist. <strong>Focus on:</strong> addressing burnout risk factors, improving management practices, ensuring adequate resources and tools. Teams with detractor scores struggle with retention and productivity.</div>' },
+      '2': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 2)</strong><br>Significant dissatisfaction present. <strong>Key improvements needed:</strong> management support, meaningful work assignment, team culture, and reducing bureaucratic obstacles. Low scores correlate with reduced performance.</div>' },
+      '3': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 3)</strong><br>Below-average workplace satisfaction. <strong>Address:</strong> career development opportunities, feedback mechanisms, workload management, and team dynamics. This level indicates substantial improvement potential.</div>' },
+      '4': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 4)</strong><br>Moderate dissatisfaction with workplace. <strong>Improve:</strong> recognition practices, autonomy levels, learning opportunities, and communication patterns. Teams can move from this level with focused interventions.</div>' },
+      '5': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 5)</strong><br>Neutral-negative sentiment. <strong>Focus on:</strong> increasing engagement through better tools, clearer mission alignment, reduced friction in processes, and improved leadership support.</div>' },
+      '6': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 6)</strong><br>Slightly below neutral. <strong>Opportunities:</strong> enhance team collaboration, provide better growth paths, address process inefficiencies, and strengthen psychological safety.</div>' },
+      '7': { category: 'passive', content: '<div class="feedback-content warning" markdown="0"><i class="fas fa-minus-circle"></i><strong>Passive (Score: 7)</strong><br>Satisfied but not enthusiastic. <strong>To increase engagement:</strong> provide stretch assignments, improve recognition, enhance learning opportunities, and foster innovation culture. Passives can become promoters with attention.</div>' },
+      '8': { category: 'passive', content: '<div class="feedback-content warning" markdown="0"><i class="fas fa-minus-circle"></i><strong>Passive (Score: 8)</strong><br>Generally positive but not fully engaged. <strong>Enhancement areas:</strong> career development, team autonomy, meaningful project work, and leadership visibility. Close to promoter level with focused improvements.</div>' },
+      '9': { category: 'promoter', content: '<div class="feedback-content success" markdown="0"><i class="fas fa-thumbs-up"></i><strong>Promoter (Score: 9)</strong><br>Strong workplace satisfaction! <strong>Maintain and amplify:</strong> current positive practices, recognition programs, team culture, and growth opportunities. Research shows promoters correlate with 2.2x higher delivery performance.</div>' },
+      '10': { category: 'promoter', content: '<div class="feedback-content success" markdown="0"><i class="fas fa-star"></i><strong>Strong Promoter (Score: 10)</strong><br>Exceptional workplace experience! You\'re experiencing the characteristics of high-performing teams. <strong>Share success:</strong> mentor other teams, document effective practices, and continue cultivating this positive environment.</div>' }
   };
 
   enpsInputs.forEach(input => {
-    input.addEventListener('change', function() {
-      const score = this.value;
-      const info = enpsInfo[score];
-      if (info) {
-        enpsFeedback.innerHTML = info.content;
-        
-        // Update visual styling based on category
-        const buttons = document.querySelectorAll('.score-btn');
-        buttons.forEach(btn => btn.classList.remove('selected'));
-        this.parentElement.classList.add('selected');
-      }
-    });
+      input.addEventListener('change', function() {
+        const score = this.value;
+        const info = enpsInfo[score];
+        if (info) {
+          enpsFeedback.innerHTML = info.content;
+  
+          // Update visual styling based on category
+          const buttons = document.querySelectorAll('.score-btn');
+          buttons.forEach(btn => btn.classList.remove('selected'));
+          this.parentElement.classList.add('selected');
+        }
+      });
   });
 
   // Architecture Assessment - Dependency Mapping
@@ -889,9 +889,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const dependencyFeedback = document.getElementById('dependency-feedback');
 
   dependencyInputs.forEach(input => {
-    input.addEventListener('change', function() {
-      let feedback = '';
-      switch(this.value) {
+      input.addEventListener('change', function() {
+        let feedback = '';
+        switch(this.value) {
         case 'shared-database':
           feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-database"></i><strong>Shared Database Dependencies</strong><br>This pattern creates tight coupling and coordination overhead. <strong>Research insight:</strong> Teams with shared databases deploy 10x less frequently. <strong>Evolution path:</strong> Database-per-service, API contracts, event-driven architecture.</div>';
           break;
@@ -901,19 +901,19 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'independent-services':
           feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-rocket"></i><strong>Independent Services</strong><br>Excellent! Loosely coupled architecture enables high delivery performance. <strong>Research shows:</strong> Teams with architectural independence deploy 208x more frequently. <strong>Maintain:</strong> API contracts, monitoring, and service ownership.</div>';
           break;
-      }
-      dependencyFeedback.innerHTML = feedback;
-    });
+        }
+        dependencyFeedback.innerHTML = feedback;
+      });
   });
 
-  // Architecture Assessment - WIP Visualization  
+  // Architecture Assessment - WIP Visualization
   const wipInputs = document.querySelectorAll('input[name="wip-method"]');
   const wipFeedback = document.getElementById('wip-feedback');
 
   wipInputs.forEach(input => {
-    input.addEventListener('change', function() {
-      let feedback = '';
-      switch(this.value) {
+      input.addEventListener('change', function() {
+        let feedback = '';
+        switch(this.value) {
         case 'none':
           feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-eye-slash"></i><strong>No WIP Tracking</strong><br>Lack of work visualization leads to context switching and hidden bottlenecks. <strong>Research insight:</strong> Teams without WIP limits have 40% lower delivery performance. <strong>Start with:</strong> Simple kanban board, limit work in progress, measure cycle time.</div>';
           break;
@@ -923,9 +923,9 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'kanban':
           feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-columns"></i><strong>Kanban Board with WIP Limits</strong><br>Excellent! Visual flow management with WIP limits optimizes team performance. <strong>Research shows:</strong> Teams using kanban with WIP limits have 2.3x faster delivery. <strong>Advanced practices:</strong> Cumulative flow diagrams, cycle time measurement, continuous improvement.</div>';
           break;
-      }
-      wipFeedback.innerHTML = feedback;
-    });
+        }
+        wipFeedback.innerHTML = feedback;
+      });
   });
 });
 </script>
@@ -996,6 +996,7 @@ Time to put lean management into action! Try these wellbeing-boosting challenges
 
 - **Pick ONE practice that boosts both performance AND wellbeing:** What will reduce stress while improving delivery?
 Consider deployment automation to eliminate weekend work, blameless post-mortems to build psychological safety, or work visualization to reduce context switching. Focus on practices that help people AND performance.
+
 </div>
   </div>
 </div>

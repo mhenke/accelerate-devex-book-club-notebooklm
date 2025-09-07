@@ -1,0 +1,8 @@
+{% comment %}
+  Reusable insight card component
+  Usage: {% include insight-card.html icon="fas fa-microscope" title="Evidence-Based" description="Rigorous research backing all findings" %}
+{% endcomment %}
+<div class="insight-card" markdown="0">
+  <h4><i class="{{ include.icon }}"></i> {{ include.title }}</h4>
+  <p>{{ include.description }}</p>
+</div>

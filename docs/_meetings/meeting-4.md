@@ -1693,54 +1693,54 @@ h3 {
 document.addEventListener('DOMContentLoaded', function() {
   // Leadership assessment feedback
   const leadershipInfo = {
-    command: {
-      title: "Command & Control Leadership",
-      content: "Traditional management approach focused on direct orders and problem-solving intervention. Research shows this style limits team performance and psychological safety. Consider developing coaching skills to enable team autonomy and growth."
-    },
-    mixed: {
-      title: "Mixed Leadership Approach",
-      content: "Situational leadership with some coaching elements. This shows awareness of different approaches but may lack consistency. Focus on developing transformational leadership skills systematically across all five dimensions."
-    },
-    transformational: {
-      title: "Transformational Leadership",
-      content: "Coaching-focused approach that enables team autonomy and development. Research shows this leadership style is strongly correlated with high-performing teams. Continue developing these skills and help other leaders adopt similar approaches."
-    }
+      command: {
+        title: 'Command & Control Leadership',
+        content: 'Traditional management approach focused on direct orders and problem-solving intervention. Research shows this style limits team performance and psychological safety. Consider developing coaching skills to enable team autonomy and growth.'
+      },
+      mixed: {
+        title: 'Mixed Leadership Approach',
+        content: 'Situational leadership with some coaching elements. This shows awareness of different approaches but may lack consistency. Focus on developing transformational leadership skills systematically across all five dimensions.'
+      },
+      transformational: {
+        title: 'Transformational Leadership',
+        content: 'Coaching-focused approach that enables team autonomy and development. Research shows this leadership style is strongly correlated with high-performing teams. Continue developing these skills and help other leaders adopt similar approaches.'
+      }
   };
 
   // Coaching scenario feedback
   const coachingInfo = {
-    supportive: {
-      title: "Supportive Coaching Approach",
-      content: "This question demonstrates transformational leadership by seeking to understand rather than blame. It creates psychological safety and focuses on system-level problems rather than individual performance."
-    },
-    directive: {
-      title: "Directive Management Approach",
-      content: "This question focuses on accountability but may create blame culture and reduce psychological safety. Consider reframing to understand obstacles and provide support rather than seeking blame."
-    },
-    enabling: {
-      title: "Enabling Leadership Approach",
-      content: "This question shows strong transformational leadership by focusing on future prevention and support. It demonstrates care for team success and creates conditions for continuous improvement."
-    }
+      supportive: {
+        title: 'Supportive Coaching Approach',
+        content: 'This question demonstrates transformational leadership by seeking to understand rather than blame. It creates psychological safety and focuses on system-level problems rather than individual performance.'
+      },
+      directive: {
+        title: 'Directive Management Approach',
+        content: 'This question focuses on accountability but may create blame culture and reduce psychological safety. Consider reframing to understand obstacles and provide support rather than seeking blame.'
+      },
+      enabling: {
+        title: 'Enabling Leadership Approach',
+        content: 'This question shows strong transformational leadership by focusing on future prevention and support. It demonstrates care for team success and creates conditions for continuous improvement.'
+      }
   };
 
   // Add event listeners for leadership assessment
   document.querySelectorAll('input[name="leadership-style"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('leadership-feedback');
-      const info = leadershipInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
-    });
+      radio.addEventListener('change', function() {
+        const feedback = document.getElementById('leadership-feedback');
+        const info = leadershipInfo[this.value];
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        feedback.classList.add('active');
+      });
   });
 
   // Add event listeners for coaching questions
   document.querySelectorAll('input[name="coaching-q1"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('coaching-feedback');
-      const info = coachingInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
-    });
+      radio.addEventListener('change', function() {
+        const feedback = document.getElementById('coaching-feedback');
+        const info = coachingInfo[this.value];
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        feedback.classList.add('active');
+      });
   });
 
   // Transformation readiness calculator
@@ -1748,49 +1748,49 @@ document.addEventListener('DOMContentLoaded', function() {
   const readinessScore = document.getElementById('readiness-score');
 
   if (readinessCheckboxes.length > 0 && readinessScore) {
-    readinessCheckboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', function() {
-        const checkedBoxes = document.querySelectorAll('input[name="readiness"]:checked');
-        const score = checkedBoxes.length;
-        const percentage = (score / readinessCheckboxes.length) * 100;
+      readinessCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          const checkedBoxes = document.querySelectorAll('input[name="readiness"]:checked');
+          const score = checkedBoxes.length;
+          const percentage = (score / readinessCheckboxes.length) * 100;
 
-        let level, cssClass, advice;
-        if (percentage >= 75) {
-          level = "High Readiness";
-          cssClass = "color-primary";
-          advice = "Your organization shows strong transformation readiness. Focus on maintaining momentum and scaling successful practices.";
-        } else if (percentage >= 50) {
-          level = "Moderate Readiness";
-          cssClass = "color-warning";
-          advice = "Your organization has some transformation foundations. Prioritize building missing capabilities before scaling.";
-        } else {
-          level = "Low Readiness";
-          cssClass = "color-danger";
-          advice = "Focus on building foundational transformation capabilities. Start with learning investment and experimentation culture.";
-        }
+          let level, cssClass, advice;
+          if (percentage >= 75) {
+            level = 'High Readiness';
+            cssClass = 'color-primary';
+            advice = 'Your organization shows strong transformation readiness. Focus on maintaining momentum and scaling successful practices.';
+          } else if (percentage >= 50) {
+            level = 'Moderate Readiness';
+            cssClass = 'color-warning';
+            advice = 'Your organization has some transformation foundations. Prioritize building missing capabilities before scaling.';
+          } else {
+            level = 'Low Readiness';
+            cssClass = 'color-danger';
+            advice = 'Focus on building foundational transformation capabilities. Start with learning investment and experimentation culture.';
+          }
 
-        readinessScore.innerHTML = `<h5 class="readiness-title ${cssClass}">${level} (${score}/4 factors)</h5><p class="readiness-advice">${advice}</p>`;
-        readinessScore.classList.add('active');
+          readinessScore.innerHTML = `<h5 class="readiness-title ${cssClass}">${level} (${score}/4 factors)</h5><p class="readiness-advice">${advice}</p>`;
+          readinessScore.classList.add('active');
+        });
       });
-    });
   }
 
   // Format action items
   const headings = document.querySelectorAll('h2');
   headings.forEach(heading => {
-    if (heading.textContent.includes('Action Items')) {
-      let nextElement = heading.nextElementSibling;
-      while (nextElement) {
-        if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {
-          nextElement.classList.add('action-items');
-          break;
+      if (heading.textContent.includes('Action Items')) {
+        let nextElement = heading.nextElementSibling;
+        while (nextElement) {
+          if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {
+            nextElement.classList.add('action-items');
+            break;
+          }
+          if (nextElement.tagName === 'H1' || nextElement.tagName === 'H2' || nextElement.tagName === 'H3') {
+            break;
+          }
+          nextElement = nextElement.nextElementSibling;
         }
-        if (nextElement.tagName === 'H1' || nextElement.tagName === 'H2' || nextElement.tagName === 'H3') {
-          break;
-        }
-        nextElement = nextElement.nextElementSibling;
       }
-    }
   });
 });
 </script>

@@ -1,0 +1,41 @@
+<!-- Reusable Interactive Learning Checkpoint Grid Component -->
+<!-- 
+Advanced usage with custom layout:
+{% include checkpoint-grid.html 
+  title="Priority Assessment"
+  icon="fas fa-bullseye"
+  question="Which metric needs attention?"
+  layout="grid-2"
+  answers=site.data.checkpoint_answers.improvement_priority
+  feedback_id="priority-feedback"
+  radio_name="improvement-focus"
+  card_class="improvement-priority"
+  default_feedback="Choose which metric needs the most attention."
+%}
+-->
+
+<div class="checkpoint-card {{ include.card_class | default: 'generic-checkpoint' }}" markdown="0">
+  <h4>
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
+    {{ include.title }}
+  </h4>
+  {% if include.question %}<p>{{ include.question }}</p>{% endif %}
+  
+  {% if include.answers %}
+  <div class="{% if include.layout == 'grid-2' %}priority-selector{% else %}assessment-buttons{% endif %}" markdown="0">
+    {% for answer in include.answers %}
+    <label class="assessment-btn {{ answer.performance_class | default: 'performance-medium' }}">
+      <input type="radio" name="{{ include.radio_name | default: 'checkpoint' }}" value="{{ answer.value }}">
+      <span class="radio-mark"></span>
+      {{ answer.text }}
+    </label>
+    {% endfor %}
+  </div>
+  {% endif %}
+  
+  {% if include.feedback_id %}
+  <div class="feedback-area" id="{{ include.feedback_id }}">
+    <p>{{ include.default_feedback | default: 'Make a selection to see personalized feedback.' }}</p>
+  </div>
+  {% endif %}
+</div>

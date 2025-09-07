@@ -1,0 +1,8 @@
+# Build and cache directories
+docs/_site/
+docs/.jekyll-cache/
+docs/vendor/
+node_modules/
+
+# Generated files that may have different formatting
+docs/_site/**/*.html
