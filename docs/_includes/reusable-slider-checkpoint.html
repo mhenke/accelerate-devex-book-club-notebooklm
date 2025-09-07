@@ -1,0 +1,431 @@
+<!-- Reusable Slider Checkpoint Card Component -->
+<!-- 
+Usage Examples:
+{% include reusable-slider-checkpoint.html 
+  icon="fas fa-palette"
+  title="Tool Freedom"
+  question="Rate your team's tool selection autonomy:"
+  labels="Restricted|Flexible|Full Freedom"
+  feedback_id="tool-slider"
+  slider_id="tool-autonomy"
+  theme="primary"
+%}
+
+{% include reusable-slider-checkpoint.html 
+  icon="fas fa-users"
+  title="Team Collaboration"
+  question="How well does your team collaborate?"
+  labels="Siloed|Some Collaboration|Highly Collaborative"
+  feedback_messages=site.data.slider_feedback.collaboration
+  feedback_id="collaboration-feedback"
+  slider_id="team-collaboration"
+  theme="success"
+  custom_class="featured-slider"
+%}
+
+{% include reusable-slider-checkpoint.html 
+  title="Security Integration"
+  question="How early is security considered in your development process?"
+  labels="Gate at End|Some Integration|Shift Left"
+  feedback_id="security-feedback"
+  slider_id="security-integration"
+  theme="warning"
+  description="Consider when security requirements, testing, and reviews happen in your workflow"
+%}
+-->
+
+<div class="checkpoint-card slider-checkpoint {{ include.theme | default: 'default' }}-theme {{ include.custom_class }}" markdown="0">
+  <h4>
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
+    {{ include.title }}
+  </h4>
+  
+  {% if include.question %}<p>{{ include.question }}</p>{% endif %}
+  {% if include.description %}<p class="slider-description">{{ include.description }}</p>{% endif %}
+  
+  <div class="autonomy-slider" markdown="0">
+    <div class="slider-labels" markdown="0">
+      {% if include.labels %}
+        {% assign label_array = include.labels | split: '|' %}
+        {% for label in label_array %}
+          <span>{{ label | strip }}</span>
+        {% endfor %}
+      {% else %}
+        <span>Low</span>
+        <span>Medium</span>
+        <span>High</span>
+      {% endif %}
+    </div>
+    
+    <div class="slider-track" id="{{ include.slider_id | default: 'default-slider' }}">
+      <div class="slider-thumb" id="{{ include.slider_id | default: 'default-slider' }}-thumb"></div>
+    </div>
+    
+    <div class="slider-feedback" id="{{ include.feedback_id | default: 'default-feedback' }}">
+      <p>{{ include.default_message | default: 'Move the slider to assess your situation' }}</p>
+    </div>
+  </div>
+  
+  {% if include.content %}{{ include.content }}{% endif %}
+</div>
+
+<style>
+/* Enhanced slider checkpoint with theme support */
+.slider-checkpoint {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #1E3A8A;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.slider-checkpoint:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.slider-checkpoint h4 {
+  margin: 0 0 1rem 0;
+  color: #1e40af;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.slider-checkpoint h4 i {
+  margin-right: 0.5rem;
+  color: inherit;
+}
+
+.slider-checkpoint p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.slider-description {
+  color: #6b7280;
+  font-style: italic;
+  font-size: 0.9rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.autonomy-slider {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.slider-track {
+  position: relative;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.slider-thumb {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border: 3px solid #1E3A8A;
+  border-radius: 50%;
+  cursor: grab;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-thumb:active {
+  cursor: grabbing;
+}
+
+.slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.slider-feedback {
+  background: #f8f9fa;
+  border-left: 4px solid #1E3A8A;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+
+.slider-feedback.active {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+.slider-feedback h5 {
+  margin: 0 0 0.5rem 0;
+  color: #1e40af;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.slider-feedback p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Color-coded feedback states */
+.slider-feedback.feedback-low {
+  border-left-color: #dc3545;
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+}
+
+.slider-feedback.feedback-low h5 {
+  color: #721c24;
+}
+
+.slider-feedback.feedback-medium {
+  border-left-color: #ffc107;
+  background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+}
+
+.slider-feedback.feedback-medium h5 {
+  color: #856404;
+}
+
+.slider-feedback.feedback-high {
+  border-left-color: #28a745;
+  background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+}
+
+.slider-feedback.feedback-high h5 {
+  color: #155724;
+}
+
+/* Theme variations */
+.slider-checkpoint.primary-theme .slider-thumb {
+  border-color: #2563eb;
+}
+
+.slider-checkpoint.primary-theme .slider-feedback {
+  border-left-color: #2563eb;
+}
+
+.slider-checkpoint.success-theme {
+  border-left-color: #16a34a;
+}
+
+.slider-checkpoint.success-theme h4 {
+  color: #15803d;
+}
+
+.slider-checkpoint.success-theme .slider-thumb {
+  border-color: #16a34a;
+}
+
+.slider-checkpoint.success-theme .slider-feedback {
+  border-left-color: #16a34a;
+}
+
+.slider-checkpoint.warning-theme {
+  border-left-color: #d97706;
+}
+
+.slider-checkpoint.warning-theme h4 {
+  color: #92400e;
+}
+
+.slider-checkpoint.warning-theme .slider-thumb {
+  border-color: #d97706;
+}
+
+.slider-checkpoint.warning-theme .slider-feedback {
+  border-left-color: #d97706;
+}
+
+.slider-checkpoint.danger-theme {
+  border-left-color: #dc2626;
+}
+
+.slider-checkpoint.danger-theme h4 {
+  color: #991b1b;
+}
+
+.slider-checkpoint.danger-theme .slider-thumb {
+  border-color: #dc2626;
+}
+
+.slider-checkpoint.danger-theme .slider-feedback {
+  border-left-color: #dc2626;
+}
+
+/* Featured slider styling */
+.slider-checkpoint.featured-slider {
+  padding: 2rem;
+  border-left-width: 6px;
+}
+
+.slider-checkpoint.featured-slider h4 {
+  font-size: 1.5rem;
+}
+
+.slider-checkpoint.featured-slider .slider-thumb {
+  width: 26px;
+  height: 26px;
+  top: -10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slider-checkpoint {
+    padding: 1.25rem;
+  }
+  
+  .slider-checkpoint.featured-slider {
+    padding: 1.5rem;
+  }
+  
+  .slider-labels {
+    font-size: 0.8rem;
+  }
+  
+  .slider-labels span {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .slider-thumb {
+    width: 20px;
+    height: 20px;
+    top: -7px;
+  }
+  
+  .slider-checkpoint.featured-slider .slider-thumb {
+    width: 22px;
+    height: 22px;
+    top: -8px;
+  }
+}
+</style>
+
+<script>
+// Enhanced slider functionality with theme support
+document.addEventListener('DOMContentLoaded', function() {
+  const sliders = document.querySelectorAll('.slider-track');
+  
+  sliders.forEach(slider => {
+    const thumb = slider.querySelector('.slider-thumb');
+    const feedbackId = slider.id.replace('-slider', '-feedback').replace('slider', 'feedback');
+    const feedback = document.getElementById(feedbackId);
+    
+    if (!thumb || !feedback) {
+      return;
+    }
+    
+    let isDragging = false;
+    
+    // Default feedback messages - can be overridden via data attributes
+    const defaultMessages = {
+      low: {
+        title: 'Low Level',
+        content: 'This area needs significant improvement to reach higher performance levels.'
+      },
+      medium: {
+        title: 'Medium Level', 
+        content: 'You\'re making progress. There\'s room for improvement to reach optimal levels.'
+      },
+      high: {
+        title: 'High Level',
+        content: 'Excellent! You\'re operating at a high level in this area.'
+      }
+    };
+    
+    function updateSlider(clientX) {
+      const rect = slider.getBoundingClientRect();
+      const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+      thumb.style.left = percentage + '%';
+      
+      let level, feedbackClass;
+      if (percentage < 33) {
+        level = 'low';
+        feedbackClass = 'feedback-low';
+      } else if (percentage < 67) {
+        level = 'medium';
+        feedbackClass = 'feedback-medium';
+      } else {
+        level = 'high';
+        feedbackClass = 'feedback-high';
+      }
+      
+      // Update feedback
+      const message = defaultMessages[level];
+      feedback.innerHTML = `<h5>${message.title}</h5><p>${message.content}</p>`;
+      
+      // Remove existing feedback classes
+      feedback.classList.remove('feedback-low', 'feedback-medium', 'feedback-high');
+      feedback.classList.add('active', feedbackClass);
+    }
+    
+    function startDrag(clientX) {
+      isDragging = true;
+      updateSlider(clientX);
+      document.body.style.userSelect = 'none';
+    }
+    
+    function stopDrag() {
+      isDragging = false;
+      document.body.style.userSelect = '';
+    }
+    
+    // Mouse events
+    thumb.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      startDrag(e.clientX);
+    });
+    
+    slider.addEventListener('click', (e) => {
+      if (!isDragging) {
+        updateSlider(e.clientX);
+      }
+    });
+    
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        e.preventDefault();
+        updateSlider(e.clientX);
+      }
+    });
+    
+    document.addEventListener('mouseup', stopDrag);
+    
+    // Touch events for mobile
+    thumb.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      startDrag(e.touches[0].clientX);
+    });
+    
+    slider.addEventListener('touchstart', (e) => {
+      if (!isDragging) {
+        updateSlider(e.touches[0].clientX);
+      }
+    });
+    
+    document.addEventListener('touchmove', (e) => {
+      if (isDragging) {
+        e.preventDefault();
+        updateSlider(e.touches[0].clientX);
+      }
+    });
+    
+    document.addEventListener('touchend', stopDrag);
+  });
+});
+</script>

@@ -1,0 +1,74 @@
+# Reusable resource links for Related Resources cards
+# Usage: links=site.data.resource_links.dora_research
+
+dora_research:
+  - title: "2024 State of DevOps Report"
+    url: "https://dora.dev/research/2024/dora-report/"
+    description: "Latest research findings and trends"
+  - title: "DORA Research Program"
+    url: "https://dora.dev/"
+    description: "Official DORA research hub"
+  - title: "DORA Quick Check Assessment" 
+    url: "https://dora.dev/quickcheck/"
+    description: "Free team assessment tool"
+
+westrum_culture:
+  - title: "Westrum Organizational Culture Types"
+    url: "https://dora.dev/capabilities/generative-organizational-culture/"
+    description: "Official DORA culture guidance"
+  - title: "IT Revolution Westrum Model"
+    url: "https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/"
+    description: "Detailed model explanation"
+  - title: "Generative Culture Assessment"
+    url: "https://continuousdelivery.com/implementing/culture/"
+    description: "Implementation guidance"
+
+technical_practices:
+  - title: "Trunk-Based Development"
+    url: "https://trunkbaseddevelopment.com/"
+    description: "Best practices and patterns"
+  - title: "Feature Flags Guide"
+    url: "https://featureflags.io/"
+    description: "Implementation strategies"
+  - title: "CI/CD Best Practices"
+    url: "https://continuousdelivery.com/"
+    description: "Continuous delivery guidance"
+  - title: "Test Automation Pyramid"
+    url: "https://martinfowler.com/articles/practical-test-pyramid.html"
+    description: "Testing strategy framework"
+
+books:
+  - title: "Accelerate Book"
+    url: "https://www.amazon.com/dp/1942788339"
+    description: "The foundational research"
+  - title: "The DevOps Handbook"
+    url: "https://www.amazon.com/dp/1942788002" 
+    description: "Implementation guidance"
+  - title: "Continuous Delivery"
+    url: "https://www.amazon.com/dp/0321601912"
+    description: "Technical practices deep dive"
+  - title: "The Lean Startup"
+    url: "https://www.amazon.com/dp/0307887898"
+    description: "Customer-focused development"
+
+leadership:
+  - title: "Transformational Leadership Research"
+    url: "https://dora.dev/capabilities/transformational-leadership/"
+    description: "Leadership dimensions analysis"
+  - title: "Google's Project Aristotle"
+    url: "https://rework.withgoogle.com/print/guides/5312474543562752/"
+    description: "Psychological safety research"
+  - title: "Servant Leadership Principles"
+    url: "https://www.greenleaf.org/what-is-servant-leadership/"
+    description: "Leadership philosophy foundation"
+
+metrics_measurement:
+  - title: "Four Key Metrics"
+    url: "https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance"
+    description: "Google's implementation guide"
+  - title: "Value Stream Mapping"
+    url: "https://www.planview.com/resources/guide/lean-principles-101/value-stream-mapping/"
+    description: "Process visualization techniques"
+  - title: "OKRs and Goal Setting"
+    url: "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/"
+    description: "Objective measurement frameworks"
