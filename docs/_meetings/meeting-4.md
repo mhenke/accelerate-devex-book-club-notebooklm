@@ -485,7 +485,7 @@ dora_color: '#7c3aed'
 - Work in progress and bottlenecks
 - Actions and ownership
 
-### 2. Coaching Questions Practice {#coaching-questions-practice}
+### 2. Coaching Questions Practice {#action-coaching-questions-practice}
 
 **Exercise:** Role-play leadership scenarios
 
