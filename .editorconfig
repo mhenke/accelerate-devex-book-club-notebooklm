@@ -1,0 +1,29 @@
+root = true
+
+# Default settings
+[ * ]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Code files: ensure consistent indentation and trim trailing whitespace
+[*.{html,htm,scss,css,js,ts}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+# YAML and config files
+[*.{yml,yaml,md,json}]
+indent_style = space
+indent_size = 2
+
+# Markdown: don't strip trailing whitespace because two trailing spaces are meaningful
+[*.md]
+trim_trailing_whitespace = false
+
+# Shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
