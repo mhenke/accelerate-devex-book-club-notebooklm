@@ -1101,8 +1101,10 @@ a:hover {
 .hero-metrics {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: var(--spacing-lg);
   margin-top: var(--spacing-xl);
+  flex-wrap: wrap;
 }
 
 .hero-metrics .metric-icon {
@@ -1528,6 +1530,17 @@ a:hover {
     font-size: 0.95rem;
   }
   
+  .hero-metrics {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .hero-metrics .metric-icon {
+    min-width: 120px;
+    flex: 1;
+    max-width: 140px;
+  }
+  
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.25rem; }
@@ -1551,6 +1564,20 @@ a:hover {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+  
+  .hero-metrics {
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+  }
+  
+  .hero-metrics .metric-icon {
+    min-width: 100px;
+    max-width: 120px;
+  }
+  
+  .hero-metrics .metric-icon span {
+    font-size: 0.8rem;
   }
 }
 
