@@ -480,6 +480,29 @@ dora_color: '#0F766E'
   </div>
 </div>
 
+<div class="meeting-navigation" markdown="0">
+  <div class="nav-item prev">
+    <a href="{{ '/meetings/meeting-1/' | relative_url }}">
+      <i class="fas fa-arrow-left"></i>
+      <span>Previous: Foundation</span>
+    </a>
+  </div>
+  
+  <div class="progress-container">
+    <div class="progress-text">Meeting 2 of 4</div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 50%"></div>
+    </div>
+  </div>
+  
+  <div class="nav-item next">
+    <a href="{{ '/meetings/meeting-3/' | relative_url }}">
+      <span>Next: Management</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
 <style>
 /* H3 Themed Styling */
 h3 {
