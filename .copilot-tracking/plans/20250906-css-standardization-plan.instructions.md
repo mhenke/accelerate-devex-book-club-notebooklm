@@ -49,9 +49,8 @@ Refactor and standardize CSS across the codebase, remove inline styles, and impl
   - Details: .copilot-tracking/details/20250906-css-standardization-details.md (Lines 31-50)
 
 ### [ ] Phase 2: Refactor & Standardize
-
-- [ ] Task 2.1: Remove inline styles and replace with standardized classes
-  - Details: .copilot-tracking/details/20250906-css-standardization-details.md (Lines 51-70)
+  - [x] Task 2.1: Remove inline styles and replace with standardized classes
+    - Details: .copilot-tracking/details/20250906-css-standardization-details.md (Lines 51-70)
 - [ ] Task 2.2: Refactor duplicated blocks into reusable classes/partials
   - Details: .copilot-tracking/details/20250906-css-standardization-details.md (Lines 71-90)
 - [ ] Task 2.3: Standardize icon usage (CSS pseudo-elements or single pattern)
