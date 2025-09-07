@@ -16,29 +16,56 @@ This plan aims to refactor and standardize CSS across the codebase, remove inlin
 
 ## 1. Requirements & Constraints
 
-- **REQ-001**: Remove all inline styles from HTML and Markdown files
-- **REQ-002**: Standardize CSS variables and use them throughout
-- **REQ-003**: Implement reusable block classes for meeting page structures
-- **REQ-004**: Ensure consistent icon usage (prefer CSS pseudo-elements or a single icon pattern)
-- **REQ-005**: Refactor duplicated patterns into shared partials or classes
-- **SEC-001**: Follow accessibility and security best practices
-- **PER-001**: Optimize for performance and maintainability
-- **CON-001**: Use existing variables and classes where possible
-- **GUD-001**: Keep solutions simple and avoid unnecessary complexity
+## 1a. Icon Usage and Block Standardization
 
-## 2. Implementation Steps
-
-### Implementation Phase 1
-- GOAL-001: Audit and inventory all CSS, inline styles, and duplicated blocks
+- All icon usage must follow a single, consistent pattern. Prefer CSS pseudo-elements for icons (e.g., `.icon-before` with `::before`), or a single `<i class="...">` pattern if required for compatibility.
 
 | Task | Description | Completed | Date |
-|------|-------------|-----------|------|
 | TASK-001 | Audit all CSS, inline styles, and duplicated blocks | | |
 | TASK-002 | Inventory existing variables and reusable classes | | |
 
 ### Implementation Phase 2
+
 - GOAL-002: Refactor and standardize CSS, remove inline styles, and implement reusable blocks
 
+#### Best Practice Example for Icon Consistency
+
+```html
+<h3 class="icon-before icon-times">Old Thinking</h3>
+```
+
+```scss
+.icon-before.icon-times::before {
+  content: '\f057'; // Unicode for FontAwesome times-circle
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 0.5em;
+  color: var(--accent-red, #f44336);
+}
+```
+
+// Use variables for colors, spacing, and font-family. Do not hardcode values.
+
+#### Best Practice Example for Reusable Block
+
+```html
+<div class="meeting-block">
+  <h3 class="icon-before icon-times">Old Thinking</h3>
+  <p>...</p>
+</div>
+```
+
+```scss
+.meeting-block {
+  background: var(--block-bg, #fff);
+  border-radius: var(--block-radius, 8px);
+  box-shadow: var(--block-shadow, 0 2px 8px rgba(0, 0, 0, 0.05));
+  padding: var(--block-padding, 1.5em);
+  margin-bottom: var(--block-margin, 2em);
+}
+```
+
+// All meeting pages must use .meeting-block and icon classes. No duplicated markup.
 | Task | Description | Completed | Date |
 |------|-------------|-----------|------|
 | TASK-003 | Remove inline styles and replace with standardized classes | | |
@@ -46,12 +73,13 @@ This plan aims to refactor and standardize CSS across the codebase, remove inlin
 | TASK-005 | Standardize icon usage (CSS pseudo-elements or single pattern) | | |
 
 ### Implementation Phase 3
+
 - GOAL-003: Update documentation and test for compliance
 
-| Task | Description | Completed | Date |
-|------|-------------|-----------|------|
-| TASK-006 | Update documentation for new CSS standards and blocks | | |
-| TASK-007 | Run linting, accessibility, and visual regression tests | | |
+| Task     | Description                                             | Completed | Date |
+| -------- | ------------------------------------------------------- | --------- | ---- |
+| TASK-006 | Update documentation for new CSS standards and blocks   |           |      |
+| TASK-007 | Run linting, accessibility, and visual regression tests |           |      |
 
 ## 3. Alternatives
 
@@ -66,8 +94,8 @@ This plan aims to refactor and standardize CSS across the codebase, remove inlin
 ## 5. Files
 
 - **FILE-001**: docs/assets/main.scss (main stylesheet)
-- **FILE-002**: docs/_layouts/meeting.html (meeting page layout)
-- **FILE-003**: docs/_meetings/ (individual meeting pages)
+- **FILE-002**: docs/\_layouts/meeting.html (meeting page layout)
+- **FILE-003**: docs/\_meetings/ (individual meeting pages)
 - **FILE-004**: README.md (documentation)
 
 ## 6. Testing
