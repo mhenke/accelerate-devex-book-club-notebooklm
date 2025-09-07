@@ -1818,22 +1818,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const score = checkedBoxes.length;
         const percentage = (score / readinessCheckboxes.length) * 100;
 
-        let level, color, advice;
+        let level, cssClass, advice;
         if (percentage >= 75) {
           level = "High Readiness";
-          color = "#7c3aed";
+          cssClass = "color-primary";
           advice = "Your organization shows strong transformation readiness. Focus on maintaining momentum and scaling successful practices.";
         } else if (percentage >= 50) {
           level = "Moderate Readiness";
-          color = "#f59e0b";
+          cssClass = "color-warning";
           advice = "Your organization has some transformation foundations. Prioritize building missing capabilities before scaling.";
         } else {
           level = "Low Readiness";
-          color = "#ef4444";
+          cssClass = "color-danger";
           advice = "Focus on building foundational transformation capabilities. Start with learning investment and experimentation culture.";
         }
 
-        readinessScore.innerHTML = `<h5 class="readiness-title" style="color: ${color};">${level} (${score}/4 factors)</h5><p class="readiness-advice">${advice}</p>`;
+        readinessScore.innerHTML = `<h5 class="readiness-title ${cssClass}">${level} (${score}/4 factors)</h5><p class="readiness-advice">${advice}</p>`;
         readinessScore.classList.add('active');
       });
     });

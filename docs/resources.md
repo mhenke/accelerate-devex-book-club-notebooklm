@@ -3,7 +3,7 @@ layout: default
 title: Resources
 ---
 
-<div class="page-hero" style="background: linear-gradient(135deg, #7adad1 0%, #6bc7bf 100%)">
+<div class="page-hero page-hero--teal">
   <div class="hero-content">
     <div class="hero-icon">
       <i class="fas fa-book-open"></i>
