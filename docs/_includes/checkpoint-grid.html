@@ -38,3 +38,295 @@ Parameters:
   </div>
   {% endif %}
 </div>
+
+<style>
+/* Checkpoint grid styling - inherits from checkpoint-card but adds grid layouts */
+.generic-checkpoint {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #1E3A8A;
+  transition: all 0.3s ease;
+}
+
+.generic-checkpoint:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.generic-checkpoint h4 {
+  margin: 0 0 1rem 0;
+  color: #1e40af;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.generic-checkpoint h4 i {
+  margin-right: 0.5rem;
+  color: inherit;
+}
+
+.generic-checkpoint p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Grid layouts */
+.priority-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.assessment-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Assessment button styling */
+.assessment-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.priority-selector .assessment-btn {
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.assessment-btn:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.priority-selector .assessment-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-btn input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.assessment-btn .radio-mark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  margin-right: 1rem;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.priority-selector .assessment-btn .radio-mark {
+  margin: 0 0 0.5rem 0;
+}
+
+.assessment-btn input[type="radio"]:checked + .radio-mark {
+  border-color: #1e40af;
+  background: #1e40af;
+}
+
+.assessment-btn input[type="radio"]:checked + .radio-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.assessment-btn input[type="radio"]:checked ~ * {
+  color: #1e40af;
+}
+
+/* Performance level styling */
+.assessment-btn.performance-high {
+  border-left: 4px solid #16a34a;
+}
+
+.assessment-btn.performance-high input[type="radio"]:checked + .radio-mark {
+  border-color: #16a34a;
+  background: #16a34a;
+}
+
+.assessment-btn.performance-medium {
+  border-left: 4px solid #d97706;
+}
+
+.assessment-btn.performance-medium input[type="radio"]:checked + .radio-mark {
+  border-color: #d97706;
+  background: #d97706;
+}
+
+.assessment-btn.performance-low {
+  border-left: 4px solid #dc2626;
+}
+
+.assessment-btn.performance-low input[type="radio"]:checked + .radio-mark {
+  border-color: #dc2626;
+  background: #dc2626;
+}
+
+/* Grid-specific performance styling */
+.priority-selector .assessment-btn.performance-high {
+  border-left: none;
+  border-top: 4px solid #16a34a;
+}
+
+.priority-selector .assessment-btn.performance-medium {
+  border-left: none;
+  border-top: 4px solid #d97706;
+}
+
+.priority-selector .assessment-btn.performance-low {
+  border-left: none;
+  border-top: 4px solid #dc2626;
+}
+
+/* Feedback area */
+.generic-checkpoint .feedback-area {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-left: 4px solid #1E3A8A;
+  border-radius: 8px;
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+
+.generic-checkpoint .feedback-area.active {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+.generic-checkpoint .feedback-area h5 {
+  margin: 0 0 0.5rem 0;
+  color: #1e40af;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.generic-checkpoint .feedback-area p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .generic-checkpoint {
+    padding: 1.25rem;
+  }
+  
+  .priority-selector {
+    grid-template-columns: 1fr;
+  }
+  
+  .priority-selector .assessment-btn {
+    min-height: 100px;
+    padding: 1.25rem 1rem;
+  }
+  
+  .assessment-btn {
+    padding: 0.75rem;
+  }
+  
+  .assessment-btn .radio-mark {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.75rem;
+  }
+  
+  .priority-selector .assessment-btn .radio-mark {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .assessment-btn input[type="radio"]:checked + .radio-mark::after {
+    width: 6px;
+    height: 6px;
+  }
+}
+</style>
+
+<script>
+// Checkpoint grid interactivity
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle all checkpoint grid interactions
+  const checkpointGrids = document.querySelectorAll('.generic-checkpoint');
+  
+  checkpointGrids.forEach(card => {
+    const radioInputs = card.querySelectorAll('input[type="radio"]');
+    const feedbackArea = card.querySelector('.feedback-area');
+    
+    if (radioInputs.length > 0 && feedbackArea) {
+      radioInputs.forEach(input => {
+        input.addEventListener('change', function() {
+          // Add visual feedback
+          feedbackArea.classList.add('active');
+          
+          // Update feedback based on performance class
+          const label = this.closest('.assessment-btn');
+          const performanceClass = Array.from(label.classList).find(cls => cls.startsWith('performance-'));
+          
+          let feedbackTitle = '';
+          let feedbackContent = '';
+          let borderColor = '#1E3A8A';
+          
+          if (performanceClass === 'performance-high') {
+            feedbackTitle = '🚀 High Performance Choice';
+            feedbackContent = 'Excellent selection! This approach is strongly associated with high delivery performance according to Accelerate research.';
+            borderColor = '#16a34a';
+            feedbackArea.style.background = 'linear-gradient(135deg, #e8f8f5, #d1f2eb)';
+          } else if (performanceClass === 'performance-medium') {
+            feedbackTitle = '⚡ Good Direction';
+            feedbackContent = 'Solid choice! This represents good progress with opportunities to advance toward elite performance.';
+            borderColor = '#d97706';
+            feedbackArea.style.background = 'linear-gradient(135deg, #fff3cd, #ffeaa7)';
+          } else if (performanceClass === 'performance-low') {
+            feedbackTitle = '🔧 Growth Opportunity';
+            feedbackContent = 'This represents a significant opportunity for improvement to boost delivery performance and team effectiveness.';
+            borderColor = '#dc2626';
+            feedbackArea.style.background = 'linear-gradient(135deg, #f8d7da, #f5c6cb)';
+          }
+          
+          feedbackArea.style.borderLeftColor = borderColor;
+          feedbackArea.innerHTML = `
+            <h5 style="color: ${borderColor}; margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600;">
+              ${feedbackTitle}
+            </h5>
+            <p style="margin: 0; font-size: 0.9rem; line-height: 1.4; color: #374151;">
+              ${feedbackContent}
+            </p>
+          `;
+        });
+      });
+    }
+  });
+});
+</script>

@@ -1,39 +1,23 @@
 <!-- Reusable Application Card Component -->
 <!-- 
-Usage Examples:
-{% include reusable-application-card.html 
-  icon="fas fa-robot"
-  title="Automation Success Stories"
-  description="Share examples from your experience:"
-  prompts="What manual process did you recently automate? What was the impact?|How did test automation change your team's deployment confidence?|Which deployment steps still require manual intervention?"
-  theme="automation"
-%}
+Usage: Creates application cards with prompts and interactive features
+Parameters:
+- icon: FontAwesome icon class (optional)
+- title: Card title (required)
+- description: Card description (optional)
+- prompts: Pipe-separated prompts or data array (optional)
+- theme: Color theme (automation, architecture, security, collaboration, performance) (optional)
+- custom_class: Additional CSS class (optional)
+- interactive_form: Enable interactive form (optional)
+- text_area_placeholder: Placeholder for textarea (optional)
+- custom_content: Custom HTML content (optional)
 
-{% include reusable-application-card.html 
-  icon="fas fa-sitemap"
-  title="Architectural Decisions"
-  description="Discuss decisions that impacted team independence:"
-  prompts=site.data.application_prompts.architecture
-  theme="architecture"
-  custom_class="featured-application"
-%}
-
-{% include reusable-application-card.html 
-  title="Security Integration"
-  icon="fas fa-shield-alt"
-  description="Examine security practices that impact delivery:"
-  interactive_form=true
-  text_area_placeholder="Share your team's security integration challenges and successes..."
-  theme="security"
-%}
-
-{% include reusable-application-card.html 
-  icon="fas fa-users"
-  title="Team Collaboration"
-  description="How has your team's collaboration evolved?"
-  custom_content="<div class='collaboration-metrics'><input type='range' min='1' max='10' value='5'><span>Rate your current collaboration level</span></div>"
-  theme="collaboration"
-%}
+Example usage:
+  icon: "fas fa-robot"
+  title: "Automation Success Stories"
+  description: "Share examples from your experience:"
+  prompts: "What manual process did you recently automate? What was the impact?|How did test automation change your team's deployment confidence?|Which deployment steps still require manual intervention?"
+  theme: "automation"
 -->
 
 <div class="application-card {{ include.theme | default: 'default' }}-theme {{ include.custom_class }}" markdown="0">
