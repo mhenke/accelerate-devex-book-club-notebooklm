@@ -1,7 +1,7 @@
 # Accelerate DevEx Book Club
 
-A structured Jekyll-based GitHub Pages site and resource hub for a DevOps book club focused on "Accelerate" 
-by Nicole Forsgren, Jez Humble, and Gene Kim. All visuals and content are AI-generated or curated for 
+A structured Jekyll-based GitHub Pages site and resource hub for a DevOps book club focused on "Accelerate"
+by Nicole Forsgren, Jez Humble, and Gene Kim. All visuals and content are AI-generated or curated for
 podcasts, video, and learning materials.
 
 ---
@@ -9,8 +9,8 @@ podcasts, video, and learning materials.
 ## 🚀 Project Name and Description
 
 **Accelerate DevEx Book Club**  
-A resource hub and interactive site for learning and implementing high-performing DevOps practices, 
-organized around the "Accelerate" book. Features meeting guides, AI-generated podcasts/videos, and 
+A resource hub and interactive site for learning and implementing high-performing DevOps practices,
+organized around the "Accelerate" book. Features meeting guides, AI-generated podcasts/videos, and
 practical activities.
 
 ---
@@ -28,8 +28,8 @@ practical activities.
 ## 🏗️ Project Architecture
 
 - **docs/**: Main Jekyll site with layouts, assets, and meeting pages
-  - **_meetings/**: Four interactive meeting pages with corrected chapter mappings
-  - **_layouts/**: Jekyll layouts (default, meeting, resource)
+  - **\_meetings/**: Four interactive meeting pages with corrected chapter mappings
+  - **\_layouts/**: Jekyll layouts (default, meeting, resource)
   - **assets/**: SCSS stylesheets with modern design system
 - **resources/**: Comprehensive resource collection
   - **plan/**: Updated book club plan with corrected chapter mappings and NotebookLM prompts
@@ -149,6 +149,32 @@ accelerate-devex-book-club-notebooklm/
 cd docs
 bundle exec jekyll build
 ```
+
+---
+
+## 🎨 CSS Standardization & Reusable Blocks
+
+This project uses a modern, maintainable CSS architecture based on:
+
+- **Design Tokens**: All colors, spacing, typography, and border radius are defined as CSS custom properties in `docs/assets/main.scss` and `docs/_sass/abstracts/_tokens.scss`.
+- **Utility Classes**: For spacing (`.mb-md`, `.mt-lg`, `.p-sm`), text alignment (`.text-center`), and more. See `main.scss` for full list.
+- **Reusable Block Components**: Hero sections, meta badges, chapters badges, navigation, and progress bars are implemented as reusable classes (see `main.scss` and `_meeting-content.scss`).
+- **Meeting Themes**: Each meeting page uses a theme class (`.meeting-theme--1`, `.meeting-theme--2`, etc.) for color and style overrides. See `_meeting-themes.scss`.
+- **Icon Classes**: Standardized icon usage via `.icon`, `.icon--sm`, `.icon--lg` in `_icons.scss`. Use `<span class="icon">...</span>` or `<i class="icon">...</i>` for consistent icon rendering.
+- **Accessibility**: Semantic HTML and ARIA roles are required for all interactive components. Use `.sr-only` for screen-reader-only text.
+
+**How to use:**
+
+- Add utility classes to HTML/Markdown for spacing and alignment.
+- Wrap meeting content in `.meeting-content` and apply the appropriate `.meeting-theme--X` class for theming.
+- Use block classes for hero, badges, navigation, and progress as documented in `main.scss`.
+- Reference icons using standardized classes for consistent sizing and alignment.
+
+**Maintainers:**
+
+- Edit and extend styles in `docs/assets/main.scss` and partials in `docs/_sass/components/`.
+- Update design tokens in `_tokens.scss` for global changes.
+- See code exemplars in `.github/copilot-instructions.md` for best practices.
 
 ## 🧪 Testing
 
