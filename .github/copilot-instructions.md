@@ -80,52 +80,63 @@ All diagrams and badges should use web-native technologies and be responsive
 ## Developer Workflow & Testing
 
 ### Code Quality Commands (ALWAYS RUN BEFORE COMMITTING)
+
 **IMPORTANT**: Always run validation before committing changes to ensure code quality.
 
 #### Quick Local Check (During Development)
+
 ```bash
 npm run lint && npm run build
 ```
+
 - Runs all linters (CSS, JS, Markdown) and builds the site
 - Catches most issues quickly (~5-10 seconds)
 - Use this for fast feedback while coding
 
-#### Full Local Validation (Before Committing) 
+#### Full Local Validation (Before Committing)
+
 ```bash
 npm run validate
 ```
+
 - Complete pipeline: build + test including linting, HTML validation, accessibility checks
 - **ALWAYS use this before every commit**
 
 #### Comprehensive Audit (Before Releases)
+
 ```bash
-npm run audit  
+npm run audit
 ```
+
 - Runs build + jekyll-audit for full performance, accessibility, SEO, link validation
 - Use before major releases or significant changes
 
 #### Individual Test Commands
+
 ```bash
 npm run lint          # All linters (fastest check)
 npm run lint:css      # CSS/SCSS linting only
-npm run lint:js       # JavaScript linting only  
+npm run lint:js       # JavaScript linting only
 npm run lint:md       # Markdown linting only
 npm run test:html     # HTML validation
 npm run test:jekyll-audit  # Full audit suite
 ```
 
 #### Recommended Testing Workflow
+
 1. **During development**: `npm run lint` (fast feedback)
-2. **Before committing**: `npm run validate` (full check) 
+2. **Before committing**: `npm run validate` (full check)
 3. **Before major releases**: `npm run audit` (comprehensive)
 
 ### Jekyll Development
+
 - Edit SCSS in `docs/assets/main.scss` (must have YAML front matter)
 - Jekyll auto-compiles SCSS to `/assets/main.css` on build
 - Site is served from `/accelerate-devex-book-club-notebooklm/` (project pages)
 - Reference assets with the full repo path (e.g., `/accelerate-devex-book-club-notebooklm/assets/main.css`)
 
 ### Quality Tools Integrated
+
 - **Stylelint**: CSS/SCSS code quality with Jekyll-specific rules
 - **ESLint**: JavaScript code quality with HTML/Markdown support
 - **Markdownlint**: Markdown formatting and structure
@@ -135,12 +146,19 @@ npm run test:jekyll-audit  # Full audit suite
 
 ## Patterns & Conventions
 
-- All visuals are web-native (SVG/CSS/HTML/JS)
-- Meeting guides and prompts are markdown-based
-- AI-generated content is clearly marked and attributed
-- Use semantic HTML and ARIA for accessibility
-- Responsive design is required for all components
-- Use color palette and font guidelines for consistent branding
+## Research & Planning Workflow
+
+All major refactoring, feature, or upgrade work must follow the standardized workflow below. This ensures systematic, auditable, and AI-optimized planning and execution:
+
+### Typical Workflow Sequence
+
+1. **Task Researcher**: Research and document the current state of the codebase. Identify pain points, technical debt, and problematic patterns. Summarize findings with links to code sections.
+2. **Tech Debt Remediation Plan**: Outline a remediation plan based on research. Prioritize issues by impact/effort, recommend refactoring strategies, and specify dependencies/blockers.
+3. **Planner (High-Level Milestones)**: Create a milestone plan with key phases, timelines, and responsible roles. Note integration points with other teams/systems.
+4. **update-implementation-plan**: Update an existing implementation plan file with new or updated requirements to provide new features, refactoring, design, architecture, or infrastructure. Output must be machine-readable, deterministic, and structured for autonomous execution by other AI systems or humans. All implementation plans must strictly follow the `/update-implementation-plan.prompt.md` template and validation rules.
+5. **Implementation Plan (Detailed Steps)**: Write a step-by-step plan with atomic tasks, code standards, accessibility, performance, and testing requirements. Provide clear instructions for contributors.
+
+All implementation plans must use the `/update-implementation-plan.prompt.md` template for machine-readable, deterministic, and executable output. See that file for required structure and compliance rules.
 
 ## Integration Points
 
