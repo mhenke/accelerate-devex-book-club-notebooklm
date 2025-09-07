@@ -8,35 +8,15 @@ duration: '1 Hour'
 dora_color: '#1E3A8A'
 ---
 
-### Watch the Meeting 1 Video {#watch-meeting-1-video}
+{% include reusable-media-video.html 
+  meeting_number="1"
+  video_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4"
+%}
 
-<div class="media-container" markdown="0">
-<video controls width="100%">
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" download class="download-btn">
-		<i class="fas fa-download"></i> Download Video
-	</a>
-</div>
-</div>
-
-### Listen to the Meeting 1 Podcast {#listen-meeting-1-podcast}
-
-<div class="media-container" markdown="0">
-<audio controls>
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a" download class="download-btn">
-		<i class="fas fa-download"></i> Download Audio
-	</a>
-</div>
-</div>
+{% include reusable-media-podcast.html 
+  meeting_number="1"
+  audio_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a"
+%}
 
 ### Key Insights
 
@@ -179,80 +159,28 @@ dora_color: '#1E3A8A'
     default_feedback="Select how your team feels about deployments to get targeted improvement suggestions."
   %}
 
-  <div class="checkpoint-card improvement-priority" markdown="0">
-    <h4><i class="fas fa-bullseye"></i> Improvement Priority</h4>
-    <p>Which DORA metric should your team focus on first?</p>
-    <div class="priority-selector" markdown="0">
-      <label class="assessment-btn performance-high">
-        <input type="radio" name="improvement-focus" value="lead-time">
-        <span class="radio-mark"></span>
-        Lead Time
-      </label>
-      <label class="assessment-btn performance-high">
-        <input type="radio" name="improvement-focus" value="deploy-frequency">
-        <span class="radio-mark"></span>
-        Deploy Frequency
-      </label>
-      <label class="assessment-btn performance-medium">
-        <input type="radio" name="improvement-focus" value="restore-time">
-        <span class="radio-mark"></span>
-        Restore Time
-      </label>
-      <label class="assessment-btn performance-low">
-        <input type="radio" name="improvement-focus" value="change-fail">
-        <span class="radio-mark"></span>
-        Change Fail Rate
-      </label>
-    </div>
-    <div class="feedback-area" id="priority-feedback">
-      <p>Choose which metric needs the most attention to get specific improvement strategies.</p>
-    </div>
-  </div>
+  {% include checkpoint-grid.html 
+    title="Improvement Priority"
+    icon="fas fa-bullseye"
+    question="Which DORA metric should your team focus on first?"
+    layout="grid-2"
+    answers=site.data.checkpoint_answers.improvement_priority
+    feedback_id="priority-feedback"
+    radio_name="improvement-focus"
+    card_class="improvement-priority"
+    default_feedback="Choose which metric needs the most attention to get specific improvement strategies."
+  %}
 
-  <div class="checkpoint-card culture-assessment" markdown="0">
-    <h4><i class="fas fa-users"></i> Culture Assessment</h4>
-    <p>Assess your organization's culture type using Westrum's model:</p>
-
-    <div class="culture-selector" markdown="0">
-      <label class="culture-option assessment-btn performance-low">
-        <input type="radio" name="culture-type" value="pathological">
-        <span class="radio-mark"></span>
-        <div class="culture-content">
-          <div class="culture-header">
-            <strong>Pathological</strong>
-          </div>
-          <div class="culture-description">Power-oriented, low cooperation, blame culture</div>
-        </div>
-      </label>
-
-      <label class="culture-option assessment-btn performance-medium">
-        <input type="radio" name="culture-type" value="bureaucratic">
-        <span class="radio-mark"></span>
-        <div class="culture-content">
-          <div class="culture-header">
-            <strong>Bureaucratic</strong>
-          </div>
-          <div class="culture-description">Rule-oriented, modest cooperation, rules over mission</div>
-        </div>
-      </label>
-
-      <label class="culture-option assessment-btn performance-high">
-        <input type="radio" name="culture-type" value="generative">
-        <span class="radio-mark"></span>
-        <div class="culture-content">
-          <div class="culture-header">
-            <strong>Generative</strong>
-          </div>
-          <div class="culture-description">Performance-oriented, high cooperation, mission focused</div>
-        </div>
-      </label>
-    </div>
-
-    <div class="feedback-area" id="culture-feedback">
-      <p>Select your organization's culture type to see how it impacts delivery performance.</p>
-    </div>
-
-  </div>
+  {% include culture-checkpoint.html 
+    title="Culture Assessment"
+    icon="fas fa-users"
+    question="Assess your organization's culture type using Westrum's model:"
+    culture_types=site.data.checkpoint_answers.westrum_culture_types
+    feedback_id="culture-feedback"
+    radio_name="culture-type"
+    card_class="culture-assessment"
+    default_feedback="Select your organization's culture type to see how it impacts delivery performance."
+  %}
 </div>
 
 ### Discussion Questions
@@ -267,50 +195,35 @@ dora_color: '#1E3A8A'
 ## Action Items for Next Meeting
 
 <div class="action-items-grid" markdown="0">
-  <div class="action-card" markdown="0">
-    <div class="action-header">
-      <i class="fas fa-chart-line"></i>
-      <h4>Start tracking ONE DORA metric this week</h4>
-    </div>
-    <p>Which metric will reveal your team's biggest opportunity?</p>
-    <div class="action-details">
-      Pick deployment frequency, lead time, MTTR, or change failure rate. Use a simple spreadsheet or notes. The goal is baseline measurement, not perfection.
-    </div>
-    <div class="checklist-item">
-      <input type="checkbox" id="action-1" class="action-checkbox">
-      <label for="action-1" class="action-label">Track chosen DORA metric</label>
-    </div>
-  </div>
+  {% include reusable-action-card.html 
+    icon="fas fa-chart-line"
+    title="Start tracking ONE DORA metric this week"
+    question="Which metric will reveal your team's biggest opportunity?"
+    details="Pick deployment frequency, lead time, MTTR, or change failure rate. Use a simple spreadsheet or notes. The goal is baseline measurement, not perfection."
+    action_items="Choose one DORA metric to track|Set up basic measurement tracking|Document baseline numbers|Review weekly for patterns"
+    checkbox_id="metric-tracking"
+    theme="primary"
+  %}
 
-  <div class="action-card" markdown="0">
-    <div class="action-header">
-      <i class="fas fa-exclamation-triangle"></i>
-      <h4>Document your #1 deployment pain point</h4>
-    </div>
-    <p>What makes your team anxious before releases?</p>
-    <div class="action-details">
-      Write down the manual steps, coordination needed, and how it impacts work-life balance. Be specific about what happens when things go wrong.
-    </div>
-    <div class="checklist-item">
-      <input type="checkbox" id="action-2" class="action-checkbox">
-      <label for="action-2" class="action-label">Document deployment pain point</label>
-    </div>
-  </div>
+  {% include reusable-action-card.html 
+    icon="fas fa-exclamation-triangle"
+    title="Document your #1 deployment pain point"
+    question="What makes your team anxious before releases?"
+    details="Write down the manual steps, coordination needed, and how it impacts work-life balance. Be specific about what happens when things go wrong."
+    action_items="Identify main deployment anxiety source|Document manual steps involved|Note coordination requirements|Record impact on work-life balance"
+    checkbox_id="pain-point"
+    theme="warning"
+  %}
 
-  <div class="action-card" markdown="0">
-    <div class="action-header">
-      <i class="fas fa-users"></i>
-      <h4>Culture detective mode</h4>
-    </div>
-    <p>Observe 3 team interactions - Are you pathological, bureaucratic, or generative?</p>
-    <div class="action-details">
-      Watch how failures are discussed in meetings. Note information sharing patterns. Do you see blame or learning? Cooperation or silos?
-    </div>
-    <div class="checklist-item">
-      <input type="checkbox" id="action-3" class="action-checkbox">
-      <label for="action-3" class="action-label">Observe team culture interactions</label>
-    </div>
-  </div>
+  {% include reusable-action-card.html 
+    icon="fas fa-users"
+    title="Culture detective mode"
+    question="Observe 3 team interactions - Are you pathological, bureaucratic, or generative?"
+    details="Watch how failures are discussed in meetings. Note information sharing patterns. Do you see blame or learning? Cooperation or silos?"
+    action_items="Observe failure discussions in meetings|Note information sharing patterns|Look for blame vs learning responses|Document cooperation vs silo behaviors"
+    checkbox_id="culture-observe"
+    theme="success"
+  %}
 </div>
 
 ### Related Resources

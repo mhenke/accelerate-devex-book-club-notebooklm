@@ -1,0 +1,256 @@
+<!-- Reusable Action Item Card Component -->
+<!-- 
+Usage: Creates action item cards with bullet points and checkboxes
+Parameters:
+- icon: FontAwesome icon class (required)
+- title: Action title (required)
+- question: Question or description (optional)
+- details: Detailed instructions (optional)
+- action_items: Pipe-separated list of action items for bullet points (required)
+- checkbox_id: Base ID for checkboxes (optional)
+- theme: Color theme (default, primary, success, warning, danger) (optional)
+- custom_class: Additional CSS class (optional)
+
+Example with bullet list:
+action_items="Track chosen DORA metric weekly|Set up basic measurement spreadsheet|Document baseline numbers|Share findings with team"
+-->
+
+<div class="action-card {{ include.theme | default: 'default' }}-theme {{ include.custom_class }}" markdown="0">
+  <div class="action-header">
+    <i class="{{ include.icon }}"></i>
+    <h4>{{ include.title }}</h4>
+  </div>
+  
+  {% if include.question %}
+  <p class="action-question">{{ include.question }}</p>
+  {% endif %}
+  
+  {% if include.details %}
+  <div class="action-details">
+    {{ include.details }}
+  </div>
+  {% endif %}
+  
+  {% if include.action_items %}
+  <div class="action-checklist">
+    {% assign items_array = include.action_items | split: '|' %}
+    {% for item in items_array %}
+    <div class="checklist-item">
+      <input type="checkbox" id="{{ include.checkbox_id | default: 'action' }}-{{ forloop.index }}" class="action-checkbox">
+      <label for="{{ include.checkbox_id | default: 'action' }}-{{ forloop.index }}" class="action-label">{{ item | strip }}</label>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<style>
+/* Enhanced Action Card Styles */
+.action-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border-left: 4px solid #1E3A8A;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15);
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.action-header i {
+  color: #1E3A8A;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.action-header h4 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.action-question {
+  color: #374151;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.action-details {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border: 1px solid #e2e8f0;
+}
+
+.action-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+.action-checkbox {
+  margin-top: 0.25rem;
+  width: 16px;
+  height: 16px;
+  accent-color: #1E3A8A;
+  flex-shrink: 0;
+}
+
+.action-label {
+  color: #374151;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.action-label::before {
+  content: '•';
+  color: #1E3A8A;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.action-checkbox:checked + .action-label {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Theme Variations */
+.action-card.primary-theme {
+  border-left-color: #3b82f6;
+}
+
+.action-card.primary-theme .action-header i {
+  color: #3b82f6;
+}
+
+.action-card.primary-theme .action-label::before {
+  color: #3b82f6;
+}
+
+.action-card.primary-theme .action-checkbox {
+  accent-color: #3b82f6;
+}
+
+.action-card.success-theme {
+  border-left-color: #10b981;
+}
+
+.action-card.success-theme .action-header i {
+  color: #10b981;
+}
+
+.action-card.success-theme .action-label::before {
+  color: #10b981;
+}
+
+.action-card.success-theme .action-checkbox {
+  accent-color: #10b981;
+}
+
+.action-card.warning-theme {
+  border-left-color: #f59e0b;
+}
+
+.action-card.warning-theme .action-header i {
+  color: #f59e0b;
+}
+
+.action-card.warning-theme .action-label::before {
+  color: #f59e0b;
+}
+
+.action-card.warning-theme .action-checkbox {
+  accent-color: #f59e0b;
+}
+
+.action-card.danger-theme {
+  border-left-color: #ef4444;
+}
+
+.action-card.danger-theme .action-header i {
+  color: #ef4444;
+}
+
+.action-card.danger-theme .action-label::before {
+  color: #ef4444;
+}
+
+.action-card.danger-theme .action-checkbox {
+  accent-color: #ef4444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .action-card {
+    padding: 1.25rem;
+  }
+  
+  .action-header {
+    gap: 0.5rem;
+  }
+  
+  .action-header i {
+    font-size: 1rem;
+  }
+  
+  .action-header h4 {
+    font-size: 1rem;
+  }
+  
+  .checklist-item {
+    gap: 0.5rem;
+  }
+  
+  .action-label {
+    font-size: 0.85rem;
+    padding-left: 0.75rem;
+  }
+}
+
+/* Action Items Grid Support */
+.action-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .action-items-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+</style>
