@@ -2,11 +2,11 @@
 matrix:
 - name: markdown
   sources:
-    - 'docs/**/*.md'
+    - 'docs/*.md'
     - 'docs/_meetings/**/*.md'
-    - 'docs/index.md'
     - 'README.md'
     - 'MARKDOWN.md'
+    - 'HTML_VALIDATION.md'
   aspell:
     lang: en
     d: en_US
