@@ -1,0 +1,154 @@
+<!-- Statistic Card Component -->
+<div class="statistic-card {{ include.theme | default: 'primary' }}-theme" markdown="0">
+  {% if include.icon %}
+  <div class="stat-icon">
+    <i class="{{ include.icon }}"></i>
+  </div>
+  {% endif %}
+  
+  {% if include.title %}
+  <h3 class="stat-title">{{ include.title }}</h3>
+  {% endif %}
+  
+  {% if include.statistic %}
+  <div class="stat-number">{{ include.statistic }}</div>
+  {% endif %}
+  
+  {% if include.subtitle %}
+  <div class="stat-subtitle">{{ include.subtitle }}</div>
+  {% endif %}
+  
+  {% if include.description %}
+  <p class="stat-description">{{ include.description }}</p>
+  {% endif %}
+  
+  {% if include.attribution %}
+  <div class="stat-attribution">
+    <cite>{{ include.attribution }}</cite>
+  </div>
+  {% endif %}
+</div>
+
+<style>
+.statistic-card {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border: 1px solid #d1d5db;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.statistic-card.meeting-1-theme {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border-color: #1E3A8A;
+}
+
+.statistic-card.meeting-2-theme {
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  border-color: #0F766E;
+}
+
+.statistic-card.meeting-3-theme {
+  background: linear-gradient(135deg, #fef3e2, #fde68a);
+  border-color: #D97706;
+}
+
+.statistic-card.meeting-4-theme {
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  border-color: #7c3aed;
+}
+
+.statistic-card.primary-theme {
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  border-color: #8b5cf6;
+}
+
+.statistic-card.warning-theme {
+  background: linear-gradient(135deg, #fef3e2, #fef3c7);
+  border-color: #f59e0b;
+}
+
+.statistic-card.success-theme {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border-color: #10b981;
+}
+
+/* Meeting-specific icon and text colors */
+.meeting-1-theme .stat-icon,
+.meeting-1-theme .stat-title,
+.meeting-1-theme .stat-number {
+  color: #1E3A8A;
+}
+
+.meeting-2-theme .stat-icon,
+.meeting-2-theme .stat-title,
+.meeting-2-theme .stat-number {
+  color: #0F766E;
+}
+
+.meeting-3-theme .stat-icon,
+.meeting-3-theme .stat-title,
+.meeting-3-theme .stat-number {
+  color: #D97706;
+}
+
+.meeting-4-theme .stat-icon,
+.meeting-4-theme .stat-title,
+.meeting-4-theme .stat-number {
+  color: #7c3aed;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #8b5cf6;
+}
+
+.stat-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6b46c1;
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #6b46c1;
+  margin: 0.5rem 0;
+  line-height: 1;
+}
+
+.stat-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.stat-description {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.stat-attribution {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(107, 114, 128, 0.2);
+  text-align: right;
+}
+
+.stat-attribution cite {
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+</style>

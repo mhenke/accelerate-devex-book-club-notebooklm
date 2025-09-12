@@ -104,6 +104,15 @@ dora_color: '#1E3A8A'
   theme="warning"
 %}
 
+{% include statistic-card.html 
+  icon="fas fa-rocket"
+  title="High Performers vs. Low Performers"
+  statistic="46x"
+  subtitle="more frequent deployments"
+  description="Elite performers deploy 46 times more frequently than low performers while maintaining superior stability and quality"
+  theme="meeting-1"
+%}
+
 ### Deployment Pain → Solution Flow
 
 {% include simple-comparison.html 

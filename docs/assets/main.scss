@@ -1503,6 +1503,19 @@ a:hover {
   margin-bottom: var(--spacing-md);
 }
 
+.book-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
 .book-3d {
   display: inline-block;
   position: relative;

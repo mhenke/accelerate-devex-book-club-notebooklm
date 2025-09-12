@@ -123,13 +123,7 @@ Ready to transform your organization into a high-performing technology team?
 </ul>
 </div>
 
-<div class="key-question">
-<h2>The Key Question</h2>
-<p>Throughout our journey, we'll return to this central reflection:</p>
-<blockquote>
-"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
-</blockquote>
-</div>
+{% include key-question.html %}
 
 <h2 class="section-accent"><i class="fas fa-tools"></i> Resources</h2>
 
@@ -165,14 +159,7 @@ Ready to transform your organization into a high-performing technology team?
 <h2 class="section-accent"><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
 <div class="book-visual">
-<div class="book-3d">
-<div class="book-cover">
-<h4>ACCELERATE</h4>
-<p class="book-authors">Forsgren • Humble • Kim</p>
-<div class="book-subtitle">The Science of Lean Software and DevOps</div>
-</div>
-<div class="book-spine"></div>
-</div>
+<img src="https://m.media-amazon.com/images/I/71SDA-SGeML._SL1500_.jpg" alt="Accelerate: The Science of Lean Software and DevOps book cover" class="book-image">
 </div>
 <div class="book-info">
 <h3>Accelerate: The Science of Lean Software and DevOps</h3>

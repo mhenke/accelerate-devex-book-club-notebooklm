@@ -67,6 +67,11 @@ Parameters:
               <i class="fas fa-check-circle action-icon"></i>
               <span class="action-text">{{ item | strip }}</span>
             </div>
+          {% elsif include.type == "discussion" %}
+            <div class="discussion-item">
+              <i class="fas fa-comments discussion-icon"></i>
+              <span class="discussion-text">{{ item | strip }}</span>
+            </div>
           {% else %}
             <div class="list-item">{{ item | strip }}</div>
           {% endif %}
@@ -217,14 +222,7 @@ Parameters:
   background: var(--background-card);
   margin-bottom: 0.5rem;
   border: 1px solid var(--border-light);
-  transition: all 0.2s ease;
   position: relative;
-}
-
-.action-item:hover {
-  border-color: var(--border-focus);
-  background: var(--background-white);
-  transform: translateY(-1px);
 }
 
 .action-icon {
@@ -235,6 +233,33 @@ Parameters:
 }
 
 .action-text {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-family: var(--font-ui);
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* Discussion Items */
+.discussion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--background-card);
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border-light);
+  position: relative;
+}
+
+.discussion-icon {
+  color: #3b82f6;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.discussion-text {
   color: var(--text-dark);
   font-weight: 500;
   font-family: var(--font-ui);
