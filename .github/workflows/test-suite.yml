@@ -50,13 +50,6 @@ jobs:
         uses: rojopolis/spellcheck-github-actions@0.36.0
         with:
           task_name: markdown
-          source_files: |
-            docs/_posts/**/*.md
-            docs/_pages/**/*.md
-            docs/_meetings/**/*.md
-            docs/index.md
-            README.md
-            MARKDOWN.md
           config_path: .spellcheck.yml
 
       - name: HTML Proofer validation
