@@ -192,6 +192,27 @@ transformation_readiness:
     value: "visual-management"
     feedback_content: "Visual management makes problems visible for faster resolution. Teams with visual practices resolve issues 50% faster than those without."
 
+# Coaching questions assessment for Meeting 4
+coaching_assessment:
+  - text: "Help me understand what obstacles the team encountered."
+    subtext: "Supportive, learning-focused approach"
+    value: "supportive"
+    performance_class: "performance-high"
+    feedback_title: "🚀 Transformational Coaching"
+    feedback_content: "This supportive approach aligns with transformational leadership. By seeking to understand obstacles, you demonstrate intellectual stimulation and individual consideration - two key transformational dimensions."
+  - text: "Why wasn't this delivered on time as promised?"
+    subtext: "Directive, accountability-focused approach"
+    value: "directive"
+    performance_class: "performance-low"
+    feedback_title: "🔧 Command & Control Response"
+    feedback_content: "This directive approach reflects command & control leadership. While accountability matters, this framing can create defensive responses and reduce psychological safety, limiting learning opportunities."
+  - text: "What support do you need to prevent this in the future?"
+    subtext: "Enabling, development-focused approach"
+    value: "enabling"
+    performance_class: "performance-high"
+    feedback_title: "⭐ Enabling Leadership"
+    feedback_content: "This enabling question demonstrates transformational leadership by focusing on development and prevention. It shows individual consideration and helps build team capability for future success."
+
 # Lean management maturity for Meeting 3
 lean_management:
   - text: "Advanced Lean"
