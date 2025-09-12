@@ -157,8 +157,13 @@ Ready to transform your organization into a high-performing technology team?
 <p>Activities, reflection questions, and experiments to try between sessions.</p>
 <a href="{{ '/resources' | relative_url }}" class="resource-link">Additional Resources →</a>
 </div>
+</div>
 
-<div class="resource-card book-required">
+<!-- Required Reading - Full Width Section -->
+<section class="required-reading-section">
+<div class="required-reading-content">
+<h2 class="section-accent"><i class="fas fa-book-open"></i> Required Reading</h2>
+<div class="book-showcase">
 <div class="book-visual">
 <div class="book-3d">
 <div class="book-cover">
@@ -168,24 +173,16 @@ Ready to transform your organization into a high-performing technology team?
 </div>
 <div class="book-spine"></div>
 </div>
-<h3>Required Reading</h3>
-<a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
+</div>
+<div class="book-info">
+<h3>Accelerate: The Science of Lean Software and DevOps</h3>
+<p>Building and Scaling High Performing Technology Organizations</p>
+<p class="book-description">This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations. Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance.</p>
+<a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-primary btn-large">Get the Book</a>
 </div>
 </div>
-
-<div class="resource-card">
-<h3><i class="fas fa-book"></i> Foundation Resources</h3>
-<p>Essential research and background materials supporting the book club content.</p>
-<ul class="foundation-resources">
-<li><a href="https://dora.dev/research/" target="_blank" rel="noopener noreferrer">State of DevOps Report Archive</a> - Historical DevOps research and trends</li>
-<li><a href="https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance" target="_blank" rel="noopener noreferrer">DevOps Research and Assessment</a> - Google Cloud DORA insights</li>
-<li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank" rel="noopener noreferrer">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>
-<li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank" rel="noopener noreferrer">IT Revolution Westrum Model</a> - Detailed explanation of culture types</li>
-</ul>
 </div>
-</div>
-
----
+</section>
 
 <footer class="ai-attribution" markdown="0">
   <div class="ai-attribution__icon">
