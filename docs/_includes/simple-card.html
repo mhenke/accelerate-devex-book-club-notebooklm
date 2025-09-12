@@ -1,0 +1,323 @@
+<!-- Simple Unified Card Component -->
+<!-- 
+Usage: Single component for all card types - pass in all data needed
+Parameters:
+- type: "insight", "discussion", "action", "resource", "metric", "media", "application", "statement" (required)
+- icon: FontAwesome icon class (optional)
+- title: Card title (required)
+- subtitle: Card subtitle (optional)
+- description: Main description text (optional)
+- question: Question text (for discussion cards) (optional)
+- items: Array/pipe-separated list of items (optional)
+- links: Pipe-separated "Title|URL" pairs (optional)
+- theme: Color theme "primary", "success", "warning", "info", "neutral" (default: "primary")
+- goal: Goal text (for metric cards) (optional)
+- attribution: Attribution text (for statement cards) (optional)
+- media_url: URL for media content (optional)
+- media_type: "video" or "audio" (optional)
+-->
+
+<div class="simple-card {{ include.type }}-card {{ include.theme | default: 'primary' }}-theme" markdown="0">
+  
+  <!-- Header -->
+  <div class="card-header">
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
+    <div class="card-titles">
+      <h4>{{ include.title }}</h4>
+      {% if include.subtitle %}<span class="card-subtitle">{{ include.subtitle }}</span>{% endif %}
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="card-content">
+    {% if include.description %}<p class="card-description">{{ include.description }}</p>{% endif %}
+    {% if include.question %}<p class="card-question"><strong>{{ include.question }}</strong></p>{% endif %}
+    
+    <!-- Media content -->
+    {% if include.media_url %}
+      <div class="media-container">
+        {% if include.media_type == "video" %}
+          <video controls>
+            <source src="{{ include.media_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        {% elsif include.media_type == "audio" %}
+          <audio controls>
+            <source src="{{ include.media_url }}" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Goal (for metrics) -->
+    {% if include.goal %}
+      <div class="card-goal">
+        <strong>Target:</strong> {{ include.goal }}
+      </div>
+    {% endif %}
+
+    <!-- Items list -->
+    {% if include.items %}
+      <div class="card-items">
+        {% assign items_array = include.items | split: '|' %}
+        {% for item in items_array %}
+          {% if include.type == "action" %}
+            <div class="action-item">
+              <input type="checkbox" id="item-{{ forloop.index }}">
+              <label for="item-{{ forloop.index }}">{{ item | strip }}</label>
+            </div>
+          {% else %}
+            <div class="list-item">{{ item | strip }}</div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Links (for resources) -->
+    {% if include.links %}
+      <div class="card-links">
+        {% assign links_array = include.links | split: '|' %}
+        {% assign link_count = links_array.size %}
+        {% for i in (0..link_count) %}
+          {% assign title_index = i | times: 2 %}
+          {% assign url_index = title_index | plus: 1 %}
+          {% if links_array[title_index] and links_array[url_index] %}
+            <a href="{{ links_array[url_index] | strip }}" target="_blank" rel="noopener">
+              {{ links_array[title_index] | strip }} <i class="fas fa-external-link-alt"></i>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Attribution (for statements) -->
+    {% if include.attribution %}
+      <div class="card-attribution">
+        <cite>{{ include.attribution }}</cite>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+.simple-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #3b82f6;
+  transition: all 0.3s ease;
+}
+
+.simple-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Theme colors */
+.primary-theme { border-left-color: #3b82f6; }
+.success-theme { border-left-color: #10b981; }
+.warning-theme { border-left-color: #f59e0b; }
+.info-theme { border-left-color: #06b6d4; }
+.neutral-theme { border-left-color: #6b7280; }
+
+/* Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.card-header i {
+  font-size: 1.25rem;
+  color: #3b82f6;
+}
+
+.card-titles h4 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/* Content */
+.card-content {
+  line-height: 1.6;
+}
+
+.card-description {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.card-question {
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.card-goal {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #374151;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  border: 1px solid #d1d5db;
+}
+
+/* Items */
+.card-items {
+  margin-top: 1rem;
+}
+
+.list-item {
+  padding: 0.5rem 0;
+  border-left: 2px solid #e5e7eb;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.action-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+}
+
+.action-item label {
+  cursor: pointer;
+  color: #374151;
+  font-weight: 500;
+}
+
+.action-item:has(input:checked) {
+  opacity: 0.6;
+}
+
+.action-item:has(input:checked) label {
+  text-decoration: line-through;
+}
+
+/* Links */
+.card-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-links a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: color 0.2s ease;
+}
+
+.card-links a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.card-links a i {
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+  opacity: 0.7;
+}
+
+/* Media */
+.media-container {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.media-container video,
+.media-container audio {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Attribution */
+.card-attribution {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: right;
+}
+
+.card-attribution cite {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* Card type specific styling */
+.insight-card {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+.discussion-card {
+  background: linear-gradient(135deg, #fef3e2, #fef3c7);
+}
+
+.action-card {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+.resource-card {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+}
+
+.metric-card {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.application-card {
+  background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+}
+
+.statement-card {
+  background: linear-gradient(135deg, #fefce8, #fef3c7);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .simple-card {
+    padding: 1.25rem;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .card-header i {
+    font-size: 1.5rem;
+  }
+}
+</style>

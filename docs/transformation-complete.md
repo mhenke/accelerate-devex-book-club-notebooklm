@@ -33,13 +33,13 @@ nav_order: 6
   <div class="timeline-item completed" data-meeting="1">
     <div class="timeline-marker" markdown="0"></div>
     <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-chart-bar"></i> DORA Metrics Baseline Established</div>
+      <div class="achievement-badge" markdown="0"><i class="fas fa-chart-bar"></i> DORA Metrics Mastery Achieved</div>
       <h3><a href="{{ '/meetings/meeting-1/' | relative_url }}">Meeting 1: Foundation & Metrics</a></h3>
-      <p>Established DORA metrics baseline and explored Westrum organizational culture types</p>
+      <p>Mastered the four key measurements that drive high-performing teams and assessed organizational culture</p>
       <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-chart-line"></i> Elite performers deploy 200x more frequently</div>
-        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-users"></i> Generative culture = 2x better performance</div>
-        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-clock"></i> Lead time under 1 hour for elite teams</div>
+        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-chart-line"></i> Lead Time, Deployment Frequency, Recovery Time & Change Fail Rate</div>
+        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-users"></i> Westrum culture assessment completed</div>
+        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-balance-scale"></i> Speed vs stability myth busted</div>
       </div>
     </div>
   </div>
@@ -47,13 +47,13 @@ nav_order: 6
   <div class="timeline-item completed" data-meeting="2">
     <div class="timeline-marker" markdown="0"></div>
     <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-rocket"></i> Technical Excellence Achieved</div>
+      <div class="achievement-badge" markdown="0"><i class="fas fa-rocket"></i> Technical Practices Mastered</div>
       <h3><a href="{{ '/meetings/meeting-2/' | relative_url }}">Meeting 2: Technical Excellence</a></h3>
-      <p>Mastered continuous delivery practices and technical capabilities</p>
+      <p>Learned technical practices that enable both speed and stability: automated testing, deployment pipelines, trunk-based development</p>
       <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-rocket"></i> Speed with stability is achievable</div>
-        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-shield-alt"></i> Security integration improves performance</div>
-        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-sync"></i> Fast feedback reduces risk & improves quality</div>
+        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-code-branch"></i> Trunk-based development & automated testing</div>
+        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-shield-alt"></i> Shift-left security integration</div>
+        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-sitemap"></i> Conway's Law & loosely coupled architecture</div>
       </div>
     </div>
   </div>
@@ -61,13 +61,13 @@ nav_order: 6
   <div class="timeline-item completed" data-meeting="3">
     <div class="timeline-marker" markdown="0"></div>
     <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-balance-scale"></i> Lean Management Mastered</div>
+      <div class="achievement-badge" markdown="0"><i class="fas fa-columns"></i> Work Visualization & WIP Limits Implemented</div>
       <h3><a href="{{ '/meetings/meeting-3/' | relative_url }}">Meeting 3: Management & Sustainability</a></h3>
-      <p>Implemented lean product development and visual management practices</p>
+      <p>Implemented work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level</p>
       <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-heart"></i> Microsoft: 38% → 75% work-life satisfaction</div>
-        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-thumbs-up"></i> High performers 2.2x more likely to recommend workplace</div>
-        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-fire-extinguisher"></i> Fix environment, not people for burnout</div>
+        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-columns"></i> Kanban boards & WIP limits implemented</div>
+        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-fire-extinguisher"></i> Burnout prevention through sustainable practices</div>
+        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-heart"></i> Employee satisfaction & work-life balance</div>
       </div>
     </div>
   </div>
@@ -75,13 +75,13 @@ nav_order: 6
   <div class="timeline-item completed" data-meeting="4">
     <div class="timeline-marker" markdown="0"></div>
     <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-crown"></i> Leadership Transformation Unlocked</div>
+      <div class="achievement-badge" markdown="0"><i class="fas fa-users"></i> Five Leadership Characteristics Developed</div>
       <h3><a href="{{ '/meetings/meeting-4/' | relative_url }}">Meeting 4: Leadership & Transformation</a></h3>
-      <p>Developed leadership strategies for sustainable organizational change</p>
+      <p>Developed the five key leadership characteristics that enable teams to implement technical and organizational changes</p>
       <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-crown"></i> Strong leaders = 2x high performance likelihood</div>
-        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-comments"></i> ING: Coaching vs commanding drives success</div>
-        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-lightbulb"></i> Transformational leadership enables team autonomy</div>
+        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-crown"></i> Vision, inspiration, intellectual stimulation, supportive leadership, personal recognition</div>
+        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-comments"></i> Coaching vs commanding mindset developed</div>
+        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-chart-bar"></i> Transformation readiness assessment completed</div>
       </div>
     </div>
   </div>
@@ -105,7 +105,7 @@ nav_order: 6
       </div>
       <span class="mastery-label">Expert Level</span>
     </div>
-    <p>From understanding daily deployment benefits to implementing automated pipelines</p>
+    <p>Mastered measurement techniques and understand the path from weekly to daily deployments through automation</p>
   </div>
   
   <div class="metric-mastery-card leadtime" markdown="0">
@@ -122,7 +122,7 @@ nav_order: 6
       </div>
       <span class="mastery-label">Expert Level</span>
     </div>
-    <p>Mastered value stream mapping and bottleneck identification techniques</p>
+    <p>Learned value stream mapping, bottleneck identification, and techniques to reduce lead time through small batches</p>
   </div>
   
   <div class="metric-mastery-card reliability" markdown="0">
@@ -140,7 +140,7 @@ nav_order: 6
       </div>
       <span class="mastery-label">Expert Level</span>
     </div>
-    <p>Implemented testing strategies and quality gates for reliable deployments</p>
+    <p>Learned comprehensive testing strategies, quality gates, and practices to achieve &lt;15% change failure rates</p>
   </div>
   
   <div class="metric-mastery-card recovery" markdown="0">
@@ -157,7 +157,7 @@ nav_order: 6
       </div>
       <span class="mastery-label">Expert Level</span>
     </div>
-    <p>Designed incident response processes and automated recovery procedures</p>
+    <p>Developed incident response capabilities and learned techniques to achieve &lt;1 hour recovery times</p>
   </div>
 </div>
 
@@ -165,46 +165,46 @@ nav_order: 6
 
 <div class="learning-highlights" markdown="0">
   <div class="learning-category meeting-1-theme" markdown="0">
-    <h3><i class="fas fa-chart-bar"></i> Foundation & Measurement</h3>
+    <h3><i class="fas fa-chart-bar"></i> DORA Metrics Mastery</h3>
     <ul class="achievement-list">
-      <li><i class="fas fa-check-circle"></i> DORA metrics baseline established</li>
-      <li><i class="fas fa-check-circle"></i> Westrum culture assessment completed</li>
-      <li><i class="fas fa-check-circle"></i> Performance correlation understanding</li>
-      <li><i class="fas fa-check-circle"></i> Elite vs low performer gap analysis</li>
-      <li><i class="fas fa-check-circle"></i> Deployment pain evaluation</li>
+      <li><i class="fas fa-check-circle"></i> Four key measurements mastered: Lead Time, Deployment Frequency, Recovery Time, Change Fail Rate</li>
+      <li><i class="fas fa-check-circle"></i> Westrum organizational culture assessment completed (Pathological, Bureaucratic, Generative)</li>
+      <li><i class="fas fa-check-circle"></i> Elite performer benchmarks understood (200x more deployments, <1hr lead time)</li>
+      <li><i class="fas fa-check-circle"></i> Speed vs stability myth debunked - both achievable simultaneously</li>
+      <li><i class="fas fa-check-circle"></i> Deployment confidence assessment and pain evaluation completed</li>
     </ul>
   </div>
   
   <div class="learning-category meeting-2-theme" markdown="0">
-    <h3><i class="fas fa-rocket"></i> Technical Excellence</h3>
+    <h3><i class="fas fa-rocket"></i> Technical Practices Mastered</h3>
     <ul class="achievement-list">
-      <li><i class="fas fa-check-circle"></i> Continuous delivery practices mastered</li>
-      <li><i class="fas fa-check-circle"></i> Speed with stability principles applied</li>
-      <li><i class="fas fa-check-circle"></i> Security integration strategies</li>
-      <li><i class="fas fa-check-circle"></i> Test automation frameworks</li>
-      <li><i class="fas fa-check-circle"></i> Fast feedback loop implementation</li>
+      <li><i class="fas fa-check-circle"></i> Automated testing, deployment pipelines, and trunk-based development implemented</li>
+      <li><i class="fas fa-check-circle"></i> Continuous delivery core principles: Build quality in, small batches, automate tasks</li>
+      <li><i class="fas fa-check-circle"></i> Shift-left security integration - security checks in CI/CD pipeline (50% faster remediation)</li>
+      <li><i class="fas fa-check-circle"></i> Conway's Law applied - team structure influences architecture design</li>
+      <li><i class="fas fa-check-circle"></i> Loosely coupled architecture enables team independence and faster deployments</li>
     </ul>
   </div>
   
   <div class="learning-category meeting-3-theme" markdown="0">
-    <h3><i class="fas fa-balance-scale"></i> Lean Management</h3>
+    <h3><i class="fas fa-columns"></i> Work Visualization & WIP Limits</h3>
     <ul class="achievement-list">
-      <li><i class="fas fa-check-circle"></i> WIP optimization techniques</li>
-      <li><i class="fas fa-check-circle"></i> Visual management systems</li>
-      <li><i class="fas fa-check-circle"></i> Burnout prevention strategies</li>
-      <li><i class="fas fa-check-circle"></i> Employee satisfaction drivers</li>
-      <li><i class="fas fa-check-circle"></i> Sustainable work practices</li>
+      <li><i class="fas fa-check-circle"></i> Kanban boards and work visualization systems implemented</li>
+      <li><i class="fas fa-check-circle"></i> WIP limits applied to expose bottlenecks and drive process improvement</li>
+      <li><i class="fas fa-check-circle"></i> Lean management practices: visual management, cross-functional teams, employee empowerment</li>
+      <li><i class="fas fa-check-circle"></i> Burnout prevention through sustainable work practices and environment improvement</li>
+      <li><i class="fas fa-check-circle"></i> Work-life balance strategies proven to increase team performance and satisfaction</li>
     </ul>
   </div>
 
   <div class="learning-category meeting-4-theme" markdown="0">
-    <h3><i class="fas fa-crown"></i> Leadership Transformation</h3>
+    <h3><i class="fas fa-users"></i> Five Leadership Characteristics</h3>
     <ul class="achievement-list">
-      <li><i class="fas fa-check-circle"></i> Five transformational dimensions</li>
-      <li><i class="fas fa-check-circle"></i> Coaching vs commanding approach</li>
-      <li><i class="fas fa-check-circle"></i> ING transformation insights</li>
-      <li><i class="fas fa-check-circle"></i> Team autonomy enablement</li>
-      <li><i class="fas fa-check-circle"></i> Change strategy development</li>
+      <li><i class="fas fa-check-circle"></i> Five transformational leadership characteristics mastered: vision, inspiration, intellectual stimulation, supportive leadership, personal recognition</li>
+      <li><i class="fas fa-check-circle"></i> Coaching vs commanding mindset developed - ask supportive questions instead of giving direct orders</li>
+      <li><i class="fas fa-check-circle"></i> ING transformation case study analyzed - Obeya rooms, catchball communication, squad structure</li>
+      <li><i class="fas fa-check-circle"></i> Team autonomy enabling practices: remove impediments, invest in capabilities, create psychological safety</li>
+      <li><i class="fas fa-check-circle"></i> Transformation readiness assessment completed - learning investment, culture change patience, experimentation, visual management</li>
     </ul>
   </div>
 </div>
@@ -256,9 +256,9 @@ nav_order: 6
     <div class="step-timeline" markdown="0">This Week</div>
     <h3><i class="fas fa-rocket"></i> Start Small</h3>
     <ul>
-      <li>Choose one DORA metric to improve</li>
-      <li>Identify the biggest constraint in your value stream</li>
-      <li>Schedule a team retrospective using your new facilitation skills</li>
+      <li>Measure your current DORA metrics baseline using the assessment tools from Meeting 1</li>
+      <li>Choose one deployment bottleneck to automate this week</li>
+      <li>Conduct Westrum culture assessment with your team</li>
     </ul>
   </div>
   
@@ -266,9 +266,9 @@ nav_order: 6
     <div class="step-timeline" markdown="0">Next Month</div>
     <h3><i class="fas fa-chart-line"></i> Build Momentum</h3>
     <ul>
-      <li>Implement a key technical practice (CI/CD, testing, monitoring)</li>
-      <li>Establish regular DORA metrics measurement</li>
-      <li>Run a culture assessment with your team</li>
+      <li>Implement trunk-based development or test automation from Meeting 2</li>
+      <li>Set up Kanban board with WIP limits from Meeting 3</li>
+      <li>Practice transformational leadership behaviors from Meeting 4</li>
     </ul>
   </div>
   
@@ -276,9 +276,9 @@ nav_order: 6
     <div class="step-timeline" markdown="0">Next Quarter</div>
     <h3><i class="fas fa-star"></i> Scale Impact</h3>
     <ul>
-      <li>Share learnings across your organization</li>
-      <li>Mentor other teams in DevOps practices</li>
-      <li>Design your organization's transformation roadmap</li>
+      <li>Apply Conway's Law to reorganize teams around architecture</li>
+      <li>Implement shift-left security practices organization-wide</li>
+      <li>Adapt ING transformation practices to your organizational context</li>
     </ul>
   </div>
 </div>
