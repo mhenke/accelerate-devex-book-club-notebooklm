@@ -86,6 +86,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-body);
   line-height: 1.6;
@@ -93,6 +97,9 @@ body {
   background: var(--background-white);
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 h1,
@@ -210,6 +217,19 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 0 var(--spacing-sm);
+  }
 }
 
 /* Section Headers */
@@ -232,9 +252,10 @@ a:hover {
 /* Meeting Cards Grid */
 .meeting-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: var(--spacing-lg);
   margin: var(--spacing-lg) 0;
+  width: 100%;
 }
 
 .meeting-card {
@@ -396,9 +417,10 @@ a:hover {
 /* DORA Metrics Cards */
 .dora-metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: var(--spacing-md);
   margin: var(--spacing-lg) 0;
+  width: 100%;
 }
 
 .metric-card {
@@ -468,9 +490,10 @@ a:hover {
 /* Meeting Cards */
 .highlight-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: var(--spacing-lg);
   margin: var(--spacing-xl) 0;
+  width: 100%;
 }
 
 .highlight-card {
@@ -1354,9 +1377,10 @@ a:hover {
 /* Resources Grid */
 .resources-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: var(--spacing-lg);
   margin: var(--spacing-lg) 0;
+  width: 100%;
 }
 
 .resource-card {
@@ -1660,8 +1684,14 @@ a:hover {
 
 /* Mobile and Small Tablets */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .page-hero {
-    padding: var(--spacing-lg) var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .page-title {
@@ -1669,7 +1699,8 @@ a:hover {
   }
 
   .page-container {
-    padding: 0 var(--spacing-sm);
+    padding: 0 var(--spacing-md);
+    max-width: 100%;
   }
 
   .dora-metrics-grid,
