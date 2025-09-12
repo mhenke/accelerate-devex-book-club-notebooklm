@@ -159,7 +159,12 @@ Ready to transform your organization into a high-performing technology team?
 <h2 class="section-accent"><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
 <div class="book-visual">
-<img src="https://m.media-amazon.com/images/I/71SDA-SGeML._SL1500_.jpg" alt="Accelerate: The Science of Lean Software and DevOps book cover" class="book-image">
+<svg class="book-image" viewBox="0 0 120 160" role="img" aria-label="Accelerate: The Science of Lean Software and DevOps book cover" width="120" height="160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="120" height="160" rx="10" fill="#2196F3" stroke="#1a1a2e" stroke-width="2" />
+  <text x="60" y="40" text-anchor="middle" font-size="16" font-family="Roboto, Arial, sans-serif" fill="#fff" font-weight="bold">ACCELERATE</text>
+  <text x="60" y="65" text-anchor="middle" font-size="10" font-family="Roboto, Arial, sans-serif" fill="#D7BA89">Lean Software & DevOps</text>
+  <text x="60" y="140" text-anchor="middle" font-size="8" font-family="Roboto, Arial, sans-serif" fill="#FF7F50">Forsgren, Humble, Kim</text>
+</svg>
 </div>
 <div class="book-info">
 <h3>Accelerate: The Science of Lean Software and DevOps</h3>
