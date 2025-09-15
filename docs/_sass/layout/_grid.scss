@@ -18,7 +18,7 @@
     padding: 0 var(--spacing-md);
   }
 
-  @media (max-width: 480px) {
+  @include mobile-only {
     padding: 0 var(--spacing-sm);
   }
 }
@@ -157,13 +157,13 @@
   grid-template-columns: 1fr; // Mobile: 1 column
 
   // Tablet: 2 columns
-  @media (min-width: 640px) {
+  @include mobile-up {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xl);
   }
 
   // Desktop: 4 columns
-  @media (min-width: 1024px) {
+  @include tablet-up {
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-xl);
   }
@@ -190,13 +190,13 @@
   grid-template-columns: 1fr; // Mobile: 1 column
 
   // Tablet: 2 columns
-  @media (min-width: 640px) {
+  @include mobile-up {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
   }
 
   // Desktop: 4 columns
-  @media (min-width: 1024px) {
+  @include tablet-up {
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
   }
@@ -224,13 +224,13 @@
   grid-template-columns: 1fr; // Mobile: 1 column
 
   // Small tablet: 2 columns
-  @media (min-width: 640px) {
+  @include mobile-up {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
   }
 
   // Desktop: 3 columns
-  @media (min-width: 1024px) {
+  @include tablet-up {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
   }
@@ -327,25 +327,25 @@
 
 // Material Design responsive visibility
 .md-hide-mobile {
-  @media (max-width: 639px) {
+  @include mobile-only {
     display: none;
   }
 }
 
 .md-hide-tablet {
-  @media (min-width: 640px) and (max-width: 1023px) {
+  @include tablet-only {
     display: none;
   }
 }
 
 .md-hide-desktop {
-  @media (min-width: 1024px) {
+  @include desktop-up {
     display: none;
   }
 }
 
 .md-show-mobile {
-  @media (min-width: 640px) {
+  @include mobile-up {
     display: none;
   }
 }
@@ -353,7 +353,7 @@
 .md-show-tablet {
   display: none;
 
-  @media (min-width: 640px) and (max-width: 1023px) {
+  @include tablet-only {
     display: block;
   }
 }
@@ -361,28 +361,28 @@
 .md-show-desktop {
   display: none;
 
-  @media (min-width: 1024px) {
+  @include desktop-up {
     display: block;
   }
 }
 
 // Material Design spacing adjustments per breakpoint
 .md-spacing-mobile {
-  @media (max-width: 639px) {
+  @include mobile-only {
     gap: var(--space-sm) !important;
     padding: var(--space-md) !important;
   }
 }
 
 .md-spacing-tablet {
-  @media (min-width: 640px) and (max-width: 1023px) {
+  @include tablet-only {
     gap: var(--space-lg) !important;
     padding: var(--space-lg) !important;
   }
 }
 
 .md-spacing-desktop {
-  @media (min-width: 1024px) {
+  @include desktop-up {
     gap: var(--space-xl) !important;
     padding: var(--space-xl) !important;
   }

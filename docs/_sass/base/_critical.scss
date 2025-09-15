@@ -1801,7 +1801,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 24px; // Fixed padding for consistent button appearance
+    padding: var(--space-12) var(--space-24); // Fixed padding for consistent button appearance
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
@@ -2255,7 +2255,7 @@ button:focus,
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 2px;
+        margin-top: var(--space-4);
         flex-shrink: 0;
         border: 2px solid var(--accent-emerald);
       }
@@ -4408,7 +4408,7 @@ button:focus,
       display: flex;
       align-items: flex-start;
       gap: var(--space-lg);
-      padding-left: calc(32px + var(--space-lg) + var(--space-md));
+      padding-left: calc(var(--space-32) + var(--space-lg) + var(--space-md));
     }
 
     .step-icon {

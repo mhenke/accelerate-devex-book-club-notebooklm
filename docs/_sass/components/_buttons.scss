@@ -482,7 +482,7 @@
 // RESPONSIVE BUTTON BEHAVIOR
 // =============================================================================
 
-@media (max-width: 480px) {
+@include mobile-only {
   .btn--responsive {
     width: 100%;
     justify-content: center;
