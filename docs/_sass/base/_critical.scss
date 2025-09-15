@@ -1658,7 +1658,9 @@ a {
   background: linear-gradient(135deg, #1a202c, #2d3748);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-xl); // Material Design 3 radius
-  padding: var(--space-lg); // Further reduced from xl to lg for more compact height
+  padding: var(
+    --space-lg
+  ); // Further reduced from xl to lg for more compact height
   text-align: left;
   position: relative;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1732,7 +1734,9 @@ a {
     display: flex;
     align-items: center;
     gap: var(--space-md);
-    margin-bottom: var(--space-sm); // Reduced margin for more compact appearance
+    margin-bottom: var(
+      --space-sm
+    ); // Reduced margin for more compact appearance
   }
 
   .highlight-icon {
@@ -1816,7 +1820,7 @@ a {
 
     // Shimmer effect
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: -100%;
@@ -2650,8 +2654,6 @@ button:focus,
 
 // Main Content Layout (70% content + 30% sidebar)
 .meeting-content-layout {
-  display: grid;
-  grid-template-columns: 1fr 300px;
   gap: var(--space-xl);
   max-width: var(--container-wide); // Use design token for consistency
   margin: 0 auto;
@@ -2904,7 +2906,6 @@ button:focus,
     background: var(--color-purple-50);
   }
 }
-
 
 // =============================================================================
 // CRITICAL CSS SIZE OPTIMIZATION
