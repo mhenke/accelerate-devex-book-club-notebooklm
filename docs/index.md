@@ -3,26 +3,16 @@ layout: default
 title: Home
 ---
 
-<header>
-  <a href="#maincontent" class="sr-only">Skip to main content</a>
 <div class="hero-banner" markdown="0">
-<div class="hero-content">
-<div class="hero-value-prop">Accelerate DevEx Book Club</div>
-<h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing Technology Organizations</h1>
-<div class="site-title">
-<h3 id="accelerate-devex-book-club">Transform your tech organization in 2 months</h3>
+  <div class="hero-content">
+    <div class="hero-value-prop">Accelerate DevEx Book Club</div>
+    <h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing Technology Organizations</h1>
+    <div class="site-title">
+      <h3 id="accelerate-devex-book-club">Transform your tech organization in 2 months</h3>
+    </div>
+    <p class="hero-subtitle">Evidence-based practices from 23,000+ organizations • DORA metrics mastery • DevOps transformation</p>
+  </div>
 </div>
-<p class="hero-subtitle">Evidence-based practices from 23,000+ organizations • DORA metrics mastery • DevOps transformation</p>
-
-</div>
-
-</div>
-
-<nav aria-label="Main navigation">
-  <!-- Add navigation links here if needed -->
-</nav>
-
-<main id="maincontent">
 
 <div class="welcome-compact section-card" markdown="0">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
@@ -45,10 +35,12 @@ title: Home
 <div class="learning-highlights">
 <div class="highlight-grid">
 <div class="highlight-card meeting-1">
-  <div class="highlight-icon">
-    <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
+  <div class="card-header">
+    <div class="highlight-icon">
+      <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
+    </div>
+    <h3>DORA Metrics</h3>
   </div>
-  <h3>DORA Metrics</h3>
   <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-link">
@@ -62,10 +54,12 @@ title: Home
 </div>
 
 <div class="highlight-card meeting-2">
-  <div class="highlight-icon">
-    <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
+  <div class="card-header">
+    <div class="highlight-icon">
+      <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
+    </div>
+    <h3>Continuous Delivery</h3>
   </div>
-  <h3>Continuous Delivery</h3>
   <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-link">
@@ -79,10 +73,12 @@ title: Home
 </div>
 
 <div class="highlight-card meeting-3">
-  <div class="highlight-icon">
-    <i class="fas fa-columns" role="img" aria-label="Columns"></i>
+  <div class="card-header">
+    <div class="highlight-icon">
+      <i class="fas fa-columns" role="img" aria-label="Columns"></i>
+    </div>
+    <h3>Lean Management</h3>
   </div>
-  <h3>Lean Management</h3>
   <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-link">
@@ -96,10 +92,12 @@ title: Home
 </div>
 
 <div class="highlight-card meeting-4">
-  <div class="highlight-icon">
-    <i class="fas fa-users" role="img" aria-label="Users"></i>
+  <div class="card-header">
+    <div class="highlight-icon">
+      <i class="fas fa-users" role="img" aria-label="Users"></i>
+    </div>
+    <h3>Transformational Leadership</h3>
   </div>
-  <h3>Transformational Leadership</h3>
   <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-link">
@@ -324,5 +322,3 @@ document.addEventListener('keydown', function(event) {
     <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
   </div>
 </footer>
-
-</main>

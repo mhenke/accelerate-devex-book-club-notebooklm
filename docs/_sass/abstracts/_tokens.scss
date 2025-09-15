@@ -26,6 +26,7 @@
   --border-width-4: 4px; // For focus ring, border radius, NOT for spacing
   --border-width-8: 8px;
 }
+
 // Header and Layout Tokens
 :root {
   --container-max-width: 1200px;
@@ -33,6 +34,7 @@
   --border-radius: 8px; // 8px grid compliant
   --touch-target-44px: 44px; // Accessibility minimum
 }
+
 // Design Token System - Critical Rendering Path Optimization
 // ============================================================
 // This file defines the core design tokens for the Accelerate DevEx Book Club site.
@@ -381,10 +383,12 @@ $space-legacy-md: 0.75rem; // 12px
   --space-xl: #{$space-xl};
   --space-2xl: #{$space-2xl};
   --space-3xl: #{$space-3xl};
+
   // Fine detail tokens
   --space-xs: #{$space-xs};
   --space-legacy-md: #{$space-legacy-md};
 }
+
 // =============================================================================
 // AUDIT DOCUMENTATION
 // =============================================================================
