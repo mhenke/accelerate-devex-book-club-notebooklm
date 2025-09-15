@@ -175,75 +175,84 @@ document.addEventListener('keydown', function(event) {
   </blockquote>
 </div>
 
-<!-- Meeting Toolkit Sidebar -->
-<aside class="meeting-sidebar">
-  <div class="sidebar-section">
-    <h3>Video</h3>
-    <div class="media-card">
-      <h4>Meeting 1: Foundation</h4>
-      <p class="media-subtitle">The Myth and the Measurement</p>
-      <p class="media-description">Foundation concepts: Why software delivery matters, DORA metrics explained, and culture as the key enabler.</p>
-      <div class="media-controls">
-        <video controls width="100%" poster="/accelerate-devex-book-club-notebooklm/assets/images/meeting-1-video-poster.jpg">
-          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+<div class="step-section step-media section-card" markdown="0">
+  <div class="step-header">
+    <h2><i class="fas fa-play-circle"></i> Media</h2>
+  </div>
+  <div class="media-content">
+    <div class="media-grid">
+      <!-- Video Section -->
+      <div class="media-section video-section">
+        <h3><i class="fas fa-video"></i> Video</h3>
+        <div class="video-card">
+          <h4>Meeting 1: Foundation</h4>
+          <p class="media-subtitle">The Myth and the Measurement</p>
+          <p class="media-description">Foundation concepts: Why software delivery matters, DORA metrics explained, and culture as the key enabler.</p>
+          <div class="media-controls">
+            <video controls width="100%" poster="/accelerate-devex-book-club-notebooklm/assets/images/meeting-1-video-poster.jpg">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="media-generation-note">
+            <p><strong>Generation Instructions:</strong> Create a 15-minute video featuring three personas (Dev, Ops, Product) discussing the key concepts from chapters 1-3, with visual aids showing DORA metrics and Westrum culture types.</p>
+          </div>
+        </div>
       </div>
-      <div class="media-generation-note">
-        <p><strong>Generation Instructions:</strong> Create a 15-minute video featuring three personas (Dev, Ops, Product) discussing the key concepts from chapters 1-3, with visual aids showing DORA metrics and Westrum culture types.</p>
+
+      <!-- Podcast Section -->
+      <div class="media-section podcast-section">
+        <h3><i class="fas fa-podcast"></i> Podcasts</h3>
+        <div class="podcast-playlist">
+          <!-- Main Podcast -->
+          <div class="podcast-item">
+            <h4>Meeting 1 Deep Dive</h4>
+            <p class="podcast-subtitle">Expert discussion on foundational concepts</p>
+            <div class="podcast-controls">
+              <audio controls width="100%">
+                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-main.m4a" type="audio/mp4">
+                Your browser does not support the audio tag.
+              </audio>
+            </div>
+            <div class="podcast-generation-note">
+              <p><strong>Generation:</strong> 20-minute discussion covering business need, DORA metrics, and culture change principles.</p>
+            </div>
+          </div>
+
+          <!-- Bonus Podcast -->
+          <div class="podcast-item">
+            <h4>DORA Metrics Explained</h4>
+            <p class="podcast-subtitle">Technical deep-dive on measurement</p>
+            <div class="podcast-controls">
+              <audio controls width="100%">
+                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-dora.m4a" type="audio/mp4">
+                Your browser does not support the audio tag.
+              </audio>
+            </div>
+            <div class="podcast-generation-note">
+              <p><strong>Generation:</strong> 15-minute focused discussion on practical DORA metrics implementation.</p>
+            </div>
+          </div>
+
+          <!-- Culture Focus Podcast -->
+          <div class="podcast-item">
+            <h4>Culture Change in Practice</h4>
+            <p class="podcast-subtitle">Real-world culture transformation stories</p>
+            <div class="podcast-controls">
+              <audio controls width="100%">
+                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-culture.m4a" type="audio/mp4">
+                Your browser does not support the audio tag.
+              </audio>
+            </div>
+            <div class="podcast-generation-note">
+              <p><strong>Generation:</strong> 12-minute discussion on Westrum culture types with case studies.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="sidebar-section">
-    <h3>Podcasts</h3>
-
-    <!-- Main Podcast -->
-    <div class="media-card">
-      <h4>Meeting 1 Deep Dive</h4>
-      <p class="media-subtitle">Expert discussion on foundational concepts</p>
-      <div class="media-controls">
-        <audio controls width="100%">
-          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-main.m4a" type="audio/mp4">
-          Your browser does not support the audio tag.
-        </audio>
-      </div>
-      <div class="media-generation-note">
-        <p><strong>Generation:</strong> 20-minute discussion covering business need, DORA metrics, and culture change principles.</p>
-      </div>
-    </div>
-
-    <!-- Bonus Podcast -->
-    <div class="media-card">
-      <h4>DORA Metrics Explained</h4>
-      <p class="media-subtitle">Technical deep-dive on measurement</p>
-      <div class="media-controls">
-        <audio controls width="100%">
-          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-dora.m4a" type="audio/mp4">
-          Your browser does not support the audio tag.
-        </audio>
-      </div>
-      <div class="media-generation-note">
-        <p><strong>Generation:</strong> 15-minute focused discussion on practical DORA metrics implementation.</p>
-      </div>
-    </div>
-
-    <!-- Culture Focus Podcast -->
-    <div class="media-card">
-      <h4>Culture Change in Practice</h4>
-      <p class="media-subtitle">Real-world culture transformation stories</p>
-      <div class="media-controls">
-        <audio controls width="100%">
-          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-culture.m4a" type="audio/mp4">
-          Your browser does not support the audio tag.
-        </audio>
-      </div>
-      <div class="media-generation-note">
-        <p><strong>Generation:</strong> 12-minute discussion on Westrum culture types with case studies.</p>
-      </div>
-    </div>
-  </div>
-</aside>
+</div>
 
 <!-- Step-Based Progressive Learning Structure -->
 
@@ -651,5 +660,166 @@ h3 {
 .next-meeting-btn:hover {
   background-color: #388e3c;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Media Card Styles */
+.step-media .media-content {
+  padding: 0;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg, 1.5rem);
+  margin-top: var(--space-md, 1rem);
+}
+
+.media-section {
+  background: var(--color-white, #fff);
+  border-radius: var(--radius-md, 8px);
+  padding: var(--space-lg, 1.5rem);
+  border: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.media-section h3 {
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-lg, 1.125rem);
+  font-weight: var(--font-weight-semibold, 600);
+  margin: 0 0 var(--space-md, 1rem) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm, 0.5rem);
+}
+
+.media-section h3 i {
+  color: var(--meeting-1-accent, #0550ae);
+}
+
+/* Video Section Styles */
+.video-card h4 {
+  color: var(--color-gray-900, #111827);
+  font-size: var(--font-size-base, 1rem);
+  font-weight: var(--font-weight-semibold, 600);
+  margin: 0 0 var(--space-xs, 0.25rem) 0;
+}
+
+.video-card .media-subtitle {
+  color: var(--color-gray-600, #4b5563);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-style: italic;
+  margin: 0 0 var(--space-sm, 0.5rem) 0;
+}
+
+.video-card .media-description {
+  color: var(--color-gray-700, #374151);
+  font-size: var(--font-size-sm, 0.875rem);
+  margin: 0 0 var(--space-md, 1rem) 0;
+  line-height: var(--line-height-relaxed, 1.625);
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: var(--radius-sm, 4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Podcast Playlist Styles */
+.podcast-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md, 1rem);
+}
+
+.podcast-item {
+  background: var(--color-gray-50, #f9fafb);
+  border: 1px solid var(--color-gray-200, #e5e7eb);
+  border-radius: var(--radius-sm, 4px);
+  padding: var(--space-md, 1rem);
+  transition: all 0.2s ease;
+}
+
+.podcast-item:hover {
+  background: var(--color-gray-100, #f3f4f6);
+  border-color: var(--meeting-1-primary, #0969da);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(9, 105, 218, 0.1);
+}
+
+.podcast-item h4 {
+  color: var(--color-gray-900, #111827);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-semibold, 600);
+  margin: 0 0 var(--space-xs, 0.25rem) 0;
+}
+
+.podcast-item .podcast-subtitle {
+  color: var(--color-gray-600, #4b5563);
+  font-size: var(--font-size-xs, 0.75rem);
+  font-style: italic;
+  margin: 0 0 var(--space-sm, 0.5rem) 0;
+}
+
+.podcast-controls audio {
+  width: 100%;
+  height: 32px;
+  margin: var(--space-sm, 0.5rem) 0;
+}
+
+/* Generation Notes Styling */
+.media-generation-note,
+.podcast-generation-note {
+  background: var(--color-blue-50, #eff6ff);
+  border: 1px solid var(--color-blue-200, #bfdbfe);
+  border-radius: var(--radius-sm, 4px);
+  padding: var(--space-sm, 0.5rem);
+  margin-top: var(--space-sm, 0.5rem);
+}
+
+.media-generation-note p,
+.podcast-generation-note p {
+  color: var(--color-blue-700, #1d4ed8);
+  font-size: var(--font-size-xs, 0.75rem);
+  margin: 0;
+  line-height: var(--line-height-normal, 1.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md, 1rem);
+  }
+
+  .media-section {
+    padding: var(--space-md, 1rem);
+  }
+
+  .podcast-item {
+    padding: var(--space-sm, 0.5rem) var(--space-md, 1rem);
+  }
+
+  .media-section h3 {
+    font-size: var(--font-size-base, 1rem);
+  }
+
+  .video-card h4,
+  .podcast-item h4 {
+    font-size: var(--font-size-sm, 0.875rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .media-section {
+    padding: var(--space-sm, 0.5rem);
+  }
+
+  .podcast-controls audio {
+    height: 28px;
+  }
+
+  .media-generation-note,
+  .podcast-generation-note {
+    padding: var(--space-xs, 0.25rem) var(--space-sm, 0.5rem);
+  }
 }
 </style>
