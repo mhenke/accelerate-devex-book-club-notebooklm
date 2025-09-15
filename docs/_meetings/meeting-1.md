@@ -536,22 +536,28 @@ document.addEventListener('keydown', function(event) {
   </aside>
 </div>
 
-<h2><i class="fas fa-link"></i> Related Resources</h2>
-<div class="resource-grid" markdown="0">
-  {% include simple-card.html
-    type="resource"
-    icon="fas fa-chart-line"
-    title="DORA Metrics & Research"
-    links="2024 State of DevOps Report|https://dora.dev/research/2024/dora-report/|DORA Research Program|https://dora.dev/|DORA Quick Check Assessment|https://dora.dev/quickcheck/|Four Key Metrics Guide|https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance"
-    theme="primary"
-  %}
-  {% include simple-card.html
-    type="resource"
-    icon="fas fa-users"
-    title="Westrum Culture & Transformation"
-    links="Westrum Organizational Culture Types|https://dora.dev/capabilities/generative-organizational-culture/|IT Revolution Westrum Model|https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/|Generative Culture Assessment|https://continuousdelivery.com/implementing/culture/|Google's Project Aristotle|https://rework.withgoogle.com/print/guides/5312474543562752/"
-    theme="info"
-  %}
+<div class="step-section step-resources section-card" markdown="0">
+  <div class="step-header">
+    <h2><i class="fas fa-link"></i> Related Resources</h2>
+  </div>
+  <div class="resource-content">
+    <div class="resource-grid">
+      {% include simple-card.html
+        type="resource"
+        icon="fas fa-chart-line"
+        title="DORA Metrics & Research"
+        links="2024 State of DevOps Report|https://dora.dev/research/2024/dora-report/|DORA Research Program|https://dora.dev/|DORA Quick Check Assessment|https://dora.dev/quickcheck/|Four Key Metrics Guide|https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance"
+        theme="primary"
+      %}
+      {% include simple-card.html
+        type="resource"
+        icon="fas fa-users"
+        title="Westrum Culture & Transformation"
+        links="Westrum Organizational Culture Types|https://dora.dev/capabilities/generative-organizational-culture/|IT Revolution Westrum Model|https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/|Generative Culture Assessment|https://continuousdelivery.com/implementing/culture/|Google's Project Aristotle|https://rework.withgoogle.com/print/guides/5312474543562752/"
+        theme="info"
+      %}
+    </div>
+  </div>
 </div>
 
 <!-- NEXT MEETING SECTION -->
