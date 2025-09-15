@@ -536,7 +536,7 @@ document.addEventListener('keydown', function(event) {
   </aside>
 </div>
 
-### Related Resources
+<h2><i class="fas fa-link"></i> Related Resources</h2>
 <div class="resource-grid" markdown="0">
   {% include simple-card.html
     type="resource"
