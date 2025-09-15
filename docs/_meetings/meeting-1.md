@@ -175,6 +175,76 @@ document.addEventListener('keydown', function(event) {
   </blockquote>
 </div>
 
+<!-- Meeting Toolkit Sidebar -->
+<aside class="meeting-sidebar">
+  <div class="sidebar-section">
+    <h3>Video</h3>
+    <div class="media-card">
+      <h4>Meeting 1: Foundation</h4>
+      <p class="media-subtitle">The Myth and the Measurement</p>
+      <p class="media-description">Foundation concepts: Why software delivery matters, DORA metrics explained, and culture as the key enabler.</p>
+      <div class="media-controls">
+        <video controls width="100%" poster="/accelerate-devex-book-club-notebooklm/assets/images/meeting-1-video-poster.jpg">
+          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="media-generation-note">
+        <p><strong>Generation Instructions:</strong> Create a 15-minute video featuring three personas (Dev, Ops, Product) discussing the key concepts from chapters 1-3, with visual aids showing DORA metrics and Westrum culture types.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Podcasts</h3>
+
+    <!-- Main Podcast -->
+    <div class="media-card">
+      <h4>Meeting 1 Deep Dive</h4>
+      <p class="media-subtitle">Expert discussion on foundational concepts</p>
+      <div class="media-controls">
+        <audio controls width="100%">
+          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-main.m4a" type="audio/mp4">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+      <div class="media-generation-note">
+        <p><strong>Generation:</strong> 20-minute discussion covering business need, DORA metrics, and culture change principles.</p>
+      </div>
+    </div>
+
+    <!-- Bonus Podcast -->
+    <div class="media-card">
+      <h4>DORA Metrics Explained</h4>
+      <p class="media-subtitle">Technical deep-dive on measurement</p>
+      <div class="media-controls">
+        <audio controls width="100%">
+          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-dora.m4a" type="audio/mp4">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+      <div class="media-generation-note">
+        <p><strong>Generation:</strong> 15-minute focused discussion on practical DORA metrics implementation.</p>
+      </div>
+    </div>
+
+    <!-- Culture Focus Podcast -->
+    <div class="media-card">
+      <h4>Culture Change in Practice</h4>
+      <p class="media-subtitle">Real-world culture transformation stories</p>
+      <div class="media-controls">
+        <audio controls width="100%">
+          <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-culture.m4a" type="audio/mp4">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+      <div class="media-generation-note">
+        <p><strong>Generation:</strong> 12-minute discussion on Westrum culture types with case studies.</p>
+      </div>
+    </div>
+  </div>
+</aside>
+
 <!-- Step-Based Progressive Learning Structure -->
 
 <!-- THE PROBLEM -->
@@ -464,77 +534,6 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-  <!-- Meeting Toolkit Sidebar -->
-  <aside class="meeting-sidebar">
-    <div class="sidebar-section">
-      <h3>Video</h3>
-      <div class="media-card">
-        <h4>Meeting 1: Foundation</h4>
-        <p class="media-subtitle">The Myth and the Measurement</p>
-        <p class="media-description">Foundation concepts: Why software delivery matters, DORA metrics explained, and culture as the key enabler.</p>
-        <div class="media-controls">
-          <video controls width="100%" poster="/accelerate-devex-book-club-notebooklm/assets/images/meeting-1-video-poster.jpg">
-            <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="media-generation-note">
-          <p><strong>Generation Instructions:</strong> Create a 15-minute video featuring three personas (Dev, Ops, Product) discussing the key concepts from chapters 1-3, with visual aids showing DORA metrics and Westrum culture types.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="sidebar-section">
-      <h3>Podcasts</h3>
-
-      <!-- Main Podcast -->
-      <div class="media-card">
-        <h4>Meeting 1 Deep Dive</h4>
-        <p class="media-subtitle">Expert discussion on foundational concepts</p>
-        <div class="media-controls">
-          <audio controls width="100%">
-            <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-main.m4a" type="audio/mp4">
-            Your browser does not support the audio tag.
-          </audio>
-        </div>
-        <div class="media-generation-note">
-          <p><strong>Generation:</strong> 20-minute discussion covering business need, DORA metrics, and culture change principles.</p>
-        </div>
-      </div>
-
-      <!-- Bonus Podcast -->
-      <div class="media-card">
-        <h4>DORA Metrics Explained</h4>
-        <p class="media-subtitle">Technical deep-dive on measurement</p>
-        <div class="media-controls">
-          <audio controls width="100%">
-            <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-dora.m4a" type="audio/mp4">
-            Your browser does not support the audio tag.
-          </audio>
-        </div>
-        <div class="media-generation-note">
-          <p><strong>Generation:</strong> 15-minute focused discussion on practical DORA metrics implementation.</p>
-        </div>
-      </div>
-
-      <!-- Culture Focus Podcast -->
-      <div class="media-card">
-        <h4>Culture Change in Practice</h4>
-        <p class="media-subtitle">Real-world culture transformation stories</p>
-        <div class="media-controls">
-          <audio controls width="100%">
-            <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-culture.m4a" type="audio/mp4">
-            Your browser does not support the audio tag.
-          </audio>
-        </div>
-        <div class="media-generation-note">
-          <p><strong>Generation:</strong> 12-minute discussion on Westrum culture types with case studies.</p>
-        </div>
-      </div>
-    </div>
-
-  </aside>
-</div>
 
 <div class="step-section step-resources section-card" markdown="0">
   <div class="step-header">
