@@ -30,9 +30,17 @@
 // Header and Layout Tokens
 :root {
   --container-max-width: 1200px;
+  --container-narrow: 800px;     // For reading content
+  --container-content: 700px;    // For text-heavy content
+  --container-reading: 900px;    // For article-style content
+  --container-medium: 1000px;    // For balanced layouts
+  --container-wide: 1400px;      // For wide layouts
+
   --spacing-md: 0.75rem; // 12px (legacy, use only for small gaps, not layout)
   --border-radius: 8px; // 8px grid compliant
   --touch-target-44px: 44px; // Accessibility minimum
+  --touch-target-large: 56px; // For larger buttons (8px grid: 7×8)
+  --touch-target-compact: 48px; // For compact buttons (8px grid: 6×8)
 }
 
 // Design Token System - Critical Rendering Path Optimization
