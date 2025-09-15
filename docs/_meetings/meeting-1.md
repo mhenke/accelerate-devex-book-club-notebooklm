@@ -538,6 +538,24 @@ document.addEventListener('keydown', function(event) {
   </aside>
 </div>
 
+### Related Resources
+<div class="resource-grid" markdown="0">
+  {% include simple-card.html
+    type="resource"
+    icon="fas fa-chart-line"
+    title="DORA Metrics & Research"
+    links="2024 State of DevOps Report|https://dora.dev/research/2024/dora-report/|DORA Research Program|https://dora.dev/|DORA Quick Check Assessment|https://dora.dev/quickcheck/|Four Key Metrics Guide|https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance"
+    theme="primary"
+  %}
+  {% include simple-card.html
+    type="resource"
+    icon="fas fa-users"
+    title="Westrum Culture & Transformation"
+    links="Westrum Organizational Culture Types|https://dora.dev/capabilities/generative-organizational-culture/|IT Revolution Westrum Model|https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/|Generative Culture Assessment|https://continuousdelivery.com/implementing/culture/|Google's Project Aristotle|https://rework.withgoogle.com/print/guides/5312474543562752/"
+    theme="info"
+  %}
+</div>
+
 <!-- NEXT MEETING SECTION -->
 
 <!-- NEXT MEETING SECTION -->
@@ -552,6 +570,36 @@ document.addEventListener('keydown', function(event) {
 </section>
 
 <style>
+/* H3 Themed Styling */
+h3 {
+  border-left: 4px solid #0969da;
+  background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: 600;
+}
+
+/* Resource Grid */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Responsive adjustments for Related Resources */
+@media (max-width: 768px) {
+  .resource-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  h3 {
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+  }
+}
+
 .next-meeting-section {
   display: flex;
   flex-direction: column;
