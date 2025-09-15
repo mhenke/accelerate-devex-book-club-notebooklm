@@ -25,7 +25,7 @@ title: Meetings
 
 Our book club consists of four focused sessions over 2 months, each building upon the previous meeting's insights.
 
-<div class="meeting-grid" markdown="0">
+<div class="feature-grid" markdown="0">
   {% assign meetings = site.meetings | sort: "week" %}
   {% for meeting in meetings %}
     <div class="meeting-card" markdown="0">

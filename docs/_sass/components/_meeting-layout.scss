@@ -11,7 +11,7 @@
 }
 
 .meeting-hero-content {
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -78,10 +78,10 @@
 
 /* Meeting Container */
 .meeting-container {
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  background: white;
+  background: var(--color-white);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -99,13 +99,13 @@
   border-top: 2px solid var(--border-light);
   display: grid;
   grid-template-rows: auto auto;
-  gap: 2.5rem;
+  gap: var(--space-2xl);
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: var(--space-8);
   margin-bottom: 0;
   flex-wrap: nowrap;
   width: 100%;
@@ -115,8 +115,8 @@
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  background: white;
+  gap: var(--space-12);
+  background: var(--color-white);
   border: 2px solid transparent;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -229,7 +229,7 @@
 .nav-content {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: var(--space-1);
 }
 
 .nav-label {
@@ -301,7 +301,7 @@
 }
 
 /* Mobile responsive design */
-@media (max-width: 768px) {
+@include mobile-only {
   .meeting-hero {
     padding: 4rem 1rem 2rem;
     margin: -2rem -0.5rem 0;
@@ -327,12 +327,12 @@
   }
 
   .meeting-navigation {
-    gap: 2rem;
+    gap: var(--space-2xl);
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-lg);
     align-items: stretch;
     margin-bottom: 0;
   }

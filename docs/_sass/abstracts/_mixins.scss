@@ -379,7 +379,7 @@
 
   &:hover:not(:disabled) {
     background: var(--button-hover-gradient);
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
     box-shadow: var(--shadow-lg);
   }
 }
@@ -395,7 +395,7 @@
   &:hover:not(:disabled) {
     background: var(--accent-coral);
     color: var(--text-white);
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
   }
 }
 

@@ -42,7 +42,7 @@
   &:hover,
   &:focus {
     background: var(--hover-coral);
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
     box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
     text-decoration: none;
     color: var(--text-white);

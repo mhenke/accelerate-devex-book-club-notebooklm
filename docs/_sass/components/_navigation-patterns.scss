@@ -57,7 +57,7 @@
     background: var(--primary-blue);
     color: var(--text-white);
     border-color: var(--primary-blue);
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
     box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
   }
 
@@ -260,7 +260,7 @@
   font-size: 1.5rem;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @include mobile-only {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +268,7 @@
 }
 
 // Responsive Navigation
-@media (max-width: 768px) {
+@include mobile-only {
   .meeting-navigation {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);

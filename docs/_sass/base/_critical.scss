@@ -23,7 +23,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(var(--space-20));
   }
   to {
     opacity: 1;
@@ -261,7 +261,7 @@ a {
   will-change: auto; // Managed dynamically via JavaScript
   background: var(--hero-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
   border-radius: 0;
@@ -353,7 +353,7 @@ a {
   display: flex;
   align-items: center;
   gap: var(--space-xl);
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -448,7 +448,7 @@ a {
   }
 
   // Mobile responsive
-  @media (max-width: 768px) {
+  @include mobile-only {
     flex-direction: column;
     text-align: center;
     gap: var(--space-lg);
@@ -1157,7 +1157,7 @@ a {
     align-items: center;
     gap: var(--space-md);
     padding: var(--space-xl) var(--space-lg);
-    background: white;
+    background: var(--color-white);
     border-radius: var(--radius-xl); // Material Design 3 radius
     font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-semibold);
@@ -1189,7 +1189,7 @@ a {
     }
 
     &:hover {
-      transform: translateY(-2px);
+      transform: var(--transform-hover-lift);
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
       border-color: rgba(16, 185, 129, 0.2);
 
@@ -1412,7 +1412,7 @@ a {
     }
 
     &.secondary {
-      background: #f8fafc;
+      background: var(--light-gray-bg);
       border: 1px solid rgba(16, 185, 129, 0.1);
       position: relative;
       overflow: hidden;
@@ -1437,7 +1437,7 @@ a {
 
       &:hover {
         background: #f1f5f9;
-        transform: translateY(-2px);
+        transform: var(--transform-hover-lift);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         border-color: rgba(16, 185, 129, 0.2);
 
@@ -1490,7 +1490,7 @@ a {
       gap: var(--space-sm);
       padding: var(--space-sm) var(--space-md);
       background: rgba(16, 185, 129, 0.1);
-      border-radius: 8px; // Consistent with button system
+      border-radius: var(--radius-md); // Consistent with button system
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
       overflow: hidden;
@@ -1534,7 +1534,7 @@ a {
       color: white;
       background: rgba(255, 255, 255, 0.2);
       padding: var(--space-sm) var(--space-md);
-      border-radius: 8px; // Consistent with button system
+      border-radius: var(--radius-md); // Consistent with button system
       display: inline-block;
       box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 
@@ -1579,7 +1579,7 @@ a {
   box-shadow: var(--elevation-2);
 
   &:hover {
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
     box-shadow: var(--elevation-4);
     color: white;
     background: linear-gradient(
@@ -1636,7 +1636,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-lg);
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--space-lg);
 
@@ -1788,7 +1788,7 @@ a {
     z-index: 1;
 
     &:hover {
-      transform: translateY(-2px);
+      transform: var(--transform-hover-lift);
     }
 
     &:active {
@@ -1837,7 +1837,7 @@ a {
     }
 
     &:hover {
-      transform: translateY(-2px);
+      transform: var(--transform-hover-lift);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     }
 
@@ -2179,7 +2179,7 @@ button:focus,
   box-shadow: var(--shadow-blue-glow);
   padding: var(--space-3xl);
   margin: var(--space-xl) 0;
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -2240,7 +2240,7 @@ button:focus,
       &:hover {
         background: rgba(255, 255, 255, 0.8);
         border-color: rgba(33, 150, 243, 0.4);
-        transform: translateY(-2px);
+        transform: var(--transform-hover-lift);
       }
 
       &::before {
@@ -2396,7 +2396,7 @@ button:focus,
   grid-template-columns: 1fr;
   gap: var(--space-xl);
   margin: var(--space-md) 0;
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
 
@@ -2507,7 +2507,7 @@ button:focus,
         var(--hover-coral),
         var(--accent-coral)
       );
-      transform: translateY(-2px);
+      transform: var(--transform-hover-lift);
       box-shadow: 0 8px 16px rgba(255, 127, 80, 0.3);
       border-color: rgba(255, 255, 255, 0.2);
     }
@@ -2521,7 +2521,7 @@ button:focus,
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
   margin: var(--space-lg) auto;
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   text-align: center;
   box-shadow: var(--elevation-2);
 
@@ -2653,20 +2653,22 @@ button:focus,
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: var(--space-xl);
-  max-width: 1400px;
+  max-width: var(--container-wide); // Use design token for consistency
   margin: 0 auto;
   padding: 0 var(--space-lg);
 
-  @media (max-width: 1024px) {
+  @include mobile-only {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-md);
+    padding: 0 var(--space-md);
   }
 }
 
 .meeting-main-content {
   min-width: 0; // Prevent overflow
+  width: 100%; // Take full available width in grid column
 
-  @media (max-width: 768px) {
+  @include mobile-only {
     display: flex;
     flex-direction: column;
   }
@@ -2680,12 +2682,12 @@ button:focus,
   position: sticky;
   top: var(--space-lg);
 
-  @media (max-width: 1024px) {
+  @include tablet-only {
     position: static;
     margin-top: var(--space-xl);
   }
 
-  @media (max-width: 768px) {
+  @include mobile-only {
     order: 2; // Move sidebar after intro but before main content sections
     margin-top: var(--space-lg);
     margin-bottom: var(--space-xl);
@@ -2714,7 +2716,7 @@ button:focus,
 }
 
 // Mobile ordering for content sections
-@media (max-width: 768px) {
+@include mobile-only {
   .chapter-intro-header,
   .chapter-cards-grid {
     order: 1; // Keep intro at top
@@ -2722,7 +2724,7 @@ button:focus,
 }
 
 .media-card {
-  background: white;
+  background: var(--color-white);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   border: 1px solid #e5e7eb;
@@ -2762,7 +2764,7 @@ button:focus,
   }
 
   .media-generation-note {
-    background: #f8fafc;
+    background: var(--light-gray-bg);
     padding: var(--space-sm);
     border-radius: var(--radius-sm);
     margin-top: var(--space-md);
@@ -2810,14 +2812,14 @@ button:focus,
 
 // Simple Card Base Styles (matching your image)
 .simple-card {
-  background: white;
+  background: var(--color-white);
   border-radius: var(--radius-lg);
   border: 1px solid #e1e5e9;
   overflow: hidden;
   transition: all var(--duration-normal) var(--ease-out);
 
   &:hover {
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   }
 }
@@ -2855,7 +2857,7 @@ button:focus,
     }
 
     .card-goal {
-      background: #f8fafc;
+      background: var(--light-gray-bg);
       padding: var(--space-sm) var(--space-md);
       border-radius: var(--radius-sm);
       border-left: 3px solid currentColor;
@@ -2903,1785 +2905,6 @@ button:focus,
   }
 }
 
-// =============================================================================
-// STEP-BASED MEETING STRUCTURE STYLES
-// =============================================================================
-
-// Design System Tokens - Comprehensive Color & Layout Variables
-:root {
-  /* Overlay accent tokens for backgrounds */
-  --accent-teal-05: rgba(122, 218, 209, 0.05);
-  --accent-teal-15: rgba(122, 218, 209, 0.15);
-  --accent-coral-10: rgba(255, 127, 80, 0.1);
-  --accent-sage-08: rgba(139, 158, 183, 0.08);
-
-  // Meeting 1 Blue Color Scheme
-  --meeting-1-primary: #0969da;
-  --meeting-1-secondary: #1f6feb;
-  --meeting-1-accent: #388bfd;
-  --meeting-1-surface: #f6f8fa;
-  --meeting-1-text: #24292f;
-  --meeting-1-light: rgba(9, 105, 218, 0.08);
-  --meeting-1-border: rgba(9, 105, 218, 0.2);
-
-  // Essential Colors (only what we actually use)
-  --color-white: #ffffff;
-  --color-gray-50: #f8fafc;
-  --color-gray-100: #f1f5f9;
-  --color-gray-300: #e5e7eb;
-  --color-gray-400: #6b7280;
-  --color-blue-600: #2563eb;
-  --color-blue-800: #1976d2;
-  --color-green-600: #16a34a;
-
-  // Simplified Shadow System (5 levels + 2 special)
-  --shadow-none: none;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3);
-
-  // Special shadows
-  --shadow-floating-teal: 0 20px 40px rgba(122, 218, 209, 0.4);
-  --shadow-card-metric: 0 4px 8px rgba(16, 185, 129, 0.3);
-  --shadow-card-metric-hover: 0 6px 16px rgba(33, 150, 243, 0.4);
-
-  // Legacy aliases for compatibility
-  --elevation-1: var(--shadow-sm);
-  --elevation-2: var(--shadow-md);
-  --elevation-3: var(--shadow-lg);
-  --elevation-4: var(--shadow-xl);
-
-  // Border Radius Tokens
-  --radius-none: 0;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-xl: 12px;
-  --radius-2xl: 16px;
-  --radius-3xl: 24px;
-  --radius-full: 50%;
-
-  // Simplified Spacing System (8pt grid)
-  --space-xs: 0.25rem; // 4px
-  --space-sm: 0.5rem; // 8px
-  --space-md: 1rem; // 16px
-  --space-lg: 1.5rem; // 24px
-  --space-xl: 2rem; // 32px
-  --space-2xl: 2.5rem; // 40px
-  --space-3xl: 3rem; // 48px
-  --space-4xl: 4rem; // 64px
-
-  // Background Gradient Tokens
-  --gradient-surface: linear-gradient(
-    135deg,
-    var(--color-gray-50),
-    var(--color-gray-100)
-  );
-  --gradient-hero: linear-gradient(135deg, var(--hero-dark), var(--card-dark));
-  --gradient-blue: linear-gradient(
-    135deg,
-    var(--color-blue-50),
-    var(--color-blue-100)
-  );
-  --gradient-green: linear-gradient(
-    135deg,
-    var(--color-green-50),
-    var(--color-green-100)
-  );
-  --gradient-purple: linear-gradient(
-    135deg,
-    var(--color-purple-50),
-    var(--color-purple-100)
-  );
-  --gradient-meeting-1: linear-gradient(
-    135deg,
-    var(--meeting-1-primary),
-    var(--meeting-1-secondary)
-  );
-
-  // Text Shadow Tokens
-  --text-shadow-none: none;
-  --text-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --text-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.3);
-  --text-shadow-lg: 0 2px 20px rgba(0, 0, 0, 0.3);
-
-  // Border Tokens
-  --border-width-1: 1px;
-  --border-width-2: 2px;
-  --border-width-3: 3px;
-  --border-width-4: 4px;
-  --border-subtle: var(--border-width-1) solid var(--color-gray-300);
-  --border-medium: var(--border-width-2) solid var(--color-gray-400);
-  --border-accent: var(--border-width-2) solid var(--meeting-1-primary);
-  --border-emerald-light: var(--border-width-2) solid rgba(16, 185, 129, 0.2);
-  --border-emerald-medium: var(--border-width-2) solid rgba(16, 185, 129, 0.4);
-  --border-white-light: var(--border-width-2) solid rgba(255, 255, 255, 0.2);
-  --border-white-medium: var(--border-width-2) solid rgba(255, 255, 255, 0.4);
-
-  // Transition Tokens
-  --duration-fast: 150ms;
-  --duration-normal: 300ms;
-  --duration-slow: 500ms;
-  --ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --ease-material: cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-spring: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --transition-fast: all var(--duration-fast) var(--ease-out);
-  --transition-normal: all var(--duration-normal) var(--ease-out);
-  --transition-material: all var(--duration-normal) var(--ease-material);
-  --transition-spring: all var(--duration-normal) var(--ease-spring);
-
-  // Transform Tokens - Simplified for actual usage
-  --transform-hover: translateY(-2px);
-  --transform-hover-large: translateY(-4px);
-  --transform-reset: translateY(0);
-
-  // Backdrop Filter Tokens
-  --backdrop-blur-none: none;
-  --backdrop-blur-sm: blur(4px);
-  --backdrop-blur-md: blur(8px);
-  --backdrop-blur-lg: blur(10px);
-  --backdrop-blur-xl: blur(20px);
-  --backdrop-blur-2xl: blur(40px);
-
-  // Essential RGBA tokens (only what we use)
-  --color-white-10: rgba(255, 255, 255, 0.1);
-  --color-white-20: rgba(255, 255, 255, 0.2);
-  --color-teal-20: rgba(122, 218, 209, 0.2);
-
-  // Legacy shadow for backward compatibility
-  --meeting-1-card-shadow: var(--elevation-2);
-}
-
-// Unified step styling with dynamic theme colors
-.step-section {
-  background: white;
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl);
-  margin-bottom: var(--space-xl);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  position: relative;
-  transition: all var(--duration-normal) var(--ease-out);
-  animation: fadeInUp 0.8s ease-out both;
-
-  // Staggered animation delays for premium feel
-  &:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-  &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  &:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-  &:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-  &:nth-child(5) {
-    animation-delay: 0.5s;
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
-  }
-
-  // Dynamic theme color top border
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--meeting-primary, var(--meeting-1-primary));
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  }
-
-  .step-header {
-    margin-bottom: var(--space-xl);
-
-    h2 {
-      margin: 0;
-      color: var(--text-dark);
-      background-image: radial-gradient(
-          circle at 20% 20%,
-          var(--accent-teal-15) 2px,
-          transparent 2px
-        ),
-        radial-gradient(
-          circle at 80% 80%,
-          var(--accent-coral-10) 1px,
-          transparent 1px
-        ),
-        radial-gradient(
-          circle at 40% 60%,
-          var(--accent-sage-08) 1px,
-          transparent 1px
-        );
-      background-size: 60px 60px, 40px 40px, 80px 80px;
-      background-position: 0 0, 30px 30px, 50px 10px;
-      opacity: 0.4;
-      padding: 1rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      font-family: var(--font-display);
-      display: flex;
-      align-items: center;
-      gap: var(--space-md);
-      font-size: var(--font-size-title-large);
-      font-weight: var(--font-weight-bold);
-
-      i {
-        color: var(--meeting-primary, var(--meeting-1-primary));
-        font-size: 1.1em;
-        padding: var(--space-sm);
-        background: var(--meeting-surface, rgba(9, 105, 218, 0.1));
-        border-radius: var(--radius-md);
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--meeting-primary, var(--meeting-1-primary));
-        opacity: 0.2;
-      }
-    }
-  }
-}
-
-// Assessment Section Enhanced Elevation (Priority 3 from reviews)
-.step-section.assessment-elevated {
-  // Higher elevation for interactive assessment
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
-  border: 2px solid var(--meeting-primary, var(--meeting-1-primary));
-  background: linear-gradient(
-    135deg,
-    white 0%,
-    var(--meeting-surface, rgba(9, 105, 218, 0.02)) 100%
-  );
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15), 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
-
-  &::before {
-    height: 6px; // Thicker accent border for assessment
-  }
-
-  .step-header h2 i {
-    opacity: 1; // Full opacity for assessment icon
-    background: var(--meeting-primary, var(--meeting-1-primary));
-    color: white;
-  }
-}
-
-// Material Design Micro-interactions (Phase 4)
-.step-section {
-  // Ripple effect on click
-  position: relative;
-  overflow: hidden;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: var(--meeting-primary, var(--meeting-1-primary));
-    opacity: 0.2;
-    transform: translate(-50%, -50%);
-    transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  &:active::after {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
-
-// Touch-friendly responsive improvements
-@media (max-width: 768px) {
-  .step-section {
-    padding: var(--space-lg);
-    margin-bottom: var(--space-lg);
-
-    .step-header h2 {
-      font-size: var(--font-size-title-medium);
-      gap: var(--space-sm);
-
-      i {
-        width: 36px;
-        height: 36px;
-        font-size: 1rem;
-      }
-    }
-  }
-
-  .assessment-elevated {
-    border-width: 1px; // Thinner border on mobile
-  }
-}
-
-// Improved focus states for accessibility
-.step-section:focus-within {
-  outline: 3px solid var(--meeting-primary, var(--meeting-1-primary));
-  outline-offset: 2px;
-}
-
-// Problem Section Styles
-.false-choice-myth {
-  margin-bottom: var(--space-xl);
-
-  h3 {
-    text-align: center;
-    margin-bottom: var(--space-lg);
-    color: var(--text-high-emphasis);
-  }
-
-  .choice-comparison {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-xl);
-    margin: var(--space-lg) 0;
-  }
-
-  .choice-option {
-    text-align: center;
-    padding: var(--space-lg);
-    border-radius: var(--radius-md);
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-    i {
-      font-size: var(--font-size-display-small);
-      margin-bottom: var(--space-md);
-      display: block;
-    }
-
-    h4 {
-      margin: var(--space-sm) 0;
-      color: var(--text-high-emphasis);
-    }
-
-    .consequence {
-      color: #dc2626;
-      font-weight: var(--font-weight-medium);
-    }
-  }
-
-  .vs-divider {
-    font-size: var(--font-size-title-large);
-    font-weight: var(--font-weight-bold);
-    color: #6b7280;
-  }
-}
-
-.pain-signal {
-  background: rgba(255, 255, 255, 0.7);
-  padding: var(--space-lg);
-  border-radius: var(--radius-md);
-  border-left: 4px solid var(--meeting-1-primary);
-
-  h3 {
-    margin-top: 0;
-    color: var(--meeting-1-primary);
-  }
-}
-
-// Causality Flow Visualization
-.causality-flow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: var(--space-xl) 0;
-  padding: var(--space-xl);
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: var(--radius-lg);
-  gap: var(--space-lg);
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: var(--space-md);
-  }
-}
-
-.flow-step {
-  flex: 1;
-  text-align: center;
-  padding: var(--space-lg);
-  background: white;
-  border-radius: var(--radius-md);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-  .step-icon {
-    font-size: var(--font-size-display-small);
-    color: #0969da;
-    margin-bottom: var(--space-md);
-  }
-
-  h3 {
-    margin: var(--space-sm) 0;
-    color: var(--text-high-emphasis);
-    font-size: var(--font-size-title-medium);
-  }
-
-  .step-subtitle {
-    color: var(--text-medium-emphasis);
-    font-style: italic;
-    margin-bottom: var(--space-md);
-  }
-
-  .culture-types,
-  .practice-examples,
-  .metrics-list,
-  .business-drivers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-xs);
-    justify-content: center;
-
-    span {
-      background: #f1f5f9;
-      padding: var(--space-xs) var(--space-sm);
-      border-radius: var(--radius-sm);
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-medium);
-    }
-  }
-
-  .business-drivers .driver {
-    background: #ecfdf5;
-    color: #16a34a;
-    border: 1px solid #bbf7d0;
-  }
-
-  .culture-type.pathological {
-    background: #fecaca;
-    color: #dc2626;
-  }
-
-  .culture-type.bureaucratic {
-    background: #fde68a;
-    color: #d97706;
-  }
-
-  .culture-type.generative {
-    background: #bbf7d0;
-    color: #16a34a;
-  }
-}
-
-.flow-arrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #6b7280;
-
-  i {
-    font-size: var(--font-size-title-medium);
-    margin-bottom: var(--space-xs);
-  }
-
-  .arrow-label {
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
-  }
-
-  @media (max-width: 768px) {
-    transform: rotate(90deg);
-  }
-}
-
-// Integrated Assessment Styles
-.integrated-assessment {
-  background: rgba(255, 255, 255, 0.8);
-  padding: var(--space-xl);
-  border-radius: var(--radius-lg);
-}
-
-.pain-assessment {
-  h3 {
-    text-align: center;
-    margin-bottom: var(--space-lg);
-    color: var(--text-high-emphasis);
-  }
-}
-
-.pain-scale {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-  margin-bottom: var(--space-xl);
-}
-
-.pain-option {
-  display: flex;
-  align-items: center;
-  padding: var(--space-md);
-  background: white;
-  border-radius: var(--radius-md);
-  border: 2px solid #e5e7eb;
-  cursor: pointer;
-  transition: all var(--duration-normal) var(--ease-out);
-
-  &:hover {
-    border-color: #d97706;
-    background: #fefce8;
-  }
-
-  input[type="radio"] {
-    margin-right: var(--space-md);
-    scale: 1.2;
-  }
-
-  .option-text {
-    flex: 1;
-    font-weight: var(--font-weight-medium);
-  }
-
-  .pain-indicator {
-    width: 20px;
-    height: 20px;
-    border-radius: var(--radius-full);
-    margin-left: var(--space-md);
-
-    &.high {
-      background: #dc2626;
-    }
-
-    &.medium {
-      background: #d97706;
-    }
-
-    &.low {
-      background: #16a34a;
-    }
-  }
-}
-
-.connection-reveals {
-  margin-top: var(--space-xl);
-}
-
-.reveal-section {
-  padding: var(--space-lg);
-  background: white;
-  border-radius: var(--radius-md);
-  border-left: 4px solid #d97706;
-
-  h4 {
-    margin-top: 0;
-    color: #d97706;
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-  }
-}
-
-.causal-diagnosis {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-lg);
-  margin-top: var(--space-lg);
-}
-
-.culture-diagnosis,
-.business-impact,
-.hope-message {
-  padding: var(--space-md);
-  background: #f8fafc;
-  border-radius: var(--radius-sm);
-
-  strong {
-    color: var(--text-high-emphasis);
-  }
-
-  p {
-    margin: var(--space-xs) 0 0;
-    color: var(--text-medium-emphasis);
-    font-size: var(--font-size-sm);
-  }
-
-  .culture-pathological,
-  .culture-bureaucratic,
-  .culture-generative {
-    padding: var(--space-xs) var(--space-sm);
-    border-radius: var(--radius-xs);
-    font-weight: var(--font-weight-medium);
-  }
-
-  .culture-pathological {
-    background: rgba(9, 105, 218, 0.1);
-    color: var(--meeting-1-primary);
-    border: 1px solid var(--meeting-1-border);
-  }
-
-  .culture-bureaucratic {
-    background: rgba(9, 105, 218, 0.15);
-    color: var(--meeting-1-secondary);
-    border: 1px solid var(--meeting-1-border);
-  }
-
-  .culture-generative {
-    background: rgba(9, 105, 218, 0.2);
-    color: var(--meeting-1-primary);
-    border: 1px solid var(--meeting-1-primary);
-    font-weight: var(--font-weight-semibold);
-  }
-}
-
-.hope-message {
-  background: var(--meeting-1-surface);
-  border-left: 3px solid var(--meeting-1-primary);
-
-  strong {
-    color: var(--meeting-1-primary);
-  }
-}
-
-.performance-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: var(--space-md);
-  margin: var(--space-md) 0;
-}
-
-.stat-item {
-  text-align: center;
-  padding: var(--space-md);
-  background: white;
-  border-radius: var(--radius-md);
-  border: 2px solid #e5e7eb;
-
-  strong {
-    display: block;
-    font-size: var(--font-size-title-medium);
-    color: #16a34a;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--space-xs);
-  }
-}
-
-// Understanding Section Styles
-.connection-insights {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
-}
-
-.insight-card {
-  background: rgba(255, 255, 255, 0.9);
-  padding: var(--space-xl);
-  border-radius: var(--radius-lg);
-  border-left: 4px solid #16a34a;
-
-  h3 {
-    margin-top: 0;
-    color: #16a34a;
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-  }
-
-  .insight-quote {
-    font-style: italic;
-    font-size: var(--font-size-lg);
-    color: var(--text-medium-emphasis);
-    margin: var(--space-md) 0;
-    padding-left: var(--space-lg);
-    border-left: 3px solid #e5e7eb;
-  }
-
-  .insight-explanation {
-    margin-top: var(--space-md);
-
-    ul {
-      li {
-        margin-bottom: var(--space-sm);
-        color: var(--text-medium-emphasis);
-      }
-    }
-  }
-}
-
-.practice-cycle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-md);
-  margin: var(--space-lg) 0;
-  padding: var(--space-md);
-  background: #f0fdf4;
-  border-radius: var(--radius-md);
-
-  .cycle-step {
-    background: white;
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--radius-sm);
-    font-weight: var(--font-weight-medium);
-    color: #16a34a;
-    border: 1px solid #bbf7d0;
-  }
-
-  i {
-    color: #16a34a;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-
-    i {
-      transform: rotate(90deg);
-    }
-  }
-}
-
-.signal-mapping {
-  margin-top: var(--space-md);
-}
-
-.signal-item {
-  padding: var(--space-sm) var(--space-md);
-  background: #f8fafc;
-  margin-bottom: var(--space-sm);
-  border-radius: var(--radius-sm);
-  border-left: 3px solid #64748b;
-  font-size: var(--font-size-sm);
-}
-
-// Discussion Questions Styles
-.discussion-questions {
-  .question-item {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: var(--radius-md);
-    margin-bottom: var(--space-md);
-    border: 1px solid #e5e7eb;
-    overflow: hidden;
-
-    // Remove all focus and click effects
-    &:focus,
-    &:focus-visible,
-    &:active {
-      outline: none;
-      box-shadow: none;
-    }
-
-    summary {
-      padding: var(--space-lg);
-      cursor: default; // Remove pointer cursor
-      display: flex;
-      align-items: center;
-      gap: var(--space-md);
-      background: linear-gradient(
-        135deg,
-        var(--surface-light),
-        var(--surface-subtle)
-      );
-      font-weight: var(--font-weight-medium);
-      color: var(--text-high-emphasis);
-
-      // Remove all focus and click effects
-      &:focus,
-      &:focus-visible,
-      &:active {
-        outline: none;
-        box-shadow: none;
-      }
-
-      // Removed hover effect to disable click interaction
-
-      i:first-child {
-        color: #6b7280; // Subdued gray to match action items
-        width: 20px;
-      }
-
-      span {
-        flex: 1;
-      }
-
-      i:last-child {
-        transition: transform var(--duration-normal) var(--ease-out);
-      }
-    }
-
-    &[open] summary i:last-child {
-      transform: rotate(180deg);
-    }
-
-    .question-content {
-      padding: var(--space-lg);
-      background: white;
-      border-top: 1px solid #e5e7eb;
-
-      p {
-        margin: 0;
-        color: var(--text-medium-emphasis);
-        line-height: var(--line-height-relaxed);
-      }
-    }
-  }
-}
-
-// Action Items Styles
-.action-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-lg);
-}
-
-.action-card {
-  background: rgba(255, 255, 255, 0.9);
-  padding: var(--space-xl);
-  border-radius: var(--radius-lg);
-  border: 1px solid #e5e7eb;
-  transition: all var(--duration-normal) var(--ease-out);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  }
-
-  .action-icon {
-    background: linear-gradient(135deg, #ffe4e6, #fecdd3);
-    width: 60px;
-    height: 60px;
-    border-radius: var(--radius-full);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: var(--space-lg);
-
-    i {
-      font-size: var(--font-size-title-medium);
-      color: #e11d48;
-    }
-  }
-
-  h3 {
-    margin: 0 0 var(--space-md);
-    color: var(--text-high-emphasis);
-    font-size: var(--font-size-title-small);
-    line-height: var(--line-height-tight);
-  }
-
-  p {
-    margin: 0;
-    color: var(--text-medium-emphasis);
-    line-height: var(--line-height-relaxed);
-  }
-}
-
-// Compact Action List Styles
-.compact-action-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-.action-item {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-md);
-  padding: var(--space-lg);
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: var(--radius-md);
-  border: 1px solid #e5e7eb;
-  transition: all var(--duration-normal) var(--ease-out);
-
-  &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-
-  .action-icon {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-
-    // border-radius removed
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-
-    // Default icon styling
-    // background removed
-    // color removed
-
-    // Default gray icon colors (will be overridden by Meeting 1 specific rules)
-    .fa-chart-line,
-    .fa-exclamation-triangle,
-    .fa-users,
-    .fa-rocket,
-    .fa-book-open,
-    .fa-key,
-    .fa-sitemap,
-    .fa-stethoscope,
-    .fa-cycle,
-    .fa-comments,
-    .fa-check-circle,
-    .fa-video,
-    .fa-headphones,
-    .fa-tachometer-alt,
-    .fa-shield-alt,
-    .fa-heartbeat,
-    .fa-chart-line-up,
-    .fa-arrow-right,
-    .fa-microscope,
-    .fa-lightbulb,
-    .fa-balance-scale,
-    .fa-chevron-down {
-      color: #6b7280; // Gray by default
-    }
-  }
-
-  // Unified blue theme for all action icons
-  // .action-icon meeting-1 theme removed as requested
-
-  .action-text {
-    flex: 1;
-
-    h3 {
-      margin: 0 0 var(--space-xs);
-      color: var(--text-high-emphasis);
-      font-size: var(--font-size-lg);
-      font-weight: var(--font-weight-semibold);
-      line-height: var(--line-height-tight);
-    }
-
-    p {
-      margin: 0;
-      color: var(--text-medium-emphasis);
-      font-size: var(--font-size-sm);
-      line-height: var(--line-height-relaxed);
-    }
-  }
-}
-
-// Meeting-Specific Key Question Styles (matching homepage dark theme)
-.key-question.meeting-specific {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
-  );
-  color: var(--text-white);
-  border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
-  margin: var(--space-xl) auto;
-  text-align: center;
-  max-width: min(1200px, calc(100vw - 2rem));
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--shadow-floating-teal);
-  border: 2px solid var(--color-teal-20);
-  backdrop-filter: var(--backdrop-blur-lg);
-  transition: var(--transition-spring);
-
-  // Ensure proper container constraints
-  width: 100%;
-  box-sizing: border-box;
-
-  // Sophisticated pattern overlay
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-        circle at 30% 20%,
-        rgba(122, 218, 209, 0.1) 0%,
-        transparent 50%
-      ),
-      radial-gradient(
-        circle at 70% 80%,
-        rgba(215, 186, 137, 0.08) 0%,
-        transparent 50%
-      );
-    pointer-events: none;
-  }
-
-  h2 {
-    position: relative;
-    z-index: 2;
-    margin: 0 0 var(--space-lg);
-    color: var(--accent-gold);
-    font-size: var(--font-size-title-large);
-    font-weight: var(--font-weight-bold);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-md);
-    font-family: var(--font-display);
-
-    i {
-      color: var(--accent-teal);
-      font-size: 1.2em;
-    }
-  }
-
-  p {
-    position: relative;
-    z-index: 2;
-    margin: 0 0 var(--space-md);
-    color: var(--color-white-80);
-    font-size: var(--font-size-lg);
-    line-height: var(--line-height-relaxed);
-    text-align: center;
-  }
-
-  blockquote {
-    position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(122, 218, 209, 0.3);
-    border-radius: var(--radius-lg);
-    padding: var(--space-xl);
-    margin: var(--space-lg) 0;
-    font-style: italic;
-    font-size: var(--font-size-xl);
-    color: var(--text-white);
-    line-height: var(--line-height-relaxed);
-    backdrop-filter: blur(5px);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-
-    em {
-      color: var(--accent-teal);
-      font-weight: var(--font-weight-bold);
-      font-style: normal;
-      background: rgba(var(--accent-teal), var(--opacity-20));
-      padding: var(--space-1) var(--space-2);
-      border-radius: var(--radius-md);
-      box-shadow: 0 0 10px rgba(122, 218, 209, 0.3);
-    }
-  }
-
-  // Hover effect
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
-      0 0 40px rgba(122, 218, 209, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15);
-  }
-}
-
-// Modern Chapters Overview Styles
-// Meeting Header - Sophisticated Dark Theme with Meeting 1 Blue
-.meeting-header {
-  /* Unified background: gradient + overlays for visual depth */
-  background: var(--gradient-hero);
-  background-image: linear-gradient(
-      45deg,
-      transparent 30%,
-      var(--accent-teal-05) 70%
-    ),
-    radial-gradient(
-      circle at 20% 20%,
-      var(--accent-teal-15) 2px,
-      transparent 2px
-    ),
-    radial-gradient(
-      circle at 80% 80%,
-      var(--accent-coral-10) 1px,
-      transparent 1px
-    ),
-    radial-gradient(
-      circle at 40% 60%,
-      var(--accent-sage-08) 1px,
-      transparent 1px
-    );
-  padding: var(--space-xl) var(--space-lg);
-  position: relative;
-  border-radius: var(--radius-lg);
-  margin: 0 0 var(--space-xl);
-  overflow: hidden;
-  color: white;
-
-  // Enhanced sophisticated pattern with Meeting 1 blue theme
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        rgba(9, 105, 218, 0.15) 2px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 80%,
-        rgba(59, 130, 246, 0.1) 1px,
-        transparent 1px
-      ),
-      radial-gradient(
-        circle at 40% 60%,
-        rgba(147, 197, 253, 0.08) 1px,
-        transparent 1px
-      );
-    background-size: 60px 60px, 40px 40px, 80px 80px;
-    background-position: 0 0, 30px 30px, 50px 10px;
-    opacity: 0.4;
-    pointer-events: none;
-  }
-
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(9, 105, 218, 0.3),
-    inset 0 2px 0 rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(9, 105, 218, 0.2);
-  backdrop-filter: var(--backdrop-blur-lg);
-  animation: fadeInUp 0.8s ease-out both;
-
-  .meeting-header-content {
-    position: relative;
-    z-index: 1;
-  }
-
-  .meeting-breadcrumb {
-    margin-bottom: var(--space-md);
-    opacity: 0.8;
-    font-size: var(--font-size-sm);
-    text-align: center;
-
-    a,
-    span {
-      color: rgba(255, 255, 255, 0.9);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #93c5fd;
-    }
-  }
-
-  .meeting-main-title {
-    margin: 0;
-    color: white;
-    font-family: var(--font-display);
-    font-size: clamp(
-      var(--font-size-headline-large),
-      5vw,
-      var(--font-size-display-medium)
-    );
-    font-weight: var(--font-weight-bold);
-    text-align: center;
-    background: linear-gradient(135deg, #60a5fa, #3b82f6, #1d4ed8);
-    background-clip: text;
-
-    /* stylelint-disable-next-line property-no-vendor-prefix */
-    -webkit-background-clip: text;
-
-    /* stylelint-disable-next-line property-no-vendor-prefix */
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-  }
-
-  .meeting-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-lg);
-    margin-top: var(--space-md);
-    justify-content: center;
-
-    .meeting-meta-item {
-      display: flex;
-      align-items: center;
-      gap: var(--space-xs);
-      color: rgba(255, 255, 255, 0.9);
-      font-size: var(--font-size-sm);
-      text-shadow: var(--text-shadow-sm);
-
-      i {
-        color: #60a5fa;
-      }
-
-      &.subtitle {
-        flex-basis: 100%;
-        justify-content: center;
-        font-size: var(--font-size-lg);
-        font-style: italic;
-        margin-top: var(--space-sm);
-        font-family: var(--font-display);
-      }
-    }
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 40px rgba(9, 105, 218, 0.4),
-      inset 0 2px 0 rgba(255, 255, 255, 0.15);
-    border-color: rgba(9, 105, 218, 0.3);
-  }
-}
-
-// Dark Theme Treatment for Key Insight Section - High Specificity Override
-.step-section.step-understanding.key-insight-dark {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
-  ) !important;
-  color: var(--text-white) !important;
-  border-radius: var(--radius-xl) !important;
-  border: 2px solid var(--meeting-1-border) !important;
-  box-shadow: var(--shadow-floating-teal) !important;
-  backdrop-filter: var(--backdrop-blur-lg);
-  position: relative;
-  overflow: hidden;
-
-  // Ensure proper container constraints
-  max-width: min(1200px, calc(100vw - 2rem));
-  width: 100%;
-  box-sizing: border-box;
-  margin: var(--space-xl) auto;
-  padding: var(--space-2xl);
-
-  // Blue top border (consistent with other step sections)
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(
-      90deg,
-      var(--meeting-1-primary),
-      var(--meeting-1-accent)
-    );
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    z-index: 2;
-  }
-
-  // Strategic dark mode sophisticated pattern background
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        var(--meeting-1-border) 2px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 80%,
-        var(--meeting-1-light) 1px,
-        transparent 1px
-      ),
-      radial-gradient(
-        circle at 40% 60%,
-        rgba(147, 197, 253, 0.08) 1px,
-        transparent 1px
-      );
-    background-size: 60px 60px, 40px 40px, 80px 80px;
-    background-position: 0 0, 30px 30px, 50px 10px;
-    opacity: 0.4;
-    pointer-events: none;
-    z-index: 1;
-  }
-
-  h2 {
-    color: var(--text-white) !important;
-    background: linear-gradient(
-      135deg,
-      var(--meeting-1-accent),
-      var(--meeting-1-primary),
-      var(--meeting-1-secondary)
-    );
-    background-clip: text;
-
-    /* stylelint-disable-next-line property-no-vendor-prefix */
-    -webkit-background-clip: text;
-
-    /* stylelint-disable-next-line property-no-vendor-prefix */
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    position: relative;
-    z-index: 1;
-
-    i {
-      color: var(--meeting-1-accent) !important;
-    }
-  }
-
-  p,
-  .insight-explanation {
-    color: var(--text-white) !important;
-    position: relative;
-    z-index: 1;
-    text-shadow: var(--text-shadow-sm);
-  }
-
-  .practice-cycle {
-    position: relative;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.05) !important;
-    backdrop-filter: var(--backdrop-blur-lg);
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-
-    .cycle-step {
-      background: rgba(255, 255, 255, 0.15) !important;
-      color: var(--text-white) !important;
-      padding: var(--space-sm) var(--space-md);
-      border-radius: var(--radius-md);
-      backdrop-filter: var(--backdrop-blur-lg);
-      border: 1px solid rgba(255, 255, 255, 0.2) !important;
-      font-weight: var(--font-weight-medium) !important;
-    }
-
-    i {
-      color: var(--meeting-1-accent) !important;
-    }
-  }
-
-  // Dark theme styles for nested components
-  .insight-card {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    border-left: 4px solid var(--meeting-1-accent) !important;
-    backdrop-filter: var(--backdrop-blur-lg);
-
-    h4 {
-      color: var(--text-white) !important;
-    }
-
-    p,
-    .insight-explanation {
-      color: var(--text-white) !important;
-    }
-
-    ul li {
-      color: var(--text-white) !important;
-    }
-
-    strong {
-      color: var(--meeting-1-accent) !important;
-    }
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 40px rgba(9, 105, 218, 0.4),
-      inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
-    border-color: var(--meeting-1-primary) !important;
-  }
-}
-
-// Dark Theme Treatment for Framework Section - Similar to Key Insight
-.step-section.step-framework.framework-dark {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
-  ) !important;
-  color: var(--text-white) !important;
-  border-radius: var(--radius-xl) !important;
-  border: 2px solid var(--meeting-1-border) !important;
-  box-shadow: var(--shadow-floating-teal) !important;
-  backdrop-filter: var(--backdrop-blur-lg);
-  position: relative;
-  overflow: hidden;
-
-  // Ensure proper container constraints
-  max-width: min(1200px, calc(100vw - 2rem));
-  width: 100%;
-  box-sizing: border-box;
-  margin: var(--space-xl) auto;
-  padding: var(--space-2xl);
-
-  // Blue top border (consistent with other step sections)
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(
-      90deg,
-      var(--meeting-1-primary),
-      var(--meeting-1-accent)
-    );
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    z-index: 2;
-  }
-
-  // Strategic dark mode sophisticated pattern background
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        var(--meeting-1-border) 2px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 80%,
-        var(--meeting-1-border) 2px,
-        transparent 2px
-      );
-    background-size: 40px 40px, 80px 80px;
-    opacity: 0.1;
-    z-index: 0;
-  }
-
-  // Header styling
-  .step-header h2 {
-    background: linear-gradient(
-      135deg,
-      var(--meeting-1-primary),
-      var(--meeting-1-secondary)
-    );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    position: relative;
-    z-index: 1;
-
-    i {
-      color: var(--meeting-1-accent) !important;
-    }
-  }
-
-  // Framework intro text
-  .framework-intro p {
-    color: var(--text-white) !important;
-    position: relative;
-    z-index: 1;
-    text-shadow: var(--text-shadow-sm);
-    text-align: center;
-    font-size: var(--font-size-body-large);
-    margin-bottom: var(--space-xl);
-  }
-
-  // Dark theme for vertical framework flow
-  .framework-flow-vertical {
-    position: relative;
-    z-index: 1;
-  }
-
-  .framework-step {
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg);
-    margin-bottom: var(--space-lg);
-    position: relative;
-
-    .step-number {
-      background: var(--meeting-1-accent) !important;
-      color: white !important;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: var(--font-weight-bold);
-      font-size: var(--font-size-sm);
-      position: absolute;
-      top: var(--space-md);
-      left: var(--space-md);
-      z-index: 2;
-    }
-
-    .step-content {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-lg);
-      padding-left: calc(var(--space-32) + var(--space-lg) + var(--space-md));
-    }
-
-    .step-icon {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-md);
-      padding: var(--space-md);
-      font-size: var(--font-size-title-medium);
-      color: var(--meeting-1-accent) !important;
-      flex-shrink: 0;
-    }
-
-    .step-info {
-      flex: 1;
-
-      h3 {
-        color: var(--text-white) !important;
-        margin: 0 0 var(--space-xs) 0;
-        font-size: var(--font-size-title-small);
-        font-weight: var(--font-weight-semibold);
-      }
-
-      .step-subtitle {
-        color: rgba(255, 255, 255, 0.8) !important;
-        margin: 0 0 var(--space-md) 0;
-        font-style: italic;
-        font-size: var(--font-size-body-medium);
-      }
-    }
-
-    .step-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-sm);
-
-      .tag {
-        background: rgba(255, 255, 255, 0.1) !important;
-        color: var(--text-white) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        padding: var(--space-xs) var(--space-sm);
-        border-radius: var(--radius-sm);
-        font-size: var(--font-size-body-small);
-        font-weight: var(--font-weight-medium);
-
-        // Specific colors for different tag types
-        &.metric {
-          background: rgba(59, 130, 246, 0.2) !important;
-          border-color: rgba(59, 130, 246, 0.4) !important;
-        }
-
-        &.culture.pathological {
-          background: rgba(239, 68, 68, 0.2) !important;
-          border-color: rgba(239, 68, 68, 0.4) !important;
-        }
-
-        &.culture.bureaucratic {
-          background: rgba(245, 158, 11, 0.2) !important;
-          border-color: rgba(245, 158, 11, 0.4) !important;
-        }
-
-        &.culture.generative {
-          background: rgba(34, 197, 94, 0.2) !important;
-          border-color: rgba(34, 197, 94, 0.4) !important;
-        }
-      }
-    }
-
-    .step-connector {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: var(--space-xs);
-      margin: var(--space-md) 0;
-
-      i {
-        color: var(--meeting-1-accent) !important;
-        font-size: var(--font-size-lg);
-      }
-
-      .connector-label {
-        color: rgba(255, 255, 255, 0.7) !important;
-        font-size: var(--font-size-body-small);
-        font-style: italic;
-      }
-    }
-
-    &:last-child .step-connector {
-      display: none;
-    }
-  }
-
-  // Evidence foundation section
-  .evidence-foundation {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg);
-    margin-top: var(--space-xl);
-    text-align: center;
-    position: relative;
-    z-index: 1;
-
-    h3 {
-      color: var(--meeting-1-accent) !important;
-      margin: 0 0 var(--space-md) 0;
-      font-size: var(--font-size-title-small);
-    }
-
-    p {
-      color: var(--text-white) !important;
-      font-size: var(--font-size-body-medium);
-      line-height: var(--line-height-relaxed);
-      margin: 0;
-
-      strong {
-        color: var(--meeting-1-accent) !important;
-        font-weight: var(--font-weight-bold);
-      }
-    }
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 40px rgba(9, 105, 218, 0.4),
-      inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
-    border-color: var(--meeting-1-primary) !important;
-  }
-}
-
-.chapters-overview-modern {
-  margin-bottom: var(--space-3xl);
-  animation: fadeInUp 0.8s ease-out 0.1s both;
-
-  .overview-header {
-    text-align: center;
-    margin-bottom: var(--space-xl);
-
-    h2 {
-      margin: 0 0 var(--space-sm);
-      color: var(--text-high-emphasis);
-      font-size: var(--font-size-title-large);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--space-sm);
-    }
-
-    .overview-subtitle {
-      margin: 0;
-      color: var(--text-medium-emphasis);
-      font-size: var(--font-size-base);
-      font-style: italic;
-    }
-  }
-
-  .chapters-grid-modern {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
-
-    @media (max-width: 1024px) {
-      grid-template-columns: 1fr;
-      gap: var(--space-md);
-    }
-  }
-
-  .chapter-card.modern {
-    position: relative;
-    background: white;
-    border-radius: var(--radius-xl); // Material Design 3 radius
-    padding: var(--space-xl);
-    border: 1px solid rgba(148, 163, 184, 0.2);
-    transition: var(--transition-material);
-    overflow: hidden;
-
-    // Enhanced Material Design elevation
-    box-shadow: var(--elevation-2);
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--elevation-4);
-      border-color: rgba(9, 105, 218, 0.3);
-    }
-
-    .chapter-accent {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    }
-
-    .chapter-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: var(--space-md);
-
-      svg {
-        width: 24px;
-        height: 24px;
-      }
-    }
-
-    .chapter-content {
-      h3 {
-        margin: 0 0 var(--space-sm);
-        color: var(--text-high-emphasis);
-        font-size: var(--font-size-title-small);
-        font-weight: var(--font-weight-semibold);
-        line-height: var(--line-height-tight);
-      }
-
-      p {
-        margin: 0 0 var(--space-md);
-        color: var(--text-medium-emphasis);
-        font-size: var(--font-size-sm);
-        line-height: var(--line-height-relaxed);
-      }
-
-      .chapter-insight {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-xs);
-        padding: var(--space-sm);
-        background: rgba(0, 0, 0, 0.02);
-        border-radius: var(--radius-sm);
-
-        .insight-label {
-          font-size: var(--font-size-xs);
-          font-weight: var(--font-weight-semibold);
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          color: var(--text-medium-emphasis);
-        }
-
-        span:last-child {
-          font-size: var(--font-size-sm);
-          font-weight: var(--font-weight-medium);
-          color: var(--text-high-emphasis);
-        }
-      }
-    }
-
-    // Chapter-specific color themes
-    &.chapter-1 {
-      .chapter-accent {
-        background: linear-gradient(90deg, #3b82f6, #1d4ed8);
-      }
-
-      // .chapter-icon background and color removed for chapter-1
-    }
-
-    &.chapter-2 {
-      .chapter-accent {
-        background: linear-gradient(90deg, #ef4444, #dc2626);
-      }
-
-      // .chapter-icon background and color removed for chapter-2
-    }
-
-    &.chapter-3 {
-      .chapter-accent {
-        background: linear-gradient(90deg, #10b981, #059669);
-      }
-
-      // .chapter-icon background and color removed for chapter-3
-    }
-  }
-}
 
 // =============================================================================
 // CRITICAL CSS SIZE OPTIMIZATION

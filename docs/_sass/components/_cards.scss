@@ -202,7 +202,7 @@
   gap: var(--space-lg);
   margin: var(--space-lg) 0;
 
-  @media (max-width: 768px) {
+  @include mobile-only {
     gap: var(--space-md);
   }
 }
@@ -226,7 +226,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-blue-700);
 
-  @media (max-width: 768px) {
+  @include mobile-only {
     font-size: var(--font-size-headline-small);
   }
 }
@@ -258,7 +258,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-blue-700);
 
-  @media (max-width: 768px) {
+  @include mobile-only {
     font-size: var(--font-size-headline-large);
   }
 }
