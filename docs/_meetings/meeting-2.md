@@ -30,7 +30,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
 
 #### Continuous Delivery Practices
 
-<div class="dora-metrics-grid" markdown="0">
+<div class="content-grid" markdown="0">
   {% include simple-card.html type="metric" icon="fas fa-robot" title="Automation First" description="Automated testing, building, and deployment pipelines" goal="Zero manual deployment steps" theme="success" %}
   {% include simple-card.html type="metric" icon="fas fa-code-branch" title="Trunk-Based Development" description="Short-lived feature branches with frequent integration" goal="Daily code integration" theme="primary" %}
   {% include simple-card.html type="metric" icon="fas fa-shield-alt" title="Built-in Security" description="Security testing integrated throughout the development process" goal="Security as Code" theme="warning" %}
@@ -54,7 +54,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
 
 #### Continuous Delivery Core Principles
 
-<div class="learning-grid" markdown="0">
+<div class="content-grid" markdown="0">
   {% include simple-card.html type="insight" icon="fas fa-tools" title="Build Quality In" description="Start with quality, don't inspect later" theme="success" %}
   {% include simple-card.html type="insight" icon="fas fa-box" title="Small Batches" description="Manageable, testable units" theme="primary" %}
   {% include simple-card.html type="insight" icon="fas fa-robot" title="Automate Tasks" description="Free humans for creative work" theme="info" %}
@@ -170,7 +170,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
 
 ### Discussion Questions
 
-<div class="discussion-grid" markdown="0">
+<div class="resource-grid" markdown="0">
   {% include simple-card.html 
     type="discussion" 
     icon="fas fa-chart-line" 
@@ -202,7 +202,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
 
 ### Action Items for Next Meeting
 
-<div class="discussion-grid" markdown="0">
+<div class="resource-grid" markdown="0">
   {% include simple-card.html 
     type="action"
     icon="fas fa-robot"

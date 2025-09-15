@@ -33,7 +33,7 @@ title: Home
 <div class="what-youll-learn-section section-card" markdown="0">
 <h2><i class="fas fa-bullseye"></i> What You'll Learn</h2>
 <div class="learning-highlights">
-<div class="highlight-grid">
+<div class="card-grid">
 <div class="highlight-card meeting-1">
   <div class="card-header">
     <div class="highlight-icon">
@@ -115,7 +115,7 @@ title: Home
 
 <div class="success-metrics-compact section-card" markdown="0">
 <h2><i class="fas fa-bullseye" aria-hidden="true"></i> Success Outcomes</h2>
-<div class="outcomes-grid">
+<div class="resource-grid">
 <div class="outcome-item" data-outcome="dora" onclick="showOutcomeDetail('dora')">
   <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i> Master DORA metrics
   <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
@@ -194,7 +194,7 @@ title: Home
 
 <div class="get-started-section section-card" markdown="0">
 <h2><i class="fas fa-rocket"></i> Get Started</h2>
-<div class="get-started-grid">
+<div class="feature-grid">
 <div class="get-started-card primary">
 <h3><i class="fas fa-book"></i> Meeting Materials</h3>
 <p>Complete structured guides for all 4 sessions with interactive learning checkpoints, discussion questions, and practical action items</p>

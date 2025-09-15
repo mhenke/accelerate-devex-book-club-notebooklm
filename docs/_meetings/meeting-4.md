@@ -30,7 +30,7 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 
 #### Transformational Leadership: Five Dimensions That Drive Performance
 
-<div class="learning-grid" markdown="0">
+<div class="content-grid" markdown="0">
   {% include simple-card.html type="insight" icon="fas fa-eye" title="Vision" description="Clear understanding of where organization is going in 5 years" theme="primary" %}
   {% include simple-card.html type="insight" icon="fas fa-bullhorn" title="Inspirational Communication" description="Motivates and inspires even in uncertain/changing environments" theme="info" %}
   {% include simple-card.html type="insight" icon="fas fa-lightbulb" title="Intellectual Stimulation" description="Challenges team members to think about problems in new ways" theme="warning" %}
@@ -202,7 +202,7 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 
 ### Discussion Questions
 
-<div class="discussion-grid" markdown="0">
+<div class="resource-grid" markdown="0">
   {% include simple-card.html 
     type="discussion" 
     icon="fas fa-star" 
@@ -254,7 +254,7 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 
 ## Action Items for Next Meeting
 
-<div class="discussion-grid" markdown="0">
+<div class="resource-grid" markdown="0">
   {% include simple-card.html 
     type="action"
     icon="fas fa-comments"

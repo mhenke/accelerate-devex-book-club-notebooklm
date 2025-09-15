@@ -6,7 +6,7 @@
   background: transparent;
   margin: var(--space-xl) auto 0 auto;
   padding-bottom: var(--space-xl);
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   border-radius: var(--radius-lg);
   box-shadow: var(--elevation-1);
   text-align: center;

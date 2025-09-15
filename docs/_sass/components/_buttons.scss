@@ -14,7 +14,7 @@
   min-height: var(--touch-target-min);
   padding: var(--space-16) var(--space-24); // 16px 24px - 8px grid compliant
   border: none;
-  border-radius: 8px; // Clean, modern rounded corners like "Get the Book"
+  border-radius: var(--radius-md); // Clean, modern rounded corners like "Get the Book"
   cursor: pointer;
   text-decoration: none !important; // Prevent all underlines
   text-align: center;
@@ -217,7 +217,7 @@
   color: white !important;
   border: none !important; // Remove any existing borders
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   min-height: 52px;
   padding: 16px 32px;
   font-weight: var(--font-weight-bold);
@@ -230,7 +230,7 @@
     text-decoration: none !important; // Fix underline issue
     border: none !important;
     box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
   }
 
   &:active {
@@ -260,7 +260,7 @@
     text-decoration: none !important;
     border: none !important;
     box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
   }
 
   &:active {
@@ -290,7 +290,7 @@
     text-decoration: none !important;
     border: none !important;
     box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
-    transform: translateY(-2px);
+    transform: var(--transform-hover-lift);
   }
 
   &:active {
@@ -385,7 +385,7 @@
   padding: 16px 40px;
   font-size: var(--font-size-title-medium);
   font-weight: var(--font-weight-bold);
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   letter-spacing: 0.75px;
 }
 
@@ -395,7 +395,7 @@
 
 .btn-group {
   display: inline-flex;
-  gap: 8px;
+  gap: var(--space-8);
 
   &.btn-group--vertical {
     flex-direction: column;
@@ -435,8 +435,8 @@
   &::after {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: var(--space-20);
+    height: var(--space-20);
     border: 2px solid transparent;
     border-top: 2px solid currentColor;
     border-radius: 50%;

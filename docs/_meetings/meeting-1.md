@@ -15,7 +15,7 @@ dora_color: "#0969da" # $meeting-1-primary
 <!-- Modern Chapters Overview -->
 <div class="chapter-metrics-compact section-card" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 1-3 Overview</h2>
-<div class="chapters-grid">
+<div class="content-grid">
 <div class="chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
   <i class="fas fa-rocket"></i>
   <div class="chapter-content">
@@ -175,12 +175,12 @@ document.addEventListener('keydown', function(event) {
   </blockquote>
 </div>
 
-<div class="step-section step-media section-card" markdown="0">
+<div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-play-circle"></i> Media</h2>
   </div>
   <div class="media-content">
-    <div class="media-grid">
+    <div class="feature-grid">
       <!-- Video Section -->
       <div class="media-section video-section">
         <h3><i class="fas fa-video"></i> Video</h3>
@@ -257,7 +257,7 @@ document.addEventListener('keydown', function(event) {
 <!-- Step-Based Progressive Learning Structure -->
 
 <!-- THE PROBLEM -->
-<div class="step-section step-problem section-card" markdown="0">
+<div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-exclamation-triangle"></i> The Problem: False Choice</h2>
   </div>
@@ -286,7 +286,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK (Causality Flow) -->
-<div class="step-section step-framework section-card" markdown="0">
+<div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-sitemap"></i> The Framework: How Culture Drives Performance</h2>
   </div>
@@ -375,7 +375,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- INTEGRATED ASSESSMENT -->
-<div class="step-section step-assessment section-card assessment-elevated" markdown="0">
+<div class="section-card assessment-elevated" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-stethoscope"></i> Assessment: Reading Your Organization's Signals</h2>
   </div>
@@ -420,7 +420,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
-<div class="step-section step-understanding section-card" markdown="0">
+<div class="section-card" markdown="0">
   <div class="step-header">
   <h2><i class="fas fa-sync" role="img" aria-label="Cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
   </div>
@@ -450,7 +450,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="step-section step-discussion section-card" markdown="0">
+<div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
   </div>
@@ -505,7 +505,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="step-section step-action section-card" markdown="0">
+<div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-check-circle"></i> Action Items for Next Meeting</h2>
   </div>
@@ -544,7 +544,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 
-<div class="step-section step-resources section-card" markdown="0">
+<div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-link"></i> Related Resources</h2>
   </div>
@@ -667,7 +667,7 @@ h3 {
   padding: 0;
 }
 
-.media-grid {
+.feature-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-lg, 1.5rem);
@@ -785,7 +785,7 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .media-grid {
+  .feature-grid {
     grid-template-columns: 1fr;
     gap: var(--space-md, 1rem);
   }

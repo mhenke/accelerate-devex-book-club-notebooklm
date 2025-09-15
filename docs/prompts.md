@@ -28,7 +28,7 @@ NotebookLM Content Generation
 
 <p class="intro-text">Use these carefully crafted prompts with <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer">NotebookLM</a> to create engaging audio and video content for each meeting.</p>
 
-<div class="meeting-grid">
+<div class="feature-grid">
 {% include meeting-card.html
    meeting_number="1"
    title="Meeting 1: Foundation"
@@ -110,7 +110,7 @@ NotebookLM Content Generation
 
 <div class="checkpoint-card">
 <h4><i class="fas fa-shield-alt"></i> General Guidelines</h4>
-<div class="guidelines-grid">
+<div class="resource-grid">
 <div class="guideline-item">
 <div class="guideline-icon" style="color: #2196F3">
 <i class="fas fa-check-circle"></i>

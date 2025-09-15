@@ -26,7 +26,7 @@ title: Resources
 Between Meetings Activities
 </div>
 
-<div class="resources-grid" markdown="0">
+<div class="resource-grid" markdown="0">
 <div class="resource-card">
 <div class="resource-icon" style="color: #2196F3">
 <i class="fas fa-clipboard-check"></i>
@@ -59,7 +59,7 @@ Between Meetings Activities
 
 ## <i class="fas fa-folder-open"></i> Direct Resource Links {#direct-resource-links}
 
-<div class="insight-card-grid" markdown="0">
+<div class="card-grid" markdown="0">
 <div class="card card--gradient card--border-left card--theme-green">
 <div class="card__header">
 <h4><i class="fas fa-clipboard-list"></i> Activities</h4>
@@ -113,7 +113,7 @@ Between Meetings Activities
 </div>
 </div>
 
-<div class="meeting-resources-grid" markdown="0">
+<div class="feature-grid" markdown="0">
 {% assign meetings = site.meetings | sort: "week" %}
 {% for meeting in meetings %}
 <div class="meeting-resource-card">
@@ -284,7 +284,7 @@ Between Meetings Activities
 
 ## Extensions {#section-extensions}
 
-<div class="resources-grid" markdown="0">
+<div class="resource-grid" markdown="0">
 <div class="resource-card">
 <div class="resource-icon" style="color: #2196F3">
 <i class="fas fa-book"></i>
@@ -359,7 +359,7 @@ Quick Reference
 
 ### DORA Metrics Summary
 
-<div class="dora-metrics-grid" markdown="0">
+<div class="content-grid" markdown="0">
 <div class="metric-card lead-time">
 <div class="metric-title"><i class="fas fa-chart-line"></i> Lead Time</div>
 <div class="performance-levels">

@@ -35,7 +35,6 @@
   --container-reading: 900px;    // For article-style content
   --container-medium: 1000px;    // For balanced layouts
   --container-wide: 1400px;      // For wide layouts
-
   --spacing-md: 0.75rem; // 12px (legacy, use only for small gaps, not layout)
   --border-radius: 8px; // 8px grid compliant
   --touch-target-44px: 44px; // Accessibility minimum
@@ -76,6 +75,7 @@ $dark-blue: #16213e;
 $hero-dark: #0f1419; // Deeper dark for hero sections
 $card-dark: #1e2936; // Dark card backgrounds
 $card-darker: #151b23; // Even darker for contrast
+$light-gray-bg: #f8fafc; // Common light background
 
 // Accent Colors - Energetic and engaging
 $accent-coral: #ff7f50;
@@ -165,6 +165,7 @@ $shadow-medium: rgba(26, 26, 46, 0.15);
   --hero-dark: #{$hero-dark};
   --card-dark: #{$card-dark};
   --card-darker: #{$card-darker};
+  --light-gray-bg: #{$light-gray-bg};
   --background-dark: #{$background-dark};
   --background-card-dark: #{$background-card-dark};
   --background-surface: #{$background-surface};
@@ -483,6 +484,168 @@ $shadow-gold: 0 4px 15px rgba(215, 186, 137, 0.3);
   --shadow-coral: #{$shadow-coral};
   --shadow-teal: #{$shadow-teal};
   --shadow-gold: #{$shadow-gold};
+}
+
+// =============================================================================
+// STANDARDIZED GRADIENTS AND SHADOWS
+// =============================================================================
+
+// Common gradient patterns used throughout the app
+$gradient-meeting-bg: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+$gradient-section-card: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+$gradient-hero-dark: linear-gradient(135deg, #1a1a2e, #16213e);
+
+// Meeting-specific gradients
+$gradient-meeting-1: linear-gradient(135deg, #dbeafe, #bfdbfe);
+$gradient-meeting-1-hover: linear-gradient(135deg, #1e3a8a, #1e40af);
+$gradient-meeting-2: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+$gradient-meeting-2-hover: linear-gradient(135deg, #0f766e, #134e4a);
+$gradient-meeting-3: linear-gradient(135deg, #fef3c7, #fde68a);
+$gradient-meeting-3-hover: linear-gradient(135deg, #d97706, #b45309);
+$gradient-meeting-4: linear-gradient(135deg, #f5f3ff, #ede9fe);
+$gradient-meeting-4-hover: linear-gradient(135deg, #7c3aed, #6d28d9);
+
+// Action button gradients
+$gradient-success: linear-gradient(135deg, #4caf50, #2e7d32);
+$gradient-stream: linear-gradient(135deg, #28a745, #34ce57);
+$gradient-stream-hover: linear-gradient(135deg, #34ce57, #28a745);
+
+// Common shadow patterns used throughout the app
+$shadow-button-primary: 0 4px 12px rgba(76, 175, 80, 0.3);
+$shadow-button-primary-hover: 0 6px 16px rgba(76, 175, 80, 0.4);
+$shadow-button-primary-active: 0 4px 8px rgba(76, 175, 80, 0.3);
+$shadow-button-secondary: 0 4px 12px rgba(9, 105, 218, 0.3);
+$shadow-button-secondary-hover: 0 6px 16px rgba(9, 105, 218, 0.4);
+$shadow-button-secondary-active: 0 4px 8px rgba(9, 105, 218, 0.3);
+
+// Meeting navigation shadows
+$shadow-nav-meeting-1: 0 4px 15px rgba(30, 58, 138, 0.3);
+$shadow-nav-meeting-2: 0 4px 15px rgba(15, 118, 110, 0.3);
+$shadow-nav-meeting-3: 0 4px 15px rgba(217, 119, 6, 0.3);
+$shadow-nav-meeting-4: 0 4px 15px rgba(124, 58, 237, 0.3);
+$shadow-nav-success: 0 4px 15px rgba(76, 175, 80, 0.3);
+
+// Common content shadows
+$shadow-content-light: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-content-medium: 0 4px 15px rgba(0, 0, 0, 0.2);
+$shadow-content-heavy: 0 8px 25px rgba(0, 0, 0, 0.12);
+$shadow-hero: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+// CSS Custom Properties for gradients and shadows
+:root {
+  // Gradients
+  --gradient-meeting-bg: #{$gradient-meeting-bg};
+  --gradient-section-card: #{$gradient-section-card};
+  --gradient-hero-dark: #{$gradient-hero-dark};
+  --gradient-meeting-1: #{$gradient-meeting-1};
+  --gradient-meeting-1-hover: #{$gradient-meeting-1-hover};
+  --gradient-meeting-2: #{$gradient-meeting-2};
+  --gradient-meeting-2-hover: #{$gradient-meeting-2-hover};
+  --gradient-meeting-3: #{$gradient-meeting-3};
+  --gradient-meeting-3-hover: #{$gradient-meeting-3-hover};
+  --gradient-meeting-4: #{$gradient-meeting-4};
+  --gradient-meeting-4-hover: #{$gradient-meeting-4-hover};
+  --gradient-success: #{$gradient-success};
+  --gradient-stream: #{$gradient-stream};
+  --gradient-stream-hover: #{$gradient-stream-hover};
+
+  // Common shadows
+  --shadow-button-primary: #{$shadow-button-primary};
+  --shadow-button-primary-hover: #{$shadow-button-primary-hover};
+  --shadow-button-primary-active: #{$shadow-button-primary-active};
+  --shadow-button-secondary: #{$shadow-button-secondary};
+  --shadow-button-secondary-hover: #{$shadow-button-secondary-hover};
+  --shadow-button-secondary-active: #{$shadow-button-secondary-active};
+  --shadow-nav-meeting-1: #{$shadow-nav-meeting-1};
+  --shadow-nav-meeting-2: #{$shadow-nav-meeting-2};
+  --shadow-nav-meeting-3: #{$shadow-nav-meeting-3};
+  --shadow-nav-meeting-4: #{$shadow-nav-meeting-4};
+  --shadow-nav-success: #{$shadow-nav-success};
+  --shadow-content-light: #{$shadow-content-light};
+  --shadow-content-medium: #{$shadow-content-medium};
+  --shadow-content-heavy: #{$shadow-content-heavy};
+  --shadow-hero: #{$shadow-hero};
+}
+
+// =============================================================================
+// STANDARDIZED BORDER PATTERNS
+// =============================================================================
+
+// Common border patterns used throughout the app
+$border-light-gray: 1px solid rgba(148, 163, 184, 0.3);
+$border-white-light: 1px solid rgba(255, 255, 255, 0.2);
+$border-white-medium: 1px solid rgba(255, 255, 255, 0.3);
+$border-black-light: 1px solid rgba(0, 0, 0, 0.05);
+$border-black-medium: 1px solid rgba(0, 0, 0, 0.08);
+
+// Meeting/theme specific borders
+$border-green-light: 1px solid rgba(16, 185, 129, 0.1);
+$border-green-medium: 1px solid rgba(16, 185, 129, 0.2);
+$border-blue-light: 1px solid rgba(33, 150, 243, 0.2);
+$border-purple-light: 1px solid rgba(147, 51, 234, 0.2);
+$border-teal-light: 1px solid rgba(122, 218, 209, 0.3);
+$border-blue-meeting: 2px solid rgba(9, 105, 218, 0.2);
+$border-green-meeting: 2px solid rgba(16, 185, 129, 0.3);
+
+// Border-left accent patterns (commonly used for callouts and sections)
+$border-left-3-gray: 3px solid #64748b;
+$border-left-3-gray-light: 3px solid #e5e7eb;
+$border-left-3-meeting: 3px solid var(--meeting-primary);
+$border-left-4-teal: 4px solid var(--accent-teal);
+$border-left-4-meeting: 4px solid var(--meeting-1-primary);
+$border-left-4-orange: 4px solid #d97706;
+$border-left-4-green: 4px solid #16a34a;
+$border-left-4-red: 4px solid var(--danger-red);
+$border-left-4-primary: 4px solid var(--meeting-primary);
+$border-left-4-blue: 4px solid var(--color-blue-400);
+$border-left-8-meeting: 8px solid var(--meeting-primary);
+
+// CSS Custom Properties for borders
+:root {
+  // Standard borders
+  --border-light-gray: #{$border-light-gray};
+  --border-white-light: #{$border-white-light};
+  --border-white-medium: #{$border-white-medium};
+  --border-black-light: #{$border-black-light};
+  --border-black-medium: #{$border-black-medium};
+
+  // Theme-specific borders
+  --border-green-light: #{$border-green-light};
+  --border-green-medium: #{$border-green-medium};
+  --border-blue-light: #{$border-blue-light};
+  --border-purple-light: #{$border-purple-light};
+  --border-teal-light: #{$border-teal-light};
+  --border-blue-meeting: #{$border-blue-meeting};
+  --border-green-meeting: #{$border-green-meeting};
+
+  // Border-left accents
+  --border-left-3-gray: #{$border-left-3-gray};
+  --border-left-3-gray-light: #{$border-left-3-gray-light};
+  --border-left-3-meeting: #{$border-left-3-meeting};
+  --border-left-4-teal: #{$border-left-4-teal};
+  --border-left-4-meeting: #{$border-left-4-meeting};
+  --border-left-4-orange: #{$border-left-4-orange};
+  --border-left-4-green: #{$border-left-4-green};
+  --border-left-4-red: #{$border-left-4-red};
+  --border-left-4-primary: #{$border-left-4-primary};
+  --border-left-4-blue: #{$border-left-4-blue};
+  --border-left-8-meeting: #{$border-left-8-meeting};
+}
+
+// =============================================================================
+// TRANSFORM AND INTERACTION TOKENS
+// =============================================================================
+
+// Common transform values used throughout the app
+$transform-hover-lift: translateY(-2px);
+$transform-active-press: translateY(-1px);
+$transform-neutral: translateY(0);
+
+// CSS Custom Properties for transforms
+:root {
+  --transform-hover-lift: #{$transform-hover-lift};
+  --transform-active-press: #{$transform-active-press};
+  --transform-neutral: #{$transform-neutral};
 }
 
 // =============================================================================

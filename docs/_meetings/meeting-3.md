@@ -485,7 +485,7 @@ dora_color: "#d97706" # $meeting-3-primary
 
 ### Discussion Questions
 
-<div class="discussion-grid" markdown="0">
+<div class="resource-grid" markdown="0">
   {% include simple-card.html 
     type="discussion" 
     icon="fas fa-chart-line" 
@@ -517,7 +517,7 @@ dora_color: "#d97706" # $meeting-3-primary
 
 ### Action Items for Next Meeting
 
-<div class="discussion-grid" markdown="0">
+<div class="resource-grid" markdown="0">
   {% include simple-card.html 
     type="action"
     icon="fas fa-columns"
