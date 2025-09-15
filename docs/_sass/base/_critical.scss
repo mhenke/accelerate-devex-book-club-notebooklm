@@ -1840,30 +1840,6 @@ a {
     span:first-child {
       margin-right: var(--space-xs);
     }
-
-    // Mobile responsive styles
-    @media (max-width: 768px) {
-      padding: 8px 16px; // Smaller padding for mobile
-      font-size: var(--font-size-xs); // Smaller font size
-      flex-direction: column; // Stack text vertically on very small screens
-      gap: 2px;
-      line-height: 1.2;
-
-      span:first-child {
-        margin-right: 0; // Remove horizontal margin when stacked
-      }
-    }
-
-    @media (max-width: 480px) {
-      padding: 6px 12px; // Even smaller padding for very small screens
-      font-size: 10px; // Very small font for tiny screens
-      min-height: auto; // Allow height to be flexible
-
-      span:first-child::after {
-        content: '';
-        display: none; // Hide the colon on very small screens
-      }
-    }
   }
 
   .meeting-subtitle {
