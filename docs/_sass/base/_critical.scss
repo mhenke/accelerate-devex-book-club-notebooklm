@@ -3560,7 +3560,9 @@ button:focus,
       var(--accent-coral)
     );
     background-clip: text;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-background-clip: text;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   }
@@ -3620,6 +3622,7 @@ button:focus,
     border: 1px solid rgba(148, 163, 184, 0.2);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
+
     // Enhanced Material Design elevation
     box-shadow: var(--elevation-2);
 
