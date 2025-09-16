@@ -2,6 +2,17 @@
 
 This document outlines the plan to refactor the CSS codebase to improve maintainability, scalability, and consistency.
 
+## Guiding Principles: Material Design
+
+The following Material Design principles will guide the refactoring process:
+
+*   **Mobile First & Responsiveness:** All components will be designed for mobile first and adapt gracefully to different screen sizes.
+*   **Elevation & Shadows:** Subtle shadows will be used to indicate hierarchy and interactivity (e.g., clickable cards).
+*   **Clear Typography:** A consistent and readable font family will be used throughout the site.
+*   **Color Palette:** A primary and secondary color palette will be defined, with accent colors for key actions. The meeting pages will have their own color themes (blue, teal, yellow, and purple), and the entire page will follow this theme with its own primary, secondary, and appropriate accent colors.
+*   **Consistent Icons:** A unified set of icons will be used.
+*   **Whitespace:** Ample whitespace will be used to reduce clutter and improve readability.
+
 ## Phase 1: Foundational Cleanup & Standardization
 
 1.  **Remove Inline Styles:** Systematically remove all inline `style` attributes and `<style>` blocks from the codebase.
