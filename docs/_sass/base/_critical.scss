@@ -1664,6 +1664,10 @@ a {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 
+  // Use flexbox to ensure consistent footer positioning
+  display: flex;
+  flex-direction: column;
+
   // Enhanced Material Design elevation for dark theme
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
   color: white;
@@ -1765,6 +1769,7 @@ a {
     font-size: var(--font-size-base);
     position: relative;
     z-index: 1;
+    flex: 1; // Allow paragraph content to grow and push footer down
   }
 
   &:hover .highlight-icon {
@@ -1862,6 +1867,11 @@ a {
 
     margin-top: var(--space-xs); // Reduced margin for compactness
     opacity: 0.8; // Subtle opacity for visual hierarchy
+  }
+
+  // Ensure card footer stays at bottom
+  .card-footer {
+    margin-top: auto; // Push footer to bottom when using flexbox
   }
 }
 
