@@ -2479,9 +2479,6 @@ button:focus,
     order: 1; // Keep intro at top
   }
 
-  .step-section {
-    order: 3; // Main content sections come after sidebar
-  }
 }
 
 .media-card {
@@ -2670,31 +2667,6 @@ button:focus,
 // STEP-BASED MEETING STRUCTURE STYLES
 // =============================================================================
 
-// Step Section Base Styles
-.step-section {
-  margin: var(--space-3xl) 0;
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  .step-header {
-    margin-bottom: var(--space-xl);
-
-    h2 {
-      margin: 0;
-      color: var(--text-high-emphasis);
-      font-family: var(--font-display);
-      display: flex;
-      align-items: center;
-      gap: var(--space-md);
-      font-size: var(--font-size-title-large);
-
-      i {
-        font-size: var(--font-size-title-medium);
-      }
-    }
-  }
-}
 
 // Design System Tokens - Comprehensive Color & Layout Variables
 :root {
@@ -2836,7 +2808,7 @@ button:focus,
   &:nth-child(5) { animation-delay: 0.5s; }
 
   &:hover {
-    transform: translateY(-2px);
+    transform: var(--transform-hover);
     box-shadow: var(--elevation-4);
   }
 
@@ -3771,8 +3743,25 @@ button:focus,
   margin: var(--space-xl) auto;
   padding: var(--space-2xl);
 
-  // Strategic dark mode sophisticated pattern with Meeting 1 blue theme
+  // Blue top border (consistent with other step sections)
   &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      var(--meeting-1-primary),
+      var(--meeting-1-accent)
+    );
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    z-index: 2;
+  }
+
+  // Strategic dark mode sophisticated pattern background
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -3798,6 +3787,7 @@ button:focus,
     background-position: 0 0, 30px 30px, 50px 10px;
     opacity: 0.4;
     pointer-events: none;
+    z-index: 1;
   }
 
   h2 {
@@ -3834,18 +3824,22 @@ button:focus,
   .practice-cycle {
     position: relative;
     z-index: 1;
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: var(--backdrop-blur-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
 
     .cycle-step {
-      background: rgba(255, 255, 255, 0.15);
-      color: var(--text-white);
+      background: rgba(255, 255, 255, 0.15) !important;
+      color: var(--text-white) !important;
       padding: var(--space-sm) var(--space-md);
       border-radius: var(--radius-md);
       backdrop-filter: var(--backdrop-blur-lg);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      font-weight: var(--font-weight-medium) !important;
     }
 
     i {
-      color: var(--meeting-1-accent);
+      color: var(--meeting-1-accent) !important;
     }
   }
 
