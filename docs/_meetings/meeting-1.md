@@ -383,7 +383,7 @@ document.addEventListener('keydown', function(event) {
 
       <details class="question-item">
         <summary>
-          <i class="fas fa-cycle"></i>
+          <i class="fas fa-recycle"></i>
           <span>Building the Virtuous Cycle</span>
           <i class="fas fa-chevron-down"></i>
         </summary>
