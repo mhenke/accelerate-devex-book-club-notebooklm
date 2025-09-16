@@ -67,7 +67,7 @@ h4 {
 h5,
 h6 {
   font-family: var(--font-display);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-body-large);
   font-weight: var(--font-weight-medium);
   color: var(--text-medium);
   margin-top: var(--space-lg);
@@ -310,7 +310,7 @@ a {
   }
 
   .hero-headline {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(var(--font-size-headline-large), 5vw, var(--font-size-display-large));
     font-weight: var(--font-weight-bold);
     color: var(--text-white);
     border: none;
@@ -338,7 +338,7 @@ a {
       /* stylelint-disable-next-line property-no-vendor-prefix */
       -webkit-text-fill-color: transparent;
       color: transparent;
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-size: clamp(var(--font-size-headline-small), 4vw, var(--font-size-display-medium));
       font-weight: var(--font-weight-bold);
       margin: 0;
       padding: var(--space-md) var(--space-lg);
@@ -479,7 +479,7 @@ a {
   }
 
   h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(var(--font-size-headline-large), 5vw, var(--font-size-display-large));
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
     border: none;
@@ -491,7 +491,7 @@ a {
   }
 
   .hero-subtitle {
-    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-size: clamp(var(--font-size-body-large), 3vw, var(--font-size-title-large));
     color: var(--text-white);
     font-weight: var(--font-weight-normal);
     margin-bottom: var(--space-md);
@@ -566,7 +566,7 @@ a {
   // Icon content
   span {
     display: block;
-    font-size: 0.75rem;
+    font-size: var(--font-size-body-small);
     line-height: 1.2;
     text-align: center;
     font-weight: var(--font-weight-semibold);
@@ -592,7 +592,7 @@ a {
     text-align: center;
     color: var(--primary-blue);
     margin-bottom: var(--space-2xl);
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(var(--font-size-headline-small), 4vw, var(--font-size-headline-large));
   }
 }
 
@@ -1253,7 +1253,7 @@ button:focus,
     border-radius: 0;
 
     h1 {
-      font-size: clamp(1.75rem, 8vw, 2.5rem);
+      font-size: clamp(var(--font-size-headline-medium), 8vw, var(--font-size-display-medium));
     }
 
     .hero-subtitle {
@@ -1464,7 +1464,7 @@ button:focus,
   h2 {
     color: var(--text-dark);
     margin-bottom: var(--space-xl);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(var(--font-size-headline-small), 4vw, var(--font-size-display-medium));
     font-weight: var(--font-weight-bold);
     position: relative;
     z-index: 1;
@@ -1505,7 +1505,7 @@ button:focus,
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     margin: 0;
-    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-size: clamp(var(--font-size-body-large), 3vw, var(--font-size-title-large));
     font-style: italic;
     font-weight: var(--font-weight-medium);
     position: relative;

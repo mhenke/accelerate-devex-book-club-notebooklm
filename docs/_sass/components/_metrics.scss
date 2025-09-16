@@ -32,7 +32,7 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: var(--font-size-headline-small);
     color: var(--text-white);
   }
 
@@ -165,7 +165,7 @@
   }
 
   .result-score {
-    font-size: 3rem;
+    font-size: var(--font-size-display-large);
     font-weight: var(--font-weight-bold);
     line-height: 1;
     margin: 0 0 var(--spacing-md) 0;
@@ -350,7 +350,7 @@
   }
 
   .comparison-arrow {
-    font-size: 1.5rem;
+    font-size: var(--font-size-headline-small);
     color: var(--primary-blue);
   }
 }
