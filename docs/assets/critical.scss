@@ -1,7 +1,3 @@
 // Import only critical above-the-fold styles
-@import 'abstracts/tokens';
-@import 'abstracts/mixins';
+// Note: Base critical styles already contain comprehensive styling
 @import 'base/critical';
-@import 'components/hero';
-@import 'components/navigation';
-@import 'layout/header';

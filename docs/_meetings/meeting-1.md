@@ -12,12 +12,6 @@ dora_color: "#0969da" # $meeting-1-primary
 <div class="meeting-content-layout" markdown="0">
   <main class="meeting-main-content">
 
-<!-- Meeting Header - Brand Consistency -->
-<div class="meeting-header">
-  <h1 class="meeting-title">Meeting 1: Foundation</h1>
-  <p class="meeting-subtitle">Laying the Foundation – The Myth and the Measurement</p>
-</div>
-
 <!-- Modern Chapters Overview -->
 <div class="chapters-overview-modern" markdown="0">
   <div class="overview-header">
