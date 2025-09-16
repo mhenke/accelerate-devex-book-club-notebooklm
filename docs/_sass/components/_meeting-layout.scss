@@ -285,10 +285,10 @@
 }
 
 /* Medium screen adjustments */
-@media (max-width: 900px) {
+@include mobile-only {
   .nav-link {
     font-size: var(--font-size-body-small);
-    padding: 0.6rem 1.2rem;
+    padding: var(--space-sm) var(--space-md);
   }
 
   .nav-title {

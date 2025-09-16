@@ -289,7 +289,7 @@
 // RESPONSIVE BEHAVIOR
 // =============================================================================
 
-@media (max-width: 640px) {
+@include mobile-only {
   .icon--responsive {
     width: var(--icon-size-sm);
     height: var(--icon-size-sm);
