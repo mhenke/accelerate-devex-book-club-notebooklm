@@ -1,15 +1,15 @@
 ---
 layout: meeting
-title: 'Meeting 4: Leadership & Transformation'
-subtitle: 'Transformational Leadership, ING Case Study, &amp; Make It Your Own'
+title: "Meeting 4: Leadership & Transformation"
+subtitle: "Transformational Leadership, ING Case Study, &amp; Make It Your Own"
 week: 7
-chapters: '11, 16, Conclusion'
-duration: '1 Hour'
-dora_color: '#7c3aed'
+chapters: "11, 16, Conclusion"
+duration: "1 Hour"
+dora_color: "#8b5cf6" # $meeting-4-primary
 ---
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 4 Video"
   description="AI-generated video content covering transformational leadership and ING case study"
   media_type="video"
@@ -17,8 +17,8 @@ dora_color: '#7c3aed'
   theme="primary"
 %}
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 4 Podcast"
   description="AI-generated podcast discussing leadership transformation and organizational change"
   media_type="audio"
@@ -30,7 +30,7 @@ dora_color: '#7c3aed'
 
 #### Transformational Leadership: Five Dimensions That Drive Performance
 
-<div class="leadership-dimensions-grid" markdown="0">
+<div class="learning-grid" markdown="0">
   {% include simple-card.html type="insight" icon="fas fa-eye" title="Vision" description="Clear understanding of where organization is going in 5 years" theme="primary" %}
   {% include simple-card.html type="insight" icon="fas fa-bullhorn" title="Inspirational Communication" description="Motivates and inspires even in uncertain/changing environments" theme="info" %}
   {% include simple-card.html type="insight" icon="fas fa-lightbulb" title="Intellectual Stimulation" description="Challenges team members to think about problems in new ways" theme="warning" %}
@@ -172,7 +172,7 @@ dora_color: '#7c3aed'
     default_feedback="Select your leadership style to see development opportunities and impact on team performance."
   %}
 
-  {% include simple-checkpoint.html 
+{% include simple-checkpoint.html
     type="checkbox"
     title="Transformation Readiness"
     icon="fas fa-chart-bar"
@@ -182,6 +182,7 @@ dora_color: '#7c3aed'
     feedback_id="readiness-score"
     default_feedback="Select factors present in your organization to calculate transformation readiness."
   %}
+
 </div>
 
 ### ING Transformation Lessons
@@ -201,7 +202,7 @@ dora_color: '#7c3aed'
 
 ### Discussion Questions
 
-<div class="discussion-questions-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html 
     type="discussion" 
     icon="fas fa-star" 
@@ -253,7 +254,7 @@ dora_color: '#7c3aed'
 
 ## Action Items for Next Meeting
 
-<div class="action-items-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html 
     type="action"
     icon="fas fa-comments"
@@ -264,7 +265,7 @@ dora_color: '#7c3aed'
     theme="primary"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-graduation-cap"
     title="Invest in your team's capability development"
@@ -274,7 +275,7 @@ dora_color: '#7c3aed'
     theme="info"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-lightbulb"
     title="Turn failure into learning"
@@ -283,11 +284,12 @@ dora_color: '#7c3aed'
     items="Hold \"failure leads to inquiry\" discussion about recent problem|Ask \"What conditions led to this outcome?\"|Focus on system improvement, not individual fault|Document learning for organizational memory"
     theme="success"
   %}
+
 </div>
 
 ### Culminating Reflection
 
-{% include key-question.html 
+{% include key-question.html
   intro="As we conclude our transformation journey, we return to the central question that drives all DevOps improvement:"
   conclusion="This question embodies the entire Accelerate philosophy: start small, build momentum, focus on concrete improvements, and create conditions for continuous improvement."
 %}

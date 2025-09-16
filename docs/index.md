@@ -11,7 +11,7 @@ title: Home
 </div>
 <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
 </div>
-<div class="hero-metrics">
+<div class="hero-metrics" markdown="0">
 <a href="{{ '/meetings' | relative_url }}" class="metric-icon">
 <i class="fas fa-calendar-alt"></i>
 <span>Meetings</span>

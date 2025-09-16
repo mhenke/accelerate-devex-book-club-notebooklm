@@ -1,44 +1,55 @@
-// Card Component - Touch Target Compliant
-// =======================================
-// Reusable card styles for metrics, content, and interactive elements
+// Material Design Card Component System
+// =====================================
+// Cards following Material Design 3 elevation and interaction principles
 
-// Base Card Placeholder
-%card {
+// Base Material Design Card
+%md-card {
   background: var(--background-white);
-  border: 1px solid var(--border-light);
-  border-radius: var(--border-radius);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
+  border: none; // Material Design cards don't use borders
+  border-radius: var(--radius-lg); // Material Design uses larger radius
+  box-shadow: var(--elevation-1); // Material Design elevation level 1
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
 
   // Performance optimization with CSS containment
   contain: layout style paint;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out);
 
+  // Material Design hover state (elevation level 2)
   &:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+    box-shadow: var(--elevation-2);
+    transform: translateY(-1px); // Subtle lift
+  }
+
+  // Material Design focus state
+  &:focus-visible {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: var(--focus-ring-offset);
+    box-shadow: var(--elevation-3);
   }
 }
 
-// Base Card Class (extends placeholder)
+// Base Card Class (Material Design)
 .card {
-  @extend %card;
+  @extend %md-card;
 }
 
-// Interactive cards (touch target compliant)
+// Interactive cards (Material Design with touch targets)
 .card--interactive {
-  @extend %card;
-  @include touch-target-44px;
+  @extend %md-card;
 
   cursor: pointer;
   text-decoration: none;
   display: block;
   color: inherit;
+  min-height: var(--touch-target-min); // Material Design 44px touch target
 
-  &:focus-visible {
-    outline: 2px solid var(--accent-teal);
-    outline-offset: 2px;
+  // Enhanced interaction feedback
+  &:active {
+    box-shadow: var(--elevation-1);
+    transform: translateY(0px);
   }
 }
 
@@ -104,26 +115,291 @@
   }
 }
 
-// Card grid layouts
-.card-grid {
-  display: grid;
-  gap: var(--spacing-lg);
+// =============================================================================
+// MATERIAL DESIGN CARD VARIANTS
+// =============================================================================
 
-  @include mobile-up {
-    grid-template-columns: 1fr;
+// Learning Card (for "What You'll Learn" sections)
+.card--learning {
+  @extend %md-card;
+
+  text-align: center;
+  padding: var(--space-xl);
+
+  .card__icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+    color: var(--meeting-1-primary);
   }
 
-  @include tablet-up {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .card__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-md);
+    color: var(--text-dark);
+  }
+
+  .card__description {
+    font-size: var(--font-size-base);
+    color: var(--text-medium);
+    line-height: var(--line-height-relaxed);
   }
 }
 
-.card-grid--metrics {
-  @include tablet-up {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+// DORA Metrics Card (Material Design with proper elevation)
+.card--dora {
+  @extend %md-card;
+
+  position: relative;
+  overflow: hidden;
+
+  // Material Design colored left border replacement
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--meeting-1-primary);
   }
 
-  @include desktop-up {
-    grid-template-columns: repeat(4, 1fr);
+  .card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+
+    .card__icon {
+      font-size: 2rem;
+      color: var(--meeting-1-primary);
+    }
+
+    .card__title {
+      margin: 0;
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-dark);
+    }
   }
+
+  .card__content {
+    color: var(--text-medium);
+    line-height: var(--line-height-relaxed);
+  }
+}
+
+// Meeting Card (for meeting overview)
+.card--meeting {
+  @extend %md-card;
+
+  text-align: center;
+  padding: var(--space-2xl);
+  position: relative;
+  overflow: hidden;
+
+  // Meeting theme background accent
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--meeting-1-primary);
+  }
+
+  &.card--meeting-1::before {
+    background: var(--meeting-1-primary);
+  }
+
+  &.card--meeting-2::before {
+    background: var(--meeting-2-primary);
+  }
+
+  &.card--meeting-3::before {
+    background: var(--meeting-3-primary);
+  }
+
+  &.card--meeting-4::before {
+    background: var(--meeting-4-primary);
+  }
+
+  .card__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--meeting-1-surface);
+    color: var(--meeting-1-on-surface);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-lg);
+  }
+}
+
+// Discussion Card (for discussion questions, action items)
+.card--discussion {
+  @extend %md-card;
+
+  .card__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--meeting-1-primary);
+    color: white;
+    border-radius: 50%;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .card__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-md);
+    color: var(--text-dark);
+  }
+
+  .card__content {
+    color: var(--text-medium);
+    line-height: var(--line-height-relaxed);
+  }
+}
+
+// Resource Card (for resources sections)
+.card--resource {
+  @extend %md-card;
+
+  .card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+
+    .card__icon {
+      font-size: 1.5rem;
+      color: var(--meeting-2-primary);
+      margin-top: var(--space-xs); // Align with text baseline
+    }
+
+    .card__title {
+      margin: 0;
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-dark);
+    }
+  }
+
+  .card__description {
+    color: var(--text-medium);
+    margin-bottom: var(--space-lg);
+    line-height: var(--line-height-relaxed);
+  }
+
+  .card__action {
+    margin-top: auto; // Push to bottom in flex containers
+  }
+}
+
+// =============================================================================
+// MATERIAL DESIGN GRID LAYOUTS FOR CARDS
+// =============================================================================
+
+// =============================================================================
+// GRID PLACEHOLDER SELECTORS
+// =============================================================================
+
+%learning-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+%dora-metrics-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+%discussion-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+%resource-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+%meeting-overview-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+// Card grid classes using placeholder selectors
+.cards-learning {
+  @extend %learning-grid;
+}
+
+.cards-dora {
+  @extend %dora-metrics-grid;
+}
+
+.cards-discussion {
+  @extend %discussion-grid;
+}
+
+.cards-resource {
+  @extend %resource-grid;
+}
+
+.cards-meeting {
+  @extend %meeting-overview-grid;
 }

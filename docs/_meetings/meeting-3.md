@@ -1,15 +1,15 @@
 ---
 layout: meeting
-title: 'Meeting 3: Management &amp; Sustainability'
-subtitle: 'Management, Product Development &amp; Sustainability'
+title: "Meeting 3: Management &amp; Sustainability"
+subtitle: "Management, Product Development &amp; Sustainability"
 week: 5
-chapters: '7-10'
-duration: '1 Hour'
-dora_color: '#D97706'
+chapters: "7-10"
+duration: "1 Hour"
+dora_color: "#D97706"
 ---
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 3 Video"
   description="AI-generated video content covering lean management, work visualization, and sustainable practices"
   media_type="video"
@@ -17,8 +17,8 @@ dora_color: '#D97706'
   theme="warning"
 %}
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 3 Podcast"
   description="AI-generated podcast discussing WIP limits, employee satisfaction, and burnout prevention"
   media_type="audio"
@@ -30,7 +30,7 @@ dora_color: '#D97706'
 
 #### Lean vs Traditional Management
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="vs"
   left_title="Traditional Management"
   left_icon="fas fa-clipboard-list"
@@ -101,7 +101,7 @@ dora_color: '#D97706'
 
 #### Deployment Pain Spectrum
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="flow"
   left_title="High Deployment Pain"
   left_icon="fas fa-fire"
@@ -470,7 +470,7 @@ dora_color: '#D97706'
     default_feedback="Select your current maturity level to see research-backed insights and improvement strategies."
   %}
 
-  {% include simple-checkpoint.html 
+{% include simple-checkpoint.html
     title="Deployment Pain Level"
     icon="fas fa-rocket"
     question="How painful are your deployments on a 1-10 scale?"
@@ -480,12 +480,12 @@ dora_color: '#D97706'
     feedback_id="deployment-feedback"
     default_feedback="Rate your deployment pain to see improvement strategies and performance correlations."
   %}
-</div>
 
+</div>
 
 ### Discussion Questions
 
-<div class="discussion-questions-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html 
     type="discussion" 
     icon="fas fa-chart-line" 
@@ -495,28 +495,29 @@ dora_color: '#D97706'
     theme="warning"
   %}
 
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-rocket" 
-    title="Deployment Pain Check" 
-    question="On a scale of 1-10, how painful are your deployments? What causes the anxiety?" 
-    items="Manual coordination and handoff processes|Weekend and after-hours deployment schedule|Rollback complexity and recovery procedures|Team stress and work-life balance impact" 
+{% include simple-card.html
+    type="discussion"
+    icon="fas fa-rocket"
+    title="Deployment Pain Check"
+    question="On a scale of 1-10, how painful are your deployments? What causes the anxiety?"
+    items="Manual coordination and handoff processes|Weekend and after-hours deployment schedule|Rollback complexity and recovery procedures|Team stress and work-life balance impact"
     theme="warning"
   %}
 
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-users" 
-    title="Employee Engagement" 
-    question="How would your team score on employee Net Promoter Score?" 
-    items="Meaningful work and growth opportunities|Team support and psychological safety|Access to right tools and resources|Organizational culture and values alignment" 
+{% include simple-card.html
+    type="discussion"
+    icon="fas fa-users"
+    title="Employee Engagement"
+    question="How would your team score on employee Net Promoter Score?"
+    items="Meaningful work and growth opportunities|Team support and psychological safety|Access to right tools and resources|Organizational culture and values alignment"
     theme="warning"
   %}
+
 </div>
 
 ### Action Items for Next Meeting
 
-<div class="action-items-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html 
     type="action"
     icon="fas fa-columns"
@@ -527,7 +528,7 @@ dora_color: '#D97706'
     theme="warning"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-chart-line"
     title="Run an eNPS pulse check"
@@ -537,7 +538,7 @@ dora_color: '#D97706'
     theme="warning"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-balance-scale"
     title="Pick ONE practice that boosts both performance AND wellbeing"
@@ -546,6 +547,7 @@ dora_color: '#D97706'
     items="Consider deployment automation to eliminate weekend work|Try blameless post-mortems to build psychological safety|Implement work visualization to reduce context switching|Focus on practices that help people AND performance"
     theme="warning"
   %}
+
 </div>
 
 ### Related Resources
@@ -559,13 +561,14 @@ dora_color: '#D97706'
     theme="warning"
   %}
 
-  {% include simple-card.html 
-    type="resource" 
-    icon="fas fa-chart-line" 
-    title="DevOps Culture & Assessment" 
-    links="DORA Capabilities|https://dora.dev/devops-capabilities/|Four Keys Project|https://github.com/dora-team/fourkeys|Burnout Prevention Toolkit|https://www.mindgarden.com/maslach-burnout-toolkit/" 
+{% include simple-card.html
+    type="resource"
+    icon="fas fa-chart-line"
+    title="DevOps Culture & Assessment"
+    links="DORA Capabilities|https://dora.dev/devops-capabilities/|Four Keys Project|https://github.com/dora-team/fourkeys|Burnout Prevention Toolkit|https://www.mindgarden.com/maslach-burnout-toolkit/"
     theme="warning"
   %}
+
 </div>
 
 <style>

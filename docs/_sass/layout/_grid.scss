@@ -1,6 +1,7 @@
-// Grid System - Responsive Layout Components
-// ==========================================
-// Flexible grid system for consistent layouts
+// Material Design Grid System - Responsive Layout Components
+// =========================================================
+// Mobile-first responsive grid system following Material Design principles
+// with content-specific responsive patterns
 
 .container {
   max-width: var(--container-max-width);
@@ -120,5 +121,177 @@
 
   &.section--lg {
     padding: var(--spacing-3xl) 0;
+  }
+}
+
+// =============================================================================
+// CONTENT-SPECIFIC GRID PATTERNS (Material Design)
+// =============================================================================
+
+// Learning Content Grids (4 -> 2 -> 1 pattern)
+// For: "What You'll Learn", "Continuous Delivery Practices", "Resources"
+.learning-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr; // Mobile: 1 column
+
+  // Tablet: 2 columns
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  // Desktop: 4 columns
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+// Discussion Grid (3 -> 1 pattern)
+// For: "Discussion Questions", "Action Items"
+.discussion-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr; // Mobile: 1 column
+
+  // Desktop: 3 columns (skip tablet for cleaner breakpoint)
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+// DORA Metrics Grid (4 -> 2 -> 1 pattern, with special responsive behavior)
+.dora-metrics-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr; // Mobile: 1 column
+
+  // Tablet: 2 columns
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  // Desktop: 4 columns
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+// Meeting Overview Grid (2 -> 1 pattern)
+// For: Meeting cards on homepage
+.meeting-overview-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr; // Mobile: 1 column
+
+  // Tablet and up: 2 columns
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+// Resource Cards Grid (3 -> 2 -> 1 pattern)
+// For: Resource sections with medium content density
+.resource-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr; // Mobile: 1 column
+
+  // Small tablet: 2 columns
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  // Desktop: 3 columns
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+// Hero Features Grid (2 -> 1 pattern)
+// For: Key features or highlights in hero sections
+.hero-features-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr; // Mobile: 1 column
+
+  // Tablet and up: 2 columns
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+  }
+}
+
+// =============================================================================
+// MATERIAL DESIGN RESPONSIVE UTILITIES
+// =============================================================================
+
+// Material Design responsive visibility
+.md-hide-mobile {
+  @media (max-width: 639px) {
+    display: none;
+  }
+}
+
+.md-hide-tablet {
+  @media (min-width: 640px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.md-hide-desktop {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.md-show-mobile {
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+
+.md-show-tablet {
+  display: none;
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    display: block;
+  }
+}
+
+.md-show-desktop {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+// Material Design spacing adjustments per breakpoint
+.md-spacing-mobile {
+  @media (max-width: 639px) {
+    gap: var(--space-sm) !important;
+    padding: var(--space-md) !important;
+  }
+}
+
+.md-spacing-tablet {
+  @media (min-width: 640px) and (max-width: 1023px) {
+    gap: var(--space-lg) !important;
+    padding: var(--space-lg) !important;
+  }
+}
+
+.md-spacing-desktop {
+  @media (min-width: 1024px) {
+    gap: var(--space-xl) !important;
+    padding: var(--space-xl) !important;
   }
 }
