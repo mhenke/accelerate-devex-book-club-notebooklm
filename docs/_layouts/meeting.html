@@ -132,45 +132,79 @@ layout: default
       <div class="footer-sections">
         <div class="footer-section">
           <h4>About This Meeting</h4>
-          <p>Part of the Accelerate DevEx Book Club series exploring the science of lean software and DevOps practices.</p>
+          <p>
+            Part of the Accelerate DevEx Book Club series exploring the science
+            of lean software and DevOps practices.
+          </p>
           <div class="footer-meta">
-            <span><i class="fas fa-calendar-alt"></i> Meeting {{ page.week | default: '1' }}</span>
-            <span><i class="fas fa-book-open"></i> Chapters {{ page.chapters | default: '1-3' }}</span>
+            <span
+              ><i class="fas fa-calendar-alt"></i> Meeting {{ page.week |
+              default: '1' }}</span
+            >
+            <span
+              ><i class="fas fa-book-open"></i> Chapters {{ page.chapters |
+              default: '1-3' }}</span
+            >
           </div>
         </div>
 
         <div class="footer-section">
           <h4>Resources</h4>
           <ul class="footer-links">
-            <li><a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Book Club Home</a></li>
-            <li><a href="{{ '/resources/' | relative_url }}"><i class="fas fa-book"></i> Additional Resources</a></li>
-            <li><a href="{{ '/prompts/' | relative_url }}"><i class="fas fa-microphone"></i> AI Prompts</a></li>
+            <li>
+              <a href="{{ '/' | relative_url }}"
+                ><i class="fas fa-home"></i> Book Club Home</a
+              >
+            </li>
+            <li>
+              <a href="{{ '/resources/' | relative_url }}"
+                ><i class="fas fa-book"></i> Additional Resources</a
+              >
+            </li>
+            <li>
+              <a href="{{ '/prompts/' | relative_url }}"
+                ><i class="fas fa-microphone"></i> AI Prompts</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="footer-section">
           <h4>Progress</h4>
           <div class="footer-progress">
-            {% if current_index != nil %}
-              {% assign progress_percent = current_index | plus: 1 | times: 100 | divided_by: meetings.size %}
-              <div class="progress-indicator">
-                <div class="progress-bar-small">
-                  <div class="progress-fill-small" style="width: {{ progress_percent }}%"></div>
-                </div>
-                <span class="progress-label">{{ current_index | plus: 1 }}/{{ meetings.size }} Complete</span>
+            {% if current_index != nil %} {% assign progress_percent =
+            current_index | plus: 1 | times: 100 | divided_by: meetings.size %}
+            <div class="progress-indicator">
+              <div class="progress-bar-small">
+                <div
+                  class="progress-fill-small"
+                  style="width: {{ progress_percent }}%"
+                ></div>
               </div>
+              <span class="progress-label"
+                >{{ current_index | plus: 1 }}/{{ meetings.size }}
+                Complete</span
+              >
+            </div>
             {% endif %}
             <div class="meeting-navigation-links">
               {% if prev_meeting %}
-                <p class="prev-meeting">
-                  Previous: <a href="{{ prev_meeting.url | relative_url }}">{{ prev_meeting.title }}</a>
-                </p>
+              <p class="prev-meeting">
+                Previous
+                <a href="{{ prev_meeting.url | relative_url }}"
+                  >{{ prev_meeting.title }}</a
+                >
+              </p>
               {% endif %}
               <p class="next-meeting">
-                {% if next_meeting %}
-                  Next: <a href="{{ next_meeting.url | relative_url }}">{{ next_meeting.title }}</a>
+                {% if next_meeting %} Next
+                <a href="{{ next_meeting.url | relative_url }}"
+                  >{{ next_meeting.title }}</a
+                >
                 {% else %}
-                  <a href="{{ '/transformation-complete/' | relative_url }}">Transformation Complete!</a>
+                <a href="{{ '/transformation-complete/' | relative_url }}"
+                  >Transformation Complete!</a
+                >
                 {% endif %}
               </p>
             </div>
@@ -180,10 +214,17 @@ layout: default
 
       <div class="footer-bottom">
         <div class="footer-attribution">
-          <p>&copy; 2024 Accelerate DevEx Book Club. Based on "Accelerate" by Forsgren, Humble & Kim.</p>
+          <p>
+            &copy; 2024 Accelerate DevEx Book Club. Based on "Accelerate" by
+            Forsgren, Humble & Kim.
+          </p>
         </div>
         <div class="footer-social">
-          <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm" target="_blank" rel="noopener">
+          <a
+            href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm"
+            target="_blank"
+            rel="noopener"
+          >
             <i class="fab fa-github"></i> View on GitHub
           </a>
         </div>
@@ -533,23 +574,23 @@ layout: default
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener("DOMContentLoaded", function () {
     // Find Discussion Questions sections and add class to their ol elements
-    const headings = document.querySelectorAll('h2');
+    const headings = document.querySelectorAll("h2");
     headings.forEach((heading) => {
-      if (heading.textContent.includes('Discussion Questions')) {
+      if (heading.textContent.includes("Discussion Questions")) {
         const nextOl = heading.nextElementSibling;
-        if (nextOl && nextOl.tagName === 'OL') {
-          nextOl.classList.add('discussion-questions-list');
+        if (nextOl && nextOl.tagName === "OL") {
+          nextOl.classList.add("discussion-questions-list");
         }
       }
     });
 
     // Convert data-icon spans to Font Awesome icons
-    const iconSpans = document.querySelectorAll('[data-icon]');
+    const iconSpans = document.querySelectorAll("[data-icon]");
     iconSpans.forEach((span) => {
       const iconName = span.dataset.icon;
-      const iconElement = document.createElement('i');
+      const iconElement = document.createElement("i");
       iconElement.className = `fas fa-${iconName}`;
       span.parentNode.replaceChild(iconElement, span);
     });

@@ -21,7 +21,7 @@
 ### 2. Architecture That Enables Independence
 
 - **Loosely Coupled Systems:** Teams can test, deploy, and change independently
-- **Conway's Law Inverse:** Evolve team structure to match desired architecture  
+- **Conway's Law Inverse:** Evolve team structure to match desired architecture
 - **Key Capabilities:** Deploy independently, test without integrated environments, make large-scale changes without external permission
 
 ### 3. "Act Your Way into a Better Culture"
@@ -82,7 +82,7 @@ Observability and alerting for rapid problem detection
 ## Action Items for Next Meeting
 
 - [ ] Identify one manual process that could be automated
-- [ ] Map current dependencies that prevent independent deployment  
+- [ ] Map current dependencies that prevent independent deployment
 - [ ] Experiment with one CD practice (trunk-based development, test automation, etc.)
 
 ## Supplementary Content
@@ -97,5 +97,5 @@ Create a visual overview with the [Meeting 2 Video Prompt](video-prompt.md)
 
 ## Navigation
 
-- Previous: [Meeting 1: Laying the Foundation](../meeting-1/meeting-guide.md)
-- Next: [Meeting 3: Management, Product Development & Sustainability](../meeting-3/meeting-guide.md)
+- Previous [Meeting 1: Laying the Foundation](../meeting-1/meeting-guide.md)
+- Next [Meeting 3: Management, Product Development & Sustainability](../meeting-3/meeting-guide.md)
