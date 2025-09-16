@@ -10,20 +10,23 @@ The project is built with Jekyll and uses a combination of SCSS, HTML, and JavaS
 
 To run the Jekyll site locally, follow these steps:
 
-1.  **Install dependencies:**
-    ```bash
-    cd docs
-    bundle install --path vendor/bundle
-    ```
+### Install dependencies
 
-2.  **Start the development server:**
-    ```bash
-    cd docs
-    bundle exec jekyll serve --port 4000
-    ```
+```bash
+cd docs
+bundle install --path vendor/bundle
+```
 
-3.  **Access the site:**
-    Open your browser and navigate to `http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/`
+### Start the development server
+
+```bash
+cd docs
+bundle exec jekyll serve --port 4000
+```
+
+### Access the site
+
+Open your browser and navigate to `http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/`
 
 ## Building for Production
 
@@ -52,15 +55,15 @@ npm test
 
 You can also run individual tests:
 
-*   **HTML Validation:** `npm run test:html`
-*   **CSS Linting:** `npm run test:css`
-*   **Accessibility Testing:** `npm run test:a11y`
-*   **Playwright E2E Tests:** `cd tests && npm test`
+- **HTML Validation:** `npm run test:html`
+- **CSS Linting:** `npm run test:css`
+- **Accessibility Testing:** `npm run test:a11y`
+- **Playwright E2E Tests:** `cd tests && npm test`
 
 # Development Conventions
 
-*   **Visuals:** All visuals are implemented using CSS, SVG, HTML, and JavaScript. Static images are avoided.
-*   **Styling:** The project uses a modern SCSS architecture with design tokens, utility classes, and reusable components. All styles are defined in `docs/assets/main.scss` and its partials in `docs/_sass/`.
-*   **Content:** All content is written in Markdown.
-*   **Accessibility:** The project follows accessibility best practices, including using semantic HTML and ARIA roles.
-*   **Branching:** The project follows the standard GitHub flow (feature branches, pull requests).
+- **Visuals:** All visuals are implemented using CSS, SVG, HTML, and JavaScript. Static images are avoided.
+- **Styling:** The project uses a modern SCSS architecture with design tokens, utility classes, and reusable components. All styles are defined in `docs/assets/main.scss` and its partials in `docs/_sass/`.
+- **Content:** All content is written in Markdown.
+- **Accessibility:** The project follows accessibility best practices, including using semantic HTML and ARIA roles.
+- **Branching:** The project follows the standard GitHub flow (feature branches, pull requests).

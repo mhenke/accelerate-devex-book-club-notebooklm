@@ -157,7 +157,7 @@ Ready to transform your organization into a high-performing technology team?
 <h2 class="section-accent"><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
 <div class="book-visual">
-<img src="{{ '/assets/images/book-cover.jpg' | relative_url }}" alt="Accelerate: The Science of Lean Software and DevOps book cover" class="book-image" width="120" height="160" />
+![Accelerate: The Science of Lean Software and DevOps book cover]({{ '/assets/images/book-cover.jpg' | relative_url }})
 </div>
 <div class="book-info">
 <h3>Accelerate: The Science of Lean Software and DevOps</h3>
