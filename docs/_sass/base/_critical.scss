@@ -695,7 +695,7 @@ a {
 
   p {
     color: var(--text-dark);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-medium);
     margin: 0 0 var(--space-lg);
     line-height: var(--line-height-relaxed);
@@ -720,11 +720,12 @@ a {
 .quick-start {
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   border: 1px solid rgba(148, 163, 184, 0.3);
-  border-radius: var(--radius-xl);
-  padding: var(--space-3xl);
-
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-lg) auto;
   max-width: 900px;
-  box-shadow: 0 4px 16px rgba(148, 163, 184, 0.08);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -772,7 +773,7 @@ a {
 
   p {
     color: var(--text-medium);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-lg);
 
@@ -791,11 +792,12 @@ a {
 .what-youll-learn-section {
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   border: 1px solid rgba(148, 163, 184, 0.3);
-  border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
-
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-lg) auto;
   max-width: 1200px;
-  box-shadow: 0 4px 16px rgba(148, 163, 184, 0.1);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   h2 {
     text-align: center;
@@ -826,10 +828,11 @@ a {
 .success-metrics-compact {
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   border: 1px solid rgba(148, 163, 184, 0.3);
-  border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
-
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-lg) auto;
   max-width: 900px;
+  text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   h2 {
@@ -882,10 +885,11 @@ a {
 .get-started-section {
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   border: 1px solid rgba(148, 163, 184, 0.3);
-  border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
-
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-lg) auto;
   max-width: 900px;
+  text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   h2 {
@@ -1161,7 +1165,7 @@ h2:has(em.fa-bullseye) {
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
-    color: var(--text-dark);
+    color: var(--text-white);
     margin-bottom: var(--space-sm);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
@@ -1411,7 +1415,7 @@ button:focus,
   border: 1px solid rgba(33, 150, 243, 0.2);
   box-shadow: 0 8px 32px rgba(33, 150, 243, 0.1);
   padding: var(--space-3xl);
-  margin: var(--space-4xl) 0;
+  margin: var(--space-xl) 0;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1510,7 +1514,7 @@ button:focus,
   color: var(--text-white);
   border-radius: var(--radius-xl);
   padding: var(--space-3xl);
-  margin: var(--space-4xl) 0;
+  margin: var(--space-xl) 0;
   text-align: center;
   max-width: 1200px;
   margin-left: auto;
@@ -1577,7 +1581,7 @@ button:focus,
     margin-bottom: var(--space-xl);
     position: relative;
     z-index: 1;
-    color: var(--text-medium);
+    color: var(--text-white);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     line-height: var(--line-height-relaxed);
   }
@@ -1738,10 +1742,11 @@ button:focus,
 .required-reading-section {
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   border: 1px solid rgba(148, 163, 184, 0.3);
-  border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
-
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-lg) auto;
   max-width: 1200px;
+  text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   h2 {
