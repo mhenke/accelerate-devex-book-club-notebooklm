@@ -13,63 +13,142 @@ dora_color: "#0969da" # $meeting-1-primary
   <main class="meeting-main-content">
 
 <!-- Modern Chapters Overview -->
-<div class="chapters-overview-modern" markdown="0">
-  <div class="overview-header">
-    <h2><i class="fas fa-book-open"></i> Chapters 1-3 Overview</h2>
-    <p class="overview-subtitle">Building the foundation for high-performing technology organizations</p>
+<div class="chapter-metrics-compact section-card" markdown="0">
+<h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 1-3 Overview</h2>
+<div class="chapters-grid">
+<div class="chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
+  <i class="fas fa-rocket"></i> Accelerate
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+<div class="chapter-item" data-chapter="measuring" onclick="showChapterDetail('measuring')">
+  <i class="fas fa-chart-line"></i> Measuring Performance
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+<div class="chapter-item" data-chapter="culture" onclick="showChapterDetail('culture')">
+  <i class="fas fa-users"></i> Measuring & Changing Culture
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+</div>
+
+<!-- Expandable Details Section -->
+<div class="chapter-details" id="chapter-details" style="display: none;">
+  <div class="chapter-detail" id="detail-accelerate">
+    <h3><i class="fas fa-rocket"></i> Accelerate</h3>
+    <p>Software delivery capability drives organizational success across all industries. This chapter presents evidence from 23,000+ survey responses showing that digital transformation is real and software delivery creates competitive advantage.</p>
+    <ul>
+      <li>Software delivery capability drives organizational success (profitability, productivity, market share)</li>
+      <li>Evidence-based approach: 23,000+ survey responses from 2,000+ organizations</li>
+      <li>Digital transformation reality: software delivery is a competitive advantage</li>
+    </ul>
   </div>
 
-  <div class="chapters-grid-modern">
-    <!-- Chapter 1 -->
-    <div class="chapter-card modern chapter-1">
-      <div class="chapter-accent"></div>
-      <div class="chapter-icon">
-        <i class="fas fa-rocket"></i>
-      </div>
-      <div class="chapter-content">
-        <h3>Chapter 1: Accelerate</h3>
-        <p>Software delivery capability drives competitive advantage across all industries</p>
-        <div class="chapter-insight">
-          <span class="insight-label">Key Insight:</span>
-          <span>Performance predicts organizational success</span>
-        </div>
-      </div>
-    </div>
+  <div class="chapter-detail" id="detail-measuring">
+    <h3><i class="fas fa-chart-line"></i> Measuring Performance</h3>
+    <p>Learn to measure software delivery performance using the four DORA metrics that distinguish high-performing teams from low performers.</p>
+    <ul>
+      <li>The four DORA metrics: Lead Time, Deployment Frequency, Recovery Time, Change Fail Rate</li>
+      <li>Debunking the speed vs. stability myth: high performers achieve both</li>
+      <li>Key insight: practices that make you faster also make you more stable</li>
+    </ul>
+  </div>
 
-    <!-- Chapter 2 -->
-    <div class="chapter-card modern chapter-2">
-      <div class="chapter-accent"></div>
-      <div class="chapter-icon">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <div class="chapter-content">
-        <h3>Chapter 2: Measuring Performance</h3>
-        <p>The four DORA metrics and debunking the speed vs. stability myth</p>
-        <div class="chapter-insight">
-          <span class="insight-label">Key Insight:</span>
-          <span>High performers achieve both speed AND stability</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chapter 3 -->
-    <div class="chapter-card modern chapter-3">
-      <div class="chapter-accent"></div>
-      <div class="chapter-icon">
-        <i class="fas fa-users"></i>
-      </div>
-      <div class="chapter-content">
-        <h3>Chapter 3: Measuring and Changing Culture</h3>
-        <p>Westrum organizational culture types and how culture can be improved</p>
-        <div class="chapter-insight">
-          <span class="insight-label">Key Insight:</span>
-          <span>Culture can be changed through practice</span>
-        </div>
-      </div>
-    </div>
-
+  <div class="chapter-detail" id="detail-culture">
+    <h3><i class="fas fa-users"></i> Measuring & Changing Culture</h3>
+    <p>Understand how organizational culture directly impacts software delivery performance using Westrum's typology and learn how culture can be intentionally improved through practices.</p>
+    <ul>
+      <li>Westrum organizational culture types: Pathological, Bureaucratic, Generative</li>
+      <li>Culture can be changed through specific technical practices</li>
+      <li>Key insight: "You can act your way to a better culture"</li>
+    </ul>
   </div>
 </div>
+</div>
+
+<script>
+// Interactive Chapter Overview Functionality
+let currentActiveChapter = null;
+
+function showChapterDetail(chapterId) {
+  const detailsContainer = document.getElementById('chapter-details');
+  const targetDetail = document.getElementById('detail-' + chapterId);
+  const clickedItem = document.querySelector('[data-chapter="' + chapterId + '"]');
+
+  // If clicking the same item that's already active, close it
+  if (currentActiveChapter === chapterId) {
+    hideChapterDetails();
+    return;
+  }
+
+  // Remove active state from all items
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  // Hide all detail sections
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  // Show the details container
+  detailsContainer.style.display = 'block';
+  setTimeout(() => {
+    detailsContainer.classList.add('show');
+  }, 10);
+
+  // Show the specific detail and mark item as active
+  targetDetail.classList.add('active');
+  clickedItem.classList.add('active');
+  currentActiveChapter = chapterId;
+
+  // Smooth scroll to the details section
+  setTimeout(() => {
+    detailsContainer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest'
+    });
+  }, 300);
+}
+
+function hideChapterDetails() {
+  const detailsContainer = document.getElementById('chapter-details');
+
+  // Remove active states
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  // Hide with animation
+  detailsContainer.classList.remove('show');
+  setTimeout(() => {
+    detailsContainer.style.display = 'none';
+  }, 400);
+
+  currentActiveChapter = null;
+}
+
+// Close details when clicking outside
+document.addEventListener('click', function(event) {
+  const detailsContainer = document.getElementById('chapter-details');
+  const chapterItems = document.querySelectorAll('.chapter-item');
+
+  if (currentActiveChapter &&
+      !detailsContainer.contains(event.target) &&
+      !Array.from(chapterItems).some(item => item.contains(event.target))) {
+    hideChapterDetails();
+  }
+});
+
+// Keyboard accessibility
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && currentActiveChapter) {
+    hideChapterDetails();
+  }
+});
+</script>
 
 <!-- MEETING 1 KEY QUESTION -->
 
