@@ -3,31 +3,32 @@
 // Main site header structure for immediate rendering
 
 .header-container {
-  max-width: var(--container-max-width);
+  max-width: var(--container-max-width); // now from tokens
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--spacing-md); // now from tokens
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 64px;
+  min-height: var(--space-64, 64px); // use token, fallback to 64px
 }
 
 // Skip link for accessibility - critical for screen readers
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 6px;
+  top: calc(-1 * var(--space-40, 40px)); // use token, fallback to 40px
+  left: var(--space-8); // now from token
   background: var(--accent-coral);
   color: var(--text-white);
-  padding: 8px;
+  padding: var(--space-8); // now from token
   text-decoration: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius); // now from tokens
   font-weight: 600;
   z-index: 9999;
 
   @include touch-target-44px;
 
-  &:focus {
-    top: 6px;
+  &:focus-visible {
+    outline: 2px solid var(--accent-coral); // Accessible focus ring
+    top: var(--space-8); // now from token
   }
 }

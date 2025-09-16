@@ -6,19 +6,16 @@
 }
 
 .card-footer {
-  margin-top: auto;
-  display: flex;
+  border-left-color: var(--color-blue-600);
+  background: var(--color-gray-50);
   flex-direction: column;
   align-items: center;
   gap: var(--space-md);
 }
 
-// Base Styles - Critical Rendering Path
 // =====================================
 // These styles are critical for above-the-fold content rendering.
 // They should be inlined in the HTML <head> for optimal performance.
-
-// =============================================================================
 // ANIMATIONS & KEYFRAMES
 // =============================================================================
 
@@ -67,7 +64,7 @@
 
 // Root element optimization
 html {
-  font-size: 16px;
+  font-size: var(--font-size-body-large, 16px); // use token, fallback to 16px
   line-height: 1.6;
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -215,9 +212,8 @@ a {
 
 // Main layout containers
 .site-header {
-  /* Refactored: Unified header style for homepage and meetings. See CSS_REFACTOR_PLAN.md. */
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+  /* No overlay gradients for nav header, match Meeting 1 */
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -227,6 +223,9 @@ a {
   // Performance optimizations
   contain: layout style;
   will-change: auto; // Managed dynamically via JavaScript
+
+  background: var(--hero-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .site-main {
@@ -360,11 +359,8 @@ a {
 // =============================================================================
 
 .hero-banner {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
-  );
+  background: var(--hero-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: var(--space-lg) var(--space-lg);
   text-align: center;
   position: relative;
@@ -2670,19 +2666,19 @@ button:focus,
   }
 
   .card-goal {
-    border-left-color: #2563eb;
-    background: #eff6ff;
+    border-left-color: var(--color-blue-600);
+    background: var(--color-gray-50);
   }
 }
 
 .culture-theme {
   .card-header i {
-    color: #7c3aed;
+    color: var(--accent-purple);
   }
 
   .card-goal {
-    border-left-color: #7c3aed;
-    background: #faf5ff;
+    border-left-color: var(--accent-purple);
+    background: var(--color-purple-50);
   }
 }
 
@@ -2692,6 +2688,11 @@ button:focus,
 
 // Design System Tokens - Comprehensive Color & Layout Variables
 :root {
+  /* Overlay accent tokens for backgrounds */
+  --accent-teal-05: rgba(122, 218, 209, 0.05);
+  --accent-teal-15: rgba(122, 218, 209, 0.15);
+  --accent-coral-10: rgba(255, 127, 80, 0.1);
+  --accent-sage-08: rgba(139, 158, 183, 0.08);
   // Meeting 1 Blue Color Scheme
   --meeting-1-primary: #0969da;
   --meeting-1-secondary: #1f6feb;
@@ -2882,6 +2883,29 @@ button:focus,
     h2 {
       margin: 0;
       color: var(--text-dark);
+      background-image: radial-gradient(
+          circle at 20% 20%,
+          var(--accent-teal-15) 2px,
+          transparent 2px
+        ),
+        radial-gradient(
+          circle at 80% 80%,
+          var(--accent-coral-10) 1px,
+          transparent 1px
+        ),
+        radial-gradient(
+          circle at 40% 60%,
+          var(--accent-sage-08) 1px,
+          transparent 1px
+        );
+      background-size: 60px 60px, 40px 40px, 80px 80px;
+      background-position: 0 0, 30px 30px, 50px 10px;
+      opacity: 0.4;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       font-family: var(--font-display);
       display: flex;
       align-items: center;
@@ -3716,7 +3740,28 @@ button:focus,
 // Modern Chapters Overview Styles
 // Meeting Header - Sophisticated Dark Theme with Meeting 1 Blue
 .meeting-header {
-  background: linear-gradient(135deg, #1a2332 0%, #2d4263 100%);
+  /* Unified background: gradient + overlays for visual depth */
+  background: var(--gradient-hero);
+  background-image: linear-gradient(
+      45deg,
+      transparent 30%,
+      var(--accent-teal-05) 70%
+    ),
+    radial-gradient(
+      circle at 20% 20%,
+      var(--accent-teal-15) 2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      var(--accent-coral-10) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 40% 60%,
+      var(--accent-sage-08) 1px,
+      transparent 1px
+    );
   padding: var(--space-xl) var(--space-lg);
   position: relative;
   border-radius: var(--radius-lg);

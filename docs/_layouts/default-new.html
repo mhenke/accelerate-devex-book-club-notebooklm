@@ -95,7 +95,7 @@
         line-height: 1.6;
       }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           sans-serif;
       }
       .skip-link {
@@ -150,6 +150,8 @@
     <!-- Skip navigation for screen readers -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <main id="main-content" class="page-content">{{ content }}</main>
+    <main id="main-content" class="page-content" aria-label="Main content area">
+      {{ content }}
+    </main>
   </body>
 </html>
