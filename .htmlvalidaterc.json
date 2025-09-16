@@ -1,0 +1,11 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "no-trailing-whitespace": "warn",
+    "element-permitted-content": "warn",
+    "no-dup-id": "warn",
+    "valid-id": "warn",
+    "aria-label-misuse": "warn",
+    "form-dup-name": "warn"
+  }
+}
