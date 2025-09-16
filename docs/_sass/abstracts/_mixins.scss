@@ -47,7 +47,136 @@
 }
 
 // =============================================================================
-// TYPOGRAPHY MIXINS
+// MATERIAL DESIGN TYPOGRAPHY MIXINS
+// =============================================================================
+
+// Material Design Display Styles (Hero Headlines)
+@mixin display-large {
+  font-family: var(--font-display);
+  font-size: var(--font-size-display-large);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.12;
+  letter-spacing: -0.25px;
+}
+
+@mixin display-medium {
+  font-family: var(--font-display);
+  font-size: var(--font-size-display-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.16;
+  letter-spacing: 0px;
+}
+
+@mixin display-small {
+  font-family: var(--font-display);
+  font-size: var(--font-size-display-small);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.22;
+  letter-spacing: 0px;
+}
+
+// Material Design Headline Styles
+@mixin headline-large {
+  font-family: var(--font-display);
+  font-size: var(--font-size-headline-large);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.25;
+  letter-spacing: 0px;
+}
+
+@mixin headline-medium {
+  font-family: var(--font-display);
+  font-size: var(--font-size-headline-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.29;
+  letter-spacing: 0px;
+}
+
+@mixin headline-small {
+  font-family: var(--font-display);
+  font-size: var(--font-size-headline-small);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.33;
+  letter-spacing: 0px;
+}
+
+// Material Design Title Styles
+@mixin title-large {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-title-large);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.27;
+  letter-spacing: 0px;
+}
+
+@mixin title-medium {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-title-medium);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+
+@mixin title-small {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-title-small);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.43;
+  letter-spacing: 0.1px;
+}
+
+// Material Design Body Text
+@mixin body-large {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body-large);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+@mixin body-medium {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.43;
+  letter-spacing: 0.25px;
+}
+
+@mixin body-small {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.33;
+  letter-spacing: 0.4px;
+}
+
+// Material Design Label Styles
+@mixin label-large {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-label-large);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.43;
+  letter-spacing: 0.1px;
+}
+
+@mixin label-medium {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-label-medium);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+}
+
+@mixin label-small {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-label-small);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.45;
+  letter-spacing: 0.5px;
+}
+
+// =============================================================================
+// LEGACY TYPOGRAPHY MIXINS (for backward compatibility)
 // =============================================================================
 
 // Heading styles with consistent hierarchy
@@ -61,41 +190,34 @@
 }
 
 @mixin heading-1 {
-  @include heading-base;
+  @include display-small;
 
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--text-dark);
-  border-bottom: 3px solid var(--accent-coral);
-  padding-bottom: var(--space-md);
   margin-bottom: var(--space-2xl);
+  color: var(--text-dark);
 }
 
 @mixin heading-2 {
-  @include heading-base;
+  @include headline-large;
 
-  font-size: var(--font-size-2xl);
   color: var(--header-dark-navy);
-  border-left: 4px solid var(--accent-teal);
-  padding-left: var(--space-lg);
   margin-top: var(--space-3xl);
+  margin-bottom: var(--space-lg);
 }
 
 @mixin heading-3 {
-  @include heading-base;
+  @include headline-medium;
 
-  font-size: var(--font-size-xl);
   color: var(--text-dark);
   margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
 }
 
 @mixin heading-4 {
-  @include heading-base;
+  @include headline-small;
 
-  font-size: var(--font-size-lg);
   color: var(--text-medium);
-  font-weight: var(--font-weight-medium);
   margin-top: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 // Hero and large text styles
@@ -115,25 +237,9 @@
   line-height: var(--line-height-relaxed);
 }
 
-// Body text styles
+// Legacy body text styles (use Material Design mixins instead)
 @mixin body-text {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-relaxed);
-  color: var(--text-dark);
-}
-
-@mixin body-small {
-  @include body-text;
-
-  font-size: var(--font-size-sm);
-}
-
-@mixin body-large {
-  @include body-text;
-
-  font-size: var(--font-size-md);
+  @include body-large; // Map to Material Design body-large
 }
 
 // Code and monospace text

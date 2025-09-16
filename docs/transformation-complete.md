@@ -89,7 +89,7 @@ nav_order: 6
 
 ## <i class="fas fa-chart-bar"></i> Your DORA Metrics Mastery
 
-<div class="dora-mastery-grid" markdown="0">
+<div class="learning-grid" markdown="0">
   <div class="metric-mastery-card deployment" markdown="0">
     <div class="metric-icon" markdown="0">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +251,7 @@ nav_order: 6
 
 ## <i class="fas fa-bullseye"></i> Your Next Steps
 
-<div class="next-steps-grid" markdown="0">
+<div class="learning-grid" markdown="0">
   <div class="next-step-card immediate" markdown="0">
     <div class="step-timeline" markdown="0">This Week</div>
     <h3><i class="fas fa-rocket"></i> Start Small</h3>

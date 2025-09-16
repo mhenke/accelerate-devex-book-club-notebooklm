@@ -43,9 +43,9 @@ body {
 // CRITICAL TYPOGRAPHY
 // =============================================================================
 
-// Load design tokens first
-@import "abstracts/tokens";
-@import "abstracts/mixins";
+// Design tokens and mixins are imported in main.scss already
+// @import "abstracts/tokens";
+// @import "abstracts/mixins";
 
 // Heading hierarchy - WCAG compliance
 h1 {

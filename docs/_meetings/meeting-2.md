@@ -1,15 +1,15 @@
 ---
 layout: meeting
-title: 'Meeting 2: Technical Excellence'
-subtitle: 'Technical Excellence &amp; Continuous Delivery'
+title: "Meeting 2: Technical Excellence"
+subtitle: "Technical Excellence &amp; Continuous Delivery"
 week: 3
-chapters: '4-6'
-duration: '1 Hour'
-dora_color: '#0F766E'
+chapters: "4-6"
+duration: "1 Hour"
+dora_color: "#1a7f37" # $meeting-2-primary
 ---
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 2 Video"
   description="AI-generated video content covering technical excellence and continuous delivery"
   media_type="video"
@@ -17,8 +17,8 @@ dora_color: '#0F766E'
   theme="primary"
 %}
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 2 Podcast"
   description="AI-generated podcast discussing technical practices and CD principles"
   media_type="audio"
@@ -39,7 +39,7 @@ dora_color: '#0F766E'
 
 #### Architecture: Loosely Coupled Systems Enable Team Independence
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="vs"
   left_title="Tightly Coupled"
   left_icon="fas fa-link"
@@ -54,7 +54,7 @@ dora_color: '#0F766E'
 
 #### Continuous Delivery Core Principles
 
-<div class="cd-principles-grid" markdown="0">
+<div class="learning-grid" markdown="0">
   {% include simple-card.html type="insight" icon="fas fa-tools" title="Build Quality In" description="Start with quality, don't inspect later" theme="success" %}
   {% include simple-card.html type="insight" icon="fas fa-box" title="Small Batches" description="Manageable, testable units" theme="primary" %}
   {% include simple-card.html type="insight" icon="fas fa-robot" title="Automate Tasks" description="Free humans for creative work" theme="info" %}
@@ -65,7 +65,7 @@ dora_color: '#0F766E'
 
 #### Breaking the "Wall of Confusion"
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="flow"
   left_title="Traditional Silos"
   left_icon="fas fa-wall-brick"
@@ -81,7 +81,7 @@ dora_color: '#0F766E'
 
 #### Security: Shift Left for Speed AND Safety
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="vs"
   left_title="Bolt-On Security"
   left_icon="fas fa-shield-alt"
@@ -96,7 +96,7 @@ dora_color: '#0F766E'
 
 #### Conway's Law & Team Structure
 
-{% include statistic-card.html 
+{% include statistic-card.html
   icon="fas fa-sitemap"
   title="Conway's Law"
   subtitle="Organizations design systems that mirror their communication structures"
@@ -105,7 +105,7 @@ dora_color: '#0F766E'
   theme="meeting-2"
 %}
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="transform"
   left_title="Traditional Organization"
   left_icon="fas fa-sitemap"
@@ -133,7 +133,7 @@ dora_color: '#0F766E'
     default_feedback="Select your organization's CD maturity level to see improvement opportunities."
   %}
 
-  {% include simple-checkpoint.html 
+{% include simple-checkpoint.html
     title="Tool Freedom"
     icon="fas fa-palette"
     question="Rate your team's tool selection autonomy:"
@@ -142,6 +142,7 @@ dora_color: '#0F766E'
     feedback_id="slider-feedback"
     default_feedback="Move the slider to assess your team's tool autonomy level"
   %}
+
 </div>
 
 ### Real-World Applications
@@ -156,7 +157,7 @@ dora_color: '#0F766E'
     theme="success"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="application"
     icon="fas fa-sitemap"
     title="Architectural Decisions"
@@ -164,11 +165,12 @@ dora_color: '#0F766E'
     items="Which architectural changes improved your team's deployment frequency?|What dependencies currently prevent independent deployments?|How did microservices or modular design affect your delivery speed?"
     theme="primary"
   %}
+
 </div>
 
 ### Discussion Questions
 
-<div class="discussion-questions-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html 
     type="discussion" 
     icon="fas fa-chart-line" 
@@ -178,28 +180,29 @@ dora_color: '#0F766E'
     theme="primary"
   %}
 
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-project-diagram" 
-    title="Architecture Dependencies" 
-    question="What prevents your team from deploying independently?" 
-    items="Shared databases and data dependencies|Coordinated release schedules|Service coupling and API contracts|Infrastructure and deployment bottlenecks" 
+{% include simple-card.html
+    type="discussion"
+    icon="fas fa-project-diagram"
+    title="Architecture Dependencies"
+    question="What prevents your team from deploying independently?"
+    items="Shared databases and data dependencies|Coordinated release schedules|Service coupling and API contracts|Infrastructure and deployment bottlenecks"
     theme="warning"
   %}
 
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-tools" 
-    title="Tool Autonomy" 
-    question="How much freedom do teams have in tool selection? What are the constraints?" 
-    items="Security and compliance requirements|Standardization vs. innovation balance|Budget and licensing considerations|Support and maintenance capabilities" 
+{% include simple-card.html
+    type="discussion"
+    icon="fas fa-tools"
+    title="Tool Autonomy"
+    question="How much freedom do teams have in tool selection? What are the constraints?"
+    items="Security and compliance requirements|Standardization vs. innovation balance|Budget and licensing considerations|Support and maintenance capabilities"
     theme="primary"
   %}
+
 </div>
 
 ### Action Items for Next Meeting
 
-<div class="action-items-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html 
     type="action"
     icon="fas fa-robot"
@@ -210,7 +213,7 @@ dora_color: '#0F766E'
     theme="success"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-project-diagram"
     title="Map your dependencies"
@@ -220,7 +223,7 @@ dora_color: '#0F766E'
     theme="warning"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-flask"
     title="Experiment with a CD practice"
@@ -229,6 +232,7 @@ dora_color: '#0F766E'
     items="Choose one CD practice to experiment with|Set measurable goals and timeline|Implement pilot or proof of concept|Prepare results to share with team"
     theme="primary"
   %}
+
 </div>
 
 ### Related Resources
@@ -242,13 +246,14 @@ dora_color: '#0F766E'
     theme="primary"
   %}
 
-  {% include simple-card.html 
-    type="resource" 
-    icon="fas fa-shield-alt" 
-    title="Security Integration" 
-    links="OWASP DevSecOps Guidelines|https://owasp.org/www-project-devsecops-guideline/|Snyk|https://snyk.io/|GitHub Security|https://github.com/features/security|SonarQube|https://www.sonarqube.org/" 
+{% include simple-card.html
+    type="resource"
+    icon="fas fa-shield-alt"
+    title="Security Integration"
+    links="OWASP DevSecOps Guidelines|https://owasp.org/www-project-devsecops-guideline/|Snyk|https://snyk.io/|GitHub Security|https://github.com/features/security|SonarQube|https://www.sonarqube.org/"
     theme="warning"
   %}
+
 </div>
 
 <style>
@@ -1446,4 +1451,3 @@ h3 {
   line-height: 1.4;
 }
 </style>
-

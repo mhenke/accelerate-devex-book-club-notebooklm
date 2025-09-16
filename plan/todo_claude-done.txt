@@ -1,0 +1,121 @@
+action-card should not be inputs, they should be nice check icon or bullets
+
+only 2 interactive checkpoints per meeting and no more than 3 discussion cards per meeting and 3 Action Items for Next Meeting cards keep the most impactiful or important
+
+replace book cover with actual book cover image on index
+
+fix media queries
+
+update the ux to be more modern looking. this will be used by developers, ux, and devops
+
+index page, fix the buttons
+remove the meeting-number and meeting-title classes from the meeting badge divs
+<div class="meeting-badge">
+<span class="meeting-number">Meeting 1:</span>
+<span class="meeting-title">Foundation</span>
+</div>
+
+remove the checkboxes from the Action Items for Next Meeting sections on all the meeting pages
+
+for Related Resources add some simple bullet point for the list items to show they are links
+
+
+
+move <p style="text-align: center; margin-top: 2rem;">
+<a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-1/" class="btn btn-meeting-1"><em class="fas fa-rocket"></em> Get Started with Meeting 1</a>
+</p> and <p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
+Ready to transform your organization into a high-performing technology team?
+<div></div><div></div><div></div><div></div><div></div></p> to the welcome-start
+
+---
+
+General Material Design Principles:
+
+    mobile first:     Responsiveness: All components should adapt gracefully to different screen sizes.
+
+    Elevation & Shadows: Use subtle shadows to indicate hierarchy and interactivity (e.g., clickable cards).
+
+    Clear Typography: Use a consistent, readable font family (like Roboto, common in Material Design).
+
+    Color Palette: Use a primary and secondary color, with accent colors for key actions.  The meeting pages have their own color themes like blue, teal, yellow, and purple. they whole page needs to follow this with their own primary, secondary, and approrpriate accecent colors.
+
+    Consistent Icons: Use a unified set of icons.
+
+    Whitespace: Use ample whitespace to reduce clutter and improve readability.
+
+---
+
+
+replace principle-card and dimension-card with insight-cards
+
+rename security-stat to stats-card
+
+meeting 2 Action Items for Next Meeting not styled correctly like other meeting Action Items for Next Meeting sections
+
+for Related Resources add some simple bullet point for the list items to show they are links on all the meeting and transformation page like meeting 1 has.
+
+meeting 4 transformation-mindset-requirements, Next Steps: Continue Your Transformation, ING Transformation Lessons, Practical Exercises,  is not styled like our site.  Action Items and Commitments is too verbose and not like the similiar Action Items for Next Meeting  sections. make Culminating Reflection pop and be visually appealing.  Related Resources is not like other Related Resources sections
+
+
+law-statement use law-statement component
+insight-card use insight card component
+meeting 1 Action Items for Next Meeting action-cards should more a bullet list and resuable component. if it is not already
+
+improvement priority and  Culture Assessment should use the Reusable Interactive Learning Checkpoint Card Component in the meeting 1 page
+
+Research Finding, watch video and watch podcast should be three resuable components
+
+I want to be able to drop checkpoint-card cards on different pages. please refactor for encapsulation and reusabilty. <div class="checkpoint-card deployment-anxiety">
+    <h4 id="deployment-confidence"><em class="fas fa-heart"></em> Deployment Confidence</h4>
+    <p>How does your team feel about deployments?</p>
+    <div class="confidence-options">
+<label class="confidence-item performance-low"> <input type="radio" name="deployment-confidence" value="anxious"> <span class="radio-mark"></span> Anxious &amp; Stressful </label> <label class="confidence-item performance-medium"> <input type="radio" name="deployment-confidence" value="neutral"> <span class="radio-mark"></span> Manageable but Tense </label> <label class="confidence-item performance-high"> <input type="radio" name="deployment-confidence" value="confident"> <span class="radio-mark"></span> Confident &amp; Routine </label>
+    </div>
+    <div class="feedback-area active feedback-high" id="confidence-feedback"><h5>Confident Deployment Culture</h5><p>Excellent! Confident, routine deployments indicate strong DevOps practices. Your team likely has good test automation, deployment automation, and monitoring. Continue refining these practices and help other teams achieve similar confidence through knowledge sharing.</p></div>
+  </div>
+
+continue and add a  resusable Related Resources card and  Tool Freedom. the tool freedom   │
+│   resusable component should be call resuable slider checkpoint card        
+reusable component application-card 
+
+
+when click an interactive card on meeting 2
+Uncaught TypeError: info is undefined
+    <anonymous> http://localhost:4000/accelerate-devex-book-club-notebooklm/meetings/meeting-2/:2683
+    EventListener.handleEvent* http://localhost:4000/accelerate-devex-book-club-notebooklm/meetings/meeting-2/:2681
+    <anonymous> http://localhost:4000/accelerate-devex-book-club-notebooklm/meetings/meeting-2/:2680
+    EventListener.handleEvent* http://localhost:4000/accelerate-devex-book-club-notebooklm/meetings/meeting-2/:2613
+
+we should also test stylelint and make sure green after our changes
+> accelerate-devex-book-club-notebooklm@1.0.0 test:css
+> stylelint "docs/assets/**/*.scss" "docs/_sass/**/*.scss" "docs/**/*.html"
+
+
+docs/assets/critical.scss
+  10:1  ✖  Unexpected duplicate @import rule             no-duplicate-at-import-rules
+           abstracts/tokens
+  11:1  ✖  Unexpected duplicate @import rule             no-duplicate-at-import-rules
+           abstracts/mixins
+  12:1  ✖  Unexpected duplicate @import rule             no-duplicate-at-import-rules
+           base/critical
+  13:1  ✖  Unexpected duplicate @import rule             no-duplicate-at-import-rules
+           components/hero
+  14:1  ✖  Unexpected duplicate @import rule             no-duplicate-at-import-rules
+           components/navigation
+  15:1  ✖  Unexpected duplicate @import rule             no-duplicate-at-import-rules
+           layout/header
+
+we don't need the left borders on answers before selectin like 
+.assessment-btn.performance-low {
+  border-left: 4px solid #dc2626;
+}
+
+Transformation Readiness should use the existing resuable checkbox checkpoint card
+
+pain-side security-approach confusion-solution arch-side and all similiar along with their parent div like wall-confusion-section and conway-examples. create resuable components. audit their usages. maybe a section then side component. 
+
+transformation-complete need a audit. itis the final summary of our transformation journy and should line up with content covered in index like  What You’ll Learn and then meeting pages. meeting 4 is the final meeting. it is not a summary/complete page. that should be transformation-complete
+
+update meeting 3 to use the existing resuable includes and follows the same patterns as meeting 1 and 2.
+
+update meeting 4 to use the existing reusable includes and follow the same patterns as meeting 1, 2, and 3. meeting 4 discussion is not matching other discussion meeting sections using the reusable component

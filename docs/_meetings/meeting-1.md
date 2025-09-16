@@ -1,15 +1,15 @@
 ---
 layout: meeting
-title: 'Meeting 1: Foundation'
-subtitle: 'Laying the Foundation – The Myth and the Measurement'
+title: "Meeting 1: Foundation"
+subtitle: "Laying the Foundation – The Myth and the Measurement"
 week: 1
-chapters: '1-3'
-duration: '1 Hour'
-dora_color: '#1E3A8A'
+chapters: "1-3"
+duration: "1 Hour"
+dora_color: "#0969da" # $meeting-1-primary
 ---
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 1 Video"
   description="AI-generated video content covering Meeting 1 topics"
   media_type="video"
@@ -17,8 +17,8 @@ dora_color: '#1E3A8A'
   theme="primary"
 %}
 
-{% include simple-card.html 
-  type="media" 
+{% include simple-card.html
+  type="media"
   title="Meeting 1 Podcast"
   description="AI-generated podcast discussing Meeting 1 concepts"
   media_type="audio"
@@ -28,7 +28,7 @@ dora_color: '#1E3A8A'
 
 ### Key Insights
 
-<div class="insights-grid" markdown="0">
+<div class="learning-grid" markdown="0">
   {% include simple-card.html type="insight" icon="fas fa-microscope" title="Evidence-Based" description="Rigorous research backing all findings" theme="info" %}
   {% include simple-card.html type="insight" icon="fas fa-medal" title="Competitive Advantage" description="Software delivery capability drives success" theme="success" %}
   {% include simple-card.html type="insight" icon="fas fa-user-check" title="Process Not People" description="Anxiety signals inefficiency, not failure" theme="info" %}
@@ -90,7 +90,7 @@ dora_color: '#1E3A8A'
 
 #### Speed vs Stability: The Myth Busted
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="vs"
   left_title="Old Thinking"
   left_icon="fas fa-times-circle"
@@ -104,7 +104,7 @@ dora_color: '#1E3A8A'
   theme="warning"
 %}
 
-{% include statistic-card.html 
+{% include statistic-card.html
   icon="fas fa-rocket"
   title="High Performers vs. Low Performers"
   statistic="46x"
@@ -115,7 +115,7 @@ dora_color: '#1E3A8A'
 
 ### Deployment Pain → Solution Flow
 
-{% include simple-comparison.html 
+{% include simple-comparison.html
   type="flow"
   left_title="Deployment Anxiety"
   left_icon="fas fa-frown"
@@ -141,7 +141,7 @@ dora_color: '#1E3A8A'
     default_feedback="Select your team's performance level to understand improvement opportunities."
   %}
 
-  {% include simple-checkpoint.html 
+{% include simple-checkpoint.html
     title="Deployment Confidence"
     icon="fas fa-heart"
     question="How does your team feel about deployments?"
@@ -151,11 +151,12 @@ dora_color: '#1E3A8A'
     radio_name="deployment-confidence"
     default_feedback="Select how your team feels about deployments to get targeted improvement suggestions."
   %}
+
 </div>
 
 ### Discussion Questions
 
-<div class="discussion-questions-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html type="discussion" icon="fas fa-chart-line" title="Current State Assessment" question="How would you rate your team on each DORA metric?" items="Deployment frequency|Lead time for changes|Time to restore service|Change failure rate" theme="primary" %}
   {% include simple-card.html type="discussion" icon="fas fa-balance-scale" title="Speed vs. Stability Myths" question="What examples have you seen of assumed trade-offs in your organization?" items="We can't deploy frequently because...|Quality requires slow releases|Fast delivery means cutting corners" theme="warning" %}
   {% include simple-card.html type="discussion" icon="fas fa-rocket" title="Deployment Pain Points" question="Describe your team's current deployment experience and anxiety levels" items="What causes deployment anxiety?|Manual steps and coordination needed|Frequency and timing of deployments" theme="warning" %}
@@ -163,7 +164,7 @@ dora_color: '#1E3A8A'
 
 ## Action Items for Next Meeting
 
-<div class="action-items-grid" markdown="0">
+<div class="discussion-grid" markdown="0">
   {% include simple-card.html 
     type="action"
     icon="fas fa-chart-line"
@@ -174,7 +175,7 @@ dora_color: '#1E3A8A'
     theme="primary"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-exclamation-triangle"
     title="Document your #1 deployment pain point"
@@ -184,7 +185,7 @@ dora_color: '#1E3A8A'
     theme="warning"
   %}
 
-  {% include simple-card.html 
+{% include simple-card.html
     type="action"
     icon="fas fa-users"
     title="Culture detective mode"
@@ -193,6 +194,7 @@ dora_color: '#1E3A8A'
     items="Observe failure discussions in meetings|Note information sharing patterns|Look for blame vs learning responses|Document cooperation vs silo behaviors"
     theme="success"
   %}
+
 </div>
 
 ### Related Resources

@@ -356,7 +356,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Handle radio button interactions
   document.querySelectorAll('.simple-checkpoint input[type="radio"]').forEach(input => {
     input.addEventListener('change', function() {
-      const feedbackArea = document.getElementById(this.closest('.simple-checkpoint').querySelector('.feedback-area').id);
+      const checkpoint = this.closest('.simple-checkpoint');
+      const feedbackAreaElement = checkpoint ? checkpoint.querySelector('.feedback-area') : null;
+      const feedbackArea = feedbackAreaElement && feedbackAreaElement.id ? document.getElementById(feedbackAreaElement.id) : feedbackAreaElement;
       const feedbackTitle = this.dataset.feedbackTitle;
       const feedbackContent = this.dataset.feedbackContent;
       
