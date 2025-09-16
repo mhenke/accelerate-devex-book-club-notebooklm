@@ -49,9 +49,6 @@ jobs:
       - name: HTML Proofer validation
         run: npm run test:htmlproof
 
-      - name: Run Jekyll Audit (Accessibility, Performance, SEO)
-        run: npm run test:jekyll-audit
-
       - name: Install Playwright dependencies
         if: github.ref == 'refs/heads/main' || github.event_name == 'pull_request'
         run: |

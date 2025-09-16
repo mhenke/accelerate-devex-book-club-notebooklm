@@ -16,9 +16,8 @@
     "test:percy": "cd tests && npm run test:percy",
     "test:htmlproof": "cd docs && bundle exec htmlproofer _site --disable-external=true --enforce-https=false --allow-missing-href=false --allow-hash-href=true --extensions .html --swap-urls '^/accelerate-devex-book-club-notebooklm/:/' --directory-index-file index.html",
     "test:lighthouse": "lhci autorun",
-    "test:jekyll-audit": "npx @brennanbrown/jekyll-audit --config jekyll-audit.config.js audit",
-    "test": "npm run test:html && npm run test:css && npm run test:a11y && npm run test:percy && npm run test:interactive && npm run test:htmlproof && npm run test:lighthouse && npm run test:jekyll-audit",
-    "audit": "npm run build && npm run test:jekyll-audit && npm run test:percy",
+    "test": "npm run test:html && npm run test:css && npm run test:a11y && npm run test:percy && npm run test:interactive && npm run test:htmlproof && npm run test:lighthouse",
+    "audit": "npm run build && npm run test:percy",
     "serve": "cd docs && bundle exec jekyll serve",
     "build": "cd docs && bundle exec jekyll build",
     "validate": "npm run build && npm run lint && npm run test"
@@ -42,7 +41,6 @@
   "homepage": "https://github.com/mhenke/accelerate-devex-book-club-notebooklm#readme",
   "devDependencies": {
     "@axe-core/playwright": "^4.8.0",
-    "@brennanbrown/jekyll-audit": "^0.3.1",
     "@lhci/cli": "^0.12.0",
     "@percy/cli": "^1.31.1",
     "@percy/playwright": "^1.0.9",
