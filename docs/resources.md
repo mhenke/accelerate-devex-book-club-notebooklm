@@ -33,7 +33,7 @@ Between Meetings Activities
 </div>
 <h3>Between Meetings</h3>
 <p>Reflection questions, practical exercises, and activities to deepen your understanding between sessions.</p>
-<a href="#section-between-meetings" class="btn btn-primary">View Activities →</a>
+<a href="#section-between-meetings" class="btn btn--secondary-action">View Activities →</a>
 </div>
 
 <div class="resource-card">
@@ -42,7 +42,7 @@ Between Meetings Activities
 </div>
 <h3>Discussion Practices</h3>
 <p>Facilitation guidelines and techniques for productive book club discussions.</p>
-<a href="#section-discussion-practices" class="btn btn-primary">Facilitation Guide →</a>
+<a href="#section-discussion-practices" class="btn btn--secondary-action">Facilitation Guide →</a>
 </div>
 
 <div class="resource-card">
@@ -51,7 +51,7 @@ Between Meetings Activities
 </div>
 <h3>Extensions</h3>
 <p>Advanced topics and learning paths to continue your DevOps transformation journey.</p>
-<a href="#section-extensions" class="btn btn-primary">Explore Extensions →</a>
+<a href="#section-extensions" class="btn btn--secondary-action">Explore Extensions →</a>
 </div>
 
 </div>
