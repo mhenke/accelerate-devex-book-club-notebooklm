@@ -51,6 +51,25 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
+## Introduction to "Accelerate"
+
+<div class="accelerate-intro" markdown="0">
+  <div class="central-argument">
+    <h3><i class="fas fa-bullseye"></i> Central Argument</h3>
+    <p><strong>High software delivery performance drives organizational success</strong> (profitability, productivity, market share)</p>
+  </div>
+
+  <div class="evidence-approach">
+    <h3><i class="fas fa-microscope"></i> Evidence-Based Approach</h3>
+    <p><strong>23,000+ survey responses</strong> from <strong>2,000+ organizations</strong> over <strong>4 years</strong></p>
+  </div>
+
+  <div class="digital-transformation">
+    <h3><i class="fas fa-rocket"></i> Digital Transformation Reality</h3>
+    <p><strong>Software delivery capability provides competitive advantage</strong> across all industries</p>
+  </div>
+</div>
+
 ## The Four DORA Metrics - "Powerful New Vocabulary"
 
 <div class="dora-dashboard" markdown="0">
@@ -296,29 +315,60 @@ dora_color: "#0969da" # $meeting-1-primary
         <i class="fas fa-chevron-down"></i>
       </summary>
       <div class="discussion-content">
-        <h4>Evaluate Your Team's Current Performance</h4>
+        <h4>How would you rate your team on each DORA metric?</h4>
         <ul>
-          <li>How would you categorize your team using the DORA performance levels?</li>
-          <li>What evidence do you have for speed vs stability in your organization?</li>
-          <li>Where do you see the biggest gaps in your delivery capabilities?</li>
-          <li>What cultural patterns do you observe in your team interactions?</li>
+          <li>Lead Time: How long from code commit to production?</li>
+          <li>Deployment Frequency: How often do you deploy?</li>
+          <li>Recovery Time: How quickly do you restore service after incidents?</li>
+          <li>Change Fail Rate: What percentage of deployments cause failures?</li>
         </ul>
       </div>
     </details>
 
     <details class="discussion-expandable">
       <summary class="discussion-summary">
-        <i class="fas fa-target"></i>
-        <span>Improvement Opportunities</span>
+        <i class="fas fa-balance-scale"></i>
+        <span>Speed vs. Stability Myths</span>
         <i class="fas fa-chevron-down"></i>
       </summary>
       <div class="discussion-content">
-        <h4>Identify Next Steps</h4>
+        <h4>What examples have you seen of assumed trade-offs in your organization?</h4>
         <ul>
-          <li>Which DORA metric would be easiest for your team to start measuring?</li>
-          <li>What's one speed vs stability assumption you could challenge?</li>
-          <li>How might you begin shifting towards a more generative culture?</li>
-          <li>What's the smallest change that could have the biggest impact?</li>
+          <li>Where does your team assume "slow equals safe"?</li>
+          <li>What processes exist because people believe speed creates risk?</li>
+          <li>How might practices that improve speed also improve stability?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="discussion-expandable">
+      <summary class="discussion-summary">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>Deployment Pain Points</span>
+        <i class="fas fa-chevron-down"></i>
+      </summary>
+      <div class="discussion-content">
+        <h4>Describe your team's current deployment experience and anxiety levels</h4>
+        <ul>
+          <li>What emotions do team members feel before deployments?</li>
+          <li>What manual processes create deployment complexity?</li>
+          <li>How does deployment fear signal process problems vs. personal failing?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="discussion-expandable">
+      <summary class="discussion-summary">
+        <i class="fas fa-users"></i>
+        <span>Culture Indicators</span>
+        <i class="fas fa-chevron-down"></i>
+      </summary>
+      <div class="discussion-content">
+        <h4>Using Westrum's model, what culture type best describes your organization?</h4>
+        <ul>
+          <li>Pathological: Power-oriented, low cooperation, information hiding</li>
+          <li>Bureaucratic: Rule-oriented, modest cooperation, narrow responsibilities</li>
+          <li>Generative: Performance-oriented, high cooperation, shared risks</li>
         </ul>
       </div>
     </details>
@@ -527,6 +577,65 @@ dora_color: "#0969da" # $meeting-1-primary
 .quick-action-item .action-text strong {
   color: var(--meeting-1-primary, #0969da);
   font-weight: var(--font-weight-semibold);
+}
+
+/* Accelerate Introduction Section */
+.accelerate-intro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+  background: white;
+  border: 1px solid rgba(9, 105, 218, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.central-argument,
+.evidence-approach,
+.digital-transformation {
+  text-align: center;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: rgba(9, 105, 218, 0.05);
+}
+
+.central-argument h3,
+.evidence-approach h3,
+.digital-transformation h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-md);
+}
+
+.central-argument i,
+.evidence-approach i,
+.digital-transformation i {
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-lg);
+}
+
+.central-argument p,
+.evidence-approach p,
+.digital-transformation p {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile responsive for accelerate intro */
+@media (max-width: 768px) {
+  .accelerate-intro {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+  }
 }
 
 /* Myth Stats Section */
