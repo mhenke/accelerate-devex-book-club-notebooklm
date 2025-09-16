@@ -7,7 +7,7 @@
 **Chapters:** 11, 16, and Conclusion (Leaders and Managers, High-Performance Leadership case study, wrap-up)
 
 - Chapter 11: Leaders and Managers - Transformational leadership characteristics
-- Chapter 16: High-Performance Leadership and Management - ING Netherlands case study  
+- Chapter 16: High-Performance Leadership and Management - ING Netherlands case study
 - Conclusion: Summary and call to action
 
 **Skip Chapters 12-15:** Research methodology (optional reading for interested members)
@@ -84,4 +84,4 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 ## Navigation
 
-- Previous: [Meeting 3: Management, Product Development & Sustainability](../meeting-3/meeting-guide.md)
+- Previous [Meeting 3: Management, Product Development & Sustainability](../meeting-3/meeting-guide.md)

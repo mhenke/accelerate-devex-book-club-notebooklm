@@ -7,7 +7,7 @@
 **Chapters:** 7-10 (Management Practices, Product Development, Making Work Sustainable, Employee Satisfaction)
 
 - Chapter 7: Management Practices for Software - Lean management and lightweight change approval
-- Chapter 8: Product Development - Lean product practices and team experimentation  
+- Chapter 8: Product Development - Lean product practices and team experimentation
 - Chapter 9: Making Work Sustainable - Deployment pain and burnout
 - Chapter 10: Employee Satisfaction, Identity, and Engagement - Job satisfaction and diversity
 
@@ -72,5 +72,5 @@ Create a visual overview with the [Meeting 3 Video Prompt](video-prompt.md)
 
 ## Navigation
 
-- Previous: [Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/meeting-guide.md)
-- Next: [Meeting 4: Leadership, Research Methods & Transformation](../meeting-4/meeting-guide.md)
+- Previous [Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/meeting-guide.md)
+- Next [Meeting 4: Leadership, Research Methods & Transformation](../meeting-4/meeting-guide.md)
