@@ -107,22 +107,21 @@ Parameters:
 
 <style>
 .simple-card {
-  background: var(--card-dark);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
   margin-bottom: var(--space-2xl);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(20px);
 }
 
 .simple-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  transform: translateY(-6px);
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
 .simple-card::before {
@@ -166,13 +165,13 @@ Parameters:
 
 .card-titles h4 {
   margin: 0;
-  color: var(--text-white);
+  color: var(--text-dark);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
 }
 
 .card-subtitle {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-medium);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
 }
@@ -183,7 +182,7 @@ Parameters:
 }
 
 .card-description {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-medium);
   margin-bottom: var(--space-lg);
   line-height: var(--line-height-relaxed);
 }
@@ -371,27 +370,45 @@ Parameters:
 
 /* Card type specific styling */
 .insight-card {
-  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 .discussion-card {
-  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
-  border: 1px solid rgba(255, 127, 80, 0.2);
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  border: 1px solid rgba(255, 127, 80, 0.3);
 }
 
 .action-card {
-  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 .resource-card {
   background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+  border: 1px solid rgba(147, 51, 234, 0.3);
 }
 
 .metric-card {
-  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
-  border: 1px solid rgba(33, 150, 243, 0.2);
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.media-card {
+  background: var(--card-dark);
+  border: 1px solid rgba(122, 218, 209, 0.3);
+}
+
+.media-card .card-titles h4 {
+  color: var(--text-white);
+}
+
+.media-card .card-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.media-card .card-description {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .application-card {
