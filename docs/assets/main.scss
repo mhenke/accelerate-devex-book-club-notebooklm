@@ -16,18 +16,19 @@
 // 3. COMPONENTS - Reusable UI components (loaded async after critical)
 @import "components/buttons"; // Button variations and states
 @import "components/cards"; // Card components and variations
+@import "components/reusable-cards"; // Comprehensive card system with design tokens
 @import "components/icons"; // Font Awesome with Material Design integration
 
 /* Section Card Styles */
 .section-card {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+  border: 1px solid var(--color-gray-300);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
   margin: var(--space-lg) auto;
   max-width: 1200px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-1);
 }
 
 /* ...existing code... */
