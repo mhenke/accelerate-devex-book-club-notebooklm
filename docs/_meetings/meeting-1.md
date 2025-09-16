@@ -17,15 +17,27 @@ dora_color: "#0969da" # $meeting-1-primary
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 1-3 Overview</h2>
 <div class="chapters-grid">
 <div class="chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
-  <i class="fas fa-rocket"></i> Accelerate
+  <i class="fas fa-rocket"></i>
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 1</div>
+    <div class="chapter-title">Accelerate</div>
+  </div>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 <div class="chapter-item" data-chapter="measuring" onclick="showChapterDetail('measuring')">
-  <i class="fas fa-chart-line"></i> Measuring Performance
+  <i class="fas fa-chart-line"></i>
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 2</div>
+    <div class="chapter-title">Measuring Performance</div>
+  </div>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 <div class="chapter-item" data-chapter="culture" onclick="showChapterDetail('culture')">
-  <i class="fas fa-users"></i> Measuring & Changing Culture
+  <i class="fas fa-users"></i>
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 3</div>
+    <div class="chapter-title">Measuring and Changing Culture</div>
+  </div>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 </div>
@@ -36,29 +48,29 @@ dora_color: "#0969da" # $meeting-1-primary
     <h3><i class="fas fa-rocket"></i> Accelerate</h3>
     <p>Software delivery capability drives organizational success across all industries. This chapter presents evidence from 23,000+ survey responses showing that digital transformation is real and software delivery creates competitive advantage.</p>
     <ul>
-      <li>Software delivery capability drives organizational success (profitability, productivity, market share)</li>
-      <li>Evidence-based approach: 23,000+ survey responses from 2,000+ organizations</li>
-      <li>Digital transformation reality: software delivery is a competitive advantage</li>
+      <li>Software delivery capability drives organizational success across all industries (profitability, productivity, market share)</li>
+      <li>Evidence-based approach: 23,000+ survey responses identifying 24 key capabilities</li>
+      <li>Performance predicts success: high-performing software delivery creates competitive advantage</li>
     </ul>
   </div>
 
   <div class="chapter-detail" id="detail-measuring">
     <h3><i class="fas fa-chart-line"></i> Measuring Performance</h3>
-    <p>Learn to measure software delivery performance using the four DORA metrics that distinguish high-performing teams from low performers.</p>
+    <p>Replaces flawed traditional metrics with four reliable DORA metrics that distinguish high-performing teams from low performers.</p>
     <ul>
-      <li>The four DORA metrics: Lead Time, Deployment Frequency, Recovery Time, Change Fail Rate</li>
-      <li>Debunking the speed vs. stability myth: high performers achieve both</li>
-      <li>Key insight: practices that make you faster also make you more stable</li>
+      <li>Tempo metrics: Lead Time and Deployment Frequency</li>
+      <li>Stability metrics: Recovery Time and Change Fail Rate</li>
+      <li>Key insight: High performers achieve both speed AND stability simultaneously</li>
     </ul>
   </div>
 
   <div class="chapter-detail" id="detail-culture">
     <h3><i class="fas fa-users"></i> Measuring & Changing Culture</h3>
-    <p>Understand how organizational culture directly impacts software delivery performance using Westrum's typology and learn how culture can be intentionally improved through practices.</p>
+    <p>Proves that culture can be measured and intentionally improved using Westrum's typology. Culture is an outcome, not a precondition for transformation.</p>
     <ul>
       <li>Westrum organizational culture types: Pathological, Bureaucratic, Generative</li>
-      <li>Culture can be changed through specific technical practices</li>
-      <li>Key insight: "You can act your way to a better culture"</li>
+      <li>Generative culture strongly predicts software delivery and organizational performance</li>
+      <li>Key insight: "You can act your way to a better culture" through technical practices</li>
     </ul>
   </div>
 </div>
@@ -98,6 +110,8 @@ function showChapterDetail(chapterId) {
   // Show the specific detail and mark item as active
   targetDetail.classList.add('active');
   clickedItem.classList.add('active');
+  console.log('Added active class to:', clickedItem);
+  console.log('Active classes:', clickedItem.classList);
   currentActiveChapter = chapterId;
 
   // Smooth scroll to the details section
