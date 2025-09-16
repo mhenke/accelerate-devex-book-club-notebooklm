@@ -20,6 +20,34 @@
   --theme-surface: var(--meeting-surface);
   --theme-on-surface: var(--meeting-on-surface);
 
+  // Page-wide Material Design theme application
+  background: var(--meeting-surface);
+  color: var(--meeting-on-surface);
+
+  // Typography follows theme colors
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--meeting-primary);
+  }
+
+  // Links use primary with accent hover
+  a {
+    color: var(--meeting-primary);
+
+    &:hover, &:focus {
+      color: var(--meeting-accent);
+    }
+  }
+
+  // Buttons follow Material Design theme
+  .btn, .btn--filled {
+    background: var(--meeting-primary);
+    color: white;
+
+    &:hover {
+      background: var(--meeting-secondary);
+    }
+  }
+
   // Component-specific overrides
   .card--dora::before,
   .card--meeting::before {
@@ -56,6 +84,34 @@
   --theme-secondary: var(--meeting-secondary);
   --theme-surface: var(--meeting-surface);
   --theme-on-surface: var(--meeting-on-surface);
+
+  // Page-wide Material Design theme application
+  background: var(--meeting-surface);
+  color: var(--meeting-on-surface);
+
+  // Typography follows theme colors
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--meeting-primary);
+  }
+
+  // Links use primary with accent hover
+  a {
+    color: var(--meeting-primary);
+
+    &:hover, &:focus {
+      color: var(--meeting-accent);
+    }
+  }
+
+  // Buttons follow Material Design theme
+  .btn, .btn--filled {
+    background: var(--meeting-primary);
+    color: white;
+
+    &:hover {
+      background: var(--meeting-secondary);
+    }
+  }
 
   // Component-specific overrides
   .card--dora::before,
@@ -94,6 +150,34 @@
   --theme-surface: var(--meeting-surface);
   --theme-on-surface: var(--meeting-on-surface);
 
+  // Page-wide Material Design theme application
+  background: var(--meeting-surface);
+  color: var(--meeting-on-surface);
+
+  // Typography follows theme colors
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--meeting-primary);
+  }
+
+  // Links use primary with accent hover
+  a {
+    color: var(--meeting-primary);
+
+    &:hover, &:focus {
+      color: var(--meeting-accent);
+    }
+  }
+
+  // Buttons follow Material Design theme
+  .btn, .btn--filled {
+    background: var(--meeting-primary);
+    color: white;
+
+    &:hover {
+      background: var(--meeting-secondary);
+    }
+  }
+
   // Component-specific overrides
   .card--dora::before,
   .card--meeting::before {
@@ -130,6 +214,34 @@
   --theme-secondary: var(--meeting-secondary);
   --theme-surface: var(--meeting-surface);
   --theme-on-surface: var(--meeting-on-surface);
+
+  // Page-wide Material Design theme application
+  background: var(--meeting-surface);
+  color: var(--meeting-on-surface);
+
+  // Typography follows theme colors
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--meeting-primary);
+  }
+
+  // Links use primary with accent hover
+  a {
+    color: var(--meeting-primary);
+
+    &:hover, &:focus {
+      color: var(--meeting-accent);
+    }
+  }
+
+  // Buttons follow Material Design theme
+  .btn, .btn--filled {
+    background: var(--meeting-primary);
+    color: white;
+
+    &:hover {
+      background: var(--meeting-secondary);
+    }
+  }
 
   // Component-specific overrides
   .card--dora::before,
