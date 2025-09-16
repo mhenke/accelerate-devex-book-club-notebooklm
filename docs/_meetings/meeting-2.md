@@ -96,29 +96,28 @@ dora_color: '#0F766E'
 
 #### Conway's Law & Team Structure
 
-<div class="conway-law-section" markdown="0">
-  {% include simple-card.html 
-    type="statement"
-    title="Conway's Law"
-    description="Organizations design systems that mirror their communication structures"
-    attribution="Melvin Conway, 1967"
-    theme="warning"
-  %}
+{% include statistic-card.html 
+  icon="fas fa-sitemap"
+  title="Conway's Law"
+  subtitle="Organizations design systems that mirror their communication structures"
+  description="Team structure directly impacts system architecture - cross-functional teams create loosely coupled, independently deployable services"
+  attribution="Melvin Conway, 1967"
+  theme="meeting-2"
+%}
 
-  {% include simple-comparison.html 
-    type="transform"
-    left_title="Traditional Organization"
-    left_icon="fas fa-sitemap"
-    left_subtitle="Structure: Separate dev, QA, ops teams"
-    left_items="<i class='fas fa-times'></i> Monolithic systems with handoff bottlenecks|<i class='fas fa-hourglass-half'></i> Coordination delays|<i class='fas fa-chain'></i> Tightly coupled architecture"
-    right_title="Cross-Functional Teams"
-    right_icon="fas fa-users"
-    right_subtitle="Structure: Full-stack teams with all skills"
-    right_items="<i class='fas fa-check'></i> Loosely coupled, independently deployable services|<i class='fas fa-rocket'></i> Autonomous team delivery|<i class='fas fa-puzzle-piece'></i> Service-oriented architecture"
-    divider_text="Inverse Conway"
-    theme="info"
-  %}
-</div>
+{% include simple-comparison.html 
+  type="transform"
+  left_title="Traditional Organization"
+  left_icon="fas fa-sitemap"
+  left_subtitle="Structure: Separate dev, QA, ops teams"
+  left_items="<i class='fas fa-times'></i> Monolithic systems with handoff bottlenecks|<i class='fas fa-hourglass-half'></i> Coordination delays|<i class='fas fa-chain'></i> Tightly coupled architecture"
+  right_title="Cross-Functional Teams"
+  right_icon="fas fa-users"
+  right_subtitle="Structure: Full-stack teams with all skills"
+  right_items="<i class='fas fa-check'></i> Loosely coupled, independently deployable services|<i class='fas fa-rocket'></i> Autonomous team delivery|<i class='fas fa-puzzle-piece'></i> Service-oriented architecture"
+  divider_text="Inverse Conway"
+  theme="info"
+%}
 
 ### Interactive Learning Checkpoint
 
@@ -512,51 +511,6 @@ h3 {
   font-weight: bold;
 }
 
-/* Conway's Law Section */
-.conway-law-section {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  
-  border: 2px solid #0F766E;
-}
-
-.law-statement {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: white;
-  
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-
-.law-statement blockquote {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #134e4a;
-  margin: 1rem 0;
-  font-weight: 500;
-  /* Remove green quote icon if present */
-}
-
-/* Remove any pseudo-element that adds a quote icon */
-.law-statement blockquote::before {
-  content: none !important;
-}
-}
-
-.law-statement cite {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-.conway-examples {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 2rem;
-  align-items: center;
-}
 
 .example-card {
   background: white;

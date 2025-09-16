@@ -1,0 +1,10 @@
+<div class="key-question">
+<h2>The Key Question</h2>
+<p>{{ include.intro | default: "Throughout our journey, we'll return to this central reflection:" }}</p>
+<blockquote>
+"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
+</blockquote>
+{% if include.conclusion %}
+<p>{{ include.conclusion }}</p>
+{% endif %}
+</div>
