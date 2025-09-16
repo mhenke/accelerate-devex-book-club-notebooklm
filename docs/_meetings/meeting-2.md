@@ -134,17 +134,6 @@ dora_color: '#0F766E'
   %}
 
   {% include simple-checkpoint.html 
-    title="Security Integration Assessment"
-    icon="fas fa-shield-alt"
-    question="Rate how well security is integrated into your delivery process:"
-    type="radio"
-    options=site.data.checkpoint_answers.five_point_scale
-    feedback_id="security-feedback"
-    radio_name="security-integration"
-    default_feedback="Select your security integration level to see improvement strategies and performance impacts."
-  %}
-
-  {% include simple-checkpoint.html 
     title="Tool Freedom"
     icon="fas fa-palette"
     question="Rate your team's tool selection autonomy:"
@@ -174,15 +163,6 @@ dora_color: '#0F766E'
     description="Discuss decisions that impacted team independence:"
     items="Which architectural changes improved your team's deployment frequency?|What dependencies currently prevent independent deployments?|How did microservices or modular design affect your delivery speed?"
     theme="primary"
-  %}
-
-  {% include simple-card.html 
-    type="application"
-    icon="fas fa-shield-alt"
-    title="Security Integration"
-    description="Examine security practices that impact delivery:"
-    items="Which security practices actually speed up delivery?|What security requirements currently slow down your team?|How do you balance security compliance with delivery speed?"
-    theme="warning"
   %}
 </div>
 
@@ -214,15 +194,6 @@ dora_color: '#0F766E'
     question="How much freedom do teams have in tool selection? What are the constraints?" 
     items="Security and compliance requirements|Standardization vs. innovation balance|Budget and licensing considerations|Support and maintenance capabilities" 
     theme="primary"
-  %}
-
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-shield-alt" 
-    title="Security Integration" 
-    question="How early in your development process is security considered?" 
-    items="Security testing in CI/CD pipelines|Developer security training and awareness|Code review and static analysis integration|Shift-left vs. security gate approaches" 
-    theme="neutral"
   %}
 </div>
 

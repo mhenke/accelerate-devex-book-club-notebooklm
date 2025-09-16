@@ -29,6 +29,12 @@ title: Home
 
 <div class="welcome-start">
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
+<p style="text-align: center; margin-top: 2rem;">
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-meeting-1"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
+</p>
+<p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
+Ready to transform your organization into a high-performing technology team?
+</p>
 </div>
 
 <div class="quick-start">
@@ -102,14 +108,6 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </div>
 </div>
 </div>
-
-<p style="text-align: center; margin-top: 2rem;">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-meeting-1"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
-</p>
-
-<p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
-Ready to transform your organization into a high-performing technology team?
-</p>
 
 <div class="success-metrics">
 <h2>Success Metrics</h2>

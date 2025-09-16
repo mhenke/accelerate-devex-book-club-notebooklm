@@ -480,17 +480,6 @@ dora_color: '#D97706'
     feedback_id="deployment-feedback"
     default_feedback="Rate your deployment pain to see improvement strategies and performance correlations."
   %}
-
-  {% include simple-checkpoint.html 
-    type="checkbox"
-    title="Employee Satisfaction Check"
-    icon="fas fa-users"
-    question="Evaluate your team's satisfaction factors:"
-    options=site.data.checkpoint_answers.satisfaction_factors
-    radio_name="satisfaction-factors"
-    feedback_id="satisfaction-feedback"
-    default_feedback="Check all factors present in your team to see satisfaction level and research insights."
-  %}
 </div>
 
 
