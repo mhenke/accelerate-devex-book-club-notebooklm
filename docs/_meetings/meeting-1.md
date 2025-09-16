@@ -8,32 +8,22 @@ duration: "1 Hour"
 dora_color: "#0969da" # $meeting-1-primary
 ---
 
-<div class="meeting-hero-content" markdown="0">
-  <div class="meeting-video-card">
-    {% include simple-card.html
-      type="media"
-      title="Meeting 1: Foundation"
-      subtitle="Video & Key Concepts"
-      description="Three experts from Dev, Ops, and Product discuss..."
-      media_type="video"
-      media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4"
-      theme="primary"
-    %}
-  </div>
-
-  <div class="meeting-podcast-card">
-    {% include simple-card.html
-      type="media"
-      title="Meeting 1 Podcast"
-      subtitle="Three experts have a cool, balanced, fact-based and grounded discussion about key findings from accelerate."
-      media_type="audio"
-      media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a"
-      theme="info"
-    %}
+<!-- Meeting Progress Indicator -->
+<div class="meeting-progress-bar" markdown="0">
+  <div class="progress-indicator">
+    <span class="progress-label">Meeting 1 of 4</span>
+    <div class="progress-track">
+      <div class="progress-fill" style="width: 25%"></div>
+    </div>
+    <span class="progress-text">Foundation Phase</span>
   </div>
 </div>
 
-### Key Insights
+<!-- Main Content Layout: 70% Content + 30% Sidebar -->
+<div class="meeting-content-layout" markdown="0">
+  <main class="meeting-main-content">
+    <section class="key-insights-prominent">
+      <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
 
 <div class="insights-grid" markdown="0">
   {% include simple-card.html type="insight" icon="fas fa-microscope" title="Evidence-Based" description="Rigorous research backing all findings" theme="info" %}
@@ -41,35 +31,96 @@ dora_color: "#0969da" # $meeting-1-primary
   {% include simple-card.html type="insight" icon="fas fa-user-check" title="Process Not People" description="Anxiety signals inefficiency, not failure" theme="info" %}
 </div>
 
-#### The Four DORA Metrics
+### DORA Metrics Dashboard
 
-<div class="dora-metrics-layout" markdown="0">
-  <div class="metric-card metric-lead-time">
-    <div class="metric-content">
-      <i class="fas fa-chart-line metric-icon"></i>
-      <h4>Lead Time</h4>
-      <p>Measures the frequency of software releases</p>
-      <div class="metric-target">Target: Daily</div>
-    </div>
+<div class="dora-dashboard" markdown="0">
+  <div class="dashboard-header">
+    <h3>The Four Key Metrics</h3>
+    <p>Evidence-based measurements of software delivery performance</p>
   </div>
 
-  <div class="metric-card metric-deployment">
-    <div class="metric-content">
-      <i class="fas fa-clock metric-icon"></i>
-      <h4>MTTR</h4>
-      <p>Deployment Confidence</p>
-      <div class="metric-target">Learn about DORA</div>
+  <div class="metrics-horizontal">
+    <div class="metric-tile lead-time">
+      <div class="metric-icon-container">
+        <i class="fas fa-clock"></i>
+      </div>
+      <div class="metric-info">
+        <h4>Lead Time</h4>
+        <span class="metric-desc">Commit to production</span>
+        <div class="metric-benchmark">
+          <span class="elite">Elite: < 1 hour</span>
+          <span class="high">High: < 1 day</span>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="metric-card metric-change-fail">
-    <div class="metric-content">
-      <i class="fas fa-exclamation-triangle metric-icon"></i>
-      <h4>Change Failure Rate</h4>
-      <p>Learn about DORA</p>
-      <div class="metric-target">Target: <15%</div>
+    <div class="metric-tile deployment-freq">
+      <div class="metric-icon-container">
+        <i class="fas fa-rocket"></i>
+      </div>
+      <div class="metric-info">
+        <h4>Deployment Frequency</h4>
+        <span class="metric-desc">How often you deploy</span>
+        <div class="metric-benchmark">
+          <span class="elite">Elite: On-demand</span>
+          <span class="high">High: Daily</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="metric-tile recovery-time">
+      <div class="metric-icon-container">
+        <i class="fas fa-tools"></i>
+      </div>
+      <div class="metric-info">
+        <h4>Recovery Time</h4>
+        <span class="metric-desc">Time to restore service</span>
+        <div class="metric-benchmark">
+          <span class="elite">Elite: < 1 hour</span>
+          <span class="high">High: < 1 day</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="metric-tile change-fail">
+      <div class="metric-icon-container">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <div class="metric-info">
+        <h4>Change Failure Rate</h4>
+        <span class="metric-desc">% causing failures</span>
+        <div class="metric-benchmark">
+          <span class="elite">Elite: 0-15%</span>
+          <span class="medium">Medium: 16-30%</span>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+### Interactive Learning Checkpoint
+
+<div class="learning-checkpoint" markdown="0">
+  {% include simple-checkpoint.html
+    title="DORA Metrics Assessment"
+    icon="fas fa-chart-line"
+    question="Rate your organization's current DORA metrics maturity:"
+    type="radio"
+    options=site.data.checkpoint_answers.dora_maturity
+    feedback_id="dora-feedback"
+    radio_name="dora-maturity"
+    default_feedback="Select your organization's DORA maturity level to see improvement opportunities."
+  %}
+
+  {% include simple-checkpoint.html
+    title="Culture Assessment"
+    icon="fas fa-users"
+    question="Rate your team's culture characteristics:"
+    type="slider"
+    slider_labels="Pathological|Bureaucratic|Generative"
+    feedback_id="culture-feedback"
+    default_feedback="Move the slider to assess your team's culture based on Westrum's model"
+  %}
 </div>
 
 #### Speed vs Stability
@@ -112,58 +163,77 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
-### Discussion Questions
+    </section>
+  </main>
 
-<div class="discussion-layout" markdown="0">
-  <div class="discussion-questions-grid">
-    <div class="discussion-card">
-      <div class="discussion-header">
-        <i class="fas fa-chart-line"></i>
-        <h4>Current State</h4>
-      </div>
-      <div class="discussion-content">
-        <p>Speed vs. Stability</p>
-        <ul>
-          <li>How do you think your team has been viewed categorized in each methodology?</li>
-          <li>Think big teams, long projects in accelerate methodology.</li>
-          <li>Measure and measure processes that aren't working</li>
-        </ul>
+  <!-- Meeting Toolkit Sidebar -->
+  <aside class="meeting-sidebar">
+    <div class="sidebar-section">
+      <h3><i class="fas fa-video"></i> Video</h3>
+      {% include simple-card.html
+        type="media"
+        title="Meeting 1: Foundation"
+        subtitle="Video & Key Concepts"
+        description="Three experts from Dev, Ops, and Product discuss..."
+        media_type="video"
+        media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4"
+        theme="compact"
+      %}
+    </div>
+
+    <div class="sidebar-section">
+      <h3><i class="fas fa-headphones"></i> Podcast</h3>
+      {% include simple-card.html
+        type="media"
+        title="Meeting 1 Podcast"
+        subtitle="Expert discussion on key findings"
+        media_type="audio"
+        media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a"
+        theme="compact"
+      %}
+    </div>
+
+    <div class="sidebar-section">
+      <h3><i class="fas fa-tasks"></i> Quick Actions</h3>
+      <div class="quick-actions">
+        <a href="#action-items" class="quick-action-btn">→ Action Items</a>
+        <a href="#discussion" class="quick-action-btn">→ Discussion</a>
+        <a href="/meetings/meeting-2/" class="quick-action-btn">→ Next Meeting</a>
       </div>
     </div>
 
-    <div class="discussion-card">
-      <div class="discussion-header">
-        <i class="fas fa-users"></i>
-        <h4>Current State</h4>
-      </div>
-      <div class="discussion-content">
-        <p>Where do you think team is now related capabilities? Do you look big teams, long projects in accelerate methodology.</p>
-        <ul>
-          <li>Think big teams, long projects in accelerate methodology.</li>
-          <li>Measure and measure processes that aren't working</li>
-        </ul>
+    <div class="sidebar-section">
+      <h3><i class="fas fa-chart-pie"></i> Progress</h3>
+      <div class="assessment-status">
+        <div class="status-item">
+          <span class="status-label">DORA Understanding</span>
+          <div class="status-bar"><div class="status-fill" style="width: 75%"></div></div>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Cultural Assessment</span>
+          <div class="status-bar"><div class="status-fill" style="width: 60%"></div></div>
+        </div>
       </div>
     </div>
-
-  </div>
+  </aside>
 </div>
 
-## Action Items for Next Meeting
+<!-- Action Items Section - Moved Up for Prominence -->
+<section id="action-items" class="action-items-section">
+  <h2><i class="fas fa-clipboard-check"></i> Action Items for Next Meeting</h2>
 
 <div class="action-items-layout" markdown="0">
   <div class="action-grid">
     <div class="action-card current-state">
       <div class="action-header">
-        <i class="fas fa-chart-line"></i>
-        <h4>Current State</h4>
+        <i class="fas fa-chart-line action-icon"></i>
       </div>
       <div class="action-content">
         <p>Start tracking ONE DORA metric this week</p>
         <ul>
-          <li>Type measure and deployment</li>
-          <li>Take measurements before and after</li>
-          <li>Your measure will take more work or</li>
-          <li>Need dev keeps infrastructure linked</li>
+          <li>Choose lead time OR deployment frequency</li>
+          <li>Set up basic measurement</li>
+          <li>Collect baseline data</li>
         </ul>
       </div>
       <div class="action-button">
@@ -173,16 +243,14 @@ dora_color: "#0969da" # $meeting-1-primary
 
     <div class="action-card deployment-stability">
       <div class="action-header">
-        <i class="fas fa-cogs"></i>
-        <h4>Deployment Stability</h4>
+        <i class="fas fa-balance-scale action-icon"></i>
       </div>
       <div class="action-content">
         <p>Type measure at deployment</p>
         <ul>
-          <li>Your pipeline and production and you should track</li>
-          <li>Need dev focus tracked</li>
-          <li>Want dev keep infrastructure linked</li>
-          <li>Track pipeline tracked</li>
+          <li>Document current deployment process</li>
+          <li>Identify speed vs stability tradeoffs</li>
+          <li>Note improvement opportunities</li>
         </ul>
       </div>
       <div class="action-button">
@@ -192,16 +260,14 @@ dora_color: "#0969da" # $meeting-1-primary
 
     <div class="action-card culture-indicators">
       <div class="action-header">
-        <i class="fas fa-users"></i>
-        <h4>Culture Indicators</h4>
+        <i class="fas fa-users action-icon"></i>
       </div>
       <div class="action-content">
         <p>Culture detective mode</p>
         <ul>
-          <li>Where expert environment</li>
-          <li>Around all experience</li>
-          <li>Team thinking about all capabilities</li>
-          <li>Threaten by culture seniors and mainstream behaviors experience point</li>
+          <li>Observe team interactions</li>
+          <li>Note communication patterns</li>
+          <li>Identify Westrum culture signals</li>
         </ul>
       </div>
       <div class="action-button">
@@ -211,8 +277,614 @@ dora_color: "#0969da" # $meeting-1-primary
 
   </div>
 </div>
+</section>
+
+<!-- Consolidated Discussion Section -->
+<section id="discussion" class="discussion-section">
+  <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
+
+  <div class="discussion-consolidated" markdown="0">
+    <details class="discussion-expandable">
+      <summary class="discussion-summary">
+        <i class="fas fa-chart-line"></i>
+        <span>Current State Assessment</span>
+        <i class="fas fa-chevron-down"></i>
+      </summary>
+      <div class="discussion-content">
+        <h4>Evaluate Your Team's Current Performance</h4>
+        <ul>
+          <li>How would you categorize your team using the DORA performance levels?</li>
+          <li>What evidence do you have for speed vs stability in your organization?</li>
+          <li>Where do you see the biggest gaps in your delivery capabilities?</li>
+          <li>What cultural patterns do you observe in your team interactions?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="discussion-expandable">
+      <summary class="discussion-summary">
+        <i class="fas fa-target"></i>
+        <span>Improvement Opportunities</span>
+        <i class="fas fa-chevron-down"></i>
+      </summary>
+      <div class="discussion-content">
+        <h4>Identify Next Steps</h4>
+        <ul>
+          <li>Which DORA metric would be easiest for your team to start measuring?</li>
+          <li>What's one speed vs stability assumption you could challenge?</li>
+          <li>How might you begin shifting towards a more generative culture?</li>
+          <li>What's the smallest change that could have the biggest impact?</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
 
 <style>
+/* New Meeting Layout Styles */
+.meeting-progress-bar {
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: var(--space-md) 0;
+  margin-bottom: var(--space-xl);
+}
+
+.progress-indicator {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 0 var(--space-lg);
+}
+
+.progress-label,
+.progress-text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--meeting-1-primary, #0969da);
+}
+
+.progress-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(9, 105, 218, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--meeting-1-primary, #0969da);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.meeting-content-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-2xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.meeting-main-content {
+  min-width: 0; /* Prevent overflow */
+}
+
+.key-insights-prominent {
+  margin-bottom: var(--space-2xl);
+}
+
+.key-insights-prominent h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-xl);
+  color: var(--text-primary);
+}
+
+.meeting-sidebar {
+  position: sticky;
+  top: var(--space-xl);
+  height: fit-content;
+}
+
+.sidebar-section {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-section h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.quick-action-btn {
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(9, 105, 218, 0.1);
+  color: var(--meeting-1-primary, #0969da);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.2s ease;
+}
+
+.quick-action-btn:hover {
+  background: rgba(9, 105, 218, 0.2);
+  text-decoration: none;
+}
+
+.assessment-status {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.status-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.status-bar {
+  height: 6px;
+  background: rgba(9, 105, 218, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.status-fill {
+  height: 100%;
+  background: var(--meeting-1-primary, #0969da);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.action-items-section {
+  max-width: 1200px;
+  margin: var(--space-2xl) auto 0;
+  padding: 0 var(--space-lg);
+}
+
+.action-items-section h2 {
+  margin-bottom: var(--space-xl);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .meeting-content-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .meeting-sidebar {
+    position: static;
+    order: -1; /* Move sidebar above content on mobile */
+  }
+
+  .sidebar-section {
+    margin-bottom: var(--space-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .progress-indicator {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+
+  .progress-track {
+    width: 100%;
+  }
+}
+
+/* DORA Dashboard Horizontal Layout */
+.dora-dashboard {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.dashboard-header h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.dashboard-header p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+}
+
+.metrics-horizontal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.metric-tile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: #f8fafc;
+  border: 1px solid rgba(9, 105, 218, 0.1);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+.metric-tile:hover {
+  border-color: rgba(9, 105, 218, 0.2);
+  box-shadow: 0 2px 8px rgba(9, 105, 218, 0.1);
+}
+
+.metric-icon-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(9, 105, 218, 0.1);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.metric-icon-container i {
+  font-size: var(--font-size-lg);
+  color: var(--meeting-1-primary, #0969da);
+}
+
+.metric-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.metric-info h4 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.metric-desc {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.metric-benchmark {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.metric-benchmark span {
+  font-size: var(--font-size-xs);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: var(--font-weight-medium);
+}
+
+.metric-benchmark .elite {
+  background: rgba(34, 197, 94, 0.1);
+  color: #166534;
+}
+
+.metric-benchmark .high {
+  background: rgba(59, 130, 246, 0.1);
+  color: #1e40af;
+}
+
+.metric-benchmark .medium {
+  background: rgba(245, 158, 11, 0.1);
+  color: #92400e;
+}
+
+/* Mobile Responsive for DORA Dashboard */
+@media (max-width: 1024px) {
+  .metrics-horizontal {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-horizontal {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .metric-tile {
+    padding: var(--space-md);
+    gap: var(--space-sm);
+  }
+
+  .metric-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .dashboard-header {
+    margin-bottom: var(--space-lg);
+  }
+}
+
+/* Interactive Learning Checkpoint */
+.learning-checkpoint {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border: 2px solid rgba(9, 105, 218, 0.2);
+  border-radius: var(--radius-lg);
+}
+
+.checkpoint-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(9, 105, 218, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkpoint-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(9, 105, 218, 0.2);
+  border-color: rgba(9, 105, 218, 0.3);
+}
+
+.checkpoint-card h4 {
+  margin: 0 0 var(--space-md) 0;
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.checkpoint-card p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+  font-size: var(--font-size-base);
+}
+
+/* Radio button styles for checkpoints */
+.checkpoint-card input[type="radio"] {
+  margin-right: var(--space-sm);
+  transform: scale(1.2);
+  accent-color: var(--meeting-1-primary, #0969da);
+}
+
+.checkpoint-card label {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-sm) 0;
+  border: 1px solid rgba(9, 105, 218, 0.2);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.checkpoint-card label:hover {
+  background: rgba(9, 105, 218, 0.05);
+  border-color: rgba(9, 105, 218, 0.3);
+}
+
+.checkpoint-card input[type="radio"]:checked + label {
+  background: rgba(9, 105, 218, 0.1);
+  border-color: var(--meeting-1-primary, #0969da);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Slider styles for checkpoints */
+.checkpoint-card input[type="range"] {
+  width: 100%;
+  margin: var(--space-md) 0;
+  accent-color: var(--meeting-1-primary, #0969da);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-top: var(--space-sm);
+}
+
+/* Feedback area */
+.feedback-area {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(9, 105, 218, 0.05);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile responsive for checkpoints */
+@media (max-width: 768px) {
+  .learning-checkpoint {
+    grid-template-columns: 1fr;
+    padding: var(--space-lg);
+    gap: var(--space-lg);
+  }
+
+  .checkpoint-card {
+    padding: var(--space-lg);
+  }
+}
+
+/* Consolidated Discussion Section */
+.discussion-section {
+  max-width: 1200px;
+  margin: var(--space-2xl) auto;
+  padding: 0 var(--space-lg);
+}
+
+.discussion-section h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.discussion-consolidated {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.discussion-expandable {
+  background: white;
+  border: 1px solid rgba(9, 105, 218, 0.1);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.discussion-expandable:hover {
+  border-color: rgba(9, 105, 218, 0.2);
+  box-shadow: 0 4px 12px rgba(9, 105, 218, 0.1);
+}
+
+.discussion-expandable[open] {
+  border-color: var(--meeting-1-primary, #0969da);
+}
+
+.discussion-summary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-xl);
+  cursor: pointer;
+  background: #f8fafc;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  list-style: none;
+  transition: all 0.2s ease;
+}
+
+.discussion-summary:hover {
+  background: rgba(9, 105, 218, 0.05);
+}
+
+.discussion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.discussion-summary i:first-child {
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-lg);
+  width: 24px;
+  text-align: center;
+}
+
+.discussion-summary span {
+  flex: 1;
+  font-size: var(--font-size-lg);
+}
+
+.discussion-summary i:last-child {
+  color: var(--text-secondary);
+  transition: transform 0.3s ease;
+}
+
+.discussion-expandable[open] .discussion-summary i:last-child {
+  transform: rotate(180deg);
+}
+
+.discussion-content {
+  padding: var(--space-xl);
+  background: white;
+  border-top: 1px solid rgba(9, 105, 218, 0.1);
+}
+
+.discussion-content h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--meeting-1-primary, #0969da);
+  margin-bottom: var(--space-md);
+}
+
+.discussion-content ul {
+  margin: 0;
+  padding-left: var(--space-lg);
+}
+
+.discussion-content li {
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.discussion-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile responsive for discussion */
+@media (max-width: 768px) {
+  .discussion-summary {
+    padding: var(--space-md) var(--space-lg);
+    gap: var(--space-sm);
+  }
+
+  .discussion-summary span {
+    font-size: var(--font-size-base);
+  }
+
+  .discussion-content {
+    padding: var(--space-lg);
+  }
+
+  .discussion-content h4 {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Original Meeting 1 Wireframe Styling (Updated) */
 /* Meeting 1 Wireframe Styling */
 .meeting-hero-content {
   display: grid;
