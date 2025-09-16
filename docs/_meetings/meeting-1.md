@@ -1,6 +1,6 @@
 ---
 layout: meeting
-title: "Meeting 1: Foundation"
+title: "Foundation"
 subtitle: "Laying the Foundation – The Myth and the Measurement"
 week: 1
 chapters: "1-3"
