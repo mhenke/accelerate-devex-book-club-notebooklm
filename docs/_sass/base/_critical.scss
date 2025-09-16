@@ -366,12 +366,23 @@ h2:has(em.fa-bullseye) {
 }
 
 .highlight-grid {
-  @include grid-auto-fit(300px);
-
-  max-width: var(--desktop);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-lg);
-  gap: var(--space-xl);
+
+  // Material Design responsive pattern: 1 -> 2 -> 4 columns
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
 }
 
 .highlight-card {
@@ -673,6 +684,267 @@ button:focus,
 // =============================================================================
 // PERFORMANCE MONITORING HOOKS
 // =============================================================================
+
+// =============================================================================
+// HOMEPAGE CONTENT SECTIONS - Material Design Styling
+// =============================================================================
+
+// Success Metrics Section
+.success-metrics {
+  background: var(--background-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--elevation-1);
+  padding: var(--space-2xl);
+  margin: var(--space-3xl) 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    @include section-accent;
+
+    margin-bottom: var(--space-xl);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+      padding: var(--space-md);
+      background: var(--background-light);
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--accent-teal);
+
+      &::before {
+        content: "✓";
+        color: var(--accent-teal);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-lg);
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+// Key Question Section
+.key-question {
+  background: linear-gradient(135deg, var(--accent-teal), var(--hover-teal));
+  color: var(--text-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  margin: var(--space-4xl) 0;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+    background-size: 40px 40px;
+    opacity: 0.3;
+  }
+
+  h2 {
+    color: var(--text-white);
+    margin-bottom: var(--space-xl);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    position: relative;
+    z-index: 1;
+  }
+
+  p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-xl);
+    position: relative;
+    z-index: 1;
+  }
+
+  blockquote {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin: 0;
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-style: italic;
+    font-weight: var(--font-weight-medium);
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+
+    &::before {
+      content: "\201C";
+      font-size: 3rem;
+      position: absolute;
+      top: -10px;
+      left: var(--space-lg);
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+// Resources Grid Enhancement
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin: var(--space-3xl) 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.resource-card {
+  @include card("md");
+
+  padding: var(--space-xl);
+  text-align: center;
+  transition: all var(--duration-normal) var(--ease-out);
+  position: relative;
+  border-left: 4px solid var(--accent-coral);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--elevation-3);
+  }
+
+  h3 {
+    color: var(--accent-coral);
+    margin-bottom: var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+
+    i {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  p {
+    margin-bottom: var(--space-lg);
+    line-height: var(--line-height-relaxed);
+  }
+
+  .resource-link {
+    @include button-primary;
+
+    font-size: var(--font-size-sm);
+    padding: var(--space-md) var(--space-lg);
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+// Required Reading Section - Material Design Card
+.required-reading-section {
+  margin: var(--space-4xl) 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .required-reading-content {
+    @include card("lg");
+
+    padding: var(--space-3xl);
+    background: var(--background-white);
+
+    h2 {
+      @include section-accent;
+
+      margin-bottom: var(--space-2xl);
+    }
+  }
+
+  .book-showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 280px 1fr;
+      gap: var(--space-3xl);
+    }
+  }
+
+  .book-visual {
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--elevation-3);
+      transition: transform var(--duration-normal) var(--ease-out);
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--elevation-4);
+      }
+
+      @media (min-width: 768px) {
+        max-width: 200px;
+      }
+    }
+  }
+
+  .book-info {
+    h3 {
+      color: var(--accent-coral);
+      font-size: var(--font-size-2xl);
+      margin-bottom: var(--space-md);
+      font-weight: var(--font-weight-semibold);
+    }
+
+    p:not(.book-description) {
+      color: var(--text-medium);
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-lg);
+      margin-bottom: var(--space-md);
+    }
+
+    .book-description {
+      margin: var(--space-lg) 0;
+      line-height: var(--line-height-relaxed);
+      color: var(--text-dark);
+    }
+
+    .btn {
+      @include button-primary;
+
+      margin-top: var(--space-xl);
+      font-size: var(--font-size-base);
+      padding: var(--space-lg) var(--space-2xl);
+    }
+  }
+}
 
 // Performance markers for measurement
 .perf-measure-start {
