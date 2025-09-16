@@ -31,7 +31,7 @@
 }
 
 /* Chapter Overview Section - Matching Success Outcomes Pattern */
-.chapter-metrics-compact {
+.chapter-metrics-compact.section-card {
   background: var(--gradient-surface);
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
@@ -56,13 +56,13 @@
 
   .chapters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
     margin-top: var(--space-xl);
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      gap: var(--space-md);
+      gap: var(--space-sm);
     }
   }
 
@@ -70,58 +70,85 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-xl) var(--space-lg);
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-lg) var(--space-md);
     background: var(--color-white);
-    border: 2px solid var(--meeting-1-primary);
-    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-gray-200);
+    border-top: 3px solid transparent;
+    border-radius: var(--radius-md);
     cursor: pointer;
-    transition: all var(--duration-normal) var(--ease-out);
+    transition: border-color 0.2s ease, border-top-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
     position: relative;
     text-align: center;
     font-weight: var(--font-weight-medium);
-    color: var(--meeting-1-primary);
+    color: var(--color-gray-700);
+    min-height: 120px;
+    font-size: var(--font-size-body-small);
 
     i {
-      font-size: var(--font-size-title-medium);
-      color: var(--meeting-1-primary);
+      font-size: var(--font-size-title-small);
+      color: var(--color-gray-600);
       margin-bottom: var(--space-sm);
     }
 
+    .chapter-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-xs);
+
+      .chapter-number {
+        font-size: var(--font-size-body-small);
+        color: var(--color-gray-500);
+        font-weight: var(--font-weight-medium);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .chapter-title {
+        font-size: var(--font-size-body-medium);
+        color: var(--color-gray-700);
+        font-weight: var(--font-weight-semibold);
+        text-align: center;
+        line-height: var(--line-height-tight);
+      }
+    }
+
     .chapter-indicator {
-      color: var(--meeting-1-primary);
+      position: absolute;
+      top: var(--space-sm);
+      right: var(--space-sm);
+      color: #0969da;
       font-size: var(--font-size-sm);
-      transition: transform var(--duration-normal) var(--ease-out);
+      opacity: 0.6;
+      transition: all 0.3s ease;
+
+      i {
+        margin-bottom: 0;
+        font-size: var(--font-size-sm);
+      }
     }
 
     &:hover {
-      background: var(--meeting-1-primary);
-      color: var(--color-white);
-      transform: var(--transform-hover);
-      box-shadow: var(--elevation-2);
+      border-color: #0969da;
+      border-top-color: #0969da;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
 
-      i,
       .chapter-indicator {
-        color: var(--color-white);
-      }
-
-      .chapter-indicator i {
-        transform: rotate(180deg);
+        opacity: 1;
+        transform: scale(1.1);
       }
     }
 
     &.active {
-      background: var(--meeting-1-primary);
-      color: var(--color-white);
-      box-shadow: var(--elevation-2);
+      border-top-color: #0969da !important;
 
-      i,
       .chapter-indicator {
-        color: var(--color-white);
-      }
-
-      .chapter-indicator i {
-        transform: rotate(180deg);
+        transform: rotate(180deg) !important;
+        color: #0550ae !important;
+        opacity: 1 !important;
       }
     }
   }

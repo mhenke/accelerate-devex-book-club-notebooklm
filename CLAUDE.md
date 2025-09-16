@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Core Principle
+
+**THINK HARD ALWAYS** - Take time to deeply analyze problems, consider multiple approaches, and think through implications before implementing solutions.
+
 ## Project Overview
 
 This is a **Jekyll-based GitHub Pages site** and resource hub for a DevOps book club focused on "Accelerate: The Science of Lean Software and DevOps" by Nicole Forsgren, Jez Humble, and Gene Kim. The repository contains:
