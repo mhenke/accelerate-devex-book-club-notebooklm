@@ -60,40 +60,56 @@ Between Meetings Activities
 ## <i class="fas fa-folder-open"></i> Direct Resource Links {#direct-resource-links}
 
 <div class="insight-card-grid" markdown="0">
-<div class="insight-card">
+<div class="card card--gradient card--border-left card--theme-green">
+<div class="card__header">
 <h4><i class="fas fa-clipboard-list"></i> Activities</h4>
+</div>
+<div class="card__content">
 <ul class="resource-list">
 <li><a href="../resources/activities/README.md">README: Activities</a></li>
 <li><a href="../resources/activities/between-meetings.md">Between Meetings Guide</a></li>
 <li><a href="../resources/activities/discussion-practices.md">Discussion Practices</a></li>
 </ul>
 </div>
+</div>
 
-<div class="insight-card">
+<div class="card card--gradient card--border-left card--theme-green">
+<div class="card__header">
 <h4><i class="fas fa-chart-bar"></i> Assessments</h4>
+</div>
+<div class="card__content">
 <ul class="resource-list">
 <li><a href="../resources/assessments/README.md">README: Assessments</a></li>
 <li><a href="../resources/assessments/culture-assessment-worksheet.md">Culture Assessment Worksheet</a></li>
 <li><a href="../resources/assessments/dora-metrics-template.md">DORA Metrics Template</a></li>
 </ul>
 </div>
+</div>
 
-<div class="insight-card">
+<div class="card card--gradient card--border-left card--theme-green">
+<div class="card__header">
 <h4><i class="fas fa-arrow-up"></i> Extensions</h4>
+</div>
+<div class="card__content">
 <ul class="resource-list">
 <li><a href="../resources/extensions/README.md">README: Extensions</a></li>
 <li><a href="../resources/extensions/extensions.md">Extension Pathways</a></li>
 </ul>
 </div>
+</div>
 
-<div class="insight-card">
+<div class="card card--gradient card--border-left card--theme-green">
+<div class="card__header">
 <h4><i class="fas fa-users"></i> Meeting Resources</h4>
+</div>
+<div class="card__content">
 <ul class="resource-list">
 <li><a href="https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/README.md">README: Meetings</a></li>
 <li><a href="../resources/templates/README.md">README: Templates</a></li>
 <li><a href="../resources/templates/meeting-notes-template.md">Meeting Notes Template</a></li>
 <li><a href="../resources/templates/retrospective-format.md">Retrospective Format</a></li>
 </ul>
+</div>
 </div>
 </div>
 

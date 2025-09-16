@@ -19,7 +19,7 @@ title: Home
 <div class="welcome-compact section-card" markdown="0">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
 <div class="welcome-cta">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-primary-large"><i class="fas fa-rocket"></i> Start Learning Now</a>
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--large"><i class="fas fa-rocket"></i> Start Learning Now</a>
 <p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
 </div>
 </div>
@@ -216,7 +216,7 @@ title: Home
 <h3>Accelerate: The Science of Lean Software and DevOps</h3>
 <p>Building and Scaling High Performing Technology Organizations</p>
 <p class="book-description">This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations. Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance.</p>
-<a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-primary btn-large">Get the Book</a>
+<a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn--large">Get the Book</a>
 </div>
 </div>
 </div>

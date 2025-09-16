@@ -169,3 +169,129 @@
     color: var(--theme-primary);
   }
 }
+
+// =============================================================================
+// SPECIALIZED CARD CONTENT COMPONENTS
+// =============================================================================
+
+// Discussion prompts styling
+.discussion-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+
+  span {
+    color: var(--color-gray-400);
+    font-size: var(--font-size-body-medium);
+    line-height: var(--line-height-relaxed);
+    padding-left: var(--space-sm);
+
+    &::before {
+      content: '💭';
+      margin-right: var(--space-sm);
+    }
+  }
+}
+
+// ENPS comparison styling
+.enps-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0;
+
+  @media (max-width: 768px) {
+    gap: var(--space-md);
+  }
+}
+
+.enps-before,
+.enps-after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.enps-label {
+  font-size: var(--font-size-body-medium);
+  color: var(--color-gray-500);
+  font-weight: var(--font-weight-medium);
+}
+
+.enps-value {
+  font-size: var(--font-size-headline-large);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue-700);
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-headline-small);
+  }
+}
+
+.enps-before .enps-value {
+  color: var(--danger-red);
+}
+
+.enps-after .enps-value {
+  color: var(--success-green);
+}
+
+.enps-arrow {
+  font-size: var(--font-size-headline-small);
+  color: var(--color-blue-600);
+}
+
+// Stats highlight styling
+.stat-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+}
+
+.stat-number {
+  font-size: var(--font-size-display-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue-700);
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-headline-large);
+  }
+}
+
+.stat-text {
+  font-size: var(--font-size-body-large);
+  color: var(--color-gray-600);
+  font-weight: var(--font-weight-medium);
+}
+
+// Law statement quote styling
+.card .card__content blockquote {
+  font-size: var(--font-size-title-large);
+  font-style: italic;
+  color: var(--meeting-1-primary);
+  margin: var(--space-md) 0 var(--space-lg) 0;
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: none !important;
+  }
+}
+
+.card .card__content cite {
+  display: block;
+  color: var(--color-gray-500);
+  font-size: var(--font-size-body-medium);
+  font-weight: var(--font-weight-medium);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
