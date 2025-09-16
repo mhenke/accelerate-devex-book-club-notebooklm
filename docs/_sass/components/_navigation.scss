@@ -4,6 +4,74 @@
 
 // Header styling is defined in layout/_header.scss to avoid conflicts
 
+// Site header content layout
+.site-header-content {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--nav-height, 64px);
+}
+
+// Site brand/logo area
+.site-nav__brand {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__brand-link {
+  @include text-lg;
+
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--text-white);
+  text-decoration: none;
+  transition: color var(--duration-normal) var(--ease-out);
+
+  @include touch-target-44px;
+
+  &:hover {
+    color: var(--accent-teal);
+  }
+}
+
+.site-nav__brand-icon {
+  font-size: 1.5rem;
+  color: var(--accent-teal);
+}
+
+.site-nav__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.site-nav__brand-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.site-nav__brand-subtitle {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+  font-weight: var(--font-weight-medium);
+}
+
+// Main navigation area
+.site-nav-main {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+
+  @media (max-width: 768px) {
+    gap: var(--spacing-xs);
+  }
+}
+
 .nav-container {
   max-width: var(--container-max-width);
   margin: 0 auto;
@@ -47,11 +115,36 @@
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden; // For shimmer effect
+
+  // Shimmer effect on navigation links
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
 
   &:hover,
   &:focus {
     background-color: rgba(148, 163, 184, 0.1);
     color: var(--accent-teal);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   &[aria-current='page'] {

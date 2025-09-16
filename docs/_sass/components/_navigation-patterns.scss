@@ -27,8 +27,31 @@
   color: var(--text-primary);
   transition: all 0.3s ease;
   font-weight: var(--font-weight-medium);
+  position: relative;
+  overflow: hidden; // For shimmer effect
 
   @include touch-target-44px;
+
+  // Shimmer effect on all nav-item buttons
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
 
   &:hover {
     background: var(--primary-blue);
