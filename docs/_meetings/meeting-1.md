@@ -8,67 +8,27 @@ duration: "1 Hour"
 dora_color: "#0969da" # $meeting-1-primary
 ---
 
-<!-- Meeting Progress Indicator -->
-<div class="meeting-progress-bar" markdown="0">
-  <div class="progress-indicator">
-    <span class="progress-label">Meeting 1 of 4</span>
-    <div class="progress-track">
-      <div class="progress-fill" style="width: 25%"></div>
-    </div>
-    <span class="progress-text">Foundation Phase</span>
-  </div>
-</div>
-
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 <div class="meeting-content-layout" markdown="0">
   <main class="meeting-main-content">
-    <section class="key-insights-prominent">
-      <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
+    <h2><i class="fas fa-book-open"></i> Introduction to "Accelerate"</h2>
 
-<div class="insights-grid" markdown="0">
-  <div class="insight-card">
-    <div class="insight-header">
-      <i class="fas fa-microscope"></i>
-      <h4>Evidence-Based</h4>
+    <div class="accelerate-intro" markdown="0">
+      <div class="central-argument">
+        <h3><i class="fas fa-bullseye"></i> Central Argument</h3>
+        <p><strong>High software delivery performance drives organizational success</strong> (profitability, productivity, market share)</p>
+      </div>
+
+      <div class="evidence-approach">
+        <h3><i class="fas fa-microscope"></i> Evidence-Based Approach</h3>
+        <p><strong>23,000+ survey responses</strong> from <strong>2,000+ organizations</strong> over <strong>4 years</strong></p>
+      </div>
+
+      <div class="digital-transformation">
+        <h3><i class="fas fa-rocket"></i> Digital Transformation Reality</h3>
+        <p><strong>Software delivery capability provides competitive advantage</strong> across all industries</p>
+      </div>
     </div>
-    <p>Rigorous research backing all findings</p>
-  </div>
-
-  <div class="insight-card">
-    <div class="insight-header">
-      <i class="fas fa-medal"></i>
-      <h4>Competitive Advantage</h4>
-    </div>
-    <p>Software delivery capability drives success</p>
-  </div>
-
-  <div class="insight-card">
-    <div class="insight-header">
-      <i class="fas fa-user-check"></i>
-      <h4>Process Not People</h4>
-    </div>
-    <p>Anxiety signals inefficiency, not failure</p>
-  </div>
-</div>
-
-<h2><i class="fas fa-book-open"></i> Introduction to "Accelerate"</h2>
-
-<div class="accelerate-intro" markdown="0">
-  <div class="central-argument">
-    <h3><i class="fas fa-bullseye"></i> Central Argument</h3>
-    <p><strong>High software delivery performance drives organizational success</strong> (profitability, productivity, market share)</p>
-  </div>
-
-  <div class="evidence-approach">
-    <h3><i class="fas fa-microscope"></i> Evidence-Based Approach</h3>
-    <p><strong>23,000+ survey responses</strong> from <strong>2,000+ organizations</strong> over <strong>4 years</strong></p>
-  </div>
-
-  <div class="digital-transformation">
-    <h3><i class="fas fa-rocket"></i> Digital Transformation Reality</h3>
-    <p><strong>Software delivery capability provides competitive advantage</strong> across all industries</p>
-  </div>
-</div>
 
 <h2><i class="fas fa-chart-line"></i> The Four DORA Metrics - "Powerful New Vocabulary"</h2>
 
