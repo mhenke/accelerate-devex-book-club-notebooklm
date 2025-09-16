@@ -3444,15 +3444,15 @@ button:focus,
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-  // border-radius removed
+    // border-radius removed
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
 
     // Default icon styling
-  // background removed
-  // color removed
+    // background removed
+    // color removed
 
     // Default gray icon colors (will be overridden by Meeting 1 specific rules)
     .fa-chart-line,
