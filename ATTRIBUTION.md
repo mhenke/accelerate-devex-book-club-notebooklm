@@ -43,11 +43,12 @@ Kim, created using Google NotebookLM and Claude (Anthropic) with human curation.
 
 ## Contributing
 
+
 By contributing to this repository, you agree that:
 
 - Your contributions are your own original work
 - You have the right to submit the content
-- Your contributions will be licensed under the same terms as this repository (MIT License)
+- Your contributions will be licensed under the same terms as this repository (Creative Commons Attribution 4.0 International License)
 
 ## Fair Use Statement
 
