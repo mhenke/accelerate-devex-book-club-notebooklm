@@ -3,6 +3,27 @@
 // Mobile-first responsive grid system following Material Design principles
 // with content-specific responsive patterns
 
+// =============================================================================
+// PAGE LEVEL CONTAINERS
+// =============================================================================
+
+// Main page wrapper
+.page-content {
+  width: 100%;
+  padding: 0 var(--spacing-lg);
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @include mobile-only {
+    padding: 0 var(--spacing-md);
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+// Default container
 .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
