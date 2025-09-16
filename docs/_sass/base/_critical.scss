@@ -3321,7 +3321,7 @@ button:focus,
       }
 
       i:first-child {
-        color: #9333ea;
+        color: #6b7280; // Subdued gray to match action items
         width: 20px;
       }
 
@@ -3868,6 +3868,262 @@ button:focus,
 
     strong {
       color: var(--meeting-1-accent) !important;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 40px rgba(9, 105, 218, 0.4),
+      inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
+    border-color: var(--meeting-1-primary) !important;
+  }
+}
+
+// Dark Theme Treatment for Framework Section - Similar to Key Insight
+.step-section.step-framework.framework-dark {
+  background: linear-gradient(
+    135deg,
+    var(--hero-dark) 0%,
+    var(--card-dark) 100%
+  ) !important;
+  color: var(--text-white) !important;
+  border-radius: var(--radius-xl) !important;
+  border: 2px solid var(--meeting-1-border) !important;
+  box-shadow: var(--shadow-floating-teal) !important;
+  backdrop-filter: var(--backdrop-blur-lg);
+  position: relative;
+  overflow: hidden;
+
+  // Ensure proper container constraints
+  max-width: min(1200px, calc(100vw - 2rem));
+  width: 100%;
+  box-sizing: border-box;
+  margin: var(--space-xl) auto;
+  padding: var(--space-2xl);
+
+  // Blue top border (consistent with other step sections)
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      var(--meeting-1-primary),
+      var(--meeting-1-accent)
+    );
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    z-index: 2;
+  }
+
+  // Strategic dark mode sophisticated pattern background
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        var(--meeting-1-border) 2px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        var(--meeting-1-border) 2px,
+        transparent 2px
+      );
+    background-size: 40px 40px, 80px 80px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  // Header styling
+  .step-header h2 {
+    background: linear-gradient(
+      135deg,
+      var(--meeting-1-primary),
+      var(--meeting-1-secondary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    position: relative;
+    z-index: 1;
+
+    i {
+      color: var(--meeting-1-accent) !important;
+    }
+  }
+
+  // Framework intro text
+  .framework-intro p {
+    color: var(--text-white) !important;
+    position: relative;
+    z-index: 1;
+    text-shadow: var(--text-shadow-sm);
+    text-align: center;
+    font-size: var(--font-size-body-large);
+    margin-bottom: var(--space-xl);
+  }
+
+  // Dark theme for vertical framework flow
+  .framework-flow-vertical {
+    position: relative;
+    z-index: 1;
+  }
+
+  .framework-step {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    position: relative;
+
+    .step-number {
+      background: var(--meeting-1-accent) !important;
+      color: white !important;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-sm);
+      position: absolute;
+      top: var(--space-md);
+      left: var(--space-md);
+      z-index: 2;
+    }
+
+    .step-content {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-lg);
+      padding-left: calc(32px + var(--space-lg) + var(--space-md));
+    }
+
+    .step-icon {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      font-size: var(--font-size-title-medium);
+      color: var(--meeting-1-accent) !important;
+      flex-shrink: 0;
+    }
+
+    .step-info {
+      flex: 1;
+
+      h3 {
+        color: var(--text-white) !important;
+        margin: 0 0 var(--space-xs) 0;
+        font-size: var(--font-size-title-small);
+        font-weight: var(--font-weight-semibold);
+      }
+
+      .step-subtitle {
+        color: rgba(255, 255, 255, 0.8) !important;
+        margin: 0 0 var(--space-md) 0;
+        font-style: italic;
+        font-size: var(--font-size-body-medium);
+      }
+    }
+
+    .step-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+
+      .tag {
+        background: rgba(255, 255, 255, 0.1) !important;
+        color: var(--text-white) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: var(--radius-sm);
+        font-size: var(--font-size-body-small);
+        font-weight: var(--font-weight-medium);
+
+        // Specific colors for different tag types
+        &.metric {
+          background: rgba(59, 130, 246, 0.2) !important;
+          border-color: rgba(59, 130, 246, 0.4) !important;
+        }
+
+        &.culture.pathological {
+          background: rgba(239, 68, 68, 0.2) !important;
+          border-color: rgba(239, 68, 68, 0.4) !important;
+        }
+
+        &.culture.bureaucratic {
+          background: rgba(245, 158, 11, 0.2) !important;
+          border-color: rgba(245, 158, 11, 0.4) !important;
+        }
+
+        &.culture.generative {
+          background: rgba(34, 197, 94, 0.2) !important;
+          border-color: rgba(34, 197, 94, 0.4) !important;
+        }
+      }
+    }
+
+    .step-connector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-xs);
+      margin: var(--space-md) 0;
+
+      i {
+        color: var(--meeting-1-accent) !important;
+        font-size: var(--font-size-lg);
+      }
+
+      .connector-label {
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: var(--font-size-body-small);
+        font-style: italic;
+      }
+    }
+
+    &:last-child .step-connector {
+      display: none;
+    }
+  }
+
+  // Evidence foundation section
+  .evidence-foundation {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-top: var(--space-xl);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    h3 {
+      color: var(--meeting-1-accent) !important;
+      margin: 0 0 var(--space-md) 0;
+      font-size: var(--font-size-title-small);
+    }
+
+    p {
+      color: var(--text-white) !important;
+      font-size: var(--font-size-body-medium);
+      line-height: var(--line-height-relaxed);
+      margin: 0;
+
+      strong {
+        color: var(--meeting-1-accent) !important;
+        font-weight: var(--font-weight-bold);
+      }
     }
   }
 

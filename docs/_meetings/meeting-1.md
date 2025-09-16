@@ -207,7 +207,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK (Causality Flow) -->
-<div class="step-section step-framework" markdown="0">
+<div class="step-section step-framework framework-dark" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-sitemap"></i> The Framework: How Culture Drives Performance</h2>
   </div>
@@ -216,57 +216,75 @@ document.addEventListener('keydown', function(event) {
       <p><strong>4 years of research across 23,000+ organizations</strong> reveals this causal chain:</p>
     </div>
 
-    <!-- Causality Flow Visualization -->
-    <div class="causality-flow">
-      <div class="flow-step business-step">
-        <div class="step-icon">
-          <i class="fas fa-chart-line-up"></i>
+    <!-- Vertical Framework Flow -->
+    <div class="framework-flow-vertical">
+
+      <!-- Step 1: Business Need -->
+      <div class="framework-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="fas fa-chart-line-up"></i>
+          </div>
+          <div class="step-info">
+            <h3>Business Need</h3>
+            <p class="step-subtitle">Chapter 1: Competitive Advantage</p>
+            <div class="step-tags">
+              <span class="tag">Market Share</span>
+              <span class="tag">Profitability</span>
+              <span class="tag">Productivity</span>
+            </div>
+          </div>
         </div>
-        <h3>Business Need</h3>
-        <p class="step-subtitle">Chapter 1: Competitive Advantage</p>
-        <div class="business-drivers">
-          <span class="driver">Market Share</span>
-          <span class="driver">Profitability</span>
-          <span class="driver">Productivity</span>
+        <div class="step-connector">
+          <i class="fas fa-arrow-down"></i>
+          <span class="connector-label">measured by</span>
         </div>
       </div>
 
-      <div class="flow-arrow">
-        <i class="fas fa-arrow-right"></i>
-        <span class="arrow-label">measured by</span>
+      <!-- Step 2: Measurement -->
+      <div class="framework-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <div class="step-info">
+            <h3>Measurement</h3>
+            <p class="step-subtitle">Chapter 2: DORA Metrics</p>
+            <div class="step-tags">
+              <span class="tag metric">Lead Time</span>
+              <span class="tag metric">Deploy Frequency</span>
+              <span class="tag metric">Recovery Time</span>
+              <span class="tag metric">Change Fail Rate</span>
+            </div>
+          </div>
+        </div>
+        <div class="step-connector">
+          <i class="fas fa-arrow-down"></i>
+          <span class="connector-label">enabled by</span>
+        </div>
       </div>
 
-      <div class="flow-step measurement-step">
-        <div class="step-icon">
-          <i class="fas fa-tachometer-alt"></i>
-        </div>
-        <h3>Measurement</h3>
-        <p class="step-subtitle">Chapter 2: DORA Metrics</p>
-        <div class="metrics-list">
-          <span class="metric">Lead Time</span>
-          <span class="metric">Deploy Frequency</span>
-          <span class="metric">Recovery Time</span>
-          <span class="metric">Change Fail Rate</span>
+      <!-- Step 3: Cultural Foundation -->
+      <div class="framework-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="step-info">
+            <h3>Cultural Foundation</h3>
+            <p class="step-subtitle">Chapter 3: Westrum Culture</p>
+            <div class="step-tags">
+              <span class="tag culture pathological">Pathological</span>
+              <span class="tag culture bureaucratic">Bureaucratic</span>
+              <span class="tag culture generative">Generative</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="flow-arrow">
-        <i class="fas fa-arrow-right"></i>
-        <span class="arrow-label">enabled by</span>
-      </div>
-
-      <div class="flow-step culture-step">
-        <div class="step-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <h3>Cultural Foundation</h3>
-        <p class="step-subtitle">Chapter 3: Westrum Culture</p>
-        <div class="culture-types">
-          <span class="culture-type pathological">Pathological</span>
-          <span class="culture-type bureaucratic">Bureaucratic</span>
-          <span class="culture-type generative">Generative</span>
-        </div>
-      </div>
     </div>
 
     <div class="evidence-foundation">
