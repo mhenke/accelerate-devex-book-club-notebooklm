@@ -13,7 +13,6 @@
   gap: var(--space-md);
 }
 
-
 // Base Styles - Critical Rendering Path
 // =====================================
 // These styles are critical for above-the-fold content rendering.
@@ -481,8 +480,7 @@ a {
       backdrop-filter: var(--backdrop-blur-lg);
       background-color: var(--color-white-10);
       border: var(--border-white-light);
-      box-shadow: var(--shadow-hero-cta),
-        0 0 20px rgba(122, 218, 209, 0.4),
+      box-shadow: var(--shadow-hero-cta), 0 0 20px rgba(122, 218, 209, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       animation: shimmer 3s ease-in-out infinite, float 4s ease-in-out infinite;
@@ -589,7 +587,9 @@ a {
     transition: var(--transition-material) !important; // Material Design easing
     border: none !important;
     cursor: pointer !important;
-    font-size: var(--font-size-headline-small) !important; // Larger text for prominence
+    font-size: var(
+      --font-size-headline-small
+    ) !important; // Larger text for prominence
     // Enhanced Material Design elevation
     box-shadow: var(--shadow-card-metric), var(--shadow-subtle) !important;
     transform: var(--transform-reset) !important;
@@ -617,10 +617,13 @@ a {
     &:hover,
     &:focus {
       transform: var(--transform-hover-large) !important;
-      box-shadow: var(--shadow-card-metric-hover),
-        0 3px 6px rgba(0, 0, 0, 0.16) !important;
+      box-shadow: var(--shadow-card-metric-hover), 0 3px 6px rgba(0, 0, 0, 0.16) !important;
       color: white !important;
-      background: linear-gradient(135deg, var(--hover-emerald), var(--accent-emerald)) !important;
+      background: linear-gradient(
+        135deg,
+        var(--hover-emerald),
+        var(--accent-emerald)
+      ) !important;
       &::before {
         transform: translateX(100%);
       }
@@ -628,8 +631,7 @@ a {
 
     &:active {
       transform: translateY(-1px);
-      box-shadow: var(--shadow-step-section),
-        0 1px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: var(--shadow-step-section), 0 1px 2px rgba(0, 0, 0, 0.12);
     }
 
     i {
@@ -1434,7 +1436,8 @@ a {
 
   // Meeting 1 icon color pattern: H2 blue, others gray
   h2:not(.key-question h2) {
-    i, em {
+    i,
+    em {
       color: var(--meeting-1-primary) !important;
     }
   }
@@ -2383,7 +2386,11 @@ button:focus,
       box-shadow: var(--shadow-card-metric), var(--shadow-subtle) !important;
 
       &:hover {
-        background: linear-gradient(135deg, var(--hover-emerald), var(--accent-emerald)) !important;
+        background: linear-gradient(
+          135deg,
+          var(--hover-emerald),
+          var(--accent-emerald)
+        ) !important;
         color: white !important;
         transform: var(--transform-hover) !important;
         box-shadow: var(--shadow-card-metric-hover) !important;
@@ -2478,7 +2485,6 @@ button:focus,
   .chapter-cards-grid {
     order: 1; // Keep intro at top
   }
-
 }
 
 .media-card {
@@ -2667,7 +2673,6 @@ button:focus,
 // STEP-BASED MEETING STRUCTURE STYLES
 // =============================================================================
 
-
 // Design System Tokens - Comprehensive Color & Layout Variables
 :root {
   // Meeting 1 Blue Color Scheme
@@ -2719,21 +2724,41 @@ button:focus,
 
   // Simplified Spacing System (8pt grid)
   --space-xs: 0.25rem; // 4px
-  --space-sm: 0.5rem;  // 8px
-  --space-md: 1rem;    // 16px
-  --space-lg: 1.5rem;  // 24px
-  --space-xl: 2rem;    // 32px
+  --space-sm: 0.5rem; // 8px
+  --space-md: 1rem; // 16px
+  --space-lg: 1.5rem; // 24px
+  --space-xl: 2rem; // 32px
   --space-2xl: 2.5rem; // 40px
-  --space-3xl: 3rem;   // 48px
-  --space-4xl: 4rem;   // 64px
+  --space-3xl: 3rem; // 48px
+  --space-4xl: 4rem; // 64px
 
   // Background Gradient Tokens
-  --gradient-surface: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+  --gradient-surface: linear-gradient(
+    135deg,
+    var(--color-gray-50),
+    var(--color-gray-100)
+  );
   --gradient-hero: linear-gradient(135deg, var(--hero-dark), var(--card-dark));
-  --gradient-blue: linear-gradient(135deg, var(--color-blue-50), var(--color-blue-100));
-  --gradient-green: linear-gradient(135deg, var(--color-green-50), var(--color-green-100));
-  --gradient-purple: linear-gradient(135deg, var(--color-purple-50), var(--color-purple-100));
-  --gradient-meeting-1: linear-gradient(135deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+  --gradient-blue: linear-gradient(
+    135deg,
+    var(--color-blue-50),
+    var(--color-blue-100)
+  );
+  --gradient-green: linear-gradient(
+    135deg,
+    var(--color-green-50),
+    var(--color-green-100)
+  );
+  --gradient-purple: linear-gradient(
+    135deg,
+    var(--color-purple-50),
+    var(--color-purple-100)
+  );
+  --gradient-meeting-1: linear-gradient(
+    135deg,
+    var(--meeting-1-primary),
+    var(--meeting-1-secondary)
+  );
 
   // Text Shadow Tokens
   --text-shadow-none: none;
@@ -2801,11 +2826,21 @@ button:focus,
   animation: fadeInUp 0.8s ease-out both;
 
   // Staggered animation delays for premium feel
-  &:nth-child(1) { animation-delay: 0.1s; }
-  &:nth-child(2) { animation-delay: 0.2s; }
-  &:nth-child(3) { animation-delay: 0.3s; }
-  &:nth-child(4) { animation-delay: 0.4s; }
-  &:nth-child(5) { animation-delay: 0.5s; }
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.5s;
+  }
 
   &:hover {
     transform: var(--transform-hover);
@@ -3409,15 +3444,15 @@ button:focus,
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    border-radius: var(--radius-sm);
+  // border-radius removed
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
 
     // Default icon styling
-    background: #f3f4f6;
-    color: #6b7280;
+  // background removed
+  // color removed
 
     // Default gray icon colors (will be overridden by Meeting 1 specific rules)
     .fa-chart-line,
@@ -3447,14 +3482,7 @@ button:focus,
   }
 
   // Unified blue theme for all action icons
-  .action-icon {
-    background: var(--meeting-1-light) !important;
-    border: 1px solid var(--meeting-1-border);
-
-    i {
-      color: var(--meeting-1-primary) !important;
-    }
-  }
+  // .action-icon meeting-1 theme removed as requested
 
   .action-text {
     flex: 1;
@@ -3587,11 +3615,7 @@ button:focus,
 // Modern Chapters Overview Styles
 // Meeting Header - Sophisticated Dark Theme with Meeting 1 Blue
 .meeting-header {
-  background: linear-gradient(
-    135deg,
-    #1a2332 0%,
-    #2d4263 100%
-  );
+  background: linear-gradient(135deg, #1a2332 0%, #2d4263 100%);
   padding: var(--space-xl) var(--space-lg);
   position: relative;
   border-radius: var(--radius-lg);
@@ -3628,9 +3652,8 @@ button:focus,
     pointer-events: none;
   }
 
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
-              0 0 30px rgba(9, 105, 218, 0.3),
-              inset 0 2px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(9, 105, 218, 0.3),
+    inset 0 2px 0 rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(9, 105, 218, 0.2);
   backdrop-filter: var(--backdrop-blur-lg);
   animation: fadeInUp 0.8s ease-out both;
@@ -3646,7 +3669,8 @@ button:focus,
     font-size: var(--font-size-sm);
     text-align: center;
 
-    a, span {
+    a,
+    span {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none;
     }
@@ -3667,12 +3691,7 @@ button:focus,
     );
     font-weight: var(--font-weight-bold);
     text-align: center;
-    background: linear-gradient(
-      135deg,
-      #60a5fa,
-      #3b82f6,
-      #1d4ed8
-    );
+    background: linear-gradient(135deg, #60a5fa, #3b82f6, #1d4ed8);
     background-clip: text;
 
     /* stylelint-disable-next-line property-no-vendor-prefix */
@@ -3715,8 +3734,8 @@ button:focus,
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5),
-      0 0 40px rgba(9, 105, 218, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 40px rgba(9, 105, 218, 0.4),
+      inset 0 2px 0 rgba(255, 255, 255, 0.15);
     border-color: rgba(9, 105, 218, 0.3);
   }
 }
@@ -3814,7 +3833,8 @@ button:focus,
     }
   }
 
-  p, .insight-explanation {
+  p,
+  .insight-explanation {
     color: var(--text-white) !important;
     position: relative;
     z-index: 1;
@@ -3854,7 +3874,8 @@ button:focus,
       color: var(--text-white) !important;
     }
 
-    p, .insight-explanation {
+    p,
+    .insight-explanation {
       color: var(--text-white) !important;
     }
 
@@ -3869,8 +3890,8 @@ button:focus,
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5),
-      0 0 40px rgba(9, 105, 218, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 40px rgba(9, 105, 218, 0.4),
+      inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
     border-color: var(--meeting-1-primary) !important;
   }
 }
