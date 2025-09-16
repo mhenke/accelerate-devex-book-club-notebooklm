@@ -250,3 +250,8 @@ All major codebase changes (refactoring, features, upgrades) must follow this st
 ### Template Standards
 
 All implementation plans must use the `/update-implementation-plan.prompt.md` template for machine-readable, deterministic, and executable output. See that file for required structure and compliance rules.
+- Use the official Material Design websites directly:
+
+Material Design 3: https://m3.material.io/
+Material Design foundations: https://m3.material.io/foundations
+Material Web (framework-agnostic): https://m3.material.io/develop/web

@@ -6,11 +6,12 @@
 }
 
 .card-footer {
-  border-left-color: var(--color-blue-600);
-  background: var(--color-gray-50);
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl); // Match card border radius
 }
 
 // =====================================
@@ -1446,7 +1447,7 @@ a {
 
     .get-started-link {
       color: var(--accent-teal);
-      text-decoration: none;
+      text-decoration: none !important;
       font-weight: var(--font-weight-semibold);
       font-size: var(--font-size-sm);
       display: inline-flex;
@@ -1454,12 +1455,43 @@ a {
       gap: var(--space-sm);
       padding: var(--space-sm) var(--space-md);
       background: rgba(16, 185, 129, 0.1);
-      border-radius: var(--radius-md);
-      transition: all 0.3s ease;
+      border-radius: 8px; // Consistent with button system
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+
+      // Shimmer effect like other buttons
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: left 0.5s ease;
+      }
 
       &:hover {
         background: rgba(16, 185, 129, 0.2);
-        text-decoration: none;
+        text-decoration: none !important;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+
+        &::before {
+          left: 100%;
+        }
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
       }
     }
 
@@ -1467,12 +1499,24 @@ a {
       color: white;
       background: rgba(255, 255, 255, 0.2);
       padding: var(--space-sm) var(--space-md);
-      border-radius: var(--radius-md);
+      border-radius: 8px; // Consistent with button system
       display: inline-block;
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+
+      // Enhanced shimmer for primary variant
+      &::before {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+      }
 
       &:hover {
         background: rgba(255, 255, 255, 0.3);
-        text-decoration: none;
+        text-decoration: none !important;
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
       }
     }
   }
@@ -1689,7 +1733,7 @@ a {
   .meeting-link {
     display: block;
     text-decoration: none;
-    margin-top: var(--space-lg);
+    margin-top: var(--space-md); // Reduced margin for better spacing
     transition: all var(--duration-normal) var(--ease-out);
     position: relative;
     z-index: 1;
@@ -1703,15 +1747,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-md) var(--space-lg);
+    padding: 12px 24px; // Fixed padding for consistent button appearance
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
     color: var(--text-white);
-    margin-bottom: var(--space-sm);
+    margin: 0 auto var(--space-md); // Center horizontally and add proper bottom margin
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     backdrop-filter: var(--backdrop-blur-lg);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: fit-content; // Prevent button from stretching too wide
 
     span:first-child {
       margin-right: var(--space-xs);
@@ -1720,12 +1765,13 @@ a {
 
   .meeting-subtitle {
     font-size: var(--font-size-sm);
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-medium); // Changed from white to visible dark text
     text-align: center;
     font-style: italic;
     line-height: var(--line-height-relaxed);
     padding: 0 var(--space-md);
     font-weight: var(--font-weight-medium);
+    margin-top: var(--space-sm); // Add some spacing from the button
   }
 }
 
@@ -2264,7 +2310,11 @@ button:focus,
 }
 
 .resource-card {
-  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+  background: linear-gradient(
+    135deg,
+    var(--surface-light),
+    var(--surface-subtle)
+  );
   border: 1px solid rgba(147, 51, 234, 0.2);
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
@@ -3518,19 +3568,37 @@ button:focus,
     border: 1px solid #e5e7eb;
     overflow: hidden;
 
+    // Remove all focus and click effects
+    &:focus,
+    &:focus-visible,
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+
     summary {
       padding: var(--space-lg);
-      cursor: pointer;
+      cursor: default; // Remove pointer cursor
       display: flex;
       align-items: center;
       gap: var(--space-md);
-      background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+      background: linear-gradient(
+        135deg,
+        var(--surface-light),
+        var(--surface-subtle)
+      );
       font-weight: var(--font-weight-medium);
       color: var(--text-high-emphasis);
 
-      &:hover {
-        background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+      // Remove all focus and click effects
+      &:focus,
+      &:focus-visible,
+      &:active {
+        outline: none;
+        box-shadow: none;
       }
+
+      // Removed hover effect to disable click interaction
 
       i:first-child {
         color: #6b7280; // Subdued gray to match action items
