@@ -51,12 +51,11 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
-### DORA Metrics Dashboard
+## The Four DORA Metrics - "Powerful New Vocabulary"
 
 <div class="dora-dashboard" markdown="0">
   <div class="dashboard-header">
-    <h3>The Four Key Metrics</h3>
-    <p>Evidence-based measurements of software delivery performance</p>
+    <h3>Evidence-based measurements of software delivery performance</h3>
   </div>
 
   <div class="metrics-horizontal">
@@ -118,7 +117,58 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
-### Interactive Learning Checkpoint
+## Debunking the Speed vs. Stability Myth
+
+<div class="speed-vs-stability" markdown="0">
+  <div class="comparison-layout">
+    <div class="old-thinking">
+      <h4>Old Thinking</h4>
+      <p>Either Fast OR Stable</p>
+      <ul>
+        <li><i class="fas fa-times"></i> Slow = Safe</li>
+        <li><i class="fas fa-times"></i> Fast = Risky</li>
+      </ul>
+    </div>
+
+    <div class="new-thinking">
+      <h4>New Thinking</h4>
+      <p>Both Fast AND Stable</p>
+      <ul>
+        <li><i class="fas fa-check"></i> Speed enables stability</li>
+        <li><i class="fas fa-check"></i> High performers excel at both</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="myth-stats" markdown="0">
+  <p><strong>Key Research Finding:</strong> High performers achieve <span class="stat-highlight">46x more frequent deployments</span> + <span class="stat-highlight">440x faster lead time</span> + <span class="stat-highlight">170x faster recovery</span></p>
+</div>
+
+## Addressing "Deployment Pain"
+
+<div class="deployment-pain-section" markdown="0">
+  <div class="pain-recognition">
+    <h4><i class="fas fa-exclamation-triangle"></i> Recognition</h4>
+    <p>Anxiety before deployments signals <strong>process inefficiencies</strong>, not personal failing</p>
+  </div>
+
+  <div class="pain-causes">
+    <h4><i class="fas fa-cogs"></i> Root Causes</h4>
+    <ul>
+      <li>Complex, manual deployment processes</li>
+      <li>Poor architecture that creates dependencies</li>
+      <li>Lack of automated testing and validation</li>
+    </ul>
+  </div>
+
+  <div class="cultural-signal">
+    <h4><i class="fas fa-users"></i> Cultural Signal</h4>
+    <p>Fear indicates <strong>pathological</strong> or <strong>bureaucratic</strong> culture patterns</p>
+  </div>
+</div>
+
+## Interactive Assessment
 
 <div class="learning-checkpoint" markdown="0">
   <div class="checkpoint-card">
@@ -145,7 +195,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 
   <div class="checkpoint-card">
-    <h4><i class="fas fa-users"></i> Culture Assessment</h4>
+    <h4><i class="fas fa-users"></i> Westrum Culture Assessment</h4>
     <p>Rate your team's culture characteristics:</p>
 
     <div class="slider-container">
@@ -159,71 +209,6 @@ dora_color: "#0969da" # $meeting-1-primary
 
     <div class="feedback-area" id="culture-feedback">
       Move the slider to assess your team's culture based on Westrum's model
-    </div>
-  </div>
-</div>
-
-#### Speed vs Stability
-
-<div class="speed-vs-stability" markdown="0">
-  <div class="comparison-layout">
-    <div class="old-thinking">
-      <h4>Old Thinking</h4>
-      <p>Either Fast OR Stable</p>
-      <ul>
-        <li><i class="fas fa-times"></i> Slow = Safe</li>
-        <li><i class="fas fa-times"></i> Fast = Risky</li>
-      </ul>
-    </div>
-
-    <div class="new-thinking">
-      <h4>New Thinking</h4>
-      <p>Both Fast AND Stable</p>
-      <ul>
-        <li><i class="fas fa-check"></i> Speed enables stability</li>
-        <li><i class="fas fa-check"></i> High performers excel at both</li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-### Deployment Pain → Solution Flow
-
-<div class="deployment-flow-section" markdown="0">
-  <div class="deployment-assessment">
-    <div class="assessment-card">
-      <div class="assessment-header">
-        <i class="fas fa-chart-line"></i>
-        <h4>DORA Metrics Assessment</h4>
-      </div>
-      <p>Complete your team's performance on the four key metrics:</p>
-      <div class="assessment-items">
-        <div class="assessment-item">
-          <i class="fas fa-check-circle"></i>
-          <span>Deployment Accuracy</span>
-        </div>
-        <div class="assessment-item">
-          <i class="fas fa-comments"></i>
-          <span>Get Feedback</span>
-        </div>
-        <div class="assessment-item">
-          <i class="fas fa-clock"></i>
-          <span>Frequency Issue</span>
-        </div>
-        <div class="assessment-item">
-          <i class="fas fa-heart"></i>
-          <span>Sentiment Issue</span>
-        </div>
-        <div class="assessment-item">
-          <i class="fas fa-calculator"></i>
-          <span>Estimate</span>
-        </div>
-        <div class="assessment-item">
-          <i class="fas fa-lightbulb"></i>
-          <span>Understand</span>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -265,65 +250,38 @@ dora_color: "#0969da" # $meeting-1-primary
   </aside>
 </div>
 
-<!-- Action Items Section - Moved Up for Prominence -->
+<!-- Action Items Section - Compact Quick Actions -->
 <section id="action-items" class="action-items-section">
   <h2><i class="fas fa-clipboard-check"></i> Action Items for Next Meeting</h2>
 
-<div class="action-items-layout" markdown="0">
-  <div class="action-grid">
-    <div class="action-card current-state">
-      <div class="action-header">
-        <i class="fas fa-chart-line action-icon"></i>
+  <div class="quick-actions-compact" markdown="0">
+    <div class="quick-action-item">
+      <div class="action-icon">
+        <i class="fas fa-chart-line"></i>
       </div>
-      <div class="action-content">
-        <p>Start tracking ONE DORA metric this week</p>
-        <ul>
-          <li>Choose lead time OR deployment frequency</li>
-          <li>Set up basic measurement</li>
-          <li>Collect baseline data</li>
-        </ul>
-      </div>
-      <div class="action-button">
-        <button class="btn-action">→ Start Tracking</button>
+      <div class="action-text">
+        <strong>Begin informal tracking of one DORA metric</strong> for your team
       </div>
     </div>
 
-    <div class="action-card deployment-stability">
-      <div class="action-header">
-        <i class="fas fa-balance-scale action-icon"></i>
+    <div class="quick-action-item">
+      <div class="action-icon">
+        <i class="fas fa-exclamation-triangle"></i>
       </div>
-      <div class="action-content">
-        <p>Type measure at deployment</p>
-        <ul>
-          <li>Document current deployment process</li>
-          <li>Identify speed vs stability tradeoffs</li>
-          <li>Note improvement opportunities</li>
-        </ul>
-      </div>
-      <div class="action-button">
-        <button class="btn-action">→ Other Metrics</button>
+      <div class="action-text">
+        <strong>Identify your biggest deployment pain point</strong> and document it
       </div>
     </div>
 
-    <div class="action-card culture-indicators">
-      <div class="action-header">
-        <i class="fas fa-users action-icon"></i>
+    <div class="quick-action-item">
+      <div class="action-icon">
+        <i class="fas fa-users"></i>
       </div>
-      <div class="action-content">
-        <p>Culture detective mode</p>
-        <ul>
-          <li>Observe team interactions</li>
-          <li>Note communication patterns</li>
-          <li>Identify Westrum culture signals</li>
-        </ul>
-      </div>
-      <div class="action-button">
-        <button class="btn-action">→ Audio & Video</button>
+      <div class="action-text">
+        <strong>Observe examples of pathological, bureaucratic, or generative culture</strong> behaviors
       </div>
     </div>
-
   </div>
-</div>
 </section>
 
 <!-- Consolidated Discussion Section -->
@@ -515,7 +473,148 @@ dora_color: "#0969da" # $meeting-1-primary
 }
 
 .action-items-section h2 {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+/* Compact Quick Actions Style */
+.quick-actions-compact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  background: white;
+  border: 1px solid rgba(9, 105, 218, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quick-action-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(9, 105, 218, 0.05);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--meeting-1-primary, #0969da);
+  transition: all 0.2s ease;
+}
+
+.quick-action-item:hover {
+  background: rgba(9, 105, 218, 0.1);
+  transform: translateX(4px);
+}
+
+.quick-action-item .action-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--meeting-1-primary, #0969da);
+  color: white;
+  border-radius: 50%;
+  font-size: var(--font-size-sm);
+  flex-shrink: 0;
+}
+
+.quick-action-item .action-text {
+  flex: 1;
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+
+.quick-action-item .action-text strong {
+  color: var(--meeting-1-primary, #0969da);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Myth Stats Section */
+.myth-stats {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border: 2px solid rgba(9, 105, 218, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin: var(--space-lg) 0;
+  text-align: center;
+}
+
+.myth-stats p {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+}
+
+.stat-highlight {
+  color: var(--meeting-1-primary, #0969da);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.1em;
+}
+
+/* Deployment Pain Section */
+.deployment-pain-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+  background: white;
+  border: 1px solid rgba(9, 105, 218, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pain-recognition,
+.pain-causes,
+.cultural-signal {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.pain-recognition h4,
+.pain-causes h4,
+.cultural-signal h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-md);
+}
+
+.pain-recognition i,
+.pain-causes i,
+.cultural-signal i {
+  color: var(--meeting-1-primary, #0969da);
+}
+
+.pain-recognition p,
+.cultural-signal p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.pain-causes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.pain-causes li {
+  margin-bottom: var(--space-sm);
+  line-height: 1.5;
+}
+
+/* Mobile responsive for deployment pain */
+@media (max-width: 768px) {
+  .deployment-pain-section {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+  }
 }
 
 /* Mobile Responsiveness */
@@ -1220,87 +1319,6 @@ dora_color: "#0969da" # $meeting-1-primary
   line-height: var(--line-height-relaxed);
 }
 
-/* Action Items */
-.action-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
-  margin: var(--space-2xl) 0;
-}
-
-.action-card {
-  background: var(--card-dark);
-  border-radius: var(--radius-xl);
-  padding: var(--space-xl);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all var(--duration-normal) var(--ease-out);
-}
-
-.action-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.action-header {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-.action-header i {
-  color: var(--accent-emerald);
-  font-size: var(--font-size-xl);
-  background: rgba(16, 185, 129, 0.2);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.action-header h4 {
-  color: var(--text-white);
-  font-size: var(--font-size-lg);
-  margin: 0;
-}
-
-.action-content p {
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: var(--space-md);
-  font-weight: var(--font-weight-medium);
-}
-
-.action-content ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: var(--space-lg);
-}
-
-.action-content li {
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: var(--space-sm);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-relaxed);
-}
-
-.btn-action {
-  background: linear-gradient(135deg, var(--accent-emerald), var(--hover-emerald));
-  color: white;
-  border: none;
-  padding: var(--space-md) var(--space-lg);
-  border-radius: var(--radius-lg);
-  font-weight: var(--font-weight-semibold);
-  cursor: pointer;
-  transition: all var(--duration-normal) var(--ease-out);
-  width: 100%;
-}
-
-.btn-action:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
-}
 
 /* Insights Grid */
 .insights-grid {
@@ -1321,9 +1339,6 @@ dora_color: "#0969da" # $meeting-1-primary
     grid-template-columns: 1fr;
   }
 
-  .action-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 768px) {
