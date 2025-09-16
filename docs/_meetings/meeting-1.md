@@ -224,7 +224,7 @@ document.addEventListener('keydown', function(event) {
         <div class="step-number">1</div>
         <div class="step-content">
           <div class="step-icon">
-            <i class="fas fa-chart-line-up"></i>
+            <i class="fas fa-chart-line"></i>
           </div>
           <div class="step-info">
             <h3>Business Need</h3>
@@ -343,7 +343,7 @@ document.addEventListener('keydown', function(event) {
 <!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
 <div class="step-section step-understanding key-insight-dark" markdown="0">
   <div class="step-header">
-    <h2><i class="fas fa-cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
+  <h2><i class="fas fa-sync" role="img" aria-label="Cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
   </div>
   <div class="understanding-content">
     <div class="insight-card culture-practice">
