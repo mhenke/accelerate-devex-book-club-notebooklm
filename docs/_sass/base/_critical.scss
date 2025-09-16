@@ -1150,7 +1150,11 @@ a {
 .outcome-details {
   margin-top: var(--space-xl);
   padding: var(--space-xl);
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(122, 218, 209, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.05),
+    rgba(122, 218, 209, 0.05)
+  );
   border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: var(--radius-lg);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1190,7 +1194,11 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+        background: linear-gradient(
+          135deg,
+          rgba(16, 185, 129, 0.1),
+          rgba(122, 218, 209, 0.1)
+        );
         border-radius: 50%;
       }
     }
@@ -1418,13 +1426,46 @@ a {
 .meeting.meeting-theme--1 {
   .btn,
   .btn-primary {
-    background: linear-gradient(135deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+    background: linear-gradient(
+      135deg,
+      var(--meeting-1-primary),
+      var(--meeting-1-secondary)
+    );
     box-shadow: var(--elevation-2);
 
     &:hover:not(:disabled) {
-      background: linear-gradient(135deg, var(--meeting-1-accent), var(--meeting-1-primary));
+      background: linear-gradient(
+        135deg,
+        var(--meeting-1-accent),
+        var(--meeting-1-primary)
+      );
       box-shadow: var(--elevation-4);
     }
+  }
+
+  // Meeting 1 icon color pattern: H2 blue, others gray
+  h2:not(.key-question h2) {
+    i, em {
+      color: var(--meeting-1-primary) !important;
+    }
+  }
+
+  // All other icons should be gray (chapter icons, action items, etc.)
+  .chapter-icon,
+  .action-icon,
+  .fa-chart-line,
+  .fa-exclamation-triangle,
+  .fa-users,
+  .fa-rocket,
+  .fa-tachometer-alt,
+  .fa-shield-alt,
+  .fa-heartbeat,
+  .fa-chart-line-up,
+  .fa-arrow-right,
+  .fa-lightbulb,
+  .fa-balance-scale,
+  .fa-chevron-down {
+    color: #6b7280 !important; // Gray color
   }
 }
 
@@ -2453,7 +2494,8 @@ button:focus,
   .media-controls {
     margin: var(--space-md) 0;
 
-    video, audio {
+    video,
+    audio {
       width: 100%;
       border-radius: var(--radius-sm);
     }
@@ -2664,6 +2706,14 @@ button:focus,
   border: 1px solid #e1e8ed;
   position: relative;
   transition: all var(--duration-normal) var(--ease-out);
+  animation: fadeInUp 0.8s ease-out both;
+
+  // Staggered animation delays for premium feel
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  &:nth-child(4) { animation-delay: 0.4s; }
+  &:nth-child(5) { animation-delay: 0.5s; }
 
   &:hover {
     transform: translateY(-2px);
@@ -2671,13 +2721,17 @@ button:focus,
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--meeting-1-primary), var(--meeting-1-accent));
+    background: linear-gradient(
+      90deg,
+      var(--meeting-1-primary),
+      var(--meeting-1-accent)
+    );
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
 
@@ -2709,19 +2763,6 @@ button:focus,
       }
     }
   }
-}
-
-// Special styling for different section types
-.step-problem {
-  border-left: 4px solid var(--meeting-1-primary);
-}
-
-.step-assessment {
-  background: linear-gradient(135deg, white 0%, var(--meeting-1-surface) 100%);
-}
-
-.step-framework {
-  border-left: 4px solid var(--meeting-1-secondary);
 }
 
 // Problem Section Styles
@@ -2828,7 +2869,10 @@ button:focus,
     margin-bottom: var(--space-md);
   }
 
-  .culture-types, .practice-examples, .metrics-list, .business-drivers {
+  .culture-types,
+  .practice-examples,
+  .metrics-list,
+  .business-drivers {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-xs);
@@ -2979,7 +3023,9 @@ button:focus,
   margin-top: var(--space-lg);
 }
 
-.culture-diagnosis, .business-impact, .hope-message {
+.culture-diagnosis,
+.business-impact,
+.hope-message {
   padding: var(--space-md);
   background: #f8fafc;
   border-radius: var(--radius-sm);
@@ -2994,7 +3040,9 @@ button:focus,
     font-size: var(--font-size-sm);
   }
 
-  .culture-pathological, .culture-bureaucratic, .culture-generative {
+  .culture-pathological,
+  .culture-bureaucratic,
+  .culture-generative {
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-xs);
     font-weight: var(--font-weight-medium);
@@ -3279,15 +3327,30 @@ button:focus,
     background: #f3f4f6;
     color: #6b7280;
 
-    // Specific icon colors
-    .fa-chart-line {
-      color: #2563eb;
-    }
-    .fa-exclamation-triangle {
-      color: #d97706;
-    }
-    .fa-users {
-      color: #16a34a;
+    // Default gray icon colors (will be overridden by Meeting 1 specific rules)
+    .fa-chart-line,
+    .fa-exclamation-triangle,
+    .fa-users,
+    .fa-rocket,
+    .fa-book-open,
+    .fa-key,
+    .fa-sitemap,
+    .fa-stethoscope,
+    .fa-cycle,
+    .fa-comments,
+    .fa-check-circle,
+    .fa-video,
+    .fa-headphones,
+    .fa-tachometer-alt,
+    .fa-shield-alt,
+    .fa-heartbeat,
+    .fa-chart-line-up,
+    .fa-arrow-right,
+    .fa-microscope,
+    .fa-lightbulb,
+    .fa-balance-scale,
+    .fa-chevron-down {
+      color: #6b7280; // Gray by default
     }
   }
 
@@ -3353,15 +3416,15 @@ button:focus,
     right: 0;
     bottom: 0;
     background: radial-gradient(
-      circle at 30% 20%,
-      rgba(122, 218, 209, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 70% 80%,
-      rgba(215, 186, 137, 0.08) 0%,
-      transparent 50%
-    );
+        circle at 30% 20%,
+        rgba(122, 218, 209, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 70% 80%,
+        rgba(215, 186, 137, 0.08) 0%,
+        transparent 50%
+      );
     pointer-events: none;
   }
 
@@ -3423,14 +3486,98 @@ button:focus,
   // Hover effect
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(122, 218, 209, 0.4),
-      inset 0 2px 0 rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+      0 0 40px rgba(122, 218, 209, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15);
   }
 }
 
 // Modern Chapters Overview Styles
+// Meeting Header - Consistent with Index Hero Banner Brand Treatment
+.meeting-header {
+  background: linear-gradient(
+    135deg,
+    var(--hero-dark) 0%,
+    var(--card-dark) 100%
+  );
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  position: relative;
+  border-radius: var(--radius-lg);
+  margin: 0 0 var(--space-xl);
+  overflow: hidden;
+  color: white;
+
+  // Enhanced sophisticated pattern matching hero banner
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        rgba(122, 218, 209, 0.15) 2px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(255, 127, 80, 0.1) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 40% 60%,
+        rgba(139, 158, 183, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 60px 60px, 40px 40px, 80px 80px;
+    background-position: 0 0, 30px 30px, 50px 10px;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
+              0 0 30px rgba(122, 218, 209, 0.3),
+              inset 0 2px 0 rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(122, 218, 209, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 0.8s ease-out both;
+
+  .meeting-title {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: white;
+    font-size: clamp(
+      var(--font-size-headline-large),
+      5vw,
+      var(--font-size-display-medium)
+    );
+    font-weight: var(--font-weight-bold);
+    background: linear-gradient(
+      135deg,
+      var(--accent-teal),
+      var(--accent-coral)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+
+  .meeting-subtitle {
+    position: relative;
+    z-index: 1;
+    margin: var(--space-sm) 0 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-lg);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .chapters-overview-modern {
   margin-bottom: var(--space-3xl);
+  animation: fadeInUp 0.8s ease-out 0.1s both;
 
   .overview-header {
     text-align: center;
@@ -3468,16 +3615,18 @@ button:focus,
   .chapter-card.modern {
     position: relative;
     background: white;
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg);
-    border: 1px solid #e5e7eb;
-    transition: all var(--duration-normal) var(--ease-out);
+    border-radius: 12px; // Material Design 3 radius
+    padding: var(--space-xl);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    // Enhanced Material Design elevation
+    box-shadow: var(--elevation-2);
 
     &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      transform: translateY(-3px);
+      box-shadow: var(--elevation-4);
+      border-color: rgba(9, 105, 218, 0.3);
     }
 
     .chapter-accent {

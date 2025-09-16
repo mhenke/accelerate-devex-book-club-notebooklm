@@ -24,9 +24,7 @@ dora_color: "#0969da" # $meeting-1-primary
     <div class="chapter-card modern chapter-1">
       <div class="chapter-accent"></div>
       <div class="chapter-icon">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm2 4v-2H3c0 1.1.89 2 2 2zm13-8V9c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v4h12zm-3 4H9v-2h6v2zm4-8h2V7h-2v2zm0 4h2v-2h-2v2zm0 4h2v-2h-2v2zm-12 4h10v-2H7v2z"/>
-        </svg>
+        <i class="fas fa-rocket"></i>
       </div>
       <div class="chapter-content">
         <h3>Chapter 1: Accelerate</h3>
@@ -42,9 +40,7 @@ dora_color: "#0969da" # $meeting-1-primary
     <div class="chapter-card modern chapter-2">
       <div class="chapter-accent"></div>
       <div class="chapter-icon">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-        </svg>
+        <i class="fas fa-chart-line"></i>
       </div>
       <div class="chapter-content">
         <h3>Chapter 2: Measuring Performance</h3>
@@ -60,9 +56,7 @@ dora_color: "#0969da" # $meeting-1-primary
     <div class="chapter-card modern chapter-3">
       <div class="chapter-accent"></div>
       <div class="chapter-icon">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1 1 0 0018 8h-4a1 1 0 00-.96.76L10.5 16H13v6h7zM12.5 11.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5z"/>
-        </svg>
+        <i class="fas fa-users"></i>
       </div>
       <div class="chapter-content">
         <h3>Chapter 3: Measuring and Changing Culture</h3>
@@ -113,7 +107,7 @@ dora_color: "#0969da" # $meeting-1-primary
       </div>
     </div>
     <div class="pain-signal">
-      <h3><i class="fas fa-heartbeat"></i> The Signal: Deployment Anxiety</h3>
+      <h3>The Signal: Deployment Anxiety</h3>
       <p>That knot in your stomach before deployment isn't personal weakness—it's your organization sending you a message about deeper systemic problems.</p>
     </div>
   </div>
@@ -183,7 +177,7 @@ dora_color: "#0969da" # $meeting-1-primary
     </div>
 
     <div class="evidence-foundation">
-      <h3><i class="fas fa-microscope"></i> Research Foundation</h3>
+      <h3>Research Foundation</h3>
       <p>High performers achieve <strong>46x more frequent deployments</strong> + <strong>440x faster lead time</strong> + <strong>170x faster recovery</strong> because their culture enables better technical practices.</p>
     </div>
 
@@ -203,7 +197,7 @@ dora_color: "#0969da" # $meeting-1-primary
     <!-- Simplified Assessment -->
     <div class="simple-assessment">
       <div class="pain-assessment">
-        <h3><i class="fas fa-heartbeat"></i> Your Deployment Experience</h3>
+        <h3>Your Deployment Experience</h3>
         <div class="pain-scale">
           <label class="pain-option">
             <input type="radio" name="pain-level" value="high">
@@ -221,7 +215,7 @@ dora_color: "#0969da" # $meeting-1-primary
       </div>
 
       <div class="assessment-insight">
-        <h4><i class="fas fa-lightbulb"></i> What This Reveals</h4>
+        <h4>What This Reveals</h4>
         <p>Your deployment experience directly reflects your organizational culture type:</p>
         <ul>
           <li><strong>High anxiety</strong> → Pathological/Bureaucratic culture → Limited competitive advantage</li>
@@ -236,7 +230,7 @@ dora_color: "#0969da" # $meeting-1-primary
 </div>
 
 <!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
-<div class="step-section step-understanding" markdown="0">
+<div class="step-section step-understanding key-insight-dark" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
   </div>
@@ -252,7 +246,7 @@ dora_color: "#0969da" # $meeting-1-primary
       </div>
 
       <div class="insight-explanation">
-        <h4>Why This Matters:</h4>
+        <h4>Why This Matters</h4>
         <ul>
           <li><strong>Deployment pain reflects culture</strong> - but culture can be intentionally improved</li>
           <li><strong>High performers achieve both speed AND stability</strong> - it's not a trade-off</li>
@@ -364,7 +358,7 @@ dora_color: "#0969da" # $meeting-1-primary
   <!-- Meeting Toolkit Sidebar -->
   <aside class="meeting-sidebar">
     <div class="sidebar-section">
-      <h3><i class="fas fa-video"></i> Video</h3>
+      <h3>Video</h3>
       <div class="media-card">
         <h4>Meeting 1: Foundation</h4>
         <p class="media-subtitle">The Myth and the Measurement</p>
@@ -382,7 +376,7 @@ dora_color: "#0969da" # $meeting-1-primary
     </div>
 
     <div class="sidebar-section">
-      <h3><i class="fas fa-headphones"></i> Podcasts</h3>
+      <h3>Podcasts</h3>
 
       <!-- Main Podcast -->
       <div class="media-card">
