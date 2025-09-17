@@ -907,6 +907,18 @@ dora_color: "#0969da" # $meeting-1-primary
   line-height: 1.6;
 }
 
+/* Fix white text issue - ensure proper text color */
+.discussion-content h4,
+.discussion-content li,
+.discussion-content p {
+  color: var(--text-primary) !important;
+}
+
+/* Override any inherited white text from theme */
+.discussion-section .discussion-content * {
+  color: var(--text-primary) !important;
+}
+
 .discussion-content li:last-child {
   margin-bottom: 0;
 }
