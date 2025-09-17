@@ -93,6 +93,7 @@ dora_color: "#0969da" # $meeting-1-primary
         <li><i class="fas fa-check"></i> High performers excel at both</li>
       </ul>
     </div>
+
   </div>
 </div>
 
@@ -143,6 +144,7 @@ dora_color: "#0969da" # $meeting-1-primary
         </ul>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -206,6 +208,7 @@ dora_color: "#0969da" # $meeting-1-primary
         <button class="btn-action">→ Audio & Video</button>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -277,7 +280,7 @@ dora_color: "#0969da" # $meeting-1-primary
 
 /* Speed vs Stability */
 .speed-vs-stability {
-  margin: var(--space-3xl) 0;
+  margin: var(--space-md) 0;
 }
 
 .comparison-layout {

@@ -192,7 +192,6 @@
 @mixin heading-1 {
   @include display-small;
 
-  margin-bottom: var(--space-2xl);
   color: var(--text-dark);
 }
 
@@ -200,24 +199,18 @@
   @include headline-large;
 
   color: var(--header-dark-navy);
-  margin-top: var(--space-3xl);
-  margin-bottom: var(--space-lg);
 }
 
 @mixin heading-3 {
   @include headline-medium;
 
   color: var(--text-dark);
-  margin-top: var(--space-2xl);
-  margin-bottom: var(--space-lg);
 }
 
 @mixin heading-4 {
   @include headline-small;
 
   color: var(--text-medium);
-  margin-top: var(--space-xl);
-  margin-bottom: var(--space-lg);
 }
 
 // Hero and large text styles
@@ -316,18 +309,18 @@
 // =============================================================================
 
 // Card styling with consistent elevation
-@mixin card($elevation: 'md') {
+@mixin card($elevation: "md") {
   background: var(--background-white);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-light);
 
-  @if $elevation == 'sm' {
+  @if $elevation == "sm" {
     box-shadow: var(--shadow-sm);
-  } @else if $elevation == 'md' {
+  } @else if $elevation == "md" {
     box-shadow: var(--shadow-md);
-  } @else if $elevation == 'lg' {
+  } @else if $elevation == "lg" {
     box-shadow: var(--shadow-lg);
-  } @else if $elevation == 'xl' {
+  } @else if $elevation == "xl" {
     box-shadow: var(--shadow-xl);
   }
 }
@@ -753,7 +746,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       padding-top: ($height / $width) * 100%;
     }
