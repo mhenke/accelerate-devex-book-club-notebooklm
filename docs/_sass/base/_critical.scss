@@ -103,7 +103,8 @@ h2 {
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--space-xl);
 
-    i {
+    i,
+    em {
       color: var(--accent-emerald);
       font-size: var(--font-size-xl);
       width: 32px;
@@ -112,6 +113,7 @@ h2 {
       align-items: center;
       justify-content: center;
       background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+      font-style: normal; // Override em italic styling
       border-radius: 50%;
       border: 2px solid rgba(16, 185, 129, 0.2);
       flex-shrink: 0;
@@ -205,6 +207,26 @@ a {
   min-height: 50vh;
 }
 
+// Font Awesome fallback support for Jekyll HTML conversion
+.fas,
+.fa,
+[class^="fa-"],
+[class*=" fa-"] {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "FontAwesome", sans-serif !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  line-height: 1 !important;
+  text-rendering: auto !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
 // AI Attribution Footer - Dark Theme Bottom Anchor
 .ai-attribution {
   background: linear-gradient(
@@ -248,9 +270,18 @@ a {
     position: relative;
     z-index: 1;
 
-    i {
+    i,
+    em {
       color: var(--accent-teal);
       font-size: var(--font-size-2xl);
+      font-style: normal; // Override em italic styling
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 1;
     }
   }
 
@@ -556,6 +587,7 @@ a {
 
     &:hover {
       transform: translateY(-3px);
+
       // Enhanced hover elevation
       box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4),
         0 3px 6px rgba(0, 0, 0, 0.16);
@@ -854,6 +886,7 @@ a {
   h2 {
     text-align: left; // Override center alignment for consistency
   }
+
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -924,7 +957,26 @@ a {
   animation: fadeInUp 0.8s ease-out 0.4s both;
 
   h2 {
-    text-align: left; // Override center alignment for consistency
+    // Inherit standardized h2 styling with icons and left alignment
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    text-align: left;
+
+    i,
+    em {
+      color: var(--accent-emerald);
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-lg);
+      flex-shrink: 0;
+      font-style: normal; // Override em italic styling
+    }
   }
 
   .outcomes-grid {
@@ -951,6 +1003,7 @@ a {
     color: var(--text-dark);
     text-align: center;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
     // Material Design elevation
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border: 1px solid rgba(16, 185, 129, 0.1);
@@ -994,6 +1047,7 @@ a {
       font-size: var(
         --font-size-headline-small
       ); // Much larger icons for prominence
+
       width: 48px;
       height: 48px;
       display: flex;
@@ -1111,9 +1165,53 @@ a {
       text-decoration: none;
       font-weight: var(--font-weight-semibold);
       font-size: var(--font-size-sm);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-md) var(--space-lg);
+      background: white;
+      border-radius: 12px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(16, 185, 129, 0.1);
+      position: relative;
+      overflow: hidden;
+
+      // Add subtle gradient top border
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          var(--accent-emerald),
+          var(--accent-teal)
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
 
       &:hover {
-        text-decoration: underline;
+        transform: translateY(-2px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-color: rgba(16, 185, 129, 0.2);
+        text-decoration: none;
+
+        &::before {
+          opacity: 1;
+        }
+
+        i {
+          transform: scale(1.1);
+          color: var(--accent-emerald);
+        }
+      }
+
+      i {
+        transition: all 0.3s ease;
       }
     }
 
@@ -1208,6 +1306,7 @@ a {
   position: relative;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
+
   // Enhanced Material Design elevation for dark theme
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
   color: white;
