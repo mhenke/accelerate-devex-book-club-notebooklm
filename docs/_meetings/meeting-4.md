@@ -174,33 +174,16 @@ dora_color: '#7c3aed'
 ### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint" markdown="0">
-  <div class="checkpoint-card leadership-assessment" markdown="0">
-    <h4><i class="fas fa-users"></i> Leadership Style Assessment</h4>
-    <p>Rate your current leadership approach across the five transformational dimensions:</p>
-    <div class="assessment-buttons" markdown="0">
-      <label class="assessment-btn command-style">
-        <input type="radio" name="leadership-style" value="command">
-        <span class="radio-mark"></span>
-        Command & Control<br>
-        <span class="style-desc">Direct orders, problem-solving intervention, focus on compliance</span>
-      </label>
-      <label class="assessment-btn mixed-style">
-        <input type="radio" name="leadership-style" value="mixed">
-        <span class="radio-mark"></span>
-        Mixed Approach<br>
-        <span class="style-desc">Some coaching, some directing, situational leadership style</span>
-      </label>
-      <label class="assessment-btn transformational-style">
-        <input type="radio" name="leadership-style" value="transformational">
-        <span class="radio-mark"></span>
-        Transformational Leadership<br>
-        <span class="style-desc">Coaching questions, enabling team autonomy, focus on development</span>
-      </label>
-    </div>
-    <div class="feedback-area" id="leadership-feedback">
-      <p>Select your leadership style to see development opportunities and impact on team performance.</p>
-    </div>
-  </div>
+  {% include simple-checkpoint.html 
+    type="radio"
+    title="Leadership Style Assessment"
+    icon="fas fa-users"
+    question="Rate your current leadership approach across the five transformational dimensions:"
+    options=site.data.checkpoint_answers.leadership_styles
+    radio_name="leadership-style"
+    feedback_id="leadership-feedback"
+    default_feedback="Select your leadership style to see development opportunities and impact on team performance."
+  %}
 
   {% include simple-checkpoint.html 
     type="checkbox"
@@ -213,35 +196,16 @@ dora_color: '#7c3aed'
     default_feedback="Select factors present in your organization to calculate transformation readiness."
   %}
 
-  <div class="checkpoint-card coaching-practice" markdown="0">
-    <h4><i class="fas fa-comments"></i> Coaching Questions Practice</h4>
-    <p>Choose the coaching question you'd most likely ask in challenging situations:</p>
-    <div class="coaching-scenarios" markdown="0">
-      <div class="scenario" markdown="0">
-        <h5>Scenario: Team missed deployment deadline</h5>
-        <div class="coaching-options" markdown="0">
-          <label class="coaching-option">
-            <input type="radio" name="coaching-q1" value="supportive">
-            <span class="radio-mark"></span>
-            "Help me understand what obstacles the team encountered."
-          </label>
-          <label class="coaching-option">
-            <input type="radio" name="coaching-q1" value="directive">
-            <span class="radio-mark"></span>
-            "Why wasn't this delivered on time as promised?"
-          </label>
-          <label class="coaching-option">
-            <input type="radio" name="coaching-q1" value="enabling">
-            <span class="radio-mark"></span>
-            "What support do you need to prevent this in the future?"
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="feedback-area" id="coaching-feedback">
-      <p>Select your approach to see how it aligns with transformational leadership principles.</p>
-    </div>
-  </div>
+  {% include simple-checkpoint.html 
+    type="radio"
+    title="Coaching Questions Practice"
+    icon="fas fa-comments"
+    question="Scenario: Team missed deployment deadline. Choose the coaching question you'd most likely ask:"
+    options=site.data.checkpoint_answers.coaching_assessment
+    radio_name="coaching-q1"
+    feedback_id="coaching-feedback"
+    default_feedback="Select your approach to see how it aligns with transformational leadership principles."
+  %}
 </div>
 
 ### ING Transformation Lessons
@@ -262,160 +226,77 @@ dora_color: '#7c3aed'
 ### Discussion Questions
 
 <div class="discussion-questions-grid" markdown="0">
-  <!-- Transformational Leadership Assessment -->
-  <div class="discussion-section" markdown="0">
-    <div class="discussion-section-header" markdown="0">
-      <i class="fas fa-users"></i>
-      <h4><i class="fas fa-users"></i> Transformational Leadership Assessment</h4>
-    </div>
-    
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-star"></i>
-        <h4><i class="fas fa-star"></i> Leadership Characteristics</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>Which of the five transformational leadership dimensions are strongest/weakest in your organization?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• Vision clarity and communication</span>
-          <span>• Inspirational vs. command-and-control approach</span>
-          <span>• Intellectual stimulation and innovation support</span>
-          <span>• Personal recognition and supportive leadership</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-graduation-cap"></i>
-        <h4><i class="fas fa-graduation-cap"></i> Investment in Learning</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>How does your organization invest in developing team capabilities?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• Training budgets and conference attendance</span>
-          <span>• Hack days and experimentation time allocation</span>
-          <span>• Learning culture and knowledge sharing</span>
-          <span>• Leadership development programs</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ING Model Application -->
-  <div class="discussion-section" markdown="0">
-    <div class="discussion-section-header" markdown="0">
-      <i class="fas fa-sitemap"></i>
-      <h4><i class="fas fa-sitemap"></i> ING Model Application</h4>
-    </div>
-    
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-eye"></i>
-        <h4>Visual Management</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>How might ING's Obeya rooms be adapted to your context?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• Strategic objectives visualization</span>
-          <span>• Performance gaps and problem tracking</span>
-          <span>• Team collaboration spaces</span>
-          <span>• Escalation and resolution workflows</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-puzzle-piece"></i>
-        <h4><i class="fas fa-puzzle-piece"></i> Team Structure</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>Could ING's tribe/squad structure improve your organization?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• Cross-functional team formation</span>
-          <span>• Customer focus vs. functional silos</span>
-          <span>• Knowledge sharing across teams</span>
-          <span>• Organizational change requirements</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-comments"></i>
-        <h4>Communication Flow</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>How does problem escalation work in your teams?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• Current escalation patterns and bottlenecks</span>
-          <span>• "Catchball" communication opportunities</span>
-          <span>• Information flow improvements</span>
-          <span>• Rapid resolution mechanisms</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Transformation Discipline -->
-  <div class="discussion-section" markdown="0">
-    <div class="discussion-section-header" markdown="0">
-      <i class="fas fa-rocket"></i>
-      <h4>Transformation Discipline</h4>
-    </div>
-    
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-question-circle"></i>
-        <h4>Coaching vs Commanding</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>How can leaders shift toward supportive questions rather than direct orders?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• Current leadership communication patterns</span>
-          <span>• Coaching question examples and practice</span>
-          <span>• Psychological safety and trust building</span>
-          <span>• Team autonomy development</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-lightbulb"></i>
-        <h4>"Make It Your Own"</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>How can your team adopt experimentation vs. copying practices?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• ING practices that resonate with your context</span>
-          <span>• Adaptation strategies for your environment</span>
-          <span>• Experimentation culture development</span>
-          <span>• Learning from failure and iteration</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="discussion-card" markdown="0">
-      <div class="discussion-header" markdown="0">
-        <i class="fas fa-chart-bar"></i>
-        <h4>Transformation Readiness</h4>
-      </div>
-      <div class="discussion-content" markdown="0">
-        <p><strong>Does your organization have the discipline and patience for sustainable culture change?</strong></p>
-        <div class="discussion-prompts" markdown="0">
-          <span>• Long-term commitment to learning and improvement</span>
-          <span>• Patience with gradual vs. immediate results</span>
-          <span>• Investment in people development</span>
-          <span>• Biggest obstacles to transformation</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-star" 
+    title="Leadership Characteristics" 
+    question="Which of the five transformational leadership dimensions are strongest/weakest in your organization?" 
+    items="Vision clarity and communication|Inspirational vs. command-and-control approach|Intellectual stimulation and innovation support|Personal recognition and supportive leadership" 
+    theme="primary"
+  %}
+  
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-graduation-cap" 
+    title="Investment in Learning" 
+    question="How does your organization invest in developing team capabilities?" 
+    items="Training budgets and conference attendance|Hack days and experimentation time allocation|Learning culture and knowledge sharing|Leadership development programs" 
+    theme="info"
+  %}
+  
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-eye" 
+    title="Visual Management" 
+    question="How might ING's Obeya rooms be adapted to your context?" 
+    items="Strategic objectives visualization|Performance gaps and problem tracking|Team collaboration spaces|Escalation and resolution workflows" 
+    theme="warning"
+  %}
+  
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-puzzle-piece" 
+    title="Team Structure" 
+    question="Could ING's tribe/squad structure improve your organization?" 
+    items="Cross-functional team formation|Customer focus vs. functional silos|Knowledge sharing across teams|Organizational change requirements" 
+    theme="success"
+  %}
+  
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-comments" 
+    title="Communication Flow" 
+    question="How does problem escalation work in your teams?" 
+    items="Current escalation patterns and bottlenecks|Catchball communication opportunities|Information flow improvements|Rapid resolution mechanisms" 
+    theme="neutral"
+  %}
+  
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-question-circle" 
+    title="Coaching vs Commanding" 
+    question="How can leaders shift toward supportive questions rather than direct orders?" 
+    items="Current leadership communication patterns|Coaching question examples and practice|Psychological safety and trust building|Team autonomy development" 
+    theme="primary"
+  %}
+  
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-lightbulb" 
+    title="Make It Your Own" 
+    question="How can your team adopt experimentation vs. copying practices?" 
+    items="ING practices that resonate with your context|Adaptation strategies for your environment|Experimentation culture development|Learning from failure and iteration" 
+    theme="warning"
+  %}
+  
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-chart-bar" 
+    title="Transformation Readiness" 
+    question="Does your organization have the discipline and patience for sustainable culture change?" 
+    items="Long-term commitment to learning and improvement|Patience with gradual vs. immediate results|Investment in people development|Biggest obstacles to transformation" 
+    theme="info"
+  %}
 </div>
 
 ### Practical Exercises
@@ -457,38 +338,79 @@ dora_color: '#7c3aed'
 - Assess investment in learning and development
 - Plan specific leadership behavior changes
 
-### Action Items and Commitments
+## Action Items for Next Meeting
 
-**Individual Leadership Commitments**
+<div class="action-items-grid" markdown="0">
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-comments"
+    title="Practice coaching instead of commanding"
+    question="Can you ask one supportive question this week instead of giving direct orders?"
+    description="Try coaching questions to develop team capability instead of providing solutions."
+    items="Try \"Help me understand...\" instead of \"Why didn't you...\"|Ask \"What support do you need?\" rather than jumping to solutions|Start with low-stakes situations to build the habit|Observe impact on team engagement and problem-solving"
+    theme="primary"
+  %}
 
-- **Practice coaching instead of commanding:** Can you ask one supportive question this week instead of giving direct orders?
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-graduation-cap"
+    title="Invest in your team's capability development"
+    question="What learning opportunity will you fund or create?"
+    description="Investment in people development drives sustainable transformation."
+    items="Consider training budgets, conference attendance|Plan experimentation time (20% time, hack days)|Set up mentoring programs|Create learning culture and knowledge sharing"
+    theme="info"
+  %}
 
-  - Try "Help me understand..." instead of "Why didn't you..." Ask "What support do you need?" rather than jumping to solutions. Start with low-stakes situations to build the habit.
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-eye"
+    title="Create visual management"
+    question="Can everyone see your team's work and problems at a glance?"
+    description="Make work visible so problems can be solved collectively."
+    items="Set up physical board or digital tool showing current work|Add bottlenecks and escalation paths|Make problems visible at team level|Enable collective problem-solving"
+    theme="warning"
+  %}
 
-- **Invest in your team's capability development:** What learning opportunity will you fund or create?
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-lightbulb"
+    title="Turn failure into learning"
+    question="When did you last discuss a setback without blame?"
+    description="Create psychological safety through learning-focused failure discussions."
+    items="Hold \"failure leads to inquiry\" discussion about recent problem|Ask \"What conditions led to this outcome?\"|Focus on system improvement, not individual fault|Document learning for organizational memory"
+    theme="success"
+  %}
 
-  - Consider training budgets, conference attendance, experimentation time (20% time, hack days), or mentoring programs. Investment in people drives transformation.
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-sitemap"
+    title="Map and improve communication flow"
+    question="Where do problems get stuck in your escalation process?"
+    description="Identify and reduce communication bottlenecks for faster resolution."
+    items="Document who gets involved when problems arise|Identify bottlenecks or unnecessary handoffs|Test one improvement to speed up resolution|Implement catchball communication patterns"
+    theme="neutral"
+  %}
 
-- **Create visual management:** Can everyone see your team's work and problems at a glance?
-  - Set up a physical board or digital tool showing current work, bottlenecks, and escalation paths. Make problems visible so they can be solved collectively.
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-star"
+    title="Analyze leadership gaps"
+    question="Which transformational leadership dimensions need development?"
+    description="Rate current leadership across five dimensions and plan development."
+    items="Rate leadership on vision, communication, support, intellectual stimulation|Identify biggest gaps in leadership capability|Plan specific development activities|Create measurement for leadership improvement"
+    theme="primary"
+  %}
 
-**Team Experiments**
-
-- **Turn failure into learning:** When did you last discuss a setback without blame?
-
-  - Hold a "failure leads to inquiry" discussion about a recent problem. Ask "What conditions led to this outcome?" Focus on system improvement, not individual fault.
-
-- **Map and improve communication flow:** Where do problems get stuck in your escalation process?
-  - Document who gets involved when problems arise. Identify bottlenecks or unnecessary handoffs. Test one improvement to speed up resolution.
-
-**Organizational Assessment**
-
-- **Analyze leadership gaps:** Which transformational leadership dimensions need development?
-
-  - Rate current leadership on vision, communication, support, and intellectual stimulation. Identify the biggest gaps and plan specific development activities.
-
-- **Adapt one ING practice:** What element from their transformation fits your context?
-  - Choose Obeya rooms, catchball communication, or squad structure. Adapt it to your organizational context and plan a small pilot with measurable success criteria.
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-puzzle-piece"
+    title="Adapt one ING practice"
+    question="What element from their transformation fits your context?"
+    description="Choose one practice to pilot and adapt to your organizational context."
+    items="Choose Obeya rooms, catchball communication, or squad structure|Adapt practice to your organizational context|Plan small pilot with measurable success criteria|Document learning for scaling decision"
+    theme="info"
+  %}
+</div>
 
 ### Culminating Reflection
 
@@ -506,24 +428,8 @@ This question embodies the entire Accelerate philosophy:
 ### Related Resources
 
 <div class="resource-grid" markdown="0">
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-users"></i> Leadership & Transformation</h4>
-    <ul>
-      <li><a href="https://dora.dev/capabilities/transformational-leadership/" target="_blank">Transformational Leadership</a></li>
-      <li><a href="https://itrevolution.com/articles/five-leadership-practices/" target="_blank">Leadership Practices</a></li>
-      <li><a href="https://www.lean.org/lexicon-terms/obeya/" target="_blank">Obeya Rooms</a></li>
-      <li><a href="https://continuousdelivery.com/implementing/architecture/" target="_blank">Scaling Agile Architecture</a></li>
-    </ul>
-  </div>
-
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-rocket"></i> Transformation Guides</h4>
-    <ul>
-      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DevOps Capabilities</a></li>
-      <li><a href="https://itrevolution.com/articles/starting-devops-transformation/" target="_blank">Starting DevOps Transformation</a></li>
-      <li><a href="https://www.acceleratebook.com/" target="_blank">Accelerate Book</a></li>
-    </ul>
-  </div>
+  {% include simple-card.html type="resource" icon="fas fa-users" title="Leadership & Transformation" links="Transformational Leadership|https://dora.dev/capabilities/transformational-leadership/|Leadership Practices|https://itrevolution.com/articles/five-leadership-practices/|Obeya Rooms|https://www.lean.org/lexicon-terms/obeya/|Scaling Agile Architecture|https://continuousdelivery.com/implementing/architecture/" theme="primary" %}
+  {% include simple-card.html type="resource" icon="fas fa-rocket" title="Transformation Guides" links="DevOps Capabilities|https://dora.dev/devops-capabilities/|Starting DevOps Transformation|https://itrevolution.com/articles/starting-devops-transformation/|Accelerate Book|https://www.acceleratebook.com/" theme="info" %}
 </div>
 
 ### Next Steps: Continue Your Transformation

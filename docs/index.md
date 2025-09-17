@@ -49,8 +49,8 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
 <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-link">
 <div class="meeting-badge">
-<span class="meeting-number">Meeting 1:</span>
-<span class="meeting-title">Foundation</span>
+<span>Meeting 1:</span>
+<span>Foundation</span>
 </div>
 <div class="meeting-subtitle">The Myth and the Measurement</div>
 </a>
@@ -64,8 +64,8 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
 <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-link">
 <div class="meeting-badge">
-<span class="meeting-number">Meeting 2:</span>
-<span class="meeting-title">Technical Excellence</span>
+<span>Meeting 2:</span>
+<span>Technical Excellence</span>
 </div>
 <div class="meeting-subtitle">Continuous Delivery & Architecture</div>
 </a>
@@ -79,8 +79,8 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
 <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-link">
 <div class="meeting-badge">
-<span class="meeting-number">Meeting 3:</span>
-<span class="meeting-title">Management</span>
+<span>Meeting 3:</span>
+<span>Management</span>
 </div>
 <div class="meeting-subtitle">Product Development & Sustainability</div>
 </a>
@@ -94,8 +94,8 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
 <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-link">
 <div class="meeting-badge">
-<span class="meeting-number">Meeting 4:</span>
-<span class="meeting-title">Leadership</span>
+<span>Meeting 4:</span>
+<span>Leadership</span>
 </div>
 <div class="meeting-subtitle">Transformation & Case Study</div>
 </a>
