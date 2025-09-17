@@ -16,7 +16,7 @@ title: Home
 
 </div>
 
-<div class="welcome-compact" markdown="0">
+<div class="welcome-compact section-card" markdown="0">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
 <div class="welcome-cta">
 <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-primary-large"><i class="fas fa-rocket"></i> Start Learning Now</a>
@@ -24,13 +24,13 @@ title: Home
 </div>
 </div>
 
-<div class="quick-start">
+<div class="quick-start section-card">
 <h2><i class="fas fa-book"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
 
-<div class="what-youll-learn-section" markdown="0">
+<div class="what-youll-learn-section section-card" markdown="0">
 <h2><i class="fas fa-bullseye"></i> What You'll Learn</h2>
 <div class="learning-highlights">
 <div class="highlight-grid">
@@ -97,8 +97,8 @@ title: Home
 </div>
 </div>
 
-<div class="success-metrics-compact" markdown="0">
-<h2><i class="fas fa-target"></i> Success Outcomes</h2>
+<div class="success-metrics-compact section-card" markdown="0">
+<h2><i class="fas fa-bullseye" aria-hidden="true"></i> Success Outcomes</h2>
 <div class="outcomes-grid">
 <div class="outcome-item"><i class="fas fa-chart-line"></i> Master DORA metrics</div>
 <div class="outcome-item"><i class="fas fa-search"></i> Identify bottlenecks</div>
@@ -110,7 +110,7 @@ title: Home
 
 {% include key-question.html %}
 
-<div class="get-started-section" markdown="0">
+<div class="get-started-section section-card" markdown="0">
 <h2><i class="fas fa-rocket"></i> Get Started</h2>
 <div class="get-started-grid">
 <div class="get-started-card primary">
@@ -130,7 +130,7 @@ title: Home
 </div>
 </div>
 
-<div class="required-reading-section" markdown="0">
+<div class="required-reading-section section-card" markdown="0">
 <h2><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
 <div class="book-visual">
