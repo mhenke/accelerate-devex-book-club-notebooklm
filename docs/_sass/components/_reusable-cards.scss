@@ -27,13 +27,13 @@
 .insight-card h4 {
   margin: 0 0 0.75rem 0;
   color: #1e40af;
-  font-size: 1.1rem;
+  font-size: var(--font-size-body-large);
   font-weight: 600;
 }
 
 .insight-card p {
   color: #666;
-  font-size: 0.9rem;
+  font-size: var(--font-size-body-medium);
   margin: 0;
   line-height: 1.4;
 }
@@ -104,7 +104,7 @@
 }
 
 .metric-title {
-  font-size: 1.2rem;
+  font-size: var(--font-size-title-large);
   font-weight: 600;
   color: #1a1a2e;
   margin-bottom: 0.75rem;
@@ -116,14 +116,14 @@
 .metric-description {
   color: #666;
   margin-bottom: 1rem;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body-medium);
   line-height: 1.4;
 }
 
 .metric-goal {
   background: linear-gradient(135deg, #e8f4fd, #b3e5fc);
   padding: 0.5rem 1rem;
-  font-size: 0.85rem;
+  font-size: var(--font-size-body-small);
   font-weight: 500;
   color: #0277bd;
   text-align: center;
@@ -140,7 +140,7 @@
 }
 
 .law-statement blockquote {
-  font-size: 1.2rem;
+  font-size: var(--font-size-title-large);
   font-style: italic;
   color: #134e4a;
   margin: 1rem 0;
@@ -153,7 +153,7 @@
 
 .law-statement cite {
   color: #666;
-  font-size: 0.9rem;
+  font-size: var(--font-size-body-medium);
 }
 
 /* Discussion Card Component */
@@ -188,21 +188,21 @@
 }
 
 .discussion-header i {
-  font-size: 1.2rem;
+  font-size: var(--font-size-title-large);
   color: #1e40af;
 }
 
 .discussion-header h4 {
   margin: 0;
   color: #1e40af;
-  font-size: 1.1rem;
+  font-size: var(--font-size-body-large);
   font-weight: 600;
 }
 
 .discussion-content p {
   color: #374151;
   margin-bottom: 1rem;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body-medium);
 }
 
 .discussion-prompts {
@@ -213,7 +213,7 @@
 
 .discussion-prompts span {
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: var(--font-size-body-medium);
   padding-left: 0.5rem;
 }
 
@@ -228,7 +228,7 @@
 .stats-card h4 {
   margin: 0 0 1rem 0;
   color: #1a1a2e;
-  font-size: 1.3rem;
+  font-size: var(--font-size-title-large);
   font-weight: 600;
 }
 
@@ -241,13 +241,13 @@
 }
 
 .stat-number {
-  font-size: 2.5rem;
+  font-size: var(--font-size-display-medium);
   font-weight: 700;
   color: #1e40af;
 }
 
 .stat-text {
-  font-size: 1.1rem;
+  font-size: var(--font-size-body-large);
   color: #374151;
   font-weight: 500;
 }
@@ -255,7 +255,7 @@
 .stats-card p {
   margin: 0;
   color: #666;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body-medium);
 }
 
 /* Employee Net Promoter Score Component */
@@ -270,7 +270,7 @@
 .enps-card h4 {
   margin: 0 0 1rem 0;
   color: #0c4a6e;
-  font-size: 1.2rem;
+  font-size: var(--font-size-title-large);
   font-weight: 600;
 }
 
@@ -291,13 +291,13 @@
 }
 
 .enps-label {
-  font-size: 0.9rem;
+  font-size: var(--font-size-body-medium);
   color: #64748b;
   font-weight: 500;
 }
 
 .enps-value {
-  font-size: 2rem;
+  font-size: var(--font-size-headline-large);
   font-weight: 700;
   color: #0c4a6e;
 }
@@ -311,13 +311,13 @@
 }
 
 .enps-arrow {
-  font-size: 1.5rem;
+  font-size: var(--font-size-headline-small);
   color: #0ea5e9;
 }
 
 .enps-card p {
   color: #475569;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body-medium);
   margin: 0;
   line-height: 1.4;
 }
@@ -341,10 +341,10 @@
   }
   
   .stat-number {
-    font-size: 2rem;
+    font-size: var(--font-size-headline-large);
   }
   
   .enps-value {
-    font-size: 1.5rem;
+    font-size: var(--font-size-headline-small);
   }
 }
