@@ -195,12 +195,12 @@ a {
 .hero-metrics {
   display: flex;
   justify-content: center;
-  gap: var(--space-xl);
-  margin-top: var(--space-2xl);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
 
   @include mobile-only {
     flex-wrap: wrap;
-    gap: var(--space-lg);
+    gap: var(--spacing-lg);
   }
 }
 
