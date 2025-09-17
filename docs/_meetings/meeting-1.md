@@ -51,7 +51,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
-## Introduction to "Accelerate"
+<h2><i class="fas fa-book-open"></i> Introduction to "Accelerate"</h2>
 
 <div class="accelerate-intro" markdown="0">
   <div class="central-argument">
@@ -70,7 +70,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
-## The Four DORA Metrics - "Powerful New Vocabulary"
+<h2><i class="fas fa-chart-line"></i> The Four DORA Metrics - "Powerful New Vocabulary"</h2>
 
 <div class="dora-dashboard" markdown="0">
   <div class="dashboard-header">
@@ -136,7 +136,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
-## Debunking the Speed vs. Stability Myth
+<h2><i class="fas fa-balance-scale"></i> Debunking the Speed vs. Stability Myth</h2>
 
 <div class="speed-vs-stability" markdown="0">
   <div class="comparison-layout">
@@ -164,7 +164,7 @@ dora_color: "#0969da" # $meeting-1-primary
   <p><strong>Key Research Finding:</strong> High performers achieve <span class="stat-highlight">46x more frequent deployments</span> + <span class="stat-highlight">440x faster lead time</span> + <span class="stat-highlight">170x faster recovery</span></p>
 </div>
 
-## Addressing "Deployment Pain"
+<h2><i class="fas fa-exclamation-triangle"></i> Addressing "Deployment Pain"</h2>
 
 <div class="deployment-pain-section" markdown="0">
   <div class="pain-recognition">
@@ -187,7 +187,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 </div>
 
-## Interactive Assessment
+<h2><i class="fas fa-tasks"></i> Interactive Assessment</h2>
 
 <div class="learning-checkpoint" markdown="0">
   <div class="checkpoint-card">
