@@ -4,6 +4,41 @@
 // They should be inlined in the HTML <head> for optimal performance.
 
 // =============================================================================
+// ANIMATIONS & KEYFRAMES
+// =============================================================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+// =============================================================================
 // RESET AND NORMALIZE - CRITICAL ONLY
 // =============================================================================
 
@@ -442,27 +477,53 @@ a {
     color: white;
     display: inline-flex;
     align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-xl) var(--space-3xl);
-    border-radius: var(--radius-xl);
+    gap: var(--space-lg);
+    padding: var(--space-2xl) var(--space-4xl); // Increased padding for prominence
+    border-radius: 16px; // Material Design 3 radius
     font-weight: var(--font-weight-bold);
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); // Material Design easing
     border: none;
     cursor: pointer;
-    font-size: var(--font-size-xl);
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    font-size: var(--font-size-headline-small); // Larger text for prominence
+    // Enhanced Material Design elevation
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3), 0 1px 3px rgba(0, 0, 0, 0.12);
     transform: translateY(0);
+    position: relative;
+    overflow: hidden;
+
+    // Add subtle shine effect
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+      transition: transform 0.6s;
+      transform: translateX(-100%);
+    }
 
     &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(16, 185, 129, 0.5);
+      transform: translateY(-3px);
+      // Enhanced hover elevation
+      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4), 0 3px 6px rgba(0, 0, 0, 0.16);
       color: white;
       background: linear-gradient(
         135deg,
         var(--hover-emerald),
         var(--accent-emerald)
       );
+
+      &::before {
+        transform: translateX(100%);
+      }
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3), 0 1px 2px rgba(0, 0, 0, 0.12);
     }
 
     i {
@@ -776,6 +837,7 @@ a {
   max-width: 1200px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 // Compact Success Metrics
@@ -788,34 +850,85 @@ a {
   max-width: 900px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 
   .outcomes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
 
     @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr); // 5 columns for better layout
     }
   }
 
   .outcome-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: var(--space-sm);
-    padding: var(--space-md);
+    gap: var(--space-md);
+    padding: var(--space-xl) var(--space-lg);
     background: white;
-    border-radius: var(--radius-lg);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    border-radius: 12px; // Material Design 3 radius
+    font-size: var(--font-size-body-medium);
+    font-weight: var(--font-weight-semibold);
     color: var(--text-dark);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    // Material Design elevation
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(16, 185, 129, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    // Add subtle gradient overlay
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-emerald), var(--accent-teal));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-color: rgba(16, 185, 129, 0.2);
+
+      &::before {
+        opacity: 1;
+      }
+
+      i {
+        transform: scale(1.1);
+        color: var(--accent-teal);
+      }
+    }
 
     i {
       color: var(--accent-emerald);
-      font-size: var(--font-size-base);
-      width: 16px;
-      text-align: center;
+      font-size: var(--font-size-headline-small); // Much larger icons for prominence
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+      border-radius: 50%;
+      transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+      margin-bottom: var(--space-xs);
+    }
+
+    // Metric-style text
+    .metric-text {
+      font-size: var(--font-size-body-large);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.2;
     }
   }
 }
@@ -834,10 +947,10 @@ a {
   .get-started-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-xl);
 
     @media (min-width: 768px) {
-      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-columns: 3fr 2fr; // Streamlined to 2 columns: main content + resources
     }
   }
 
@@ -887,8 +1000,21 @@ a {
 
     p {
       color: var(--text-medium);
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-body-medium);
       margin-bottom: var(--space-md);
+      line-height: var(--line-height-relaxed);
+    }
+
+    .resource-links {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+
+      @media (min-width: 480px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--space-md);
+      }
     }
 
     .get-started-link {
@@ -985,14 +1111,22 @@ a {
 
 .highlight-card {
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: var(--radius-xl);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px; // Material Design 3 radius
   padding: var(--space-2xl);
   text-align: left;
   position: relative;
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  // Material Design 3 elevation level 1
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  &:hover {
+    // Material Design 3 elevation level 2
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-2px);
+    border-color: rgba(0, 0, 0, 0.08);
+  }
 
   // Sophisticated gradient overlay
   &::before {
