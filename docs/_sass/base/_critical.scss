@@ -747,7 +747,7 @@ a {
   }
 
   h2 {
-    color: var(--text-dark);
+    color: var(--text-white);
     display: flex;
     align-items: center;
     gap: var(--space-md);
@@ -769,7 +769,7 @@ a {
   }
 
   p {
-    color: var(--text-medium);
+    color: rgba(255, 255, 255, 0.9);
     font-size: var(--font-size-lg);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-lg);
@@ -779,7 +779,7 @@ a {
     }
 
     strong {
-      color: var(--text-dark);
+      color: var(--text-white);
       font-weight: var(--font-weight-semibold);
     }
   }
@@ -793,12 +793,12 @@ a {
   padding: var(--space-2xl);
   margin: var(--space-3xl) auto;
   max-width: 1200px;
-  box-shadow: 0 4px 16px rgba(255, 127, 80, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 
   h2 {
     text-align: center;
     margin-bottom: var(--space-xl);
-    color: var(--text-dark);
+    color: var(--text-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -807,9 +807,9 @@ a {
     font-weight: var(--font-weight-bold);
 
     i {
-      color: #ff7f50;
+      color: var(--accent-teal);
       font-size: var(--font-size-xl);
-      background: rgba(255, 127, 80, 0.2);
+      background: rgba(122, 218, 209, 0.2);
       border-radius: 50%;
       width: 48px;
       height: 48px;
@@ -832,7 +832,7 @@ a {
   h2 {
     text-align: center;
     margin-bottom: var(--space-xl);
-    color: var(--text-dark);
+    color: var(--text-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -887,14 +887,14 @@ a {
   h2 {
     text-align: center;
     margin-bottom: var(--space-xl);
-    color: var(--text-dark);
+    color: var(--text-white);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--space-md);
 
     i {
-      color: var(--accent-coral);
+      color: var(--accent-teal);
       font-size: var(--font-size-xl);
     }
   }
