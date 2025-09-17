@@ -5,7 +5,7 @@ subtitle: "Management, Product Development &amp; Sustainability"
 week: 5
 chapters: "7-10"
 duration: "1 Hour"
-dora_color: "#D97706"
+dora_color: "#d97706" # $meeting-3-primary
 ---
 
 {% include simple-card.html
