@@ -269,40 +269,6 @@ dora_color: "#0969da" # $meeting-1-primary
   </aside>
 </div>
 
-<!-- Action Items Section - Compact Quick Actions -->
-<section id="action-items" class="action-items-section">
-  <h2><i class="fas fa-clipboard-check"></i> Action Items for Next Meeting</h2>
-
-  <div class="quick-actions-compact" markdown="0">
-    <div class="quick-action-item">
-      <div class="action-icon">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <div class="action-text">
-        <strong>Begin informal tracking of one DORA metric</strong> for your team
-      </div>
-    </div>
-
-    <div class="quick-action-item">
-      <div class="action-icon">
-        <i class="fas fa-exclamation-triangle"></i>
-      </div>
-      <div class="action-text">
-        <strong>Identify your biggest deployment pain point</strong> and document it
-      </div>
-    </div>
-
-    <div class="quick-action-item">
-      <div class="action-icon">
-        <i class="fas fa-users"></i>
-      </div>
-      <div class="action-text">
-        <strong>Observe examples of pathological, bureaucratic, or generative culture</strong> behaviors
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Consolidated Discussion Section -->
 <section id="discussion" class="discussion-section">
   <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
@@ -372,6 +338,40 @@ dora_color: "#0969da" # $meeting-1-primary
         </ul>
       </div>
     </details>
+  </div>
+</section>
+
+<!-- Action Items Section - Final Section -->
+<section id="action-items" class="action-items-section">
+  <h2><i class="fas fa-clipboard-check"></i> Action Items for Next Meeting</h2>
+
+  <div class="quick-actions-compact" markdown="0">
+    <div class="quick-action-item">
+      <div class="action-icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <div class="action-text">
+        <strong>Begin informal tracking of one DORA metric</strong> for your team
+      </div>
+    </div>
+
+    <div class="quick-action-item">
+      <div class="action-icon">
+        <i class="fas fa-exclamation-triangle"></i>
+      </div>
+      <div class="action-text">
+        <strong>Identify your biggest deployment pain point</strong> and document it
+      </div>
+    </div>
+
+    <div class="quick-action-item">
+      <div class="action-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <div class="action-text">
+        <strong>Observe examples of pathological, bureaucratic, or generative culture</strong> behaviors
+      </div>
+    </div>
   </div>
 </section>
 
