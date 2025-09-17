@@ -503,7 +503,7 @@ h3 {
 /* Research Finding Box */
 .research-finding {
   background: linear-gradient(135deg, var(--meeting-4-light), #e0e7ff);
-  border-radius: 16px;
+  
   padding: 1.5rem;
   margin: 2rem 0;
   border: 2px solid var(--meeting-4-primary);
@@ -533,7 +533,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
-  border-radius: 16px;
+  
   border: 2px solid var(--meeting-4-primary);
 }
 
@@ -581,7 +581,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
-  border-radius: 16px;
+  
   border: 2px solid var(--meeting-4-primary);
 }
 
@@ -602,7 +602,7 @@ h3 {
 
 .quote-box {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
+  
   padding: 1rem;
   border-left: 4px solid var(--meeting-4-primary);
 }
@@ -632,7 +632,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
-  border-radius: 16px;
+  
   border: 2px solid var(--meeting-4-primary);
 }
 
@@ -686,13 +686,13 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
-  border-radius: 20px;
+  
   border: 2px solid var(--meeting-4-primary);
 }
 
 .checkpoint-card {
   background: white;
-  border-radius: 16px;
+  
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -915,7 +915,7 @@ h3 {
   width: 24px;
   height: 24px;
   border: 2px solid var(--meeting-4-primary);
-  border-radius: 4px;
+  
   background: white;
   transition: all 0.3s ease;
   flex-shrink: 0;
@@ -991,7 +991,7 @@ h3 {
   font-weight: 600;
   padding: 0.75rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #e0e7ff);
-  border-radius: 8px;
+  
   border-left: 4px solid var(--meeting-4-primary);
 }
 
@@ -1388,7 +1388,7 @@ h3 {
   margin-bottom: 1.5rem;
   padding: 1rem;
   background: white;
-  border-radius: 8px;
+  
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 }

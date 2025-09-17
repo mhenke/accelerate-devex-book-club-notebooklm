@@ -64,8 +64,8 @@ Parameters:
         {% for item in items_array %}
           {% if include.type == "action" %}
             <div class="action-item">
-              <input type="checkbox" id="item-{{ forloop.index }}">
-              <label for="item-{{ forloop.index }}">{{ item | strip }}</label>
+              <i class="fas fa-check-circle action-icon"></i>
+              <span class="action-text">{{ item | strip }}</span>
             </div>
           {% else %}
             <div class="list-item">{{ item | strip }}</div>
@@ -104,7 +104,6 @@ Parameters:
 .simple-card {
   background: var(--background-white);
   border: 1px solid var(--border-light);
-  border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow-light);
@@ -184,7 +183,6 @@ Parameters:
   background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
   color: #374151;
   padding: 0.75rem;
-  border-radius: 8px;
   font-size: 0.875rem;
   margin-top: 1rem;
   border: 1px solid #d1d5db;
@@ -196,11 +194,19 @@ Parameters:
 }
 
 .list-item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 1rem;
   border-left: 2px solid #e5e7eb;
-  padding-left: 1rem;
   margin-bottom: 0.5rem;
   color: #4b5563;
+  position: relative;
+}
+
+.list-item::before {
+  content: '•';
+  color: #6b7280;
+  font-weight: bold;
+  position: absolute;
+  left: 0.5rem;
 }
 
 .action-item {
@@ -209,7 +215,6 @@ Parameters:
   gap: 0.75rem;
   padding: 0.875rem;
   background: var(--background-card);
-  border-radius: 8px;
   margin-bottom: 0.5rem;
   border: 1px solid var(--border-light);
   transition: all 0.2s ease;
@@ -219,55 +224,22 @@ Parameters:
 .action-item:hover {
   border-color: var(--border-focus);
   background: var(--background-white);
+  transform: translateY(-1px);
 }
 
-.action-item input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  margin: 0;
-  appearance: none;
-  border: 2px solid var(--border-medium);
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-  background: var(--background-white);
-  transition: all 0.2s ease;
+.action-icon {
+  color: var(--meeting-2-color);
+  font-size: 1.1rem;
   flex-shrink: 0;
+  margin-top: 0.1rem;
 }
 
-.action-item input[type="checkbox"]:checked {
-  background: var(--meeting-2-color);
-  border-color: var(--meeting-2-color);
-}
-
-.action-item input[type="checkbox"]:checked::after {
-  content: '✓';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.action-item label {
-  cursor: pointer;
+.action-text {
   color: var(--text-dark);
   font-weight: 500;
   font-family: var(--font-ui);
   line-height: 1.4;
-  margin-top: -1px;
-}
-
-.action-item:has(input:checked) {
-  opacity: 0.7;
-  background: var(--background-light);
-}
-
-.action-item:has(input:checked) label {
-  text-decoration: line-through;
-  color: var(--text-medium);
+  flex: 1;
 }
 
 /* Links */
@@ -301,14 +273,12 @@ Parameters:
 /* Media */
 .media-container {
   margin: 1rem 0;
-  border-radius: 8px;
   overflow: hidden;
 }
 
 .media-container video,
 .media-container audio {
   width: 100%;
-  border-radius: 8px;
 }
 
 /* Attribution */
@@ -377,16 +347,14 @@ Parameters:
     gap: 0.625rem;
   }
   
-  .action-item input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+  .action-icon {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .simple-card {
     padding: 1rem;
-    border-radius: 8px;
   }
   
   .card-header {
