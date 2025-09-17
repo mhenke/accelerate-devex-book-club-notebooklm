@@ -1,3 +1,18 @@
+// Force blue theme for .btn-primary-large
+.btn-primary-large {
+  background: linear-gradient(135deg, var(--primary-blue), #1976d2) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2) !important;
+  transition: background 0.3s, box-shadow 0.3s !important;
+}
+
+.btn-primary-large:hover,
+.btn-primary-large:focus {
+  background: linear-gradient(135deg, #1976d2, var(--primary-blue)) !important;
+  color: #fff !important;
+  box-shadow: 0 6px 16px rgba(33, 150, 243, 0.3) !important;
+}
 // Base Styles - Critical Rendering Path
 // =====================================
 // These styles are critical for above-the-fold content rendering.
@@ -597,7 +612,8 @@ a {
     &:hover,
     &:focus {
       transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(33, 150, 243, 0.4), 0 3px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 6px 16px rgba(33, 150, 243, 0.4),
+        0 3px 6px rgba(0, 0, 0, 0.16);
       color: white;
       background: linear-gradient(135deg, var(--primary-blue), #1976d2);
       &::before {
