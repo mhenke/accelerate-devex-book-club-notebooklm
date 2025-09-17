@@ -1,3 +1,18 @@
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
 // Force blue theme for .btn-primary-large
 .btn-primary-large {
   background: linear-gradient(135deg, var(--primary-blue), #1976d2) !important;
@@ -13,6 +28,7 @@
   color: #fff !important;
   box-shadow: 0 6px 16px rgba(33, 150, 243, 0.3) !important;
 }
+
 // Base Styles - Critical Rendering Path
 // =====================================
 // These styles are critical for above-the-fold content rendering.
@@ -1098,6 +1114,117 @@ a {
       font-size: var(--font-size-body-large);
       font-weight: var(--font-weight-bold);
       line-height: 1.2;
+    }
+
+    // Interactive enhancements
+    cursor: pointer;
+
+    .outcome-indicator {
+      position: absolute;
+      top: var(--space-sm);
+      right: var(--space-sm);
+      opacity: 0.6;
+      transition: all 0.3s ease;
+      font-size: var(--font-size-body-small);
+      color: var(--accent-emerald);
+    }
+
+    &:hover .outcome-indicator {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    &.active {
+      border-color: var(--accent-emerald);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+
+      .outcome-indicator {
+        transform: rotate(180deg);
+        color: var(--accent-teal);
+      }
+    }
+  }
+}
+
+// Interactive Outcome Details Section
+.outcome-details {
+  margin-top: var(--space-xl);
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(122, 218, 209, 0.05));
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-lg);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+  overflow: hidden;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 1000px;
+  }
+
+  .outcome-detail {
+    display: none;
+    animation: fadeInUp 0.5s ease forwards;
+
+    &.active {
+      display: block;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      color: var(--text-dark);
+      margin-bottom: var(--space-lg);
+      font-size: var(--font-size-title-large);
+      font-weight: var(--font-weight-bold);
+
+      i {
+        color: var(--accent-emerald);
+        font-size: var(--font-size-headline-small);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+        border-radius: 50%;
+      }
+    }
+
+    p {
+      font-size: var(--font-size-body-large);
+      line-height: 1.6;
+      color: var(--text-medium);
+      margin-bottom: var(--space-lg);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+        padding-left: var(--space-xl);
+        margin-bottom: var(--space-md);
+        font-size: var(--font-size-body-medium);
+        line-height: 1.5;
+        color: var(--text-medium);
+
+        &::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: var(--accent-emerald);
+          font-weight: bold;
+          font-size: var(--font-size-body-large);
+        }
+      }
     }
   }
 }
