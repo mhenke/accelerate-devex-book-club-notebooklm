@@ -1,0 +1,147 @@
+Perfect 👍 Thanks for the second list. I’ll keep it separate (not merged with your first one) and organize it the same way: grouped, ranked by priority (P0 = do now, P1 = soon, P2 = polish), with concrete next steps and snippets you can actually apply.
+
+---
+
+# **Meetings / Prompts / Resources Consistency & Components**
+
+## **P0 — High Priority (Do first)**
+
+### 1. Add consistent header + navigation to Meetings, Prompts, Resources pages
+
+* **Goal:** Align with rest of site (shared header, navigation).
+* **Action:** Ensure `_includes/header.html` (or equivalent partial) is included at top of these pages.
+* Add navigation (basic top nav or sidebar). Example:
+
+```html
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="nav-logo">Accelerate DevEx</a>
+    <ul class="nav-links">
+      <li><a href="/meetings/">Meetings</a></li>
+      <li><a href="/resources/">Resources</a></li>
+      <li><a href="/prompts/">Prompts</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+### 2. Grid layouts for sections
+
+* **What Continuous Delivery Practices**, **You’ll Learn**, and **Resources**:
+
+  * 4 per row (desktop), 2 per row (tablet), 1 per row (mobile).
+* **Discussion Questions** & **Action Items for Next Meeting**:
+
+  * 3 per row (desktop), 1 per row (mobile).
+
+Example CSS (mobile-first):
+
+```css
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.grid-4 { grid-template-columns: 1fr; }
+@media (min-width: 640px) { .grid-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .grid-4 { grid-template-columns: repeat(4, 1fr); } }
+
+.grid-3 { grid-template-columns: 1fr; }
+@media (min-width: 1024px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+```
+
+### 3. Fix Kramdown Jekyll 2-space issue (code tags)
+
+* Problem: Two leading spaces in Markdown trigger `<pre><code>` in Kramdown.
+* **Action:**
+
+  * Search for lines starting with 2 spaces in `meetings.md`, `prompts.md`, `resources.md` etc.
+  * Remove leading spaces unless code block is intended.
+  * Config option if needed in `_config.yml`:
+
+    ```yml
+    kramdown:
+      parse_block_html: true
+      hard_wrap: false
+    ```
+
+---
+
+## **P1 — Medium Priority**
+
+### 4. Audit & Standardize Interactive Learning Checkpoint cards
+
+* **Current issues:**
+
+  * Some cards show colors before selection (undesired).
+  * Culture Assessment: radio text turns red/yellow/green (good). Feedback should also change color (needs syncing).
+  * Security Integration card is liked → keep that pattern.
+* **Action:**
+
+  * Audit all `checkpoint-card-*` variants across meetings 1 & 2.
+  * Encapsulate behavior: color logic comes from parameters (`data-low-color`, `data-med-color`, `data-high-color`).
+  * Remove complexity/custom styling; make reusable with a single API:
+
+    ```html
+    <div class="checkpoint-card culture-assessment"
+         data-low-color="#dc2626"
+         data-med-color="#fbbf24"
+         data-high-color="#16a34a">
+    </div>
+    ```
+
+### 5. Verify encapsulation across reusable components
+
+* Review **insight-card**, **metric-card**, **discussion-card**, **stats-card**, **law-statement**, etc.
+* Ensure props passed in (`data-*` attributes, YAML front matter, or include parameters).
+* Simplify overrides (remove unnecessary custom CSS for each variant).
+
+---
+
+## **P2 — Low Priority / Polish**
+
+### 6. Apply Material Design patterns to all site pages
+
+* **Pages to update with consistent Material Design:**
+
+  * `docs/_site/index.html`
+  * `docs/_site/resources.html`
+  * `docs/_site/transformation-complete/index.html`
+  * `docs/_site/meetings.html`
+  * `docs/_site/offline.html`
+  * `docs/_site/prompts.html`
+  * `docs/_site/404.html`
+  * `docs/_site/feeds/index.html`
+  * `docs/_site/meetings/meeting-1/index.html`
+  * `docs/_site/meetings/meeting-2/index.html`
+  * `docs/_site/meetings/meeting-3/index.html`
+  * `docs/_site/meetings/meeting-4/index.html`
+
+**Patterns to apply:**
+
+* Mobile-first responsiveness.
+* Consistent typography (Roboto, 16px base).
+* Elevation (shadows for clickable cards).
+* Unified color tokens per meeting theme.
+* Whitespace & spacing scale.
+
+### 7. Remove `<pre>` tags where not needed
+
+* Search for stray `<pre>` wrappers (often from markdown).
+* Replace with `<p>` or `<code>` inline where intended.
+
+---
+
+# **QA / Verification checklist**
+
+✅ Header + nav present on all pages.
+✅ Grids collapse correctly at mobile & tablet breakpoints.
+✅ No `<pre><code>` blocks on normal text.
+✅ All checkpoint-cards follow same reusable template.
+✅ Feedback areas change colors consistently.
+✅ All site pages follow Material Design tokens.
+
+---
+
+⚡ Quick next action I can do for you:
+Would you like me to **draft the reusable `checkpoint-card` component refactor** (with color props, encapsulation, and feedback sync) — since that’s one of the trickiest pieces — or should I **write the grid CSS snippets for “What You’ll Learn” & “Discussion Questions”** first?
+

@@ -1,76 +1,392 @@
-// Button Component - Touch Target Compliant
-// =========================================
-// Reusable button styles with WCAG 2.1 AA compliance
+// Material Design Button System
+// ============================
+// Complete Material Design 3 button implementation with proper elevation and states
 
-.btn {
-  @include touch-target-44px;
-  @include button-primary;
+// =============================================================================
+// BASE BUTTON STYLES
+// =============================================================================
 
+%btn-base {
+  @include label-large; // Material Design typography
+
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-medium);
-  text-decoration: none;
+  min-height: var(--touch-target-min); // 44px touch target
+  padding: 10px 24px;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--radius-full); // Material Design full radius
   cursor: pointer;
-  transition: all 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background-color var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out);
 
-  // Ensure consistent spacing
-  margin: 2px;
+  // Prevent user selection
+  user-select: none;
 
-  // Focus states
+  // Accessibility
   &:focus-visible {
-    outline: 2px solid var(--accent-coral);
-    outline-offset: 2px;
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: var(--focus-ring-offset);
+  }
+
+  // Disabled state
+  &:disabled,
+  &.disabled {
+    opacity: 0.38;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  // Icon support
+  .btn__icon {
+    width: 18px;
+    height: 18px;
+
+    &--leading {
+      margin-right: 8px;
+    }
+
+    &--trailing {
+      margin-left: 8px;
+    }
   }
 }
 
-// Button variants
-.btn--primary {
-  background: var(--accent-coral);
-  color: var(--text-white);
+// =============================================================================
+// MATERIAL DESIGN BUTTON VARIANTS
+// =============================================================================
 
-  &:hover,
-  &:focus {
-    background: var(--hover-coral);
+// Filled Button (Primary)
+.btn,
+.btn--filled {
+  @extend %btn-base;
+
+  background: var(--meeting-1-primary);
+  color: white;
+  box-shadow: var(--elevation-1);
+
+  &:hover {
+    box-shadow: var(--elevation-2);
+    background: var(--meeting-1-secondary);
+  }
+
+  &:active {
+    box-shadow: var(--elevation-1);
   }
 }
 
-.btn--secondary {
-  background: var(--accent-teal);
-  color: var(--text-white);
+// Filled Tonal Button
+.btn--tonal {
+  @extend %btn-base;
 
-  &:hover,
-  &:focus {
-    background: var(--hover-teal);
+  background: var(--meeting-1-surface);
+  color: var(--meeting-1-on-surface);
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: var(--elevation-1);
+    background: var(--meeting-1-accent);
+  }
+
+  &:active {
+    box-shadow: none;
   }
 }
 
-.btn--outline {
+// Outlined Button
+.btn--outlined {
+  @extend %btn-base;
+
   background: transparent;
-  color: var(--accent-coral);
-  border: 2px solid var(--accent-coral);
+  color: var(--meeting-1-primary);
+  border: 1px solid var(--meeting-1-primary);
+  box-shadow: none;
 
-  &:hover,
-  &:focus {
-    background: var(--accent-coral);
-    color: var(--text-white);
+  &:hover {
+    background: rgba(var(--meeting-1-primary), 0.08);
+    box-shadow: none;
+  }
+
+  &:active {
+    background: rgba(var(--meeting-1-primary), 0.12);
   }
 }
 
-// Size variants
-.btn--large {
-  padding: 12px 24px;
-  font-size: var(--font-size-lg);
-  min-height: 48px;
-  min-width: 48px;
+// Text Button
+.btn--text {
+  @extend %btn-base;
+
+  background: transparent;
+  color: var(--meeting-1-primary);
+  box-shadow: none;
+  padding: 10px 12px;
+
+  &:hover {
+    background: rgba(var(--meeting-1-primary), 0.08);
+  }
+
+  &:active {
+    background: rgba(var(--meeting-1-primary), 0.12);
+  }
 }
+
+// =============================================================================
+// FLOATING ACTION BUTTON (FAB)
+// =============================================================================
+
+.btn--fab {
+  @extend %btn-base;
+
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--meeting-1-primary);
+  color: white;
+  box-shadow: var(--elevation-3);
+
+  &:hover {
+    box-shadow: var(--elevation-4);
+  }
+
+  &:active {
+    box-shadow: var(--elevation-3);
+  }
+
+  // Small FAB
+  &.btn--fab-small {
+    width: 40px;
+    height: 40px;
+  }
+
+  // Large FAB
+  &.btn--fab-large {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+// =============================================================================
+// MEETING-SPECIFIC BUTTON THEMES
+// =============================================================================
+
+// Meeting theme variations
+.btn--meeting-1 {
+  --btn-primary: var(--meeting-1-primary);
+  --btn-secondary: var(--meeting-1-secondary);
+  --btn-surface: var(--meeting-1-surface);
+  --btn-on-surface: var(--meeting-1-on-surface);
+}
+
+.btn--meeting-2 {
+  --btn-primary: var(--meeting-2-primary);
+  --btn-secondary: var(--meeting-2-secondary);
+  --btn-surface: var(--meeting-2-surface);
+  --btn-on-surface: var(--meeting-2-on-surface);
+}
+
+.btn--meeting-3 {
+  --btn-primary: var(--meeting-3-primary);
+  --btn-secondary: var(--meeting-3-secondary);
+  --btn-surface: var(--meeting-3-surface);
+  --btn-on-surface: var(--meeting-3-on-surface);
+}
+
+.btn--meeting-4 {
+  --btn-primary: var(--meeting-4-primary);
+  --btn-secondary: var(--meeting-4-secondary);
+  --btn-surface: var(--meeting-4-surface);
+  --btn-on-surface: var(--meeting-4-on-surface);
+}
+
+// Apply meeting theme colors
+[class*="btn--meeting"] {
+  &.btn,
+  &.btn--filled {
+    background: var(--btn-primary);
+
+    &:hover {
+      background: var(--btn-secondary);
+    }
+  }
+
+  &.btn--tonal {
+    background: var(--btn-surface);
+    color: var(--btn-on-surface);
+
+    &:hover {
+      background: var(--btn-primary);
+      color: white;
+    }
+  }
+
+  &.btn--outlined,
+  &.btn--text {
+    color: var(--btn-primary);
+    border-color: var(--btn-primary);
+
+    &:hover {
+      background: rgba(var(--btn-primary), 0.08);
+    }
+  }
+}
+
+// =============================================================================
+// BUTTON SIZES
+// =============================================================================
 
 .btn--small {
-  padding: 8px 16px;
-  font-size: var(--font-size-sm);
-  min-height: 44px;
-  min-width: 44px;
+  min-height: 32px;
+  padding: 6px 16px;
+
+  @include label-medium;
+}
+
+.btn--large {
+  min-height: 48px;
+  padding: 14px 32px;
+
+  @include label-large;
+
+  font-size: var(--font-size-title-medium);
+}
+
+// =============================================================================
+// BUTTON GROUPS
+// =============================================================================
+
+.btn-group {
+  display: inline-flex;
+  gap: 8px;
+
+  &.btn-group--vertical {
+    flex-direction: column;
+  }
+
+  &.btn-group--attached {
+    gap: 0;
+
+    .btn {
+      border-radius: 0;
+
+      &:first-child {
+        border-radius: var(--radius-full) 0 0 var(--radius-full);
+      }
+
+      &:last-child {
+        border-radius: 0 var(--radius-full) var(--radius-full) 0;
+      }
+
+      &:only-child {
+        border-radius: var(--radius-full);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// BUTTON STATES
+// =============================================================================
+
+// Loading state
+.btn--loading {
+  .btn__text {
+    opacity: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: btn-loading 0.8s linear infinite;
+  }
+}
+
+@keyframes btn-loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Success state
+.btn--success {
+  background: var(--success-green);
+
+  &:hover {
+    background: #388e3c;
+  }
+}
+
+// Warning state
+.btn--warning {
+  background: var(--warning-yellow);
+  color: var(--text-dark);
+
+  &:hover {
+    background: #f9a825;
+  }
+}
+
+// Danger state
+.btn--danger {
+  background: var(--danger-red);
+
+  &:hover {
+    background: #d32f2f;
+  }
+}
+
+// =============================================================================
+// RESPONSIVE BUTTON BEHAVIOR
+// =============================================================================
+
+@media (max-width: 480px) {
+  .btn--responsive {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-group--responsive {
+    width: 100%;
+
+    .btn {
+      flex: 1;
+    }
+  }
+}
+
+// =============================================================================
+// ACCESSIBILITY ENHANCEMENTS
+// =============================================================================
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .btn {
+    border: 2px solid currentColor;
+  }
+
+  .btn--text,
+  .btn--outlined {
+    border-width: 3px;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+
+  .btn--loading::after {
+    animation: none;
+  }
 }

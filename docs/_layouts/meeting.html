@@ -5,8 +5,7 @@ layout: default
 <article class="meeting">
   <!-- Modern Hero Banner with DORA Color -->
   <div
-    class="meeting-hero"
-    style="background: linear-gradient(135deg, {{ page.dora_color | default: '#2196F3' }} 0%, {{ page.dora_color | default: '#2196F3' | append: '80' }} 100%)"
+    class="meeting-hero meeting-theme--{{ page.week | default: '1' }}"
   >
     <div class="meeting-hero-content">
       <div class="meeting-meta-badge">

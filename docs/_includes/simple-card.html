@@ -64,7 +64,7 @@ Parameters:
         {% for item in items_array %}
           {% if include.type == "action" %}
             <div class="action-item">
-              <i class="fas fa-check-circle action-icon"></i>
+              <i class="fas fa-circle action-icon"></i>
               <span class="action-text">{{ item | strip }}</span>
             </div>
           {% elsif include.type == "discussion" %}
@@ -89,7 +89,7 @@ Parameters:
           {% assign url_index = title_index | plus: 1 %}
           {% if links_array[title_index] and links_array[url_index] %}
             <a href="{{ links_array[url_index] | strip }}" target="_blank" rel="noopener">
-              {{ links_array[title_index] | strip }} <i class="fas fa-external-link-alt"></i>
+              <i class="fas fa-circle resource-bullet"></i>{{ links_array[title_index] | strip }} <i class="fas fa-external-link-alt"></i>
             </a>
           {% endif %}
         {% endfor %}
@@ -293,6 +293,14 @@ Parameters:
   font-size: 0.75rem;
   margin-left: 0.25rem;
   opacity: 0.7;
+}
+
+.resource-bullet {
+  font-size: 0.5rem !important;
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+  color: #6b7280 !important;
+  opacity: 1 !important;
 }
 
 /* Media */
