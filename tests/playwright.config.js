@@ -78,9 +78,13 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
+  // Fix for GitHub Actions Percy/Playwright port conflict:
+  // Always reuse the server started by the workflow, never start a new one.
+  // This prevents port 4000 conflicts and ensures Percy snapshots run.
   webServer: {
     command: 'cd ../docs && bundle exec jekyll serve --port 4000',
     port: 4000,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: true,
+    timeout: 120 * 1000, // Wait up to 2 minutes for server to be ready
   },
 });
