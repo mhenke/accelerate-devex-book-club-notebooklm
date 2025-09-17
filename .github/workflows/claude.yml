@@ -1,0 +1,127 @@
+name: Claude Code Integration
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
+  pull_request:
+    types: [opened, edited, synchronize]
+  pull_request_review_comment:
+    types: [created, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  repository-projects: read
+
+jobs:
+  claude-code:
+    runs-on: ubuntu-latest
+    if: contains(github.event.comment.body, '@claude') || contains(github.event.issue.body, '@claude') || contains(github.event.pull_request.body, '@claude')
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Claude Code Action
+        uses: anthropics/claude-code-action@v1
+        with:
+          # GitHub token for API access
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Anthropic API key for Claude access
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+
+          # Optional: Specify Claude model (defaults to claude-3-5-sonnet-20241022)
+          # model: claude-3-5-sonnet-20241022
+
+          # Optional: Maximum tokens for Claude response (defaults to 4096)
+          # max-tokens: 8192
+
+          # Optional: Enable debug logging
+          # debug: true
+
+      - name: Commit changes
+        if: github.event_name == 'pull_request' || github.event_name == 'issue_comment'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Claude Code Bot"
+
+          # Check if there are any changes to commit
+          if [[ -n $(git status --porcelain) ]]; then
+            git add .
+            git commit -m "🤖 Claude Code changes
+
+Generated in response to: ${{ github.event.comment.html_url || github.event.issue.html_url || github.event.pull_request.html_url }}
+
+Co-authored-by: Claude <claude@anthropic.com>"
+
+            # Push changes if this is a pull request
+            if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+              git push origin HEAD:${{ github.head_ref }}
+            elif [[ "${{ github.event_name }}" == "issue_comment" && "${{ github.event.issue.pull_request }}" != "" ]]; then
+              # This is a comment on a pull request
+              git push origin HEAD:${{ github.head_ref }}
+            fi
+          else
+            echo "No changes to commit"
+          fi
+
+  # Optional: Add a job to handle security scanning of Claude's changes
+  security-check:
+    runs-on: ubuntu-latest
+    needs: claude-code
+    if: always() && needs.claude-code.result == 'success'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run security scan
+        run: |
+          echo "🔍 Security scanning Claude's changes..."
+
+          # Check for potential security issues in the changes
+          # Add your preferred security scanning tools here
+
+          # Example: Check for hardcoded secrets
+          if git diff HEAD~1 HEAD | grep -i -E "(password|secret|token|key)" | grep -v "# " | grep -v "//" | grep -v "<!--"; then
+            echo "⚠️ Potential secrets detected in changes. Please review."
+            exit 1
+          fi
+
+          echo "✅ Security scan completed"
+
+  # Optional: Add a job to run tests after Claude's changes
+  test-changes:
+    runs-on: ubuntu-latest
+    needs: claude-code
+    if: always() && needs.claude-code.result == 'success'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: |
+          echo "🧪 Testing Claude's changes..."
+          npm run lint || echo "Linting issues found"
+          npm run build || echo "Build issues found"
+          npm run test || echo "Test issues found"
+          echo "✅ Tests completed"

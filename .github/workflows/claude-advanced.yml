@@ -1,0 +1,182 @@
+name: Claude Code Advanced Features
+
+on:
+  schedule:
+    # Run daily code health checks at 9 AM UTC
+    - cron: '0 9 * * *'
+
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Task for Claude to perform'
+        required: true
+        type: choice
+        options:
+          - 'code-review'
+          - 'security-audit'
+          - 'performance-analysis'
+          - 'documentation-update'
+          - 'dependency-update'
+        default: 'code-review'
+
+      scope:
+        description: 'Scope of analysis'
+        required: false
+        default: 'entire-repo'
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  security-events: write
+  actions: read
+
+jobs:
+  claude-health-check:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run automated health check
+        run: |
+          echo "🏥 Running daily health check..."
+
+          # Collect metrics
+          TOTAL_FILES=$(find . -name "*.js" -o -name "*.ts" -o -name "*.scss" -o -name "*.css" | wc -l)
+          TOTAL_LINES=$(find . -name "*.js" -o -name "*.ts" -o -name "*.scss" -o -name "*.css" -exec wc -l {} + | tail -n 1 | awk '{print $1}')
+
+          echo "📊 Codebase Metrics:"
+          echo "- Total files: $TOTAL_FILES"
+          echo "- Total lines: $TOTAL_LINES"
+
+          # Run linting and capture results
+          npm run lint > lint-results.txt 2>&1 || true
+          npm run build > build-results.txt 2>&1 || true
+
+      - name: Claude Code Daily Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          custom-prompt: |
+            Please perform a daily health check of this codebase:
+
+            1. Review any linting issues in lint-results.txt
+            2. Check build results in build-results.txt
+            3. Identify potential technical debt
+            4. Suggest improvements for code quality
+            5. Check for security vulnerabilities
+            6. Recommend performance optimizations
+
+            If you find any critical issues, please create an issue.
+            If you have suggestions for improvements, please create a summary comment.
+
+  claude-manual-task:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare task context
+        run: |
+          echo "🎯 Preparing context for task: ${{ github.event.inputs.task }}"
+
+          case "${{ github.event.inputs.task }}" in
+            "code-review")
+              echo "TASK_PROMPT=Please perform a comprehensive code review of this repository. Focus on code quality, best practices, and potential bugs." >> $GITHUB_ENV
+              ;;
+            "security-audit")
+              echo "TASK_PROMPT=Please perform a security audit of this codebase. Look for potential vulnerabilities, insecure patterns, and recommend security improvements." >> $GITHUB_ENV
+              ;;
+            "performance-analysis")
+              echo "TASK_PROMPT=Please analyze the performance characteristics of this codebase. Identify bottlenecks, inefficient code, and suggest optimizations." >> $GITHUB_ENV
+              ;;
+            "documentation-update")
+              echo "TASK_PROMPT=Please review and update the documentation in this repository. Ensure README files are current and code is well-documented." >> $GITHUB_ENV
+              ;;
+            "dependency-update")
+              echo "TASK_PROMPT=Please review the project dependencies and suggest updates. Check for security vulnerabilities and outdated packages." >> $GITHUB_ENV
+              ;;
+          esac
+
+      - name: Execute Claude Task
+        uses: anthropics/claude-code-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          max-tokens: 8192
+          custom-prompt: |
+            ${{ env.TASK_PROMPT }}
+
+            Scope: ${{ github.event.inputs.scope }}
+
+            Please provide detailed analysis and actionable recommendations.
+            If you make any code changes, ensure they follow the project's coding standards.
+
+            Create a summary issue with your findings and recommendations.
+
+  claude-pr-review:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && !contains(github.event.pull_request.title, '[skip claude]')
+
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Get changed files
+        id: changed-files
+        run: |
+          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }} | tr '\n' ' ')" >> $GITHUB_OUTPUT
+
+      - name: Claude PR Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          custom-prompt: |
+            Please review this pull request:
+
+            Title: ${{ github.event.pull_request.title }}
+            Description: ${{ github.event.pull_request.body }}
+            Changed files: ${{ steps.changed-files.outputs.files }}
+
+            Please provide:
+            1. Code quality assessment
+            2. Potential bugs or issues
+            3. Security considerations
+            4. Performance implications
+            5. Suggestions for improvement
+
+            Focus on the changed files and provide constructive feedback.
+            If the changes look good, provide approval with summary.
+            If issues are found, provide specific line-by-line feedback where possible.
