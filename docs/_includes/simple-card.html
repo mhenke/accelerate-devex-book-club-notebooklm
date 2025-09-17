@@ -102,26 +102,41 @@ Parameters:
 
 <style>
 .simple-card {
-  background: white;
-  border-radius: 16px;
+  background: var(--background-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #3b82f6;
-  transition: all 0.3s ease;
+  box-shadow: var(--shadow-light);
+  border-left: 3px solid var(--meeting-1-color);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
 }
 
 .simple-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: var(--border-focus);
+  box-shadow: var(--shadow-medium);
+  transform: translateY(-1px);
 }
 
-/* Theme colors */
-.primary-theme { border-left-color: #3b82f6; }
-.success-theme { border-left-color: #10b981; }
-.warning-theme { border-left-color: #f59e0b; }
-.info-theme { border-left-color: #06b6d4; }
-.neutral-theme { border-left-color: #6b7280; }
+.simple-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+  opacity: 0.6;
+}
+
+/* Modern theme colors */
+.primary-theme { border-left-color: var(--meeting-1-color); }
+.success-theme { border-left-color: var(--meeting-2-color); }
+.warning-theme { border-left-color: var(--meeting-3-color); }
+.info-theme { border-left-color: var(--meeting-4-color); }
+.neutral-theme { border-left-color: var(--text-medium); }
 
 /* Header */
 .card-header {
@@ -190,33 +205,69 @@ Parameters:
 
 .action-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.75rem;
-  padding: 0.75rem;
-  background: #f9fafb;
+  padding: 0.875rem;
+  background: var(--background-card);
   border-radius: 8px;
   margin-bottom: 0.5rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border-light);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.action-item:hover {
+  border-color: var(--border-focus);
+  background: var(--background-white);
 }
 
 .action-item input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #3b82f6;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  appearance: none;
+  border: 2px solid var(--border-medium);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background: var(--background-white);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.action-item input[type="checkbox"]:checked {
+  background: var(--meeting-2-color);
+  border-color: var(--meeting-2-color);
+}
+
+.action-item input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .action-item label {
   cursor: pointer;
-  color: #374151;
+  color: var(--text-dark);
   font-weight: 500;
+  font-family: var(--font-ui);
+  line-height: 1.4;
+  margin-top: -1px;
 }
 
 .action-item:has(input:checked) {
-  opacity: 0.6;
+  opacity: 0.7;
+  background: var(--background-light);
 }
 
 .action-item:has(input:checked) label {
   text-decoration: line-through;
+  color: var(--text-medium);
 }
 
 /* Links */
