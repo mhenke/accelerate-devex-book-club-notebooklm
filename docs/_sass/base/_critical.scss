@@ -594,19 +594,12 @@ a {
       transform: translateX(-100%);
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: translateY(-3px);
-
-      // Enhanced hover elevation
-      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4),
-        0 3px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 6px 16px rgba(33, 150, 243, 0.4), 0 3px 6px rgba(0, 0, 0, 0.16);
       color: white;
-      background: linear-gradient(
-        135deg,
-        var(--hover-emerald),
-        var(--accent-emerald)
-      );
-
+      background: linear-gradient(135deg, var(--primary-blue), #1976d2);
       &::before {
         transform: translateX(100%);
       }
