@@ -185,14 +185,64 @@ All meeting pages follow consistent format:
 
 ## Research & Planning Workflow
 
-All major codebase changes (refactoring, features, upgrades) must follow this standardized workflow:
+All major codebase changes (refactoring, features, upgrades) must follow this standardized workflow using specialized Claude Code prompts:
 
 ### Typical Workflow Sequence
 
-1. **Task Researcher**: Research and document the current state of the codebase. Identify pain points, technical debt, and problematic patterns. Summarize findings with links to code sections.
-2. **Tech Debt Remediation Plan**: Outline a remediation plan based on research. Prioritize issues by impact/effort, recommend refactoring strategies, and specify dependencies/blockers.
-3. **Planner (High-Level Milestones)**: Create a milestone plan with key phases, timelines, and responsible roles. Note integration points with other teams/systems.
-4. **update-implementation-plan**: Update an existing implementation plan file with new or updated requirements to provide new features, refactoring, design, architecture, or infrastructure. Output must be machine-readable, deterministic, and structured for autonomous execution by other AI systems or humans. All implementation plans must strictly follow the `/update-implementation-plan.prompt.md` template and validation rules.
-5. **Implementation Plan (Detailed Steps)**: Write a step-by-step plan with atomic tasks, code standards, accessibility, performance, and testing requirements. Provide clear instructions for contributors.
+#### 1. **Task Researcher** (@task-researcher)
+**Prompt**: Research and document the current state of our [component/system] codebase.
+- Identify major pain points, inconsistencies, and areas of technical debt
+- List specific files, components, or patterns that are problematic
+- Summarize findings with links to relevant code sections
+- **Output**: `.copilot-tracking/research/YYYYMMDD-[topic]-research.md`
+
+#### 2. **Tech Debt Remediation Plan** (@tech-debt-analyst) 
+**Prompt**: Based on the research, outline a remediation plan for [component] technical debt.
+- Prioritize issues by impact and effort
+- Recommend refactoring strategies (modularization, variable standardization, etc.)
+- Specify any dependencies or blockers
+- **Output**: `.copilot-tracking/changes/YYYYMMDD-[topic]-remediation-plan.md`
+
+#### 3. **Planner** (@planner)
+**Prompt**: Create a high-level milestone plan for [component] refactoring.
+- Define key phases (audit, design, implementation, validation)  
+- Assign rough timelines and responsible roles
+- Note integration points with other teams/systems
+- **Output**: Initial implementation plan structure
+
+#### 4. **Update Implementation Plan** (@update-implementation-plan)
+**Prompt**: Refine the implementation plan using new information or feedback.
+- Adjust milestones, deliverables, or priorities as needed
+- Incorporate lessons learned or new requirements  
+- Ensure the plan remains actionable and aligned with project goals
+- **Output**: `.copilot-tracking/plan/[purpose]-[component]-[version].md`
+
+#### 5. **Implementation Plan** (@implementation-plan)
+**Prompt**: Write a detailed step-by-step implementation plan for [component] refactoring.
+- Break down each milestone into specific tasks
+- Include code standards, accessibility, performance, and testing requirements
+- Provide clear instructions for contributors
+- **Output**: Detailed plan following the standard template
+
+### Workflow Example: CSS Refactoring
+
+```bash
+# Step 1: Research current CSS state
+@task-researcher Research and document the current state of our CSS codebase.
+
+# Step 2: Create remediation plan  
+@tech-debt-analyst Based on the research, outline a remediation plan for CSS technical debt.
+
+# Step 3: Create high-level milestones
+@planner Create a high-level milestone plan for CSS refactoring.
+
+# Step 4: Refine implementation details
+@update-implementation-plan Refine the CSS refactoring plan with specific tasks and validation criteria.
+
+# Step 5: Execute the plan
+@claude-code Implement the CSS refactoring plan following the documented steps.
+```
+
+### Template Standards
 
 All implementation plans must use the `/update-implementation-plan.prompt.md` template for machine-readable, deterministic, and executable output. See that file for required structure and compliance rules.
