@@ -1,27 +1,30 @@
-matrix:
-- name: Markdown
-  aspell:
-    lang: en
-    d: en_US
-  dictionary:
-    wordlists:
-    - .wordlist.txt
-  pipeline:
-  - pyspelling.filters.markdown:
-      markdown_extensions:
-      - markdown.extensions.extra:
-  - pyspelling.filters.html:
-      comments: false
-      attributes:
-      - title
-      - alt
-      ignores:
-      - code
-      - pre
-      - script
-      - style
-  sources:
-  - 'docs/**/*.md'
-  - 'README.md'
-  - 'docs/index.md'
-  default_encoding: utf-8
+---
+tasks:
+  - name: markdown
+    sources:
+      - 'docs/**/*.md'
+      - 'docs/_meetings/**/*.md'
+      - 'docs/index.md'
+      - 'README.md'
+      - 'MARKDOWN.md'
+    aspell:
+      lang: en
+      d: en_US
+    dictionary:
+      wordlists:
+        - .wordlist.txt
+    pipeline:
+      - pyspelling.filters.markdown:
+          markdown_extensions:
+            - markdown.extensions.extra:
+      - pyspelling.filters.html:
+          comments: false
+          attributes:
+            - title
+            - alt
+          ignores:
+            - code
+            - pre
+            - script
+            - style
+    default_encoding: utf-8
