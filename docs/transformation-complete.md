@@ -372,7 +372,7 @@ h3 {
   margin: 2rem 0;
   padding: 2rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 15px;
+  
   color: white;
 }
 
@@ -439,7 +439,7 @@ h3 {
 .timeline-content {
   background: white;
   padding: 1.5rem;
-  border-radius: 10px;
+  
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   border-left: 4px solid #7adad1;
 }
@@ -449,7 +449,7 @@ h3 {
   background: #28a745;
   color: white;
   padding: 0.8rem 1rem;
-  border-radius: 15px;
+  
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -471,7 +471,7 @@ h3 {
   align-items: center;
   gap: 0.3rem;
   padding: 0.6rem 1rem;
-  border-radius: 15px;
+  
   font-size: 0.8rem;
   font-weight: 500;
   color: white;
@@ -531,7 +531,7 @@ h3 {
   width: 100%;
   height: 8px;
   background: #e0e0e0;
-  border-radius: 4px;
+  
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
@@ -636,7 +636,7 @@ h3 {
 .ai-learning-celebration {
   background: linear-gradient(135deg, rgba(135, 211, 209, 0.1), rgba(122, 218, 209, 0.05));
   border: 2px solid var(--accent-teal, #7adad1);
-  border-radius: 16px;
+  
   padding: 2rem;
   margin: 3rem 0;
 }
@@ -708,7 +708,7 @@ h3 {
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background: rgba(122, 218, 209, 0.1);
-  border-radius: 20px;
+  
   font-size: 0.85rem;
   font-weight: 500;
   color: #1a1a2e;
@@ -765,7 +765,7 @@ h3 {
 .reflection-option {
   display: block;
   padding: 1rem;
-  border-radius: 8px;
+  
   cursor: pointer;
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -882,7 +882,7 @@ h3 {
 .reflection-feedback {
   background: white;
   padding: 1.5rem;
-  border-radius: 8px;
+  
   margin-top: 1rem;
   border-left: 4px solid #7adad1;
 }
@@ -909,7 +909,7 @@ h3 {
 .step-timeline {
   background: #f8f9fa;
   padding: 0.3rem 0.8rem;
-  border-radius: 15px;
+  
   font-size: 0.9rem;
   font-weight: bold;
   color: #6c757d;
@@ -959,7 +959,7 @@ h3 {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 3rem 2rem;
-  border-radius: 15px;
+  
   margin: 3rem 0;
 }
 
@@ -984,7 +984,7 @@ h3 {
 
 .btn {
   padding: 0.8rem 2rem;
-  border-radius: 25px;
+  
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;

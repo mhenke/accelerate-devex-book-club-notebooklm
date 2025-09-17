@@ -28,6 +28,15 @@ dora_color: '#0F766E'
 
 ### Key Insights
 
+#### Continuous Delivery Practices
+
+<div class="dora-metrics-grid" markdown="0">
+  {% include simple-card.html type="metric" icon="fas fa-robot" title="Automation First" description="Automated testing, building, and deployment pipelines" goal="Zero manual deployment steps" theme="success" %}
+  {% include simple-card.html type="metric" icon="fas fa-code-branch" title="Trunk-Based Development" description="Short-lived feature branches with frequent integration" goal="Daily code integration" theme="primary" %}
+  {% include simple-card.html type="metric" icon="fas fa-shield-alt" title="Built-in Security" description="Security testing integrated throughout the development process" goal="Security as Code" theme="warning" %}
+  {% include simple-card.html type="metric" icon="fas fa-puzzle-piece" title="Loosely Coupled Architecture" description="Independent deployable services with minimal dependencies" goal="Team Autonomy" theme="info" %}
+</div>
+
 #### Architecture: Loosely Coupled Systems Enable Team Independence
 
 {% include simple-comparison.html 
@@ -294,7 +303,7 @@ h3 {
 .resource-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 8px;
+  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
@@ -351,7 +360,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 16px;
+  
   border: 2px solid #0F766E;
 }
 
@@ -415,7 +424,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 16px;
+  
   border: 2px solid #0F766E;
 }
 
@@ -470,7 +479,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 16px;
+  
   border: 2px solid #0F766E;
 }
 
@@ -508,7 +517,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 16px;
+  
   border: 2px solid #0F766E;
 }
 
@@ -589,7 +598,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 16px;
+  
   border: 2px solid #0F766E;
 }
 
@@ -644,7 +653,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #fce4ec);
-  border-radius: 16px;
+  
   border: 2px solid #0F766E;
 }
 
@@ -725,7 +734,7 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 16px;
+  
   border: 2px solid #0F766E;
 }
 
@@ -771,7 +780,7 @@ h3 {
   gap: 0.75rem;
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
+  
   transition: all 0.3s ease;
 }
 
@@ -923,13 +932,13 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 20px;
+  
   border: 2px solid #0F766E;
 }
 
 .checkpoint-card {
   background: white;
-  border-radius: 16px;
+  
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -977,7 +986,7 @@ h3 {
   position: relative;
   height: 6px;
   background: #e0e0e0;
-  border-radius: 3px;
+  
   margin-bottom: 1.5rem;
   cursor: pointer;
 }
@@ -1003,7 +1012,7 @@ h3 {
 .slider-feedback {
   background: #f8f9fa;
   border-left: 4px solid #0F766E;
-  border-radius: 8px;
+  
   padding: 1rem;
   min-height: 60px;
   transition: border-left-color 0.3s ease;

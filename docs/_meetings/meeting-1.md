@@ -36,11 +36,56 @@ dora_color: '#1E3A8A'
 
 #### The Four DORA Metrics
 
-<div class="dora-metrics-grid" markdown="0">
-  {% include simple-card.html type="metric" icon="fas fa-chart-line" title="Delivery Lead Time" description="Time from code commit to production deployment" goal="Hours/Days not Weeks/Months" theme="primary" %}
-  {% include simple-card.html type="metric" icon="fas fa-rocket" title="Deployment Frequency" description="How often code gets deployed to production" goal="Multiple times per day" theme="success" %}
-  {% include simple-card.html type="metric" icon="fas fa-clock" title="Time to Restore Service" description="How quickly service is restored after incidents" goal="Under 1 hour" theme="warning" %}
-  {% include simple-card.html type="metric" icon="fas fa-exclamation-triangle" title="Change Fail Rate" description="Percentage of deployments causing failures" goal="0-15%" theme="info" %}
+<div class="learning-highlights" markdown="0">
+<div class="highlight-grid">
+<div class="highlight-card meeting-1">
+<div class="highlight-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3>Lead Time for Changes</h3>
+<p>Time from code commit to production deployment. Elite performers achieve under 1 hour, while low performers take weeks or months.</p>
+<div class="meeting-badge">
+<span>Target:</span>
+<span>Hours not Days</span>
+</div>
+</div>
+
+<div class="highlight-card meeting-1">
+<div class="highlight-icon">
+<i class="fas fa-rocket"></i>
+</div>
+<h3>Deployment Frequency</h3>
+<p>How often your team deploys code to production. High performers deploy multiple times per day with confidence.</p>
+<div class="meeting-badge">
+<span>Target:</span>
+<span>Multiple Daily Deploys</span>
+</div>
+</div>
+
+<div class="highlight-card meeting-1">
+<div class="highlight-icon">
+<i class="fas fa-clock"></i>
+</div>
+<h3>Mean Time to Recovery</h3>
+<p>How quickly your team restores service when incidents occur. Fast recovery reduces customer impact and team stress.</p>
+<div class="meeting-badge">
+<span>Target:</span>
+<span>Under 1 Hour</span>
+</div>
+</div>
+
+<div class="highlight-card meeting-1">
+<div class="highlight-icon">
+<i class="fas fa-exclamation-triangle"></i>
+</div>
+<h3>Change Failure Rate</h3>
+<p>Percentage of deployments that cause production failures. Elite teams maintain 0-15% while deploying frequently.</p>
+<div class="meeting-badge">
+<span>Target:</span>
+<span>0-15%</span>
+</div>
+</div>
+</div>
 </div>
 
 #### Speed vs Stability: The Myth Busted
@@ -180,7 +225,7 @@ dora_color: '#1E3A8A'
   margin: 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-radius: 16px;
+  
   border: 2px solid #1E3A8A;
 }
 
@@ -304,7 +349,7 @@ h3 i, h4 i {
   background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
   color: #374151;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  
   font-size: 0.8rem;
   font-weight: 600;
   width: 100%;
@@ -527,7 +572,7 @@ h3 i, h4 i {
 
 .culture-card {
   background: white;
-  border-radius: 16px;
+  
   padding: 2rem;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -642,7 +687,7 @@ h3 i, h4 i {
   text-align: center;
   padding: 0.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -760,7 +805,7 @@ h3 i, h4 i {
   margin-bottom: 1.5rem;
   padding: 1rem;
   background: white;
-  border-radius: 8px;
+  
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 }
@@ -824,7 +869,7 @@ h3 i, h4 i {
 .resource-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 8px;
+  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }

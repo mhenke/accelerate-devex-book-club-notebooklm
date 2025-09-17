@@ -22,7 +22,6 @@
   display: inline-flex;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
   padding: 0.75rem 1.5rem;
   margin-bottom: 2rem;
   font-weight: 500;
@@ -84,7 +83,6 @@
   padding: 2rem 1.5rem;
   background: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -120,7 +118,6 @@
   gap: 0.75rem;
   background: white;
   border: 2px solid transparent;
-  border-radius: 50px;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   color: var(--text-dark);
@@ -262,7 +259,6 @@
   width: 100%;
   height: 8px;
   background: var(--background-light);
-  border-radius: 4px;
   overflow: hidden;
   margin-bottom: 1rem;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -276,7 +272,6 @@
     var(--meeting-primary),
     var(--meeting-hover)
   );
-  border-radius: 3px;
   transition: width 0.5s ease;
   box-shadow: 0 1px 3px var(--meeting-border);
 }
