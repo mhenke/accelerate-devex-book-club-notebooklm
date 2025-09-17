@@ -1,25 +1,29 @@
 # Claude Code GitHub Actions Setup Guide
 
-This repository includes GitHub Actions workflows for integrating Claude Code into your development workflow.
+This repository includes GitHub Actions workflows for integrating Claude Code into your development workflow using the official Anthropic Claude Code Action.
 
 ## 🚀 Quick Setup
 
-### 1. Install Required GitHub App
+### Method 1: Automatic Setup (Recommended)
+If you have Claude Code installed locally, the easiest way is:
+1. Open Claude Code in your terminal
+2. Run: `/install-github-app`
+3. Follow the guided setup process
 
-You need to install the **Claude Code GitHub App** to your repository:
+### Method 2: Manual Setup
 
-1. Go to the [Claude Code GitHub App](https://github.com/apps/claude-code)
+#### 1. Install the Official Claude GitHub App
+
+Install the **Claude GitHub App** to your repository:
+
+1. Go to: **https://github.com/apps/claude**
 2. Click "Install" or "Configure"
 3. Select your repository or organization
-4. Grant the necessary permissions:
-   - **Contents**: Read and write (for making code changes)
-   - **Issues**: Read and write (for creating and commenting on issues)
-   - **Pull requests**: Read and write (for reviewing and commenting on PRs)
-   - **Metadata**: Read (for repository information)
+4. Grant the necessary permissions (the app will request required permissions automatically)
 
-### 2. Configure Repository Secrets
+#### 2. Configure Repository Secrets
 
-Add the following secret to your repository:
+Add your Anthropic API key as a repository secret:
 
 1. Go to your repository → Settings → Secrets and variables → Actions
 2. Click "New repository secret"
@@ -29,9 +33,7 @@ Add the following secret to your repository:
 |-------------|-------------|------------|
 | `ANTHROPIC_API_KEY` | Your Anthropic API key for Claude access | Get from [Anthropic Console](https://console.anthropic.com/) → API Keys |
 
-**Note**: The `GITHUB_TOKEN` is automatically provided by GitHub Actions and doesn't need to be configured.
-
-### 3. Get Your Anthropic API Key
+#### 3. Get Your Anthropic API Key
 
 1. Visit [Anthropic Console](https://console.anthropic.com/)
 2. Sign in or create an account
