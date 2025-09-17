@@ -26,9 +26,29 @@ dora_color: "#0969da" # $meeting-1-primary
       <h2><i class="fas fa-lightbulb"></i> Key Insights</h2>
 
 <div class="insights-grid" markdown="0">
-  {% include simple-card.html type="insight" icon="fas fa-microscope" title="Evidence-Based" description="Rigorous research backing all findings" theme="info" %}
-  {% include simple-card.html type="insight" icon="fas fa-medal" title="Competitive Advantage" description="Software delivery capability drives success" theme="success" %}
-  {% include simple-card.html type="insight" icon="fas fa-user-check" title="Process Not People" description="Anxiety signals inefficiency, not failure" theme="info" %}
+  <div class="insight-card">
+    <div class="insight-header">
+      <i class="fas fa-microscope"></i>
+      <h4>Evidence-Based</h4>
+    </div>
+    <p>Rigorous research backing all findings</p>
+  </div>
+
+  <div class="insight-card">
+    <div class="insight-header">
+      <i class="fas fa-medal"></i>
+      <h4>Competitive Advantage</h4>
+    </div>
+    <p>Software delivery capability drives success</p>
+  </div>
+
+  <div class="insight-card">
+    <div class="insight-header">
+      <i class="fas fa-user-check"></i>
+      <h4>Process Not People</h4>
+    </div>
+    <p>Anxiety signals inefficiency, not failure</p>
+  </div>
 </div>
 
 ### DORA Metrics Dashboard
@@ -101,26 +121,46 @@ dora_color: "#0969da" # $meeting-1-primary
 ### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint" markdown="0">
-  {% include simple-checkpoint.html
-    title="DORA Metrics Assessment"
-    icon="fas fa-chart-line"
-    question="Rate your organization's current DORA metrics maturity:"
-    type="radio"
-    options=site.data.checkpoint_answers.dora_maturity
-    feedback_id="dora-feedback"
-    radio_name="dora-maturity"
-    default_feedback="Select your organization's DORA maturity level to see improvement opportunities."
-  %}
+  <div class="checkpoint-card">
+    <h4><i class="fas fa-chart-line"></i> DORA Metrics Assessment</h4>
+    <p>Rate your organization's current DORA metrics maturity:</p>
 
-  {% include simple-checkpoint.html
-    title="Culture Assessment"
-    icon="fas fa-users"
-    question="Rate your team's culture characteristics:"
-    type="slider"
-    slider_labels="Pathological|Bureaucratic|Generative"
-    feedback_id="culture-feedback"
-    default_feedback="Move the slider to assess your team's culture based on Westrum's model"
-  %}
+    <form class="checkpoint-form">
+      <input type="radio" id="dora-elite" name="dora-maturity" value="elite">
+      <label for="dora-elite">Elite Performer - All metrics in top tier</label>
+
+      <input type="radio" id="dora-high" name="dora-maturity" value="high">
+      <label for="dora-high">High Performer - Most metrics strong</label>
+
+      <input type="radio" id="dora-medium" name="dora-maturity" value="medium">
+      <label for="dora-medium">Medium Performer - Mixed results</label>
+
+      <input type="radio" id="dora-low" name="dora-maturity" value="low">
+      <label for="dora-low">Low Performer - Significant gaps</label>
+    </form>
+
+    <div class="feedback-area" id="dora-feedback">
+      Select your organization's DORA maturity level to see improvement opportunities.
+    </div>
+  </div>
+
+  <div class="checkpoint-card">
+    <h4><i class="fas fa-users"></i> Culture Assessment</h4>
+    <p>Rate your team's culture characteristics:</p>
+
+    <div class="slider-container">
+      <input type="range" id="culture-slider" min="0" max="2" value="1" step="1">
+      <div class="slider-labels">
+        <span>Pathological</span>
+        <span>Bureaucratic</span>
+        <span>Generative</span>
+      </div>
+    </div>
+
+    <div class="feedback-area" id="culture-feedback">
+      Move the slider to assess your team's culture based on Westrum's model
+    </div>
+  </div>
 </div>
 
 #### Speed vs Stability
@@ -152,14 +192,39 @@ dora_color: "#0969da" # $meeting-1-primary
 
 <div class="deployment-flow-section" markdown="0">
   <div class="deployment-assessment">
-    {% include simple-card.html
-      type="metric"
-      title="DORA Metrics Assessment"
-      icon="fas fa-chart-line"
-      description="Complete your team's performance on the four key metrics:"
-      items="Deployment Accuracy|Get Feedback|Frequency Issue|Sentiment Issue|Estimate|Understand"
-      theme="primary"
-    %}
+    <div class="assessment-card">
+      <div class="assessment-header">
+        <i class="fas fa-chart-line"></i>
+        <h4>DORA Metrics Assessment</h4>
+      </div>
+      <p>Complete your team's performance on the four key metrics:</p>
+      <div class="assessment-items">
+        <div class="assessment-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Deployment Accuracy</span>
+        </div>
+        <div class="assessment-item">
+          <i class="fas fa-comments"></i>
+          <span>Get Feedback</span>
+        </div>
+        <div class="assessment-item">
+          <i class="fas fa-clock"></i>
+          <span>Frequency Issue</span>
+        </div>
+        <div class="assessment-item">
+          <i class="fas fa-heart"></i>
+          <span>Sentiment Issue</span>
+        </div>
+        <div class="assessment-item">
+          <i class="fas fa-calculator"></i>
+          <span>Estimate</span>
+        </div>
+        <div class="assessment-item">
+          <i class="fas fa-lightbulb"></i>
+          <span>Understand</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -170,51 +235,33 @@ dora_color: "#0969da" # $meeting-1-primary
   <aside class="meeting-sidebar">
     <div class="sidebar-section">
       <h3><i class="fas fa-video"></i> Video</h3>
-      {% include simple-card.html
-        type="media"
-        title="Meeting 1: Foundation"
-        subtitle="Video & Key Concepts"
-        description="Three experts from Dev, Ops, and Product discuss..."
-        media_type="video"
-        media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4"
-        theme="compact"
-      %}
+      <div class="media-card">
+        <h4>Meeting 1: Foundation</h4>
+        <p class="media-subtitle">Video & Key Concepts</p>
+        <p class="media-description">Three experts from Dev, Ops, and Product discuss...</p>
+        <div class="media-controls">
+          <video controls width="100%">
+            <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
 
     <div class="sidebar-section">
       <h3><i class="fas fa-headphones"></i> Podcast</h3>
-      {% include simple-card.html
-        type="media"
-        title="Meeting 1 Podcast"
-        subtitle="Expert discussion on key findings"
-        media_type="audio"
-        media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a"
-        theme="compact"
-      %}
-    </div>
-
-    <div class="sidebar-section">
-      <h3><i class="fas fa-tasks"></i> Quick Actions</h3>
-      <div class="quick-actions">
-        <a href="#action-items" class="quick-action-btn">→ Action Items</a>
-        <a href="#discussion" class="quick-action-btn">→ Discussion</a>
-        <a href="/meetings/meeting-2/" class="quick-action-btn">→ Next Meeting</a>
-      </div>
-    </div>
-
-    <div class="sidebar-section">
-      <h3><i class="fas fa-chart-pie"></i> Progress</h3>
-      <div class="assessment-status">
-        <div class="status-item">
-          <span class="status-label">DORA Understanding</span>
-          <div class="status-bar"><div class="status-fill" style="width: 75%"></div></div>
-        </div>
-        <div class="status-item">
-          <span class="status-label">Cultural Assessment</span>
-          <div class="status-bar"><div class="status-fill" style="width: 60%"></div></div>
+      <div class="media-card">
+        <h4>Meeting 1 Podcast</h4>
+        <p class="media-subtitle">Expert discussion on key findings</p>
+        <div class="media-controls">
+          <audio controls width="100%">
+            <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a" type="audio/mp4">
+            Your browser does not support the audio tag.
+          </audio>
         </div>
       </div>
     </div>
+
   </aside>
 </div>
 
@@ -881,6 +928,104 @@ dora_color: "#0969da" # $meeting-1-primary
 
   .discussion-content h4 {
     font-size: var(--font-size-base);
+  }
+}
+
+/* Media Card Styles */
+.media-card {
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.media-card h4 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--meeting-1-primary, #0969da);
+  margin-bottom: var(--space-sm);
+}
+
+.media-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+  font-style: italic;
+}
+
+.media-description {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.media-controls {
+  width: 100%;
+}
+
+.media-controls video,
+.media-controls audio {
+  width: 100%;
+  border-radius: var(--radius-sm);
+}
+
+/* Assessment Card Styles */
+.assessment-card {
+  background: white;
+  border: 1px solid rgba(9, 105, 218, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.assessment-header i {
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-lg);
+}
+
+.assessment-header h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.assessment-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.assessment-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  background: rgba(9, 105, 218, 0.05);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+}
+
+.assessment-item i {
+  color: var(--meeting-1-primary, #0969da);
+  font-size: var(--font-size-sm);
+  width: 16px;
+  text-align: center;
+}
+
+/* Mobile responsive for assessment */
+@media (max-width: 768px) {
+  .assessment-items {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
   }
 }
 
