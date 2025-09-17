@@ -47,6 +47,28 @@ kramdown:
   parse_span_html: true
   html5: true
 
+# Exclude files from processing (complete default list to avoid vendor issues)
+exclude:
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - .git/
+  - .github/
+  - tests/
+  - reports/
+  - .stylelintrc.js
+  - .eslintrc.js
+  - jekyll-audit.config.js
+
 # Collections
 collections:
   meetings:

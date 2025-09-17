@@ -26,7 +26,7 @@ title: Resources
       </div>
       <h3>Between Meetings</h3>
       <p>Reflection questions, practical exercises, and activities to deepen your understanding between sessions.</p>
-      <a href="#between-meetings" class="btn btn-primary">View Activities →</a>
+      <a href="#section-between-meetings" class="btn btn-primary">View Activities →</a>
     </div>
 
     <div class="resource-card">
@@ -35,7 +35,7 @@ title: Resources
       </div>
       <h3>Discussion Practices</h3>
       <p>Facilitation guidelines and techniques for productive book club discussions.</p>
-      <a href="#discussion-practices" class="btn btn-primary">Facilitation Guide →</a>
+      <a href="#section-discussion-practices" class="btn btn-primary">Facilitation Guide →</a>
     </div>
 
     <div class="resource-card">
@@ -44,7 +44,7 @@ title: Resources
       </div>
       <h3>Extensions</h3>
       <p>Advanced topics and learning paths to continue your DevOps transformation journey.</p>
-      <a href="#extensions" class="btn btn-primary">Explore Extensions →</a>
+      <a href="#section-extensions" class="btn btn-primary">Explore Extensions →</a>
     </div>
 
   </div>
@@ -118,7 +118,7 @@ title: Resources
   {% endfor %}
 </div>
 
-## Between Meetings Activities {#between-meetings}
+## Between Meetings Activities {#section-between-meetings}
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card">
@@ -195,7 +195,7 @@ title: Resources
   </div>
 </div>
 
-## Discussion Practices {#discussion-practices}
+## Discussion Practices {#section-discussion-practices}
 
 <div class="myth-buster" markdown="0">
   <div class="myth-side">
@@ -259,7 +259,7 @@ title: Resources
   </div>
 </div>
 
-## Extensions {#extensions}
+## Extensions {#section-extensions}
 
 <div class="resources-grid">
   <div class="resource-card">

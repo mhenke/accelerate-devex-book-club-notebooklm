@@ -9,14 +9,15 @@ owner: mhenke
 status: 'Planned'
 tags: [refactor, css, accessibility, performance, jekyll, blocks, icons]
 
+
 # Introduction
 
 ![Status: Planned](https://img.shields.io/badge/status-Planned-blue)
 
 This implementation plan refines and updates the CSS standardization and reusable blocks strategy for the DevEx Book Club site. It incorporates new findings from codebase audits, accessibility requirements, and performance goals. The plan ensures all steps are actionable, accessible, and aligned with project objectives.
 
-## 1. Requirements & Constraints
 
+## 1. Requirements & Constraints
 - **REQ-001**: Remove all inline styles from HTML/Markdown files.
 - **REQ-002**: Refactor all duplicated blocks (cards, alerts, info, meeting-hero, metric-card) into Jekyll includes and reusable CSS classes.
 - **REQ-003**: Standardize icon usage in headings and lists using direct HTML `<i class="fas fa-icon"></i>` for accessibility.
@@ -31,81 +32,71 @@ This implementation plan refines and updates the CSS standardization and reusabl
 ## 2. Implementation Steps
 
 ### Implementation Phase 1
-
 - GOAL-001: Remove all inline styles and replace with CSS classes using variables.
 
-| Task     | Description                                                         | Completed | Date |
-| -------- | ------------------------------------------------------------------- | --------- | ---- |
-| TASK-001 | Audit all HTML/Markdown for inline styles                           |           |      |
-| TASK-002 | Replace inline styles with CSS classes using variables from `:root` |           |      |
-| TASK-003 | Validate with CSS linter and accessibility checker                  |           |      |
+| Task | Description | Completed | Date |
+|------|-------------|-----------|------|
+| TASK-001 | Audit all HTML/Markdown for inline styles |  |  |
+| TASK-002 | Replace inline styles with CSS classes using variables from `:root` |  |  |
+| TASK-003 | Validate with CSS linter and accessibility checker |  |  |
 
 ### Implementation Phase 2
-
 - GOAL-002: Refactor duplicated blocks into Jekyll includes and reusable CSS classes.
 
-| Task     | Description                                                                             | Completed | Date |
-| -------- | --------------------------------------------------------------------------------------- | --------- | ---- |
-| TASK-004 | Identify all duplicated block patterns (cards, alerts, info, meeting-hero, metric-card) |           |      |
-| TASK-005 | Move markup to Jekyll includes and create reusable CSS classes                          |           |      |
-| TASK-006 | Update all pages to use includes/classes                                                |           |      |
-| TASK-007 | Validate accessibility and semantic markup                                              |           |      |
+| Task | Description | Completed | Date |
+|------|-------------|-----------|------|
+| TASK-004 | Identify all duplicated block patterns (cards, alerts, info, meeting-hero, metric-card) |  |  |
+| TASK-005 | Move markup to Jekyll includes and create reusable CSS classes |  |  |
+| TASK-006 | Update all pages to use includes/classes |  |  |
+| TASK-007 | Validate accessibility and semantic markup |  |  |
 
 ### Implementation Phase 3
-
 - GOAL-003: Standardize icon usage and expand CSS variables.
 
-| Task     | Description                                                   | Completed | Date |
-| -------- | ------------------------------------------------------------- | --------- | ---- |
-| TASK-008 | Audit headings/lists for icon usage                           |           |      |
-| TASK-009 | Replace inconsistent icons with `<i class="fas fa-icon"></i>` |           |      |
-| TASK-010 | Document icon usage standards                                 |           |      |
-| TASK-011 | Expand variables in `:root` and refactor blocks to use them   |           |      |
-| TASK-012 | Remove hardcoded values                                       |           |      |
-| TASK-013 | Validate color contrast and responsive spacing                |           |      |
+| Task | Description | Completed | Date |
+|------|-------------|-----------|------|
+| TASK-008 | Audit headings/lists for icon usage |  |  |
+| TASK-009 | Replace inconsistent icons with `<i class="fas fa-icon"></i>` |  |  |
+| TASK-010 | Document icon usage standards |  |  |
+| TASK-011 | Expand variables in `:root` and refactor blocks to use them |  |  |
+| TASK-012 | Remove hardcoded values |  |  |
+| TASK-013 | Validate color contrast and responsive spacing |  |  |
 
 ### Implementation Phase 4
-
 - GOAL-004: Audit and update all pages for consistency, accessibility, and performance.
 
-| Task     | Description                                                                               | Completed | Date |
-| -------- | ----------------------------------------------------------------------------------------- | --------- | ---- |
-| TASK-014 | Review all pages for consistency in block usage, icon placement, and variable application |           |      |
-| TASK-015 | Run accessibility and performance audits (Lighthouse, Accessibility Insights)             |           |      |
-| TASK-016 | Fix any remaining issues                                                                  |           |      |
+| Task | Description | Completed | Date |
+|------|-------------|-----------|------|
+| TASK-014 | Review all pages for consistency in block usage, icon placement, and variable application |  |  |
+| TASK-015 | Run accessibility and performance audits (Lighthouse, Accessibility Insights) |  |  |
+| TASK-016 | Fix any remaining issues |  |  |
 
 ## 3. Alternatives
-
 - **ALT-001**: Use CSS pseudo-elements for icons in headings (not chosen for accessibility and maintainability).
 - **ALT-002**: Keep duplicated blocks in each page (not chosen due to maintainability and code bloat).
 
 ## 4. Dependencies
-
 - **DEP-001**: Font Awesome for icons
 - **DEP-002**: Jekyll includes and layouts
 - **DEP-003**: CSS linter, accessibility checker, performance audit tools
 
 ## 5. Files
-
 - **FILE-001**: All HTML/Markdown files in `docs/` and `_meetings/`
 - **FILE-002**: `_includes/performance-optimizations.html`, `_layouts/meeting.html`, `_sass/layout/`, `_sass/grid/`
 - **FILE-003**: Main CSS/SCSS files (`assets/main.scss`)
 
 ## 6. Testing
-
 - **TEST-001**: Run CSS and HTML linters
 - **TEST-002**: Validate accessibility with automated tools and manual review
 - **TEST-003**: Test performance with Lighthouse or similar
 - **TEST-004**: Confirm all pages render correctly and consistently
 
 ## 7. Risks & Assumptions
-
 - **RISK-001**: Refactoring may introduce regressions in page layout or accessibility
 - **RISK-002**: Incomplete replacement of inline styles or duplicated blocks
 - **ASSUMPTION-001**: All engineers have access to required tools and documentation
 
 ## 8. Related Specifications / Further Reading
-
 - [MDN: Using CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 - [WCAG 2.2 Guidelines](https://www.w3.org/WAI/WCAG22/quickref/)
 - [Jekyll Includes Documentation](https://jekyllrb.com/docs/includes/)
