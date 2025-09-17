@@ -24,6 +24,8 @@ title: Home
 </div>
 </div>
 
+{% include key-question.html %}
+
 <div class="quick-start section-card">
 <h2><i class="fas fa-book"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
@@ -183,8 +185,6 @@ title: Home
   </div>
 </div>
 </div>
-
-{% include key-question.html %}
 
 <div class="get-started-section section-card" markdown="0">
 <h2><i class="fas fa-rocket"></i> Get Started</h2>
