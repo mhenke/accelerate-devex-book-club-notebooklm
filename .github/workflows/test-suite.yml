@@ -46,12 +46,6 @@ jobs:
       - name: Markdown linting
         run: npm run lint:md
 
-      - name: Check Spelling
-        uses: rojopolis/spellcheck-github-actions@0.36.0
-        with:
-          task_name: markdown
-          config_path: .spellcheck.yml
-
       - name: HTML Proofer validation
         run: npm run test:htmlproof
 

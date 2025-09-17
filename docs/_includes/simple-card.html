@@ -355,20 +355,50 @@ Parameters:
   text-align: center;
 }
 
-/* Responsive */
+/* Modern responsive design */
 @media (max-width: 768px) {
   .simple-card {
     padding: 1.25rem;
+    margin-bottom: 1.25rem;
   }
   
   .card-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
   }
   
   .card-header i {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .action-item {
+    padding: 0.75rem;
+    gap: 0.625rem;
+  }
+  
+  .action-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .simple-card {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .card-header {
+    gap: 0.5rem;
+  }
+  
+  .card-titles h4 {
+    font-size: 1.125rem;
+  }
+  
+  .action-item {
+    padding: 0.625rem;
   }
 }
 </style>
