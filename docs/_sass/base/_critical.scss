@@ -940,7 +940,26 @@ a {
   animation: fadeInUp 0.8s ease-out 0.2s both;
 
   h2 {
-    text-align: left; // Override center alignment for consistency
+    // Inherit standardized h2 styling with icons and left alignment
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    text-align: left;
+
+    i,
+    em {
+      color: var(--accent-emerald);
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-lg);
+      flex-shrink: 0;
+      font-style: normal; // Override em italic styling
+    }
   }
 }
 
@@ -1119,11 +1138,37 @@ a {
 
     &.secondary {
       background: #f8fafc;
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+      // Add subtle gradient top border
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          var(--accent-emerald),
+          var(--accent-teal)
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
 
       &:hover {
         background: #f1f5f9;
         transform: translateY(-2px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-color: rgba(16, 185, 129, 0.2);
+
+        &::before {
+          opacity: 1;
+        }
       }
     }
 
