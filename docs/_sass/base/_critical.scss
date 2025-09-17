@@ -30,7 +30,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -89,6 +90,41 @@ h1 {
 
 h2 {
   @include heading-2;
+
+  // Standardized h2 styling for all sections (except .key-question)
+  &:not(.key-question h2) {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    text-align: left;
+    justify-content: flex-start;
+    color: var(--text-dark);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-xl);
+
+    i {
+      color: var(--accent-emerald);
+      font-size: var(--font-size-xl);
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+      border-radius: 50%;
+      border: 2px solid rgba(16, 185, 129, 0.2);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover i {
+      color: var(--accent-teal);
+      background: linear-gradient(135deg, rgba(122, 218, 209, 0.15), rgba(16, 185, 129, 0.15));
+      border-color: rgba(122, 218, 209, 0.3);
+      transform: scale(1.05);
+    }
+  }
 }
 
 h3 {
@@ -345,7 +381,11 @@ a {
   }
 
   .hero-headline {
-    font-size: clamp(var(--font-size-headline-large), 5vw, var(--font-size-display-large));
+    font-size: clamp(
+      var(--font-size-headline-large),
+      5vw,
+      var(--font-size-display-large)
+    );
     font-weight: var(--font-weight-bold);
     color: var(--text-white);
     border: none;
@@ -373,7 +413,11 @@ a {
       /* stylelint-disable-next-line property-no-vendor-prefix */
       -webkit-text-fill-color: transparent;
       color: transparent;
-      font-size: clamp(var(--font-size-headline-small), 4vw, var(--font-size-display-medium));
+      font-size: clamp(
+        var(--font-size-headline-small),
+        4vw,
+        var(--font-size-display-medium)
+      );
       font-weight: var(--font-weight-bold);
       margin: 0;
       padding: var(--space-md) var(--space-lg);
@@ -482,7 +526,7 @@ a {
     border-radius: 16px; // Material Design 3 radius
     font-weight: var(--font-weight-bold);
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); // Material Design easing
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); // Material Design easing
     border: none;
     cursor: pointer;
     font-size: var(--font-size-headline-small); // Larger text for prominence
@@ -494,13 +538,18 @@ a {
 
     // Add subtle shine effect
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -50%;
       left: -50%;
       width: 200%;
       height: 200%;
-      background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+      background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 70%
+      );
       transition: transform 0.6s;
       transform: translateX(-100%);
     }
@@ -508,7 +557,8 @@ a {
     &:hover {
       transform: translateY(-3px);
       // Enhanced hover elevation
-      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4), 0 3px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4),
+        0 3px 6px rgba(0, 0, 0, 0.16);
       color: white;
       background: linear-gradient(
         135deg,
@@ -523,7 +573,8 @@ a {
 
     &:active {
       transform: translateY(-1px);
-      box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3), 0 1px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3),
+        0 1px 2px rgba(0, 0, 0, 0.12);
     }
 
     i {
@@ -540,7 +591,11 @@ a {
   }
 
   h1 {
-    font-size: clamp(var(--font-size-headline-large), 5vw, var(--font-size-display-large));
+    font-size: clamp(
+      var(--font-size-headline-large),
+      5vw,
+      var(--font-size-display-large)
+    );
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
     border: none;
@@ -552,7 +607,11 @@ a {
   }
 
   .hero-subtitle {
-    font-size: clamp(var(--font-size-body-large), 3vw, var(--font-size-title-large));
+    font-size: clamp(
+      var(--font-size-body-large),
+      3vw,
+      var(--font-size-title-large)
+    );
     color: var(--text-white);
     font-weight: var(--font-weight-normal);
     margin-bottom: var(--space-md);
@@ -653,7 +712,11 @@ a {
     text-align: center;
     color: var(--primary-blue);
     margin-bottom: var(--space-2xl);
-    font-size: clamp(var(--font-size-headline-small), 4vw, var(--font-size-headline-large));
+    font-size: clamp(
+      var(--font-size-headline-small),
+      4vw,
+      var(--font-size-headline-large)
+    );
   }
 }
 
@@ -787,6 +850,10 @@ a {
   max-width: 900px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -838,6 +905,10 @@ a {
   text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
   animation: fadeInUp 0.8s ease-out 0.2s both;
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
 }
 
 // Compact Success Metrics
@@ -851,6 +922,10 @@ a {
   text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
   animation: fadeInUp 0.8s ease-out 0.4s both;
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
 
   .outcomes-grid {
     display: grid;
@@ -875,7 +950,7 @@ a {
     font-weight: var(--font-weight-semibold);
     color: var(--text-dark);
     text-align: center;
-    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     // Material Design elevation
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border: 1px solid rgba(16, 185, 129, 0.1);
@@ -884,13 +959,17 @@ a {
 
     // Add subtle gradient overlay
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--accent-emerald), var(--accent-teal));
+      background: linear-gradient(
+        90deg,
+        var(--accent-emerald),
+        var(--accent-teal)
+      );
       opacity: 0;
       transition: opacity 0.3s ease;
     }
@@ -912,15 +991,21 @@ a {
 
     i {
       color: var(--accent-emerald);
-      font-size: var(--font-size-headline-small); // Much larger icons for prominence
+      font-size: var(
+        --font-size-headline-small
+      ); // Much larger icons for prominence
       width: 48px;
       height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(122, 218, 209, 0.1));
+      background: linear-gradient(
+        135deg,
+        rgba(16, 185, 129, 0.1),
+        rgba(122, 218, 209, 0.1)
+      );
       border-radius: 50%;
-      transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       margin-bottom: var(--space-xs);
     }
 
@@ -943,6 +1028,10 @@ a {
   max-width: 900px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
 
   .get-started-grid {
     display: grid;
@@ -1110,22 +1199,50 @@ a {
 }
 
 .highlight-card {
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  // Dark theme with emphasis
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px; // Material Design 3 radius
   padding: var(--space-2xl);
   text-align: left;
   position: relative;
-  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  // Material Design 3 elevation level 1
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  // Enhanced Material Design elevation for dark theme
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: white;
+
+  // Prominent colored top border
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      var(--accent-emerald),
+      var(--accent-teal)
+    );
+    border-radius: 12px 12px 0 0;
+  }
 
   &:hover {
-    // Material Design 3 elevation level 2
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transform: translateY(-2px);
-    border-color: rgba(0, 0, 0, 0.08);
+    // Enhanced hover elevation for dark theme
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 4px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.15);
+
+    &::after {
+      height: 6px; // Thicker border on hover
+      background: linear-gradient(
+        90deg,
+        var(--accent-teal),
+        var(--accent-coral),
+        var(--accent-emerald)
+      );
+    }
   }
 
   // Sophisticated gradient overlay
@@ -1158,15 +1275,16 @@ a {
     border-radius: var(--radius-2xl);
     margin: 0 auto var(--space-xl);
     font-size: var(--font-size-2xl);
-    color: var(--text-dark);
     position: relative;
     z-index: 1;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(16, 185, 129, 0.3);
+    background: rgba(16, 185, 129, 0.1);
     backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
   }
 
   h3 {
-    color: var(--text-dark);
+    color: white; // White text for dark theme
     font-family: var(--font-display);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
@@ -1176,12 +1294,19 @@ a {
   }
 
   p {
-    color: var(--text-medium);
+    color: rgba(255, 255, 255, 0.85); // Light gray text for dark theme
     margin: 0 0 var(--space-lg);
     line-height: var(--line-height-relaxed);
     font-size: var(--font-size-base);
     position: relative;
     z-index: 1;
+  }
+
+  &:hover .highlight-icon {
+    color: var(--accent-teal);
+    border-color: rgba(122, 218, 209, 0.4);
+    background: rgba(122, 218, 209, 0.15);
+    transform: scale(1.05);
   }
 
   .meeting-link {
@@ -1240,6 +1365,15 @@ a {
   .meeting-badge {
     background: var(--meeting-1-primary);
   }
+
+  // Meeting 1 specific top border (Foundation - Blue theme)
+  &::after {
+    background: linear-gradient(90deg, var(--meeting-1-primary), var(--meeting-1-secondary)); // Blue gradient for foundation
+  }
+
+  &:hover::after {
+    background: linear-gradient(90deg, var(--meeting-1-secondary), var(--meeting-1-primary), var(--meeting-1-accent));
+  }
 }
 
 .highlight-card.meeting-2 {
@@ -1253,6 +1387,15 @@ a {
 
   .meeting-badge {
     background: var(--meeting-2-primary);
+  }
+
+  // Meeting 2 specific top border (Technical Excellence - Green theme)
+  &::after {
+    background: linear-gradient(90deg, var(--meeting-2-primary), var(--meeting-2-secondary)); // Green gradient for technical excellence
+  }
+
+  &:hover::after {
+    background: linear-gradient(90deg, var(--meeting-2-secondary), var(--meeting-2-primary), var(--meeting-2-accent));
   }
 }
 
@@ -1268,6 +1411,15 @@ a {
   .meeting-badge {
     background: var(--meeting-3-primary);
   }
+
+  // Meeting 3 specific top border (Management - Orange/Amber theme)
+  &::after {
+    background: linear-gradient(90deg, var(--meeting-3-primary), var(--meeting-3-secondary)); // Orange gradient for management
+  }
+
+  &:hover::after {
+    background: linear-gradient(90deg, var(--meeting-3-secondary), var(--meeting-3-primary), var(--meeting-3-accent));
+  }
 }
 
 .highlight-card.meeting-4 {
@@ -1281,6 +1433,15 @@ a {
 
   .meeting-badge {
     background: var(--meeting-4-primary);
+  }
+
+  // Meeting 4 specific top border (Leadership - Purple theme)
+  &::after {
+    background: linear-gradient(90deg, var(--meeting-4-primary), var(--meeting-4-secondary)); // Purple gradient for leadership
+  }
+
+  &:hover::after {
+    background: linear-gradient(90deg, var(--meeting-4-secondary), var(--meeting-4-primary), var(--meeting-4-accent));
   }
 }
 
@@ -1387,7 +1548,11 @@ button:focus,
     border-radius: 0;
 
     h1 {
-      font-size: clamp(var(--font-size-headline-medium), 8vw, var(--font-size-display-medium));
+      font-size: clamp(
+        var(--font-size-headline-medium),
+        8vw,
+        var(--font-size-display-medium)
+      );
     }
 
     .hero-subtitle {
@@ -1598,7 +1763,11 @@ button:focus,
   h2 {
     color: var(--text-dark);
     margin-bottom: var(--space-xl);
-    font-size: clamp(var(--font-size-headline-small), 4vw, var(--font-size-display-medium));
+    font-size: clamp(
+      var(--font-size-headline-small),
+      4vw,
+      var(--font-size-display-medium)
+    );
     font-weight: var(--font-weight-bold);
     position: relative;
     z-index: 1;
@@ -1639,7 +1808,11 @@ button:focus,
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     margin: 0;
-    font-size: clamp(var(--font-size-body-large), 3vw, var(--font-size-title-large));
+    font-size: clamp(
+      var(--font-size-body-large),
+      3vw,
+      var(--font-size-title-large)
+    );
     font-style: italic;
     font-weight: var(--font-weight-medium);
     position: relative;
@@ -1787,6 +1960,10 @@ button:focus,
   max-width: 1200px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
 
   .book-showcase {
     display: grid;
