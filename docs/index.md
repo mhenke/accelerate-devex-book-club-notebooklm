@@ -123,8 +123,8 @@ title: Home
 <h3><i class="fas fa-toolbox"></i> Resources & Support</h3>
 <p>Downloads, activities, AI-generated content, and community resources</p>
 <div class="resource-links">
-<a href="{{ '/resources' | relative_url }}" class="get-started-link">📥 Downloads</a>
-<a href="{{ '/prompts' | relative_url }}" class="get-started-link">🎧 AI Content</a>
+<a href="{{ '/resources' | relative_url }}" class="get-started-link"><i class="fas fa-download"></i> Downloads</a>
+<a href="{{ '/prompts' | relative_url }}" class="get-started-link"><i class="fas fa-headphones"></i> AI Content</a>
 </div>
 </div>
 </div>
