@@ -141,7 +141,6 @@ a {
   color: var(--text-white);
   padding: var(--space-2xl);
   margin-top: var(--space-4xl);
-  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   gap: var(--space-xl);
@@ -493,7 +492,7 @@ a {
     font-size: clamp(1.1rem, 3vw, 1.4rem);
     color: rgba(255, 255, 255, 0.9);
     font-weight: var(--font-weight-normal);
-    margin-bottom: var(--space-4xl);
+    margin-bottom: var(--space-md);
     font-family: var(--font-primary);
     line-height: var(--line-height-relaxed);
   }
@@ -1499,7 +1498,11 @@ button:focus,
 
 // Key Question Section - Strategic Dark Mode Emphasis
 .key-question {
-  background: linear-gradient(135deg, var(--hero-dark) 0%, var(--card-dark) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--hero-dark) 0%,
+    var(--card-dark) 100%
+  );
   color: var(--text-white);
   border-radius: var(--radius-xl);
   padding: var(--space-3xl);
@@ -1510,9 +1513,7 @@ button:focus,
   margin-right: auto;
   position: relative;
   overflow: hidden;
-  box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(122, 218, 209, 0.3),
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(122, 218, 209, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(122, 218, 209, 0.2);
   backdrop-filter: blur(10px);
@@ -1526,10 +1527,21 @@ button:focus,
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:
-      radial-gradient(circle at 20% 20%, rgba(122, 218, 209, 0.15) 2px, transparent 2px),
-      radial-gradient(circle at 80% 80%, rgba(255, 127, 80, 0.1) 1px, transparent 1px),
-      radial-gradient(circle at 40% 60%, rgba(139, 158, 183, 0.08) 1px, transparent 1px);
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        rgba(122, 218, 209, 0.15) 2px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(255, 127, 80, 0.1) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 40% 60%,
+        rgba(139, 158, 183, 0.08) 1px,
+        transparent 1px
+      );
     background-size: 60px 60px, 40px 40px, 80px 80px;
     background-position: 0 0, 30px 30px, 50px 10px;
     opacity: 0.4;
@@ -1543,7 +1555,11 @@ button:focus,
     font-weight: var(--font-weight-bold);
     position: relative;
     z-index: 1;
-    background: linear-gradient(135deg, var(--accent-teal), var(--accent-coral));
+    background: linear-gradient(
+      135deg,
+      var(--accent-teal),
+      var(--accent-coral)
+    );
     background-clip: text;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-background-clip: text;
@@ -1565,10 +1581,8 @@ button:focus,
   // Add hover effect to entire section for interactive emphasis
   &:hover {
     transform: translateY(-2px);
-    box-shadow:
-      0 16px 48px rgba(0, 0, 0, 0.5),
-      0 0 40px rgba(122, 218, 209, 0.4),
-      inset 0 2px 0 rgba(255, 255, 255, 0.15);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5),
+      0 0 40px rgba(122, 218, 209, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15);
     border-color: rgba(122, 218, 209, 0.3);
   }
 
