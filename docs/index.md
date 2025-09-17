@@ -137,7 +137,7 @@ title: Home
 <h2><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
 <div class="book-visual">
-![Accelerate: The Science of Lean Software and DevOps book cover]({{ '/assets/images/book-cover.jpg' | relative_url }})
+<img src="{{ '/assets/images/book-cover.jpg' | relative_url }}" alt="Accelerate: The Science of Lean Software and DevOps book cover">
 </div>
 <div class="book-info">
 <h3>Accelerate: The Science of Lean Software and DevOps</h3>
