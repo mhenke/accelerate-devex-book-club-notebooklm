@@ -35,7 +35,7 @@
 }
 
 .meeting-title {
-  font-size: 3.5rem;
+  font-size: var(--font-size-display-large);
   font-weight: 700;
   margin-bottom: 1rem;
   color: white !important;
@@ -47,7 +47,7 @@
 }
 
 .meeting-subtitle {
-  font-size: 1.4rem;
+  font-size: var(--font-size-title-large);
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9) !important;
   margin-bottom: 2rem !important;
@@ -62,7 +62,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.75rem 1.5rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: var(--font-size-body-large);
   backdrop-filter: blur(10px);
 }
 
@@ -70,7 +70,7 @@
   position: absolute;
   right: 3rem;
   top: 3rem;
-  font-size: 4rem;
+  font-size: var(--font-size-display-large);
   opacity: 0.3;
   color: rgba(255, 255, 255, 0.6);
   z-index: 1;
@@ -89,7 +89,7 @@
 
 .meeting-content {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: var(--font-size-body-large);
 }
 
 /* Enhanced Navigation */
@@ -123,7 +123,7 @@
   color: var(--text-dark);
   transition: all 0.2s ease;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body-medium);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   white-space: nowrap;
 }
@@ -205,7 +205,7 @@
 }
 
 .nav-link.completion-badge .nav-icon {
-  font-size: 1.2rem;
+  font-size: var(--font-size-title-large);
 }
 
 .nav-link.back-to-main {
@@ -222,7 +222,7 @@
 }
 
 .nav-icon {
-  font-size: 1rem;
+  font-size: var(--font-size-body-large);
   font-weight: bold;
 }
 
@@ -233,7 +233,7 @@
 }
 
 .nav-label {
-  font-size: 0.75rem;
+  font-size: var(--font-size-body-small);
   opacity: 0.8;
   font-weight: 400;
   text-transform: uppercase;
@@ -242,7 +242,7 @@
 
 .nav-title {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: var(--font-size-body-medium);
   line-height: 1.2;
 }
 
@@ -278,7 +278,7 @@
 
 .progress-text {
   color: var(--text-medium);
-  font-size: 1rem;
+  font-size: var(--font-size-body-large);
   font-weight: 600;
   display: block;
   margin: 0;
@@ -287,16 +287,16 @@
 /* Medium screen adjustments */
 @media (max-width: 900px) {
   .nav-link {
-    font-size: 0.85rem;
+    font-size: var(--font-size-body-small);
     padding: 0.6rem 1.2rem;
   }
 
   .nav-title {
-    font-size: 0.8rem;
+    font-size: var(--font-size-body-small);
   }
 
   .nav-label {
-    font-size: 0.7rem;
+    font-size: var(--font-size-body-small);
   }
 }
 
@@ -308,17 +308,17 @@
   }
 
   .meeting-title {
-    font-size: 2.5rem;
+    font-size: var(--font-size-display-medium);
   }
 
   .meeting-subtitle {
-    font-size: 1.2rem;
+    font-size: var(--font-size-title-large);
   }
 
   .meeting-icon {
     right: 1rem;
     top: 1rem;
-    font-size: 3rem;
+    font-size: var(--font-size-display-small);
   }
 
   .meeting-container {
@@ -360,7 +360,7 @@
   }
 
   .nav-title {
-    font-size: 0.85rem;
+    font-size: var(--font-size-body-small);
     text-align: center;
   }
 
@@ -374,6 +374,6 @@
   }
 
   .progress-text {
-    font-size: 0.9rem;
+    font-size: var(--font-size-body-medium);
   }
 }

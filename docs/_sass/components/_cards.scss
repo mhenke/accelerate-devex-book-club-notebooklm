@@ -67,7 +67,7 @@
   }
 
   .card__value {
-    font-size: 2.5rem;
+    font-size: var(--font-size-display-medium);
     font-weight: var(--font-weight-bold);
     color: var(--accent-coral);
     margin-bottom: var(--spacing-sm);
@@ -89,7 +89,7 @@
     margin-bottom: var(--spacing-lg);
 
     .card__icon {
-      font-size: 1.5rem;
+      font-size: var(--font-size-headline-small);
       color: var(--accent-teal);
     }
 
@@ -127,7 +127,7 @@
   padding: var(--space-xl);
 
   .card__icon {
-    font-size: 3rem;
+    font-size: var(--font-size-display-large);
     margin-bottom: var(--space-md);
     color: var(--meeting-1-primary);
   }
@@ -171,7 +171,7 @@
     margin-bottom: var(--space-lg);
 
     .card__icon {
-      font-size: 2rem;
+      font-size: var(--font-size-headline-large);
       color: var(--meeting-1-primary);
     }
 

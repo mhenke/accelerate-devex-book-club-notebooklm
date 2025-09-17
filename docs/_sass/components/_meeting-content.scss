@@ -3,7 +3,7 @@
 /* Enhanced Section Styling */
 .meeting-content h2 {
   color: var(--header-dark-navy);
-  font-size: 1.6rem;
+  font-size: var(--font-size-headline-medium);
   font-weight: 600;
   border-left: 4px solid var(--meeting-primary) !important;
   padding-left: 1rem;
@@ -36,7 +36,7 @@
 
 .meeting-content h3 {
   color: var(--text-dark);
-  font-size: 1.3rem;
+  font-size: var(--font-size-title-large);
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
@@ -55,7 +55,7 @@
 
 .meeting-content h4 {
   color: var(--meeting-primary) !important;
-  font-size: 1.1rem;
+  font-size: var(--font-size-body-large);
   font-weight: 600;
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
@@ -195,7 +195,7 @@
   padding: 0.75rem 1.25rem;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: var(--font-size-body-medium);
   transition: all 0.3s ease;
   border: 2px solid transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -237,7 +237,7 @@
 
 .download-btn i,
 .stream-btn i {
-  font-size: 1rem;
+  font-size: var(--font-size-body-large);
 }
 
 /* Media Container Styling */
@@ -268,14 +268,14 @@
   margin: 1.5rem 0;
   padding: 1.5rem;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: var(--font-size-body-large);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   position: relative;
 }
 
 .meeting-content blockquote::before {
   content: '"';
-  font-size: 4rem;
+  font-size: var(--font-size-display-large);
   color: var(--meeting-primary);
   position: absolute;
   top: 0;
@@ -302,12 +302,12 @@
 /* Mobile content adjustments */
 @media (max-width: 768px) {
   .meeting-content h2 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-headline-small);
     padding: 1rem;
   }
 
   .meeting-content h3 {
-    font-size: 1.3rem;
+    font-size: var(--font-size-title-large);
     padding: 0.75rem 1rem;
   }
 }
