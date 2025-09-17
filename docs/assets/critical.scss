@@ -5,11 +5,3 @@
 @import 'components/hero';
 @import 'components/navigation';
 @import 'layout/header';
-
-// Import only critical above-the-fold styles
-@import 'abstracts/tokens';
-@import 'abstracts/mixins';
-@import 'base/critical';
-@import 'components/hero';
-@import 'components/navigation';
-@import 'layout/header';

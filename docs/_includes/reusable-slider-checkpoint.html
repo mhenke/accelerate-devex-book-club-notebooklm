@@ -1,37 +1,33 @@
 <!-- Reusable Slider Checkpoint Card Component -->
 <!-- 
-Usage Examples:
-{% include reusable-slider-checkpoint.html 
-  icon="fas fa-palette"
-  title="Tool Freedom"
-  question="Rate your team's tool selection autonomy:"
-  labels="Restricted|Flexible|Full Freedom"
-  feedback_id="tool-slider"
-  slider_id="tool-autonomy"
-  theme="primary"
-%}
+Usage: Creates interactive slider components for continuous scale assessments
+Parameters:
+- icon: FontAwesome icon class (required)
+- title: Slider title (required) 
+- question: Question text (optional)
+- min_label: Left side label (required)
+- mid_label: Middle label (optional)
+- max_label: Right side label (required)
+- slider_id: HTML ID for slider element (required)
+- feedback_id: HTML ID for feedback area (required)
+- theme: Color theme (default, primary, success, warning, danger) (optional)
+- card_class: Additional CSS class (optional)
+- default_feedback: Default feedback message (optional)
 
-{% include reusable-slider-checkpoint.html 
-  icon="fas fa-users"
-  title="Team Collaboration"
-  question="How well does your team collaborate?"
-  labels="Siloed|Some Collaboration|Highly Collaborative"
-  feedback_messages=site.data.slider_feedback.collaboration
-  feedback_id="collaboration-feedback"
-  slider_id="team-collaboration"
-  theme="success"
-  custom_class="featured-slider"
-%}
+Example usage:
+  icon: "fas fa-users"
+  title: "Team Collaboration" 
+  slider_id: "team-collaboration"
+  theme: "success"
+  custom_class: "featured-slider"
 
-{% include reusable-slider-checkpoint.html 
-  title="Security Integration"
-  question="How early is security considered in your development process?"
-  labels="Gate at End|Some Integration|Shift Left"
-  feedback_id="security-feedback"
-  slider_id="security-integration"
-  theme="warning"
-  description="Consider when security requirements, testing, and reviews happen in your workflow"
-%}
+  title: "Security Integration"
+  question: "How early is security considered in your development process?"
+  labels: "Gate at End|Some Integration|Shift Left"
+  feedback_id: "security-feedback"
+  slider_id: "security-integration"
+  theme: "warning"
+  description: "Consider when security requirements, testing, and reviews happen in your workflow"
 -->
 
 <div class="checkpoint-card slider-checkpoint {{ include.theme | default: 'default' }}-theme {{ include.custom_class }}" markdown="0">
