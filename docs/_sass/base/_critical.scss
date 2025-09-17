@@ -119,16 +119,19 @@ a {
 
 // Main layout containers
 .site-header {
-  position: relative;
-  z-index: var(--z-sticky);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+
+  // Performance optimizations
+  contain: layout style;
 }
 
 .site-main {
   min-height: 50vh;
-}
-
-.site-footer {
-  margin-top: var(--space-4xl);
 }
 
 // AI Attribution Footer - Dark Theme Bottom Anchor
@@ -138,9 +141,8 @@ a {
     var(--hero-dark) 0%,
     var(--card-dark) 100%
   );
-  color: var(--text-white);
+  color: var(--text-dark);
   padding: var(--space-2xl);
-  margin-top: var(--space-4xl);
   display: flex;
   align-items: center;
   gap: var(--space-xl);
@@ -188,7 +190,7 @@ a {
   }
 
   &__title {
-    color: var(--text-white);
+    color: var(--text-dark);
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--space-sm);
@@ -322,7 +324,7 @@ a {
     perspective: 1000px;
     animation: floatUp 2s ease-out;
 
-    h2 {
+    h3 {
       background: linear-gradient(
         135deg,
         var(--accent-teal),
@@ -479,7 +481,7 @@ a {
   h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: var(--font-weight-bold);
-    color: var(--text-white);
+    color: var(--text-dark);
     border: none;
     margin-bottom: var(--space-xl);
     padding-bottom: 0;
@@ -490,7 +492,7 @@ a {
 
   .hero-subtitle {
     font-size: clamp(1.1rem, 3vw, 1.4rem);
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-white);
     font-weight: var(--font-weight-normal);
     margin-bottom: var(--space-md);
     font-family: var(--font-primary);
@@ -519,7 +521,7 @@ a {
   height: 100px;
   border-radius: var(--radius-2xl);
   background: rgba(255, 255, 255, 0.1);
-  color: var(--text-white);
+  color: var(--text-dark);
   font-size: var(--font-size-2xl);
   transition: all var(--duration-normal) var(--ease-out);
   backdrop-filter: blur(20px);
@@ -621,7 +623,7 @@ a {
       height: 50px;
       border-radius: var(--radius-lg);
       font-size: var(--font-size-xl);
-      color: var(--text-white);
+      color: var(--text-dark);
     }
 
     .category-title {
@@ -682,14 +684,14 @@ a {
 
 // Welcome Compact - Above the Fold Focus
 .welcome-compact {
-  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
   margin: var(--space-lg) auto;
   max-width: 700px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   p {
     color: var(--text-dark);
@@ -716,13 +718,13 @@ a {
 
 // About the Book Club Section - Material Design
 .quick-start {
-  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-xl);
   padding: var(--space-3xl);
-  margin: var(--space-3xl) auto;
+
   max-width: 900px;
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);
+  box-shadow: 0 4px 16px rgba(148, 163, 184, 0.08);
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -747,7 +749,7 @@ a {
   }
 
   h2 {
-    color: var(--text-white);
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     gap: var(--space-md);
@@ -769,7 +771,7 @@ a {
   }
 
   p {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-medium);
     font-size: var(--font-size-lg);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-lg);
@@ -779,7 +781,7 @@ a {
     }
 
     strong {
-      color: var(--text-white);
+      color: var(--text-dark);
       font-weight: var(--font-weight-semibold);
     }
   }
@@ -787,18 +789,18 @@ a {
 
 // What You'll Learn Section
 .what-youll-learn-section {
-  background: linear-gradient(135deg, #fff7ed, #ffedd5);
-  border: 1px solid rgba(255, 127, 80, 0.2);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
-  margin: var(--space-3xl) auto;
+
   max-width: 1200px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(148, 163, 184, 0.1);
 
   h2 {
     text-align: center;
     margin-bottom: var(--space-xl);
-    color: var(--text-white);
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -822,17 +824,18 @@ a {
 
 // Compact Success Metrics
 .success-metrics-compact {
-  background: linear-gradient(135deg, #eff6ff, #dbeafe);
-  border: 1px solid rgba(33, 150, 243, 0.2);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
-  margin: var(--space-3xl) auto;
+
   max-width: 900px;
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   h2 {
     text-align: center;
     margin-bottom: var(--space-xl);
-    color: var(--text-white);
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -877,17 +880,18 @@ a {
 
 // Get Started Section - Streamlined Resources
 .get-started-section {
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
-  margin: var(--space-3xl) auto;
+
   max-width: 900px;
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   h2 {
     text-align: center;
     margin-bottom: var(--space-xl);
-    color: var(--text-white);
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1110,7 +1114,7 @@ h2:has(em.fa-bullseye) {
     border-radius: var(--radius-2xl);
     margin: 0 auto var(--space-xl);
     font-size: var(--font-size-2xl);
-    color: var(--text-white);
+    color: var(--text-dark);
     position: relative;
     z-index: 1;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -1157,7 +1161,7 @@ h2:has(em.fa-bullseye) {
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
-    color: var(--text-white);
+    color: var(--text-dark);
     margin-bottom: var(--space-sm);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
@@ -1549,7 +1553,7 @@ button:focus,
   }
 
   h2 {
-    color: var(--text-white);
+    color: var(--text-dark);
     margin-bottom: var(--space-xl);
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: var(--font-weight-bold);
@@ -1573,7 +1577,7 @@ button:focus,
     margin-bottom: var(--space-xl);
     position: relative;
     z-index: 1;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-medium);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     line-height: var(--line-height-relaxed);
   }
@@ -1704,7 +1708,7 @@ button:focus,
       var(--accent-coral),
       var(--hover-coral)
     );
-    color: var(--text-white);
+    color: var(--text-dark);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
     padding: var(--space-md) var(--space-xl);
@@ -1732,13 +1736,13 @@ button:focus,
 
 // Required Reading Section - Material Design Card
 .required-reading-section {
-  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
-  border: 1px solid rgba(147, 51, 234, 0.2);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
-  margin: var(--space-3xl) auto;
+
   max-width: 1200px;
-  box-shadow: 0 4px 16px rgba(147, 51, 234, 0.08);
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   h2 {
     text-align: center;

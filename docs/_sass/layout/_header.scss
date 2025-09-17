@@ -3,12 +3,12 @@
 // Main site header structure for immediate rendering
 
 .site-header {
-  background: linear-gradient(135deg, var(--hero-dark) 0%, var(--card-dark) 100%);
-  border-bottom: 2px solid rgba(122, 218, 209, 0.2);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
 
   // Performance optimizations
   contain: layout style;
