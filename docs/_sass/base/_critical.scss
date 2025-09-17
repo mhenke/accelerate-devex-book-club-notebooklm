@@ -44,8 +44,8 @@ body {
 // =============================================================================
 
 // Load design tokens first
-@import 'abstracts/tokens';
-@import 'abstracts/mixins';
+@import "abstracts/tokens";
+@import "abstracts/mixins";
 
 // Heading hierarchy - WCAG compliance
 h1 {
@@ -140,7 +140,7 @@ a {
 
   // Circuit board background pattern (CSS-only)
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -266,7 +266,7 @@ a {
 }
 
 .metrics-category {
-  @include card('lg');
+  @include card("lg");
 
   padding: var(--space-xl);
 
@@ -308,7 +308,7 @@ a {
 }
 
 .metric-card {
-  @include card('md');
+  @include card("md");
 
   padding: var(--space-xl);
   text-align: center;
@@ -350,7 +350,7 @@ h2:has(em.fa-bullseye) {
   border-left: 4px solid var(--accent-teal);
   padding-left: 1rem;
   margin-bottom: 1.5rem;
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: "Poppins", "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: var(--header-dark-navy);
@@ -367,7 +367,7 @@ h2:has(em.fa-bullseye) {
 
 .highlight-grid {
   @include grid-auto-fit(300px);
-  
+
   max-width: var(--desktop);
   margin: 0 auto;
   padding: 0 var(--space-lg);
@@ -375,21 +375,21 @@ h2:has(em.fa-bullseye) {
 }
 
 .highlight-card {
-  @include card('lg');
-  
+  @include card("lg");
+
   padding: var(--space-xl);
   text-align: center;
   position: relative;
   transition: all var(--duration-normal) var(--ease-out);
-  
+
   &:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-xl);
   }
-  
+
   .highlight-icon {
     @include flex-center;
-    
+
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -397,34 +397,34 @@ h2:has(em.fa-bullseye) {
     font-size: var(--font-size-xl);
     color: var(--text-white);
   }
-  
+
   h3 {
     @include heading-4;
-    
+
     margin: 0 0 var(--space-md);
     color: var(--text-dark);
     font-family: var(--font-display);
   }
-  
+
   p {
     @include body-small;
-    
+
     color: var(--text-medium);
     margin: 0 0 var(--space-lg);
     line-height: 1.6;
   }
-  
+
   .meeting-link {
     display: block;
     text-decoration: none;
     margin-top: var(--space-md);
     transition: all var(--duration-normal) var(--ease-out);
-    
+
     &:hover {
       transform: translateY(-2px);
     }
   }
-  
+
   .meeting-badge {
     display: flex;
     align-items: center;
@@ -436,17 +436,17 @@ h2:has(em.fa-bullseye) {
     color: var(--text-white);
     margin-bottom: var(--space-xs);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
+
     .meeting-number {
       font-weight: var(--font-weight-bold);
       margin-right: var(--space-xs);
     }
-    
+
     .meeting-title {
       font-weight: var(--font-weight-medium);
     }
   }
-  
+
   .meeting-subtitle {
     font-size: var(--font-size-xs);
     color: var(--text-medium);
@@ -460,9 +460,13 @@ h2:has(em.fa-bullseye) {
 // Meeting-specific styling for highlight cards
 .highlight-card.meeting-1 {
   .highlight-icon {
-    background: linear-gradient(135deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+    background: linear-gradient(
+      135deg,
+      var(--meeting-1-primary),
+      var(--meeting-1-secondary)
+    );
   }
-  
+
   .meeting-badge {
     background: var(--meeting-1-primary);
   }
@@ -470,9 +474,13 @@ h2:has(em.fa-bullseye) {
 
 .highlight-card.meeting-2 {
   .highlight-icon {
-    background: linear-gradient(135deg, var(--meeting-2-primary), var(--meeting-2-secondary));
+    background: linear-gradient(
+      135deg,
+      var(--meeting-2-primary),
+      var(--meeting-2-secondary)
+    );
   }
-  
+
   .meeting-badge {
     background: var(--meeting-2-primary);
   }
@@ -480,9 +488,13 @@ h2:has(em.fa-bullseye) {
 
 .highlight-card.meeting-3 {
   .highlight-icon {
-    background: linear-gradient(135deg, var(--meeting-3-primary), var(--meeting-3-secondary));
+    background: linear-gradient(
+      135deg,
+      var(--meeting-3-primary),
+      var(--meeting-3-secondary)
+    );
   }
-  
+
   .meeting-badge {
     background: var(--meeting-3-primary);
   }
@@ -490,9 +502,13 @@ h2:has(em.fa-bullseye) {
 
 .highlight-card.meeting-4 {
   .highlight-icon {
-    background: linear-gradient(135deg, var(--meeting-4-primary), var(--meeting-4-secondary));
+    background: linear-gradient(
+      135deg,
+      var(--meeting-4-primary),
+      var(--meeting-4-secondary)
+    );
   }
-  
+
   .meeting-badge {
     background: var(--meeting-4-primary);
   }
@@ -504,10 +520,10 @@ h2:has(em.fa-bullseye) {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
-  
+
   .highlight-card {
     padding: var(--space-lg);
-    
+
     .highlight-icon {
       width: 50px;
       height: 50px;
@@ -534,7 +550,7 @@ h2:has(em.fa-bullseye) {
 // Button focus states for accessibility
 .btn:focus,
 button:focus,
-[role='button']:focus {
+[role="button"]:focus {
   @include focus-ring;
 }
 
@@ -597,7 +613,7 @@ button:focus,
 
 @include mobile-only {
   .hero-banner {
-    padding: var(--space-3xl) var(--space-lg);
+    padding: var(--space-xl) var(--space-lg);
     border-radius: 0;
 
     h1 {
@@ -664,7 +680,7 @@ button:focus,
   visibility: hidden;
 
   &::before {
-    content: 'critical-css-loaded';
+    content: "critical-css-loaded";
     display: none;
   }
 }
