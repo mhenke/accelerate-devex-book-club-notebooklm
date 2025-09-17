@@ -158,19 +158,6 @@ dora_color: '#7c3aed'
 - **Practice Patience:** Decades-old patterns take time to change into new habits and culture
 - **Practice Practice:** Learn, succeed, fail, learn, adjust, repeat - rhythm and routine
 
-### Security Integration: Shift Left for Better Performance
-
-<div class="security-transformation" markdown="0">
-  <div class="stats-card" markdown="0">
-    <h4><i class="fas fa-shield-alt"></i> High Performers vs. Low Performers</h4>
-    <div class="stat-highlight" markdown="0">
-      <span class="stat-number">50%</span>
-      <span class="stat-text">less time on security remediation</span>
-    </div>
-    <p>Building security in improves both delivery performance and security quality</p>
-  </div>
-</div>
-
 ### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint" markdown="0">
@@ -414,16 +401,10 @@ dora_color: '#7c3aed'
 
 ### Culminating Reflection
 
-### The Single Smallest Change Question
-
-**"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
-
-This question embodies the entire Accelerate philosophy:
-
-- Start small and build momentum
-- Focus on concrete, measurable improvement
-- Address real pain points that teams experience
-- Create conditions for continuous improvement
+{% include key-question.html 
+  intro="As we conclude our transformation journey, we return to the central question that drives all DevOps improvement:" 
+  conclusion="This question embodies the entire Accelerate philosophy: start small, build momentum, focus on concrete improvements, and create conditions for continuous improvement."
+%}
 
 ### Related Resources
 
