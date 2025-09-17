@@ -1229,7 +1229,7 @@ a:hover {
 }
 
 .hero-metrics .metric-icon {
-  flex-direction: column;
+  display: inline-grid;
   align-items: center;
   color: var(--text-white);
   text-decoration: none;
