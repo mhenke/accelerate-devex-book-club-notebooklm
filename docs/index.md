@@ -3,38 +3,25 @@ layout: default
 title: Home
 ---
 
-<div class="hero-banner">
+<div class="hero-banner" markdown="0">
 <div class="hero-content">
-<h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing<br>Technology Organizations</h1>
+<div class="hero-value-prop">Transform your tech organization in 2 months</div>
+<h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing Technology Organizations</h1>
 <div class="site-title">
 <h2 id="accelerate-devex-book-club">Accelerate DevEx Book Club</h2>
 </div>
-<p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
-</div>
-<div class="hero-metrics" markdown="0">
-<a href="{{ '/meetings' | relative_url }}" class="metric-icon">
-<i class="fas fa-calendar-alt"></i>
-<span>Meetings</span>
-</a>
-<a href="{{ '/resources' | relative_url }}" class="metric-icon">
-<i class="fas fa-book-open"></i>
-<span>Resources</span>
-</a>
-<a href="{{ '/prompts' | relative_url }}" class="metric-icon">
-<i class="fas fa-microphone-alt"></i>
-<span>AI Content</span>
-</a>
-</div>
+<p class="hero-subtitle">Evidence-based practices from 23,000+ organizations • DORA metrics mastery • DevOps transformation</p>
+
 </div>
 
-<div class="welcome-start">
-Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
-<p style="text-align: center; margin-top: 2rem;">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-meeting-1"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
-</p>
-<p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
-Ready to transform your organization into a high-performing technology team?
-</p>
+</div>
+
+<div class="welcome-compact" markdown="0">
+<p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
+<div class="welcome-cta">
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-primary-large"><i class="fas fa-rocket"></i> Start Learning Now</a>
+<p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
+</div>
 </div>
 
 <div class="quick-start">
@@ -43,9 +30,9 @@ Ready to transform your organization into a high-performing technology team?
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
 
-## <i class="fas fa-bullseye"></i> What You'll Learn
-
-<div class="learning-highlights" markdown="0">
+<div class="what-youll-learn-section" markdown="0">
+<h2><i class="fas fa-bullseye"></i> What You'll Learn</h2>
+<div class="learning-highlights">
 <div class="highlight-grid">
 <div class="highlight-card meeting-1">
 <div class="highlight-icon">
@@ -108,53 +95,46 @@ Ready to transform your organization into a high-performing technology team?
 </div>
 </div>
 </div>
+</div>
 
-<div class="success-metrics">
-<h2>Success Metrics</h2>
-<p>By the end of this book club, participants will be able to:</p>
-<ul>
-<li>Articulate and explain the four DORA metrics</li>
-<li>Identify specific organizational bottlenecks and improvement opportunities</li>
-<li>Implement action items from sessions in their daily work</li>
-<li>Understand culture's impact on technical performance</li>
-<li>Have concrete next steps for organizational transformation</li>
-</ul>
+<div class="success-metrics-compact" markdown="0">
+<h2><i class="fas fa-target"></i> Success Outcomes</h2>
+<div class="outcomes-grid">
+<div class="outcome-item"><i class="fas fa-chart-line"></i> Master DORA metrics</div>
+<div class="outcome-item"><i class="fas fa-search"></i> Identify bottlenecks</div>
+<div class="outcome-item"><i class="fas fa-cogs"></i> Apply daily practices</div>
+<div class="outcome-item"><i class="fas fa-users"></i> Understand culture impact</div>
+<div class="outcome-item"><i class="fas fa-route"></i> Get transformation roadmap</div>
+</div>
 </div>
 
 {% include key-question.html %}
 
-<h2 class="section-accent"><i class="fas fa-tools"></i> Resources</h2>
-
-<div class="resources-grid">
-<div class="resource-card">
+<div class="get-started-section" markdown="0">
+<h2><i class="fas fa-rocket"></i> Get Started</h2>
+<div class="get-started-grid">
+<div class="get-started-card primary">
 <h3><i class="fas fa-book"></i> Meeting Materials</h3>
-<p>Detailed agendas, discussion questions, and action items for each session.</p>
-<a href="{{ '/meetings' | relative_url }}" class="resource-link">View Meeting Guides →</a>
+<p>Complete guides for all 4 sessions</p>
+<a href="{{ '/meetings' | relative_url }}" class="get-started-link">View Guides →</a>
 </div>
 
-<div class="resource-card">
-<h3><i class="fas fa-headphones"></i> Audio & Video Content</h3>
-<p>NotebookLM prompts for creating podcasts and videos to supplement your reading.</p>
-<a href="{{ '/prompts' | relative_url }}" class="resource-link">Content Generation →</a>
+<div class="get-started-card secondary">
+<h3><i class="fas fa-headphones"></i> AI Content</h3>
+<p>Podcast & video generation</p>
+<a href="{{ '/prompts' | relative_url }}" class="get-started-link">Generate →</a>
 </div>
 
-<div class="resource-card">
-<h3><i class="fas fa-rss"></i> RSS Feeds & Downloads</h3>
-<p>Subscribe to podcast feeds or download audio/video files directly to your device.</p>
-<a href="{{ '/feeds' | relative_url }}" class="resource-link">Subscribe & Download →</a>
+<div class="get-started-card secondary">
+<h3><i class="fas fa-download"></i> Resources</h3>
+<p>Downloads & activities</p>
+<a href="{{ '/resources' | relative_url }}" class="get-started-link">Explore →</a>
 </div>
-
-<div class="resource-card">
-<h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
-<p>Activities, reflection questions, and experiments to try between sessions.</p>
-<a href="{{ '/resources' | relative_url }}" class="resource-link">Additional Resources →</a>
 </div>
 </div>
 
-<!-- Required Reading - Full Width Section -->
-<section class="required-reading-section">
-<div class="required-reading-content">
-<h2 class="section-accent"><i class="fas fa-book-open"></i> Required Reading</h2>
+<div class="required-reading-section" markdown="0">
+<h2><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
 <div class="book-visual">
 ![Accelerate: The Science of Lean Software and DevOps book cover]({{ '/assets/images/book-cover.jpg' | relative_url }})
@@ -167,7 +147,6 @@ Ready to transform your organization into a high-performing technology team?
 </div>
 </div>
 </div>
-</section>
 
 <footer class="ai-attribution" markdown="0">
   <div class="ai-attribution__icon">

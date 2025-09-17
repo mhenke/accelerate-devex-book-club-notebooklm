@@ -131,19 +131,19 @@ layout: default
     <div class="footer-content">
       <div class="footer-sections">
         <div class="footer-section">
-          <h4>About This Meeting</h4>
+          <h4>About Book Club</h4>
           <p>
-            Part of the Accelerate DevEx Book Club series exploring the science
-            of lean software and DevOps practices.
+            This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.
           </p>
           <div class="footer-meta">
             <span
-              ><i class="fas fa-calendar-alt"></i> Meeting {{ page.week |
-              default: '1' }}</span
+              ><i class="fas fa-calendar-alt"></i> 2 Months, 4 Sessions</span
             >
             <span
-              ><i class="fas fa-book-open"></i> Chapters {{ page.chapters |
-              default: '1-3' }}</span
+              ><i class="fas fa-users"></i> Theme-Based Structure</span
+            >
+            <span
+              ><i class="fas fa-clock"></i> Biweekly 1-Hour Format</span
             >
           </div>
         </div>
@@ -245,13 +245,26 @@ layout: default
 
   /* Meeting Header Styling */
   .meeting-header {
-    background: var(--card-dark);
+    background: var(--hero-dark);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: var(--space-xl) 0;
     margin-bottom: var(--space-3xl);
   }
 
   .meeting-header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+  }
+
+  /* Meeting Container - Lighter Background */
+  .meeting-container {
+    background: #f8fafc;
+    min-height: calc(100vh - 200px);
+    padding-bottom: var(--space-3xl);
+  }
+
+  .meeting-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
@@ -574,23 +587,23 @@ layout: default
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
     // Find Discussion Questions sections and add class to their ol elements
-    const headings = document.querySelectorAll("h2");
+    const headings = document.querySelectorAll('h2');
     headings.forEach((heading) => {
-      if (heading.textContent.includes("Discussion Questions")) {
+      if (heading.textContent.includes('Discussion Questions')) {
         const nextOl = heading.nextElementSibling;
-        if (nextOl && nextOl.tagName === "OL") {
-          nextOl.classList.add("discussion-questions-list");
+        if (nextOl && nextOl.tagName === 'OL') {
+          nextOl.classList.add('discussion-questions-list');
         }
       }
     });
 
     // Convert data-icon spans to Font Awesome icons
-    const iconSpans = document.querySelectorAll("[data-icon]");
+    const iconSpans = document.querySelectorAll('[data-icon]');
     iconSpans.forEach((span) => {
       const iconName = span.dataset.icon;
-      const iconElement = document.createElement("i");
+      const iconElement = document.createElement('i');
       iconElement.className = `fas fa-${iconName}`;
       span.parentNode.replaceChild(iconElement, span);
     });
