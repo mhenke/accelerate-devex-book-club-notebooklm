@@ -12,6 +12,59 @@ Markdown linting and spellcheck are fully integrated into the CI/CD pipeline via
 
 All contributors should review these files for up-to-date configuration and best practices.
 
+## Spellcheck Configuration
+
+The project uses `.spellcheck.yml` for automated spellchecking via [pyspelling](https://github.com/facelessuser/pyspelling):
+
+### Configuration Details
+
+- **Task Name**: `markdown` (required for GitHub Actions integration)
+- **Sources**: All markdown files in `docs/`, plus `README.md` and `MARKDOWN.md`
+- **Dictionary**: English US (`en_US`) with custom wordlist in `.wordlist.txt`
+- **Pipeline**: Processes Markdown with HTML filtering to ignore code blocks
+
+### Custom Wordlist
+
+Technical terms and proper nouns are maintained in `.wordlist.txt`:
+- DevOps terminology (DORA, CI/CD, etc.)
+- Author names (Forsgren, Humble, etc.)
+- Technical tools and frameworks (Jekyll, NotebookLM, etc.)
+
+### Adding New Words
+
+When adding technical terms or proper nouns that trigger spellcheck failures:
+1. Add the word to `.wordlist.txt` in alphabetical order
+2. Use the exact case as it appears in your content
+3. Test the spellcheck passes in CI
+
+### GitHub Actions Integration
+
+The spellcheck action requires both:
+- `task_name: markdown` parameter in the workflow
+- Named task in `.spellcheck.yml` matching the task_name
+
+**CRITICAL**: The GitHub Actions workflow must include the `task_name` parameter:
+
+```yaml
+- uses: rojopolis/spellcheck-github-actions@0.36.0
+  with:
+    task_name: markdown  # REQUIRED - matches task name in .spellcheck.yml
+    source_files: |
+      docs/_posts/**/*.md
+      docs/_pages/**/*.md
+      docs/_meetings/**/*.md
+      docs/index.md
+      README.md
+      MARKDOWN.md
+    config_path: .spellcheck.yml
+```
+
+**Error Resolution**: If you see "task_name must be specified to use source_files option", add the `task_name: markdown` parameter to your workflow step.
+
+**Current Issue**: Based on the GitHub Actions log, your workflow is missing this parameter. Add the single line `task_name: markdown` to fix the spellcheck failure.
+
+This ensures proper integration between the GitHub Action and pyspelling configuration.
+
 ## Disabled Rules
 
 The following markdownlint rules are disabled in `.markdownlintrc.json` for compatibility with Jekyll/Kramdown:
