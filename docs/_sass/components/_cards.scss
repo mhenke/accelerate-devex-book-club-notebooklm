@@ -1,31 +1,171 @@
-// Essential Card Components
+// Consolidated Card System
 // ========================
-// Streamlined card system using design tokens
+// Modular BEM-based card system using design tokens
 
 // Base Card Class - Core component used throughout the site
 .card {
   background: var(--color-white);
   border-radius: var(--radius-lg);
-  box-shadow: var(--elevation-1);
+  box-shadow: var(--shadow-sm);
   padding: var(--space-lg);
   margin-bottom: var(--space-lg);
   transition: all var(--duration-normal) var(--ease-out);
 
   &:hover {
-    box-shadow: var(--elevation-2);
-    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    transform: var(--transform-hover);
+  }
+
+  // Interactive variant
+  &--interactive {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+
+    &:active {
+      box-shadow: var(--shadow-sm);
+      transform: var(--transform-reset);
+    }
+  }
+
+  // Layout variants
+  &--centered {
+    text-align: center;
+  }
+
+  &--left-aligned {
+    text-align: left;
+  }
+
+  // Size variants
+  &--compact {
+    padding: var(--space-md);
+  }
+
+  &--spacious {
+    padding: var(--space-xl);
+  }
+
+  // Visual variants
+  &--gradient {
+    background: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+  }
+
+  &--elevated {
+    box-shadow: var(--shadow-lg);
+
+    &:hover {
+      box-shadow: var(--shadow-xl);
+      transform: var(--transform-hover-large);
+    }
+  }
+
+  // Border accent variants
+  &--border-left {
+    border-left: 4px solid var(--meeting-1-primary);
+  }
+
+  &--border-top {
+    border-top: 4px solid var(--meeting-1-primary);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--meeting-1-primary), var(--meeting-1-accent));
+    }
+  }
+
+  // Content structure elements
+  &__header {
+    margin-bottom: var(--space-lg);
+
+    h3, h4 {
+      margin: 0 0 var(--space-sm) 0;
+      color: var(--meeting-1-primary);
+      font-size: var(--font-size-body-large);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+
+  &__content {
+    p {
+      color: var(--color-gray-400);
+      font-size: var(--font-size-body-medium);
+      margin: 0 0 var(--space-sm) 0;
+      line-height: var(--line-height-relaxed);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-gray-100);
   }
 }
 
-// Interactive Card Variant
-.card--interactive {
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
-  color: inherit;
+// Theme variants using CSS custom properties
+.card--theme-blue {
+  --theme-primary: var(--color-blue-600);
+  --theme-accent: var(--color-blue-800);
 
-  &:active {
-    box-shadow: var(--elevation-1);
-    transform: translateY(0px);
+  &.card--border-left {
+    border-left-color: var(--theme-primary);
+  }
+
+  &.card--border-top::before {
+    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+  }
+
+  .card__header h3,
+  .card__header h4 {
+    color: var(--theme-primary);
+  }
+}
+
+.card--theme-green {
+  --theme-primary: var(--color-green-600);
+  --theme-accent: #388e3c;
+
+  &.card--border-left {
+    border-left-color: var(--theme-primary);
+  }
+
+  &.card--border-top::before {
+    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+  }
+
+  .card__header h3,
+  .card__header h4 {
+    color: var(--theme-primary);
+  }
+}
+
+// Meeting-specific themes
+.card--meeting-1 {
+  --theme-primary: var(--meeting-1-primary);
+  --theme-accent: var(--meeting-1-accent);
+
+  &.card--border-left {
+    border-left-color: var(--theme-primary);
+  }
+
+  &.card--border-top::before {
+    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+  }
+
+  .card__header h3,
+  .card__header h4 {
+    color: var(--theme-primary);
   }
 }
