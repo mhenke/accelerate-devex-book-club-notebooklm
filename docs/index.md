@@ -24,13 +24,13 @@ title: Home
 </div>
 </div>
 
-{% include key-question.html %}
-
 <div class="quick-start section-card">
 <h2><i class="fas fa-book"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
+
+{% include key-question.html %}
 
 <div class="what-youll-learn-section section-card" markdown="0">
 <h2><i class="fas fa-bullseye"></i> What You'll Learn</h2>
