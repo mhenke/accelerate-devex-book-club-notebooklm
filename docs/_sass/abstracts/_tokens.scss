@@ -23,28 +23,36 @@ $desktop: 1200px;
 // COLOR TOKENS
 // =============================================================================
 
-// Primary Brand Colors - Based on project color scheme
+// Primary Brand Colors - Enhanced for sophisticated design
 $header-dark-navy: #1a1a2e;
 $header-light-navy: #16213e;
 $primary-blue: #2196f3;
 $dark-blue: #16213e;
+$hero-dark: #0f1419;  // Deeper dark for hero sections
+$card-dark: #1e2936;   // Dark card backgrounds
+$card-darker: #151b23; // Even darker for contrast
 
 // Accent Colors - Energetic and engaging
 $accent-coral: #ff7f50;
 $accent-gold: #d7ba89;
 $accent-teal: #7adad1;
 $accent-sage: #8b9eb7;
+$accent-emerald: #10b981; // Additional sophisticated accent
 
 // Interactive State Colors
 $hover-coral: #ff6347;
 $hover-gold: #c9a876;
 $hover-teal: #6bc7bf;
+$hover-emerald: #059669;
 
-// Background Colors - Clean and accessible
+// Background Colors - Enhanced palette
 $background-white: #ffffff;
 $background-off-white: #efe9e7;
 $background-light-gray: #f5f5f5;
 $background-light: #f5f5f5;
+$background-dark: #0f1419;
+$background-card-dark: #1e2936;
+$background-surface: #f8fafc;
 
 // Text Colors - Hierarchical and readable
 $text-dark: #2c3e50;
@@ -108,6 +116,16 @@ $shadow-medium: rgba(26, 26, 46, 0.15);
 
 // CSS Custom Properties - Runtime Theme Control
 :root {
+  // Enhanced Dark Theme Colors
+  --hero-dark: #{$hero-dark};
+  --card-dark: #{$card-dark};
+  --card-darker: #{$card-darker};
+  --background-dark: #{$background-dark};
+  --background-card-dark: #{$background-card-dark};
+  --background-surface: #{$background-surface};
+  --accent-emerald: #{$accent-emerald};
+  --hover-emerald: #{$hover-emerald};
+
   // Header Gradient Colors
   --header-dark-navy: #{$header-dark-navy};
   --header-light-navy: #{$header-light-navy};

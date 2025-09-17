@@ -107,21 +107,22 @@ Parameters:
 
 <style>
 .simple-card {
-  background: var(--background-white);
-  border: 1px solid var(--border-light);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: var(--shadow-light);
-  border-left: 3px solid var(--meeting-1-color);
-  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: var(--card-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(20px);
 }
 
 .simple-card:hover {
-  border-color: var(--border-focus);
-  box-shadow: var(--shadow-medium);
-  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6px);
 }
 
 .simple-card::before {
@@ -130,9 +131,9 @@ Parameters:
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-light), transparent);
-  opacity: 0.6;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 /* Modern theme colors */
@@ -151,21 +152,29 @@ Parameters:
 }
 
 .card-header i {
-  font-size: 1.25rem;
-  color: #3b82f6;
+  font-size: var(--font-size-2xl);
+  color: var(--accent-teal);
+  background: rgba(122, 218, 209, 0.2);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-teal);
 }
 
 .card-titles h4 {
   margin: 0;
-  color: #1f2937;
-  font-size: 1.25rem;
-  font-weight: 600;
+  color: var(--text-white);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
 }
 
 .card-subtitle {
-  color: #6b7280;
-  font-size: 0.875rem;
-  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
 }
 
 /* Content */
@@ -174,8 +183,9 @@ Parameters:
 }
 
 .card-description {
-  color: #4b5563;
-  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-lg);
+  line-height: var(--line-height-relaxed);
 }
 
 .card-question {
@@ -303,15 +313,46 @@ Parameters:
   opacity: 1 !important;
 }
 
-/* Media */
+/* Media - Enhanced Sophisticated Styling */
 .media-container {
-  margin: 1rem 0;
+  margin: var(--space-xl) 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
   overflow: hidden;
+}
+
+.media-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(122, 218, 209, 0.03) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .media-container video,
 .media-container audio {
   width: 100%;
+  border-radius: var(--radius-lg);
+  background: var(--card-darker);
+  position: relative;
+  z-index: 1;
+}
+
+.media-container video {
+  min-height: 200px;
+  object-fit: cover;
+}
+
+.media-container audio {
+  height: 60px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
 /* Attribution */
@@ -330,15 +371,18 @@ Parameters:
 
 /* Card type specific styling */
 .insight-card {
-  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
+  border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .discussion-card {
-  background: linear-gradient(135deg, #fef3e2, #fef3c7);
+  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
+  border: 1px solid rgba(255, 127, 80, 0.2);
 }
 
 .action-card {
-  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
+  border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .resource-card {
@@ -346,7 +390,8 @@ Parameters:
 }
 
 .metric-card {
-  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
+  border: 1px solid rgba(33, 150, 243, 0.2);
 }
 
 .application-card {
