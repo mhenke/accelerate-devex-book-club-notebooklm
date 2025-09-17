@@ -151,28 +151,6 @@ dora_color: '#1E3A8A'
     radio_name="deployment-confidence"
     default_feedback="Select how your team feels about deployments to get targeted improvement suggestions."
   %}
-
-  {% include simple-checkpoint.html 
-    title="Improvement Priority"
-    icon="fas fa-bullseye"
-    question="Which DORA metric should your team focus on first?"
-    type="radio"
-    options=site.data.checkpoint_answers.improvement_priority
-    feedback_id="priority-feedback"
-    radio_name="improvement-focus"
-    default_feedback="Choose which metric needs the most attention to get specific improvement strategies."
-  %}
-
-  {% include simple-checkpoint.html 
-    title="Culture Assessment"
-    icon="fas fa-users"
-    question="Assess your organization's culture type using Westrum's model:"
-    type="radio"
-    options=site.data.checkpoint_answers.culture_assessment
-    feedback_id="culture-feedback"
-    radio_name="culture-type"
-    default_feedback="Select your organization's culture type to see how it impacts delivery performance."
-  %}
 </div>
 
 ### Discussion Questions
@@ -181,7 +159,6 @@ dora_color: '#1E3A8A'
   {% include simple-card.html type="discussion" icon="fas fa-chart-line" title="Current State Assessment" question="How would you rate your team on each DORA metric?" items="Deployment frequency|Lead time for changes|Time to restore service|Change failure rate" theme="primary" %}
   {% include simple-card.html type="discussion" icon="fas fa-balance-scale" title="Speed vs. Stability Myths" question="What examples have you seen of assumed trade-offs in your organization?" items="We can't deploy frequently because...|Quality requires slow releases|Fast delivery means cutting corners" theme="warning" %}
   {% include simple-card.html type="discussion" icon="fas fa-rocket" title="Deployment Pain Points" question="Describe your team's current deployment experience and anxiety levels" items="What causes deployment anxiety?|Manual steps and coordination needed|Frequency and timing of deployments" theme="warning" %}
-  {% include simple-card.html type="discussion" icon="fas fa-users" title="Culture Indicators" question="Using Westrum's model, what culture type best describes your organization?" items="How do you handle failure and learning?|Information sharing and collaboration|Risk-taking and innovation support" theme="neutral" %}
 </div>
 
 ## Action Items for Next Meeting

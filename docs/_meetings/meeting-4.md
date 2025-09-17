@@ -182,17 +182,6 @@ dora_color: '#7c3aed'
     feedback_id="readiness-score"
     default_feedback="Select factors present in your organization to calculate transformation readiness."
   %}
-
-  {% include simple-checkpoint.html 
-    type="radio"
-    title="Coaching Questions Practice"
-    icon="fas fa-comments"
-    question="Scenario: Team missed deployment deadline. Choose the coaching question you'd most likely ask:"
-    options=site.data.checkpoint_answers.coaching_assessment
-    radio_name="coaching-q1"
-    feedback_id="coaching-feedback"
-    default_feedback="Select your approach to see how it aligns with transformational leadership principles."
-  %}
 </div>
 
 ### ING Transformation Lessons
@@ -233,56 +222,11 @@ dora_color: '#7c3aed'
   
   {% include simple-card.html 
     type="discussion" 
-    icon="fas fa-eye" 
-    title="Visual Management" 
-    question="How might ING's Obeya rooms be adapted to your context?" 
-    items="Strategic objectives visualization|Performance gaps and problem tracking|Team collaboration spaces|Escalation and resolution workflows" 
-    theme="warning"
-  %}
-  
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-puzzle-piece" 
-    title="Team Structure" 
-    question="Could ING's tribe/squad structure improve your organization?" 
-    items="Cross-functional team formation|Customer focus vs. functional silos|Knowledge sharing across teams|Organizational change requirements" 
-    theme="success"
-  %}
-  
-  {% include simple-card.html 
-    type="discussion" 
     icon="fas fa-comments" 
-    title="Communication Flow" 
-    question="How does problem escalation work in your teams?" 
-    items="Current escalation patterns and bottlenecks|Catchball communication opportunities|Information flow improvements|Rapid resolution mechanisms" 
-    theme="neutral"
-  %}
-  
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-question-circle" 
     title="Coaching vs Commanding" 
     question="How can leaders shift toward supportive questions rather than direct orders?" 
     items="Current leadership communication patterns|Coaching question examples and practice|Psychological safety and trust building|Team autonomy development" 
     theme="primary"
-  %}
-  
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-lightbulb" 
-    title="Make It Your Own" 
-    question="How can your team adopt experimentation vs. copying practices?" 
-    items="ING practices that resonate with your context|Adaptation strategies for your environment|Experimentation culture development|Learning from failure and iteration" 
-    theme="warning"
-  %}
-  
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-chart-bar" 
-    title="Transformation Readiness" 
-    question="Does your organization have the discipline and patience for sustainable culture change?" 
-    items="Long-term commitment to learning and improvement|Patience with gradual vs. immediate results|Investment in people development|Biggest obstacles to transformation" 
-    theme="info"
   %}
 </div>
 
@@ -298,16 +242,7 @@ dora_color: '#7c3aed'
 - Work in progress and bottlenecks
 - Actions and ownership
 
-### 2. Coaching Questions Practice {#action-coaching-questions-practice}
-
-**Exercise:** Role-play leadership scenarios
-
-- Partner A presents a team obstacle or challenge
-- Partner B practices asking open-ended, supportive coaching questions
-- Focus on "What can I do to support you?" vs solving the problem directly
-- Debrief on how this felt different from typical management interactions
-
-### 3. "Adapt, Don't Copy" Planning {#adapt-dont-copy-planning}
+### 2. "Adapt, Don't Copy" Planning {#adapt-dont-copy-planning}
 
 **Exercise:** Choose one ING practice and adapt it
 
@@ -315,15 +250,6 @@ dora_color: '#7c3aed'
 - Identify what would need modification for your context
 - Plan small experiment to test adapted version
 - Define success metrics and learning objectives
-
-### 4. Transformation Readiness Assessment {#transformation-readiness-assessment}
-
-**Exercise:** Evaluate organizational change capacity
-
-- Rate current leadership characteristics (1-5 scale) across five dimensions
-- Identify biggest gaps in transformation discipline/patience
-- Assess investment in learning and development
-- Plan specific leadership behavior changes
 
 ## Action Items for Next Meeting
 
@@ -350,16 +276,6 @@ dora_color: '#7c3aed'
 
   {% include simple-card.html 
     type="action"
-    icon="fas fa-eye"
-    title="Create visual management"
-    question="Can everyone see your team's work and problems at a glance?"
-    description="Make work visible so problems can be solved collectively."
-    items="Set up physical board or digital tool showing current work|Add bottlenecks and escalation paths|Make problems visible at team level|Enable collective problem-solving"
-    theme="warning"
-  %}
-
-  {% include simple-card.html 
-    type="action"
     icon="fas fa-lightbulb"
     title="Turn failure into learning"
     question="When did you last discuss a setback without blame?"
@@ -367,42 +283,12 @@ dora_color: '#7c3aed'
     items="Hold \"failure leads to inquiry\" discussion about recent problem|Ask \"What conditions led to this outcome?\"|Focus on system improvement, not individual fault|Document learning for organizational memory"
     theme="success"
   %}
-
-  {% include simple-card.html 
-    type="action"
-    icon="fas fa-sitemap"
-    title="Map and improve communication flow"
-    question="Where do problems get stuck in your escalation process?"
-    description="Identify and reduce communication bottlenecks for faster resolution."
-    items="Document who gets involved when problems arise|Identify bottlenecks or unnecessary handoffs|Test one improvement to speed up resolution|Implement catchball communication patterns"
-    theme="neutral"
-  %}
-
-  {% include simple-card.html 
-    type="action"
-    icon="fas fa-star"
-    title="Analyze leadership gaps"
-    question="Which transformational leadership dimensions need development?"
-    description="Rate current leadership across five dimensions and plan development."
-    items="Rate leadership on vision, communication, support, intellectual stimulation|Identify biggest gaps in leadership capability|Plan specific development activities|Create measurement for leadership improvement"
-    theme="primary"
-  %}
-
-  {% include simple-card.html 
-    type="action"
-    icon="fas fa-puzzle-piece"
-    title="Adapt one ING practice"
-    question="What element from their transformation fits your context?"
-    description="Choose one practice to pilot and adapt to your organizational context."
-    items="Choose Obeya rooms, catchball communication, or squad structure|Adapt practice to your organizational context|Plan small pilot with measurable success criteria|Document learning for scaling decision"
-    theme="info"
-  %}
 </div>
 
 ### Culminating Reflection
 
 {% include key-question.html 
-  intro="As we conclude our transformation journey, we return to the central question that drives all DevOps improvement:" 
+  intro="As we conclude our transformation journey, we return to the central question that drives all DevOps improvement:"
   conclusion="This question embodies the entire Accelerate philosophy: start small, build momentum, focus on concrete improvements, and create conditions for continuous improvement."
 %}
 
