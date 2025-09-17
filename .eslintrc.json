@@ -13,7 +13,7 @@
   },
   "rules": {
     "no-unused-vars": "warn",
-    "no-console": "warn",
+    "no-console": "off",
     "no-debugger": "error",
     "prefer-const": "error",
     "no-var": "error",
@@ -54,7 +54,9 @@
       "rules": {
         "no-undef": "off",
         "no-unused-vars": "off",
-        "no-redeclare": "off"
+        "no-redeclare": "off",
+        "indent": "off",
+        "no-trailing-spaces": "off"
       }
     },
     {
@@ -64,6 +66,18 @@
         "no-unused-vars": "off",
         "no-redeclare": "off",
         "no-implicit-globals": "off"
+      }
+    },
+    {
+      "files": ["docs/_meetings/**/*.md", "docs/transformation-complete.md"],
+      "rules": {
+        "indent": "off",
+        "no-trailing-spaces": "off",
+        "quotes": "off",
+        "semi": "off",
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "no-inner-declarations": "off"
       }
     }
   ]

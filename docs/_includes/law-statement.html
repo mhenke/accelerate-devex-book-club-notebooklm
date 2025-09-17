@@ -1,0 +1,10 @@
+{% comment %}
+  Reusable law statement component
+  Usage: {% include law-statement.html quote="Organizations design systems that mirror their communication structures" author="Melvin Conway" year="1967" %}
+{% endcomment %}
+<div class="law-statement" markdown="0">
+  <blockquote>
+    "{{ include.quote }}"
+  </blockquote>
+  <cite>— {{ include.author }}{% if include.year %}, {{ include.year }}{% endif %}</cite>
+</div>
