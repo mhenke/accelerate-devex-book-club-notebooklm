@@ -8,65 +8,34 @@ duration: '1 Hour'
 dora_color: '#7c3aed'
 ---
 
-### Watch the Meeting 4 Video
+{% include simple-card.html 
+  type="media" 
+  title="Meeting 4 Video"
+  description="AI-generated video content covering transformational leadership and ING case study"
+  media_type="video"
+  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-video.mp4"
+  theme="primary"
+%}
 
-<div class="media-container" markdown="0">
-<video controls width="100%">
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-video.mp4" download class="download-btn">
-		<i class="fas fa-download"></i> Download Video
-	</a>
-</div>
-</div>
-
-### Listen to the Meeting 4 Podcast
-
-<div class="media-container" markdown="0">
-<audio controls>
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-podcast.m4a" download class="download-btn">
-		<i class="fas fa-download"></i> Download Audio
-	</a>
-</div>
-</div>
+{% include simple-card.html 
+  type="media" 
+  title="Meeting 4 Podcast"
+  description="AI-generated podcast discussing leadership transformation and organizational change"
+  media_type="audio"
+  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-podcast.m4a"
+  theme="info"
+%}
 
 ### Key Insights
 
 #### Transformational Leadership: Five Dimensions That Drive Performance
 
 <div class="leadership-dimensions-grid" markdown="0">
-  <div class="insight-card vision" markdown="0">
-    <h4><i class="fas fa-eye"></i> Vision</h4>
-    <p>Clear understanding of where organization is going in 5 years</p>
-  </div>
-
-  <div class="insight-card communication" markdown="0">
-    <h4><i class="fas fa-bullhorn"></i> Inspirational Communication</h4>
-    <p>Motivates and inspires even in uncertain/changing environments</p>
-  </div>
-
-  <div class="insight-card stimulation" markdown="0">
-    <h4><i class="fas fa-lightbulb"></i> Intellectual Stimulation</h4>
-    <p>Challenges team members to think about problems in new ways</p>
-  </div>
-
-  <div class="insight-card support" markdown="0">
-    <h4><i class="fas fa-heart"></i> Supportive Leadership</h4>
-    <p>Demonstrates care and consideration for followers' personal needs</p>
-  </div>
-
-  <div class="insight-card recognition" markdown="0">
-    <h4><i class="fas fa-award"></i> Personal Recognition</h4>
-    <p>Praises and acknowledges achievements, personally compliments work</p>
-  </div>
+  {% include simple-card.html type="insight" icon="fas fa-eye" title="Vision" description="Clear understanding of where organization is going in 5 years" theme="primary" %}
+  {% include simple-card.html type="insight" icon="fas fa-bullhorn" title="Inspirational Communication" description="Motivates and inspires even in uncertain/changing environments" theme="info" %}
+  {% include simple-card.html type="insight" icon="fas fa-lightbulb" title="Intellectual Stimulation" description="Challenges team members to think about problems in new ways" theme="warning" %}
+  {% include simple-card.html type="insight" icon="fas fa-heart" title="Supportive Leadership" description="Demonstrates care and consideration for followers' personal needs" theme="success" %}
+  {% include simple-card.html type="insight" icon="fas fa-award" title="Personal Recognition" description="Praises and acknowledges achievements, personally compliments work" theme="neutral" %}
 </div>
 
 <div class="research-finding" markdown="0">
@@ -233,43 +202,16 @@ dora_color: '#7c3aed'
     </div>
   </div>
 
-  <div class="checkpoint-card transformation-readiness" markdown="0">
-    <h4><i class="fas fa-chart-bar"></i> Transformation Readiness</h4>
-    <p>Assess your organization's readiness for sustainable transformation:</p>
-    <div class="readiness-grid" markdown="0">
-      <div class="readiness-item" markdown="0">
-        <label class="readiness-checkbox">
-          <input type="checkbox" name="readiness" value="learning-investment">
-          <span class="checkbox-mark"></span>
-          <span>Investment in learning & development</span>
-        </label>
-      </div>
-      <div class="readiness-item" markdown="0">
-        <label class="readiness-checkbox">
-          <input type="checkbox" name="readiness" value="patient-discipline">
-          <span class="checkbox-mark"></span>
-          <span>Patience for long-term culture change</span>
-        </label>
-      </div>
-      <div class="readiness-item" markdown="0">
-        <label class="readiness-checkbox">
-          <input type="checkbox" name="readiness" value="experimentation">
-          <span class="checkbox-mark"></span>
-          <span>Culture of experimentation</span>
-        </label>
-      </div>
-      <div class="readiness-item" markdown="0">
-        <label class="readiness-checkbox">
-          <input type="checkbox" name="readiness" value="visual-management">
-          <span class="checkbox-mark"></span>
-          <span>Visual management practices</span>
-        </label>
-      </div>
-    </div>
-    <div class="readiness-score" id="readiness-score">
-      <p>Select factors present in your organization to calculate transformation readiness.</p>
-    </div>
-  </div>
+  {% include simple-checkpoint.html 
+    type="checkbox"
+    title="Transformation Readiness"
+    icon="fas fa-chart-bar"
+    question="Assess your organization's readiness for sustainable transformation:"
+    options=site.data.checkpoint_answers.transformation_readiness
+    radio_name="readiness"
+    feedback_id="readiness-score"
+    default_feedback="Select factors present in your organization to calculate transformation readiness."
+  %}
 
   <div class="checkpoint-card coaching-practice" markdown="0">
     <h4><i class="fas fa-comments"></i> Coaching Questions Practice</h4>
