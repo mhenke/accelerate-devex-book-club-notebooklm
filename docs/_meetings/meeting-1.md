@@ -178,7 +178,7 @@ document.addEventListener('keydown', function(event) {
 <!-- Step-Based Progressive Learning Structure -->
 
 <!-- THE PROBLEM -->
-<div class="step-section step-problem" markdown="0">
+<div class="step-section step-problem section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-exclamation-triangle"></i> The Problem: False Choice</h2>
   </div>
@@ -207,7 +207,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK (Causality Flow) -->
-<div class="step-section step-framework framework-dark" markdown="0">
+<div class="step-section step-framework section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-sitemap"></i> The Framework: How Culture Drives Performance</h2>
   </div>
@@ -296,7 +296,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- INTEGRATED ASSESSMENT -->
-<div class="step-section step-assessment" markdown="0">
+<div class="step-section step-assessment section-card assessment-elevated" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-stethoscope"></i> Assessment: Reading Your Organization's Signals</h2>
   </div>
@@ -341,7 +341,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
-<div class="step-section step-understanding key-insight-dark" markdown="0">
+<div class="step-section step-understanding section-card" markdown="0">
   <div class="step-header">
   <h2><i class="fas fa-sync" role="img" aria-label="Cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
   </div>
@@ -371,7 +371,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="step-section step-discussion" markdown="0">
+<div class="step-section step-discussion section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
   </div>
@@ -426,7 +426,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="step-section step-action" markdown="0">
+<div class="step-section step-action section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-check-circle"></i> Action Items for Next Meeting</h2>
   </div>
@@ -545,7 +545,7 @@ document.addEventListener('keydown', function(event) {
   <h2 id="next-meeting-heading" style="margin-top:2rem;">Next Meeting</h2>
   <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
 <div class="next-meeting-btn-wrapper">
-<a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="next-meeting-btn" role="button" aria-label="Go to Meeting 2: Technical Excellence">
+<a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="btn btn--meeting-nav" role="button" aria-label="Go to Meeting 2: Technical Excellence">
   Meeting 2: Technical Excellence
 </a>
 </div>

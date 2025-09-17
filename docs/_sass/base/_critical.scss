@@ -977,17 +977,31 @@ a {
   }
 }
 
-// Compact Success Metrics
+// Enhanced Success Metrics with Material Design
 .success-metrics-compact {
-  background: var(--gradient-surface);
-  border: 1px solid rgba(148, 163, 184, 0.3);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
-  margin: var(--space-lg) auto;
-  max-width: 900px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-2xl);
+  margin: var(--space-xl) auto;
+  max-width: 1000px;
   text-align: center;
-  box-shadow: var(--elevation-2);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 0.8s ease-out 0.4s both;
+  position: relative;
+  overflow: hidden;
+
+  // Enhance visual prominence with accent border
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--accent-emerald), var(--accent-teal));
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  }
 
   h2 {
     // Inherit standardized h2 styling with icons and left alignment
@@ -1228,16 +1242,30 @@ a {
   }
 }
 
-// Get Started Section - Streamlined Resources
+// Enhanced Get Started Section with Material Design
 .get-started-section {
-  background: var(--gradient-surface);
-  border: 1px solid rgba(148, 163, 184, 0.3);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
-  margin: var(--space-lg) auto;
-  max-width: 900px;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid rgba(33, 150, 243, 0.2);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-2xl);
+  margin: var(--space-xl) auto;
+  max-width: 1000px;
   text-align: center;
-  box-shadow: var(--elevation-2);
+  box-shadow: 0 8px 24px rgba(33, 150, 243, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+
+  // Enhance visual prominence with accent border
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #2196f3, #1976d2);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  }
 
   h2 {
     text-align: left; // Override center alignment for consistency
@@ -2796,40 +2824,31 @@ button:focus,
   --meeting-1-card-shadow: var(--elevation-2);
 }
 
-// Unified step styling with Meeting 1 blue theme
+// Unified step styling with dynamic theme colors
 .step-section {
   background: white;
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   margin-bottom: var(--space-xl);
-  box-shadow: var(--meeting-1-card-shadow);
-  border: 1px solid #e1e8ed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
   transition: all var(--duration-normal) var(--ease-out);
   animation: fadeInUp 0.8s ease-out both;
 
   // Staggered animation delays for premium feel
-  &:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-  &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  &:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-  &:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-  &:nth-child(5) {
-    animation-delay: 0.5s;
-  }
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  &:nth-child(4) { animation-delay: 0.4s; }
+  &:nth-child(5) { animation-delay: 0.5s; }
 
   &:hover {
-    transform: var(--transform-hover);
-    box-shadow: var(--elevation-4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
   }
 
+  // Dynamic theme color top border
   &::before {
     content: "";
     position: absolute;
@@ -2837,11 +2856,7 @@ button:focus,
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(
-      90deg,
-      var(--meeting-1-primary),
-      var(--meeting-1-accent)
-    );
+    background: var(--meeting-primary, var(--meeting-1-primary));
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
 
@@ -2850,7 +2865,7 @@ button:focus,
 
     h2 {
       margin: 0;
-      color: var(--meeting-1-text);
+      color: var(--text-dark);
       font-family: var(--font-display);
       display: flex;
       align-items: center;
@@ -2859,20 +2874,102 @@ button:focus,
       font-weight: var(--font-weight-bold);
 
       i {
-        color: var(--meeting-1-primary);
+        color: var(--meeting-primary, var(--meeting-1-primary));
         font-size: 1.1em;
         padding: var(--space-sm);
-        background: var(--meeting-1-light);
+        background: var(--meeting-surface, rgba(9, 105, 218, 0.1));
         border-radius: var(--radius-md);
         width: 44px;
         height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid var(--meeting-1-border);
+        border: 1px solid var(--meeting-primary, var(--meeting-1-primary));
+        opacity: 0.2;
       }
     }
   }
+}
+
+// Assessment Section Enhanced Elevation (Priority 3 from reviews)
+.step-section.assessment-elevated {
+  // Higher elevation for interactive assessment
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--meeting-primary, var(--meeting-1-primary));
+  background: linear-gradient(135deg, white 0%, var(--meeting-surface, rgba(9, 105, 218, 0.02)) 100%);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15), 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  &::before {
+    height: 6px; // Thicker accent border for assessment
+  }
+
+  .step-header h2 i {
+    opacity: 1; // Full opacity for assessment icon
+    background: var(--meeting-primary, var(--meeting-1-primary));
+    color: white;
+  }
+}
+
+// Material Design Micro-interactions (Phase 4)
+.step-section {
+  // Ripple effect on click
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--meeting-primary, var(--meeting-1-primary));
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &:active::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+// Touch-friendly responsive improvements
+@media (max-width: 768px) {
+  .step-section {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+
+    .step-header h2 {
+      font-size: var(--font-size-title-medium);
+      gap: var(--space-sm);
+
+      i {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .assessment-elevated {
+    border-width: 1px; // Thinner border on mobile
+  }
+}
+
+// Improved focus states for accessibility
+.step-section:focus-within {
+  outline: 3px solid var(--meeting-primary, var(--meeting-1-primary));
+  outline-offset: 2px;
 }
 
 // Problem Section Styles
@@ -3427,6 +3524,7 @@ button:focus,
     flex-shrink: 0;
     width: 40px;
     height: 40px;
+
     // border-radius removed
     display: flex;
     align-items: center;
@@ -3949,7 +4047,6 @@ button:focus,
       var(--meeting-1-secondary)
     );
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     position: relative;
@@ -4259,27 +4356,24 @@ button:focus,
       .chapter-accent {
         background: linear-gradient(90deg, #3b82f6, #1d4ed8);
       }
+
       // .chapter-icon background and color removed for chapter-1
-      .chapter-icon {
-      }
     }
 
     &.chapter-2 {
       .chapter-accent {
         background: linear-gradient(90deg, #ef4444, #dc2626);
       }
+
       // .chapter-icon background and color removed for chapter-2
-      .chapter-icon {
-      }
     }
 
     &.chapter-3 {
       .chapter-accent {
         background: linear-gradient(90deg, #10b981, #059669);
       }
+
       // .chapter-icon background and color removed for chapter-3
-      .chapter-icon {
-      }
     }
   }
 }
