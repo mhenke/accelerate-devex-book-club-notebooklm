@@ -115,20 +115,17 @@ title: Home
 <div class="get-started-grid">
 <div class="get-started-card primary">
 <h3><i class="fas fa-book"></i> Meeting Materials</h3>
-<p>Complete guides for all 4 sessions</p>
-<a href="{{ '/meetings' | relative_url }}" class="get-started-link">View Guides →</a>
+<p>Complete structured guides for all 4 sessions with interactive learning checkpoints, discussion questions, and practical action items</p>
+<a href="{{ '/meetings' | relative_url }}" class="get-started-link">View All Guides →</a>
 </div>
 
 <div class="get-started-card secondary">
-<h3><i class="fas fa-headphones"></i> AI Content</h3>
-<p>Podcast & video generation</p>
-<a href="{{ '/prompts' | relative_url }}" class="get-started-link">Generate →</a>
+<h3><i class="fas fa-toolbox"></i> Resources & Support</h3>
+<p>Downloads, activities, AI-generated content, and community resources</p>
+<div class="resource-links">
+<a href="{{ '/resources' | relative_url }}" class="get-started-link">📥 Downloads</a>
+<a href="{{ '/prompts' | relative_url }}" class="get-started-link">🎧 AI Content</a>
 </div>
-
-<div class="get-started-card secondary">
-<h3><i class="fas fa-download"></i> Resources</h3>
-<p>Downloads & activities</p>
-<a href="{{ '/resources' | relative_url }}" class="get-started-link">Explore →</a>
 </div>
 </div>
 </div>
