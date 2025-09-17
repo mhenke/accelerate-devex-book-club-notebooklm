@@ -8,200 +8,141 @@ duration: '1 Hour'
 dora_color: '#0F766E'
 ---
 
-{% include reusable-media-video.html 
-  meeting_number="2"
-  video_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4"
+{% include simple-card.html 
+  type="media" 
+  title="Meeting 2 Video"
+  description="AI-generated video content covering technical excellence and continuous delivery"
+  media_type="video"
+  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4"
+  theme="primary"
 %}
 
-{% include reusable-media-podcast.html 
-  meeting_number="2"
-  audio_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a"
+{% include simple-card.html 
+  type="media" 
+  title="Meeting 2 Podcast"
+  description="AI-generated podcast discussing technical practices and CD principles"
+  media_type="audio"
+  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a"
+  theme="info"
 %}
 
 ### Key Insights
 
 #### Architecture: Loosely Coupled Systems Enable Team Independence
 
-<div class="architecture-comparison" markdown="0">
-  <div class="arch-side tight-coupled" markdown="0">
-    <h4><i class="fas fa-link"></i> Tightly Coupled</h4>
-    <div class="arch-content" markdown="0">
-      <p><strong>High Dependencies</strong></p>
-      <ul>
-        <li><i class="fas fa-ban"></i> Teams block each other</li>
-        <li><i class="fas fa-phone"></i> Constant coordination needed</li>
-        <li><i class="fas fa-turtle"></i> Slower deployment cycles</li>
-        <li><i class="fas fa-fire"></i> Cascading failures</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="vs-divider" markdown="0">
-    <span>VS</span>
-  </div>
-
-  <div class="arch-side loose-coupled" markdown="0">
-    <h4><i class="fas fa-puzzle-piece"></i> Loosely Coupled</h4>
-    <div class="arch-content" markdown="0">
-      <p><strong>Independent Teams</strong></p>
-      <ul>
-        <li><i class="fas fa-check"></i> Autonomous team work</li>
-        <li><i class="fas fa-rocket"></i> Faster feature delivery</li>
-        <li><i class="fas fa-shield-alt"></i> Isolated failures</li>
-        <li><i class="fas fa-chart-line"></i> Better scalability</li>
-      </ul>
-    </div>
-  </div>
-</div>
+{% include simple-comparison.html 
+  type="vs"
+  left_title="Tightly Coupled"
+  left_icon="fas fa-link"
+  left_subtitle="High Dependencies"
+  left_items="<i class='fas fa-ban'></i> Teams block each other|<i class='fas fa-phone'></i> Constant coordination needed|<i class='fas fa-turtle'></i> Slower deployment cycles|<i class='fas fa-fire'></i> Cascading failures"
+  right_title="Loosely Coupled"
+  right_icon="fas fa-puzzle-piece"
+  right_subtitle="Independent Teams"
+  right_items="<i class='fas fa-check'></i> Autonomous team work|<i class='fas fa-rocket'></i> Faster feature delivery|<i class='fas fa-shield-alt'></i> Isolated failures|<i class='fas fa-chart-line'></i> Better scalability"
+  theme="primary"
+%}
 
 #### Continuous Delivery Core Principles
 
 <div class="cd-principles-grid" markdown="0">
-  {% include insight-card.html icon="fas fa-tools" title="Build Quality In" description="Start with quality, don't inspect later" %}
-  {% include insight-card.html icon="fas fa-box" title="Small Batches" description="Manageable, testable units" %}
-  {% include insight-card.html icon="fas fa-robot" title="Automate Tasks" description="Free humans for creative work" %}
-  {% include insight-card.html icon="fas fa-folder" title="Version Control" description="All artifacts under control" %}
-  {% include insight-card.html icon="fas fa-code-branch" title="Trunk-Based Dev" description="Short branches, frequent integration" %}
-  {% include insight-card.html icon="fas fa-flask" title="Test Automation" description="Automated testing at all levels" %}
+  {% include simple-card.html type="insight" icon="fas fa-tools" title="Build Quality In" description="Start with quality, don't inspect later" theme="success" %}
+  {% include simple-card.html type="insight" icon="fas fa-box" title="Small Batches" description="Manageable, testable units" theme="primary" %}
+  {% include simple-card.html type="insight" icon="fas fa-robot" title="Automate Tasks" description="Free humans for creative work" theme="info" %}
+  {% include simple-card.html type="insight" icon="fas fa-folder" title="Version Control" description="All artifacts under control" theme="neutral" %}
+  {% include simple-card.html type="insight" icon="fas fa-code-branch" title="Trunk-Based Dev" description="Short branches, frequent integration" theme="warning" %}
+  {% include simple-card.html type="insight" icon="fas fa-flask" title="Test Automation" description="Automated testing at all levels" theme="success" %}
 </div>
 
 #### Breaking the "Wall of Confusion"
 
-<div class="wall-confusion-section" markdown="0">
-  <div class="confusion-problem" markdown="0">
-    <h4><i class="fas fa-wall-brick"></i> Traditional Silos</h4>
-    <ul>
-      <li><i class="fas fa-code"></i> Development optimizes for <strong>throughput</strong></li>
-      <li><i class="fas fa-server"></i> Operations optimizes for <strong>stability</strong></li>
-      <li><i class="fas fa-times-circle"></i> Conflicting incentives create friction</li>
-      <li><i class="fas fa-handshake-slash"></i> Blame culture emerges from misalignment</li>
-    </ul>
-  </div>
-
-  <div class="arrow-breakthrough" markdown="0">
-    <i class="fas fa-arrow-right"></i>
-    <span>CD Solution</span>
-  </div>
-
-  <div class="confusion-solution" markdown="0">
-    <h4><i class="fas fa-hands-helping"></i> System-Level Outcomes</h4>
-    <ul>
-      <li><i class="fas fa-bullseye"></i> Shared responsibility for <strong>both</strong> speed and stability</li>
-      <li><i class="fas fa-chart-line"></i> Metrics that reward collaboration</li>
-      <li><i class="fas fa-tools"></i> Technical practices that enable both goals</li>
-      <li><i class="fas fa-seedling"></i> Culture transformation through behavioral change</li>
-    </ul>
-  </div>
-</div>
+{% include simple-comparison.html 
+  type="flow"
+  left_title="Traditional Silos"
+  left_icon="fas fa-wall-brick"
+  left_subtitle="Conflicting Incentives"
+  left_items="<i class='fas fa-code'></i> Development optimizes for throughput|<i class='fas fa-server'></i> Operations optimizes for stability|<i class='fas fa-times-circle'></i> Conflicting incentives create friction|<i class='fas fa-handshake-slash'></i> Blame culture emerges from misalignment"
+  right_title="System-Level Outcomes"
+  right_icon="fas fa-hands-helping"
+  right_subtitle="CD Solution"
+  right_items="<i class='fas fa-bullseye'></i> Shared responsibility for both speed and stability|<i class='fas fa-chart-line'></i> Metrics that reward collaboration|<i class='fas fa-tools'></i> Technical practices that enable both goals|<i class='fas fa-seedling'></i> Culture transformation through behavioral change"
+  divider_text="CD Solution"
+  theme="success"
+%}
 
 #### Security: Shift Left for Speed AND Safety
 
-<div class="security-shift-comparison" markdown="0">
-  <div class="security-approach traditional" markdown="0">
-    <h4><i class="fas fa-shield-alt"></i> Traditional: Bolt-On Security</h4>
-    <div class="security-problems" markdown="0">
-      <div class="problem-item" markdown="0">
-        <i class="fas fa-clock"></i>
-        <span>Security review at the end</span>
-      </div>
-      <div class="problem-item" markdown="0">
-        <i class="fas fa-exclamation-triangle"></i>
-        <span>50% more remediation time</span>
-      </div>
-      <div class="problem-item" markdown="0">
-        <i class="fas fa-turtle"></i>
-        <span>Delayed releases</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="vs-arrow" markdown="0">→</div>
-
-  <div class="security-approach integrated" markdown="0">
-    <h4><i class="fas fa-lock"></i> Shift-Left: Built-In Security</h4>
-    <div class="security-benefits" markdown="0">
-      <div class="benefit-item" markdown="0">
-        <i class="fas fa-rocket"></i>
-        <span>Security checks in CI/CD pipeline</span>
-      </div>
-      <div class="benefit-item" markdown="0">
-        <i class="fas fa-chart-line"></i>
-        <span>50% faster remediation</span>
-      </div>
-      <div class="benefit-item" markdown="0">
-        <i class="fas fa-balance-scale"></i>
-        <span>Better security AND faster delivery</span>
-      </div>
-    </div>
-  </div>
-</div>
+{% include simple-comparison.html 
+  type="vs"
+  left_title="Bolt-On Security"
+  left_icon="fas fa-shield-alt"
+  left_subtitle="Traditional Approach"
+  left_items="<i class='fas fa-clock'></i> Security review at the end|<i class='fas fa-exclamation-triangle'></i> 50% more remediation time|<i class='fas fa-turtle'></i> Delayed releases"
+  right_title="Built-In Security"
+  right_icon="fas fa-lock"
+  right_subtitle="Shift-Left Approach"
+  right_items="<i class='fas fa-rocket'></i> Security checks in CI/CD pipeline|<i class='fas fa-chart-line'></i> 50% faster remediation|<i class='fas fa-balance-scale'></i> Better security AND faster delivery"
+  theme="warning"
+%}
 
 #### Conway's Law & Team Structure
 
 <div class="conway-law-section" markdown="0">
-  {% include law-statement.html 
-    quote="Organizations design systems that mirror their communication structures"
+  {% include simple-card.html 
+    type="statement"
+    title="Conway's Law"
+    description="Organizations design systems that mirror their communication structures"
     attribution="Melvin Conway, 1967"
-    context="Conway's Law demonstrates how organizational structure directly influences system architecture"
-    theme="tech"
+    theme="warning"
   %}
 
-  <div class="conway-examples" markdown="0">
-    <div class="example-card" markdown="0">
-      <h4><i class="fas fa-sitemap"></i> Traditional Organization</h4>
-      <p><strong>Structure:</strong> Separate dev, QA, ops teams</p>
-      <p><strong>Result:</strong> Monolithic systems with handoff bottlenecks</p>
-    </div>
-
-    <div class="arrow-transform" markdown="0">
-      <i class="fas fa-sync-alt"></i>
-      <span>Inverse Conway</span>
-    </div>
-
-    <div class="example-card" markdown="0">
-      <h4><i class="fas fa-users"></i> Cross-Functional Teams</h4>
-      <p><strong>Structure:</strong> Full-stack teams with all skills</p>
-      <p><strong>Result:</strong> Loosely coupled, independently deployable services</p>
-    </div>
-
-  </div>
+  {% include simple-comparison.html 
+    type="transform"
+    left_title="Traditional Organization"
+    left_icon="fas fa-sitemap"
+    left_subtitle="Structure: Separate dev, QA, ops teams"
+    left_items="<i class='fas fa-times'></i> Monolithic systems with handoff bottlenecks|<i class='fas fa-hourglass-half'></i> Coordination delays|<i class='fas fa-chain'></i> Tightly coupled architecture"
+    right_title="Cross-Functional Teams"
+    right_icon="fas fa-users"
+    right_subtitle="Structure: Full-stack teams with all skills"
+    right_items="<i class='fas fa-check'></i> Loosely coupled, independently deployable services|<i class='fas fa-rocket'></i> Autonomous team delivery|<i class='fas fa-puzzle-piece'></i> Service-oriented architecture"
+    divider_text="Inverse Conway"
+    theme="info"
+  %}
 </div>
 
 ### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint" markdown="0">
-  {% include checkpoint-card.html 
+  {% include simple-checkpoint.html 
     title="CD Maturity Assessment"
     icon="fas fa-chart-line"
     question="Rate your organization's maturity in Continuous Delivery practices:"
-    answers=site.data.checkpoint_answers.technical_maturity
+    type="radio"
+    options=site.data.checkpoint_answers.technical_maturity
     feedback_id="cd-maturity-feedback"
     radio_name="cd-maturity"
-    card_class="cd-maturity"
     default_feedback="Select your organization's CD maturity level to see improvement opportunities."
   %}
 
-  {% include checkpoint-card.html 
+  {% include simple-checkpoint.html 
     title="Security Integration Assessment"
     icon="fas fa-shield-alt"
     question="Rate how well security is integrated into your delivery process:"
-    answers=site.data.checkpoint_answers.five_point_scale
-    feedback_id="checkpoint-feedback"
+    type="radio"
+    options=site.data.checkpoint_answers.five_point_scale
+    feedback_id="security-feedback"
     radio_name="security-integration"
-    card_class="security-integration"
     default_feedback="Select your security integration level to see improvement strategies and performance impacts."
   %}
 
-  {% include reusable-slider-checkpoint.html 
+  {% include simple-checkpoint.html 
     title="Tool Freedom"
     icon="fas fa-palette"
     question="Rate your team's tool selection autonomy:"
-    min_label="Restricted"
-    mid_label="Flexible"
-    max_label="Full Freedom"
-    slider_id="tool-slider"
+    type="slider"
+    slider_labels="Restricted|Flexible|Full Freedom"
     feedback_id="slider-feedback"
-    card_class="tool-autonomy"
     default_feedback="Move the slider to assess your team's tool autonomy level"
   %}
 </div>
@@ -209,62 +150,70 @@ dora_color: '#0F766E'
 ### Real-World Applications
 
 <div class="real-world-applications" markdown="0">
-  {% include reusable-application-card.html 
+  {% include simple-card.html 
+    type="application"
     icon="fas fa-robot"
     title="Automation Success Stories"
     description="Share examples from your experience:"
-    prompts="What manual process did you recently automate? What was the impact?|How did test automation change your team's deployment confidence?|What task took hours manually but now takes minutes with automation?"
-    theme="automation"
+    items="What manual process did you recently automate? What was the impact?|How did test automation change your team's deployment confidence?|What task took hours manually but now takes minutes with automation?"
+    theme="success"
   %}
 
-  {% include reusable-application-card.html 
+  {% include simple-card.html 
+    type="application"
     icon="fas fa-sitemap"
     title="Architectural Decisions"
     description="Discuss decisions that impacted team independence:"
-    prompts="Which architectural changes improved your team's deployment frequency?|What dependencies currently prevent independent deployments?|How did microservices or modular design affect your delivery speed?"
-    theme="architecture"
+    items="Which architectural changes improved your team's deployment frequency?|What dependencies currently prevent independent deployments?|How did microservices or modular design affect your delivery speed?"
+    theme="primary"
   %}
 
-  {% include reusable-application-card.html 
+  {% include simple-card.html 
+    type="application"
     icon="fas fa-shield-alt"
     title="Security Integration"
     description="Examine security practices that impact delivery:"
-    prompts="Which security practices actually speed up delivery?|What security requirements currently slow down your team?|How do you balance security compliance with delivery speed?"
-    theme="security"
+    items="Which security practices actually speed up delivery?|What security requirements currently slow down your team?|How do you balance security compliance with delivery speed?"
+    theme="warning"
   %}
 </div>
 
 ### Discussion Questions
 
 <div class="discussion-questions-grid" markdown="0">
-  {% include discussion-card.html 
+  {% include simple-card.html 
+    type="discussion" 
     icon="fas fa-chart-line" 
     title="CD Maturity Assessment" 
     question="Which CD practices is your organization currently implementing well/poorly?" 
-    prompts="Trunk-based development and branching strategy|Automated testing coverage and quality|Deployment pipeline automation|Feature flags and rollback capabilities" 
-  %}
-
-  {% include discussion-card.html 
-    icon="fas fa-project-diagram" 
-    title="Architecture Dependencies" 
-    question="What prevents your team from deploying independently?" 
-    prompts="Shared databases and data dependencies|Coordinated release schedules|Service coupling and API contracts|Infrastructure and deployment bottlenecks" 
-    theme="warning"
-  %}
-
-  {% include discussion-card.html 
-    icon="fas fa-tools" 
-    title="Tool Autonomy" 
-    question="How much freedom do teams have in tool selection? What are the constraints?" 
-    prompts="Security and compliance requirements|Standardization vs. innovation balance|Budget and licensing considerations|Support and maintenance capabilities" 
+    items="Trunk-based development and branching strategy|Automated testing coverage and quality|Deployment pipeline automation|Feature flags and rollback capabilities" 
     theme="primary"
   %}
 
-  {% include discussion-card.html 
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-project-diagram" 
+    title="Architecture Dependencies" 
+    question="What prevents your team from deploying independently?" 
+    items="Shared databases and data dependencies|Coordinated release schedules|Service coupling and API contracts|Infrastructure and deployment bottlenecks" 
+    theme="warning"
+  %}
+
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-tools" 
+    title="Tool Autonomy" 
+    question="How much freedom do teams have in tool selection? What are the constraints?" 
+    items="Security and compliance requirements|Standardization vs. innovation balance|Budget and licensing considerations|Support and maintenance capabilities" 
+    theme="primary"
+  %}
+
+  {% include simple-card.html 
+    type="discussion" 
     icon="fas fa-shield-alt" 
     title="Security Integration" 
     question="How early in your development process is security considered?" 
-    prompts="Security testing in CI/CD pipelines|Developer security training and awareness|Code review and static analysis integration|Shift-left vs. security gate approaches" 
+    items="Security testing in CI/CD pipelines|Developer security training and awareness|Code review and static analysis integration|Shift-left vs. security gate approaches" 
     theme="neutral"
   %}
 </div>
@@ -272,33 +221,33 @@ dora_color: '#0F766E'
 ### Action Items for Next Meeting
 
 <div class="action-items-grid" markdown="0">
-  {% include reusable-action-card.html 
+  {% include simple-card.html 
+    type="action"
     icon="fas fa-robot"
     title="Automate one manual process"
     question="Which repetitive task will you tackle first?"
-    details="Identify a repetitive deployment, testing, or configuration task and automate it within 1-2 weeks."
-    action_items="Choose a manual process to automate|Research automation tools and approaches|Implement basic automation|Document time savings and benefits"
-    checkbox_id="automation-task"
+    description="Identify a repetitive deployment, testing, or configuration task and automate it within 1-2 weeks."
+    items="Choose a manual process to automate|Research automation tools and approaches|Implement basic automation|Document time savings and benefits"
     theme="success"
   %}
 
-  {% include reusable-action-card.html 
+  {% include simple-card.html 
+    type="action"
     icon="fas fa-project-diagram"
     title="Map your dependencies"
     question="What prevents independent deployments?"
-    details="Document shared databases, services, and infrastructure dependencies that impact team autonomy."
-    action_items="List all shared databases and services|Document coordination requirements|Identify deployment bottlenecks|Create dependency visualization diagram"
-    checkbox_id="dependency-mapping"
+    description="Document shared databases, services, and infrastructure dependencies that impact team autonomy."
+    items="List all shared databases and services|Document coordination requirements|Identify deployment bottlenecks|Create dependency visualization diagram"
     theme="warning"
   %}
 
-  {% include reusable-action-card.html 
+  {% include simple-card.html 
+    type="action"
     icon="fas fa-flask"
     title="Experiment with a CD practice"
     question="Which practice will move you forward?"
-    details="Try trunk-based development, test automation, or feature flags. Set goals and share results next meeting."
-    action_items="Choose one CD practice to experiment with|Set measurable goals and timeline|Implement pilot or proof of concept|Prepare results to share with team"
-    checkbox_id="cd-experiment"
+    description="Try trunk-based development, test automation, or feature flags. Set goals and share results next meeting."
+    items="Choose one CD practice to experiment with|Set measurable goals and timeline|Implement pilot or proof of concept|Prepare results to share with team"
     theme="primary"
   %}
 </div>
@@ -306,20 +255,20 @@ dora_color: '#0F766E'
 ### Related Resources
 
 <div class="resource-grid" markdown="0">
-  {% include reusable-resource-card.html 
+  {% include simple-card.html 
+    type="resource" 
     icon="fas fa-tools" 
     title="CI/CD Tools & Platforms" 
     links="GitHub Actions|https://github.com/features/actions|Jenkins|https://www.jenkins.io/|CircleCI|https://circleci.com/|Argo CD|https://argoproj.github.io/cd/" 
-    theme="tools"
-    show_external_icons=true
+    theme="primary"
   %}
 
-  {% include reusable-resource-card.html 
+  {% include simple-card.html 
+    type="resource" 
     icon="fas fa-shield-alt" 
     title="Security Integration" 
     links="OWASP DevSecOps Guidelines|https://owasp.org/www-project-devsecops-guideline/|Snyk|https://snyk.io/|GitHub Security|https://github.com/features/security|SonarQube|https://www.sonarqube.org/" 
-    theme="technical"
-    show_external_icons=true
+    theme="warning"
   %}
 </div>
 

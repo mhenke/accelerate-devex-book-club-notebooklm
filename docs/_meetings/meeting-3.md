@@ -8,71 +8,40 @@ duration: '1 Hour'
 dora_color: '#D97706'
 ---
 
-### Watch the Meeting 3 Video {#watch-meeting-3-video}
+{% include simple-card.html 
+  type="media" 
+  title="Meeting 3 Video"
+  description="AI-generated video content covering lean management, work visualization, and sustainable practices"
+  media_type="video"
+  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-video.mp4"
+  theme="warning"
+%}
 
-<div class="media-container" markdown="0">
-<video controls width="100%">
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-video.mp4" download class="download-btn">
-		<i class="fas fa-download"></i> Download Video
-	</a>
-</div>
-</div>
-
-### Listen to the Meeting 3 Podcast {#listen-meeting-3-podcast}
-
-<div class="media-container" markdown="0">
-<audio controls>
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-podcast.m4a" download class="download-btn">
-		<i class="fas fa-download"></i> Download Audio
-	</a>
-</div>
-</div>
+{% include simple-card.html 
+  type="media" 
+  title="Meeting 3 Podcast"
+  description="AI-generated podcast discussing WIP limits, employee satisfaction, and burnout prevention"
+  media_type="audio"
+  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-podcast.m4a"
+  theme="warning"
+%}
 
 ### Key Insights
 
 #### Lean vs Traditional Management
 
-<div class="management-comparison" markdown="0">
-  <div class="mgmt-side traditional" markdown="0">
-    <div class="mgmt-title" markdown="0"><i class="fas fa-clipboard-list"></i> Traditional Management</div>
-    <div class="mgmt-content" markdown="0">
-      <p><strong>Command & Control</strong></p>
-      <ul>
-        <li><i class="fas fa-user-tie"></i> Approval-heavy processes</li>
-        <li><i class="fas fa-exclamation-triangle"></i> Blame-oriented culture</li>
-        <li><i class="fas fa-hourglass-half"></i> Slow decision making</li>
-        <li><i class="fas fa-chart-line-down"></i> Focus on individual metrics</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="vs-divider" markdown="0">
-    <span>VS</span>
-  </div>
-
-  <div class="mgmt-side lean" markdown="0">
-    <div class="mgmt-title" markdown="0"><i class="fas fa-rocket"></i> Lean Management</div>
-    <div class="mgmt-content" markdown="0">
-      <p><strong>Enable & Empower</strong></p>
-      <ul>
-        <li><i class="fas fa-users"></i> Peer review processes</li>
-        <li><i class="fas fa-graduation-cap"></i> Learning from failures</li>
-        <li><i class="fas fa-tachometer-alt"></i> Fast feedback loops</li>
-        <li><i class="fas fa-chart-line"></i> System-level outcomes</li>
-      </ul>
-    </div>
-  </div>
-</div>
+{% include simple-comparison.html 
+  type="vs"
+  left_title="Traditional Management"
+  left_icon="fas fa-clipboard-list"
+  left_subtitle="Command & Control"
+  left_items="<i class='fas fa-user-tie'></i> Approval-heavy processes|<i class='fas fa-exclamation-triangle'></i> Blame-oriented culture|<i class='fas fa-hourglass-half'></i> Slow decision making|<i class='fas fa-chart-line-down'></i> Focus on individual metrics"
+  right_title="Lean Management"
+  right_icon="fas fa-rocket"
+  right_subtitle="Enable & Empower"
+  right_items="<i class='fas fa-users'></i> Peer review processes|<i class='fas fa-graduation-cap'></i> Learning from failures|<i class='fas fa-tachometer-alt'></i> Fast feedback loops|<i class='fas fa-chart-line'></i> System-level outcomes"
+  theme="warning"
+%}
 
 #### Employee Satisfaction: The Four Pillars
 
@@ -130,63 +99,21 @@ dora_color: '#D97706'
   </defs>
 </svg>
 
-### Deployment Pain Spectrum
+#### Deployment Pain Spectrum
 
-<div class="deployment-pain-comparison" markdown="0">
-  <div class="pain-side high-pain" markdown="0">
-    <h4><i class="fas fa-fire"></i> High Deployment Pain</h4>
-    <div class="pain-indicators" markdown="0">
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-clock"></i>
-        <span>Hours/days to deploy</span>
-      </div>
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-exclamation-triangle"></i>
-        <span>Frequent rollbacks</span>
-      </div>
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-user-clock"></i>
-        <span>Weekend deployments</span>
-      </div>
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-phone-alt"></i>
-        <span>All-hands meetings</span>
-      </div>
-    </div>
-    <div class="pain-impact" markdown="0">
-      <p class="impact-statement"><strong>High stress, low performance, team burnout</strong></p>
-      <p class="impact-detail">Deployments create anxiety and require extensive coordination</p>
-    </div>
-  </div>
-
-  <div class="pain-arrow" markdown="0"><i class="fas fa-arrow-right"></i></div>
-
-  <div class="pain-side low-pain" markdown="0">
-    <h4><i class="fas fa-check-circle"></i> Low Deployment Pain</h4>
-    <div class="pain-indicators" markdown="0">
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-tachometer-alt"></i>
-        <span>Minutes to deploy</span>
-      </div>
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-shield-check"></i>
-        <span>Reliable releases</span>
-      </div>
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-calendar-check"></i>
-        <span>Business hours only</span>
-      </div>
-      <div class="pain-item" markdown="0">
-        <i class="fas fa-coffee"></i>
-        <span>Normal workday</span>
-      </div>
-    </div>
-    <div class="pain-impact" markdown="0">
-      <p class="impact-statement"><strong>Confident releases, sustainable pace, happy teams</strong></p>
-      <p class="impact-detail">Deployments are routine activities that don't disrupt work-life balance</p>
-    </div>
-  </div>
-</div>
+{% include simple-comparison.html 
+  type="flow"
+  left_title="High Deployment Pain"
+  left_icon="fas fa-fire"
+  left_subtitle="High stress, low performance, team burnout"
+  left_items="<i class='fas fa-clock'></i> Hours/days to deploy|<i class='fas fa-exclamation-triangle'></i> Frequent rollbacks|<i class='fas fa-user-clock'></i> Weekend deployments|<i class='fas fa-phone-alt'></i> All-hands meetings"
+  right_title="Low Deployment Pain"
+  right_icon="fas fa-check-circle"
+  right_subtitle="Confident releases, sustainable pace, happy teams"
+  right_items="<i class='fas fa-tachometer-alt'></i> Minutes to deploy|<i class='fas fa-shield-check'></i> Reliable releases|<i class='fas fa-calendar-check'></i> Business hours only|<i class='fas fa-coffee'></i> Normal workday"
+  divider_text="Lean Practices"
+  theme="success"
+%}
 
 ### Lean Product Development: Interactive Flow
 
@@ -532,497 +459,124 @@ dora_color: '#D97706'
 ### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint" markdown="0">
-  <div class="checkpoint-card lean-assessment" markdown="0">
-    <h4><i class="fas fa-chart-line"></i> Lean Management Maturity</h4>
-    <p>Rate your team's current lean management practices:</p>
-    <div class="assessment-buttons" markdown="0">
-      <label class="assessment-btn high-performance">
-        <input type="radio" name="lean-maturity" value="high">
-        <span class="radio-mark"></span>
-        <strong>Advanced Lean</strong><br>
-        <small>Peer review, fast feedback, data-driven decisions</small>
-      </label>
-      <label class="assessment-btn medium-performance">
-        <input type="radio" name="lean-maturity" value="medium">
-        <span class="radio-mark"></span>
-        <strong>Developing Lean</strong><br>
-        <small>Some lean practices, mixed approval processes</small>
-      </label>
-      <label class="assessment-btn low-performance">
-        <input type="radio" name="lean-maturity" value="low">
-        <span class="radio-mark"></span>
-        <strong>Traditional Management</strong><br>
-        <small>Heavy approval, command & control</small>
-      </label>
-    </div>
-    <div class="feedback-area" id="lean-feedback">
-      <p><i class="fas fa-info-circle"></i> Select your current maturity level to see research-backed insights and improvement strategies.</p>
-    </div>
-  </div>
+  {% include simple-checkpoint.html 
+    title="Lean Management Maturity"
+    icon="fas fa-chart-line"
+    question="Rate your team's current lean management practices:"
+    type="radio"
+    options=site.data.checkpoint_answers.lean_management
+    radio_name="lean-maturity"
+    feedback_id="lean-feedback"
+    default_feedback="Select your current maturity level to see research-backed insights and improvement strategies."
+  %}
 
-  <div class="checkpoint-card deployment-assessment" markdown="0">
-    <h4><i class="fas fa-rocket"></i> Deployment Pain Level</h4>
-    <p>How painful are your deployments on a 1-10 scale?</p>
-    <div class="assessment-buttons" markdown="0">
-      <label class="assessment-btn high-performance">
-        <input type="radio" name="deployment-pain" value="low">
-        <span class="radio-mark"></span>
-        <strong>Low Pain (1-3)</strong><br>
-        <small>Minutes to deploy, business hours, reliable</small>
-      </label>
-      <label class="assessment-btn medium-performance">
-        <input type="radio" name="deployment-pain" value="medium">
-        <span class="radio-mark"></span>
-        <strong>Medium Pain (4-6)</strong><br>
-        <small>Hours to deploy, some coordination needed</small>
-      </label>
-      <label class="assessment-btn low-performance">
-        <input type="radio" name="deployment-pain" value="high">
-        <span class="radio-mark"></span>
-        <strong>High Pain (7-10)</strong><br>
-        <small>Days to deploy, weekend work, frequent rollbacks</small>
-      </label>
-    </div>
-    <div class="feedback-area" id="deployment-feedback">
-      <p><i class="fas fa-info-circle"></i> Rate your deployment pain to see improvement strategies and performance correlations.</p>
-    </div>
-  </div>
+  {% include simple-checkpoint.html 
+    title="Deployment Pain Level"
+    icon="fas fa-rocket"
+    question="How painful are your deployments on a 1-10 scale?"
+    type="radio"
+    options=site.data.checkpoint_answers.deployment_pain
+    radio_name="deployment-pain"
+    feedback_id="deployment-feedback"
+    default_feedback="Rate your deployment pain to see improvement strategies and performance correlations."
+  %}
 
-  <div class="checkpoint-card satisfaction-assessment" markdown="0">
-    <h4><i class="fas fa-users"></i> Employee Satisfaction Check</h4>
-    <p>Evaluate your team's satisfaction factors:</p>
-    <div class="satisfaction-checklist" markdown="0">
-      <label class="satisfaction-factor">
-        <input type="checkbox" name="satisfaction-factors" value="meaningful">
-        <span class="checkbox-mark"></span>
-        <strong>Meaningful Work:</strong> Challenging, purposeful tasks
-      </label>
-      <label class="satisfaction-factor">
-        <input type="checkbox" name="satisfaction-factors" value="learning">
-        <span class="checkbox-mark"></span>
-        <strong>Learning Opportunities:</strong> Growth and development
-      </label>
-      <label class="satisfaction-factor">
-        <input type="checkbox" name="satisfaction-factors" value="support">
-        <span class="checkbox-mark"></span>
-        <strong>Team Support:</strong> Psychological safety, good culture
-      </label>
-      <label class="satisfaction-factor">
-        <input type="checkbox" name="satisfaction-factors" value="tools">
-        <span class="checkbox-mark"></span>
-        <strong>Right Tools:</strong> Access to necessary resources
-      </label>
-    </div>
-    <div class="satisfaction-score" markdown="0">
-      <div class="score-display" markdown="0">
-        <span class="score-number" id="satisfaction-score">0</span>
-        <span class="score-total">/4</span>
-        <div class="score-label" markdown="0">Satisfaction Pillars</div>
-      </div>
-    </div>
-    <div class="feedback-area" id="satisfaction-feedback">
-      <p><i class="fas fa-info-circle"></i> Check all factors present in your team to see satisfaction level and recommendations.</p>
-    </div>
-  </div>
-
-  <div class="checkpoint-card architecture-assessment" markdown="0">
-    <h4><i class="fas fa-project-diagram"></i> Team Architecture Assessment</h4>
-    <p>Evaluate your team's architectural dependencies and work tracking:</p>
-    
-    <div class="architecture-subsection" markdown="0">
-      <h5><i class="fas fa-map"></i> Dependency Mapping</h5>
-      <p>What type of dependencies slow your team down most?</p>
-      <div class="assessment-buttons" markdown="0">
-        <label class="assessment-btn low-performance">
-          <input type="radio" name="dependency-type" value="shared-database">
-          <span class="radio-mark"></span>
-          <strong>Shared Database</strong><br>
-          <small>Multiple teams modify same database schema</small>
-        </label>
-        <label class="assessment-btn medium-performance">
-          <input type="radio" name="dependency-type" value="release-coordination">
-          <span class="radio-mark"></span>
-          <strong>Release Coordination</strong><br>
-          <small>Cross-team coordination for releases</small>
-        </label>
-        <label class="assessment-btn high-performance">
-          <input type="radio" name="dependency-type" value="independent-services">
-          <span class="radio-mark"></span>
-          <strong>Independent Services</strong><br>
-          <small>Loosely coupled, independently deployable</small>
-        </label>
-      </div>
-      <div class="feedback-area" id="dependency-feedback">
-        <p><i class="fas fa-info-circle"></i> Select your primary dependency type to understand its impact on delivery performance.</p>
-      </div>
-    </div>
-
-    <div class="architecture-subsection" markdown="0">
-      <h5><i class="fas fa-chart-bar"></i> WIP Visualization</h5>
-      <p>How does your team currently track work in progress?</p>
-      <div class="assessment-buttons" markdown="0">
-        <label class="assessment-btn low-performance">
-          <input type="radio" name="wip-method" value="none">
-          <span class="radio-mark"></span>
-          <strong>No Tracking</strong><br>
-          <small>Work status not visualized or limited WIP</small>
-        </label>
-        <label class="assessment-btn medium-performance">
-          <input type="radio" name="wip-method" value="task-lists">
-          <span class="radio-mark"></span>
-          <strong>Task Lists</strong><br>
-          <small>Basic lists, limited flow visualization</small>
-        </label>
-        <label class="assessment-btn high-performance">
-          <input type="radio" name="wip-method" value="kanban">
-          <span class="radio-mark"></span>
-          <strong>Kanban Board</strong><br>
-          <small>Visual flow with WIP limits and metrics</small>
-        </label>
-      </div>
-      <div class="feedback-area" id="wip-feedback">
-        <p><i class="fas fa-info-circle"></i> Select your WIP tracking method to learn about its effectiveness for lean delivery.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="checkpoint-card enps-assessment" markdown="0">
-    <h4><i class="fas fa-chart-line"></i> Employee Net Promoter Score (eNPS)</h4>
-    <p>Rate your likelihood to recommend your organization as a great place to work:</p>
-    
-    <div class="enps-scale-interactive" markdown="0">
-      <div class="scale-question" markdown="0">
-        <p><strong>"How likely are you to recommend your organization to a friend as a great place to work?"</strong></p>
-      </div>
-      
-      <div class="score-selector" markdown="0">
-        <div class="score-buttons" markdown="0">
-          <label class="score-btn detractor-zone" data-score="0">
-            <input type="radio" name="enps-score" value="0">
-            <span class="score-number">0</span>
-          </label>
-          <label class="score-btn detractor-zone" data-score="1">
-            <input type="radio" name="enps-score" value="1">
-            <span class="score-number">1</span>
-          </label>
-          <label class="score-btn detractor-zone" data-score="2">
-            <input type="radio" name="enps-score" value="2">
-            <span class="score-number">2</span>
-          </label>
-          <label class="score-btn detractor-zone" data-score="3">
-            <input type="radio" name="enps-score" value="3">
-            <span class="score-number">3</span>
-          </label>
-          <label class="score-btn detractor-zone" data-score="4">
-            <input type="radio" name="enps-score" value="4">
-            <span class="score-number">4</span>
-          </label>
-          <label class="score-btn detractor-zone" data-score="5">
-            <input type="radio" name="enps-score" value="5">
-            <span class="score-number">5</span>
-          </label>
-          <label class="score-btn detractor-zone" data-score="6">
-            <input type="radio" name="enps-score" value="6">
-            <span class="score-number">6</span>
-          </label>
-          <label class="score-btn passive-zone" data-score="7">
-            <input type="radio" name="enps-score" value="7">
-            <span class="score-number">7</span>
-          </label>
-          <label class="score-btn passive-zone" data-score="8">
-            <input type="radio" name="enps-score" value="8">
-            <span class="score-number">8</span>
-          </label>
-          <label class="score-btn promoter-zone" data-score="9">
-            <input type="radio" name="enps-score" value="9">
-            <span class="score-number">9</span>
-          </label>
-          <label class="score-btn promoter-zone" data-score="10">
-            <input type="radio" name="enps-score" value="10">
-            <span class="score-number">10</span>
-          </label>
-        </div>
-        
-        <div class="score-zones" markdown="0">
-          <div class="zone detractors" markdown="0">
-            <span class="zone-range">0-6</span>
-            <span class="zone-label">Detractors</span>
-          </div>
-          <div class="zone passives" markdown="0">
-            <span class="zone-range">7-8</span>
-            <span class="zone-label">Passives</span>
-          </div>
-          <div class="zone promoters" markdown="0">
-            <span class="zone-range">9-10</span>
-            <span class="zone-label">Promoters</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="feedback-area" id="enps-feedback">
-        <p><i class="fas fa-info-circle"></i> Select your score to see research insights on employee engagement and organizational performance.</p>
-      </div>
-    </div>
-  </div>
+  {% include simple-checkpoint.html 
+    type="checkbox"
+    title="Employee Satisfaction Check"
+    icon="fas fa-users"
+    question="Evaluate your team's satisfaction factors:"
+    options=site.data.checkpoint_answers.satisfaction_factors
+    radio_name="satisfaction-factors"
+    feedback_id="satisfaction-feedback"
+    default_feedback="Check all factors present in your team to see satisfaction level and research insights."
+  %}
 </div>
 
-<script>
-// Enhanced Interactive Learning Checkpoint for Meeting 3
-document.addEventListener('DOMContentLoaded', function() {
-  // Lean Management Assessment
-  const leanInputs = document.querySelectorAll('input[name="lean-maturity"]');
-  const leanFeedback = document.getElementById('lean-feedback');
-
-  leanInputs.forEach(input => {
-      input.addEventListener('change', function() {
-        let feedback = '';
-        switch(this.value) {
-        case 'high':
-          feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-trophy"></i><strong>Excellent!</strong> Your team demonstrates advanced lean practices. Research shows teams like yours are 2.5x more likely to exceed performance goals. Focus on: <ul><li>Sharing best practices with other teams</li><li>Measuring and improving lead times</li><li>Experimenting with new lean techniques</li></ul></div>';
-          break;
-        case 'medium':
-          feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-chart-line"></i><strong>Good Progress!</strong> You\'re on the right track with developing lean practices. To advance: <ul><li>Implement peer review for all changes</li><li>Establish regular retrospectives with action items</li><li>Create visual work boards and limit WIP</li><li>Reduce approval cycles where possible</li></ul></div>';
-          break;
-        case 'low':
-          feedback = '<div class="feedback-content info" markdown="0"><i class="fas fa-rocket"></i><strong>Great Opportunity!</strong> Traditional management can be transformed with proven lean practices. Start with: <ul><li>Pilot peer review for low-risk changes</li><li>Visualize current work and bottlenecks</li><li>Measure and track cycle times</li><li>Implement small batch deliveries</li></ul></div>';
-          break;
-        }
-        leanFeedback.innerHTML = feedback;
-      });
-  });
-
-  // Deployment Pain Assessment
-  const deploymentInputs = document.querySelectorAll('input[name="deployment-pain"]');
-  const deploymentFeedback = document.getElementById('deployment-feedback');
-
-  deploymentInputs.forEach(input => {
-      input.addEventListener('change', function() {
-        let feedback = '';
-        switch(this.value) {
-        case 'low':
-          feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-check-circle"></i><strong>Outstanding!</strong> Low deployment pain correlates with 3x higher delivery performance. Your practices likely include: automated testing, deployment pipelines, and feature flags. <strong>Maintain:</strong> continuous improvement, monitoring, and team satisfaction.</div>';
-          break;
-        case 'medium':
-          feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-tools"></i><strong>Improvement Opportunity!</strong> Medium pain suggests partial automation. Key improvements: <ul><li>Automate more deployment steps</li><li>Implement comprehensive testing</li><li>Add deployment monitoring and rollback capabilities</li><li>Practice deployment during normal hours</li></ul></div>';
-          break;
-        case 'high':
-          feedback = '<div class="feedback-content danger" markdown="0"><i class="fas fa-exclamation-triangle"></i><strong>Critical Area!</strong> High deployment pain significantly impacts team wellbeing and performance. Immediate actions: <ul><li>Map current deployment process and pain points</li><li>Start with small, automated improvements</li><li>Implement basic CI/CD pipeline</li><li>Create deployment checklist and runbooks</li></ul></div>';
-          break;
-        }
-        deploymentFeedback.innerHTML = feedback;
-      });
-  });
-
-  // Employee Satisfaction Assessment
-  const satisfactionInputs = document.querySelectorAll('input[name="satisfaction-factors"]');
-  const satisfactionScore = document.getElementById('satisfaction-score');
-  const satisfactionFeedback = document.getElementById('satisfaction-feedback');
-
-  function updateSatisfactionScore() {
-      const checkedFactors = document.querySelectorAll('input[name="satisfaction-factors"]:checked');
-      const score = checkedFactors.length;
-      satisfactionScore.textContent = score;
-
-      let feedback = '';
-      let feedbackClass = '';
-
-      if (score === 4) {
-        feedbackClass = 'success';
-        feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-star"></i><strong>Exceptional Team Environment!</strong> All four satisfaction pillars are present. Research shows teams like yours are 2.2x more likely to recommend their organization and have significantly lower turnover rates. Focus on maintaining these strengths and mentoring other teams.</div>';
-      } else if (score === 3) {
-        feedbackClass = 'warning';
-        feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-thumbs-up"></i><strong>Strong Foundation!</strong> You have most satisfaction factors in place. Identify and address the missing pillar(s) to achieve maximum team performance and retention. Each additional pillar significantly improves outcomes.</div>';
-      } else if (score === 2) {
-        feedbackClass = 'info';
-        feedback = '<div class="feedback-content info" markdown="0"><i class="fas fa-chart-line"></i><strong>Mixed Results!</strong> You have some satisfaction factors but significant gaps remain. Focus on the missing pillars as they compound each other. Teams with all four factors show dramatically better performance and retention.</div>';
-      } else if (score === 1) {
-        feedbackClass = 'warning';
-        feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-flag"></i><strong>Early Stage!</strong> Only one satisfaction pillar is present. This represents a major opportunity for improvement. Start by addressing the most achievable missing factors - often tools and support are easier to improve than meaningful work.</div>';
-      } else {
-        feedbackClass = 'danger';
-        feedback = '<div class="feedback-content danger" markdown="0"><i class="fas fa-exclamation-circle"></i><strong>Critical Attention Needed!</strong> No satisfaction pillars are present, indicating high risk for turnover and poor performance. Immediate action required across all four areas. Consider starting with team support and tools as these can show quick wins.</div>';
-      }
-
-      satisfactionFeedback.innerHTML = feedback;
-  }
-
-  satisfactionInputs.forEach(input => {
-      input.addEventListener('change', updateSatisfactionScore);
-  });
-
-  // eNPS Assessment
-  const enpsInputs = document.querySelectorAll('input[name="enps-score"]');
-  const enpsFeedback = document.getElementById('enps-feedback');
-
-  const enpsInfo = {
-      '0': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Strong Detractor (Score: 0)</strong><br>This indicates significant workplace dissatisfaction. <strong>Critical areas to address:</strong> leadership support, work-life balance, meaningful work opportunities, and psychological safety. Research shows scores this low correlate with high turnover and poor delivery performance.</div>' },
-      '1': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 1)</strong><br>Serious workplace concerns exist. <strong>Focus on:</strong> addressing burnout risk factors, improving management practices, ensuring adequate resources and tools. Teams with detractor scores struggle with retention and productivity.</div>' },
-      '2': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 2)</strong><br>Significant dissatisfaction present. <strong>Key improvements needed:</strong> management support, meaningful work assignment, team culture, and reducing bureaucratic obstacles. Low scores correlate with reduced performance.</div>' },
-      '3': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 3)</strong><br>Below-average workplace satisfaction. <strong>Address:</strong> career development opportunities, feedback mechanisms, workload management, and team dynamics. This level indicates substantial improvement potential.</div>' },
-      '4': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 4)</strong><br>Moderate dissatisfaction with workplace. <strong>Improve:</strong> recognition practices, autonomy levels, learning opportunities, and communication patterns. Teams can move from this level with focused interventions.</div>' },
-      '5': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 5)</strong><br>Neutral-negative sentiment. <strong>Focus on:</strong> increasing engagement through better tools, clearer mission alignment, reduced friction in processes, and improved leadership support.</div>' },
-      '6': { category: 'detractor', content: '<div class="feedback-content danger" markdown="0"><i class="fas fa-thumbs-down"></i><strong>Detractor (Score: 6)</strong><br>Slightly below neutral. <strong>Opportunities:</strong> enhance team collaboration, provide better growth paths, address process inefficiencies, and strengthen psychological safety.</div>' },
-      '7': { category: 'passive', content: '<div class="feedback-content warning" markdown="0"><i class="fas fa-minus-circle"></i><strong>Passive (Score: 7)</strong><br>Satisfied but not enthusiastic. <strong>To increase engagement:</strong> provide stretch assignments, improve recognition, enhance learning opportunities, and foster innovation culture. Passives can become promoters with attention.</div>' },
-      '8': { category: 'passive', content: '<div class="feedback-content warning" markdown="0"><i class="fas fa-minus-circle"></i><strong>Passive (Score: 8)</strong><br>Generally positive but not fully engaged. <strong>Enhancement areas:</strong> career development, team autonomy, meaningful project work, and leadership visibility. Close to promoter level with focused improvements.</div>' },
-      '9': { category: 'promoter', content: '<div class="feedback-content success" markdown="0"><i class="fas fa-thumbs-up"></i><strong>Promoter (Score: 9)</strong><br>Strong workplace satisfaction! <strong>Maintain and amplify:</strong> current positive practices, recognition programs, team culture, and growth opportunities. Research shows promoters correlate with 2.2x higher delivery performance.</div>' },
-      '10': { category: 'promoter', content: '<div class="feedback-content success" markdown="0"><i class="fas fa-star"></i><strong>Strong Promoter (Score: 10)</strong><br>Exceptional workplace experience! You\'re experiencing the characteristics of high-performing teams. <strong>Share success:</strong> mentor other teams, document effective practices, and continue cultivating this positive environment.</div>' }
-  };
-
-  enpsInputs.forEach(input => {
-      input.addEventListener('change', function() {
-        const score = this.value;
-        const info = enpsInfo[score];
-        if (info) {
-          enpsFeedback.innerHTML = info.content;
-  
-          // Update visual styling based on category
-          const buttons = document.querySelectorAll('.score-btn');
-          buttons.forEach(btn => btn.classList.remove('selected'));
-          this.parentElement.classList.add('selected');
-        }
-      });
-  });
-
-  // Architecture Assessment - Dependency Mapping
-  const dependencyInputs = document.querySelectorAll('input[name="dependency-type"]');
-  const dependencyFeedback = document.getElementById('dependency-feedback');
-
-  dependencyInputs.forEach(input => {
-      input.addEventListener('change', function() {
-        let feedback = '';
-        switch(this.value) {
-        case 'shared-database':
-          feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-database"></i><strong>Shared Database Dependencies</strong><br>This pattern creates tight coupling and coordination overhead. <strong>Research insight:</strong> Teams with shared databases deploy 10x less frequently. <strong>Evolution path:</strong> Database-per-service, API contracts, event-driven architecture.</div>';
-          break;
-        case 'release-coordination':
-          feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-sync-alt"></i><strong>Release Coordination</strong><br>Cross-team coordination reduces deployment frequency but is manageable. <strong>Research insight:</strong> Coordination overhead scales exponentially with team size. <strong>Improvement:</strong> Service contracts, backward compatibility, feature toggles.</div>';
-          break;
-        case 'independent-services':
-          feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-rocket"></i><strong>Independent Services</strong><br>Excellent! Loosely coupled architecture enables high delivery performance. <strong>Research shows:</strong> Teams with architectural independence deploy 208x more frequently. <strong>Maintain:</strong> API contracts, monitoring, and service ownership.</div>';
-          break;
-        }
-        dependencyFeedback.innerHTML = feedback;
-      });
-  });
-
-  // Architecture Assessment - WIP Visualization
-  const wipInputs = document.querySelectorAll('input[name="wip-method"]');
-  const wipFeedback = document.getElementById('wip-feedback');
-
-  wipInputs.forEach(input => {
-      input.addEventListener('change', function() {
-        let feedback = '';
-        switch(this.value) {
-        case 'none':
-          feedback = '<div class="feedback-content warning" markdown="0"><i class="fas fa-eye-slash"></i><strong>No WIP Tracking</strong><br>Lack of work visualization leads to context switching and hidden bottlenecks. <strong>Research insight:</strong> Teams without WIP limits have 40% lower delivery performance. <strong>Start with:</strong> Simple kanban board, limit work in progress, measure cycle time.</div>';
-          break;
-        case 'task-lists':
-          feedback = '<div class="feedback-content info" markdown="0"><i class="fas fa-list"></i><strong>Task Lists</strong><br>Basic tracking provides some visibility but misses flow optimization. <strong>Research insight:</strong> Visual flow management reduces lead time by 50%. <strong>Next step:</strong> Add WIP limits, swim lanes, and flow metrics to your lists.</div>';
-          break;
-        case 'kanban':
-          feedback = '<div class="feedback-content success" markdown="0"><i class="fas fa-columns"></i><strong>Kanban Board with WIP Limits</strong><br>Excellent! Visual flow management with WIP limits optimizes team performance. <strong>Research shows:</strong> Teams using kanban with WIP limits have 2.3x faster delivery. <strong>Advanced practices:</strong> Cumulative flow diagrams, cycle time measurement, continuous improvement.</div>';
-          break;
-        }
-        wipFeedback.innerHTML = feedback;
-      });
-  });
-});
-</script>
 
 ### Discussion Questions
 
 <div class="discussion-questions-grid" markdown="0">
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-chart-line"></i>
-      <h4>Lean Management Assessment</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>Which lean management practices do you currently use? What's missing?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Peer review vs. approval processes</span>
-        <span>• Visual work management and WIP limits</span>
-        <span>• Learning from failures vs. blame culture</span>
-        <span>• Fast feedback loops and decision making</span>
-      </div>
-    </div>
-  </div>
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-chart-line" 
+    title="Lean Management Assessment" 
+    question="Which lean management practices do you currently use? What's missing?" 
+    items="Peer review vs. approval processes|Visual work management and WIP limits|Learning from failures vs. blame culture|Fast feedback loops and decision making" 
+    theme="warning"
+  %}
 
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-rocket"></i>
-      <h4>Deployment Pain Check</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>On a scale of 1-10, how painful are your deployments? What causes the anxiety?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Manual coordination and handoff processes</span>
-        <span>• Weekend and after-hours deployment schedule</span>
-        <span>• Rollback complexity and recovery procedures</span>
-        <span>• Team stress and work-life balance impact</span>
-      </div>
-    </div>
-  </div>
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-rocket" 
+    title="Deployment Pain Check" 
+    question="On a scale of 1-10, how painful are your deployments? What causes the anxiety?" 
+    items="Manual coordination and handoff processes|Weekend and after-hours deployment schedule|Rollback complexity and recovery procedures|Team stress and work-life balance impact" 
+    theme="warning"
+  %}
 
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-users"></i>
-      <h4>Employee Engagement</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>How would your team score on employee Net Promoter Score?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Meaningful work and growth opportunities</span>
-        <span>• Team support and psychological safety</span>
-        <span>• Access to right tools and resources</span>
-        <span>• Organizational culture and values alignment</span>
-      </div>
-    </div>
-  </div>
+  {% include simple-card.html 
+    type="discussion" 
+    icon="fas fa-users" 
+    title="Employee Engagement" 
+    question="How would your team score on employee Net Promoter Score?" 
+    items="Meaningful work and growth opportunities|Team support and psychological safety|Access to right tools and resources|Organizational culture and values alignment" 
+    theme="warning"
+  %}
 </div>
 
 ### Action Items for Next Meeting
 
-Time to put lean management into action! Try these wellbeing-boosting challenges:
+<div class="action-items-grid" markdown="0">
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-columns"
+    title="Create a visual work board"
+    question="Can you see everything your team is juggling right now?"
+    description="Set up kanban board with WIP limits to make work visible and prevent overload."
+    items="Set up To Do, In Progress, Done columns|Add WIP limits to prevent overload|Start tracking cycle time to spot bottlenecks|Make work visible, make problems obvious"
+    theme="warning"
+  %}
 
-- **Create a visual work board:** Can you see everything your team is juggling right now?
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-chart-line"
+    title="Run an eNPS pulse check"
+    question="Would your teammates recommend your org as a great place to work?"
+    description="Conduct employee Net Promoter Score assessment to measure team satisfaction."
+    items="Ask: \"On a scale 0-10, how likely are you to recommend our organization as a great place to work?\"|Follow up with \"What would make it better?\"|Listen deeply to the answers|Analyze results against the four satisfaction pillars"
+    theme="warning"
+  %}
 
-  - Set up simple To Do, In Progress, Done columns. Add WIP limits to prevent overload. Start tracking cycle time to spot bottlenecks. Make work visible, make problems obvious.
-
-- **Run an eNPS pulse check:** Would your teammates recommend your org as a great place to work?
-
-  - Ask the magic question: "On a scale 0-10, how likely are you to recommend our organization as a great place to work?" Follow up with "What would make it better?" Listen deeply to the answers.
-
-- **Pick ONE practice that boosts both performance AND wellbeing:** What will reduce stress while improving delivery?
-Consider deployment automation to eliminate weekend work, blameless post-mortems to build psychological safety, or work visualization to reduce context switching. Focus on practices that help people AND performance.
-
-</div>
-  </div>
+  {% include simple-card.html 
+    type="action"
+    icon="fas fa-balance-scale"
+    title="Pick ONE practice that boosts both performance AND wellbeing"
+    question="What will reduce stress while improving delivery?"
+    description="Choose a lean practice that improves both team performance and work-life balance."
+    items="Consider deployment automation to eliminate weekend work|Try blameless post-mortems to build psychological safety|Implement work visualization to reduce context switching|Focus on practices that help people AND performance"
+    theme="warning"
+  %}
 </div>
 
 ### Related Resources
 
 <div class="resource-grid" markdown="0">
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-users"></i> Lean Management & Team Performance</h4>
-    <ul>
-      <li><a href="https://www.atlassian.com/agile/kanban/boards" target="_blank">Kanban Boards</a></li>
-      <li><a href="https://www.lean.org/lexicon-terms/value-stream-mapping/" target="_blank">Value Stream Mapping</a></li>
-      <li><a href="https://blog.officevibe.com/employee-net-promoter-score" target="_blank">eNPS Calculator</a></li>
-      <li><a href="https://rework.withgoogle.com/guides/understanding-team-effectiveness/" target="_blank">Psychological Safety Guide</a></li>
-      <li><a href="https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" target="_blank">Team Topologies</a></li>
-    </ul>
-  </div>
+  {% include simple-card.html 
+    type="resource" 
+    icon="fas fa-users" 
+    title="Lean Management & Team Performance" 
+    links="Kanban Boards|https://www.atlassian.com/agile/kanban/boards|Value Stream Mapping|https://www.lean.org/lexicon-terms/value-stream-mapping/|eNPS Calculator|https://blog.officevibe.com/employee-net-promoter-score|Psychological Safety Guide|https://rework.withgoogle.com/guides/understanding-team-effectiveness/|Team Topologies|https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" 
+    theme="warning"
+  %}
 
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-chart-line"></i> DevOps Culture & Assessment</h4>
-    <ul>
-      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DORA Capabilities</a></li>
-      <li><a href="https://github.com/dora-team/fourkeys" target="_blank">Four Keys Project</a></li>
-      <li><a href="https://www.mindgarden.com/maslach-burnout-toolkit/" target="_blank">Burnout Prevention Toolkit</a></li>
-    </ul>
-  </div>
+  {% include simple-card.html 
+    type="resource" 
+    icon="fas fa-chart-line" 
+    title="DevOps Culture & Assessment" 
+    links="DORA Capabilities|https://dora.dev/devops-capabilities/|Four Keys Project|https://github.com/dora-team/fourkeys|Burnout Prevention Toolkit|https://www.mindgarden.com/maslach-burnout-toolkit/" 
+    theme="warning"
+  %}
 </div>
 
 <style>
