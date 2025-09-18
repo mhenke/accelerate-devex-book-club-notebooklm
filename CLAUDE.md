@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a **Jekyll-based GitHub Pages site** and resource hub for a DevOps book club focused on "Accelerate: The Science of Lean Software and DevOps" by Nicole Forsgren, Jez Humble, and Gene Kim. The repository contains:
 
 - **Jekyll website** (docs/) for GitHub Pages deployment
-- **Meeting guides and resources** for structured book club sessions 
+- **Meeting guides and resources** for structured book club sessions
 - **NotebookLM prompts** for AI-generated supplementary content (podcasts/videos)
 - **Educational materials** organized around the book's core themes
 
@@ -82,7 +82,7 @@ Runs build + jekyll-audit for full performance, accessibility, SEO, and link val
 ```bash
 npm run lint          # All linters (fastest check)
 npm run lint:css      # CSS/SCSS linting only
-npm run lint:js       # JavaScript linting only  
+npm run lint:js       # JavaScript linting only
 npm run lint:md       # Markdown linting only
 npm run test:html     # HTML validation
 npm run test:jekyll-audit  # Full audit suite
@@ -91,7 +91,7 @@ npm run test:jekyll-audit  # Full audit suite
 #### Recommended Testing Workflow
 
 1. **During development**: `npm run lint` (fast feedback)
-2. **Before committing**: `npm run validate` (full check) 
+2. **Before committing**: `npm run validate` (full check)
 3. **Before major releases**: `npm run audit` (comprehensive)
 
 ### Styling and Visual Updates
@@ -136,15 +136,15 @@ npm run test:jekyll-audit  # Full audit suite
 
 ### Jekyll Collections
 
-- **_meetings collection:** Four structured meetings with corrected chapter mappings:
+- **\_meetings collection:** Four structured meetings with corrected chapter mappings:
   - Meeting 1 (Week 1): Chapters 1-3 - Foundation, DORA Metrics, Westrum Culture Types
   - Meeting 2 (Week 3): Chapters 4-6 - Technical Excellence & Continuous Delivery
-  - Meeting 3 (Week 5): Chapters 7-10 - Management, Product Development & Sustainability  
+  - Meeting 3 (Week 5): Chapters 7-10 - Management, Product Development & Sustainability
   - Meeting 4 (Week 7): Chapters 11, 16, Conclusion - Leadership & Transformation
   - Each has layout: meeting, title, subtitle, chapters, duration, dora_color
   - Contains interactive learning checkpoints with radio buttons and dynamic feedback
   - Media sections with HTML5 audio/video controls and generation instructions
-- **_resources collection:** Additional educational materials and templates
+- **\_resources collection:** Additional educational materials and templates
 - Navigation configured in `_config.yml` with header_pages
 
 ### Meeting Page Structure
@@ -158,7 +158,7 @@ All meeting pages follow consistent format:
   - Meeting 3: Lean management practices, WIP visualization, dependency mapping
   - Meeting 4: Transformational leadership, ING case study practices
 - Interactive Learning Checkpoints with radio buttons, feedback areas, and research-backed content
-- Discussion questions aligned with book club plan learning objectives  
+- Discussion questions aligned with book club plan learning objectives
 - Action items that bridge between meetings and support progressive learning
 - Custom CSS styling with meeting-specific color themes and responsive design
 
@@ -182,3 +182,17 @@ All meeting pages follow consistent format:
 - Enhanced interactive learning checkpoints with research-backed feedback
 - Improved UX with consistent spacing, fonts, and responsive design
 - Fixed action items formatting to display on separate rows
+
+## Research & Planning Workflow
+
+All major codebase changes (refactoring, features, upgrades) must follow this standardized workflow:
+
+### Typical Workflow Sequence
+
+1. **Task Researcher**: Research and document the current state of the codebase. Identify pain points, technical debt, and problematic patterns. Summarize findings with links to code sections.
+2. **Tech Debt Remediation Plan**: Outline a remediation plan based on research. Prioritize issues by impact/effort, recommend refactoring strategies, and specify dependencies/blockers.
+3. **Planner (High-Level Milestones)**: Create a milestone plan with key phases, timelines, and responsible roles. Note integration points with other teams/systems.
+4. **update-implementation-plan**: Update an existing implementation plan file with new or updated requirements to provide new features, refactoring, design, architecture, or infrastructure. Output must be machine-readable, deterministic, and structured for autonomous execution by other AI systems or humans. All implementation plans must strictly follow the `/update-implementation-plan.prompt.md` template and validation rules.
+5. **Implementation Plan (Detailed Steps)**: Write a step-by-step plan with atomic tasks, code standards, accessibility, performance, and testing requirements. Provide clear instructions for contributors.
+
+All implementation plans must use the `/update-implementation-plan.prompt.md` template for machine-readable, deterministic, and executable output. See that file for required structure and compliance rules.
