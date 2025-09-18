@@ -60,8 +60,8 @@
 @import 'components/meeting-layout'; // Meeting layout styles - EXISTS
 
 // Added by plan/refactor-css-standardization-1.md
-@import 'components/_icons.scss';
-@import 'components/_meeting-themes.scss';
+@import 'components/icons';
+@import 'components/meeting-themes';
 
 // =============================================================================
 // PERFORMANCE MONITORING & DEBUGGING

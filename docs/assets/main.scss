@@ -29,10 +29,15 @@
   --shadow-medium: rgba(0, 0, 0, 0.15);
   
   /* Meeting Theme Colors */
-  --meeting-1-color: #1E3A8A;
-  --meeting-2-color: #0F766E;
-  --meeting-3-color: #D97706;
-  --meeting-4-color: #7c3aed;
+  --meeting-1-color: #2196F3;
+  --meeting-2-color: #4CAF50;
+  --meeting-3-color: #FF9800;
+  --meeting-4-color: #F44336;
+  
+  /* Additional Theme Colors */
+  --gradient-orange: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+  --gradient-teal: linear-gradient(135deg, #7adad1 0%, #6bc7bf 100%);
+  --gradient-gold: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
   
   /* Typography */
   --font-heading: 'Poppins', 'Inter', sans-serif;
@@ -107,6 +112,19 @@ a:hover {
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-blue) 100%);
+}
+
+/* Page Hero Variants */
+.page-hero--orange {
+  background: var(--gradient-orange);
+}
+
+.page-hero--teal {
+  background: var(--gradient-teal);
+}
+
+.page-hero--gold {
+  background: var(--gradient-gold);
 }
 
 .page-hero::before {
@@ -202,6 +220,49 @@ a:hover {
   font-size: 2.5rem;
   margin-bottom: var(--spacing-sm);
   display: block;
+}
+
+/* Meeting Icon Color Variants */
+.meeting-icon--1 {
+  color: var(--meeting-1-color);
+}
+
+.meeting-icon--2 {
+  color: var(--meeting-2-color);
+}
+
+.meeting-icon--3 {
+  color: var(--meeting-3-color);
+}
+
+.meeting-icon--4 {
+  color: var(--meeting-4-color);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
+/* Dynamic Color Classes for JavaScript */
+.color-success {
+  color: #4CAF50;
+}
+
+.color-warning {
+  color: #FF9800;
+}
+
+.color-danger {
+  color: #F44336;
+}
+
+.color-primary {
+  color: var(--meeting-1-color);
 }
 
 .meeting-card h3 {

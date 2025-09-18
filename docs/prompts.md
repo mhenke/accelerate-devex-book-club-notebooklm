@@ -3,7 +3,7 @@ layout: default
 title: AI Content Generation
 ---
 
-<div class="page-hero" style="background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%)">
+<div class="page-hero page-hero--orange">
   <div class="hero-content">
     <div class="hero-icon">
       <i class="fas fa-microphone-alt"></i>
@@ -22,69 +22,37 @@ title: AI Content Generation
   <p class="intro-text">Use these carefully crafted prompts with <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer">NotebookLM</a> to create engaging audio and video content for each meeting.</p>
 
   <div class="meeting-grid">
-    <div class="meeting-card">
-      <div class="meeting-icon" style="color: #2196F3">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <h3>Meeting 1: Foundation</h3>
-      <p><strong>DORA Metrics & Speed vs. Stability</strong></p>
-      <div class="prompt-links" markdown="0">
-        <a href="#meeting-1-podcast" class="btn btn-secondary">
-          <i class="fas fa-podcast"></i> Podcast Prompt
-        </a>
-        <a href="#meeting-1-video" class="btn btn-primary">
-          <i class="fas fa-video"></i> Video Prompt
-        </a>
-      </div>
-    </div>
+    {% include meeting-card.html 
+       meeting_number="1" 
+       title="Meeting 1: Foundation" 
+       subtitle="DORA Metrics & Speed vs. Stability" 
+       icon="chart-line" 
+       podcast_link="#meeting-1-podcast" 
+       video_link="#meeting-1-video" %}
 
-    <div class="meeting-card">
-      <div class="meeting-icon" style="color: #4CAF50">
-        <i class="fas fa-sync-alt"></i>
-      </div>
-      <h3>Meeting 2: Culture & CD</h3>
-      <p><strong>Westrum Culture & Continuous Delivery</strong></p>
-      <div class="prompt-links" markdown="0">
-        <a href="#meeting-2-podcast" class="btn btn-secondary">
-          <i class="fas fa-podcast"></i> Podcast Prompt
-        </a>
-        <a href="#meeting-2-video" class="btn btn-primary">
-          <i class="fas fa-video"></i> Video Prompt
-        </a>
-      </div>
-    </div>
+    {% include meeting-card.html 
+       meeting_number="2" 
+       title="Meeting 2: Culture & CD" 
+       subtitle="Westrum Culture & Continuous Delivery" 
+       icon="sync-alt" 
+       podcast_link="#meeting-2-podcast" 
+       video_link="#meeting-2-video" %}
 
-    <div class="meeting-card">
-      <div class="meeting-icon" style="color: #FF9800">
-        <i class="fas fa-building"></i>
-      </div>
-      <h3>Meeting 3: Architecture</h3>
-      <p><strong>Loose Coupling & Team Autonomy</strong></p>
-      <div class="prompt-links" markdown="0">
-        <a href="#meeting-3-podcast" class="btn btn-secondary">
-          <i class="fas fa-podcast"></i> Podcast Prompt
-        </a>
-        <a href="#meeting-3-video" class="btn btn-primary">
-          <i class="fas fa-video"></i> Video Prompt
-        </a>
-      </div>
-    </div>
+    {% include meeting-card.html 
+       meeting_number="3" 
+       title="Meeting 3: Architecture" 
+       subtitle="Loose Coupling & Team Autonomy" 
+       icon="building" 
+       podcast_link="#meeting-3-podcast" 
+       video_link="#meeting-3-video" %}
 
-    <div class="meeting-card">
-      <div class="meeting-icon" style="color: #F44336">
-        <i class="fas fa-users"></i>
-      </div>
-      <h3>Meeting 4: Leadership</h3>
-      <p><strong>Transformational Leadership</strong></p>
-      <div class="prompt-links" markdown="0">
-        <a href="#meeting-4-podcast" class="btn btn-secondary">
-          <i class="fas fa-podcast"></i> Podcast Prompt
-        </a>
-        <a href="#meeting-4-video" class="btn btn-primary">
-          <i class="fas fa-video"></i> Video Prompt
-        </a>
-      </div>
-    </div>
+    {% include meeting-card.html 
+       meeting_number="4" 
+       title="Meeting 4: Leadership" 
+       subtitle="Transformational Leadership" 
+       icon="users" 
+       podcast_link="#meeting-4-podcast" 
+       video_link="#meeting-4-video" %}
 
   </div>
 </div>
