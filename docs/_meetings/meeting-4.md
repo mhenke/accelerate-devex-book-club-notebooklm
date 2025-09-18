@@ -192,7 +192,7 @@ dora_color: '#7c3aed'
 ### Security Integration: Shift Left for Better Performance
 
 <div class="security-transformation" markdown="0">
-  <div class="security-stat" markdown="0">
+  <div class="stats-card" markdown="0">
     <h4><i class="fas fa-shield-alt"></i> High Performers vs. Low Performers</h4>
     <div class="stat-highlight" markdown="0">
       <span class="stat-number">50%</span>
@@ -852,7 +852,7 @@ h3 {
   border: 2px solid var(--meeting-4-primary);
 }
 
-.security-stat {
+.stats-card {
   background: white;
   
   padding: 1.5rem;
@@ -860,7 +860,7 @@ h3 {
   text-align: center;
 }
 
-.security-stat h4 {
+.stats-card h4 {
   margin: 0 0 1rem 0;
   color: var(--meeting-4-darker);
   font-size: 1.3rem;
@@ -888,7 +888,7 @@ h3 {
   font-weight: 500;
 }
 
-.security-stat p {
+.stats-card p {
   margin: 0;
   color: #666;
   font-size: 0.95rem;
