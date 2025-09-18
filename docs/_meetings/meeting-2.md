@@ -8,35 +8,15 @@ duration: '1 Hour'
 dora_color: '#0F766E'
 ---
 
-### Watch the Meeting 2 Video
+{% include reusable-media-video.html 
+  meeting_number="2"
+  video_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4"
+%}
 
-<div class="media-container" markdown="0">
-<video controls width="100%">
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4" download class="download-btn">
-		<i class="fas fa-download"></i> Download Video
-	</a>
-</div>
-</div>
-
-### Listen to the Meeting 2 Podcast
-
-<div class="media-container" markdown="0">
-<audio controls>
-  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
-
-<div class="media-download-controls" markdown="0">
-  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a" download class="download-btn">
-		<i class="fas fa-download"></i> Download Audio
-	</a>
-</div>
-</div>
+{% include reusable-media-podcast.html 
+  meeting_number="2"
+  audio_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a"
+%}
 
 ### Key Insights
 
@@ -213,79 +193,40 @@ dora_color: '#0F766E'
 ### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint" markdown="0">
-  <div class="checkpoint-card cd-maturity" markdown="0">
-    <h4><i class="fas fa-chart-line"></i> CD Maturity Assessment</h4>
-    <p>Rate your organization's maturity in Continuous Delivery practices:</p>
-    <div class="assessment-buttons" markdown="0">
-      <label class="assessment-btn high-performance">
-        <input type="radio" name="cd-maturity" value="high">
-        <span class="radio-mark"></span>
-        High Maturity<br>
-        <span class="cd-desc">Automated pipelines, trunk-based development, rapid feedback, frequent deploys</span>
-      </label>
-      <label class="assessment-btn medium-performance">
-        <input type="radio" name="cd-maturity" value="medium">
-        <span class="radio-mark"></span>
-        Medium Maturity<br>
-        <span class="cd-desc">Some automation, regular releases, partial trunk-based, some manual steps</span>
-      </label>
-      <label class="assessment-btn low-performance">
-        <input type="radio" name="cd-maturity" value="low">
-        <span class="radio-mark"></span>
-        Low Maturity<br>
-        <span class="cd-desc">Manual deployments, long-lived branches, infrequent releases, little automation</span>
-      </label>
-    </div>
-    <div class="feedback-area" id="cd-maturity-feedback">
-      <p>Select your organization's CD maturity level to see improvement opportunities.</p>
-    </div>
-  </div>
+  {% include checkpoint-card.html 
+    title="CD Maturity Assessment"
+    icon="fas fa-chart-line"
+    question="Rate your organization's maturity in Continuous Delivery practices:"
+    answers=site.data.checkpoint_answers.technical_maturity
+    feedback_id="cd-maturity-feedback"
+    radio_name="cd-maturity"
+    card_class="cd-maturity"
+    default_feedback="Select your organization's CD maturity level to see improvement opportunities."
+  %}
 
-  <div class="checkpoint-card security-integration" markdown="0">
-    <h4><i class="fas fa-shield-alt"></i> Security Integration Assessment</h4>
-    <p>Rate how well security is integrated into your delivery process:</p>
-    <div class="assessment-buttons" markdown="0">
-      <label class="assessment-btn high-performance">
-        <input type="radio" name="security-integration" value="high">
-        <span class="radio-mark"></span>
-        <strong>Shift-Left Security</strong><br>
-        <small>Security built into development process, automated security testing, developer security training</small>
-      </label>
-      <label class="assessment-btn medium-performance">
-        <input type="radio" name="security-integration" value="medium">
-        <span class="radio-mark"></span>
-        <strong>Some Integration</strong><br>
-        <small>Security reviews at key milestones, some automated tools, occasional security training</small>
-      </label>
-      <label class="assessment-btn low-performance">
-        <input type="radio" name="security-integration" value="low">
-        <span class="radio-mark"></span>
-        <strong>Security Gate</strong><br>
-        <small>Security team reviews at end, manual security checks, separate security processes</small>
-      </label>
-    </div>
-    <div class="feedback-area" id="checkpoint-feedback">
-      <p>Select your security integration level to see improvement strategies and performance impacts.</p>
-    </div>
-  </div>
+  {% include checkpoint-card.html 
+    title="Security Integration Assessment"
+    icon="fas fa-shield-alt"
+    question="Rate how well security is integrated into your delivery process:"
+    answers=site.data.checkpoint_answers.five_point_scale
+    feedback_id="checkpoint-feedback"
+    radio_name="security-integration"
+    card_class="security-integration"
+    default_feedback="Select your security integration level to see improvement strategies and performance impacts."
+  %}
 
-  <div class="checkpoint-card tool-autonomy" markdown="0">
-    <h4><i class="fas fa-palette"></i> Tool Freedom</h4>
-    <p>Rate your team's tool selection autonomy:</p>
-    <div class="autonomy-slider" markdown="0">
-      <div class="slider-labels" markdown="0">
-        <span>Restricted</span>
-        <span>Flexible</span>
-        <span>Full Freedom</span>
-      </div>
-      <div class="slider-track" id="tool-slider">
-        <div class="slider-thumb" id="tool-thumb"></div>
-      </div>
-      <div class="slider-feedback" id="slider-feedback">
-        <p>Move the slider to assess your team's tool autonomy level</p>
-      </div>
-    </div>
-  </div>
+  {% include reusable-slider-checkpoint.html 
+    title="Tool Freedom"
+    icon="fas fa-palette"
+    question="Rate your team's tool selection autonomy:"
+    min_label="Restricted"
+    mid_label="Flexible"
+    max_label="Full Freedom"
+    slider_id="tool-slider"
+    feedback_id="slider-feedback"
+    card_class="tool-autonomy"
+    default_feedback="Move the slider to assess your team's tool autonomy level"
+  %}
 </div>
 
 ### Real-World Applications
