@@ -57,35 +57,12 @@ dora_color: '#0F766E'
 #### Continuous Delivery Core Principles
 
 <div class="cd-principles-grid" markdown="0">
-  <div class="insight-card quality" markdown="0">
-    <div class="principle-title" markdown="0"><i class="fas fa-tools"></i> Build Quality In</div>
-    <p>Start with quality, don't inspect later</p>
-  </div>
-
-  <div class="insight-card batches" markdown="0">
-    <div class="principle-title" markdown="0"><i class="fas fa-box"></i> Small Batches</div>
-    <p>Manageable, testable units</p>
-  </div>
-
-  <div class="insight-card automation" markdown="0">
-    <div class="principle-title" markdown="0"><i class="fas fa-robot"></i> Automate Tasks</div>
-    <p>Free humans for creative work</p>
-  </div>
-
-  <div class="insight-card version" markdown="0">
-    <div class="principle-title" markdown="0"><i class="fas fa-folder"></i> Version Control</div>
-    <p>All artifacts under control</p>
-  </div>
-
-  <div class="insight-card trunk" markdown="0">
-    <div class="principle-title" markdown="0"><i class="fas fa-code-branch"></i> Trunk-Based Dev</div>
-    <p>Short branches, frequent integration</p>
-  </div>
-
-  <div class="insight-card testing" markdown="0">
-    <div class="principle-title" markdown="0"><i class="fas fa-flask"></i> Test Automation</div>
-    <p>Automated testing at all levels</p>
-  </div>
+  {% include insight-card.html icon="fas fa-tools" title="Build Quality In" description="Start with quality, don't inspect later" %}
+  {% include insight-card.html icon="fas fa-box" title="Small Batches" description="Manageable, testable units" %}
+  {% include insight-card.html icon="fas fa-robot" title="Automate Tasks" description="Free humans for creative work" %}
+  {% include insight-card.html icon="fas fa-folder" title="Version Control" description="All artifacts under control" %}
+  {% include insight-card.html icon="fas fa-code-branch" title="Trunk-Based Dev" description="Short branches, frequent integration" %}
+  {% include insight-card.html icon="fas fa-flask" title="Test Automation" description="Automated testing at all levels" %}
 </div>
 
 #### Breaking the "Wall of Confusion"
@@ -162,12 +139,12 @@ dora_color: '#0F766E'
 #### Conway's Law & Team Structure
 
 <div class="conway-law-section" markdown="0">
-  <div class="law-statement" markdown="0">
-    <blockquote>
-      "Organizations design systems that mirror their communication structures"
-    </blockquote>
-    <cite>— Melvin Conway, 1967</cite>
-  </div>
+  {% include law-statement.html 
+    quote="Organizations design systems that mirror their communication structures"
+    attribution="Melvin Conway, 1967"
+    context="Conway's Law demonstrates how organizational structure directly influences system architecture"
+    theme="tech"
+  %}
 
   <div class="conway-examples" markdown="0">
     <div class="example-card" markdown="0">
@@ -232,162 +209,118 @@ dora_color: '#0F766E'
 ### Real-World Applications
 
 <div class="real-world-applications" markdown="0">
-  <div class="application-card automation-examples" markdown="0">
-    <h4><i class="fas fa-robot"></i> Automation Success Stories</h4>
-    <p>Share examples from your experience:</p>
-    <div class="example-prompts" markdown="0">
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-lightbulb"></i>
-        <span>What manual process did you recently automate? What was the impact?</span>
-      </div>
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-chart-line"></i>
-        <span>How did test automation change your team's deployment confidence?</span>
-      </div>
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-clock"></i>
-        <span>What task took hours manually but now takes minutes with automation?</span>
-      </div>
-    </div>
-  </div>
+  {% include reusable-application-card.html 
+    icon="fas fa-robot"
+    title="Automation Success Stories"
+    description="Share examples from your experience:"
+    prompts="What manual process did you recently automate? What was the impact?|How did test automation change your team's deployment confidence?|What task took hours manually but now takes minutes with automation?"
+    theme="automation"
+  %}
 
-  <div class="application-card architecture-decisions" markdown="0">
-    <h4><i class="fas fa-sitemap"></i> Architectural Decisions</h4>
-    <p>Discuss decisions that impacted team independence:</p>
-    <div class="example-prompts" markdown="0">
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-check-circle"></i>
-        <span>Which architectural changes improved your team's deployment frequency?</span>
-      </div>
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-times-circle"></i>
-        <span>What dependencies currently prevent independent deployments?</span>
-      </div>
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-puzzle-piece"></i>
-        <span>How did microservices or modular design affect your delivery speed?</span>
-      </div>
-    </div>
-  </div>
+  {% include reusable-application-card.html 
+    icon="fas fa-sitemap"
+    title="Architectural Decisions"
+    description="Discuss decisions that impacted team independence:"
+    prompts="Which architectural changes improved your team's deployment frequency?|What dependencies currently prevent independent deployments?|How did microservices or modular design affect your delivery speed?"
+    theme="architecture"
+  %}
 
-  <div class="application-card security-practices" markdown="0">
-    <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
-    <p>Examine security practices that impact delivery:</p>
-    <div class="example-prompts" markdown="0">
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-fast-forward"></i>
-        <span>Which security practices actually speed up delivery?</span>
-      </div>
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-turtle"></i>
-        <span>What security requirements currently slow down your team?</span>
-      </div>
-      <div class="prompt-item" markdown="0">
-        <i class="fas fa-balance-scale"></i>
-        <span>How do you balance security compliance with delivery speed?</span>
-      </div>
-    </div>
-  </div>
+  {% include reusable-application-card.html 
+    icon="fas fa-shield-alt"
+    title="Security Integration"
+    description="Examine security practices that impact delivery:"
+    prompts="Which security practices actually speed up delivery?|What security requirements currently slow down your team?|How do you balance security compliance with delivery speed?"
+    theme="security"
+  %}
 </div>
 
 ### Discussion Questions
 
 <div class="discussion-questions-grid" markdown="0">
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-chart-line"></i>
-      <h4>CD Maturity Assessment</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>Which CD practices is your organization currently implementing well/poorly?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Trunk-based development and branching strategy</span>
-        <span>• Automated testing coverage and quality</span>
-        <span>• Deployment pipeline automation</span>
-        <span>• Feature flags and rollback capabilities</span>
-      </div>
-    </div>
-  </div>
+  {% include discussion-card.html 
+    icon="fas fa-chart-line" 
+    title="CD Maturity Assessment" 
+    question="Which CD practices is your organization currently implementing well/poorly?" 
+    prompts="Trunk-based development and branching strategy|Automated testing coverage and quality|Deployment pipeline automation|Feature flags and rollback capabilities" 
+  %}
 
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-project-diagram"></i>
-      <h4>Architecture Dependencies</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>What prevents your team from deploying independently?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Shared databases and data dependencies</span>
-        <span>• Coordinated release schedules</span>
-        <span>• Service coupling and API contracts</span>
-        <span>• Infrastructure and deployment bottlenecks</span>
-      </div>
-    </div>
-  </div>
+  {% include discussion-card.html 
+    icon="fas fa-project-diagram" 
+    title="Architecture Dependencies" 
+    question="What prevents your team from deploying independently?" 
+    prompts="Shared databases and data dependencies|Coordinated release schedules|Service coupling and API contracts|Infrastructure and deployment bottlenecks" 
+    theme="warning"
+  %}
 
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-tools"></i>
-      <h4>Tool Autonomy</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>How much freedom do teams have in tool selection? What are the constraints?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Security and compliance requirements</span>
-        <span>• Standardization vs. innovation balance</span>
-        <span>• Budget and licensing considerations</span>
-        <span>• Support and maintenance capabilities</span>
-      </div>
-    </div>
-  </div>
+  {% include discussion-card.html 
+    icon="fas fa-tools" 
+    title="Tool Autonomy" 
+    question="How much freedom do teams have in tool selection? What are the constraints?" 
+    prompts="Security and compliance requirements|Standardization vs. innovation balance|Budget and licensing considerations|Support and maintenance capabilities" 
+    theme="primary"
+  %}
 
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-shield-alt"></i>
-      <h4>Security Integration</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>How early in your development process is security considered?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Security testing in CI/CD pipelines</span>
-        <span>• Developer security training and awareness</span>
-        <span>• Code review and static analysis integration</span>
-        <span>• Shift-left vs. security gate approaches</span>
-      </div>
-    </div>
-  </div>
+  {% include discussion-card.html 
+    icon="fas fa-shield-alt" 
+    title="Security Integration" 
+    question="How early in your development process is security considered?" 
+    prompts="Security testing in CI/CD pipelines|Developer security training and awareness|Code review and static analysis integration|Shift-left vs. security gate approaches" 
+    theme="neutral"
+  %}
 </div>
 
 ### Action Items for Next Meeting
 
-<ul>
-  <li><strong>Automate one manual process:</strong> Identify a repetitive deployment, testing, or configuration task and automate it within 1-2 weeks.</li>
-  <li><strong>Map your dependencies:</strong> Document shared databases, services, and infrastructure dependencies that impact team autonomy.</li>
-  <li><strong>Experiment with a CD practice:</strong> Try trunk-based development, test automation, or feature flags. Set goals and share results next meeting.</li>
-</ul>
+<div class="action-items-grid" markdown="0">
+  {% include reusable-action-card.html 
+    icon="fas fa-robot"
+    title="Automate one manual process"
+    question="Which repetitive task will you tackle first?"
+    details="Identify a repetitive deployment, testing, or configuration task and automate it within 1-2 weeks."
+    action_items="Choose a manual process to automate|Research automation tools and approaches|Implement basic automation|Document time savings and benefits"
+    checkbox_id="automation-task"
+    theme="success"
+  %}
+
+  {% include reusable-action-card.html 
+    icon="fas fa-project-diagram"
+    title="Map your dependencies"
+    question="What prevents independent deployments?"
+    details="Document shared databases, services, and infrastructure dependencies that impact team autonomy."
+    action_items="List all shared databases and services|Document coordination requirements|Identify deployment bottlenecks|Create dependency visualization diagram"
+    checkbox_id="dependency-mapping"
+    theme="warning"
+  %}
+
+  {% include reusable-action-card.html 
+    icon="fas fa-flask"
+    title="Experiment with a CD practice"
+    question="Which practice will move you forward?"
+    details="Try trunk-based development, test automation, or feature flags. Set goals and share results next meeting."
+    action_items="Choose one CD practice to experiment with|Set measurable goals and timeline|Implement pilot or proof of concept|Prepare results to share with team"
+    checkbox_id="cd-experiment"
+    theme="primary"
+  %}
+</div>
 
 ### Related Resources
 
 <div class="resource-grid" markdown="0">
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-tools"></i> CI/CD Tools & Platforms</h4>
-    <ul>
-      <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a></li>
-      <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a></li>
-      <li><a href="https://circleci.com/" target="_blank">CircleCI</a></li>
-      <li><a href="https://argoproj.github.io/cd/" target="_blank">Argo CD</a></li>
-    </ul>
-  </div>
+  {% include reusable-resource-card.html 
+    icon="fas fa-tools" 
+    title="CI/CD Tools & Platforms" 
+    links="GitHub Actions|https://github.com/features/actions|Jenkins|https://www.jenkins.io/|CircleCI|https://circleci.com/|Argo CD|https://argoproj.github.io/cd/" 
+    theme="tools"
+    show_external_icons=true
+  %}
 
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
-    <ul>
-      <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps Guidelines</a></li>
-      <li><a href="https://snyk.io/" target="_blank">Snyk</a></li>
-      <li><a href="https://github.com/features/security" target="_blank">GitHub Security</a></li>
-      <li><a href="https://www.sonarqube.org/" target="_blank">SonarQube</a></li>
-    </ul>
-  </div>
+  {% include reusable-resource-card.html 
+    icon="fas fa-shield-alt" 
+    title="Security Integration" 
+    links="OWASP DevSecOps Guidelines|https://owasp.org/www-project-devsecops-guideline/|Snyk|https://snyk.io/|GitHub Security|https://github.com/features/security|SonarQube|https://www.sonarqube.org/" 
+    theme="technical"
+    show_external_icons=true
+  %}
 </div>
 
 <style>
