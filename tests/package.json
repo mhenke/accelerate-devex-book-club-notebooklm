@@ -3,21 +3,31 @@
   "version": "1.0.0",
   "description": "Playwright tests for Jekyll site refactoring confidence",
   "scripts": {
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "test:ui": "playwright test --ui",
-    "test:debug": "playwright test --debug",
+    "test": "dotenv -e ../.env -- playwright test",
+    "test:headed": "dotenv -e ../.env -- playwright test --headed",
+    "test:ui": "dotenv -e ../.env -- playwright test --ui",
+    "test:debug": "dotenv -e ../.env -- playwright test --debug",
+    "test:ci": "playwright test",
+    "test:percy": "dotenv -e ../.env -- playwright test",
     "test:report": "playwright show-report",
-    "test:codegen": "playwright codegen",
+    "test:codegen": "dotenv -e ../.env -- playwright codegen",
     "install-browsers": "playwright install"
   },
   "devDependencies": {
-    "@playwright/test": "^1.40.0",
     "@axe-core/playwright": "^4.8.2",
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^17.2.2",
+    "dotenv-cli": "^10.0.0",
     "eslint": "^8.55.0",
     "prettier": "^3.1.0"
   },
-  "keywords": ["playwright", "testing", "jekyll", "refactoring", "e2e"],
+  "keywords": [
+    "playwright",
+    "testing",
+    "jekyll",
+    "refactoring",
+    "e2e"
+  ],
   "author": "DevEx Book Club",
   "license": "MIT"
 }
