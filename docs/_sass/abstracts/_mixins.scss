@@ -98,6 +98,23 @@
   margin-top: var(--space-xl);
 }
 
+// Hero and large text styles
+@mixin heading-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--text-white);
+  margin: 0;
+}
+
+@mixin text-lg {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+}
+
 // Body text styles
 @mixin body-text {
   font-family: var(--font-primary);
@@ -334,6 +351,19 @@
 @mixin touch-target {
   min-height: var(--touch-target-min);
   min-width: var(--touch-target-min);
+}
+
+// 44px touch target for WCAG 2.1 AA compliance
+@mixin touch-target-44px {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  
+  // Ensure adequate spacing between targets
+  margin: 2px;
 }
 
 // High contrast mode support

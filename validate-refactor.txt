@@ -1,0 +1,36 @@
+
+> accelerate-devex-book-club-notebooklm@1.0.0 validate
+> npm run build && npm run test
+
+
+> accelerate-devex-book-club-notebooklm@1.0.0 build
+> cd docs && bundle exec jekyll build
+
+Configuration file: /home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_config.yml
+            Source: /home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs
+       Destination: /home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.387 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+> accelerate-devex-book-club-notebooklm@1.0.0 test
+> npm run lint && npm run test:html && npm run test:htmlproof
+
+
+> accelerate-devex-book-club-notebooklm@1.0.0 lint
+> npm run lint:css && npm run lint:js && npm run lint:md
+
+
+> accelerate-devex-book-club-notebooklm@1.0.0 lint:css
+> stylelint "docs/_sass/**/*.scss" --ignore-path .stylelintignore
+
+
+> accelerate-devex-book-club-notebooklm@1.0.0 lint:js
+> eslint "docs/**/*.js" --ext .js,.html,.md
+
+
+> accelerate-devex-book-club-notebooklm@1.0.0 lint:md
+> markdownlint "docs/_meetings/**/*.md" "docs/*.md" "*.md" --ignore "docs/vendor/**" --ignore "docs/.jekyll-cache/**"
+

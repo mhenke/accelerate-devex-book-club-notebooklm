@@ -1,0 +1,63 @@
+// Navigation Component - Critical CSS
+// ===================================
+// Main site navigation for immediate rendering
+
+.site-header {
+  background: var(--background-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  
+  // Performance optimization
+  contain: layout style;
+}
+
+.nav-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--nav-height, 64px);
+}
+
+.site-logo {
+  @include text-lg;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-decoration: none;
+  
+  @include touch-target-44px;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+  margin: 0;
+  
+  @include mobile-up {
+    display: none; // Mobile menu handled separately
+  }
+}
+
+.nav-link {
+  @include touch-target-44px;
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease;
+  
+  &:hover,
+  &:focus {
+    background-color: var(--background-light-gray);
+  }
+  
+  &[aria-current="page"] {
+    background-color: var(--accent-teal);
+    color: var(--text-white);
+  }
+}

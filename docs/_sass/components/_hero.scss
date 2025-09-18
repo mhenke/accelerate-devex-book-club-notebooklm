@@ -1,0 +1,48 @@
+// Hero Banner Component - Critical CSS
+// ====================================
+// Above-the-fold hero section for immediate rendering
+
+.hero-banner {
+  background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-navy) 100%);
+  color: var(--text-white);
+  padding: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  
+  // Performance optimization with CSS containment
+  contain: layout style;
+  
+  @include mobile-up {
+    min-height: 50vh;
+    padding: var(--spacing-lg) 0;
+  }
+}
+
+.hero-content {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  z-index: 2;
+  position: relative;
+}
+
+.hero-title {
+  @include heading-xl;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  @include text-lg;
+  opacity: 0.9;
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+}
+
+.hero-cta {
+  @include button-primary;
+  @include touch-target-44px;
+}

@@ -115,6 +115,43 @@
       animatedElements.forEach(function(element) {
         element.style.contain = 'layout style paint';
       });
+      
+      // Dynamic will-change management to prevent memory overconsumption
+      optimizeWillChange();
+    }
+    
+    // Dynamic will-change optimization - replaces static CSS declarations
+    function optimizeWillChange() {
+      const interactiveElements = document.querySelectorAll('.timeline-node, .metric-card, .hero-banner, .dora-metrics-visual, .timeline-visual, .ai-tool');
+      
+      interactiveElements.forEach(function(element) {
+        // Add will-change on interaction start
+        element.addEventListener('mouseenter', function() {
+          this.style.willChange = 'transform';
+        });
+        
+        element.addEventListener('focusin', function() {
+          this.style.willChange = 'transform';
+        });
+        
+        // Remove will-change after interaction
+        element.addEventListener('mouseleave', function() {
+          this.style.willChange = 'auto';
+        });
+        
+        element.addEventListener('focusout', function() {
+          this.style.willChange = 'auto';
+        });
+        
+        // Clean up after animations complete
+        element.addEventListener('animationend', function() {
+          this.style.willChange = 'auto';
+        });
+        
+        element.addEventListener('transitionend', function() {
+          this.style.willChange = 'auto';
+        });
+      });
     }
     
     // Focus management for accessibility
@@ -153,6 +190,7 @@
         enhanceInteractivity();
         optimizeAnimations();
         improveFocusManagement();
+        loadProgressiveCSS();
       });
     } else {
       preloadCriticalResources();
@@ -161,6 +199,56 @@
       enhanceInteractivity();
       optimizeAnimations();
       improveFocusManagement();
+      loadProgressiveCSS();
+    }
+    
+    // Progressive CSS loading for non-critical styles
+    function loadProgressiveCSS() {
+      // Load non-critical CSS after initial render
+      const nonCriticalStyles = [
+        '{{ "/assets/css/print.css" | relative_url }}',
+        // Add more non-critical stylesheets here
+      ];
+      
+      // Wait for initial render before loading non-critical CSS
+      requestIdleCallback(function() {
+        nonCriticalStyles.forEach(function(styleUrl) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = styleUrl;
+          link.media = 'print';
+          link.onload = function() {
+            this.media = 'all';
+          };
+          document.head.appendChild(link);
+        });
+      });
+      
+      // Preload additional resources on user interaction
+      let interactionPreloaded = false;
+      function preloadOnInteraction() {
+        if (interactionPreloaded) {
+          return;
+        }
+        interactionPreloaded = true;
+        
+        // Preload resources that might be needed on interaction
+        const resourcesOnInteraction = [
+          // Add URLs for resources needed on user interaction
+        ];
+        
+        resourcesOnInteraction.forEach(function(url) {
+          const link = document.createElement('link');
+          link.rel = 'prefetch';
+          link.href = url;
+          document.head.appendChild(link);
+        });
+      }
+      
+      // Trigger preload on first user interaction
+      ['mousedown', 'touchstart', 'keydown'].forEach(function(event) {
+        document.addEventListener(event, preloadOnInteraction, { once: true, passive: true });
+      });
     }
     
     // Service Worker for offline functionality (progressive enhancement)

@@ -3934,13 +3934,13 @@ button:focus,
 .dora-metrics-visual,
 .timeline-visual {
   contain: layout style;
-  will-change: transform;
+  /* will-change removed - now managed dynamically via JavaScript */
 }
 
 .timeline-node:hover,
 .metric-card:hover,
 .ai-tool:hover {
-  will-change: transform;
+  /* will-change removed - now managed dynamically via JavaScript */
 }
 
 /* Print Styles */
