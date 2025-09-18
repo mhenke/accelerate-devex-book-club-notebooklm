@@ -358,6 +358,7 @@ dora_color: '#7c3aed'
         </div>
       </div>
     </div>
+
   </div>
 
   <!-- ING Model Application -->
@@ -414,6 +415,7 @@ dora_color: '#7c3aed'
         </div>
       </div>
     </div>
+
   </div>
 
   <!-- Transformation Discipline -->
@@ -454,7 +456,7 @@ dora_color: '#7c3aed'
         </div>
       </div>
     </div>
-    
+
     <div class="discussion-card" markdown="0">
       <div class="discussion-header" markdown="0">
         <i class="fas fa-chart-bar"></i>
@@ -470,6 +472,7 @@ dora_color: '#7c3aed'
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -551,6 +554,7 @@ dora_color: '#7c3aed'
         Set up a physical board or digital tool showing current work, bottlenecks, and escalation paths. Make problems visible so they can be solved collectively.
       </div>
     </div>
+
   </div>
 </div>
 
@@ -580,6 +584,7 @@ dora_color: '#7c3aed'
         Document who gets involved when problems arise. Identify bottlenecks or unnecessary handoffs. Test one improvement to speed up resolution.
       </div>
     </div>
+
   </div>
 </div>
 
@@ -609,6 +614,7 @@ dora_color: '#7c3aed'
         Choose Obeya rooms, catchball communication, or squad structure. Adapt it to your organizational context and plan a small pilot with measurable success criteria.
       </div>
     </div>
+
   </div>
 </div>
 

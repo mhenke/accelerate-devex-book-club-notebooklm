@@ -40,6 +40,7 @@ This implementation plan refines the CSS refactoring milestones for the DevEx Bo
 | MOD-002 | Move design tokens and utility classes to dedicated partials   | docs/\_sass/abstracts/, docs/\_sass/base/      | Tokens/utilities in abstracts/base, not main.scss     | Refactor, update references throughout      |
 | MOD-003 | Refactor duplicated styles and blocks into includes/classes    | docs/\_includes/, docs/\_sass/components/      | No duplicated styles, all blocks use includes/classes | Use Jekyll includes, update HTML/Markdown   |
 | MOD-004 | Update all pages to use standardized blocks and variables      | docs/_.html, docs/_.md, docs/\_meetings/\*.md  | All pages use standardized blocks/variables           | Replace old markup, use documented patterns |
+| MOD-005 | Remove inline styles from meeting pages and move to SCSS files, reducing duplication | docs/_meetings/*.md, docs/_sass/components/, docs/assets/main.scss | No inline styles in meeting pages, styles centralized in SCSS, duplication minimized | Audit meeting pages, refactor styles into SCSS, follow best practices |
 
 ### Phase 4: Accessibility, Performance, and Validation
 
@@ -129,6 +130,7 @@ This implementation plan refines the CSS refactoring milestones for the DevEx Bo
 | TASK-008 | Move design tokens and utility classes to dedicated partials   |           |      |
 | TASK-009 | Refactor duplicated styles and blocks into includes/classes    |           |      |
 | TASK-010 | Update all pages to use standardized blocks and variables      |           |      |
+| TASK-011 | Remove inline styles from meeting pages and move to SCSS files, reducing duplication |           |      |
 
 ### Implementation Phase 4
 
@@ -136,9 +138,9 @@ This implementation plan refines the CSS refactoring milestones for the DevEx Bo
 
 | Task     | Description                                      | Completed | Date |
 | -------- | ------------------------------------------------ | --------- | ---- |
-| TASK-011 | Run CSS/HTML linters and accessibility checker   |           |      |
-| TASK-012 | Run Lighthouse and Accessibility Insights audits |           |      |
-| TASK-013 | Team review and sign-off                         |           |      |
+| TASK-012 | Run CSS/HTML linters and accessibility checker   |           |      |
+| TASK-013 | Run Lighthouse and Accessibility Insights audits |           |      |
+| TASK-014 | Team review and sign-off                         |           |      |
 
 ## 3. Alternatives
 
