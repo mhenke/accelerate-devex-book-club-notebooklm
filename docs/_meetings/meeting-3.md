@@ -1144,67 +1144,76 @@ h3 {
   border-top-color: #92400e;
 }
 
-/* Action Items Styling */
-.action-items-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+/* Action Checklist Styling */
+.action-checklist {
+  background: linear-gradient(135deg, #fff7ed, #e9ecef);
+  padding: 2rem;
+  border-left: 4px solid #d97706;
   margin: 2rem 0;
 }
 
-.action-item-card {
-  background: linear-gradient(135deg, #fff7ed, #e9ecef);
-  padding: 1.5rem;
-  border-top: 4px solid #d97706;
-  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.action-item-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
-  border-top-color: #92400e;
-}
-
-.action-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.action-header i {
-  color: #d97706;
-  font-size: 1.2rem;
-}
-
-.action-header h4 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.action-item-card p {
-  margin: 0 0 1rem 0;
-  color: #374151;
+.checklist-intro {
   font-weight: 500;
-  font-size: 0.95rem;
+  color: #92400e;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
-.action-guidance {
+.checklist-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.checklist-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
+}
+
+.action-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+  accent-color: #d97706;
+  cursor: pointer;
+}
+
+.action-label {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
 }
 
-.action-guidance span {
-  color: #6b7280;
+.action-label i {
+  color: #d97706;
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.action-label strong {
+  color: #92400e;
+}
+
+.action-details {
   font-size: 0.85rem;
-  padding-left: 0.5rem;
-  border-left: 2px solid #e5e7eb;
-  line-height: 1.4;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-left: 2.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.checklist-item input[type="checkbox"]:checked + .action-label {
+  opacity: 0.7;
+  text-decoration: line-through;
 }
 
 /* Resource Grid Styling */
