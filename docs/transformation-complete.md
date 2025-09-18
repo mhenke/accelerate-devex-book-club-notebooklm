@@ -283,68 +283,6 @@ nav_order: 6
   </div>
 </div>
 
-## <i class="fas fa-rocket"></i> AI-Enhanced Learning Celebration
-
-<div class="ai-learning-celebration" markdown="0">
-  <h3>AI-Generated Learning Content You've Experienced</h3>
-  <p>Throughout your transformation journey, you've engaged with AI-enhanced content designed to accelerate your learning and provide multiple perspectives on DevOps practices.</p>
-  
-  <div class="ai-content-showcase" markdown="0">
-    <div class="ai-content-card" markdown="0">
-      <div class="ai-content-icon" markdown="0">
-        <i class="fas fa-microphone-alt"></i>
-      </div>
-      <h4>Podcast Content</h4>
-      <p>AI-generated discussions and interviews created with <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong> to provide audio learning experiences for each meeting topic.</p>
-      <div class="ai-tools-used" markdown="0">
-        <div class="ai-tool" markdown="0">
-          <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-          <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="ai-content-card" markdown="0">
-      <div class="ai-content-icon" markdown="0">
-        <i class="fas fa-video"></i>
-      </div>
-      <h4>Video Explanations</h4>
-      <p>Visual learning content and concept explanations generated to support different learning styles and reinforce key DevOps principles.</p>
-      <div class="ai-tools-used" markdown="0">
-        <div class="ai-tool" markdown="0">
-          <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-          <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
-        </div>
-        <div class="ai-tool" markdown="0">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-          <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="ai-content-card" markdown="0">
-      <div class="ai-content-icon" markdown="0">
-        <i class="fas fa-code"></i>
-      </div>
-      <h4>Interactive Elements</h4>
-      <p>Dynamic learning checkpoints, visual components, and interactive exercises crafted with AI assistance to enhance engagement.</p>
-      <div class="ai-tools-used" markdown="0">
-        <div class="ai-tool" markdown="0">
-          <i class="fas fa-brain" aria-hidden="true"></i>
-          <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
-        </div>
-        <div class="ai-tool" markdown="0">
-          <i class="fas fa-code" aria-hidden="true"></i>
-          <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
-        </div>
-        <div class="ai-tool" markdown="0">
-          <i class="fab fa-github" aria-hidden="true"></i>
-          <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 ## <i class="fas fa-book-open"></i> Continue Your Journey
 
