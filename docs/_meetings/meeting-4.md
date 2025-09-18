@@ -686,23 +686,23 @@ This question embodies the entire Accelerate philosophy:
 
 ### Related Resources
 
-<div class="related-resources" markdown="0">
-  <div class="resource-category" markdown="0">
+<div class="resource-grid" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-users"></i> Leadership & Transformation</h4>
-    <ul class="resource-links">
-      <li><a href="https://dora.dev/capabilities/transformational-leadership/" target="_blank">Transformational Leadership</a> - DORA guidance on the five leadership dimensions</li>
-      <li><a href="https://itrevolution.com/articles/five-leadership-practices/" target="_blank">Leadership Practices</a> - IT Revolution's transformational leadership guide</li>
-      <li><a href="https://www.lean.org/lexicon-terms/obeya/" target="_blank">Obeya Rooms</a> - Visual management and collaborative decision-making</li>
-      <li><a href="https://continuousdelivery.com/implementing/architecture/" target="_blank">Scaling Agile Architecture</a> - Organizational scaling patterns</li>
+    <ul>
+      <li><a href="https://dora.dev/capabilities/transformational-leadership/" target="_blank">Transformational Leadership</a></li>
+      <li><a href="https://itrevolution.com/articles/five-leadership-practices/" target="_blank">Leadership Practices</a></li>
+      <li><a href="https://www.lean.org/lexicon-terms/obeya/" target="_blank">Obeya Rooms</a></li>
+      <li><a href="https://continuousdelivery.com/implementing/architecture/" target="_blank">Scaling Agile Architecture</a></li>
     </ul>
   </div>
 
-  <div class="resource-category" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-rocket"></i> Transformation Guides</h4>
-    <ul class="resource-links">
-      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DevOps Capabilities</a> - Complete DORA capability assessment framework</li>
-      <li><a href="https://itrevolution.com/articles/starting-devops-transformation/" target="_blank">Starting DevOps Transformation</a> - Practical transformation guidance</li>
-      <li><a href="https://www.acceleratebook.com/" target="_blank">Accelerate Book</a> - Complete research findings and implementation guide</li>
+    <ul>
+      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DevOps Capabilities</a></li>
+      <li><a href="https://itrevolution.com/articles/starting-devops-transformation/" target="_blank">Starting DevOps Transformation</a></li>
+      <li><a href="https://www.acceleratebook.com/" target="_blank">Accelerate Book</a></li>
     </ul>
   </div>
 </div>
