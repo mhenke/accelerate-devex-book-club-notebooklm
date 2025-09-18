@@ -3,6 +3,8 @@ description: A structured approach to implementing high-performing DevOps practi
 baseurl: '/accelerate-devex-book-club-notebooklm'
 url: 'https://mhenke.github.io'
 
+repository: mikehenke/accelerate-devex-book-club-notebooklm
+
 # Theme
 theme: minima
 
