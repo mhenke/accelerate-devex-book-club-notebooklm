@@ -7,10 +7,10 @@ title: Meetings
 
 Our book club consists of four focused sessions over 2 months, each building upon the previous meeting's insights.
 
-<div class="meeting-grid">
+<div class="meeting-grid" markdown="0">
   {% assign meetings = site.meetings | sort: "week" %}
   {% for meeting in meetings %}
-    <div class="meeting-card">
+    <div class="meeting-card" markdown="0">
       <div class="meeting-icon" style="color: {{ meeting.dora_color }}">
         {% case forloop.index %}
           {% when 1 %}<i class="fas fa-chart-line"></i>
@@ -43,17 +43,17 @@ Each 1-hour session follows a consistent format:
 
 ---
 
-<div class="resource-links">
+<div class="resource-links" markdown="0">
   <h3><i class="fas fa-book"></i> Additional Resources</h3>
 
-  <div class="resource-grid">
-    <a href="{{ '/resources/' | relative_url }}" class="resource-link-card">
+  <div class="resource-grid" markdown="0">
+    <a href="{{ '/resources' | relative_url }}" class="resource-link-card">
       <i class="fas fa-clipboard-list"></i>
       <strong>Between Meetings</strong>
       <span>Activities and reflection questions</span>
     </a>
 
-    <a href="{{ '/prompts/' | relative_url }}" class="resource-link-card">
+    <a href="{{ '/prompts' | relative_url }}" class="resource-link-card">
       <i class="fas fa-microphone-alt"></i>
       <strong>AI Content</strong>
       <span>Generate podcasts and videos</span>

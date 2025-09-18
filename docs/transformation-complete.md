@@ -385,7 +385,7 @@ nav_order: 6
     <div class="resource-card ai-enhanced" markdown="0">
       <h4><i class="fas fa-robot"></i> AI-Enhanced Learning</h4>
       <ul>
-        <li><a href="/accelerate-devex-book-club-notebooklm/prompts/">Generate more content with NotebookLM</a></li>
+  <li><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/">Browse Resources Folder</a></li>
         <li>Create custom discussion prompts</li>
         <li>Generate team-specific scenarios</li>
         <li>Build organization assessment tools</li>
@@ -403,7 +403,7 @@ nav_order: 6
     
     <div class="celebration-cta" markdown="0">
       <a href="/accelerate-devex-book-club-notebooklm/" class="btn btn-primary">Return to Home</a>
-      <a href="/accelerate-devex-book-club-notebooklm/resources/" class="btn btn-secondary">Browse Resources</a>
+  <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/activities/" class="btn btn-secondary">Browse Activities Resources</a>
     </div>
   </div>
 </div>
