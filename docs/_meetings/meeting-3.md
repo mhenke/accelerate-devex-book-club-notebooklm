@@ -1047,7 +1047,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-
+<style>
 /* H3 Themed Styling */
 h3 {
   border-left: 4px solid #d97706;
