@@ -77,32 +77,32 @@ dora_color: '#0F766E'
 #### Continuous Delivery Core Principles
 
 <div class="cd-principles-grid" markdown="0">
-  <div class="principle-card quality" markdown="0">
+  <div class="insight-card quality" markdown="0">
     <div class="principle-title" markdown="0"><i class="fas fa-tools"></i> Build Quality In</div>
     <p>Start with quality, don't inspect later</p>
   </div>
 
-  <div class="principle-card batches" markdown="0">
+  <div class="insight-card batches" markdown="0">
     <div class="principle-title" markdown="0"><i class="fas fa-box"></i> Small Batches</div>
     <p>Manageable, testable units</p>
   </div>
 
-  <div class="principle-card automation" markdown="0">
+  <div class="insight-card automation" markdown="0">
     <div class="principle-title" markdown="0"><i class="fas fa-robot"></i> Automate Tasks</div>
     <p>Free humans for creative work</p>
   </div>
 
-  <div class="principle-card version" markdown="0">
+  <div class="insight-card version" markdown="0">
     <div class="principle-title" markdown="0"><i class="fas fa-folder"></i> Version Control</div>
     <p>All artifacts under control</p>
   </div>
 
-  <div class="principle-card trunk" markdown="0">
+  <div class="insight-card trunk" markdown="0">
     <div class="principle-title" markdown="0"><i class="fas fa-code-branch"></i> Trunk-Based Dev</div>
     <p>Short branches, frequent integration</p>
   </div>
 
-  <div class="principle-card testing" markdown="0">
+  <div class="insight-card testing" markdown="0">
     <div class="principle-title" markdown="0"><i class="fas fa-flask"></i> Test Automation</div>
     <p>Automated testing at all levels</p>
   </div>
@@ -419,42 +419,11 @@ dora_color: '#0F766E'
 
 ### Action Items for Next Meeting
 
-<div class="action-checklist" markdown="0">
-  <p class="checklist-intro">Ready to level up your CD practices? Check off these game-changing actions before our next session!</p>
-  
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-1" class="action-checkbox">
-    <label for="action-1" class="action-label">
-      <i class="fas fa-robot"></i>
-      <strong>Automate ONE painful manual process</strong> - What task makes your team groan every time?
-    </label>
-    <div class="action-details">
-      Look for repetitive deployment, testing, or configuration tasks. Start small and achievable - pick something you can automate in 1-2 weeks. Quick wins build momentum.
-    </div>
-  </div>
-
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-2" class="action-checkbox">
-    <label for="action-2" class="action-label">
-      <i class="fas fa-project-diagram"></i>
-      <strong>Map your dependency hell</strong> - What stops your team from deploying independently?
-    </label>
-    <div class="action-details">
-      Document shared databases, services, and coordination requirements with other teams. Note infrastructure dependencies. Make the invisible visible.
-    </div>
-  </div>
-
-  <div class="checklist-item" markdown="0">
-    <input type="checkbox" id="action-3" class="action-checkbox">
-    <label for="action-3" class="action-label">
-      <i class="fas fa-flask"></i>
-      <strong>Experiment with ONE CD practice</strong> - What will you try: trunk-based dev, test automation, or feature flags?
-    </label>
-    <div class="action-details">
-      Choose based on your team's current maturity level. Set measurable goals and timeline. Plan to share results and learnings with your team next meeting.
-    </div>
-  </div>
-</div>
+<ul>
+  <li><strong>Automate one manual process:</strong> Identify a repetitive deployment, testing, or configuration task and automate it within 1-2 weeks.</li>
+  <li><strong>Map your dependencies:</strong> Document shared databases, services, and infrastructure dependencies that impact team autonomy.</li>
+  <li><strong>Experiment with a CD practice:</strong> Try trunk-based development, test automation, or feature flags. Set goals and share results next meeting.</li>
+</ul>
 
 ### Related Resources
 
@@ -894,7 +863,7 @@ h3 {
   margin: 2rem 0;
 }
 
-.principle-card {
+.insight-card {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   
   padding: 1.5rem;
@@ -904,7 +873,7 @@ h3 {
   border-left: 4px solid #0F766E;
 }
 
-.principle-card:hover {
+.insight-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
@@ -918,7 +887,7 @@ h3 {
   display: block;
 }
 
-.principle-card p {
+.insight-card p {
   color: #666;
   font-size: 0.9rem;
   margin: 0;
@@ -1979,7 +1948,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('mousemove', (e) => {
-      if (isDragging) {
+      if isDragging) {
         e.preventDefault();
         updateSlider(e.clientX);
       }

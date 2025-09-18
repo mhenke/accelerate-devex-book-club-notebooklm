@@ -43,27 +43,27 @@ dora_color: '#7c3aed'
 #### Transformational Leadership: Five Dimensions That Drive Performance
 
 <div class="leadership-dimensions-grid" markdown="0">
-  <div class="dimension-card vision" markdown="0">
+  <div class="insight-card vision" markdown="0">
     <h4><i class="fas fa-eye"></i> Vision</h4>
     <p>Clear understanding of where organization is going in 5 years</p>
   </div>
 
-  <div class="dimension-card communication" markdown="0">
+  <div class="insight-card communication" markdown="0">
     <h4><i class="fas fa-bullhorn"></i> Inspirational Communication</h4>
     <p>Motivates and inspires even in uncertain/changing environments</p>
   </div>
 
-  <div class="dimension-card stimulation" markdown="0">
+  <div class="insight-card stimulation" markdown="0">
     <h4><i class="fas fa-lightbulb"></i> Intellectual Stimulation</h4>
     <p>Challenges team members to think about problems in new ways</p>
   </div>
 
-  <div class="dimension-card support" markdown="0">
+  <div class="insight-card support" markdown="0">
     <h4><i class="fas fa-heart"></i> Supportive Leadership</h4>
     <p>Demonstrates care and consideration for followers' personal needs</p>
   </div>
 
-  <div class="dimension-card recognition" markdown="0">
+  <div class="insight-card recognition" markdown="0">
     <h4><i class="fas fa-award"></i> Personal Recognition</h4>
     <p>Praises and acknowledges achievements, personally compliments work</p>
   </div>
@@ -517,106 +517,36 @@ dora_color: '#7c3aed'
 
 ### Action Items and Commitments
 
-<div class="action-section" markdown="0">
-  <h4 class="section-title"><i class="fas fa-user"></i> Individual Leadership Commitments</h4>
-  <div class="action-checklist" markdown="0">
-    <p class="checklist-intro">As a leader, commit to these transformational practices. Your team is watching!</p>
-    
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="individual-1" class="action-checkbox">
-      <label for="individual-1" class="action-label">
-        <i class="fas fa-comments"></i>
-        <strong>Practice coaching instead of commanding</strong> - Can you ask one supportive question this week instead of giving direct orders?
-      </label>
-      <div class="action-details">
-        Try "Help me understand..." instead of "Why didn't you..." Ask "What support do you need?" rather than jumping to solutions. Start with low-stakes situations to build the habit.
-      </div>
-    </div>
+**Individual Leadership Commitments**
 
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="individual-2" class="action-checkbox">
-      <label for="individual-2" class="action-label">
-        <i class="fas fa-graduation-cap"></i>
-        <strong>Invest in your team's capability development</strong> - What learning opportunity will you fund or create?
-      </label>
-      <div class="action-details">
-        Consider training budgets, conference attendance, experimentation time (20% time, hack days), or mentoring programs. Investment in people drives transformation.
-      </div>
-    </div>
+- **Practice coaching instead of commanding:** Can you ask one supportive question this week instead of giving direct orders?
 
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="individual-3" class="action-checkbox">
-      <label for="individual-3" class="action-label">
-        <i class="fas fa-eye"></i>
-        <strong>Create visual management</strong> - Can everyone see your team's work and problems at a glance?
-      </label>
-      <div class="action-details">
-        Set up a physical board or digital tool showing current work, bottlenecks, and escalation paths. Make problems visible so they can be solved collectively.
-      </div>
-    </div>
+  - Try "Help me understand..." instead of "Why didn't you..." Ask "What support do you need?" rather than jumping to solutions. Start with low-stakes situations to build the habit.
 
-  </div>
-</div>
+- **Invest in your team's capability development:** What learning opportunity will you fund or create?
 
-<div class="action-section" markdown="0">
-  <h4 class="section-title"><i class="fas fa-users"></i> Team Experiments</h4>
-  <div class="action-checklist" markdown="0">
-    <p class="checklist-intro">Experiment with your team to build generative culture practices:</p>
-    
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="team-1" class="action-checkbox">
-      <label for="team-1" class="action-label">
-        <i class="fas fa-search"></i>
-        <strong>Turn failure into learning</strong> - When did you last discuss a setback without blame?
-      </label>
-      <div class="action-details">
-        Hold a "failure leads to inquiry" discussion about a recent problem. Ask "What conditions led to this outcome?" Focus on system improvement, not individual fault.
-      </div>
-    </div>
+  - Consider training budgets, conference attendance, experimentation time (20% time, hack days), or mentoring programs. Investment in people drives transformation.
 
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="team-2" class="action-checkbox">
-      <label for="team-2" class="action-label">
-        <i class="fas fa-route"></i>
-        <strong>Map and improve communication flow</strong> - Where do problems get stuck in your escalation process?
-      </label>
-      <div class="action-details">
-        Document who gets involved when problems arise. Identify bottlenecks or unnecessary handoffs. Test one improvement to speed up resolution.
-      </div>
-    </div>
+- **Create visual management:** Can everyone see your team's work and problems at a glance?
+  - Set up a physical board or digital tool showing current work, bottlenecks, and escalation paths. Make problems visible so they can be solved collectively.
 
-  </div>
-</div>
+**Team Experiments**
 
-<div class="action-section" markdown="0">
-  <h4 class="section-title"><i class="fas fa-building"></i> Organizational Assessment</h4>
-  <div class="action-checklist" markdown="0">
-    <p class="checklist-intro">Time to assess and plan your organizational transformation:</p>
-    
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="org-1" class="action-checkbox">
-      <label for="org-1" class="action-label">
-        <i class="fas fa-chart-bar"></i>
-        <strong>Analyze leadership gaps</strong> - Which transformational leadership dimensions need development?
-      </label>
-      <div class="action-details">
-        Rate current leadership on vision, communication, support, and intellectual stimulation. Identify the biggest gaps and plan specific development activities.
-      </div>
-    </div>
+- **Turn failure into learning:** When did you last discuss a setback without blame?
 
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="org-2" class="action-checkbox">
-      <label for="org-2" class="action-label">
-        <i class="fas fa-puzzle-piece"></i>
-        <strong>Adapt one ING practice</strong> - What element from their transformation fits your context?
-      </label>
-      <div class="action-details">
-        Choose Obeya rooms, catchball communication, or squad structure. Adapt it to your organizational context and plan a small pilot with measurable success criteria.
-      </div>
-    </div>
+  - Hold a "failure leads to inquiry" discussion about a recent problem. Ask "What conditions led to this outcome?" Focus on system improvement, not individual fault.
 
-  </div>
-</div>
+- **Map and improve communication flow:** Where do problems get stuck in your escalation process?
+  - Document who gets involved when problems arise. Identify bottlenecks or unnecessary handoffs. Test one improvement to speed up resolution.
+
+**Organizational Assessment**
+
+- **Analyze leadership gaps:** Which transformational leadership dimensions need development?
+
+  - Rate current leadership on vision, communication, support, and intellectual stimulation. Identify the biggest gaps and plan specific development activities.
+
+- **Adapt one ING practice:** What element from their transformation fits your context?
+  - Choose Obeya rooms, catchball communication, or squad structure. Adapt it to your organizational context and plan a small pilot with measurable success criteria.
 
 ### Culminating Reflection
 
@@ -692,7 +622,7 @@ h3 {
   margin: 2rem 0;
 }
 
-.dimension-card {
+.insight-card {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   
   padding: 1.5rem;
@@ -702,20 +632,20 @@ h3 {
   border-left: 4px solid var(--meeting-4-primary);
 }
 
-.dimension-card:hover {
+.insight-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
   border-left-color: var(--meeting-4-darker);
 }
 
-.dimension-card h4 {
+.insight-card h4 {
   margin: 0 0 0.75rem 0;
   color: var(--meeting-4-darker);
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.dimension-card p {
+.insight-card p {
   color: #666;
   font-size: 0.9rem;
   margin: 0;
