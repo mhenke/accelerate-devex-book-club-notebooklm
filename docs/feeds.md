@@ -2,13 +2,11 @@
 layout: default
 title: RSS Feeds & Downloads
 permalink: /feeds/
----
 
 # <i class="fas fa-rss"></i> RSS Feeds & Media Downloads
 
 Subscribe to our RSS feeds to get the latest podcast episodes and videos delivered automatically, or download individual files directly.
 
----
 
 ## <i class="fas fa-podcast"></i> Podcast Feeds
 
@@ -17,6 +15,9 @@ Subscribe to our RSS feeds to get the latest podcast episodes and videos deliver
 Subscribe to get audio-only podcast episodes covering each meeting's content:
 
 <div class="feed-subscription-box">
+<p style="text-align: center; margin-top: 2rem;">
+  <a href="/accelerate-devex-book-club-notebooklm/feeds/" class="btn btn-feeds">Explore RSS Feeds & Downloads</a>
+</p>
   <div class="feed-url-container">
     <label for="podcast-feed-url">Podcast RSS URL:</label>
     <input type="text" id="podcast-feed-url" value="{{ site.url }}{{ site.baseurl }}/podcast.xml" readonly>
@@ -255,26 +256,10 @@ Download individual audio and video files directly:
   transition: all 0.2s ease;
 }
 
-.feed-link {
   background: #28a745;
   color: white;
 }
-
-.feed-link:hover {
-  background: #1e7e34;
-  color: white;
-}
-
-.subscribe-link.apple {
-  background: #000;
-  color: white;
-}
-
-.subscribe-link.apple:hover {
-  background: #333;
-  color: white;
-}
-
+---
 .subscribe-link.spotify {
   background: #1db954;
   color: white;
