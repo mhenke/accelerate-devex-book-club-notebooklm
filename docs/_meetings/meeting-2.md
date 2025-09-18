@@ -1948,7 +1948,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('mousemove', (e) => {
-      if isDragging) {
+      if (isDragging) {
         e.preventDefault();
         updateSlider(e.clientX);
       }

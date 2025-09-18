@@ -1,0 +1,147 @@
+<!-- Advanced Reusable Interactive Checkpoint Component -->
+<!-- 
+Comprehensive usage with all parameters:
+
+{% include advanced-checkpoint.html 
+  title="DORA Metrics Assessment"
+  icon="fas fa-chart-line"
+  question="Rate your team's current performance:"
+  subtext="Consider all four key metrics when making your assessment"
+  instruction="Select the level that best describes your current state"
+  answers=site.data.checkpoint_answers.dora_assessment
+  layout="vertical"
+  feedback_id="dora-feedback"
+  radio_name="dora-performance"
+  card_class="dora-assessment"
+  default_feedback="Make a selection to see personalized feedback."
+  has_culture_layout=false
+%}
+
+Parameters:
+- title: Main heading for the card
+- icon: FontAwesome icon class (optional)
+- question: Primary question text
+- subtext: Secondary explanatory text below question (optional)
+- instruction: Instruction text for user guidance (optional)
+- answers: Array of answer objects from _data/checkpoint_answers.yml
+- layout: "vertical" (default), "grid-2", "grid-3", "horizontal"
+- feedback_id: ID for the feedback area
+- radio_name: Name attribute for radio button group
+- card_class: CSS class for styling variations
+- default_feedback: Default text in feedback area
+- has_culture_layout: Boolean for complex culture card layout
+-->
+
+<div class="checkpoint-card {{ include.card_class | default: 'generic-checkpoint' }}" markdown="0">
+  <h4>
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
+    {{ include.title }}
+  </h4>
+  
+  {% if include.question %}<p class="checkpoint-question">{{ include.question }}</p>{% endif %}
+  {% if include.subtext %}<p class="checkpoint-subtext">{{ include.subtext }}</p>{% endif %}
+  {% if include.instruction %}<p class="checkpoint-instruction">{{ include.instruction }}</p>{% endif %}
+  
+  {% if include.answers %}
+  <div class="
+    {% case include.layout %}
+      {% when 'grid-2' %}priority-selector
+      {% when 'grid-3' %}assessment-grid-3
+      {% when 'horizontal' %}assessment-horizontal
+      {% else %}assessment-buttons
+    {% endcase %}
+  " markdown="0">
+    {% for answer in include.answers %}
+    <label class="
+      {% if include.has_culture_layout %}culture-option{% endif %} 
+      assessment-btn 
+      {{ answer.performance_class | default: 'performance-medium' }}
+    ">
+      <input type="radio" name="{{ include.radio_name | default: 'checkpoint' }}" value="{{ answer.value }}">
+      <span class="radio-mark"></span>
+      {% if include.has_culture_layout %}
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>{{ answer.name }}</strong>
+          </div>
+          <div class="culture-description">{{ answer.description }}</div>
+        </div>
+      {% else %}
+        {{ answer.text }}
+        {% if answer.subtext %}<br><small class="answer-subtext">{{ answer.subtext }}</small>{% endif %}
+      {% endif %}
+    </label>
+    {% endfor %}
+  </div>
+  {% endif %}
+  
+  {% if include.feedback_id %}
+  <div class="feedback-area" id="{{ include.feedback_id }}">
+    <p>{{ include.default_feedback | default: 'Make a selection to see personalized feedback.' }}</p>
+  </div>
+  {% endif %}
+</div>
+
+<style>
+.checkpoint-question {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.checkpoint-subtext {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.checkpoint-instruction {
+  color: #1e40af;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border-radius: 6px;
+  border-left: 3px solid #1e40af;
+}
+
+.assessment-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.assessment-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.assessment-horizontal .assessment-btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+.answer-subtext {
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .assessment-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .assessment-horizontal {
+    flex-direction: column;
+  }
+  
+  .assessment-horizontal .assessment-btn {
+    flex: none;
+  }
+}
+</style>

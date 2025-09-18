@@ -1,0 +1,77 @@
+<!-- Reusable Culture Assessment Checkpoint Component -->
+<!-- 
+Usage: {% include culture-checkpoint.html 
+  title="Culture Assessment"
+  icon="fas fa-users"
+  question="Assess your organization's culture type using Westrum's model:"
+  culture_types=site.data.culture_types
+  feedback_id="culture-feedback"
+  radio_name="culture-type"
+  card_class="culture-assessment"
+%}
+-->
+
+<div class="checkpoint-card {{ include.card_class | default: 'culture-assessment' }}" markdown="0">
+  <h4>
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
+    {{ include.title }}
+  </h4>
+  {% if include.question %}<p>{{ include.question }}</p>{% endif %}
+  
+  <div class="culture-selector" markdown="0">
+    {% if include.culture_types %}
+      {% for culture in include.culture_types %}
+      <label class="culture-option assessment-btn {{ culture.performance_class }}">
+        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="{{ culture.value }}">
+        <span class="radio-mark"></span>
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>{{ culture.name }}</strong>
+          </div>
+          <div class="culture-description">{{ culture.description }}</div>
+        </div>
+      </label>
+      {% endfor %}
+    {% else %}
+      <!-- Default Westrum culture types -->
+      <label class="culture-option assessment-btn performance-low">
+        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="pathological">
+        <span class="radio-mark"></span>
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>Pathological</strong>
+          </div>
+          <div class="culture-description">Power-oriented, low cooperation, blame culture</div>
+        </div>
+      </label>
+      
+      <label class="culture-option assessment-btn performance-medium">
+        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="bureaucratic">
+        <span class="radio-mark"></span>
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>Bureaucratic</strong>
+          </div>
+          <div class="culture-description">Rule-oriented, modest cooperation, rules over mission</div>
+        </div>
+      </label>
+      
+      <label class="culture-option assessment-btn performance-high">
+        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="generative">
+        <span class="radio-mark"></span>
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>Generative</strong>
+          </div>
+          <div class="culture-description">Performance-oriented, high cooperation, mission focused</div>
+        </div>
+      </label>
+    {% endif %}
+  </div>
+  
+  {% if include.feedback_id %}
+  <div class="feedback-area" id="{{ include.feedback_id }}">
+    <p>{{ include.default_feedback | default: 'Select your organization\'s culture type to see how it impacts delivery performance.' }}</p>
+  </div>
+  {% endif %}
+</div>

@@ -1,0 +1,21 @@
+{% comment %}
+  Reusable discussion card component
+  Usage: {% include discussion-card.html icon="fas fa-chart-line" title="Current State Assessment" question="How would you rate your team on each DORA metric?" prompts="Deployment frequency|Lead time for changes|Time to restore service" %}
+{% endcomment %}
+<div class="discussion-card" markdown="0">
+  <div class="discussion-header" markdown="0">
+    <i class="{{ include.icon }}"></i>
+    <h4>{{ include.title }}</h4>
+  </div>
+  <div class="discussion-content" markdown="0">
+    <p><strong>{{ include.question }}</strong></p>
+    {% if include.prompts %}
+    <div class="discussion-prompts" markdown="0">
+      {% assign prompt_list = include.prompts | split: "|" %}
+      {% for prompt in prompt_list %}
+      <span>• {{ prompt }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

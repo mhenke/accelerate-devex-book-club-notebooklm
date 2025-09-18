@@ -1,0 +1,21 @@
+{% comment %}
+  Reusable employee net promoter score (eNPS) component
+  Usage: {% include employee-net-promoter-score.html company="Microsoft" before="38%" after="75%" metric="work-life satisfaction" description="Transformation to DevOps practices significantly improved employee satisfaction" %}
+{% endcomment %}
+<div class="enps-card" markdown="0">
+  <h4><i class="fas fa-heart"></i> {{ include.company }} {{ include.metric | capitalize }}</h4>
+  <div class="enps-comparison" markdown="0">
+    <div class="enps-before" markdown="0">
+      <span class="enps-label">Before</span>
+      <span class="enps-value">{{ include.before }}</span>
+    </div>
+    <div class="enps-arrow" markdown="0">
+      <i class="fas fa-arrow-right"></i>
+    </div>
+    <div class="enps-after" markdown="0">
+      <span class="enps-label">After</span>
+      <span class="enps-value">{{ include.after }}</span>
+    </div>
+  </div>
+  <p>{{ include.description }}</p>
+</div>

@@ -1,0 +1,140 @@
+# Reusable checkpoint card answers
+# Usage in advanced-checkpoint.html: answers=site.data.checkpoint_answers.dora_assessment
+
+dora_assessment:
+  - text: "Elite Performance"
+    subtext: "Daily deployments, <1 hour lead time, <1 hour recovery"
+    value: "elite" 
+    performance_class: "performance-high"
+  - text: "High Performance"
+    subtext: "Weekly deployments, <1 day lead time, <1 day recovery"
+    value: "high"
+    performance_class: "performance-high" 
+  - text: "Medium Performance"
+    subtext: "Monthly deployments, <1 week lead time, <1 week recovery"
+    value: "medium"
+    performance_class: "performance-medium"
+  - text: "Low Performance"
+    subtext: "Rarely deploy, >1 month lead time, >1 week recovery"
+    value: "low"
+    performance_class: "performance-low"
+
+deployment_confidence:
+  - text: "Anxious & Stressful"
+    value: "anxious"
+    performance_class: "performance-low"
+  - text: "Manageable but Tense"
+    value: "neutral"
+    performance_class: "performance-medium"
+  - text: "Confident & Routine"
+    value: "confident"
+    performance_class: "performance-high"
+
+improvement_priority:
+  - text: "Lead Time"
+    value: "lead-time"
+    performance_class: "performance-high"
+  - text: "Deploy Frequency"
+    value: "deploy-frequency"
+    performance_class: "performance-high"
+  - text: "Restore Time"
+    value: "restore-time"
+    performance_class: "performance-medium"
+  - text: "Change Fail Rate"
+    value: "change-fail"
+    performance_class: "performance-low"
+
+culture_assessment:
+  - text: "Pathological - Power-oriented, fear-driven, information hoarding"
+    value: "pathological"
+    performance_class: "performance-low"
+  - text: "Bureaucratic - Rule-oriented, department focused, modest cooperation"
+    value: "bureaucratic"
+    performance_class: "performance-medium"
+  - text: "Generative - Performance-oriented, mission focused, high cooperation"
+    value: "generative"
+    performance_class: "performance-high"
+
+# Generic Yes/No answers
+yes_no:
+  - text: "Yes"
+    value: "yes"
+    performance_class: "performance-high"
+  - text: "No"
+    value: "no"
+    performance_class: "performance-low"
+
+# 5-point scale with subtexts
+five_point_scale:
+  - text: "Strongly Agree"
+    subtext: "This completely describes our situation"
+    value: "strongly-agree"
+    performance_class: "performance-high"
+  - text: "Agree"
+    subtext: "This mostly describes our situation"
+    value: "agree"
+    performance_class: "performance-high"
+  - text: "Neutral"
+    subtext: "Sometimes yes, sometimes no"
+    value: "neutral"
+    performance_class: "performance-medium"
+  - text: "Disagree"
+    subtext: "This rarely describes our situation"
+    value: "disagree"
+    performance_class: "performance-low"
+  - text: "Strongly Disagree"
+    subtext: "This never describes our situation"
+    value: "strongly-disagree"
+    performance_class: "performance-low"
+
+# Culture types with complex layout
+westrum_culture_types:
+  - name: "Pathological"
+    description: "Power-oriented, low cooperation, blame culture"
+    value: "pathological"
+    performance_class: "performance-low"
+    characteristics: ["Information is hoarded", "Failures are punished", "Novelty is crushed"]
+  - name: "Bureaucratic"  
+    description: "Rule-oriented, modest cooperation, rules over mission"
+    value: "bureaucratic"
+    performance_class: "performance-medium"
+    characteristics: ["Information may be ignored", "Failures lead to justice", "Novelty creates problems"]
+  - name: "Generative"
+    description: "Performance-oriented, high cooperation, mission focused"
+    value: "generative"
+    performance_class: "performance-high"
+    characteristics: ["Information is actively sought", "Failures lead to learning", "Novelty is implemented"]
+
+# Leadership styles for Meeting 4
+leadership_styles:
+  - text: "Command & Control"
+    subtext: "Top-down decisions, micromanagement, limited autonomy"
+    value: "command"
+    performance_class: "performance-low"
+  - text: "Mixed Approach" 
+    subtext: "Some delegation, moderate autonomy, situational leadership"
+    value: "mixed"
+    performance_class: "performance-medium"
+  - text: "Transformational"
+    subtext: "Servant leadership, high autonomy, vision-driven, coaching mindset"
+    value: "transformational"
+    performance_class: "performance-high"
+
+# Technical practices maturity
+technical_maturity:
+  - text: "Ad Hoc"
+    subtext: "Manual processes, no automation, reactive approach"
+    value: "ad-hoc"
+    performance_class: "performance-low"
+  - text: "Repeatable"
+    subtext: "Some automation, basic CI/CD, documented processes"
+    value: "repeatable"
+    performance_class: "performance-medium"
+  - text: "Defined"
+    subtext: "Comprehensive automation, strong CI/CD, measurement focus"
+    value: "defined"
+    performance_class: "performance-high"
+  - text: "Optimizing"
+    subtext: "Continuous improvement, advanced practices, data-driven decisions"
+    value: "optimizing"
+    performance_class: "performance-high"

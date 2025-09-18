@@ -177,17 +177,17 @@ dora_color: '#1E3A8A'
     <h4><i class="fas fa-chart-line"></i> DORA Metrics Assessment</h4>
     <p>Rate your team's current performance on the four key metrics:</p>
     <div class="assessment-buttons" markdown="0">
-      <label class="assessment-btn high-performance">
+      <label class="assessment-btn performance-high">
         <input type="radio" name="dora-performance" value="high">
         <span class="radio-mark"></span>
         High Performance
       </label>
-      <label class="assessment-btn medium-performance">
+      <label class="assessment-btn performance-medium">
         <input type="radio" name="dora-performance" value="medium">
         <span class="radio-mark"></span>
         Medium Performance
       </label>
-      <label class="assessment-btn low-performance">
+      <label class="assessment-btn performance-low">
         <input type="radio" name="dora-performance" value="low">
         <span class="radio-mark"></span>
         Low Performance
@@ -202,19 +202,20 @@ dora_color: '#1E3A8A'
     <h4><i class="fas fa-heart"></i> Deployment Confidence</h4>
     <p>How does your team feel about deployments?</p>
     <div class="confidence-options" markdown="0">
-      <label class="confidence-item anxious">
+      <label class="confidence-item performance-low">
         <input type="radio" name="deployment-confidence" value="anxious">
         <span class="radio-mark"></span>
-        <i class="fas fa-frown"></i> Anxious & Stressful
+        Anxious & Stressful
       </label>
-      <label class="confidence-item neutral">
+      <label class="confidence-item performance-medium">
         <input type="radio" name="deployment-confidence" value="neutral">
         <span class="radio-mark"></span>
-        <i class="fas fa-meh"></i> Manageable but Tense
+        Manageable but Tense
       </label>
+      <label class="confidence-item performance-high">
         <input type="radio" name="deployment-confidence" value="confident">
         <span class="radio-mark"></span>
-        <i class="fas fa-smile"></i> Confident & Routine
+        Confident & Routine
       </label>
     </div>
     <div class="feedback-area" id="confidence-feedback">
@@ -226,25 +227,25 @@ dora_color: '#1E3A8A'
     <h4><i class="fas fa-bullseye"></i> Improvement Priority</h4>
     <p>Which DORA metric should your team focus on first?</p>
     <div class="priority-selector" markdown="0">
-      <label class="priority-option">
+      <label class="assessment-btn performance-high">
         <input type="radio" name="improvement-focus" value="lead-time">
         <span class="radio-mark"></span>
-        <i class="fas fa-chart-line"></i> Lead Time
+        Lead Time
       </label>
-      <label class="priority-option">
+      <label class="assessment-btn performance-high">
         <input type="radio" name="improvement-focus" value="deploy-frequency">
         <span class="radio-mark"></span>
-        <i class="fas fa-rocket"></i> Deploy Frequency
+        Deploy Frequency
       </label>
-      <label class="priority-option">
+      <label class="assessment-btn performance-medium">
         <input type="radio" name="improvement-focus" value="restore-time">
         <span class="radio-mark"></span>
-        <i class="fas fa-clock"></i> Restore Time
+        Restore Time
       </label>
-      <label class="priority-option">
+      <label class="assessment-btn performance-low">
         <input type="radio" name="improvement-focus" value="change-fail">
         <span class="radio-mark"></span>
-        <i class="fas fa-exclamation-triangle"></i> Change Fail Rate
+        Change Fail Rate
       </label>
     </div>
     <div class="feedback-area" id="priority-feedback">
@@ -257,47 +258,38 @@ dora_color: '#1E3A8A'
     <p>Assess your organization's culture type using Westrum's model:</p>
 
     <div class="culture-selector" markdown="0">
-      <div class="culture-option pathological-option" markdown="0">
-        <input type="radio" name="culture-type" value="pathological" id="culture-pathological">
-        <label for="culture-pathological">
-          <span class="radio-mark"></span>
-          <div class="option-content" markdown="0">
-            <div class="option-header" markdown="0">
-              <i class="fas fa-exclamation-triangle"></i>
-              <strong>Pathological</strong>
-            </div>
-            <div class="option-description" markdown="0">Power-oriented, low cooperation, blame culture</div>
+      <label class="culture-option assessment-btn performance-low">
+        <input type="radio" name="culture-type" value="pathological">
+        <span class="radio-mark"></span>
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>Pathological</strong>
           </div>
-        </label>
-      </div>
+          <div class="culture-description">Power-oriented, low cooperation, blame culture</div>
+        </div>
+      </label>
 
-      <div class="culture-option bureaucratic-option" markdown="0">
-        <input type="radio" name="culture-type" value="bureaucratic" id="culture-bureaucratic">
-        <label for="culture-bureaucratic">
-          <span class="radio-mark"></span>
-          <div class="option-content" markdown="0">
-            <div class="option-header" markdown="0">
-              <i class="fas fa-clipboard-list"></i>
-              <strong>Bureaucratic</strong>
-            </div>
-            <div class="option-description" markdown="0">Rule-oriented, modest cooperation, rules over mission</div>
+      <label class="culture-option assessment-btn performance-medium">
+        <input type="radio" name="culture-type" value="bureaucratic">
+        <span class="radio-mark"></span>
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>Bureaucratic</strong>
           </div>
-        </label>
-      </div>
+          <div class="culture-description">Rule-oriented, modest cooperation, rules over mission</div>
+        </div>
+      </label>
 
-      <div class="culture-option generative-option" markdown="0">
-        <input type="radio" name="culture-type" value="generative" id="culture-generative">
-        <label for="culture-generative">
-          <span class="radio-mark"></span>
-          <div class="option-content" markdown="0">
-            <div class="option-header" markdown="0">
-              <i class="fas fa-rocket"></i>
-              <strong>Generative</strong>
-            </div>
-            <div class="option-description" markdown="0">Performance-oriented, high cooperation, mission focused</div>
+      <label class="culture-option assessment-btn performance-high">
+        <input type="radio" name="culture-type" value="generative">
+        <span class="radio-mark"></span>
+        <div class="culture-content">
+          <div class="culture-header">
+            <strong>Generative</strong>
           </div>
-        </label>
-      </div>
+          <div class="culture-description">Performance-oriented, high cooperation, mission focused</div>
+        </div>
+      </label>
     </div>
 
     <div class="feedback-area" id="culture-feedback">
@@ -372,27 +364,54 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
-### Action Items for Next Meeting
+## Action Items for Next Meeting
 
-Before our next meeting, challenge yourself with these action-oriented tasks:
-
-- **Start tracking ONE DORA metric this week:** Which metric will reveal your team's biggest opportunity?
-
-  - Pick deployment frequency, lead time, MTTR, or change failure rate. Use a simple spreadsheet or notes. The goal is baseline measurement, not perfection.
-
-- **Document your #1 deployment pain point:** What makes your team anxious before releases?
-  - Write down the manual steps, coordination needed, and how it impacts work-life balance. Be specific about what happens when things go wrong.
-    <div class="checklist-item" markdown="0">
-      <input type="checkbox" id="action-3" class="action-checkbox">
-      <label for="action-3" class="action-label">
-        <i class="fas fa-users"></i>
-        <strong>Culture detective mode: Observe 3 team interactions</strong> - Are you pathological, bureaucratic, or generative?
-      </label>
-      <div class="action-details">
-        Watch how failures are discussed in meetings. Note information sharing patterns. Do you see blame or learning? Cooperation or silos?
-      </div>
+<div class="action-items-grid" markdown="0">
+  <div class="action-card" markdown="0">
+    <div class="action-header">
+      <i class="fas fa-chart-line"></i>
+      <h4>Start tracking ONE DORA metric this week</h4>
+    </div>
+    <p>Which metric will reveal your team's biggest opportunity?</p>
+    <div class="action-details">
+      Pick deployment frequency, lead time, MTTR, or change failure rate. Use a simple spreadsheet or notes. The goal is baseline measurement, not perfection.
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="action-1" class="action-checkbox">
+      <label for="action-1" class="action-label">Track chosen DORA metric</label>
     </div>
   </div>
+
+  <div class="action-card" markdown="0">
+    <div class="action-header">
+      <i class="fas fa-exclamation-triangle"></i>
+      <h4>Document your #1 deployment pain point</h4>
+    </div>
+    <p>What makes your team anxious before releases?</p>
+    <div class="action-details">
+      Write down the manual steps, coordination needed, and how it impacts work-life balance. Be specific about what happens when things go wrong.
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="action-2" class="action-checkbox">
+      <label for="action-2" class="action-label">Document deployment pain point</label>
+    </div>
+  </div>
+
+  <div class="action-card" markdown="0">
+    <div class="action-header">
+      <i class="fas fa-users"></i>
+      <h4>Culture detective mode</h4>
+    </div>
+    <p>Observe 3 team interactions - Are you pathological, bureaucratic, or generative?</p>
+    <div class="action-details">
+      Watch how failures are discussed in meetings. Note information sharing patterns. Do you see blame or learning? Cooperation or silos?
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="action-3" class="action-checkbox">
+      <label for="action-3" class="action-label">Observe team culture interactions</label>
+    </div>
+  </div>
+</div>
 
 ### Related Resources
 
@@ -508,20 +527,50 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
   flex-shrink: 0;
 }
 
-.assessment-btn.high-performance {
-  border-color: #1E3A8A;
-  color: #1e40af;
+/* Reusable Performance Level Styles */
+.performance-high:has(input:checked) {
+  background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+  border-color: #28a745;
+  color: #155724;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
 }
 
-.assessment-btn.high-performance .radio-mark {
-  border-color: #1E3A8A;
+.performance-high input:checked ~ .radio-mark {
+  background: #28a745;
+  border-color: #28a745;
 }
 
-.assessment-btn.high-performance input:checked ~ .radio-mark {
-  background: #1E3A8A;
+.performance-medium:has(input:checked) {
+  background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+  border-color: #ffc107;
+  color: #856404;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
 }
 
-.assessment-btn.high-performance input:checked ~ .radio-mark:after {
+.performance-medium input:checked ~ .radio-mark {
+  background: #ffc107;
+  border-color: #ffc107;
+}
+
+.performance-low:has(input:checked) {
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+  border-color: #dc3545;
+  color: #721c24;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
+}
+
+.performance-low input:checked ~ .radio-mark {
+  background: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Radio button checked indicator */
+.performance-high input:checked ~ .radio-mark:after,
+.performance-medium input:checked ~ .radio-mark:after,
+.performance-low input:checked ~ .radio-mark:after {
   content: "";
   position: absolute;
   top: 2px;
@@ -530,72 +579,6 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
   height: 8px;
   border-radius: 50%;
   background: white;
-}
-
-.assessment-btn.high-performance:has(input:checked) {
-  background: #dbeafe;
-  border-color: #1e40af;
-  color: #1e40af;
-}
-
-.assessment-btn.medium-performance {
-  border-color: #1E3A8A;
-  color: #1e40af;
-}
-
-.assessment-btn.medium-performance .radio-mark {
-  border-color: #1E3A8A;
-}
-
-.assessment-btn.medium-performance input:checked ~ .radio-mark {
-  background: #1E3A8A;
-}
-
-.assessment-btn.medium-performance input:checked ~ .radio-mark:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-.assessment-btn.medium-performance:has(input:checked) {
-  background: #dbeafe;
-  border-color: #1e40af;
-  color: #1e40af;
-}
-
-.assessment-btn.low-performance {
-  border-color: #f44336;
-  color: #d32f2f;
-}
-
-.assessment-btn.low-performance .radio-mark {
-  border-color: #f44336;
-}
-
-.assessment-btn.low-performance input:checked ~ .radio-mark {
-  background: #f44336;
-}
-
-.assessment-btn.low-performance input:checked ~ .radio-mark:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-.assessment-btn.low-performance:has(input:checked) {
-  background: #dbeafe;
-  border-color: #d32f2f;
-  color: #d32f2f;
 }
 
 /* Confidence Options */
@@ -609,9 +592,9 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
 .confidence-item {
   position: relative;
   padding: 1rem 1.5rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: white;
+  border: 2px solid #ddd;
   
-  border-left: 4px solid #1E3A8A;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
@@ -633,40 +616,14 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
 .confidence-item .radio-mark {
   width: 16px;
   height: 16px;
-  border: 2px solid #1E3A8A;
+  border: 2px solid #ddd;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
 
-.confidence-item input:checked ~ .radio-mark {
-  background: #1E3A8A;
-}
-
-.confidence-item input:checked ~ .radio-mark:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-.confidence-item:hover {
-  background: linear-gradient(135deg, #1E3A8A, #3730a3);
-  color: white;
-  transform: translateX(4px);
-  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
-}
-
-.confidence-item:has(input:checked) {
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-left-color: #1e40af;
-  color: #1e40af;
-}
+/* Confidence items now use the shared performance classes */
 
 /* Priority Selector */
 .priority-selector {
@@ -674,69 +631,6 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
   grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
   margin-bottom: 1.5rem;
-}
-
-.priority-option {
-  position: relative;
-  padding: 1rem 1.5rem;
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  
-  border: 2px solid #1E3A8A;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #1e40af;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-height: 48px;
-  min-width: 48px;
-}
-
-.priority-option input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.priority-option .radio-mark {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #1E3A8A;
-  border-radius: 50%;
-  background: white;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-}
-
-.priority-option input:checked ~ .radio-mark {
-  background: #1E3A8A;
-}
-
-.priority-option input:checked ~ .radio-mark:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-.priority-option:hover {
-  background: linear-gradient(135deg, #1E3A8A, #3730a3);
-  color: white;
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3);
-}
-
-.priority-option:has(input:checked) {
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-color: #1e40af;
-  color: #1e40af;
-  font-weight: 600;
 }
 
 /* Feedback Areas */
@@ -769,6 +663,37 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
 }
 
+/* Color-coded feedback areas */
+.feedback-area.feedback-high {
+  border-left-color: #28a745;
+  background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+}
+
+.feedback-area.feedback-high h5 {
+  color: #155724;
+}
+
+.feedback-area.feedback-medium {
+  border-left-color: #ffc107;
+  background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+}
+
+.feedback-area.feedback-medium h5 {
+  color: #856404;
+}
+
+.feedback-area.feedback-low {
+  border-left-color: #dc3545;
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+.feedback-area.feedback-low h5 {
+  color: #721c24;
+}
+
 /* Culture Assessment Styling */
 .culture-selector {
   display: grid;
@@ -776,64 +701,11 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
   margin-bottom: 1.5rem;
 }
 
-.culture-option {
-  position: relative;
-}
-
-.culture-option input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.culture-option label {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
-  border: 2px solid #e2e8f0;
-  
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-  min-height: 48px;
-  min-width: 48px;
-}
-
-.culture-option .radio-mark {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #64748b;
-  border-radius: 50%;
-  background: white;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.culture-option input:checked ~ label .radio-mark {
-  background: #1E3A8A;
-  border-color: #1E3A8A;
-}
-
-.culture-option input:checked ~ label .radio-mark:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-  transform: translate(-50%, -50%);
-}
-
-.culture-option .option-content {
+.culture-content {
   flex: 1;
 }
 
-.culture-option .option-header {
+.culture-header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -842,80 +714,95 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
   color: #1e293b;
 }
 
-.culture-option .option-header i {
+.culture-header i {
   width: 16px;
   text-align: center;
 }
 
-.culture-option .option-description {
+.culture-description {
   color: #64748b;
   font-size: 0.85rem;
   line-height: 1.4;
 }
 
-.culture-option label:hover {
-  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
-  border-color: #0ea5e9;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+/* Action Items Styling */
+.action-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-.culture-option input:checked ~ label {
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-color: #1E3A8A;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.15);
+.action-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border-left: 4px solid #1E3A8A;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
-.culture-option input:checked ~ label .option-header {
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15);
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.action-header i {
   color: #1E3A8A;
+  font-size: 1.2rem;
 }
 
-.culture-option input:checked ~ label .option-description {
-  color: #3730a3;
+.action-header h4 {
+  margin: 0;
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
-/* Specific culture type colors */
-.pathological-option input:checked ~ label {
-  background: linear-gradient(135deg, #fef2f2, #fecaca);
-  border-color: #dc2626;
+.action-card p {
+  color: #374151;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 
-.pathological-option input:checked ~ label .radio-mark {
-  background: #dc2626;
-  border-color: #dc2626;
+.action-details {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
-.pathological-option input:checked ~ label .option-header {
-  color: #dc2626;
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  border-radius: 8px;
+  border: 1px solid #0ea5e9;
 }
 
-.bureaucratic-option input:checked ~ label {
-  background: linear-gradient(135deg, #fef3c7, #fbbf24);
-  border-color: #d97706;
+.action-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
 
-.bureaucratic-option input:checked ~ label .radio-mark {
-  background: #d97706;
-  border-color: #d97706;
-}
-
-.bureaucratic-option input:checked ~ label .option-header {
-  color: #d97706;
-}
-
-.generative-option input:checked ~ label {
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-  border-color: #16a34a;
-}
-
-.generative-option input:checked ~ label .radio-mark {
-  background: #16a34a;
-  border-color: #16a34a;
-}
-
-.generative-option input:checked ~ label .option-header {
-  color: #16a34a;
+.action-label {
+  color: #0c4a6e;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
 }
 
 /* Responsive Design for Checkpoint */
@@ -931,6 +818,15 @@ Before our next meeting, challenge yourself with these action-oriented tasks:
 
   .assessment-buttons {
     gap: 0.5rem;
+  }
+  
+  .action-items-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .action-card {
+    padding: 1.25rem;
   }
 
   .confidence-options {
@@ -1657,115 +1553,166 @@ h3 i, h4 i {
 document.addEventListener('DOMContentLoaded', function() {
   // Feedback content from Accelerate research
   const doraInfo = {
-    high: {
-      title: "High-Performing Team",
-      content: "Your team demonstrates elite software delivery performance! High-performing organizations deploy multiple times per day, have lead times under one hour, restore service in under an hour, and have change failure rates under 15%. Focus on maintaining these practices and sharing knowledge with other teams."
-    },
-    medium: {
-      title: "Medium-Performing Team",
-      content: "Your team shows solid DevOps practices with room for improvement. Medium performers typically deploy weekly to monthly, have lead times of days to weeks, and change failure rates of 16-45%. Focus on reducing batch sizes, improving test automation, and increasing deployment frequency."
-    },
-    low: {
-      title: "Low-Performing Team",
-      content: "Your team has significant opportunities for improvement. Low performers deploy monthly to every six months, have lead times of months, take days to weeks to restore service, and have change failure rates of 46-60%. Start with version control, deployment automation, and continuous integration basics."
-    }
+      high: {
+        title: 'High-Performing Team',
+        content: 'Your team demonstrates elite software delivery performance! High-performing organizations deploy multiple times per day, have lead times under one hour, restore service in under an hour, and have change failure rates under 15%. Focus on maintaining these practices and sharing knowledge with other teams.'
+      },
+      medium: {
+        title: 'Medium-Performing Team',
+        content: 'Your team shows solid DevOps practices with room for improvement. Medium performers typically deploy weekly to monthly, have lead times of days to weeks, and change failure rates of 16-45%. Focus on reducing batch sizes, improving test automation, and increasing deployment frequency.'
+      },
+      low: {
+        title: 'Low-Performing Team',
+        content: 'Your team has significant opportunities for improvement. Low performers deploy monthly to every six months, have lead times of months, take days to weeks to restore service, and have change failure rates of 46-60%. Start with version control, deployment automation, and continuous integration basics.'
+      }
   };
 
   const confidenceInfo = {
-    anxious: {
-      title: "Deployment Anxiety Signals Process Problems",
-      content: "According to Accelerate research, deployment pain is not inevitable—it's a signal of poor practices. Anxiety indicates manual processes, large batch sizes, and insufficient testing. Start with small improvements: add one test, create a deployment checklist, or implement basic monitoring."
-    },
-    neutral: {
-      title: "Manageable Deployments with Improvement Potential",
-      content: "Your team manages deployments but still experiences tension. This suggests some good practices are in place but opportunities remain. Focus on increasing deployment frequency, reducing batch sizes, and building more comprehensive automated testing to move toward confident deployments."
-    },
-    confident: {
-      title: "Confident Deployment Culture",
-      content: "Excellent! Confident, routine deployments indicate strong DevOps practices. Your team likely has good test automation, deployment automation, and monitoring. Continue refining these practices and help other teams achieve similar confidence through knowledge sharing."
-    }
+      anxious: {
+        title: 'Deployment Anxiety Signals Process Problems',
+        content: 'According to Accelerate research, deployment pain is not inevitable—it\'s a signal of poor practices. Anxiety indicates manual processes, large batch sizes, and insufficient testing. Start with small improvements: add one test, create a deployment checklist, or implement basic monitoring.'
+      },
+      neutral: {
+        title: 'Manageable Deployments with Improvement Potential',
+        content: 'Your team manages deployments but still experiences tension. This suggests some good practices are in place but opportunities remain. Focus on increasing deployment frequency, reducing batch sizes, and building more comprehensive automated testing to move toward confident deployments.'
+      },
+      confident: {
+        title: 'Confident Deployment Culture',
+        content: 'Excellent! Confident, routine deployments indicate strong DevOps practices. Your team likely has good test automation, deployment automation, and monitoring. Continue refining these practices and help other teams achieve similar confidence through knowledge sharing.'
+      }
   };
 
   const priorityInfo = {
-    "lead-time": {
-      title: "Improve Lead Time",
-      content: "Lead time measures the time from code commit to production. To improve: reduce batch sizes, implement trunk-based development, automate testing and deployment pipelines, and eliminate manual approval processes. Small, frequent changes reduce lead time significantly."
-    },
-    "deploy-frequency": {
-      title: "Increase Deployment Frequency",
-      content: "Deployment frequency indicates your ability to deliver value quickly. To improve: work in smaller batches, implement feature flags, improve automated testing, and reduce dependencies between teams. Start by deploying weekly, then progress to daily deployments."
-    },
-    "restore-time": {
-      title: "Reduce Mean Time to Restore",
-      content: "Faster recovery from failures is crucial for stability. To improve: implement comprehensive monitoring and alerting, practice incident response procedures, improve rollback capabilities, and maintain good documentation. Preparation enables rapid response when issues occur."
-    },
-    "change-fail": {
-      title: "Lower Change Failure Rate",
-      content: "High change failure rates indicate quality issues in your delivery process. To improve: implement comprehensive automated testing, use test-driven development, improve code review processes, and implement continuous integration. Quality must be built in, not inspected later."
-    }
+      'lead-time': {
+        title: 'Improve Lead Time',
+        content: 'Lead time measures the time from code commit to production. To improve: reduce batch sizes, implement trunk-based development, automate testing and deployment pipelines, and eliminate manual approval processes. Small, frequent changes reduce lead time significantly.'
+      },
+      'deploy-frequency': {
+        title: 'Increase Deployment Frequency',
+        content: 'Deployment frequency indicates your ability to deliver value quickly. To improve: work in smaller batches, implement feature flags, improve automated testing, and reduce dependencies between teams. Start by deploying weekly, then progress to daily deployments.'
+      },
+      'restore-time': {
+        title: 'Reduce Mean Time to Restore',
+        content: 'Faster recovery from failures is crucial for stability. To improve: implement comprehensive monitoring and alerting, practice incident response procedures, improve rollback capabilities, and maintain good documentation. Preparation enables rapid response when issues occur.'
+      },
+      'change-fail': {
+        title: 'Lower Change Failure Rate',
+        content: 'High change failure rates indicate quality issues in your delivery process. To improve: implement comprehensive automated testing, use test-driven development, improve code review processes, and implement continuous integration. Quality must be built in, not inspected later.'
+      }
   };
 
   // Add event listeners for DORA performance assessment
   document.querySelectorAll('input[name="dora-performance"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('dora-feedback');
-      const info = doraInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
-    });
+      radio.addEventListener('change', function() {
+        const feedback = document.getElementById('dora-feedback');
+        const info = doraInfo[this.value];
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        
+        // Remove existing color classes
+        feedback.classList.remove('feedback-high', 'feedback-medium', 'feedback-low');
+        
+        // Add appropriate color class based on performance level
+        if (this.value === 'high') {
+          feedback.classList.add('feedback-high');
+        } else if (this.value === 'medium') {
+          feedback.classList.add('feedback-medium');
+        } else if (this.value === 'low') {
+          feedback.classList.add('feedback-low');
+        }
+        
+        feedback.classList.add('active');
+      });
   });
 
   // Add event listeners for deployment confidence
   document.querySelectorAll('input[name="deployment-confidence"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('confidence-feedback');
-      const info = confidenceInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
-    });
+      radio.addEventListener('change', function() {
+        const feedback = document.getElementById('confidence-feedback');
+        const info = confidenceInfo[this.value];
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        
+        // Remove existing color classes
+        feedback.classList.remove('feedback-high', 'feedback-medium', 'feedback-low');
+        
+        // Add appropriate color class based on confidence level
+        if (this.value === 'confident') {
+          feedback.classList.add('feedback-high');
+        } else if (this.value === 'neutral') {
+          feedback.classList.add('feedback-medium');
+        } else if (this.value === 'anxious') {
+          feedback.classList.add('feedback-low');
+        }
+        
+        feedback.classList.add('active');
+      });
   });
 
   // Add event listeners for improvement focus
   document.querySelectorAll('input[name="improvement-focus"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('priority-feedback');
-      const info = priorityInfo[this.value];
-      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
-      feedback.classList.add('active');
-    });
+      radio.addEventListener('change', function() {
+        const feedback = document.getElementById('priority-feedback');
+        const info = priorityInfo[this.value];
+        feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+        
+        // Remove existing color classes
+        feedback.classList.remove('feedback-high', 'feedback-medium', 'feedback-low');
+        
+        // Add color-coded feedback based on performance level
+        const priorityLevels = {
+          'lead-time': 'feedback-high',
+          'deploy-frequency': 'feedback-high', 
+          'restore-time': 'feedback-medium',
+          'change-fail': 'feedback-low'
+        };
+        
+        feedback.classList.add('active', priorityLevels[this.value]);
+      });
   });
 
   // Culture assessment feedback content
   const cultureInfo = {
-    pathological: {
-      title: "Pathological Culture (Type A)",
-      content: "Organizations with pathological culture tend to have lower software delivery performance. This culture is characterized by low cooperation, messengers being 'shot', shared responsibility being discouraged, and failure leading to scapegoating. Research shows these organizations typically have longer lead times, higher change failure rates, and slower recovery times. Focus on building psychological safety and encouraging learning from failures.",
-      impact: "📉 Lower delivery performance, higher failure rates"
-    },
-    bureaucratic: {
-      title: "Bureaucratic Culture (Type B)",
-      content: "Bureaucratic cultures show modest cooperation but are rule-oriented rather than mission-focused. These organizations often have medium software delivery performance with room for improvement. While better than pathological cultures, they can still benefit from reducing red tape, encouraging innovation, and focusing more on outcomes than processes.",
-      impact: "Medium delivery performance, process-heavy"
-    },
-    generative: {
-      title: "Generative Culture (Type C)",
-      content: "Congratulations! Generative culture is strongly correlated with high software delivery performance. Organizations with generative culture encourage high cooperation, treat failures as learning opportunities, encourage risk-taking, and focus on mission accomplishment. Research shows these organizations have faster lead times, higher deployment frequency, lower change failure rates, and faster recovery times.",
-      impact: "High delivery performance, continuous improvement"
-    }
+      pathological: {
+        title: 'Pathological Culture (Type A)',
+        content: 'Organizations with pathological culture tend to have lower software delivery performance. This culture is characterized by low cooperation, messengers being \'shot\', shared responsibility being discouraged, and failure leading to scapegoating. Research shows these organizations typically have longer lead times, higher change failure rates, and slower recovery times. Focus on building psychological safety and encouraging learning from failures.',
+        impact: '📉 Lower delivery performance, higher failure rates'
+      },
+      bureaucratic: {
+        title: 'Bureaucratic Culture (Type B)',
+        content: 'Bureaucratic cultures show modest cooperation but are rule-oriented rather than mission-focused. These organizations often have medium software delivery performance with room for improvement. While better than pathological cultures, they can still benefit from reducing red tape, encouraging innovation, and focusing more on outcomes than processes.',
+        impact: 'Medium delivery performance, process-heavy'
+      },
+      generative: {
+        title: 'Generative Culture (Type C)',
+        content: 'Congratulations! Generative culture is strongly correlated with high software delivery performance. Organizations with generative culture encourage high cooperation, treat failures as learning opportunities, encourage risk-taking, and focus on mission accomplishment. Research shows these organizations have faster lead times, higher deployment frequency, lower change failure rates, and faster recovery times.',
+        impact: 'High delivery performance, continuous improvement'
+      }
   };
 
   // Add event listeners for culture assessment
   document.querySelectorAll('input[name="culture-type"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const feedback = document.getElementById('culture-feedback');
-      const info = cultureInfo[this.value];
-      feedback.innerHTML = `
+      radio.addEventListener('change', function() {
+        const feedback = document.getElementById('culture-feedback');
+        const info = cultureInfo[this.value];
+        feedback.innerHTML = `
         <h5>${info.title}</h5>
         <p><strong>${info.impact}</strong></p>
         <p>${info.content}</p>
       `;
-      feedback.classList.add('active');
-    });
+        
+        // Remove existing color classes
+        feedback.classList.remove('feedback-high', 'feedback-medium', 'feedback-low');
+        
+        // Add appropriate color class based on culture type
+        if (this.value === 'generative') {
+          feedback.classList.add('feedback-high');
+        } else if (this.value === 'bureaucratic') {
+          feedback.classList.add('feedback-medium');
+        } else if (this.value === 'pathological') {
+          feedback.classList.add('feedback-low');
+        }
+        
+        feedback.classList.add('active');
+      });
   });
 });
 </script>
