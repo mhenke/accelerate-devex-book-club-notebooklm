@@ -13,6 +13,7 @@ tags: [refactor, css, standardization, architecture, maintainability]
 ![Status: In progress](https://img.shields.io/badge/status-In%20progress-yellow)
 
 This plan aims to refactor and standardize CSS across all meeting pages and reusable components. The goal is to:
+
 - Eliminate all duplicated CSS and enforce variable usage for colors, spacing, and typography (validated by SCSS lint and code review)
 - Remove 100% of inline styles from HTML and Markdown files (validated by search and lint)
 - Standardize icon usage in headings and blocks: all icons must use a single, documented pattern (FontAwesome `<i>` or CSS pseudo-element), with no exceptions (validated by code search and visual review)
@@ -36,27 +37,29 @@ This plan aims to refactor and standardize CSS across all meeting pages and reus
 ## 2. Implementation Steps
 
 ### Implementation Phase 1
+
 - GOAL-001: Audit and inventory all meeting-related CSS, markup, and icon usage.
 
-| Task | Description | Completed | Date |
-|------|-------------|-----------|------|
-| TASK-001 | Audit all meeting pages for duplicated CSS, inline styles, and icon usage. Completion: All instances documented in a shared inventory file. | | |
-| TASK-002 | Inventory all existing SCSS variables and reusable components. Completion: Inventory file listing all variables and components. | | |
-| TASK-003 | Document all current icon usage patterns in headings and blocks. Completion: Inventory file listing all icon usage patterns. | | |
-| TASK-004 | Identify all common meeting structures (cards, badges, headers, timelines, etc.) for standardization. Completion: List of all structures to be standardized. | | |
+| Task     | Description                                                                                                                                                  | Completed | Date |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ---- |
+| TASK-001 | Audit all meeting pages for duplicated CSS, inline styles, and icon usage. Completion: All instances documented in a shared inventory file.                  |           |      |
+| TASK-002 | Inventory all existing SCSS variables and reusable components. Completion: Inventory file listing all variables and components.                              |           |      |
+| TASK-003 | Document all current icon usage patterns in headings and blocks. Completion: Inventory file listing all icon usage patterns.                                 |           |      |
+| TASK-004 | Identify all common meeting structures (cards, badges, headers, timelines, etc.) for standardization. Completion: List of all structures to be standardized. |           |      |
 
 ### Implementation Phase 2
+
 - GOAL-002: Refactor, standardize, and enforce variable usage and reusable blocks.
 
-| Task | Description | Completed | Date |
-|------|-------------|-----------|------|
-| TASK-005 | Refactor all duplicated CSS into reusable SCSS partials for every common meeting block. Completion: No duplicated CSS remains (validated by code search and lint). | | |
-| TASK-006 | Enforce variable usage for all colors, spacing, fonts, and meeting themes. Completion: All hardcoded values replaced with variables (validated by SCSS lint and code review). | | |
-| TASK-007 | Standardize icon usage in headings and blocks. Completion: All icons use the chosen pattern, with documentation and code search validation. | | |
-| TASK-008 | Remove all inline styles and replace with class-based or variable-driven styles. Completion: No inline styles remain (validated by search and lint). | | |
-| TASK-009 | Implement atomic, reusable blocks for all common meeting structures. Completion: All blocks are reusable, with no duplicated markup/styles (validated by code search and component inventory). | | |
-| TASK-010 | Update documentation to reflect new CSS standards, icon usage, and block patterns. Completion: Documentation updated and reviewed. | | |
-| TASK-011 | Test all meeting pages for visual consistency, accessibility (WCAG 2.2 AA), and responsiveness. Completion: All tests pass, and manual review confirms compliance. | | |
+| Task     | Description                                                                                                                                                                                    | Completed | Date |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---- |
+| TASK-005 | Refactor all duplicated CSS into reusable SCSS partials for every common meeting block. Completion: No duplicated CSS remains (validated by code search and lint).                             |           |      |
+| TASK-006 | Enforce variable usage for all colors, spacing, fonts, and meeting themes. Completion: All hardcoded values replaced with variables (validated by SCSS lint and code review).                  |           |      |
+| TASK-007 | Standardize icon usage in headings and blocks. Completion: All icons use the chosen pattern, with documentation and code search validation.                                                    |           |      |
+| TASK-008 | Remove all inline styles and replace with class-based or variable-driven styles. Completion: No inline styles remain (validated by search and lint).                                           |           |      |
+| TASK-009 | Implement atomic, reusable blocks for all common meeting structures. Completion: All blocks are reusable, with no duplicated markup/styles (validated by code search and component inventory). |           |      |
+| TASK-010 | Update documentation to reflect new CSS standards, icon usage, and block patterns. Completion: Documentation updated and reviewed.                                                             |           |      |
+| TASK-011 | Test all meeting pages for visual consistency, accessibility (WCAG 2.2 AA), and responsiveness. Completion: All tests pass, and manual review confirms compliance.                             |           |      |
 
 ## 3. Alternatives
 
