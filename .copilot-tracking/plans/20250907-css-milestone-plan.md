@@ -34,13 +34,13 @@ This implementation plan refines the CSS refactoring milestones for the DevEx Bo
 
 ### Phase 3: Modularization & Refactoring
 
-| Task ID | Task Description                                               | File(s) / Location(s)                          | Validation Criteria                                   | Contributor Instructions                    |
-| ------- | -------------------------------------------------------------- | ---------------------------------------------- | ----------------------------------------------------- | ------------------------------------------- |
-| MOD-001 | Split main.scss and partials into component-focused SCSS files | docs/\_sass/components/, docs/assets/main.scss | Each component has its own partial                    | Move styles, update imports in main.scss    |
-| MOD-002 | Move design tokens and utility classes to dedicated partials   | docs/\_sass/abstracts/, docs/\_sass/base/      | Tokens/utilities in abstracts/base, not main.scss     | Refactor, update references throughout      |
-| MOD-003 | Refactor duplicated styles and blocks into includes/classes    | docs/\_includes/, docs/\_sass/components/      | No duplicated styles, all blocks use includes/classes | Use Jekyll includes, update HTML/Markdown   |
-| MOD-004 | Update all pages to use standardized blocks and variables      | docs/_.html, docs/_.md, docs/\_meetings/\*.md  | All pages use standardized blocks/variables           | Replace old markup, use documented patterns |
-| MOD-005 | Remove inline styles from meeting pages and move to SCSS files, reducing duplication | docs/_meetings/*.md, docs/_sass/components/, docs/assets/main.scss | No inline styles in meeting pages, styles centralized in SCSS, duplication minimized | Audit meeting pages, refactor styles into SCSS, follow best practices |
+| Task ID | Task Description                                                                     | File(s) / Location(s)                                                 | Validation Criteria                                                                  | Contributor Instructions                                              |
+| ------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| MOD-001 | Split main.scss and partials into component-focused SCSS files                       | docs/\_sass/components/, docs/assets/main.scss                        | Each component has its own partial                                                   | Move styles, update imports in main.scss                              |
+| MOD-002 | Move design tokens and utility classes to dedicated partials                         | docs/\_sass/abstracts/, docs/\_sass/base/                             | Tokens/utilities in abstracts/base, not main.scss                                    | Refactor, update references throughout                                |
+| MOD-003 | Refactor duplicated styles and blocks into includes/classes                          | docs/\_includes/, docs/\_sass/components/                             | No duplicated styles, all blocks use includes/classes                                | Use Jekyll includes, update HTML/Markdown                             |
+| MOD-004 | Update all pages to use standardized blocks and variables                            | docs/_.html, docs/_.md, docs/\_meetings/\*.md                         | All pages use standardized blocks/variables                                          | Replace old markup, use documented patterns                           |
+| MOD-005 | Remove inline styles from meeting pages and move to SCSS files, reducing duplication | docs/\_meetings/\*.md, docs/\_sass/components/, docs/assets/main.scss | No inline styles in meeting pages, styles centralized in SCSS, duplication minimized | Audit meeting pages, refactor styles into SCSS, follow best practices |
 
 ### Phase 4: Accessibility, Performance, and Validation
 
@@ -124,12 +124,12 @@ This implementation plan refines the CSS refactoring milestones for the DevEx Bo
 
 - GOAL-003: Modularize, refactor, and standardize CSS and blocks.
 
-| Task     | Description                                                    | Completed | Date |
-| -------- | -------------------------------------------------------------- | --------- | ---- |
-| TASK-007 | Split main.scss and partials into component-focused SCSS files |           |      |
-| TASK-008 | Move design tokens and utility classes to dedicated partials   |           |      |
-| TASK-009 | Refactor duplicated styles and blocks into includes/classes    |           |      |
-| TASK-010 | Update all pages to use standardized blocks and variables      |           |      |
+| Task     | Description                                                                          | Completed | Date |
+| -------- | ------------------------------------------------------------------------------------ | --------- | ---- |
+| TASK-007 | Split main.scss and partials into component-focused SCSS files                       |           |      |
+| TASK-008 | Move design tokens and utility classes to dedicated partials                         |           |      |
+| TASK-009 | Refactor duplicated styles and blocks into includes/classes                          |           |      |
+| TASK-010 | Update all pages to use standardized blocks and variables                            |           |      |
 | TASK-011 | Remove inline styles from meeting pages and move to SCSS files, reducing duplication |           |      |
 
 ### Implementation Phase 4
