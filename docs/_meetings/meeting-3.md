@@ -986,43 +986,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Action Items for Next Meeting
 
-<div class="action-items-grid" markdown="0">
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+<div class="action-checklist" markdown="0">
+  <p class="checklist-intro">Time to put lean management into action! Check off these wellbeing-boosting challenges:</p>
+  
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-1" class="action-checkbox">
+    <label for="action-1" class="action-label">
       <i class="fas fa-columns"></i>
-      <h4>Try Visual Work Management</h4>
-    </div>
-    <p><strong>Experiment with visualizing work using simple kanban board</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Create columns for To Do, In Progress, Done</span>
-      <span>• Set WIP limits for In Progress items</span>
-      <span>• Track cycle time for completed work</span>
+      <strong>Create a visual work board</strong> - Can you see everything your team is juggling right now?
+    </label>
+    <div class="action-details">
+      Set up simple To Do, In Progress, Done columns. Add WIP limits to prevent overload. Start tracking cycle time to spot bottlenecks. Make work visible, make problems obvious.
     </div>
   </div>
 
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-2" class="action-checkbox">
+    <label for="action-2" class="action-label">
       <i class="fas fa-chart-line"></i>
-      <h4>Measure Team Engagement</h4>
-    </div>
-    <p><strong>Conduct informal eNPS assessment with your team</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Ask: "How likely are you to recommend our org as great place to work?"</span>
-      <span>• Use 0-10 scale: Detractors (0-6), Passives (7-8), Promoters (9-10)</span>
-      <span>• Follow up with "What would make this better?" questions</span>
+      <strong>Run an eNPS pulse check</strong> - Would your teammates recommend your org as a great place to work?
+    </label>
+    <div class="action-details">
+      Ask the magic question: "On a scale 0-10, how likely are you to recommend our organization as a great place to work?" Follow up with "What would make it better?" Listen deeply to the answers.
     </div>
   </div>
 
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-3" class="action-checkbox">
+    <label for="action-3" class="action-label">
       <i class="fas fa-heart"></i>
-      <h4>Focus on Wellbeing & Performance</h4>
-    </div>
-    <p><strong>Choose one practice that improves both delivery performance and team wellbeing</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Consider deployment automation to reduce stress</span>
-      <span>• Try blameless post-mortems for psychological safety</span>
-      <span>• Implement work visualization to reduce context switching</span>
+      <strong>Pick ONE practice that boosts both performance AND wellbeing</strong> - What will reduce stress while improving delivery?
+    </label>
+    <div class="action-details">
+      Consider deployment automation to eliminate weekend work, blameless post-mortems to build psychological safety, or work visualization to reduce context switching. Focus on practices that help people AND performance.
     </div>
   </div>
 </div>
