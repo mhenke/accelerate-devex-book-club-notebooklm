@@ -16,7 +16,7 @@
     "test:percy": "cd tests && npm run test:percy",
     "test:htmlproof": "cd docs && bundle exec htmlproofer _site --disable-external=true --enforce-https=false --allow-missing-href=false --allow-hash-href=true --extensions .html --swap-urls '^/accelerate-devex-book-club-notebooklm/:/' --directory-index-file index.html",
     "test:lighthouse": "lhci autorun",
-  "test:jekyll-audit": "npx @brennanbrown/jekyll-audit audit",
+    "test:jekyll-audit": "npx @brennanbrown/jekyll-audit --config jekyll-audit.config.js audit",
     "test": "npm run test:html && npm run test:css && npm run test:a11y && npm run test:percy && npm run test:interactive && npm run test:htmlproof && npm run test:lighthouse && npm run test:jekyll-audit",
     "audit": "npm run build && npm run test:jekyll-audit && npm run test:percy",
     "serve": "cd docs && bundle exec jekyll serve",
