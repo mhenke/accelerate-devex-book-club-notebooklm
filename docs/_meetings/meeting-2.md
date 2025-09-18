@@ -606,64 +606,6 @@ h3 {
   font-weight: 600;
 }
 
-/* Meeting Navigation */
-.meeting-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
-  border-radius: 16px;
-  border: 2px solid #9ca3af;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 1.5rem;
-  
-  font-weight: 500;
-  transition: all 0.3s ease;
-  color: #4b5563;
-}
-
-.nav-item.prev {
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
-  border: 2px solid #f59e0b;
-}
-
-.nav-item.prev:hover {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
-  color: white;
-  transform: translateX(-4px);
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-}
-
-.nav-item.next {
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border: 2px solid #3b82f6;
-}
-
-.nav-item.next:hover {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  color: white;
-  transform: translateX(4px);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-}
-
-.nav-item a {
-  color: inherit;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.nav-item i {
-  font-size: 1.2rem;
-}
 
 /* Resource Grid Styling */
 .resource-grid {
