@@ -1,17 +1,16 @@
 <!-- Reusable Interactive Learning Checkpoint Grid Component -->
 <!-- 
-Advanced usage with custom layout:
-{% include checkpoint-grid.html 
-  title="Priority Assessment"
-  icon="fas fa-bullseye"
-  question="Which metric needs attention?"
-  layout="grid-2"
-  answers=site.data.checkpoint_answers.improvement_priority
-  feedback_id="priority-feedback"
-  radio_name="improvement-focus"
-  card_class="improvement-priority"
-  default_feedback="Choose which metric needs the most attention."
-%}
+Usage: Creates checkpoint cards with grid layouts (grid-2, grid-3, etc.)
+Parameters:
+- title: Checkpoint title (required)
+- icon: FontAwesome icon class (optional)
+- question: Question text (optional)
+- layout: Layout type (grid-2, grid-3, horizontal) (optional)
+- answers: Array of answers from checkpoint_answers.yml (required)
+- feedback_id: ID for feedback area (optional)
+- radio_name: Name attribute for radio buttons (optional)
+- card_class: CSS class for styling (optional)
+- default_feedback: Default feedback message (optional)
 -->
 
 <div class="checkpoint-card {{ include.card_class | default: 'generic-checkpoint' }}" markdown="0">

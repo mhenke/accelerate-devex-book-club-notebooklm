@@ -1,14 +1,15 @@
 <!-- Reusable Culture Assessment Checkpoint Component -->
 <!-- 
-Usage: {% include culture-checkpoint.html 
-  title="Culture Assessment"
-  icon="fas fa-users"
-  question="Assess your organization's culture type using Westrum's model:"
-  culture_types=site.data.culture_types
-  feedback_id="culture-feedback"
-  radio_name="culture-type"
-  card_class="culture-assessment"
-%}
+Usage: Creates Westrum culture type assessment with complex layouts
+Parameters:
+- title: Assessment title (required)
+- icon: FontAwesome icon class (optional)
+- question: Question text (optional)
+- culture_types: Array of culture types from checkpoint_answers.yml (required)
+- feedback_id: ID for feedback area (optional)
+- radio_name: Name attribute for radio buttons (optional)
+- card_class: CSS class for styling (optional)
+- default_feedback: Default feedback message (optional)
 -->
 
 <div class="checkpoint-card {{ include.card_class | default: 'culture-assessment' }}" markdown="0">
