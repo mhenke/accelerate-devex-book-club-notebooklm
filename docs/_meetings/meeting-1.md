@@ -434,6 +434,27 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
+<div class="meeting-navigation" markdown="0">
+  <div class="nav-item prev disabled">
+    <i class="fas fa-arrow-left"></i>
+    <span>Previous Meeting</span>
+  </div>
+  
+  <div class="progress-container">
+    <div class="progress-text">Meeting 1 of 4</div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 25%"></div>
+    </div>
+  </div>
+  
+  <div class="nav-item next">
+    <a href="{{ '/meetings/meeting-2/' | relative_url }}">
+      <span>Next: Technical Excellence</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
 <style>
 /* Meeting Navigation */
 .meeting-navigation {
@@ -483,8 +504,42 @@ dora_color: '#1E3A8A'
   gap: 0.75rem;
 }
 
+.nav-item.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 .nav-item i {
   font-size: 1.2rem;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 200px;
+}
+
+.progress-text {
+  font-weight: 600;
+  color: #1E3A8A;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1E3A8A, #1e40af);
+  border-radius: 3px;
+  transition: width 0.3s ease;
 }
 
 /* Interactive Learning Checkpoint */
