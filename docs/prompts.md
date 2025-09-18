@@ -29,10 +29,10 @@ title: AI Content Generation
       <h3>Meeting 1: Foundation</h3>
       <p><strong>DORA Metrics & Speed vs. Stability</strong></p>
       <div class="prompt-links" markdown="0">
-        <a href="#podcast" class="btn btn-secondary">
+        <a href="#meeting-1-podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
-        <a href="#video" class="btn btn-primary">
+        <a href="#meeting-1-video" class="btn btn-primary">
           <i class="fas fa-video"></i> Video Prompt
         </a>
       </div>
@@ -45,10 +45,10 @@ title: AI Content Generation
       <h3>Meeting 2: Culture & CD</h3>
       <p><strong>Westrum Culture & Continuous Delivery</strong></p>
       <div class="prompt-links" markdown="0">
-        <a href="#podcast" class="btn btn-secondary">
+        <a href="#meeting-2-podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
-        <a href="#video" class="btn btn-primary">
+        <a href="#meeting-2-video" class="btn btn-primary">
           <i class="fas fa-video"></i> Video Prompt
         </a>
       </div>
@@ -64,7 +64,7 @@ title: AI Content Generation
         <a href="#meeting-3-podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
-        <a href="#video" class="btn btn-primary">
+        <a href="#meeting-3-video" class="btn btn-primary">
           <i class="fas fa-video"></i> Video Prompt
         </a>
       </div>
@@ -77,10 +77,10 @@ title: AI Content Generation
       <h3>Meeting 4: Leadership</h3>
       <p><strong>Transformational Leadership</strong></p>
       <div class="prompt-links" markdown="0">
-        <a href="#podcast" class="btn btn-secondary">
+        <a href="#meeting-4-podcast" class="btn btn-secondary">
           <i class="fas fa-podcast"></i> Podcast Prompt
         </a>
-        <a href="#video" class="btn btn-primary">
+        <a href="#meeting-4-video" class="btn btn-primary">
           <i class="fas fa-video"></i> Video Prompt
         </a>
       </div>
@@ -177,7 +177,7 @@ title: AI Content Generation
   Podcast Prompts
 </div>
 
-### Meeting 1: Foundation {#podcast}
+### Meeting 1: Foundation {#meeting-1-podcast}
 
 <div class="prompt-container">
   <div class="prompt-header">
@@ -215,7 +215,7 @@ Keep the tone conversational and include concrete examples. Address common skept
   </div>
 </div>
 
-### Meeting 2: Culture & CD {#podcast}
+### Meeting 2: Culture & CD {#meeting-2-podcast}
 
 <div class="prompt-container">
   <div class="prompt-header">
@@ -291,7 +291,7 @@ Focus on practical advice for technical leaders and architects.</code></pre>
   </div>
 </div>
 
-### Meeting 4: Leadership {#video}
+### Meeting 4: Leadership {#meeting-4-podcast}
 
 <div class="prompt-container">
   <div class="prompt-header">
@@ -336,7 +336,7 @@ Include case studies from high-performing organizations and actionable leadershi
   Video Prompts
 </div>
 
-### Meeting 1: Foundation {#video}
+### Meeting 1: Foundation {#meeting-1-video}
 
 <div class="prompt-container video">
   <div class="prompt-header">
@@ -371,7 +371,7 @@ Target audience: Technical teams new to DevOps metrics</code></pre>
   </div>
 </div>
 
-### Meeting 2: Culture & CD {#video}
+### Meeting 2: Culture & CD {#meeting-2-video}
 
 <div class="prompt-container video">
   <div class="prompt-header">
@@ -401,6 +401,76 @@ Visual elements:
 - Team collaboration examples
 
 Include real organizational examples and practical next steps.</code></pre>
+
+  </div>
+</div>
+
+### Meeting 3: Architecture {#meeting-3-video}
+
+<div class="prompt-container video">
+  <div class="prompt-header">
+    <div class="prompt-icon" style="color: #FF9800">
+      <i class="fas fa-video"></i>
+    </div>
+    <div class="prompt-meta">
+      <h4>Architecture & Team Organization - 14 minutes</h4>
+      <p>Visual guide to loosely coupled systems and team autonomy</p>
+    </div>
+  </div>
+  
+  <div class="prompt-content">
+    <pre><code>Create a 14-minute video exploring architecture and team organization:
+
+Structure:
+
+- **Architecture Overview** (4 min): Visual explanation of loosely coupled systems
+- **Conway's Law Demo** (6 min): Show how org structure affects system design
+- **Lean Management** (4 min): Visual management practices in action
+
+Visual elements:
+
+- System architecture diagrams
+- Team structure comparisons
+- Conway's Law examples
+- Lean management dashboards
+- Continuous improvement workflows
+
+Target audience: Technical leaders and architects looking to optimize team structure.</code></pre>
+
+  </div>
+</div>
+
+### Meeting 4: Leadership {#meeting-4-video}
+
+<div class="prompt-container video">
+  <div class="prompt-header">
+    <div class="prompt-icon" style="color: #F44336">
+      <i class="fas fa-video"></i>
+    </div>
+    <div class="prompt-meta">
+      <h4>Transformational Leadership - 15 minutes</h4>
+      <p>Leadership behaviors that drive high performance</p>
+    </div>
+  </div>
+  
+  <div class="prompt-content">
+    <pre><code>Create a 15-minute video on transformational leadership:
+
+Structure:
+
+- **Leadership Behaviors** (6 min): Demonstrate key transformational behaviors
+- **Learning Organizations** (6 min): Building psychological safety and continuous learning
+- **Sustaining Change** (3 min): Long-term transformation strategies
+
+Visual elements:
+
+- Leadership behavior examples
+- Psychological safety indicators
+- Learning organization frameworks
+- Transformation timeline templates
+- Success metrics dashboards
+
+Include real case studies and actionable leadership practices.</code></pre>
 
   </div>
 </div>
