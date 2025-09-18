@@ -15,7 +15,7 @@ Subscribe to our RSS feeds to get the latest podcast episodes and videos deliver
 Subscribe to get audio-only podcast episodes covering each meeting's content:
 
 <div class="feed-subscription-box">
-  <p style="text-align: center; margin-top: 2rem;">
+  <p class="text-center mt-lg">
     <a href="/accelerate-devex-book-club-notebooklm/feeds/" class="btn btn-feeds">Explore RSS Feeds & Downloads</a>
   </p>
   <div class="feed-url-container">

@@ -1935,21 +1935,24 @@ document.addEventListener('DOMContentLoaded', function() {
       const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
       thumb.style.left = percentage + '%';
 
-      let level, color;
+      let level, color, cssClass;
       if (percentage < 33) {
         level = 'restricted';
         color = '#f44336';
+        cssClass = 'color-danger';
       } else if (percentage < 67) {
         level = 'flexible';
         color = '#ffc107';
+        cssClass = 'color-warning';
       } else {
         level = 'freedom';
         color = '#0F766E';
+        cssClass = 'color-success';
       }
 
       thumb.style.borderColor = color;
       feedback.style.borderLeftColor = color;
-      feedback.innerHTML = `<h5 class="feedback-title" style="color: ${color};">${feedbackMessages[level].title}</h5><p class="feedback-content">${feedbackMessages[level].content}</p>`;
+      feedback.innerHTML = `<h5 class="feedback-title ${cssClass}">${feedbackMessages[level].title}</h5><p class="feedback-content">${feedbackMessages[level].content}</p>`;
     }
 
     function startDrag(clientX) {

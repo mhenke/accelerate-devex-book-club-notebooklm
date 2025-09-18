@@ -1,0 +1,44 @@
+{% comment %}
+Meeting Card Include
+Parameters:
+  - meeting_number: 1, 2, 3, or 4
+  - title: Meeting title
+  - subtitle: Meeting subtitle/description
+  - icon: Font Awesome icon name (without "fas fa-")
+  - podcast_link: Link to podcast section (optional)
+  - video_link: Link to video section (optional)
+  - meeting_url: URL to meeting page (optional)
+  - week: Week number (optional)
+  - chapters: Chapter range (optional)
+{% endcomment %}
+
+<div class="meeting-card">
+  <div class="meeting-icon meeting-icon--{{ include.meeting_number }}">
+    <i class="fas fa-{{ include.icon }}"></i>
+  </div>
+  <h3>
+    {% if include.meeting_url %}
+      <a href="{{ include.meeting_url }}">{{ include.title }}</a>
+    {% else %}
+      {{ include.title }}
+    {% endif %}
+  </h3>
+  {% if include.week and include.chapters %}
+    <p><strong>Week {{ include.week }}</strong> • Chapters {{ include.chapters }}</p>
+  {% endif %}
+  <p><strong>{{ include.subtitle }}</strong></p>
+  {% if include.podcast_link or include.video_link %}
+    <div class="prompt-links">
+      {% if include.podcast_link %}
+        <a href="{{ include.podcast_link }}" class="btn btn-secondary">
+          <i class="fas fa-podcast"></i> Podcast Prompt
+        </a>
+      {% endif %}
+      {% if include.video_link %}
+        <a href="{{ include.video_link }}" class="btn btn-primary">
+          <i class="fas fa-video"></i> Video Prompt
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
