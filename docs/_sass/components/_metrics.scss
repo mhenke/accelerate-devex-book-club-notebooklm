@@ -1,0 +1,349 @@
+// Metrics & Visualization Components
+// =================================
+// DORA metrics, performance indicators, and data visualizations
+
+// DORA Metrics Grid
+.dora-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.dora-metric {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metric-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--spacing-md) auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-white);
+  }
+  
+  .metric-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin: 0 0 var(--spacing-md) 0;
+    color: var(--text-primary);
+  }
+  
+  .metric-description {
+    color: var(--text-secondary);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .metric-value {
+    background: var(--bg-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-navy);
+  }
+}
+
+// Themed DORA Metrics
+.dora-metric.deployment-frequency {
+  .metric-icon {
+    background: var(--dora-blue);
+  }
+  
+  &:hover {
+    border-color: var(--dora-blue);
+  }
+}
+
+.dora-metric.lead-time {
+  .metric-icon {
+    background: var(--dora-green);
+  }
+  
+  &:hover {
+    border-color: var(--dora-green);
+  }
+}
+
+.dora-metric.mean-time-recovery {
+  .metric-icon {
+    background: var(--dora-orange);
+  }
+  
+  &:hover {
+    border-color: var(--dora-orange);
+  }
+}
+
+.dora-metric.change-fail-rate {
+  .metric-icon {
+    background: var(--dora-red);
+  }
+  
+  &:hover {
+    border-color: var(--dora-red);
+  }
+}
+
+// Performance Level Cards
+.performance-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.performance-level {
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  text-align: center;
+  color: var(--text-white);
+  position: relative;
+  
+  h4 {
+    margin: 0 0 var(--spacing-md) 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .level-description {
+    font-size: var(--font-size-base);
+    opacity: 0.95;
+    line-height: 1.5;
+  }
+  
+  &.elite {
+    background: linear-gradient(135deg, var(--success-green), #2E7D32);
+  }
+  
+  &.high {
+    background: linear-gradient(135deg, var(--primary-blue), #1976D2);
+  }
+  
+  &.medium {
+    background: linear-gradient(135deg, var(--dora-orange), #F57C00);
+  }
+  
+  &.low {
+    background: linear-gradient(135deg, var(--danger-red), #D32F2F);
+  }
+}
+
+// Assessment Results Grid
+.assessment-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.assessment-result {
+  background: var(--bg-white);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-score {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+    margin: 0 0 var(--spacing-md) 0;
+  }
+  
+  .result-label {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin: 0 0 var(--spacing-sm) 0;
+  }
+  
+  .result-description {
+    color: var(--text-secondary);
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+  }
+  
+  &.excellent {
+    border-color: var(--success-green);
+    .result-score { color: var(--success-green); }
+  }
+  
+  &.good {
+    border-color: var(--primary-blue);
+    .result-score { color: var(--primary-blue); }
+  }
+  
+  &.needs-improvement {
+    border-color: var(--dora-orange);
+    .result-score { color: var(--dora-orange); }
+  }
+  
+  &.poor {
+    border-color: var(--danger-red);
+    .result-score { color: var(--danger-red); }
+  }
+}
+
+// Statistics Display
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: var(--bg-light);
+  border-radius: var(--border-radius);
+  
+  .stat-number {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-navy);
+    display: block;
+    line-height: 1.2;
+  }
+  
+  .stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-top: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .stat-trend {
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
+    
+    &.positive {
+      color: var(--success-green);
+      
+      &::before {
+        content: '↗ ';
+      }
+    }
+    
+    &.negative {
+      color: var(--danger-red);
+      
+      &::before {
+        content: '↘ ';
+      }
+    }
+    
+    &.neutral {
+      color: var(--text-secondary);
+      
+      &::before {
+        content: '→ ';
+      }
+    }
+  }
+}
+
+// Progress Indicators
+.progress-indicator {
+  margin: var(--spacing-lg) 0;
+  
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    
+    .progress-title {
+      font-weight: var(--font-weight-semibold);
+    }
+    
+    .progress-percentage {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+    }
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--border-light);
+    border-radius: 4px;
+    overflow: hidden;
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary-blue), var(--success-green));
+      border-radius: 4px;
+      transition: width 0.6s ease;
+    }
+  }
+}
+
+// Comparative Metrics
+.metric-comparison {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-md) 0;
+  
+  .before-metric,
+  .after-metric {
+    text-align: center;
+    
+    .metric-value {
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-bold);
+      display: block;
+      margin-bottom: var(--spacing-xs);
+    }
+    
+    .metric-label {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+  
+  .before-metric .metric-value {
+    color: var(--danger-red);
+  }
+  
+  .after-metric .metric-value {
+    color: var(--success-green);
+  }
+  
+  .comparison-arrow {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+  }
+}

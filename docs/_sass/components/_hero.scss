@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   
-  // Performance optimization with CSS containment
-  contain: layout style;
+  // Performance optimization with CSS containment for layout-heavy section
+  contain: layout style paint;
   
   @include mobile-up {
     min-height: 50vh;
