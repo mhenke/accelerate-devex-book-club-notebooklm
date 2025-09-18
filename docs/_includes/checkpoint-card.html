@@ -1,14 +1,15 @@
 <!-- Reusable Interactive Learning Checkpoint Card Component -->
 <!-- 
-Usage: {% include checkpoint-card.html 
-  title="DORA Metrics Assessment"
-  icon="fas fa-chart-line"
-  question="Rate your team's current performance on the four key metrics:"
-  answers=site.data.checkpoint_answers.dora_assessment
-  feedback_id="dora-feedback"
-  radio_name="dora-performance"
-  card_class="dora-assessment"
-%}
+Usage: Creates interactive assessment checkpoints with radio buttons
+Parameters:
+- title: Checkpoint title (required)
+- icon: FontAwesome icon class (optional)
+- question: Question text (optional)
+- answers: Array of answers from checkpoint_answers.yml (required)
+- feedback_id: ID for feedback area (optional)
+- radio_name: Name attribute for radio buttons (optional)
+- card_class: CSS class for styling (optional)
+- default_feedback: Default feedback message (optional)
 -->
 
 <div class="checkpoint-card {{ include.card_class | default: 'generic-checkpoint' }}" markdown="0">

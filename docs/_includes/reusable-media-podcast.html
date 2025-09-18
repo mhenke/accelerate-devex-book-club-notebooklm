@@ -1,0 +1,172 @@
+<!-- Reusable Podcast Media Component -->
+<!-- 
+Usage: Creates audio player with download controls
+Parameters:
+- title: Podcast title (required)
+- audio_url: URL to audio file (required)
+- description: Podcast description (optional)
+- meeting_number: Meeting number for default titles (optional)
+- duration: Podcast duration (optional)
+- audio_id: HTML ID for audio element (optional)
+- custom_class: Additional CSS class (optional)
+-->
+
+<div class="media-section podcast-section {{ include.custom_class }}" markdown="0">
+  {% if include.title %}
+  <h3 id="{{ include.audio_id | default: 'podcast-section' }}">{{ include.title }}</h3>
+  {% elsif include.meeting_number %}
+  <h3 id="listen-meeting-{{ include.meeting_number }}-podcast">Listen to the Meeting {{ include.meeting_number }} Podcast</h3>
+  {% else %}
+  <h3 id="listen-podcast">Listen to the Podcast</h3>
+  {% endif %}
+  
+  {% if include.description %}
+  <p class="media-description">{{ include.description }}</p>
+  {% endif %}
+
+  <div class="media-container podcast-container" markdown="0">
+    <div class="podcast-info" markdown="0">
+      {% if include.duration %}
+      <div class="podcast-duration">
+        <i class="fas fa-clock"></i>
+        <span>{{ include.duration }}</span>
+      </div>
+      {% endif %}
+      <div class="podcast-format">
+        <i class="fas fa-headphones"></i>
+        <span>Audio Discussion</span>
+      </div>
+    </div>
+    
+    <audio controls preload="metadata">
+      <source src="{{ include.audio_url }}" type="audio/mpeg">
+      <source src="{{ include.audio_url }}" type="audio/x-m4a">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="media-download-controls" markdown="0">
+      <a href="{{ include.audio_url }}" download class="download-btn">
+        <i class="fas fa-download"></i> Download Audio
+      </a>
+      {% if include.transcript_url %}
+      <a href="{{ include.transcript_url }}" target="_blank" class="transcript-btn">
+        <i class="fas fa-file-text"></i> View Transcript
+      </a>
+      {% endif %}
+      {% if include.show_notes_url %}
+      <a href="{{ include.show_notes_url }}" target="_blank" class="notes-btn">
+        <i class="fas fa-sticky-note"></i> Show Notes
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+/* Podcast-specific styles */
+.podcast-section h3::before {
+  content: '🎧';
+  font-size: 1.5rem;
+}
+
+.podcast-container {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 1px solid #f59e0b;
+}
+
+.podcast-info {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.podcast-duration,
+.podcast-format {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #92400e;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.podcast-duration i,
+.podcast-format i {
+  color: #d97706;
+}
+
+.podcast-container audio {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.podcast-container audio::-webkit-media-controls-panel {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+
+.podcast-container audio::-webkit-media-controls-play-button,
+.podcast-container audio::-webkit-media-controls-pause-button {
+  background-color: #92400e;
+  border-radius: 50%;
+}
+
+.notes-btn {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  box-shadow: 0 2px 4px rgba(124, 58, 237, 0.2);
+}
+
+.notes-btn:hover {
+  background: linear-gradient(135deg, #6d28d9, #5b21b6);
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3);
+}
+
+/* Enhanced download controls for podcast */
+.podcast-section .media-download-controls {
+  gap: 0.75rem;
+}
+
+.podcast-section .download-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);
+}
+
+.podcast-section .download-btn:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  box-shadow: 0 4px 8px rgba(245, 158, 11, 0.3);
+}
+
+/* Responsive adjustments for podcast */
+@media (max-width: 768px) {
+  .podcast-info {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .podcast-duration,
+  .podcast-format {
+    font-size: 0.8rem;
+  }
+}
+
+/* Accessibility improvements for audio */
+.podcast-container audio:focus {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Loading state styling */
+.podcast-container audio[preload="metadata"] {
+  background: linear-gradient(90deg, #fef3c7, #fde68a, #fef3c7);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+</style>
