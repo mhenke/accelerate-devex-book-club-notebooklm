@@ -27,6 +27,7 @@
   color: var(--text-primary);
   transition: all 0.3s ease;
   font-weight: var(--font-weight-medium);
+
   @include touch-target-44px;
 
   &:hover {
@@ -227,6 +228,7 @@
 // Mobile Navigation Toggle
 .mobile-nav-toggle {
   display: none;
+
   @include touch-target-44px;
 
   background: none;
