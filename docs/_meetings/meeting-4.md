@@ -514,158 +514,99 @@ dora_color: '#7c3aed'
 
 ### Action Items and Commitments
 
-<div class="action-items-section" markdown="0">
-  <div class="action-section-header" markdown="0">
-    <i class="fas fa-user"></i>
-    <h4>Individual Leadership Commitments</h4>
-  </div>
-  
-  <div class="action-items-grid" markdown="0">
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
+<div class="action-section" markdown="0">
+  <h4 class="section-title"><i class="fas fa-user"></i> Individual Leadership Commitments</h4>
+  <div class="action-checklist" markdown="0">
+    <p class="checklist-intro">As a leader, commit to these transformational practices. Your team is watching!</p>
+    
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="individual-1" class="action-checkbox">
+      <label for="individual-1" class="action-label">
         <i class="fas fa-comments"></i>
-        <h4>Coaching Practice</h4>
-      </div>
-      <p><strong>Use at least one supportive coaching question this week instead of giving direct instruction</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Ask "Help me understand..." instead of "Why didn't you..."</span>
-        <span>• Try "What support do you need?" vs giving solutions</span>
-        <span>• Practice with low-stakes situations first</span>
+        <strong>Practice coaching instead of commanding</strong> - Can you ask one supportive question this week instead of giving direct orders?
+      </label>
+      <div class="action-details">
+        Try "Help me understand..." instead of "Why didn't you..." Ask "What support do you need?" rather than jumping to solutions. Start with low-stakes situations to build the habit.
       </div>
     </div>
 
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="individual-2" class="action-checkbox">
+      <label for="individual-2" class="action-label">
         <i class="fas fa-graduation-cap"></i>
-        <h4>Learning Investment</h4>
-      </div>
-      <p><strong>Identify one way to invest in your team's capability development</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Training budget allocation or conference attendance</span>
-        <span>• Experimentation time (20% time, hack days)</span>
-        <span>• Mentoring or skills development program</span>
+        <strong>Invest in your team's capability development</strong> - What learning opportunity will you fund or create?
+      </label>
+      <div class="action-details">
+        Consider training budgets, conference attendance, experimentation time (20% time, hack days), or mentoring programs. Investment in people drives transformation.
       </div>
     </div>
 
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="individual-3" class="action-checkbox">
+      <label for="individual-3" class="action-label">
         <i class="fas fa-eye"></i>
-        <h4>Visual Management</h4>
-      </div>
-      <p><strong>Create simple visual display of your team's current work and problems</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Use physical board or digital tool for work visualization</span>
-        <span>• Include current bottlenecks and escalation paths</span>
-        <span>• Make problems and status visible to all team members</span>
-      </div>
-    </div>
-
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
-        <i class="fas fa-cogs"></i>
-        <h4>Transformation Discipline</h4>
-      </div>
-      <p><strong>Choose one recurring process and work with team to define "standard work" approach</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Document current best practice for the process</span>
-        <span>• Get team agreement on the standard approach</span>
-        <span>• Plan regular review and improvement cycles</span>
+        <strong>Create visual management</strong> - Can everyone see your team's work and problems at a glance?
+      </label>
+      <div class="action-details">
+        Set up a physical board or digital tool showing current work, bottlenecks, and escalation paths. Make problems visible so they can be solved collectively.
       </div>
     </div>
   </div>
 </div>
 
-<div class="action-items-section" markdown="0">
-  <div class="action-section-header" markdown="0">
-    <i class="fas fa-users"></i>
-    <h4>Team Experiments</h4>
-  </div>
-  
-  <div class="action-items-grid" markdown="0">
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
+<div class="action-section" markdown="0">
+  <h4 class="section-title"><i class="fas fa-users"></i> Team Experiments</h4>
+  <div class="action-checklist" markdown="0">
+    <p class="checklist-intro">Experiment with your team to build generative culture practices:</p>
+    
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="team-1" class="action-checkbox">
+      <label for="team-1" class="action-label">
         <i class="fas fa-search"></i>
-        <h4>Blameless Learning</h4>
-      </div>
-      <p><strong>Conduct one "failure leads to inquiry" discussion about recent setback</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Focus purely on system improvement, not individual blame</span>
-        <span>• Ask "What conditions led to this outcome?"</span>
-        <span>• Document lessons learned and systemic changes</span>
+        <strong>Turn failure into learning</strong> - When did you last discuss a setback without blame?
+      </label>
+      <div class="action-details">
+        Hold a "failure leads to inquiry" discussion about a recent problem. Ask "What conditions led to this outcome?" Focus on system improvement, not individual fault.
       </div>
     </div>
 
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="team-2" class="action-checkbox">
+      <label for="team-2" class="action-label">
         <i class="fas fa-route"></i>
-        <h4>Communication Flow</h4>
-      </div>
-      <p><strong>Map current problem escalation process and identify one improvement</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Document who gets involved and when</span>
-        <span>• Identify bottlenecks or unnecessary handoffs</span>
-        <span>• Test one improvement to speed up resolution</span>
-      </div>
-    </div>
-
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
-        <i class="fas fa-clipboard-list"></i>
-        <h4>Standard Work Development</h4>
-      </div>
-      <p><strong>Define team's current best practice for one recurring activity</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Choose stand-ups, deployments, or code review</span>
-        <span>• Document what works well currently</span>
-        <span>• Get team consensus on the standard approach</span>
+        <strong>Map and improve communication flow</strong> - Where do problems get stuck in your escalation process?
+      </label>
+      <div class="action-details">
+        Document who gets involved when problems arise. Identify bottlenecks or unnecessary handoffs. Test one improvement to speed up resolution.
       </div>
     </div>
   </div>
 </div>
 
-<div class="action-items-section" markdown="0">
-  <div class="action-section-header" markdown="0">
-    <i class="fas fa-building"></i>
-    <h4>Organizational Assessment</h4>
-  </div>
-  
-  <div class="action-items-grid" markdown="0">
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
+<div class="action-section" markdown="0">
+  <h4 class="section-title"><i class="fas fa-building"></i> Organizational Assessment</h4>
+  <div class="action-checklist" markdown="0">
+    <p class="checklist-intro">Time to assess and plan your organizational transformation:</p>
+    
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="org-1" class="action-checkbox">
+      <label for="org-1" class="action-label">
         <i class="fas fa-chart-bar"></i>
-        <h4>Leadership Gap Analysis</h4>
-      </div>
-      <p><strong>Identify which transformational leadership dimensions need development</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Rate current leadership on vision, communication, support</span>
-        <span>• Identify biggest gaps in intellectual stimulation</span>
-        <span>• Plan specific development activities for leaders</span>
+        <strong>Analyze leadership gaps</strong> - Which transformational leadership dimensions need development?
+      </label>
+      <div class="action-details">
+        Rate current leadership on vision, communication, support, and intellectual stimulation. Identify the biggest gaps and plan specific development activities.
       </div>
     </div>
 
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
+    <div class="checklist-item" markdown="0">
+      <input type="checkbox" id="org-2" class="action-checkbox">
+      <label for="org-2" class="action-label">
         <i class="fas fa-puzzle-piece"></i>
-        <h4>ING Practice Adaptation</h4>
-      </div>
-      <p><strong>Choose one element from ING case study to pilot in adapted form</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Select Obeya rooms, catchball communication, or squad structure</span>
-        <span>• Adapt the practice to fit your organizational context</span>
-        <span>• Plan small pilot with measurable success criteria</span>
-      </div>
-    </div>
-
-    <div class="action-item-card" markdown="0">
-      <div class="action-header" markdown="0">
-        <i class="fas fa-dollar-sign"></i>
-        <h4>Investment Planning</h4>
-      </div>
-      <p><strong>Propose specific budget/time allocation for team learning and experimentation</strong></p>
-      <div class="action-guidance" markdown="0">
-        <span>• Calculate cost of training, conferences, or tools</span>
-        <span>• Propose dedicated experimentation time allocation</span>
-        <span>• Present business case for transformation investment</span>
+        <strong>Adapt one ING practice</strong> - What element from their transformation fits your context?
+      </label>
+      <div class="action-details">
+        Choose Obeya rooms, catchball communication, or squad structure. Adapt it to your organizational context and plan a small pilot with measurable success criteria.
       </div>
     </div>
   </div>
