@@ -19,3 +19,155 @@
     {% endif %}
   </div>
 </div>
+
+<style>
+/* Discussion card styling */
+.discussion-card {
+  background: linear-gradient(135deg, #fef3e2, #fef3c7);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #f59e0b;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.1);
+  transition: all 0.3s ease;
+}
+
+.discussion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.15);
+  border-left-color: #d97706;
+}
+
+.discussion-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.discussion-header i {
+  font-size: 1.5rem;
+  color: #d97706;
+  width: 2rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.discussion-header h4 {
+  margin: 0;
+  color: #92400e;
+  font-size: 1.3rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.discussion-content p {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.discussion-content p strong {
+  color: #92400e;
+  font-weight: 600;
+}
+
+.discussion-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discussion-prompts span {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding-left: 0.5rem;
+}
+
+.discussion-prompts span::before {
+  content: '💭';
+  margin-right: 0.5rem;
+}
+
+/* Theme variations for different discussion types */
+.discussion-card.tech-theme {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-left-color: #3b82f6;
+}
+
+.discussion-card.tech-theme .discussion-header i {
+  color: #2563eb;
+}
+
+.discussion-card.tech-theme .discussion-header h4 {
+  color: #1e40af;
+}
+
+.discussion-card.tech-theme .discussion-content p strong {
+  color: #1e40af;
+}
+
+.discussion-card.process-theme {
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+  border-left-color: #10b981;
+}
+
+.discussion-card.process-theme .discussion-header i {
+  color: #059669;
+}
+
+.discussion-card.process-theme .discussion-header h4 {
+  color: #065f46;
+}
+
+.discussion-card.process-theme .discussion-content p strong {
+  color: #065f46;
+}
+
+.discussion-card.culture-theme {
+  background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+  border-left-color: #ec4899;
+}
+
+.discussion-card.culture-theme .discussion-header i {
+  color: #db2777;
+}
+
+.discussion-card.culture-theme .discussion-header h4 {
+  color: #be185d;
+}
+
+.discussion-card.culture-theme .discussion-content p strong {
+  color: #be185d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .discussion-card {
+    padding: 1.25rem;
+  }
+  
+  .discussion-header {
+    gap: 0.75rem;
+  }
+  
+  .discussion-header i {
+    font-size: 1.25rem;
+    width: 1.5rem;
+  }
+  
+  .discussion-header h4 {
+    font-size: 1.1rem;
+  }
+  
+  .discussion-content p {
+    font-size: 0.95rem;
+  }
+  
+  .discussion-prompts span {
+    font-size: 0.85rem;
+  }
+}
+</style>
