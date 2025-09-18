@@ -236,7 +236,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-2);
 
   // Performance optimizations
   contain: layout style;
@@ -881,7 +881,7 @@ a {
   margin: var(--space-lg) auto;
   max-width: 700px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-2);
 
   p {
     color: var(--text-dark);
@@ -915,7 +915,7 @@ a {
   margin: var(--space-lg) auto;
   max-width: 900px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-2);
 
   h2 {
     text-align: left; // Override center alignment for consistency
@@ -955,7 +955,7 @@ a {
   margin: var(--space-lg) auto;
   max-width: 1200px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-2);
   animation: fadeInUp 0.8s ease-out 0.2s both;
 
   h2 {
@@ -995,7 +995,7 @@ a {
   margin: var(--space-lg) auto;
   max-width: 900px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-2);
   animation: fadeInUp 0.8s ease-out 0.4s both;
 
   h2 {
@@ -1238,7 +1238,7 @@ a {
   margin: var(--space-lg) auto;
   max-width: 900px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-2);
 
   h2 {
     text-align: left; // Override center alignment for consistency
@@ -1377,12 +1377,12 @@ a {
   }
 }
 
-// Enhanced button styling for Material Design
+// Enhanced button styling for Material Design - Meeting 1 Blue Theme
 .btn-meeting-1 {
   background: linear-gradient(
     135deg,
-    var(--accent-emerald),
-    var(--hover-emerald)
+    var(--meeting-1-primary),
+    var(--meeting-1-secondary)
   );
   color: white;
   display: inline-flex;
@@ -1396,21 +1396,35 @@ a {
   border: none;
   cursor: pointer;
   font-size: var(--font-size-lg);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  box-shadow: var(--elevation-2);
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    box-shadow: var(--elevation-4);
     color: white;
     background: linear-gradient(
       135deg,
-      var(--hover-emerald),
-      var(--accent-emerald)
+      var(--meeting-1-accent),
+      var(--meeting-1-primary)
     );
   }
 
   i {
     font-size: var(--font-size-xl);
+  }
+}
+
+// Meeting 1 override for standard buttons to use blue theme
+.meeting.meeting-theme--1 {
+  .btn,
+  .btn-primary {
+    background: linear-gradient(135deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+    box-shadow: var(--elevation-2);
+
+    &:hover:not(:disabled) {
+      background: linear-gradient(135deg, var(--meeting-1-accent), var(--meeting-1-primary));
+      box-shadow: var(--elevation-4);
+    }
   }
 }
 
@@ -2241,7 +2255,7 @@ button:focus,
   margin: var(--space-lg) auto;
   max-width: 1200px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(148, 163, 184, 0.1);
+  box-shadow: var(--elevation-2);
 
   h2 {
     text-align: left; // Override center alignment for consistency
@@ -2619,6 +2633,7 @@ button:focus,
 
 // Meeting 1 Blue Color Scheme - Unified Design
 :root {
+  // Meeting 1 Blue Color Scheme
   --meeting-1-primary: #0969da;
   --meeting-1-secondary: #1f6feb;
   --meeting-1-accent: #388bfd;
@@ -2626,7 +2641,17 @@ button:focus,
   --meeting-1-text: #24292f;
   --meeting-1-light: rgba(9, 105, 218, 0.08);
   --meeting-1-border: rgba(9, 105, 218, 0.2);
-  --meeting-1-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  // Material Design 3 Elevation Tokens
+  --elevation-0: none;
+  --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --elevation-2: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  --elevation-3: 0 3px 12px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
+  --elevation-4: 0 4px 16px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.24);
+  --elevation-5: 0 6px 24px rgba(0, 0, 0, 0.12), 0 6px 16px rgba(0, 0, 0, 0.24);
+
+  // Legacy shadow for backward compatibility
+  --meeting-1-card-shadow: var(--elevation-2);
 }
 
 // Unified step styling with Meeting 1 blue theme
@@ -2642,7 +2667,7 @@ button:focus,
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--elevation-4);
   }
 
   &::before {
