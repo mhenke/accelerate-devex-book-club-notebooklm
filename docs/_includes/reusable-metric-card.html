@@ -1,0 +1,325 @@
+<!-- Reusable DORA Metrics Card Component -->
+<!-- 
+Usage: Enhanced metric cards with current values, trends, and goals
+Parameters:
+- type: Metric type (lead-time, deploy-frequency, restore-time, change-fail, security, performance, quality)
+- icon: FontAwesome icon class (required)
+- title: Metric name (required)
+- description: Metric description (required)
+- current_value: Current performance value (optional)
+- trend: Performance trend (improving, stable, declining) (optional)
+- goal: Target goal (optional)
+- theme: Color theme (default, success, warning, danger) (optional)
+- custom_class: Additional CSS class (optional)
+-->
+
+<div class="dora-metric-card {{ include.type }}-metric {{ include.theme | default: 'default' }}-theme {{ include.custom_class }}" markdown="0">
+  <div class="metric-header">
+    <div class="metric-icon">
+      <i class="{{ include.icon }}"></i>
+    </div>
+    <div class="metric-info">
+      <h4 class="metric-title">{{ include.title }}</h4>
+      <p class="metric-description">{{ include.description }}</p>
+    </div>
+  </div>
+  
+  <div class="metric-content">
+    {% if include.current_value %}
+    <div class="metric-current">
+      <span class="metric-label">Current:</span>
+      <span class="metric-value">{{ include.current_value }}</span>
+      {% if include.trend %}
+      <span class="metric-trend {{ include.trend }}">
+        {% if include.trend == 'improving' %}
+          <i class="fas fa-arrow-up"></i>
+        {% elsif include.trend == 'declining' %}
+          <i class="fas fa-arrow-down"></i>
+        {% else %}
+          <i class="fas fa-minus"></i>
+        {% endif %}
+      </span>
+      {% endif %}
+    </div>
+    {% endif %}
+    
+    {% if include.goal %}
+    <div class="metric-goal">
+      <span class="metric-label">Goal:</span>
+      <span class="goal-value">{{ include.goal }}</span>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+/* Enhanced DORA Metric Card Styles */
+.dora-metric-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dora-metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dora-metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+}
+
+.metric-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.metric-icon {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.metric-info {
+  flex: 1;
+}
+
+.metric-title {
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.metric-description {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.metric-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.metric-current,
+.metric-goal {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #475569;
+  font-weight: 500;
+  min-width: 60px;
+}
+
+.metric-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.goal-value {
+  font-size: 0.875rem;
+  color: #059669;
+  font-weight: 600;
+  background: #d1fae5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.metric-trend {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.metric-trend.improving {
+  color: #059669;
+  background: #d1fae5;
+}
+
+.metric-trend.declining {
+  color: #dc2626;
+  background: #fecaca;
+}
+
+.metric-trend.stable {
+  color: #d97706;
+  background: #fef3c7;
+}
+
+/* Metric Type Variations */
+.lead-time-metric::before {
+  background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+}
+
+.lead-time-metric .metric-icon {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  box-shadow: 0 4px 8px rgba(139, 92, 246, 0.3);
+}
+
+.deploy-frequency-metric::before {
+  background: linear-gradient(90deg, #059669, #047857);
+}
+
+.deploy-frequency-metric .metric-icon {
+  background: linear-gradient(135deg, #059669, #047857);
+  box-shadow: 0 4px 8px rgba(5, 150, 105, 0.3);
+}
+
+.restore-time-metric::before {
+  background: linear-gradient(90deg, #dc2626, #b91c1c);
+}
+
+.restore-time-metric .metric-icon {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+}
+
+.change-fail-metric::before {
+  background: linear-gradient(90deg, #d97706, #b45309);
+}
+
+.change-fail-metric .metric-icon {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  box-shadow: 0 4px 8px rgba(217, 119, 6, 0.3);
+}
+
+.security-metric::before {
+  background: linear-gradient(90deg, #7c2d12, #991b1b);
+}
+
+.security-metric .metric-icon {
+  background: linear-gradient(135deg, #7c2d12, #991b1b);
+  box-shadow: 0 4px 8px rgba(124, 45, 18, 0.3);
+}
+
+.performance-metric::before {
+  background: linear-gradient(90deg, #0891b2, #0e7490);
+}
+
+.performance-metric .metric-icon {
+  background: linear-gradient(135deg, #0891b2, #0e7490);
+  box-shadow: 0 4px 8px rgba(8, 145, 178, 0.3);
+}
+
+.quality-metric::before {
+  background: linear-gradient(90deg, #7c3aed, #6d28d9);
+}
+
+.quality-metric .metric-icon {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3);
+}
+
+/* Theme Variations */
+.success-theme {
+  border-color: #10b981;
+  background: linear-gradient(145deg, #ffffff, #f0fdf4);
+}
+
+.success-theme .metric-title {
+  color: #047857;
+}
+
+.warning-theme {
+  border-color: #f59e0b;
+  background: linear-gradient(145deg, #ffffff, #fffbeb);
+}
+
+.warning-theme .metric-title {
+  color: #d97706;
+}
+
+.danger-theme {
+  border-color: #ef4444;
+  background: linear-gradient(145deg, #ffffff, #fef2f2);
+}
+
+.danger-theme .metric-title {
+  color: #dc2626;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dora-metric-card {
+    padding: 1.25rem;
+  }
+  
+  .metric-header {
+    gap: 0.75rem;
+  }
+  
+  .metric-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .metric-title {
+    font-size: 1rem;
+  }
+  
+  .metric-current,
+  .metric-goal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .metric-label {
+    min-width: auto;
+  }
+}
+
+/* Grid Layout Support */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+</style>

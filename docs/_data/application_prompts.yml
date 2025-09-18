@@ -1,0 +1,62 @@
+# Reusable application prompts for Application cards
+# Usage: prompts=site.data.application_prompts.automation
+
+automation:
+  - text: "What manual process did you recently automate? What was the impact?"
+    icon: "fas fa-lightbulb"
+  - text: "How did test automation change your team's deployment confidence?"
+    icon: "fas fa-chart-line"
+  - text: "Which deployment steps still require manual intervention?"
+    icon: "fas fa-hand-paper"
+  - text: "What automation tools have provided the biggest ROI for your team?"
+    icon: "fas fa-dollar-sign"
+
+architecture:
+  - text: "Which architectural changes improved your team's deployment frequency?"
+    icon: "fas fa-check-circle"
+  - text: "What dependencies currently prevent independent deployments?"
+    icon: "fas fa-times-circle"
+  - text: "How do you handle shared services and databases?"
+    icon: "fas fa-database"
+  - text: "What lessons learned from microservices vs monolith decisions?"
+    icon: "fas fa-puzzle-piece"
+
+security:
+  - text: "Which security practices actually speed up delivery?"
+    icon: "fas fa-fast-forward"
+  - text: "What security requirements currently slow down your team?"
+    icon: "fas fa-turtle"
+  - text: "How early in development do you consider security?"
+    icon: "fas fa-shield-alt"
+  - text: "What security automation has reduced manual reviews?"
+    icon: "fas fa-robot"
+
+collaboration:
+  - text: "How has cross-functional team structure improved delivery?"
+    icon: "fas fa-users"
+  - text: "What communication practices reduce coordination overhead?"
+    icon: "fas fa-comments"
+  - text: "How do you handle knowledge sharing across teams?"
+    icon: "fas fa-share-alt"
+  - text: "What team rituals have improved psychological safety?"
+    icon: "fas fa-heart"
+
+performance:
+  - text: "Which metrics have driven the biggest improvements?"
+    icon: "fas fa-chart-line"
+  - text: "How do you balance speed and quality in your delivery?"
+    icon: "fas fa-balance-scale"
+  - text: "What bottlenecks have you eliminated recently?"
+    icon: "fas fa-traffic-light"
+  - text: "How do you measure and improve developer experience?"
+    icon: "fas fa-smile"
+
+culture:
+  - text: "How does your team handle failures and learning?"
+    icon: "fas fa-graduation-cap"
+  - text: "What practices encourage psychological safety?"
+    icon: "fas fa-shield-heart"
+  - text: "How do you support innovation and experimentation?"
+    icon: "fas fa-flask"
+  - text: "What recognition and reward systems work best?"
+    icon: "fas fa-award"

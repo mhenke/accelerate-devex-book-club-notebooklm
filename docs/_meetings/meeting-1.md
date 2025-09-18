@@ -41,48 +41,18 @@ dora_color: '#1E3A8A'
 ### Key Insights
 
 <div class="insights-grid" markdown="0">
-  <div class="insight-card" markdown="0">
-    <h4><i class="fas fa-microscope"></i> Evidence-Based</h4>
-    <p>Rigorous research backing all findings</p>
-  </div>
-
-  <div class="insight-card" markdown="0">
-    <h4><i class="fas fa-medal"></i> Competitive Advantage</h4>
-    <p>Software delivery capability drives success</p>
-  </div>
-
-  <div class="insight-card" markdown="0">
-    <h4><i class="fas fa-user-check"></i> Process Not People</h4>
-    <p>Anxiety signals inefficiency, not failure</p>
-  </div>
+  {% include insight-card.html icon="fas fa-microscope" title="Evidence-Based" description="Rigorous research backing all findings" %}
+  {% include insight-card.html icon="fas fa-medal" title="Competitive Advantage" description="Software delivery capability drives success" theme="success" %}
+  {% include insight-card.html icon="fas fa-user-check" title="Process Not People" description="Anxiety signals inefficiency, not failure" theme="info" %}
 </div>
 
 #### The Four DORA Metrics
 
 <div class="dora-metrics-grid" markdown="0">
-  <div class="metric-card lead-time" markdown="0">
-    <div class="metric-title" markdown="0"><i class="fas fa-chart-line"></i> Delivery Lead Time</div>
-    <p class="metric-description">Time from code commit to production deployment</p>
-    <div class="metric-goal" markdown="0">Goal: Hours/Days not Weeks/Months</div>
-  </div>
-
-  <div class="metric-card deploy-frequency" markdown="0">
-    <div class="metric-title" markdown="0"><i class="fas fa-rocket"></i> Deployment Frequency</div>
-    <p class="metric-description">How often code gets deployed to production</p>
-    <div class="metric-goal" markdown="0">Goal: Multiple times per day</div>
-  </div>
-
-  <div class="metric-card restore-time" markdown="0">
-    <div class="metric-title" markdown="0"><i class="fas fa-clock"></i> Time to Restore Service</div>
-    <p class="metric-description">How quickly service is restored after incidents</p>
-    <div class="metric-goal" markdown="0">Goal: Under 1 hour</div>
-  </div>
-
-  <div class="metric-card change-fail" markdown="0">
-    <div class="metric-title" markdown="0"><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</div>
-    <p class="metric-description">Percentage of deployments causing failures</p>
-    <div class="metric-goal" markdown="0">Goal: 0-15%</div>
-  </div>
+  {% include reusable-metric-card.html type="lead-time" icon="fas fa-chart-line" title="Delivery Lead Time" description="Time from code commit to production deployment" goal="Hours/Days not Weeks/Months" %}
+  {% include reusable-metric-card.html type="deploy-frequency" icon="fas fa-rocket" title="Deployment Frequency" description="How often code gets deployed to production" goal="Multiple times per day" %}
+  {% include reusable-metric-card.html type="restore-time" icon="fas fa-clock" title="Time to Restore Service" description="How quickly service is restored after incidents" goal="Under 1 hour" %}
+  {% include reusable-metric-card.html type="change-fail" icon="fas fa-exclamation-triangle" title="Change Fail Rate" description="Percentage of deployments causing failures" goal="0-15%" %}
 </div>
 
 #### Speed vs Stability: The Myth Busted
@@ -198,30 +168,16 @@ dora_color: '#1E3A8A'
     </div>
   </div>
 
-  <div class="checkpoint-card deployment-anxiety" markdown="0">
-    <h4><i class="fas fa-heart"></i> Deployment Confidence</h4>
-    <p>How does your team feel about deployments?</p>
-    <div class="confidence-options" markdown="0">
-      <label class="confidence-item performance-low">
-        <input type="radio" name="deployment-confidence" value="anxious">
-        <span class="radio-mark"></span>
-        Anxious & Stressful
-      </label>
-      <label class="confidence-item performance-medium">
-        <input type="radio" name="deployment-confidence" value="neutral">
-        <span class="radio-mark"></span>
-        Manageable but Tense
-      </label>
-      <label class="confidence-item performance-high">
-        <input type="radio" name="deployment-confidence" value="confident">
-        <span class="radio-mark"></span>
-        Confident & Routine
-      </label>
-    </div>
-    <div class="feedback-area" id="confidence-feedback">
-      <p>Select how your team feels about deployments to get targeted improvement suggestions.</p>
-    </div>
-  </div>
+  {% include checkpoint-card.html 
+    title="Deployment Confidence"
+    icon="fas fa-heart"
+    question="How does your team feel about deployments?"
+    answers=site.data.checkpoint_answers.deployment_confidence
+    feedback_id="confidence-feedback"
+    radio_name="deployment-confidence"
+    card_class="deployment-anxiety"
+    default_feedback="Select how your team feels about deployments to get targeted improvement suggestions."
+  %}
 
   <div class="checkpoint-card improvement-priority" markdown="0">
     <h4><i class="fas fa-bullseye"></i> Improvement Priority</h4>
@@ -302,66 +258,10 @@ dora_color: '#1E3A8A'
 ### Discussion Questions
 
 <div class="discussion-questions-grid" markdown="0">
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-chart-line"></i>
-      <h4>Current State Assessment</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>How would you rate your team on each DORA metric?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• Deployment frequency</span>
-        <span>• Lead time for changes</span>
-        <span>• Time to restore service</span>
-        <span>• Change failure rate</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-balance-scale"></i>
-      <h4>Speed vs. Stability Myths</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>What examples have you seen of assumed trade-offs in your organization?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• "We can't deploy frequently because..."</span>
-        <span>• "Quality requires slow releases"</span>
-        <span>• "Fast delivery means cutting corners"</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-rocket"></i>
-      <h4>Deployment Pain Points</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>Describe your team's current deployment experience and anxiety levels</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• What causes deployment anxiety?</span>
-        <span>• Manual steps and coordination needed</span>
-        <span>• Frequency and timing of deployments</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="discussion-card" markdown="0">
-    <div class="discussion-header" markdown="0">
-      <i class="fas fa-users"></i>
-      <h4>Culture Indicators</h4>
-    </div>
-    <div class="discussion-content" markdown="0">
-      <p><strong>Using Westrum's model, what culture type best describes your organization?</strong></p>
-      <div class="discussion-prompts" markdown="0">
-        <span>• How do you handle failure and learning?</span>
-        <span>• Information sharing and collaboration</span>
-        <span>• Risk-taking and innovation support</span>
-      </div>
-    </div>
-  </div>
+  {% include discussion-card.html icon="fas fa-chart-line" title="Current State Assessment" question="How would you rate your team on each DORA metric?" prompts="Deployment frequency|Lead time for changes|Time to restore service|Change failure rate" %}
+  {% include discussion-card.html icon="fas fa-balance-scale" title="Speed vs. Stability Myths" question="What examples have you seen of assumed trade-offs in your organization?" prompts="We can't deploy frequently because...|Quality requires slow releases|Fast delivery means cutting corners" theme="warning" %}
+  {% include discussion-card.html icon="fas fa-rocket" title="Deployment Pain Points" question="Describe your team's current deployment experience and anxiety levels" prompts="What causes deployment anxiety?|Manual steps and coordination needed|Frequency and timing of deployments" theme="primary" %}
+  {% include discussion-card.html icon="fas fa-users" title="Culture Indicators" question="Using Westrum's model, what culture type best describes your organization?" prompts="How do you handle failure and learning?|Information sharing and collaboration|Risk-taking and innovation support" theme="neutral" %}
 </div>
 
 ## Action Items for Next Meeting
@@ -416,24 +316,8 @@ dora_color: '#1E3A8A'
 ### Related Resources
 
 <div class="resource-grid" markdown="0">
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-chart-line"></i> DORA Research & Assessment</h4>
-    <ul>
-  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a></li>
-  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/" target="_blank">DORA Research Program</a></li>
-  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a></li>
-  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/capabilities/" target="_blank">DORA Capabilities Overview</a></li>
-    </ul>
-  </div>
-
-  <div class="resource-card" markdown="0">
-    <h4><i class="fas fa-users"></i> Westrum Organizational Culture</h4>
-    <ul>
-  <li><span aria-hidden="true">•</span> <a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a></li>
-  <li><span aria-hidden="true">•</span> <a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank">IT Revolution Westrum Model</a></li>
-  <li><span aria-hidden="true">•</span> <a href="https://continuousdelivery.com/implementing/culture/" target="_blank">Generative Culture Assessment</a></li>
-    </ul>
-  </div>
+  {% include reusable-resource-card.html icon="fas fa-chart-line" title="DORA Research & Assessment" links="2024 State of DevOps Report|https://dora.dev/research/2024/dora-report/|DORA Research Program|https://dora.dev/|DORA Quick Check Assessment|https://dora.dev/quickcheck/|DORA Capabilities Overview|https://dora.dev/capabilities/" theme="research" show_external_icons=true %}
+  {% include reusable-resource-card.html icon="fas fa-users" title="Westrum Organizational Culture" links="Westrum Organizational Culture Types|https://dora.dev/capabilities/generative-organizational-culture/|IT Revolution Westrum Model|https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/|Generative Culture Assessment|https://continuousdelivery.com/implementing/culture/" theme="culture" show_external_icons=true %}
 </div>
 
 <style>
