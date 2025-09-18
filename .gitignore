@@ -70,3 +70,16 @@ docs/node_modules/
 *.ipynb
 setup-dev-environment.sh
 backups/
+
+
+# Lighthouse reports (generated, not source)
+*.report.html
+*.report.json
+*.report.csv
+
+# Lighthouse result directories
+lighthouse-results/
+.lighthouseci/
+
+# Optional: local-only Lighthouse config overrides
+lighthouse-local-config.js
