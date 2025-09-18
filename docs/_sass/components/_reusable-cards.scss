@@ -11,31 +11,31 @@
 }
 
 .insight-card {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+  padding: var(--space-lg);
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border-left: 4px solid #1E3A8A;
+  box-shadow: var(--elevation-2);
+  transition: all var(--duration-normal) var(--ease-out);
+  border-left: 4px solid var(--meeting-1-primary);
 }
 
 .insight-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--elevation-4);
 }
 
 .insight-card h4 {
-  margin: 0 0 0.75rem 0;
-  color: #1e40af;
+  margin: 0 0 var(--space-sm) 0;
+  color: var(--meeting-1-primary);
   font-size: var(--font-size-body-large);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .insight-card p {
-  color: #666;
+  color: var(--color-gray-400);
   font-size: var(--font-size-body-medium);
   margin: 0;
-  line-height: 1.4;
+  line-height: var(--line-height-relaxed);
 }
 
 /* Metric Card Component */

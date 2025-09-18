@@ -13,21 +13,6 @@
   gap: var(--space-md);
 }
 
-// Force blue theme for .btn-primary-large
-.btn-primary-large {
-  background: linear-gradient(135deg, var(--primary-blue), #1976d2) !important;
-  color: #fff !important;
-  border: none !important;
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2) !important;
-  transition: background 0.3s, box-shadow 0.3s !important;
-}
-
-.btn-primary-large:hover,
-.btn-primary-large:focus {
-  background: linear-gradient(135deg, #1976d2, var(--primary-blue)) !important;
-  color: #fff !important;
-  box-shadow: 0 6px 16px rgba(33, 150, 243, 0.3) !important;
-}
 
 // Base Styles - Critical Rendering Path
 // =====================================
@@ -98,7 +83,7 @@ html {
 body {
   @include body-text;
 
-  background-color: #f8fafc;
+  background-color: var(--color-gray-50);
   position: relative;
 
   // Prevent horizontal scroll
@@ -149,8 +134,8 @@ h2 {
         rgba(122, 218, 209, 0.1)
       );
       font-style: normal; // Override em italic styling
-      border-radius: 50%;
-      border: 2px solid rgba(16, 185, 129, 0.2);
+      border-radius: var(--radius-full);
+      border: var(--border-emerald-light);
       flex-shrink: 0;
       transition: all 0.3s ease;
     }
@@ -231,7 +216,7 @@ a {
 
 // Main layout containers
 .site-header {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: var(--gradient-surface);
   border-bottom: 1px solid rgba(148, 163, 184, 0.3);
   position: sticky;
   top: 0;
@@ -298,8 +283,8 @@ a {
   }
 
   &__icon {
-    background: rgba(122, 218, 209, 0.2);
-    border-radius: 50%;
+    background: rgba(var(--accent-teal), var(--opacity-20));
+    border-radius: var(--radius-full);
     width: 60px;
     height: 60px;
     display: flex;
@@ -339,7 +324,7 @@ a {
   }
 
   &__text {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-white-80);
     font-size: var(--font-size-sm);
     line-height: var(--line-height-relaxed);
     margin: 0;
@@ -448,7 +433,7 @@ a {
     border-radius: var(--radius-lg);
     display: inline-block;
     margin-bottom: var(--space-lg);
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    box-shadow: var(--shadow-card-metric);
   }
 
   .hero-headline {
@@ -462,7 +447,7 @@ a {
     border: none;
     margin-bottom: var(--space-xl);
     line-height: 1.2;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: var(--text-shadow-md);
   }
 
   .site-title {
@@ -493,16 +478,16 @@ a {
       margin: 0;
       padding: var(--space-md) var(--space-lg);
       border-radius: var(--radius-xl);
-      backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.1);
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+      backdrop-filter: var(--backdrop-blur-lg);
+      background-color: var(--color-white-10);
+      border: var(--border-white-light);
+      box-shadow: var(--shadow-hero-cta),
         0 0 20px rgba(122, 218, 209, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       animation: shimmer 3s ease-in-out infinite, float 4s ease-in-out infinite;
       transform-style: preserve-3d;
-      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition: var(--transition-spring);
       position: relative;
       overflow: hidden;
 
@@ -525,7 +510,7 @@ a {
 
       &:hover {
         transform: translateY(-4px) rotateX(5deg);
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
+        box-shadow: var(--shadow-hero-cta-hover),
           0 0 30px rgba(122, 218, 209, 0.6),
           inset 0 1px 0 rgba(255, 255, 255, 0.3);
         border-color: rgba(255, 255, 255, 0.4);
@@ -583,27 +568,31 @@ a {
     gap: var(--space-md);
   }
 
-  .btn-primary-large {
+  // Maximum specificity override for primary large buttons
+  .btn.btn-primary-large,
+  a.btn.btn-primary-large,
+  .btn-primary-large.btn,
+  a.btn-primary-large.btn {
     background: linear-gradient(
       135deg,
       var(--accent-emerald),
       var(--hover-emerald)
-    );
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-lg);
-    padding: var(--space-2xl) var(--space-4xl); // Increased padding for prominence
-    border-radius: 16px; // Material Design 3 radius
-    font-weight: var(--font-weight-bold);
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); // Material Design easing
-    border: none;
-    cursor: pointer;
-    font-size: var(--font-size-headline-small); // Larger text for prominence
+    ) !important;
+    color: white !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: var(--space-lg) !important;
+    padding: var(--space-2xl) var(--space-4xl) !important; // Increased padding for prominence
+    border-radius: var(--radius-2xl) !important; // Material Design 3 radius
+    font-weight: var(--font-weight-bold) !important;
+    text-decoration: none !important;
+    transition: var(--transition-material) !important; // Material Design easing
+    border: none !important;
+    cursor: pointer !important;
+    font-size: var(--font-size-headline-small) !important; // Larger text for prominence
     // Enhanced Material Design elevation
-    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3), 0 1px 3px rgba(0, 0, 0, 0.12);
-    transform: translateY(0);
+    box-shadow: var(--shadow-card-metric), var(--shadow-subtle) !important;
+    transform: var(--transform-reset) !important;
     position: relative;
     overflow: hidden;
 
@@ -627,11 +616,11 @@ a {
 
     &:hover,
     &:focus {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(33, 150, 243, 0.4),
-        0 3px 6px rgba(0, 0, 0, 0.16);
-      color: white;
-      background: linear-gradient(135deg, var(--primary-blue), #1976d2);
+      transform: var(--transform-hover-large) !important;
+      box-shadow: var(--shadow-card-metric-hover),
+        0 3px 6px rgba(0, 0, 0, 0.16) !important;
+      color: white !important;
+      background: linear-gradient(135deg, var(--hover-emerald), var(--accent-emerald)) !important;
       &::before {
         transform: translateX(100%);
       }
@@ -639,7 +628,7 @@ a {
 
     &:active {
       transform: translateY(-1px);
-      box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3),
+      box-shadow: var(--shadow-step-section),
         0 1px 2px rgba(0, 0, 0, 0.12);
     }
 
@@ -649,7 +638,7 @@ a {
   }
 
   .hero-cta-subtitle {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-white-80);
     font-size: var(--font-size-base);
     margin: 0 auto;
     font-style: italic;
@@ -710,11 +699,11 @@ a {
   color: var(--text-dark);
   font-size: var(--font-size-2xl);
   transition: all var(--duration-normal) var(--ease-out);
-  backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: var(--backdrop-blur-xl);
+  border: var(--border-white-light);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-hero-cta);
 
   // Sophisticated gradient overlay
   &::before {
@@ -739,7 +728,7 @@ a {
       var(--accent-coral) 100%
     );
     transform: translateY(-6px) scale(1.05);
-    box-shadow: 0 20px 40px rgba(122, 218, 209, 0.4);
+    box-shadow: var(--shadow-floating-teal);
     border-color: rgba(255, 255, 255, 0.4);
   }
 
@@ -845,7 +834,7 @@ a {
   transition: all var(--duration-normal) var(--ease-out);
 
   &:hover {
-    transform: translateY(-4px);
+    transform: var(--transform-hover-large);
     box-shadow: var(--shadow-xl);
   }
 
@@ -874,7 +863,7 @@ a {
 
 // Welcome Compact - Above the Fold Focus
 .welcome-compact {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: var(--gradient-surface);
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
@@ -908,7 +897,7 @@ a {
 
 // About the Book Club Section - Material Design
 .quick-start {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: var(--gradient-surface);
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
@@ -922,11 +911,11 @@ a {
   }
 
   position: relative;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: var(--transition-spring);
 
   &:hover {
-    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.12);
-    transform: translateY(-2px);
+    box-shadow: var(--shadow-emerald-light);
+    transform: var(--transform-hover);
   }
 
   p {
@@ -948,7 +937,7 @@ a {
 
 // What You'll Learn Section
 .what-youll-learn-section {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: var(--gradient-surface);
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
@@ -975,7 +964,7 @@ a {
         rgba(16, 185, 129, 0.1),
         rgba(122, 218, 209, 0.1)
       );
-      border-radius: 50%;
+      border-radius: var(--radius-full);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -988,7 +977,7 @@ a {
 
 // Compact Success Metrics
 .success-metrics-compact {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: var(--gradient-surface);
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
@@ -1015,7 +1004,7 @@ a {
         rgba(16, 185, 129, 0.1),
         rgba(122, 218, 209, 0.1)
       );
-      border-radius: 50%;
+      border-radius: var(--radius-full);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1043,12 +1032,12 @@ a {
     gap: var(--space-md);
     padding: var(--space-xl) var(--space-lg);
     background: white;
-    border-radius: 12px; // Material Design 3 radius
+    border-radius: var(--radius-xl); // Material Design 3 radius
     font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-semibold);
     color: var(--text-dark);
     text-align: center;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition-material);
 
     // Material Design elevation
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -1104,8 +1093,8 @@ a {
         rgba(16, 185, 129, 0.1),
         rgba(122, 218, 209, 0.1)
       );
-      border-radius: 50%;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: var(--radius-full);
+      transition: var(--transition-material);
       margin-bottom: var(--space-xs);
     }
 
@@ -1199,7 +1188,7 @@ a {
           rgba(16, 185, 129, 0.1),
           rgba(122, 218, 209, 0.1)
         );
-        border-radius: 50%;
+        border-radius: var(--radius-full);
       }
     }
 
@@ -1239,7 +1228,7 @@ a {
 
 // Get Started Section - Streamlined Resources
 .get-started-section {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: var(--gradient-surface);
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
@@ -1400,7 +1389,7 @@ a {
   border-radius: var(--radius-lg);
   font-weight: var(--font-weight-semibold);
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: var(--transition-spring);
   border: none;
   cursor: pointer;
   font-size: var(--font-size-lg);
@@ -1502,7 +1491,7 @@ a {
   // Dark theme with emphasis
   background: linear-gradient(135deg, #1a202c, #2d3748);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px; // Material Design 3 radius
+  border-radius: var(--radius-xl); // Material Design 3 radius
   padding: var(--space-2xl);
   text-align: left;
   position: relative;
@@ -1526,7 +1515,7 @@ a {
       var(--accent-emerald),
       var(--accent-teal)
     );
-    border-radius: 12px 12px 0 0;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   }
 
   &:hover {
@@ -1580,7 +1569,7 @@ a {
     z-index: 1;
     border: 2px solid rgba(16, 185, 129, 0.3);
     background: rgba(16, 185, 129, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--backdrop-blur-lg);
     transition: all 0.3s ease;
   }
 
@@ -1634,7 +1623,7 @@ a {
     color: var(--text-white);
     margin-bottom: var(--space-sm);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--backdrop-blur-lg);
     border: 1px solid rgba(255, 255, 255, 0.1);
 
     span:first-child {
@@ -1954,7 +1943,7 @@ button:focus,
   background: linear-gradient(135deg, #eff6ff, #dbeafe);
   border-radius: var(--radius-2xl);
   border: 1px solid rgba(33, 150, 243, 0.2);
-  box-shadow: 0 8px 32px rgba(33, 150, 243, 0.1);
+  box-shadow: var(--shadow-blue-glow);
   padding: var(--space-3xl);
   margin: var(--space-xl) 0;
   max-width: 1200px;
@@ -2013,7 +2002,7 @@ button:focus,
       border-radius: var(--radius-xl);
       border: 1px solid rgba(33, 150, 243, 0.2);
       transition: all var(--duration-normal) var(--ease-out);
-      backdrop-filter: blur(10px);
+      backdrop-filter: var(--backdrop-blur-lg);
 
       &:hover {
         background: rgba(255, 255, 255, 0.8);
@@ -2027,7 +2016,7 @@ button:focus,
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-xl);
         background: rgba(16, 185, 129, 0.2);
-        border-radius: 50%;
+        border-radius: var(--radius-full);
         width: 32px;
         height: 32px;
         display: flex;
@@ -2054,19 +2043,20 @@ button:focus,
   );
   color: var(--text-white);
   border-radius: var(--radius-xl);
-  padding: var(--space-3xl);
-  margin: var(--space-xl) 0;
+  padding: var(--space-2xl);
+  margin: var(--space-xl) auto;
   text-align: center;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: min(1200px, calc(100vw - 2rem));
   position: relative;
   overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(122, 218, 209, 0.3),
-    inset 0 2px 0 rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(122, 218, 209, 0.2);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: var(--shadow-floating-teal);
+  border: 2px solid var(--color-teal-20);
+  backdrop-filter: var(--backdrop-blur-lg);
+  transition: var(--transition-spring);
+
+  // Ensure proper container constraints
+  width: 100%;
+  box-sizing: border-box;
 
   // Strategic dark mode sophisticated pattern
   &::before {
@@ -2127,13 +2117,13 @@ button:focus,
     position: relative;
     z-index: 1;
     color: var(--text-white);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: var(--text-shadow-sm);
     line-height: var(--line-height-relaxed);
   }
 
   // Add hover effect to entire section for interactive emphasis
   &:hover {
-    transform: translateY(-2px);
+    transform: var(--transform-hover);
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5),
       0 0 40px rgba(122, 218, 209, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15);
     border-color: rgba(122, 218, 209, 0.3);
@@ -2154,7 +2144,7 @@ button:focus,
     font-weight: var(--font-weight-medium);
     position: relative;
     z-index: 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--backdrop-blur-lg);
 
     &::before {
       content: "\201C";
@@ -2237,7 +2227,7 @@ button:focus,
     em {
       font-size: var(--font-size-2xl);
       background: rgba(255, 127, 80, 0.2);
-      border-radius: 50%;
+      border-radius: var(--radius-full);
       width: 50px;
       height: 50px;
       display: flex;
@@ -2272,7 +2262,7 @@ button:focus,
     position: relative;
     z-index: 1;
     border: 2px solid transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--backdrop-blur-lg);
 
     &:hover {
       background: linear-gradient(
@@ -2289,7 +2279,7 @@ button:focus,
 
 // Required Reading Section - Material Design Card
 .required-reading-section {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: var(--gradient-surface);
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
@@ -2359,12 +2349,45 @@ button:focus,
       color: var(--text-dark);
     }
 
-    .btn {
+    // Maximum specificity override for book section buttons
+    .btn,
+    a.btn,
+    .btn.btn-primary,
+    a.btn.btn-primary,
+    .btn.btn-large,
+    a.btn.btn-large {
       @include button-primary;
 
-      margin-top: var(--space-xl);
-      font-size: var(--font-size-base);
-      padding: var(--space-lg) var(--space-2xl);
+      margin-top: var(--space-xl) !important;
+      font-size: var(--font-size-base) !important;
+      padding: var(--space-lg) var(--space-2xl) !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: var(--space-sm) !important;
+      border-radius: var(--radius-lg) !important;
+      font-weight: var(--font-weight-semibold) !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      transition: all var(--duration-normal) var(--ease-out) !important;
+      min-height: var(--touch-target-min) !important;
+
+      // Ensure consistent emerald styling
+      background: linear-gradient(
+        135deg,
+        var(--accent-emerald),
+        var(--hover-emerald)
+      ) !important;
+      color: white !important;
+      border: none !important;
+      box-shadow: var(--shadow-card-metric), var(--shadow-subtle) !important;
+
+      &:hover {
+        background: linear-gradient(135deg, var(--hover-emerald), var(--accent-emerald)) !important;
+        color: white !important;
+        transform: var(--transform-hover) !important;
+        box-shadow: var(--shadow-card-metric-hover) !important;
+      }
     }
   }
 }
@@ -2673,7 +2696,7 @@ button:focus,
   }
 }
 
-// Meeting 1 Blue Color Scheme - Unified Design
+// Design System Tokens - Comprehensive Color & Layout Variables
 :root {
   // Meeting 1 Blue Color Scheme
   --meeting-1-primary: #0969da;
@@ -2684,13 +2707,110 @@ button:focus,
   --meeting-1-light: rgba(9, 105, 218, 0.08);
   --meeting-1-border: rgba(9, 105, 218, 0.2);
 
-  // Material Design 3 Elevation Tokens
-  --elevation-0: none;
-  --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --elevation-2: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-  --elevation-3: 0 3px 12px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
-  --elevation-4: 0 4px 16px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.24);
-  --elevation-5: 0 6px 24px rgba(0, 0, 0, 0.12), 0 6px 16px rgba(0, 0, 0, 0.24);
+  // Essential Colors (only what we actually use)
+  --color-white: #ffffff;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-300: #e5e7eb;
+  --color-gray-400: #6b7280;
+  --color-blue-600: #2563eb;
+  --color-blue-800: #1976d2;
+  --color-green-600: #16a34a;
+
+  // Simplified Shadow System (5 levels + 2 special)
+  --shadow-none: none;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+  // Special shadows
+  --shadow-floating-teal: 0 20px 40px rgba(122, 218, 209, 0.4);
+  --shadow-card-metric: 0 4px 8px rgba(16, 185, 129, 0.3);
+  --shadow-card-metric-hover: 0 6px 16px rgba(33, 150, 243, 0.4);
+
+  // Legacy aliases for compatibility
+  --elevation-1: var(--shadow-sm);
+  --elevation-2: var(--shadow-md);
+  --elevation-3: var(--shadow-lg);
+  --elevation-4: var(--shadow-xl);
+
+  // Border Radius Tokens
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-full: 50%;
+
+  // Simplified Spacing System (8pt grid)
+  --space-xs: 0.25rem; // 4px
+  --space-sm: 0.5rem;  // 8px
+  --space-md: 1rem;    // 16px
+  --space-lg: 1.5rem;  // 24px
+  --space-xl: 2rem;    // 32px
+  --space-2xl: 2.5rem; // 40px
+  --space-3xl: 3rem;   // 48px
+  --space-4xl: 4rem;   // 64px
+
+  // Background Gradient Tokens
+  --gradient-surface: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+  --gradient-hero: linear-gradient(135deg, var(--hero-dark), var(--card-dark));
+  --gradient-blue: linear-gradient(135deg, var(--color-blue-50), var(--color-blue-100));
+  --gradient-green: linear-gradient(135deg, var(--color-green-50), var(--color-green-100));
+  --gradient-purple: linear-gradient(135deg, var(--color-purple-50), var(--color-purple-100));
+  --gradient-meeting-1: linear-gradient(135deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+
+  // Text Shadow Tokens
+  --text-shadow-none: none;
+  --text-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --text-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --text-shadow-lg: 0 2px 20px rgba(0, 0, 0, 0.3);
+
+  // Border Tokens
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-3: 3px;
+  --border-width-4: 4px;
+  --border-subtle: var(--border-width-1) solid var(--color-gray-300);
+  --border-medium: var(--border-width-2) solid var(--color-gray-400);
+  --border-accent: var(--border-width-2) solid var(--meeting-1-primary);
+  --border-emerald-light: var(--border-width-2) solid rgba(16, 185, 129, 0.2);
+  --border-emerald-medium: var(--border-width-2) solid rgba(16, 185, 129, 0.4);
+  --border-white-light: var(--border-width-2) solid rgba(255, 255, 255, 0.2);
+  --border-white-medium: var(--border-width-2) solid rgba(255, 255, 255, 0.4);
+
+  // Transition Tokens
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-material: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-fast: all var(--duration-fast) var(--ease-out);
+  --transition-normal: all var(--duration-normal) var(--ease-out);
+  --transition-material: all var(--duration-normal) var(--ease-material);
+  --transition-spring: all var(--duration-normal) var(--ease-spring);
+
+  // Transform Tokens - Simplified for actual usage
+  --transform-hover: translateY(-2px);
+  --transform-hover-large: translateY(-4px);
+  --transform-reset: translateY(0);
+
+  // Backdrop Filter Tokens
+  --backdrop-blur-none: none;
+  --backdrop-blur-sm: blur(4px);
+  --backdrop-blur-md: blur(8px);
+  --backdrop-blur-lg: blur(10px);
+  --backdrop-blur-xl: blur(20px);
+  --backdrop-blur-2xl: blur(40px);
+
+  // Essential RGBA tokens (only what we use)
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-teal-20: rgba(122, 218, 209, 0.2);
 
   // Legacy shadow for backward compatibility
   --meeting-1-card-shadow: var(--elevation-2);
@@ -2980,7 +3100,7 @@ button:focus,
   .pain-indicator {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     margin-left: var(--space-md);
 
     &.high {
@@ -3265,7 +3385,7 @@ button:focus,
     background: linear-gradient(135deg, #ffe4e6, #fecdd3);
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3393,19 +3513,20 @@ button:focus,
   );
   color: var(--text-white);
   border-radius: var(--radius-xl);
-  padding: var(--space-3xl);
-  margin: var(--space-xl) 0;
+  padding: var(--space-2xl);
+  margin: var(--space-xl) auto;
   text-align: center;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: min(1200px, calc(100vw - 2rem));
   position: relative;
   overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(122, 218, 209, 0.3),
-    inset 0 2px 0 rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(122, 218, 209, 0.2);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: var(--shadow-floating-teal);
+  border: 2px solid var(--color-teal-20);
+  backdrop-filter: var(--backdrop-blur-lg);
+  transition: var(--transition-spring);
+
+  // Ensure proper container constraints
+  width: 100%;
+  box-sizing: border-box;
 
   // Sophisticated pattern overlay
   &::before {
@@ -3451,7 +3572,7 @@ button:focus,
     position: relative;
     z-index: 2;
     margin: 0 0 var(--space-md);
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-white-80);
     font-size: var(--font-size-lg);
     line-height: var(--line-height-relaxed);
     text-align: center;
@@ -3476,9 +3597,9 @@ button:focus,
       color: var(--accent-teal);
       font-weight: var(--font-weight-bold);
       font-style: normal;
-      background: rgba(122, 218, 209, 0.2);
-      padding: 4px 8px;
-      border-radius: 6px;
+      background: rgba(var(--accent-teal), var(--opacity-20));
+      padding: var(--space-1) var(--space-2);
+      border-radius: var(--radius-md);
       box-shadow: 0 0 10px rgba(122, 218, 209, 0.3);
     }
   }
@@ -3492,22 +3613,21 @@ button:focus,
 }
 
 // Modern Chapters Overview Styles
-// Meeting Header - Consistent with Index Hero Banner Brand Treatment
+// Meeting Header - Sophisticated Dark Theme with Meeting 1 Blue
 .meeting-header {
   background: linear-gradient(
     135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
+    #1a2332 0%,
+    #2d4263 100%
   );
   padding: var(--space-xl) var(--space-lg);
-  text-align: center;
   position: relative;
   border-radius: var(--radius-lg);
   margin: 0 0 var(--space-xl);
   overflow: hidden;
   color: white;
 
-  // Enhanced sophisticated pattern matching hero banner
+  // Enhanced sophisticated pattern with Meeting 1 blue theme
   &::before {
     content: "";
     position: absolute;
@@ -3517,17 +3637,17 @@ button:focus,
     bottom: 0;
     background-image: radial-gradient(
         circle at 20% 20%,
-        rgba(122, 218, 209, 0.15) 2px,
+        rgba(9, 105, 218, 0.15) 2px,
         transparent 2px
       ),
       radial-gradient(
         circle at 80% 80%,
-        rgba(255, 127, 80, 0.1) 1px,
+        rgba(59, 130, 246, 0.1) 1px,
         transparent 1px
       ),
       radial-gradient(
         circle at 40% 60%,
-        rgba(139, 158, 183, 0.08) 1px,
+        rgba(147, 197, 253, 0.08) 1px,
         transparent 1px
       );
     background-size: 60px 60px, 40px 40px, 80px 80px;
@@ -3537,43 +3657,227 @@ button:focus,
   }
 
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
-              0 0 30px rgba(122, 218, 209, 0.3),
+              0 0 30px rgba(9, 105, 218, 0.3),
               inset 0 2px 0 rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(122, 218, 209, 0.2);
-  backdrop-filter: blur(10px);
+  border: 2px solid rgba(9, 105, 218, 0.2);
+  backdrop-filter: var(--backdrop-blur-lg);
   animation: fadeInUp 0.8s ease-out both;
 
-  .meeting-title {
+  .meeting-header-content {
     position: relative;
     z-index: 1;
+  }
+
+  .meeting-breadcrumb {
+    margin-bottom: var(--space-md);
+    opacity: 0.8;
+    font-size: var(--font-size-sm);
+    text-align: center;
+
+    a, span {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #93c5fd;
+    }
+  }
+
+  .meeting-main-title {
     margin: 0;
     color: white;
+    font-family: var(--font-display);
     font-size: clamp(
       var(--font-size-headline-large),
       5vw,
       var(--font-size-display-medium)
     );
     font-weight: var(--font-weight-bold);
+    text-align: center;
     background: linear-gradient(
       135deg,
-      var(--accent-teal),
-      var(--accent-coral)
+      #60a5fa,
+      #3b82f6,
+      #1d4ed8
     );
     background-clip: text;
+
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-background-clip: text;
+
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   }
 
-  .meeting-subtitle {
+  .meeting-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+    justify-content: center;
+
+    .meeting-meta-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      color: rgba(255, 255, 255, 0.9);
+      font-size: var(--font-size-sm);
+      text-shadow: var(--text-shadow-sm);
+
+      i {
+        color: #60a5fa;
+      }
+
+      &.subtitle {
+        flex-basis: 100%;
+        justify-content: center;
+        font-size: var(--font-size-lg);
+        font-style: italic;
+        margin-top: var(--space-sm);
+        font-family: var(--font-display);
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5),
+      0 0 40px rgba(9, 105, 218, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15);
+    border-color: rgba(9, 105, 218, 0.3);
+  }
+}
+
+// Dark Theme Treatment for Key Insight Section - High Specificity Override
+.step-section.step-understanding.key-insight-dark {
+  background: linear-gradient(
+    135deg,
+    var(--hero-dark) 0%,
+    var(--card-dark) 100%
+  ) !important;
+  color: var(--text-white) !important;
+  border-radius: var(--radius-xl) !important;
+  border: 2px solid var(--meeting-1-border) !important;
+  box-shadow: var(--shadow-floating-teal) !important;
+  backdrop-filter: var(--backdrop-blur-lg);
+  position: relative;
+  overflow: hidden;
+
+  // Ensure proper container constraints
+  max-width: min(1200px, calc(100vw - 2rem));
+  width: 100%;
+  box-sizing: border-box;
+  margin: var(--space-xl) auto;
+  padding: var(--space-2xl);
+
+  // Strategic dark mode sophisticated pattern with Meeting 1 blue theme
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        var(--meeting-1-border) 2px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        var(--meeting-1-light) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 40% 60%,
+        rgba(147, 197, 253, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 60px 60px, 40px 40px, 80px 80px;
+    background-position: 0 0, 30px 30px, 50px 10px;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  h2 {
+    color: var(--text-white) !important;
+    background: linear-gradient(
+      135deg,
+      var(--meeting-1-accent),
+      var(--meeting-1-primary),
+      var(--meeting-1-secondary)
+    );
+    background-clip: text;
+
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-background-clip: text;
+
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     position: relative;
     z-index: 1;
-    margin: var(--space-sm) 0 0;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: var(--font-size-lg);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+    i {
+      color: var(--meeting-1-accent) !important;
+    }
+  }
+
+  p, .insight-explanation {
+    color: var(--text-white) !important;
+    position: relative;
+    z-index: 1;
+    text-shadow: var(--text-shadow-sm);
+  }
+
+  .practice-cycle {
+    position: relative;
+    z-index: 1;
+
+    .cycle-step {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--text-white);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--radius-md);
+      backdrop-filter: var(--backdrop-blur-lg);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    i {
+      color: var(--meeting-1-accent);
+    }
+  }
+
+  // Dark theme styles for nested components
+  .insight-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-left: 4px solid var(--meeting-1-accent) !important;
+    backdrop-filter: var(--backdrop-blur-lg);
+
+    h4 {
+      color: var(--text-white) !important;
+    }
+
+    p, .insight-explanation {
+      color: var(--text-white) !important;
+    }
+
+    ul li {
+      color: var(--text-white) !important;
+    }
+
+    strong {
+      color: var(--meeting-1-accent) !important;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5),
+      0 0 40px rgba(9, 105, 218, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.15) !important;
+    border-color: var(--meeting-1-primary) !important;
   }
 }
 
@@ -3617,10 +3921,10 @@ button:focus,
   .chapter-card.modern {
     position: relative;
     background: white;
-    border-radius: 12px; // Material Design 3 radius
+    border-radius: var(--radius-xl); // Material Design 3 radius
     padding: var(--space-xl);
     border: 1px solid rgba(148, 163, 184, 0.2);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition-material);
     overflow: hidden;
 
     // Enhanced Material Design elevation
