@@ -6,25 +6,22 @@
   "main": "docs/assets/main.scss",
   "scripts": {
     "lint:css": "stylelint \"docs/_sass/**/*.scss\" --ignore-path .stylelintignore",
-    "lint:js": "eslint \"docs/**/*.js\" --ext .js,.html,.md",
+    "lint:js": "eslint \"docs/**/*.{js,html,md}\" --ext .js,.html,.md",
     "lint:md": "markdownlint \"docs/_meetings/**/*.md\" \"docs/*.md\" \"*.md\" --ignore \"docs/vendor/**\" --ignore \"docs/.jekyll-cache/**\"",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:md",
     "test:html": "html-validate \"docs/_site/**/*.html\"",
     "test:css": "stylelint \"docs/assets/**/*.scss\" \"docs/_sass/**/*.scss\" \"docs/**/*.html\"",
-    "test:js": "eslint \"docs/**/*.{js,html,md}\" --ext .js,.html,.md",
     "test:a11y": "pa11y-ci --sitemap http://localhost:4000/accelerate-devex-book-club-notebooklm/sitemap.xml",
-    "test:links": "hyperlink \"docs/_site/**/*.html\"",
-    "test:visual": "cd tests && npm test",
     "test:interactive": "cd tests && npm run test:headed",
     "test:percy": "cd tests && npm run test:percy",
     "test:htmlproof": "cd docs && bundle exec htmlproofer _site --disable-external=true --enforce-https=false --allow-missing-href=false --allow-hash-href=true --extensions .html --swap-urls '^/accelerate-devex-book-club-notebooklm/:/' --directory-index-file index.html",
     "test:lighthouse": "lhci autorun",
     "test:jekyll-audit": "npx @brennanbrown/jekyll-audit audit",
-    "test": "npm run lint && npm run test:html && npm run test:htmlproof",
+    "test": "npm run test:html && npm run test:css && npm run test:a11y && npm run test:percy && npm run test:interactive && npm run test:links && npm run test:htmlproof && npm run test:lighthouse && npm run test:jekyll-audit",
     "audit": "npm run build && npm run test:jekyll-audit && npm run test:percy",
     "serve": "cd docs && bundle exec jekyll serve",
     "build": "cd docs && bundle exec jekyll build",
-    "validate": "npm run build && npm run test"
+    "validate": "npm run build && npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
