@@ -255,7 +255,7 @@ dora_color: '#D97706'
 <text x="500" y="320" text-anchor="middle" font-size="18" fill="#92400e" font-weight="bold">Research Finding: Teams with all four practices deliver 50% faster</text>
 
   <defs>
-    <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
+    <marker id="arrow-amber-2" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L12,6 L0,12 Z" fill="#d97706" />
     </marker>
   </defs>
