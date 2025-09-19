@@ -1,0 +1,155 @@
+// Main SCSS Entry Point - Critical Rendering Path Optimized
+// ===========================================================
+// Jekyll/GitHub Pages compatible entry point for modular CSS architecture
+// This file orchestrates the compilation of our SCSS 7-1-lite structure
+
+// =============================================================================
+// CRITICAL RENDERING PATH OPTIMIZATION
+// =============================================================================
+
+// 1. ABSTRACTS - Design tokens and utilities (no CSS output)
+@import 'abstracts/tokens'; // Design system tokens
+@import 'abstracts/mixins'; // Utility mixins and functions
+
+// 2. BASE - Critical above-the-fold styles (inlined in HTML)
+@import 'base/critical'; // Critical CSS for hero, DORA metrics, typography
+
+// 3. COMPONENTS - Reusable UI components (loaded async after critical)
+// Note: These will be imported conditionally based on performance budget
+
+@import 'components/buttons'; // Button variations and states
+@import 'components/cards'; // Card components and variations
+@import 'components/navigation'; // Site navigation and menus
+@import 'components/forms'; // Form elements and validation
+@import 'components/modals'; // Modal dialogs and overlays
+
+// 4. LAYOUT - Major layout components (loaded after critical)
+@import 'layout/header'; // Site header and branding
+@import 'layout/footer'; // Site footer
+@import 'layout/grid'; // Grid system and containers
+@import 'layout/sidebar'; // Sidebar layouts
+
+// 5. PAGES - Page-specific styles (loaded per page as needed)
+@import 'pages/home'; // Homepage specific styles
+@import 'pages/meetings'; // Meeting pages
+@import 'pages/resources'; // Resource pages
+
+// =============================================================================
+// NON-CRITICAL STYLES (Loaded after above-the-fold content)
+// =============================================================================
+
+// Reset and normalize (non-critical parts)
+@import 'base/reset'; // Complete reset beyond critical
+@import 'base/typography'; // Extended typography styles
+@import 'base/helpers'; // Utility classes
+
+// Extended component styles
+@import 'components/ai-content'; // AI-generated content styling
+@import 'components/dora-advanced'; // Advanced DORA visualizations
+@import 'components/assessments'; // Assessment forms and feedback
+@import 'components/animations'; // Non-critical animations
+@import 'components/media'; // Images, videos, embeds
+
+// =============================================================================
+// PERFORMANCE MONITORING & DEBUGGING
+// =============================================================================
+
+// Development mode performance monitoring
+@if $development-mode {
+  @import 'base/debug'; // Debug utilities and performance markers
+}
+
+// =============================================================================
+// CRITICAL CSS EXTRACTION MARKERS
+// =============================================================================
+
+/* 
+CRITICAL CSS EXTRACTION INSTRUCTIONS:
+1. Everything above this comment should be extracted for inline CSS
+2. Use build tools to extract critical styles for <style> in HTML head
+3. Remaining styles load asynchronously after page render
+4. Target: <14KB for critical CSS (compressed with Brotli)
+
+EXTRACTION TOOLS:
+- critical (npm package)
+- penthouse (npm package) 
+- Jekyll plugins for critical CSS
+- Custom build scripts
+
+PERFORMANCE TARGETS:
+- First Contentful Paint (FCP): < 1.8s
+- Largest Contentful Paint (LCP): < 2.5s  
+- Cumulative Layout Shift (CLS): < 0.1
+- Total Blocking Time (TBT): < 300ms
+*/
+
+// =============================================================================
+// SASS CONFIGURATION & OPTIMIZATION
+// =============================================================================
+
+// Sass configuration for optimal compilation
+$sass-precision: 10;
+$sass-output-style: compressed;
+
+// =============================================================================
+// LEGACY BROWSER SUPPORT
+// =============================================================================
+
+// Include legacy support if needed (increases CSS size)
+// @import 'base/legacy';         // IE11 and older browser support
+
+// =============================================================================
+// MAINTENANCE NOTES
+// =============================================================================
+
+/*
+MAINTENANCE GUIDELINES:
+
+1. CRITICAL PATH FIRST:
+   - Keep critical styles minimal and focused
+   - Only include above-the-fold content styles in critical section
+   - Measure critical CSS size regularly (target <14KB)
+
+2. MODULAR ARCHITECTURE:
+   - Each import should be self-contained
+   - Use design tokens consistently across all files
+   - Document any cross-file dependencies
+
+3. PERFORMANCE MONITORING:
+   - Run Lighthouse audits after changes
+   - Monitor Core Web Vitals in production
+   - Use performance budgets in CI/CD
+
+4. ACCESSIBILITY:
+   - Validate WCAG 2.2 compliance after changes
+   - Test with screen readers
+   - Ensure keyboard navigation works
+
+5. BROWSER TESTING:
+   - Test across target browsers
+   - Validate fallbacks for newer CSS features
+   - Progressive enhancement approach
+
+6. CODE QUALITY:
+   - Use consistent naming conventions
+   - Document complex calculations
+   - Keep specificity low and consistent
+
+PERFORMANCE CHECKLIST:
+□ Critical CSS < 14KB
+□ No render-blocking CSS 
+□ Proper font loading strategy
+□ Images optimized and responsive
+□ Animations respect reduced motion
+□ Touch targets ≥ 44px
+□ Sufficient color contrast
+□ Focus indicators visible
+
+BUILD PROCESS:
+1. Compile SCSS to CSS
+2. Extract critical CSS (above-the-fold)
+3. Inline critical CSS in HTML <head>
+4. Load remaining CSS asynchronously
+5. Minify and compress all assets
+6. Generate source maps for debugging
+*/

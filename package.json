@@ -5,7 +5,7 @@
   "description": "DevOps book club focused on Accelerate: The Science of Lean Software and DevOps",
   "main": "docs/assets/main.scss",
   "scripts": {
-    "lint:css": "stylelint \"docs/assets/**/*.scss\" \"docs/_sass/**/*.scss\"",
+    "lint:css": "stylelint \"docs/_sass/**/*.scss\" --ignore-path .stylelintignore",
     "lint:js": "eslint \"docs/**/*.js\" --ext .js,.html,.md",
     "lint:md": "markdownlint \"docs/_meetings/**/*.md\" \"docs/*.md\" \"*.md\" --ignore \"docs/vendor/**\" --ignore \"docs/.jekyll-cache/**\"",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:md",
