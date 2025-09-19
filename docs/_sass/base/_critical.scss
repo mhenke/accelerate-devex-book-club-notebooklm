@@ -3294,16 +3294,17 @@ button:focus,
       display: flex;
       align-items: center;
       gap: var(--space-md);
-      background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+      background: var(--meeting-1-surface);
       font-weight: var(--font-weight-medium);
       color: var(--text-high-emphasis);
 
       &:hover {
-        background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+        background: linear-gradient(135deg, var(--meeting-1-surface), var(--meeting-1-accent));
+        opacity: 0.9;
       }
 
       i:first-child {
-        color: #9333ea;
+        color: var(--meeting-1-primary);
         width: 20px;
       }
 
