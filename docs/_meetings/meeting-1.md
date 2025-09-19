@@ -309,18 +309,111 @@ dora_color: '#1E3A8A'
 
 ### Discussion Questions
 
-1. **Current State Assessment:** How would you rate your team on each DORA metric?
-2. **Speed vs. Stability Myths:** What examples have you seen of assumed trade-offs in your organization?
-3. **Deployment Pain Points:** Describe your team's current deployment experience and anxiety levels
-4. **Culture Indicators:** Using Westrum's model, what culture type best describes your organization?
+<div class="discussion-questions-grid" markdown="0">
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-chart-line"></i>
+      <h4>Current State Assessment</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>How would you rate your team on each DORA metric?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Deployment frequency</span>
+        <span>• Lead time for changes</span>
+        <span>• Time to restore service</span>
+        <span>• Change failure rate</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-balance-scale"></i>
+      <h4>Speed vs. Stability Myths</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>What examples have you seen of assumed trade-offs in your organization?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• "We can't deploy frequently because..."</span>
+        <span>• "Quality requires slow releases"</span>
+        <span>• "Fast delivery means cutting corners"</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-rocket"></i>
+      <h4>Deployment Pain Points</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>Describe your team's current deployment experience and anxiety levels</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• What causes deployment anxiety?</span>
+        <span>• Manual steps and coordination needed</span>
+        <span>• Frequency and timing of deployments</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-users"></i>
+      <h4>Culture Indicators</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>Using Westrum's model, what culture type best describes your organization?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• How do you handle failure and learning?</span>
+        <span>• Information sharing and collaboration</span>
+        <span>• Risk-taking and innovation support</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Action Items for Next Meeting
 
-<ul class="action-items">
-<li>[ ] Begin informal tracking of one DORA metric for your team</li>
-<li>[ ] Identify your biggest deployment pain point</li>
-<li>[ ] Observe examples of pathological, bureaucratic, or generative culture behaviors</li>
-</ul>
+<div class="action-items-grid" markdown="0">
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-chart-line"></i>
+      <h4>Start DORA Tracking</h4>
+    </div>
+    <p><strong>Begin informal tracking of one DORA metric for your team</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Choose deployment frequency, lead time, MTTR, or change failure rate</span>
+      <span>• Track for 2 weeks using simple spreadsheet or notes</span>
+      <span>• Focus on establishing baseline measurement</span>
+    </div>
+  </div>
+
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-exclamation-triangle"></i>
+      <h4>Identify Pain Points</h4>
+    </div>
+    <p><strong>Identify your biggest deployment pain point</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Document what causes deployment anxiety</span>
+      <span>• Note manual steps and coordination needed</span>
+      <span>• Consider impact on team stress and work-life balance</span>
+    </div>
+  </div>
+
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-users"></i>
+      <h4>Observe Culture Patterns</h4>
+    </div>
+    <p><strong>Observe examples of pathological, bureaucratic, or generative culture behaviors</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Watch how failures are handled in meetings</span>
+      <span>• Note information sharing patterns</span>
+      <span>• Observe cooperation vs. blame responses</span>
+    </div>
+  </div>
+</div>
 
 ### Related Resources
 
@@ -987,6 +1080,16 @@ dora_color: '#1E3A8A'
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* H3 Themed Styling */
+h3 {
+  border-left: 4px solid #1E3A8A;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  color: #1e40af;
+  font-weight: 600;
+}
+
 /* Icons integrated into headers */
 h3 i, h4 i {
   margin-right: 0.5rem;
@@ -1395,17 +1498,132 @@ h3 i, h4 i {
   }
 }
 
-/* Action Items Styling */
-.action-items {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+/* Discussion Questions Styling */
+.discussion-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-.action-items li {
-  display: block;
-  padding: 0.5rem 0;
+.discussion-card {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  padding: 1.5rem;
+  border-top: 4px solid #1E3A8A;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.discussion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
+  border-top-color: #1e40af;
+}
+
+.discussion-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.discussion-header i {
+  color: #1E3A8A;
+  font-size: 1.2rem;
+}
+
+.discussion-header h4 {
+  margin: 0;
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.discussion-content p {
+  margin: 0 0 1rem 0;
+  color: #374151;
   font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.discussion-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discussion-prompts span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
+}
+
+/* Action Items Styling */
+.action-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.action-item-card {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  padding: 1.5rem;
+  border-top: 4px solid #1E3A8A;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
+  border-top-color: #1e40af;
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.action-header i {
+  color: #1E3A8A;
+  font-size: 1.2rem;
+}
+
+.action-header h4 {
+  margin: 0;
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.action-item-card p {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.action-guidance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-guidance span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
 }
 
 /* Related Resources Compact Styling */
@@ -1422,8 +1640,8 @@ h3 i, h4 i {
 
 .resource-category {
   background: white;
-  border-radius: 8px;
   padding: 1.5rem;
+  border-top: 4px solid #1E3A8A;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 

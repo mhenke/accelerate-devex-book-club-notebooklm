@@ -1004,30 +1004,357 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Discussion Questions
 
-1. **Lean Management Assessment:** Which lean management practices do you currently use? What's missing?
-2. **Deployment Pain Check:** On a scale of 1-10, how painful are your deployments? What causes the anxiety?
-3. **Employee Engagement:** How would your team score on employee Net Promoter Score?
+<div class="discussion-questions-grid" markdown="0">
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-chart-line"></i>
+      <h4>Lean Management Assessment</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>Which lean management practices do you currently use? What's missing?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Peer review vs. approval processes</span>
+        <span>• Visual work management and WIP limits</span>
+        <span>• Learning from failures vs. blame culture</span>
+        <span>• Fast feedback loops and decision making</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-rocket"></i>
+      <h4>Deployment Pain Check</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>On a scale of 1-10, how painful are your deployments? What causes the anxiety?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Manual coordination and handoff processes</span>
+        <span>• Weekend and after-hours deployment schedule</span>
+        <span>• Rollback complexity and recovery procedures</span>
+        <span>• Team stress and work-life balance impact</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-users"></i>
+      <h4>Employee Engagement</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>How would your team score on employee Net Promoter Score?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Meaningful work and growth opportunities</span>
+        <span>• Team support and psychological safety</span>
+        <span>• Access to right tools and resources</span>
+        <span>• Organizational culture and values alignment</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Action Items for Next Meeting
 
-<ul class="action-items">
-<li>[ ] Experiment with visualizing work using simple kanban board</li>
-<li>[ ] Conduct informal eNPS assessment with your team</li>
-<li>[ ] Choose one practice that improves both delivery performance and team wellbeing</li>
-</ul>
+<div class="action-items-grid" markdown="0">
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-columns"></i>
+      <h4>Try Visual Work Management</h4>
+    </div>
+    <p><strong>Experiment with visualizing work using simple kanban board</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Create columns for To Do, In Progress, Done</span>
+      <span>• Set WIP limits for In Progress items</span>
+      <span>• Track cycle time for completed work</span>
+    </div>
+  </div>
+
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-chart-line"></i>
+      <h4>Measure Team Engagement</h4>
+    </div>
+    <p><strong>Conduct informal eNPS assessment with your team</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Ask: "How likely are you to recommend our org as great place to work?"</span>
+      <span>• Use 0-10 scale: Detractors (0-6), Passives (7-8), Promoters (9-10)</span>
+      <span>• Follow up with "What would make this better?" questions</span>
+    </div>
+  </div>
+
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-heart"></i>
+      <h4>Focus on Wellbeing & Performance</h4>
+    </div>
+    <p><strong>Choose one practice that improves both delivery performance and team wellbeing</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Consider deployment automation to reduce stress</span>
+      <span>• Try blameless post-mortems for psychological safety</span>
+      <span>• Implement work visualization to reduce context switching</span>
+    </div>
+  </div>
+</div>
 
 ### Related Resources
 
-### Lean Management & Team Performance
+<div class="related-resources" markdown="0">
+  <div class="resource-category" markdown="0">
+    <h3><i class="fas fa-users"></i> Lean Management & Team Performance</h3>
+    <ul class="resource-links">
+      <li><a href="https://www.atlassian.com/agile/kanban/boards" target="_blank">Kanban Boards</a> - Visual work tracking and WIP limits implementation</li>
+      <li><a href="https://www.lean.org/lexicon-terms/value-stream-mapping/" target="_blank">Value Stream Mapping</a> - End-to-end process visualization techniques</li>
+      <li><a href="https://blog.officevibe.com/employee-net-promoter-score" target="_blank">eNPS Calculator</a> - Employee engagement measurement tool and guidelines</li>
+      <li><a href="https://rework.withgoogle.com/guides/understanding-team-effectiveness/" target="_blank">Psychological Safety Guide</a> - Google's team effectiveness research and practices</li>
+      <li><a href="https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" target="_blank">Team Topologies</a> - Modern team organization patterns and structures</li>
+    </ul>
+  </div>
 
-- [Kanban Boards](https://www.atlassian.com/agile/kanban/boards) — Visual work tracking and WIP limits
-- [Value Stream Mapping](https://www.lean.org/lexicon-terms/value-stream-mapping/) — End-to-end process visualization
-- [eNPS Calculator](https://blog.officevibe.com/employee-net-promoter-score) — Employee engagement measurement
-- [Psychological Safety Guide](https://rework.withgoogle.com/guides/understanding-team-effectiveness/) — Google's team effectiveness research
-- [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) — Modern team organization patterns
+  <div class="resource-category" markdown="0">
+    <h3><i class="fas fa-chart-line"></i> DevOps Culture & Assessment</h3>
+    <ul class="resource-links">
+      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DORA Capabilities</a> - DevOps maturity assessment and capability framework</li>
+      <li><a href="https://github.com/dora-team/fourkeys" target="_blank">Four Keys Project</a> - DORA metrics implementation and tracking tools</li>
+      <li><a href="https://www.mindgarden.com/maslach-burnout-toolkit/" target="_blank">Burnout Prevention Toolkit</a> - Christina Maslach's research tools and assessments</li>
+    </ul>
+  </div>
+</div>
 
-### DevOps Culture & Assessment
+<style>
+/* H3 Themed Styling */
+h3 {
+  border-left: 4px solid #d97706;
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  color: #92400e;
+  font-weight: 600;
+}
 
-- [DORA Capabilities](https://dora.dev/devops-capabilities/) — DevOps maturity assessment
-- [Four Keys Project](https://github.com/dora-team/fourkeys) — DORA metrics implementation
-- [Burnout Prevention Toolkit](https://www.mindgarden.com/maslach-burnout-toolkit/) — Christina Maslach's research tools
+/* Discussion Questions Styling */
+.discussion-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.discussion-card {
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border-left: 5px solid #d97706;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.discussion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
+  border-left-color: #92400e;
+}
+
+.discussion-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.discussion-header i {
+  color: #d97706;
+  font-size: 1.2rem;
+}
+
+.discussion-header h4 {
+  margin: 0;
+  color: #92400e;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.discussion-content p {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.discussion-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discussion-prompts span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
+}
+
+/* Action Items Styling */
+.action-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.action-item-card {
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border-left: 5px solid #d97706;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
+  border-left-color: #92400e;
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.action-header i {
+  color: #d97706;
+  font-size: 1.2rem;
+}
+
+.action-header h4 {
+  margin: 0;
+  color: #92400e;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.action-item-card p {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.action-guidance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-guidance span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
+}
+
+/* Related Resources Styling */
+.related-resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid #d97706;
+}
+
+.resource-category {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
+  transition: all 0.3s ease;
+}
+
+.resource-category:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
+}
+
+.resource-category h3 {
+  color: #d97706;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #fef3c7;
+  padding-bottom: 0.5rem;
+}
+
+.resource-category h3 i {
+  margin-right: 0.5rem;
+  color: #92400e;
+}
+
+.resource-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-links li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.resource-links a {
+  color: #d97706;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.resource-links a:hover {
+  color: #92400e;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for Related Resources */
+@media (max-width: 768px) {
+  .related-resources {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .resource-category {
+    padding: 1.25rem;
+  }
+  
+  .resource-category h3 {
+    font-size: 1rem;
+  }
+  
+  .resource-links li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .related-resources {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .resource-category {
+    padding: 1rem;
+  }
+}
+</style>
