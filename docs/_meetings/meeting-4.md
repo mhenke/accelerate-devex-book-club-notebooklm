@@ -319,27 +319,159 @@ dora_color: '#7c3aed'
 
 ### Discussion Questions
 
-### Transformational Leadership Assessment
+<div class="discussion-questions-grid" markdown="0">
+  <!-- Transformational Leadership Assessment -->
+  <div class="discussion-section" markdown="0">
+    <div class="discussion-section-header" markdown="0">
+      <i class="fas fa-users"></i>
+      <h4>Transformational Leadership Assessment</h4>
+    </div>
+    
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-star"></i>
+        <h4>Leadership Characteristics</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>Which of the five transformational leadership dimensions are strongest/weakest in your organization?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• Vision clarity and communication</span>
+          <span>• Inspirational vs. command-and-control approach</span>
+          <span>• Intellectual stimulation and innovation support</span>
+          <span>• Personal recognition and supportive leadership</span>
+        </div>
+      </div>
+    </div>
 
-1. **Leadership Characteristics:** Which of the five transformational leadership dimensions are strongest/weakest in your organization? How do current leaders inspire and support vs command and control?
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-graduation-cap"></i>
+        <h4>Investment in Learning</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>How does your organization invest in developing team capabilities?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• Training budgets and conference attendance</span>
+          <span>• Hack days and experimentation time allocation</span>
+          <span>• Learning culture and knowledge sharing</span>
+          <span>• Leadership development programs</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-2. **Investment in Learning:** How does your organization currently invest in developing team capabilities? What gaps exist in training budgets, conference attendance, or experimentation time?
+  <!-- ING Model Application -->
+  <div class="discussion-section" markdown="0">
+    <div class="discussion-section-header" markdown="0">
+      <i class="fas fa-sitemap"></i>
+      <h4>ING Model Application</h4>
+    </div>
+    
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-eye"></i>
+        <h4>Visual Management</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>How might ING's Obeya rooms be adapted to your context?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• Strategic objectives visualization</span>
+          <span>• Performance gaps and problem tracking</span>
+          <span>• Team collaboration spaces</span>
+          <span>• Escalation and resolution workflows</span>
+        </div>
+      </div>
+    </div>
 
-### ING Model Application
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-puzzle-piece"></i>
+        <h4>Team Structure</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>Could ING's tribe/squad structure improve your organization?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• Cross-functional team formation</span>
+          <span>• Customer focus vs. functional silos</span>
+          <span>• Knowledge sharing across teams</span>
+          <span>• Organizational change requirements</span>
+        </div>
+      </div>
+    </div>
 
-3. **Visual Management:** How might elements of ING's Obeya rooms be adapted to your context? What strategic objectives, performance gaps, and problems would benefit from visual management?
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-comments"></i>
+        <h4>Communication Flow</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>How does problem escalation work in your teams?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• Current escalation patterns and bottlenecks</span>
+          <span>• "Catchball" communication opportunities</span>
+          <span>• Information flow improvements</span>
+          <span>• Rapid resolution mechanisms</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-4. **Team Structure:** Could aspects of ING's tribe/squad structure improve collaboration and customer focus in your organization? What would need to change?
+  <!-- Transformation Discipline -->
+  <div class="discussion-section" markdown="0">
+    <div class="discussion-section-header" markdown="0">
+      <i class="fas fa-rocket"></i>
+      <h4>Transformation Discipline</h4>
+    </div>
+    
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-question-circle"></i>
+        <h4>Coaching vs Commanding</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>How can leaders shift toward supportive questions rather than direct orders?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• Current leadership communication patterns</span>
+          <span>• Coaching question examples and practice</span>
+          <span>• Psychological safety and trust building</span>
+          <span>• Team autonomy development</span>
+        </div>
+      </div>
+    </div>
 
-5. **Communication Flow:** How does problem escalation and resolution currently work in your teams? Where could "catchball" communication patterns improve information flow?
-
-### Transformation Discipline
-
-6. **Coaching vs Commanding:** What would it look like for leaders in your organization to shift toward asking supportive questions rather than giving direct orders?
-
-7. **"Make It Your Own":** How can your team adopt a philosophy of experimentation and adaptation rather than copying practices? What from ING's approach resonates most with your context?
-
-8. **Transformation Readiness:** Does your organization have the discipline and patience required for sustainable culture change? What are the biggest obstacles?
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-lightbulb"></i>
+        <h4>"Make It Your Own"</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>How can your team adopt experimentation vs. copying practices?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• ING practices that resonate with your context</span>
+          <span>• Adaptation strategies for your environment</span>
+          <span>• Experimentation culture development</span>
+          <span>• Learning from failure and iteration</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="discussion-card" markdown="0">
+      <div class="discussion-header" markdown="0">
+        <i class="fas fa-chart-bar"></i>
+        <h4>Transformation Readiness</h4>
+      </div>
+      <div class="discussion-content" markdown="0">
+        <p><strong>Does your organization have the discipline and patience for sustainable culture change?</strong></p>
+        <div class="discussion-prompts" markdown="0">
+          <span>• Long-term commitment to learning and improvement</span>
+          <span>• Patience with gradual vs. immediate results</span>
+          <span>• Investment in people development</span>
+          <span>• Biggest obstacles to transformation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Practical Exercises
 
@@ -382,24 +514,162 @@ dora_color: '#7c3aed'
 
 ### Action Items and Commitments
 
-### Individual Leadership Commitments
+<div class="action-items-section" markdown="0">
+  <div class="action-section-header" markdown="0">
+    <i class="fas fa-user"></i>
+    <h4>Individual Leadership Commitments</h4>
+  </div>
+  
+  <div class="action-items-grid" markdown="0">
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-comments"></i>
+        <h4>Coaching Practice</h4>
+      </div>
+      <p><strong>Use at least one supportive coaching question this week instead of giving direct instruction</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Ask "Help me understand..." instead of "Why didn't you..."</span>
+        <span>• Try "What support do you need?" vs giving solutions</span>
+        <span>• Practice with low-stakes situations first</span>
+      </div>
+    </div>
 
-- **Coaching Practice:** Use at least one supportive coaching question this week instead of giving direct instruction
-- **Learning Investment:** Identify one way to invest in your team's capability development (training, conference, experimentation time)
-- **Visual Management:** Create simple visual display of your team's current work and problems
-- **Transformation Discipline:** Choose one recurring process and work with team to define "standard work" approach
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-graduation-cap"></i>
+        <h4>Learning Investment</h4>
+      </div>
+      <p><strong>Identify one way to invest in your team's capability development</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Training budget allocation or conference attendance</span>
+        <span>• Experimentation time (20% time, hack days)</span>
+        <span>• Mentoring or skills development program</span>
+      </div>
+    </div>
 
-### Team Experiments
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-eye"></i>
+        <h4>Visual Management</h4>
+      </div>
+      <p><strong>Create simple visual display of your team's current work and problems</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Use physical board or digital tool for work visualization</span>
+        <span>• Include current bottlenecks and escalation paths</span>
+        <span>• Make problems and status visible to all team members</span>
+      </div>
+    </div>
 
-- **Blameless Learning:** Conduct one "failure leads to inquiry" discussion about recent setback, focusing purely on system improvement
-- **Communication Flow:** Map current problem escalation process and identify one improvement
-- **Standard Work Development:** Define team's current best practice for one recurring activity (stand-ups, deployments, code review)
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-cogs"></i>
+        <h4>Transformation Discipline</h4>
+      </div>
+      <p><strong>Choose one recurring process and work with team to define "standard work" approach</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Document current best practice for the process</span>
+        <span>• Get team agreement on the standard approach</span>
+        <span>• Plan regular review and improvement cycles</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-### Organizational Assessment
+<div class="action-items-section" markdown="0">
+  <div class="action-section-header" markdown="0">
+    <i class="fas fa-users"></i>
+    <h4>Team Experiments</h4>
+  </div>
+  
+  <div class="action-items-grid" markdown="0">
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-search"></i>
+        <h4>Blameless Learning</h4>
+      </div>
+      <p><strong>Conduct one "failure leads to inquiry" discussion about recent setback</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Focus purely on system improvement, not individual blame</span>
+        <span>• Ask "What conditions led to this outcome?"</span>
+        <span>• Document lessons learned and systemic changes</span>
+      </div>
+    </div>
 
-- **Leadership Characteristic Gap Analysis:** Identify which transformational leadership dimensions need development
-- **ING Practice Adaptation:** Choose one element from ING case study to pilot in adapted form
-- **Investment Planning:** Propose specific budget/time allocation for team learning and experimentation
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-route"></i>
+        <h4>Communication Flow</h4>
+      </div>
+      <p><strong>Map current problem escalation process and identify one improvement</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Document who gets involved and when</span>
+        <span>• Identify bottlenecks or unnecessary handoffs</span>
+        <span>• Test one improvement to speed up resolution</span>
+      </div>
+    </div>
+
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-clipboard-list"></i>
+        <h4>Standard Work Development</h4>
+      </div>
+      <p><strong>Define team's current best practice for one recurring activity</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Choose stand-ups, deployments, or code review</span>
+        <span>• Document what works well currently</span>
+        <span>• Get team consensus on the standard approach</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="action-items-section" markdown="0">
+  <div class="action-section-header" markdown="0">
+    <i class="fas fa-building"></i>
+    <h4>Organizational Assessment</h4>
+  </div>
+  
+  <div class="action-items-grid" markdown="0">
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-chart-bar"></i>
+        <h4>Leadership Gap Analysis</h4>
+      </div>
+      <p><strong>Identify which transformational leadership dimensions need development</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Rate current leadership on vision, communication, support</span>
+        <span>• Identify biggest gaps in intellectual stimulation</span>
+        <span>• Plan specific development activities for leaders</span>
+      </div>
+    </div>
+
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-puzzle-piece"></i>
+        <h4>ING Practice Adaptation</h4>
+      </div>
+      <p><strong>Choose one element from ING case study to pilot in adapted form</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Select Obeya rooms, catchball communication, or squad structure</span>
+        <span>• Adapt the practice to fit your organizational context</span>
+        <span>• Plan small pilot with measurable success criteria</span>
+      </div>
+    </div>
+
+    <div class="action-item-card" markdown="0">
+      <div class="action-header" markdown="0">
+        <i class="fas fa-dollar-sign"></i>
+        <h4>Investment Planning</h4>
+      </div>
+      <p><strong>Propose specific budget/time allocation for team learning and experimentation</strong></p>
+      <div class="action-guidance" markdown="0">
+        <span>• Calculate cost of training, conferences, or tools</span>
+        <span>• Propose dedicated experimentation time allocation</span>
+        <span>• Present business case for transformation investment</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Culminating Reflection
 
@@ -414,6 +684,29 @@ This question embodies the entire Accelerate philosophy:
 - Address real pain points that teams experience
 - Create conditions for continuous improvement
 
+### Related Resources
+
+<div class="related-resources" markdown="0">
+  <div class="resource-category" markdown="0">
+    <h3><i class="fas fa-users"></i> Leadership & Transformation</h3>
+    <ul class="resource-links">
+      <li><a href="https://dora.dev/capabilities/transformational-leadership/" target="_blank">Transformational Leadership</a> - DORA guidance on the five leadership dimensions</li>
+      <li><a href="https://itrevolution.com/articles/five-leadership-practices/" target="_blank">Leadership Practices</a> - IT Revolution's transformational leadership guide</li>
+      <li><a href="https://www.lean.org/lexicon-terms/obeya/" target="_blank">Obeya Rooms</a> - Visual management and collaborative decision-making</li>
+      <li><a href="https://continuousdelivery.com/implementing/architecture/" target="_blank">Scaling Agile Architecture</a> - Organizational scaling patterns</li>
+    </ul>
+  </div>
+
+  <div class="resource-category" markdown="0">
+    <h3><i class="fas fa-rocket"></i> Transformation Guides</h3>
+    <ul class="resource-links">
+      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DevOps Capabilities</a> - Complete DORA capability assessment framework</li>
+      <li><a href="https://itrevolution.com/articles/starting-devops-transformation/" target="_blank">Starting DevOps Transformation</a> - Practical transformation guidance</li>
+      <li><a href="https://www.acceleratebook.com/" target="_blank">Accelerate Book</a> - Complete research findings and implementation guide</li>
+    </ul>
+  </div>
+</div>
+
 ### Next Steps: Continue Your Transformation
 
 Ready to take your DevOps transformation journey further? Visit our [**Transformation Complete**]({{ '/transformation-complete/' | relative_url }}) page for:
@@ -426,6 +719,16 @@ Ready to take your DevOps transformation journey further? Visit our [**Transform
 The transformation continues beyond this book club - use these tools to build your high-performing technology organization!
 
 <style>
+/* H3 Themed Styling */
+h3 {
+  border-left: 4px solid #7c3aed;
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  color: #6d28d9;
+  font-weight: 600;
+}
+
 /* Purple Color Scheme for Meeting 4 */
 :root {
   --meeting-4-primary: #7c3aed;
@@ -1135,17 +1438,291 @@ The transformation continues beyond this book club - use these tools to build yo
   }
 }
 
-/* Action Items Styling */
-.action-items {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+/* Discussion Questions Styling */
+.discussion-questions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
-.action-items li {
-  display: block;
-  padding: 0.5rem 0;
+.discussion-section {
+  background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 2px solid var(--meeting-4-primary);
+}
+
+.discussion-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--meeting-4-secondary);
+}
+
+.discussion-section-header i {
+  color: var(--meeting-4-primary);
+  font-size: 1.3rem;
+}
+
+.discussion-section-header h4 {
+  margin: 0;
+  color: var(--meeting-4-darker);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.discussion-section .discussion-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border-left: 5px solid var(--meeting-4-primary);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.discussion-section .discussion-card:last-child {
+  margin-bottom: 0;
+}
+
+.discussion-section .discussion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
+  border-left-color: var(--meeting-4-darker);
+}
+
+.discussion-section .discussion-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.discussion-section .discussion-header i {
+  color: var(--meeting-4-primary);
+  font-size: 1.2rem;
+}
+
+.discussion-section .discussion-header h4 {
+  margin: 0;
+  color: var(--meeting-4-darker);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.discussion-section .discussion-content p {
+  margin: 0 0 1rem 0;
+  color: #374151;
   font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.discussion-section .discussion-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discussion-section .discussion-prompts span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
+}
+
+/* Action Items Styling */
+.action-items-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
+  border-radius: 20px;
+  border: 2px solid var(--meeting-4-primary);
+}
+
+.action-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--meeting-4-secondary);
+}
+
+.action-section-header i {
+  color: var(--meeting-4-primary);
+  font-size: 1.3rem;
+}
+
+.action-section-header h4 {
+  margin: 0;
+  color: var(--meeting-4-darker);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.action-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.action-item-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border-left: 5px solid var(--meeting-4-primary);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
+  border-left-color: var(--meeting-4-darker);
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.action-header i {
+  color: var(--meeting-4-primary);
+  font-size: 1.2rem;
+}
+
+.action-header h4 {
+  margin: 0;
+  color: var(--meeting-4-darker);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.action-item-card p {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.action-guidance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-guidance span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
+}
+
+/* Related Resources Styling */
+.related-resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid var(--meeting-4-primary);
+}
+
+.resource-category {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
+  transition: all 0.3s ease;
+}
+
+.resource-category:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
+}
+
+.resource-category h3 {
+  color: var(--meeting-4-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid var(--meeting-4-light);
+  padding-bottom: 0.5rem;
+}
+
+.resource-category h3 i {
+  margin-right: 0.5rem;
+  color: var(--meeting-4-darker);
+}
+
+.resource-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-links li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.resource-links a {
+  color: var(--meeting-4-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.resource-links a:hover {
+  color: var(--meeting-4-darker);
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for Related Resources */
+@media (max-width: 768px) {
+  .related-resources {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .resource-category {
+    padding: 1.25rem;
+  }
+  
+  .resource-category h3 {
+    font-size: 1rem;
+  }
+  
+  .resource-links li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .related-resources {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .resource-category {
+    padding: 1rem;
+  }
 }
 
 </style>

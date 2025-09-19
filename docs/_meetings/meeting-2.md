@@ -351,36 +351,150 @@ dora_color: '#0F766E'
 
 ### Discussion Questions
 
-1. **CD Maturity Assessment:** Which CD practices is your organization currently implementing well/poorly?
-2. **Architecture Dependencies:** What prevents your team from deploying independently?
-3. **Tool Autonomy:** How much freedom do teams have in tool selection? What are the constraints?
-4. **Security Integration:** How early in your development process is security considered?
+<div class="discussion-questions-grid" markdown="0">
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-chart-line"></i>
+      <h4>CD Maturity Assessment</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>Which CD practices is your organization currently implementing well/poorly?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Trunk-based development and branching strategy</span>
+        <span>• Automated testing coverage and quality</span>
+        <span>• Deployment pipeline automation</span>
+        <span>• Feature flags and rollback capabilities</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-project-diagram"></i>
+      <h4>Architecture Dependencies</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>What prevents your team from deploying independently?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Shared databases and data dependencies</span>
+        <span>• Coordinated release schedules</span>
+        <span>• Service coupling and API contracts</span>
+        <span>• Infrastructure and deployment bottlenecks</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-tools"></i>
+      <h4>Tool Autonomy</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>How much freedom do teams have in tool selection? What are the constraints?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Security and compliance requirements</span>
+        <span>• Standardization vs. innovation balance</span>
+        <span>• Budget and licensing considerations</span>
+        <span>• Support and maintenance capabilities</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-card" markdown="0">
+    <div class="discussion-header" markdown="0">
+      <i class="fas fa-shield-alt"></i>
+      <h4>Security Integration</h4>
+    </div>
+    <div class="discussion-content" markdown="0">
+      <p><strong>How early in your development process is security considered?</strong></p>
+      <div class="discussion-prompts" markdown="0">
+        <span>• Security testing in CI/CD pipelines</span>
+        <span>• Developer security training and awareness</span>
+        <span>• Code review and static analysis integration</span>
+        <span>• Shift-left vs. security gate approaches</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Action Items for Next Meeting
 
-<ul class="action-items">
-<li>[ ] Identify one manual process that could be automated</li>
-<li>[ ] Map current dependencies that prevent independent deployment</li>
-<li>[ ] Experiment with one CD practice (trunk-based development, test automation, etc.)</li>
-</ul>
+<div class="action-items-grid" markdown="0">
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-robot"></i>
+      <h4>Automate Manual Process</h4>
+    </div>
+    <p><strong>Identify one manual process that could be automated</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Look for repetitive deployment or testing tasks</span>
+      <span>• Consider configuration management automation</span>
+      <span>• Start small - choose something achievable in 1-2 weeks</span>
+    </div>
+  </div>
+
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-project-diagram"></i>
+      <h4>Map Dependencies</h4>
+    </div>
+    <p><strong>Map current dependencies that prevent independent deployment</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Document shared databases and services</span>
+      <span>• Identify coordination requirements with other teams</span>
+      <span>• Note infrastructure and release dependencies</span>
+    </div>
+  </div>
+
+  <div class="action-item-card" markdown="0">
+    <div class="action-header" markdown="0">
+      <i class="fas fa-flask"></i>
+      <h4>Try CD Practice</h4>
+    </div>
+    <p><strong>Experiment with one CD practice (trunk-based development, test automation, etc.)</strong></p>
+    <div class="action-guidance" markdown="0">
+      <span>• Choose based on current maturity level</span>
+      <span>• Set measurable goals for the experiment</span>
+      <span>• Plan to share results with team in next meeting</span>
+    </div>
+  </div>
+</div>
 
 ### Related Resources
 
-#### CI/CD Tools & Platforms
+<div class="related-resources" markdown="0">
+  <div class="resource-category" markdown="0">
+    <h3><i class="fas fa-tools"></i> CI/CD Tools & Platforms</h3>
+    <ul class="resource-links">
+      <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> - Workflow automation and CI/CD platform</li>
+      <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a> - Open source automation server for CI/CD pipelines</li>
+      <li><a href="https://circleci.com/" target="_blank">CircleCI</a> - Continuous integration and deployment platform</li>
+      <li><a href="https://argoproj.github.io/cd/" target="_blank">Argo CD</a> - GitOps continuous delivery for Kubernetes</li>
+    </ul>
+  </div>
 
-- [GitHub Actions](https://github.com/features/actions) — Workflow automation
-- [Jenkins](https://www.jenkins.io/) — Open source automation server
-- [CircleCI](https://circleci.com/) — Continuous integration platform
-- [Argo CD](https://argoproj.github.io/cd/) — GitOps continuous delivery
-
-#### Security Integration
-
-- [OWASP DevSecOps](https://owasp.org/www-project-devsecops-guideline/) — Security guidelines
-- [Snyk](https://snyk.io/) — Developer security platform
-- [GitHub Security](https://github.com/features/security) — Built-in security features
-- [SonarQube](https://www.sonarqube.org/) — Code quality and security
+  <div class="resource-category" markdown="0">
+    <h3><i class="fas fa-shield-alt"></i> Security Integration</h3>
+    <ul class="resource-links">
+      <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps Guidelines</a> - Security integration best practices</li>
+      <li><a href="https://snyk.io/" target="_blank">Snyk</a> - Developer security platform for vulnerability scanning</li>
+      <li><a href="https://github.com/features/security" target="_blank">GitHub Security</a> - Built-in security features and scanning</li>
+      <li><a href="https://www.sonarqube.org/" target="_blank">SonarQube</a> - Code quality and security analysis platform</li>
+    </ul>
+  </div>
+</div>
 
 <style>
+/* H3 Themed Styling */
+h3 {
+  border-left: 4px solid #0F766E;
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  color: #134e4a;
+  font-weight: 600;
+}
+
 /* Meeting Navigation */
 .meeting-navigation {
   display: flex;
@@ -448,17 +562,15 @@ dora_color: '#0F766E'
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-radius: 16px;
   border: 2px solid #0F766E;
 }
 
 .resource-category {
   background: white;
-  
   padding: 1.5rem;
+  border-top: 4px solid #0F766E;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #0F766E;
 }
 
 .resource-category:hover {
@@ -1551,17 +1663,132 @@ dora_color: '#0F766E'
   }
 }
 
-/* Action Items Styling */
-.action-items {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+/* Discussion Questions Styling */
+.discussion-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-.action-items li {
-  display: block;
-  padding: 0.5rem 0;
+.discussion-card {
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  padding: 1.5rem;
+  border-top: 4px solid #0F766E;
+  box-shadow: 0 4px 15px rgba(15, 118, 110, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.discussion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.2);
+  border-top-color: #134e4a;
+}
+
+.discussion-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.discussion-header i {
+  color: #0F766E;
+  font-size: 1.2rem;
+}
+
+.discussion-header h4 {
+  margin: 0;
+  color: #134e4a;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.discussion-content p {
+  margin: 0 0 1rem 0;
+  color: #374151;
   font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.discussion-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discussion-prompts span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
+}
+
+/* Action Items Styling */
+.action-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.action-item-card {
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  padding: 1.5rem;
+  border-top: 4px solid #0F766E;
+  box-shadow: 0 4px 15px rgba(15, 118, 110, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.2);
+  border-top-color: #134e4a;
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.action-header i {
+  color: #0F766E;
+  font-size: 1.2rem;
+}
+
+.action-header h4 {
+  margin: 0;
+  color: #134e4a;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.action-item-card p {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.action-guidance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-guidance span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e5e7eb;
+  line-height: 1.4;
 }
 </style>
 
