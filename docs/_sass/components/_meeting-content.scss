@@ -160,7 +160,6 @@
 .meeting-content h2:contains('Watch the') + p {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border: 1px solid var(--meeting-border);
-
   padding: 1rem 1.5rem;
   margin: 1rem 0 2rem;
   font-style: italic;
@@ -259,7 +258,6 @@
 .meeting-content audio,
 .meeting-content video {
   width: 100%;
-
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   margin: 1rem 0;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -275,7 +273,6 @@
   border-left: 4px solid var(--meeting-primary);
   margin: 1.5rem 0;
   padding: 1.5rem;
-
   font-style: italic;
   font-size: 1.1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);

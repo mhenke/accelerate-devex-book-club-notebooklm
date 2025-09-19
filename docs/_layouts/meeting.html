@@ -20,21 +20,21 @@ layout: default
       <h2 class="meeting-subtitle">{{ page.subtitle }}</h2>
       {% endif %} {% if page.chapters %}
       <div class="chapters-badge">
-        <i class="fas fa-book"></i> Chapters {{ page.chapters }}
+        <span class="chapter-icon" data-icon="book"></span> Chapters {{ page.chapters }}
       </div>
       {% endif %}
     </div>
     <div class="meeting-icon">
       {% assign week = page.week | plus: 0 %} {% case week %} {% when 1 %}
-      <i class="fas fa-rocket"></i>
+      <span class="meeting-icon-span" data-icon="rocket"></span>
       {% when 3 %}
-      <i class="fas fa-users"></i>
+      <span class="meeting-icon-span" data-icon="users"></span>
       {% when 5 %}
-      <i class="fas fa-sitemap"></i>
+      <span class="meeting-icon-span" data-icon="sitemap"></span>
       {% when 7 %}
-      <i class="fas fa-crown"></i>
+      <span class="meeting-icon-span" data-icon="crown"></span>
       {% else %}
-      <i class="fas fa-book"></i>
+      <span class="meeting-icon-span" data-icon="book"></span>
       {% endcase %}
     </div>
   </div>
@@ -153,6 +153,15 @@ layout: default
           nextOl.classList.add('discussion-questions-list');
         }
       }
+    });
+
+    // Convert data-icon spans to Font Awesome icons
+    const iconSpans = document.querySelectorAll('[data-icon]');
+    iconSpans.forEach((span) => {
+      const iconName = span.dataset.icon;
+      const iconElement = document.createElement('i');
+      iconElement.className = `fas fa-${iconName}`;
+      span.parentNode.replaceChild(iconElement, span);
     });
   });
 </script>
