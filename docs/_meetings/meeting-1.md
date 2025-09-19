@@ -537,3 +537,45 @@ document.addEventListener('keydown', function(event) {
 
   </aside>
 </div>
+
+<!-- NEXT MEETING SECTION -->
+<section class="next-meeting-section" aria-labelledby="next-meeting-heading">
+  <h2 id="next-meeting-heading" style="margin-top:2rem;">Next Meeting</h2>
+  <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
+  <a href="/accelerate-devex-book-club-notebooklm/docs/_meetings/meeting-2.html" class="next-meeting-btn" role="button" aria-label="Go to Meeting 2: Technical Excellence">
+    Meeting 2: Technical Excellence
+  </a>
+</section>
+
+<style>
+.next-meeting-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: none;
+  margin: 2rem 0 0 0;
+}
+.next-meeting-btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  border: none;
+}
+.next-meeting-btn:focus {
+  outline: 3px solid #2196F3;
+  outline-offset: 2px;
+}
+.next-meeting-btn:hover {
+  background-color: #388e3c;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+</style>
+</div>
