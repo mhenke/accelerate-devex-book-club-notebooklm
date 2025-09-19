@@ -1,3 +1,4 @@
+import { percySnapshot } from '@percy/playwright';
 import { expect, test } from '@playwright/test';
 
 test.describe('Visual Regression Testing', () => {
@@ -31,6 +32,9 @@ test.describe('Visual Regression Testing', () => {
         threshold: 0.2,
         maxDiffPixels: 100,
       });
+
+      // Percy visual snapshot
+      await percySnapshot(page, `${meeting.name} Full Page`);
 
       // Hero section screenshot
       const heroSection = page.locator('.meeting-hero');
@@ -87,6 +91,29 @@ test.describe('Visual Regression Testing', () => {
         fullPage: true,
         threshold: 0.2,
       });
+    }
+  });
+
+  test('Key Pages Visual Snapshots', async ({ page }) => {
+    const baseURL =
+      'http://localhost:4000/accelerate-devex-book-club-notebooklm';
+
+    // Homepage
+    await page.goto(baseURL + '/');
+    await page.waitForLoadState('networkidle');
+    await percySnapshot(page, 'Homepage');
+
+    // Navigation pages
+    const pages = [
+      { url: '/meetings/', name: 'Meetings Index' },
+      { url: '/resources/', name: 'Resources Page' },
+      { url: '/prompts/', name: 'Prompts Page' },
+    ];
+
+    for (const pageInfo of pages) {
+      await page.goto(baseURL + pageInfo.url);
+      await page.waitForLoadState('networkidle');
+      await percySnapshot(page, pageInfo.name);
     }
   });
 });
