@@ -4,27 +4,27 @@ title: Home
 ---
 
 <div class="hero-banner">
-  <div class="hero-content">
-    <h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing<br>Technology Organizations</h1>
-    <div class="site-title">
-      <h2 id="accelerate-devex-book-club">Accelerate DevEx Book Club</h2>
-    </div>
-    <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
-  </div>
-  <div class="hero-metrics">
-    <a href="{{ '/meetings' | relative_url }}" class="metric-icon">
-      <i class="fas fa-calendar-alt"></i>
-      <span>Meetings</span>
-    </a>
-    <a href="{{ '/resources' | relative_url }}" class="metric-icon">
-      <i class="fas fa-book-open"></i>
-      <span>Resources</span>
-    </a>
-    <a href="{{ '/prompts' | relative_url }}" class="metric-icon">
-      <i class="fas fa-microphone-alt"></i>
-      <span>AI Content</span>
-    </a>
-  </div>
+<div class="hero-content">
+<h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing<br>Technology Organizations</h1>
+<div class="site-title">
+<h2 id="accelerate-devex-book-club">Accelerate DevEx Book Club</h2>
+</div>
+<p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
+</div>
+<div class="hero-metrics">
+<a href="{{ '/meetings' | relative_url }}" class="metric-icon">
+<i class="fas fa-calendar-alt"></i>
+<span>Meetings</span>
+</a>
+<a href="{{ '/resources' | relative_url }}" class="metric-icon">
+<i class="fas fa-book-open"></i>
+<span>Resources</span>
+</a>
+<a href="{{ '/prompts' | relative_url }}" class="metric-icon">
+<i class="fas fa-microphone-alt"></i>
+<span>AI Content</span>
+</a>
+</div>
 </div>
 
 <div class="welcome-start">
@@ -39,76 +39,76 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 ## <i class="fas fa-bullseye"></i> What You'll Learn
 
-<div class="learning-highlights">
-  <div class="highlight-grid">
-    <div class="highlight-card meeting-1">
-      <div class="highlight-icon">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <h3>DORA Metrics</h3>
-      <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
-      <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-link">
-        <div class="meeting-badge">
-          <span class="meeting-number">Meeting 1:</span>
-          <span class="meeting-title">Foundation</span>
-        </div>
-        <div class="meeting-subtitle">The Myth and the Measurement</div>
-      </a>
-    </div>
-    
-    <div class="highlight-card meeting-2">
-      <div class="highlight-icon">
-        <i class="fas fa-rocket"></i>
-      </div>
-      <h3>Continuous Delivery</h3>
-      <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
-      <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-link">
-        <div class="meeting-badge">
-          <span class="meeting-number">Meeting 2:</span>
-          <span class="meeting-title">Technical Excellence</span>
-        </div>
-        <div class="meeting-subtitle">Continuous Delivery & Architecture</div>
-      </a>
-    </div>
-    
-    <div class="highlight-card meeting-3">
-      <div class="highlight-icon">
-        <i class="fas fa-columns"></i>
-      </div>
-      <h3>Lean Management</h3>
-      <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
-      <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-link">
-        <div class="meeting-badge">
-          <span class="meeting-number">Meeting 3:</span>
-          <span class="meeting-title">Management</span>
-        </div>
-        <div class="meeting-subtitle">Product Development & Sustainability</div>
-      </a>
-    </div>
-    
-    <div class="highlight-card meeting-4">
-      <div class="highlight-icon">
-        <i class="fas fa-users"></i>
-      </div>
-      <h3>Transformational Leadership</h3>
-      <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
-      <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-link">
-        <div class="meeting-badge">
-          <span class="meeting-number">Meeting 4:</span>
-          <span class="meeting-title">Leadership</span>
-        </div>
-        <div class="meeting-subtitle">Transformation & Case Study</div>
-      </a>
-    </div>
-  </div>
+<div class="learning-highlights" markdown="0">
+<div class="highlight-grid">
+<div class="highlight-card meeting-1">
+<div class="highlight-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3>DORA Metrics</h3>
+<p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-link">
+<div class="meeting-badge">
+<span class="meeting-number">Meeting 1:</span>
+<span class="meeting-title">Foundation</span>
+</div>
+<div class="meeting-subtitle">The Myth and the Measurement</div>
+</a>
+</div>
+
+<div class="highlight-card meeting-2">
+<div class="highlight-icon">
+<i class="fas fa-rocket"></i>
+</div>
+<h3>Continuous Delivery</h3>
+<p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
+<a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-link">
+<div class="meeting-badge">
+<span class="meeting-number">Meeting 2:</span>
+<span class="meeting-title">Technical Excellence</span>
+</div>
+<div class="meeting-subtitle">Continuous Delivery & Architecture</div>
+</a>
+</div>
+
+<div class="highlight-card meeting-3">
+<div class="highlight-icon">
+<i class="fas fa-columns"></i>
+</div>
+<h3>Lean Management</h3>
+<p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
+<a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-link">
+<div class="meeting-badge">
+<span class="meeting-number">Meeting 3:</span>
+<span class="meeting-title">Management</span>
+</div>
+<div class="meeting-subtitle">Product Development & Sustainability</div>
+</a>
+</div>
+
+<div class="highlight-card meeting-4">
+<div class="highlight-icon">
+<i class="fas fa-users"></i>
+</div>
+<h3>Transformational Leadership</h3>
+<p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
+<a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-link">
+<div class="meeting-badge">
+<span class="meeting-number">Meeting 4:</span>
+<span class="meeting-title">Leadership</span>
+</div>
+<div class="meeting-subtitle">Transformation & Case Study</div>
+</a>
+</div>
+</div>
 </div>
 
 <p style="text-align: center; margin-top: 2rem;">
-  <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-meeting-1"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-meeting-1"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
 </p>
 
 <p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
-  Ready to transform your organization into a high-performing technology team?
+Ready to transform your organization into a high-performing technology team?
 </p>
 
 <div class="success-metrics">
@@ -134,85 +134,65 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <h2 class="section-accent"><i class="fas fa-tools"></i> Resources</h2>
 
 <div class="resources-grid">
-  <div class="resource-card">
-    <h3><i class="fas fa-book"></i> Meeting Materials</h3>
-    <p>Detailed agendas, discussion questions, and action items for each session.</p>
-    <a href="{{ '/meetings' | relative_url }}" class="resource-link">View Meeting Guides →</a>
-  </div>
-
-  <div class="resource-card">
-    <h3><i class="fas fa-headphones"></i> Audio & Video Content</h3>
-    <p>NotebookLM prompts for creating podcasts and videos to supplement your reading.</p>
-    <a href="{{ '/prompts' | relative_url }}" class="resource-link">Content Generation →</a>
-  </div>
-
-  <div class="resource-card">
-    <h3><i class="fas fa-rss"></i> RSS Feeds & Downloads</h3>
-    <p>Subscribe to podcast feeds or download audio/video files directly to your device.</p>
-    <a href="{{ '/feeds' | relative_url }}" class="resource-link">Subscribe & Download →</a>
-  </div>
-
-  <div class="resource-card">
-    <h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
-    <p>Activities, reflection questions, and experiments to try between sessions.</p>
-    <a href="{{ '/resources' | relative_url }}" class="resource-link">Additional Resources →</a>
-  </div>
-
-  <div class="resource-card book-required">
-    <div class="book-visual">
-      <div class="book-3d">
-        <div class="book-cover">
-          <h4>ACCELERATE</h4>
-          <p class="book-authors">Forsgren • Humble • Kim</p>
-          <div class="book-subtitle">The Science of Lean Software and DevOps</div>
-        </div>
-        <div class="book-spine"></div>
-      </div>
-      <h3>Required Reading</h3>
-      <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
-    </div>
-  </div>
-
-  <div class="resource-card">
-    <h3><i class="fas fa-book"></i> Foundation Resources</h3>
-    <p>Essential research and background materials supporting the book club content.</p>
-    <ul class="foundation-resources">
-      <li><a href="https://dora.dev/research/" target="_blank" rel="noopener noreferrer">State of DevOps Report Archive</a> - Historical DevOps research and trends</li>
-      <li><a href="https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance" target="_blank" rel="noopener noreferrer">DevOps Research and Assessment</a> - Google Cloud DORA insights</li>
-      <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank" rel="noopener noreferrer">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>
-      <li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank" rel="noopener noreferrer">IT Revolution Westrum Model</a> - Detailed explanation of culture types</li>
-    </ul>
-  </div>
+<div class="resource-card">
+<h3><i class="fas fa-book"></i> Meeting Materials</h3>
+<p>Detailed agendas, discussion questions, and action items for each session.</p>
+<a href="{{ '/meetings' | relative_url }}" class="resource-link">View Meeting Guides →</a>
 </div>
 
-<div class="ai-attribution">
+<div class="resource-card">
+<h3><i class="fas fa-headphones"></i> Audio & Video Content</h3>
+<p>NotebookLM prompts for creating podcasts and videos to supplement your reading.</p>
+<a href="{{ '/prompts' | relative_url }}" class="resource-link">Content Generation →</a>
+</div>
+
+<div class="resource-card">
+<h3><i class="fas fa-rss"></i> RSS Feeds & Downloads</h3>
+<p>Subscribe to podcast feeds or download audio/video files directly to your device.</p>
+<a href="{{ '/feeds' | relative_url }}" class="resource-link">Subscribe & Download →</a>
+</div>
+
+<div class="resource-card">
+<h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
+<p>Activities, reflection questions, and experiments to try between sessions.</p>
+<a href="{{ '/resources' | relative_url }}" class="resource-link">Additional Resources →</a>
+</div>
+
+<div class="resource-card book-required">
+<div class="book-visual">
+<div class="book-3d">
+<div class="book-cover">
+<h4>ACCELERATE</h4>
+<p class="book-authors">Forsgren • Humble • Kim</p>
+<div class="book-subtitle">The Science of Lean Software and DevOps</div>
+</div>
+<div class="book-spine"></div>
+</div>
+<h3>Required Reading</h3>
+<a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
+</div>
+</div>
+
+<div class="resource-card">
+<h3><i class="fas fa-book"></i> Foundation Resources</h3>
+<p>Essential research and background materials supporting the book club content.</p>
+<ul class="foundation-resources">
+<li><a href="https://dora.dev/research/" target="_blank" rel="noopener noreferrer">State of DevOps Report Archive</a> - Historical DevOps research and trends</li>
+<li><a href="https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance" target="_blank" rel="noopener noreferrer">DevOps Research and Assessment</a> - Google Cloud DORA insights</li>
+<li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank" rel="noopener noreferrer">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>
+<li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank" rel="noopener noreferrer">IT Revolution Westrum Model</a> - Detailed explanation of culture types</li>
+</ul>
+</div>
+</div>
+
+---
+
+<footer class="ai-attribution" markdown="0">
   <div class="ai-attribution__icon">
     <i class="fas fa-robot" aria-hidden="true"></i>
   </div>
   <div class="ai-attribution__content">
     <h4 class="ai-attribution__title">AI-Generated Content</h4>
-    <p class="ai-attribution__text">This book club content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong> to enhance your learning experience.</p>
-    <div class="ai-attribution__tools">
-      <div class="ai-tool">
-        <i class="fas fa-brain" aria-hidden="true"></i>
-        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-code" aria-hidden="true"></i>
-        <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-palette" aria-hidden="true"></i>
-        <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fab fa-github" aria-hidden="true"></i>
-        <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
-      </div>
-    </div>
+    <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
   </div>
-</div>
+</footer>

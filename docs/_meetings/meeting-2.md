@@ -10,13 +10,13 @@ dora_color: '#0F766E'
 
 ### Watch the Meeting 2 Video
 
-<div class="media-container">
+<div class="media-container" markdown="0">
 <video controls width="100%">
   <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-<div class="media-download-controls">
+<div class="media-download-controls" markdown="0">
   <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4" download class="download-btn">
 		<i class="fas fa-download"></i> Download Video
 	</a>
@@ -25,13 +25,13 @@ dora_color: '#0F766E'
 
 ### Listen to the Meeting 2 Podcast
 
-<div class="media-container">
+<div class="media-container" markdown="0">
 <audio controls>
   <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-<div class="media-download-controls">
+<div class="media-download-controls" markdown="0">
   <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a" download class="download-btn">
 		<i class="fas fa-download"></i> Download Audio
 	</a>
@@ -42,10 +42,10 @@ dora_color: '#0F766E'
 
 #### Architecture: Loosely Coupled Systems Enable Team Independence
 
-<div class="architecture-comparison">
-  <div class="arch-side tight-coupled">
+<div class="architecture-comparison" markdown="0">
+  <div class="arch-side tight-coupled" markdown="0">
     <h4><i class="fas fa-link"></i> Tightly Coupled</h4>
-    <div class="arch-content">
+    <div class="arch-content" markdown="0">
       <p><strong>High Dependencies</strong></p>
       <ul>
         <li><i class="fas fa-ban"></i> Teams block each other</li>
@@ -56,13 +56,13 @@ dora_color: '#0F766E'
     </div>
   </div>
 
-  <div class="vs-divider">
+  <div class="vs-divider" markdown="0">
     <span>VS</span>
   </div>
 
-  <div class="arch-side loose-coupled">
+  <div class="arch-side loose-coupled" markdown="0">
     <h4><i class="fas fa-puzzle-piece"></i> Loosely Coupled</h4>
-    <div class="arch-content">
+    <div class="arch-content" markdown="0">
       <p><strong>Independent Teams</strong></p>
       <ul>
         <li><i class="fas fa-check"></i> Autonomous team work</li>
@@ -76,42 +76,42 @@ dora_color: '#0F766E'
 
 #### Continuous Delivery Core Principles
 
-<div class="cd-principles-grid">
-  <div class="principle-card quality">
-    <div class="principle-title"><i class="fas fa-tools"></i> Build Quality In</div>
+<div class="cd-principles-grid" markdown="0">
+  <div class="principle-card quality" markdown="0">
+    <div class="principle-title" markdown="0"><i class="fas fa-tools"></i> Build Quality In</div>
     <p>Start with quality, don't inspect later</p>
   </div>
 
-  <div class="principle-card batches">
-    <div class="principle-title"><i class="fas fa-box"></i> Small Batches</div>
+  <div class="principle-card batches" markdown="0">
+    <div class="principle-title" markdown="0"><i class="fas fa-box"></i> Small Batches</div>
     <p>Manageable, testable units</p>
   </div>
 
-  <div class="principle-card automation">
-    <div class="principle-title"><i class="fas fa-robot"></i> Automate Tasks</div>
+  <div class="principle-card automation" markdown="0">
+    <div class="principle-title" markdown="0"><i class="fas fa-robot"></i> Automate Tasks</div>
     <p>Free humans for creative work</p>
   </div>
 
-  <div class="principle-card version">
-    <div class="principle-title"><i class="fas fa-folder"></i> Version Control</div>
+  <div class="principle-card version" markdown="0">
+    <div class="principle-title" markdown="0"><i class="fas fa-folder"></i> Version Control</div>
     <p>All artifacts under control</p>
   </div>
 
-  <div class="principle-card trunk">
-    <div class="principle-title"><i class="fas fa-code-branch"></i> Trunk-Based Dev</div>
+  <div class="principle-card trunk" markdown="0">
+    <div class="principle-title" markdown="0"><i class="fas fa-code-branch"></i> Trunk-Based Dev</div>
     <p>Short branches, frequent integration</p>
   </div>
 
-  <div class="principle-card testing">
-    <div class="principle-title"><i class="fas fa-flask"></i> Test Automation</div>
+  <div class="principle-card testing" markdown="0">
+    <div class="principle-title" markdown="0"><i class="fas fa-flask"></i> Test Automation</div>
     <p>Automated testing at all levels</p>
   </div>
 </div>
 
 #### Breaking the "Wall of Confusion"
 
-<div class="wall-confusion-section">
-  <div class="confusion-problem">
+<div class="wall-confusion-section" markdown="0">
+  <div class="confusion-problem" markdown="0">
     <h4><i class="fas fa-wall-brick"></i> Traditional Silos</h4>
     <ul>
       <li><i class="fas fa-code"></i> Development optimizes for <strong>throughput</strong></li>
@@ -121,12 +121,12 @@ dora_color: '#0F766E'
     </ul>
   </div>
 
-  <div class="arrow-breakthrough">
+  <div class="arrow-breakthrough" markdown="0">
     <i class="fas fa-arrow-right"></i>
     <span>CD Solution</span>
   </div>
 
-  <div class="confusion-solution">
+  <div class="confusion-solution" markdown="0">
     <h4><i class="fas fa-hands-helping"></i> System-Level Outcomes</h4>
     <ul>
       <li><i class="fas fa-bullseye"></i> Shared responsibility for <strong>both</strong> speed and stability</li>
@@ -139,39 +139,39 @@ dora_color: '#0F766E'
 
 #### Security: Shift Left for Speed AND Safety
 
-<div class="security-shift-comparison">
-  <div class="security-approach traditional">
+<div class="security-shift-comparison" markdown="0">
+  <div class="security-approach traditional" markdown="0">
     <h4><i class="fas fa-shield-alt"></i> Traditional: Bolt-On Security</h4>
-    <div class="security-problems">
-      <div class="problem-item">
+    <div class="security-problems" markdown="0">
+      <div class="problem-item" markdown="0">
         <i class="fas fa-clock"></i>
         <span>Security review at the end</span>
       </div>
-      <div class="problem-item">
+      <div class="problem-item" markdown="0">
         <i class="fas fa-exclamation-triangle"></i>
         <span>50% more remediation time</span>
       </div>
-      <div class="problem-item">
+      <div class="problem-item" markdown="0">
         <i class="fas fa-turtle"></i>
         <span>Delayed releases</span>
       </div>
     </div>
   </div>
 
-  <div class="vs-arrow">→</div>
+  <div class="vs-arrow" markdown="0">→</div>
 
-  <div class="security-approach integrated">
+  <div class="security-approach integrated" markdown="0">
     <h4><i class="fas fa-lock"></i> Shift-Left: Built-In Security</h4>
-    <div class="security-benefits">
-      <div class="benefit-item">
+    <div class="security-benefits" markdown="0">
+      <div class="benefit-item" markdown="0">
         <i class="fas fa-rocket"></i>
         <span>Security checks in CI/CD pipeline</span>
       </div>
-      <div class="benefit-item">
+      <div class="benefit-item" markdown="0">
         <i class="fas fa-chart-line"></i>
         <span>50% faster remediation</span>
       </div>
-      <div class="benefit-item">
+      <div class="benefit-item" markdown="0">
         <i class="fas fa-balance-scale"></i>
         <span>Better security AND faster delivery</span>
       </div>
@@ -181,27 +181,27 @@ dora_color: '#0F766E'
 
 #### Conway's Law & Team Structure
 
-<div class="conway-law-section">
-  <div class="law-statement">
+<div class="conway-law-section" markdown="0">
+  <div class="law-statement" markdown="0">
     <blockquote>
       "Organizations design systems that mirror their communication structures"
     </blockquote>
     <cite>— Melvin Conway, 1967</cite>
   </div>
 
-  <div class="conway-examples">
-    <div class="example-card">
+  <div class="conway-examples" markdown="0">
+    <div class="example-card" markdown="0">
       <h4><i class="fas fa-sitemap"></i> Traditional Organization</h4>
       <p><strong>Structure:</strong> Separate dev, QA, ops teams</p>
       <p><strong>Result:</strong> Monolithic systems with handoff bottlenecks</p>
     </div>
 
-    <div class="arrow-transform">
+    <div class="arrow-transform" markdown="0">
       <i class="fas fa-sync-alt"></i>
       <span>Inverse Conway</span>
     </div>
 
-    <div class="example-card">
+    <div class="example-card" markdown="0">
       <h4><i class="fas fa-users"></i> Cross-Functional Teams</h4>
       <p><strong>Structure:</strong> Full-stack teams with all skills</p>
       <p><strong>Result:</strong> Loosely coupled, independently deployable services</p>
@@ -212,11 +212,11 @@ dora_color: '#0F766E'
 
 ### Interactive Learning Checkpoint
 
-<div class="learning-checkpoint">
-  <div class="checkpoint-card cd-maturity">
+<div class="learning-checkpoint" markdown="0">
+  <div class="checkpoint-card cd-maturity" markdown="0">
     <h4><i class="fas fa-chart-line"></i> CD Maturity Assessment</h4>
     <p>Rate your organization's maturity in Continuous Delivery practices:</p>
-    <div class="assessment-buttons">
+    <div class="assessment-buttons" markdown="0">
       <label class="assessment-btn high-performance">
         <input type="radio" name="cd-maturity" value="high">
         <span class="radio-mark"></span>
@@ -241,10 +241,10 @@ dora_color: '#0F766E'
     </div>
   </div>
 
-  <div class="checkpoint-card security-integration">
+  <div class="checkpoint-card security-integration" markdown="0">
     <h4><i class="fas fa-shield-alt"></i> Security Integration Assessment</h4>
     <p>Rate how well security is integrated into your delivery process:</p>
-    <div class="assessment-buttons">
+    <div class="assessment-buttons" markdown="0">
       <label class="assessment-btn high-performance">
         <input type="radio" name="security-integration" value="high">
         <span class="radio-mark"></span>
@@ -269,11 +269,11 @@ dora_color: '#0F766E'
     </div>
   </div>
 
-  <div class="checkpoint-card tool-autonomy">
+  <div class="checkpoint-card tool-autonomy" markdown="0">
     <h4><i class="fas fa-palette"></i> Tool Freedom</h4>
     <p>Rate your team's tool selection autonomy:</p>
-    <div class="autonomy-slider">
-      <div class="slider-labels">
+    <div class="autonomy-slider" markdown="0">
+      <div class="slider-labels" markdown="0">
         <span>Restricted</span>
         <span>Flexible</span>
         <span>Full Freedom</span>
@@ -290,58 +290,58 @@ dora_color: '#0F766E'
 
 ### Real-World Applications
 
-<div class="real-world-applications">
-  <div class="application-card automation-examples">
+<div class="real-world-applications" markdown="0">
+  <div class="application-card automation-examples" markdown="0">
     <h4><i class="fas fa-robot"></i> Automation Success Stories</h4>
     <p>Share examples from your experience:</p>
-    <div class="example-prompts">
-      <div class="prompt-item">
+    <div class="example-prompts" markdown="0">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-lightbulb"></i>
         <span>What manual process did you recently automate? What was the impact?</span>
       </div>
-      <div class="prompt-item">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-chart-line"></i>
         <span>How did test automation change your team's deployment confidence?</span>
       </div>
-      <div class="prompt-item">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-clock"></i>
         <span>What task took hours manually but now takes minutes with automation?</span>
       </div>
     </div>
   </div>
 
-  <div class="application-card architecture-decisions">
+  <div class="application-card architecture-decisions" markdown="0">
     <h4><i class="fas fa-sitemap"></i> Architectural Decisions</h4>
     <p>Discuss decisions that impacted team independence:</p>
-    <div class="example-prompts">
-      <div class="prompt-item">
+    <div class="example-prompts" markdown="0">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-check-circle"></i>
         <span>Which architectural changes improved your team's deployment frequency?</span>
       </div>
-      <div class="prompt-item">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-times-circle"></i>
         <span>What dependencies currently prevent independent deployments?</span>
       </div>
-      <div class="prompt-item">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-puzzle-piece"></i>
         <span>How did microservices or modular design affect your delivery speed?</span>
       </div>
     </div>
   </div>
 
-  <div class="application-card security-practices">
+  <div class="application-card security-practices" markdown="0">
     <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
     <p>Examine security practices that impact delivery:</p>
-    <div class="example-prompts">
-      <div class="prompt-item">
+    <div class="example-prompts" markdown="0">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-fast-forward"></i>
         <span>Which security practices actually speed up delivery?</span>
       </div>
-      <div class="prompt-item">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-turtle"></i>
         <span>What security requirements currently slow down your team?</span>
       </div>
-      <div class="prompt-item">
+      <div class="prompt-item" markdown="0">
         <i class="fas fa-balance-scale"></i>
         <span>How do you balance security compliance with delivery speed?</span>
       </div>

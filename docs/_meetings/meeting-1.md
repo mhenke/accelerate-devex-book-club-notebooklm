@@ -10,13 +10,13 @@ dora_color: '#1E3A8A'
 
 ### Watch the Meeting 1 Video {#watch-meeting-1-video}
 
-<div class="media-container">
+<div class="media-container" markdown="0">
 <video controls width="100%">
   <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-<div class="media-download-controls">
+<div class="media-download-controls" markdown="0">
   <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" download class="download-btn">
 		<i class="fas fa-download"></i> Download Video
 	</a>
@@ -25,13 +25,13 @@ dora_color: '#1E3A8A'
 
 ### Listen to the Meeting 1 Podcast {#listen-meeting-1-podcast}
 
-<div class="media-container">
+<div class="media-container" markdown="0">
 <audio controls>
   <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-<div class="media-download-controls">
+<div class="media-download-controls" markdown="0">
   <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast.m4a" download class="download-btn">
 		<i class="fas fa-download"></i> Download Audio
 	</a>
@@ -40,18 +40,18 @@ dora_color: '#1E3A8A'
 
 ### Key Insights
 
-<div class="insights-grid">
-  <div class="insight-card">
+<div class="insights-grid" markdown="0">
+  <div class="insight-card" markdown="0">
     <h4><i class="fas fa-microscope"></i> Evidence-Based</h4>
     <p>Rigorous research backing all findings</p>
   </div>
 
-  <div class="insight-card">
+  <div class="insight-card" markdown="0">
     <h4><i class="fas fa-medal"></i> Competitive Advantage</h4>
     <p>Software delivery capability drives success</p>
   </div>
 
-  <div class="insight-card">
+  <div class="insight-card" markdown="0">
     <h4><i class="fas fa-user-check"></i> Process Not People</h4>
     <p>Anxiety signals inefficiency, not failure</p>
   </div>
@@ -59,38 +59,38 @@ dora_color: '#1E3A8A'
 
 #### The Four DORA Metrics
 
-<div class="dora-metrics-grid">
-  <div class="metric-card lead-time">
-    <div class="metric-title"><i class="fas fa-chart-line"></i> Delivery Lead Time</div>
+<div class="dora-metrics-grid" markdown="0">
+  <div class="metric-card lead-time" markdown="0">
+    <div class="metric-title" markdown="0"><i class="fas fa-chart-line"></i> Delivery Lead Time</div>
     <p class="metric-description">Time from code commit to production deployment</p>
-    <div class="metric-goal">Goal: Hours/Days not Weeks/Months</div>
+    <div class="metric-goal" markdown="0">Goal: Hours/Days not Weeks/Months</div>
   </div>
 
-  <div class="metric-card deploy-frequency">
-    <div class="metric-title"><i class="fas fa-rocket"></i> Deployment Frequency</div>
+  <div class="metric-card deploy-frequency" markdown="0">
+    <div class="metric-title" markdown="0"><i class="fas fa-rocket"></i> Deployment Frequency</div>
     <p class="metric-description">How often code gets deployed to production</p>
-    <div class="metric-goal">Goal: Multiple times per day</div>
+    <div class="metric-goal" markdown="0">Goal: Multiple times per day</div>
   </div>
 
-  <div class="metric-card restore-time">
-    <div class="metric-title"><i class="fas fa-clock"></i> Time to Restore Service</div>
+  <div class="metric-card restore-time" markdown="0">
+    <div class="metric-title" markdown="0"><i class="fas fa-clock"></i> Time to Restore Service</div>
     <p class="metric-description">How quickly service is restored after incidents</p>
-    <div class="metric-goal">Goal: Under 1 hour</div>
+    <div class="metric-goal" markdown="0">Goal: Under 1 hour</div>
   </div>
 
-  <div class="metric-card change-fail">
-    <div class="metric-title"><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</div>
+  <div class="metric-card change-fail" markdown="0">
+    <div class="metric-title" markdown="0"><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</div>
     <p class="metric-description">Percentage of deployments causing failures</p>
-    <div class="metric-goal">Goal: 0-15%</div>
+    <div class="metric-goal" markdown="0">Goal: 0-15%</div>
   </div>
 </div>
 
 #### Speed vs Stability: The Myth Busted
 
-<div class="myth-buster">
-  <div class="myth-side">
+<div class="myth-buster" markdown="0">
+  <div class="myth-side" markdown="0">
     <h3><i class="fas fa-times-circle"></i> Old Thinking</h3>
-    <div class="myth-content">
+    <div class="myth-content" markdown="0">
       <p><strong>Either Fast OR Stable</strong></p>
       <ul>
         <li><i class="fas fa-turtle"></i> Slow = Safe</li>
@@ -100,28 +100,28 @@ dora_color: '#1E3A8A'
     </div>
   </div>
 
-  <div class="vs-divider">
+  <div class="vs-divider" markdown="0">
     <span>VS</span>
   </div>
 
-  <div class="reality-side">
+  <div class="reality-side" markdown="0">
     <h3><i class="fas fa-check-circle"></i> Research Reality</h3>
-    <div class="reality-content">
+    <div class="reality-content" markdown="0">
       <p><strong>Both Fast AND Stable</strong></p>
-      <div class="performance-stats">
-        <div class="stat-item">
+      <div class="performance-stats" markdown="0">
+        <div class="stat-item" markdown="0">
           <i class="fas fa-rocket"></i>
           <strong>46x</strong> more frequent deployments
         </div>
-        <div class="stat-item">
+        <div class="stat-item" markdown="0">
           <i class="fas fa-clock"></i>
           <strong>440x</strong> faster lead time
         </div>
-        <div class="stat-item">
+        <div class="stat-item" markdown="0">
           <i class="fas fa-tools"></i>
           <strong>170x</strong> faster recovery
         </div>
-        <div class="stat-item">
+        <div class="stat-item" markdown="0">
           <i class="fas fa-shield-alt"></i>
           <strong>5x</strong> lower change fail rate
         </div>
@@ -137,8 +137,8 @@ dora_color: '#1E3A8A'
 
 ### Deployment Pain → Solution Flow
 
-<div class="deployment-flow">
-  <div class="flow-problem">
+<div class="deployment-flow" markdown="0">
+  <div class="flow-problem" markdown="0">
     <h4><i class="fas fa-frown"></i> Deployment Anxiety</h4>
     <ul>
       <li>Fear before releases</li>
@@ -147,9 +147,9 @@ dora_color: '#1E3A8A'
     </ul>
   </div>
 
-  <div class="flow-arrow">→</div>
+  <div class="flow-arrow" markdown="0">→</div>
 
-  <div class="flow-solution">
+  <div class="flow-solution" markdown="0">
     <h4><i class="fas fa-bullseye"></i> DevOps Practices</h4>
     <ul>
       <li>Automated pipelines</li>
@@ -158,9 +158,9 @@ dora_color: '#1E3A8A'
     </ul>
   </div>
 
-  <div class="flow-arrow">→</div>
+  <div class="flow-arrow" markdown="0">→</div>
 
-  <div class="flow-result">
+  <div class="flow-result" markdown="0">
     <h4><i class="fas fa-trophy"></i> Confident Deployments</h4>
     <ul>
       <li>Predictable releases</li>
@@ -172,11 +172,11 @@ dora_color: '#1E3A8A'
 
 ### Interactive Learning Checkpoint
 
-<div class="learning-checkpoint">
-  <div class="checkpoint-card dora-assessment">
+<div class="learning-checkpoint" markdown="0">
+  <div class="checkpoint-card dora-assessment" markdown="0">
     <h4><i class="fas fa-chart-line"></i> DORA Metrics Assessment</h4>
     <p>Rate your team's current performance on the four key metrics:</p>
-    <div class="assessment-buttons">
+    <div class="assessment-buttons" markdown="0">
       <label class="assessment-btn high-performance">
         <input type="radio" name="dora-performance" value="high">
         <span class="radio-mark"></span>
@@ -198,10 +198,10 @@ dora_color: '#1E3A8A'
     </div>
   </div>
 
-  <div class="checkpoint-card deployment-anxiety">
+  <div class="checkpoint-card deployment-anxiety" markdown="0">
     <h4><i class="fas fa-heart"></i> Deployment Confidence</h4>
     <p>How does your team feel about deployments?</p>
-    <div class="confidence-options">
+    <div class="confidence-options" markdown="0">
       <label class="confidence-item anxious">
         <input type="radio" name="deployment-confidence" value="anxious">
         <span class="radio-mark"></span>
@@ -222,10 +222,10 @@ dora_color: '#1E3A8A'
     </div>
   </div>
 
-  <div class="checkpoint-card improvement-priority">
+  <div class="checkpoint-card improvement-priority" markdown="0">
     <h4><i class="fas fa-bullseye"></i> Improvement Priority</h4>
     <p>Which DORA metric should your team focus on first?</p>
-    <div class="priority-selector">
+    <div class="priority-selector" markdown="0">
       <label class="priority-option">
         <input type="radio" name="improvement-focus" value="lead-time">
         <span class="radio-mark"></span>
@@ -252,49 +252,49 @@ dora_color: '#1E3A8A'
     </div>
   </div>
 
-  <div class="checkpoint-card culture-assessment">
+  <div class="checkpoint-card culture-assessment" markdown="0">
     <h4><i class="fas fa-users"></i> Culture Assessment</h4>
     <p>Assess your organization's culture type using Westrum's model:</p>
 
-    <div class="culture-selector">
-      <div class="culture-option pathological-option">
+    <div class="culture-selector" markdown="0">
+      <div class="culture-option pathological-option" markdown="0">
         <input type="radio" name="culture-type" value="pathological" id="culture-pathological">
         <label for="culture-pathological">
           <span class="radio-mark"></span>
-          <div class="option-content">
-            <div class="option-header">
+          <div class="option-content" markdown="0">
+            <div class="option-header" markdown="0">
               <i class="fas fa-exclamation-triangle"></i>
               <strong>Pathological</strong>
             </div>
-            <div class="option-description">Power-oriented, low cooperation, blame culture</div>
+            <div class="option-description" markdown="0">Power-oriented, low cooperation, blame culture</div>
           </div>
         </label>
       </div>
 
-      <div class="culture-option bureaucratic-option">
+      <div class="culture-option bureaucratic-option" markdown="0">
         <input type="radio" name="culture-type" value="bureaucratic" id="culture-bureaucratic">
         <label for="culture-bureaucratic">
           <span class="radio-mark"></span>
-          <div class="option-content">
-            <div class="option-header">
+          <div class="option-content" markdown="0">
+            <div class="option-header" markdown="0">
               <i class="fas fa-clipboard-list"></i>
               <strong>Bureaucratic</strong>
             </div>
-            <div class="option-description">Rule-oriented, modest cooperation, rules over mission</div>
+            <div class="option-description" markdown="0">Rule-oriented, modest cooperation, rules over mission</div>
           </div>
         </label>
       </div>
 
-      <div class="culture-option generative-option">
+      <div class="culture-option generative-option" markdown="0">
         <input type="radio" name="culture-type" value="generative" id="culture-generative">
         <label for="culture-generative">
           <span class="radio-mark"></span>
-          <div class="option-content">
-            <div class="option-header">
+          <div class="option-content" markdown="0">
+            <div class="option-header" markdown="0">
               <i class="fas fa-rocket"></i>
               <strong>Generative</strong>
             </div>
-            <div class="option-description">Performance-oriented, high cooperation, mission focused</div>
+            <div class="option-description" markdown="0">Performance-oriented, high cooperation, mission focused</div>
           </div>
         </label>
       </div>
@@ -324,8 +324,8 @@ dora_color: '#1E3A8A'
 
 ### Related Resources
 
-<div class="related-resources">
-  <div class="resource-category">
+<div class="related-resources" markdown="0">
+  <div class="resource-category" markdown="0">
     <h3><i class="fas fa-chart-line"></i> DORA Research & Assessment</h3>
     <ul class="resource-links">
       <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a> - Latest DORA findings and industry benchmarks</li>
@@ -335,7 +335,7 @@ dora_color: '#1E3A8A'
     </ul>
   </div>
 
-  <div class="resource-category">
+  <div class="resource-category" markdown="0">
     <h3><i class="fas fa-users"></i> Westrum Organizational Culture</h3>
     <ul class="resource-links">
       <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>

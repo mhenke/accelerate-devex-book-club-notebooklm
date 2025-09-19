@@ -7,8 +7,8 @@ nav_order: 6
 
 # <i class="fas fa-trophy"></i> Transformation Complete!
 
-<div class="celebration-header">
-  <div class="celebration-icon">
+<div class="celebration-header" markdown="0">
+  <div class="celebration-icon" markdown="0">
     <svg viewBox="0 0 100 100" class="trophy-svg">
       <defs>
         <linearGradient id="trophy-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -29,59 +29,59 @@ nav_order: 6
 
 ## <i class="fas fa-rocket"></i> Your Transformation Journey
 
-<div class="journey-timeline">
+<div class="journey-timeline" markdown="0">
   <div class="timeline-item completed" data-meeting="1">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="achievement-badge"><i class="fas fa-chart-bar"></i> DORA Metrics Baseline Established</div>
+    <div class="timeline-marker" markdown="0"></div>
+    <div class="timeline-content" markdown="0">
+      <div class="achievement-badge" markdown="0"><i class="fas fa-chart-bar"></i> DORA Metrics Baseline Established</div>
       <h3><a href="{{ '/meetings/meeting-1/' | relative_url }}">Meeting 1: Foundation & Metrics</a></h3>
       <p>Established DORA metrics baseline and explored Westrum organizational culture types</p>
-      <div class="key-findings">
-        <div class="finding-pill meeting-1-theme"><i class="fas fa-chart-line"></i> Elite performers deploy 200x more frequently</div>
-        <div class="finding-pill meeting-1-theme"><i class="fas fa-users"></i> Generative culture = 2x better performance</div>
-        <div class="finding-pill meeting-1-theme"><i class="fas fa-clock"></i> Lead time under 1 hour for elite teams</div>
+      <div class="key-findings" markdown="0">
+        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-chart-line"></i> Elite performers deploy 200x more frequently</div>
+        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-users"></i> Generative culture = 2x better performance</div>
+        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-clock"></i> Lead time under 1 hour for elite teams</div>
       </div>
     </div>
   </div>
   
   <div class="timeline-item completed" data-meeting="2">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="achievement-badge"><i class="fas fa-rocket"></i> Technical Excellence Achieved</div>
+    <div class="timeline-marker" markdown="0"></div>
+    <div class="timeline-content" markdown="0">
+      <div class="achievement-badge" markdown="0"><i class="fas fa-rocket"></i> Technical Excellence Achieved</div>
       <h3><a href="{{ '/meetings/meeting-2/' | relative_url }}">Meeting 2: Technical Excellence</a></h3>
       <p>Mastered continuous delivery practices and technical capabilities</p>
-      <div class="key-findings">
-        <div class="finding-pill meeting-2-theme"><i class="fas fa-rocket"></i> Speed with stability is achievable</div>
-        <div class="finding-pill meeting-2-theme"><i class="fas fa-shield-alt"></i> Security integration improves performance</div>
-        <div class="finding-pill meeting-2-theme"><i class="fas fa-sync"></i> Fast feedback reduces risk & improves quality</div>
+      <div class="key-findings" markdown="0">
+        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-rocket"></i> Speed with stability is achievable</div>
+        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-shield-alt"></i> Security integration improves performance</div>
+        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-sync"></i> Fast feedback reduces risk & improves quality</div>
       </div>
     </div>
   </div>
   
   <div class="timeline-item completed" data-meeting="3">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="achievement-badge"><i class="fas fa-balance-scale"></i> Lean Management Mastered</div>
+    <div class="timeline-marker" markdown="0"></div>
+    <div class="timeline-content" markdown="0">
+      <div class="achievement-badge" markdown="0"><i class="fas fa-balance-scale"></i> Lean Management Mastered</div>
       <h3><a href="{{ '/meetings/meeting-3/' | relative_url }}">Meeting 3: Management & Sustainability</a></h3>
       <p>Implemented lean product development and visual management practices</p>
-      <div class="key-findings">
-        <div class="finding-pill meeting-3-theme"><i class="fas fa-heart"></i> Microsoft: 38% → 75% work-life satisfaction</div>
-        <div class="finding-pill meeting-3-theme"><i class="fas fa-thumbs-up"></i> High performers 2.2x more likely to recommend workplace</div>
-        <div class="finding-pill meeting-3-theme"><i class="fas fa-fire-extinguisher"></i> Fix environment, not people for burnout</div>
+      <div class="key-findings" markdown="0">
+        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-heart"></i> Microsoft: 38% → 75% work-life satisfaction</div>
+        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-thumbs-up"></i> High performers 2.2x more likely to recommend workplace</div>
+        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-fire-extinguisher"></i> Fix environment, not people for burnout</div>
       </div>
     </div>
   </div>
   
   <div class="timeline-item completed" data-meeting="4">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="achievement-badge"><i class="fas fa-crown"></i> Leadership Transformation Unlocked</div>
+    <div class="timeline-marker" markdown="0"></div>
+    <div class="timeline-content" markdown="0">
+      <div class="achievement-badge" markdown="0"><i class="fas fa-crown"></i> Leadership Transformation Unlocked</div>
       <h3><a href="{{ '/meetings/meeting-4/' | relative_url }}">Meeting 4: Leadership & Transformation</a></h3>
       <p>Developed leadership strategies for sustainable organizational change</p>
-      <div class="key-findings">
-        <div class="finding-pill meeting-4-theme"><i class="fas fa-crown"></i> Strong leaders = 2x high performance likelihood</div>
-        <div class="finding-pill meeting-4-theme"><i class="fas fa-comments"></i> ING: Coaching vs commanding drives success</div>
-        <div class="finding-pill meeting-4-theme"><i class="fas fa-lightbulb"></i> Transformational leadership enables team autonomy</div>
+      <div class="key-findings" markdown="0">
+        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-crown"></i> Strong leaders = 2x high performance likelihood</div>
+        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-comments"></i> ING: Coaching vs commanding drives success</div>
+        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-lightbulb"></i> Transformational leadership enables team autonomy</div>
       </div>
     </div>
   </div>
@@ -89,9 +89,9 @@ nav_order: 6
 
 ## <i class="fas fa-chart-bar"></i> Your DORA Metrics Mastery
 
-<div class="dora-mastery-grid">
-  <div class="metric-mastery-card deployment">
-    <div class="metric-icon">
+<div class="dora-mastery-grid" markdown="0">
+  <div class="metric-mastery-card deployment" markdown="0">
+    <div class="metric-icon" markdown="0">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#4CAF50" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
@@ -99,8 +99,8 @@ nav_order: 6
       </svg>
     </div>
     <h3>Deployment Frequency</h3>
-    <div class="mastery-level">
-      <div class="mastery-bar">
+    <div class="mastery-level" markdown="0">
+      <div class="mastery-bar" markdown="0">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -108,16 +108,16 @@ nav_order: 6
     <p>From understanding daily deployment benefits to implementing automated pipelines</p>
   </div>
   
-  <div class="metric-mastery-card leadtime">
-    <div class="metric-icon">
+  <div class="metric-mastery-card leadtime" markdown="0">
+    <div class="metric-icon" markdown="0">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#2196F3" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </div>
     <h3>Lead Time</h3>
-    <div class="mastery-level">
-      <div class="mastery-bar">
+    <div class="mastery-level" markdown="0">
+      <div class="mastery-bar" markdown="0">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -125,8 +125,8 @@ nav_order: 6
     <p>Mastered value stream mapping and bottleneck identification techniques</p>
   </div>
   
-  <div class="metric-mastery-card reliability">
-    <div class="metric-icon">
+  <div class="metric-mastery-card reliability" markdown="0">
+    <div class="metric-icon" markdown="0">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#F44336" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 7v6M12 15h0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
@@ -134,8 +134,8 @@ nav_order: 6
       </svg>
     </div>
     <h3>Change Failure Rate</h3>
-    <div class="mastery-level">
-      <div class="mastery-bar">
+    <div class="mastery-level" markdown="0">
+      <div class="mastery-bar" markdown="0">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -143,16 +143,16 @@ nav_order: 6
     <p>Implemented testing strategies and quality gates for reliable deployments</p>
   </div>
   
-  <div class="metric-mastery-card recovery">
-    <div class="metric-icon">
+  <div class="metric-mastery-card recovery" markdown="0">
+    <div class="metric-icon" markdown="0">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#FF9800" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 6.5l2.5 5 5.5 0.8-4 3.9 0.9 5.7-4.9-2.6-4.9 2.6 0.9-5.7-4-3.9 5.5-0.8z" fill="#ffffff"/>
       </svg>
     </div>
     <h3>Mean Time to Recovery</h3>
-    <div class="mastery-level">
-      <div class="mastery-bar">
+    <div class="mastery-level" markdown="0">
+      <div class="mastery-bar" markdown="0">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -163,8 +163,8 @@ nav_order: 6
 
 ## <i class="fas fa-graduation-cap"></i> Key Learnings & Achievements
 
-<div class="learning-highlights">
-  <div class="learning-category meeting-1-theme">
+<div class="learning-highlights" markdown="0">
+  <div class="learning-category meeting-1-theme" markdown="0">
     <h3><i class="fas fa-chart-bar"></i> Foundation & Measurement</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> DORA metrics baseline established</li>
@@ -175,7 +175,7 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="learning-category meeting-2-theme">
+  <div class="learning-category meeting-2-theme" markdown="0">
     <h3><i class="fas fa-rocket"></i> Technical Excellence</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> Continuous delivery practices mastered</li>
@@ -186,7 +186,7 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="learning-category meeting-3-theme">
+  <div class="learning-category meeting-3-theme" markdown="0">
     <h3><i class="fas fa-balance-scale"></i> Lean Management</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> WIP optimization techniques</li>
@@ -197,7 +197,7 @@ nav_order: 6
     </ul>
   </div>
 
-  <div class="learning-category meeting-4-theme">
+  <div class="learning-category meeting-4-theme" markdown="0">
     <h3><i class="fas fa-crown"></i> Leadership Transformation</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> Five transformational dimensions</li>
@@ -211,9 +211,9 @@ nav_order: 6
 
 ## <i class="fas fa-lightbulb"></i> Interactive Reflection
 
-<div class="reflection-section">
+<div class="reflection-section" markdown="0">
   <h3>What was your biggest transformation insight?</h3>
-  <div class="reflection-options">
+  <div class="reflection-options" markdown="0">
     <label class="reflection-option meeting-1-insight">
       <input type="radio" name="insight" value="measurement">
       <span class="option-content">
@@ -251,9 +251,9 @@ nav_order: 6
 
 ## <i class="fas fa-bullseye"></i> Your Next Steps
 
-<div class="next-steps-grid">
-  <div class="next-step-card immediate">
-    <div class="step-timeline">This Week</div>
+<div class="next-steps-grid" markdown="0">
+  <div class="next-step-card immediate" markdown="0">
+    <div class="step-timeline" markdown="0">This Week</div>
     <h3><i class="fas fa-rocket"></i> Start Small</h3>
     <ul>
       <li>Choose one DORA metric to improve</li>
@@ -262,8 +262,8 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="next-step-card short-term">
-    <div class="step-timeline">Next Month</div>
+  <div class="next-step-card short-term" markdown="0">
+    <div class="step-timeline" markdown="0">Next Month</div>
     <h3><i class="fas fa-chart-line"></i> Build Momentum</h3>
     <ul>
       <li>Implement a key technical practice (CI/CD, testing, monitoring)</li>
@@ -272,8 +272,8 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="next-step-card long-term">
-    <div class="step-timeline">Next Quarter</div>
+  <div class="next-step-card long-term" markdown="0">
+    <div class="step-timeline" markdown="0">Next Quarter</div>
     <h3><i class="fas fa-star"></i> Scale Impact</h3>
     <ul>
       <li>Share learnings across your organization</li>
@@ -285,59 +285,59 @@ nav_order: 6
 
 ## <i class="fas fa-rocket"></i> AI-Enhanced Learning Celebration
 
-<div class="ai-learning-celebration">
+<div class="ai-learning-celebration" markdown="0">
   <h3>AI-Generated Learning Content You've Experienced</h3>
   <p>Throughout your transformation journey, you've engaged with AI-enhanced content designed to accelerate your learning and provide multiple perspectives on DevOps practices.</p>
   
-  <div class="ai-content-showcase">
-    <div class="ai-content-card">
-      <div class="ai-content-icon">
+  <div class="ai-content-showcase" markdown="0">
+    <div class="ai-content-card" markdown="0">
+      <div class="ai-content-icon" markdown="0">
         <i class="fas fa-microphone-alt"></i>
       </div>
       <h4>Podcast Content</h4>
       <p>AI-generated discussions and interviews created with <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong> to provide audio learning experiences for each meeting topic.</p>
-      <div class="ai-tools-used">
-        <div class="ai-tool">
+      <div class="ai-tools-used" markdown="0">
+        <div class="ai-tool" markdown="0">
           <i class="fas fa-microphone-alt" aria-hidden="true"></i>
           <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
         </div>
       </div>
     </div>
     
-    <div class="ai-content-card">
-      <div class="ai-content-icon">
+    <div class="ai-content-card" markdown="0">
+      <div class="ai-content-icon" markdown="0">
         <i class="fas fa-video"></i>
       </div>
       <h4>Video Explanations</h4>
       <p>Visual learning content and concept explanations generated to support different learning styles and reinforce key DevOps principles.</p>
-      <div class="ai-tools-used">
-        <div class="ai-tool">
+      <div class="ai-tools-used" markdown="0">
+        <div class="ai-tool" markdown="0">
           <i class="fas fa-microphone-alt" aria-hidden="true"></i>
           <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
         </div>
-        <div class="ai-tool">
+        <div class="ai-tool" markdown="0">
           <i class="fas fa-palette" aria-hidden="true"></i>
           <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
         </div>
       </div>
     </div>
     
-    <div class="ai-content-card">
-      <div class="ai-content-icon">
+    <div class="ai-content-card" markdown="0">
+      <div class="ai-content-icon" markdown="0">
         <i class="fas fa-code"></i>
       </div>
       <h4>Interactive Elements</h4>
       <p>Dynamic learning checkpoints, visual components, and interactive exercises crafted with AI assistance to enhance engagement.</p>
-      <div class="ai-tools-used">
-        <div class="ai-tool">
+      <div class="ai-tools-used" markdown="0">
+        <div class="ai-tool" markdown="0">
           <i class="fas fa-brain" aria-hidden="true"></i>
           <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
         </div>
-        <div class="ai-tool">
+        <div class="ai-tool" markdown="0">
           <i class="fas fa-code" aria-hidden="true"></i>
           <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
         </div>
-        <div class="ai-tool">
+        <div class="ai-tool" markdown="0">
           <i class="fab fa-github" aria-hidden="true"></i>
           <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
         </div>
@@ -348,11 +348,11 @@ nav_order: 6
 
 ## <i class="fas fa-book-open"></i> Continue Your Journey
 
-<div class="continue-journey">
+<div class="continue-journey" markdown="0">
   <h3>Resources to Keep You Growing</h3>
   
-  <div class="resource-grid">
-    <div class="resource-card">
+  <div class="resource-grid" markdown="0">
+    <div class="resource-card" markdown="0">
       <h4><i class="fas fa-book"></i> Further Reading</h4>
       <ul>
         <li><a href="https://itrevolution.com/product/the-devops-handbook-second-edition/" target="_blank" rel="noopener noreferrer">The DevOps Handbook</a></li>
@@ -362,7 +362,7 @@ nav_order: 6
       </ul>
     </div>
     
-    <div class="resource-card">
+    <div class="resource-card" markdown="0">
       <h4><i class="fas fa-podcast"></i> Podcasts & Videos</h4>
       <ul>
         <li><a href="https://devops.com/category/podcasts/" target="_blank" rel="noopener noreferrer">DevOps Chat</a></li>
@@ -372,7 +372,7 @@ nav_order: 6
       </ul>
     </div>
     
-    <div class="resource-card">
+    <div class="resource-card" markdown="0">
       <h4><i class="fas fa-users"></i> Communities</h4>
       <ul>
         <li><a href="https://events.itrevolution.com/" target="_blank" rel="noopener noreferrer">DevOps Enterprise Summit</a></li>
@@ -382,7 +382,7 @@ nav_order: 6
       </ul>
     </div>
     
-    <div class="resource-card ai-enhanced">
+    <div class="resource-card ai-enhanced" markdown="0">
       <h4><i class="fas fa-robot"></i> AI-Enhanced Learning</h4>
       <ul>
         <li><a href="/accelerate-devex-book-club-notebooklm/prompts/">Generate more content with NotebookLM</a></li>
@@ -396,49 +396,29 @@ nav_order: 6
 
 ## <i class="fas fa-trophy"></i> Celebrate Your Success!
 
-<div class="celebration-final">
-  <div class="success-message">
+<div class="celebration-final" markdown="0">
+  <div class="success-message" markdown="0">
     <h3>You've completed a comprehensive DevOps transformation education!</h3>
     <p>You now have the knowledge, tools, and confidence to drive meaningful change in your organization. Remember: transformation is a journey, not a destination. Keep learning, keep improving, and keep sharing your knowledge with others.</p>
     
-    <div class="celebration-cta">
+    <div class="celebration-cta" markdown="0">
       <a href="/accelerate-devex-book-club-notebooklm/" class="btn btn-primary">Return to Home</a>
       <a href="/accelerate-devex-book-club-notebooklm/resources/" class="btn btn-secondary">Browse Resources</a>
     </div>
   </div>
 </div>
 
-<div class="ai-attribution">
+---
+
+<footer class="ai-attribution" markdown="0">
   <div class="ai-attribution__icon">
     <i class="fas fa-robot" aria-hidden="true"></i>
   </div>
   <div class="ai-attribution__content">
-    <h4 class="ai-attribution__title">AI-Enhanced Learning Experience</h4>
-    <p class="ai-attribution__text">This comprehensive book club experience was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong> to enhance your DevOps transformation journey.</p>
-    <div class="ai-attribution__tools">
-      <div class="ai-tool">
-        <i class="fas fa-brain" aria-hidden="true"></i>
-        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-code" aria-hidden="true"></i>
-        <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-palette" aria-hidden="true"></i>
-        <a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fab fa-github" aria-hidden="true"></i>
-        <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
-      </div>
-    </div>
+    <h4 class="ai-attribution__title">AI-Generated Content</h4>
+    <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
   </div>
-</div>
+</footer>
 
 <style>
 .celebration-header {
@@ -1223,7 +1203,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (this.checked) {
         const feedback = feedbackMessages[this.value];
         feedbackElement.innerHTML = `
-          <div class="feedback-message">
+          <div class="feedback-message" markdown="0">
             <h4><i class="fas fa-bullseye"></i> ${feedback.message}</h4>
             <p><strong>Your personalized next steps:</strong></p>
             <ul>
