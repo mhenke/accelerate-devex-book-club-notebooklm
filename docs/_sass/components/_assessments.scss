@@ -16,14 +16,14 @@
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px var(--shadow-light);
-  
+
   h4 {
     color: var(--text-dark);
     margin-bottom: var(--spacing-md);
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
-    
+
     i {
       color: var(--accent-teal);
     }
@@ -36,7 +36,7 @@
   flex-direction: column;
   gap: var(--spacing-md);
   margin: var(--spacing-lg) 0;
-  
+
   @include tablet-up {
     flex-direction: row;
     flex-wrap: wrap;
@@ -45,7 +45,7 @@
 
 .assessment-btn {
   @include touch-target-44px;
-  
+
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
@@ -59,12 +59,12 @@
   font-size: 1rem;
   font-weight: var(--font-weight-medium);
   color: var(--text-dark);
-  
+
   // Hide radio input
-  input[type="radio"] {
+  input[type='radio'] {
     display: none;
   }
-  
+
   .radio-mark {
     width: 20px;
     height: 20px;
@@ -72,7 +72,7 @@
     border-radius: 50%;
     flex-shrink: 0;
     position: relative;
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -86,27 +86,27 @@
       transition: transform 0.2s ease;
     }
   }
-  
+
   &:hover {
     border-color: var(--accent-teal);
     background: var(--background-light-gray);
   }
-  
+
   &:focus-visible {
     outline: 2px solid var(--accent-coral);
     outline-offset: 2px;
   }
-  
+
   // Selected state
-  input[type="radio"]:checked + .radio-mark {
+  input[type='radio']:checked + .radio-mark {
     border-color: var(--accent-teal);
-    
+
     &::after {
       transform: translate(-50%, -50%) scale(1);
     }
   }
-  
-  input[type="radio"]:checked ~ * {
+
+  input[type='radio']:checked ~ * {
     color: var(--accent-teal);
   }
 }
@@ -114,13 +114,13 @@
 // Performance level variants
 .assessment-btn.high-performance {
   &:hover,
-  input[type="radio"]:checked ~ & {
+  input[type='radio']:checked ~ & {
     border-color: var(--success-green);
     background: rgba(76, 175, 80, 0.1);
-    
+
     .radio-mark {
       border-color: var(--success-green);
-      
+
       &::after {
         background: var(--success-green);
       }
@@ -130,13 +130,13 @@
 
 .assessment-btn.medium-performance {
   &:hover,
-  input[type="radio"]:checked ~ & {
+  input[type='radio']:checked ~ & {
     border-color: var(--dora-orange);
     background: rgba(255, 152, 0, 0.1);
-    
+
     .radio-mark {
       border-color: var(--dora-orange);
-      
+
       &::after {
         background: var(--dora-orange);
       }
@@ -146,13 +146,13 @@
 
 .assessment-btn.low-performance {
   &:hover,
-  input[type="radio"]:checked ~ & {
+  input[type='radio']:checked ~ & {
     border-color: var(--danger-red);
     background: rgba(244, 67, 54, 0.1);
-    
+
     .radio-mark {
       border-color: var(--danger-red);
-      
+
       &::after {
         background: var(--danger-red);
       }
@@ -167,17 +167,17 @@
   background: var(--background-light-gray);
   border-radius: var(--border-radius);
   border-left: 4px solid var(--accent-teal);
-  
+
   p {
     margin: 0;
     color: var(--text-medium);
     font-style: italic;
   }
-  
+
   &.has-feedback {
     background: var(--background-white);
     box-shadow: 0 2px 8px var(--shadow-light);
-    
+
     p {
       color: var(--text-dark);
       font-style: normal;

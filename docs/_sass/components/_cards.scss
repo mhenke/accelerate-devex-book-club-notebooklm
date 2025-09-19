@@ -9,12 +9,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
-  
+
   // Performance optimization with CSS containment
   contain: layout style paint;
-  
+
   transition: box-shadow 0.2s ease, transform 0.2s ease;
-  
+
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
@@ -25,12 +25,12 @@
 .card--interactive {
   @extend .card;
   @include touch-target-44px;
-  
+
   cursor: pointer;
   text-decoration: none;
   display: block;
   color: inherit;
-  
+
   &:focus-visible {
     outline: 2px solid var(--accent-teal);
     outline-offset: 2px;
@@ -41,21 +41,21 @@
 .card--metric {
   text-align: center;
   padding: var(--spacing-xl);
-  
+
   .card__title {
     @include text-lg;
     font-weight: var(--font-weight-semibold);
     color: var(--text-dark);
     margin-bottom: var(--spacing-md);
   }
-  
+
   .card__value {
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
     color: var(--accent-coral);
     margin-bottom: var(--spacing-sm);
   }
-  
+
   .card__description {
     font-size: var(--font-size-sm);
     color: var(--text-medium);
@@ -64,18 +64,18 @@
 
 .card--dora {
   border-left: 4px solid var(--accent-teal);
-  
+
   .card__header {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
-    
+
     .card__icon {
       font-size: 1.5rem;
       color: var(--accent-teal);
     }
-    
+
     .card__title {
       margin: 0;
       font-size: var(--font-size-xl);
@@ -88,11 +88,11 @@
   background: linear-gradient(135deg, var(--accent-sage), var(--accent-teal));
   color: var(--text-white);
   border: none;
-  
+
   .card__title {
     color: var(--text-white);
   }
-  
+
   .card__description {
     color: rgba(255, 255, 255, 0.9);
   }
@@ -102,11 +102,11 @@
 .card-grid {
   display: grid;
   gap: var(--spacing-lg);
-  
+
   @include mobile-up {
     grid-template-columns: 1fr;
   }
-  
+
   @include tablet-up {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
@@ -116,7 +116,7 @@
   @include tablet-up {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  
+
   @include desktop-up {
     grid-template-columns: repeat(4, 1fr);
   }

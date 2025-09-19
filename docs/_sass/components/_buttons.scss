@@ -5,7 +5,7 @@
 .btn {
   @include touch-target-44px;
   @include button-primary;
-  
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -16,10 +16,10 @@
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: all 0.2s ease;
-  
+
   // Ensure consistent spacing
   margin: 2px;
-  
+
   // Focus states
   &:focus-visible {
     outline: 2px solid var(--accent-coral);
@@ -31,7 +31,7 @@
 .btn--primary {
   background: var(--accent-coral);
   color: var(--text-white);
-  
+
   &:hover,
   &:focus {
     background: var(--hover-coral);
@@ -41,7 +41,7 @@
 .btn--secondary {
   background: var(--accent-teal);
   color: var(--text-white);
-  
+
   &:hover,
   &:focus {
     background: var(--hover-teal);
@@ -52,7 +52,7 @@
   background: transparent;
   color: var(--accent-coral);
   border: 2px solid var(--accent-coral);
-  
+
   &:hover,
   &:focus {
     background: var(--accent-coral);
