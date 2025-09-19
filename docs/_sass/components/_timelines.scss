@@ -1,0 +1,220 @@
+// Timeline Components - Progress & Journey Visualization
+// ======================================================
+// Reusable timeline components for meetings and transformation journey
+
+// Base Timeline Container
+.timeline-container {
+  position: relative;
+  margin: var(--spacing-2xl) 0;
+}
+
+// Journey Timeline (Vertical)
+.journey-timeline {
+  position: relative;
+  padding-left: var(--spacing-xl);
+  
+  // Timeline line
+  &::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--spacing-lg) - 2px);
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(
+      to bottom,
+      var(--accent-coral),
+      var(--accent-teal)
+    );
+    border-radius: 2px;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-2xl);
+  padding-left: var(--spacing-xl);
+  
+  // Timeline marker (node)
+  .timeline-marker {
+    @include touch-target-44px;
+    
+    position: absolute;
+    left: calc(-1 * var(--spacing-xl) - 22px);
+    top: var(--spacing-sm);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent-teal);
+    border: 4px solid var(--background-white);
+    box-shadow: 0 2px 8px var(--shadow-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-weight: var(--font-weight-semibold);
+    transition: all 0.3s ease;
+    
+    // Performance optimization
+    contain: layout style paint;
+  }
+  
+  // Completed state
+  &.completed .timeline-marker {
+    background: var(--success-green);
+    
+    &::after {
+      content: '✓';
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+  
+  // Interactive hover
+  &:hover .timeline-marker {
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px var(--shadow-medium);
+  }
+}
+
+.timeline-content {
+  background: var(--background-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px var(--shadow-light);
+  border-left: 4px solid var(--accent-teal);
+  margin-left: var(--spacing-md);
+  
+  h3, h4 {
+    margin-top: 0;
+    color: var(--text-dark);
+  }
+  
+  p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-medium);
+  }
+}
+
+// Meeting Progress Bar
+.meeting-progress {
+  margin-top: var(--spacing-lg);
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--background-light-gray);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: var(--spacing-sm);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-coral), var(--accent-teal));
+  border-radius: 4px;
+  transition: width 0.6s ease;
+  
+  // Animated gradient effect
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.progress-text {
+  font-size: var(--font-size-sm);
+  color: var(--text-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+// Deployment Flow (Horizontal Process)
+.deployment-flow {
+  display: grid;
+  gap: var(--spacing-lg);
+  margin: var(--spacing-2xl) 0;
+  
+  @include mobile-up {
+    grid-template-columns: 1fr;
+  }
+  
+  @include tablet-up {
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: center;
+  }
+}
+
+.flow-problem,
+.flow-solution,
+.flow-result {
+  @extend .card;
+  text-align: center;
+  
+  h4 {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      padding: var(--spacing-sm) 0;
+      border-bottom: 1px solid var(--border-light);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.flow-problem {
+  border-left: 4px solid var(--danger-red);
+  
+  h4 {
+    color: var(--danger-red);
+  }
+}
+
+.flow-solution {
+  border-left: 4px solid var(--dora-orange);
+  
+  h4 {
+    color: var(--dora-orange);
+  }
+}
+
+.flow-result {
+  border-left: 4px solid var(--success-green);
+  
+  h4 {
+    color: var(--success-green);
+  }
+}
+
+.flow-arrow {
+  font-size: 2rem;
+  color: var(--text-medium);
+  font-weight: bold;
+  text-align: center;
+  
+  @include mobile-up {
+    transform: rotate(90deg);
+    margin: var(--spacing-md) 0;
+  }
+  
+  @include tablet-up {
+    transform: none;
+    margin: 0;
+  }
+}
