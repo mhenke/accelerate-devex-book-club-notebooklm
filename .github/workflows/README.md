@@ -5,30 +5,24 @@ This directory contains GitHub Actions workflows for the Accelerate DevEx Book C
 ## 🤖 Claude Code Integration Workflows
 
 ### [`claude.yml`](./claude.yml)
-Main Claude Code integration workflow that responds to @claude mentions in:
-- Issues and issue comments
-- Pull requests and PR comments
-- Pull request reviews
+Main Claude Code integration workflow using the official `anthropics/claude-code-action@v1`:
+- Responds to @claude mentions in issue comments and PR review comments
+- Automatically detects when to activate based on workflow context
+- Includes optional test validation after Claude's changes
 
 **Features:**
 - Automatic code changes and improvements
-- Security scanning of Claude's modifications
 - Test execution after changes
-- Proper git attribution
+- Simplified v1.0 configuration
 
 ### [`claude-advanced.yml`](./claude-advanced.yml)
-Advanced Claude Code features including:
-- Daily automated health checks (9 AM UTC)
-- Manual workflow triggers for specialized tasks
-- Automatic PR reviews
-- Comprehensive code analysis
+Manual workflow triggers for specialized Claude tasks:
 
 **Available Manual Tasks:**
 - `code-review`: Complete code quality assessment
 - `security-audit`: Security vulnerability analysis
 - `performance-analysis`: Performance optimization review
 - `documentation-update`: Documentation improvements
-- `dependency-update`: Package dependency analysis
 
 ## 🚀 Setup Instructions
 
