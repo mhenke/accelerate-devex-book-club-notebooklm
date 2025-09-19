@@ -1099,24 +1099,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Related Resources
 
-<div class="related-resources" markdown="0">
-  <div class="resource-category" markdown="0">
+<div class="resource-grid" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-users"></i> Lean Management & Team Performance</h4>
-    <ul class="resource-links">
-      <li><a href="https://www.atlassian.com/agile/kanban/boards" target="_blank">Kanban Boards</a> - Visual work tracking and WIP limits implementation</li>
-      <li><a href="https://www.lean.org/lexicon-terms/value-stream-mapping/" target="_blank">Value Stream Mapping</a> - End-to-end process visualization techniques</li>
-      <li><a href="https://blog.officevibe.com/employee-net-promoter-score" target="_blank">eNPS Calculator</a> - Employee engagement measurement tool and guidelines</li>
-      <li><a href="https://rework.withgoogle.com/guides/understanding-team-effectiveness/" target="_blank">Psychological Safety Guide</a> - Google's team effectiveness research and practices</li>
-      <li><a href="https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" target="_blank">Team Topologies</a> - Modern team organization patterns and structures</li>
+    <ul>
+      <li><a href="https://www.atlassian.com/agile/kanban/boards" target="_blank">Kanban Boards</a></li>
+      <li><a href="https://www.lean.org/lexicon-terms/value-stream-mapping/" target="_blank">Value Stream Mapping</a></li>
+      <li><a href="https://blog.officevibe.com/employee-net-promoter-score" target="_blank">eNPS Calculator</a></li>
+      <li><a href="https://rework.withgoogle.com/guides/understanding-team-effectiveness/" target="_blank">Psychological Safety Guide</a></li>
+      <li><a href="https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" target="_blank">Team Topologies</a></li>
     </ul>
   </div>
 
-  <div class="resource-category" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-chart-line"></i> DevOps Culture & Assessment</h4>
-    <ul class="resource-links">
-      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DORA Capabilities</a> - DevOps maturity assessment and capability framework</li>
-      <li><a href="https://github.com/dora-team/fourkeys" target="_blank">Four Keys Project</a> - DORA metrics implementation and tracking tools</li>
-      <li><a href="https://www.mindgarden.com/maslach-burnout-toolkit/" target="_blank">Burnout Prevention Toolkit</a> - Christina Maslach's research tools and assessments</li>
+    <ul>
+      <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DORA Capabilities</a></li>
+      <li><a href="https://github.com/dora-team/fourkeys" target="_blank">Four Keys Project</a></li>
+      <li><a href="https://www.mindgarden.com/maslach-burnout-toolkit/" target="_blank">Burnout Prevention Toolkit</a></li>
     </ul>
   </div>
 </div>

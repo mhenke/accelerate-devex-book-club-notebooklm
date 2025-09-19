@@ -553,69 +553,63 @@ h3 {
   font-size: 1.2rem;
 }
 
-/* Related Resources */
-.related-resources {
+/* Resource Grid Styling */
+.resource-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border: 2px solid #0F766E;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.resource-category {
+.resource-card {
   background: white;
   padding: 1.5rem;
-  border-top: 4px solid #0F766E;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
 
-.resource-category:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
+.resource-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.15);
 }
 
-
-.resource-category h4 {
-  margin: 0 0 1rem 0;
-  color: #1565c0;
-  font-size: 1.2rem;
+.resource-card h4 {
+  margin-bottom: 1rem;
+  color: #0F766E;
+  font-size: 1.1rem;
   font-weight: 600;
-  text-align: center;
 }
 
-.resource-category ul {
+.resource-card h4 i {
+  margin-right: 0.5rem;
+}
+
+.resource-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.resource-category li {
-  margin: 0.75rem 0;
-  padding: 0.5rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 6px;
-  transition: all 0.3s ease;
+.resource-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.resource-category li:hover {
-  background: linear-gradient(135deg, #0F766E, #134e4a);
-  transform: translateX(4px);
+.resource-card li:last-child {
+  border-bottom: none;
 }
 
-.resource-category a {
-  color: #134e4a;
+.resource-card a {
+  color: #0F766E;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
-  display: block;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.resource-category li:hover a {
-  color: white;
+.resource-card a:hover {
+  color: #134e4a;
+  text-decoration: underline;
 }
 
 /* Architecture Comparison */
