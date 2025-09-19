@@ -324,13 +324,13 @@ dora_color: '#7c3aed'
   <div class="discussion-section" markdown="0">
     <div class="discussion-section-header" markdown="0">
       <i class="fas fa-users"></i>
-      <h4>Transformational Leadership Assessment</h4>
+      <h4><i class="fas fa-users"></i> Transformational Leadership Assessment</h4>
     </div>
     
     <div class="discussion-card" markdown="0">
       <div class="discussion-header" markdown="0">
         <i class="fas fa-star"></i>
-        <h4>Leadership Characteristics</h4>
+        <h4><i class="fas fa-star"></i> Leadership Characteristics</h4>
       </div>
       <div class="discussion-content" markdown="0">
         <p><strong>Which of the five transformational leadership dimensions are strongest/weakest in your organization?</strong></p>
@@ -346,7 +346,7 @@ dora_color: '#7c3aed'
     <div class="discussion-card" markdown="0">
       <div class="discussion-header" markdown="0">
         <i class="fas fa-graduation-cap"></i>
-        <h4>Investment in Learning</h4>
+        <h4><i class="fas fa-graduation-cap"></i> Investment in Learning</h4>
       </div>
       <div class="discussion-content" markdown="0">
         <p><strong>How does your organization invest in developing team capabilities?</strong></p>
@@ -364,7 +364,7 @@ dora_color: '#7c3aed'
   <div class="discussion-section" markdown="0">
     <div class="discussion-section-header" markdown="0">
       <i class="fas fa-sitemap"></i>
-      <h4>ING Model Application</h4>
+      <h4><i class="fas fa-sitemap"></i> ING Model Application</h4>
     </div>
     
     <div class="discussion-card" markdown="0">
@@ -386,7 +386,7 @@ dora_color: '#7c3aed'
     <div class="discussion-card" markdown="0">
       <div class="discussion-header" markdown="0">
         <i class="fas fa-puzzle-piece"></i>
-        <h4>Team Structure</h4>
+        <h4><i class="fas fa-puzzle-piece"></i> Team Structure</h4>
       </div>
       <div class="discussion-content" markdown="0">
         <p><strong>Could ING's tribe/squad structure improve your organization?</strong></p>
@@ -688,7 +688,7 @@ This question embodies the entire Accelerate philosophy:
 
 <div class="related-resources" markdown="0">
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-users"></i> Leadership & Transformation</h3>
+    <h4><i class="fas fa-users"></i> Leadership & Transformation</h4>
     <ul class="resource-links">
       <li><a href="https://dora.dev/capabilities/transformational-leadership/" target="_blank">Transformational Leadership</a> - DORA guidance on the five leadership dimensions</li>
       <li><a href="https://itrevolution.com/articles/five-leadership-practices/" target="_blank">Leadership Practices</a> - IT Revolution's transformational leadership guide</li>
@@ -698,7 +698,7 @@ This question embodies the entire Accelerate philosophy:
   </div>
 
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-rocket"></i> Transformation Guides</h3>
+    <h4><i class="fas fa-rocket"></i> Transformation Guides</h4>
     <ul class="resource-links">
       <li><a href="https://dora.dev/devops-capabilities/" target="_blank">DevOps Capabilities</a> - Complete DORA capability assessment framework</li>
       <li><a href="https://itrevolution.com/articles/starting-devops-transformation/" target="_blank">Starting DevOps Transformation</a> - Practical transformation guidance</li>
@@ -1448,7 +1448,6 @@ h3 {
 
 .discussion-section {
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
-  border-radius: 20px;
   padding: 1.5rem;
   border: 2px solid var(--meeting-4-primary);
 }
@@ -1469,16 +1468,14 @@ h3 {
 
 .discussion-section-header h4 {
   margin: 0;
-  color: var(--meeting-4-darker);
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .discussion-section .discussion-card {
   background: white;
-  border-radius: 16px;
   padding: 1.5rem;
-  border-left: 5px solid var(--meeting-4-primary);
+  border-top: 4px solid var(--meeting-4-primary);
   box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
   transition: all 0.3s ease;
   margin-bottom: 1rem;
@@ -1493,7 +1490,7 @@ h3 {
 .discussion-section .discussion-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
-  border-left-color: var(--meeting-4-darker);
+  border-top-color: var(--meeting-4-darker);
 }
 
 .discussion-section .discussion-header {
@@ -1510,7 +1507,6 @@ h3 {
 
 .discussion-section .discussion-header h4 {
   margin: 0;
-  color: var(--meeting-4-darker);
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1541,7 +1537,6 @@ h3 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
-  border-radius: 20px;
   border: 2px solid var(--meeting-4-primary);
 }
 
@@ -1561,7 +1556,6 @@ h3 {
 
 .action-section-header h4 {
   margin: 0;
-  color: var(--meeting-4-darker);
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -1574,9 +1568,8 @@ h3 {
 
 .action-item-card {
   background: white;
-  border-radius: 16px;
   padding: 1.5rem;
-  border-left: 5px solid var(--meeting-4-primary);
+  border-top: 4px solid var(--meeting-4-primary);
   box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
   transition: all 0.3s ease;
   position: relative;
@@ -1586,7 +1579,7 @@ h3 {
 .action-item-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
-  border-left-color: var(--meeting-4-darker);
+  border-top-color: var(--meeting-4-darker);
 }
 
 .action-header {
@@ -1603,7 +1596,6 @@ h3 {
 
 .action-header h4 {
   margin: 0;
-  color: var(--meeting-4-darker);
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1637,14 +1629,13 @@ h3 {
   margin: 2rem 0;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
   padding: 2rem;
-  border-radius: 20px;
   border: 2px solid var(--meeting-4-primary);
 }
 
 .resource-category {
   background: white;
-  border-radius: 12px;
   padding: 1.5rem;
+  border-top: 4px solid var(--meeting-4-primary);
   box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
   transition: all 0.3s ease;
 }
@@ -1654,8 +1645,7 @@ h3 {
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
 }
 
-.resource-category h3 {
-  color: var(--meeting-4-primary);
+.resource-category h4 {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
@@ -1663,7 +1653,7 @@ h3 {
   padding-bottom: 0.5rem;
 }
 
-.resource-category h3 i {
+.resource-category h4 i {
   margin-right: 0.5rem;
   color: var(--meeting-4-darker);
 }
@@ -1704,7 +1694,7 @@ h3 {
     padding: 1.25rem;
   }
   
-  .resource-category h3 {
+  .resource-category h4 {
     font-size: 1rem;
   }
   

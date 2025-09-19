@@ -419,7 +419,7 @@ dora_color: '#1E3A8A'
 
 <div class="related-resources" markdown="0">
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-chart-line"></i> DORA Research & Assessment</h3>
+    <h4><i class="fas fa-chart-line"></i> DORA Research & Assessment</h4>
     <ul class="resource-links">
       <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a> - Latest DORA findings and industry benchmarks</li>
       <li><a href="https://dora.dev/" target="_blank">DORA Research Program</a> - Official DORA website with comprehensive research</li>
@@ -429,7 +429,7 @@ dora_color: '#1E3A8A'
   </div>
 
   <div class="resource-category" markdown="0">
-    <h3><i class="fas fa-users"></i> Westrum Organizational Culture</h3>
+    <h4><i class="fas fa-users"></i> Westrum Organizational Culture</h4>
     <ul class="resource-links">
       <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>
       <li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank">IT Revolution Westrum Model</a> - Detailed explanation of culture types</li>
@@ -1507,7 +1507,7 @@ h3 i, h4 i {
 }
 
 .discussion-card {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: linear-gradient(135deg, #f8fafc, #e9ecef);
   padding: 1.5rem;
   border-top: 4px solid #1E3A8A;
   box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
@@ -1536,7 +1536,6 @@ h3 i, h4 i {
 
 .discussion-header h4 {
   margin: 0;
-  color: #1e40af;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1571,7 +1570,7 @@ h3 i, h4 i {
 }
 
 .action-item-card {
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  background: linear-gradient(135deg, #f8fafc, #e9ecef);
   padding: 1.5rem;
   border-top: 4px solid #1E3A8A;
   box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
@@ -1600,7 +1599,6 @@ h3 i, h4 i {
 
 .action-header h4 {
   margin: 0;
-  color: #1e40af;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1645,8 +1643,7 @@ h3 i, h4 i {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.resource-category h3 {
-  color: #1e40af;
+.resource-category h4 {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
@@ -1654,7 +1651,7 @@ h3 i, h4 i {
   padding-bottom: 0.5rem;
 }
 
-.resource-category h3 i {
+.resource-category h4 i {
   margin-right: 0.5rem;
   color: #1E3A8A;
 }
@@ -1672,7 +1669,7 @@ h3 i, h4 i {
     padding: 1.25rem;
   }
   
-  .resource-category h3 {
+  .resource-category h4 {
     font-size: 1rem;
   }
   
