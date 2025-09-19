@@ -81,14 +81,35 @@
     <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
 
     <!-- Critical CSS - Inlined for optimal performance -->
-    {% comment %} Note: For full implementation, critical CSS should be generated during build {% endcomment %}
+    {% comment %} Note: For full implementation, critical CSS should be
+    generated during build {% endcomment %}
     <style>
       /* Critical above-the-fold styles - extracted from main.scss */
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html { font-size: 16px; line-height: 1.6; }
-      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-      .skip-link { position: absolute; top: -40px; left: 6px; background: #ff7f50; color: white; padding: 8px; text-decoration: none; }
-      .skip-link:focus { top: 6px; }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          sans-serif;
+      }
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #ff7f50;
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        top: 6px;
+      }
     </style>
 
     <!-- Non-critical CSS - Deferred loading -->
@@ -129,8 +150,6 @@
     <!-- Skip navigation for screen readers -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <main id="main-content" class="page-content">
-      {{ content }}
-    </main>
+    <main id="main-content" class="page-content">{{ content }}</main>
   </body>
 </html>

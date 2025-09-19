@@ -27,7 +27,7 @@
 .download-btn {
   @include touch-target-44px;
   @include button-primary;
-  
+
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
@@ -38,7 +38,7 @@
   border-radius: var(--border-radius);
   font-weight: var(--font-weight-medium);
   transition: all 0.2s ease;
-  
+
   &:hover,
   &:focus {
     background: var(--hover-coral);
@@ -47,12 +47,12 @@
     text-decoration: none;
     color: var(--text-white);
   }
-  
+
   &:focus-visible {
     outline: 2px solid var(--accent-coral);
     outline-offset: 2px;
   }
-  
+
   i {
     font-size: 1rem;
   }
