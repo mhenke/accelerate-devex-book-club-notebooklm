@@ -138,7 +138,7 @@
 
 .meeting-resource-card {
   background: white;
-  border-radius: 12px;
+
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border: 2px solid var(--border-light);
@@ -487,7 +487,7 @@
 
 .culture-card {
   background: white;
-  border-radius: 12px;
+
   padding: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
@@ -555,7 +555,7 @@
 /* Prompt Container */
 .prompt-container {
   background: white;
-  border-radius: 12px;
+
   padding: 0;
   margin: 2rem 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1294,7 +1294,7 @@ h2 {
 /* Welcome Start Section */
 .welcome-start {
   background: var(--background-light);
-  border-radius: 12px;
+
   padding: 2rem;
   margin: 1rem 0;
   font-size: 1.1rem;
@@ -1403,7 +1403,7 @@ h2 {
   margin: 2rem 0;
   padding: 1.5rem;
   background: var(--background-light);
-  border-radius: 12px;
+
   border: 2px solid var(--primary-blue);
 }
 
@@ -1447,7 +1447,7 @@ h2 {
   text-align: center;
   background: linear-gradient(145deg, #ffffff, #f5f5f5);
   padding: 1.5rem;
-  border-radius: 12px;
+
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1566,7 +1566,7 @@ h2 {
   background: linear-gradient(135deg, var(--success-green), #20c997);
   color: white;
   padding: 1.5rem;
-  border-radius: 12px;
+
   margin: 2rem 0;
 }
 
@@ -1606,7 +1606,7 @@ h2 {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 2rem;
-  border-radius: 12px;
+
   margin: 3rem 0;
   text-align: center;
   box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
@@ -1639,7 +1639,7 @@ h2 {
 .quick-start {
   background: var(--book-cream);
   border: 2px solid var(--book-gold);
-  border-radius: 12px;
+
   padding: 2rem;
   margin: 2rem 0;
 }
@@ -1764,7 +1764,7 @@ pre {
 .timeline-content {
   background: white;
   border: 2px solid var(--border-color);
-  border-radius: 12px;
+
   padding: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
@@ -1778,7 +1778,7 @@ pre {
 .dora-metrics-visual {
   background: linear-gradient(135deg, #f8f9ff, #e8f2ff);
   border: 2px solid var(--primary-blue);
-  border-radius: 12px;
+
   padding: 2rem;
   margin: 2rem 0;
 }
@@ -1866,7 +1866,7 @@ pre {
     var(--background-white),
     var(--background-light-gray)
   );
-  border-radius: 12px;
+
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 6px 20px var(--shadow-light);
@@ -1941,7 +1941,7 @@ pre {
 /* Timeline Visual */
 .timeline-visual {
   background: white;
-  border-radius: 12px;
+
   padding: 2rem;
   margin: 2rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -3337,7 +3337,7 @@ button:focus,
   text-align: center;
   padding: 1rem;
   background: linear-gradient(135deg, #fbbf24, #d97706);
-  border-radius: 12px;
+
   color: white;
 }
 
@@ -3468,7 +3468,7 @@ button:focus,
   align-items: flex-start;
   gap: 0.75rem;
   padding: 1rem;
-  border-radius: 12px;
+
   cursor: pointer;
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -3640,7 +3640,7 @@ button:focus,
   text-align: center;
   padding: 1rem;
   background: linear-gradient(135deg, #fbbf24, #d97706);
-  border-radius: 12px;
+
   margin-bottom: 1rem;
   color: white;
 }
@@ -3672,7 +3672,7 @@ button:focus,
 .feedback-area {
   margin-top: 1rem;
   padding: 1rem;
-  border-radius: 12px;
+
   background: #fef3c7;
   border: 1px solid #fbbf24;
 }

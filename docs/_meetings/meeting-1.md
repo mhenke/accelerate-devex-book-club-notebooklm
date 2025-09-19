@@ -363,7 +363,7 @@ dora_color: '#1E3A8A'
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 1.5rem;
-  border-radius: 12px;
+  
   font-weight: 500;
   transition: all 0.3s ease;
   color: #4b5563;
@@ -459,7 +459,7 @@ dora_color: '#1E3A8A'
   position: relative;
   padding: 1rem 1.5rem;
   border: 2px solid #ddd;
-  border-radius: 12px;
+  
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -590,7 +590,7 @@ dora_color: '#1E3A8A'
   position: relative;
   padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border-left: 4px solid #1E3A8A;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -660,7 +660,7 @@ dora_color: '#1E3A8A'
   position: relative;
   padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-radius: 12px;
+  
   border: 2px solid #1E3A8A;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -773,7 +773,7 @@ dora_color: '#1E3A8A'
   padding: 1.5rem;
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   border: 2px solid #e2e8f0;
-  border-radius: 12px;
+  
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1rem;
@@ -929,7 +929,7 @@ dora_color: '#1E3A8A'
 
 .metric-card {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   text-align: left;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -1039,7 +1039,7 @@ h3 i, h4 i {
   margin: 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-radius: 12px;
+  
   border: 2px solid #1E3A8A;
 }
 
@@ -1108,7 +1108,7 @@ h3 i, h4 i {
   margin: 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-radius: 12px;
+  
   border: 2px solid #1E3A8A;
 }
 
@@ -1158,7 +1158,7 @@ h3 i, h4 i {
 
 .insight-card {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -1416,7 +1416,7 @@ h3 i, h4 i {
   margin: 2rem 0;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   padding: 2rem;
-  border-radius: 12px;
+  
   border: 2px solid #dee2e6;
 }
 

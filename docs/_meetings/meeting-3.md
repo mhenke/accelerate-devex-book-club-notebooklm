@@ -527,7 +527,7 @@ dora_color: '#D97706'
 
 .pain-side {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }

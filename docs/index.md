@@ -47,7 +47,13 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
       <h3>DORA Metrics</h3>
       <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
-      <div class="meeting-badge">Meeting 1</div>
+      <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-link">
+        <div class="meeting-badge">
+          <span class="meeting-number">Meeting 1:</span>
+          <span class="meeting-title">Foundation</span>
+        </div>
+        <div class="meeting-subtitle">The Myth and the Measurement</div>
+      </a>
     </div>
     
     <div class="highlight-card meeting-2">
@@ -56,7 +62,13 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
       <h3>Continuous Delivery</h3>
       <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
-      <div class="meeting-badge">Meeting 2</div>
+      <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-link">
+        <div class="meeting-badge">
+          <span class="meeting-number">Meeting 2:</span>
+          <span class="meeting-title">Technical Excellence</span>
+        </div>
+        <div class="meeting-subtitle">Continuous Delivery & Architecture</div>
+      </a>
     </div>
     
     <div class="highlight-card meeting-3">
@@ -65,7 +77,13 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
       <h3>Lean Management</h3>
       <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
-      <div class="meeting-badge">Meeting 3</div>
+      <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-link">
+        <div class="meeting-badge">
+          <span class="meeting-number">Meeting 3:</span>
+          <span class="meeting-title">Management</span>
+        </div>
+        <div class="meeting-subtitle">Product Development & Sustainability</div>
+      </a>
     </div>
     
     <div class="highlight-card meeting-4">
@@ -74,7 +92,13 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
       <h3>Transformational Leadership</h3>
       <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
-      <div class="meeting-badge">Meeting 4</div>
+      <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-link">
+        <div class="meeting-badge">
+          <span class="meeting-number">Meeting 4:</span>
+          <span class="meeting-title">Leadership</span>
+        </div>
+        <div class="meeting-subtitle">Transformation & Case Study</div>
+      </a>
     </div>
   </div>
 </div>
