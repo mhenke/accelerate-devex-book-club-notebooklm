@@ -374,43 +374,39 @@ dora_color: '#1E3A8A'
 
 ### Action Items for Next Meeting
 
-<div class="action-items-grid" markdown="0">
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+<div class="action-checklist" markdown="0">
+  <p class="checklist-intro">Before our next meeting, challenge yourself with these action-oriented tasks. Check off each one as you complete it!</p>
+  
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-1" class="action-checkbox">
+    <label for="action-1" class="action-label">
       <i class="fas fa-chart-line"></i>
-      <h4>Start DORA Tracking</h4>
-    </div>
-    <p><strong>Begin informal tracking of one DORA metric for your team</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Choose deployment frequency, lead time, MTTR, or change failure rate</span>
-      <span>• Track for 2 weeks using simple spreadsheet or notes</span>
-      <span>• Focus on establishing baseline measurement</span>
+      <strong>Start tracking ONE DORA metric this week</strong> - Which metric will reveal your team's biggest opportunity?
+    </label>
+    <div class="action-details">
+      Pick deployment frequency, lead time, MTTR, or change failure rate. Use a simple spreadsheet or notes. The goal is baseline measurement, not perfection.
     </div>
   </div>
 
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-2" class="action-checkbox">
+    <label for="action-2" class="action-label">
       <i class="fas fa-exclamation-triangle"></i>
-      <h4>Identify Pain Points</h4>
-    </div>
-    <p><strong>Identify your biggest deployment pain point</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Document what causes deployment anxiety</span>
-      <span>• Note manual steps and coordination needed</span>
-      <span>• Consider impact on team stress and work-life balance</span>
+      <strong>Document your #1 deployment pain point</strong> - What makes your team anxious before releases?
+    </label>
+    <div class="action-details">
+      Write down the manual steps, coordination needed, and how it impacts work-life balance. Be specific about what happens when things go wrong.
     </div>
   </div>
 
-  <div class="action-item-card" markdown="0">
-    <div class="action-header" markdown="0">
+  <div class="checklist-item" markdown="0">
+    <input type="checkbox" id="action-3" class="action-checkbox">
+    <label for="action-3" class="action-label">
       <i class="fas fa-users"></i>
-      <h4>Observe Culture Patterns</h4>
-    </div>
-    <p><strong>Observe examples of pathological, bureaucratic, or generative culture behaviors</strong></p>
-    <div class="action-guidance" markdown="0">
-      <span>• Watch how failures are handled in meetings</span>
-      <span>• Note information sharing patterns</span>
-      <span>• Observe cooperation vs. blame responses</span>
+      <strong>Culture detective mode: Observe 3 team interactions</strong> - Are you pathological, bureaucratic, or generative?
+    </label>
+    <div class="action-details">
+      Watch how failures are discussed in meetings. Note information sharing patterns. Do you see blame or learning? Cooperation or silos?
     </div>
   </div>
 </div>
@@ -1560,67 +1556,76 @@ h3 i, h4 i {
   line-height: 1.4;
 }
 
-/* Action Items Styling */
-.action-items-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+/* Action Checklist Styling */
+.action-checklist {
+  background: linear-gradient(135deg, #f8fafc, #e9ecef);
+  padding: 2rem;
+  border-left: 4px solid #1E3A8A;
   margin: 2rem 0;
 }
 
-.action-item-card {
-  background: linear-gradient(135deg, #f8fafc, #e9ecef);
-  padding: 1.5rem;
-  border-top: 4px solid #1E3A8A;
-  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.action-item-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
-  border-top-color: #1e40af;
-}
-
-.action-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.action-header i {
-  color: #1E3A8A;
-  font-size: 1.2rem;
-}
-
-.action-header h4 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.action-item-card p {
-  margin: 0 0 1rem 0;
-  color: #374151;
+.checklist-intro {
   font-weight: 500;
-  font-size: 0.95rem;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
-.action-guidance {
+.checklist-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.checklist-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
+}
+
+.action-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+  accent-color: #1E3A8A;
+  cursor: pointer;
+}
+
+.action-label {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
 }
 
-.action-guidance span {
-  color: #6b7280;
+.action-label i {
+  color: #1E3A8A;
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.action-label strong {
+  color: #1e40af;
+}
+
+.action-details {
   font-size: 0.85rem;
-  padding-left: 0.5rem;
-  border-left: 2px solid #e5e7eb;
-  line-height: 1.4;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-left: 2.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.checklist-item input[type="checkbox"]:checked + .action-label {
+  opacity: 0.7;
+  text-decoration: line-through;
 }
 
 /* Resource Grid Styling */
