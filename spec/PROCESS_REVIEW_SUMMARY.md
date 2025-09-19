@@ -8,20 +8,15 @@ As part of a comprehensive principal software engineer review, I analyzed the ex
 
 ### Existing Workflows
 
-1. **Primary CI Pipeline** (`.github/workflows/ci.yml`)
+1. **Comprehensive Test Suite** (`.github/workflows/test-suite.yml`)
 
-   - Quality assurance for all branches
-   - Linting, validation, and basic testing
-   - ~8 minute execution time
-
-2. **Comprehensive Test Suite** (`.github/workflows/test-suite.yml`)
-
-   - Advanced testing for main branch changes
-   - Visual regression testing with Percy
+   - Unified quality assurance pipeline for all branches and PRs
+   - Multi-layered validation: linting, spell checking, HTML validation
+   - Visual regression testing with Percy (for main/PR branches)
    - Performance auditing with Lighthouse
-   - ~15 minute execution time
+   - ~15 minute execution time (8 minutes for basic validation on feature branches)
 
-3. **Pages Deployment** (`.github/workflows/pages.yml`)
+2. **Pages Deployment** (`.github/workflows/pages.yml`)
    - Production deployment to GitHub Pages
    - Secure OIDC token-based deployment
    - ~3 minute execution time
@@ -43,25 +38,42 @@ As part of a comprehensive principal software engineer review, I analyzed the ex
 - **Proper artifact management**: Build once, deploy safely
 - **Branch protection**: Quality gates prevent problematic merges
 
+## Recent Improvements Implemented
+
+### Workflow Consolidation ✅
+
+- **Merged ci.yml into test-suite.yml** for unified pipeline management
+- **Added conditional logic** for expensive operations (Percy visual testing only on main/PR)
+- **Eliminated duplication** while preserving all functionality
+
+### Environment Standardization ✅
+
+- **Ruby 3.3** standardized across all workflows
+- **Node.js 20** standardized across all workflows
+- **npm ci** implemented for deterministic builds
+- **Consistent timeouts** added to prevent hanging jobs
+
+### Enhanced Features ✅
+
+- **Spell checking** now included in comprehensive test suite
+- **Jekyll audit** integrated for accessibility and performance validation
+- **Smart resource usage** with conditional Playwright installation
+
 ## Critical Issues Identified
 
 ### High Priority Technical Debt
 
-1. **Environment Inconsistency**
+1. **Workflow Consolidation** ✅ **RESOLVED**
 
-   - Ruby 3.3 (CI) vs Ruby 3.1 (test suite, pages)
-   - Node 20 (CI) vs Node 18 (test suite)
-   - Risk: Inconsistent behavior between environments
+   - Consolidated ci.yml and test-suite.yml into unified comprehensive pipeline
+   - Standardized to Ruby 3.3 and Node.js 20 across all workflows
+   - Implemented proper `npm ci` dependency management
 
-2. **Dependency Management Anti-patterns**
+2. **Smart Visual Testing**
 
-   - Fallback from `npm ci` to `npm install`
-   - Risk: Non-deterministic builds
-
-3. **Missing Operational Standards**
-   - No consistent timeout values
-   - Limited error recovery strategies
-   - Risk: Unpredictable failure behavior
+   - Percy visual testing now conditionally runs only for main branch and PRs
+   - Reduces unnecessary resource usage on feature branches
+   - Maintains comprehensive testing where needed
 
 ### Medium Priority Improvements
 
@@ -111,12 +123,13 @@ As part of a comprehensive principal software engineer review, I analyzed the ex
 
 ## Immediate Recommendations
 
-### Critical (Fix This Sprint)
+### Critical (Fix This Sprint) ✅ **COMPLETED**
 
-1. **Standardize Ruby to version 3.3** across all workflows
-2. **Standardize Node.js to version 20** across all workflows
-3. **Implement proper `npm ci`** dependency management
-4. **Add timeout values** to all jobs
+1. **Standardize Ruby to version 3.3** across all workflows ✅
+2. **Standardize Node.js to version 20** across all workflows ✅
+3. **Implement proper `npm ci`** dependency management ✅
+4. **Add timeout values** to all jobs ✅
+5. **Consolidate duplicate workflows** - Merged ci.yml into test-suite.yml ✅
 
 ### Important (Next Month)
 
@@ -149,10 +162,10 @@ As part of a comprehensive principal software engineer review, I analyzed the ex
 
 ### Pipeline Performance (Current → Target)
 
-- CI Pipeline: ~8 min → < 10 min (maintain performance)
-- Test Suite: ~15 min → < 20 min (maintain performance)
+- Unified Test Suite: ~15 min for main/PR, ~8 min for feature branches → < 20 min (optimized)
 - Deploy: ~3 min → < 5 min (maintain performance)
 - Success Rate: 97% → > 95% (maintain reliability)
+- Resource Efficiency: Improved through conditional visual testing
 
 ### Quality Metrics (Current → Target)
 
