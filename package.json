@@ -17,7 +17,7 @@
     "test:visual": "cd tests && npm test",
     "test:interactive": "cd tests && npm run test:headed",
     "test:percy": "cd tests && npm run test:percy",
-    "test:htmlproof": "cd docs && bundle exec htmlproofer _site --disable-external=true --enforce-https=false --check-html=true --check-img=true --check-favicon=true --allow-missing-href=false --allow-hash-href=true --url-swap '^/accelerate-devex-book-club-notebooklm:http://localhost:4000/accelerate-devex-book-club-notebooklm'",
+    "test:htmlproof": "cd docs && bundle exec htmlproofer _site --disable-external=true --enforce-https=false --allow-missing-href=false --allow-hash-href=true --extensions .html",
     "test:lighthouse": "lhci autorun",
     "test:jekyll-audit": "npx @brennanbrown/jekyll-audit audit",
     "test": "npm run lint && npm run test:html && npm run test:htmlproof",

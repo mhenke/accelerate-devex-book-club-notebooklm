@@ -10,13 +10,13 @@ dora_color: '#7c3aed'
 
 ### Watch the Meeting 4 Video
 
-<div class="media-container">
+<div class="media-container" markdown="0">
 <video controls width="100%">
   <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-<div class="media-download-controls">
+<div class="media-download-controls" markdown="0">
   <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-video.mp4" download class="download-btn">
 		<i class="fas fa-download"></i> Download Video
 	</a>
@@ -25,13 +25,13 @@ dora_color: '#7c3aed'
 
 ### Listen to the Meeting 4 Podcast
 
-<div class="media-container">
+<div class="media-container" markdown="0">
 <audio controls>
   <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-<div class="media-download-controls">
+<div class="media-download-controls" markdown="0">
   <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-podcast.m4a" download class="download-btn">
 		<i class="fas fa-download"></i> Download Audio
 	</a>
@@ -42,34 +42,34 @@ dora_color: '#7c3aed'
 
 #### Transformational Leadership: Five Dimensions That Drive Performance
 
-<div class="leadership-dimensions-grid">
-  <div class="dimension-card vision">
+<div class="leadership-dimensions-grid" markdown="0">
+  <div class="dimension-card vision" markdown="0">
     <h4><i class="fas fa-eye"></i> Vision</h4>
     <p>Clear understanding of where organization is going in 5 years</p>
   </div>
 
-  <div class="dimension-card communication">
+  <div class="dimension-card communication" markdown="0">
     <h4><i class="fas fa-bullhorn"></i> Inspirational Communication</h4>
     <p>Motivates and inspires even in uncertain/changing environments</p>
   </div>
 
-  <div class="dimension-card stimulation">
+  <div class="dimension-card stimulation" markdown="0">
     <h4><i class="fas fa-lightbulb"></i> Intellectual Stimulation</h4>
     <p>Challenges team members to think about problems in new ways</p>
   </div>
 
-  <div class="dimension-card support">
+  <div class="dimension-card support" markdown="0">
     <h4><i class="fas fa-heart"></i> Supportive Leadership</h4>
     <p>Demonstrates care and consideration for followers' personal needs</p>
   </div>
 
-  <div class="dimension-card recognition">
+  <div class="dimension-card recognition" markdown="0">
     <h4><i class="fas fa-award"></i> Personal Recognition</h4>
     <p>Praises and acknowledges achievements, personally compliments work</p>
   </div>
 </div>
 
-<div class="research-finding">
+<div class="research-finding" markdown="0">
   <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
   <p>High-performing teams reported strongest transformational leadership across all dimensions. Teams with weakest leaders only <strong>half as likely</strong> to be high performers.</p>
 </div>
@@ -133,8 +133,8 @@ dora_color: '#7c3aed'
 
 ### Leadership Impact: Enabling vs. Commanding
 
-<div class="leadership-impact-comparison">
-  <div class="impact-side traditional">
+<div class="leadership-impact-comparison" markdown="0">
+  <div class="impact-side traditional" markdown="0">
     <h4><i class="fas fa-exclamation-triangle"></i> Traditional Management</h4>
     <ul>
       <li><i class="fas fa-gavel"></i> Command and control approach</li>
@@ -144,9 +144,9 @@ dora_color: '#7c3aed'
     </ul>
   </div>
 
-  <div class="vs-arrow"><i class="fas fa-arrow-right"></i></div>
+  <div class="vs-arrow" markdown="0"><i class="fas fa-arrow-right"></i></div>
 
-  <div class="impact-side transformational">
+  <div class="impact-side transformational" markdown="0">
     <h4><i class="fas fa-hands-helping"></i> Transformational Leadership</h4>
     <ul>
       <li><i class="fas fa-graduation-cap"></i> Training and conference budgets</li>
@@ -159,23 +159,23 @@ dora_color: '#7c3aed'
 
 ### Coaching Culture: From Command to Support
 
-<div class="coaching-transformation">
-  <div class="coaching-before">
+<div class="coaching-transformation" markdown="0">
+  <div class="coaching-before" markdown="0">
     <h4><i class="fas fa-megaphone"></i> Command-and-Control</h4>
-    <div class="quote-box">
+    <div class="quote-box" markdown="0">
       <p>"Why isn't this getting done?"</p>
       <p>"You need to fix this issue."</p>
     </div>
   </div>
 
-  <div class="arrow-transform">
+  <div class="arrow-transform" markdown="0">
     <i class="fas fa-sync-alt"></i>
     <span>Transform to</span>
   </div>
 
-  <div class="coaching-after">
+  <div class="coaching-after" markdown="0">
     <h4><i class="fas fa-comments"></i> Coaching Approach</h4>
-    <div class="quote-box">
+    <div class="quote-box" markdown="0">
       <p>"Help me understand the problems you're encountering."</p>
       <p>"What can I do to better support you and the team?"</p>
     </div>
@@ -191,10 +191,10 @@ dora_color: '#7c3aed'
 
 ### Security Integration: Shift Left for Better Performance
 
-<div class="security-transformation">
-  <div class="security-stat">
+<div class="security-transformation" markdown="0">
+  <div class="security-stat" markdown="0">
     <h4><i class="fas fa-shield-alt"></i> High Performers vs. Low Performers</h4>
-    <div class="stat-highlight">
+    <div class="stat-highlight" markdown="0">
       <span class="stat-number">50%</span>
       <span class="stat-text">less time on security remediation</span>
     </div>
@@ -204,11 +204,11 @@ dora_color: '#7c3aed'
 
 ### Interactive Learning Checkpoint
 
-<div class="learning-checkpoint">
-  <div class="checkpoint-card leadership-assessment">
+<div class="learning-checkpoint" markdown="0">
+  <div class="checkpoint-card leadership-assessment" markdown="0">
     <h4><i class="fas fa-users"></i> Leadership Style Assessment</h4>
     <p>Rate your current leadership approach across the five transformational dimensions:</p>
-    <div class="assessment-buttons">
+    <div class="assessment-buttons" markdown="0">
       <label class="assessment-btn command-style">
         <input type="radio" name="leadership-style" value="command">
         <span class="radio-mark"></span>
@@ -233,32 +233,32 @@ dora_color: '#7c3aed'
     </div>
   </div>
 
-  <div class="checkpoint-card transformation-readiness">
+  <div class="checkpoint-card transformation-readiness" markdown="0">
     <h4><i class="fas fa-chart-bar"></i> Transformation Readiness</h4>
     <p>Assess your organization's readiness for sustainable transformation:</p>
-    <div class="readiness-grid">
-      <div class="readiness-item">
+    <div class="readiness-grid" markdown="0">
+      <div class="readiness-item" markdown="0">
         <label class="readiness-checkbox">
           <input type="checkbox" name="readiness" value="learning-investment">
           <span class="checkbox-mark"></span>
           <span>Investment in learning & development</span>
         </label>
       </div>
-      <div class="readiness-item">
+      <div class="readiness-item" markdown="0">
         <label class="readiness-checkbox">
           <input type="checkbox" name="readiness" value="patient-discipline">
           <span class="checkbox-mark"></span>
           <span>Patience for long-term culture change</span>
         </label>
       </div>
-      <div class="readiness-item">
+      <div class="readiness-item" markdown="0">
         <label class="readiness-checkbox">
           <input type="checkbox" name="readiness" value="experimentation">
           <span class="checkbox-mark"></span>
           <span>Culture of experimentation</span>
         </label>
       </div>
-      <div class="readiness-item">
+      <div class="readiness-item" markdown="0">
         <label class="readiness-checkbox">
           <input type="checkbox" name="readiness" value="visual-management">
           <span class="checkbox-mark"></span>
@@ -271,13 +271,13 @@ dora_color: '#7c3aed'
     </div>
   </div>
 
-  <div class="checkpoint-card coaching-practice">
+  <div class="checkpoint-card coaching-practice" markdown="0">
     <h4><i class="fas fa-comments"></i> Coaching Questions Practice</h4>
     <p>Choose the coaching question you'd most likely ask in challenging situations:</p>
-    <div class="coaching-scenarios">
-      <div class="scenario">
+    <div class="coaching-scenarios" markdown="0">
+      <div class="scenario" markdown="0">
         <h5>Scenario: Team missed deployment deadline</h5>
-        <div class="coaching-options">
+        <div class="coaching-options" markdown="0">
           <label class="coaching-option">
             <input type="radio" name="coaching-q1" value="supportive">
             <span class="radio-mark"></span>

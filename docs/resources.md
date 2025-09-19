@@ -19,7 +19,7 @@ title: Resources
     Between Meetings Activities
   </div>
 
-  <div class="resources-grid">
+  <div class="resources-grid" markdown="0">
     <div class="resource-card">
       <div class="resource-icon" style="color: #2196F3">
         <i class="fas fa-clipboard-check"></i>
@@ -197,7 +197,7 @@ title: Resources
 
 ## Discussion Practices {#discussion-practices}
 
-<div class="myth-buster">
+<div class="myth-buster" markdown="0">
   <div class="myth-side">
     <h3><i class="fas fa-shield-alt"></i> Creating Psychological Safety</h3>
     <div class="safety-practices">
@@ -402,26 +402,14 @@ title: Resources
 
 ---
 
-<div class="ai-attribution">
+---
+
+<footer class="ai-attribution" markdown="0">
   <div class="ai-attribution__icon">
     <i class="fas fa-robot" aria-hidden="true"></i>
   </div>
   <div class="ai-attribution__content">
     <h4 class="ai-attribution__title">AI-Generated Content</h4>
-    <p class="ai-attribution__text">These resources were curated and organized with AI assistance from <strong>Claude</strong>, <strong>Claude Code</strong>, and <strong>NotebookLM</strong> to support your <strong>Accelerate</strong> book club journey.</p>
-    <div class="ai-attribution__tools">
-      <div class="ai-tool">
-        <i class="fas fa-brain" aria-hidden="true"></i>
-        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-code" aria-hidden="true"></i>
-        <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
-      </div>
-      <div class="ai-tool">
-        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
-      </div>
-    </div>
+    <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
   </div>
-</div>
+</footer>
