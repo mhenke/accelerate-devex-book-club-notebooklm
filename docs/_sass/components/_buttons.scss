@@ -7,23 +7,45 @@
 // =============================================================================
 
 %btn-base {
-  @include label-large; // Material Design typography
-
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: var(--touch-target-min); // 44px touch target
-  padding: 10px 24px;
+  min-height: var(--touch-target-min);
+  padding: 12px 24px;
   border: none;
-  border-radius: var(--radius-lg); // Balanced rounded corners
+  border-radius: 8px; // Clean, modern rounded corners like "Get the Book"
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important; // Prevent all underlines
   text-align: center;
-  transition:
-    background-color var(--duration-normal) var(--ease-out),
-    box-shadow var(--duration-normal) var(--ease-out),
-    border-color var(--duration-normal) var(--ease-out);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-body-large);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden; // For shimmer effect
+
+  // Subtle shimmer effect on all buttons
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
 
   // Prevent user selection
   user-select: none;
@@ -61,22 +83,34 @@
 // MATERIAL DESIGN BUTTON VARIANTS
 // =============================================================================
 
-// Filled Button (Primary)
+// Filled Button (Primary) - Clean Modern Style - Override existing coral styles
 .btn,
 .btn--filled {
   @extend %btn-base;
 
-  background: var(--meeting-1-primary);
-  color: white;
-  box-shadow: var(--elevation-1);
+  background: #4CAF50 !important; // Clean green like the image - override coral
+  color: white !important;
+  border: none !important; // Remove any coral borders
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
 
-  &:hover {
-    box-shadow: var(--elevation-2);
-    background: var(--meeting-1-secondary);
+  &:hover,
+  &:hover:not(:disabled) {
+    background: #45a049 !important; // Override coral hover
+    color: white !important;
+    text-decoration: none !important; // Fix underline issue
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+    transform: translateY(-1px);
+    border: none !important;
   }
 
   &:active {
-    box-shadow: var(--elevation-1);
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(76, 175, 80, 0.4);
+    outline-offset: 2px;
   }
 }
 
@@ -172,6 +206,105 @@
 }
 
 // =============================================================================
+// SPECIALIZED BUTTON VARIANTS
+// =============================================================================
+
+// Primary Action Button (Get the Book, Start Learning, etc.) - Override coral styles
+.btn--primary-action {
+  @extend %btn-base;
+
+  background: #4CAF50 !important; // Override coral styles
+  color: white !important;
+  border: none !important; // Remove any existing borders
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  border-radius: 10px;
+  min-height: 52px;
+  padding: 16px 32px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.75px;
+
+  &:hover,
+  &:hover:not(:disabled) {
+    background: #45a049 !important; // Override coral hover
+    color: white !important;
+    text-decoration: none !important; // Fix underline issue
+    border: none !important;
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(76, 175, 80, 0.4);
+    outline-offset: 2px;
+  }
+}
+
+// Secondary Action Button (Get Started, Resources, etc.) - Meeting 1 Blue Theme
+.btn--secondary-action {
+  @extend %btn-base;
+
+  background: #0969da !important; // Meeting 1 blue theme
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
+
+  &:hover,
+  &:hover:not(:disabled) {
+    background: #0550ae !important; // Darker Meeting 1 blue hover
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(9, 105, 218, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(9, 105, 218, 0.4);
+    outline-offset: 2px;
+  }
+}
+
+// Meeting Navigation Button - Dynamic theme with consistent effects
+.btn--meeting-nav {
+  @extend %btn-base;
+
+  background: var(--meeting-primary, #0969da) !important; // Default to Meeting 1 blue
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
+
+  &:hover,
+  &:hover:not(:disabled) {
+    background: var(--meeting-secondary, #0550ae) !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(9, 105, 218, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(9, 105, 218, 0.4);
+    outline-offset: 2px;
+  }
+}
+
+// =============================================================================
 // MEETING-SPECIFIC BUTTON THEMES
 // =============================================================================
 
@@ -248,12 +381,12 @@
 }
 
 .btn--large {
-  min-height: 48px;
-  padding: 14px 32px;
-
-  @include label-large;
-
+  min-height: 52px;
+  padding: 16px 40px;
   font-size: var(--font-size-title-medium);
+  font-weight: var(--font-weight-bold);
+  border-radius: 10px;
+  letter-spacing: 0.75px;
 }
 
 // =============================================================================

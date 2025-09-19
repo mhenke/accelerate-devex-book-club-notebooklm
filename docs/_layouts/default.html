@@ -95,8 +95,65 @@
         line-height: 1.6;
       }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #1f2937;
+      }
+
+      /* Unified Typography Scale - Using Design Tokens */
+      h1 {
+        font-family: var(--font-display);
+        font-size: var(--font-size-display-small);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-tight);
+        color: var(--text-dark);
+        margin-bottom: var(--space-lg);
+      }
+
+      h2 {
+        font-family: var(--font-display);
+        font-size: var(--font-size-headline-medium);
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-tight);
+        color: var(--text-dark);
+        margin-bottom: var(--space-md);
+      }
+
+      h3 {
+        font-family: var(--font-ui);
+        font-size: var(--font-size-title-large);
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-normal);
+        color: var(--text-medium);
+        margin-bottom: var(--space-sm);
+      }
+
+      h4 {
+        font-family: var(--font-ui);
+        font-size: var(--font-size-title-medium);
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-normal);
+        color: var(--text-medium);
+        margin-bottom: var(--space-xs);
+      }
+
+      p {
+        font-size: var(--font-size-body-large);
+        line-height: var(--line-height-relaxed);
+        margin-bottom: var(--space-md);
+        color: var(--text-medium);
+      }
+
+      /* Responsive typography using design tokens */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: var(--font-size-headline-large);
+        }
+
+        h2 {
+          font-size: var(--font-size-headline-small);
+        }
       }
       .skip-link {
         position: absolute;
@@ -109,6 +166,122 @@
       }
       .skip-link:focus {
         top: 6px;
+      }
+
+      /* Unified Site Header Styles */
+      .site-header {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .site-header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      /* Site Navigation - BEM Pattern */
+      .site-nav__brand-link {
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+        text-decoration: none;
+        color: var(--text-white);
+        transition: all var(--duration-normal) var(--ease-out);
+      }
+
+      .site-nav__brand-link:hover {
+        color: var(--accent-teal);
+        transform: translateY(-1px);
+      }
+
+      .site-nav__brand-icon {
+        font-size: var(--font-size-xl);
+        color: var(--accent-teal);
+      }
+
+      .site-nav__brand-text {
+        display: flex;
+        flex-direction: column;
+        line-height: var(--line-height-tight);
+      }
+
+      .site-nav__brand-title {
+        font-size: var(--font-size-title-large);
+        font-weight: var(--font-weight-bold);
+        font-family: var(--font-display);
+      }
+
+      .site-nav__brand-subtitle {
+        font-size: var(--font-size-body-medium);
+        opacity: 0.8;
+        font-weight: var(--font-weight-medium);
+      }
+
+      .site-nav-main {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .site-nav-main .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+      }
+
+      .site-nav-main .nav-item:hover,
+      .site-nav-main .nav-item.active {
+        color: white;
+        background: rgba(122, 218, 209, 0.2);
+        border-color: rgba(122, 218, 209, 0.3);
+      }
+
+      .site-nav-main .nav-item.external {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .site-nav-main .nav-item.external:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      @media (max-width: 768px) {
+        .site-header-content {
+          flex-direction: column;
+          gap: 1rem;
+          text-align: center;
+        }
+
+        .site-nav-main {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+        }
+
+        .brand-title {
+          font-size: 1.125rem;
+        }
+
+        .brand-subtitle {
+          font-size: 0.8rem;
+        }
       }
     </style>
 
@@ -149,6 +322,35 @@
   <body>
     <!-- Skip navigation for screen readers -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Unified Site Header -->
+    {% unless page.layout == 'meeting' %}
+    <header class="site-header">
+      <div class="site-header-content">
+        <div class="site-nav__brand">
+          <a href="{{ '/' | relative_url }}" class="site-nav__brand-link">
+            <i class="fas fa-rocket site-nav__brand-icon" aria-hidden="true"></i>
+            <span class="site-nav__brand-text">
+              <span class="site-nav__brand-title">Accelerate DevEx</span>
+              <span class="site-nav__brand-subtitle">Book Club</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="site-nav-main">
+          <a href="{{ '/' | relative_url }}" class="nav-item{% if page.url == '/' %} active{% endif %}">
+            <i class="fas fa-home"></i> Home
+          </a>
+          <a href="{{ '/meetings' | relative_url }}" class="nav-item{% if page.url contains '/meetings' %} active{% endif %}">
+            <i class="fas fa-calendar"></i> Meetings
+          </a>
+          <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm" target="_blank" rel="noopener" class="nav-item external">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </nav>
+      </div>
+    </header>
+    {% endunless %}
 
     <main id="main-content" class="page-content">{{ content }}</main>
   </body>
