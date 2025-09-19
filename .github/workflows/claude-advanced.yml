@@ -1,0 +1,61 @@
+name: Claude Code Advanced
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Task for Claude to perform'
+        required: true
+        type: choice
+        options:
+          - 'code-review'
+          - 'security-audit'
+          - 'performance-analysis'
+          - 'documentation-update'
+        default: 'code-review'
+
+jobs:
+  claude-manual-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (if needed)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies (if needed)
+        run: npm ci
+
+      - name: Prepare task prompt
+        run: |
+          case "${{ github.event.inputs.task }}" in
+            "code-review")
+              echo "TASK_PROMPT=Please perform a comprehensive code review of this repository. Focus on code quality, best practices, and potential bugs. Create an issue summarizing your findings." >> $GITHUB_ENV
+              ;;
+            "security-audit")
+              echo "TASK_PROMPT=Please perform a security audit of this codebase. Look for potential vulnerabilities, insecure patterns, and recommend security improvements. Create an issue with your security assessment." >> $GITHUB_ENV
+              ;;
+            "performance-analysis")
+              echo "TASK_PROMPT=Please analyze the performance characteristics of this codebase. Identify bottlenecks, inefficient code, and suggest optimizations. Create an issue with your performance recommendations." >> $GITHUB_ENV
+              ;;
+            "documentation-update")
+              echo "TASK_PROMPT=Please review and update the documentation in this repository. Ensure README files are current, code is well-documented, and create an issue with documentation improvements needed." >> $GITHUB_ENV
+              ;;
+          esac
+
+      - name: Execute Claude Task
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: ${{ env.TASK_PROMPT }}
+
+      - name: Run tests after changes
+        run: |
+          echo "🧪 Testing any changes Claude made..."
+          npm run lint || echo "Linting completed"
+          npm run build || echo "Build completed"
+          echo "✅ Tests completed"

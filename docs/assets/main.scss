@@ -15,8 +15,7 @@
 
 // 3. COMPONENTS - Reusable UI components (loaded async after critical)
 @import "components/buttons"; // Button variations and states
-@import "components/cards"; // Card components and variations
-@import "components/reusable-cards"; // Comprehensive card system with design tokens
+@import "components/cards"; // Modular card system with BEM methodology
 @import "components/icons"; // Font Awesome with Material Design integration
 
 /* Section Card Styles */
@@ -29,6 +28,133 @@
   max-width: 1200px;
   text-align: center;
   box-shadow: var(--elevation-1);
+}
+
+/* Key Question Section - High Specificity Fix */
+.key-question {
+  background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
+  color: white !important;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin: var(--space-xl) auto;
+  max-width: min(1200px, calc(100vw - 2rem)) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: center;
+  box-shadow: var(--elevation-2);
+  overflow: hidden !important;
+
+  h2 {
+    color: var(--color-gray-200) !important;
+    font-size: var(--font-size-title-large) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    margin-bottom: var(--space-lg);
+  }
+
+  p {
+    color: var(--color-gray-300) !important;
+    font-size: var(--font-size-body-large) !important;
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-lg);
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .key-question-quote {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-left: 4px solid var(--color-blue-400) !important;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg) !important;
+    margin: 0 !important;
+    font-size: var(--font-size-body-large) !important;
+    font-style: italic !important;
+    line-height: var(--line-height-relaxed) !important;
+    color: var(--color-gray-100) !important;
+
+    // Critical text wrapping properties with highest specificity
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+    white-space: normal !important;
+
+    // Prevent horizontal overflow but allow vertical expansion
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-wrap: anywhere !important;
+
+    // Remove text truncation - we want text to wrap, not be cut off
+    overflow: visible !important;
+    text-overflow: unset !important;
+
+    // Ensure multi-line text display
+    display: block !important;
+    height: auto !important;
+
+    // Override Jekyll syntax highlighting for blockquotes
+    .language-plaintext,
+    .highlighter-rouge,
+    .highlight,
+    pre,
+    code {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      font-family: inherit !important;
+      font-size: inherit !important;
+      font-style: inherit !important;
+      color: inherit !important;
+      white-space: normal !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      word-break: break-word !important;
+      overflow: visible !important;
+      display: inline !important;
+    }
+
+    // Specifically target the pre element inside blockquote
+    pre.highlight {
+      white-space: pre-wrap !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      overflow: visible !important;
+    }
+  }
+
+  // Responsive adjustments with higher specificity
+  @media (max-width: 768px) {
+    padding: var(--space-lg) !important;
+    margin: var(--space-lg) var(--space-md) !important;
+    max-width: calc(100vw - 2rem) !important;
+
+    h2 {
+      font-size: var(--font-size-title-medium) !important;
+    }
+
+    p {
+      font-size: var(--font-size-body-medium) !important;
+    }
+
+    .key-question-quote {
+      font-size: var(--font-size-body-medium) !important;
+      padding: var(--space-md) !important;
+      line-height: 1.6 !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: var(--space-md) !important;
+    margin: var(--space-md) var(--space-sm) !important;
+    max-width: calc(100vw - 1rem) !important;
+
+    .key-question-quote {
+      padding: var(--space-sm) var(--space-md) !important;
+      font-size: var(--font-size-body-small) !important;
+      line-height: 1.5 !important;
+    }
+  }
 }
 
 /* ...existing code... */

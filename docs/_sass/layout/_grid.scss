@@ -250,6 +250,77 @@
   }
 }
 
+// Additional Grid Patterns for Consolidation
+// ===========================================
+
+// Insights Grid (auto-fit pattern)
+// For: Feature highlights, insights, general card layouts
+.insights-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Discussion Questions Grid
+// For: Question cards and prompts
+.discussion-questions-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Highlight Grid (for homepage highlights)
+.highlight-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Outcomes Grid (compact layout)
+.outcomes-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Chapters Grid Modern
+.chapters-grid-modern {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Stats Grid (for statistics displays)
+.stats-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
 // =============================================================================
 // MATERIAL DESIGN RESPONSIVE UTILITIES
 // =============================================================================
