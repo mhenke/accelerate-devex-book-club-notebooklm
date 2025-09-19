@@ -16,6 +16,7 @@ All visuals are implemented using **web-native technologies** (SCSS, CSS, SVG, H
 ## High-Level Architecture
 
 ### Content Organization
+
 - `docs/` - Main Jekyll website source files
   - `index.md` - Homepage with hero banner, DORA metrics, meeting overview
   - `_layouts/` - Jekyll layouts (default, meeting, resource)
@@ -30,6 +31,7 @@ All visuals are implemented using **web-native technologies** (SCSS, CSS, SVG, H
   - `templates/` - Meeting notes and retrospective formats
 
 ### Design System
+
 - **Color palette:** Dark navy blue (#1a1a2e) to light blue (#16213e) gradients for headers
 - **Accent colors:** Coral (#FF7F50), Gold (#D7BA89), Teal (#7adad1), Sage Green (#8B9EB7)
 - **Typography:** Google Fonts - Inter for body text, Poppins for headings
@@ -39,34 +41,44 @@ All visuals are implemented using **web-native technologies** (SCSS, CSS, SVG, H
 ## Common Development Tasks
 
 ### Building and Serving
+
 This is a standard Jekyll site served by GitHub Pages:
+
 - **Local development:** `bundle exec jekyll serve` (if Jekyll/Ruby installed)
 - **GitHub Pages deployment:** Automatic on push to main branch
 - **Asset compilation:** Jekyll auto-compiles SCSS to CSS with proper asset paths
 - **Always commit and push after making changes** for deployment
 
 ### Testing and Validation Commands
+
 **IMPORTANT**: Always run validation before committing changes to ensure code quality.
 
 #### Quick Local Check (Recommended for development)
+
 ```bash
 npm run lint && npm run build
 ```
+
 Runs all linters (CSS, JS, Markdown) and builds the site - catches most issues quickly (~5-10 seconds).
 
 #### Full Local Validation (Before committing)
+
 ```bash
 npm run validate
 ```
+
 Complete pipeline: build + test including linting, HTML validation, and accessibility checks.
 
 #### Comprehensive Audit (Before releases)
+
 ```bash
 npm run audit
 ```
+
 Runs build + jekyll-audit for full performance, accessibility, SEO, and link validation.
 
 #### Individual Test Commands
+
 ```bash
 npm run lint          # All linters (fastest check)
 npm run lint:css      # CSS/SCSS linting only
@@ -77,17 +89,20 @@ npm run test:jekyll-audit  # Full audit suite
 ```
 
 #### Recommended Testing Workflow
+
 1. **During development**: `npm run lint` (fast feedback)
 2. **Before committing**: `npm run validate` (full check) 
 3. **Before major releases**: `npm run audit` (comprehensive)
 
 ### Styling and Visual Updates
+
 - Edit SCSS in `docs/assets/main.scss` (must include YAML front matter)
 - Use CSS/SVG/HTML for all graphics - avoid static images
 - Reference assets with full repo path: `/accelerate-devex-book-club-notebooklm/assets/main.css`
 - Follow existing color palette and responsive design patterns
 
 ### Content Updates
+
 - Meeting content in `meeting-resources/` using Markdown
 - AI generation prompts in `notebooklm-prompts/` for podcasts and videos
 - Website pages in `docs/` following Jekyll conventions
@@ -96,6 +111,7 @@ npm run test:jekyll-audit  # Full audit suite
 ## Code Conventions
 
 ### Visual Implementation Rules
+
 - **All graphics must be web-native:** CSS/SVG/HTML/JavaScript only
 - **No static images** for main site visuals (only for complex/fallback cases)
 - **Responsive design required** for all components
@@ -103,12 +119,14 @@ npm run test:jekyll-audit  # Full audit suite
 - **Modern aesthetics:** Flat design, subtle shadows, clean typography, clear color contrast
 
 ### Jekyll Patterns
+
 - Use Jekyll collections for meetings and resources
 - Follow existing layout patterns in `_layouts/`
 - Maintain YAML front matter in SCSS files for compilation
 - Use Jekyll's asset pipeline for proper path resolution
 
 ### Content Guidelines
+
 - Meeting guides follow structured format with objectives, discussion questions, action items
 - NotebookLM prompts include clear context and generation guidelines
 - All AI-generated content should be clearly marked and attributed
@@ -117,6 +135,7 @@ npm run test:jekyll-audit  # Full audit suite
 ## Collections and Navigation
 
 ### Jekyll Collections
+
 - **_meetings collection:** Four structured meetings with corrected chapter mappings:
   - Meeting 1 (Week 1): Chapters 1-3 - Foundation, DORA Metrics, Westrum Culture Types
   - Meeting 2 (Week 3): Chapters 4-6 - Technical Excellence & Continuous Delivery
@@ -129,7 +148,9 @@ npm run test:jekyll-audit  # Full audit suite
 - Navigation configured in `_config.yml` with header_pages
 
 ### Meeting Page Structure
+
 All meeting pages follow consistent format:
+
 - Media sections (video first, then podcast) with HTML5 controls
 - Visual concept sections with interactive elements:
   - Meeting 1: DORA metrics cards, Westrum culture types, speed vs stability myth-busting

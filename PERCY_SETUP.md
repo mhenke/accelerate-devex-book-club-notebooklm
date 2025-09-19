@@ -23,6 +23,7 @@ This guide shows secure ways to store your `PERCY_TOKEN` for visual testing.
    - Edit `.env` and replace `your-percy-token-here` with your actual token
 
 4. **Run tests with automatic token loading**:
+
    ```bash
    cd tests
    npm test  # Token loaded automatically from .env
@@ -45,7 +46,7 @@ source ~/.zshrc
 
 ## Method 3: CI/CD Environment Variables (Production/CI)
 
-### GitHub Actions:
+### GitHub Actions
 
 1. Go to your repo → Settings → Secrets and Variables → Actions
 2. Click "New repository secret"
@@ -53,7 +54,7 @@ source ~/.zshrc
 4. Value: your token
 5. Use in workflow: `${{ secrets.PERCY_TOKEN }}`
 
-### Other CI Systems:
+### Other CI Systems
 
 - **GitLab CI**: Project Settings → CI/CD → Variables
 - **CircleCI**: Project Settings → Environment Variables

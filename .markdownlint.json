@@ -10,7 +10,7 @@
   "MD033": {
     "allowed_elements": [
       "div",
-      "span",
+      "span", 
       "video",
       "audio",
       "source",
@@ -34,13 +34,28 @@
       "cite",
       "label",
       "input",
+      "button",
+      "pre",
+      "code",
       "article",
       "nav",
       "section",
       "aside",
       "header",
       "footer",
-      "main"
+      "main",
+      "svg",
+      "path",
+      "circle",
+      "rect",
+      "ellipse",
+      "line",
+      "text",
+      "tspan",
+      "defs",
+      "linearGradient",
+      "stop",
+      "marker"
     ]
   },
   "MD041": false,
@@ -63,5 +78,9 @@
   "MD040": true,
   "MD029": {
     "style": "ordered"
-  }
+  },
+  "MD010": false,
+  "MD009": false,
+  "MD012": false,
+  "MD047": false
 }

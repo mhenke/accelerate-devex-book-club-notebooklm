@@ -40,9 +40,11 @@ A resource hub and interactive site for learning and implementing high-performin
 ## 🚦 Getting Started
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/mhenke/accelerate-devex-book-club-notebooklm.git
    ```
+
 2. Edit SCSS in `docs/assets/main.scss` (YAML front matter required)
 3. Push changes to GitHub; Jekyll auto-compiles and deploys via GitHub Pages
 4. Access the site at:  
@@ -120,12 +122,14 @@ accelerate-devex-book-club-notebooklm/
 ### Starting the Jekyll Server
 
 1. **Install dependencies:**
+
    ```bash
    cd docs
    bundle install --path vendor/bundle
    ```
 
 2. **Start the development server:**
+
    ```bash
    cd docs
    bundle exec jekyll serve --port 4000
@@ -158,6 +162,7 @@ bundle exec htmlproofer _site \
 ```
 
 **Alternative npm test commands** (from root directory):
+
 ```bash
 npm run test:html    # HTML validation with html-validate
 npm run test:links   # Link checking with hyperlink
@@ -175,6 +180,7 @@ npm run test:report # View test report
 ```
 
 ### Test Results Summary
+
 - **HTML Proofer**: Validates internal links, images, and HTML structure
 - **Playwright**: Tests interactive components, accessibility, and cross-browser functionality
 - **Manual testing**: Visual validation and responsive design checks
