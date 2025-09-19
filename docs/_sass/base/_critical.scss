@@ -324,7 +324,7 @@ a {
   }
 
   &__text {
-    color: var(--color-white-80);
+    color: var(--text-white);
     font-size: var(--font-size-sm);
     line-height: var(--line-height-relaxed);
     margin: 0;
@@ -638,7 +638,7 @@ a {
   }
 
   .hero-cta-subtitle {
-    color: var(--color-white-80);
+    color: var(--text-white);
     font-size: var(--font-size-base);
     margin: 0 auto;
     font-style: italic;
@@ -3544,7 +3544,7 @@ button:focus,
     position: relative;
     z-index: 2;
     margin: 0 0 var(--space-md);
-    color: var(--color-white-80);
+    color: var(--text-white);
     font-size: var(--font-size-lg);
     line-height: var(--line-height-relaxed);
     text-align: center;
