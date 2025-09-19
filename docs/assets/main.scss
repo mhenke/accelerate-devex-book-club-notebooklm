@@ -104,7 +104,6 @@ a:hover {
 .page-hero {
   padding: 4rem 2rem;
   margin-bottom: var(--spacing-xl);
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-blue) 100%);
@@ -406,16 +405,83 @@ a:hover {
 }
 
 .meeting-badge {
-  background: linear-gradient(135deg, var(--accent-teal), var(--accent-sage));
-  color: var(--text-white);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-top: var(--spacing-sm);
+  /* Inherit base button styles */
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  min-height: 48px;
+  min-width: 48px;
+  
+  /* Meeting badge specific styling */
+  background: linear-gradient(135deg, var(--accent-teal), var(--accent-sage));
+  color: var(--text-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: var(--spacing-md);
+}
+
+.meeting-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.meeting-link:hover .meeting-badge {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.meeting-subtitle {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-top: var(--spacing-xs);
+  font-style: italic;
+}
+
+/* Meeting-specific badge colors */
+.meeting-1 .meeting-badge {
+  background: linear-gradient(135deg, #1E3A8A, #2563eb);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.meeting-1 .meeting-link:hover .meeting-badge {
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4);
+}
+
+.meeting-2 .meeting-badge {
+  background: linear-gradient(135deg, #0F766E, #14b8a6);
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
+}
+
+.meeting-2 .meeting-link:hover .meeting-badge {
+  box-shadow: 0 6px 20px rgba(15, 118, 110, 0.4);
+}
+
+.meeting-3 .meeting-badge {
+  background: linear-gradient(135deg, #D97706, #f59e0b);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+}
+
+.meeting-3 .meeting-link:hover .meeting-badge {
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+}
+
+.meeting-4 .meeting-badge {
+  background: linear-gradient(135deg, #7C2D12, #dc2626);
+  box-shadow: 0 4px 12px rgba(124, 45, 18, 0.3);
+}
+
+.meeting-4 .meeting-link:hover .meeting-badge {
+  box-shadow: 0 6px 20px rgba(124, 45, 18, 0.4);
 }
 
 /* =============================================================================
@@ -540,6 +606,18 @@ a:hover {
 
 .btn-secondary:hover {
   background: var(--meeting-1-color);
+  color: var(--text-white);
+}
+
+.btn-meeting-1 {
+  background: linear-gradient(135deg, #1E3A8A, #2563eb);
+  color: var(--text-white);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.btn-meeting-1:hover {
+  background: linear-gradient(135deg, #2563eb, #1E3A8A);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
   color: var(--text-white);
 }
 
@@ -745,10 +823,12 @@ a:hover {
 
 .nav-links {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
+  flex-wrap: nowrap;
 }
 
 .nav-link {
@@ -763,6 +843,7 @@ a:hover {
   transition: all 0.3s ease;
   font-weight: 500;
   min-width: 200px;
+  flex-shrink: 0;
 }
 
 .nav-link:hover {
@@ -784,8 +865,36 @@ a:hover {
   background: linear-gradient(135deg, var(--accent-teal), var(--meeting-2-color));
 }
 
+.nav-link.meeting-1 {
+  background: linear-gradient(135deg, #1E3A8A, #2563eb);
+}
+
+.nav-link.meeting-1:hover {
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
 .nav-link.meeting-2 {
-  background: linear-gradient(135deg, var(--meeting-2-color), var(--accent-teal));
+  background: linear-gradient(135deg, #0F766E, #14b8a6);
+}
+
+.nav-link.meeting-2:hover {
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.3);
+}
+
+.nav-link.meeting-3 {
+  background: linear-gradient(135deg, #D97706, #f59e0b);
+}
+
+.nav-link.meeting-3:hover {
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.3);
+}
+
+.nav-link.meeting-4 {
+  background: linear-gradient(135deg, #7C2D12, #dc2626);
+}
+
+.nav-link.meeting-4:hover {
+  box-shadow: 0 8px 25px rgba(124, 45, 18, 0.3);
 }
 
 .nav-icon {
@@ -943,7 +1052,6 @@ a:hover {
 .hero-banner {
   padding: 4rem 2rem;
   margin-bottom: var(--spacing-xl);
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-blue) 100%);
@@ -1262,7 +1370,118 @@ a:hover {
 .p-lg { padding: var(--spacing-lg); }
 
 /* =============================================================================
-   8. RESPONSIVE DESIGN
+   8. MEDIA COMPONENTS (VIDEO/AUDIO) 
+   ============================================================================= */
+
+.media-container {
+  width: 100%;
+  background: var(--background-white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+  border: 2px solid var(--meeting-primary, var(--border-light));
+}
+
+.media-container video,
+.media-container audio {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.media-download-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-md);
+}
+
+.download-btn {
+  /* Inherit base button styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  min-height: 48px;
+  min-width: 48px;
+  
+  /* Download button specific styling */
+  background: linear-gradient(135deg, var(--meeting-primary, var(--accent-coral)), var(--meeting-hover, #ff6b47));
+  color: var(--text-white);
+  box-shadow: 0 4px 12px var(--meeting-light, rgba(255, 127, 80, 0.3));
+}
+
+.download-btn:hover,
+.download-btn:focus {
+  background: linear-gradient(135deg, var(--meeting-hover, #ff6b47), var(--meeting-primary, var(--accent-coral)));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--meeting-light, rgba(255, 127, 80, 0.4));
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.download-btn:focus-visible {
+  outline: 3px solid var(--meeting-primary, var(--accent-coral));
+  outline-offset: 2px;
+}
+
+.download-btn i {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.stream-btn {
+  /* Inherit base button styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  min-height: 48px;
+  min-width: 48px;
+  
+  /* Stream button specific styling */
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: var(--text-white);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.stream-btn:hover,
+.stream-btn:focus {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.stream-btn:focus-visible {
+  outline: 3px solid #16a34a;
+  outline-offset: 2px;
+}
+
+.stream-btn i {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* =============================================================================
+   9. RESPONSIVE DESIGN
    ============================================================================= */
 
 @media (max-width: 768px) {
@@ -1296,6 +1515,17 @@ a:hover {
   
   .section-accent {
     font-size: 1.5rem;
+  }
+  
+  .media-container {
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .download-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    min-width: 140px;
+    font-size: 0.95rem;
   }
   
   h1 { font-size: 2rem; }
