@@ -462,24 +462,24 @@ dora_color: '#0F766E'
 
 ### Related Resources
 
-<div class="related-resources" markdown="0">
-  <div class="resource-category" markdown="0">
+<div class="resource-grid" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-tools"></i> CI/CD Tools & Platforms</h4>
-    <ul class="resource-links">
-      <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> - Workflow automation and CI/CD platform</li>
-      <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a> - Open source automation server for CI/CD pipelines</li>
-      <li><a href="https://circleci.com/" target="_blank">CircleCI</a> - Continuous integration and deployment platform</li>
-      <li><a href="https://argoproj.github.io/cd/" target="_blank">Argo CD</a> - GitOps continuous delivery for Kubernetes</li>
+    <ul>
+      <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a></li>
+      <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a></li>
+      <li><a href="https://circleci.com/" target="_blank">CircleCI</a></li>
+      <li><a href="https://argoproj.github.io/cd/" target="_blank">Argo CD</a></li>
     </ul>
   </div>
 
-  <div class="resource-category" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
-    <ul class="resource-links">
-      <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps Guidelines</a> - Security integration best practices</li>
-      <li><a href="https://snyk.io/" target="_blank">Snyk</a> - Developer security platform for vulnerability scanning</li>
-      <li><a href="https://github.com/features/security" target="_blank">GitHub Security</a> - Built-in security features and scanning</li>
-      <li><a href="https://www.sonarqube.org/" target="_blank">SonarQube</a> - Code quality and security analysis platform</li>
+    <ul>
+      <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps Guidelines</a></li>
+      <li><a href="https://snyk.io/" target="_blank">Snyk</a></li>
+      <li><a href="https://github.com/features/security" target="_blank">GitHub Security</a></li>
+      <li><a href="https://www.sonarqube.org/" target="_blank">SonarQube</a></li>
     </ul>
   </div>
 </div>
