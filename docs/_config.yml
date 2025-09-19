@@ -19,6 +19,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Plugin settings
+feed:
+  excerpt_only: false
+
 # Markdown settings
 markdown: kramdown
 highlighter: rouge
@@ -34,6 +38,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   html_to_native: true
+  # Force HTML5 output format (no self-closing tags)
+  html5_output: true
+  # Additional HTML5 settings
+  parse_block_html: true
+  parse_span_html: true
+  html5: true
 
 # Collections
 collections:

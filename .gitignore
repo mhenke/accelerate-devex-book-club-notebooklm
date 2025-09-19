@@ -69,3 +69,4 @@ docs/node_modules/
 # Jupyter notebooks (development artifacts)
 *.ipynb
 setup-dev-environment.sh
+backups/
