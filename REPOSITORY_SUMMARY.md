@@ -99,4 +99,5 @@
 
 ---
 
-**This repository represents the convergence of educational passion, technical craftsmanship, and professional software development standards, creating a sophisticated learning platform that serves the DevOps community.**
+**This repository represents the convergence of educational passion, technical craftsmanship, and professional 
+software development standards, creating a sophisticated learning platform that serves the DevOps community.**

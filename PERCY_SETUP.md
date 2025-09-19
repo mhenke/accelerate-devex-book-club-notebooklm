@@ -122,7 +122,7 @@ cd tests && npm test  # Should run Percy snapshots without asking for token
 
 If Percy is configured correctly, you'll see output like:
 
-```
+```bash
 [percy] Percy has started!
 [percy] Created build #1: https://percy.io/your-org/your-project/builds/123
 ```

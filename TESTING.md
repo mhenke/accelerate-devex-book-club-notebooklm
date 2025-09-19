@@ -1,6 +1,7 @@
 # Testing Guide for Accelerate DevEx Book Club
 
-This testing suite provides comprehensive validation for the Jekyll-based DevOps book club site with interactive HTML, SCSS, and JavaScript components.
+This testing suite provides comprehensive validation for the Jekyll-based DevOps book club site with interactive 
+HTML, SCSS, and JavaScript components.
 
 ## Quick Start
 
