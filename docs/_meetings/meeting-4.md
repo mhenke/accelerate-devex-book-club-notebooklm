@@ -444,7 +444,7 @@ The transformation continues beyond this book club - use these tools to build yo
 
 .dimension-card {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -511,7 +511,7 @@ The transformation continues beyond this book club - use these tools to build yo
 
 .impact-side {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -559,7 +559,7 @@ The transformation continues beyond this book club - use these tools to build yo
 
 .coaching-before, .coaching-after {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -610,7 +610,7 @@ The transformation continues beyond this book club - use these tools to build yo
 
 .security-stat {
   background: white;
-  border-radius: 12px;
+  
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -703,7 +703,7 @@ The transformation continues beyond this book club - use these tools to build yo
   position: relative;
   padding: 1rem 1.5rem;
   border: 2px solid #ddd;
-  border-radius: 12px;
+  
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -866,7 +866,7 @@ The transformation continues beyond this book club - use these tools to build yo
   gap: 0.75rem;
   padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border-left: 4px solid var(--meeting-4-primary);
   transition: all 0.3s ease;
   cursor: pointer;
@@ -927,7 +927,7 @@ The transformation continues beyond this book club - use these tools to build yo
   margin-top: 1.5rem;
   padding: 1.25rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border: 2px solid #dee2e6;
   min-height: 80px;
   transition: all 0.3s ease;
@@ -977,7 +977,7 @@ The transformation continues beyond this book club - use these tools to build yo
   position: relative;
   padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border-left: 4px solid var(--meeting-4-primary);
   transition: all 0.3s ease;
   cursor: pointer;
@@ -1040,7 +1040,7 @@ The transformation continues beyond this book club - use these tools to build yo
   margin-top: 1.5rem;
   padding: 1.25rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
+  
   border: 2px solid #dee2e6;
   min-height: 80px;
   transition: all 0.3s ease;

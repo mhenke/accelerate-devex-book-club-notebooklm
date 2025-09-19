@@ -61,7 +61,7 @@
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
+
   padding: 0.75rem 1.5rem;
   font-weight: 600;
   font-size: 1.1rem;
@@ -135,12 +135,12 @@
 /* Meeting-specific colors using DORA color themes */
 .nav-link.meeting-1 {
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-color: #1E3A8A;
+  border-color: #1e3a8a;
   color: #1e3a8a;
 }
 
 .nav-link.meeting-1:hover {
-  background: linear-gradient(135deg, #1E3A8A, #1e40af);
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
   color: white;
   transform: translateX(-4px);
   box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
@@ -148,12 +148,12 @@
 
 .nav-link.meeting-2 {
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-  border-color: #0F766E;
+  border-color: #0f766e;
   color: #134e4a;
 }
 
 .nav-link.meeting-2:hover {
-  background: linear-gradient(135deg, #0F766E, #134e4a);
+  background: linear-gradient(135deg, #0f766e, #134e4a);
   color: white;
   transform: translateX(4px);
   box-shadow: 0 4px 15px rgba(15, 118, 110, 0.3);
@@ -161,12 +161,12 @@
 
 .nav-link.meeting-3 {
   background: linear-gradient(135deg, #fef3c7, #fde68a);
-  border-color: #D97706;
+  border-color: #d97706;
   color: #92400e;
 }
 
 .nav-link.meeting-3:hover {
-  background: linear-gradient(135deg, #D97706, #b45309);
+  background: linear-gradient(135deg, #d97706, #b45309);
   color: white;
   transform: translateX(-4px);
   box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
@@ -272,7 +272,11 @@
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--meeting-primary), var(--meeting-hover));
+  background: linear-gradient(
+    90deg,
+    var(--meeting-primary),
+    var(--meeting-hover)
+  );
   border-radius: 3px;
   transition: width 0.5s ease;
   box-shadow: 0 1px 3px var(--meeting-border);

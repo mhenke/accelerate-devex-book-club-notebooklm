@@ -581,7 +581,7 @@ nav_order: 6
 .metric-mastery-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 12px;
+  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   text-align: center;
   border-top: 4px solid;
@@ -652,7 +652,7 @@ nav_order: 6
 .learning-category {
   background: white;
   padding: 1.5rem;
-  border-radius: 12px;
+  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -738,7 +738,7 @@ nav_order: 6
 .ai-content-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 12px;
+  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   text-align: center;
   border-top: 4px solid #7adad1;
@@ -825,7 +825,7 @@ nav_order: 6
 .reflection-section {
   background: #f8f9fa;
   padding: 2rem;
-  border-radius: 12px;
+  
   margin: 3rem 0;
 }
 
@@ -971,7 +971,7 @@ nav_order: 6
 .next-step-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 12px;
+  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   border-top: 4px solid;
 }
@@ -1005,7 +1005,7 @@ nav_order: 6
 .resource-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 12px;
+  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
