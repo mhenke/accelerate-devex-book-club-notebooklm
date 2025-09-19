@@ -4020,9 +4020,8 @@ button:focus,
       .chapter-accent {
         background: linear-gradient(90deg, #3b82f6, #1d4ed8);
       }
+      // .chapter-icon background and color removed for chapter-1
       .chapter-icon {
-        background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-        color: #1d4ed8;
       }
     }
 
@@ -4030,9 +4029,8 @@ button:focus,
       .chapter-accent {
         background: linear-gradient(90deg, #ef4444, #dc2626);
       }
+      // .chapter-icon background and color removed for chapter-2
       .chapter-icon {
-        background: linear-gradient(135deg, #fecaca, #fca5a5);
-        color: #dc2626;
       }
     }
 
@@ -4040,9 +4038,8 @@ button:focus,
       .chapter-accent {
         background: linear-gradient(90deg, #10b981, #059669);
       }
+      // .chapter-icon background and color removed for chapter-3
       .chapter-icon {
-        background: linear-gradient(135deg, #d1fae5, #a7f3d0);
-        color: #059669;
       }
     }
   }
