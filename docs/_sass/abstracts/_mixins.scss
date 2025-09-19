@@ -588,7 +588,6 @@
   $max-size-px: strip-unit($max-size);
   $min-width-px: strip-unit($min-width);
   $max-width-px: strip-unit($max-width);
-
   $slope: ($max-size-px - $min-size-px) / ($max-width-px - $min-width-px);
   $intercept: $min-size-px - $slope * $min-width-px;
 
