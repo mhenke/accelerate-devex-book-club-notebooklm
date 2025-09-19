@@ -955,6 +955,50 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Architecture Assessment - Dependency Mapping
+  const dependencyInputs = document.querySelectorAll('input[name="dependency-type"]');
+  const dependencyFeedback = document.getElementById('dependency-feedback');
+
+  dependencyInputs.forEach(input => {
+    input.addEventListener('change', function() {
+      let feedback = '';
+      switch(this.value) {
+        case 'shared-database':
+          feedback = '<div class="feedback-content warning"><i class="fas fa-database"></i><strong>Shared Database Dependencies</strong><br>This pattern creates tight coupling and coordination overhead. <strong>Research insight:</strong> Teams with shared databases deploy 10x less frequently. <strong>Evolution path:</strong> Database-per-service, API contracts, event-driven architecture.</div>';
+          break;
+        case 'release-coordination':
+          feedback = '<div class="feedback-content warning"><i class="fas fa-sync-alt"></i><strong>Release Coordination</strong><br>Cross-team coordination reduces deployment frequency but is manageable. <strong>Research insight:</strong> Coordination overhead scales exponentially with team size. <strong>Improvement:</strong> Service contracts, backward compatibility, feature toggles.</div>';
+          break;
+        case 'independent-services':
+          feedback = '<div class="feedback-content success"><i class="fas fa-rocket"></i><strong>Independent Services</strong><br>Excellent! Loosely coupled architecture enables high delivery performance. <strong>Research shows:</strong> Teams with architectural independence deploy 208x more frequently. <strong>Maintain:</strong> API contracts, monitoring, and service ownership.</div>';
+          break;
+      }
+      dependencyFeedback.innerHTML = feedback;
+    });
+  });
+
+  // Architecture Assessment - WIP Visualization  
+  const wipInputs = document.querySelectorAll('input[name="wip-method"]');
+  const wipFeedback = document.getElementById('wip-feedback');
+
+  wipInputs.forEach(input => {
+    input.addEventListener('change', function() {
+      let feedback = '';
+      switch(this.value) {
+        case 'none':
+          feedback = '<div class="feedback-content warning"><i class="fas fa-eye-slash"></i><strong>No WIP Tracking</strong><br>Lack of work visualization leads to context switching and hidden bottlenecks. <strong>Research insight:</strong> Teams without WIP limits have 40% lower delivery performance. <strong>Start with:</strong> Simple kanban board, limit work in progress, measure cycle time.</div>';
+          break;
+        case 'task-lists':
+          feedback = '<div class="feedback-content info"><i class="fas fa-list"></i><strong>Task Lists</strong><br>Basic tracking provides some visibility but misses flow optimization. <strong>Research insight:</strong> Visual flow management reduces lead time by 50%. <strong>Next step:</strong> Add WIP limits, swim lanes, and flow metrics to your lists.</div>';
+          break;
+        case 'kanban':
+          feedback = '<div class="feedback-content success"><i class="fas fa-columns"></i><strong>Kanban Board with WIP Limits</strong><br>Excellent! Visual flow management with WIP limits optimizes team performance. <strong>Research shows:</strong> Teams using kanban with WIP limits have 2.3x faster delivery. <strong>Advanced practices:</strong> Cumulative flow diagrams, cycle time measurement, continuous improvement.</div>';
+          break;
+      }
+      wipFeedback.innerHTML = feedback;
+    });
+  });
 });
 </script>
 
