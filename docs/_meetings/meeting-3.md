@@ -1281,63 +1281,61 @@ h3 {
   line-height: 1.4;
 }
 
-/* Related Resources Styling */
-.related-resources {
+/* Resource Grid Styling */
+.resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
-  background: linear-gradient(135deg, #fff7ed, #fef3c7);
-  padding: 2rem;
-  border: 2px solid #d97706;
+  margin-top: 1.5rem;
 }
 
-.resource-category {
+.resource-card {
   background: white;
   padding: 1.5rem;
-  border-top: 4px solid #d97706;
-  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
 
-.resource-category:hover {
+.resource-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.2);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.15);
 }
 
-.resource-category h4 {
+.resource-card h4 {
+  margin-bottom: 1rem;
+  color: #d97706;
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 1rem 0;
-  border-bottom: 2px solid #fef3c7;
-  padding-bottom: 0.5rem;
 }
 
-.resource-category h4 i {
+.resource-card h4 i {
   margin-right: 0.5rem;
-  color: #92400e;
 }
 
-.resource-links {
+.resource-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.resource-links li {
-  margin-bottom: 0.75rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
+.resource-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.resource-links a {
+.resource-card li:last-child {
+  border-bottom: none;
+}
+
+.resource-card a {
   color: #d97706;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.resource-links a:hover {
+.resource-card a:hover {
   color: #92400e;
   text-decoration: underline;
 }
