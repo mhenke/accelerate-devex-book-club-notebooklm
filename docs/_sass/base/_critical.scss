@@ -215,15 +215,18 @@ a {
 
 // Main layout containers
 .site-header {
-  background: var(--gradient-surface);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  /* Refactored: Unified header style for homepage and meetings. See CSS_REFACTOR_PLAN.md. */
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: var(--elevation-2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
   // Performance optimizations
   contain: layout style;
+  will-change: auto; // Managed dynamically via JavaScript
 }
 
 .site-main {
@@ -993,13 +996,17 @@ a {
 
   // Enhance visual prominence with accent border
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(90deg, var(--accent-emerald), var(--accent-teal));
+    background: linear-gradient(
+      90deg,
+      var(--accent-emerald),
+      var(--accent-teal)
+    );
     border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   }
 
@@ -1257,7 +1264,7 @@ a {
 
   // Enhance visual prominence with accent border
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1469,7 +1476,6 @@ a {
       color: var(--meeting-1-primary) !important;
     }
   }
-
 }
 
 // =============================================================================
@@ -2837,11 +2843,21 @@ button:focus,
   animation: fadeInUp 0.8s ease-out both;
 
   // Staggered animation delays for premium feel
-  &:nth-child(1) { animation-delay: 0.1s; }
-  &:nth-child(2) { animation-delay: 0.2s; }
-  &:nth-child(3) { animation-delay: 0.3s; }
-  &:nth-child(4) { animation-delay: 0.4s; }
-  &:nth-child(5) { animation-delay: 0.5s; }
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.5s;
+  }
 
   &:hover {
     transform: translateY(-2px);
@@ -2896,7 +2912,11 @@ button:focus,
   // Higher elevation for interactive assessment
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
   border: 2px solid var(--meeting-primary, var(--meeting-1-primary));
-  background: linear-gradient(135deg, white 0%, var(--meeting-surface, rgba(9, 105, 218, 0.02)) 100%);
+  background: linear-gradient(
+    135deg,
+    white 0%,
+    var(--meeting-surface, rgba(9, 105, 218, 0.02)) 100%
+  );
 
   &:hover {
     transform: translateY(-4px);
@@ -2921,7 +2941,7 @@ button:focus,
   overflow: hidden;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
