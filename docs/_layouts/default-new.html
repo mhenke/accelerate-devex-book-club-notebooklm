@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7adad1" />
+    <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Performance optimizations -->
+    {% include performance-optimizations.html %}
+
+    <!-- RSS Feed Discovery -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }} - Podcast Feed"
+      href="{{ site.url }}{{ site.baseurl }}/podcast.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }} - Video Feed"
+      href="{{ site.url }}{{ site.baseurl }}/videos.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }} - Complete Media Feed"
+      href="{{ site.url }}{{ site.baseurl }}/media-feed.xml"
+    />
+
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta
+      property="og:description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta
+      property="og:url"
+      content="{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta
+      property="og:image"
+      content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta
+      name="twitter:image"
+      content="{{ site.url }}{{ site.baseurl }}/assets/images/og-preview.png"
+    />
+
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description }}"
+    />
+
+    <!-- Accessibility -->
+    <meta name="color-scheme" content="light" />
+
+    <!-- Progressive Web App -->
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
+
+    <!-- Critical CSS - Inlined for optimal performance -->
+    {% comment %} Note: For full implementation, critical CSS should be
+    generated during build {% endcomment %}
+    <style>
+      /* Critical above-the-fold styles - extracted from main.scss */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          sans-serif;
+      }
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #ff7f50;
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        top: 6px;
+      }
+    </style>
+
+    <!-- Non-critical CSS - Deferred loading -->
+    <link
+      rel="preload"
+      href="{{ '/assets/main.css' | relative_url }}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      media="screen"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{ '/assets/main.css' | relative_url }}"
+        media="screen"
+      />
+    </noscript>
+
+    <!-- Font Awesome - Preload for performance -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+    </noscript>
+  </head>
+  <body>
+    <!-- Skip navigation for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content" class="page-content">{{ content }}</main>
+  </body>
+</html>

@@ -39,85 +39,45 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 <h2 class="section-accent" id="what-youll-learn"><i class="fas fa-bullseye"></i> What You'll Learn</h2>
 
-<div class="dora-metrics-section">
-  <div class="dora-metrics-visual">
-  <h3>The Four DORA Metrics</h3>
-
-  <div class="metrics-categories">
-    <div class="metrics-category speed-category">
-      <div class="category-header">
-        <div class="category-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#2196F3"/>
-          </svg>
-        </div>
-        <h4 class="category-title">Speed</h4>
+<div class="learning-highlights">
+  <div class="highlight-grid">
+    <div class="highlight-card meeting-1">
+      <div class="highlight-icon">
+        <i class="fas fa-chart-line"></i>
       </div>
-      <div class="metrics-group">
-        <div class="metric-card lead-time">
-          <div class="metric-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" fill="#2196F3" stroke="#ffffff" stroke-width="2"/>
-              <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h5>Lead Time</h5>
-          <p>Time from code commit to production deployment</p>
-        </div>
-        <div class="metric-card deployment-frequency">
-          <div class="metric-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" fill="#4CAF50" stroke="#ffffff" stroke-width="2"/>
-              <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M12 7l-3 3M12 7l3 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h5>Deployment Frequency</h5>
-          <p>How often code gets deployed to production</p>
-        </div>
-      </div>
+      <h3>DORA Metrics</h3>
+      <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
+      <div class="meeting-badge">Meeting 1</div>
     </div>
-
-    <div class="metrics-category stability-category">
-      <div class="category-header">
-        <div class="category-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FF9800"/>
-          </svg>
-        </div>
-        <h4 class="category-title">Stability</h4>
+    
+    <div class="highlight-card meeting-2">
+      <div class="highlight-icon">
+        <i class="fas fa-rocket"></i>
       </div>
-      <div class="metrics-group">
-        <div class="metric-card recovery-time">
-          <div class="metric-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" fill="#FF9800" stroke="#ffffff" stroke-width="2"/>
-              <path d="M12 6.5l2.5 5 5.5 0.8-4 3.9 0.9 5.7-4.9-2.6-4.9 2.6 0.9-5.7-4-3.9 5.5-0.8z" fill="#ffffff"/>
-            </svg>
-          </div>
-          <h5>Mean Time to Recovery</h5>
-          <p>How quickly service is restored after incidents</p>
-        </div>
-        <div class="metric-card fail-rate">
-          <div class="metric-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" fill="#F44336" stroke="#ffffff" stroke-width="2"/>
-              <path d="M12 7v6M12 15h0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="12" cy="15" r="1" fill="#ffffff"/>
-            </svg>
-          </div>
-          <h5>Change Fail Rate</h5>
-          <p>Percentage of deployments causing failures</p>
-        </div>
-      </div>
+      <h3>Continuous Delivery</h3>
+      <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
+      <div class="meeting-badge">Meeting 2</div>
     </div>
-
+    
+    <div class="highlight-card meeting-3">
+      <div class="highlight-icon">
+        <i class="fas fa-columns"></i>
+      </div>
+      <h3>Lean Management</h3>
+      <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
+      <div class="meeting-badge">Meeting 3</div>
+    </div>
+    
+    <div class="highlight-card meeting-4">
+      <div class="highlight-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <h3>Transformational Leadership</h3>
+      <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
+      <div class="meeting-badge">Meeting 4</div>
+    </div>
   </div>
 </div>
-
-- **Organizational culture types** and how to drive transformation
-- **Architecture patterns** that enable team autonomy
-- **Leadership practices** that create psychological safety and innovation
 
 <!-- DevOps Virtuous Cycle -->
 <section class="devops-cycle-section" aria-label="DevOps Virtuous Cycle">
@@ -202,6 +162,63 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </p>
 </section>
 <!-- End DevOps Virtuous Cycle -->
+
+<!-- Culture Transformation Diagram -->
+<section class="culture-diagram" aria-label="Culture Transformation Diagram">
+  <h2 class="culture-diagram__header">Culture Transformation Journey</h2>
+  <div class="culture-diagram__container">
+    <div class="culture-box culture-box--red" aria-label="Pathological Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Exclamation Circle (Pathological) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="#F44336" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="18" fill="#F44336" font-family="Poppins, sans-serif">!</text></svg>
+      </span>
+      <h3>Pathological</h3>
+      <ul>
+        <li>Power-oriented</li>
+        <li>Low trust</li>
+        <li>Blame culture</li>
+      </ul>
+    </div>
+    <span class="culture-arrow" aria-hidden="true">
+      <!-- SVG: Arrow Right -->
+      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#FF9800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    <div class="culture-box culture-box--orange" aria-label="Bureaucratic Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Clipboard List (Bureaucratic) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="20" height="20" rx="4" stroke="#FF9800" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#FF9800" font-family="Poppins, sans-serif">≡</text></svg>
+      </span>
+      <h3>Bureaucratic</h3>
+      <ul>
+        <li>Rule-oriented</li>
+        <li>Moderate trust</li>
+        <li>Process focus</li>
+      </ul>
+    </div>
+    <span class="culture-arrow" aria-hidden="true">
+      <!-- SVG: Arrow Right -->
+      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    <div class="culture-box culture-box--green" aria-label="Generative Culture">
+      <span class="culture-icon" aria-hidden="true">
+        <!-- SVG: Lightbulb (Generative) -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <ellipse cx="16" cy="18" rx="10" ry="12" stroke="#4CAF50" stroke-width="2"/>
+          <rect x="13" y="26" width="6" height="4" rx="2" fill="#4CAF50"/>
+          <circle cx="16" cy="16" r="6" fill="none" stroke="#4CAF50" stroke-width="2"/>
+          <path d="M16 12v8M12 16h8" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <h3>Generative</h3>
+      <ul>
+        <li>Performance-oriented</li>
+        <li>High trust</li>
+        <li>Innovation focus</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- End Culture Transformation Diagram -->
 
 <h2 class="section-accent"><i class="fas fa-calendar-alt"></i> Meeting Schedule</h2>
 
@@ -338,62 +355,59 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </blockquote>
 </div>
 
-<!-- Culture Transformation Diagram -->
-<section class="culture-diagram" aria-label="Culture Transformation Diagram">
-  <h2 class="culture-diagram__header">Culture Transformation Journey</h2>
-  <div class="culture-diagram__container">
-    <div class="culture-box culture-box--red" aria-label="Pathological Culture">
-      <span class="culture-icon" aria-hidden="true">
-        <!-- SVG: Exclamation Circle (Pathological) -->
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="#F44336" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="18" fill="#F44336" font-family="Poppins, sans-serif">!</text></svg>
-      </span>
-      <h3>Pathological</h3>
-      <ul>
-        <li>Power-oriented</li>
-        <li>Low trust</li>
-        <li>Blame culture</li>
-      </ul>
-    </div>
-    <span class="culture-arrow" aria-hidden="true">
-      <!-- SVG: Arrow Right -->
-      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#FF9800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </span>
-    <div class="culture-box culture-box--orange" aria-label="Bureaucratic Culture">
-      <span class="culture-icon" aria-hidden="true">
-        <!-- SVG: Clipboard List (Bureaucratic) -->
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="20" height="20" rx="4" stroke="#FF9800" stroke-width="2"/><text x="16" y="21" text-anchor="middle" font-size="16" fill="#FF9800" font-family="Poppins, sans-serif">≡</text></svg>
-      </span>
-      <h3>Bureaucratic</h3>
-      <ul>
-        <li>Rule-oriented</li>
-        <li>Moderate trust</li>
-        <li>Process focus</li>
-      </ul>
-    </div>
-    <span class="culture-arrow" aria-hidden="true">
-      <!-- SVG: Arrow Right -->
-      <svg width="48" height="32" viewBox="0 0 48 32" fill="none"><path d="M4 16h36M36 16l-8-8M36 16l-8 8" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </span>
-    <div class="culture-box culture-box--green" aria-label="Generative Culture">
-      <span class="culture-icon" aria-hidden="true">
-        <!-- SVG: Lightbulb (Generative) -->
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <ellipse cx="16" cy="18" rx="10" ry="12" stroke="#4CAF50" stroke-width="2"/>
-          <rect x="13" y="26" width="6" height="4" rx="2" fill="#4CAF50"/>
-          <circle cx="16" cy="16" r="6" fill="none" stroke="#4CAF50" stroke-width="2"/>
-          <path d="M16 12v8M12 16h8" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </span>
-      <h3>Generative</h3>
-      <ul>
-        <li>Performance-oriented</li>
-        <li>High trust</li>
-        <li>Innovation focus</li>
-      </ul>
+<h2 class="section-accent"><i class="fas fa-tools"></i> Resources</h2>
+
+<div class="resources-grid">
+  <div class="resource-card">
+    <h3><i class="fas fa-microphone-alt"></i> AI-Generated Podcasts</h3>
+    <p>Listen to AI-generated podcast discussions about each meeting's core concepts.</p>
+    <a href="{{ '/prompts' | relative_url }}" class="resource-link">NotebookLM Audio →</a>
+  </div>
+
+  <div class="resource-card">
+    <h3><i class="fas fa-video"></i> Video Explanations</h3>
+    <p>Watch video explanations of DORA metrics, continuous delivery practices, and transformation strategies.</p>
+    <a href="{{ '/prompts' | relative_url }}" class="resource-link">AI Video Content →</a>
+  </div>
+
+  <div class="resource-card">
+    <h3><i class="fas fa-rss"></i> RSS Feeds & Downloads</h3>
+    <p>Subscribe to podcast feeds or download audio/video files directly to your device.</p>
+    <a href="{{ '/feeds' | relative_url }}" class="resource-link">Subscribe & Download →</a>
+  </div>
+
+  <div class="resource-card">
+    <h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
+    <p>Activities, reflection questions, and experiments to try between sessions.</p>
+    <a href="{{ '/resources' | relative_url }}" class="resource-link">Additional Resources →</a>
+  </div>
+
+  <div class="resource-card book-required">
+    <div class="book-visual">
+      <div class="book-3d">
+        <div class="book-cover">
+          <h4>ACCELERATE</h4>
+          <p class="book-authors">Forsgren • Humble • Kim</p>
+          <div class="book-subtitle">The Science of Lean Software and DevOps</div>
+        </div>
+        <div class="book-spine"></div>
+      </div>
+      <h3>Required Reading</h3>
+      <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
     </div>
   </div>
-</section>
-<!-- End Culture Transformation Diagram -->
+
+  <div class="resource-card">
+    <h3><i class="fas fa-book"></i> Foundation Resources</h3>
+    <p>Essential research and background materials supporting the book club content.</p>
+    <ul class="foundation-resources">
+      <li><a href="https://dora.dev/research/" target="_blank" rel="noopener noreferrer">State of DevOps Report Archive</a> - Historical DevOps research and trends</li>
+      <li><a href="https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance" target="_blank" rel="noopener noreferrer">DevOps Research and Assessment</a> - Google Cloud DORA insights</li>
+      <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank" rel="noopener noreferrer">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>
+      <li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank" rel="noopener noreferrer">IT Revolution Westrum Model</a> - Detailed explanation of culture types</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
