@@ -1,3 +1,8 @@
+# Environment variables (sensitive data)
+.env
+.env.local
+.env.*.local
+
 # Jekyll build output
 _site/
 .sass-cache/
