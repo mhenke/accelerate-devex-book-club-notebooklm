@@ -417,23 +417,23 @@ dora_color: '#1E3A8A'
 
 ### Related Resources
 
-<div class="related-resources" markdown="0">
-  <div class="resource-category" markdown="0">
+<div class="resource-grid" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-chart-line"></i> DORA Research & Assessment</h4>
-    <ul class="resource-links">
-      <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a> - Latest DORA findings and industry benchmarks</li>
-      <li><a href="https://dora.dev/" target="_blank">DORA Research Program</a> - Official DORA website with comprehensive research</li>
-      <li><a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a> - Self-assessment tool for your team</li>
-      <li><a href="https://dora.dev/capabilities/" target="_blank">DORA Capabilities Overview</a> - Technical and cultural capabilities framework</li>
+    <ul>
+      <li><a href="https://dora.dev/research/2024/dora-report/" target="_blank">2024 State of DevOps Report</a></li>
+      <li><a href="https://dora.dev/" target="_blank">DORA Research Program</a></li>
+      <li><a href="https://dora.dev/quickcheck/" target="_blank">DORA Quick Check Assessment</a></li>
+      <li><a href="https://dora.dev/capabilities/" target="_blank">DORA Capabilities Overview</a></li>
     </ul>
   </div>
 
-  <div class="resource-category" markdown="0">
+  <div class="resource-card" markdown="0">
     <h4><i class="fas fa-users"></i> Westrum Organizational Culture</h4>
-    <ul class="resource-links">
-      <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a> - DORA culture implementation guide</li>
-      <li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank">IT Revolution Westrum Model</a> - Detailed explanation of culture types</li>
-      <li><a href="https://continuousdelivery.com/implementing/culture/" target="_blank">Generative Culture Assessment</a> - Practical culture implementation guide</li>
+    <ul>
+      <li><a href="https://dora.dev/capabilities/generative-organizational-culture/" target="_blank">Westrum Organizational Culture Types</a></li>
+      <li><a href="https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/" target="_blank">IT Revolution Westrum Model</a></li>
+      <li><a href="https://continuousdelivery.com/implementing/culture/" target="_blank">Generative Culture Assessment</a></li>
     </ul>
   </div>
 </div>
@@ -1623,36 +1623,63 @@ h3 i, h4 i {
   line-height: 1.4;
 }
 
-/* Related Resources Compact Styling */
-.related-resources {
+/* Resource Grid Styling */
+.resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  padding: 2rem;
-  
-  border: 2px solid #dee2e6;
+  margin-top: 1.5rem;
 }
 
-.resource-category {
+.resource-card {
   background: white;
   padding: 1.5rem;
-  border-top: 4px solid #1E3A8A;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-.resource-category h4 {
+.resource-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15);
+}
+
+.resource-card h4 {
+  margin-bottom: 1rem;
+  color: #1E3A8A;
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 1rem 0;
-  border-bottom: 2px solid #dbeafe;
-  padding-bottom: 0.5rem;
 }
 
-.resource-category h4 i {
+.resource-card h4 i {
   margin-right: 0.5rem;
+}
+
+.resource-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.resource-card li:last-child {
+  border-bottom: none;
+}
+
+.resource-card a {
   color: #1E3A8A;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.resource-card a:hover {
+  color: #1e40af;
+  text-decoration: underline;
 }
 
 
