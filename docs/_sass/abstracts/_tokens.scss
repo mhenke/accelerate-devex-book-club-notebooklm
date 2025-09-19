@@ -1,0 +1,473 @@
+// Design Token System - Critical Rendering Path Optimization
+// ============================================================
+// This file defines the core design tokens for the Accelerate DevEx Book Club site.
+// It provides both SCSS variables and CSS custom properties for flexible theming.
+
+// =============================================================================
+// BREAKPOINT SYSTEM
+// =============================================================================
+// Modern 3-breakpoint system - 2025 standards
+
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1200px;
+
+// CSS Custom Properties for responsive design
+:root {
+  --mobile: #{$mobile};
+  --tablet: #{$tablet};
+  --desktop: #{$desktop};
+}
+
+// =============================================================================
+// COLOR TOKENS
+// =============================================================================
+
+// Primary Brand Colors - Based on project color scheme
+$header-dark-navy: #1a1a2e;
+$header-light-navy: #16213e;
+$primary-blue: #2196f3;
+$dark-blue: #16213e;
+
+// Accent Colors - Energetic and engaging
+$accent-coral: #ff7f50;
+$accent-gold: #d7ba89;
+$accent-teal: #7adad1;
+$accent-sage: #8b9eb7;
+
+// Interactive State Colors
+$hover-coral: #ff6347;
+$hover-gold: #c9a876;
+$hover-teal: #6bc7bf;
+
+// Background Colors - Clean and accessible
+$background-white: #ffffff;
+$background-off-white: #efe9e7;
+$background-light-gray: #f5f5f5;
+$background-light: #f5f5f5;
+
+// Text Colors - Hierarchical and readable
+$text-dark: #2c3e50;
+$text-medium: #5a6c7d;
+$text-light: #8fa8b8;
+$text-white: #ffffff;
+
+// DORA Metrics Colors - Performance visualization
+$dora-blue: #2196f3;
+$dora-green: #4caf50;
+$dora-orange: #ff9800;
+$dora-red: #f44336;
+
+// Book Theme Colors - Warm and inviting
+$book-brown: #8b5c2a;
+$book-gold: #d7ba89;
+$book-cream: #fff8dc;
+
+// System Colors - Status and feedback
+$success-green: #4caf50;
+$warning-yellow: #ffc107;
+$danger-red: #f44336;
+$info-blue: #2196f3;
+
+// Border and Shadow Colors
+$border-light: #e8ecf0;
+$border-color: #e8ecf0;
+$shadow-light: rgba(26, 26, 46, 0.1);
+$shadow-medium: rgba(26, 26, 46, 0.15);
+
+// CSS Custom Properties - Runtime Theme Control
+:root {
+  // Header Gradient Colors
+  --header-dark-navy: #{$header-dark-navy};
+  --header-light-navy: #{$header-light-navy};
+
+  // Primary Colors
+  --primary-blue: #{$primary-blue};
+  --dark-blue: #{$dark-blue};
+
+  // Accent Colors
+  --accent-coral: #{$accent-coral};
+  --accent-gold: #{$accent-gold};
+  --accent-teal: #{$accent-teal};
+  --accent-sage: #{$accent-sage};
+
+  // Interactive States
+  --hover-coral: #{$hover-coral};
+  --hover-gold: #{$hover-gold};
+  --hover-teal: #{$hover-teal};
+
+  // Background Colors
+  --background-white: #{$background-white};
+  --background-off-white: #{$background-off-white};
+  --background-light-gray: #{$background-light-gray};
+  --background-light: #{$background-light};
+
+  // Text Colors
+  --text-dark: #{$text-dark};
+  --text-medium: #{$text-medium};
+  --text-light: #{$text-light};
+  --text-white: #{$text-white};
+
+  // DORA Metrics Colors
+  --dora-blue: #{$dora-blue};
+  --dora-green: #{$dora-green};
+  --dora-orange: #{$dora-orange};
+  --dora-red: #{$dora-red};
+
+  // Book Colors
+  --book-brown: #{$book-brown};
+  --book-gold: #{$book-gold};
+  --book-cream: #{$book-cream};
+
+  // System Colors
+  --success-green: #{$success-green};
+  --warning-yellow: #{$warning-yellow};
+  --danger-red: #{$danger-red};
+  --info-blue: #{$info-blue};
+
+  // Border & Shadow
+  --border-light: #{$border-light};
+  --border-color: #{$border-color};
+  --shadow-light: #{$shadow-light};
+  --shadow-medium: #{$shadow-medium};
+}
+
+// =============================================================================
+// TYPOGRAPHY TOKENS
+// =============================================================================
+
+// Font Families
+$font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  sans-serif;
+$font-display: 'Poppins', sans-serif;
+$font-mono: 'Monaco', 'Courier New', monospace;
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Font Sizes - Modular Scale (1.25 ratio)
+$font-size-xs: 0.8rem; // 12.8px
+$font-size-sm: 0.9rem; // 14.4px
+$font-size-base: 1rem; // 16px
+$font-size-md: 1.1rem; // 17.6px
+$font-size-lg: 1.25rem; // 20px
+$font-size-xl: 1.5rem; // 24px
+$font-size-2xl: 2rem; // 32px
+$font-size-3xl: 2.75rem; // 44px
+
+// Line Heights - Optimized for readability
+$line-height-tight: 1.1;
+$line-height-normal: 1.4;
+$line-height-relaxed: 1.6;
+$line-height-loose: 1.8;
+
+// Letter Spacing - Refined typography
+$letter-spacing-tight: -0.03em;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.025em;
+
+// CSS Custom Properties for Typography
+:root {
+  // Font Families
+  --font-primary: #{$font-primary};
+  --font-display: #{$font-display};
+  --font-mono: #{$font-mono};
+
+  // Font Weights
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-medium: #{$font-weight-medium};
+  --font-weight-semibold: #{$font-weight-semibold};
+  --font-weight-bold: #{$font-weight-bold};
+
+  // Font Sizes
+  --font-size-xs: #{$font-size-xs};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-base: #{$font-size-base};
+  --font-size-md: #{$font-size-md};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-2xl: #{$font-size-2xl};
+  --font-size-3xl: #{$font-size-3xl};
+
+  // Line Heights
+  --line-height-tight: #{$line-height-tight};
+  --line-height-normal: #{$line-height-normal};
+  --line-height-relaxed: #{$line-height-relaxed};
+  --line-height-loose: #{$line-height-loose};
+
+  // Letter Spacing
+  --letter-spacing-tight: #{$letter-spacing-tight};
+  --letter-spacing-normal: #{$letter-spacing-normal};
+  --letter-spacing-wide: #{$letter-spacing-wide};
+}
+
+// =============================================================================
+// SPACING TOKENS
+// =============================================================================
+
+// Base spacing unit (1rem = 16px)
+$space-base: 1rem;
+
+// Spacing Scale - Consistent rhythm
+$space-xs: 0.25rem; // 4px
+$space-sm: 0.5rem; // 8px
+$space-md: 0.75rem; // 12px
+$space-lg: 1rem; // 16px
+$space-xl: 1.5rem; // 24px
+$space-2xl: 2rem; // 32px
+$space-3xl: 3rem; // 48px
+$space-4xl: 4rem; // 64px
+$space-5xl: 6rem; // 96px
+
+// CSS Custom Properties for Spacing
+:root {
+  --space-xs: #{$space-xs};
+  --space-sm: #{$space-sm};
+  --space-md: #{$space-md};
+  --space-lg: #{$space-lg};
+  --space-xl: #{$space-xl};
+  --space-2xl: #{$space-2xl};
+  --space-3xl: #{$space-3xl};
+  --space-4xl: #{$space-4xl};
+  --space-5xl: #{$space-5xl};
+}
+
+// =============================================================================
+// BORDER RADIUS TOKENS
+// =============================================================================
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-2xl: 20px;
+$radius-full: 50px;
+
+// CSS Custom Properties for Border Radius
+:root {
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-xl: #{$radius-xl};
+  --radius-2xl: #{$radius-2xl};
+  --radius-full: #{$radius-full};
+}
+
+// =============================================================================
+// SHADOW TOKENS
+// =============================================================================
+
+// Box Shadow System - Elevation hierarchy
+$shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+$shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+
+// Colored Shadows - For interactive elements
+$shadow-coral: 0 4px 15px rgba(255, 127, 80, 0.3);
+$shadow-teal: 0 4px 15px rgba(135, 211, 209, 0.3);
+$shadow-gold: 0 4px 15px rgba(215, 186, 137, 0.3);
+
+// CSS Custom Properties for Shadows
+:root {
+  --shadow-xs: #{$shadow-xs};
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+  --shadow-xl: #{$shadow-xl};
+  --shadow-2xl: #{$shadow-2xl};
+  --shadow-coral: #{$shadow-coral};
+  --shadow-teal: #{$shadow-teal};
+  --shadow-gold: #{$shadow-gold};
+}
+
+// =============================================================================
+// ANIMATION TOKENS
+// =============================================================================
+
+// Duration - Consistent timing
+$duration-fast: 0.15s;
+$duration-normal: 0.3s;
+$duration-slow: 0.5s;
+
+// Easing - Natural motion
+$ease-in: cubic-bezier(0.4, 0, 1, 1);
+$ease-out: cubic-bezier(0, 0, 0.2, 1);
+$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+// CSS Custom Properties for Animations
+:root {
+  --duration-fast: #{$duration-fast};
+  --duration-normal: #{$duration-normal};
+  --duration-slow: #{$duration-slow};
+  --ease-in: #{$ease-in};
+  --ease-out: #{$ease-out};
+  --ease-in-out: #{$ease-in-out};
+}
+
+// =============================================================================
+// Z-INDEX TOKENS
+// =============================================================================
+
+// Z-index scale - Layer management
+$z-dropdown: 1000;
+$z-sticky: 1020;
+$z-fixed: 1030;
+$z-modal-backdrop: 1040;
+$z-modal: 1050;
+$z-popover: 1060;
+$z-tooltip: 1070;
+
+// CSS Custom Properties for Z-index
+:root {
+  --z-dropdown: #{$z-dropdown};
+  --z-sticky: #{$z-sticky};
+  --z-fixed: #{$z-fixed};
+  --z-modal-backdrop: #{$z-modal-backdrop};
+  --z-modal: #{$z-modal};
+  --z-popover: #{$z-popover};
+  --z-tooltip: #{$z-tooltip};
+}
+
+// =============================================================================
+// ACCESSIBILITY TOKENS
+// =============================================================================
+
+// Focus Ring - WCAG 2.2 compliant
+$focus-ring-width: 2px;
+$focus-ring-offset: 2px;
+$focus-ring-color: var(--accent-teal);
+
+// Touch Targets - 44px minimum
+$touch-target-min: 44px;
+
+// CSS Custom Properties for Accessibility
+:root {
+  --focus-ring-width: #{$focus-ring-width};
+  --focus-ring-offset: #{$focus-ring-offset};
+  --focus-ring-color: #{$focus-ring-color};
+  --touch-target-min: #{$touch-target-min};
+}
+
+// =============================================================================
+// THEME VARIATIONS
+// =============================================================================
+
+// High Contrast Mode - Accessibility enhancement
+@media (prefers-contrast: high) {
+  :root {
+    --background-white: #000000;
+    --text-dark: #ffffff;
+    --border-color: #ffffff;
+    --shadow-light: rgba(255, 255, 255, 0.2);
+    --shadow-medium: rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Reduced Motion - Respect user preferences
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0.01ms;
+    --duration-normal: 0.01ms;
+    --duration-slow: 0.01ms;
+  }
+}
+
+// Dark Mode - Future enhancement ready
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Dark mode tokens can be added here when needed
+    // Currently maintaining light theme for consistency
+  }
+}
+
+// =============================================================================
+// COMPONENT-SPECIFIC TOKENS
+// =============================================================================
+
+// Hero Banner - Critical above-the-fold content
+:root {
+  --hero-gradient: linear-gradient(
+    135deg,
+    var(--header-dark-navy) 0%,
+    var(--header-light-navy) 100%
+  );
+  --hero-text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+// DORA Metrics - Performance visualization
+:root {
+  --dora-elite: linear-gradient(135deg, var(--success-green), #16a34a);
+  --dora-high: linear-gradient(135deg, var(--dora-blue), #2563eb);
+  --dora-medium: linear-gradient(135deg, var(--dora-orange), #d97706);
+  --dora-low: linear-gradient(135deg, var(--danger-red), #dc2626);
+}
+
+// Button States - Interactive feedback
+:root {
+  --button-gradient: linear-gradient(
+    135deg,
+    var(--accent-coral),
+    var(--hover-coral)
+  );
+  --button-hover-gradient: linear-gradient(
+    135deg,
+    var(--hover-coral),
+    var(--accent-coral)
+  );
+  --button-shadow: var(--shadow-coral);
+}
+
+// =============================================================================
+// UTILITY FUNCTIONS
+// =============================================================================
+
+// Convert px to rem
+@function rem($pixels, $base: 16) {
+  @return #{$pixels / $base}rem;
+}
+
+// Calculate line height from font size
+@function line-height($font-size, $target-height) {
+  @return $target-height / $font-size;
+}
+
+// Generate color variations
+@function lighten-color($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}
+
+@function darken-color($color, $amount: 10%) {
+  @return darken($color, $amount);
+}
+
+// =============================================================================
+// PERFORMANCE OPTIMIZATION NOTES
+// =============================================================================
+
+/*
+CRITICAL RENDERING PATH OPTIMIZATION:
+1. This file contains design tokens for above-the-fold content
+2. CSS custom properties enable runtime theming without re-compilation
+3. SCSS variables provide build-time optimization and calculations
+4. Token-based system ensures consistent UI and easier maintenance
+5. Accessibility tokens ensure WCAG 2.2 compliance
+
+USAGE GUIDELINES:
+- Use CSS custom properties (--token-name) for runtime values
+- Use SCSS variables ($token-name) for build-time calculations
+- Prioritize semantic naming over descriptive naming
+- Group related tokens together for better organization
+- Always provide fallbacks for CSS custom properties
+
+PERFORMANCE CONSIDERATIONS:
+- Tokens are loaded once and cached by the browser
+- CSS custom properties have minimal performance impact
+- SCSS variables are compiled away at build time
+- This file should be included before all other stylesheets
+*/

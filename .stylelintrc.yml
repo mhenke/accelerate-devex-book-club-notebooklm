@@ -1,0 +1,28 @@
+extends:
+  - stylelint-config-standard-scss
+
+plugins:
+  - stylelint-scss
+
+rules:
+  # Disable problematic rules for SCSS development
+  declaration-empty-line-before: null
+  at-rule-empty-line-before: null
+  property-no-vendor-prefix: null
+
+  # Allow SCSS at-rules and unknown syntax
+  scss/at-rule-no-unknown: null
+  at-rule-no-unknown: null
+
+overrides:
+  # Disable media-query-no-invalid for SCSS files only
+  # As per stylelint docs: "This rule is only appropriate for CSS. You should not turn it on for CSS-like languages, such as SCSS or Less."
+  - files:
+      - '**/*.scss'
+    rules:
+      media-query-no-invalid: null
+
+ignoreFiles:
+  - 'docs/vendor/**/*'
+  - 'docs/.jekyll-cache/**/*'
+  - 'docs/_site/**/*'

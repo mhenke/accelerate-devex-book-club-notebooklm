@@ -1,0 +1,676 @@
+// Mixins and Functions - Critical Rendering Path Optimization
+// ===========================================================
+// This file provides utility mixins and functions for the modular CSS architecture.
+// Optimized for performance, accessibility, and maintainability.
+
+// =============================================================================
+// BREAKPOINT MIXINS
+// =============================================================================
+
+// Mobile-first responsive design
+@mixin mobile-up {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+// Mobile-specific styles
+@mixin mobile-only {
+  @media (max-width: #{$mobile - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+// Custom breakpoint mixin
+@mixin breakpoint($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}
+
+// =============================================================================
+// TYPOGRAPHY MIXINS
+// =============================================================================
+
+// Heading styles with consistent hierarchy
+@mixin heading-base {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+}
+
+@mixin heading-1 {
+  @include heading-base;
+
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+@mixin heading-2 {
+  @include heading-base;
+
+  font-size: var(--font-size-2xl);
+  color: var(--header-dark-navy);
+  border-left: 4px solid var(--accent-teal);
+  padding-left: var(--space-lg);
+  margin-top: var(--space-3xl);
+}
+
+@mixin heading-3 {
+  @include heading-base;
+
+  font-size: var(--font-size-xl);
+  color: var(--text-dark);
+  margin-top: var(--space-2xl);
+}
+
+@mixin heading-4 {
+  @include heading-base;
+
+  font-size: var(--font-size-lg);
+  color: var(--text-medium);
+  font-weight: var(--font-weight-medium);
+  margin-top: var(--space-xl);
+}
+
+// Body text styles
+@mixin body-text {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-dark);
+}
+
+@mixin body-small {
+  @include body-text;
+
+  font-size: var(--font-size-sm);
+}
+
+@mixin body-large {
+  @include body-text;
+
+  font-size: var(--font-size-md);
+}
+
+// Code and monospace text
+@mixin code-text {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+// =============================================================================
+// LAYOUT MIXINS
+// =============================================================================
+
+// Flexbox utilities
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  @include flex-column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+// Grid utilities
+@mixin grid-auto-fit($min-width: 250px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: var(--space-lg);
+}
+
+@mixin grid-auto-fill($min-width: 250px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min-width, 1fr));
+  gap: var(--space-lg);
+}
+
+// Container with max-width
+@mixin container($max-width: $desktop) {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+
+  @include mobile-only {
+    padding: 0 var(--space-md);
+  }
+}
+
+// Section spacing
+@mixin section-spacing {
+  padding: var(--space-4xl) 0;
+
+  @include mobile-only {
+    padding: var(--space-3xl) 0;
+  }
+}
+
+// =============================================================================
+// VISUAL EFFECTS MIXINS
+// =============================================================================
+
+// Card styling with consistent elevation
+@mixin card($elevation: 'md') {
+  background: var(--background-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+
+  @if $elevation == 'sm' {
+    box-shadow: var(--shadow-sm);
+  } @else if $elevation == 'md' {
+    box-shadow: var(--shadow-md);
+  } @else if $elevation == 'lg' {
+    box-shadow: var(--shadow-lg);
+  } @else if $elevation == 'xl' {
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+// Hover card with smooth transitions
+@mixin card-hover {
+  @include card;
+
+  transition: transform var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+// Button base styling
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg) var(--space-2xl);
+  border: none;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+  min-height: var(--touch-target-min);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+
+  &:focus {
+    @include focus-ring;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+}
+
+// Primary button styling
+@mixin button-primary {
+  @include button-base;
+
+  background: var(--button-gradient);
+  color: var(--text-white);
+  box-shadow: var(--button-shadow);
+
+  &:hover:not(:disabled) {
+    background: var(--button-hover-gradient);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+// Secondary button styling
+@mixin button-secondary {
+  @include button-base;
+
+  background: transparent;
+  color: var(--accent-coral);
+  border: 2px solid var(--accent-coral);
+
+  &:hover:not(:disabled) {
+    background: var(--accent-coral);
+    color: var(--text-white);
+    transform: translateY(-2px);
+  }
+}
+
+// =============================================================================
+// ACCESSIBILITY MIXINS
+// =============================================================================
+
+// Focus ring for keyboard navigation
+@mixin focus-ring($color: var(--focus-ring-color)) {
+  outline: var(--focus-ring-width) solid $color;
+  outline-offset: var(--focus-ring-offset);
+}
+
+// Screen reader only text
+@mixin sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// Skip link styling
+@mixin skip-link {
+  @include sr-only;
+
+  &:focus {
+    position: absolute !important;
+    top: var(--space-sm) !important;
+    left: var(--space-sm) !important;
+    width: auto !important;
+    height: auto !important;
+    padding: var(--space-sm) var(--space-lg) !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+    background: var(--accent-teal) !important;
+    color: var(--text-white) !important;
+    border-radius: var(--radius-md) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    text-decoration: none !important;
+    z-index: var(--z-tooltip) !important;
+  }
+}
+
+// Touch target size for mobile
+@mixin touch-target {
+  min-height: var(--touch-target-min);
+  min-width: var(--touch-target-min);
+}
+
+// High contrast mode support
+@mixin high-contrast {
+  @media (prefers-contrast: high) {
+    @content;
+  }
+}
+
+// Reduced motion support
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+// =============================================================================
+// PERFORMANCE OPTIMIZATION MIXINS
+// =============================================================================
+
+// Will-change optimization - use sparingly and dynamically
+@mixin will-change-transform {
+  will-change: transform;
+
+  @include reduced-motion {
+    will-change: auto;
+  }
+}
+
+@mixin will-change-opacity {
+  will-change: opacity;
+
+  @include reduced-motion {
+    will-change: auto;
+  }
+}
+
+// GPU acceleration for animations
+@mixin hardware-acceleration {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+  @include reduced-motion {
+    transform: none;
+    backface-visibility: visible;
+    perspective: none;
+  }
+}
+
+// Smooth scrolling
+@mixin smooth-scroll {
+  scroll-behavior: smooth;
+
+  @include reduced-motion {
+    scroll-behavior: auto;
+  }
+}
+
+// =============================================================================
+// GRADIENT MIXINS
+// =============================================================================
+
+// Hero gradient
+@mixin hero-gradient {
+  background: var(--hero-gradient);
+}
+
+// DORA metric gradients
+@mixin dora-elite {
+  background: var(--dora-elite);
+  color: var(--text-white);
+}
+
+@mixin dora-high {
+  background: var(--dora-high);
+  color: var(--text-white);
+}
+
+@mixin dora-medium {
+  background: var(--dora-medium);
+  color: var(--text-white);
+}
+
+@mixin dora-low {
+  background: var(--dora-low);
+  color: var(--text-white);
+}
+
+// =============================================================================
+// ANIMATION MIXINS
+// =============================================================================
+
+// Fade in animation
+@mixin fade-in($duration: var(--duration-normal)) {
+  opacity: 0;
+  animation: fadeIn $duration var(--ease-out) forwards;
+
+  @include reduced-motion {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+// Slide up animation
+@mixin slide-up($distance: 20px, $duration: var(--duration-normal)) {
+  transform: translateY($distance);
+  opacity: 0;
+  animation: slideUp $duration var(--ease-out) forwards;
+
+  @include reduced-motion {
+    transform: none;
+    opacity: 1;
+    animation: none;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Float animation for accent elements
+@mixin float-animation($duration: 3s) {
+  animation: float $duration ease-in-out infinite;
+
+  @include reduced-motion {
+    animation: none;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+// =============================================================================
+// COMPONENT-SPECIFIC MIXINS
+// =============================================================================
+
+// Hero banner styling
+@mixin hero-banner {
+  @include hero-gradient;
+
+  padding: var(--space-4xl) var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+  border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: var(--text-white);
+
+  @include mobile-only {
+    padding: var(--space-3xl) var(--space-lg);
+  }
+}
+
+// Metric card styling
+@mixin metric-card {
+  @include card-hover;
+
+  padding: var(--space-xl);
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--background-white),
+    var(--background-light-gray)
+  );
+
+  .metric-icon {
+    @include flex-center;
+
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-lg);
+    margin: 0 auto var(--space-lg);
+    font-size: var(--font-size-2xl);
+  }
+
+  .metric-title {
+    @include heading-4;
+
+    margin: 0 0 var(--space-sm);
+    color: var(--text-dark);
+  }
+
+  .metric-value {
+    font-family: var(--font-display);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--accent-coral);
+    margin: 0;
+  }
+}
+
+// Section accent header
+@mixin section-accent {
+  border-left: 4px solid var(--accent-teal);
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  font-family: var(--font-display);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--header-dark-navy);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+// =============================================================================
+// UTILITY FUNCTIONS
+// =============================================================================
+
+// Strip units from values
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// Convert px to em
+@function em($pixels, $context: 16) {
+  @return #{$pixels / $context}em;
+}
+
+// Convert px to rem with fallback
+@function rem-with-fallback($pixels, $base: 16) {
+  $rem: #{$pixels / $base}rem;
+
+  @return $rem;
+}
+
+// Calculate fluid typography
+@function fluid-type(
+  $min-size,
+  $max-size,
+  $min-width: $mobile,
+  $max-width: $desktop
+) {
+  $min-size-px: strip-unit($min-size);
+  $max-size-px: strip-unit($max-size);
+  $min-width-px: strip-unit($min-width);
+  $max-width-px: strip-unit($max-width);
+
+  $slope: ($max-size-px - $min-size-px) / ($max-width-px - $min-width-px);
+  $intercept: $min-size-px - $slope * $min-width-px;
+
+  @return clamp(
+    #{$min-size},
+    #{$intercept}px + #{$slope * 100}vw,
+    #{$max-size}
+  );
+}
+
+// =============================================================================
+// VALIDATION MIXINS
+// =============================================================================
+
+// Debug mixin for development
+@mixin debug($color: red) {
+  outline: 2px solid $color !important;
+  outline-offset: -2px !important;
+}
+
+// Aspect ratio mixin
+@mixin aspect-ratio($width, $height) {
+  aspect-ratio: $width / $height;
+
+  // Fallback for browsers that don't support aspect-ratio
+  @supports not (aspect-ratio: 1) {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-top: ($height / $width) * 100%;
+    }
+
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// =============================================================================
+// PERFORMANCE NOTES
+// =============================================================================
+
+/*
+CRITICAL RENDERING PATH OPTIMIZATION NOTES:
+
+1. MIXIN PERFORMANCE:
+   - Mixins are compiled at build time, no runtime overhead
+   - Use @include sparingly to avoid CSS bloat
+   - Prefer utility classes for commonly repeated patterns
+
+2. ANIMATION OPTIMIZATION:
+   - Always respect prefers-reduced-motion
+   - Use transform and opacity for smooth animations
+   - Avoid animating layout properties (width, height, margin)
+   - Use will-change sparingly and remove after animation
+
+3. ACCESSIBILITY FIRST:
+   - All interactive elements have 44px touch targets
+   - Focus rings are clearly visible and consistent
+   - Screen reader content is properly hidden/exposed
+   - High contrast mode is supported
+
+4. RESPONSIVE DESIGN:
+   - Mobile-first approach reduces CSS overhead
+   - Use logical breakpoints based on content
+   - Container queries coming in future version
+
+5. BROWSER COMPATIBILITY:
+   - CSS custom properties used throughout
+   - Fallbacks provided for newer properties
+   - Progressive enhancement approach
+
+USAGE GUIDELINES:
+- Import this file after _tokens.scss
+- Use semantic mixins over utility mixins when possible
+- Document custom mixins thoroughly
+- Test all mixins across target browsers
+- Validate accessibility compliance regularly
+*/
