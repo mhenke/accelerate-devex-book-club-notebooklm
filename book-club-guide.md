@@ -1,6 +1,6 @@
 # Accelerate DevEx Book Club Guide
 
-*Building and Scaling High Performing Technology Organizations*
+_Building and Scaling High Performing Technology Organizations_
 
 **Duration:** 2 Months | **Format:** 4 Biweekly 1-Hour Sessions | **Theme-Based Structure**
 
@@ -23,7 +23,7 @@ This book club follows the book's own principle of breaking work into small, man
 **Chapters:** 1-3 (Accelerate, Measuring Performance, Measuring and Changing Culture)
 
 - Core concepts: DORA metrics, Westrum culture types, speed vs stability myth, deployment pain
-- Interactive page: [docs/_meetings/meeting-1.md](docs/_meetings/meeting-1.md)
+- Interactive page: [docs/\_meetings/meeting-1.md](docs/_meetings/meeting-1.md)
 
 ### Meeting 2: Technical Excellence & Continuous Delivery
 
@@ -31,7 +31,7 @@ This book club follows the book's own principle of breaking work into small, man
 **Chapters:** 4-6 (Technical Practices, Architecture, Integrating Infosec)
 
 - Core concepts: Continuous delivery practices, loosely coupled architecture, shift-left security
-- Interactive page: [docs/_meetings/meeting-2.md](docs/_meetings/meeting-2.md)
+- Interactive page: [docs/\_meetings/meeting-2.md](docs/_meetings/meeting-2.md)
 
 ### Meeting 3: Management, Product Development & Sustainability
 
@@ -39,7 +39,7 @@ This book club follows the book's own principle of breaking work into small, man
 **Chapters:** 7-10 (Management Practices, Product Development, Making Work Sustainable, Employee Satisfaction)
 
 - Core concepts: Lean management, WIP limits, change approval processes, burnout prevention
-- Interactive page: [docs/_meetings/meeting-3.md](docs/_meetings/meeting-3.md)
+- Interactive page: [docs/\_meetings/meeting-3.md](docs/_meetings/meeting-3.md)
 
 ### Meeting 4: Leadership, Research Methods & Transformation
 
@@ -47,19 +47,19 @@ This book club follows the book's own principle of breaking work into small, man
 **Chapters:** 11, 16, Conclusion (Leaders and Managers, High-Performance Leadership case study, wrap-up)
 
 - Core concepts: Transformational leadership, ING case study, transformation principles, 24 capabilities
-- Interactive page: [docs/_meetings/meeting-4.md](docs/_meetings/meeting-4.md)
+- Interactive page: [docs/\_meetings/meeting-4.md](docs/_meetings/meeting-4.md)
 
 ## Resources
 
 ### Book Club Plan & Prompts
 
 - [resources/plan/plan.md](resources/plan/plan.md) - Updated book club plan with corrected chapter mappings
-- [resources/plan/audio.md](resources/plan/audio.md) - NotebookLM podcast generation prompts  
+- [resources/plan/audio.md](resources/plan/audio.md) - NotebookLM podcast generation prompts
 - [resources/plan/video.md](resources/plan/video.md) - NotebookLM video generation prompts
 
 ### Interactive Meeting Pages
 
-- [docs/_meetings/](docs/_meetings/) - Four interactive meeting pages with visual elements and learning checkpoints
+- [docs/\_meetings/](docs/_meetings/) - Four interactive meeting pages with visual elements and learning checkpoints
 
 ### Assessment & Templates
 
@@ -76,7 +76,7 @@ This book club follows the book's own principle of breaking work into small, man
 By the end of this book club, participants will be able to:
 
 - ✅ Articulate and explain the four DORA metrics and their current team performance
-- ✅ Identify specific bottlenecks and improvement opportunities using the 24 capabilities framework  
+- ✅ Identify specific bottlenecks and improvement opportunities using the 24 capabilities framework
 - ✅ Implement action items from sessions with measurement and regular reflection
 - ✅ Understand culture's impact on technical performance using Westrum's model
 - ✅ Have a concrete transformation plan with small experiments and evidence-based approach
@@ -89,7 +89,7 @@ Throughout our journey, we'll return to this central reflection:
 
 ## Repository Structure
 
-```
+```text
 accelerate-devex-book-club-notebooklm/
 ├── README.md                          # Repository overview
 ├── CLAUDE.md                          # Claude Code guidance
@@ -99,7 +99,7 @@ accelerate-devex-book-club-notebooklm/
 │   ├── _config.yml                   # Jekyll configuration
 │   ├── _meetings/                    # Interactive meeting pages
 │   │   ├── meeting-1.md             # Week 1: Chapters 1-3
-│   │   ├── meeting-2.md             # Week 3: Chapters 4-6  
+│   │   ├── meeting-2.md             # Week 3: Chapters 4-6
 │   │   ├── meeting-3.md             # Week 5: Chapters 7-10
 │   │   └── meeting-4.md             # Week 7: Chapters 11,16
 │   ├── _layouts/                     # Jekyll layouts
