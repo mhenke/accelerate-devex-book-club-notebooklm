@@ -1085,8 +1085,7 @@ h3 {
   border-left: 4px solid #1E3A8A;
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   padding: 1rem 1.5rem;
-  margin: 2rem 0 1.5rem 0;
-  color: #1e40af;
+  margin: 0;
   font-weight: 600;
 }
 
