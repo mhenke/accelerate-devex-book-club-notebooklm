@@ -25,6 +25,7 @@
 
 .site-logo {
   @include text-lg;
+
   font-weight: 600;
   color: var(--text-dark);
   text-decoration: none;
@@ -45,6 +46,7 @@
 
 .nav-link {
   @include touch-target-44px;
+
   color: var(--text-dark);
   text-decoration: none;
   padding: var(--spacing-sm) var(--spacing-md);

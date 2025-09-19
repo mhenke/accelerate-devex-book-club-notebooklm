@@ -2,8 +2,8 @@
 // =========================
 // Reusable badges, pills, and label systems
 
-// Base Badge Component
-.badge {
+// Base Badge Placeholder
+%badge {
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
@@ -20,9 +20,14 @@
   }
 }
 
+// Base Badge Class (extends placeholder)
+.badge {
+  @extend %badge;
+}
+
 // Achievement Badge
 .achievement-badge {
-  @extend .badge;
+  @extend %badge;
   @include touch-target-44px;
 
   background: var(--success-green);
@@ -50,7 +55,8 @@
 
 .meeting-week,
 .meeting-duration {
-  @extend .badge;
+  @extend %badge;
+
   background: rgba(255, 255, 255, 0.2);
   color: var(--text-white);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -58,7 +64,8 @@
 
 // Chapters Badge
 .chapters-badge {
-  @extend .badge;
+  @extend %badge;
+
   background: rgba(255, 255, 255, 0.1);
   color: var(--text-white);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -80,7 +87,7 @@
 }
 
 .finding-pill {
-  @extend .badge;
+  @extend %badge;
   @include touch-target-44px;
 
   color: var(--text-white);
@@ -128,7 +135,7 @@
 
 // Status Labels
 .status-label {
-  @extend .badge;
+  @extend %badge;
 
   &.completed {
     background: var(--success-green);
@@ -187,7 +194,8 @@
 
 // Performance Level Indicators
 .perf-level {
-  @extend .badge;
+  @extend %badge;
+
   font-size: var(--font-size-lg);
   padding: var(--spacing-md) var(--spacing-lg);
   font-weight: var(--font-weight-semibold);
