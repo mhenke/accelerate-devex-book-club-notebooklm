@@ -119,18 +119,6 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
-## Culture Assessment
-
-<div class="culture-assessment">
-  <h4>Assess Your Organization's Culture</h4>
-  <ul>
-    <li>Pathological: Power-oriented, low cooperation, blame culture</li>
-    <li>Bureaucratic: Rule-oriented, modest cooperation, rules over mission</li>
-    <li>Generative: Performance-oriented, high cooperation, mission focused</li>
-  </ul>
-  <p>Use Westrum's model to identify your team's culture type and discuss how it impacts delivery performance.</p>
-</div>
-
 ## Deployment Pain → Solution Flow
 
 <div class="deployment-flow">
@@ -248,6 +236,35 @@ dora_color: '#1E3A8A'
       <p>Choose which metric needs the most attention to get specific improvement strategies.</p>
     </div>
   </div>
+
+  <div class="checkpoint-card culture-assessment">
+    <h4><i class="fas fa-users"></i> Culture Assessment</h4>
+    <p>Assess your organization's culture type using Westrum's model:</p>
+    <div class="culture-options">
+      <label class="culture-item pathological">
+        <input type="radio" name="culture-type" value="pathological">
+        <span class="radio-mark"></span>
+        <i class="fas fa-skull-crossbones"></i> Pathological<br>
+        <span class="culture-desc">Power-oriented, low cooperation, blame culture</span>
+      </label>
+      <label class="culture-item bureaucratic">
+        <input type="radio" name="culture-type" value="bureaucratic">
+        <span class="radio-mark"></span>
+        <i class="fas fa-gavel"></i> Bureaucratic<br>
+        <span class="culture-desc">Rule-oriented, modest cooperation, rules over mission</span>
+      </label>
+      <label class="culture-item generative">
+        <input type="radio" name="culture-type" value="generative">
+        <span class="radio-mark"></span>
+        <i class="fas fa-seedling"></i> Generative<br>
+        <span class="culture-desc">Performance-oriented, high cooperation, mission focused</span>
+      </label>
+    </div>
+    <div class="feedback-area" id="culture-feedback">
+      <p>Select your organization's culture type to see how it impacts delivery performance.</p>
+    </div>
+  </div>
+</div>
 </div>
 
 ---
@@ -270,17 +287,20 @@ dora_color: '#1E3A8A'
 ## Related Resources
 
 ### DORA Research & Assessment
+
 - [2024 State of DevOps Report](https://dora.dev/research/2024/dora-report/) - Latest DORA findings and industry benchmarks
 - [DORA Research Program](https://dora.dev/) - Official DORA website with comprehensive research
 - [DORA Quick Check Assessment](https://dora.dev/quickcheck/) - Self-assessment tool for your team
 - [DORA Capabilities Overview](https://dora.dev/capabilities/) - Technical and cultural capabilities framework
 
 ### Westrum Organizational Culture
+
 - [Westrum Organizational Culture Types](https://dora.dev/capabilities/generative-organizational-culture/) - DORA culture implementation guide
 - [IT Revolution Westrum Model](https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/) - Detailed explanation of culture types
 - [Generative Culture Assessment](https://continuousdelivery.com/implementing/culture/) - Practical culture implementation guide
 
 ### Foundation Books & Resources
+
 - [Accelerate Book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) - The source material for our book club
 - [State of DevOps Report Archive](https://dora.dev/research/) - Historical DevOps research and trends
 - [DevOps Research and Assessment](https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance) - Google Cloud DORA insights
