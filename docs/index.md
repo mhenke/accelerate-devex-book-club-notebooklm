@@ -27,7 +27,9 @@ title: Home
   </div>
 </div>
 
+<div class="welcome-start">
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
+</div>
 
 <div class="quick-start">
 <h2><i class="fas fa-book"></i> About the Book Club</h2>
@@ -210,34 +212,30 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
     <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="timeline-node node-1">
       <div class="node-circle">1</div>
       <div class="node-content">
-        <h4>Foundation & Metrics</h4>
-        <p>DORA Metrics & Culture</p>
+    <h4>Meeting 1: Foundation</h4>
+    <p>Laying the Foundation – The Myth and the Measurement</p>
       </div>
-      <div class="meeting-title">Meeting 1: Foundation & Metrics</div>
     </a>
     <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="timeline-node node-2">
       <div class="node-circle">2</div>
       <div class="node-content">
-        <h4>Technical Excellence</h4>
-        <p>Continuous Delivery</p>
+    <h4>Meeting 2: Technical Excellence</h4>
+    <p>Technical Excellence & Continuous Delivery</p>
       </div>
-      <div class="meeting-title">Meeting 2: Technical Excellence</div>
     </a>
     <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="timeline-node node-3">
       <div class="node-circle">3</div>
       <div class="node-content">
-        <h4>Management & Sustainability</h4>
-        <p>Lean Management</p>
+    <h4>Meeting 3: Management & Sustainability</h4>
+    <p>Management, Product Development & Sustainability</p>
       </div>
-      <div class="meeting-title">Meeting 3: Management & Sustainability</div>
     </a>
     <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="timeline-node node-4">
       <div class="node-circle">4</div>
       <div class="node-content">
-        <h4>Leadership & Transformation</h4>
-        <p>Transformational Leadership</p>
+    <h4>Meeting 4: Leadership & Transformation</h4>
+    <p>Transformational Leadership, ING Case Study, & Make It Your Own</p>
       </div>
-      <div class="meeting-title">Meeting 4: Leadership & Transformation</div>
     </a>
   </div>
 </div>
