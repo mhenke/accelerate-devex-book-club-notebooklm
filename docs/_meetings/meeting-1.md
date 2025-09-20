@@ -5,7 +5,7 @@ subtitle: 'Laying the Foundation – The Myth and the Measurement'
 week: 1
 chapters: '1-3'
 duration: '1 Hour'
-dora_color: '#2196F3'
+dora_color: '#1E3A8A'
 ---
 
 ## <i class="fas fa-video"></i> Watch the Meeting 1 Video
@@ -267,6 +267,24 @@ dora_color: '#2196F3'
 <li>[ ] Observe examples of pathological, bureaucratic, or generative culture behaviors</li>
 </ul>
 
+## Related Resources
+
+### DORA Research & Assessment
+- [2024 State of DevOps Report](https://dora.dev/research/2024/dora-report/) - Latest DORA findings and industry benchmarks
+- [DORA Research Program](https://dora.dev/) - Official DORA website with comprehensive research
+- [DORA Quick Check Assessment](https://dora.dev/quickcheck/) - Self-assessment tool for your team
+- [DORA Capabilities Overview](https://dora.dev/capabilities/) - Technical and cultural capabilities framework
+
+### Westrum Organizational Culture
+- [Westrum Organizational Culture Types](https://dora.dev/capabilities/generative-organizational-culture/) - DORA culture implementation guide
+- [IT Revolution Westrum Model](https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/) - Detailed explanation of culture types
+- [Generative Culture Assessment](https://continuousdelivery.com/implementing/culture/) - Practical culture implementation guide
+
+### Foundation Books & Resources
+- [Accelerate Book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) - The source material for our book club
+- [State of DevOps Report Archive](https://dora.dev/research/) - Historical DevOps research and trends
+- [DevOps Research and Assessment](https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance) - Google Cloud DORA insights
+
 <style>
 /* Meeting Navigation */
 .meeting-navigation {
@@ -298,14 +316,14 @@ dora_color: '#2196F3'
 
 .nav-item.next {
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border: 2px solid #3b82f6;
+  border: 2px solid #1E3A8A;
 }
 
 .nav-item.next:hover {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: linear-gradient(135deg, #1E3A8A, #1d4ed8);
   color: white;
   transform: translateX(4px);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
 }
 
 .nav-item a {
@@ -327,9 +345,9 @@ dora_color: '#2196F3'
   gap: 1.5rem;
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
   border-radius: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #1E3A8A;
 }
 
 .checkpoint-card {
@@ -346,20 +364,20 @@ dora_color: '#2196F3'
 
 .checkpoint-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(33, 150, 243, 0.2);
-  border-color: #2196f3;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.2);
+  border-color: #1E3A8A;
 }
 
 .checkpoint-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
   display: block;
-  color: #1565c0;
+  color: #1e40af;
 }
 
 .checkpoint-card h4 {
   margin: 0 0 1rem 0;
-  color: #1565c0;
+  color: #1e40af;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -511,7 +529,7 @@ dora_color: '#2196F3'
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
-  border-left: 4px solid #2196f3;
+  border-left: 4px solid #1E3A8A;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
@@ -531,7 +549,7 @@ dora_color: '#2196F3'
 .confidence-item .radio-mark {
   width: 16px;
   height: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #1E3A8A;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -539,7 +557,7 @@ dora_color: '#2196F3'
 }
 
 .confidence-item input:checked ~ .radio-mark {
-  background: #2196f3;
+  background: #1E3A8A;
 }
 
 .confidence-item input:checked ~ .radio-mark:after {
@@ -554,16 +572,16 @@ dora_color: '#2196F3'
 }
 
 .confidence-item:hover {
-  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  background: linear-gradient(135deg, #1E3A8A, #3730a3);
   color: white;
   transform: translateX(4px);
-  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
 }
 
 .confidence-item:has(input:checked) {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  border-left-color: #1565c0;
-  color: #1565c0;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border-left-color: #1e40af;
+  color: #1e40af;
 }
 
 /* Priority Selector */
@@ -577,14 +595,14 @@ dora_color: '#2196F3'
 .priority-option {
   position: relative;
   padding: 1rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
   border-radius: 12px;
-  border: 2px solid #2196f3;
+  border: 2px solid #1E3A8A;
   transition: all 0.3s ease;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #1565c0;
+  color: #1e40af;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -599,7 +617,7 @@ dora_color: '#2196F3'
 .priority-option .radio-mark {
   width: 16px;
   height: 16px;
-  border: 2px solid #2196f3;
+  border: 2px solid #1E3A8A;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -607,7 +625,7 @@ dora_color: '#2196F3'
 }
 
 .priority-option input:checked ~ .radio-mark {
-  background: #2196f3;
+  background: #1E3A8A;
 }
 
 .priority-option input:checked ~ .radio-mark:after {
@@ -622,16 +640,16 @@ dora_color: '#2196F3'
 }
 
 .priority-option:hover {
-  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  background: linear-gradient(135deg, #1E3A8A, #3730a3);
   color: white;
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3);
 }
 
 .priority-option:has(input:checked) {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  border-color: #1565c0;
-  color: #1565c0;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border-color: #1e40af;
+  color: #1e40af;
   font-weight: 600;
 }
 
@@ -641,7 +659,7 @@ dora_color: '#2196F3'
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 8px;
-  border-left: 4px solid #2196f3;
+  border-left: 4px solid #1E3A8A;
   min-height: 60px;
   transition: all 0.3s ease;
 }
@@ -655,7 +673,7 @@ dora_color: '#2196F3'
 
 .feedback-area h5 {
   margin: 0 0 0.5rem 0;
-  color: #1565c0;
+  color: #1e40af;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -669,7 +687,7 @@ dora_color: '#2196F3'
 @media (max-width: 768px) {
   .learning-checkpoint {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .priority-selector {
@@ -716,11 +734,11 @@ dora_color: '#2196F3'
 }
 
 .metric-card.lead-time {
-  border-color: #2196f3;
+  border-color: #1E3A8A;
 }
 
 .metric-card.lead-time::before {
-  background: linear-gradient(90deg, #2196f3, #1976d2);
+  background: linear-gradient(90deg, #1E3A8A, #1d4ed8);
 }
 
 .metric-card.deploy-frequency {
@@ -779,8 +797,8 @@ h3 i, h4 i {
 }
 
 .metric-goal {
-  background: rgba(33, 150, 243, 0.1);
-  color: #1976d2;
+  background: rgba(30, 58, 138, 0.1);
+  color: #1d4ed8;
   padding: 0.4rem 0.8rem;
   border-radius: 16px;
   font-size: 0.8rem;
@@ -864,9 +882,9 @@ h3 i, h4 i {
   gap: 1.5rem;
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
   border-radius: 12px;
-  border: 2px solid #2196f3;
+  border: 2px solid #1E3A8A;
 }
 
 .flow-problem, .flow-solution, .flow-result {
@@ -885,7 +903,7 @@ h3 i, h4 i {
   margin: 0 0 1rem 0;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1565c0;
+  color: #1e40af;
 }
 
 .flow-problem ul, .flow-solution ul, .flow-result ul {
@@ -901,7 +919,7 @@ h3 i, h4 i {
 
 .flow-arrow {
   font-size: 2rem;
-  color: #2196f3;
+  color: #1E3A8A;
   font-weight: bold;
 }
 
@@ -920,7 +938,7 @@ h3 i, h4 i {
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border-left: 4px solid #2196f3;
+  border-left: 4px solid #1E3A8A;
 }
 
 .insight-card:hover {
@@ -936,7 +954,7 @@ h3 i, h4 i {
 
 .insight-card h4 {
   margin: 0 0 0.75rem 0;
-  color: #1565c0;
+  color: #1e40af;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -1108,8 +1126,8 @@ h3 i, h4 i {
   gap: 1rem;
   margin: 1rem 0;
   padding: 1rem 0;
-  border-top: 2px solid #e3f2fd;
-  border-bottom: 2px solid #e3f2fd;
+  border-top: 2px solid #dbeafe;
+  border-bottom: 2px solid #dbeafe;
 }
 
 .stat-item {
@@ -1122,18 +1140,18 @@ h3 i, h4 i {
   align-items: center;
   gap: 0.25rem;
   font-size: 0.85rem;
-  color: #1565c0;
+  color: #1e40af;
   font-weight: 500;
 }
 
 .stat-item i {
   font-size: 1.2rem;
-  color: #2196f3;
+  color: #1E3A8A;
 }
 
 .stat-item strong {
   font-size: 1.1rem;
-  color: #1565c0;
+  color: #1e40af;
 }
 
 @media (max-width: 768px) {
