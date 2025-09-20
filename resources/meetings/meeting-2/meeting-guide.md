@@ -97,5 +97,5 @@ Create a visual overview with the [Meeting 2 Video Prompt](video-prompt.md)
 
 ## Navigation
 
-- Previous: [Meeting 1: Laying the Foundation](meeting-1-guide.md)
-- Next: [Meeting 3: Architecture, Autonomy, and Lean Thinking](meeting-3-guide.md)
+- Previous: [Meeting 1: Laying the Foundation](../meeting-1/meeting-guide.md)
+- Next: [Meeting 3: Management, Product Development & Sustainability](../meeting-3/meeting-guide.md)

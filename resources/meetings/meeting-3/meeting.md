@@ -1,53 +1,60 @@
-# Meeting 3: Architecture, Autonomy, and Lean Thinking
+# Meeting 3: Management, Product Development & Sustainability
+
 **Week 5 | Duration:** 1 Hour
 
 ## Pre-Reading Assignment
-**Chapters:** 9-12 (Organizational and Management Practices)
-- Chapter 9: Making Work Sustainable
-- Chapter 10: Employee Satisfaction, Identity, and Engagement
-- Chapter 11: Leaders and Managers
-- Chapter 12: Diversity in Tech
+
+**Chapters:** 7-10 (Management Practices, Product Development, Making Work Sustainable, Employee Satisfaction)
+
+- Chapter 7: Management Practices for Software - Lean management and lightweight change approval
+- Chapter 8: Product Development - Lean product practices and team experimentation
+- Chapter 9: Making Work Sustainable - Deployment pain and burnout
+- Chapter 10: Employee Satisfaction, Identity, and Engagement - Job satisfaction and diversity
 
 ## Core Concepts to Explore
 
-### 1. Modular/Loosely Coupled Architecture
-- **Independent Team Work:** Teams can work without relying on other teams for support and services
-- **Reduced Coordination Overhead:** Less communication required for changes
-- **Kitchen Analogy:** Like chefs working independently on their dishes without constant coordination
-- **Conway's Law Inverse:** Evolving team structures to match desired architecture
+### 1. Lean Management Principles
 
-### 2. Empowerment Through Tool Selection
-- **Autonomy Impact:** How tool choice freedom enhances creativity and productivity
-- **Balance with Standardization:** Providing easy-to-use security protocols and basic systems
-- **Developer Satisfaction:** Connection between autonomy and job satisfaction
-- **Innovation Driver:** How flexible tool policies lead to better solutions
+- **Limit Work in Progress (WIP):** Using limits to drive process improvement and expose bottlenecks
+- **Visualize Work:** Dashboards showing quality, productivity metrics, and work status
+- **Monitor and Decide:** Using application/infrastructure data for daily business decisions
+- **Lightweight Change Approval:** Peer review outperforms external change boards
 
-### 3. Lean Management Principles
-- **Limit Work in Progress (WIP):** Using WIP limits to manage flow and drive process improvement
-- **Visualize Work:** Making work and metrics visible to the team
-- **Lightweight Change Approval:** Peer review over external change approval boards
-- **Customer Feedback Integration:** Getting early and frequent customer input
-- **Data-Driven Decisions:** Using monitoring and metrics to inform choices
+### 2. Lean Product Development - Working in Small Batches
 
-### 4. Employee Satisfaction Drivers
-- **Meaningful Work:** Appropriate challenges and purposeful tasks
-- **Learning Opportunities:** Growth and development possibilities
-- **Supportive Environment:** Team culture that enables success
-- **Tool Access:** Having the right resources to do the job effectively
+- **Customer Feedback Integration:** Actively seeking and incorporating customer input into design
+- **Value Stream Visibility:** Understanding work flow from business to customers
+- **Team Experimentation:** Authority to create/change specifications without external approval
+- **MVP Approach:** Prototype with just enough features for validated learning
+
+### 3. Making Work Sustainable
+
+- **Deployment Pain as Signal:** Fear during deployments indicates process problems
+- **Burnout Prevention:** CD practices reduce burnout and improve work-life balance (Microsoft: 38% → 75% satisfaction)
+- **Six Burnout Risk Factors:** Work overload, lack of control, insufficient rewards, breakdown of community, absence of fairness, value conflicts
+
+### 4. Employee Satisfaction and Diversity Impact
+
+- **Identity and Values Alignment:** Employees identifying with organizational values and goals
+- **Net Promoter Score (eNPS):** High performers 2.2x more likely to recommend their organization
+- **Diversity Research:** Teams with more diversity achieve better performance and business outcomes
+- **Tool Access:** Having right resources correlates strongly with job satisfaction
 
 ## Discussion Questions
-1. **Architecture Assessment:** How well does your current architecture enable independent team work?
-2. **Tool Autonomy:** What level of tool selection freedom do teams currently have?
-3. **Lean Practices:** Which lean management practices are you currently using? Which could be adopted?
-4. **WIP Visibility:** How do you currently visualize and limit work in progress?
-5. **Developer Satisfaction:** What factors most impact job satisfaction in your organization?
+1. **Lean Practices Assessment:** Which lean management practices do you currently use? What's missing?
+2. **Work Visualization:** How does your team currently visualize WIP and quality metrics?
+3. **Change Approval Reality:** Describe your current change approval process - who's involved and how long does it take?
+4. **Burnout Indicators:** What signs of deployment pain or burnout do you observe in your team?
+5. **Employee Engagement:** How would your team score on employee Net Promoter Score?
 
 ## Practical Exercises
-- Map current dependencies between teams and systems
-- Identify bottlenecks in current change approval processes
+
 - Assess current WIP limits and visualization practices
+- Map your change approval process and identify bottlenecks
+- Calculate informal eNPS for your team
 
 ## Action Items for Next Meeting
-- Document one architectural dependency that slows down your team
-- Experiment with visualizing work using a simple kanban board
-- Identify one process that could benefit from peer review instead of external approval
+
+- [ ] Experiment with visualizing work using simple kanban board
+- [ ] Identify one change approval step that could be streamlined
+- [ ] Observe and document burnout risk factors in your environment
