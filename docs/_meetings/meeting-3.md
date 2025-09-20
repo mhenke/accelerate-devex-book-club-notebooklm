@@ -102,9 +102,10 @@ dora_color: '#D97706'
   <line x1="610" y1="130" x2="640" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
 
   <!-- Research Finding -->
-  <text x="450" y="225" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Research Finding</text>
-  <text x="450" y="245" text-anchor="middle" font-size="12" fill="#92400e">Teams scoring high on all four pillars are 2.2x more likely</text>
-  <text x="450" y="260" text-anchor="middle" font-size="12" fill="#92400e">to recommend their organization as a great place to work</text>
+
+<text x="450" y="225" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Research Finding</text>
+<text x="450" y="245" text-anchor="middle" font-size="12" fill="#92400e">Teams scoring high on all four pillars are 2.2x more likely</text>
+<text x="450" y="260" text-anchor="middle" font-size="12" fill="#92400e">to recommend their organization as a great place to work</text>
 
   <defs>
     <marker id="arrow-amber" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
@@ -136,13 +137,13 @@ dora_color: '#D97706'
         <span>All-hands meetings</span>
       </div>
     </div>
-    <div class="pain-score">
-      <span class="score-number">7-10</span>
-      <span class="score-label">Pain Level</span>
+    <div class="pain-impact">
+      <p class="impact-statement"><strong>High stress, low performance, team burnout</strong></p>
+      <p class="impact-detail">Deployments create anxiety and require extensive coordination</p>
     </div>
   </div>
 
-  <div class="pain-arrow">→</div>
+  <div class="pain-arrow"><i class="fas fa-arrow-right"></i></div>
 
   <div class="pain-side low-pain">
     <h4><i class="fas fa-check-circle"></i> Low Deployment Pain</h4>
@@ -164,21 +165,10 @@ dora_color: '#D97706'
         <span>Normal workday</span>
       </div>
     </div>
-    <div class="pain-score">
-      <span class="score-number">1-3</span>
-      <span class="score-label">Pain Level</span>
+    <div class="pain-impact">
+      <p class="impact-statement"><strong>Confident releases, sustainable pace, happy teams</strong></p>
+      <p class="impact-detail">Deployments are routine activities that don't disrupt work-life balance</p>
     </div>
-  </div>
-</div>
-
-<div class="research-finding">
-  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
-  <p>Teams with low deployment pain are <strong>3x more likely</strong> to have sustainable work practices and higher job satisfaction. Deployment pain directly correlates with work-life balance.</p>
-</div>
-  <div class="formula-equals">=</div>
-  <div class="formula-result">
-    <h4><i class="fas fa-smile"></i> High Satisfaction</h4>
-    <p>Better performance</p>
   </div>
 </div>
 
@@ -191,7 +181,8 @@ dora_color: '#D97706'
   <!-- Customer Feedback Integration -->
   <rect x="50" y="80" width="200" height="200" rx="15" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
   <circle cx="150" cy="110" r="20" fill="#d97706"/>
-  <text x="150" y="116" text-anchor="middle" font-size="16" fill="white" font-weight="bold">📞</text>
+  <circle cx="150" cy="116" r="8" fill="white"/>
+  <text x="150" y="119" text-anchor="middle" font-size="10" fill="#d97706" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f075</text>
   <text x="150" y="140" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Customer Feedback</text>
   <text x="150" y="160" text-anchor="middle" font-size="12" fill="#92400e">Active Incorporation</text>
   
@@ -243,7 +234,8 @@ dora_color: '#D97706'
   <text x="900" y="200" text-anchor="middle" font-size="12" fill="white">End-to-End</text>
 
   <!-- Bottom insight -->
-  <text x="500" y="320" text-anchor="middle" font-size="18" fill="#92400e" font-weight="bold">Research Finding: Teams with all four practices deliver 50% faster</text>
+
+<text x="500" y="320" text-anchor="middle" font-size="18" fill="#92400e" font-weight="bold">Research Finding: Teams with all four practices deliver 50% faster</text>
 
   <defs>
     <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
@@ -269,8 +261,7 @@ dora_color: '#D97706'
   <text x="60" y="195" font-size="12" fill="#991b1b">🔄 Complex team handoffs</text>
   <text x="60" y="215" font-size="12" fill="#991b1b">💔 Engineer anxiety before pushes</text>
   
-  <rect x="60" y="225" width="280" height="20" rx="10" fill="#dc2626"/>
-  <text x="200" y="238" text-anchor="middle" font-size="12" fill="white" font-weight="bold">High Pain = Lower Performance + Burnout</text>
+  <text x="200" y="230" text-anchor="middle" font-size="14" fill="#dc2626" font-weight="bold" font-style="italic">High Pain = Lower Performance + Burnout Risk</text>
 
   <!-- Transformation Arrow -->
   <line x1="350" y1="160" x2="450" y2="160" stroke="#d97706" stroke-width="6" marker-end="url(#arrow-transform)"/>
@@ -281,19 +272,20 @@ dora_color: '#D97706'
   <!-- Sustainable Practices Side -->
   <rect x="470" y="70" width="300" height="180" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
   <circle cx="620" cy="100" r="20" fill="#16a34a"/>
-  <text x="620" y="106" text-anchor="middle" font-size="16" fill="white" font-weight="bold">🌱</text>
+  <circle cx="620" cy="106" r="8" fill="white"/>
+  <text x="620" y="109" text-anchor="middle" font-size="10" fill="#16a34a" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f4d8</text>
   <text x="620" y="130" text-anchor="middle" font-size="18" fill="#16a34a" font-weight="bold">Sustainable Practices</text>
   
-  <text x="480" y="155" font-size="12" fill="#15803d">🤖 Automation eliminates manual steps</text>
-  <text x="480" y="175" font-size="12" fill="#15803d">⏰ Frequent deployments, business hours</text>
-  <text x="480" y="195" font-size="12" fill="#15803d">🛡️ Built-in quality and testing</text>
-  <text x="480" y="215" font-size="12" fill="#15803d">☕ Normal workday deployments</text>
+  <text x="490" y="155" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f544</tspan> Automation eliminates manual steps</text>
+  <text x="490" y="175" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f017</tspan> Frequent deployments, business hours</text>
+  <text x="490" y="195" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f3ed</tspan> Built-in quality and testing</text>
+  <text x="490" y="215" font-size="12" fill="#15803d"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f0f4</tspan> Normal workday deployments</text>
   
-  <rect x="480" y="225" width="280" height="20" rx="10" fill="#16a34a"/>
-  <text x="620" y="238" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Low Pain = High Performance + Balance</text>
+  <text x="620" y="230" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="bold" font-style="italic">Low Pain = High Performance + Work-Life Balance</text>
 
   <!-- Bottom Research Finding -->
-  <text x="500" y="275" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Teams with low deployment pain are 3x more likely to have sustainable work practices</text>
+
+<text x="500" y="275" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Teams with low deployment pain are 3x more likely to have sustainable work practices</text>
 
   <defs>
     <marker id="arrow-transform" markerWidth="15" markerHeight="15" refX="7" refY="7" orient="auto" markerUnits="strokeWidth">
@@ -302,151 +294,26 @@ dora_color: '#D97706'
   </defs>
 </svg>
 
-### Employee Satisfaction Framework: The Performance Connection
+### Employee Satisfaction Impact
 
-<svg width="100%" height="400" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg" aria-label="Employee Satisfaction Performance Framework">
-  <rect x="10" y="10" width="980" height="380" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="3"/>
-  <text x="500" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">Employee Satisfaction = Organizational Performance</text>
-
-  <!-- Satisfaction Pillars -->
-  <rect x="60" y="80" width="180" height="120" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
-  <circle cx="150" cy="110" r="15" fill="#d97706"/>
-  <text x="150" y="116" text-anchor="middle" font-size="12" fill="white" font-weight="bold">❤️</text>
-  <text x="150" y="135" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Meaningful Work</text>
-  <text x="150" y="155" text-anchor="middle" font-size="10" fill="#92400e">Challenge + Purpose</text>
-  <text x="150" y="175" text-anchor="middle" font-size="10" fill="#d97706" font-weight="bold">2.2x likely to recommend</text>
-
-  <rect x="260" y="80" width="180" height="120" rx="12" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
-  <circle cx="350" cy="110" r="15" fill="#d97706"/>
-  <text x="350" y="116" text-anchor="middle" font-size="12" fill="white" font-weight="bold">🛠️</text>
-  <text x="350" y="135" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Right Tools</text>
-  <text x="350" y="155" text-anchor="middle" font-size="10" fill="#92400e">Resources + Technology</text>
-  <text x="350" y="175" text-anchor="middle" font-size="10" fill="#d97706" font-weight="bold">Strong job satisfaction</text>
-
-  <rect x="460" y="80" width="180" height="120" rx="12" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
-  <circle cx="550" cy="110" r="15" fill="#d97706"/>
-  <text x="550" y="116" text-anchor="middle" font-size="12" fill="white" font-weight="bold">🤝</text>
-  <text x="550" y="135" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Values Alignment</text>
-  <text x="550" y="155" text-anchor="middle" font-size="10" fill="#92400e">Mission Connection</text>
-  <text x="550" y="175" text-anchor="middle" font-size="10" fill="#d97706" font-weight="bold">Predicts performance</text>
-
-  <rect x="660" y="80" width="180" height="120" rx="12" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
-  <circle cx="750" cy="110" r="15" fill="#d97706"/>
-  <text x="750" y="116" text-anchor="middle" font-size="12" fill="white" font-weight="bold">👥</text>
-  <text x="750" y="135" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Diversity</text>
-  <text x="750" y="155" text-anchor="middle" font-size="10" fill="#92400e">Inclusive Teams</text>
-  <text x="750" y="175" text-anchor="middle" font-size="10" fill="#d97706" font-weight="bold">Better outcomes</text>
-
-  <!-- Connection Lines -->
-  <line x1="150" y1="200" x2="400" y2="240" stroke="#d97706" stroke-width="3"/>
-  <line x1="350" y1="200" x2="400" y2="240" stroke="#d97706" stroke-width="3"/>
-  <line x1="550" y1="200" x2="600" y2="240" stroke="#d97706" stroke-width="3"/>
-  <line x1="750" y1="200" x2="600" y2="240" stroke="#d97706" stroke-width="3"/>
-
-  <!-- Performance Result -->
-  <ellipse cx="500" cy="270" rx="150" ry="40" fill="#16a34a" stroke="#15803d" stroke-width="3"/>
-  <text x="500" y="265" text-anchor="middle" font-size="18" fill="white" font-weight="bold">High Performance</text>
-  <text x="500" y="280" text-anchor="middle" font-size="14" fill="white">Delivery + Business Outcomes</text>
-
-  <!-- Burnout Risk Factors -->
-  <text x="500" y="325" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Maslach's Six Burnout Risk Factors</text>
-  <text x="200" y="345" text-anchor="middle" font-size="12" fill="#dc2626">Work Overload</text>
-  <text x="350" y="345" text-anchor="middle" font-size="12" fill="#dc2626">Lack of Control</text>
-  <text x="500" y="345" text-anchor="middle" font-size="12" fill="#dc2626">Insufficient Rewards</text>
-  <text x="200" y="365" text-anchor="middle" font-size="12" fill="#dc2626">Community Breakdown</text>
-  <text x="350" y="365" text-anchor="middle" font-size="12" fill="#dc2626">Absence of Fairness</text>
-  <text x="500" y="365" text-anchor="middle" font-size="12" fill="#dc2626">Value Conflicts</text>
-  <text x="750" y="355" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="bold">Fix the environment,</text>
-  <text x="750" y="375" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="bold">not the person</text>
-</svg>
-
-
-## Microsoft Stats
-
-<div class="microsoft-stats">
-  <div class="stat-highlight">
-    <div class="stat-icon"><i class="fas fa-balance-scale"></i></div>
-    <div class="stat-content">
-      <div class="stat-numbers">
-        <span class="before-stat">38%</span>
-        <i class="fas fa-arrow-right"></i>
-        <span class="after-stat">75%</span>
-      </div>
-      <h4>Work-Life Balance Satisfaction</h4>
-      <p>Microsoft teams implementing DevOps practices saw dramatic improvements in work-life balance satisfaction scores</p>
-    </div>
-  </div>
+<div class="research-finding">
+  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
+  <p>High-performing teams are <strong>2.2x more likely</strong> to recommend their organization as a great place to work. Four key factors drive satisfaction: meaningful work, right tools, values alignment, and team diversity.</p>
 </div>
 
-### Burnout Risk Factors & Mitigation
+### Microsoft DevOps Impact
 
-<div class="burnout-risk-assessment">
-  <div class="risk-factors-grid">
-    <div class="risk-factor-card overload">
-      <div class="risk-icon"><i class="fas fa-weight"></i></div>
-      <h5><i class="fas fa-weight"></i> Work Overload</h5>
-      <p>Job demands exceed human limits</p>
-    </div>
-
-    <div class="risk-factor-card control">
-      <div class="risk-icon"><i class="fas fa-hand-paper"></i></div>
-      <h5><i class="fas fa-hand-paper"></i> Lack of Control</h5>
-      <p>Unable to influence job decisions</p>
-    </div>
-
-    <div class="risk-factor-card rewards">
-      <div class="risk-icon"><i class="fas fa-gift"></i></div>
-      <h5><i class="fas fa-gift"></i> Insufficient Rewards</h5>
-      <p>Financial, institutional, or social</p>
-    </div>
-
-    <div class="risk-factor-card community">
-      <div class="risk-icon"><i class="fas fa-users-slash"></i></div>
-      <h5><i class="fas fa-users-slash"></i> Breakdown of Community</h5>
-      <p>Unsupportive workplace environment</p>
-    </div>
-
-    <div class="risk-factor-card fairness">
-      <div class="risk-icon"><i class="fas fa-balance-scale-right"></i></div>
-      <h5><i class="fas fa-balance-scale-right"></i> Absence of Fairness</h5>
-      <p>Unfair decision-making processes</p>
-    </div>
-
-    <div class="risk-factor-card values">
-      <div class="risk-icon"><i class="fas fa-compass"></i></div>
-      <h5><i class="fas fa-compass"></i> Value Conflicts</h5>
-      <p>Mismatch between org and personal values</p>
-    </div>
-  </div>
-
-  <div class="mitigation-strategy">
-    <div class="strategy-header">
-      <h4><i class="fas fa-shield-alt"></i> Mitigation Strategy</h4>
-      <p><strong>Fix the environment, not the person</strong></p>
-    </div>
-    <div class="strategy-actions">
-      <div class="action-item">
-        <i class="fas fa-heart"></i>
-        <span>Foster supportive culture and psychological safety</span>
-      </div>
-      <div class="action-item">
-        <i class="fas fa-compass"></i>
-        <span>Communicate clear purpose and organizational mission</span>
-      </div>
-      <div class="action-item">
-        <i class="fas fa-graduation-cap"></i>
-        <span>Invest in professional development and growth</span>
-      </div>
-      <div class="action-item">
-        <i class="fas fa-road"></i>
-        <span>Remove obstacles and provide necessary resources</span>
-      </div>
-    </div>
-  </div>
+<div class="research-finding">
+  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
+  <p>Microsoft teams implementing DevOps practices saw <strong>38% → 75% improvement</strong> in work-life balance satisfaction. Teams with low deployment pain are <strong>3x more likely</strong> to have sustainable work practices and higher job satisfaction.</p>
 </div>
 
+### Burnout Prevention Strategy
 
-
+<div class="research-finding">
+  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
+  <p>Maslach identified six organizational risk factors for burnout: work overload, lack of control, insufficient rewards, community breakdown, absence of fairness, and value conflicts. <strong>Fix the environment, not the person</strong> - environmental changes are more effective than individual interventions.</p>
+</div>
 
 ---
 
@@ -624,6 +491,94 @@ dora_color: '#D97706'
     min-width: auto;
   }
 }
+
+/* Deployment Pain Comparison Styles */
+.deployment-pain-comparison {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  border-radius: 16px;
+  border: 2px solid #d97706;
+}
+
+.pain-side {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pain-side h4 {
+  margin: 0 0 1rem 0;
+  color: #92400e;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pain-indicators {
+  margin-bottom: 1.5rem;
+}
+
+.pain-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.pain-item i {
+  width: 20px;
+  color: #d97706;
+}
+
+.pain-impact {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  padding: 1.25rem;
+  border-left: 4px solid #d97706;
+}
+
+.impact-statement {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.impact-detail {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.3;
+  font-style: italic;
+}
+
+.pain-arrow {
+  font-size: 2rem;
+  color: #d97706;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .deployment-pain-comparison {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+  }
+  
+  .pain-arrow {
+    transform: rotate(90deg);
+  }
+}
 </style>
 
 ## Interactive Learning Checkpoint
@@ -781,6 +736,7 @@ dora_color: '#D97706'
         <p><i class="fas fa-info-circle"></i> Select your WIP tracking method to learn about its effectiveness for lean delivery.</p>
       </div>
     </div>
+
   </div>
 
   <div class="checkpoint-card enps-assessment">
@@ -985,18 +941,13 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Discussion Questions
 
 1. **Lean Management Assessment:** Which lean management practices do you currently use? What's missing?
-2. **WIP Visualization:** How does your team currently visualize work and quality metrics?
-3. **Change Approval Reality:** Describe your current change approval process - who's involved and how long does it take?
-4. **Deployment Pain Check:** On a scale of 1-10, how painful are your deployments? What causes the anxiety?
-5. **Employee Engagement:** How would your team score on employee Net Promoter Score?
-6. **Burnout Indicators:** What signs of deployment pain or burnout do you observe in your team?
+2. **Deployment Pain Check:** On a scale of 1-10, how painful are your deployments? What causes the anxiety?
+3. **Employee Engagement:** How would your team score on employee Net Promoter Score?
 
 ## Action Items for Next Meeting
 
 <ul class="action-items">
 <li>[ ] Experiment with visualizing work using simple kanban board</li>
-<li>[ ] Identify one change approval step that could be streamlined</li>
-<li>[ ] Observe and document burnout risk factors in your environment</li>
 <li>[ ] Conduct informal eNPS assessment with your team</li>
 <li>[ ] Choose one practice that improves both delivery performance and team wellbeing</li>
 </ul>
@@ -1019,19 +970,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 - [DevOps Assessment](https://dora.dev/devops-capabilities/) — DORA capabilities model
 - [Deployment Frequency](https://github.com/dora-team/fourkeys) — Four Keys project for DORA metrics
-
----
-
-## AI-Generated Content
-
-This content is powered by several AI systems working together:
-- <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong> for content curation and meeting guide development
-- <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong> for podcast audio generation
-- <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong> for video summary creation
-
-The foundational content is based on research from "Accelerate: The Science of Lean Software and DevOps" with enhancements for interactive learning.
-
-<div class="ai-content-pills">
-  <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" class="ai-pill claude">Claude</a>
-  <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" class="ai-pill notebooklm">NotebookLM</a>
-</div>
