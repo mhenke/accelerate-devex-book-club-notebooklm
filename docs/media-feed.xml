@@ -1,0 +1,75 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>{{ site.title }} - Complete Media Feed</title>
+    <description>{{ site.description }} - Complete audio and video series covering DevOps transformation insights from the Accelerate book.</description>
+    <link>{{ site.url }}{{ site.baseurl }}</link>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/media-feed.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll {{ jekyll.version }}</generator>
+    <managingEditor>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</managingEditor>
+    <webMaster>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</webMaster>
+    <copyright>{{ site.time | date: "%Y" }} {{ site.author | default: "Accelerate DevEx Book Club" }}</copyright>
+
+    <!-- Meeting Episodes with both audio and video -->
+    {% assign meetings = site.meetings | sort: 'week' %}
+    {% for meeting in meetings %}
+      <!-- Audio Episode -->
+      {% assign podcast_file = 'meeting-' | append: meeting.week | append: '-podcast.m4a' %}
+      {% assign podcast_path = '/assets/media/' | append: podcast_file %}
+      {% assign full_podcast_url = site.url | append: site.baseurl | append: podcast_path %}
+      
+      <item>
+        <title>{{ meeting.title | xml_escape }} - Podcast</title>
+        <description>{{ meeting.subtitle | xml_escape }} - Audio podcast covering chapters {{ meeting.chapters }} of Accelerate.</description>
+        <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#listen-meeting-{{ meeting.week }}-podcast</link>
+        <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#podcast</guid>
+        <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+        <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+        <enclosure url="{{ full_podcast_url }}" type="audio/x-m4a" length="0"/>
+        <category>Audio</category>
+        <category>Podcast</category>
+        <category>DevOps</category>
+        
+        <!-- Media RSS -->
+        <media:content url="{{ full_podcast_url }}" type="audio/x-m4a" medium="audio">
+          <media:title>{{ meeting.title | xml_escape }} - Podcast</media:title>
+          <media:description>{{ meeting.subtitle | xml_escape }}</media:description>
+          <media:keywords>devops, accelerate, dora metrics, podcast, audio</media:keywords>
+        </media:content>
+      </item>
+      
+      <!-- Video Episode -->
+      {% assign video_file = 'meeting-' | append: meeting.week | append: '-video.mp4' %}
+      {% assign video_path = '/assets/media/' | append: video_file %}
+      {% assign full_video_url = site.url | append: site.baseurl | append: video_path %}
+      
+      <item>
+        <title>{{ meeting.title | xml_escape }} - Video</title>
+        <description>{{ meeting.subtitle | xml_escape }} - Video presentation covering chapters {{ meeting.chapters }} of Accelerate.</description>
+        <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#watch-meeting-{{ meeting.week }}-video</link>
+        <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#video</guid>
+        <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+        <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+        <enclosure url="{{ full_video_url }}" type="video/mp4" length="0"/>
+        <category>Video</category>
+        <category>DevOps</category>
+        
+        <!-- Media RSS -->
+        <media:content url="{{ full_video_url }}" type="video/mp4" medium="video">
+          <media:title>{{ meeting.title | xml_escape }} - Video</media:title>
+          <media:description>{{ meeting.subtitle | xml_escape }}</media:description>
+          <media:keywords>devops, accelerate, dora metrics, video</media:keywords>
+        </media:content>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

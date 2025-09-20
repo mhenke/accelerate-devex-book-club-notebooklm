@@ -9,6 +9,11 @@
     <!-- Performance optimizations -->
     {% include performance-optimizations.html %}
     
+    <!-- RSS Feed Discovery -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Podcast Feed" href="{{ site.url }}{{ site.baseurl }}/podcast.xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Video Feed" href="{{ site.url }}{{ site.baseurl }}/videos.xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Complete Media Feed" href="{{ site.url }}{{ site.baseurl }}/media-feed.xml">
+    
     <!-- Open Graph / Social Media Preview -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page.title | default: site.title }}">
