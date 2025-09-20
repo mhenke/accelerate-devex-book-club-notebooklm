@@ -244,31 +244,6 @@ dora_color: '#059669'
   </div>
 </div>
 
-## Tool Autonomy Drives Performance
-
-<div class="tool-autonomy-impact">
-  <div class="autonomy-stat">
-    <div class="stat-icon"><i class="fas fa-palette"></i></div>
-    <div class="stat-content">
-      <h4>Tool Choice Freedom</h4>
-      <p>Teams that choose their own tools are:</p>
-      <div class="impact-metrics">
-        <div class="metric-point">
-          <i class="fas fa-chart-line"></i>
-          <span>Higher performing</span>
-        </div>
-        <div class="metric-point">
-          <i class="fas fa-smile"></i>
-          <span>More satisfied</span>
-        </div>
-        <div class="metric-point">
-          <i class="fas fa-lightbulb"></i>
-          <span>More innovative</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 ## Interactive Learning Checkpoint
 
@@ -552,9 +527,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
-  border: 2px solid #ff9800;
+  border: 2px solid #059669;
 }
 
 .arch-side {
@@ -602,7 +577,7 @@ dora_color: '#059669'
 .vs-divider {
   font-size: 2rem;
   font-weight: bold;
-  color: #ff9800;
+  color: #059669;
   background: white;
   width: 60px;
   height: 60px;
@@ -610,7 +585,7 @@ dora_color: '#059669'
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #ff9800;
+  border: 3px solid #059669;
 }
 
 /* Wall of Confusion Section */
@@ -812,9 +787,9 @@ dora_color: '#059669'
 .tool-autonomy-impact {
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
-  border: 2px solid #ffc107;
+  border: 2px solid #059669;
 }
 
 .autonomy-stat {
@@ -829,13 +804,13 @@ dora_color: '#059669'
 
 .stat-icon {
   font-size: 3rem;
-  color: #ffc107;
+  color: #059669;
   flex-shrink: 0;
 }
 
 .stat-content h4 {
   margin: 0 0 1rem 0;
-  color: #f57c00;
+  color: #047857;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -862,7 +837,7 @@ dora_color: '#059669'
 }
 
 .metric-point i {
-  color: #ffc107;
+  color: #059669;
 }
 
 /* Transformation Flow */
@@ -958,9 +933,9 @@ dora_color: '#059669'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
-  border: 2px solid #ff9800;
+  border: 2px solid #059669;
 }
 
 .application-card {
@@ -981,12 +956,12 @@ dora_color: '#059669'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #ff9800;
+  color: #059669;
 }
 
 .application-card h4 {
   margin: 0 0 1rem 0;
-  color: #e65100;
+  color: #047857;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -1016,7 +991,7 @@ dora_color: '#059669'
 }
 
 .prompt-item:hover {
-  background: linear-gradient(135deg, #ff9800, #f57c00);
+  background: linear-gradient(135deg, #059669, #047857);
   color: white;
   transform: translateX(4px);
 }
@@ -1025,7 +1000,7 @@ dora_color: '#059669'
   flex-shrink: 0;
   font-size: 1.1rem;
   margin-top: 0.1rem;
-  color: #ff9800;
+  color: #059669;
 }
 
 .prompt-item:hover i {
