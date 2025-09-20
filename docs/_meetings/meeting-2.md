@@ -650,6 +650,13 @@ dora_color: '#0F766E'
   color: #134e4a;
   margin: 1rem 0;
   font-weight: 500;
+  /* Remove green quote icon if present */
+}
+
+/* Remove any pseudo-element that adds a quote icon */
+.law-statement blockquote::before {
+  content: none !important;
+}
 }
 
 .law-statement cite {
