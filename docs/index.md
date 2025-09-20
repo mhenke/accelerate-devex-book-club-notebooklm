@@ -358,7 +358,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 ---
 
 <p style="text-align: center; margin-top: 2rem;">
-  <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
+  <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn-meeting-1"><i class="fas fa-rocket"></i> Get Started with Meeting 1</a>
 </p>
 
 <p style="text-align: center; font-style: italic; color: #586069; margin-top: 1rem;">
