@@ -64,54 +64,55 @@ dora_color: '#7c3aed'
 	<rect x="10" y="10" width="880" height="260" rx="20" fill="#f5f3ff" stroke="#7c3aed" stroke-width="4"/>
 	<text x="450" y="40" text-anchor="middle" font-size="24" fill="#6d28d9" font-family="Poppins, Inter, sans-serif">ING Transformation Framework</text>
 
-	<!-- Tribes Level -->
-	<rect x="50" y="70" width="200" height="80" rx="12" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
-	<text x="150" y="95" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">Tribes</text>
-	<text x="150" y="115" text-anchor="middle" font-size="12" fill="#fff">Lines of Business</text>
-	<text x="150" y="130" text-anchor="middle" font-size="12" fill="#fff">Value Streams</text>
+    <!-- Tribes Level -->
+    <rect x="50" y="70" width="200" height="80" rx="12" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+    <text x="150" y="95" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">Tribes</text>
+    <text x="150" y="115" text-anchor="middle" font-size="12" fill="#fff">Lines of Business</text>
+    <text x="150" y="130" text-anchor="middle" font-size="12" fill="#fff">Value Streams</text>
 
-	<!-- Squads Level -->
-	<rect x="280" y="70" width="200" height="80" rx="12" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
-	<text x="380" y="95" text-anchor="middle" font-size="16" fill="#6d28d9" font-weight="bold">Squads</text>
-	<text x="380" y="115" text-anchor="middle" font-size="12" fill="#6d28d9">Cross-Functional Teams</text>
-	<text x="380" y="130" text-anchor="middle" font-size="12" fill="#6d28d9">Customer Missions</text>
+    <!-- Squads Level -->
+    <rect x="280" y="70" width="200" height="80" rx="12" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+    <text x="380" y="95" text-anchor="middle" font-size="16" fill="#6d28d9" font-weight="bold">Squads</text>
+    <text x="380" y="115" text-anchor="middle" font-size="12" fill="#6d28d9">Cross-Functional Teams</text>
+    <text x="380" y="130" text-anchor="middle" font-size="12" fill="#6d28d9">Customer Missions</text>
 
-	<!-- Chapters Level -->
-	<rect x="510" y="70" width="200" height="80" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
-	<text x="610" y="95" text-anchor="middle" font-size="16" fill="#7c3aed" font-weight="bold">Chapters</text>
-	<text x="610" y="115" text-anchor="middle" font-size="12" fill="#7c3aed">Knowledge Sharing</text>
-	<text x="610" y="130" text-anchor="middle" font-size="12" fill="#7c3aed">Discipline Groups</text>
+    <!-- Chapters Level -->
+    <rect x="510" y="70" width="200" height="80" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="610" y="95" text-anchor="middle" font-size="16" fill="#7c3aed" font-weight="bold">Chapters</text>
+    <text x="610" y="115" text-anchor="middle" font-size="12" fill="#7c3aed">Knowledge Sharing</text>
+    <text x="610" y="130" text-anchor="middle" font-size="12" fill="#7c3aed">Discipline Groups</text>
 
-	<!-- Obeya Rooms -->
-	<rect x="740" y="70" width="120" height="80" rx="12" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
-	<text x="800" y="95" text-anchor="middle" font-size="14" fill="#7c3aed" font-weight="bold">Obeya</text>
-	<text x="800" y="110" text-anchor="middle" font-size="11" fill="#7c3aed">Visual</text>
-	<text x="800" y="125" text-anchor="middle" font-size="11" fill="#7c3aed">Management</text>
+    <!-- Obeya Rooms -->
+    <rect x="740" y="70" width="120" height="80" rx="12" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="800" y="95" text-anchor="middle" font-size="14" fill="#7c3aed" font-weight="bold">Obeya</text>
+    <text x="800" y="110" text-anchor="middle" font-size="11" fill="#7c3aed">Visual</text>
+    <text x="800" y="125" text-anchor="middle" font-size="11" fill="#7c3aed">Management</text>
 
-	<!-- Arrows -->
-	<line x1="250" y1="110" x2="280" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
-	<line x1="480" y1="110" x2="510" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
-	<line x1="710" y1="110" x2="740" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+    <!-- Arrows -->
+    <line x1="250" y1="110" x2="280" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+    <line x1="480" y1="110" x2="510" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+    <line x1="710" y1="110" x2="740" y2="110" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
 
-	<!-- Catchball Communication -->
-	<text x="450" y="180" text-anchor="middle" font-size="18" fill="#6d28d9" font-weight="bold">Catchball Communication</text>
-	<rect x="120" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
-	<text x="190" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Daily Stand-ups</text>
+    <!-- Catchball Communication -->
+    <text x="450" y="180" text-anchor="middle" font-size="18" fill="#6d28d9" font-weight="bold">Catchball Communication</text>
+    <rect x="120" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+    <text x="190" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Daily Stand-ups</text>
 
-	<rect x="280" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
-	<text x="350" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Vertical Flow</text>
+    <rect x="280" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+    <text x="350" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Vertical Flow</text>
 
-	<rect x="440" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
-	<text x="510" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Horizontal Flow</text>
+    <rect x="440" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+    <text x="510" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Horizontal Flow</text>
 
-	<rect x="600" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
-	<text x="670" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Rapid Resolution</text>
+    <rect x="600" y="200" width="140" height="40" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+    <text x="670" y="225" text-anchor="middle" font-size="12" fill="#6d28d9">Rapid Resolution</text>
 
-	<defs>
-		<marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
-			<path d="M0,0 L10,5 L0,10 Z" fill="#7c3aed" />
-		</marker>
-	</defs>
+    <defs>
+    	<marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+    		<path d="M0,0 L10,5 L0,10 Z" fill="#7c3aed" />
+    	</marker>
+    </defs>
+
 </svg>
 
 ### Leadership Impact: Enabling vs. Commanding

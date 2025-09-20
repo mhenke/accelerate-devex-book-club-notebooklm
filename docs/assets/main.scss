@@ -669,14 +669,14 @@ h2 {
 }
 
 .btn-meeting-1 {
-  background: linear-gradient(135deg, #1E3A8A, #1e40af);
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
   box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
   color: white !important;
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-meeting-1:hover {
-  background: linear-gradient(135deg, #1e40af, #1E3A8A);
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
   box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
   transform: translateY(-2px);
 }
@@ -980,18 +980,18 @@ pre {
 }
 
 .timeline-node.node-1 .node-circle {
-  border-color: #1E3A8A;
-  color: #1E3A8A;
+  border-color: #1e3a8a;
+  color: #1e3a8a;
 }
 
 .timeline-node.node-2 .node-circle {
-  border-color: #0F766E;
-  color: #0F766E;
+  border-color: #0f766e;
+  color: #0f766e;
 }
 
 .timeline-node.node-3 .node-circle {
-  border-color: #D97706;
-  color: #D97706;
+  border-color: #d97706;
+  color: #d97706;
 }
 
 .timeline-node.node-4 .node-circle {
@@ -2398,7 +2398,7 @@ button:focus,
 }
 
 .assessment-btn.high-performance:hover,
-.assessment-btn.high-performance:has(input[type="radio"]:checked) {
+.assessment-btn.high-performance:has(input[type='radio']:checked) {
   background: linear-gradient(135deg, #28a745, #20c997);
   color: white;
   transform: translateY(-2px);
@@ -2413,7 +2413,7 @@ button:focus,
 }
 
 .assessment-btn.medium-performance:hover,
-.assessment-btn.medium-performance:has(input[type="radio"]:checked) {
+.assessment-btn.medium-performance:has(input[type='radio']:checked) {
   background: linear-gradient(135deg, #ffc107, #e0a800);
   color: white;
   transform: translateY(-2px);
@@ -2428,7 +2428,7 @@ button:focus,
 }
 
 .assessment-btn.low-performance:hover,
-.assessment-btn.low-performance:has(input[type="radio"]:checked) {
+.assessment-btn.low-performance:has(input[type='radio']:checked) {
   background: linear-gradient(135deg, #dc3545, #c82333);
   color: white;
   transform: translateY(-2px);
@@ -2669,61 +2669,58 @@ button:focus,
 
 /* Mobile-First Responsive Design Improvements */
 @media screen and (max-width: 768px) {
-  
   .hero-banner {
     padding: 2rem 1rem;
   }
-  
+
   .hero-headline {
     font-size: 2rem;
     line-height: 1.2;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .dora-metrics-visual {
     padding: 1.5rem 1rem;
   }
-  
+
   .metrics-categories {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .timeline-visual {
     padding: 0 1rem;
   }
-  
+
   .timeline-nodes {
     flex-direction: column;
     gap: 1.5rem;
   }
-  
+
   .timeline-node {
     max-width: none;
   }
-  
+
   .resources-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1rem;
   }
-  
 }
 
 @media screen and (max-width: 480px) {
-  
   .hero-headline {
     font-size: 1.8rem;
   }
-  
+
   .hero-metrics {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .metric-icon {
     min-width: auto;
     padding: 1rem;
@@ -2738,7 +2735,7 @@ button:focus,
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  
+
   .parallax-bg {
     transform: none !important;
   }
@@ -2749,7 +2746,7 @@ button:focus,
   .metric-card:hover {
     outline: 3px solid currentColor;
   }
-  
+
   .hero-banner {
     border: 2px solid white;
   }
@@ -2793,7 +2790,7 @@ button:focus,
     justify-content: center;
     touch-action: manipulation;
   }
-  
+
   .reflection-option {
     padding: 1rem;
     min-height: 60px;
@@ -2819,19 +2816,19 @@ button:focus,
   .skip-link {
     display: none;
   }
-  
+
   .page-content {
     margin: 0;
     padding: 0;
   }
-  
+
   .hero-banner {
     background: none !important;
     color: black !important;
   }
-  
-  a[href^="http"]:after {
-    content: " (" attr(href) ")";
+
+  a[href^='http']:after {
+    content: ' (' attr(href) ')';
     font-size: 0.8em;
   }
 }
@@ -2931,7 +2928,7 @@ button:focus,
   .transformation-card {
     padding: 1.5rem;
   }
-  
+
   .trophy-icon {
     width: 60px;
     height: 60px;
