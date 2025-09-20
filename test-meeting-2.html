@@ -229,7 +229,7 @@
   font-size: 2rem;
 }
 
-/* Current Responsive Design - PROBLEMATIC */
+/* Improved Responsive Design - FIXED */
 @media (max-width: 768px) {
   .architecture-comparison {
     flex-direction: column;
@@ -238,7 +238,7 @@
   }
 
   .vs-divider {
-    transform: rotate(90deg);
+    /* Remove problematic rotation - keep as circular indicator */
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
@@ -246,37 +246,54 @@
 
   .wall-confusion-section {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1rem;
   }
 
   .arrow-breakthrough {
+    /* Remove rotation - keep text readable */
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .arrow-breakthrough i {
+    /* Point arrow downward for mobile flow */
     transform: rotate(90deg);
   }
 
   .security-shift-comparison {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1rem;
   }
 
   .vs-arrow {
+    /* Point arrow downward for mobile flow */
     transform: rotate(90deg);
   }
 
   .conway-examples {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .arrow-transform {
+    /* Remove rotation - keep text readable */
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .arrow-transform i {
+    /* Point arrow downward for mobile flow */
     transform: rotate(90deg);
   }
 
+  /* Compact related resources section */
   .related-resources {
     grid-template-columns: 1fr;
     padding: 1rem;
-    gap: 1.5rem;
+    gap: 1rem; /* Reduced from 1.5rem */
+    margin: 1.5rem 0; /* Reduced from 2rem */
   }
 
   .resource-category {
