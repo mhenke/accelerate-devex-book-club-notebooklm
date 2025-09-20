@@ -5,7 +5,7 @@ subtitle: 'Leadership, Research Methods & Transformation'
 week: 7
 chapters: '11, 16, Conclusion'
 duration: '1 Hour'
-dora_color: '#F44336'
+dora_color: '#7c3aed'
 ---
 
 ## <i class="fas fa-video"></i> Watch the Meeting 4 Video
@@ -529,11 +529,11 @@ Congratulations! You've completed the structured book club journey. Continue you
 }
 
 .pillar-card.vision {
-  border-color: #f44336;
+  border-color: #7c3aed;
 }
 
 .pillar-card.vision::before {
-  background: linear-gradient(90deg, #f44336, #d32f2f);
+  background: linear-gradient(90deg, #7c3aed, #6d28d9);
 }
 
 .pillar-card.stimulation {
@@ -607,7 +607,7 @@ Congratulations! You've completed the structured book club journey. Continue you
   padding: 2rem;
   background: linear-gradient(135deg, #ffebee, #ffcdd2);
   border-radius: 16px;
-  border: 2px solid #f44336;
+  border: 2px solid #7c3aed;
 }
 
 .security-approach {
@@ -628,7 +628,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 }
 
 .traditional h3 {
-  color: #d32f2f;
+  color: #6d28d9;
 }
 
 .shift-left h3 {
@@ -655,7 +655,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 .evolution-arrow {
   font-size: 3rem;
   font-weight: bold;
-  color: #f44336;
+  color: #7c3aed;
   background: white;
   width: 80px;
   height: 80px;
@@ -663,8 +663,8 @@ Congratulations! You've completed the structured book club journey. Continue you
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #f44336;
-  box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+  border: 3px solid #7c3aed;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
 }
 
 /* Learning Cycle */
@@ -704,7 +704,7 @@ Congratulations! You've completed the structured book club journey. Continue you
   left: -15px;
   width: 30px;
   height: 30px;
-  background: #f44336;
+  background: #7c3aed;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -876,12 +876,12 @@ Congratulations! You've completed the structured book club journey. Continue you
   padding: 2rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #f44336;
+  border-left: 4px solid #7c3aed;
 }
 
 .commitment-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(244, 67, 54, 0.2);
+  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.2);
 }
 
 .commitment-icon {
@@ -893,7 +893,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 .commitment-card h4 {
   margin: 0 0 1rem 0;
-  color: #c62828;
+  color: #5b21b6;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -918,7 +918,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 .commitment-input textarea:focus {
   outline: none;
-  border-color: #f44336;
+  border-color: #7c3aed;
 }
 
 /* Journey Completion */
