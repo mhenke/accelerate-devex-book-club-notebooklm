@@ -1,7 +1,7 @@
 ---
 layout: meeting
-title: 'Meeting 3: Management & Sustainability'
-subtitle: 'Management, Product Development & Sustainability'
+title: 'Meeting 3: Management &amp; Sustainability'
+subtitle: 'Management, Product Development &amp; Sustainability'
 week: 5
 chapters: '7-10'
 duration: '1 Hour'
