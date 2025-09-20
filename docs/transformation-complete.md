@@ -599,9 +599,24 @@ nav_order: 6
 
 .mastery-fill {
   height: 100%;
-  background: linear-gradient(90deg, #28a745, #20c997);
   width: 100%;
   animation: fillBar 2s ease-out;
+}
+
+.metric-mastery-card.deployment .mastery-fill {
+  background: linear-gradient(90deg, #4CAF50, #66BB6A);
+}
+
+.metric-mastery-card.leadtime .mastery-fill {
+  background: linear-gradient(90deg, #2196F3, #42A5F5);
+}
+
+.metric-mastery-card.reliability .mastery-fill {
+  background: linear-gradient(90deg, #F44336, #EF5350);
+}
+
+.metric-mastery-card.recovery .mastery-fill {
+  background: linear-gradient(90deg, #FF9800, #FFA726);
 }
 
 @keyframes fillBar {
