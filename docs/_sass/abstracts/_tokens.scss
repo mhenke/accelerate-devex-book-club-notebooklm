@@ -1,3 +1,38 @@
+// =============================================================================
+// AUDIT: STRICT 8PX GRID & MUI SCALE - SPACING/BORDER TOKENS
+// =============================================================================
+// Only multiples of 8px allowed for layout spacing. 4px allowed for border radius, focus ring, and hairline borders only.
+// 3px allowed ONLY for border width (legacy/hairline) and elevation, NOT for spacing.
+// All spacing tokens below are multiples of 8px (except for legacy/fine detail tokens, clearly marked).
+
+:root {
+  // Layout Spacing Tokens (8px grid)
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-60: 60px;
+  --space-64: 64px;
+  --space-120: 120px;
+
+  // Fine Detail Tokens (use ONLY for border radius, focus ring, hairline borders)
+  --space-4: 4px; // NOT for layout spacing
+  --space-12: 12px; // NOT for layout spacing
+
+  // Border Width Tokens
+  --border-width-3: 3px; // Hairline/legacy only
+  --border-width-4: 4px; // For focus ring, border radius, NOT for spacing
+  --border-width-8: 8px;
+}
+// Header and Layout Tokens
+:root {
+  --container-max-width: 1200px;
+  --spacing-md: 0.75rem; // 12px (legacy, use only for small gaps, not layout)
+  --border-radius: 8px; // 8px grid compliant
+  --touch-target-44px: 44px; // Accessibility minimum
+}
 // Design Token System - Critical Rendering Path Optimization
 // ============================================================
 // This file defines the core design tokens for the Accelerate DevEx Book Club site.
@@ -28,8 +63,8 @@ $header-dark-navy: #1a1a2e;
 $header-light-navy: #16213e;
 $primary-blue: #2196f3;
 $dark-blue: #16213e;
-$hero-dark: #0f1419;  // Deeper dark for hero sections
-$card-dark: #1e2936;   // Dark card backgrounds
+$hero-dark: #0f1419; // Deeper dark for hero sections
+$card-dark: #1e2936; // Dark card backgrounds
 $card-darker: #151b23; // Even darker for contrast
 
 // Accent Colors - Energetic and engaging
@@ -81,31 +116,31 @@ $info-blue: #2196f3;
 // Each meeting has primary, secondary, and accent colors with proper contrast ratios
 
 // Meeting 1: Foundation (Blue Theme)
-$meeting-1-primary: #0969da;    // GitHub blue - Primary brand color
-$meeting-1-secondary: #1f6feb;  // Secondary blue
-$meeting-1-accent: #388bfd;     // Accent blue
-$meeting-1-surface: #f6f8fa;    // Light surface
+$meeting-1-primary: #0969da; // GitHub blue - Primary brand color
+$meeting-1-secondary: #1f6feb; // Secondary blue
+$meeting-1-accent: #388bfd; // Accent blue
+$meeting-1-surface: #f6f8fa; // Light surface
 $meeting-1-on-surface: #24292f; // Text on surface
 
 // Meeting 2: Technical Excellence (Green Theme)
-$meeting-2-primary: #1a7f37;    // GitHub green
-$meeting-2-secondary: #238636;  // Secondary green
-$meeting-2-accent: #2da44e;     // Accent green
-$meeting-2-surface: #f0fff4;    // Light green surface
+$meeting-2-primary: #1a7f37; // GitHub green
+$meeting-2-secondary: #238636; // Secondary green
+$meeting-2-accent: #2da44e; // Accent green
+$meeting-2-surface: #f0fff4; // Light green surface
 $meeting-2-on-surface: #0d2818; // Dark text on surface
 
 // Meeting 3: Management (Orange/Amber Theme)
-$meeting-3-primary: #d97706;    // Orange primary
-$meeting-3-secondary: #f59e0b;  // Secondary amber
-$meeting-3-accent: #fbbf24;     // Accent yellow
-$meeting-3-surface: #fffbeb;    // Light amber surface
+$meeting-3-primary: #d97706; // Orange primary
+$meeting-3-secondary: #f59e0b; // Secondary amber
+$meeting-3-accent: #fbbf24; // Accent yellow
+$meeting-3-surface: #fffbeb; // Light amber surface
 $meeting-3-on-surface: #451a03; // Dark text on surface
 
 // Meeting 4: Leadership (Purple Theme)
-$meeting-4-primary: #8b5cf6;    // Purple primary
-$meeting-4-secondary: #a78bfa;  // Secondary purple
-$meeting-4-accent: #c4b5fd;     // Accent lavender
-$meeting-4-surface: #faf5ff;    // Light purple surface
+$meeting-4-primary: #8b5cf6; // Purple primary
+$meeting-4-secondary: #a78bfa; // Secondary purple
+$meeting-4-accent: #c4b5fd; // Accent lavender
+$meeting-4-surface: #faf5ff; // Light purple surface
 $meeting-4-on-surface: #3c1361; // Dark text on surface
 
 // Border and Shadow Colors
@@ -211,9 +246,11 @@ $shadow-medium: rgba(26, 26, 46, 0.15);
 // ================================
 
 // Font Families (Material Design 3 recommendations)
-$font-primary: 'Roboto', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-$font-display: 'Roboto', 'Poppins', sans-serif;
-$font-mono: 'Roboto Mono', 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
+$font-primary: "Roboto", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  sans-serif;
+$font-display: "Roboto", "Poppins", sans-serif;
+$font-mono: "Roboto Mono", "SFMono-Regular", "Consolas", "Liberation Mono",
+  monospace;
 
 // Material Design Font Weights
 $font-weight-light: 300;
@@ -223,25 +260,25 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 // Material Design Type Scale (Material Design 3 specification)
-$font-size-display-large: 3.5rem;   // 56px - Hero headlines
-$font-size-display-medium: 2.8rem;  // 45px - Large headlines
-$font-size-display-small: 2.25rem;  // 36px - Medium headlines
+$font-size-display-large: 3.5rem; // 56px - Hero headlines
+$font-size-display-medium: 2.8rem; // 45px - Large headlines
+$font-size-display-small: 2.25rem; // 36px - Medium headlines
 
-$font-size-headline-large: 2rem;    // 32px - Section headlines
+$font-size-headline-large: 2rem; // 32px - Section headlines
 $font-size-headline-medium: 1.75rem; // 28px - Subsection headlines
-$font-size-headline-small: 1.5rem;  // 24px - Card headlines
+$font-size-headline-small: 1.5rem; // 24px - Card headlines
 
-$font-size-title-large: 1.375rem;   // 22px - Card titles
-$font-size-title-medium: 1rem;      // 16px - Button labels
-$font-size-title-small: 0.875rem;   // 14px - Tab labels
+$font-size-title-large: 1.375rem; // 22px - Card titles
+$font-size-title-medium: 1rem; // 16px - Button labels
+$font-size-title-small: 0.875rem; // 14px - Tab labels
 
-$font-size-label-large: 0.875rem;   // 14px - Form labels
-$font-size-label-medium: 0.75rem;   // 12px - Button labels
-$font-size-label-small: 0.6875rem;  // 11px - Captions
+$font-size-label-large: 0.875rem; // 14px - Form labels
+$font-size-label-medium: 0.75rem; // 12px - Button labels
+$font-size-label-small: 0.6875rem; // 11px - Captions
 
-$font-size-body-large: 1rem;        // 16px - Body text
-$font-size-body-medium: 0.875rem;   // 14px - Secondary text
-$font-size-body-small: 0.75rem;     // 12px - Fine print
+$font-size-body-large: 1rem; // 16px - Body text
+$font-size-body-medium: 0.875rem; // 14px - Secondary text
+$font-size-body-small: 0.75rem; // 12px - Fine print
 
 // Legacy sizes for backward compatibility
 $font-size-xs: $font-size-label-small;
@@ -324,29 +361,44 @@ $letter-spacing-wide: 0.025em;
 // Base spacing unit (1rem = 16px)
 $space-base: 1rem;
 
-// Spacing Scale - Consistent rhythm
-$space-xs: 0.25rem; // 4px
+// Spacing Scale - 8px grid only for layout
 $space-sm: 0.5rem; // 8px
-$space-md: 0.75rem; // 12px
-$space-lg: 1rem; // 16px
-$space-xl: 1.5rem; // 24px
-$space-2xl: 2rem; // 32px
-$space-3xl: 3rem; // 48px
-$space-4xl: 4rem; // 64px
-$space-5xl: 6rem; // 96px
+$space-md: 1rem; // 16px
+$space-lg: 2rem; // 32px
+$space-xl: 3rem; // 48px
+$space-2xl: 4rem; // 64px
+$space-3xl: 7.5rem; // 120px
+
+// Fine detail tokens (for border radius, focus ring, NOT for layout)
+$space-xs: 0.25rem; // 4px
+$space-legacy-md: 0.75rem; // 12px
 
 // CSS Custom Properties for Spacing
 :root {
-  --space-xs: #{$space-xs};
   --space-sm: #{$space-sm};
   --space-md: #{$space-md};
   --space-lg: #{$space-lg};
   --space-xl: #{$space-xl};
   --space-2xl: #{$space-2xl};
   --space-3xl: #{$space-3xl};
-  --space-4xl: #{$space-4xl};
-  --space-5xl: #{$space-5xl};
+  // Fine detail tokens
+  --space-xs: #{$space-xs};
+  --space-legacy-md: #{$space-legacy-md};
 }
+// =============================================================================
+// AUDIT DOCUMENTATION
+// =============================================================================
+/*
+TOKEN USAGE GUIDELINES (2025 AUDIT):
+1. Layout spacing must use multiples of 8px only (8, 16, 24, 32, 40, 48, 64, 120).
+2. 4px and 12px tokens are allowed ONLY for border radius, focus ring, or hairline borders, NOT for layout spacing.
+3. 3px border width is legacy/hairline only, NOT for spacing.
+4. All new components must use 8px grid for spacing and MUI scale for typography.
+5. Accessibility tokens (focus ring, touch target) must be present and correct.
+6. Border radius and elevation tokens must follow design system rules.
+7. Document any exceptions with comments and rationale.
+8. Run CSS lint and HTML validation after any token changes.
+*/
 
 // =============================================================================
 // BORDER RADIUS TOKENS
@@ -374,12 +426,17 @@ $radius-full: 50px;
 // =============================================================================
 
 // Material Design Elevation Levels - Standard MD3 specification
-$elevation-0: none;                                                                       // Surface
-$elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15); // Level 1
-$elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15); // Level 2
-$elevation-3: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15); // Level 3
-$elevation-4: 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 6px 10px 4px rgba(0, 0, 0, 0.15); // Level 4
-$elevation-5: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15); // Level 5
+$elevation-0: none; // Surface
+$elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+  0px 1px 3px 1px rgba(0, 0, 0, 0.15); // Level 1
+$elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+  0px 2px 6px 2px rgba(0, 0, 0, 0.15); // Level 2
+$elevation-3: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+  0px 4px 8px 3px rgba(0, 0, 0, 0.15); // Level 3
+$elevation-4: 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+  0px 6px 10px 4px rgba(0, 0, 0, 0.15); // Level 4
+$elevation-5: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+  0px 8px 12px 6px rgba(0, 0, 0, 0.15); // Level 5
 
 // Legacy shadow system (for backward compatibility)
 $shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);

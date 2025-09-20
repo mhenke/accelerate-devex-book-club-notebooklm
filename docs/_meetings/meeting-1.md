@@ -10,7 +10,7 @@ dora_color: "#0969da" # $meeting-1-primary
 
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 <div class="meeting-content-layout" markdown="0">
-  <main class="meeting-main-content">
+  <div class="meeting-main-content">
 
 <!-- Modern Chapters Overview -->
 <div class="chapter-metrics-compact section-card" markdown="0">

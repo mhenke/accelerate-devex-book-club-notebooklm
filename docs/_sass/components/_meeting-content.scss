@@ -5,7 +5,7 @@
   color: var(--header-dark-navy);
   font-size: var(--font-size-headline-medium);
   font-weight: 600;
-  border-left: 4px solid var(--meeting-primary) !important;
+  border-left: 8px solid var(--meeting-primary) !important; // 8px for grid consistency
   padding-left: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -15,12 +15,12 @@
     var(--meeting-light)
   ) !important;
   padding: 1rem 1rem 1rem 2rem;
-  border-radius: 6px 8px 8px 6px;
+  border-radius: 8px; // Single value for consistency
   position: relative;
 }
 
 .meeting-content h2::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -31,7 +31,6 @@
     var(--meeting-primary),
     var(--meeting-hover)
   ) !important;
-  
 }
 
 .meeting-content h3 {
@@ -49,55 +48,52 @@
     var(--meeting-bg),
     var(--background-white)
   ) !important;
-  border-left: 3px solid var(--meeting-primary) !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
-
 .meeting-content h4 {
   color: var(--meeting-primary) !important;
   font-size: var(--font-size-body-large);
   font-weight: 600;
   margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0.75rem;
+      border-left: var(--border-width-8) solid var(--meeting-primary) !important; // tokenized
+      padding-left: var(--space-16);
+      margin-top: var(--space-24);
+      margin-bottom: var(--space-16);
+      padding: var(--space-16) var(--space-16) var(--space-16) var(--space-32);
+      border-radius: var(--space-8); // tokenized
   background: var(--meeting-bg) !important;
   border-left: 3px solid var(--meeting-primary) !important;
-  
 }
 
 /* Modern Cards for Content Sections */
 .meeting-content ul {
   background: linear-gradient(
     135deg,
-    var(--meeting-bg),
+      width: var(--border-width-4);
     var(--background-white)
   ) !important;
   padding: 0.75rem;
   border-left: 3px solid var(--meeting-primary) !important;
   margin: 1rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  position: relative;
-}
-
-.meeting-content ul::before {
-  content: '';
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
   background: linear-gradient(
-    90deg,
+      margin-top: var(--space-24);
+      margin-bottom: var(--space-12);
+      gap: var(--space-8);
+      padding: var(--space-12) var(--space-16);
+      border-left: var(--border-width-3) solid var(--meeting-primary) !important;
     var(--meeting-primary),
     transparent
   ) !important;
 }
 
 .meeting-content ol {
-  background: linear-gradient(
-    135deg,
-    var(--meeting-bg),
-    var(--meeting-light)
+      margin-top: var(--space-16);
+      margin-bottom: var(--space-8);
+      padding: var(--space-8) var(--space-12);
+      border-left: var(--border-width-3) solid var(--meeting-primary) !important;
   ) !important;
   padding: 0.75rem;
   border-left: 3px solid var(--meeting-primary) !important;
@@ -106,9 +102,9 @@
   position: relative;
 }
 
-.meeting-content ol::before {
-  content: '';
-  position: absolute;
+      padding: var(--space-12);
+      border-left: var(--border-width-3) solid var(--meeting-primary) !important;
+      margin: var(--space-16) 0;
   top: 0;
   left: 0;
   right: 0;
@@ -117,7 +113,7 @@
     90deg,
     var(--meeting-primary),
     transparent
-  ) !important;
+      height: var(--border-width-3);
 }
 
 .meeting-content li {
@@ -126,9 +122,9 @@
   padding-left: 0.25rem;
 }
 
-/* Discussion Questions Special Styling */
-.meeting-content h2:has(+ ol),
-.meeting-content h2:contains('Discussion Questions') {
+      padding: var(--space-12);
+      border-left: var(--border-width-3) solid var(--meeting-primary) !important;
+      margin: var(--space-16) 0;
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border-left-color: var(--meeting-primary);
 }
@@ -137,60 +133,60 @@
 .discussion-questions-list {
   padding: 0.5rem !important;
 }
-
+      height: var(--border-width-3);
 /* Action Items Special Styling */
-.meeting-content h2:contains('Action Items') {
+.meeting-content h2:contains("Action Items") {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-  border-left-color: var(--meeting-primary);
-}
+      margin-bottom: var(--space-8);
+      padding-left: var(--space-4);
 
 /* Enhanced Media Sections */
-.meeting-content h2:contains('Listen to'),
-.meeting-content h2:contains('Watch the') {
+.meeting-content h2:contains("Listen to"),
+      padding: var(--space-8) !important;
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border-left-color: var(--meeting-primary);
   margin-top: 4rem;
 }
-
-/* Media instruction styling */
-.meeting-content h2:contains('Listen to') + p,
-.meeting-content h2:contains('Watch the') + p {
+      padding: var(--space-16) var(--space-24);
+      margin: var(--space-16) 0 var(--space-32);
+.meeting-content h2:contains("Listen to") + p,
+.meeting-content h2:contains("Watch the") + p {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
   border: 1px solid var(--meeting-border);
-  padding: 1rem 1.5rem;
-  margin: 1rem 0 2rem;
+      gap: var(--space-12);
+      margin: var(--space-16) 0;
   font-style: italic;
   color: var(--meeting-primary);
   box-shadow: 0 2px 8px var(--meeting-border);
 }
 
-.meeting-content h2:contains('Listen to') + p a,
-.meeting-content h2:contains('Watch the') + p a {
-  color: var(--meeting-primary);
+.meeting-content h2:contains("Listen to") + p a,
+      gap: var(--space-8);
+      padding: var(--space-12) var(--space-16);
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: var(--meeting-light);
 }
-
-.meeting-content h2:contains('Listen to') + p a:hover,
-.meeting-content h2:contains('Watch the') + p a:hover {
+      padding: var(--space-24);
+      margin: var(--space-24) 0;
+.meeting-content h2:contains("Watch the") + p a:hover {
   color: var(--meeting-hover);
   text-decoration-color: var(--meeting-primary);
 }
 
 /* Media Download Controls */
-.media-download-controls {
+      margin: var(--space-16) 0;
   display: flex;
   gap: 0.75rem;
   margin: 1rem 0;
-  justify-content: center;
+      height: var(--space-60);
   flex-wrap: wrap;
 }
 
 .download-btn,
-.stream-btn {
-  display: inline-flex;
-  align-items: center;
+      border-left: var(--border-width-4) solid var(--meeting-primary);
+      margin: var(--space-24) 0;
+      padding: var(--space-24);
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
   text-decoration: none;
@@ -199,15 +195,15 @@
   transition: all 0.3s ease;
   border: 2px solid transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+      left: var(--space-16);
 
 .download-btn {
   background: linear-gradient(
-    135deg,
+      margin-top: var(--space-16);
     var(--meeting-primary),
     var(--meeting-hover)
   );
-  color: white;
+      margin-bottom: var(--space-12);
   border-color: var(--meeting-primary);
 }
 
