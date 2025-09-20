@@ -572,7 +572,7 @@ dora_color: '#ea580c'
   padding: 2rem;
   background: linear-gradient(135deg, #f3e5f5, #e1bee7);
   border-radius: 16px;
-  border: 2px solid #9c27b0;
+  border: 2px solid #059669;
 }
 
 .exercise-card {
@@ -581,7 +581,7 @@ dora_color: '#ea580c'
   padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #9c27b0;
+  border-left: 4px solid #059669;
 }
 
 .exercise-card:hover {
@@ -593,7 +593,7 @@ dora_color: '#ea580c'
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #9c27b0;
+  color: #059669;
 }
 
 .exercise-card h4 {
@@ -628,7 +628,7 @@ dora_color: '#ea580c'
 }
 
 .step-item:hover {
-  background: linear-gradient(135deg, #9c27b0, #8e24aa);
+  background: linear-gradient(135deg, #059669, #047857);
   color: white;
   transform: translateX(4px);
 }
@@ -637,7 +637,7 @@ dora_color: '#ea580c'
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+  background: linear-gradient(135deg, #059669, #047857);
   color: white;
   display: flex;
   align-items: center;
