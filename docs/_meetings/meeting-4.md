@@ -26,7 +26,44 @@ dora_color: '#7c3aed'
 
 ## Media Content
 
-**Video and Podcast:** Leadership & Transformation focus
+### Watch the Meeting 4 Video
+
+<video controls width="100%">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+
+### Listen to the Meeting 4 Podcast
+
+<audio controls>
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
+	Your browser does not support the audio element.
+</audio>
+
+---
+
+## Visual Learning: Team Obeya Board Example
+
+<svg width="100%" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" aria-label="Obeya Board Diagram">
+	<rect x="10" y="10" width="780" height="200" rx="20" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+	<text x="400" y="40" text-anchor="middle" font-size="24" fill="#6d28d9" font-family="Poppins, Inter, sans-serif">Team Obeya Board</text>
+	<rect x="40" y="60" width="160" height="120" rx="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+	<text x="120" y="90" text-anchor="middle" font-size="16" fill="#7c3aed">Objectives</text>
+	<rect x="220" y="60" width="160" height="120" rx="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+	<text x="300" y="90" text-anchor="middle" font-size="16" fill="#7c3aed">Metrics & Gaps</text>
+	<rect x="400" y="60" width="160" height="120" rx="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+	<text x="480" y="90" text-anchor="middle" font-size="16" fill="#7c3aed">Problems</text>
+	<rect x="580" y="60" width="160" height="120" rx="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+	<text x="660" y="90" text-anchor="middle" font-size="16" fill="#7c3aed">Actions</text>
+	<line x1="200" y1="120" x2="220" y2="120" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)"/>
+	<line x1="380" y1="120" x2="400" y2="120" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)"/>
+	<line x1="560" y1="120" x2="580" y2="120" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow)"/>
+	<defs>
+		<marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+			<path d="M0,0 L10,5 L0,10 Z" fill="#7c3aed" />
+		</marker>
+	</defs>
+</svg>
 
 ---
 
