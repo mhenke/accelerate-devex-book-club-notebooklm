@@ -115,11 +115,69 @@ accelerate-devex-book-club-notebooklm/
 
 ---
 
+## 💻 Local Development
+
+### Starting the Jekyll Server
+
+1. **Install dependencies:**
+   ```bash
+   cd docs
+   bundle install --path vendor/bundle
+   ```
+
+2. **Start the development server:**
+   ```bash
+   cd docs
+   bundle exec jekyll serve --port 4000
+   ```
+
+3. **Access the site locally:**
+   - Site URL: `http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/`
+   - Meeting pages: `http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/meetings/meeting-1/`
+
+### Building the Site
+
+```bash
+cd docs
+bundle exec jekyll build
+```
+
 ## 🧪 Testing
 
-- Manual validation of site build and visual output
-- Accessibility and responsive design checks
-- No automated test suite (static site)
+### HTML Validation with HTML Proofer
+
+**Start Jekyll server first**, then run HTML Proofer:
+
+```bash
+# Recommended command for testing against live server
+cd docs
+bundle exec htmlproofer _site \
+  --disable-external=true \
+  --enforce-https=false \
+  --swap-urls "^/accelerate-devex-book-club-notebooklm:http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm"
+```
+
+**Alternative npm test commands** (from root directory):
+```bash
+npm run test:html    # HTML validation with html-validate
+npm run test:links   # Link checking with hyperlink
+npm run test:css     # CSS linting with stylelint
+npm run test         # Full test suite
+```
+
+### Playwright End-to-End Tests
+
+```bash
+cd tests
+npm test            # Run all Playwright tests
+npm run test:ui     # Run with UI mode
+npm run test:report # View test report
+```
+
+### Test Results Summary
+- **HTML Proofer**: Validates internal links, images, and HTML structure
+- **Playwright**: Tests interactive components, accessibility, and cross-browser functionality
+- **Manual testing**: Visual validation and responsive design checks
 
 ---
 
