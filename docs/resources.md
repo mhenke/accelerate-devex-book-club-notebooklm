@@ -29,7 +29,7 @@ Supporting materials to enhance your "Accelerate" book club experience.
   </div>
 </div>
 
-## 📁 Direct Resource Links
+## <i class="fas fa-folder-open"></i> Direct Resource Links {#direct-resource-links}
 
 ### Activities
 
@@ -70,7 +70,7 @@ Supporting materials to enhance your "Accelerate" book club experience.
 - [Meeting Notes Template](../resources/templates/meeting-notes-template.md)
 - [Retrospective Format](../resources/templates/retrospective-format.md)
 
-## <i class="fas fa-tasks"></i> Between Meetings Activities {#between-meetings}
+## Between Meetings Activities {#between-meetings}
 
 ### Post-Meeting Reflection
 
@@ -107,7 +107,7 @@ After each session, spend 10-15 minutes reflecting on:
 - Create a learning culture initiative
 - Develop your transformation roadmap
 
-## <i class="fas fa-users"></i> Discussion Practices {#discussion-practices}
+## Discussion Practices {#discussion-practices}
 
 ### Creating Psychological Safety
 
@@ -130,7 +130,7 @@ Share concrete examples from your work experiences.
 **Action Commitments**
 End each session with specific commitments for the next two weeks.
 
-## <i class="fas fa-rocket"></i> Extensions {#extensions}
+## Extensions {#extensions}
 
 ### Advanced Reading
 
@@ -157,16 +157,51 @@ After completing "Accelerate," consider these follow-up books:
 
 ---
 
-## <i class="fas fa-book-open"></i> Quick Reference
+## Quick Reference {#quick-reference}
 
 ### DORA Metrics Summary
 
-| Metric               | Elite        | High             | Medium              | Low              |
-| -------------------- | ------------ | ---------------- | ------------------- | ---------------- |
-| **Lead Time**        | < 1 hour     | 1 day - 1 week   | 1 week - 1 month    | 1-6 months       |
-| **Deploy Frequency** | Multiple/day | 1/week - 1/month | 1/month - 1/6months | < 1/6months      |
-| **MTTR**             | < 1 hour     | < 1 day          | < 1 week            | 1 week - 1 month |
-| **Change Fail Rate** | 0-15%        | 0-15%            | 0-15%               | 31-45%           |
+<table>
+<thead>
+<tr>
+<th scope="col">Metric</th>
+<th scope="col">Elite</th>
+<th scope="col">High</th>
+<th scope="col">Medium</th>
+<th scope="col">Low</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row"><strong>Lead Time</strong></th>
+<td>&lt; 1 hour</td>
+<td>1 day - 1 week</td>
+<td>1 week - 1 month</td>
+<td>1-6 months</td>
+</tr>
+<tr>
+<th scope="row"><strong>Deploy Frequency</strong></th>
+<td>Multiple/day</td>
+<td>1/week - 1/month</td>
+<td>1/month - 1/6months</td>
+<td>&lt; 1/6months</td>
+</tr>
+<tr>
+<th scope="row"><strong>MTTR</strong></th>
+<td>&lt; 1 hour</td>
+<td>&lt; 1 day</td>
+<td>&lt; 1 week</td>
+<td>1 week - 1 month</td>
+</tr>
+<tr>
+<th scope="row"><strong>Change Fail Rate</strong></th>
+<td>0-15%</td>
+<td>0-15%</td>
+<td>0-15%</td>
+<td>31-45%</td>
+</tr>
+</tbody>
+</table>
 
 ### Culture Types (Westrum)
 
@@ -181,7 +216,21 @@ After completing "Accelerate," consider these follow-up books:
     <i class="fas fa-robot" aria-hidden="true"></i>
   </div>
   <div class="ai-attribution__content">
-    <h4 class="ai-attribution__title">Enhanced Learning Experience</h4>
-    <p class="ai-attribution__text">These resources were curated and organized with AI assistance to support your <strong>Accelerate</strong> book club journey.</p>
+    <h4 class="ai-attribution__title">AI-Generated Content</h4>
+    <p class="ai-attribution__text">These resources were curated and organized with AI assistance from <strong>Claude</strong>, <strong>Claude Code</strong>, and <strong>NotebookLM</strong> to support your <strong>Accelerate</strong> book club journey.</p>
+    <div class="ai-attribution__tools">
+      <div class="ai-tool">
+        <i class="fas fa-brain" aria-hidden="true"></i>
+        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
+      </div>
+    </div>
   </div>
 </div>

@@ -39,7 +39,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 <div class="dora-metrics-visual">
   <h3>The Four DORA Metrics</h3>
-  
+
   <div class="metrics-categories">
     <div class="metrics-category speed-category">
       <div class="category-header">
@@ -129,7 +129,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <p>Delivery</p>
       </div>
     </div>
-    
+
     <!-- Circular Flow Path -->
     <div class="cycle-path">
       <svg class="cycle-svg" viewBox="0 0 400 400">
@@ -150,7 +150,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <path d="M 283 58 A 150 150 0 0 1 350 200" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8"/>
       </svg>
     </div>
-    
+
     <!-- Practice Nodes -->
     <div class="cycle-node" data-position="plan" style="--angle: 0deg;">
       <div class="node-content">
@@ -158,35 +158,35 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <span>Plan</span>
       </div>
     </div>
-    
+
     <div class="cycle-node" data-position="code" style="--angle: 60deg;">
       <div class="node-content">
         <i class="fas fa-code"></i>
         <span>Code</span>
       </div>
     </div>
-    
+
     <div class="cycle-node" data-position="build" style="--angle: 120deg;">
       <div class="node-content">
         <i class="fas fa-hammer"></i>
         <span>Build</span>
       </div>
     </div>
-    
+
     <div class="cycle-node" data-position="test" style="--angle: 180deg;">
       <div class="node-content">
         <i class="fas fa-flask"></i>
         <span>Test</span>
       </div>
     </div>
-    
+
     <div class="cycle-node" data-position="release" style="--angle: 240deg;">
       <div class="node-content">
         <i class="fas fa-rocket"></i>
         <span>Release</span>
       </div>
     </div>
-    
+
     <div class="cycle-node" data-position="monitor" style="--angle: 300deg;">
       <div class="node-content">
         <i class="fas fa-chart-line"></i>
@@ -194,7 +194,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
     </div>
   </div>
-  
+
   <p class="devops-cycle__description">
     Continuous delivery practices create a virtuous cycle where each phase feeds into the next, accelerating value delivery and organizational learning.
   </p>

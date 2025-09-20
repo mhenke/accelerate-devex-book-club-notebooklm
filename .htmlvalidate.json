@@ -23,7 +23,8 @@
     "wcag/h37": "warn",
     "aria-label-misuse": "warn",
     "no-dup-id": "warn",
-    "form-dup-name": "warn"
+    "form-dup-name": "warn",
+    "no-raw-characters": "off"
   },
   "elements": ["html5"],
   "transform": {

@@ -1,7 +1,7 @@
 ---
 layout: meeting
 title: 'Meeting 2: Technical Excellence'
-subtitle: 'Technical Excellence & Continuous Delivery'
+subtitle: 'Technical Excellence &amp; Continuous Delivery'
 week: 3
 chapters: '4-6'
 duration: '1 Hour'
@@ -39,11 +39,11 @@ dora_color: '#0F766E'
       </ul>
     </div>
   </div>
-  
+
   <div class="vs-divider">
     <span>VS</span>
   </div>
-  
+
   <div class="arch-side loose-coupled">
     <h3><i class="fas fa-puzzle-piece"></i> Loosely Coupled</h3>
     <div class="arch-content">
@@ -65,27 +65,27 @@ dora_color: '#0F766E'
     <h4><i class="fas fa-tools"></i> Build Quality In</h4>
     <p>Start with quality, don't inspect later</p>
   </div>
-  
+
   <div class="principle-card batches">
     <h4><i class="fas fa-box"></i> Small Batches</h4>
     <p>Manageable, testable units</p>
   </div>
-  
+
   <div class="principle-card automation">
     <h4><i class="fas fa-robot"></i> Automate Tasks</h4>
     <p>Free humans for creative work</p>
   </div>
-  
+
   <div class="principle-card version">
     <h4><i class="fas fa-folder"></i> Version Control</h4>
     <p>All artifacts under control</p>
   </div>
-  
+
   <div class="principle-card trunk">
     <h4><i class="fas fa-code-branch"></i> Trunk-Based Dev</h4>
     <p>Short branches, frequent integration</p>
   </div>
-  
+
   <div class="principle-card testing">
     <h4><i class="fas fa-flask"></i> Test Automation</h4>
     <p>Automated testing at all levels</p>
@@ -104,12 +104,12 @@ dora_color: '#0F766E'
       <li><i class="fas fa-handshake-slash"></i> Blame culture emerges from misalignment</li>
     </ul>
   </div>
-  
+
   <div class="arrow-breakthrough">
     <i class="fas fa-arrow-right"></i>
     <span>CD Solution</span>
   </div>
-  
+
   <div class="confusion-solution">
     <h4><i class="fas fa-hands-helping"></i> System-Level Outcomes</h4>
     <ul>
@@ -141,9 +141,9 @@ dora_color: '#0F766E'
       </div>
     </div>
   </div>
-  
+
   <div class="vs-arrow">→</div>
-  
+
   <div class="security-approach integrated">
     <h4><i class="fas fa-lock"></i> Shift-Left: Built-In Security</h4>
     <div class="security-benefits">
@@ -172,19 +172,19 @@ dora_color: '#0F766E'
     </blockquote>
     <cite>— Melvin Conway, 1967</cite>
   </div>
-  
+
   <div class="conway-examples">
     <div class="example-card">
       <h4><i class="fas fa-sitemap"></i> Traditional Organization</h4>
       <p><strong>Structure:</strong> Separate dev, QA, ops teams</p>
       <p><strong>Result:</strong> Monolithic systems with handoff bottlenecks</p>
     </div>
-    
+
     <div class="arrow-transform">
       <i class="fas fa-sync-alt"></i>
       <span>Inverse Conway</span>
     </div>
-    
+
     <div class="example-card">
       <h4><i class="fas fa-users"></i> Cross-Functional Teams</h4>
       <p><strong>Structure:</strong> Full-stack teams with all skills</p>
@@ -264,7 +264,7 @@ dora_color: '#0F766E'
       </div>
     </div>
   </div>
-  
+
   <div class="application-card architecture-decisions">
     <h4><i class="fas fa-sitemap"></i> Architectural Decisions</h4>
     <p>Discuss decisions that impacted team independence:</p>
@@ -283,7 +283,7 @@ dora_color: '#0F766E'
       </div>
     </div>
   </div>
-  
+
   <div class="application-card security-practices">
     <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
     <p>Examine security practices that impact delivery:</p>
@@ -926,91 +926,91 @@ dora_color: '#0F766E'
     gap: 1rem;
     padding: 1rem;
   }
-  
+
   .vs-divider {
     transform: rotate(90deg);
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
-  
+
   .wall-confusion-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1rem;
   }
-  
+
   .arrow-breakthrough {
     transform: rotate(90deg);
   }
-  
+
   .security-shift-comparison {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1rem;
   }
-  
+
   .vs-arrow {
     transform: rotate(90deg);
   }
-  
+
   .conway-examples {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .conway-law-section {
     padding: 1rem;
   }
-  
+
   .arrow-transform {
     transform: rotate(90deg);
   }
-  
+
   .autonomy-stat {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
-  
+
   .related-resources {
     grid-template-columns: 1fr;
     padding: 1rem;
     gap: 1.5rem;
   }
-  
+
   .resource-category {
     padding: 1rem;
   }
-  
+
   .transformation-flow {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .flow-arrow {
     transform: rotate(90deg);
     font-size: 1.5rem;
   }
-  
+
   .cd-principles-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .principle-card {
     padding: 1rem;
   }
-  
+
   .real-world-applications {
     grid-template-columns: 1fr;
     padding: 1rem;
     gap: 1.5rem;
   }
-  
+
   .application-card {
     padding: 1rem;
   }
-  
+
   .learning-checkpoint {
     padding: 1rem;
   }
@@ -1438,44 +1438,44 @@ dora_color: '#0F766E'
     padding: 1rem;
     gap: 1.5rem;
   }
-  
+
   .checkpoint-card {
     padding: 1rem;
   }
-  
+
   .cd-selector {
     grid-template-columns: 1fr;
   }
-  
+
   .assessment-buttons {
     gap: 0.75rem;
   }
-  
+
   .assessment-btn {
     padding: 0.875rem 1rem;
     font-size: 0.9rem;
   }
-  
+
   .practice-options {
     gap: 0.75rem;
   }
-  
+
   .practice-item {
     padding: 0.875rem;
     font-size: 0.85rem;
   }
-  
+
   .cd-option {
     padding: 0.875rem;
     font-size: 0.85rem;
     gap: 0.5rem;
   }
-  
+
   .feedback-area {
     padding: 1rem;
     min-height: 60px;
   }
-  
+
   .feedback-area p {
     font-size: 0.85rem;
   }
@@ -1504,7 +1504,7 @@ document.addEventListener('DOMContentLoaded', function() {
       content: "Characterized by large amounts of fear and threat. Information is hoarded and withheld for political reasons, or distorted to make individuals look better. These organizations show low cooperation across groups and a culture of blame. According to Westrum's research, pathological cultures correlate with poor performance and higher failure rates."
     },
     bureaucratic: {
-      title: "Bureaucratic (Rule-Oriented) Culture", 
+      title: "Bureaucratic (Rule-Oriented) Culture",
       content: "Preoccupied with rules and positions, with responsibilities compartmentalized by department. There's little concern for the overall mission of the organization. Rules are more important than the mission. Information flows through official channels, but innovation and risk-taking are discouraged."
     },
     generative: {
@@ -1538,7 +1538,7 @@ document.addEventListener('DOMContentLoaded', function() {
       content: "Quality should be built into the process from the start, not inspected later. This requires reliable test automation at all levels (unit, API, UI), continuous testing throughout development, and automated tests running against every commit. This practice reduces rework and increases confidence in deployments."
     },
     "small-batches": {
-      title: "Work in Small Batches", 
+      title: "Work in Small Batches",
       content: "Slice work into small pieces completed in a week or less. This applies at feature and product levels to achieve short lead times and faster feedback loops. Working in small batches enables rapid customer feedback and data-driven hypothesis testing, reducing risk and improving outcomes."
     },
     "automate": {
@@ -1561,7 +1561,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Add event listeners for practice selection  
+  // Add event listeners for practice selection
   document.querySelectorAll('input[name="cultural-practice"]').forEach(radio => {
     radio.addEventListener('change', function() {
       const feedback = document.getElementById('practice-feedback');
@@ -1603,17 +1603,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const slider = document.getElementById('tool-slider');
   const thumb = document.getElementById('tool-thumb');
   const feedback = document.getElementById('slider-feedback');
-  
+
   if (slider && thumb && feedback) {
     let isDragging = false;
-    
+
     const feedbackMessages = {
       restricted: {
         title: "Restricted Tool Selection",
         content: "Teams must use pre-approved tools only. This can limit innovation but ensures standardization and security compliance. Common in highly regulated environments."
       },
       flexible: {
-        title: "Flexible Tool Selection", 
+        title: "Flexible Tool Selection",
         content: "Teams have some choice in tools within defined categories or approval processes. Balances innovation with governance. Allows experimentation with oversight."
       },
       freedom: {
@@ -1621,12 +1621,12 @@ document.addEventListener('DOMContentLoaded', function() {
         content: "Teams can choose any tools that help them deliver value. Maximizes autonomy and innovation but requires strong practices around security and integration."
       }
     };
-    
+
     function updateSlider(clientX) {
       const rect = slider.getBoundingClientRect();
       const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
       thumb.style.left = percentage + '%';
-      
+
       let level, color;
       if (percentage < 33) {
         level = 'restricted';
@@ -1638,57 +1638,57 @@ document.addEventListener('DOMContentLoaded', function() {
         level = 'freedom';
         color = '#0F766E';
       }
-      
+
       thumb.style.borderColor = color;
       feedback.style.borderLeftColor = color;
-      feedback.innerHTML = `<h5 style="margin: 0 0 0.5rem 0; color: ${color}; font-size: 1rem;">${feedbackMessages[level].title}</h5><p style="margin: 0; font-size: 0.85rem; line-height: 1.4;">${feedbackMessages[level].content}</p>`;
+      feedback.innerHTML = `<h5 class="feedback-title" style="color: ${color};">${feedbackMessages[level].title}</h5><p class="feedback-content">${feedbackMessages[level].content}</p>`;
     }
-    
+
     function startDrag(clientX) {
       isDragging = true;
       updateSlider(clientX);
       document.body.style.userSelect = 'none';
     }
-    
+
     function stopDrag() {
       isDragging = false;
       document.body.style.userSelect = '';
     }
-    
+
     // Mouse events
     thumb.addEventListener('mousedown', (e) => {
       e.preventDefault();
       startDrag(e.clientX);
     });
-    
+
     slider.addEventListener('click', (e) => {
       if (!isDragging) {
         updateSlider(e.clientX);
       }
     });
-    
+
     document.addEventListener('mousemove', (e) => {
       if (isDragging) {
         e.preventDefault();
         updateSlider(e.clientX);
       }
     });
-    
+
     document.addEventListener('mouseup', stopDrag);
-    
+
     // Touch events for mobile
     thumb.addEventListener('touchstart', (e) => {
       e.preventDefault();
       startDrag(e.touches[0].clientX);
     });
-    
+
     document.addEventListener('touchmove', (e) => {
       if (isDragging) {
         e.preventDefault();
         updateSlider(e.touches[0].clientX);
       }
     });
-    
+
     document.addEventListener('touchend', stopDrag);
   }
 });
