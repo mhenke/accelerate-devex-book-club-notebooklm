@@ -206,38 +206,38 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <div class="timeline-visual">
   <div class="timeline-line"></div>
   <div class="timeline-nodes">
-    <div class="timeline-node node-1">
+    <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="timeline-node node-1">
       <div class="node-circle">1</div>
       <div class="node-content">
         <h4>Foundation</h4>
         <p>DORA Metrics</p>
       </div>
       <div class="meeting-title">Meeting 1: Foundation</div>
-    </div>
-    <div class="timeline-node node-2">
+    </a>
+    <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="timeline-node node-2">
       <div class="node-circle">2</div>
       <div class="node-content">
         <h4>Culture & CD</h4>
         <p>Continuous Delivery</p>
       </div>
       <div class="meeting-title">Meeting 2: Culture & CD</div>
-    </div>
-    <div class="timeline-node node-3">
+    </a>
+    <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="timeline-node node-3">
       <div class="node-circle">3</div>
       <div class="node-content">
         <h4>Architecture</h4>
         <p>Lean Management</p>
       </div>
       <div class="meeting-title">Meeting 3: Architecture</div>
-    </div>
-    <div class="timeline-node node-4">
+    </a>
+    <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="timeline-node node-4">
       <div class="node-circle">4</div>
       <div class="node-content">
         <h4>Leadership</h4>
         <p>Transformation</p>
       </div>
       <div class="meeting-title">Meeting 4: Leadership</div>
-    </div>
+    </a>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </div>
 
 <div class="success-metrics">
-<h2><i class="fas fa-rocket"></i> Success Metrics</h2>
+<h2>Success Metrics</h2>
 <p>By the end of this book club, participants will be able to:</p>
 <ul>
 <li>Articulate and explain the four DORA metrics</li>
