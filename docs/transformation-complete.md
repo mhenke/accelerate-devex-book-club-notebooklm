@@ -1305,3 +1305,34 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(createConfetti, 1000);
 });
 </script>
+
+## Success Metrics for Your Transformation Journey
+
+### Knowledge and Understanding
+
+- Participants can articulate and explain the four DORA metrics and their team's current performance
+- Teams understand the 24 capabilities framework and have identified improvement priorities
+- Clear grasp of how culture, technical practices, and leadership interconnect
+
+### Practical Application
+
+- Action items from all four sessions are being actively implemented with measurement
+- Small experiments are underway using book's research-backed practices
+- Teams have concrete transformation plan with regular reflection and adjustment
+
+### Culture and Mindset
+
+- Increased psychological safety for discussing deployment pain, failures, and improvement needs
+- Shift toward evidence-based thinking about what drives performance
+- Commitment to continuous learning and adaptation vs one-time implementation
+
+---
+
+## Your Ongoing Transformation Journey
+
+- What one capability from the 24 capabilities framework will you focus on first?
+- How will you measure progress using DORA metrics?
+- What leadership behaviors will you commit to changing?
+- How will you "make it your own" rather than copying practices?
+
+Remember: **"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"** This question embodies the entire Accelerate philosophy - start small and build momentum toward continuous improvement.

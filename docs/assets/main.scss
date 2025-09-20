@@ -31,6 +31,16 @@
 
 /* Performance: Critical CSS is inlined, non-critical styles loaded progressively */
 
+/* Global CSS Foundation - Prevent Horizontal Scroll */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 /* Modern Book Club Theme - Professional Color Palette */
 :root {
   /* Clean 3-Breakpoint System - 2025 Standards */
@@ -156,18 +166,66 @@ input[type='checkbox'],
 input[type='radio'],
 label,
 .assessment-btn,
+.confidence-item,
+.priority-option,
+.culture-option label,
 .readiness-checkbox,
-.coaching-option {
-  min-width: 44px;
-  min-height: 44px;
+.coaching-option,
+.score-btn,
+.satisfaction-factor,
+.practice-item,
+.cd-option {
+  min-width: 48px;
+  min-height: 48px;
   box-sizing: border-box;
 }
 
+/* Ensure adequate padding and font size for all interactive elements */
+.assessment-btn,
+.confidence-item,
+.priority-option,
+.readiness-checkbox,
+.coaching-option,
+.practice-item,
+.cd-option {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.culture-option label {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+.score-btn,
+.satisfaction-factor {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Radio and checkbox marks sizing */
 .assessment-btn .radio-mark,
+.confidence-item .radio-mark,
+.priority-option .radio-mark,
+.culture-option .radio-mark,
 .readiness-checkbox .checkbox-mark,
-.coaching-option .radio-mark {
+.coaching-option .radio-mark,
+.practice-item .radio-mark,
+.cd-option .radio-mark,
+.satisfaction-factor .checkbox-mark {
   width: 24px;
   height: 24px;
+}
+
+.score-btn .score-number {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 @media (max-width: 767px) {
@@ -177,18 +235,55 @@ label,
   input[type='radio'],
   label,
   .assessment-btn,
+  .confidence-item,
+  .priority-option,
+  .culture-option label,
   .readiness-checkbox,
-  .coaching-option {
-    min-width: 44px;
-    min-height: 44px;
+  .coaching-option,
+  .score-btn,
+  .satisfaction-factor,
+  .practice-item,
+  .cd-option {
+    min-width: 48px;
+    min-height: 48px;
     font-size: 1rem;
-    padding: 0.75rem 1rem;
   }
+  
+  .assessment-btn,
+  .confidence-item,
+  .priority-option,
+  .readiness-checkbox,
+  .coaching-option,
+  .practice-item,
+  .cd-option {
+    padding: 1rem 1.5rem;
+  }
+  
+  .culture-option label {
+    padding: 1.5rem;
+  }
+  
+  .score-btn,
+  .satisfaction-factor {
+    padding: 1rem;
+  }
+  
   .assessment-btn .radio-mark,
+  .confidence-item .radio-mark,
+  .priority-option .radio-mark,
+  .culture-option .radio-mark,
   .readiness-checkbox .checkbox-mark,
-  .coaching-option .radio-mark {
+  .coaching-option .radio-mark,
+  .practice-item .radio-mark,
+  .cd-option .radio-mark,
+  .satisfaction-factor .checkbox-mark {
     width: 24px;
     height: 24px;
+  }
+  
+  .score-btn .score-number {
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -273,13 +368,15 @@ h2 {
     var(--header-light-navy) 100%
   );
   color: var(--text-white);
-  padding: 8rem 2rem;
-  margin: -2rem -1rem 4rem -1rem;
+  padding: 6rem 2rem 4rem 2rem;
+  margin: 0 0 2rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 30px var(--shadow-medium);
   border-radius: 0 0 2rem 2rem;
+  width: 100%;
+  max-width: 100vw;
 }
 
 @media (max-width: 576px) {
@@ -391,6 +488,7 @@ h2 {
   width: 60px;
   height: 60px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -399,6 +497,7 @@ h2 {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
+  gap: 0.5rem;
 }
 
 .hero-metrics .metric-icon i {
@@ -407,6 +506,10 @@ h2 {
 
 .hero-metrics .metric-icon span {
   display: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-top: 0.25rem;
 }
 
 .hero-metrics .metric-icon:hover {
@@ -418,6 +521,19 @@ h2 {
 }
 
 /* Hero metrics icons now use inline SVG - background images removed */
+
+/* Welcome Start Section */
+.welcome-start {
+  background: var(--background-light);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  border: 2px solid var(--border-light);
+  box-shadow: 0 2px 8px var(--shadow-light);
+}
 
 /* Hero Main Headline */
 .hero-headline {
@@ -849,6 +965,21 @@ pre {
   margin: 2rem 0;
 }
 
+/* Consistent metric goal box */
+.metric-goal {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
 .dora-metrics-visual h3 {
   text-align: center;
   color: var(--primary-blue);
@@ -997,6 +1128,8 @@ pre {
   margin: 2rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .timeline-line {
@@ -1764,6 +1897,7 @@ pre {
   position: relative;
   width: 400px;
   height: 400px;
+  max-width: 90vw;
   margin: 2rem auto;
   display: flex;
   align-items: center;
@@ -1814,6 +1948,7 @@ pre {
 .cycle-svg {
   width: 100%;
   height: 100%;
+  max-width: 400px;
 }
 
 .cycle-node {
@@ -2004,7 +2139,7 @@ pre {
 
   .hero-banner {
     padding: 3rem 1rem;
-    margin: -1rem -1rem 2rem -1rem;
+    margin: 0 0 2rem 0;
     text-align: center;
   }
 
@@ -2135,6 +2270,8 @@ pre {
 @media (max-width: 767px) {
   .hero-banner {
     padding: 3rem 1rem;
+    border-radius: 0 0 1rem 1rem;
+    margin: 0 0 4rem 0;
   }
 
   .hero-content h1 {
@@ -2157,6 +2294,27 @@ pre {
     transform: none;
     justify-content: center;
     margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hero-metrics .metric-icon {
+    width: 80px;
+    height: auto;
+    border-radius: 12px;
+    padding: 0.75rem 0.5rem;
+    min-height: 80px;
+  }
+
+  .hero-metrics .metric-icon span {
+    display: block;
+    font-size: 0.7rem;
+  }
+
+  .welcome-start {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
   }
 }
 
@@ -2801,18 +2959,38 @@ button:focus,
 }
 
 @media screen and (max-width: 480px) {
+  .hero-banner {
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin: 0 0 2rem 0;
+  }
+
   .hero-headline {
     font-size: 1.8rem;
   }
 
   .hero-metrics {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .metric-icon {
-    min-width: auto;
+  .hero-metrics .metric-icon {
+    width: 70px;
+    min-width: 70px;
+    padding: 0.5rem;
+    flex: 0 0 auto;
+    min-height: 70px;
+  }
+
+  .hero-metrics .metric-icon span {
+    font-size: 0.65rem;
+  }
+
+  .welcome-start {
     padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
   }
 }
 

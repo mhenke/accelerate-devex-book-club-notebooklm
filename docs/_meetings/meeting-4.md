@@ -8,23 +8,23 @@ duration: '1 Hour'
 dora_color: '#7c3aed'
 ---
 
-## Watch the Meeting 4 Video
+### Watch the Meeting 4 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## Listen to the Meeting 4 Podcast
+### Listen to the Meeting 4 Podcast
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-## Key Insights
+### Key Insights
 
-### Transformational Leadership: Five Dimensions That Drive Performance
+#### Transformational Leadership: Five Dimensions That Drive Performance
 
 <div class="leadership-dimensions-grid">
   <div class="dimension-card vision">
@@ -58,7 +58,7 @@ dora_color: '#7c3aed'
   <p>High-performing teams reported strongest transformational leadership across all dimensions. Teams with weakest leaders only <strong>half as likely</strong> to be high performers.</p>
 </div>
 
-### ING Netherlands Transformation Framework
+#### ING Netherlands Transformation Framework
 
 <svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" aria-label="ING Transformation Framework">
 	<rect x="10" y="10" width="880" height="260" rx="20" fill="#f5f3ff" stroke="#7c3aed" stroke-width="4"/>
@@ -186,7 +186,7 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
-## Interactive Learning Checkpoint
+### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card leadership-assessment">
@@ -288,7 +288,7 @@ dora_color: '#7c3aed'
 
 ---
 
-## ING Transformation Lessons
+### ING Transformation Lessons
 
 ### What Made ING's Transformation Successful
 
@@ -305,7 +305,7 @@ dora_color: '#7c3aed'
 
 ---
 
-## Discussion Questions
+### Discussion Questions
 
 ### Transformational Leadership Assessment
 
@@ -331,7 +331,7 @@ dora_color: '#7c3aed'
 
 ---
 
-## Practical Exercises
+### Practical Exercises
 
 ### 1. Team Obeya Design {#team-obeya-design}
 
@@ -372,7 +372,7 @@ dora_color: '#7c3aed'
 
 ---
 
-## Action Items and Commitments
+### Action Items and Commitments
 
 ### Individual Leadership Commitments
 
@@ -395,7 +395,7 @@ dora_color: '#7c3aed'
 
 ---
 
-## Culminating Reflection
+### Culminating Reflection
 
 ### The Single Smallest Change Question
 
@@ -408,78 +408,18 @@ This question embodies the entire Accelerate philosophy:
 - Address real pain points that teams experience
 - Create conditions for continuous improvement
 
-### Your Transformation Journey
-
-- What one capability from the 24 capabilities framework will you focus on first?
-- How will you measure progress using DORA metrics?
-- What leadership behaviors will you commit to changing?
-- How will you "make it your own" rather than copying practices?
-
 ---
 
-## Success Metrics for Book Club Journey
+### Next Steps: Continue Your Transformation
 
-### Knowledge and Understanding
+Ready to take your DevOps transformation journey further? Visit our [**Transformation Complete**]({{ '/transformation-complete/' | relative_url }}) page for:
 
-- Participants can articulate and explain the four DORA metrics and their team's current performance
-- Teams understand the 24 capabilities framework and have identified improvement priorities
-- Clear grasp of how culture, technical practices, and leadership interconnect
+- **🏆 Success metrics** to assess your transformation progress  
+- **📚 Advanced reading** recommendations and professional development resources
+- **🚀 Your ongoing transformation** planning and next steps
+- **🎯 Continue your journey** with additional resources and community connections
 
-### Practical Application
-
-- Action items from all four sessions are being actively implemented with measurement
-- Small experiments are underway using book's research-backed practices
-- Teams have concrete transformation plan with regular reflection and adjustment
-
-### Culture and Mindset
-
-- Increased psychological safety for discussing deployment pain, failures, and improvement needs
-- Shift toward evidence-based thinking about what drives performance
-- Commitment to continuous learning and adaptation vs one-time implementation
-
----
-
-## Advanced Reading & Professional Development
-
-### Essential Next Books
-
-- **The Phoenix Project** - Narrative illustration of DevOps transformation
-- **The DevOps Handbook** - Detailed implementation guidance from same research team
-- **Team Topologies** - Modern approach to organizing teams for fast flow
-
-### Research Resources
-
-- **Annual State of DevOps Reports** - Latest findings and industry trends
-- **DORA Research** - Additional studies and measurement guidance
-- **DevOps Research and Assessment (DORA)** - Ongoing research program
-
-### Professional Development
-
-- **DevOps Enterprise Summit** - Leading transformation conference
-- **Internal DevOps Conferences** - Host your own using ING's format
-- **Lean/Agile Coaching Certification** - Develop internal coaching capability
-
-**Remember:** The goal isn't to implement DevOps practices, but to develop capabilities for continuous improvement and learning. As ING learned: "You have to understand why, not just copy the behaviors."
-
-## Related Resources
-
-### Leadership & Transformation
-
-- [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) - Narrative illustration of DevOps transformation
-- [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) - Modern approach to organizing teams for fast flow
-- [The Lean Startup](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898) - Experimentation and adaptation methodology
-
-### Coaching & Development
-
-- [Coaching Agile Teams](https://www.amazon.com/Coaching-Agile-Teams-ScrumMasters-Addison-Wesley/dp/0321637704) - Leadership coaching in agile environments
-- [The Culture Code](https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0804176981) - Building high-performance culture
-- [DevOps Enterprise Summit](https://events.itrevolution.com/) - Leading transformation conference
-
-### Research & Measurement
-
-- [Annual State of DevOps Reports](https://dora.dev/research/2024/dora-report/) - Latest DORA findings and industry trends
-- [DORA Capabilities Overview](https://dora.dev/capabilities/) - Technical and cultural capabilities framework
-- [DevOps Research and Assessment (DORA)](https://dora.dev/) - Ongoing research program and measurement tools
+The transformation continues beyond this book club - use these tools to build your high-performing technology organization!
 
 <style>
 /* Purple Color Scheme for Meeting 4 */
@@ -764,13 +704,13 @@ This question embodies the entire Accelerate philosophy:
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
   text-align: left;
-  min-height: 60px;
-  min-width: 44px;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .assessment-btn input[type="radio"] {
@@ -920,17 +860,17 @@ This question embodies the entire Accelerate philosophy:
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
   border-left: 4px solid var(--meeting-4-primary);
   transition: all 0.3s ease;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   width: 100%;
-  min-height: 60px;
-  min-width: 44px;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .readiness-checkbox input[type="checkbox"] {
@@ -1031,19 +971,19 @@ This question embodies the entire Accelerate philosophy:
 
 .coaching-option {
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
   border-left: 4px solid var(--meeting-4-primary);
   transition: all 0.3s ease;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  min-height: 60px;
-  min-width: 44px;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .coaching-option input[type="radio"] {
@@ -1164,10 +1104,10 @@ This question embodies the entire Accelerate philosophy:
   }
 
   .assessment-btn {
-    padding: 0.875rem 1rem;
-    font-size: 0.9rem;
-    min-height: 60px;
-    min-width: 44px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    min-height: 48px;
+    min-width: 48px;
   }
 
   .coaching-options {
@@ -1175,10 +1115,10 @@ This question embodies the entire Accelerate philosophy:
   }
 
   .coaching-option {
-    padding: 0.875rem;
-    font-size: 0.85rem;
-    min-height: 60px;
-    min-width: 44px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    min-height: 48px;
+    min-width: 48px;
   }
 
   .feedback-area {
@@ -1204,39 +1144,6 @@ This question embodies the entire Accelerate philosophy:
   font-weight: 500;
 }
 
-/* Transformation Complete Section */
-.transformation-complete-section {
-  margin: 2rem 0 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f8f4ff, #f3e8ff);
-  border-radius: 16px;
-  border: 1px solid #e9d5ff;
-  text-align: center;
-}
-
-.completion-message {
-  margin-bottom: 2rem;
-}
-
-.completion-message h3 {
-  color: var(--meeting-4-darker);
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.completion-message ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  text-align: left;
-}
-
-.completion-message li {
-  padding: 0.3rem 0;
-  color: #4c1d95;
-  font-weight: 500;
-}
 </style>
 
 <script>
@@ -1345,24 +1252,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-- Research-backed confidence that high performance is achievable for any organization
-
-The journey of transformation is just beginning. Continue practicing the discipline of continuous learning, experimentation, and improvement that makes high-performing organizations successful.
-
----
-
-## <i class="fas fa-trophy"></i> Congratulations!
-
-You've completed your DevOps transformation journey through "Accelerate"! You now have the research-backed knowledge and practical tools to build high-performing technology organizations.
-
-<div class="transformation-complete-section">
-  <div class="completion-message">
-    <h3>Your transformation toolkit is ready:</h3>
-    <ul>
-      <li><i class="fas fa-check"></i> DORA metrics framework for measuring performance</li>
-      <li><i class="fas fa-check"></i> 24 technical and cultural capabilities</li>
-      <li><i class="fas fa-check"></i> Transformational leadership principles</li>
-      <li><i class="fas fa-check"></i> Cultural transformation strategies</li>
-    </ul>
-  </div>
-</div>

@@ -39,7 +39,8 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 <h2 class="section-accent"><i class="fas fa-bullseye"></i> What You'll Learn</h2>
 
-<div class="dora-metrics-visual">
+<div class="dora-metrics-section">
+  <div class="dora-metrics-visual">
   <h3>The Four DORA Metrics</h3>
 
   <div class="metrics-categories">
@@ -114,9 +115,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
 </div>
 
-- How to **debunk the speed vs. stability myth**
 - **Organizational culture types** and how to drive transformation
-- **Continuous delivery practices** that improve both performance and culture
 - **Architecture patterns** that enable team autonomy
 - **Leadership practices** that create psychological safety and innovation
 

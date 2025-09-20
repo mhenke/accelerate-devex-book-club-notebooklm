@@ -8,27 +8,27 @@ duration: '1 Hour'
 dora_color: '#D97706'
 ---
 
-## Watch the Meeting 3 Video {#watch-meeting-3-video}
+### Watch the Meeting 3 Video {#watch-meeting-3-video}
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## Listen to the Meeting 3 Podcast {#listen-meeting-3-podcast}
+### Listen to the Meeting 3 Podcast {#listen-meeting-3-podcast}
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-## Key Insights
+### Key Insights
 
-### Lean vs Traditional Management
+#### Lean vs Traditional Management
 
 <div class="management-comparison">
   <div class="mgmt-side traditional">
-    <h3><i class="fas fa-clipboard-list"></i> Traditional Management</h3>
+    <h4><i class="fas fa-clipboard-list"></i> Traditional Management</h4>
     <div class="mgmt-content">
       <p><strong>Command & Control</strong></p>
       <ul>
@@ -45,7 +45,7 @@ dora_color: '#D97706'
   </div>
 
   <div class="mgmt-side lean">
-    <h3><i class="fas fa-rocket"></i> Lean Management</h3>
+    <h4><i class="fas fa-rocket"></i> Lean Management</h4>
     <div class="mgmt-content">
       <p><strong>Enable & Empower</strong></p>
       <ul>
@@ -58,7 +58,7 @@ dora_color: '#D97706'
   </div>
 </div>
 
-### Employee Satisfaction: The Four Pillars
+#### Employee Satisfaction: The Four Pillars
 
 <svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" aria-label="Employee Satisfaction Framework">
   <rect x="10" y="10" width="880" height="260" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="4"/>
@@ -350,11 +350,13 @@ dora_color: '#D97706'
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border-radius: 50%;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1rem;
   border: 2px solid #d1d5db;
   background: white;
   transition: all 0.3s ease;
@@ -479,9 +481,11 @@ dora_color: '#D97706'
   }
   
   .score-number {
-    width: 35px;
-    height: 35px;
-    font-size: 12px;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    font-size: 1rem;
   }
   
   .score-zones {
@@ -583,7 +587,7 @@ dora_color: '#D97706'
 }
 </style>
 
-## Interactive Learning Checkpoint
+### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card lean-assessment">
@@ -940,13 +944,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-## Discussion Questions
+### Discussion Questions
 
 1. **Lean Management Assessment:** Which lean management practices do you currently use? What's missing?
 2. **Deployment Pain Check:** On a scale of 1-10, how painful are your deployments? What causes the anxiety?
 3. **Employee Engagement:** How would your team score on employee Net Promoter Score?
 
-## Action Items for Next Meeting
+### Action Items for Next Meeting
 
 <ul class="action-items">
 <li>[ ] Experiment with visualizing work using simple kanban board</li>
@@ -954,7 +958,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>[ ] Choose one practice that improves both delivery performance and team wellbeing</li>
 </ul>
 
-## Related Resources
+### Related Resources
 
 ### Lean Management & Team Performance
 
