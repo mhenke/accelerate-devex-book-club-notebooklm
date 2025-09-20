@@ -28,7 +28,7 @@ dora_color: '#D97706'
 
 <div class="management-comparison">
   <div class="mgmt-side traditional">
-    <h4><i class="fas fa-clipboard-list"></i> Traditional Management</h4>
+    <div class="mgmt-title"><i class="fas fa-clipboard-list"></i> Traditional Management</div>
     <div class="mgmt-content">
       <p><strong>Command & Control</strong></p>
       <ul>
@@ -45,7 +45,7 @@ dora_color: '#D97706'
   </div>
 
   <div class="mgmt-side lean">
-    <h4><i class="fas fa-rocket"></i> Lean Management</h4>
+    <div class="mgmt-title"><i class="fas fa-rocket"></i> Lean Management</div>
     <div class="mgmt-content">
       <p><strong>Enable & Empower</strong></p>
       <ul>
