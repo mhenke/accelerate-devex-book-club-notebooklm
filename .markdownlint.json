@@ -1,0 +1,67 @@
+{
+  "default": true,
+  "MD013": {
+    "line_length": 120,
+    "code_blocks": false,
+    "tables": false,
+    "headings": false,
+    "html": false
+  },
+  "MD033": {
+    "allowed_elements": [
+      "div",
+      "span",
+      "video",
+      "audio",
+      "source",
+      "i",
+      "small",
+      "strong",
+      "br",
+      "style",
+      "script",
+      "a",
+      "ul",
+      "li",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "p",
+      "blockquote",
+      "cite",
+      "label",
+      "input",
+      "article",
+      "nav",
+      "section",
+      "aside",
+      "header",
+      "footer",
+      "main"
+    ]
+  },
+  "MD041": false,
+  "MD026": {
+    "punctuation": ".,;:!?"
+  },
+  "MD024": {
+    "allow_different_nesting": true
+  },
+  "MD025": false,
+  "MD036": false,
+  "MD046": {
+    "style": "fenced"
+  },
+  "MD003": {
+    "style": "atx"
+  },
+  "MD022": true,
+  "MD032": true,
+  "MD040": true,
+  "MD029": {
+    "style": "ordered"
+  }
+}

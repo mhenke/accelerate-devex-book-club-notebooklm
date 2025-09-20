@@ -3,12 +3,12 @@
   "extends": ["html-validate:recommended"],
   "rules": {
     "no-trailing-whitespace": "warn",
-    "attribute-boolean-style": "error",
+    "attribute-boolean-style": "off",
     "attribute-empty-style": "error",
     "doctype-style": "error",
     "element-permitted-content": "warn",
-    "element-required-attributes": "error",
-    "id-pattern": ["warn", { "pattern": "kebabcase" }],
+    "element-required-attributes": "off",
+    "id-pattern": ["error", "^[a-zA-Z][a-zA-Z0-9-_]*$"],
     "input-missing-label": "warn",
     "no-conditional-comment": "error",
     "no-deprecated-attr": "error",
@@ -18,13 +18,15 @@
     "prefer-native-element": "error",
     "script-type": "error",
     "valid-autocomplete": "error",
-    "void-style": "error",
+    "void-style": "off",
     "wcag/h32": "warn",
     "wcag/h37": "warn",
     "aria-label-misuse": "warn",
     "no-dup-id": "warn",
     "form-dup-name": "warn",
-    "no-raw-characters": "off"
+    "no-raw-characters": "off",
+    "no-unknown-elements": "off",
+    "no-implicit-close": "off"
   },
   "elements": ["html5"],
   "transform": {
