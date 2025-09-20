@@ -242,7 +242,7 @@ nav_order: 6
         <i class="fas fa-microphone-alt"></i>
       </div>
       <h4>Podcast Content</h4>
-      <p>AI-generated discussions and interviews created with <strong>NotebookLM</strong> to provide audio learning experiences for each meeting topic.</p>
+      <p>AI-generated discussions and interviews created with <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong> to provide audio learning experiences for each meeting topic.</p>
       <div class="ai-tools-used">
         <div class="ai-tool">
           <i class="fas fa-microphone-alt" aria-hidden="true"></i>
@@ -361,7 +361,7 @@ nav_order: 6
   </div>
   <div class="ai-attribution__content">
     <h4 class="ai-attribution__title">AI-Enhanced Learning Experience</h4>
-    <p class="ai-attribution__text">This comprehensive book club experience was created with AI assistance from <strong>Claude</strong>, <strong>Claude Code</strong>, <strong>NotebookLM</strong>, <strong>Napkin AI</strong>, and <strong>GitHub Copilot</strong> to enhance your DevOps transformation journey.</p>
+    <p class="ai-attribution__text">This comprehensive book club experience was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong> to enhance your DevOps transformation journey.</p>
     <div class="ai-attribution__tools">
       <div class="ai-tool">
         <i class="fas fa-brain" aria-hidden="true"></i>
