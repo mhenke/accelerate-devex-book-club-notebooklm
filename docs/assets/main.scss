@@ -36,7 +36,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100vw;
 }
@@ -248,7 +249,7 @@ label,
     min-height: 48px;
     font-size: 1rem;
   }
-  
+
   .assessment-btn,
   .confidence-item,
   .priority-option,
@@ -258,16 +259,16 @@ label,
   .cd-option {
     padding: 1rem 1.5rem;
   }
-  
+
   .culture-option label {
     padding: 1.5rem;
   }
-  
+
   .score-btn,
   .satisfaction-factor {
     padding: 1rem;
   }
-  
+
   .assessment-btn .radio-mark,
   .confidence-item .radio-mark,
   .priority-option .radio-mark,
@@ -280,7 +281,7 @@ label,
     width: 24px;
     height: 24px;
   }
-  
+
   .score-btn .score-number {
     width: 44px;
     height: 44px;
@@ -741,6 +742,40 @@ h2 {
 .resource-card.book-required p {
   color: var(--book-brown);
   font-weight: 600;
+}
+
+/* Foundation Resources List Styling */
+.foundation-resources {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.foundation-resources li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.foundation-resources li::before {
+  content: '▶';
+  color: var(--primary-blue);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.8rem;
+}
+
+.foundation-resources a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.foundation-resources a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
 }
 
 /* Success metrics styling */
