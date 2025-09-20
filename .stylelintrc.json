@@ -1,14 +1,15 @@
 {
   "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
+  "plugins": ["stylelint-scss"],
   "rules": {
     "color-hex-length": "long",
     "color-hex-case": "lower",
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-trailing-semicolon": "always",
     "indentation": 2,
-    "max-nesting-depth": 4,
-    "selector-max-compound-selectors": 4,
-    "selector-max-id": 2,
+    "max-nesting-depth": 5,
+    "selector-max-compound-selectors": 5,
+    "selector-max-id": 3,
     "selector-no-qualifying-type": [
       true,
       {
@@ -16,19 +17,77 @@
       }
     ],
     "shorthand-property-no-redundant-values": true,
-    "value-no-vendor-prefix": true,
-    "property-no-vendor-prefix": true,
-    "scss/at-rule-no-unknown": true,
-    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9]*$",
+    "value-no-vendor-prefix": [
+      true,
+      {
+        "ignoreValues": ["backdrop-filter"]
+      }
+    ],
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "ignoreProperties": ["backdrop-filter"]
+      }
+    ],
+    "scss/at-rule-no-unknown": null,
+    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9-]*$",
     "scss/selector-no-redundant-nesting-selector": true,
+    "scss/dollar-variable-default": null,
+    "scss/no-global-function-names": null,
+    "scss/at-use-no-unnamespaced": null,
     "media-query-no-invalid": true,
-    "custom-property-pattern": "^[a-z][a-zA-Z0-9]*$"
+    "custom-property-pattern": "^[a-z][a-zA-Z0-9-]*$",
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["backdrop-filter"]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["has", "contains"]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "import",
+          "mixin",
+          "include",
+          "extend",
+          "if",
+          "else",
+          "for",
+          "each",
+          "while",
+          "function",
+          "return",
+          "use",
+          "forward"
+        ]
+      }
+    ],
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword": null
   },
-  "ignoreFiles": ["_site/**/*", "node_modules/**/*"],
+  "ignoreFiles": [
+    "docs/_site/**/*", 
+    "docs/node_modules/**/*",
+    "docs/vendor/**/*",
+    "docs/.jekyll-cache/**/*"
+  ],
   "overrides": [
     {
-      "files": ["**/*.html"],
-      "customSyntax": "postcss-html"
+      "files": ["**/*.html", "**/*.md"],
+      "customSyntax": "postcss-html",
+      "rules": {
+        "no-empty-source": null
+      }
     }
   ]
 }

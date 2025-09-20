@@ -43,8 +43,43 @@ This is a standard Jekyll site served by GitHub Pages:
 - **Local development:** `bundle exec jekyll serve` (if Jekyll/Ruby installed)
 - **GitHub Pages deployment:** Automatic on push to main branch
 - **Asset compilation:** Jekyll auto-compiles SCSS to CSS with proper asset paths
-- **No build scripts or test commands** - relies entirely on Jekyll/GitHub Pages
 - **Always commit and push after making changes** for deployment
+
+### Testing and Validation Commands
+**IMPORTANT**: Always run validation before committing changes to ensure code quality.
+
+#### Quick Local Check (Recommended for development)
+```bash
+npm run lint && npm run build
+```
+Runs all linters (CSS, JS, Markdown) and builds the site - catches most issues quickly (~5-10 seconds).
+
+#### Full Local Validation (Before committing)
+```bash
+npm run validate
+```
+Complete pipeline: build + test including linting, HTML validation, and accessibility checks.
+
+#### Comprehensive Audit (Before releases)
+```bash
+npm run audit
+```
+Runs build + jekyll-audit for full performance, accessibility, SEO, and link validation.
+
+#### Individual Test Commands
+```bash
+npm run lint          # All linters (fastest check)
+npm run lint:css      # CSS/SCSS linting only
+npm run lint:js       # JavaScript linting only  
+npm run lint:md       # Markdown linting only
+npm run test:html     # HTML validation
+npm run test:jekyll-audit  # Full audit suite
+```
+
+#### Recommended Testing Workflow
+1. **During development**: `npm run lint` (fast feedback)
+2. **Before committing**: `npm run validate` (full check) 
+3. **Before major releases**: `npm run audit` (comprehensive)
 
 ### Styling and Visual Updates
 - Edit SCSS in `docs/assets/main.scss` (must include YAML front matter)
