@@ -73,6 +73,18 @@ layout: default
             <span class="nav-title">{{ prev_meeting.title }}</span>
           </div>
         </a>
+        {% else %}
+        <!-- Back to main page when no previous meeting -->
+        <a
+          href="{{ '/' | relative_url }}"
+          class="nav-link prev back-to-main"
+        >
+          <div class="nav-icon">←</div>
+          <div class="nav-content">
+            <span class="nav-label">Back to</span>
+            <span class="nav-title">Main Page</span>
+          </div>
+        </a>
         {% endif %} {% if next_meeting %} {% assign next_meeting_num =
         next_meeting.path | split: '-' | last | split: '.' | first %}
         <a
@@ -535,6 +547,19 @@ layout: default
 
   .nav-link.completion-badge .nav-icon {
     font-size: 1.2rem;
+  }
+
+  .nav-link.back-to-main {
+    background: #e8f5e8;
+    border-color: #4caf50;
+    color: #2e7d32;
+  }
+
+  .nav-link.back-to-main:hover {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    color: white;
+    transform: translateX(-4px);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
   }
 
   .nav-icon {
