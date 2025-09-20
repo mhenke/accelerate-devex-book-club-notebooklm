@@ -1,4 +1,5 @@
 {
+  "$schema": "https://html-validate.org/schemas/config.json",
   "extends": ["html-validate:recommended"],
   "rules": {
     "no-trailing-whitespace": "error",
@@ -7,13 +8,10 @@
     "doctype-style": "error",
     "element-permitted-content": "error",
     "element-required-attributes": "error",
-    "id-pattern": {
-      "pattern": "kebab-case"
-    },
+    "id-pattern": ["error", { "pattern": "kebabcase" }],
     "input-missing-label": "error",
     "no-conditional-comment": "error",
     "no-deprecated-attr": "error",
-    "no-duplicate-id": "error",
     "no-redundant-for": "error",
     "no-redundant-role": "error",
     "prefer-native-element": "error",
