@@ -1741,6 +1741,11 @@ a {
     &:hover {
       transform: translateY(-2px);
     }
+
+    &:active {
+      transform: translateY(0);
+      transition: none; // Instant feedback on click
+    }
   }
 
   .meeting-badge {
