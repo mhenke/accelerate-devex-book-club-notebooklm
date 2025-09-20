@@ -213,7 +213,6 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Foundation & Metrics</h4>
         <p>DORA Metrics & Culture</p>
       </div>
-      <div class="meeting-title">Meeting 1: Foundation & Metrics</div>
     </a>
     <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="timeline-node node-2">
       <div class="node-circle">2</div>
@@ -221,7 +220,6 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Technical Excellence</h4>
         <p>Continuous Delivery</p>
       </div>
-      <div class="meeting-title">Meeting 2: Technical Excellence</div>
     </a>
     <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="timeline-node node-3">
       <div class="node-circle">3</div>
@@ -229,7 +227,6 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Management & Sustainability</h4>
         <p>Lean Management</p>
       </div>
-      <div class="meeting-title">Meeting 3: Management & Sustainability</div>
     </a>
     <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="timeline-node node-4">
       <div class="node-circle">4</div>
@@ -237,7 +234,6 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         <h4>Leadership & Transformation</h4>
         <p>Transformational Leadership</p>
       </div>
-      <div class="meeting-title">Meeting 4: Leadership & Transformation</div>
     </a>
   </div>
 </div>
