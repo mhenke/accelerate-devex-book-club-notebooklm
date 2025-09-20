@@ -212,7 +212,6 @@ a {
 
 // Main layout containers
 .site-header {
-  
   /* No overlay gradients for nav header, match Meeting 1 */
   padding: 1rem 0;
   position: sticky;
@@ -226,6 +225,60 @@ a {
 
   background: var(--hero-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        rgba(122, 218, 209, 0.15) 2px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(255, 127, 80, 0.1) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 40% 60%,
+        rgba(139, 158, 183, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 60px 60px, 40px 40px, 80px 80px;
+    background-position: 0 0, 30px 30px, 50px 10px;
+    opacity: 0.4;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(122, 218, 209, 0.05) 70%
+    );
+    z-index: 0;
+    pointer-events: none;
+  }
+  > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .site-main {
@@ -279,8 +332,26 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: 40px 40px, 60px 60px;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        rgba(122, 218, 209, 0.15) 2px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(255, 127, 80, 0.1) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 40% 60%,
+        rgba(139, 158, 183, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 60px 60px, 40px 40px, 80px 80px;
+    background-position: 0 0, 30px 30px, 50px 10px;
+    opacity: 0.4;
     pointer-events: none;
+    z-index: 0;
   }
 
   &__icon {
