@@ -464,8 +464,6 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-  </main>
-
   <!-- Meeting Toolkit Sidebar -->
   <aside class="meeting-sidebar">
     <div class="sidebar-section">
