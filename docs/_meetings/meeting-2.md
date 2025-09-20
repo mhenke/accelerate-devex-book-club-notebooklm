@@ -8,27 +8,27 @@ duration: '1 Hour'
 dora_color: '#0F766E'
 ---
 
-## Watch the Meeting 2 Video
+### Watch the Meeting 2 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## Listen to the Meeting 2 Podcast
+### Listen to the Meeting 2 Podcast
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-## Key Insights
+### Key Insights
 
-### Architecture: Loosely Coupled Systems Enable Team Independence
+#### Architecture: Loosely Coupled Systems Enable Team Independence
 
 <div class="architecture-comparison">
   <div class="arch-side tight-coupled">
-    <h3><i class="fas fa-link"></i> Tightly Coupled</h3>
+    <h4><i class="fas fa-link"></i> Tightly Coupled</h4>
     <div class="arch-content">
       <p><strong>High Dependencies</strong></p>
       <ul>
@@ -45,7 +45,7 @@ dora_color: '#0F766E'
   </div>
 
   <div class="arch-side loose-coupled">
-    <h3><i class="fas fa-puzzle-piece"></i> Loosely Coupled</h3>
+    <h4><i class="fas fa-puzzle-piece"></i> Loosely Coupled</h4>
     <div class="arch-content">
       <p><strong>Independent Teams</strong></p>
       <ul>
@@ -58,7 +58,7 @@ dora_color: '#0F766E'
   </div>
 </div>
 
-### Continuous Delivery Core Principles
+#### Continuous Delivery Core Principles
 
 <div class="cd-principles-grid">
   <div class="principle-card quality">
@@ -92,7 +92,7 @@ dora_color: '#0F766E'
   </div>
 </div>
 
-### Breaking the "Wall of Confusion"
+#### Breaking the "Wall of Confusion"
 
 <div class="wall-confusion-section">
   <div class="confusion-problem">
@@ -121,7 +121,7 @@ dora_color: '#0F766E'
   </div>
 </div>
 
-### Security: Shift Left for Speed AND Safety
+#### Security: Shift Left for Speed AND Safety
 
 <div class="security-shift-comparison">
   <div class="security-approach traditional">
@@ -163,7 +163,7 @@ dora_color: '#0F766E'
   </div>
 </div>
 
-### Conway's Law & Team Structure
+#### Conway's Law & Team Structure
 
 <div class="conway-law-section">
   <div class="law-statement">
@@ -193,7 +193,7 @@ dora_color: '#0F766E'
   </div>
 </div>
 
-## Interactive Learning Checkpoint
+### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card cd-maturity">
@@ -271,7 +271,7 @@ dora_color: '#0F766E'
   </div>
 </div>
 
-## Real-World Applications
+### Real-World Applications
 
 <div class="real-world-applications">
   <div class="application-card automation-examples">
@@ -334,14 +334,14 @@ dora_color: '#0F766E'
 
 ---
 
-## Discussion Questions
+### Discussion Questions
 
 1. **CD Maturity Assessment:** Which CD practices is your organization currently implementing well/poorly?
 2. **Architecture Dependencies:** What prevents your team from deploying independently?
 3. **Tool Autonomy:** How much freedom do teams have in tool selection? What are the constraints?
 4. **Security Integration:** How early in your development process is security considered?
 
-## Action Items for Next Meeting
+### Action Items for Next Meeting
 
 <ul class="action-items">
 <li>[ ] Identify one manual process that could be automated</li>
@@ -349,16 +349,16 @@ dora_color: '#0F766E'
 <li>[ ] Experiment with one CD practice (trunk-based development, test automation, etc.)</li>
 </ul>
 
-## Related Resources
+### Related Resources
 
-### CI/CD Tools & Platforms
+#### CI/CD Tools & Platforms
 
 - [GitHub Actions](https://github.com/features/actions) — Workflow automation
 - [Jenkins](https://www.jenkins.io/) — Open source automation server
 - [CircleCI](https://circleci.com/) — Continuous integration platform
 - [Argo CD](https://argoproj.github.io/cd/) — GitOps continuous delivery
 
-### Security Integration
+#### Security Integration
 
 - [OWASP DevSecOps](https://owasp.org/www-project-devsecops-guideline/) — Security guidelines
 - [Snyk](https://snyk.io/) — Developer security platform
@@ -1167,6 +1167,8 @@ dora_color: '#0F766E'
 
 .assessment-btn {
   position: relative;
+  min-width: 48px;
+  min-height: 48px;
   padding: 1rem 1.5rem;
   border: 2px solid #ddd;
   border-radius: 12px;
@@ -1174,7 +1176,7 @@ dora_color: '#0F766E'
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1347,14 +1349,16 @@ dora_color: '#0F766E'
 
 .practice-item {
   position: relative;
-  padding: 1rem;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
   border-left: 4px solid #0F766E;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -1415,13 +1419,15 @@ dora_color: '#0F766E'
 
 .cd-option {
   position: relative;
-  padding: 1rem;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
   border: 2px solid #dee2e6;
   transition: all 0.3s ease;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #495057;
   display: flex;
@@ -1500,8 +1506,8 @@ dora_color: '#0F766E'
   }
 
   .assessment-btn {
-    padding: 0.875rem 1rem;
-    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
   }
 
   .practice-options {
@@ -1509,13 +1515,13 @@ dora_color: '#0F766E'
   }
 
   .practice-item {
-    padding: 0.875rem;
-    font-size: 0.85rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
   }
 
   .cd-option {
-    padding: 0.875rem;
-    font-size: 0.85rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
     gap: 0.5rem;
   }
 

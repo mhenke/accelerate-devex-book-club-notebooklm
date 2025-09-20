@@ -8,21 +8,21 @@ duration: '1 Hour'
 dora_color: '#1E3A8A'
 ---
 
-## Watch the Meeting 1 Video {#watch-meeting-1-video}
+### Watch the Meeting 1 Video {#watch-meeting-1-video}
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## Listen to the Meeting 1 Podcast {#listen-meeting-1-podcast}
+### Listen to the Meeting 1 Podcast {#listen-meeting-1-podcast}
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-## Key Insights
+### Key Insights
 
 <div class="insights-grid">
   <div class="insight-card">
@@ -41,35 +41,35 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
-### The Four DORA Metrics
+#### The Four DORA Metrics
 
 <div class="dora-metrics-grid">
   <div class="metric-card lead-time">
-    <h3><i class="fas fa-chart-line"></i> Delivery Lead Time</h3>
+    <h4><i class="fas fa-chart-line"></i> Delivery Lead Time</h4>
     <p class="metric-description">Time from code commit to production deployment</p>
     <div class="metric-goal">Goal: Hours/Days not Weeks/Months</div>
   </div>
 
   <div class="metric-card deploy-frequency">
-    <h3><i class="fas fa-rocket"></i> Deployment Frequency</h3>
+    <h4><i class="fas fa-rocket"></i> Deployment Frequency</h4>
     <p class="metric-description">How often code gets deployed to production</p>
     <div class="metric-goal">Goal: Multiple times per day</div>
   </div>
 
   <div class="metric-card restore-time">
-    <h3><i class="fas fa-clock"></i> Time to Restore Service</h3>
+    <h4><i class="fas fa-clock"></i> Time to Restore Service</h4>
     <p class="metric-description">How quickly service is restored after incidents</p>
     <div class="metric-goal">Goal: Under 1 hour</div>
   </div>
 
   <div class="metric-card change-fail">
-    <h3><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</h3>
+    <h4><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</h4>
     <p class="metric-description">Percentage of deployments causing failures</p>
     <div class="metric-goal">Goal: 0-15%</div>
   </div>
 </div>
 
-### Speed vs Stability: The Myth Busted
+#### Speed vs Stability: The Myth Busted
 
 <div class="myth-buster">
   <div class="myth-side">
@@ -119,7 +119,7 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
-## Deployment Pain → Solution Flow
+### Deployment Pain → Solution Flow
 
 <div class="deployment-flow">
   <div class="flow-problem">
@@ -154,7 +154,7 @@ dora_color: '#1E3A8A'
   </div>
 </div>
 
-## Interactive Learning Checkpoint
+### Interactive Learning Checkpoint
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card dora-assessment">
@@ -293,14 +293,14 @@ dora_color: '#1E3A8A'
 
 ---
 
-## Discussion Questions
+### Discussion Questions
 
 1. **Current State Assessment:** How would you rate your team on each DORA metric?
 2. **Speed vs. Stability Myths:** What examples have you seen of assumed trade-offs in your organization?
 3. **Deployment Pain Points:** Describe your team's current deployment experience and anxiety levels
 4. **Culture Indicators:** Using Westrum's model, what culture type best describes your organization?
 
-## Action Items for Next Meeting
+### Action Items for Next Meeting
 
 <ul class="action-items">
 <li>[ ] Begin informal tracking of one DORA metric for your team</li>
@@ -308,7 +308,7 @@ dora_color: '#1E3A8A'
 <li>[ ] Observe examples of pathological, bureaucratic, or generative culture behaviors</li>
 </ul>
 
-## Related Resources
+### Related Resources
 
 <div class="related-resources">
   <div class="resource-category">
@@ -452,17 +452,19 @@ dora_color: '#1E3A8A'
 
 .assessment-btn {
   position: relative;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   border: 2px solid #ddd;
   border-radius: 12px;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .assessment-btn input[type="radio"] {
@@ -581,18 +583,20 @@ dora_color: '#1E3A8A'
 
 .confidence-item {
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
   border-left: 4px solid #1E3A8A;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .confidence-item input[type="radio"] {
@@ -649,18 +653,20 @@ dora_color: '#1E3A8A'
 
 .priority-option {
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
   border-radius: 12px;
   border: 2px solid #1E3A8A;
   transition: all 0.3s ease;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #1e40af;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .priority-option input[type="radio"] {
@@ -759,13 +765,15 @@ dora_color: '#1E3A8A'
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1.25rem;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
   border: 2px solid #e2e8f0;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .culture-option .radio-mark {
