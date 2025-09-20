@@ -436,7 +436,7 @@ This question embodies the entire Accelerate philosophy:
 
 Ready to take your DevOps transformation journey further? Visit our [**Transformation Complete**]({{ '/transformation-complete/' | relative_url }}) page for:
 
-- **🏆 Success metrics** to assess your transformation progress  
+- **🏆 Success metrics** to assess your transformation progress
 - **📚 Advanced reading** recommendations and professional development resources
 - **🚀 Your ongoing transformation** planning and next steps
 - **🎯 Continue your journey** with additional resources and community connections
@@ -1273,4 +1273,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-
