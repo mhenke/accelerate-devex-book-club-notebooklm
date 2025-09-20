@@ -650,6 +650,75 @@ dora_color: '#ea580c'
 
 ---
 
+## Interactive Learning Checkpoint
+
+<div class="learning-checkpoint">
+  <div class="checkpoint-card lean-assessment">
+    <h4><i class="fas fa-chart-line"></i> Lean Management Assessment</h4>
+    <p>How would you rate your team's current lean management maturity?</p>
+    <div class="assessment-buttons">
+      <label class="assessment-btn high-performance">
+        <input type="radio" name="lean-maturity" value="high">
+        <span class="radio-mark"></span>
+        Advanced Lean
+      </label>
+      <label class="assessment-btn medium-performance">
+        <input type="radio" name="lean-maturity" value="medium">
+        <span class="radio-mark"></span>
+        Developing Lean
+      </label>
+      <label class="assessment-btn low-performance">
+        <input type="radio" name="lean-maturity" value="low">
+        <span class="radio-mark"></span>
+        Traditional Management
+      </label>
+    </div>
+    <div class="feedback-area" id="lean-feedback">
+      <p>Select your current maturity level to see research-backed insights and improvement suggestions.</p>
+    </div>
+  </div>
+  
+  <div class="checkpoint-card burnout-assessment">
+    <h4><i class="fas fa-user-check"></i> Burnout Risk Assessment</h4>
+    <p>Evaluate your team's current burnout risk factors:</p>
+    <div class="burnout-checklist">
+      <label class="burnout-factor">
+        <input type="checkbox" name="burnout-risk" value="workload">
+        <span class="checkbox-mark"></span>
+        Work overload (consistently working overtime)
+      </label>
+      <label class="burnout-factor">
+        <input type="checkbox" name="burnout-risk" value="control">
+        <span class="checkbox-mark"></span>
+        Lack of control (can't influence work decisions)
+      </label>
+      <label class="burnout-factor">
+        <input type="checkbox" name="burnout-risk" value="rewards">
+        <span class="checkbox-mark"></span>
+        Insufficient rewards (recognition, compensation)
+      </label>
+      <label class="burnout-factor">
+        <input type="checkbox" name="burnout-risk" value="community">
+        <span class="checkbox-mark"></span>
+        Breakdown of community (poor relationships)
+      </label>
+      <label class="burnout-factor">
+        <input type="checkbox" name="burnout-risk" value="fairness">
+        <span class="checkbox-mark"></span>
+        Absence of fairness (unfair treatment)
+      </label>
+      <label class="burnout-factor">
+        <input type="checkbox" name="burnout-risk" value="values">
+        <span class="checkbox-mark"></span>
+        Value conflicts (personal vs organizational)
+      </label>
+    </div>
+    <div class="feedback-area" id="burnout-feedback">
+      <p>Check applicable burnout risk factors to see targeted prevention strategies based on Maslach's research.</p>
+    </div>
+  </div>
+</div>
+
 ## Discussion Questions
 
 ### Lean Management (Chapter 7)
@@ -719,6 +788,212 @@ dora_color: '#ea580c'
 </ul>
 
 <style>
+/* Interactive Learning Checkpoint */
+.learning-checkpoint {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-radius: 16px;
+  border: 2px solid #d97706;
+}
+
+.checkpoint-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  position: relative;
+}
+
+.checkpoint-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(217, 119, 6, 0.2);
+  border-color: #d97706;
+}
+
+.checkpoint-card h4 {
+  color: #92400e;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.assessment-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.assessment-btn {
+  position: relative;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.assessment-btn input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.assessment-btn .radio-mark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #d97706;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.assessment-btn input:checked ~ .radio-mark {
+  background: #d97706;
+}
+
+.assessment-btn input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.assessment-btn:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  color: white;
+  transform: translateX(4px);
+}
+
+.assessment-btn:has(input:checked) {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-left: 4px solid #d97706;
+  color: #92400e;
+  font-weight: 600;
+}
+
+.burnout-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.burnout-factor {
+  position: relative;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.burnout-factor input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.burnout-factor .checkbox-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d97706;
+  border-radius: 3px;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.burnout-factor input:checked ~ .checkbox-mark {
+  background: #d97706;
+}
+
+.burnout-factor input:checked ~ .checkbox-mark:after {
+  content: "✓";
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.burnout-factor:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  color: white;
+  transform: translateX(4px);
+}
+
+.burnout-factor:has(input:checked) {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-left: 4px solid #d97706;
+  color: #92400e;
+  font-weight: 600;
+}
+
+.feedback-area {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  text-align: left;
+  min-height: 60px;
+}
+
+.feedback-area.active {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-left: 4px solid #d97706;
+}
+
+.feedback-area h5 {
+  color: #92400e;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.feedback-area p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.feedback-area ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.feedback-area li {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
 /* Meeting Navigation */
 .meeting-navigation {
   display: flex;
@@ -1619,6 +1894,75 @@ document.addEventListener('DOMContentLoaded', function() {
       const feedback = document.getElementById('wip-feedback');
       const info = wipInfo[this.value];
       feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+
+  // Lean maturity feedback content based on Accelerate research
+  const leanMaturityInfo = {
+    "high": {
+      title: "Advanced Lean Management",
+      content: "Your team demonstrates strong lean practices including WIP limits, visualization, and lightweight approval processes. Continue focusing on continuous improvement and sharing practices with other teams. Consider becoming internal coaches to help spread these capabilities across your organization."
+    },
+    "medium": {
+      title: "Developing Lean Practices",
+      content: "You're on the right track with some lean practices in place. Focus on strengthening WIP limits and improving work visualization. The Accelerate research shows that teams implementing these practices see significant improvements in software delivery performance over time."
+    },
+    "low": {
+      title: "Traditional Management Approach",
+      content: "There's significant opportunity for improvement using lean management practices. Start with simple work visualization (kanban boards) and lightweight change approval processes. The research shows that even small improvements in these areas can lead to measurable performance gains."
+    }
+  };
+
+  const burnoutPreventionInfo = {
+    "workload": "Work overload prevention: Implement WIP limits, realistic sprint planning, and regular retrospectives to identify capacity issues. Research shows sustainable pace improves both performance and satisfaction.",
+    "control": "Increase team autonomy: Give teams more decision-making authority, tool choice, and process ownership. Accelerate research links team autonomy to better delivery performance.",
+    "rewards": "Recognition and rewards: Celebrate team achievements, provide growth opportunities, and ensure fair compensation. Public recognition of technical accomplishments builds motivation.",
+    "community": "Build team community: Foster psychological safety, encourage collaboration, and address interpersonal conflicts early. Strong team relationships correlate with better performance.",
+    "fairness": "Ensure fairness: Create transparent processes, consistent application of policies, and open communication about decisions affecting the team.",
+    "values": "Align values: Help teams understand how their work contributes to organizational mission and ensure technical decisions align with engineering principles."
+  };
+
+  // Add event listeners for lean maturity assessment
+  document.querySelectorAll('input[name="lean-maturity"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('lean-feedback');
+      const info = leanMaturityInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+
+  // Add event listeners for burnout risk assessment
+  document.querySelectorAll('input[name="burnout-risk"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      const feedback = document.getElementById('burnout-feedback');
+      const checkedBoxes = document.querySelectorAll('input[name="burnout-risk"]:checked');
+      
+      if (checkedBoxes.length === 0) {
+        feedback.innerHTML = '<p>Check applicable burnout risk factors to see targeted prevention strategies based on Maslach\'s research.</p>';
+        feedback.classList.remove('active');
+        return;
+      }
+      
+      const riskCount = checkedBoxes.length;
+      let content = `<h5>Burnout Risk Analysis (${riskCount}/6 factors present)</h5>`;
+      
+      if (riskCount >= 4) {
+        content += '<div style="color: #dc3545; font-weight: bold; margin-bottom: 1rem;">⚠️ HIGH RISK: Multiple burnout factors present. Immediate attention needed.</div>';
+      } else if (riskCount >= 2) {
+        content += '<div style="color: #fd7e14; font-weight: bold; margin-bottom: 1rem;">⚡ MODERATE RISK: Several factors to address.</div>';
+      } else {
+        content += '<div style="color: #28a745; font-weight: bold; margin-bottom: 1rem;">✓ LOW RISK: Limited factors, maintain awareness.</div>';
+      }
+      
+      content += '<div style="margin-top: 1rem;"><strong>Prevention Strategies:</strong><ul>';
+      checkedBoxes.forEach(checkbox => {
+        content += `<li>${burnoutPreventionInfo[checkbox.value]}</li>`;
+      });
+      content += '</ul></div>';
+      
+      feedback.innerHTML = content;
       feedback.classList.add('active');
     });
   });
