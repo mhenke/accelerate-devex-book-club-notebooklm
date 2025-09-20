@@ -62,32 +62,32 @@ dora_color: '#0F766E'
 
 <div class="cd-principles-grid">
   <div class="principle-card quality">
-    <h4><i class="fas fa-tools"></i> Build Quality In</h4>
+    <div class="principle-title"><i class="fas fa-tools"></i> Build Quality In</div>
     <p>Start with quality, don't inspect later</p>
   </div>
 
   <div class="principle-card batches">
-    <h4><i class="fas fa-box"></i> Small Batches</h4>
+    <div class="principle-title"><i class="fas fa-box"></i> Small Batches</div>
     <p>Manageable, testable units</p>
   </div>
 
   <div class="principle-card automation">
-    <h4><i class="fas fa-robot"></i> Automate Tasks</h4>
+    <div class="principle-title"><i class="fas fa-robot"></i> Automate Tasks</div>
     <p>Free humans for creative work</p>
   </div>
 
   <div class="principle-card version">
-    <h4><i class="fas fa-folder"></i> Version Control</h4>
+    <div class="principle-title"><i class="fas fa-folder"></i> Version Control</div>
     <p>All artifacts under control</p>
   </div>
 
   <div class="principle-card trunk">
-    <h4><i class="fas fa-code-branch"></i> Trunk-Based Dev</h4>
+    <div class="principle-title"><i class="fas fa-code-branch"></i> Trunk-Based Dev</div>
     <p>Short branches, frequent integration</p>
   </div>
 
   <div class="principle-card testing">
-    <h4><i class="fas fa-flask"></i> Test Automation</h4>
+    <div class="principle-title"><i class="fas fa-flask"></i> Test Automation</div>
     <p>Automated testing at all levels</p>
   </div>
 </div>
@@ -852,11 +852,12 @@ dora_color: '#0F766E'
 }
 
 
-.principle-card h4 {
+.principle-title {
   margin: 0 0 0.75rem 0;
   color: #134e4a;
   font-size: 1.2rem;
   font-weight: 600;
+  display: block;
 }
 
 .principle-card p {

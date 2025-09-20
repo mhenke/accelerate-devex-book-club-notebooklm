@@ -45,25 +45,25 @@ dora_color: '#1E3A8A'
 
 <div class="dora-metrics-grid">
   <div class="metric-card lead-time">
-    <h4><i class="fas fa-chart-line"></i> Delivery Lead Time</h4>
+    <div class="metric-title"><i class="fas fa-chart-line"></i> Delivery Lead Time</div>
     <p class="metric-description">Time from code commit to production deployment</p>
     <div class="metric-goal">Goal: Hours/Days not Weeks/Months</div>
   </div>
 
   <div class="metric-card deploy-frequency">
-    <h4><i class="fas fa-rocket"></i> Deployment Frequency</h4>
+    <div class="metric-title"><i class="fas fa-rocket"></i> Deployment Frequency</div>
     <p class="metric-description">How often code gets deployed to production</p>
     <div class="metric-goal">Goal: Multiple times per day</div>
   </div>
 
   <div class="metric-card restore-time">
-    <h4><i class="fas fa-clock"></i> Time to Restore Service</h4>
+    <div class="metric-title"><i class="fas fa-clock"></i> Time to Restore Service</div>
     <p class="metric-description">How quickly service is restored after incidents</p>
     <div class="metric-goal">Goal: Under 1 hour</div>
   </div>
 
   <div class="metric-card change-fail">
-    <h4><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</h4>
+    <div class="metric-title"><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</div>
     <p class="metric-description">Percentage of deployments causing failures</p>
     <div class="metric-goal">Goal: 0-15%</div>
   </div>
@@ -994,7 +994,7 @@ h3 i, h4 i {
   display: block;
 }
 
-.metric-card h3 {
+.metric-title {
   margin: 0 0 0.75rem 0;
   font-size: 1.2rem;
   font-weight: 700;
