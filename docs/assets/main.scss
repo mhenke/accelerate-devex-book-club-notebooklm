@@ -1143,6 +1143,31 @@ pre {
   font-weight: 600;
 }
 
+.ai-attribution__text strong a {
+  color: var(--accent-teal);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.ai-attribution__text strong a:hover {
+  border-bottom-color: var(--accent-teal);
+}
+
+/* AI content card links */
+.ai-content-card p strong a {
+  color: var(--accent-teal);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.ai-content-card p strong a:hover {
+  border-bottom-color: var(--accent-teal);
+}
+
 .ai-attribution__tools {
   display: flex;
   flex-wrap: wrap;
