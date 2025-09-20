@@ -56,31 +56,6 @@ dora_color: '#059669'
   </div>
 </div>
 
-## Tool Autonomy & CD Maturity Assessment
-
-<div class="tool-autonomy-impact">
-  <div class="autonomy-stat">
-    <div class="stat-content">
-      <h4><i class="fas fa-palette"></i> Tool Choice Freedom</h4>
-      <p>Teams that choose their own tools are:</p>
-      <div class="impact-metrics">
-        <div class="metric-point">
-          <i class="fas fa-chart-line"></i>
-          <span>Higher performing</span>
-        </div>
-        <div class="metric-point">
-          <i class="fas fa-smile"></i>
-          <span>More satisfied</span>
-        </div>
-        <div class="metric-point">
-          <i class="fas fa-lightbulb"></i>
-          <span>More innovative</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 ## CD Maturity Assessment
 
 <div class="cd-maturity-assessment">
@@ -203,7 +178,7 @@ dora_color: '#059669'
 <div class="conway-law-section">
   <div class="law-statement">
     <blockquote>
-      <i class="fas fa-quote-left"></i> "Organizations design systems that mirror their communication structures"
+      "Organizations design systems that mirror their communication structures"
     </blockquote>
     <cite>— Melvin Conway, 1967</cite>
   </div>
@@ -227,7 +202,6 @@ dora_color: '#059669'
     </div>
   </div>
 </div>
-
 
 ## Interactive Learning Checkpoint
 
@@ -941,6 +915,7 @@ dora_color: '#059669'
   .architecture-comparison {
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
   }
   
   .vs-divider {
@@ -953,6 +928,7 @@ dora_color: '#059669'
   .wall-confusion-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 1rem;
   }
   
   .arrow-breakthrough {
@@ -962,6 +938,7 @@ dora_color: '#059669'
   .security-shift-comparison {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 1rem;
   }
   
   .vs-arrow {
@@ -971,6 +948,10 @@ dora_color: '#059669'
   .conway-examples {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  
+  .conway-law-section {
+    padding: 1rem;
   }
   
   .arrow-transform {
@@ -985,12 +966,12 @@ dora_color: '#059669'
   
   .related-resources {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1rem;
     gap: 1.5rem;
   }
   
   .resource-category {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .transformation-flow {
@@ -1008,17 +989,21 @@ dora_color: '#059669'
   }
   
   .principle-card {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .real-world-applications {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1rem;
     gap: 1.5rem;
   }
   
   .application-card {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .learning-checkpoint {
+    padding: 1rem;
   }
 }
 
@@ -1441,12 +1426,12 @@ dora_color: '#059669'
 @media (max-width: 768px) {
   .learning-checkpoint {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1rem;
     gap: 1.5rem;
   }
   
   .checkpoint-card {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .cd-selector {
@@ -1458,7 +1443,7 @@ dora_color: '#059669'
   }
   
   .assessment-btn {
-    padding: 0.875rem 1.25rem;
+    padding: 0.875rem 1rem;
     font-size: 0.9rem;
   }
   
@@ -1498,7 +1483,6 @@ dora_color: '#059669'
   display: block;
   padding: 0.5rem 0;
   font-weight: 500;
-}
 }
 </style>
 
