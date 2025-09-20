@@ -283,6 +283,25 @@ dora_color: '#9C27B0'
       <li>Experiment with trunk-based development or test automation</li>
     </ul>
   </div>
+
+  <div class="checkpoint-card tool-autonomy">
+    <div class="checkpoint-icon"><i class="fas fa-palette"></i></div>
+    <h4>Tool Freedom</h4>
+    <p>Rate your team's tool selection autonomy:</p>
+    <div class="autonomy-slider">
+      <div class="slider-labels">
+        <span>Restricted</span>
+        <span>Flexible</span>
+        <span>Full Freedom</span>
+      </div>
+      <div class="slider-track" id="tool-slider">
+        <div class="slider-thumb" id="tool-thumb"></div>
+      </div>
+      <div class="slider-feedback" id="slider-feedback">
+        <p>Move the slider to assess your team's tool autonomy level</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 ## Real-World Applications
@@ -1153,6 +1172,57 @@ dora_color: '#9C27B0'
   margin-bottom: 1.5rem;
 }
 
+/* Tool Freedom Slider */
+.autonomy-slider {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.slider-track {
+  position: relative;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.slider-thumb {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border: 3px solid #9c27b0;
+  border-radius: 50%;
+  cursor: grab;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-thumb:active {
+  cursor: grabbing;
+}
+
+.slider-feedback {
+  background: #f8f9fa;
+  border-left: 4px solid #9c27b0;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 60px;
+  transition: border-left-color 0.3s ease;
+}
+
 /* Assessment Buttons */
 .assessment-buttons {
   display: flex;
@@ -1642,5 +1712,98 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+
+  // Tool Freedom Slider functionality
+  const slider = document.getElementById('tool-slider');
+  const thumb = document.getElementById('tool-thumb');
+  const feedback = document.getElementById('slider-feedback');
+  
+  if (slider && thumb && feedback) {
+    let isDragging = false;
+    
+    const feedbackMessages = {
+      restricted: {
+        title: "Restricted Tool Selection",
+        content: "Teams must use pre-approved tools only. This can limit innovation but ensures standardization and security compliance. Common in highly regulated environments."
+      },
+      flexible: {
+        title: "Flexible Tool Selection", 
+        content: "Teams have some choice in tools within defined categories or approval processes. Balances innovation with governance. Allows experimentation with oversight."
+      },
+      freedom: {
+        title: "Full Tool Freedom",
+        content: "Teams can choose any tools that help them deliver value. Maximizes autonomy and innovation but requires strong practices around security and integration."
+      }
+    };
+    
+    function updateSlider(clientX) {
+      const rect = slider.getBoundingClientRect();
+      const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+      thumb.style.left = percentage + '%';
+      
+      let level, color;
+      if (percentage < 33) {
+        level = 'restricted';
+        color = '#f44336';
+      } else if (percentage < 67) {
+        level = 'flexible';
+        color = '#ffc107';
+      } else {
+        level = 'freedom';
+        color = '#4caf50';
+      }
+      
+      thumb.style.borderColor = color;
+      feedback.style.borderLeftColor = color;
+      feedback.innerHTML = `<h5 style="margin: 0 0 0.5rem 0; color: ${color}; font-size: 1rem;">${feedbackMessages[level].title}</h5><p style="margin: 0; font-size: 0.85rem; line-height: 1.4;">${feedbackMessages[level].content}</p>`;
+    }
+    
+    function startDrag(clientX) {
+      isDragging = true;
+      updateSlider(clientX);
+      document.body.style.userSelect = 'none';
+    }
+    
+    function stopDrag() {
+      isDragging = false;
+      document.body.style.userSelect = '';
+    }
+    
+    // Mouse events
+    thumb.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      startDrag(e.clientX);
+    });
+    
+    slider.addEventListener('click', (e) => {
+      if (!isDragging) {
+        updateSlider(e.clientX);
+      }
+    });
+    
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        e.preventDefault();
+        updateSlider(e.clientX);
+      }
+    });
+    
+    document.addEventListener('mouseup', stopDrag);
+    
+    // Touch events for mobile
+    thumb.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      startDrag(e.touches[0].clientX);
+    });
+    
+    document.addEventListener('touchmove', (e) => {
+      if (isDragging) {
+        e.preventDefault();
+        updateSlider(e.touches[0].clientX);
+      }
+    });
+    
+    document.addEventListener('touchend', stopDrag);
+  }
 });
 </script>
