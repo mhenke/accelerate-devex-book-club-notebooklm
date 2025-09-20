@@ -75,10 +75,7 @@ layout: default
         </a>
         {% else %}
         <!-- Back to main page when no previous meeting -->
-        <a
-          href="{{ '/' | relative_url }}"
-          class="nav-link prev back-to-main"
-        >
+        <a href="{{ '/' | relative_url }}" class="nav-link prev back-to-main">
           <div class="nav-icon">←</div>
           <div class="nav-content">
             <span class="nav-label">Back to</span>
@@ -100,13 +97,13 @@ layout: default
         {% elsif current_index == 3 %}
         <a
           href="{{ '/transformation-complete/' | relative_url }}"
-          class="nav-link completion-badge"
+          class="nav-link next completion-badge"
         >
-          <div class="nav-icon"><i class="fas fa-bullseye"></i></div>
           <div class="nav-content">
             <span class="nav-label">Next</span>
             <span class="nav-title">Transformation Complete!</span>
           </div>
+          <div class="nav-icon">→</div>
         </a>
         {% endif %}
       </div>
