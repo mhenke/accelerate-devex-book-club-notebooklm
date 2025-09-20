@@ -100,38 +100,32 @@ dora_color: '#059669'
 
 <div class="cd-principles-grid">
   <div class="principle-card quality">
-    <div class="principle-icon"><i class="fas fa-tools"></i></div>
-    <h4>Build Quality In</h4>
+    <h4><i class="fas fa-tools"></i> Build Quality In</h4>
     <p>Start with quality, don't inspect later</p>
   </div>
   
   <div class="principle-card batches">
-    <div class="principle-icon"><i class="fas fa-box"></i></div>
-    <h4>Small Batches</h4>
+    <h4><i class="fas fa-box"></i> Small Batches</h4>
     <p>Manageable, testable units</p>
   </div>
   
   <div class="principle-card automation">
-    <div class="principle-icon"><i class="fas fa-robot"></i></div>
-    <h4>Automate Tasks</h4>
+    <h4><i class="fas fa-robot"></i> Automate Tasks</h4>
     <p>Free humans for creative work</p>
   </div>
   
   <div class="principle-card version">
-    <div class="principle-icon"><i class="fas fa-folder"></i></div>
-    <h4>Version Control</h4>
+    <h4><i class="fas fa-folder"></i> Version Control</h4>
     <p>All artifacts under control</p>
   </div>
   
   <div class="principle-card trunk">
-    <div class="principle-icon"><i class="fas fa-code-branch"></i></div>
-    <h4>Trunk-Based Dev</h4>
+    <h4><i class="fas fa-code-branch"></i> Trunk-Based Dev</h4>
     <p>Short branches, frequent integration</p>
   </div>
   
   <div class="principle-card testing">
-    <div class="principle-icon"><i class="fas fa-flask"></i></div>
-    <h4>Test Automation</h4>
+    <h4><i class="fas fa-flask"></i> Test Automation</h4>
     <p>Automated testing at all levels</p>
   </div>
 </div>
@@ -392,8 +386,8 @@ dora_color: '#059669'
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
   border-radius: 16px;
   border: 2px solid #9ca3af;
@@ -451,8 +445,8 @@ dora_color: '#059669'
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
   border: 2px solid #059669;
@@ -461,7 +455,7 @@ dora_color: '#059669'
 .resource-category {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border-left: 4px solid #059669;
@@ -507,7 +501,7 @@ dora_color: '#059669'
 }
 
 .resource-category a {
-  color: #1565c0;
+  color: #047857;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -525,8 +519,8 @@ dora_color: '#059669'
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
   border: 2px solid #059669;
@@ -594,8 +588,8 @@ dora_color: '#059669'
   grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
   border: 2px solid #059669;
@@ -604,7 +598,7 @@ dora_color: '#059669'
 .confusion-problem, .confusion-solution {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -656,8 +650,8 @@ dora_color: '#059669'
   grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
   border: 2px solid #059669;
@@ -666,7 +660,7 @@ dora_color: '#059669'
 .security-approach {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -701,8 +695,8 @@ dora_color: '#059669'
 
 /* Conway's Law Section */
 .conway-law-section {
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
   border: 2px solid #9c27b0;
@@ -711,7 +705,7 @@ dora_color: '#059669'
 .law-statement {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -746,7 +740,7 @@ dora_color: '#059669'
 .example-card {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -785,8 +779,8 @@ dora_color: '#059669'
 
 /* Tool Autonomy Impact */
 .tool-autonomy-impact {
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
   border: 2px solid #059669;
@@ -795,7 +789,7 @@ dora_color: '#059669'
 .autonomy-stat {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -846,8 +840,8 @@ dora_color: '#059669'
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #fce4ec);
   border-radius: 16px;
   border: 2px solid #9c27b0;
@@ -888,7 +882,7 @@ dora_color: '#059669'
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .principle-card {
@@ -906,11 +900,6 @@ dora_color: '#059669'
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-.principle-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
-}
 
 .principle-card h4 {
   margin: 0 0 0.75rem 0;
@@ -931,8 +920,8 @@ dora_color: '#059669'
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 16px;
   border: 2px solid #059669;
@@ -941,7 +930,7 @@ dora_color: '#059669'
 .application-card {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border-left: 4px solid #059669;
@@ -1104,8 +1093,8 @@ dora_color: '#059669'
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: 20px;
   border: 2px solid #059669;
@@ -1114,7 +1103,7 @@ dora_color: '#059669'
 .checkpoint-card {
   background: white;
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
