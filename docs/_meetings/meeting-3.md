@@ -105,6 +105,211 @@ dora_color: '#ea580c'
   </div>
 </div>
 
+### Lean Product Development: Small Batches & Customer Feedback
+
+<div class="product-development-flow">
+  <div class="flow-step customer-feedback">
+    <h4><i class="fas fa-comments"></i> Customer Feedback Integration</h4>
+    <div class="step-content">
+      <p><strong>Active Incorporation</strong></p>
+      <ul>
+        <li><i class="fas fa-chart-line"></i> Regular feedback cycles</li>
+        <li><i class="fas fa-users"></i> Direct customer input</li>
+        <li><i class="fas fa-lightbulb"></i> Design iteration based on learning</li>
+        <li><i class="fas fa-clock"></i> Quick response to insights</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="flow-arrow">→</div>
+  
+  <div class="flow-step small-batches">
+    <h4><i class="fas fa-boxes"></i> Work in Small Batches</h4>
+    <div class="step-content">
+      <p><strong>Less Than One Week</strong></p>
+      <ul>
+        <li><i class="fas fa-rocket"></i> MVP approach</li>
+        <li><i class="fas fa-sync-alt"></i> Rapid learning cycles</li>
+        <li><i class="fas fa-check-circle"></i> Frequent delivery</li>
+        <li><i class="fas fa-balance-scale"></i> Reduced risk</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="flow-arrow">→</div>
+  
+  <div class="flow-step team-autonomy">
+    <h4><i class="fas fa-user-cog"></i> Team Experimentation</h4>
+    <div class="step-content">
+      <p><strong>Authority to Adapt</strong></p>
+      <ul>
+        <li><i class="fas fa-flask"></i> Create specifications</li>
+        <li><i class="fas fa-edit"></i> Change requirements</li>
+        <li><i class="fas fa-handshake-slash"></i> No external approval needed</li>
+        <li><i class="fas fa-chart-line"></i> Data-driven decisions</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="value-stream-visibility">
+  <div class="visibility-card">
+    <div class="visibility-icon"><i class="fas fa-eye"></i></div>
+    <h4>Value Stream Visibility</h4>
+    <p>Teams understand the complete flow from business requirements to customer value delivery</p>
+    <div class="visibility-benefits">
+      <div class="benefit-point">
+        <i class="fas fa-map-marked-alt"></i>
+        <span>Clear work flow mapping</span>
+      </div>
+      <div class="benefit-point">
+        <i class="fas fa-users"></i>
+        <span>Business to customer connection</span>
+      </div>
+      <div class="benefit-point">
+        <i class="fas fa-chart-bar"></i>
+        <span>Bottleneck identification</span>
+      </div>
+      <div class="benefit-point">
+        <i class="fas fa-target"></i>
+        <span>Value-focused decisions</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Deployment Pain & Work Sustainability
+
+<div class="deployment-pain-analysis">
+  <div class="pain-indicators">
+    <h4><i class="fas fa-exclamation-triangle"></i> Deployment Pain Signals</h4>
+    <div class="indicator-grid">
+      <div class="indicator-item">
+        <i class="fas fa-moon"></i>
+        <span>Deployments outside business hours</span>
+      </div>
+      <div class="indicator-item">
+        <i class="fas fa-hand-paper"></i>
+        <span>Manual deployment processes</span>
+      </div>
+      <div class="indicator-item">
+        <i class="fas fa-exchange-alt"></i>
+        <span>Complex team handoffs</span>
+      </div>
+      <div class="indicator-item">
+        <i class="fas fa-heart-broken"></i>
+        <span>Engineer anxiety before pushes</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sustainability-solution">
+    <h4><i class="fas fa-seedling"></i> Sustainable Practices</h4>
+    <div class="solution-items">
+      <div class="solution-item">
+        <div class="solution-icon"><i class="fas fa-robot"></i></div>
+        <div class="solution-text">
+          <h5>Automation</h5>
+          <p>Eliminate manual steps and reduce human error</p>
+        </div>
+      </div>
+      <div class="solution-item">
+        <div class="solution-icon"><i class="fas fa-clock"></i></div>
+        <div class="solution-text">
+          <h5>Frequent Deployments</h5>
+          <p>Smaller, safer changes during business hours</p>
+        </div>
+      </div>
+      <div class="solution-item">
+        <div class="solution-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="solution-text">
+          <h5>Built-in Quality</h5>
+          <p>Confidence through comprehensive testing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Employee Satisfaction & Organizational Performance
+
+<div class="satisfaction-drivers">
+  <div class="driver-grid">
+    <div class="driver-card meaningful-work">
+      <div class="driver-icon"><i class="fas fa-heart"></i></div>
+      <h4>Meaningful Work</h4>
+      <p>Appropriate challenge level and clear purpose</p>
+      <div class="driver-stats">
+        <span class="stat-badge">High performers: 2.2x</span>
+        <span class="stat-text">more likely to recommend organization</span>
+      </div>
+    </div>
+    
+    <div class="driver-card right-tools">
+      <div class="driver-icon"><i class="fas fa-tools"></i></div>
+      <h4>Right Tools & Resources</h4>
+      <p>Access to necessary resources and technology</p>
+      <div class="driver-stats">
+        <span class="stat-badge">Strong correlation</span>
+        <span class="stat-text">with job satisfaction</span>
+      </div>
+    </div>
+    
+    <div class="driver-card identity-alignment">
+      <div class="driver-icon"><i class="fas fa-user-friends"></i></div>
+      <h4>Identity & Values Alignment</h4>
+      <p>Personal identification with organizational mission</p>
+      <div class="driver-stats">
+        <span class="stat-badge">Predictive</span>
+        <span class="stat-text">of software delivery performance</span>
+      </div>
+    </div>
+    
+    <div class="driver-card diversity-impact">
+      <div class="driver-icon"><i class="fas fa-users"></i></div>
+      <h4>Diversity & Inclusion</h4>
+      <p>Teams with more diversity achieve better outcomes</p>
+      <div class="driver-stats">
+        <span class="stat-badge">Research-backed</span>
+        <span class="stat-text">performance and business benefits</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="enps-assessment">
+  <div class="enps-content">
+    <div class="enps-header">
+      <div class="enps-icon"><i class="fas fa-chart-line"></i></div>
+      <h4>Employee Net Promoter Score (eNPS)</h4>
+      <p>High-performing teams are 2.2x more likely to recommend their organization as a great place to work</p>
+    </div>
+    
+    <div class="enps-scale">
+      <div class="scale-question">
+        <p><strong>How likely are you to recommend your organization to a friend as a great place to work?</strong></p>
+      </div>
+      <div class="scale-range">
+        <div class="scale-section detractors">
+          <div class="scale-numbers">0-6</div>
+          <div class="scale-label">Detractors</div>
+          <div class="scale-description">Unhappy employees who may damage your brand</div>
+        </div>
+        <div class="scale-section passives">
+          <div class="scale-numbers">7-8</div>
+          <div class="scale-label">Passives</div>
+          <div class="scale-description">Satisfied but unenthusiastic employees</div>
+        </div>
+        <div class="scale-section promoters">
+          <div class="scale-numbers">9-10</div>
+          <div class="scale-label">Promoters</div>
+          <div class="scale-description">Loyal enthusiasts who fuel growth</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 ### Microsoft Research: Work-Life Balance Impact
 
 <div class="microsoft-stats">
@@ -118,6 +323,73 @@ dora_color: '#ea580c'
       </div>
       <h4>Work-Life Balance Satisfaction</h4>
       <p>Microsoft teams implementing DevOps practices saw dramatic improvements in work-life balance satisfaction scores</p>
+    </div>
+  </div>
+</div>
+
+### Burnout Risk Factors & Mitigation
+
+<div class="burnout-risk-assessment">
+  <div class="risk-factors-grid">
+    <div class="risk-factor-card overload">
+      <div class="risk-icon"><i class="fas fa-weight"></i></div>
+      <h5>Work Overload</h5>
+      <p>Job demands exceed human limits</p>
+    </div>
+    
+    <div class="risk-factor-card control">
+      <div class="risk-icon"><i class="fas fa-hand-paper"></i></div>
+      <h5>Lack of Control</h5>
+      <p>Unable to influence job decisions</p>
+    </div>
+    
+    <div class="risk-factor-card rewards">
+      <div class="risk-icon"><i class="fas fa-gift"></i></div>
+      <h5>Insufficient Rewards</h5>
+      <p>Financial, institutional, or social</p>
+    </div>
+    
+    <div class="risk-factor-card community">
+      <div class="risk-icon"><i class="fas fa-users-slash"></i></div>
+      <h5>Breakdown of Community</h5>
+      <p>Unsupportive workplace environment</p>
+    </div>
+    
+    <div class="risk-factor-card fairness">
+      <div class="risk-icon"><i class="fas fa-balance-scale-right"></i></div>
+      <h5>Absence of Fairness</h5>
+      <p>Unfair decision-making processes</p>
+    </div>
+    
+    <div class="risk-factor-card values">
+      <div class="risk-icon"><i class="fas fa-compass"></i></div>
+      <h5>Value Conflicts</h5>
+      <p>Mismatch between org and personal values</p>
+    </div>
+  </div>
+  
+  <div class="mitigation-strategy">
+    <div class="strategy-header">
+      <h4><i class="fas fa-shield-alt"></i> Mitigation Strategy</h4>
+      <p><strong>Fix the environment, not the person</strong></p>
+    </div>
+    <div class="strategy-actions">
+      <div class="action-item">
+        <i class="fas fa-heart"></i>
+        <span>Foster supportive culture and psychological safety</span>
+      </div>
+      <div class="action-item">
+        <i class="fas fa-compass"></i>
+        <span>Communicate clear purpose and organizational mission</span>
+      </div>
+      <div class="action-item">
+        <i class="fas fa-graduation-cap"></i>
+        <span>Invest in professional development and growth</span>
+      </div>
+      <div class="action-item">
+        <i class="fas fa-road"></i>
+        <span>Remove obstacles and provide necessary resources</span>
+      </div>
     </div>
   </div>
 </div>
@@ -274,22 +546,176 @@ dora_color: '#ea580c'
   </div>
 </div>
 
+## Chapter-Based Assessment Exercises
+
+<div class="chapter-assessments">
+  <div class="assessment-row">
+    <div class="chapter-card ch7">
+      <h4><i class="fas fa-chart-bar"></i> Chapter 7: Lean Management</h4>
+      <div class="assessment-checklist">
+        <label class="check-item">
+          <input type="checkbox">
+          <span>WIP limits established and monitored</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox">
+          <span>Work visualization in place</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox">
+          <span>Peer review vs external approval</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox">
+          <span>Monitoring data drives decisions</span>
+        </label>
+      </div>
+    </div>
+    
+    <div class="chapter-card ch8">
+      <h4><i class="fas fa-boxes"></i> Chapter 8: Product Development</h4>
+      <div class="assessment-checklist">
+        <label class="check-item">
+          <input type="checkbox">
+          <span>Small batch delivery (&lt;1 week)</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox">
+          <span>Active customer feedback integration</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox">
+          <span>Team experimentation authority</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox">
+          <span>Clear value stream visibility</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="assessment-row">
+    <div class="chapter-card ch9">
+      <h4><i class="fas fa-heart-broken"></i> Chapter 9: Deployment Pain</h4>
+      <div class="pain-assessment">
+        <p><strong>Rate your deployment anxiety (1-10):</strong></p>
+        <div class="pain-factors">
+          <label class="pain-check">
+            <input type="checkbox">
+            <i class="fas fa-moon"></i>
+            <span>After-hours deployments</span>
+          </label>
+          <label class="pain-check">
+            <input type="checkbox">
+            <i class="fas fa-hand-paper"></i>
+            <span>Manual processes</span>
+          </label>
+          <label class="pain-check">
+            <input type="checkbox">
+            <i class="fas fa-exchange-alt"></i>
+            <span>Complex handoffs</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chapter-card ch10">
+      <h4><i class="fas fa-smile"></i> Chapter 10: Employee Satisfaction</h4>
+      <div class="satisfaction-assessment">
+        <p><strong>Quick eNPS Check:</strong></p>
+        <p>"Would you recommend your org to a friend?" (0-10)</p>
+        <div class="satisfaction-factors">
+          <label class="satisfaction-check">
+            <input type="checkbox">
+            <span>Meaningful work</span>
+          </label>
+          <label class="satisfaction-check">
+            <input type="checkbox">
+            <span>Right tools available</span>
+          </label>
+          <label class="satisfaction-check">
+            <input type="checkbox">
+            <span>Values alignment</span>
+          </label>
+          <label class="satisfaction-check">
+            <input type="checkbox">
+            <span>Diverse team</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## Discussion Questions
 
-1. **Lean Practices Assessment:** Which lean management practices do you currently use? What's missing?
-2. **Work Visualization:** How does your team currently visualize WIP and quality metrics?
-3. **Change Approval Reality:** Describe your current change approval process - who's involved and how long does it take?
-4. **Burnout Indicators:** What signs of deployment pain or burnout do you observe in your team?
-5. **Employee Engagement:** How would your team score on employee Net Promoter Score?
+### Lean Management (Chapter 7)
+1. **Change Approval Effectiveness:** How does your current change approval process compare to the research findings? Are external approvals actually improving stability or just slowing delivery?
+
+2. **WIP Limits & Visualization:** How does your team currently manage and visualize work in progress? What bottlenecks become visible when you track WIP carefully?
+
+3. **Data-Driven Decisions:** How often does your team use monitoring data to make business decisions versus just responding to alerts?
+
+### Product Development (Chapter 8)  
+4. **Small Batch Assessment:** How large are your typical feature releases? Could work be broken into smaller, more frequent deliveries?
+
+5. **Customer Feedback Loop:** How quickly does customer feedback reach development teams and influence product decisions?
+
+6. **Team Experimentation Authority:** Do development teams have authority to adjust requirements based on what they learn, or must they seek external approval?
+
+### Work Sustainability (Chapter 9)
+7. **Deployment Pain Reality:** On a scale of 1-10, how painful are your deployments? What specific factors contribute to anxiety or stress?
+
+8. **Sustainability Connection:** How have technical practices like continuous delivery impacted your team's work-life balance and stress levels?
+
+### Employee Satisfaction (Chapter 10)
+9. **eNPS Assessment:** If you surveyed your team anonymously, what percentage would recommend your organization as a great place to work?
+
+10. **Burnout Risk Factors:** Which of Maslach's six organizational risk factors for burnout are most present in your team? What could leadership do to address them?
+
+11. **Diversity & Performance:** How does team diversity in your organization correlate with delivery performance and business outcomes?
+
+### Integration Questions
+12. **Virtuous Cycle:** How do you see the connections between lean management practices, product development approaches, deployment pain, and employee satisfaction in your organization?
+
+13. **Biggest Opportunity:** Based on all four chapters, where do you see the biggest opportunity for improvement that could impact both delivery performance and team wellbeing?
 
 ## Action Items for Next Meeting
 
+### Lean Management (Chapter 7)
 <ul class="action-items">
-<li>[ ] Experiment with visualizing work using simple kanban board</li>
-<li>[ ] Identify one change approval step that could be streamlined</li>
-<li>[ ] Observe and document burnout risk factors in your environment</li>
+<li>[ ] Implement simple WIP visualization (kanban board or dashboard)</li>
+<li>[ ] Identify one change approval step that could use peer review instead of external approval</li>
+<li>[ ] Set up one monitoring metric that helps make business decisions (not just alerts)</li>
+</ul>
+
+### Product Development (Chapter 8)
+<ul class="action-items">
+<li>[ ] Break one upcoming feature into deliverable pieces smaller than one week</li>
+<li>[ ] Establish one new channel for rapid customer feedback</li>
+<li>[ ] Give your team authority to modify one specification without external approval</li>
+</ul>
+
+### Work Sustainability (Chapter 9)
+<ul class="action-items">
+<li>[ ] Identify the single smallest change that could make your next deployment less painful</li>
+<li>[ ] Document current deployment anxiety level (1-10) and main pain points</li>
+<li>[ ] Automate one manual step in your deployment process</li>
+</ul>
+
+### Employee Satisfaction (Chapter 10)
+<ul class="action-items">
+<li>[ ] Conduct informal eNPS assessment with your team</li>
+<li>[ ] Address one of the six burnout risk factors most affecting your team</li>
+<li>[ ] Ensure team members have access to tools and resources they need</li>
+</ul>
+
+### Integration Goal
+<ul class="action-items">
+<li>[ ] Choose one practice that addresses multiple chapters (e.g., automated deployment reducing both pain and improving satisfaction)</li>
 </ul>
 
 <style>
