@@ -30,41 +30,61 @@ nav_order: 6
 ## <i class="fas fa-rocket"></i> Your Transformation Journey
 
 <div class="journey-timeline">
-  <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="timeline-item completed" data-meeting="1">
+  <div class="timeline-item completed" data-meeting="1">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h3>Meeting 1: Foundation & Metrics</h3>
+      <h3><a href="{{ '/meetings/meeting-1/' | relative_url }}">Meeting 1: Foundation & Metrics</a></h3>
       <p>Established DORA metrics baseline and explored Westrum organizational culture types</p>
+      <div class="key-findings">
+        <div class="finding-pill meeting-1-theme"><i class="fas fa-chart-line"></i> Elite performers deploy 200x more frequently</div>
+        <div class="finding-pill meeting-1-theme"><i class="fas fa-users"></i> Generative culture = 2x better performance</div>
+        <div class="finding-pill meeting-1-theme"><i class="fas fa-clock"></i> Lead time under 1 hour for elite teams</div>
+      </div>
       <div class="achievement-badge"><i class="fas fa-check"></i> Culture Assessment Complete</div>
     </div>
-  </a>
+  </div>
   
-  <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="timeline-item completed" data-meeting="2">
+  <div class="timeline-item completed" data-meeting="2">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h3>Meeting 2: Technical Excellence</h3>
+      <h3><a href="{{ '/meetings/meeting-2/' | relative_url }}">Meeting 2: Technical Excellence</a></h3>
       <p>Mastered continuous delivery practices and technical capabilities</p>
+      <div class="key-findings">
+        <div class="finding-pill meeting-2-theme"><i class="fas fa-rocket"></i> Speed with stability is achievable</div>
+        <div class="finding-pill meeting-2-theme"><i class="fas fa-shield-alt"></i> Security integration improves performance</div>
+        <div class="finding-pill meeting-2-theme"><i class="fas fa-sync"></i> Fast feedback reduces risk & improves quality</div>
+      </div>
       <div class="achievement-badge"><i class="fas fa-check"></i> CD Pipeline Designed</div>
     </div>
-  </a>
+  </div>
   
-  <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="timeline-item completed" data-meeting="3">
+  <div class="timeline-item completed" data-meeting="3">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h3>Meeting 3: Management & Sustainability</h3>
+      <h3><a href="{{ '/meetings/meeting-3/' | relative_url }}">Meeting 3: Management & Sustainability</a></h3>
       <p>Implemented lean product development and visual management practices</p>
+      <div class="key-findings">
+        <div class="finding-pill meeting-3-theme"><i class="fas fa-heart"></i> Microsoft: 38% → 75% work-life satisfaction</div>
+        <div class="finding-pill meeting-3-theme"><i class="fas fa-thumbs-up"></i> High performers 2.2x more likely to recommend workplace</div>
+        <div class="finding-pill meeting-3-theme"><i class="fas fa-fire-extinguisher"></i> Fix environment, not people for burnout</div>
+      </div>
       <div class="achievement-badge"><i class="fas fa-check"></i> WIP Limits Optimized</div>
     </div>
-  </a>
+  </div>
   
-  <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="timeline-item completed" data-meeting="4">
+  <div class="timeline-item completed" data-meeting="4">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
-      <h3>Meeting 4: Leadership & Transformation</h3>
+      <h3><a href="{{ '/meetings/meeting-4/' | relative_url }}">Meeting 4: Leadership & Transformation</a></h3>
       <p>Developed leadership strategies for sustainable organizational change</p>
+      <div class="key-findings">
+        <div class="finding-pill meeting-4-theme"><i class="fas fa-crown"></i> Strong leaders = 2x high performance likelihood</div>
+        <div class="finding-pill meeting-4-theme"><i class="fas fa-comments"></i> ING: Coaching vs commanding drives success</div>
+        <div class="finding-pill meeting-4-theme"><i class="fas fa-lightbulb"></i> Transformational leadership enables team autonomy</div>
+      </div>
       <div class="achievement-badge"><i class="fas fa-check"></i> Change Strategy Ready</div>
     </div>
-  </a>
+  </div>
 </div>
 
 ## <i class="fas fa-chart-bar"></i> Your DORA Metrics Mastery
@@ -495,6 +515,41 @@ nav_order: 6
   border-radius: 15px;
   font-size: 0.9rem;
   margin-top: 0.5rem;
+}
+
+.key-findings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.finding-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  margin: 0.2rem 0;
+}
+
+.finding-pill.meeting-1-theme {
+  background: #1E3A8A;
+}
+
+.finding-pill.meeting-2-theme {
+  background: #0F766E;
+}
+
+.finding-pill.meeting-3-theme {
+  background: #D97706;
+}
+
+.finding-pill.meeting-4-theme {
+  background: #7c3aed;
 }
 
 .dora-mastery-grid {
@@ -931,6 +986,15 @@ nav_order: 6
   
   .timeline-content {
     padding: 1rem;
+  }
+  
+  .finding-pill {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .key-findings {
+    gap: 0.3rem;
   }
   
   .celebration-cta {
