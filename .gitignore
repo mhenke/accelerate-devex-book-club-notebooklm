@@ -12,8 +12,9 @@ vendor/
 *.gem
 *.rbc
 /.config
-/coverage/
+
 /InstalledFiles
+
 /pkg/
 /spec/reports/
 /spec/examples.txt
@@ -49,3 +50,17 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# Additional Jekyll and build ignores
+node_modules/
+Gemfile.lock
+docs/_site/
+docs/.sass-cache/
+docs/vendor/
+docs/Gemfile.lock
+docs/node_modules/
+
+# Test directories have their own .gitignore files
+
+# Jupyter notebooks (development artifacts)
+*.ipynb
+setup-dev-environment.sh
