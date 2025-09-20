@@ -37,6 +37,11 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] `color:.*#` - All color declarations
 - [ ] `\..*a.*{` - All link selectors that may need color updates
 
+### Cross-Page Searches (After Updating Page X)
+- [ ] Search adjacent pages for old theme colors: `grep -r "OLD_HEX_COLOR" docs/_meetings/`
+- [ ] Search for navigation references: `meeting-X.*background\|meeting-X.*color`
+- [ ] Search for any hardcoded references to the old theme across all pages
+
 ### Icon Structure Searches
 - [ ] `-icon">` - All separate icon div elements
 - [ ] `<div class=".*icon.*">` - Icon wrapper divs to consolidate
@@ -76,6 +81,13 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] Verify all IDs are unique (no duplicate IDs on the page)
 - [ ] Ensure all educational/functional content is preserved
 - [ ] Check that media elements are still present and functional
+
+### 4. Cross-Page Navigation Updates (CRITICAL)
+- [ ] **Update navigation colors on adjacent pages (x-1 and x+1)**
+- [ ] Search all other pages for old color references to the updated page
+- [ ] Update `.nav-item.meeting-X` styles on adjacent pages
+- [ ] Update navigation hover states and borders on adjacent pages
+- [ ] Check for any hardcoded navigation colors that reference the old theme
 
 ## Common CSS Selectors to Update
 
@@ -194,6 +206,15 @@ This is a generic checklist for updating color schemes across any page and fixin
 - Test sliders, radio buttons, and form elements functionality
 - Ensure JavaScript selectors match the HTML structure after changes
 - Add this check to "Functional Verification" section of QA
+
+### Issue: Adjacent Page Navigation Colors Not Updated
+**Causes:** Each page has its own CSS with navigation colors for other pages
+**Solutions:**
+- **CRITICAL**: After updating page X, check pages X-1 and X+1 for navigation references
+- Search all pages for old color hex codes: `grep -r "#OLD_COLOR" docs/_meetings/`
+- Look for `.nav-item.meeting-X` styles that reference the old theme
+- Update navigation hover states and borders across adjacent pages
+- This is easily missed but creates visual inconsistency
 
 ### Issue: Interactive Elements Broken
 **Causes:** JavaScript targeting wrong elements, CSS conflicts, missing dependencies
