@@ -33,6 +33,7 @@ nav_order: 6
   <div class="timeline-item completed" data-meeting="1">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
+      <div class="achievement-badge"><i class="fas fa-chart-bar"></i> DORA Metrics Baseline Established</div>
       <h3><a href="{{ '/meetings/meeting-1/' | relative_url }}">Meeting 1: Foundation & Metrics</a></h3>
       <p>Established DORA metrics baseline and explored Westrum organizational culture types</p>
       <div class="key-findings">
@@ -40,13 +41,13 @@ nav_order: 6
         <div class="finding-pill meeting-1-theme"><i class="fas fa-users"></i> Generative culture = 2x better performance</div>
         <div class="finding-pill meeting-1-theme"><i class="fas fa-clock"></i> Lead time under 1 hour for elite teams</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-chart-bar"></i> DORA Metrics Baseline Established</div>
     </div>
   </div>
   
   <div class="timeline-item completed" data-meeting="2">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
+      <div class="achievement-badge"><i class="fas fa-rocket"></i> Technical Excellence Achieved</div>
       <h3><a href="{{ '/meetings/meeting-2/' | relative_url }}">Meeting 2: Technical Excellence</a></h3>
       <p>Mastered continuous delivery practices and technical capabilities</p>
       <div class="key-findings">
@@ -54,13 +55,13 @@ nav_order: 6
         <div class="finding-pill meeting-2-theme"><i class="fas fa-shield-alt"></i> Security integration improves performance</div>
         <div class="finding-pill meeting-2-theme"><i class="fas fa-sync"></i> Fast feedback reduces risk & improves quality</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-rocket"></i> Technical Excellence Achieved</div>
     </div>
   </div>
   
   <div class="timeline-item completed" data-meeting="3">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
+      <div class="achievement-badge"><i class="fas fa-balance-scale"></i> Lean Management Mastered</div>
       <h3><a href="{{ '/meetings/meeting-3/' | relative_url }}">Meeting 3: Management & Sustainability</a></h3>
       <p>Implemented lean product development and visual management practices</p>
       <div class="key-findings">
@@ -68,13 +69,13 @@ nav_order: 6
         <div class="finding-pill meeting-3-theme"><i class="fas fa-thumbs-up"></i> High performers 2.2x more likely to recommend workplace</div>
         <div class="finding-pill meeting-3-theme"><i class="fas fa-fire-extinguisher"></i> Fix environment, not people for burnout</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-balance-scale"></i> Lean Management Mastered</div>
     </div>
   </div>
   
   <div class="timeline-item completed" data-meeting="4">
     <div class="timeline-marker"></div>
     <div class="timeline-content">
+      <div class="achievement-badge"><i class="fas fa-crown"></i> Leadership Transformation Unlocked</div>
       <h3><a href="{{ '/meetings/meeting-4/' | relative_url }}">Meeting 4: Leadership & Transformation</a></h3>
       <p>Developed leadership strategies for sustainable organizational change</p>
       <div class="key-findings">
@@ -82,7 +83,6 @@ nav_order: 6
         <div class="finding-pill meeting-4-theme"><i class="fas fa-comments"></i> ING: Coaching vs commanding drives success</div>
         <div class="finding-pill meeting-4-theme"><i class="fas fa-lightbulb"></i> Transformational leadership enables team autonomy</div>
       </div>
-      <div class="achievement-badge"><i class="fas fa-crown"></i> Leadership Transformation Unlocked</div>
     </div>
   </div>
 </div>
@@ -209,7 +209,7 @@ nav_order: 6
   </div>
 </div>
 
-## 💡 Interactive Reflection
+## <i class="fas fa-lightbulb"></i> Interactive Reflection
 
 <div class="reflection-section">
   <h3>What was your biggest transformation insight?</h3>
@@ -254,7 +254,7 @@ nav_order: 6
 <div class="next-steps-grid">
   <div class="next-step-card immediate">
     <div class="step-timeline">This Week</div>
-    <h3>🚀 Start Small</h3>
+    <h3><i class="fas fa-rocket"></i> Start Small</h3>
     <ul>
       <li>Choose one DORA metric to improve</li>
       <li>Identify the biggest constraint in your value stream</li>
@@ -283,7 +283,7 @@ nav_order: 6
   </div>
 </div>
 
-## 🚀 AI-Enhanced Learning Celebration
+## <i class="fas fa-rocket"></i> AI-Enhanced Learning Celebration
 
 <div class="ai-learning-celebration">
   <h3>AI-Generated Learning Content You've Experienced</h3>
@@ -346,7 +346,7 @@ nav_order: 6
   </div>
 </div>
 
-## 📚 Continue Your Journey
+## <i class="fas fa-book-open"></i> Continue Your Journey
 
 <div class="continue-journey">
   <h3>Resources to Keep You Growing</h3>
@@ -355,35 +355,35 @@ nav_order: 6
     <div class="resource-card">
       <h4><i class="fas fa-book"></i> Further Reading</h4>
       <ul>
-        <li>The DevOps Handbook</li>
-        <li>Continuous Delivery by Jez Humble</li>
-        <li>Team Topologies</li>
-        <li>The Phoenix Project</li>
+        <li><a href="https://itrevolution.com/product/the-devops-handbook-second-edition/" target="_blank" rel="noopener noreferrer">The DevOps Handbook</a></li>
+        <li><a href="https://continuousdelivery.com/" target="_blank" rel="noopener noreferrer">Continuous Delivery by Jez Humble</a></li>
+        <li><a href="https://teamtopologies.com/book" target="_blank" rel="noopener noreferrer">Team Topologies</a></li>
+        <li><a href="https://itrevolution.com/product/the-phoenix-project/" target="_blank" rel="noopener noreferrer">The Phoenix Project</a></li>
       </ul>
     </div>
     
     <div class="resource-card">
       <h4><i class="fas fa-podcast"></i> Podcasts & Videos</h4>
       <ul>
-        <li>DevOps Chat</li>
-        <li>The Idealcast with Gene Kim</li>
-        <li>Software Engineering Daily</li>
-        <li>DORA Research Talks</li>
+        <li><a href="https://devops.com/category/podcasts/" target="_blank" rel="noopener noreferrer">DevOps Chat</a></li>
+        <li><a href="https://itrevolution.com/podcast/" target="_blank" rel="noopener noreferrer">The Idealcast with Gene Kim</a></li>
+        <li><a href="https://softwareengineeringdaily.com/" target="_blank" rel="noopener noreferrer">Software Engineering Daily</a></li>
+        <li><a href="https://dora.dev/" target="_blank" rel="noopener noreferrer">DORA Research Talks</a></li>
       </ul>
     </div>
     
     <div class="resource-card">
       <h4><i class="fas fa-users"></i> Communities</h4>
       <ul>
-        <li>DevOps Enterprise Summit</li>
-        <li>Local DevOps Meetups</li>
-        <li>Platform Engineering Community</li>
-        <li>DORA Community of Practice</li>
+        <li><a href="https://events.itrevolution.com/" target="_blank" rel="noopener noreferrer">DevOps Enterprise Summit</a></li>
+        <li><a href="https://www.meetup.com/topics/devops/" target="_blank" rel="noopener noreferrer">Local DevOps Meetups</a></li>
+        <li><a href="https://platformengineering.org/" target="_blank" rel="noopener noreferrer">Platform Engineering Community</a></li>
+        <li><a href="https://dora.community/" target="_blank" rel="noopener noreferrer">DORA Community of Practice</a></li>
       </ul>
     </div>
     
     <div class="resource-card ai-enhanced">
-      <h4>🤖 AI-Enhanced Learning</h4>
+      <h4><i class="fas fa-robot"></i> AI-Enhanced Learning</h4>
       <ul>
         <li><a href="/accelerate-devex-book-club-notebooklm/prompts/">Generate more content with NotebookLM</a></li>
         <li>Create custom discussion prompts</li>
@@ -526,7 +526,7 @@ nav_order: 6
   border-radius: 15px;
   font-size: 0.9rem;
   font-weight: 500;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
