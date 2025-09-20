@@ -198,7 +198,8 @@ dora_color: '#D97706'
   <!-- Small Batches -->
   <rect x="320" y="80" width="200" height="200" rx="15" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
   <circle cx="420" cy="110" r="20" fill="#d97706"/>
-  <text x="420" y="116" text-anchor="middle" font-size="16" fill="white" font-weight="bold">📦</text>
+  <circle cx="420" cy="116" r="8" fill="white"/>
+  <text x="420" y="119" text-anchor="middle" font-size="10" fill="#d97706" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f468</text>
   <text x="420" y="140" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Small Batches</text>
   <text x="420" y="160" text-anchor="middle" font-size="12" fill="#92400e">Less Than One Week</text>
   
@@ -253,13 +254,14 @@ dora_color: '#D97706'
   <!-- Pain Signals Side -->
   <rect x="50" y="70" width="300" height="180" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
   <circle cx="200" cy="100" r="20" fill="#dc2626"/>
-  <text x="200" y="106" text-anchor="middle" font-size="16" fill="white" font-weight="bold">⚠️</text>
+  <circle cx="200" cy="106" r="8" fill="white"/>
+  <text x="200" y="109" text-anchor="middle" font-size="10" fill="#dc2626" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f071</text>
   <text x="200" y="130" text-anchor="middle" font-size="18" fill="#dc2626" font-weight="bold">Deployment Pain Signals</text>
   
-  <text x="60" y="155" font-size="12" fill="#991b1b">🌙 Deployments outside business hours</text>
-  <text x="60" y="175" font-size="12" fill="#991b1b">✋ Manual deployment processes</text>
-  <text x="60" y="195" font-size="12" fill="#991b1b">🔄 Complex team handoffs</text>
-  <text x="60" y="215" font-size="12" fill="#991b1b">💔 Engineer anxiety before pushes</text>
+  <text x="70" y="155" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f186</tspan> Deployments outside business hours</text>
+  <text x="70" y="175" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f256</tspan> Manual deployment processes</text>
+  <text x="70" y="195" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f362</tspan> Complex team handoffs</text>
+  <text x="70" y="215" font-size="12" fill="#991b1b"><tspan style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f21e</tspan> Engineer anxiety before pushes</text>
   
   <text x="200" y="230" text-anchor="middle" font-size="14" fill="#dc2626" font-weight="bold" font-style="italic">High Pain = Lower Performance + Burnout Risk</text>
 

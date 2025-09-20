@@ -89,6 +89,7 @@
   --hover-teal: #6bc7bf;
 }
 
+
 /* Modern Typography with Google Fonts */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -101,6 +102,95 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+}
+
+/* Accessibility: Heading hierarchy fix */
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--header-dark-navy);
+  border-left: 4px solid var(--accent-teal);
+  padding-left: 1rem;
+  margin-top: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-medium);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-medium);
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-medium);
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile & Accessibility: Touch target minimums for interactive elements */
+button,
+.btn,
+input[type="checkbox"],
+input[type="radio"],
+label,
+.assessment-btn,
+.readiness-checkbox,
+.coaching-option {
+  min-width: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.assessment-btn .radio-mark,
+.readiness-checkbox .checkbox-mark,
+.coaching-option .radio-mark {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 767px) {
+  button,
+  .btn,
+  input[type="checkbox"],
+  input[type="radio"],
+  label,
+  .assessment-btn,
+  .readiness-checkbox,
+  .coaching-option {
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  .assessment-btn .radio-mark,
+  .readiness-checkbox .checkbox-mark,
+  .coaching-option .radio-mark {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* Subtle background pattern */
