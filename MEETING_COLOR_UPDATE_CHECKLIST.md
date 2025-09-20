@@ -42,9 +42,11 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] Search for navigation references: `meeting-X.*background\|meeting-X.*color`
 - [ ] Search for any hardcoded references to the old theme across all pages
 
-### Icon Structure Searches
-- [ ] `-icon">` - All separate icon div elements
+### Icon Structure Searches (Use These Systematically)
+- [ ] `<div class=".*icon.*"><i class="fas` - All separate icon div elements (MOST IMPORTANT)
+- [ ] `-icon">` - Alternative pattern for icon divs
 - [ ] `<div class=".*icon.*">` - Icon wrapper divs to consolidate
+- [ ] After fixing: search for unused CSS classes like `.principle-icon`, `.arch-icon`, etc.
 - [ ] `font-size: [2-9]rem` - Large icon sizes that could be reduced
 - [ ] `margin.*[2-9]rem` - Large margins to compact
 - [ ] `padding.*[2-9]rem` - Large padding to reduce
@@ -70,6 +72,8 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] Move icons inline with headers: `<h4><i class="fas fa-icon"></i> Title</h4>`
 - [ ] Remove separate icon divs: `<div class="icon-class"><i...></i></div>`
 - [ ] **Search for all `-icon">` patterns to catch all icon divs**
+- [ ] **Standardize header levels: h2 without icons, h3/h4 with inline icons**
+- [ ] Search for `## .*<i class="fas` and remove icons from h2 headers
 - [ ] Reduce section margins from `3rem` to `2rem`
 - [ ] Reduce section padding from `2rem` to `1.5rem`
 - [ ] Remove excessive whitespace and line breaks
