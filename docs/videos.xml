@@ -1,0 +1,61 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title }} - Video Series</title>
+    <description>{{ site.description }} - Video content series covering DevOps transformation insights from the Accelerate book.</description>
+    <link>{{ site.url }}{{ site.baseurl }}</link>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/videos.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll {{ jekyll.version }}</generator>
+    <managingEditor>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</managingEditor>
+    <webMaster>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</webMaster>
+    <copyright>{{ site.time | date: "%Y" }} {{ site.author | default: "Accelerate DevEx Book Club" }}</copyright>
+    <image>
+      <url>{{ site.url }}{{ site.baseurl }}/assets/images/video-logo.png</url>
+      <title>{{ site.title }} Videos</title>
+      <link>{{ site.url }}{{ site.baseurl }}</link>
+      <width>1280</width>
+      <height>720</height>
+    </image>
+
+    <!-- Meeting Video Episodes -->
+    {% assign meetings = site.meetings | sort: 'week' %}
+    {% for meeting in meetings %}
+      {% assign video_file = 'meeting-' | append: meeting.week | append: '-video.mp4' %}
+      {% assign video_path = '/assets/media/' | append: video_file %}
+      {% assign full_video_url = site.url | append: site.baseurl | append: video_path %}
+      
+      <item>
+        <title>{{ meeting.title | xml_escape }} (Video)</title>
+        <description>{{ meeting.subtitle | xml_escape }} - Video presentation covering {{ meeting.content | strip_html | truncatewords: 50 | xml_escape }}</description>
+        <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}</link>
+        <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#video</guid>
+        <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+        <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+        
+        <!-- Media enclosure for video -->
+        <enclosure url="{{ full_video_url }}" type="video/mp4" length="0"/>
+        
+        <!-- Media RSS for video content -->
+        <media:content url="{{ full_video_url }}" type="video/mp4" medium="video" width="1920" height="1080">
+          <media:title>{{ meeting.title | xml_escape }} - Video</media:title>
+          <media:description>{{ meeting.subtitle | xml_escape }} - Video presentation for meeting {{ meeting.week }}</media:description>
+          <media:keywords>devops, accelerate, dora metrics, continuous delivery, culture, transformation, video</media:keywords>
+          <media:thumbnail url="{{ site.url }}{{ site.baseurl }}/assets/images/meeting-{{ meeting.week }}-thumbnail.jpg" width="320" height="180"/>
+        </media:content>
+        
+        <!-- Category -->
+        <category>Technology</category>
+        <category>Education</category>
+        <category>DevOps</category>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -280,6 +280,12 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
 
   <div class="resource-card">
+    <h3><i class="fas fa-rss"></i> RSS Feeds & Downloads</h3>
+    <p>Subscribe to podcast feeds or download audio/video files directly to your device.</p>
+    <a href="{{ '/feeds' | relative_url }}" class="resource-link">Subscribe & Download →</a>
+  </div>
+
+  <div class="resource-card">
     <h3><i class="fas fa-clipboard-list"></i> Between Meetings</h3>
     <p>Activities, reflection questions, and experiments to try between sessions.</p>
     <a href="{{ '/resources' | relative_url }}" class="resource-link">Additional Resources →</a>
