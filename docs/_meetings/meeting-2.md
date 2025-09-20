@@ -956,7 +956,7 @@ dora_color: '#0F766E'
   }
 
   .vs-divider {
-    transform: rotate(90deg);
+    /* Remove problematic rotation - keep as circular indicator */
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
@@ -964,27 +964,35 @@ dora_color: '#0F766E'
 
   .wall-confusion-section {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1rem;
   }
 
   .arrow-breakthrough {
+    /* Remove rotation - keep text readable */
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .arrow-breakthrough i {
+    /* Point arrow downward for mobile flow */
     transform: rotate(90deg);
   }
 
   .security-shift-comparison {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1rem;
   }
 
   .vs-arrow {
+    /* Point arrow downward for mobile flow */
     transform: rotate(90deg);
   }
 
   .conway-examples {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .conway-law-section {
@@ -992,6 +1000,13 @@ dora_color: '#0F766E'
   }
 
   .arrow-transform {
+    /* Remove rotation - keep text readable */
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .arrow-transform i {
+    /* Point arrow downward for mobile flow */
     transform: rotate(90deg);
   }
 
@@ -1001,14 +1016,16 @@ dora_color: '#0F766E'
     gap: 1rem;
   }
 
+  /* Compact related resources section */
   .related-resources {
     grid-template-columns: 1fr;
     padding: 1rem;
-    gap: 1.5rem;
+    gap: 1rem; /* Reduced from 1.5rem */
+    margin: 1.5rem 0; /* Reduced from 2rem */
   }
 
   .resource-category {
-    padding: 1rem;
+    padding: 1rem; /* Already correctly set */
   }
 
   .transformation-flow {
@@ -1017,12 +1034,14 @@ dora_color: '#0F766E'
   }
 
   .flow-arrow {
+    /* Point arrow downward for mobile flow */
     transform: rotate(90deg);
     font-size: 1.5rem;
   }
 
   .cd-principles-grid {
     grid-template-columns: 1fr;
+    gap: 1rem; /* Reduced from default */
   }
 
   .principle-card {
@@ -1032,7 +1051,7 @@ dora_color: '#0F766E'
   .real-world-applications {
     grid-template-columns: 1fr;
     padding: 1rem;
-    gap: 1.5rem;
+    gap: 1rem; /* Reduced from 1.5rem */
   }
 
   .application-card {
@@ -1041,6 +1060,7 @@ dora_color: '#0F766E'
 
   .learning-checkpoint {
     padding: 1rem;
+    gap: 1rem; /* Reduced for more compact layout */
   }
 }
 
