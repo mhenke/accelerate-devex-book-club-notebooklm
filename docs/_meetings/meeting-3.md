@@ -22,7 +22,9 @@ dora_color: '#ea580c'
 	Your browser does not support the audio element.
 </audio>
 
-## Lean Management Principles in Action
+## Key Insights
+
+### Lean Management Principles in Action
 
 <div class="lean-principles-board">
   <div class="principle-column wip">
@@ -74,7 +76,7 @@ dora_color: '#ea580c'
   </div>
 </div>
 
-## Employee Satisfaction Formula
+### Employee Satisfaction Formula
 
 <div class="satisfaction-formula">
   <div class="formula-component">
@@ -103,7 +105,7 @@ dora_color: '#ea580c'
   </div>
 </div>
 
-## Microsoft Research: Work-Life Balance Impact
+### Microsoft Research: Work-Life Balance Impact
 
 <div class="microsoft-stats">
   <div class="stat-highlight">

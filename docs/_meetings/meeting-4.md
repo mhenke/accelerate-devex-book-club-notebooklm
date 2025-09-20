@@ -22,7 +22,9 @@ dora_color: '#7c3aed'
 	Your browser does not support the audio element.
 </audio>
 
-## Transformational Leadership in Action
+## Key Insights
+
+### Transformational Leadership in Action
 
 <div class="leadership-pillars">
   <div class="pillar-card vision">
@@ -70,7 +72,7 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
-## Security: Traditional vs Shift-Left
+### Security: Traditional vs Shift-Left
 
 <div class="security-evolution">
   <div class="security-approach traditional">
@@ -104,7 +106,7 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
-## The Learning & Experimentation Cycle
+### The Learning & Experimentation Cycle
 
 <div class="learning-cycle">
   <div class="cycle-step experiment">
@@ -142,7 +144,7 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
-## The Transformation Challenge
+### The Transformation Challenge
 
 <div class="transformation-challenge">
   <div class="challenge-question">
@@ -223,7 +225,7 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
-## Your Transformation Commitment
+### Your Transformation Commitment
 
 <div class="commitment-tracker">
   <div class="commitment-card individual">

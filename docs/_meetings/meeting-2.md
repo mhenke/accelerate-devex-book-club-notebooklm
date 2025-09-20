@@ -22,7 +22,9 @@ dora_color: '#059669'
 	Your browser does not support the audio element.
 </audio>
 
-## Architecture: Loosely Coupled Systems Enable Team Independence
+## Key Insights
+
+### Architecture: Loosely Coupled Systems Enable Team Independence
 
 <div class="architecture-comparison">
   <div class="arch-side tight-coupled">
@@ -56,7 +58,7 @@ dora_color: '#059669'
   </div>
 </div>
 
-## CD Maturity Assessment
+### CD Maturity Assessment
 
 <div class="cd-maturity-assessment">
   <h4>How mature are your CD practices?</h4>
@@ -68,7 +70,7 @@ dora_color: '#059669'
   </ul>
 </div>
 
-## Continuous Delivery Core Principles
+### Continuous Delivery Core Principles
 
 <div class="cd-principles-grid">
   <div class="principle-card quality">
@@ -102,7 +104,7 @@ dora_color: '#059669'
   </div>
 </div>
 
-## Breaking the "Wall of Confusion"
+### Breaking the "Wall of Confusion"
 
 <div class="wall-confusion-section">
   <div class="confusion-problem">
@@ -131,7 +133,7 @@ dora_color: '#059669'
   </div>
 </div>
 
-## Security: Shift Left for Speed AND Safety
+### Security: Shift Left for Speed AND Safety
 
 <div class="security-shift-comparison">
   <div class="security-approach traditional">
@@ -173,7 +175,7 @@ dora_color: '#059669'
   </div>
 </div>
 
-## Conway's Law & Team Structure
+### Conway's Law & Team Structure
 
 <div class="conway-law-section">
   <div class="law-statement">
@@ -295,6 +297,8 @@ dora_color: '#059669'
     </div>
   </div>
 </div>
+
+---
 
 ## Discussion Questions
 
