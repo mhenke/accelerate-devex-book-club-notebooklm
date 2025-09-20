@@ -3,119 +3,86 @@
 
 // Section Accent Header
 .section-accent {
-  position: relative;
+  border-left: 4px solid var(--accent-teal);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--header-dark-navy);
+  background: none;
+  box-shadow: none;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 2rem;
-  width: 100%;
-  max-width: 100vw;
-  margin: 2rem auto 0 auto;
-  padding: 0 1rem;
-  overflow-x: auto;
-  z-index: 2;
-  opacity: 1;
+  gap: 0.5rem;
 }
 /* End of main SCSS file */
 /*
-  flex-shrink: 0;
-  margin: 0 0.5rem;
  * Performance and Accessibility Optimizations
  * - CSS Grid and Flexbox for modern layouts
  * - Reduced motion support
-  position: absolute;
-    position: relative;
-    left: 0;
-    transform: none;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 2rem auto 0 auto;
-    padding: 0 0.5rem;
-    overflow-x: auto;
-  z-index: 2;
+ * - High contrast mode compatibility
+ * - Mobile-first responsive design
+ * - Efficient CSS architecture
+ */
+
+// Jekyll theme partial import (minimal)
+@import 'minima';
+
 /* Performance: Critical CSS is inlined, non-critical styles loaded progressively */
-    width: 48px;
-    height: 48px;
-    font-size: 0.9rem;
-    margin: 0 0.3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: var(--text-white);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  border: 2px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 2px 12px rgba(26,26,46,0.08);
-  font-size: 1.1rem;
-  cursor: pointer;
-  outline: none;
+
+/* Modern Book Club Theme - Professional Color Palette */
+:root {
+  /* Clean 3-Breakpoint System - 2025 Standards */
+  --mobile: 768px;
+  --tablet: 1024px;
+  --desktop: 1200px;
+
+  /* Header Gradient Colors */
+  --header-dark-navy: #1a1a2e;
+  --header-light-navy: #16213e;
+
+  /* Background Colors */
   --background-white: #ffffff;
   --background-off-white: #efe9e7;
   --background-light-gray: #f5f5f5;
-  font-size: 2.2rem;
-  margin-bottom: 0.25rem;
-  color: var(--accent-coral);
-  transition: color 0.3s;
   --background-light: #f5f5f5;
 
   /* Accent Colors */
-  display: block;
-  font-size: 0.95rem;
-  color: var(--text-white);
-  font-family: 'Inter', 'Poppins', sans-serif;
-  font-weight: 500;
-  margin-top: 0.15rem;
-  letter-spacing: 0.01em;
-  opacity: 0.85;
+  --accent-coral: #ff7f50;
   --accent-gold: #d7ba89;
   --accent-teal: #7adad1;
   --accent-sage: #8b9eb7;
 
-  background: rgba(255,255,255,0.22);
-  color: var(--accent-coral);
-  border-color: var(--accent-coral);
-  box-shadow: 0 4px 20px rgba(255,127,80,0.18);
-  outline: 2px solid var(--accent-coral);
   /* DORA Metric Colors */
   --dora-blue: #2196f3;
   --dora-green: #4caf50;
   --dora-orange: #ff9800;
-  color: var(--accent-teal);
   --dora-red: #f44336;
 
   /* Book Colors */
   --book-brown: #8b5c2a;
-    position: static;
-    left: 0;
-    transform: none;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    margin: 2rem auto 0 auto;
+  --book-gold: #d7ba89;
+  --book-cream: #fff8dc;
+
+  /* Primary/Secondary Colors */
+  --primary-blue: #2196f3;
+  --dark-blue: #16213e;
+  --danger-red: #f44336;
+  --success-green: #4caf50;
+
   /* Text Colors */
   --text-dark: #2c3e50;
-    width: 56px;
-    height: 56px;
-    font-size: 0.95rem;
-    margin: 0 0.2rem;
+  --text-medium: #5a6c7d;
+  --text-light: #8fa8b8;
+  --text-white: #ffffff;
 
   /* Border & Shadow */
-    font-size: 1.5rem;
+  --border-light: #e8ecf0;
   --border-color: #e8ecf0;
   --shadow-light: rgba(26, 26, 46, 0.1);
-    display: block;
-    font-size: 0.85rem;
+  --shadow-medium: rgba(26, 26, 46, 0.15);
+
   /* Interactive States */
   --hover-coral: #ff6347;
   --hover-gold: #c9a876;
@@ -315,7 +282,6 @@ h2 {
   border-radius: 0 0 2rem 2rem;
 }
 
-/* Mobile (576px and under) - extra small screens */
 @media (max-width: 576px) {
   .hero-banner {
     padding: 2.5rem 0.5rem;
@@ -331,22 +297,6 @@ h2 {
   }
   .hero-content h2 {
     font-size: 1.2rem;
-  }
-
-  /* Meeting grid mobile layout */
-  .meeting-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 0.5rem;
-  }
-
-  .meeting-card {
-    padding: 1rem;
-  }
-
-  .meeting-card .meeting-icon {
-    font-size: 2.5rem;
-    height: 60px;
   }
 }
 
@@ -515,10 +465,6 @@ h2 {
   }
 
   .hero-metrics {
-    position: static;
-    transform: none;
-    justify-content: center;
-    margin-top: 2rem;
     gap: 1.5rem;
   }
 
@@ -586,63 +532,6 @@ h2 {
   color: #2196f3;
   font-weight: 500;
   letter-spacing: 0.01em;
-}
-
-/* Meeting Grid for meetings.md page */
-.meeting-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.meeting-card {
-  background: linear-gradient(
-    145deg,
-    var(--background-white),
-    var(--background-light-gray)
-  );
-  border-radius: 16px;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 8px 30px rgba(33, 150, 243, 0.1), 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 1px solid var(--border-light);
-  transition: all 0.3s ease;
-}
-
-.meeting-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(33, 150, 243, 0.15),
-    0 4px 12px rgba(0, 0, 0, 0.12);
-}
-
-.meeting-card .meeting-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.meeting-card h3 {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.meeting-card h3 a {
-  text-decoration: none;
-  color: var(--header-dark-navy);
-}
-
-.meeting-card h3 a:hover {
-  color: var(--primary-blue);
-}
-
-.meeting-card p {
-  margin: 0.5rem 0;
-  color: var(--text-medium);
-  font-size: 0.9rem;
 }
 
 /* Resources section */
@@ -814,7 +703,7 @@ h2 {
 
 /* Quick start section */
 .quick-start {
-  padding: 2rem 2rem;
+  background: var(--book-cream);
   border: 2px solid var(--book-gold);
   border-radius: 12px;
   padding: 2rem;
@@ -826,7 +715,7 @@ h2 {
   margin-top: 0;
 }
 
-    padding: 1.25rem 1.25rem;
+.quick-start p strong {
   color: var(--primary-blue);
 }
 
@@ -958,21 +847,6 @@ pre {
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem 0;
-}
-
-/* Consistent metric goal box */
-.metric-goal {
-  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
-  margin-top: 1rem;
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  box-sizing: border-box;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 1rem;
-  color: var(--text-dark);
 }
 
 .dora-metrics-visual h3 {
@@ -1649,17 +1523,17 @@ pre {
 
 /* Tablet and below (1199px and down) */
 @media (max-width: 1199px) {
-  .hero-metrics {
-    flex-direction: row !important;
+  .metrics-categories {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    position: static;
-    margin: 2rem auto 0 auto;
-    left: 0;
-    transform: none;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
   }
+
+  .timeline-nodes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .timeline-node {
     flex: 0 0 calc(50% - 0.5rem);
     max-width: 300px;
   }
@@ -2156,6 +2030,10 @@ pre {
     gap: 2rem;
   }
 
+  .hero-metrics .metric-icon {
+    font-size: 2rem;
+  }
+
   .resource-grid {
     grid-template-columns: 1fr;
   }
@@ -2269,6 +2147,16 @@ pre {
 
   .hero-banner::after {
     display: none;
+  }
+
+  .hero-metrics {
+    gap: 1rem;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    justify-content: center;
+    margin-top: 2rem;
   }
 }
 
@@ -2884,7 +2772,7 @@ button:focus,
   }
 
   .dora-metrics-visual {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .metrics-categories {
@@ -2893,7 +2781,7 @@ button:focus,
   }
 
   .timeline-visual {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   .timeline-nodes {
@@ -2903,7 +2791,6 @@ button:focus,
 
   .timeline-node {
     max-width: none;
-    padding: 1rem;
   }
 
   .resources-grid {
@@ -2926,30 +2813,6 @@ button:focus,
   .metric-icon {
     min-width: auto;
     padding: 1rem;
-  }
-
-  /* Standardize mobile padding to 1rem */
-  .wrapper,
-  .dora-metrics-visual,
-  .timeline-visual,
-  .resources-grid,
-  .meeting-grid {
-    padding: 1rem;
-  }
-
-  .meeting-card {
-    padding: 1rem;
-  }
-
-  /* Ensure proper spacing for text sections */
-  .page-content {
-    padding: 1rem;
-  }
-
-  /* Add padding before headings on mobile */
-  h2:not(:first-child) {
-    margin-top: 2rem;
-    padding-top: 1rem;
   }
 }
 
