@@ -491,15 +491,15 @@ nav_order: 6
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .timeline-marker {
   position: absolute;
-  left: -2rem;
-  top: 0.5rem;
-  width: 30px;
-  height: 30px;
+  left: -2.5rem;
+  top: 0.25rem;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: #7adad1;
   border: 3px solid white;
@@ -544,13 +544,15 @@ nav_order: 6
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.4rem 0.9rem;
+  padding: 0.6rem 1rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
   color: white;
   white-space: nowrap;
   flex-shrink: 0;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .finding-pill.meeting-1-theme {
@@ -841,6 +843,8 @@ nav_order: 6
   cursor: pointer;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  min-height: 60px;
+  min-width: 44px;
 }
 
 .reflection-option.high-performance {
@@ -1110,11 +1114,38 @@ nav_order: 6
   
   .finding-pill {
     font-size: 0.75rem;
-    padding: 0.3rem 0.7rem;
+    padding: 0.5rem 0.8rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
   
   .key-findings {
     gap: 0.5rem;
+  }
+  
+  .timeline-marker {
+    left: -2.25rem;
+    width: 44px;
+    height: 44px;
+    top: 0;
+  }
+  
+  .timeline-item {
+    padding-left: 3rem;
+  }
+  
+  .reflection-option {
+    min-height: 60px;
+    padding: 1rem;
+  }
+  
+  .resource-card a, 
+  .resource-card li {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
   }
   
   .celebration-cta {
