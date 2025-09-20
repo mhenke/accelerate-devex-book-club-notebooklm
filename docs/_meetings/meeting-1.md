@@ -8,14 +8,14 @@ duration: '1 Hour'
 dora_color: '#1E3A8A'
 ---
 
-## <i class="fas fa-video"></i> Watch the Meeting 1 Video
+## Watch the Meeting 1 Video {#watch-meeting-1-video}
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## <i class="fas fa-headphones"></i> Listen to the Meeting 1 Podcast
+## Listen to the Meeting 1 Podcast {#listen-meeting-1-podcast}
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.m4a" type="audio/x-m4a">
@@ -29,12 +29,12 @@ dora_color: '#1E3A8A'
     <h4><i class="fas fa-microscope"></i> Evidence-Based</h4>
     <p>Rigorous research backing all findings</p>
   </div>
-  
+
   <div class="insight-card">
     <h4><i class="fas fa-medal"></i> Competitive Advantage</h4>
     <p>Software delivery capability drives success</p>
   </div>
-  
+
   <div class="insight-card">
     <h4><i class="fas fa-user-check"></i> Process Not People</h4>
     <p>Anxiety signals inefficiency, not failure</p>
@@ -49,19 +49,19 @@ dora_color: '#1E3A8A'
     <p class="metric-description">Time from code commit to production deployment</p>
     <div class="metric-goal">Goal: Hours/Days not Weeks/Months</div>
   </div>
-  
+
   <div class="metric-card deploy-frequency">
     <h3><i class="fas fa-rocket"></i> Deployment Frequency</h3>
     <p class="metric-description">How often code gets deployed to production</p>
     <div class="metric-goal">Goal: Multiple times per day</div>
   </div>
-  
+
   <div class="metric-card restore-time">
     <h3><i class="fas fa-clock"></i> Time to Restore Service</h3>
     <p class="metric-description">How quickly service is restored after incidents</p>
     <div class="metric-goal">Goal: Under 1 hour</div>
   </div>
-  
+
   <div class="metric-card change-fail">
     <h3><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</h3>
     <p class="metric-description">Percentage of deployments causing failures</p>
@@ -83,11 +83,11 @@ dora_color: '#1E3A8A'
       </ul>
     </div>
   </div>
-  
+
   <div class="vs-divider">
     <span>VS</span>
   </div>
-  
+
   <div class="reality-side">
     <h3><i class="fas fa-check-circle"></i> Research Reality</h3>
     <div class="reality-content">
@@ -130,9 +130,9 @@ dora_color: '#1E3A8A'
       <li>Unpredictable outcomes</li>
     </ul>
   </div>
-  
+
   <div class="flow-arrow">→</div>
-  
+
   <div class="flow-solution">
     <h4><i class="fas fa-bullseye"></i> DevOps Practices</h4>
     <ul>
@@ -141,9 +141,9 @@ dora_color: '#1E3A8A'
       <li>Rapid feedback loops</li>
     </ul>
   </div>
-  
+
   <div class="flow-arrow">→</div>
-  
+
   <div class="flow-result">
     <h4><i class="fas fa-trophy"></i> Confident Deployments</h4>
     <ul>
@@ -181,7 +181,7 @@ dora_color: '#1E3A8A'
       <p>Select your team's performance level to understand improvement opportunities.</p>
     </div>
   </div>
-  
+
   <div class="checkpoint-card deployment-anxiety">
     <h4><i class="fas fa-heart"></i> Deployment Confidence</h4>
     <p>How does your team feel about deployments?</p>
@@ -206,7 +206,7 @@ dora_color: '#1E3A8A'
       <p>Select how your team feels about deployments to get targeted improvement suggestions.</p>
     </div>
   </div>
-  
+
   <div class="checkpoint-card improvement-priority">
     <h4><i class="fas fa-bullseye"></i> Improvement Priority</h4>
     <p>Which DORA metric should your team focus on first?</p>
@@ -240,7 +240,7 @@ dora_color: '#1E3A8A'
   <div class="checkpoint-card culture-assessment">
     <h4><i class="fas fa-users"></i> Culture Assessment</h4>
     <p>Assess your organization's culture type using Westrum's model:</p>
-    
+
     <div class="culture-selector">
       <div class="culture-option pathological-option">
         <input type="radio" name="culture-type" value="pathological" id="culture-pathological">
@@ -255,7 +255,7 @@ dora_color: '#1E3A8A'
           </div>
         </label>
       </div>
-      
+
       <div class="culture-option bureaucratic-option">
         <input type="radio" name="culture-type" value="bureaucratic" id="culture-bureaucratic">
         <label for="culture-bureaucratic">
@@ -269,7 +269,7 @@ dora_color: '#1E3A8A'
           </div>
         </label>
       </div>
-      
+
       <div class="culture-option generative-option">
         <input type="radio" name="culture-type" value="generative" id="culture-generative">
         <label for="culture-generative">
@@ -284,7 +284,7 @@ dora_color: '#1E3A8A'
         </label>
       </div>
     </div>
-    
+
     <div class="feedback-area" id="culture-feedback">
       <p>Select your organization's culture type to see how it impacts delivery performance.</p>
     </div>
@@ -881,15 +881,15 @@ dora_color: '#1E3A8A'
     grid-template-columns: 1fr;
     padding: 1rem;
   }
-  
+
   .priority-selector {
     grid-template-columns: 1fr;
   }
-  
+
   .assessment-buttons {
     gap: 0.5rem;
   }
-  
+
   .confidence-options {
     gap: 0.5rem;
   }
@@ -1164,37 +1164,37 @@ h3 i, h4 i {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .myth-buster {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .vs-divider {
     transform: rotate(90deg);
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
-  
+
   .deployment-flow {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .flow-arrow {
     transform: rotate(90deg);
     font-size: 1.5rem;
   }
-  
+
   .insights-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .metric-card, .insight-card {
     padding: 1.5rem;
   }
-  
+
   .myth-side, .reality-side {
     max-width: 100%;
   }
@@ -1351,12 +1351,12 @@ h3 i, h4 i {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .performance-stats {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
-  
+
   .stat-item {
     font-size: 0.8rem;
   }
@@ -1385,7 +1385,7 @@ document.addEventListener('DOMContentLoaded', function() {
       content: "Your team demonstrates elite software delivery performance! High-performing organizations deploy multiple times per day, have lead times under one hour, restore service in under an hour, and have change failure rates under 15%. Focus on maintaining these practices and sharing knowledge with other teams."
     },
     medium: {
-      title: "Medium-Performing Team", 
+      title: "Medium-Performing Team",
       content: "Your team shows solid DevOps practices with room for improvement. Medium performers typically deploy weekly to monthly, have lead times of days to weeks, and change failure rates of 16-45%. Focus on reducing batch sizes, improving test automation, and increasing deployment frequency."
     },
     low: {
@@ -1423,11 +1423,11 @@ document.addEventListener('DOMContentLoaded', function() {
       content: "Faster recovery from failures is crucial for stability. To improve: implement comprehensive monitoring and alerting, practice incident response procedures, improve rollback capabilities, and maintain good documentation. Preparation enables rapid response when issues occur."
     },
     "change-fail": {
-      title: "Lower Change Failure Rate", 
+      title: "Lower Change Failure Rate",
       content: "High change failure rates indicate quality issues in your delivery process. To improve: implement comprehensive automated testing, use test-driven development, improve code review processes, and implement continuous integration. Quality must be built in, not inspected later."
     }
   };
-  
+
   // Add event listeners for DORA performance assessment
   document.querySelectorAll('input[name="dora-performance"]').forEach(radio => {
     radio.addEventListener('change', function() {
@@ -1466,14 +1466,14 @@ document.addEventListener('DOMContentLoaded', function() {
       impact: "📉 Lower delivery performance, higher failure rates"
     },
     bureaucratic: {
-      title: "Bureaucratic Culture (Type B)", 
+      title: "Bureaucratic Culture (Type B)",
       content: "Bureaucratic cultures show modest cooperation but are rule-oriented rather than mission-focused. These organizations often have medium software delivery performance with room for improvement. While better than pathological cultures, they can still benefit from reducing red tape, encouraging innovation, and focusing more on outcomes than processes.",
-      impact: "📊 Medium delivery performance, process-heavy"
+      impact: "Medium delivery performance, process-heavy"
     },
     generative: {
       title: "Generative Culture (Type C)",
       content: "Congratulations! Generative culture is strongly correlated with high software delivery performance. Organizations with generative culture encourage high cooperation, treat failures as learning opportunities, encourage risk-taking, and focus on mission accomplishment. Research shows these organizations have faster lead times, higher deployment frequency, lower change failure rates, and faster recovery times.",
-      impact: "📈 High delivery performance, continuous improvement"
+      impact: "High delivery performance, continuous improvement"
     }
   };
 

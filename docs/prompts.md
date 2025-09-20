@@ -23,7 +23,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
       <a href="#video" class="btn">Video Prompt</a>
     </div>
   </div>
-  
+
   <div class="meeting-card">
     <div class="meeting-icon" style="color: #4CAF50">
       <i class="fas fa-podcast"></i>
@@ -35,7 +35,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
       <a href="#video" class="btn">Video Prompt</a>
     </div>
   </div>
-  
+
   <div class="meeting-card">
     <div class="meeting-icon" style="color: #FF9800">
       <i class="fas fa-podcast"></i>
@@ -47,7 +47,7 @@ Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.
       <a href="#video" class="btn">Video Prompt</a>
     </div>
   </div>
-  
+
   <div class="meeting-card">
     <div class="meeting-icon" style="color: #F44336">
       <i class="fas fa-podcast"></i>

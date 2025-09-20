@@ -8,14 +8,14 @@ duration: '1 Hour'
 dora_color: '#D97706'
 ---
 
-## <i class="fas fa-video"></i> Watch the Meeting 3 Video
+## Watch the Meeting 3 Video {#watch-meeting-3-video}
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
-## <i class="fas fa-headphones"></i> Listen to the Meeting 3 Podcast
+## Listen to the Meeting 3 Podcast {#listen-meeting-3-podcast}
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
@@ -39,11 +39,11 @@ dora_color: '#D97706'
       </ul>
     </div>
   </div>
-  
+
   <div class="vs-divider">
     <span>VS</span>
   </div>
-  
+
   <div class="mgmt-side lean">
     <h3><i class="fas fa-rocket"></i> Lean Management</h3>
     <div class="mgmt-content">
@@ -63,7 +63,7 @@ dora_color: '#D97706'
 <svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" aria-label="Employee Satisfaction Framework">
   <rect x="10" y="10" width="880" height="260" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="4"/>
   <text x="450" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">Employee Satisfaction = Performance</text>
-  
+
   <!-- Pillar 1: Meaningful Work -->
   <rect x="70" y="70" width="160" height="120" rx="12" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
   <text x="150" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Meaningful Work</text>
@@ -71,7 +71,7 @@ dora_color: '#D97706'
   <text x="150" y="130" text-anchor="middle" font-size="11" fill="#92400e">Purposeful Tasks</text>
   <circle cx="150" cy="155" r="15" fill="#d97706"/>
   <text x="150" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">1</text>
-  
+
   <!-- Pillar 2: Learning -->
   <rect x="260" y="70" width="160" height="120" rx="12" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
   <text x="340" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Learning</text>
@@ -79,7 +79,7 @@ dora_color: '#D97706'
   <text x="340" y="130" text-anchor="middle" font-size="11" fill="#92400e">Development</text>
   <circle cx="340" cy="155" r="15" fill="#d97706"/>
   <text x="340" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">2</text>
-  
+
   <!-- Pillar 3: Support -->
   <rect x="450" y="70" width="160" height="120" rx="12" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
   <text x="530" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Support</text>
@@ -87,7 +87,7 @@ dora_color: '#D97706'
   <text x="530" y="130" text-anchor="middle" font-size="11" fill="#92400e">Psychological Safety</text>
   <circle cx="530" cy="155" r="15" fill="#d97706"/>
   <text x="530" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">3</text>
-  
+
   <!-- Pillar 4: Tools -->
   <rect x="640" y="70" width="160" height="120" rx="12" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
   <text x="720" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Right Tools</text>
@@ -95,17 +95,17 @@ dora_color: '#D97706'
   <text x="720" y="130" text-anchor="middle" font-size="11" fill="#92400e">Technology Access</text>
   <circle cx="720" cy="155" r="15" fill="#d97706"/>
   <text x="720" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">4</text>
-  
+
   <!-- Connection arrows -->
   <line x1="230" y1="130" x2="260" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
   <line x1="420" y1="130" x2="450" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
   <line x1="610" y1="130" x2="640" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
-  
+
   <!-- Research Finding -->
   <text x="450" y="225" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Research Finding</text>
   <text x="450" y="245" text-anchor="middle" font-size="12" fill="#92400e">Teams scoring high on all four pillars are 2.2x more likely</text>
   <text x="450" y="260" text-anchor="middle" font-size="12" fill="#92400e">to recommend their organization as a great place to work</text>
-  
+
   <defs>
     <marker id="arrow-amber" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L10,5 L0,10 Z" fill="#d97706" />
@@ -141,9 +141,9 @@ dora_color: '#D97706'
       <span class="score-label">Pain Level</span>
     </div>
   </div>
-  
+
   <div class="pain-arrow">→</div>
-  
+
   <div class="pain-side low-pain">
     <h4><i class="fas fa-check-circle"></i> Low Deployment Pain</h4>
     <div class="pain-indicators">
@@ -197,9 +197,9 @@ dora_color: '#D97706'
       </ul>
     </div>
   </div>
-  
+
   <div class="flow-arrow">→</div>
-  
+
   <div class="flow-step small-batches">
     <h4><i class="fas fa-boxes"></i> Work in Small Batches</h4>
     <div class="step-content">
@@ -212,9 +212,9 @@ dora_color: '#D97706'
       </ul>
     </div>
   </div>
-  
+
   <div class="flow-arrow">→</div>
-  
+
   <div class="flow-step team-autonomy">
     <h4><i class="fas fa-user-cog"></i> Team Experimentation</h4>
     <div class="step-content">
@@ -279,7 +279,7 @@ dora_color: '#D97706'
       </div>
     </div>
   </div>
-  
+
   <div class="sustainability-solution">
     <h4><i class="fas fa-seedling"></i> Sustainable Practices</h4>
     <div class="solution-items">
@@ -321,7 +321,7 @@ dora_color: '#D97706'
         <span class="stat-text">more likely to recommend organization</span>
       </div>
     </div>
-    
+
     <div class="driver-card right-tools">
       <div class="driver-icon"><i class="fas fa-tools"></i></div>
       <h4>Right Tools & Resources</h4>
@@ -331,7 +331,7 @@ dora_color: '#D97706'
         <span class="stat-text">with job satisfaction</span>
       </div>
     </div>
-    
+
     <div class="driver-card identity-alignment">
       <div class="driver-icon"><i class="fas fa-user-friends"></i></div>
       <h4>Identity & Values Alignment</h4>
@@ -341,7 +341,7 @@ dora_color: '#D97706'
         <span class="stat-text">of software delivery performance</span>
       </div>
     </div>
-    
+
     <div class="driver-card diversity-impact">
       <div class="driver-icon"><i class="fas fa-users"></i></div>
       <h4>Diversity & Inclusion</h4>
@@ -363,7 +363,7 @@ dora_color: '#D97706'
       <h4><i class="fas fa-chart-line"></i> Employee Net Promoter Score (eNPS)</h4>
       <p>High-performing teams are 2.2x more likely to recommend their organization as a great place to work</p>
     </div>
-    
+
     <div class="enps-scale">
       <div class="scale-question">
         <p><strong>How likely are you to recommend your organization to a friend as a great place to work?</strong></p>
@@ -415,38 +415,38 @@ dora_color: '#D97706'
       <h5><i class="fas fa-weight"></i> Work Overload</h5>
       <p>Job demands exceed human limits</p>
     </div>
-    
+
     <div class="risk-factor-card control">
       <div class="risk-icon"><i class="fas fa-hand-paper"></i></div>
       <h5><i class="fas fa-hand-paper"></i> Lack of Control</h5>
       <p>Unable to influence job decisions</p>
     </div>
-    
+
     <div class="risk-factor-card rewards">
       <div class="risk-icon"><i class="fas fa-gift"></i></div>
       <h5><i class="fas fa-gift"></i> Insufficient Rewards</h5>
       <p>Financial, institutional, or social</p>
     </div>
-    
+
     <div class="risk-factor-card community">
       <div class="risk-icon"><i class="fas fa-users-slash"></i></div>
       <h5><i class="fas fa-users-slash"></i> Breakdown of Community</h5>
       <p>Unsupportive workplace environment</p>
     </div>
-    
+
     <div class="risk-factor-card fairness">
       <div class="risk-icon"><i class="fas fa-balance-scale-right"></i></div>
       <h5><i class="fas fa-balance-scale-right"></i> Absence of Fairness</h5>
       <p>Unfair decision-making processes</p>
     </div>
-    
+
     <div class="risk-factor-card values">
       <div class="risk-icon"><i class="fas fa-compass"></i></div>
       <h5><i class="fas fa-compass"></i> Value Conflicts</h5>
       <p>Mismatch between org and personal values</p>
     </div>
   </div>
-  
+
   <div class="mitigation-strategy">
     <div class="strategy-header">
       <h4><i class="fas fa-shield-alt"></i> Mitigation Strategy</h4>
@@ -501,7 +501,7 @@ dora_color: '#D97706'
       <p>Select dependencies to understand their impact on software delivery performance.</p>
     </div>
   </div>
-  
+
   <div class="assessment-card wip-current">
     <div class="assessment-icon"><i class="fas fa-chart-bar"></i></div>
     <h4>WIP Visualization</h4>
@@ -565,7 +565,7 @@ dora_color: '#D97706'
       </div>
     </div>
   </div>
-  
+
   <div class="exercise-card bottleneck-identification">
     <div class="exercise-icon"><i class="fas fa-funnel-dollar"></i></div>
     <h4>Bottleneck Identification</h4>
@@ -594,7 +594,7 @@ dora_color: '#D97706'
       </div>
     </div>
   </div>
-  
+
   <div class="exercise-card wip-assessment">
     <div class="exercise-icon"><i class="fas fa-clipboard-check"></i></div>
     <h4>WIP Limits Assessment</h4>
@@ -650,7 +650,7 @@ dora_color: '#D97706'
         </label>
       </div>
     </div>
-    
+
     <div class="chapter-card ch8">
       <h4><i class="fas fa-boxes"></i> Chapter 8: Product Development</h4>
       <div class="assessment-checklist">
@@ -673,7 +673,7 @@ dora_color: '#D97706'
       </div>
     </div>
   </div>
-  
+
   <div class="assessment-row">
     <div class="chapter-card ch9">
       <h4><i class="fas fa-heart-broken"></i> Chapter 9: Deployment Pain</h4>
@@ -698,7 +698,7 @@ dora_color: '#D97706'
         </div>
       </div>
     </div>
-    
+
     <div class="chapter-card ch10">
       <h4><i class="fas fa-smile"></i> Chapter 10: Employee Satisfaction</h4>
       <div class="satisfaction-assessment">
@@ -759,7 +759,7 @@ dora_color: '#D97706'
       <p><i class="fas fa-info-circle"></i> Select your current maturity level to see research-backed insights and improvement strategies.</p>
     </div>
   </div>
-  
+
   <div class="checkpoint-card deployment-assessment">
     <h4><i class="fas fa-rocket"></i> Deployment Pain Level</h4>
     <p>How painful are your deployments on a 1-10 scale?</p>
@@ -787,7 +787,7 @@ dora_color: '#D97706'
       <p><i class="fas fa-info-circle"></i> Rate your deployment pain to see improvement strategies and performance correlations.</p>
     </div>
   </div>
-  
+
   <div class="checkpoint-card satisfaction-assessment">
     <h4><i class="fas fa-users"></i> Employee Satisfaction Check</h4>
     <p>Evaluate your team's satisfaction factors:</p>
@@ -832,7 +832,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Lean Management Assessment
   const leanInputs = document.querySelectorAll('input[name="lean-maturity"]');
   const leanFeedback = document.getElementById('lean-feedback');
-  
+
   leanInputs.forEach(input => {
     input.addEventListener('change', function() {
       let feedback = '';
@@ -850,11 +850,11 @@ document.addEventListener('DOMContentLoaded', function() {
       leanFeedback.innerHTML = feedback;
     });
   });
-  
+
   // Deployment Pain Assessment
   const deploymentInputs = document.querySelectorAll('input[name="deployment-pain"]');
   const deploymentFeedback = document.getElementById('deployment-feedback');
-  
+
   deploymentInputs.forEach(input => {
     input.addEventListener('change', function() {
       let feedback = '';
@@ -872,20 +872,20 @@ document.addEventListener('DOMContentLoaded', function() {
       deploymentFeedback.innerHTML = feedback;
     });
   });
-  
+
   // Employee Satisfaction Assessment
   const satisfactionInputs = document.querySelectorAll('input[name="satisfaction-factors"]');
   const satisfactionScore = document.getElementById('satisfaction-score');
   const satisfactionFeedback = document.getElementById('satisfaction-feedback');
-  
+
   function updateSatisfactionScore() {
     const checkedFactors = document.querySelectorAll('input[name="satisfaction-factors"]:checked');
     const score = checkedFactors.length;
     satisfactionScore.textContent = score;
-    
+
     let feedback = '';
     let feedbackClass = '';
-    
+
     if (score === 4) {
       feedbackClass = 'success';
       feedback = '<div class="feedback-content success"><i class="fas fa-star"></i><strong>Exceptional Team Environment!</strong> All four satisfaction pillars are present. Research shows teams like yours are 2.2x more likely to recommend their organization and have significantly lower turnover rates. Focus on maintaining these strengths and mentoring other teams.</div>';
@@ -902,10 +902,10 @@ document.addEventListener('DOMContentLoaded', function() {
       feedbackClass = 'danger';
       feedback = '<div class="feedback-content danger"><i class="fas fa-exclamation-circle"></i><strong>Critical Attention Needed!</strong> No satisfaction pillars are present, indicating high risk for turnover and poor performance. Immediate action required across all four areas. Consider starting with team support and tools as these can show quick wins.</div>';
     }
-    
+
     satisfactionFeedback.innerHTML = feedback;
   }
-  
+
   satisfactionInputs.forEach(input => {
     input.addEventListener('change', updateSatisfactionScore);
   });
