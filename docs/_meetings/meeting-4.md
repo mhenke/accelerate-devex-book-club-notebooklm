@@ -302,8 +302,6 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
----
-
 ### ING Transformation Lessons
 
 ### What Made ING's Transformation Successful
@@ -318,8 +316,6 @@ dora_color: '#7c3aed'
 - **Scaling Pressure:** Discipline to go deep before going wide despite pressure to scale quickly
 - **Dispersed Teams:** Experimenting with maintaining collaboration across countries
 - **Impatience:** "You get impatient wanting to speed their learning but...they have to have their own learning"
-
----
 
 ### Discussion Questions
 
@@ -344,8 +340,6 @@ dora_color: '#7c3aed'
 7. **"Make It Your Own":** How can your team adopt a philosophy of experimentation and adaptation rather than copying practices? What from ING's approach resonates most with your context?
 
 8. **Transformation Readiness:** Does your organization have the discipline and patience required for sustainable culture change? What are the biggest obstacles?
-
----
 
 ### Practical Exercises
 
@@ -386,8 +380,6 @@ dora_color: '#7c3aed'
 - Assess investment in learning and development
 - Plan specific leadership behavior changes
 
----
-
 ### Action Items and Commitments
 
 ### Individual Leadership Commitments
@@ -409,8 +401,6 @@ dora_color: '#7c3aed'
 - **ING Practice Adaptation:** Choose one element from ING case study to pilot in adapted form
 - **Investment Planning:** Propose specific budget/time allocation for team learning and experimentation
 
----
-
 ### Culminating Reflection
 
 ### The Single Smallest Change Question
@@ -423,8 +413,6 @@ This question embodies the entire Accelerate philosophy:
 - Focus on concrete, measurable improvement
 - Address real pain points that teams experience
 - Create conditions for continuous improvement
-
----
 
 ### Next Steps: Continue Your Transformation
 
