@@ -1,12 +1,13 @@
 {
   "name": "accelerate-devex-book-club-notebooklm",
   "version": "1.0.0",
+  "type": "module",
   "description": "DevOps book club focused on Accelerate: The Science of Lean Software and DevOps",
   "main": "docs/assets/main.scss",
   "scripts": {
     "lint:css": "stylelint \"docs/assets/**/*.scss\" \"docs/_sass/**/*.scss\"",
     "lint:js": "eslint \"docs/**/*.js\" --ext .js,.html,.md",
-    "lint:md": "markdownlint \"docs/**/*.md\" \"*.md\"",
+    "lint:md": "markdownlint \"docs/_meetings/**/*.md\" \"docs/*.md\" \"*.md\" --ignore \"docs/vendor/**\" --ignore \"docs/.jekyll-cache/**\"",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:md",
     "test:html": "html-validate \"docs/_site/**/*.html\"",
     "test:css": "stylelint \"docs/assets/**/*.scss\" \"docs/_sass/**/*.scss\" \"docs/**/*.html\"",
@@ -41,11 +42,12 @@
   },
   "homepage": "https://github.com/mhenke/accelerate-devex-book-club-notebooklm#readme",
   "devDependencies": {
-    "@brennanbrown/jekyll-audit": "^1.0.0",
-    "@playwright/test": "^1.40.0",
     "@axe-core/playwright": "^4.8.0",
-    "@percy/cli": "^1.31.1",
+    "@brennanbrown/jekyll-audit": "^0.3.1",
     "@lhci/cli": "^0.12.0",
+    "@percy/cli": "^1.31.1",
+    "@percy/playwright": "^1.0.9",
+    "@playwright/test": "^1.40.0",
     "eslint": "^8.57.0",
     "eslint-plugin-html": "^7.1.0",
     "html-validate": "^8.7.4",
@@ -54,7 +56,6 @@
     "pa11y-ci": "^3.1.0",
     "postcss-html": "^1.6.0",
     "stylelint": "^16.2.1",
-    "stylelint-config-prettier": "^10.0.0",
     "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-scss": "^6.1.0"
   },
