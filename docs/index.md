@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<header>
+  <a href="#maincontent" class="sr-only">Skip to main content</a>
 <div class="hero-banner" markdown="0">
 <div class="hero-content">
 <div class="hero-value-prop">Accelerate DevEx Book Club</div>
@@ -15,6 +17,12 @@ title: Home
 </div>
 
 </div>
+
+<nav aria-label="Main navigation">
+  <!-- Add navigation links here if needed -->
+</nav>
+
+<main id="maincontent">
 
 <div class="welcome-compact section-card" markdown="0">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
@@ -38,7 +46,7 @@ title: Home
 <div class="highlight-grid">
 <div class="highlight-card meeting-1">
   <div class="highlight-icon">
-    <i class="fas fa-chart-line"></i>
+    <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
   </div>
   <h3>DORA Metrics</h3>
   <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
@@ -55,7 +63,7 @@ title: Home
 
 <div class="highlight-card meeting-2">
   <div class="highlight-icon">
-    <i class="fas fa-rocket"></i>
+    <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
   </div>
   <h3>Continuous Delivery</h3>
   <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
@@ -72,7 +80,7 @@ title: Home
 
 <div class="highlight-card meeting-3">
   <div class="highlight-icon">
-    <i class="fas fa-columns"></i>
+    <i class="fas fa-columns" role="img" aria-label="Columns"></i>
   </div>
   <h3>Lean Management</h3>
   <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
@@ -89,7 +97,7 @@ title: Home
 
 <div class="highlight-card meeting-4">
   <div class="highlight-icon">
-    <i class="fas fa-users"></i>
+    <i class="fas fa-users" role="img" aria-label="Users"></i>
   </div>
   <h3>Transformational Leadership</h3>
   <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
@@ -111,23 +119,23 @@ title: Home
 <h2><i class="fas fa-bullseye" aria-hidden="true"></i> Success Outcomes</h2>
 <div class="outcomes-grid">
 <div class="outcome-item" data-outcome="dora" onclick="showOutcomeDetail('dora')">
-  <i class="fas fa-chart-line"></i> Master DORA metrics
+  <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i> Master DORA metrics
   <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 <div class="outcome-item" data-outcome="bottlenecks" onclick="showOutcomeDetail('bottlenecks')">
-  <i class="fas fa-search"></i> Identify bottlenecks
+  <i class="fas fa-search" role="img" aria-label="Search"></i> Identify bottlenecks
   <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 <div class="outcome-item" data-outcome="practices" onclick="showOutcomeDetail('practices')">
-  <i class="fas fa-cogs"></i> Apply daily practices
+  <i class="fas fa-cogs" role="img" aria-label="Cogs"></i> Apply daily practices
   <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 <div class="outcome-item" data-outcome="culture" onclick="showOutcomeDetail('culture')">
-  <i class="fas fa-users"></i> Understand culture impact
+  <i class="fas fa-users" role="img" aria-label="Users"></i> Understand culture impact
   <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 <div class="outcome-item" data-outcome="roadmap" onclick="showOutcomeDetail('roadmap')">
-  <i class="fas fa-route"></i> Get transformation roadmap
+  <i class="fas fa-route" role="img" aria-label="Route"></i> Get transformation roadmap
   <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 </div>
@@ -309,10 +317,12 @@ document.addEventListener('keydown', function(event) {
 
 <footer class="ai-attribution" markdown="0">
   <div class="ai-attribution__icon">
-    <i class="fas fa-robot" aria-hidden="true"></i>
+    <i class="fas fa-robot" role="img" aria-label="Robot"></i>
   </div>
   <div class="ai-attribution__content">
     <h4 class="ai-attribution__title">AI-Generated Content</h4>
     <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
   </div>
 </footer>
+
+</main>
