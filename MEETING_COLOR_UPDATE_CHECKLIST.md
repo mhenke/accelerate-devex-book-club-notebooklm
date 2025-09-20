@@ -37,6 +37,10 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] `color:.*#` - All color declarations
 - [ ] `\..*a.*{` - All link selectors that may need color updates
 
+### Header Standardization Searches
+- [ ] `##.*[🔗📚🎯🚀📊💡🛡️⚡🎨🔧]` - Common emoji patterns in h2 headers to remove
+- [ ] `## .*<i class="fas` - FontAwesome icons in h2 headers to remove
+
 ### Cross-Page Searches (After Updating Page X)
 - [ ] Search adjacent pages for old theme colors: `grep -r "OLD_HEX_COLOR" docs/_meetings/`
 - [ ] Search for navigation references: `meeting-X.*background\|meeting-X.*color`
@@ -73,7 +77,8 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] Remove separate icon divs: `<div class="icon-class"><i...></i></div>`
 - [ ] **Search for all `-icon">` patterns to catch all icon divs**
 - [ ] **Standardize header levels: h2 without icons, h3/h4 with inline icons**
-- [ ] Search for `## .*<i class="fas` and remove icons from h2 headers
+- [ ] Search for `## .*<i class="fas` and remove FontAwesome icons from h2 headers
+- [ ] Search for `## .*[🔗📚🎯🚀]` and remove emoji icons from h2 headers
 - [ ] Reduce section margins from `3rem` to `2rem`
 - [ ] Reduce section padding from `2rem` to `1.5rem`
 - [ ] Remove excessive whitespace and line breaks
