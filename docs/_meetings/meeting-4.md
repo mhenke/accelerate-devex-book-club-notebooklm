@@ -1,13 +1,3 @@
-## Supplementary Content
-
-### Audio Podcast
-
-Generate a discussion podcast using the [Meeting 4 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
-
-### Video Summary
-
-Create a visual overview with the [Meeting 4 Video Prompt](../notebooklm-prompts/video-prompt.md)
-
 ---
 layout: meeting
 title: 'Meeting 4: Leadership'
