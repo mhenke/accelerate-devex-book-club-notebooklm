@@ -314,9 +314,18 @@ dora_color: '#4CAF50'
 }
 
 .culture-traits li {
-  padding: 0.5rem 0;
-  font-size: 0.95rem;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.culture-traits li i {
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 /* Transformation Flow */
@@ -488,7 +497,7 @@ dora_color: '#4CAF50'
 
 .assessment-btn {
   position: relative;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   border: 2px solid #ddd;
   border-radius: 12px;
   background: white;
@@ -498,7 +507,8 @@ dora_color: '#4CAF50'
   font-size: 0.95rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  text-align: left;
 }
 
 .assessment-btn input[type="radio"] {
@@ -508,13 +518,14 @@ dora_color: '#4CAF50'
 }
 
 .assessment-btn .radio-mark {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #ddd;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  position: relative;
 }
 
 .assessment-btn.pathological {
@@ -628,12 +639,13 @@ dora_color: '#4CAF50'
 /* Feedback Areas */
 .feedback-area {
   margin-top: 1.5rem;
-  padding: 1rem;
+  padding: 1.25rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
-  border-left: 4px solid #2196f3;
+  border-radius: 12px;
+  border: 2px solid #dee2e6;
   min-height: 80px;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .feedback-area p {
@@ -651,8 +663,9 @@ dora_color: '#4CAF50'
 }
 
 .feedback-area.active {
-  border-left-color: #4caf50;
+  border-color: #4caf50;
   background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
 }
 
 /* Practice Options */
@@ -671,11 +684,11 @@ dora_color: '#4CAF50'
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .practice-item input[type="radio"] {
@@ -685,13 +698,14 @@ dora_color: '#4CAF50'
 }
 
 .practice-item .radio-mark {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #4caf50;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  position: relative;
 }
 
 .practice-item input:checked ~ .radio-mark {
@@ -726,23 +740,24 @@ dora_color: '#4CAF50'
 .cd-selector {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .cd-option {
   position: relative;
   padding: 1rem;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
-  border: 2px solid #2196f3;
+  border: 2px solid #dee2e6;
   transition: all 0.3s ease;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #1565c0;
+  color: #495057;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  text-align: left;
 }
 
 .cd-option input[type="radio"] {
@@ -752,17 +767,19 @@ dora_color: '#4CAF50'
 }
 
 .cd-option .radio-mark {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #2196f3;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4caf50;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  position: relative;
 }
 
 .cd-option input:checked ~ .radio-mark {
-  background: #2196f3;
+  background: #4caf50;
+  border-color: #4caf50;
 }
 
 .cd-option input:checked ~ .radio-mark:after {
@@ -777,23 +794,30 @@ dora_color: '#4CAF50'
 }
 
 .cd-option:hover {
-  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
   color: white;
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+  border-color: #4caf50;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
 }
 
 .cd-option:has(input:checked) {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  border-color: #1565c0;
-  color: #1565c0;
+  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+  border-color: #4caf50;
+  color: #2e7d32;
   font-weight: 600;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
 }
 
 /* Responsive Design for Checkpoint */
 @media (max-width: 768px) {
   .learning-checkpoint {
     grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .checkpoint-card {
     padding: 1.5rem;
   }
   
@@ -802,11 +826,36 @@ dora_color: '#4CAF50'
   }
   
   .assessment-buttons {
-    gap: 0.5rem;
+    gap: 0.75rem;
+  }
+  
+  .assessment-btn {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.9rem;
   }
   
   .practice-options {
+    gap: 0.75rem;
+  }
+  
+  .practice-item {
+    padding: 0.875rem;
+    font-size: 0.85rem;
+  }
+  
+  .cd-option {
+    padding: 0.875rem;
+    font-size: 0.85rem;
     gap: 0.5rem;
+  }
+  
+  .feedback-area {
+    padding: 1rem;
+    min-height: 60px;
+  }
+  
+  .feedback-area p {
+    font-size: 0.85rem;
   }
 }
 }
