@@ -39,17 +39,35 @@ layout: default
     <!-- Enhanced Navigation -->
     <nav class="meeting-navigation">
       {% assign meetings = site.meetings | sort: "week" %}
+      {% assign current_index = nil %}
+      {% assign prev_meeting = nil %}
+      {% assign next_meeting = nil %}
+      
+      <!-- Find current meeting index -->
       {% for meeting in meetings %}
-        {% if meeting.url == page.url %}
+        {% if meeting.path == page.path %}
           {% assign current_index = forloop.index0 %}
           {% break %}
         {% endif %}
       {% endfor %}
       
-      <div class="nav-links">
+      <!-- Set previous and next meetings -->
+      {% if current_index != nil %}
         {% if current_index > 0 %}
-          {% assign prev_meeting = meetings[current_index | minus: 1] %}
-          <a href="{{ prev_meeting.url }}" class="nav-link prev">
+          {% assign prev_index = current_index | minus: 1 %}
+          {% assign prev_meeting = meetings[prev_index] %}
+        {% endif %}
+        
+        {% assign max_index = meetings.size | minus: 1 %}
+        {% if current_index < max_index %}
+          {% assign next_index = current_index | plus: 1 %}
+          {% assign next_meeting = meetings[next_index] %}
+        {% endif %}
+      {% endif %}
+      
+      <div class="nav-links">
+        {% if prev_meeting %}
+          <a href="{{ prev_meeting.url | relative_url }}" class="nav-link prev">
             <div class="nav-icon">←</div>
             <div class="nav-content">
               <span class="nav-label">Previous</span>
@@ -58,9 +76,8 @@ layout: default
           </a>
         {% endif %}
         
-        {% if current_index < meetings.size | minus: 1 %}
-          {% assign next_meeting = meetings[current_index | plus: 1] %}
-          <a href="{{ next_meeting.url }}" class="nav-link next">
+        {% if next_meeting %}
+          <a href="{{ next_meeting.url | relative_url }}" class="nav-link next">
             <div class="nav-content">
               <span class="nav-label">Next</span>
               <span class="nav-title">{{ next_meeting.title }}</span>
@@ -73,9 +90,20 @@ layout: default
       <!-- Meeting Progress Indicator -->
       <div class="meeting-progress">
         <div class="progress-bar">
-          <div class="progress-fill" style="width: {{ current_index | plus: 1 | times: 100 | divided_by: meetings.size }}%"></div>
+          {% if current_index != nil %}
+            {% assign progress_percent = current_index | plus: 1 | times: 100 | divided_by: meetings.size %}
+            <div class="progress-fill" style="width: {{ progress_percent }}%"></div>
+          {% else %}
+            <div class="progress-fill" style="width: 0%"></div>
+          {% endif %}
         </div>
-        <span class="progress-text">{{ current_index | plus: 1 }} of {{ meetings.size }} meetings</span>
+        <span class="progress-text">
+          {% if current_index != nil %}
+            {{ current_index | plus: 1 }} of {{ meetings.size }} meetings
+          {% else %}
+            ? of {{ meetings.size }} meetings
+          {% endif %}
+        </span>
       </div>
     </nav>
   </div>
