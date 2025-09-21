@@ -67,7 +67,8 @@ layout: default
       
       <div class="nav-links">
         {% if prev_meeting %}
-          <a href="{{ prev_meeting.url | relative_url }}" class="nav-link prev">
+          {% assign prev_meeting_num = prev_meeting.path | split: '-' | last | split: '.' | first %}
+          <a href="{{ prev_meeting.url | relative_url }}" class="nav-link prev meeting-{{ prev_meeting_num }}">
             <div class="nav-icon">←</div>
             <div class="nav-content">
               <span class="nav-label">Previous</span>
@@ -77,7 +78,8 @@ layout: default
         {% endif %}
         
         {% if next_meeting %}
-          <a href="{{ next_meeting.url | relative_url }}" class="nav-link next">
+          {% assign next_meeting_num = next_meeting.path | split: '-' | last | split: '.' | first %}
+          <a href="{{ next_meeting.url | relative_url }}" class="nav-link next meeting-{{ next_meeting_num }}">
             <div class="nav-content">
               <span class="nav-label">Next</span>
               <span class="nav-title">{{ next_meeting.title }}</span>
@@ -438,31 +440,66 @@ layout: default
   white-space: nowrap;
 }
 
-.nav-link.prev {
-  background: #fff9c4;
-  border-color: #fbbf24;
-  color: #92400e;
+/* Meeting-specific colors */
+.nav-link.meeting-1 {
+  background: #e3f2fd;
+  border-color: #2196f3;
+  color: #0d47a1;
 }
 
-.nav-link.prev:hover {
-  background: #fbbf24;
+.nav-link.meeting-1:hover {
+  background: #2196f3;
   color: white;
   transform: translateX(-2px);
-  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
+
+.nav-link.meeting-2 {
+  background: #fff3e0;
+  border-color: #ff9800;
+  color: #e65100;
+}
+
+.nav-link.meeting-2:hover {
+  background: #ff9800;
+  color: white;
+  transform: translateX(2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+.nav-link.meeting-3 {
+  background: #fce4ec;
+  border-color: #e91e63;
+  color: #880e4f;
+}
+
+.nav-link.meeting-3:hover {
+  background: #e91e63;
+  color: white;
+  transform: translateX(-2px);
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+}
+
+.nav-link.meeting-4 {
+  background: #ffebee;
+  border-color: #f44336;
+  color: #b71c1c;
+}
+
+.nav-link.meeting-4:hover {
+  background: #f44336;
+  color: white;
+  transform: translateX(2px);
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+}
+
+/* Direction-based positioning */
+.nav-link.prev {
+  margin-right: auto;
 }
 
 .nav-link.next {
-  background: #dbeafe;
-  border-color: #3b82f6;
-  color: #1e40af;
   margin-left: auto;
-}
-
-.nav-link.next:hover {
-  background: #3b82f6;
-  color: white;
-  transform: translateX(2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .nav-link.completion-badge {
@@ -537,7 +574,23 @@ layout: default
   margin: 0;
 }
 
-/* Responsive Design */
+/* Medium screen adjustments */
+@media (max-width: 900px) {
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .nav-title {
+    font-size: 0.8rem;
+  }
+  
+  .nav-label {
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile responsive design */
 @media (max-width: 768px) {
   .meeting-hero {
     padding: 4rem 1rem 2rem;
@@ -579,7 +632,7 @@ layout: default
   
   .nav-links {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
     align-items: stretch;
     margin-bottom: 0;
   }
@@ -587,15 +640,28 @@ layout: default
   .nav-link {
     justify-content: center;
     text-align: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    white-space: normal;
+    min-height: 3rem;
   }
   
   .nav-link.next {
-    margin-left: 0;
     order: 2;
   }
   
   .nav-link.prev {
     order: 1;
+  }
+  
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-title {
+    font-size: 0.85rem;
+    text-align: center;
   }
   
   .meeting-progress {
