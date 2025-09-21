@@ -191,6 +191,9 @@ h2 {
   position: relative;
   z-index: 2;
   animation: fadeInUp 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero-content h1 {
@@ -279,9 +282,14 @@ h2 {
 }
 
 /* Hero Site Title */
+.hero-banner .site-title {
+  display: block;
+  width: 100%;
+}
+
 .hero-banner .site-title h2 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--text-white) !important;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
