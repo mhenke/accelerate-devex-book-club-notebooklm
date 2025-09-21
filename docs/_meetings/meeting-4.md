@@ -157,29 +157,69 @@ dora_color: '#F44336'
     <div class="example-category">
       <h4><i class="fas fa-tools"></i> Technical Examples</h4>
       <div class="example-items">
-        <div class="example-item">Add one automated test</div>
-        <div class="example-item">Create deployment checklist</div>
-        <div class="example-item">Set up monitoring alert</div>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="automated-test">
+          <span class="radio-mark"></span>
+          Add one automated test
+        </label>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="deployment-checklist">
+          <span class="radio-mark"></span>
+          Create deployment checklist
+        </label>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="monitoring-alert">
+          <span class="radio-mark"></span>
+          Set up monitoring alert
+        </label>
       </div>
     </div>
     
     <div class="example-category">
       <h4><i class="fas fa-users"></i> Process Examples</h4>
       <div class="example-items">
-        <div class="example-item">Peer review before deploy</div>
-        <div class="example-item">Document rollback steps</div>
-        <div class="example-item">Schedule deployment window</div>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="peer-review">
+          <span class="radio-mark"></span>
+          Peer review before deploy
+        </label>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="rollback-steps">
+          <span class="radio-mark"></span>
+          Document rollback steps
+        </label>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="deployment-window">
+          <span class="radio-mark"></span>
+          Schedule deployment window
+        </label>
       </div>
     </div>
     
     <div class="example-category">
       <h4><i class="fas fa-bullhorn"></i> Communication Examples</h4>
       <div class="example-items">
-        <div class="example-item">Notify stakeholders earlier</div>
-        <div class="example-item">Share deployment status</div>
-        <div class="example-item">Create deployment dashboard</div>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="notify-stakeholders">
+          <span class="radio-mark"></span>
+          Notify stakeholders earlier
+        </label>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="share-status">
+          <span class="radio-mark"></span>
+          Share deployment status
+        </label>
+        <label class="example-item">
+          <input type="radio" name="smallest-change" value="deployment-dashboard">
+          <span class="radio-mark"></span>
+          Create deployment dashboard
+        </label>
       </div>
     </div>
+  </div>
+  
+  <div class="feedback-area" id="change-feedback">
+    <p>Select a smallest change option to understand its impact and implementation approach.</p>
   </div>
 </div>
 
@@ -575,6 +615,7 @@ Congratulations! You've completed the structured book club journey. Continue you
 }
 
 .example-item {
+  position: relative;
   padding: 0.75rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 8px;
@@ -583,12 +624,53 @@ Congratulations! You've completed the structured book club journey. Continue you
   color: #666;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.example-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.example-item .radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ff9800;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.example-item input:checked ~ .radio-mark {
+  background: #ff9800;
+}
+
+.example-item input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .example-item:hover {
   background: linear-gradient(135deg, #ff9800, #f57c00);
   color: white;
   transform: translateX(4px);
+}
+
+.example-item:has(input:checked) {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-left: 4px solid #ff9800;
+  color: #e65100;
+  font-weight: 600;
 }
 
 /* Commitment Tracker */
@@ -772,3 +854,57 @@ Congratulations! You've completed the structured book club journey. Continue you
   }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Feedback content from Accelerate research and DevOps best practices
+  const changeInfo = {
+    "automated-test": {
+      title: "Add One Automated Test",
+      content: "Start with the smallest possible test to begin building confidence in deployments. According to Accelerate research, test automation is one of the key technical practices that drive software delivery performance. Even a single test reduces manual verification and begins establishing the safety net needed for frequent deployments."
+    },
+    "deployment-checklist": {
+      title: "Create Deployment Checklist", 
+      content: "A simple checklist ensures consistency and reduces errors during deployments. This process improvement helps establish standard work, a key lean principle. It also reduces cognitive load on team members and makes deployments more predictable, supporting higher deployment frequency over time."
+    },
+    "monitoring-alert": {
+      title: "Set Up Monitoring Alert",
+      content: "Monitoring and observability are essential for reducing Mean Time to Restore (MTTR), one of the four DORA metrics. A single alert for a critical system component provides early warning of issues and enables faster response. This supports both stability and the confidence needed for more frequent deployments."
+    },
+    "peer-review": {
+      title: "Peer Review Before Deploy",
+      content: "Peer review increases deployment confidence through shared knowledge and catches potential issues before production. This practice balances speed with safety, supporting both high deployment frequency and low change failure rate. It also builds team capability and reduces bus factor risks."
+    },
+    "rollback-steps": {
+      title: "Document Rollback Steps",
+      content: "Clear rollback procedures reduce Mean Time to Restore when issues occur. This preparation enables teams to deploy with confidence, knowing they can quickly revert if needed. Documentation also enables any team member to perform rollbacks, reducing dependency on specific individuals."
+    },
+    "deployment-window": {
+      title: "Schedule Deployment Window",
+      content: "While not the end goal, scheduled windows can be a stepping stone toward continuous deployment. They provide predictability and allow for focused attention during deployments. Over time, as confidence grows through other improvements, these windows can be shortened and eventually eliminated."
+    },
+    "notify-stakeholders": {
+      title: "Notify Stakeholders Earlier",
+      content: "Communication reduces surprises and builds trust with stakeholders. Early notification allows stakeholders to prepare for changes and provide feedback before deployment. This practice supports the cultural aspects of DevOps transformation and helps build organization-wide support for frequent deployments."
+    },
+    "share-status": {
+      title: "Share Deployment Status",
+      content: "Transparent communication about deployment status builds trust and enables rapid response if issues arise. Status sharing also celebrates successful deployments and builds momentum for continuous improvement. It supports the generative culture characteristics identified in Westrum's research."
+    },
+    "deployment-dashboard": {
+      title: "Create Deployment Dashboard",
+      content: "Visual dashboards make deployment information accessible to all stakeholders and support data-driven decision making. Dashboards can track DORA metrics over time and highlight improvement trends. This visibility supports both technical and cultural aspects of DevOps transformation."
+    }
+  };
+
+  // Add event listeners for smallest change radio buttons
+  document.querySelectorAll('input[name="smallest-change"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('change-feedback');
+      const info = changeInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+});
+</script>
