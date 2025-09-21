@@ -212,6 +212,7 @@ dora_color: '#0F766E'
       <p><strong>Structure:</strong> Full-stack teams with all skills</p>
       <p><strong>Result:</strong> Loosely coupled, independently deployable services</p>
     </div>
+
   </div>
 </div>
 
