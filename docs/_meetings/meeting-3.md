@@ -22,41 +22,6 @@ dora_color: '#FF9800'
 	Your browser does not support the audio element.
 </audio>
 
-## Architecture: Tightly Coupled vs Loosely Coupled
-
-<div class="architecture-comparison">
-  <div class="arch-side tight-coupled">
-    <div class="arch-icon"><i class="fas fa-link"></i></div>
-    <h3>Tightly Coupled</h3>
-    <div class="arch-content">
-      <p><strong>High Dependencies</strong></p>
-      <ul>
-        <li><i class="fas fa-ban"></i> Teams block each other</li>
-        <li><i class="fas fa-phone"></i> Constant coordination needed</li>
-        <li><i class="fas fa-turtle"></i> Slower deployment cycles</li>
-        <li><i class="fas fa-fire"></i> Cascading failures</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="vs-divider">
-    <span>VS</span>
-  </div>
-  
-  <div class="arch-side loose-coupled">
-    <div class="arch-icon"><i class="fas fa-puzzle-piece"></i></div>
-    <h3>Loosely Coupled</h3>
-    <div class="arch-content">
-      <p><strong>Independent Teams</strong></p>
-      <ul>
-        <li><i class="fas fa-check"></i> Autonomous team work</li>
-        <li><i class="fas fa-rocket"></i> Faster feature delivery</li>
-        <li><i class="fas fa-shield-alt"></i> Isolated failures</li>
-        <li><i class="fas fa-chart-line"></i> Better scalability</li>
-      </ul>
-    </div>
-  </div>
-</div>
 
 ## Lean Management Principles in Action
 
@@ -348,74 +313,81 @@ dora_color: '#FF9800'
 [ ] Identify one change approval step that could be streamlined
 [ ] Observe and document burnout risk factors in your environment
 
+## 🧭 Navigation
+
+<div class="meeting-navigation">
+  <div class="nav-item prev">
+    <a href="meeting-2.html">
+      <i class="fas fa-arrow-left"></i>
+      <span>Previous: Technical Excellence & Continuous Delivery</span>
+    </a>
+  </div>
+  <div class="nav-item next">
+    <a href="meeting-4.html">
+      <span>Next: Leadership & Transformation</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
 <style>
-/* Architecture Comparison */
-.architecture-comparison {
+/* Meeting Navigation */
+.meeting-navigation {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  align-items: center;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
   border-radius: 16px;
-  border: 2px solid #ff9800;
+  border: 2px solid #9ca3af;
 }
 
-.arch-side {
-  flex: 1;
-  text-align: center;
-}
-
-.arch-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.arch-side h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.tight-coupled h3 {
-  color: #d32f2f;
-}
-
-.loose-coupled h3 {
-  color: #2e7d32;
-}
-
-.arch-content p {
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.arch-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.arch-content li {
-  padding: 0.3rem 0;
-  font-size: 0.95rem;
-}
-
-.vs-divider {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ff9800;
-  background: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.nav-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 3px solid #ff9800;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #4b5563;
+}
+
+.nav-item.prev {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border: 2px solid #16a34a;
+}
+
+.nav-item.prev:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: white;
+  transform: translateX(-4px);
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+}
+
+.nav-item.next {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border: 2px solid #3b82f6;
+}
+
+.nav-item.next:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-item i {
+  font-size: 1.2rem;
 }
 
 /* Lean Principles Board */
@@ -1039,18 +1011,6 @@ dora_color: '#FF9800'
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .architecture-comparison {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .vs-divider {
-    transform: rotate(90deg);
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-  
   .lean-principles-board {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
