@@ -77,13 +77,61 @@ Example: The DORA Metrics Infographic is a CSS grid with SVG icons, colored card
 Hero Banner: Gradient background, left-aligned bold text, circuit board SVG overlay, rocket/upward arrow icon, DORA metric icons
 All diagrams and badges should use web-native technologies and be responsive
 
-## Developer Workflow
+## Developer Workflow & Testing
 
+### Code Quality Commands (ALWAYS RUN BEFORE COMMITTING)
+**IMPORTANT**: Always run validation before committing changes to ensure code quality.
+
+#### Quick Local Check (During Development)
+```bash
+npm run lint && npm run build
+```
+- Runs all linters (CSS, JS, Markdown) and builds the site
+- Catches most issues quickly (~5-10 seconds)
+- Use this for fast feedback while coding
+
+#### Full Local Validation (Before Committing) 
+```bash
+npm run validate
+```
+- Complete pipeline: build + test including linting, HTML validation, accessibility checks
+- **ALWAYS use this before every commit**
+
+#### Comprehensive Audit (Before Releases)
+```bash
+npm run audit  
+```
+- Runs build + jekyll-audit for full performance, accessibility, SEO, link validation
+- Use before major releases or significant changes
+
+#### Individual Test Commands
+```bash
+npm run lint          # All linters (fastest check)
+npm run lint:css      # CSS/SCSS linting only
+npm run lint:js       # JavaScript linting only  
+npm run lint:md       # Markdown linting only
+npm run test:html     # HTML validation
+npm run test:jekyll-audit  # Full audit suite
+```
+
+#### Recommended Testing Workflow
+1. **During development**: `npm run lint` (fast feedback)
+2. **Before committing**: `npm run validate` (full check) 
+3. **Before major releases**: `npm run audit` (comprehensive)
+
+### Jekyll Development
 - Edit SCSS in `docs/assets/main.scss` (must have YAML front matter)
 - Jekyll auto-compiles SCSS to `/assets/main.css` on build
 - Site is served from `/accelerate-devex-book-club-notebooklm/` (project pages)
 - Reference assets with the full repo path (e.g., `/accelerate-devex-book-club-notebooklm/assets/main.css`)
-- No build scripts; rely on Jekyll/GitHub Pages for compilation
+
+### Quality Tools Integrated
+- **Stylelint**: CSS/SCSS code quality with Jekyll-specific rules
+- **ESLint**: JavaScript code quality with HTML/Markdown support
+- **Markdownlint**: Markdown formatting and structure
+- **HTML-validate**: HTML markup validation with Jekyll compatibility
+- **Jekyll-audit**: Performance, accessibility, SEO auditing via @brennanbrown/jekyll-audit
+- **HTML Proofer**: Link and image validation
 
 ## Patterns & Conventions
 
