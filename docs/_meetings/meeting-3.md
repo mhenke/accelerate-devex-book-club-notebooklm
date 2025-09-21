@@ -4,6 +4,7 @@ title: 'Meeting 3: Architecture'
 subtitle: 'Architecture, Autonomy, and Lean Thinking'
 week: 5
 chapters: '9-12'
+duration: '1 Hour'
 dora_color: '#FF9800'
 ---
 
