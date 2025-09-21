@@ -12,35 +12,35 @@ dora_color: '#4CAF50'
 
 <div class="culture-types-diagram">
   <div class="culture-card pathological">
-    <div class="culture-icon">⚠️</div>
+    <div class="culture-icon"><i class="fas fa-exclamation-triangle"></i></div>
     <h3>Pathological</h3>
     <p class="culture-subtitle">Power-Oriented</p>
     <ul class="culture-traits">
-      <li>❌ Low cooperation</li>
-      <li>🔫 Messengers shot</li>
-      <li>🙅 Responsibility shirked</li>
+      <li><i class="fas fa-times"></i> Low cooperation</li>
+      <li><i class="fas fa-user-slash"></i> Messengers shot</li>
+      <li><i class="fas fa-hand-paper"></i> Responsibility shirked</li>
     </ul>
   </div>
   
   <div class="culture-card bureaucratic">
-    <div class="culture-icon">📋</div>
+    <div class="culture-icon"><i class="fas fa-clipboard-list"></i></div>
     <h3>Bureaucratic</h3>
     <p class="culture-subtitle">Rule-Oriented</p>
     <ul class="culture-traits">
-      <li>📊 Modest cooperation</li>
-      <li>😐 Messengers neglected</li>
-      <li>📏 Narrow responsibilities</li>
+      <li><i class="fas fa-chart-bar"></i> Modest cooperation</li>
+      <li><i class="fas fa-user-times"></i> Messengers neglected</li>
+      <li><i class="fas fa-ruler"></i> Narrow responsibilities</li>
     </ul>
   </div>
   
   <div class="culture-card generative">
-    <div class="culture-icon">🚀</div>
+    <div class="culture-icon"><i class="fas fa-rocket"></i></div>
     <h3>Generative</h3>
     <p class="culture-subtitle">Performance-Oriented</p>
     <ul class="culture-traits">
-      <li>✅ High cooperation</li>
-      <li>🎓 Messengers trained</li>
-      <li>🤝 Risks shared</li>
+      <li><i class="fas fa-check"></i> High cooperation</li>
+      <li><i class="fas fa-graduation-cap"></i> Messengers trained</li>
+      <li><i class="fas fa-handshake"></i> Risks shared</li>
     </ul>
   </div>
 </div>
@@ -49,19 +49,19 @@ dora_color: '#4CAF50'
 
 <div class="transformation-flow">
   <div class="flow-step">
-    <div class="step-icon">🎯</div>
+    <div class="step-icon"><i class="fas fa-bullseye"></i></div>
     <h4>Act Your Way</h4>
     <p>Behavioral changes</p>
   </div>
   <div class="flow-arrow">→</div>
   <div class="flow-step">
-    <div class="step-icon">🔄</div>
+    <div class="step-icon"><i class="fas fa-sync-alt"></i></div>
     <h4>Into Better Culture</h4>
     <p>Cultural transformation</p>
   </div>
   <div class="flow-arrow">→</div>
   <div class="flow-step">
-    <div class="step-icon">📈</div>
+    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
     <h4>Higher Performance</h4>
     <p>Measurable results</p>
   </div>
@@ -71,37 +71,37 @@ dora_color: '#4CAF50'
 
 <div class="cd-principles-grid">
   <div class="principle-card quality">
-    <div class="principle-icon">🏗️</div>
+    <div class="principle-icon"><i class="fas fa-tools"></i></div>
     <h4>Build Quality In</h4>
     <p>Start with quality, don't inspect later</p>
   </div>
   
   <div class="principle-card batches">
-    <div class="principle-icon">📦</div>
+    <div class="principle-icon"><i class="fas fa-box"></i></div>
     <h4>Small Batches</h4>
     <p>Manageable, testable units</p>
   </div>
   
   <div class="principle-card automation">
-    <div class="principle-icon">🤖</div>
+    <div class="principle-icon"><i class="fas fa-robot"></i></div>
     <h4>Automate Tasks</h4>
     <p>Free humans for creative work</p>
   </div>
   
   <div class="principle-card version">
-    <div class="principle-icon">📂</div>
+    <div class="principle-icon"><i class="fas fa-folder"></i></div>
     <h4>Version Control</h4>
     <p>All artifacts under control</p>
   </div>
   
   <div class="principle-card trunk">
-    <div class="principle-icon">🌳</div>
+    <div class="principle-icon"><i class="fas fa-code-branch"></i></div>
     <h4>Trunk-Based Dev</h4>
     <p>Short branches, frequent integration</p>
   </div>
   
   <div class="principle-card testing">
-    <div class="principle-icon">🧪</div>
+    <div class="principle-icon"><i class="fas fa-flask"></i></div>
     <h4>Test Automation</h4>
     <p>Automated testing at all levels</p>
   </div>
@@ -111,49 +111,93 @@ dora_color: '#4CAF50'
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card culture-assessment">
-    <div class="checkpoint-icon">📊</div>
+    <div class="checkpoint-icon"><i class="fas fa-chart-bar"></i></div>
     <h4>Culture Assessment</h4>
     <p>Rate your organization on Westrum's model:</p>
     <div class="assessment-buttons">
-      <button class="assessment-btn pathological">Pathological</button>
-      <button class="assessment-btn bureaucratic">Bureaucratic</button>
-      <button class="assessment-btn generative">Generative</button>
+      <label class="assessment-btn pathological">
+        <input type="radio" name="culture-type" value="pathological">
+        <span class="radio-mark"></span>
+        Pathological
+      </label>
+      <label class="assessment-btn bureaucratic">
+        <input type="radio" name="culture-type" value="bureaucratic">
+        <span class="radio-mark"></span>
+        Bureaucratic
+      </label>
+      <label class="assessment-btn generative">
+        <input type="radio" name="culture-type" value="generative">
+        <span class="radio-mark"></span>
+        Generative
+      </label>
     </div>
   </div>
   
   <div class="checkpoint-card behavioral-shifts">
-    <div class="checkpoint-icon">🔄</div>
+    <div class="checkpoint-icon"><i class="fas fa-sync-alt"></i></div>
     <h4>Behavioral Shifts</h4>
     <p>Which practice could shift your culture?</p>
     <div class="practice-options">
-      <div class="practice-item">🤝 Peer review over approval boards</div>
-      <div class="practice-item">📊 Transparent metrics sharing</div>
-      <div class="practice-item">🎓 Learning from failures</div>
-      <div class="practice-item">⚡ Rapid feedback loops</div>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="peer-review">
+        <span class="radio-mark"></span>
+        <i class="fas fa-handshake"></i> Peer review over approval boards
+      </label>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="transparent-metrics">
+        <span class="radio-mark"></span>
+        <i class="fas fa-chart-bar"></i> Transparent metrics sharing
+      </label>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="learning-failures">
+        <span class="radio-mark"></span>
+        <i class="fas fa-graduation-cap"></i> Learning from failures
+      </label>
+      <label class="practice-item">
+        <input type="radio" name="cultural-practice" value="rapid-feedback">
+        <span class="radio-mark"></span>
+        <i class="fas fa-bolt"></i> Rapid feedback loops
+      </label>
     </div>
   </div>
   
   <div class="checkpoint-card cd-gaps">
-    <div class="checkpoint-icon">🎯</div>
+    <div class="checkpoint-icon"><i class="fas fa-bullseye"></i></div>
     <h4>CD Priority</h4>
     <p>Which principle needs immediate attention?</p>
     <div class="cd-selector">
-      <div class="cd-option">🏗️ Build Quality In</div>
-      <div class="cd-option">📦 Small Batches</div>
-      <div class="cd-option">🤖 Automate Tasks</div>
-      <div class="cd-option">🌳 Trunk-Based Dev</div>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="build-quality">
+        <span class="radio-mark"></span>
+        <i class="fas fa-tools"></i> Build Quality In
+      </label>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="small-batches">
+        <span class="radio-mark"></span>
+        <i class="fas fa-box"></i> Small Batches
+      </label>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="automate">
+        <span class="radio-mark"></span>
+        <i class="fas fa-robot"></i> Automate Tasks
+      </label>
+      <label class="cd-option">
+        <input type="radio" name="cd-priority" value="trunk-based">
+        <span class="radio-mark"></span>
+        <i class="fas fa-code-branch"></i> Trunk-Based Dev
+      </label>
     </div>
   </div>
 </div>
 
-## 🎧 Listen to the Meeting 2 Podcast
+## <i class="fas fa-headphones"></i> Listen to the Meeting 2 Podcast
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
-## 📺 Watch the Meeting 2 Video
+## <i class="fas fa-video"></i> Watch the Meeting 2 Video
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-video.mp4" type="video/mp4">
@@ -161,6 +205,13 @@ dora_color: '#4CAF50'
 </video>
 
 ---
+
+## Discussion Questions
+
+1. **Culture Assessment:** Where is your organization on Westrum's model?
+2. **Behavioral Shifts:** What practices could shift your culture?
+3. **CD Gaps:** Which CD principles need improvement?
+4. **Quick Wins:** What could be automated this month?
 
 ## Action Items for Next Meeting
 
@@ -427,6 +478,7 @@ dora_color: '#4CAF50'
 }
 
 .assessment-btn {
+  position: relative;
   padding: 0.75rem 1.5rem;
   border: 2px solid #ddd;
   border-radius: 12px;
@@ -435,11 +487,49 @@ dora_color: '#4CAF50'
   transition: all 0.3s ease;
   font-weight: 500;
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.assessment-btn input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.assessment-btn .radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .assessment-btn.pathological {
   border-color: #f44336;
   color: #d32f2f;
+}
+
+.assessment-btn.pathological .radio-mark {
+  border-color: #f44336;
+}
+
+.assessment-btn.pathological input:checked ~ .radio-mark {
+  background: #f44336;
+}
+
+.assessment-btn.pathological input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .assessment-btn.pathological:hover {
@@ -448,9 +538,34 @@ dora_color: '#4CAF50'
   transform: scale(1.02);
 }
 
+.assessment-btn.pathological:has(input:checked) {
+  background: #ffebee;
+  border-color: #d32f2f;
+  color: #d32f2f;
+}
+
 .assessment-btn.bureaucratic {
   border-color: #ff9800;
   color: #f57c00;
+}
+
+.assessment-btn.bureaucratic .radio-mark {
+  border-color: #ff9800;
+}
+
+.assessment-btn.bureaucratic input:checked ~ .radio-mark {
+  background: #ff9800;
+}
+
+.assessment-btn.bureaucratic input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .assessment-btn.bureaucratic:hover {
@@ -459,15 +574,46 @@ dora_color: '#4CAF50'
   transform: scale(1.02);
 }
 
+.assessment-btn.bureaucratic:has(input:checked) {
+  background: #fff8e1;
+  border-color: #f57c00;
+  color: #f57c00;
+}
+
 .assessment-btn.generative {
   border-color: #4caf50;
   color: #388e3c;
+}
+
+.assessment-btn.generative .radio-mark {
+  border-color: #4caf50;
+}
+
+.assessment-btn.generative input:checked ~ .radio-mark {
+  background: #4caf50;
+}
+
+.assessment-btn.generative input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .assessment-btn.generative:hover {
   background: #4caf50;
   color: white;
   transform: scale(1.02);
+}
+
+.assessment-btn.generative:has(input:checked) {
+  background: #e8f5e8;
+  border-color: #388e3c;
+  color: #388e3c;
 }
 
 /* Practice Options */
@@ -478,6 +624,7 @@ dora_color: '#4CAF50'
 }
 
 .practice-item {
+  position: relative;
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
@@ -487,6 +634,40 @@ dora_color: '#4CAF50'
   text-align: left;
   font-size: 0.95rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.practice-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.practice-item .radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.practice-item input:checked ~ .radio-mark {
+  background: #4caf50;
+}
+
+.practice-item input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .practice-item:hover {
@@ -494,6 +675,12 @@ dora_color: '#4CAF50'
   color: white;
   transform: translateX(4px);
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.practice-item:has(input:checked) {
+  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+  border-left-color: #2e7d32;
+  color: #2e7d32;
 }
 
 /* CD Selector */
@@ -504,6 +691,7 @@ dora_color: '#4CAF50'
 }
 
 .cd-option {
+  position: relative;
   padding: 1rem;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   border-radius: 12px;
@@ -513,6 +701,40 @@ dora_color: '#4CAF50'
   font-size: 0.9rem;
   font-weight: 500;
   color: #1565c0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cd-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cd-option .radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.cd-option input:checked ~ .radio-mark {
+  background: #2196f3;
+}
+
+.cd-option input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .cd-option:hover {
@@ -520,6 +742,13 @@ dora_color: '#4CAF50'
   color: white;
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+}
+
+.cd-option:has(input:checked) {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-color: #1565c0;
+  color: #1565c0;
+  font-weight: 600;
 }
 
 /* Responsive Design for Checkpoint */
