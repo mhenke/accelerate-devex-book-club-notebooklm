@@ -11,8 +11,7 @@
 
 /* Modern Book Club Theme - Professional Color Palette */
 :root {
-  /* Clean 3-Breakpoint System - 2025 Standards */
-  --mobile: 576px;
+  /* Clean 2-Breakpoint System - 2025 Standards */
   --tablet: 768px; 
   --desktop: 1024px;
   
@@ -1529,31 +1528,6 @@ pre {
   }
 }
 
-@media (max-width: 575px) {
-  .devops-wheel-section {
-    padding: 2rem 1rem;
-  }
-  
-  .devops-wheel {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .wheel-center {
-    width: 80px;
-    height: 80px;
-    font-size: 0.8rem;
-  }
-  
-  .practice-spoke {
-    width: 125px;
-  }
-  
-  .spoke-label {
-    right: -60px;
-    font-size: 0.7rem;
-  }
-}
 
 /* DevOps Virtuous Cycle */
 .devops-cycle-section {
@@ -1771,7 +1745,7 @@ pre {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .devops-cycle-section {
     padding: 2rem 1rem;
   }
@@ -1809,8 +1783,8 @@ pre {
   }
 }
 
-/* Small Mobile (575px and down) */
-@media (max-width: 575px) {
+/* Mobile (767px and down) */
+@media (max-width: 767px) {
   .wrapper {
     margin: 1rem;
     padding: 1rem;
@@ -1947,7 +1921,7 @@ pre {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .hero-banner {
     padding: 3rem 1rem;
   }
