@@ -26,29 +26,25 @@ dora_color: '#2196F3'
 
 <div class="dora-metrics-grid">
   <div class="metric-card lead-time">
-    <div class="metric-icon"><i class="fas fa-chart-line"></i></div>
-    <h3>Delivery Lead Time</h3>
+    <h3><i class="fas fa-chart-line"></i> Delivery Lead Time</h3>
     <p class="metric-description">Time from code commit to production deployment</p>
     <div class="metric-goal">Goal: Hours/Days not Weeks/Months</div>
   </div>
   
   <div class="metric-card deploy-frequency">
-    <div class="metric-icon"><i class="fas fa-rocket"></i></div>
-    <h3>Deployment Frequency</h3>
+    <h3><i class="fas fa-rocket"></i> Deployment Frequency</h3>
     <p class="metric-description">How often code gets deployed to production</p>
     <div class="metric-goal">Goal: Multiple times per day</div>
   </div>
   
   <div class="metric-card restore-time">
-    <div class="metric-icon"><i class="fas fa-clock"></i></div>
-    <h3>Time to Restore Service</h3>
+    <h3><i class="fas fa-clock"></i> Time to Restore Service</h3>
     <p class="metric-description">How quickly service is restored after incidents</p>
     <div class="metric-goal">Goal: Under 1 hour</div>
   </div>
   
   <div class="metric-card change-fail">
-    <div class="metric-icon"><i class="fas fa-exclamation-triangle"></i></div>
-    <h3>Change Fail Rate</h3>
+    <h3><i class="fas fa-exclamation-triangle"></i> Change Fail Rate</h3>
     <p class="metric-description">Percentage of deployments causing failures</p>
     <div class="metric-goal">Goal: 0-15%</div>
   </div>
@@ -58,8 +54,7 @@ dora_color: '#2196F3'
 
 <div class="myth-buster">
   <div class="myth-side">
-    <div class="myth-icon"><i class="fas fa-times-circle"></i></div>
-    <h3>Old Thinking</h3>
+    <h3><i class="fas fa-times-circle"></i> Old Thinking</h3>
     <div class="myth-content">
       <p><strong>Either Fast OR Stable</strong></p>
       <ul>
@@ -75,8 +70,7 @@ dora_color: '#2196F3'
   </div>
   
   <div class="reality-side">
-    <div class="reality-icon"><i class="fas fa-check-circle"></i></div>
-    <h3>Research Reality</h3>
+    <h3><i class="fas fa-check-circle"></i> Research Reality</h3>
     <div class="reality-content">
       <p><strong>Both Fast AND Stable</strong></p>
       <div class="performance-stats">
@@ -118,8 +112,7 @@ dora_color: '#2196F3'
 
 <div class="deployment-flow">
   <div class="flow-problem">
-    <div class="problem-icon"><i class="fas fa-frown"></i></div>
-    <h4>Deployment Anxiety</h4>
+    <h4><i class="fas fa-frown"></i> Deployment Anxiety</h4>
     <ul>
       <li>Fear before releases</li>
       <li>Manual processes</li>
@@ -130,8 +123,7 @@ dora_color: '#2196F3'
   <div class="flow-arrow">→</div>
   
   <div class="flow-solution">
-    <div class="solution-icon"><i class="fas fa-bullseye"></i></div>
-    <h4>DevOps Practices</h4>
+    <h4><i class="fas fa-bullseye"></i> DevOps Practices</h4>
     <ul>
       <li>Automated pipelines</li>
       <li>Small, frequent changes</li>
@@ -142,8 +134,7 @@ dora_color: '#2196F3'
   <div class="flow-arrow">→</div>
   
   <div class="flow-result">
-    <div class="result-icon"><i class="fas fa-trophy"></i></div>
-    <h4>Confident Deployments</h4>
+    <h4><i class="fas fa-trophy"></i> Confident Deployments</h4>
     <ul>
       <li>Predictable releases</li>
       <li>Faster recovery</li>
@@ -156,8 +147,7 @@ dora_color: '#2196F3'
 
 <div class="learning-checkpoint">
   <div class="checkpoint-card dora-assessment">
-    <div class="checkpoint-icon"><i class="fas fa-chart-line"></i></div>
-    <h4>DORA Metrics Assessment</h4>
+    <h4><i class="fas fa-chart-line"></i> DORA Metrics Assessment</h4>
     <p>Rate your team's current performance on the four key metrics:</p>
     <div class="assessment-buttons">
       <label class="assessment-btn high-performance">
@@ -182,8 +172,7 @@ dora_color: '#2196F3'
   </div>
   
   <div class="checkpoint-card deployment-anxiety">
-    <div class="checkpoint-icon"><i class="fas fa-heart"></i></div>
-    <h4>Deployment Confidence</h4>
+    <h4><i class="fas fa-heart"></i> Deployment Confidence</h4>
     <p>How does your team feel about deployments?</p>
     <div class="confidence-options">
       <label class="confidence-item anxious">
@@ -208,8 +197,7 @@ dora_color: '#2196F3'
   </div>
   
   <div class="checkpoint-card improvement-priority">
-    <div class="checkpoint-icon"><i class="fas fa-bullseye"></i></div>
-    <h4>Improvement Priority</h4>
+    <h4><i class="fas fa-bullseye"></i> Improvement Priority</h4>
     <p>Which DORA metric should your team focus on first?</p>
     <div class="priority-selector">
       <label class="priority-option">
@@ -243,20 +231,17 @@ dora_color: '#2196F3'
 
 <div class="insights-grid">
   <div class="insight-card">
-    <div class="insight-icon"><i class="fas fa-microscope"></i></div>
-    <h4>Evidence-Based</h4>
+    <h4><i class="fas fa-microscope"></i> Evidence-Based</h4>
     <p>Rigorous research backing all findings</p>
   </div>
   
   <div class="insight-card">
-    <div class="insight-icon"><i class="fas fa-medal"></i></div>
-    <h4>Competitive Advantage</h4>
+    <h4><i class="fas fa-medal"></i> Competitive Advantage</h4>
     <p>Software delivery capability drives success</p>
   </div>
   
   <div class="insight-card">
-    <div class="insight-icon"><i class="fas fa-user-check"></i></div>
-    <h4>Process Not People</h4>
+    <h4><i class="fas fa-user-check"></i> Process Not People</h4>
     <p>Anxiety signals inefficiency, not failure</p>
   </div>
 </div>
@@ -759,6 +744,12 @@ dora_color: '#2196F3'
 .metric-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons integrated into headers */
+h3 i, h4 i {
+  margin-right: 0.5rem;
+  color: inherit;
 }
 
 .metric-icon {
