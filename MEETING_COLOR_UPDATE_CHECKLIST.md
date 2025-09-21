@@ -24,6 +24,8 @@ This is a generic checklist for updating color schemes across any page and fixin
 - [ ] Replace all instances of old accent colors with new accents
 - [ ] Update all rgba() values to match new color scheme
 - [ ] Update gradient color stops in linear-gradient() and radial-gradient()
+- [ ] **Search for ALL gradient patterns**: `linear-gradient(135deg,` to catch mixed color schemes
+- [ ] **Search for border patterns**: `border: 2px solid` and `border-left: 4px solid`
 
 #### C. Section-by-Section Updates
 - [ ] Main section backgrounds with `background:` declarations
@@ -121,6 +123,15 @@ This is a generic checklist for updating color schemes across any page and fixin
 - Use more specific CSS selectors
 - Check for `!important` declarations that override changes
 - Search for all variations of the color (hex, rgb, hsl)
+
+### Issue: Missed Section Backgrounds 
+**Causes:** Multiple gradient patterns, different color combinations in same file
+**Solutions:**
+- Search for ALL `linear-gradient(135deg,` patterns, not just primary colors
+- Look for sections using completely different color schemes (pink, blue, etc.)
+- Check for `border: 2px solid` declarations that need updating
+- Verify `border-left: 4px solid` accent colors match theme
+- Use grep/search to find all background gradient patterns in the file
 
 ### Issue: Duplicate Content Appearing
 **Causes:** Copy-paste errors, merge conflicts, template duplication
