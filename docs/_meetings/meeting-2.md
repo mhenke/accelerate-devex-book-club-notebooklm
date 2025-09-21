@@ -1533,13 +1533,8 @@ dora_color: '#4CAF50'
 
 .action-items li {
   display: block;
-  margin: 0.75rem 0;
-  padding: 0.75rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
-  border-left: 4px solid #4caf50;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  font-weight: 500;
 }
 }
 </style>
