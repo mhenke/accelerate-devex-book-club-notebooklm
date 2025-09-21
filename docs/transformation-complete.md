@@ -1130,9 +1130,23 @@ nav_order: 6
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Clear any potential cached function conflicts
+  if (typeof optimizeCSS !== 'undefined') {
+    delete window.optimizeCSS;
+  }
   // Interactive reflection feedback
   const reflectionOptions = document.querySelectorAll('input[name="insight"]');
   const feedbackElement = document.getElementById('insight-feedback');
+  
+  // Add error handling wrapper
+  function safeExecute(fn, errorMessage) {
+    try {
+      return fn();
+    } catch (error) {
+      console.warn(errorMessage, error);
+      return null;
+    }
+  }
   
   const feedbackMessages = {
     measurement: {
