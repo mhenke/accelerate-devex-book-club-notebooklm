@@ -1,51 +1,55 @@
-# Meeting 2: Cultivating Culture and Embracing Continuous Delivery
+# Meeting 2: Technical Excellence & Continuous Delivery
 **Week 3 | Duration:** 1 Hour
 
 ## Pre-Reading Assignment
-**Chapters:** 5-8 (Continued Research Findings)
-- Chapter 5: Architecture
-- Chapter 6: Integrating Infosec into the Delivery Lifecycle
-- Chapter 7: Management Practices for Software
-- Chapter 8: Product Development
+
+**Chapters:** 4-6 (Technical Practices, Architecture, Integrating Infosec)
+
+- Chapter 4: Technical Practices - CD capabilities and their impact
+- Chapter 5: Architecture - Loosely coupled systems and team autonomy
+- Chapter 6: Integrating Infosec - Shift-left security practices
 
 ## Core Concepts to Explore
 
-### 1. Organizational Culture Types (Westrum's Typology)
-- **Pathological (Power-Oriented):** Low cooperation, messengers shot, responsibility shirked
-- **Bureaucratic (Rule-Oriented):** Modest cooperation, messengers neglected, narrow responsibilities
-- **Generative (Performance-Oriented):** High cooperation, messengers trained, risks shared, bridging encouraged
+### 1. Continuous Delivery (CD) as "Engine That Drives All of This"
 
-### 2. "Act Your Way into a Better Culture"
-- **Behavioral Change Drives Cultural Change:** How implementing practices transforms organizational culture
-- **Practical Application:** Concrete actions that shift culture toward generative
-- **Evidence:** Research showing DevOps practices improve both performance and culture
+- **Definition:** Getting all types of changes into production safely, quickly, sustainably
+- **Five Principles:** Build quality in, work in small batches, automate repetition, pursue continuous improvement, everyone responsible
+- **Key Practices:** Version control everything, CI, trunk-based development, test automation, deployment automation
 
-### 3. Continuous Delivery as Disciplined Approach
-- **Definition:** Getting changes of all kinds into production safely, quickly, and sustainably
-- **Comprehensive Scope:** Features, configuration changes, bug fixes, experiments
-- **Foundation:** The "engine that drives all of this" high performance
+### 2. Architecture That Enables Independence
 
-### 4. Core CD Principles and Practices
-- **Build Quality In:** Starting with quality rather than inspecting it later
-- **Work in Small Batches:** Breaking tasks into manageable, testable units
-- **Automate Repetitive Tasks:** Freeing humans for creative problem-solving
-- **Version Control Everything:** All production artifacts under version control
-- **Trunk-Based Development:** Short-lived branches and frequent integration
-- **Comprehensive Test Automation:** Automated testing at multiple levels
-- **Proactive Monitoring:** Observability and alerting for rapid problem detection
+- **Loosely Coupled Systems:** Teams can test, deploy, and change independently
+- **Conway's Law Inverse:** Evolve team structure to match desired architecture
+- **Key Capabilities:** Deploy independently, test without integrated environments, make large-scale changes without external permission
+
+### 3. "Act Your Way into a Better Culture"
+
+- **Behavioral Change Drives Cultural Change:** Implementing CD practices improves Westrum culture scores
+- **Tool Autonomy:** Teams choosing their own tools drives performance and satisfaction
+- **Security Integration:** Building security in (vs. bolting on) improves both performance and security
+
+### 4. Breaking the "Wall of Confusion"
+
+- **Traditional Problem:** Development optimizes for throughput, operations for stability
+- **CD Solution:** System-level outcomes requiring collaboration between all functions
+- **Evidence:** CD reduces deployment pain and burnout while improving performance
 
 ## Discussion Questions
-1. **Culture Assessment:** Using Westrum's model, how would you categorize your current organizational culture?
-2. **Cultural Transformation Examples:** What behavioral changes have you seen that shifted culture?
-3. **CD Maturity:** Which continuous delivery practices is your organization currently implementing?
-4. **Automation Opportunities:** What repetitive tasks could be automated to improve developer experience?
+
+1. **CD Maturity Assessment:** Which CD practices is your organization currently implementing well/poorly?
+2. **Architecture Dependencies:** What prevents your team from deploying independently?
+3. **Tool Autonomy:** How much freedom do teams have in tool selection? What are the constraints?
+4. **Security Integration:** How early in your development process is security considered?
 
 ## Real-World Applications
-- Share examples of successful cultural shifts through practice implementation
-- Discuss barriers to continuous delivery adoption
-- Identify quick wins for improving CD practices
+
+- Share examples of successful automation implementations
+- Discuss architectural decisions that improved (or hindered) team independence
+- Identify security practices that currently slow down vs. speed up delivery
 
 ## Action Items for Next Meeting
-- Observe and document culture type indicators in your daily work
-- Identify one repetitive task that could be automated
-- Experiment with working in smaller batches on current projects
+
+- [ ] Identify one manual process that could be automated
+- [ ] Map current dependencies that prevent independent deployment
+- [ ] Experiment with one CD practice (trunk-based development, test automation, etc.)

@@ -14,41 +14,30 @@
 
 ### 1. Introduction to "Accelerate"
 
-- **Central Argument:** High software delivery performance drives organizational success
-- **Evidence-Based Approach:** Understanding the rigorous research behind the book's findings
-- **Digital Transformation Reality:** How software delivery capability provides competitive advantage
+- **Central Argument:** High software delivery performance drives organizational success (profitability, productivity, market share)
+- **Evidence-Based Approach:** 23,000+ survey responses from 2,000+ organizations over 4 years
+- **Digital Transformation Reality:** Software delivery capability provides competitive advantage across all industries
 
-### 2. Addressing "Deployment Pain"
+### 2. The Four DORA Metrics - "Powerful New Vocabulary"
 
-- **Recognition:** Nervousness before deployments as a signal of process inefficiencies, not personal failing
-- **Root Causes:** Gaps between development and IT operations, differing workflows and terminologies
-- **Impact Assessment:** How deployment anxiety affects team wellbeing and productivity
+- **Delivery Lead Time:** Time from code commit to production (high performers: <1 hour)
+- **Deployment Frequency:** How often code gets deployed (high performers: multiple times per day)
+- **Mean Time to Restore Service:** Recovery time after incidents (high performers: <1 hour)
+- **Change Fail Rate:** Percentage of deployments causing failures (high performers: 0-15%)
 
 ### 3. Debunking the Speed vs. Stability Myth
 
-- **Key Insight:** High-performing organizations achieve both speed AND stability
-- **Evidence:** Research showing no trade-offs between these metrics
-- **Mindset Shift:** Understanding that practices making you faster also make you more stable
+- **Key Insight:** High performers achieve BOTH speed AND stability simultaneously
+- **46x more frequent deployments + 440x faster lead time + 170x faster recovery**
+- **No Trade-offs:** Practices that make you faster also make you more stable
 
-### 4. The Four DORA Metrics
+### 4. Addressing "Deployment Pain"
 
-#### 📈 Delivery Lead Time
+- **Recognition:** Anxiety before deployments signals process inefficiencies, not personal failing
+- **Root Causes:** Complex, manual deployment processes and poor architecture
+- **Cultural Signal:** Fear indicates pathological or bureaucratic culture
 
-Time from code commit to production deployment
-
-#### 🚀 Deployment Frequency
-
-How often code gets deployed to production
-
-#### ⏱️ Time to Restore Service
-
-How quickly service is restored after incidents
-
-#### ❌ Change Fail Rate
-
-Percentage of deployments causing failures in production
-
-### 4. Westrum's Organizational Culture Types
+### 5. Westrum's Organizational Culture Types
 
 Understanding how organizational culture affects information flow and performance:
 
@@ -97,4 +86,4 @@ Create a visual overview with the [Meeting 1 Video Prompt](video-prompt.md)
 
 ## Next Session
 
-[Meeting 2: Cultivating Culture and Embracing Continuous Delivery](meeting-2-guide.md)
+[Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/meeting-guide.md)
