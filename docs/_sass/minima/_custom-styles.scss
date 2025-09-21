@@ -1,0 +1,33 @@
+// Custom Minima overrides for Accelerate DevEx Book Club
+// Placed in docs/_sass/minima so it can be imported after the base Minima styles.
+
+// Use higher specificity and !important for urgent overrides. Keep usage minimal.
+body .page-content {
+  /* Adjust padding and flex so the site's layout uses the theme's preferred spacing */
+  padding: 0 !important;
+  flex: 2 !important;
+}
+
+/* If needed later, add more Minima-specific overrides here. */
+
+/* Hide the 'Skip to main content' link visually but keep it accessible
+   — becomes visible when focused (keyboard navigation) */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus,
+.skip-link:active {
+  position: static;
+  left: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  background: #ffc; /* Optional: highlight when focused */
+  border: 1px solid #990000;
+  padding: 3px;
+}
