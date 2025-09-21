@@ -333,8 +333,6 @@ dora_color: '#D97706'
   <p>Maslach identified six organizational risk factors for burnout: work overload, lack of control, insufficient rewards, community breakdown, absence of fairness, and value conflicts. <strong>Fix the environment, not the person</strong> - environmental changes are more effective than individual interventions.</p>
 </div>
 
----
-
 <style>
 /* eNPS Assessment Styling */
 .score-selector {
