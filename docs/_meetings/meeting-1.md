@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#2196F3'
 ---
 
-## Pre-Reading Assignment
-
-**Chapters 1-4:** Accelerate • Measuring Performance • Culture • Technical Practices
-
 ## The Four DORA Metrics
 
 <div class="dora-metrics-grid">
