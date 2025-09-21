@@ -1090,6 +1090,17 @@ pre {
   color: var(--accent-teal);
 }
 
+.ai-tool a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ai-tool a:hover {
+  color: var(--accent-teal);
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .ai-attribution {
     flex-direction: column;
