@@ -50,19 +50,19 @@ Supporting materials to enhance your "Accelerate" book club experience.
 
 ### Meetings
 
-- [README: Meetings](../resources/meetings/README.md)
-- [Meeting 1 Guide](../resources/meetings/meeting-1/meeting-guide.md)
-- [Meeting 1 Podcast Prompt](../resources/meetings/meeting-1/podcast-prompt.md)
-- [Meeting 1 Video Prompt](../resources/meetings/meeting-1/video-prompt.md)
-- [Meeting 2 Guide](../resources/meetings/meeting-2/meeting-guide.md)
-- [Meeting 2 Podcast Prompt](../resources/meetings/meeting-2/podcast-prompt.md)
-- [Meeting 2 Video Prompt](../resources/meetings/meeting-2/video-prompt.md)
-- [Meeting 3 Guide](../resources/meetings/meeting-3/meeting-guide.md)
-- [Meeting 3 Podcast Prompt](../resources/meetings/meeting-3/podcast-prompt.md)
-- [Meeting 3 Video Prompt](../resources/meetings/meeting-3/video-prompt.md)
-- [Meeting 4 Guide](../resources/meetings/meeting-4/meeting-guide.md)
-- [Meeting 4 Podcast Prompt](../resources/meetings/meeting-4/podcast-prompt.md)
-- [Meeting 4 Video Prompt](../resources/meetings/meeting-4/video-prompt.md)
+- [README: Meetings](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/README.md)
+- [Meeting 1 Guide](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/meeting-guide.md)
+- [Meeting 1 Podcast Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/podcast-prompt.md)
+- [Meeting 1 Video Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/video-prompt.md)
+- [Meeting 2 Guide](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/meeting-guide.md)
+- [Meeting 2 Podcast Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/podcast-prompt.md)
+- [Meeting 2 Video Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/video-prompt.md)
+- [Meeting 3 Guide](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/meeting-guide.md)
+- [Meeting 3 Podcast Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/podcast-prompt.md)
+- [Meeting 3 Video Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/video-prompt.md)
+- [Meeting 4 Guide](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/meeting-guide.md)
+- [Meeting 4 Podcast Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/podcast-prompt.md)
+- [Meeting 4 Video Prompt](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/video-prompt.md)
 
 ### Templates
 
