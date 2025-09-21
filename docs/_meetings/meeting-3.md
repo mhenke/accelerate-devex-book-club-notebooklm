@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#FF9800'
 ---
 
-# Meeting 3: Architecture, Autonomy, and Lean Thinking
-
-**Week 5 | Duration:** 1 Hour
-
 ## Pre-Reading Assignment
 
 **Chapters:** 9-12 (Organizational and Management Practices)
@@ -116,7 +112,3 @@ Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts
 	Your browser does not support the video tag.
 </video>
 
-## Navigation
-
-- Previous: [Meeting 2: Cultivating Culture and Embracing Continuous Delivery](meeting-2-guide.md)
-- Next: [Meeting 4: Leadership, Security, and Continuous Learning](meeting-4-guide.md)
