@@ -5,7 +5,7 @@ subtitle: 'Technical Excellence & Continuous Delivery'
 week: 3
 chapters: '4-6'
 duration: '1 Hour'
-dora_color: '#4CAF50'
+dora_color: '#9C27B0'
 ---
 
 ## <i class="fas fa-video"></i> Watch the Meeting 2 Video
@@ -560,7 +560,7 @@ dora_color: '#4CAF50'
 }
 
 .loose-coupled h3 {
-  color: #2e7d32;
+  color: #4a148c;
 }
 
 .arch-content p {
@@ -854,9 +854,9 @@ dora_color: '#4CAF50'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  background: linear-gradient(135deg, #f3e5f5, #fce4ec);
   border-radius: 16px;
-  border: 2px solid #4caf50;
+  border: 2px solid #9c27b0;
 }
 
 .flow-step {
@@ -873,19 +873,19 @@ dora_color: '#4CAF50'
 
 .flow-step h4 {
   margin: 0 0 0.5rem 0;
-  color: #2e7d32;
+  color: #4a148c;
   font-size: 1.1rem;
 }
 
 .flow-step p {
-  color: #4caf50;
+  color: #9c27b0;
   font-size: 0.9rem;
   margin: 0;
 }
 
 .flow-arrow {
   font-size: 2rem;
-  color: #4caf50;
+  color: #9c27b0;
   font-weight: bold;
 }
 
@@ -904,7 +904,7 @@ dora_color: '#4CAF50'
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border-left: 4px solid #4caf50;
+  border-left: 4px solid #9c27b0;
 }
 
 .principle-card:hover {
@@ -920,7 +920,7 @@ dora_color: '#4CAF50'
 
 .principle-card h4 {
   margin: 0 0 0.75rem 0;
-  color: #2e7d32;
+  color: #4a148c;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -950,7 +950,7 @@ dora_color: '#4CAF50'
   padding: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #4caf50;
+  border-left: 4px solid #9c27b0;
 }
 
 .application-card:hover {
@@ -1112,9 +1112,9 @@ dora_color: '#4CAF50'
   gap: 2rem;
   margin: 3rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  background: linear-gradient(135deg, #f3e5f5, #fce4ec);
   border-radius: 20px;
-  border: 2px solid #4caf50;
+  border: 2px solid #9c27b0;
 }
 
 .checkpoint-card {
@@ -1132,7 +1132,7 @@ dora_color: '#4CAF50'
 .checkpoint-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 35px rgba(76, 175, 80, 0.2);
-  border-color: #4caf50;
+  border-color: #9c27b0;
 }
 
 .checkpoint-icon {
@@ -1143,7 +1143,7 @@ dora_color: '#4CAF50'
 
 .checkpoint-card h4 {
   margin: 0 0 1rem 0;
-  color: #2e7d32;
+  color: #4a148c;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -1266,16 +1266,16 @@ dora_color: '#4CAF50'
 }
 
 .assessment-btn.generative {
-  border-color: #4caf50;
-  color: #388e3c;
+  border-color: #9c27b0;
+  color: #6a1b9a;
 }
 
 .assessment-btn.generative .radio-mark {
-  border-color: #4caf50;
+  border-color: #9c27b0;
 }
 
 .assessment-btn.generative input:checked ~ .radio-mark {
-  background: #4caf50;
+  background: #9c27b0;
 }
 
 .assessment-btn.generative input:checked ~ .radio-mark:after {
@@ -1290,15 +1290,15 @@ dora_color: '#4CAF50'
 }
 
 .assessment-btn.generative:hover {
-  background: #4caf50;
+  background: #9c27b0;
   color: white;
   transform: scale(1.02);
 }
 
 .assessment-btn.generative:has(input:checked) {
-  background: #e8f5e8;
-  border-color: #388e3c;
-  color: #388e3c;
+  background: #f3e5f5;
+  border-color: #6a1b9a;
+  color: #6a1b9a;
 }
 
 /* Feedback Areas */
@@ -1328,8 +1328,8 @@ dora_color: '#4CAF50'
 }
 
 .feedback-area.active {
-  border-color: #4caf50;
-  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  border-color: #9c27b0;
+  background: linear-gradient(135deg, #f3e5f5, #fce4ec);
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
 }
 
@@ -1345,7 +1345,7 @@ dora_color: '#4CAF50'
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 12px;
-  border-left: 4px solid #4caf50;
+  border-left: 4px solid #9c27b0;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
@@ -1365,7 +1365,7 @@ dora_color: '#4CAF50'
 .practice-item .radio-mark {
   width: 18px;
   height: 18px;
-  border: 2px solid #4caf50;
+  border: 2px solid #9c27b0;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -1374,7 +1374,7 @@ dora_color: '#4CAF50'
 }
 
 .practice-item input:checked ~ .radio-mark {
-  background: #4caf50;
+  background: #9c27b0;
 }
 
 .practice-item input:checked ~ .radio-mark:after {
@@ -1389,16 +1389,16 @@ dora_color: '#4CAF50'
 }
 
 .practice-item:hover {
-  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  background: linear-gradient(135deg, #9c27b0, #ba68c8);
   color: white;
   transform: translateX(4px);
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
 }
 
 .practice-item:has(input:checked) {
-  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
-  border-left-color: #2e7d32;
-  color: #2e7d32;
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  border-left-color: #4a148c;
+  color: #4a148c;
 }
 
 /* CD Selector */
@@ -1434,7 +1434,7 @@ dora_color: '#4CAF50'
 .cd-option .radio-mark {
   width: 18px;
   height: 18px;
-  border: 2px solid #4caf50;
+  border: 2px solid #9c27b0;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -1443,8 +1443,8 @@ dora_color: '#4CAF50'
 }
 
 .cd-option input:checked ~ .radio-mark {
-  background: #4caf50;
-  border-color: #4caf50;
+  background: #9c27b0;
+  border-color: #9c27b0;
 }
 
 .cd-option input:checked ~ .radio-mark:after {
@@ -1459,17 +1459,17 @@ dora_color: '#4CAF50'
 }
 
 .cd-option:hover {
-  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  background: linear-gradient(135deg, #9c27b0, #ba68c8);
   color: white;
-  border-color: #4caf50;
+  border-color: #9c27b0;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
 }
 
 .cd-option:has(input:checked) {
-  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
-  border-color: #4caf50;
-  color: #2e7d32;
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  border-color: #9c27b0;
+  color: #4a148c;
   font-weight: 600;
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
 }
