@@ -5,9 +5,9 @@ title: Home
 
 <div class="hero-banner">
   <div class="hero-content">
-    <h1 class="hero-headline">Building High Performing<br>Technology Organizations</h1>
+    <h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing<br>Technology Organizations</h1>
     <div class="site-title">
-      <h2>Accelerate DevEx Book Club</h2>
+      <h2 id="accelerate-devex-book-club">Accelerate DevEx Book Club</h2>
     </div>
     <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
   </div>
@@ -37,7 +37,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
 
-<h2 class="section-accent"><i class="fas fa-bullseye"></i> What You'll Learn</h2>
+<h2 class="section-accent" id="what-youll-learn"><i class="fas fa-bullseye"></i> What You'll Learn</h2>
 
 <div class="dora-metrics-section">
   <div class="dora-metrics-visual">

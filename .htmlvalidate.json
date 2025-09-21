@@ -17,6 +17,7 @@
     "prefer-native-element": "warn",
     "script-type": "off",
     "valid-autocomplete": "error",
+    "valid-id": "warn",
     "void-style": ["warn", {"style": "omit"}],
     "wcag/h32": "warn",
     "wcag/h37": "warn",

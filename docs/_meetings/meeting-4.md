@@ -12,12 +12,12 @@ dora_color: '#7c3aed'
 
 <div class="media-container">
 <video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" type="video/mp4">
+  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
 <div class="media-download-controls">
-	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-video.mp4" download class="download-btn">
+  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-video.mp4" download class="download-btn">
 		<i class="fas fa-download"></i> Download Video
 	</a>
 </div>
@@ -27,12 +27,12 @@ dora_color: '#7c3aed'
 
 <div class="media-container">
 <audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" type="audio/x-m4a">
+  <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
 <div class="media-download-controls">
-	<a href="/accelerate-devex-book-club-notebooklm/assets/media/meeting-4-podcast.m4a" download class="download-btn">
+  <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4-podcast.m4a" download class="download-btn">
 		<i class="fas fa-download"></i> Download Audio
 	</a>
 </div>
