@@ -1940,8 +1940,8 @@ pre {
   }
 
   .meeting-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 
   .resource-grid {
@@ -2067,6 +2067,18 @@ pre {
     transform: none;
     justify-content: center;
     margin-top: 2rem;
+  }
+}
+
+/* Small mobile screens - single column */
+@media (max-width: 480px) {
+  .meeting-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .meeting-card {
+    padding: 1.25rem;
   }
 }
 
