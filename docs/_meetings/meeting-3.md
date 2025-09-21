@@ -130,6 +130,20 @@ dora_color: '#FF9800'
   </div>
 </div>
 
+## <i class="fas fa-headphones"></i> Listen to the Meeting 3 Podcast
+
+<audio controls>
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
+	Your browser does not support the audio element.
+</audio>
+
+## <i class="fas fa-video"></i> Watch the Meeting 3 Video
+
+<video controls width="100%">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+
 ## Team Architecture Assessment
 
 <div class="architecture-assessment">
@@ -191,20 +205,6 @@ dora_color: '#FF9800'
     </div>
   </div>
 </div>
-
-## <i class="fas fa-headphones"></i> Listen to the Meeting 3 Podcast
-
-<audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
-	Your browser does not support the audio element.
-</audio>
-
-## <i class="fas fa-video"></i> Watch the Meeting 3 Video
-
-<video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
 
 ---
 
