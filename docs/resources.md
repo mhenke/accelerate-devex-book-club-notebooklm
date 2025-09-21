@@ -29,6 +29,47 @@ Supporting materials to enhance your "Accelerate" book club experience.
   </div>
 </div>
 
+## 📁 Direct Resource Links
+
+### Activities
+
+- [README: Activities](../resources/activities/README.md)
+- [Between Meetings Guide](../resources/activities/between-meetings.md)
+- [Discussion Practices](../resources/activities/discussion-practices.md)
+
+### Assessments
+
+- [README: Assessments](../resources/assessments/README.md)
+- [Culture Assessment Worksheet](../resources/assessments/culture-assessment-worksheet.md)
+- [DORA Metrics Template](../resources/assessments/dora-metrics-template.md)
+
+### Extensions
+
+- [README: Extensions](../resources/extensions/README.md)
+- [Extension Pathways](../resources/extensions/extensions.md)
+
+### Meetings
+
+- [README: Meetings](../resources/meetings/README.md)
+- [Meeting 1 Guide](../resources/meetings/meeting-1/meeting-guide.md)
+- [Meeting 1 Podcast Prompt](../resources/meetings/meeting-1/podcast-prompt.md)
+- [Meeting 1 Video Prompt](../resources/meetings/meeting-1/video-prompt.md)
+- [Meeting 2 Guide](../resources/meetings/meeting-2/meeting-guide.md)
+- [Meeting 2 Podcast Prompt](../resources/meetings/meeting-2/podcast-prompt.md)
+- [Meeting 2 Video Prompt](../resources/meetings/meeting-2/video-prompt.md)
+- [Meeting 3 Guide](../resources/meetings/meeting-3/meeting-guide.md)
+- [Meeting 3 Podcast Prompt](../resources/meetings/meeting-3/podcast-prompt.md)
+- [Meeting 3 Video Prompt](../resources/meetings/meeting-3/video-prompt.md)
+- [Meeting 4 Guide](../resources/meetings/meeting-4/meeting-guide.md)
+- [Meeting 4 Podcast Prompt](../resources/meetings/meeting-4/podcast-prompt.md)
+- [Meeting 4 Video Prompt](../resources/meetings/meeting-4/video-prompt.md)
+
+### Templates
+
+- [README: Templates](../resources/templates/README.md)
+- [Meeting Notes Template](../resources/templates/meeting-notes-template.md)
+- [Retrospective Format](../resources/templates/retrospective-format.md)
+
 ## <i class="fas fa-tasks"></i> Between Meetings Activities {#between-meetings}
 
 ### Post-Meeting Reflection
@@ -43,21 +84,25 @@ After each session, spend 10-15 minutes reflecting on:
 ### Practical Exercises
 
 **Week 2 (After Meeting 1):**
+
 - Measure your team's current DORA metrics
 - Identify the biggest bottleneck in your deployment pipeline
 - Start a "deployment pain journal"
 
-**Week 4 (After Meeting 2):**  
+**Week 4 (After Meeting 2):**
+
 - Assess your organization's culture type using Westrum's model
 - Interview 3 colleagues about psychological safety
 - Implement one small continuous delivery practice
 
 **Week 6 (After Meeting 3):**
+
 - Map your system's coupling dependencies
 - Identify opportunities for team autonomy
 - Experiment with lean management techniques
 
 **Week 8 (After Meeting 4):**
+
 - Practice transformational leadership behaviors
 - Create a learning culture initiative
 - Develop your transformation roadmap
@@ -116,17 +161,17 @@ After completing "Accelerate," consider these follow-up books:
 
 ### DORA Metrics Summary
 
-| Metric | Elite | High | Medium | Low |
-|--------|--------|------|---------|-----|
-| **Lead Time** | < 1 hour | 1 day - 1 week | 1 week - 1 month | 1-6 months |
-| **Deploy Frequency** | Multiple/day | 1/week - 1/month | 1/month - 1/6months | < 1/6months |
-| **MTTR** | < 1 hour | < 1 day | < 1 week | 1 week - 1 month |
-| **Change Fail Rate** | 0-15% | 0-15% | 0-15% | 31-45% |
+| Metric               | Elite        | High             | Medium              | Low              |
+| -------------------- | ------------ | ---------------- | ------------------- | ---------------- |
+| **Lead Time**        | < 1 hour     | 1 day - 1 week   | 1 week - 1 month    | 1-6 months       |
+| **Deploy Frequency** | Multiple/day | 1/week - 1/month | 1/month - 1/6months | < 1/6months      |
+| **MTTR**             | < 1 hour     | < 1 day          | < 1 week            | 1 week - 1 month |
+| **Change Fail Rate** | 0-15%        | 0-15%            | 0-15%               | 31-45%           |
 
 ### Culture Types (Westrum)
 
 - **Pathological** - Power-oriented, low trust, blame culture
-- **Bureaucratic** - Rule-oriented, modest trust, process focus  
+- **Bureaucratic** - Rule-oriented, modest trust, process focus
 - **Generative** - Performance-oriented, high trust, innovation focus
 
 ---
