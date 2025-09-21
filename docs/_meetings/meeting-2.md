@@ -4,6 +4,7 @@ title: 'Meeting 2: Culture & CD'
 subtitle: 'Cultivating Culture and Embracing Continuous Delivery'
 week: 3
 chapters: '5-8'
+duration: '1 Hour'
 dora_color: '#4CAF50'
 ---
 

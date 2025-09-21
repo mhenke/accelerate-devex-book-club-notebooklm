@@ -3,91 +3,389 @@ layout: default
 ---
 
 <article class="meeting">
-  <header class="meeting-header">
-    <h1>{{ page.title }}</h1>
-    {% if page.week %}<p class="meeting-meta"><strong>{{ page.week }}</strong> • {{ page.duration }}</p>{% endif %}
-    {% if page.chapters %}<p class="chapters">📖 {{ page.chapters }}</p>{% endif %}
-  </header>
-
-  <div class="meeting-content">
-    {{ content }}
+  <!-- Modern Hero Banner with DORA Color -->
+  <div class="meeting-hero" style="background: linear-gradient(135deg, {{ page.dora_color | default: '#2196F3' }} 0%, {{ page.dora_color | default: '#2196F3' | append: '80' }} 100%)">
+    <div class="meeting-hero-content">
+      <div class="meeting-meta-badge">
+        <span class="meeting-week">Meeting {{ page.week | default: '1' }}</span>
+        <span class="meeting-duration">{{ page.duration | default: '1 Hour' }}</span>
+      </div>
+      <h1 class="meeting-title">{{ page.title }}</h1>
+      {% if page.subtitle %}<h2 class="meeting-subtitle">{{ page.subtitle }}</h2>{% endif %}
+      {% if page.chapters %}<div class="chapters-badge">📖 Chapters {{ page.chapters }}</div>{% endif %}
+    </div>
+    <div class="meeting-icon">
+      {% assign week = page.week | plus: 0 %}
+      {% case week %}
+        {% when 1 %}
+          <i class="fas fa-rocket"></i>
+        {% when 3 %}
+          <i class="fas fa-users"></i>
+        {% when 5 %}
+          <i class="fas fa-sitemap"></i>
+        {% when 7 %}
+          <i class="fas fa-crown"></i>
+        {% else %}
+          <i class="fas fa-book"></i>
+      {% endcase %}
+    </div>
   </div>
 
-  <nav class="meeting-nav">
-    {% assign meetings = site.meetings | sort: "order" %}
-    {% for meeting in meetings %}
-      {% if meeting.url == page.url %}
-        {% assign current_index = forloop.index0 %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-    
-    <div class="nav-links">
-      {% if current_index > 0 %}
-        {% assign prev_meeting = meetings[current_index | minus: 1] %}
-        <a href="{{ prev_meeting.url }}" class="nav-link prev">← {{ prev_meeting.title }}</a>
-      {% endif %}
-      
-      {% if current_index < meetings.size | minus: 1 %}
-        {% assign next_meeting = meetings[current_index | plus: 1] %}
-        <a href="{{ next_meeting.url }}" class="nav-link next">{{ next_meeting.title }} →</a>
-      {% endif %}
+  <div class="meeting-container">
+    <div class="meeting-content">
+      {{ content }}
     </div>
-  </nav>
+
+    <!-- Enhanced Navigation -->
+    <nav class="meeting-navigation">
+      {% assign meetings = site.meetings | sort: "week" %}
+      {% for meeting in meetings %}
+        {% if meeting.url == page.url %}
+          {% assign current_index = forloop.index0 %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      
+      <div class="nav-links">
+        {% if current_index > 0 %}
+          {% assign prev_meeting = meetings[current_index | minus: 1] %}
+          <a href="{{ prev_meeting.url }}" class="nav-link prev">
+            <div class="nav-icon">←</div>
+            <div class="nav-content">
+              <span class="nav-label">Previous</span>
+              <span class="nav-title">{{ prev_meeting.title }}</span>
+            </div>
+          </a>
+        {% endif %}
+        
+        {% if current_index < meetings.size | minus: 1 %}
+          {% assign next_meeting = meetings[current_index | plus: 1] %}
+          <a href="{{ next_meeting.url }}" class="nav-link next">
+            <div class="nav-content">
+              <span class="nav-label">Next</span>
+              <span class="nav-title">{{ next_meeting.title }}</span>
+            </div>
+            <div class="nav-icon">→</div>
+          </a>
+        {% endif %}
+      </div>
+
+      <!-- Meeting Progress Indicator -->
+      <div class="meeting-progress">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: {{ current_index | plus: 1 | times: 100 | divided_by: meetings.size }}%"></div>
+        </div>
+        <span class="progress-text">{{ current_index | plus: 1 }} of {{ meetings.size }} meetings</span>
+      </div>
+    </nav>
+  </div>
 </article>
 
 <style>
-.meeting-header {
-  border-bottom: 2px solid #e1e4e8;
-  padding-bottom: 1rem;
+/* Meeting Hero Section */
+.meeting-hero {
+  color: white;
+  padding: 6rem 2rem 4rem;
+  margin: -2rem -1rem 0 -1rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 2rem 2rem;
+}
+
+.meeting-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.meeting-meta-badge {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.meeting-week {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.meeting-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white !important;
+  border: none !important;
+  background: none !important;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.1;
+}
+
+.meeting-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-bottom: 2rem !important;
+  border: none !important;
+  background: none !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.chapters-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  backdrop-filter: blur(10px);
+}
+
+.meeting-icon {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  font-size: 4rem;
+  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+
+/* Meeting Container */
+.meeting-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.meeting-meta {
-  color: #586069;
-  font-size: 1.1em;
-  margin: 0.5rem 0;
-}
-
-.chapters {
-  background: #f1f8ff;
-  border: 1px solid #c8e1ff;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  font-weight: 500;
-}
-
 .meeting-content {
-  max-width: none;
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
 
-.meeting-nav {
+/* Enhanced Section Styling */
+.meeting-content h2 {
+  color: var(--header-dark-navy);
+  font-size: 2rem;
+  font-weight: 600;
+  border-left: 4px solid var(--accent-coral);
+  padding-left: 1.5rem;
   margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e1e4e8;
+  margin-bottom: 1.5rem;
+}
+
+.meeting-content h3 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meeting-content h4 {
+  color: var(--primary-blue);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Modern Cards for Key Sections */
+.meeting-content ul {
+  background: var(--background-light);
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid var(--accent-teal);
+  margin: 1.5rem 0;
+}
+
+.meeting-content ol {
+  background: linear-gradient(135deg, #f8f9ff, #e8f2ff);
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid var(--primary-blue);
+  margin: 1.5rem 0;
+}
+
+/* Audio/Video Styling */
+.meeting-content audio,
+.meeting-content video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin: 2rem 0;
+}
+
+.meeting-content audio {
+  height: 60px;
+}
+
+/* Enhanced Navigation */
+.meeting-navigation {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid var(--border-light);
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .nav-link {
-  background: #f8f9fa;
-  border: 1px solid #d1d5da;
-  border-radius: 4px;
-  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, var(--background-white), var(--background-light));
+  border: 2px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
   text-decoration: none;
-  color: #0366d6;
-  font-weight: 500;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .nav-link:hover {
-  background: #e1e4e8;
+  background: linear-gradient(135deg, var(--accent-coral), var(--hover-coral));
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 127, 80, 0.3);
 }
 
 .nav-link.next {
   margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  background: rgba(33, 150, 243, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover .nav-icon {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.nav-content {
+  text-align: left;
+}
+
+.nav-link.next .nav-content {
+  text-align: right;
+}
+
+.nav-label {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.nav-title {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Progress Indicator */
+.meeting-progress {
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--background-light);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-teal));
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  color: var(--text-medium);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .meeting-hero {
+    padding: 4rem 1rem 2rem;
+    margin: -2rem -0.5rem 0 -0.5rem;
+  }
+  
+  .meeting-title {
+    font-size: 2.5rem;
+  }
+  
+  .meeting-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .meeting-icon {
+    right: 1rem;
+    top: 1rem;
+    font-size: 3rem;
+  }
+  
+  .meeting-container {
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    max-width: none;
+  }
+  
+  .nav-link.next {
+    margin-left: 0;
+    flex-direction: row;
+  }
 }
 </style>
