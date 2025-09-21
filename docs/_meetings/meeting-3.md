@@ -5,7 +5,7 @@ subtitle: 'Management, Product Development & Sustainability'
 week: 5
 chapters: '7-10'
 duration: '1 Hour'
-dora_color: '#FF9800'
+dora_color: '#ea580c'
 ---
 
 ## <i class="fas fa-video"></i> Watch the Meeting 3 Video
@@ -376,7 +376,7 @@ dora_color: '#FF9800'
 }
 
 .column-header {
-  background: linear-gradient(135deg, #ff9800, #f57c00);
+  background: linear-gradient(135deg, #ea580c, #c2410c);
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -410,7 +410,7 @@ dora_color: '#FF9800'
 }
 
 .principle-item:hover {
-  background: linear-gradient(135deg, #ff9800, #f57c00);
+  background: linear-gradient(135deg, #ea580c, #c2410c);
   color: white;
   transform: translateX(4px);
 }
@@ -470,7 +470,7 @@ dora_color: '#FF9800'
 .formula-plus, .formula-equals {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ff9800;
+  color: #ea580c;
 }
 
 .formula-result {
@@ -687,7 +687,7 @@ dora_color: '#FF9800'
   padding: 2rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid #ff9800;
+  border-left: 4px solid #ea580c;
 }
 
 .assessment-card:hover {
@@ -704,7 +704,7 @@ dora_color: '#FF9800'
 
 .assessment-card h4 {
   margin: 0 0 1rem 0;
-  color: #e65100;
+  color: #9a3412;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -807,7 +807,7 @@ dora_color: '#FF9800'
 
 .dependency-item.medium-impact:has(input:checked) {
   background: linear-gradient(135deg, #ffecb3, #ffe082);
-  border-left-color: #f57c00;
+  border-left-color: #c2410c;
 }
 
 .dependency-item.low-impact {
@@ -864,7 +864,7 @@ dora_color: '#FF9800'
   width: 20px;
   height: 20px;
   background: white;
-  border: 3px solid #ff9800;
+  border: 3px solid #ea580c;
   border-radius: 50%;
   position: absolute;
   top: -7px;
@@ -876,7 +876,7 @@ dora_color: '#FF9800'
 
 .slider-thumb:hover {
   transform: scale(1.2);
-  border-color: #e65100;
+  border-color: #9a3412;
 }
 
 .slider-feedback {
@@ -884,7 +884,7 @@ dora_color: '#FF9800'
   padding: 1rem;
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 8px;
-  border-left: 4px solid #ff9800;
+  border-left: 4px solid #ea580c;
   min-height: 60px;
   transition: all 0.3s ease;
 }
@@ -921,9 +921,9 @@ dora_color: '#FF9800'
 }
 
 .wip-option:hover {
-  background: linear-gradient(135deg, #ff9800, #f57c00);
+  background: linear-gradient(135deg, #ea580c, #c2410c);
   color: white;
-  border-color: #e65100;
+  border-color: #9a3412;
   transform: scale(1.02);
 }
 
@@ -936,7 +936,7 @@ dora_color: '#FF9800'
 .wip-option .radio-mark {
   width: 16px;
   height: 16px;
-  border: 2px solid #ff9800;
+  border: 2px solid #ea580c;
   border-radius: 50%;
   background: white;
   transition: all 0.3s ease;
@@ -944,7 +944,7 @@ dora_color: '#FF9800'
 }
 
 .wip-option input:checked ~ .radio-mark {
-  background: #ff9800;
+  background: #ea580c;
 }
 
 .wip-option input:checked ~ .radio-mark:after {
@@ -965,8 +965,8 @@ dora_color: '#FF9800'
 
 .wip-option:has(input:checked) {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-color: #ff9800;
-  color: #e65100;
+  border-color: #ea580c;
+  color: #9a3412;
 }
 
 /* Responsive Design */
