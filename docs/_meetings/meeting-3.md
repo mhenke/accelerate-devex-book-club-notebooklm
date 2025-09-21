@@ -1,3 +1,28 @@
+## Supplementary Content
+
+### Audio Podcast
+
+Generate a discussion podcast using the [Meeting 3 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
+
+### Video Summary
+
+Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts/video-prompt.md)
+
+---
+
+## 🎧 Listen to the Meeting 3 Podcast
+
+<audio controls>
+	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/meeting-podcast.m4a" type="audio/x-m4a">
+	Your browser does not support the audio element.
+</audio>
+
+## 📺 Watch the Meeting 3 Video
+
+<video controls width="100%">
+	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/meeting-video.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
 ---
 layout: meeting
 title: 'Meeting 3: Architecture'

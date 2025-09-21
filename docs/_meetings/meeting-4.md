@@ -1,3 +1,28 @@
+## Supplementary Content
+
+### Audio Podcast
+
+Generate a discussion podcast using the [Meeting 4 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
+
+### Video Summary
+
+Create a visual overview with the [Meeting 4 Video Prompt](../notebooklm-prompts/video-prompt.md)
+
+---
+
+## 🎧 Listen to the Meeting 4 Podcast
+
+<audio controls>
+	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/meeting-podcast.m4a" type="audio/x-m4a">
+	Your browser does not support the audio element.
+</audio>
+
+## 📺 Watch the Meeting 4 Video
+
+<video controls width="100%">
+	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/meeting-video.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
 ---
 layout: meeting
 title: 'Meeting 4: Leadership'
