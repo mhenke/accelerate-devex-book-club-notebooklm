@@ -858,6 +858,24 @@ dora_color: '#4CAF50'
     font-size: 0.85rem;
   }
 }
+
+/* Action Items Styling */
+.action-items {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.action-items li {
+  display: block;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
 }
 </style>
 
@@ -945,6 +963,24 @@ document.addEventListener('DOMContentLoaded', function() {
       feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
       feedback.classList.add('active');
     });
+  });
+
+  // Format action items
+  const headings = document.querySelectorAll('h2');
+  headings.forEach(heading => {
+    if (heading.textContent.includes('Action Items')) {
+      let nextElement = heading.nextElementSibling;
+      while (nextElement) {
+        if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {
+          nextElement.classList.add('action-items');
+          break;
+        }
+        if (nextElement.tagName === 'H1' || nextElement.tagName === 'H2' || nextElement.tagName === 'H3') {
+          break;
+        }
+        nextElement = nextElement.nextElementSibling;
+      }
+    }
   });
 });
 </script>
