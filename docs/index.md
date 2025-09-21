@@ -35,7 +35,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
 
-## <i class="fas fa-bullseye"></i> What You'll Learn
+<h2 class="section-accent"><i class="fas fa-bullseye"></i> What You'll Learn</h2>
 
 <div class="dora-metrics-visual">
   <h3>The Four DORA Metrics</h3>
@@ -108,6 +108,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -200,7 +201,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 </section>
 <!-- End DevOps Virtuous Cycle -->
 
-## <i class="fas fa-calendar-alt"></i> Meeting Schedule
+<h2 class="section-accent"><i class="fas fa-calendar-alt"></i> Meeting Schedule</h2>
 
 <div class="timeline-visual">
   <div class="timeline-line"></div>
@@ -240,8 +241,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
 </div>
 
-
-## <i class="fas fa-tools"></i> Resources
+<h2 class="section-accent"><i class="fas fa-tools"></i> Resources</h2>
 
 <div class="resources-grid">
   <div class="resource-card">
@@ -277,7 +277,6 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
     </div>
   </div>
 </div>
-
 
 <div class="success-metrics">
 <h2><i class="fas fa-rocket"></i> Success Metrics</h2>
