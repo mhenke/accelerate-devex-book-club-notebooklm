@@ -88,17 +88,13 @@ Using monitoring and metrics to inform choices
 
 ## Supplementary Content
 
-### Audio Podcast
-
-Generate a discussion podcast using the [Meeting 3 Podcast Prompt](../notebooklm-prompts/meeting-3-podcast-prompt.md)
-
-### Video Summary
-
-Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts/video-prompt.md)
+Generate additional content using the [NotebookLM prompts](../notebooklm-prompts/)
 
 ---
 
 ## 🎧 Listen to the Meeting 3 Podcast
+
+<p>Generate a discussion podcast using the <a href="../notebooklm-prompts/meeting-3-podcast-prompt.md">Meeting 3 Podcast Prompt</a></p>
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-podcast.m4a" type="audio/x-m4a">
@@ -106,6 +102,8 @@ Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts
 </audio>
 
 ## 📺 Watch the Meeting 3 Video
+
+<p>Create a visual overview with the <a href="../notebooklm-prompts/video-prompt.md">Meeting 3 Video Prompt</a></p>
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-3-video.mp4" type="video/mp4">

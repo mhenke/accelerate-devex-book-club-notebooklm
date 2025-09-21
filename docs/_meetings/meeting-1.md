@@ -153,17 +153,13 @@ dora_color: '#2196F3'
 
 ## Supplementary Content
 
-### Audio Podcast
-
-Generate a discussion podcast using the [Meeting 1 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
-
-### Video Summary
-
-Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts/video-prompt.md)
+Generate additional content using the [NotebookLM prompts](../notebooklm-prompts/)
 
 ---
 
 ## 🎧 Listen to the Meeting 1 Podcast
+
+<p>Generate a discussion podcast using the <a href="../notebooklm-prompts/podcast-prompt.md">Meeting 1 Podcast Prompt</a></p>
 
 <audio controls>
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.m4a" type="audio/x-m4a">
@@ -171,6 +167,8 @@ Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts
 </audio>
 
 ## 📺 Watch the Meeting 1 Video
+
+<p>Create a visual overview with the <a href="../notebooklm-prompts/video-prompt.md">Meeting 1 Video Prompt</a></p>
 
 <video controls width="100%">
 	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" type="video/mp4">
