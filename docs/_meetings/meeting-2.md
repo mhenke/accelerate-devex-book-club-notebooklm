@@ -131,6 +131,9 @@ dora_color: '#4CAF50'
         Generative
       </label>
     </div>
+    <div class="feedback-area" id="culture-feedback">
+      <p>Select a culture type to learn more about its characteristics and impact on performance.</p>
+    </div>
   </div>
   
   <div class="checkpoint-card behavioral-shifts">
@@ -159,6 +162,9 @@ dora_color: '#4CAF50'
         <i class="fas fa-bolt"></i> Rapid feedback loops
       </label>
     </div>
+    <div class="feedback-area" id="practice-feedback">
+      <p>Select a practice to understand how it can drive cultural transformation.</p>
+    </div>
   </div>
   
   <div class="checkpoint-card cd-gaps">
@@ -186,6 +192,9 @@ dora_color: '#4CAF50'
         <span class="radio-mark"></span>
         <i class="fas fa-code-branch"></i> Trunk-Based Dev
       </label>
+    </div>
+    <div class="feedback-area" id="cd-feedback">
+      <p>Select a CD principle to learn about its importance and implementation.</p>
     </div>
   </div>
 </div>
@@ -616,6 +625,36 @@ dora_color: '#4CAF50'
   color: #388e3c;
 }
 
+/* Feedback Areas */
+.feedback-area {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  border-left: 4px solid #2196f3;
+  min-height: 80px;
+  transition: all 0.3s ease;
+}
+
+.feedback-area p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.feedback-area h5 {
+  margin: 0 0 0.5rem 0;
+  color: #1565c0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.feedback-area.active {
+  border-left-color: #4caf50;
+  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+}
+
 /* Practice Options */
 .practice-options {
   display: flex;
@@ -772,3 +811,91 @@ dora_color: '#4CAF50'
 }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Feedback content from Accelerate book
+  const cultureInfo = {
+    pathological: {
+      title: "Pathological (Power-Oriented) Culture",
+      content: "Characterized by large amounts of fear and threat. Information is hoarded and withheld for political reasons, or distorted to make individuals look better. These organizations show low cooperation across groups and a culture of blame. According to Westrum's research, pathological cultures correlate with poor performance and higher failure rates."
+    },
+    bureaucratic: {
+      title: "Bureaucratic (Rule-Oriented) Culture", 
+      content: "Preoccupied with rules and positions, with responsibilities compartmentalized by department. There's little concern for the overall mission of the organization. Rules are more important than the mission. Information flows through official channels, but innovation and risk-taking are discouraged."
+    },
+    generative: {
+      title: "Generative (Performance-Oriented) Culture",
+      content: "Focuses fully on the mission with high cooperation and trust. Features good information flow, collaboration between teams, and conscious inquiry. According to Accelerate research, generative cultures predict both software delivery performance and organizational performance, leading to higher market share, productivity, and profitability."
+    }
+  };
+
+  const practiceInfo = {
+    "peer-review": {
+      title: "Peer Review Over Approval Boards",
+      content: "Lightweight approval processes with team ownership enable faster decisions and shared responsibility. This practice reduces bureaucratic overhead while maintaining quality, fostering trust and collaboration. Teams become more autonomous and can respond quickly to change."
+    },
+    "transparent-metrics": {
+      title: "Transparent Metrics Sharing",
+      content: "Open sharing of performance data creates accountability and drives improvement. When teams can see how their work impacts key metrics like deployment frequency and lead time, it enables data-driven decisions and continuous improvement. Transparency builds trust and alignment."
+    },
+    "learning-failures": {
+      title: "Learning from Failures",
+      content: "Treating failures as learning opportunities rather than blame events is crucial for psychological safety. When teams conduct blameless post-mortems and share lessons learned, it prevents future issues and builds organizational resilience. This practice is essential for high-performing cultures."
+    },
+    "rapid-feedback": {
+      title: "Rapid Feedback Loops",
+      content: "Short feedback cycles from customers, monitoring, and automated testing enable quick course correction. Fast feedback reduces risk, improves quality, and accelerates learning. This practice supports continuous delivery and helps teams deliver value more effectively."
+    }
+  };
+
+  const cdInfo = {
+    "build-quality": {
+      title: "Build Quality In",
+      content: "Quality should be built into the process from the start, not inspected later. This requires reliable test automation at all levels (unit, API, UI), continuous testing throughout development, and automated tests running against every commit. This practice reduces rework and increases confidence in deployments."
+    },
+    "small-batches": {
+      title: "Work in Small Batches", 
+      content: "Slice work into small pieces completed in a week or less. This applies at feature and product levels to achieve short lead times and faster feedback loops. Working in small batches enables rapid customer feedback and data-driven hypothesis testing, reducing risk and improving outcomes."
+    },
+    "automate": {
+      title: "Automate Repetitive Tasks",
+      content: "Computers perform repetitive tasks; people solve problems. Automate regression testing and software deployments to reduce the cost of pushing changes. Automation frees teams to focus on solving customer problems and reduces human error in repetitive processes."
+    },
+    "trunk-based": {
+      title: "Trunk-Based Development",
+      content: "Developers merge small, frequent updates to a main branch with short-lived feature branches. This practice streamlines merging and integration, enabling continuous integration and delivery. High-performing teams keep branches short-lived and integrate regularly with automated testing."
+    }
+  };
+
+  // Add event listeners for culture assessment
+  document.querySelectorAll('input[name="culture-type"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('culture-feedback');
+      const info = cultureInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+
+  // Add event listeners for practice selection  
+  document.querySelectorAll('input[name="cultural-practice"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('practice-feedback');
+      const info = practiceInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+
+  // Add event listeners for CD principles
+  document.querySelectorAll('input[name="cd-priority"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('cd-feedback');
+      const info = cdInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+});
+</script>
