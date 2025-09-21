@@ -360,9 +360,11 @@ dora_color: '#4CAF50'
 
 ## Action Items for Next Meeting
 
-[ ] Identify one manual process that could be automated
-[ ] Map current dependencies that prevent independent deployment
-[ ] Experiment with one CD practice (trunk-based development, test automation, etc.)
+<ul class="action-items">
+<li>[ ] Identify one manual process that could be automated</li>
+<li>[ ] Map current dependencies that prevent independent deployment</li>
+<li>[ ] Experiment with one CD practice (trunk-based development, test automation, etc.)</li>
+</ul>
 
 ## 🔗 Related Resources
 
