@@ -1,0 +1,284 @@
+/* Meeting Content Styles - Typography, Lists, and Content Elements */
+
+/* Enhanced Section Styling */
+.meeting-content h2 {
+  color: var(--header-dark-navy);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-left: 4px solid var(--meeting-primary) !important;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light)) !important;
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 6px 8px 8px 6px;
+  position: relative;
+}
+
+.meeting-content h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--meeting-primary), var(--meeting-hover)) !important;
+  border-radius: 2px;
+}
+
+.meeting-content h3 {
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, var(--meeting-bg), var(--background-white)) !important;
+  border-radius: 8px;
+  border-left: 3px solid var(--meeting-primary) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.meeting-content h4 {
+  color: var(--meeting-primary) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--meeting-bg) !important;
+  border-left: 3px solid var(--meeting-primary) !important;
+  border-radius: 6px;
+}
+
+/* Modern Cards for Content Sections */
+.meeting-content ul {
+  background: linear-gradient(135deg, var(--meeting-bg), var(--background-white)) !important;
+  border-radius: 10px;
+  padding: 0.75rem;
+  border-left: 3px solid var(--meeting-primary) !important;
+  margin: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.meeting-content ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--meeting-primary), transparent) !important;
+}
+
+.meeting-content ol {
+  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light)) !important;
+  border-radius: 10px;
+  padding: 0.75rem;
+  border-left: 3px solid var(--meeting-primary) !important;
+  margin: 1rem 0;
+  box-shadow: 0 2px 10px var(--meeting-border);
+  position: relative;
+}
+
+.meeting-content ol::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--meeting-primary), transparent) !important;
+}
+
+.meeting-content li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 0.25rem;
+}
+
+/* Discussion Questions Special Styling */
+.meeting-content h2:has(+ ol),
+.meeting-content h2:contains("Discussion Questions") {
+  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+  border-left-color: var(--meeting-primary);
+}
+
+/* Discussion Questions reduced padding */
+.discussion-questions-list {
+  padding: 0.5rem !important;
+}
+
+/* Action Items Special Styling */
+.meeting-content h2:contains("Action Items") {
+  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+  border-left-color: var(--meeting-primary);
+}
+
+/* Enhanced Media Sections */
+.meeting-content h2:contains("Listen to"),
+.meeting-content h2:contains("Watch the") {
+  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+  border-left-color: var(--meeting-primary);
+  margin-top: 4rem;
+}
+
+/* Media instruction styling */
+.meeting-content h2:contains("Listen to") + p,
+.meeting-content h2:contains("Watch the") + p {
+  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+  border: 1px solid var(--meeting-border);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0 2rem 0;
+  font-style: italic;
+  color: var(--meeting-primary);
+  box-shadow: 0 2px 8px var(--meeting-border);
+}
+
+.meeting-content h2:contains("Listen to") + p a,
+.meeting-content h2:contains("Watch the") + p a {
+  color: var(--meeting-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--meeting-light);
+}
+
+.meeting-content h2:contains("Listen to") + p a:hover,
+.meeting-content h2:contains("Watch the") + p a:hover {
+  color: var(--meeting-hover);
+  text-decoration-color: var(--meeting-primary);
+}
+
+/* Media Download Controls */
+.media-download-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.download-btn, .stream-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn {
+  background: linear-gradient(135deg, var(--meeting-primary), var(--meeting-hover));
+  color: white;
+  border-color: var(--meeting-primary);
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, var(--meeting-hover), var(--meeting-primary));
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stream-btn {
+  background: linear-gradient(135deg, #28a745, #34ce57);
+  color: white;
+  border-color: #28a745;
+}
+
+.stream-btn:hover {
+  background: linear-gradient(135deg, #34ce57, #28a745);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.download-btn i, .stream-btn i {
+  font-size: 1rem;
+}
+
+/* Media Container Styling */
+.media-container {
+  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+  border: 2px solid var(--meeting-border);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Audio/Video Styling */
+.meeting-content audio,
+.meeting-content video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  margin: 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.meeting-content audio {
+  height: 60px;
+}
+
+/* Quote Styling */
+.meeting-content blockquote {
+  background: linear-gradient(135deg, var(--meeting-bg), #f5f5f5);
+  border-left: 4px solid var(--meeting-primary);
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-style: italic;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.meeting-content blockquote::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--meeting-primary);
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+/* Special Styling for Different Content Types */
+.meeting-content h2:nth-child(1) {
+  margin-top: 1rem;
+}
+
+/* Improve readability for content sections */
+.meeting-content p {
+  margin-bottom: 1.2rem;
+}
+
+.meeting-content strong {
+  color: var(--header-dark-navy);
+  font-weight: 600;
+}
+
+/* Mobile content adjustments */
+@media (max-width: 768px) {
+  .meeting-content h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .meeting-content h3 {
+    font-size: 1.3rem;
+    padding: 0.75rem 1rem;
+  }
+}
