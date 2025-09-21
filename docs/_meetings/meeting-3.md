@@ -1059,18 +1059,8 @@ dora_color: '#FF9800'
 
 .action-items li {
   display: block;
-  margin: 0.75rem 0;
-  padding: 0.75rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 8px;
-  border-left: 4px solid var(--accent-coral);
+  padding: 0.5rem 0;
   font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.action-items li:hover {
-  background: linear-gradient(135deg, #e9ecef, #dee2e6);
-  transform: translateX(4px);
 }
 </style>
 
