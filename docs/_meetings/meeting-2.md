@@ -58,18 +58,6 @@ dora_color: '#0F766E'
   </div>
 </div>
 
-### CD Maturity Assessment
-
-<div class="cd-maturity-assessment">
-  <h4>How mature are your CD practices?</h4>
-  <ul>
-    <li>Which CD practices is your organization currently implementing well/poorly?</li>
-    <li>What prevents your team from deploying independently?</li>
-    <li>How much freedom do teams have in tool selection? What are the constraints?</li>
-    <li>How early in your development process is security considered?</li>
-  </ul>
-</div>
-
 ### Continuous Delivery Core Principles
 
 <div class="cd-principles-grid">
@@ -210,12 +198,30 @@ dora_color: '#0F766E'
 <div class="learning-checkpoint">
   <div class="checkpoint-card cd-maturity">
     <h4><i class="fas fa-chart-line"></i> CD Maturity Assessment</h4>
-    <p>Reflect on your team's strengths and gaps in CD practices.</p>
-    <ul>
-      <li>Automate one manual process</li>
-      <li>Map dependencies blocking independent deployment</li>
-      <li>Experiment with trunk-based development or test automation</li>
-    </ul>
+    <p>Rate your organization's maturity in Continuous Delivery practices:</p>
+    <div class="assessment-buttons">
+      <label class="assessment-btn high-performance">
+        <input type="radio" name="cd-maturity" value="high">
+        <span class="radio-mark"></span>
+        High Maturity<br>
+        <span class="cd-desc">Automated pipelines, trunk-based development, rapid feedback, frequent deploys</span>
+      </label>
+      <label class="assessment-btn medium-performance">
+        <input type="radio" name="cd-maturity" value="medium">
+        <span class="radio-mark"></span>
+        Medium Maturity<br>
+        <span class="cd-desc">Some automation, regular releases, partial trunk-based, some manual steps</span>
+      </label>
+      <label class="assessment-btn low-performance">
+        <input type="radio" name="cd-maturity" value="low">
+        <span class="radio-mark"></span>
+        Low Maturity<br>
+        <span class="cd-desc">Manual deployments, long-lived branches, infrequent releases, little automation</span>
+      </label>
+    </div>
+    <div class="feedback-area" id="cd-maturity-feedback">
+      <p>Select your organization's CD maturity level to see improvement opportunities.</p>
+    </div>
   </div>
 
   <div class="checkpoint-card tool-autonomy">
@@ -317,27 +323,21 @@ dora_color: '#0F766E'
 
 ## Related Resources
 
-<div class="related-resources">
-  <div class="resource-category">
-    <h4><i class="fas fa-tools"></i> CI/CD Tools & Platforms</h4>
-    <ul>
-      <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> - Workflow automation</li>
-      <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a> - Open source automation server</li>
-      <li><a href="https://circleci.com/" target="_blank">CircleCI</a> - Continuous integration platform</li>
-      <li><a href="https://argoproj.github.io/cd/" target="_blank">Argo CD</a> - GitOps continuous delivery</li>
-    </ul>
-  </div>
-  
-  <div class="resource-category">
-    <h4><i class="fas fa-shield-alt"></i> Security Integration</h4>
-    <ul>
-      <li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps</a> - Security guidelines</li>
-      <li><a href="https://snyk.io/" target="_blank">Snyk</a> - Developer security platform</li>
-      <li><a href="https://github.com/features/security" target="_blank">GitHub Security</a> - Built-in security features</li>
-      <li><a href="https://www.sonarqube.org/" target="_blank">SonarQube</a> - Code quality and security</li>
-    </ul>
-  </div>
-</div>
+## Related Resources
+
+### CI/CD Tools & Platforms
+
+- [GitHub Actions](https://github.com/features/actions) — Workflow automation
+- [Jenkins](https://www.jenkins.io/) — Open source automation server
+- [CircleCI](https://circleci.com/) — Continuous integration platform
+- [Argo CD](https://argoproj.github.io/cd/) — GitOps continuous delivery
+
+### Security Integration
+
+- [OWASP DevSecOps](https://owasp.org/www-project-devsecops-guideline/) — Security guidelines
+- [Snyk](https://snyk.io/) — Developer security platform
+- [GitHub Security](https://github.com/features/security) — Built-in security features
+- [SonarQube](https://www.sonarqube.org/) — Code quality and security
 
 <style>
 /* Meeting Navigation */
