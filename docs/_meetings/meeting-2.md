@@ -329,8 +329,6 @@ dora_color: '#059669'
   </div>
 </div>
 
----
-
 ## Discussion Questions
 
 1. **CD Maturity Assessment:** Which CD practices is your organization currently implementing well/poorly?
