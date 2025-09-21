@@ -613,6 +613,7 @@ h2 {
   border-left: none;
   padding-left: 0;
   font-family: 'Georgia', serif;
+  color: white;
 }
 
 /* Quick start section */
@@ -940,6 +941,9 @@ pre {
   padding: 1.5rem 1rem;
   transition: all 0.3s ease;
   border: 1px solid var(--border-light);
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .timeline-node:hover {
@@ -967,23 +971,23 @@ pre {
 }
 
 .timeline-node.node-1 .node-circle {
-  border-color: var(--dora-blue);
-  color: var(--dora-blue);
+  border-color: #1E3A8A;
+  color: #1E3A8A;
 }
 
 .timeline-node.node-2 .node-circle {
-  border-color: var(--dora-green);
-  color: var(--dora-green);
+  border-color: #0F766E;
+  color: #0F766E;
 }
 
 .timeline-node.node-3 .node-circle {
-  border-color: var(--dora-orange);
-  color: var(--dora-orange);
+  border-color: #D97706;
+  color: #D97706;
 }
 
 .timeline-node.node-4 .node-circle {
-  border-color: var(--dora-red);
-  color: var(--dora-red);
+  border-color: #7c3aed;
+  color: #7c3aed;
 }
 
 .timeline-node:hover .node-circle {
