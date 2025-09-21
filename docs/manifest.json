@@ -1,0 +1,41 @@
+{
+  "name": "Accelerate DevEx Book Club",
+  "short_name": "Accelerate Book Club",
+  "description": "A structured approach to implementing high-performing DevOps practices through Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim",
+  "start_url": "/accelerate-devex-book-club-notebooklm/",
+  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "theme_color": "#7adad1",
+  "orientation": "portrait-primary",
+  "categories": ["education", "productivity", "books"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/accelerate-devex-book-club-notebooklm/assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/accelerate-devex-book-club-notebooklm/assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/accelerate-devex-book-club-notebooklm/assets/images/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/accelerate-devex-book-club-notebooklm/assets/images/screenshot-narrow.png",
+      "sizes": "640x1136",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
