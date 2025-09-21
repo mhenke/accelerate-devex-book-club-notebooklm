@@ -305,11 +305,13 @@ dora_color: '#F44336'
 
 ## Final Action Items and Commitments
 
-[ ] Each participant commits to implementing one specific capability from the 24 capabilities
-[ ] Identify small experiments to try over next 2-4 weeks
-[ ] Establish how to track progress on DORA metrics
-[ ] Plan monthly check-ins to share results and continued learning
-[ ] Decide on next book or continuing with State of DevOps Reports
+<ul class="action-items">
+<li>[ ] Each participant commits to implementing one specific capability from the 24 capabilities</li>
+<li>[ ] Identify small experiments to try over next 2-4 weeks</li>
+<li>[ ] Establish how to track progress on DORA metrics</li>
+<li>[ ] Plan monthly check-ins to share results and continued learning</li>
+<li>[ ] Decide on next book or continuing with State of DevOps Reports</li>
+</ul>
 
 ## <i class="fas fa-rocket"></i> Next Steps
 
