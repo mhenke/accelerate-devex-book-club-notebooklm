@@ -390,8 +390,6 @@ dora_color: '#4CAF50'
   </div>
 </div>
 
-## 🧭 Navigation
-
 <style>
 /* Meeting Navigation */
 .meeting-navigation {
