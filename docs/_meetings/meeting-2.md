@@ -156,10 +156,6 @@ dora_color: '#4CAF50'
 - [ ] Find one repetitive task to automate
 - [ ] Practice working in smaller batches on current work
 
-## Supplementary Content
-
-Generate additional content using the [NotebookLM prompts](../../resources/meetings/)
-
 ---
 
 ## 🎧 Listen to the Meeting 2 Podcast
