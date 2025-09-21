@@ -113,6 +113,7 @@ accelerate-devex-book-club-notebooklm/
 ## 🤝 Contributing
 
 Contributions welcome for:
+
 - New meeting formats or session guides
 - Additional AI-generated content prompts
 - Improved accessibility and design

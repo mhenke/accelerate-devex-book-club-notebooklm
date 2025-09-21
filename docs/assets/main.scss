@@ -19,6 +19,16 @@
 
   }
 
+  /*
+    MAINTAINABILITY NOTE:
+    - Stray closing brace removed.
+    - All blocks closed and indented properly.
+    - Comments added for complex visual logic.
+    - Color variables used consistently.
+    - For icon usage, prefer inline SVG for best accessibility and reliability.
+    - Consider splitting this file into partials for easier maintenance if it grows further.
+  */
+
 
 // NOTE: Google Fonts and Font Awesome should be loaded via <link> tags in HTML <head>, not via SCSS @import.
 // Remove these imports to prevent build issues and improve reliability.
