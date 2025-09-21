@@ -325,7 +325,7 @@ dora_color: '#2196F3'
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   border-radius: 16px;
@@ -690,7 +690,7 @@ dora_color: '#2196F3'
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   max-width: 900px;
 }
 
@@ -793,7 +793,7 @@ h3 i, h4 i {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   border-radius: 12px;
@@ -862,7 +862,7 @@ h3 i, h4 i {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   padding: 1.5rem;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   border-radius: 12px;
