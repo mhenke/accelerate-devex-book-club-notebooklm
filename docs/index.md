@@ -99,60 +99,88 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 - **Architecture patterns** that enable team autonomy
 - **Leadership practices** that create psychological safety and innovation
 
-<!-- DevOps Practices Wheel -->
-<section class="devops-wheel-section" aria-label="DevOps Practices Wheel">
-  <h2 class="devops-wheel__header">High Performance DevOps Practices</h2>
-  <div class="devops-wheel" aria-label="DevOps Practices Wheel">
-    <div class="wheel-center">
-      <h3>High<br>Performance</h3>
+<!-- DevOps Virtuous Cycle -->
+<section class="devops-cycle-section" aria-label="DevOps Virtuous Cycle">
+  <h2 class="devops-cycle__header">DevOps Virtuous Cycle</h2>
+  <div class="devops-cycle" aria-label="DevOps Virtuous Cycle">
+    <!-- Center Circle -->
+    <div class="cycle-center">
+      <div class="center-content">
+        <h3>Accelerate</h3>
+        <p>Delivery</p>
+      </div>
     </div>
     
-    <div class="practice-spoke practice-ci" style="--angle: 0deg;">
-      <div class="spoke-line"></div>
-      <div class="spoke-icon">
-        <i class="fas fa-code-branch" aria-hidden="true"></i>
-      </div>
-      <div class="spoke-label">Continuous<br>Integration</div>
+    <!-- Circular Flow Path -->
+    <div class="cycle-path">
+      <svg class="cycle-svg" viewBox="0 0 400 400">
+        <!-- Background circle -->
+        <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+        <!-- Flow arrows -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="var(--accent-coral)"/>
+          </marker>
+        </defs>
+        <!-- Arrow paths -->
+        <path d="M 350 200 A 150 150 0 0 1 283 342" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8"/>
+        <path d="M 283 342 A 150 150 0 0 1 117 342" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8"/>
+        <path d="M 117 342 A 150 150 0 0 1 50 200" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8"/>
+        <path d="M 50 200 A 150 150 0 0 1 117 58" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8"/>
+        <path d="M 117 58 A 150 150 0 0 1 283 58" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8"/>
+        <path d="M 283 58 A 150 150 0 0 1 350 200" fill="none" stroke="var(--accent-coral)" stroke-width="3" marker-end="url(#arrowhead)" opacity="0.8"/>
+      </svg>
     </div>
     
-    <div class="practice-spoke practice-testing" style="--angle: 72deg;">
-      <div class="spoke-line"></div>
-      <div class="spoke-icon">
-        <i class="fas fa-flask" aria-hidden="true"></i>
+    <!-- Practice Nodes -->
+    <div class="cycle-node" data-position="plan" style="--angle: 0deg;">
+      <div class="node-content">
+        <i class="fas fa-clipboard-list"></i>
+        <span>Plan</span>
       </div>
-      <div class="spoke-label">Automated<br>Testing</div>
     </div>
     
-    <div class="practice-spoke practice-monitoring" style="--angle: 144deg;">
-      <div class="spoke-line"></div>
-      <div class="spoke-icon">
-        <i class="fas fa-chart-area" aria-hidden="true"></i>
+    <div class="cycle-node" data-position="code" style="--angle: 60deg;">
+      <div class="node-content">
+        <i class="fas fa-code"></i>
+        <span>Code</span>
       </div>
-      <div class="spoke-label">Monitoring &<br>Observability</div>
     </div>
     
-    <div class="practice-spoke practice-version" style="--angle: 216deg;">
-      <div class="spoke-line"></div>
-      <div class="spoke-icon">
-        <i class="fab fa-git-alt" aria-hidden="true"></i>
+    <div class="cycle-node" data-position="build" style="--angle: 120deg;">
+      <div class="node-content">
+        <i class="fas fa-hammer"></i>
+        <span>Build</span>
       </div>
-      <div class="spoke-label">Version<br>Control</div>
     </div>
     
-    <div class="practice-spoke practice-deployment" style="--angle: 288deg;">
-      <div class="spoke-line"></div>
-      <div class="spoke-icon">
-        <i class="fas fa-rocket" aria-hidden="true"></i>
+    <div class="cycle-node" data-position="test" style="--angle: 180deg;">
+      <div class="node-content">
+        <i class="fas fa-flask"></i>
+        <span>Test</span>
       </div>
-      <div class="spoke-label">Deployment<br>Automation</div>
+    </div>
+    
+    <div class="cycle-node" data-position="release" style="--angle: 240deg;">
+      <div class="node-content">
+        <i class="fas fa-rocket"></i>
+        <span>Release</span>
+      </div>
+    </div>
+    
+    <div class="cycle-node" data-position="monitor" style="--angle: 300deg;">
+      <div class="node-content">
+        <i class="fas fa-chart-line"></i>
+        <span>Monitor</span>
+      </div>
     </div>
   </div>
   
-  <p class="devops-wheel__description">
-    High-performing teams excel in all five key DevOps practices, creating a virtuous cycle of continuous improvement and innovation.
+  <p class="devops-cycle__description">
+    Continuous delivery practices create a virtuous cycle where each phase feeds into the next, accelerating value delivery and organizational learning.
   </p>
 </section>
-<!-- End DevOps Practices Wheel -->
+<!-- End DevOps Virtuous Cycle -->
 
 ## <i class="fas fa-calendar-alt"></i> Meeting Schedule
 
