@@ -329,15 +329,6 @@ dora_color: '#1E3A8A'
       <li><a href="https://continuousdelivery.com/implementing/culture/" target="_blank">Generative Culture Assessment</a> - Practical culture implementation guide</li>
     </ul>
   </div>
-
-  <div class="resource-category">
-    <h3><i class="fas fa-book"></i> Foundation Books & Resources</h3>
-    <ul class="resource-links">
-      <li><a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" target="_blank">Accelerate Book</a> - The source material for our book club</li>
-      <li><a href="https://dora.dev/research/" target="_blank">State of DevOps Report Archive</a> - Historical DevOps research and trends</li>
-      <li><a href="https://cloud.google.com/blog/products/devops-sre/the-2021-accelerate-state-of-devops-report-addresses-burnout-team-performance" target="_blank">DevOps Research and Assessment</a> - Google Cloud DORA insights</li>
-    </ul>
-  </div>
 </div>
 
 <style>
