@@ -118,14 +118,14 @@ Create a visual overview with the [Meeting 2 Video Prompt](../notebooklm-prompts
 ## 🎧 Listen to the Meeting 2 Podcast
 
 <audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/podcast.mp4" type="audio/mp4">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-podcast.mp4" type="audio/mp4">
 	Your browser does not support the audio element.
 </audio>
 
 ## 📺 Watch the Meeting 2 Video
 
 <video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/video.m4a" type="video/x-m4a">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-2-video.m4a" type="video/x-m4a">
 	Your browser does not support the video tag.
 </video>
 

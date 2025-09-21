@@ -86,14 +86,14 @@ Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts
 ## 🎧 Listen to the Meeting 1 Podcast
 
 <audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/podcast.m4a" type="audio/x-m4a">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
 ## 📺 Watch the Meeting 1 Video
 
 <video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/video.mp4" type="video/mp4">
+	<source src="/accelerate-devex-book-club-notebooklm/assets/media/meeting-1-video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 
