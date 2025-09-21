@@ -72,39 +72,6 @@ dora_color: '#7c3aed'
   </div>
 </div>
 
-### Security: Traditional vs Shift-Left
-
-<div class="security-evolution">
-  <div class="security-approach traditional">
-    <div class="approach-icon"><i class="fas fa-door-closed"></i></div>
-    <h3>Traditional Security</h3>
-    <div class="approach-content">
-      <p><strong>Gate-Based Approach</strong></p>
-      <ul>
-        <li><i class="fas fa-ban"></i> Security as final gate</li>
-        <li><i class="fas fa-user-shield"></i> Separate security team</li>
-        <li><i class="fas fa-turtle"></i> Late-stage testing</li>
-        <li><i class="fas fa-balance-scale"></i> Security vs speed trade-off</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="evolution-arrow">⬅️</div>
-  
-  <div class="security-approach shift-left">
-    <div class="approach-icon"><i class="fas fa-arrow-left"></i></div>
-    <h3>Shift-Left Security</h3>
-    <div class="approach-content">
-      <p><strong>Integrated Throughout</strong></p>
-      <ul>
-        <li><i class="fas fa-sync-alt"></i> Security in every stage</li>
-        <li><i class="fas fa-handshake"></i> Embedded security experts</li>
-        <li><i class="fas fa-robot"></i> Automated security testing</li>
-        <li><i class="fas fa-rocket"></i> Security enables speed</li>
-      </ul>
-    </div>
-  </div>
-</div>
 
 ### The Learning & Experimentation Cycle
 
@@ -599,43 +566,6 @@ Congratulations! You've completed the structured book club journey. Continue you
   text-align: left;
 }
 
-/* Security Evolution */
-.security-evolution {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #ffebee, #ffcdd2);
-  border-radius: 16px;
-  border: 2px solid #7c3aed;
-}
-
-.security-approach {
-  flex: 1;
-  text-align: center;
-}
-
-.approach-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.security-approach h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.traditional h3 {
-  color: #6d28d9;
-}
-
-.shift-left h3 {
-  color: #2e7d32;
-}
 
 .approach-content p {
   font-weight: 600;
@@ -1015,17 +945,6 @@ Congratulations! You've completed the structured book club journey. Continue you
     gap: 1.5rem;
   }
   
-  .security-evolution {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .evolution-arrow {
-    transform: rotate(90deg);
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
-  }
   
   .learning-cycle {
     flex-direction: column;
@@ -1050,9 +969,6 @@ Congratulations! You've completed the structured book club journey. Continue you
     grid-template-columns: 1fr;
   }
   
-  .security-approach {
-    max-width: 100%;
-  }
 }
 </style>
 
