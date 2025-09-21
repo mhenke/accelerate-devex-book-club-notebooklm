@@ -278,19 +278,6 @@ dora_color: '#2196F3'
 
 ## 🧭 Navigation
 
-<div class="meeting-navigation">
-  <div class="nav-item prev">
-    <i class="fas fa-arrow-left"></i>
-    <span>Previous: None (Starting point)</span>
-  </div>
-  <div class="nav-item next">
-    <a href="meeting-2.html">
-      <span>Next: Technical Excellence & Continuous Delivery</span>
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
-
 <style>
 /* Meeting Navigation */
 .meeting-navigation {
