@@ -1,9 +1,9 @@
 ---
 layout: meeting
-title: 'Meeting 3: Architecture'
-subtitle: 'Architecture, Autonomy, and Lean Thinking'
+title: 'Meeting 3: Management & Sustainability'
+subtitle: 'Management, Product Development & Sustainability'
 week: 5
-chapters: '9-12'
+chapters: '7-10'
 duration: '1 Hour'
 dora_color: '#FF9800'
 ---
@@ -228,17 +228,17 @@ dora_color: '#FF9800'
 
 ## Discussion Questions
 
-1. **Architecture Assessment:** How well does your current architecture enable independent team work?
-2. **Tool Autonomy:** What level of tool selection freedom do teams currently have?
-3. **Lean Practices:** Which lean management practices are you currently using? Which could be adopted?
-4. **WIP Visibility:** How do you currently visualize and limit work in progress?
-5. **Developer Satisfaction:** What factors most impact job satisfaction in your organization?
+1. **Lean Practices Assessment:** Which lean management practices do you currently use? What's missing?
+2. **Work Visualization:** How does your team currently visualize WIP and quality metrics?
+3. **Change Approval Reality:** Describe your current change approval process - who's involved and how long does it take?
+4. **Burnout Indicators:** What signs of deployment pain or burnout do you observe in your team?
+5. **Employee Engagement:** How would your team score on employee Net Promoter Score?
 
 ## Action Items for Next Meeting
 
-[ ] Map one architectural dependency that slows your team
-[ ] Experiment with WIP limits on your current board
-[ ] Identify one approval process for peer review
+[ ] Experiment with visualizing work using simple kanban board
+[ ] Identify one change approval step that could be streamlined
+[ ] Observe and document burnout risk factors in your environment
 
 <style>
 /* Architecture Comparison */

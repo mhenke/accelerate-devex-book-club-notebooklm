@@ -3,7 +3,7 @@ layout: meeting
 title: 'Meeting 1: Foundation'
 subtitle: 'Laying the Foundation – The Myth and the Measurement'
 week: 1
-chapters: '1-4'
+chapters: '1-3'
 duration: '1 Hour'
 dora_color: '#2196F3'
 ---
@@ -85,6 +85,46 @@ dora_color: '#2196F3'
         <li><i class="fas fa-chart-bar"></i> High performers excel at both</li>
       </ul>
     </div>
+  </div>
+</div>
+
+## Westrum's Organizational Culture Types
+
+<div class="culture-types-diagram">
+  <div class="culture-card pathological">
+    <div class="culture-icon"><i class="fas fa-exclamation-triangle"></i></div>
+    <h3>Pathological</h3>
+    <p class="culture-subtitle">Power-Oriented</p>
+    <ul class="culture-traits">
+      <li><i class="fas fa-times"></i> Low cooperation</li>
+      <li><i class="fas fa-user-slash"></i> Messengers shot</li>
+      <li><i class="fas fa-hand-paper"></i> Responsibility shirked</li>
+      <li><i class="fas fa-eye-slash"></i> Information hoarded</li>
+    </ul>
+  </div>
+  
+  <div class="culture-card bureaucratic">
+    <div class="culture-icon"><i class="fas fa-clipboard-list"></i></div>
+    <h3>Bureaucratic</h3>
+    <p class="culture-subtitle">Rule-Oriented</p>
+    <ul class="culture-traits">
+      <li><i class="fas fa-chart-bar"></i> Modest cooperation</li>
+      <li><i class="fas fa-user-times"></i> Messengers neglected</li>
+      <li><i class="fas fa-ruler"></i> Narrow responsibilities</li>
+      <li><i class="fas fa-file-alt"></i> Rules over mission</li>
+    </ul>
+  </div>
+  
+  <div class="culture-card generative">
+    <div class="culture-icon"><i class="fas fa-rocket"></i></div>
+    <h3>Generative</h3>
+    <p class="culture-subtitle">Performance-Oriented</p>
+    <ul class="culture-traits">
+      <li><i class="fas fa-check"></i> High cooperation</li>
+      <li><i class="fas fa-graduation-cap"></i> Messengers trained</li>
+      <li><i class="fas fa-handshake"></i> Risks shared</li>
+      <li><i class="fas fa-bullseye"></i> Mission focused</li>
+    </ul>
   </div>
 </div>
 
@@ -239,16 +279,16 @@ dora_color: '#2196F3'
 
 ## Discussion Questions
 
-1. **DORA Assessment:** Rate your organization on each metric (High/Medium/Low)
-2. **Deployment Pain:** What makes your team nervous about releases?
-3. **Speed vs Stability:** Where have you seen this false trade-off?
-4. **Quick Wins:** Which metric could improve fastest?
+1. **Current State Assessment:** How would you rate your team on each DORA metric?
+2. **Speed vs. Stability Myths:** What examples have you seen of assumed trade-offs in your organization?
+3. **Deployment Pain Points:** Describe your team's current deployment experience and anxiety levels
+4. **Culture Indicators:** Using Westrum's model, what culture type best describes your organization?
 
 ## Action Items for Next Meeting
 
-[ ] Track one DORA metric for your team this week
+[ ] Begin informal tracking of one DORA metric for your team
 [ ] Identify your biggest deployment pain point
-[ ] Find one example of speed vs stability thinking
+[ ] Observe examples of pathological, bureaucratic, or generative culture behaviors
 
 <style>
 /* Interactive Learning Checkpoint */
@@ -912,6 +952,124 @@ dora_color: '#2196F3'
   
   .myth-side, .reality-side {
     max-width: 100%;
+  }
+}
+
+/* Westrum Culture Types Styling */
+.culture-types-diagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+  max-width: 1000px;
+}
+
+.culture-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.culture-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.culture-card.pathological {
+  border-color: #f44336;
+}
+
+.culture-card.pathological::before {
+  background: linear-gradient(90deg, #f44336, #d32f2f);
+}
+
+.culture-card.pathological .culture-icon {
+  color: #f44336;
+}
+
+.culture-card.bureaucratic {
+  border-color: #ff9800;
+}
+
+.culture-card.bureaucratic::before {
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+}
+
+.culture-card.bureaucratic .culture-icon {
+  color: #ff9800;
+}
+
+.culture-card.generative {
+  border-color: #4caf50;
+}
+
+.culture-card.generative::before {
+  background: linear-gradient(90deg, #4caf50, #388e3c);
+}
+
+.culture-card.generative .culture-icon {
+  color: #4caf50;
+}
+
+.culture-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.culture-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.culture-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.culture-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.culture-traits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.culture-traits li {
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.culture-traits li i {
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .culture-types-diagram {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 </style>
