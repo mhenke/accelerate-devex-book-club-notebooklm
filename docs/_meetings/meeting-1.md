@@ -159,9 +159,9 @@ dora_color: '#2196F3'
 
 ## Action Items for Next Meeting
 
-- [ ] Track one DORA metric for your team this week
-- [ ] Identify your biggest deployment pain point
-- [ ] Find one example of speed vs stability thinking
+[ ] Track one DORA metric for your team this week
+[ ] Identify your biggest deployment pain point
+[ ] Find one example of speed vs stability thinking
 
 <style>
 /* DORA Metrics Grid */

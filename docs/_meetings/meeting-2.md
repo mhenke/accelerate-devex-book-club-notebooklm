@@ -224,9 +224,9 @@ dora_color: '#4CAF50'
 
 ## Action Items for Next Meeting
 
-- [ ] Identify your team's culture type using Westrum's model
-- [ ] Find one repetitive task to automate
-- [ ] Practice working in smaller batches on current work
+[ ] Identify your team's culture type using Westrum's model
+[ ] Find one repetitive task to automate
+[ ] Practice working in smaller batches on current work
 
 <style>
 /* Culture Types Diagram */
