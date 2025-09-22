@@ -1,15 +1,15 @@
-# Meeting 3: Architecture, Autonomy, and Lean Thinking
+# Meeting 3: Management, Product Development & Sustainability
 
 **Week 5 | Duration:** 1 Hour
 
 ## Pre-Reading Assignment
 
-**Chapters:** 9-12 (Organizational and Management Practices)
+**Chapters:** 7-10 (Management Practices, Product Development, Making Work Sustainable, Employee Satisfaction)
 
-- Chapter 9: Making Work Sustainable
-- Chapter 10: Employee Satisfaction, Identity, and Engagement
-- Chapter 11: Leaders and Managers
-- Chapter 12: Diversity in Tech
+- Chapter 7: Management Practices for Software - Lean management and lightweight change approval
+- Chapter 8: Product Development - Lean product practices and team experimentation  
+- Chapter 9: Making Work Sustainable - Deployment pain and burnout
+- Chapter 10: Employee Satisfaction, Identity, and Engagement - Job satisfaction and diversity
 
 ## Core Concepts to Explore
 
