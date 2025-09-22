@@ -1,3 +1,6 @@
+---
+---
+
 // Section Accent Header
 .section-accent {
   border-left: 4px solid var(--accent-teal);
@@ -13,8 +16,6 @@
   align-items: center;
   gap: 0.5rem;
 }
----
----
 
 // Import Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
@@ -30,39 +31,39 @@
   --mobile: 768px;
   --tablet: 1024px;
   --desktop: 1200px;
-  
+
   /* Header Gradient Colors */
   --header-dark-navy: #1a1a2e;
   --header-light-navy: #16213e;
-  
+
   /* Background Colors */
   --background-white: #ffffff;
   --background-off-white: #efe9e7;
   --background-light-gray: #f5f5f5;
-  
+
   /* Accent Colors */
   --accent-coral: #ff7f50;
   --accent-gold: #d7ba89;
   --accent-teal: #7adad1;
   --accent-sage: #8b9eb7;
-  
+
   /* DORA Metric Colors */
   --dora-blue: #2196f3;
   --dora-green: #4caf50;
   --dora-orange: #ff9800;
   --dora-red: #f44336;
-  
+
   /* Text Colors */
   --text-dark: #2c3e50;
   --text-medium: #5a6c7d;
   --text-light: #8fa8b8;
   --text-white: #ffffff;
-  
+
   /* Border & Shadow */
   --border-light: #e8ecf0;
   --shadow-light: rgba(26, 26, 46, 0.1);
   --shadow-medium: rgba(26, 26, 46, 0.15);
-  
+
   /* Interactive States */
   --hover-coral: #ff6347;
   --hover-gold: #c9a876;
@@ -71,7 +72,8 @@
 
 /* Modern Typography with Google Fonts */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--background-white);
@@ -93,8 +95,11 @@ body::before {
   pointer-events: none;
   opacity: 0.03;
   z-index: -1;
-  background-image: 
-    radial-gradient(circle at 20% 50%, #2196f3 2px, transparent 2px),
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      #2196f3 2px,
+      transparent 2px
+    ),
     radial-gradient(circle at 80% 50%, #4caf50 2px, transparent 2px),
     radial-gradient(circle at 40% 20%, #ff9800 1px, transparent 1px),
     radial-gradient(circle at 60% 80%, #f44336 1px, transparent 1px);
@@ -108,7 +113,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    sans-serif;
   font-weight: 600;
   color: var(--text-dark);
   margin-top: 2rem;
@@ -152,10 +158,13 @@ h2 {
   position: relative;
 }
 
-
 /* Modern Hero Banner */
 .hero-banner {
-  background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-navy) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--header-dark-navy) 0%,
+    var(--header-light-navy) 100%
+  );
   color: var(--text-white);
   padding: 8rem 2rem;
   margin: -2rem -1rem 4rem -1rem;
@@ -343,20 +352,20 @@ h2 {
   .hero-headline {
     font-size: 2.8rem !important;
   }
-  
+
   .hero-banner .site-title h2 {
     font-size: 1.5rem;
   }
-  
+
   .hero-metrics {
     gap: 1.5rem;
   }
-  
+
   .hero-metrics .metric-icon {
     width: 50px;
     height: 50px;
   }
-  
+
   .hero-metrics .metric-icon i {
     font-size: 1.5rem;
   }
@@ -467,7 +476,6 @@ h2 {
   text-decoration: underline;
   color: var(--dark-blue);
 }
-
 
 /* Resource cards */
 .resources-grid {
@@ -783,7 +791,11 @@ pre {
 }
 
 .metric-card {
-  background: linear-gradient(135deg, var(--background-white), var(--background-light-gray));
+  background: linear-gradient(
+    135deg,
+    var(--background-white),
+    var(--background-light-gray)
+  );
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
@@ -872,7 +884,13 @@ pre {
   left: 10%;
   right: 10%;
   height: 4px;
-  background: linear-gradient(90deg, var(--dora-blue), var(--dora-green), var(--dora-orange), var(--dora-red));
+  background: linear-gradient(
+    90deg,
+    var(--dora-blue),
+    var(--dora-green),
+    var(--dora-orange),
+    var(--dora-red)
+  );
   border-radius: 2px;
   transform: translateY(-50%);
   box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
@@ -892,7 +910,11 @@ pre {
   max-width: 220px;
   box-shadow: 0 8px 30px rgba(33, 150, 243, 0.1), 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
-  background: linear-gradient(145deg, var(--background-white), var(--background-light-gray));
+  background: linear-gradient(
+    145deg,
+    var(--background-white),
+    var(--background-light-gray)
+  );
   padding: 1.5rem 1rem;
   transition: all 0.3s ease;
   border: 1px solid var(--border-light);
@@ -900,7 +922,8 @@ pre {
 
 .timeline-node:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(33, 150, 243, 0.15), 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 40px rgba(33, 150, 243, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .node-circle {
@@ -1050,8 +1073,13 @@ pre {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .ai-attribution__content {
@@ -1130,15 +1158,15 @@ pre {
     gap: 1rem;
     padding: 1.5rem;
   }
-  
+
   .ai-attribution__content {
     text-align: center;
   }
-  
+
   .ai-attribution__tools {
     gap: 0.5rem;
   }
-  
+
   .ai-tool {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
@@ -1349,22 +1377,21 @@ pre {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .timeline-nodes {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .timeline-node {
     flex: 0 0 calc(50% - 0.5rem);
     max-width: 300px;
   }
-  
+
   .timeline-line {
     display: none;
   }
 }
-
 
 /* Mobile (767px and down) */
 @media (max-width: 767px) {
@@ -1380,7 +1407,11 @@ pre {
 
 /* DevOps Practices Wheel */
 .devops-wheel-section {
-  background: linear-gradient(135deg, var(--background-light-gray), var(--background-white));
+  background: linear-gradient(
+    135deg,
+    var(--background-light-gray),
+    var(--background-white)
+  );
   border-radius: 20px;
   padding: 3rem 2rem;
   margin: 3rem 0;
@@ -1414,7 +1445,11 @@ pre {
   position: absolute;
   width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, var(--background-white), var(--background-light-gray));
+  background: linear-gradient(
+    135deg,
+    var(--background-white),
+    var(--background-light-gray)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1445,7 +1480,11 @@ pre {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, var(--background-white), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(
+    90deg,
+    var(--background-white),
+    rgba(255, 255, 255, 0.8)
+  );
   border-radius: 2px;
   top: 50%;
   transform: translateY(-50%);
@@ -1490,7 +1529,11 @@ pre {
 }
 
 .practice-spoke:hover .spoke-line {
-  background: linear-gradient(90deg, var(--accent-coral), rgba(255, 127, 80, 0.8));
+  background: linear-gradient(
+    90deg,
+    var(--accent-coral),
+    rgba(255, 127, 80, 0.8)
+  );
   height: 4px;
 }
 
@@ -1521,33 +1564,36 @@ pre {
     width: 300px;
     height: 300px;
   }
-  
+
   .wheel-center {
     width: 90px;
     height: 90px;
     font-size: 0.85rem;
   }
-  
+
   .practice-spoke {
     width: 150px;
   }
-  
+
   .spoke-icon {
     width: 35px;
     height: 35px;
     font-size: 1rem;
   }
-  
+
   .spoke-label {
     right: -70px;
     font-size: 0.75rem;
   }
 }
 
-
 /* DevOps Virtuous Cycle */
 .devops-cycle-section {
-  background: linear-gradient(135deg, var(--background-light-gray), var(--background-white));
+  background: linear-gradient(
+    135deg,
+    var(--background-light-gray),
+    var(--background-white)
+  );
   border-radius: 20px;
   padding: 3rem 2rem;
   margin: 3rem 0;
@@ -1635,37 +1681,37 @@ pre {
   cursor: pointer;
 }
 
-.cycle-node[data-position="plan"] {
+.cycle-node[data-position='plan'] {
   top: 50%;
   right: 0;
   transform: translate(50%, -50%);
 }
 
-.cycle-node[data-position="code"] {
+.cycle-node[data-position='code'] {
   top: 15%;
   right: 15%;
   transform: translate(50%, -50%);
 }
 
-.cycle-node[data-position="build"] {
+.cycle-node[data-position='build'] {
   top: 15%;
   left: 15%;
   transform: translate(-50%, -50%);
 }
 
-.cycle-node[data-position="test"] {
+.cycle-node[data-position='test'] {
   top: 50%;
   left: 0;
   transform: translate(-50%, -50%);
 }
 
-.cycle-node[data-position="release"] {
+.cycle-node[data-position='release'] {
   bottom: 15%;
   left: 15%;
   transform: translate(-50%, 50%);
 }
 
-.cycle-node[data-position="monitor"] {
+.cycle-node[data-position='monitor'] {
   bottom: 15%;
   right: 15%;
   transform: translate(50%, 50%);
@@ -1705,17 +1751,17 @@ pre {
   color: var(--text-white);
 }
 
-.cycle-node[data-position="test"]:hover,
-.cycle-node[data-position="release"]:hover {
+.cycle-node[data-position='test']:hover,
+.cycle-node[data-position='release']:hover {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.cycle-node[data-position="release"]:hover,
-.cycle-node[data-position="monitor"]:hover {
+.cycle-node[data-position='release']:hover,
+.cycle-node[data-position='monitor']:hover {
   transform: translate(-50%, 50%) scale(1.1);
 }
 
-.cycle-node[data-position="monitor"]:hover {
+.cycle-node[data-position='monitor']:hover {
   transform: translate(50%, 50%) scale(1.1);
 }
 
@@ -1733,29 +1779,29 @@ pre {
     width: 300px;
     height: 300px;
   }
-  
+
   .cycle-center {
     width: 90px;
     height: 90px;
   }
-  
+
   .center-content h3 {
     font-size: 1rem;
   }
-  
+
   .center-content p {
     font-size: 0.8rem;
   }
-  
+
   .cycle-node {
     width: 55px;
     height: 55px;
   }
-  
+
   .node-content i {
     font-size: 1.2rem;
   }
-  
+
   .node-content span {
     font-size: 0.7rem;
   }
@@ -1765,35 +1811,35 @@ pre {
   .devops-cycle-section {
     padding: 2rem 1rem;
   }
-  
+
   .devops-cycle {
     width: 250px;
     height: 250px;
   }
-  
+
   .cycle-center {
     width: 80px;
     height: 80px;
   }
-  
+
   .center-content h3 {
     font-size: 0.9rem;
   }
-  
+
   .center-content p {
     font-size: 0.7rem;
   }
-  
+
   .cycle-node {
     width: 50px;
     height: 50px;
   }
-  
+
   .node-content i {
     font-size: 1rem;
     margin-bottom: 0.2rem;
   }
-  
+
   .node-content span {
     font-size: 0.65rem;
   }
@@ -1837,7 +1883,6 @@ pre {
   .hero-metrics .metric-icon {
     font-size: 2rem;
   }
-
 
   .resource-grid {
     grid-template-columns: 1fr;
@@ -1891,15 +1936,15 @@ pre {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .metrics-category {
     padding: 1rem;
   }
-  
+
   .category-header {
     margin-bottom: 1rem;
   }
-  
+
   .metrics-group {
     gap: 1rem;
   }
