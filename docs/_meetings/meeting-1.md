@@ -126,6 +126,93 @@ dora_color: '#2196F3'
   </div>
 </div>
 
+## Interactive Learning Checkpoint
+
+<div class="learning-checkpoint">
+  <div class="checkpoint-card dora-assessment">
+    <div class="checkpoint-icon"><i class="fas fa-chart-line"></i></div>
+    <h4>DORA Metrics Assessment</h4>
+    <p>Rate your team's current performance on the four key metrics:</p>
+    <div class="assessment-buttons">
+      <label class="assessment-btn high-performance">
+        <input type="radio" name="dora-performance" value="high">
+        <span class="radio-mark"></span>
+        High Performance
+      </label>
+      <label class="assessment-btn medium-performance">
+        <input type="radio" name="dora-performance" value="medium">
+        <span class="radio-mark"></span>
+        Medium Performance
+      </label>
+      <label class="assessment-btn low-performance">
+        <input type="radio" name="dora-performance" value="low">
+        <span class="radio-mark"></span>
+        Low Performance
+      </label>
+    </div>
+    <div class="feedback-area" id="dora-feedback">
+      <p>Select your team's performance level to understand improvement opportunities.</p>
+    </div>
+  </div>
+  
+  <div class="checkpoint-card deployment-anxiety">
+    <div class="checkpoint-icon"><i class="fas fa-heart"></i></div>
+    <h4>Deployment Confidence</h4>
+    <p>How does your team feel about deployments?</p>
+    <div class="confidence-options">
+      <label class="confidence-item anxious">
+        <input type="radio" name="deployment-confidence" value="anxious">
+        <span class="radio-mark"></span>
+        <i class="fas fa-frown"></i> Anxious & Stressful
+      </label>
+      <label class="confidence-item neutral">
+        <input type="radio" name="deployment-confidence" value="neutral">
+        <span class="radio-mark"></span>
+        <i class="fas fa-meh"></i> Manageable but Tense
+      </label>
+      <label class="confidence-item confident">
+        <input type="radio" name="deployment-confidence" value="confident">
+        <span class="radio-mark"></span>
+        <i class="fas fa-smile"></i> Confident & Routine
+      </label>
+    </div>
+    <div class="feedback-area" id="confidence-feedback">
+      <p>Select how your team feels about deployments to get targeted improvement suggestions.</p>
+    </div>
+  </div>
+  
+  <div class="checkpoint-card improvement-priority">
+    <div class="checkpoint-icon"><i class="fas fa-bullseye"></i></div>
+    <h4>Improvement Priority</h4>
+    <p>Which DORA metric should your team focus on first?</p>
+    <div class="priority-selector">
+      <label class="priority-option">
+        <input type="radio" name="improvement-focus" value="lead-time">
+        <span class="radio-mark"></span>
+        <i class="fas fa-chart-line"></i> Lead Time
+      </label>
+      <label class="priority-option">
+        <input type="radio" name="improvement-focus" value="deploy-frequency">
+        <span class="radio-mark"></span>
+        <i class="fas fa-rocket"></i> Deploy Frequency
+      </label>
+      <label class="priority-option">
+        <input type="radio" name="improvement-focus" value="restore-time">
+        <span class="radio-mark"></span>
+        <i class="fas fa-clock"></i> Restore Time
+      </label>
+      <label class="priority-option">
+        <input type="radio" name="improvement-focus" value="change-fail">
+        <span class="radio-mark"></span>
+        <i class="fas fa-exclamation-triangle"></i> Change Fail Rate
+      </label>
+    </div>
+    <div class="feedback-area" id="priority-feedback">
+      <p>Choose which metric needs the most attention to get specific improvement strategies.</p>
+    </div>
+  </div>
+</div>
+
 ## Key Insights
 
 <div class="insights-grid">
@@ -164,6 +251,371 @@ dora_color: '#2196F3'
 [ ] Find one example of speed vs stability thinking
 
 <style>
+/* Interactive Learning Checkpoint */
+.learning-checkpoint {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-radius: 20px;
+  border: 2px solid #2196f3;
+}
+
+.checkpoint-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkpoint-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(33, 150, 243, 0.2);
+  border-color: #2196f3;
+}
+
+.checkpoint-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: #1565c0;
+}
+
+.checkpoint-card h4 {
+  margin: 0 0 1rem 0;
+  color: #1565c0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.checkpoint-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Assessment Buttons */
+.assessment-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.assessment-btn {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.assessment-btn input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.assessment-btn .radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.assessment-btn.high-performance {
+  border-color: #4caf50;
+  color: #388e3c;
+}
+
+.assessment-btn.high-performance .radio-mark {
+  border-color: #4caf50;
+}
+
+.assessment-btn.high-performance input:checked ~ .radio-mark {
+  background: #4caf50;
+}
+
+.assessment-btn.high-performance input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.assessment-btn.high-performance:has(input:checked) {
+  background: #e8f5e8;
+  border-color: #388e3c;
+  color: #388e3c;
+}
+
+.assessment-btn.medium-performance {
+  border-color: #ff9800;
+  color: #f57c00;
+}
+
+.assessment-btn.medium-performance .radio-mark {
+  border-color: #ff9800;
+}
+
+.assessment-btn.medium-performance input:checked ~ .radio-mark {
+  background: #ff9800;
+}
+
+.assessment-btn.medium-performance input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.assessment-btn.medium-performance:has(input:checked) {
+  background: #fff8e1;
+  border-color: #f57c00;
+  color: #f57c00;
+}
+
+.assessment-btn.low-performance {
+  border-color: #f44336;
+  color: #d32f2f;
+}
+
+.assessment-btn.low-performance .radio-mark {
+  border-color: #f44336;
+}
+
+.assessment-btn.low-performance input:checked ~ .radio-mark {
+  background: #f44336;
+}
+
+.assessment-btn.low-performance input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.assessment-btn.low-performance:has(input:checked) {
+  background: #ffebee;
+  border-color: #d32f2f;
+  color: #d32f2f;
+}
+
+/* Confidence Options */
+.confidence-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.confidence-item {
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  border-left: 4px solid #2196f3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.confidence-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.confidence-item .radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.confidence-item input:checked ~ .radio-mark {
+  background: #2196f3;
+}
+
+.confidence-item input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.confidence-item:hover {
+  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  color: white;
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.confidence-item:has(input:checked) {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-left-color: #1565c0;
+  color: #1565c0;
+}
+
+/* Priority Selector */
+.priority-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.priority-option {
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-radius: 12px;
+  border: 2px solid #2196f3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1565c0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.priority-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.priority-option .radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2196f3;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.priority-option input:checked ~ .radio-mark {
+  background: #2196f3;
+}
+
+.priority-option input:checked ~ .radio-mark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.priority-option:hover {
+  background: linear-gradient(135deg, #2196f3, #42a5f5);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+}
+
+.priority-option:has(input:checked) {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-color: #1565c0;
+  color: #1565c0;
+  font-weight: 600;
+}
+
+/* Feedback Areas */
+.feedback-area {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  border-left: 4px solid #2196f3;
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+
+.feedback-area p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.feedback-area h5 {
+  margin: 0 0 0.5rem 0;
+  color: #1565c0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.feedback-area.active {
+  border-left-color: #4caf50;
+  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+}
+
+/* Responsive Design for Checkpoint */
+@media (max-width: 768px) {
+  .learning-checkpoint {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  
+  .priority-selector {
+    grid-template-columns: 1fr;
+  }
+  
+  .assessment-buttons {
+    gap: 0.5rem;
+  }
+  
+  .confidence-options {
+    gap: 0.5rem;
+  }
+}
+
 /* DORA Metrics Grid */
 .dora-metrics-grid {
   display: grid;
@@ -463,3 +915,87 @@ dora_color: '#2196F3'
   }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Feedback content from Accelerate research
+  const doraInfo = {
+    high: {
+      title: "High-Performing Team",
+      content: "Your team demonstrates elite software delivery performance! High-performing organizations deploy multiple times per day, have lead times under one hour, restore service in under an hour, and have change failure rates under 15%. Focus on maintaining these practices and sharing knowledge with other teams."
+    },
+    medium: {
+      title: "Medium-Performing Team", 
+      content: "Your team shows solid DevOps practices with room for improvement. Medium performers typically deploy weekly to monthly, have lead times of days to weeks, and change failure rates of 16-45%. Focus on reducing batch sizes, improving test automation, and increasing deployment frequency."
+    },
+    low: {
+      title: "Low-Performing Team",
+      content: "Your team has significant opportunities for improvement. Low performers deploy monthly to every six months, have lead times of months, take days to weeks to restore service, and have change failure rates of 46-60%. Start with version control, deployment automation, and continuous integration basics."
+    }
+  };
+
+  const confidenceInfo = {
+    anxious: {
+      title: "Deployment Anxiety Signals Process Problems",
+      content: "According to Accelerate research, deployment pain is not inevitable—it's a signal of poor practices. Anxiety indicates manual processes, large batch sizes, and insufficient testing. Start with small improvements: add one test, create a deployment checklist, or implement basic monitoring."
+    },
+    neutral: {
+      title: "Manageable Deployments with Improvement Potential",
+      content: "Your team manages deployments but still experiences tension. This suggests some good practices are in place but opportunities remain. Focus on increasing deployment frequency, reducing batch sizes, and building more comprehensive automated testing to move toward confident deployments."
+    },
+    confident: {
+      title: "Confident Deployment Culture",
+      content: "Excellent! Confident, routine deployments indicate strong DevOps practices. Your team likely has good test automation, deployment automation, and monitoring. Continue refining these practices and help other teams achieve similar confidence through knowledge sharing."
+    }
+  };
+
+  const priorityInfo = {
+    "lead-time": {
+      title: "Improve Lead Time",
+      content: "Lead time measures the time from code commit to production. To improve: reduce batch sizes, implement trunk-based development, automate testing and deployment pipelines, and eliminate manual approval processes. Small, frequent changes reduce lead time significantly."
+    },
+    "deploy-frequency": {
+      title: "Increase Deployment Frequency",
+      content: "Deployment frequency indicates your ability to deliver value quickly. To improve: work in smaller batches, implement feature flags, improve automated testing, and reduce dependencies between teams. Start by deploying weekly, then progress to daily deployments."
+    },
+    "restore-time": {
+      title: "Reduce Mean Time to Restore",
+      content: "Faster recovery from failures is crucial for stability. To improve: implement comprehensive monitoring and alerting, practice incident response procedures, improve rollback capabilities, and maintain good documentation. Preparation enables rapid response when issues occur."
+    },
+    "change-fail": {
+      title: "Lower Change Failure Rate", 
+      content: "High change failure rates indicate quality issues in your delivery process. To improve: implement comprehensive automated testing, use test-driven development, improve code review processes, and implement continuous integration. Quality must be built in, not inspected later."
+    }
+  };
+  
+  // Add event listeners for DORA performance assessment
+  document.querySelectorAll('input[name="dora-performance"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('dora-feedback');
+      const info = doraInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+
+  // Add event listeners for deployment confidence
+  document.querySelectorAll('input[name="deployment-confidence"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('confidence-feedback');
+      const info = confidenceInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+
+  // Add event listeners for improvement focus
+  document.querySelectorAll('input[name="improvement-focus"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const feedback = document.getElementById('priority-feedback');
+      const info = priorityInfo[this.value];
+      feedback.innerHTML = `<h5>${info.title}</h5><p>${info.content}</p>`;
+      feedback.classList.add('active');
+    });
+  });
+});
+</script>
