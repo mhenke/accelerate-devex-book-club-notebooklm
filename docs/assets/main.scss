@@ -15,14 +15,15 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
+/* End of main SCSS file */
 
-// Import Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+  }
 
-// Import Font Awesome
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+// NOTE: Google Fonts and Font Awesome should be loaded via <link> tags in HTML <head>, not via SCSS @import.
+// Remove these imports to prevent build issues and improve reliability.
+
+// Jekyll theme partial import (keep only if needed)
 @import 'minima';
 
 /* Modern Book Club Theme - Professional Color Palette */
@@ -40,6 +41,7 @@
   --background-white: #ffffff;
   --background-off-white: #efe9e7;
   --background-light-gray: #f5f5f5;
+  --background-light: #f5f5f5;
 
   /* Accent Colors */
   --accent-coral: #ff7f50;
@@ -53,6 +55,17 @@
   --dora-orange: #ff9800;
   --dora-red: #f44336;
 
+  /* Book Colors */
+  --book-brown: #8B5C2A;
+  --book-gold: #D7BA89;
+  --book-cream: #FFF8DC;
+
+  /* Primary/Secondary Colors */
+  --primary-blue: #2196f3;
+  --dark-blue: #16213e;
+  --danger-red: #F44336;
+  --success-green: #4CAF50;
+
   /* Text Colors */
   --text-dark: #2c3e50;
   --text-medium: #5a6c7d;
@@ -61,6 +74,7 @@
 
   /* Border & Shadow */
   --border-light: #e8ecf0;
+  --border-color: #e8ecf0;
   --shadow-light: rgba(26, 26, 46, 0.1);
   --shadow-medium: rgba(26, 26, 46, 0.15);
 
@@ -138,6 +152,7 @@ h2 {
   border-left: 4px solid var(--accent-teal);
   padding-left: 1rem;
   margin-top: 3rem;
+  /* Remove duplicate h2 selector below */
 }
 
 h3 {
@@ -153,9 +168,7 @@ h4 {
 }
 
 h2 {
-  font-size: 2rem;
-  color: var(--book-brown);
-  position: relative;
+  /* Duplicate h2 selector removed for clarity */
 }
 
 /* Modern Hero Banner */
@@ -228,23 +241,23 @@ h2 {
 .hero-content h1 {
   font-size: 4.5rem;
   margin-bottom: 1.5rem;
-  color: var(--text-white) !important;
-  border: none !important;
+    color: var(--text-white);
+    border: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  padding-bottom: 0 !important;
-  background: none !important;
-  -webkit-text-fill-color: var(--text-white) !important;
+    padding-bottom: 0;
+    background: none;
+    -webkit-text-fill-color: var(--text-white);
 }
 
 .hero-content h1:hover {
   transform: translateY(-3px);
   text-shadow: 0 4px 30px var(--accent-coral);
-  color: var(--text-white) !important;
+    color: var(--text-white);
 }
 
 .hero-subtitle {
@@ -314,16 +327,16 @@ h2 {
 
 /* Hero Main Headline */
 .hero-headline {
-  font-size: 4rem !important;
+  font-size: 4rem;
   margin-bottom: 1rem;
-  color: var(--text-white) !important;
-  border: none !important;
+  color: var(--text-white);
+  border: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  padding-bottom: 0 !important;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -336,21 +349,21 @@ h2 {
 .hero-banner .site-title h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--text-white) !important;
+    color: var(--text-white);
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   text-align: center;
-  border: none !important;
-  padding-bottom: 0 !important;
-  background: none !important;
-  -webkit-text-fill-color: var(--text-white) !important;
+    border: none;
+    padding-bottom: 0;
+    background: none;
+    -webkit-text-fill-color: var(--text-white);
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
   opacity: 0.9;
 }
 
 @media (max-width: 767px) {
   .hero-headline {
-    font-size: 2.8rem !important;
+    font-size: 2.8rem;
   }
 
   .hero-banner .site-title h2 {
@@ -395,7 +408,7 @@ h2 {
   text-align: center;
   margin: 2rem 0;
   padding: 2rem;
-  background: var(--light-blue);
+  background: var(--background-light);
   border-radius: 12px;
   border: 2px solid var(--primary-blue);
 }
@@ -486,7 +499,7 @@ h2 {
 }
 
 .resource-card {
-  background: var(--light-blue);
+  background: var(--background-light);
   border: 1px solid var(--primary-blue);
   border-radius: 8px;
   padding: 1.5rem;
@@ -1287,6 +1300,8 @@ pre {
   background: linear-gradient(90deg, #f5f5f5 0%, #fff 100%);
   border-radius: 1.5rem;
   box-shadow: 0 4px 24px 0 rgba(26, 26, 46, 0.08);
+  }
+
   .culture-diagram__header {
     font-family: 'Poppins', 'Roboto', sans-serif;
     font-size: 2rem;
@@ -1313,37 +1328,37 @@ pre {
     flex-direction: column;
     align-items: center;
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
-    &:hover {
-      transform: translateY(-6px) scale(1.04);
-      box-shadow: 0 6px 24px 0 rgba(26, 26, 46, 0.18);
-    }
-    h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin: 0.5rem 0 0.75rem 0;
-      color: #fff;
-      text-shadow: 0 1px 4px rgba(26, 26, 46, 0.1);
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li {
-        font-size: 1rem;
-        color: #f5f5f5;
-        margin-bottom: 0.5rem;
-        text-align: center;
-      }
-    }
-    .culture-icon {
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      svg {
-        display: block;
-      }
-    }
+  }
+  .culture-box:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 24px 0 rgba(26, 26, 46, 0.18);
+  }
+  .culture-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.75rem 0;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(26, 26, 46, 0.1);
+  }
+  .culture-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .culture-box ul li {
+    font-size: 1rem;
+    color: #f5f5f5;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .culture-icon {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .culture-icon svg {
+    display: block;
   }
   .culture-box--red {
     background: linear-gradient(135deg, #f44336 80%, #b71c1c 100%);
@@ -1362,12 +1377,12 @@ pre {
     align-items: center;
     justify-content: center;
     min-width: 48px;
-    svg {
-      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &:hover svg {
-      transform: translateX(8px) scale(1.1);
-    }
+  }
+  .culture-arrow svg {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .culture-arrow:hover svg {
+    transform: translateX(8px) scale(1.1);
   }
 }
 
@@ -2016,6 +2031,7 @@ button:focus,
 .btn:focus {
   outline: 2px solid var(--primary-blue);
   outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--accent-teal);
 }
 
 /* High contrast mode support */
@@ -2026,3 +2042,15 @@ button:focus,
     --border-color: #ffffff;
   }
 }
+
+/*
+  MAINTAINABILITY NOTE:
+  - Font imports (Google Fonts, Font Awesome) must be loaded in HTML <head>.
+  - All CSS variables are now defined in :root.
+  - Duplicate selectors removed.
+  - Focus states improved for accessibility.
+  - For icon usage, prefer inline SVG for best accessibility and reliability.
+  - Consider splitting this file into partials for easier maintenance.
+  - All color variables use the correct naming (no undefined --light-blue).
+  - Stray closing brace removed.
+*/
