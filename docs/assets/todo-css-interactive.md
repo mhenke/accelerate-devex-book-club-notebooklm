@@ -88,4 +88,5 @@
 4. **Accessibility**: Check color contrast and add ARIA labels for interactive elements.
 5. **Responsiveness**: Test layouts on mobile and desktop.
 6. **Fallbacks**: For complex images (e.g., book cover), use optimized PNGs if CSS/SVG is insufficient.
-7. **File Organization**: Place all images and CSS in `docs/assets/images/` and `docs/assets/css/`.
+7. **SCSS Workflow**: Place main SCSS file in `docs/assets/main.scss` with YAML front matter (`---`). Jekyll will automatically compile this to `/assets/main.css` on build. Do not manually create `/assets/main.css`—let Jekyll generate it.
+8. **File Organization**: Place all images in `docs/assets/images/`. CSS output will be in `/assets/main.css`.
