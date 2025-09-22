@@ -1418,7 +1418,7 @@ pre {
   }
 }
 
-/* Tablet - 2 columns */
+/* Tablet screens */
 @media (max-width: 1024px) {
   .meeting-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1428,6 +1428,18 @@ pre {
   .metrics-categories {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+}
+
+/* Medium tablet screens */
+@media (max-width: 768px) {
+  .meeting-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  
+  .meeting-card {
+    padding: 1.5rem;
   }
 }
 
@@ -1888,8 +1900,8 @@ pre {
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Mobile adjustments */
+@media (max-width: 640px) {
   .wrapper {
     margin: 1rem;
     padding: 1rem;
