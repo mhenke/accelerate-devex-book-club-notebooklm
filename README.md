@@ -5,13 +5,13 @@ A structured approach to implementing high-performing DevOps practices through "
 ## 🚀 Quick Start
 
 **📖 Main Guide:** [book-club-guide.md](book-club-guide.md) - Complete overview and getting started  
-**🌐 Interactive Site:** [GitHub Pages](https://mhenke.github.io/accelerate-book-club/) - Full website experience  
+**🌐 Interactive Site:** [GitHub Pages](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) - Full website experience  
 **📚 Meeting Materials:** [meeting-resources/](meeting-resources/) - Detailed session guides  
 
 ## 📁 Repository Structure
 
 ```
-accelerate-book-club/
+accelerate-devex-book-club-notebooklm/
 ├── README.md                    # This overview
 ├── book-club-guide.md          # Main entry point and complete guide
 ├── meeting-resources/          # Meeting guides and session materials
@@ -61,10 +61,10 @@ By the end of this book club, participants will:
 1. Review [book-club-guide.md](book-club-guide.md) for complete overview
 2. Use [meeting-resources/](meeting-resources/) for session planning
 3. Generate supplementary content with [notebooklm-prompts/](notebooklm-prompts/)
-4. Share the [GitHub Pages site](https://mhenke.github.io/accelerate-book-club/) with participants
+4. Share the [GitHub Pages site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) with participants
 
 ### For Participants  
-1. Start with the [interactive website](https://mhenke.github.io/accelerate-book-club/)
+1. Start with the [interactive website](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/)
 2. Follow the meeting schedule in [book-club-guide.md](book-club-guide.md)
 3. Use [book-club-materials/](book-club-materials/) for between-session activities
 
