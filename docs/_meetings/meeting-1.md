@@ -318,11 +318,11 @@ dora_color: '#2196F3'
 .learning-checkpoint {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  border-radius: 20px;
+  border-radius: 16px;
   border: 2px solid #2196f3;
 }
 
@@ -683,19 +683,19 @@ dora_color: '#2196F3'
 .dora-metrics-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 3rem 0;
-  max-width: 1000px;
+  gap: 1.25rem;
+  margin: 2rem 0;
+  max-width: 900px;
 }
 
 .metric-card {
   background: white;
-  border-radius: 16px;
-  padding: 2rem;
+  border-radius: 12px;
+  padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   position: relative;
   overflow: hidden;
 }
@@ -759,25 +759,25 @@ h3 i, h4 i {
 }
 
 .metric-card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.3rem;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #333;
 }
 
 .metric-description {
   color: #666;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .metric-goal {
   background: rgba(33, 150, 243, 0.1);
   color: #1976d2;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -786,11 +786,11 @@ h3 i, h4 i {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  border-radius: 16px;
+  border-radius: 12px;
   border: 2px solid #ff9800;
 }
 
@@ -855,11 +855,11 @@ h3 i, h4 i {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  margin: 3rem 0;
-  padding: 2rem;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  border-radius: 16px;
+  border-radius: 12px;
   border: 2px solid #2196f3;
 }
 
