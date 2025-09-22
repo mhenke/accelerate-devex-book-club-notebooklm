@@ -84,6 +84,14 @@ layout: default
             </div>
             <div class="nav-icon">→</div>
           </a>
+        {% elsif current_index == 3 %}
+          <div class="nav-link completion-badge">
+            <div class="nav-icon">🎯</div>
+            <div class="nav-content">
+              <span class="nav-label">Final Meeting</span>
+              <span class="nav-title">Transformation Complete!</span>
+            </div>
+          </div>
         {% endif %}
       </div>
 
@@ -405,77 +413,89 @@ layout: default
 .nav-links {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  background: linear-gradient(135deg, var(--background-white), var(--background-light));
-  border: 2px solid var(--border-light);
-  border-radius: 16px;
-  padding: 1.5rem 2rem;
+  gap: 0.75rem;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
   color: var(--text-dark);
-  transition: all 0.3s ease;
-  flex: 1;
-  max-width: 400px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
 }
 
-.nav-link:hover {
-  background: linear-gradient(135deg, var(--accent-coral), var(--hover-coral));
+.nav-link.prev {
+  background: #fff9c4;
+  border-color: #fbbf24;
+  color: #92400e;
+}
+
+.nav-link.prev:hover {
+  background: #fbbf24;
   color: white;
-  text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 127, 80, 0.3);
+  transform: translateX(-2px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
 }
 
 .nav-link.next {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  color: #1e40af;
   margin-left: auto;
-  flex-direction: row-reverse;
+}
+
+.nav-link.next:hover {
+  background: #3b82f6;
+  color: white;
+  transform: translateX(2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.nav-link.completion-badge {
+  background: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
+  cursor: default;
+}
+
+.nav-link.completion-badge .nav-icon {
+  font-size: 1.2rem;
 }
 
 .nav-icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  width: 40px;
-  height: 40px;
-  background: rgba(33, 150, 243, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover .nav-icon {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.1);
 }
 
 .nav-content {
-  text-align: left;
-}
-
-.nav-link.next .nav-content {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 .nav-label {
-  display: block;
-  font-size: 0.9rem;
-  opacity: 0.7;
-  margin-bottom: 0.25rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .nav-title {
-  display: block;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
 }
 
 /* Progress Indicator */
@@ -552,16 +572,22 @@ layout: default
   
   .nav-links {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
+    align-items: stretch;
   }
   
   .nav-link {
-    max-width: none;
+    justify-content: center;
+    text-align: center;
   }
   
   .nav-link.next {
     margin-left: 0;
-    flex-direction: row;
+    order: 2;
+  }
+  
+  .nav-link.prev {
+    order: 1;
   }
   
   .meeting-progress {
