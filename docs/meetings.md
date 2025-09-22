@@ -47,13 +47,13 @@ Each 1-hour session follows a consistent format:
   <h3><i class="fas fa-book"></i> Additional Resources</h3>
   
   <div class="resource-grid">
-    <a href="/resources/" class="resource-link-card">
+    <a href="{{ '/resources/' | relative_url }}" class="resource-link-card">
       <i class="fas fa-clipboard-list"></i>
       <strong>Between Meetings</strong>
       <span>Activities and reflection questions</span>
     </a>
     
-    <a href="/prompts/" class="resource-link-card">
+    <a href="{{ '/prompts/' | relative_url }}" class="resource-link-card">
       <i class="fas fa-microphone-alt"></i>
       <strong>AI Content</strong>
       <span>Generate podcasts and videos</span>
