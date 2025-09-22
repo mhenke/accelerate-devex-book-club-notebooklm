@@ -263,32 +263,35 @@ h2 {
 
 /* Hero metrics icons now use inline SVG - background images removed */
 
-/* Hero Site Title */
-.hero-banner .site-title h1 {
-  font-size: 2.5rem;
+/* Hero Main Headline */
+.hero-headline {
+  font-size: 4rem !important;
   margin-bottom: 1rem;
   color: var(--text-white) !important;
+  border: none !important;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  padding-bottom: 0 !important;
+  text-align: center;
+}
+
+/* Hero Site Title */
+.hero-banner .site-title h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-white) !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   text-align: center;
   border: none !important;
   padding-bottom: 0 !important;
   background: none !important;
   -webkit-text-fill-color: var(--text-white) !important;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
-}
-
-.hero-headline {
-  font-size: 3.5rem !important;
-  margin-bottom: 1.5rem;
-  color: var(--text-white) !important;
-  border: none !important;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  padding-bottom: 0 !important;
+  opacity: 0.9;
 }
 
 /* Main Navigation */
@@ -376,11 +379,11 @@ h2 {
   }
   
   .hero-headline {
-    font-size: 2.5rem !important;
+    font-size: 2.8rem !important;
   }
   
   .hero-banner .site-title h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
