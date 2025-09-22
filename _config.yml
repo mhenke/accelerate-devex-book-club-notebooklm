@@ -1,0 +1,44 @@
+title: Accelerate DevEx Book Club
+description: A structured approach to implementing high-performing DevOps practices
+baseurl: ""
+url: ""
+
+# Theme
+theme: minima
+
+# Navigation
+header_pages:
+  - meetings.md
+  - resources.md
+  - prompts.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  meetings:
+    output: true
+    permalink: /:collection/:name/
+  resources:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "meetings"
+    values:
+      layout: "meeting"
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: "resource"
