@@ -5,24 +5,28 @@
 ## Pre-Reading Assignment
 
 **Chapters:** 1-4 (Introduction and What We Found)
+
 - Chapter 1: Accelerate
-- Chapter 2: Measuring Performance  
+- Chapter 2: Measuring Performance
 - Chapter 3: Measuring and Changing Culture
 - Chapter 4: Technical Practices
 
 ## Core Concepts to Explore
 
 ### 1. Introduction to "Accelerate"
+
 - **Central Argument:** High software delivery performance drives organizational success
 - **Evidence-Based Approach:** Understanding the rigorous research behind the book's findings
 - **Digital Transformation Reality:** How software delivery capability provides competitive advantage
 
 ### 2. Addressing "Deployment Pain"
+
 - **Recognition:** Nervousness before deployments as a signal of process inefficiencies, not personal failing
 - **Root Causes:** Gaps between development and IT operations, differing workflows and terminologies
 - **Impact Assessment:** How deployment anxiety affects team wellbeing and productivity
 
 ### 3. Debunking the Speed vs. Stability Myth
+
 - **Key Insight:** High-performing organizations achieve both speed AND stability
 - **Evidence:** Research showing no trade-offs between these metrics
 - **Mindset Shift:** Understanding that practices making you faster also make you more stable
@@ -30,15 +34,19 @@
 ### 4. The Four DORA Metrics
 
 #### 📈 Delivery Lead Time
+
 Time from code commit to production deployment
 
 #### 🚀 Deployment Frequency
+
 How often code gets deployed to production
 
 #### ⏱️ Time to Restore Service
+
 How quickly service is restored after incidents
 
 #### ❌ Change Fail Rate
+
 Percentage of deployments causing failures in production
 
 ## Discussion Questions
@@ -57,10 +65,12 @@ Percentage of deployments causing failures in production
 ## Supplementary Content
 
 ### Audio Podcast
-Generate a discussion podcast using the [Meeting 1 Podcast Prompt](../notebooklm-prompts/meeting-1-podcast-prompt.md)
 
-### Video Summary  
-Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts/meeting-1-video-prompt.md)
+Generate a discussion podcast using the [Meeting 1 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
+
+### Video Summary
+
+Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm-prompts/video-prompt.md)
 
 ## Next Session
 

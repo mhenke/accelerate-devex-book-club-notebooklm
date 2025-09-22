@@ -5,6 +5,7 @@
 ## Pre-Reading Assignment
 
 **Chapters:** 9-12 (Organizational and Management Practices)
+
 - Chapter 9: Making Work Sustainable
 - Chapter 10: Employee Satisfaction, Identity, and Engagement
 - Chapter 11: Leaders and Managers
@@ -15,6 +16,7 @@
 ### 1. Modular/Loosely Coupled Architecture
 
 #### 🔗 Tightly Coupled vs 🧩 Loosely Coupled
+
 - **Independent Team Work:** Teams can work without relying on other teams for support and services
 - **Reduced Coordination Overhead:** Less communication required for changes
 - **Kitchen Analogy:** Like chefs working independently on their dishes without constant coordination
@@ -23,6 +25,7 @@
 ### 2. Empowerment Through Tool Selection
 
 #### Benefits of Tool Autonomy:
+
 - **🎨 Enhanced Creativity:** Freedom to choose tools that best fit the problem
 - **📈 Increased Productivity:** Using familiar and efficient tools
 - **😊 Higher Satisfaction:** Autonomy directly correlates with job satisfaction
@@ -31,21 +34,27 @@
 ### 3. Lean Management Principles
 
 #### 🚦 Limit Work in Progress (WIP)
+
 Using WIP limits to manage flow and drive process improvement
 
 #### 👁️ Visualize Work
+
 Making work and metrics visible to the team
 
 #### 👥 Lightweight Change Approval
+
 Peer review over external change approval boards
 
 #### 🔄 Customer Feedback Integration
+
 Getting early and frequent customer input
 
 #### 📊 Data-Driven Decisions
+
 Using monitoring and metrics to inform choices
 
 ### 4. Employee Satisfaction Drivers
+
 - **Meaningful Work:** Appropriate challenges and purposeful tasks
 - **Learning Opportunities:** Growth and development possibilities
 - **Supportive Environment:** Team culture that enables success
@@ -74,10 +83,12 @@ Using monitoring and metrics to inform choices
 ## Supplementary Content
 
 ### Audio Podcast
+
 Generate a discussion podcast using the [Meeting 3 Podcast Prompt](../notebooklm-prompts/meeting-3-podcast-prompt.md)
 
-### Video Summary  
-Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts/meeting-3-video-prompt.md)
+### Video Summary
+
+Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts/video-prompt.md)
 
 ## Navigation
 
