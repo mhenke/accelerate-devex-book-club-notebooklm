@@ -324,6 +324,11 @@ layout: default
   border-left-color: var(--primary-blue);
 }
 
+/* Discussion Questions reduced padding */
+.discussion-questions-list {
+  padding: 0.5rem !important;
+}
+
 /* Action Items Special Styling */
 .meeting-content h2:contains("Action Items") {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
@@ -693,3 +698,18 @@ layout: default
   font-weight: 600;
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find Discussion Questions sections and add class to their ol elements
+  const headings = document.querySelectorAll('h2');
+  headings.forEach(heading => {
+    if (heading.textContent.includes('Discussion Questions')) {
+      const nextOl = heading.nextElementSibling;
+      if (nextOl && nextOl.tagName === 'OL') {
+        nextOl.classList.add('discussion-questions-list');
+      }
+    }
+  });
+});
+</script>
