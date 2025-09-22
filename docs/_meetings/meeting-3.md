@@ -13,14 +13,14 @@ Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm-prompts
 ## 🎧 Listen to the Meeting 3 Podcast
 
 <audio controls>
-	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/meeting-podcast.m4a" type="audio/x-m4a">
+	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/podcast.m4a" type="audio/x-m4a">
 	Your browser does not support the audio element.
 </audio>
 
 ## 📺 Watch the Meeting 3 Video
 
 <video controls width="100%">
-	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/meeting-video.mp4" type="video/mp4">
+	<source src="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/video.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 </video>
 ---
