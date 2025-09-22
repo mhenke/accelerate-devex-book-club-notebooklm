@@ -59,6 +59,27 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+/* Subtle background pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: -1;
+  background-image: 
+    radial-gradient(circle at 20% 50%, #2196f3 2px, transparent 2px),
+    radial-gradient(circle at 80% 50%, #4caf50 2px, transparent 2px),
+    radial-gradient(circle at 40% 20%, #ff9800 1px, transparent 1px),
+    radial-gradient(circle at 60% 80%, #f44336 1px, transparent 1px);
+  background-size: 100px 100px, 120px 120px, 80px 80px, 90px 90px;
+  background-position: 0 0, 25px 25px, 10px 10px, 35px 35px;
 }
 
 h1,
@@ -114,13 +135,6 @@ h2 {
   position: relative;
 }
 
-h2::before {
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  content: '\f02d';
-  margin-right: 0.5rem;
-  font-size: 1.5rem;
-}
 
 /* Modern Hero Banner */
 .hero-banner {
@@ -158,18 +172,18 @@ h2::before {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   position: absolute;
-  right: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 6rem;
-  opacity: 0.2;
+  right: 2rem;
+  top: 2rem;
+  font-size: 4rem;
+  opacity: 0.3;
   color: var(--accent-coral);
   transition: transform 0.3s, opacity 0.3s, color 0.3s;
+  z-index: 1;
 }
 
 .hero-banner:hover::after {
-  transform: translateY(-50%) scale(1.15) rotate(-10deg);
-  opacity: 0.4;
+  transform: scale(1.15) rotate(-10deg);
+  opacity: 0.5;
   color: var(--accent-teal);
 }
 
@@ -263,39 +277,74 @@ h2::before {
 
 /* Header and Navigation */
 .site-header {
-  background: linear-gradient(
-    135deg,
-    var(--dark-blue) 0%,
-    var(--primary-blue) 100%
-  );
-  border-bottom: 3px solid var(--book-gold);
+  background: linear-gradient(135deg, var(--header-dark-navy) 0%, var(--header-light-navy) 100%);
+  border-bottom: 3px solid var(--accent-gold);
   padding: 1rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .site-title {
-  font-family: 'Georgia', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem !important;
-  font-weight: bold;
-  color: white !important;
+  font-weight: 600;
+  color: var(--text-white) !important;
   text-decoration: none !important;
+  transition: color 0.3s ease;
 }
 
 .site-title:hover {
-  color: var(--book-cream) !important;
+  color: var(--accent-coral) !important;
+  text-decoration: none !important;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
 }
 
 .site-nav .page-link {
-  color: white !important;
+  color: var(--text-white) !important;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
 }
 
 .site-nav .page-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .site-header-content {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .site-title {
+    font-size: 1.4rem !important;
+  }
+  
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* Main content area */
