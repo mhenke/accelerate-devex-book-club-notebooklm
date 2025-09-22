@@ -5,7 +5,10 @@ title: Home
 
 <div class="hero-banner">
   <div class="hero-content">
-    <h1>Building High Performing<br>Technology Organizations</h1>
+    <div class="site-title">
+      <h1>Accelerate DevEx Book Club</h1>
+    </div>
+    <h2 class="hero-headline">Building High Performing<br>Technology Organizations</h2>
     <p class="hero-subtitle">A structured 2-month journey through "Accelerate" focused on DORA metrics and DevOps transformation</p>
   </div>
   <div class="hero-metrics">
@@ -15,6 +18,23 @@ title: Home
     <div class="metric-icon"><i class="fas fa-exclamation-triangle"></i></div>
   </div>
 </div>
+
+<nav class="main-navigation">
+  <div class="nav-container">
+    <a href="{{ '/meetings/' | relative_url }}" class="nav-link">
+      <i class="fas fa-calendar-alt"></i>
+      <span>Meetings</span>
+    </a>
+    <a href="{{ '/resources/' | relative_url }}" class="nav-link">
+      <i class="fas fa-book-open"></i>
+      <span>Resources</span>
+    </a>
+    <a href="{{ '/prompts/' | relative_url }}" class="nav-link">
+      <i class="fas fa-microphone-alt"></i>
+      <span>AI Content</span>
+    </a>
+  </div>
+</nav>
 
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
 
