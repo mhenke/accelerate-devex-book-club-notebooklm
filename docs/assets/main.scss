@@ -819,30 +819,67 @@ pre {
   font-size: 1.5rem;
 }
 
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  position: relative;
+.metrics-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.metrics-grid::before {
-  content: '';
-  position: absolute;
-  left: 8%;
-  right: 8%;
-  top: 50%;
-  height: 0;
-  border-top: 3px dotted #b8d4ea;
-  z-index: 0;
+.metrics-category {
+  background: var(--background-white);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px var(--shadow-light);
+  border: 1px solid var(--border-light);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.category-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-coral), var(--accent-gold));
+}
+
+.speed-category .category-icon {
+  background: linear-gradient(135deg, var(--dora-blue), #1976d2);
+}
+
+.stability-category .category-icon {
+  background: linear-gradient(135deg, var(--dora-orange), #f57c00);
+}
+
+.category-title {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.metrics-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .metric-card {
   background: linear-gradient(135deg, var(--background-white), var(--background-light-gray));
-  border-radius: 16px;
-  padding: 2rem;
+  border-radius: 12px;
+  padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 8px 30px var(--shadow-light);
+  box-shadow: 0 6px 20px var(--shadow-light);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 1;
@@ -895,10 +932,10 @@ pre {
   transform: scale(1.1);
 }
 
-.metric-card h4 {
+.metric-card h5 {
   color: var(--text-dark);
   margin: 1rem 0 0.5rem 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
@@ -1928,6 +1965,23 @@ pre {
 
   .dora-metrics-visual {
     padding: 1rem;
+  }
+
+  .metrics-categories {
+    gap: 1.5rem;
+  }
+  
+  .metrics-category {
+    padding: 1rem;
+  }
+  
+  .category-header {
+    margin-bottom: 1rem;
+  }
+  
+  .metrics-group {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .metrics-grid {

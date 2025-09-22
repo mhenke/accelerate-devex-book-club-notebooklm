@@ -39,57 +39,75 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 <div class="dora-metrics-visual">
   <h3>The Four DORA Metrics</h3>
-  <div class="metrics-grid">
-      <div class="metric-card lead-time">
-        <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="#2196F3" stroke="#ffffff" stroke-width="2"/>
-            <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <div class="metrics-categories">
+    <div class="metrics-category speed-category">
+      <div class="category-header">
+        <div class="category-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#2196F3"/>
           </svg>
         </div>
-        <h4>Lead Time</h4>
-        <p>Time from code commit to production deployment</p>
-        <span class="tooltip">Measures how quickly code moves from commit to production.</span>
-        <div class="meeting-title">Meeting 1: Foundation</div>
+        <h4 class="category-title">Speed</h4>
       </div>
-      <div class="metric-card deployment-frequency">
-        <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="#4CAF50" stroke="#ffffff" stroke-width="2"/>
-            <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M12 7l-3 3M12 7l3 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <div class="metrics-group">
+        <div class="metric-card lead-time">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#2196F3" stroke="#ffffff" stroke-width="2"/>
+              <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h5>Lead Time</h5>
+          <p>Time from code commit to production deployment</p>
+        </div>
+        <div class="metric-card deployment-frequency">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#4CAF50" stroke="#ffffff" stroke-width="2"/>
+              <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M12 7l-3 3M12 7l3 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h5>Deployment Frequency</h5>
+          <p>How often code gets deployed to production</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-category stability-category">
+      <div class="category-header">
+        <div class="category-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FF9800"/>
           </svg>
         </div>
-        <h4>Deployment Frequency</h4>
-        <p>How often code gets deployed to production</p>
-        <span class="tooltip">Tracks how frequently you release to production.</span>
-        <div class="meeting-title">Meeting 2: Culture & CD</div>
+        <h4 class="category-title">Stability</h4>
       </div>
-      <div class="metric-card recovery-time">
-        <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="#FF9800" stroke="#ffffff" stroke-width="2"/>
-            <path d="M12 6.5l2.5 5 5.5 0.8-4 3.9 0.9 5.7-4.9-2.6-4.9 2.6 0.9-5.7-4-3.9 5.5-0.8z" fill="#ffffff"/>
-          </svg>
+      <div class="metrics-group">
+        <div class="metric-card recovery-time">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#FF9800" stroke="#ffffff" stroke-width="2"/>
+              <path d="M12 6.5l2.5 5 5.5 0.8-4 3.9 0.9 5.7-4.9-2.6-4.9 2.6 0.9-5.7-4-3.9 5.5-0.8z" fill="#ffffff"/>
+            </svg>
+          </div>
+          <h5>Mean Time to Recovery</h5>
+          <p>How quickly service is restored after incidents</p>
         </div>
-        <h4>Mean Time to Recovery</h4>
-        <p>How quickly service is restored after incidents</p>
-        <span class="tooltip">Measures time to restore service after a failure.</span>
-        <div class="meeting-title">Meeting 3: Architecture</div>
-      </div>
-      <div class="metric-card fail-rate">
-        <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="#F44336" stroke="#ffffff" stroke-width="2"/>
-            <path d="M12 7v6M12 15h0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="12" cy="15" r="1" fill="#ffffff"/>
-          </svg>
+        <div class="metric-card fail-rate">
+          <div class="metric-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#F44336" stroke="#ffffff" stroke-width="2"/>
+              <path d="M12 7v6M12 15h0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="12" cy="15" r="1" fill="#ffffff"/>
+            </svg>
+          </div>
+          <h5>Change Fail Rate</h5>
+          <p>Percentage of deployments causing failures</p>
         </div>
-        <h4>Change Fail Rate</h4>
-        <p>Percentage of deployments causing failures</p>
-        <span class="tooltip">Shows the rate of failed changes in production.</span>
-        <div class="meeting-title">Meeting 4: Leadership</div>
       </div>
+    </div>
   </div>
 </div>
 
