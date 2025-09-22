@@ -19,16 +19,6 @@
 
 ## 2. DORA Metrics Infographic
 
-- [ ] Build a 2x2 CSS grid with rounded rectangles.
-- [ ] Assign distinct background colors for each metric.
-- [ ] Add metric icons (SVG or icon font).
-- [ ] Include bold metric names and definitions.
-- [ ] Add hover tooltips for metric explanations.
-
-## 3. Meeting Timeline Graphic
-
-- [ ] Create a horizontal CSS flexbox timeline.
-- [ ] Use circular nodes for meetings (numbered 1-4).
 - [ ] Add meeting titles below each node.
 - [ ] Connect nodes with a dotted CSS line.
 - [ ] Add subtle box-shadow for depth.
