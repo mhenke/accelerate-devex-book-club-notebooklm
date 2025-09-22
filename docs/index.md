@@ -116,28 +116,28 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 <div class="meeting-grid">
   <div class="meeting-card">
-    <div class="meeting-icon">📈</div>
+    <div class="meeting-icon"><i class="fas fa-chart-line"></i></div>
     <h3><a href="/meetings/meeting-1/">Meeting 1: Foundation</a></h3>
     <p><strong>Week 1</strong> • Chapters 1-4</p>
     <p>DORA metrics and debunking the speed vs. stability myth</p>
   </div>
   
   <div class="meeting-card">
-    <div class="meeting-icon">🔄</div>
+    <div class="meeting-icon"><i class="fas fa-sync-alt"></i></div>
     <h3><a href="/meetings/meeting-2/">Meeting 2: Culture & CD</a></h3>
     <p><strong>Week 3</strong> • Chapters 5-8</p>
     <p>Westrum culture types and continuous delivery practices</p>
   </div>
   
   <div class="meeting-card">
-    <div class="meeting-icon">🏗️</div>
+    <div class="meeting-icon"><i class="fas fa-building"></i></div>
     <h3><a href="/meetings/meeting-3/">Meeting 3: Architecture</a></h3>
     <p><strong>Week 5</strong> • Chapters 9-12</p>
     <p>Loosely coupled systems and lean management</p>
   </div>
   
   <div class="meeting-card">
-    <div class="meeting-icon">👥</div>
+    <div class="meeting-icon"><i class="fas fa-users"></i></div>
     <h3><a href="/meetings/meeting-4/">Meeting 4: Leadership</a></h3>
     <p><strong>Week 7</strong> • Chapters 13-15</p>
     <p>Transformational leadership and continuous learning</p>
