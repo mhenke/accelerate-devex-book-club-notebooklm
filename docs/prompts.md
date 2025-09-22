@@ -1,174 +1,245 @@
 ---
 layout: default
-title: Content Generation Prompts
+title: AI Content Generation
 ---
 
-# NotebookLM Content Generation
+# AI Content Generation
 
-Create supplementary audio and video content for your book club using these carefully crafted NotebookLM prompts.
+Enhance your "Accelerate" book club experience with AI-generated podcasts, videos, and supplementary content.
 
-## 🎧 Audio Podcasts
+## NotebookLM Content Generation
 
-Generate engaging 15-25 minute conversational podcasts for each meeting. Perfect for busy developers who want to absorb key concepts during commutes or exercise.
+Use these carefully crafted prompts with [NotebookLM](https://notebooklm.google.com) to create engaging audio and video content for each meeting.
 
-### How to Use
-1. **Upload Source Material:** Add relevant chapters from "Accelerate" to NotebookLM
-2. **Select Audio Generation:** Choose the podcast/audio option
-3. **Configure Settings:** Select "Longer" length for comprehensive coverage
-4. **Input Prompts:** Use the three-field format below
-
-<div class="prompt-grid">
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-1-podcast-prompt/">Meeting 1: Foundation</a></h3>
-    <p><strong>Focus:</strong> DORA metrics and speed vs. stability myth</p>
-    <p><strong>Key Topics:</strong> Deployment pain, measurement tools, high-performer characteristics</p>
+<div class="meeting-grid">
+  <div class="meeting-card">
+    <div class="meeting-icon" style="color: #2196F3">
+      <i class="fas fa-podcast"></i>
+    </div>
+    <h3>Meeting 1: Foundation</h3>
+    <p><strong>DORA Metrics & Speed vs. Stability</strong></p>
+    <div class="prompt-links">
+      <a href="#meeting-1-podcast" class="btn btn-secondary">Podcast Prompt</a>
+      <a href="#meeting-1-video" class="btn">Video Prompt</a>
+    </div>
   </div>
   
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-2-podcast-prompt/">Meeting 2: Culture & CD</a></h3>
-    <p><strong>Focus:</strong> Westrum culture types and continuous delivery</p>
-    <p><strong>Key Topics:</strong> Acting into better culture, CD principles, automation</p>
+  <div class="meeting-card">
+    <div class="meeting-icon" style="color: #4CAF50">
+      <i class="fas fa-podcast"></i>
+    </div>
+    <h3>Meeting 2: Culture & CD</h3>
+    <p><strong>Westrum Culture & Continuous Delivery</strong></p>
+    <div class="prompt-links">
+      <a href="#meeting-2-podcast" class="btn btn-secondary">Podcast Prompt</a>
+      <a href="#meeting-2-video" class="btn">Video Prompt</a>
+    </div>
   </div>
   
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-3-podcast-prompt/">Meeting 3: Architecture</a></h3>
-    <p><strong>Focus:</strong> Loosely coupled systems and team autonomy</p>
-    <p><strong>Key Topics:</strong> Kitchen analogy, tool freedom, lean practices</p>
+  <div class="meeting-card">
+    <div class="meeting-icon" style="color: #FF9800">
+      <i class="fas fa-podcast"></i>
+    </div>
+    <h3>Meeting 3: Architecture</h3>
+    <p><strong>Loose Coupling & Team Autonomy</strong></p>
+    <div class="prompt-links">
+      <a href="#meeting-3-podcast" class="btn btn-secondary">Podcast Prompt</a>
+      <a href="#meeting-3-video" class="btn">Video Prompt</a>
+    </div>
   </div>
   
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-4-podcast-prompt/">Meeting 4: Leadership</a></h3>
-    <p><strong>Focus:</strong> Transformational leadership and learning culture</p>
-    <p><strong>Key Topics:</strong> Shift-left security, diversity impact, experimentation</p>
+  <div class="meeting-card">
+    <div class="meeting-icon" style="color: #F44336">
+      <i class="fas fa-podcast"></i>
+    </div>
+    <h3>Meeting 4: Leadership</h3>
+    <p><strong>Transformational Leadership</strong></p>
+    <div class="prompt-links">
+      <a href="#meeting-4-podcast" class="btn btn-secondary">Podcast Prompt</a>
+      <a href="#meeting-4-video" class="btn">Video Prompt</a>
+    </div>
   </div>
 </div>
 
-## 📺 Video Summaries
+## How to Use These Prompts
 
-Create visual overviews with examples and practical applications. Great for teams who prefer visual learning or want to share concepts with stakeholders.
+1. **Visit [NotebookLM](https://notebooklm.google.com)** and create a new notebook
+2. **Upload source materials** - Add relevant book chapters or meeting notes
+3. **Copy the prompt** for your desired meeting and format
+4. **Generate content** - NotebookLM will create engaging audio/video content
+5. **Share with participants** - Use before or after meetings to enhance discussion
 
-### How to Use
-1. **Upload Source Material:** Add relevant chapters from "Accelerate" to NotebookLM
-2. **Select Video Generation:** Choose the video content option
-3. **Input Prompts:** Use the three-field format from our video prompts
+## General Guidelines
 
-<div class="prompt-grid">
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-1-video-prompt/">Meeting 1: Foundation</a></h3>
-    <p><strong>Structure:</strong> Deployment pain → DORA metrics → Speed+stability → Assessment</p>
-    <p><strong>Audience:</strong> Developers and DevOps practitioners</p>
-  </div>
-  
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-2-video-prompt/">Meeting 2: Culture & CD</a></h3>
-    <p><strong>Structure:</strong> Culture types → Behavioral change → CD practices → Action steps</p>
-    <p><strong>Audience:</strong> Teams studying organizational transformation</p>
-  </div>
-  
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-3-video-prompt/">Meeting 3: Architecture</a></h3>
-    <p><strong>Structure:</strong> Kitchen analogy → Tool autonomy → Lean practices → Developer experience</p>
-    <p><strong>Audience:</strong> Architects, managers, and developers</p>
-  </div>
-  
-  <div class="prompt-card">
-    <h3><a href="/prompts/meeting-4-video-prompt/">Meeting 4: Leadership</a></h3>
-    <p><strong>Structure:</strong> Leadership definition → Shift-left security → Diversity → Key question</p>
-    <p><strong>Audience:</strong> Technical leaders and aspiring leaders</p>
-  </div>
-</div>
+### Content Quality Standards
+- **Accuracy**: All content should reflect the book's core principles
+- **Accessibility**: Use clear language accessible to diverse technical backgrounds  
+- **Engagement**: Include real-world examples and practical applications
+- **Time Management**: Keep podcasts 15-20 minutes, videos 10-15 minutes
 
-## 📋 Guidelines and Best Practices
-
-### [Video Guidelines](/prompts/general-guidelines/)
-Consistent approach for creating video content:
-- **Tone:** Conversational but informative
-- **Evidence:** Reference research methodology
-- **Practical:** Include concrete examples
-- **Inclusive:** Welcome all experience levels
-
-### [Podcast Guidelines](/prompts/podcast-guidelines/)
-Best practices for audio content generation:
-- **Format:** Conversational discussion between hosts
-- **Length:** 15-25 minutes for comprehensive coverage
-- **Structure:** Opening → Concepts → Examples → Takeaways → Closing
-- **Focus:** Practical application over theory
-
-## 🎯 Content Customization
-
-### Adaptation Tips
-- **Modify Prompts:** Adjust focus areas for your specific organizational context
-- **Add Examples:** Include industry-specific scenarios relevant to your team
-- **Extend Content:** Generate follow-up discussions for complex topics
-- **Create Series:** Build multi-part content for deeper exploration
-
-### Quality Checklist
-Before using generated content, ensure it:
-- [ ] Aligns with assigned book chapters
-- [ ] Includes relevant developer experience examples  
-- [ ] References research foundations
-- [ ] Provides actionable practices
-- [ ] Prepares participants for group discussion
-
-## 🔄 Iterative Improvement
-
-### Feedback Loop
-1. **Generate Content:** Use prompts as starting point
-2. **Review Output:** Check against quality checklist
-3. **Gather Feedback:** Ask participants what works best
-4. **Refine Prompts:** Adjust for better results
-5. **Share Improvements:** Update prompts based on learnings
-
-### Common Adjustments
-- **Length:** Adjust timing based on participant preference
-- **Depth:** Increase or decrease technical detail
-- **Examples:** Swap generic examples for industry-specific ones
-- **Tone:** Modify formality level for your organization
+### Best Practices
+- **Pre-Meeting**: Use content to prime discussions and highlight key concepts
+- **Post-Meeting**: Reinforce learning and provide alternative perspectives
+- **Supplementary**: Never replace actual book reading or group discussion
+- **Attribution**: Always credit AI generation and source materials
 
 ---
 
-**Ready to create content?** Start with [Meeting 1 Podcast Prompt](/prompts/meeting-1-podcast-prompt/) to generate your first piece of supplementary material.
+## Podcast Prompts
 
-<style>
-.prompt-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
+### Meeting 1: Foundation {#meeting-1-podcast}
 
-.prompt-card {
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
-  padding: 1.5rem;
-  background: #fff;
-  transition: box-shadow 0.2s ease;
-}
+```
+Create a 15-minute podcast discussing the foundational concepts from "Accelerate" chapters 1-4. Focus on:
 
-.prompt-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+1. **DORA Metrics Introduction** (5 minutes)
+   - Lead Time, Deployment Frequency, MTTR, Change Fail Rate
+   - Why these metrics matter for organizational performance
+   - Common measurement pitfalls
 
-.prompt-card h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
+2. **Debunking Speed vs. Stability** (7 minutes)
+   - The false trade-off myth
+   - How high performers achieve both
+   - Real-world examples from the research
 
-.prompt-card h3 a {
-  text-decoration: none;
-  color: #0366d6;
-}
+3. **Practical Application** (3 minutes)
+   - First steps for measuring DORA metrics
+   - Quick wins for improvement
+   - Setting realistic expectations
 
-.prompt-card h3 a:hover {
-  text-decoration: underline;
-}
+Keep the tone conversational and include concrete examples. Address common skepticism about DevOps practices.
+```
 
-.prompt-card p {
-  margin: 0.5rem 0;
-  color: #586069;
-}
+### Meeting 2: Culture & CD {#meeting-2-podcast}
 
-.prompt-card strong {
-  color: #24292e;
-}
-</style>
+```
+Create a 18-minute podcast exploring organizational culture and continuous delivery from "Accelerate" chapters 5-8:
+
+1. **Westrum Culture Types** (6 minutes)
+   - Pathological, Bureaucratic, Generative cultures
+   - How culture predicts performance
+   - Signs of each culture type in practice
+
+2. **Continuous Delivery Deep Dive** (8 minutes)
+   - Core practices and their impact
+   - Breaking down implementation barriers
+   - The role of automation and testing
+
+3. **Culture Transformation** (4 minutes)
+   - Practical steps to shift culture
+   - Leadership behaviors that matter
+   - Measuring cultural progress
+
+Include stories of successful transformations and address resistance to change.
+```
+
+### Meeting 3: Architecture {#meeting-3-podcast}
+
+```
+Create a 16-minute podcast about architecture and team organization from "Accelerate" chapters 9-12:
+
+1. **Loosely Coupled Architecture** (6 minutes)
+   - What loose coupling means in practice
+   - Impact on team velocity and independence
+   - Common architectural anti-patterns
+
+2. **Team Autonomy and Conway's Law** (6 minutes)
+   - How organizational design affects system design
+   - Enabling team independence
+   - Balancing autonomy with alignment
+
+3. **Lean Management Principles** (4 minutes)
+   - Applying lean thinking to software delivery
+   - Visual management and feedback loops
+   - Continuous improvement practices
+
+Focus on practical advice for technical leaders and architects.
+```
+
+### Meeting 4: Leadership {#meeting-4-video}
+
+```
+Create a 12-minute video presentation on transformational leadership from "Accelerate" chapters 13-15:
+
+1. **Transformational Leadership Behaviors** (4 minutes)
+   - Vision, inspirational communication, intellectual stimulation
+   - Personal recognition and supportive leadership
+   - Real examples of these behaviors in action
+
+2. **Creating Learning Organizations** (5 minutes)
+   - Psychological safety and its importance
+   - Encouraging experimentation and learning from failure
+   - Building continuous improvement mindsets
+
+3. **Sustaining Transformation** (3 minutes)
+   - Long-term change strategies
+   - Metrics for measuring transformation success
+   - Avoiding common transformation pitfalls
+
+Include visual examples and case studies from high-performing organizations.
+```
+
+---
+
+## Video Prompts
+
+### Meeting 1: Foundation {#meeting-1-video}
+
+```
+Create a 10-minute educational video introducing DORA metrics:
+
+Structure:
+- **Opening** (1 min): Hook with deployment horror story
+- **DORA Overview** (3 min): Visual explanation of each metric
+- **Research Findings** (4 min): Key insights from the State of DevOps reports  
+- **Getting Started** (2 min): First steps for measurement
+
+Visual elements:
+- Animated metric definitions
+- Before/after transformation examples
+- Simple dashboard mockups
+- Clear, professional graphics
+
+Target audience: Technical teams new to DevOps metrics
+```
+
+### Meeting 2: Culture & CD {#meeting-2-video}
+
+```
+Create a 12-minute video exploring organizational culture transformation:
+
+Structure:
+- **Culture Types Explained** (4 min): Visual representation of Westrum model
+- **CD Practices Demo** (5 min): Show automated pipeline in action  
+- **Transformation Journey** (3 min): Timeline of typical culture change
+
+Visual elements:
+- Culture assessment diagrams
+- Pipeline automation demonstrations
+- Transformation roadmap templates
+- Team collaboration examples
+
+Include real organizational examples and practical next steps.
+```
+
+---
+
+<div class="ai-attribution">
+  <div class="ai-attribution__icon">
+    <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+  </div>
+  <div class="ai-attribution__content">
+    <h4 class="ai-attribution__title">AI-Enhanced Learning</h4>
+    <p class="ai-attribution__text">These prompts were designed with <strong>Claude</strong> to help you create engaging supplementary content with <strong>NotebookLM</strong>.</p>
+    <div class="ai-attribution__tools">
+      <div class="ai-tool">
+        <i class="fas fa-brain" aria-hidden="true"></i>
+        <span>Claude</span>
+      </div>
+      <div class="ai-tool">
+        <i class="fas fa-microphone-alt" aria-hidden="true"></i>
+        <span>NotebookLM</span>
+      </div>
+    </div>
+  </div>
+</div>

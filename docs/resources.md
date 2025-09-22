@@ -3,206 +3,140 @@ layout: default
 title: Resources
 ---
 
-# Resources
+# Book Club Resources
 
-Supporting materials to enhance your book club experience and continue your transformation journey.
+Supporting materials to enhance your "Accelerate" book club experience.
 
-## 📚 Core Resources
+## Between Meetings Activities
 
-<div class="resource-grid">
+<div class="resources-grid">
   <div class="resource-card">
-    <h3>📖 The Book</h3>
-    <p><strong>"Accelerate: The Science of Lean Software and DevOps"</strong><br>
-    by Nicole Forsgren, Jez Humble, and Gene Kim</p>
-    <p>The foundational research that drives all our discussions. Available in print, digital, and audiobook formats.</p>
+    <h3><i class="fas fa-clipboard-check"></i> Between Meetings</h3>
+    <p>Reflection questions, practical exercises, and activities to deepen your understanding between sessions.</p>
+    <a href="#between-meetings" class="resource-link">View Activities →</a>
   </div>
-  
+
   <div class="resource-card">
-    <h3>📊 DORA Metrics</h3>
-    <p><strong>State of DevOps Reports</strong><br>
-    Annual research findings from the DevOps Research and Assessment team</p>
-    <p>Track the latest research and benchmark your organization against industry standards.</p>
+    <h3><i class="fas fa-comments"></i> Discussion Practices</h3>
+    <p>Facilitation guidelines and techniques for productive book club discussions.</p>
+    <a href="#discussion-practices" class="resource-link">Facilitation Guide →</a>
+  </div>
+
+  <div class="resource-card">
+    <h3><i class="fas fa-arrow-up"></i> Extensions</h3>
+    <p>Advanced topics and learning paths to continue your DevOps transformation journey.</p>
+    <a href="#extensions" class="resource-link">Explore Extensions →</a>
   </div>
 </div>
 
-## 🎯 Between Meetings
+## <i class="fas fa-tasks"></i> Between Meetings Activities {#between-meetings}
 
-### [Activity Guide](/resources/between-meetings/)
-Structured activities to deepen understanding between sessions:
-- **Observation Journals:** Track cultural behaviors and technical practices
-- **Small Experiments:** Try incremental improvements
-- **Metric Collection:** Begin informal measurement of DORA metrics
-- **Reflection Questions:** Process learnings from each chapter
+### Post-Meeting Reflection
 
-## 🚀 After the Book Club
+After each session, spend 10-15 minutes reflecting on:
 
-### [Extension Pathways](/resources/extensions/)
-Continue your learning journey:
-- **Related Reading:** Complementary books and resources
-- **Practice Implementation:** Working groups for specific improvements
-- **Organizational Assessment:** Formal capability evaluation
-- **Long-term Transformation:** Roadmap for sustained change
+- **Key Insights**: What surprised you most from this meeting?
+- **Personal Application**: How can you apply these concepts in your current role?
+- **Organizational Gaps**: What barriers exist in your organization?
+- **Action Items**: What specific changes will you make this week?
 
-### [Discussion Best Practices](/resources/discussion-practices/)
-Guidelines for productive book club conversations:
-- Creating psychological safety
-- Focusing on learning over judgment  
-- Making discussions actionable
-- Ensuring inclusive participation
+### Practical Exercises
 
-## 🎧 Multimedia Content
+**Week 2 (After Meeting 1):**
+- Measure your team's current DORA metrics
+- Identify the biggest bottleneck in your deployment pipeline
+- Start a "deployment pain journal"
 
-### [NotebookLM Prompts](/prompts/)
-Create supplementary audio and video content:
-- **Podcast Prompts:** Generate discussion-style audio content for each meeting
-- **Video Prompts:** Create visual summaries of key concepts
-- **Guidelines:** Consistent approach across all generated content
+**Week 4 (After Meeting 2):**  
+- Assess your organization's culture type using Westrum's model
+- Interview 3 colleagues about psychological safety
+- Implement one small continuous delivery practice
 
-<div class="content-formats">
-  <div class="format-item">
-    <h4>🎧 Audio Podcasts</h4>
-    <p>15-25 minute conversational discussions perfect for commutes or exercise</p>
-  </div>
-  
-  <div class="format-item">
-    <h4>📺 Video Summaries</h4>
-    <p>Visual overviews of key concepts with examples and practical applications</p>
-  </div>
-</div>
+**Week 6 (After Meeting 3):**
+- Map your system's coupling dependencies
+- Identify opportunities for team autonomy
+- Experiment with lean management techniques
 
-## 📈 Assessment Tools
+**Week 8 (After Meeting 4):**
+- Practice transformational leadership behaviors
+- Create a learning culture initiative
+- Develop your transformation roadmap
 
-### Current State Evaluation
-Before starting your transformation journey, assess where you are:
+## <i class="fas fa-users"></i> Discussion Practices {#discussion-practices}
 
-<div class="assessment-checklist">
-  <h4>DORA Metrics Baseline</h4>
-  <ul>
-    <li>How long from commit to production?</li>
-    <li>How often do you deploy?</li>
-    <li>How quickly do you recover from incidents?</li>
-    <li>What percentage of deployments fail?</li>
-  </ul>
-</div>
+### Creating Psychological Safety
 
-<div class="assessment-checklist">
-  <h4>Culture Assessment (Westrum Model)</h4>
-  <ul>
-    <li>How is information shared across teams?</li>
-    <li>How are messengers treated when bringing bad news?</li>
-    <li>How are responsibilities shared during incidents?</li>
-    <li>How much collaboration exists between teams?</li>
-  </ul>
-</div>
+- **Start with check-ins** - How is everyone feeling about the concepts?
+- **Normalize not knowing** - "This is complex, let's figure it out together"
+- **Encourage questions** - "What would you like to understand better?"
+- **Share failures** - Discuss what hasn't worked in your organizations
 
-### Progress Tracking
-Monitor your transformation:
-- **Metric Trends:** Track DORA metrics over time
-- **Cultural Indicators:** Observe changes in team interactions
-- **Practice Adoption:** Document new processes and tools implemented
-- **Team Satisfaction:** Regular pulse surveys on developer experience
+### Facilitation Techniques
 
-## 🛠️ Implementation Support
+**Round-Robin Sharing**
+Give everyone a chance to share insights without interruption.
 
-### Quick Wins (0-3 months)
-- Start measuring DORA metrics informally
-- Implement simple kanban boards for work visualization
-- Begin blameless postmortem practices
-- Try trunk-based development for new projects
+**Problem-Solution Pairs**
+Identify organizational challenges, then brainstorm solutions together.
 
-### Medium-term Goals (3-12 months)  
-- Deploy comprehensive CI/CD pipeline
-- Implement automated testing at multiple levels
-- Establish security shift-left practices
-- Create architecture decision records
+**Real-World Examples**
+Share concrete examples from your work experiences.
 
-### Long-term Transformation (1-2 years)
-- Achieve continuous delivery capability
-- Establish generative organizational culture
-- Implement comprehensive observability
-- Create autonomous, cross-functional teams
+**Action Commitments**
+End each session with specific commitments for the next two weeks.
+
+## <i class="fas fa-rocket"></i> Extensions {#extensions}
+
+### Advanced Reading
+
+After completing "Accelerate," consider these follow-up books:
+
+- **"The DevOps Handbook"** - Practical implementation guide
+- **"Team Topologies"** - Modern organizational design
+- **"The Phoenix Project"** - DevOps transformation story
+- **"Continuous Delivery"** - Technical practices deep-dive
+
+### Professional Development
+
+- **DevOps Institute Certifications**
+- **DORA State of DevOps Reports** (annual)
+- **DevOps conferences and meetups**
+- **Internal communities of practice**
+
+### Measurement & Monitoring
+
+- **Set up DORA metrics tracking**
+- **Implement value stream mapping**
+- **Create organizational health dashboards**
+- **Regular culture assessments**
 
 ---
 
-## 🤝 Community and Support
+## <i class="fas fa-book-open"></i> Quick Reference
 
-### Discussion Forums
-- **Internal:** Set up Slack channels or Teams spaces for ongoing discussion
-- **External:** Join DevOps and software engineering communities
-- **Conferences:** Attend DevOps Enterprise Summit, Velocity, and similar events
+### DORA Metrics Summary
 
-### Continued Learning
-- **Newsletters:** Subscribe to DevOps and software engineering publications  
-- **Podcasts:** Follow shows focused on DevOps, software engineering, and organizational culture
-- **Blogs:** Read from practitioners sharing their transformation experiences
+| Metric | Elite | High | Medium | Low |
+|--------|--------|------|---------|-----|
+| **Lead Time** | < 1 hour | 1 day - 1 week | 1 week - 1 month | 1-6 months |
+| **Deploy Frequency** | Multiple/day | 1/week - 1/month | 1/month - 1/6months | < 1/6months |
+| **MTTR** | < 1 hour | < 1 day | < 1 week | 1 week - 1 month |
+| **Change Fail Rate** | 0-15% | 0-15% | 0-15% | 31-45% |
 
-**Need help getting started?** Return to our [Meeting Schedule](/meetings/) to begin your structured journey through "Accelerate."
+### Culture Types (Westrum)
 
-<style>
-.resource-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
+- **Pathological** - Power-oriented, low trust, blame culture
+- **Bureaucratic** - Rule-oriented, modest trust, process focus  
+- **Generative** - Performance-oriented, high trust, innovation focus
 
-.resource-card {
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
-  padding: 1.5rem;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+---
 
-.resource-card h3 {
-  margin-top: 0;
-  color: #0366d6;
-}
-
-.resource-card strong {
-  color: #24292e;
-}
-
-.content-formats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.format-item {
-  border-left: 4px solid #28a745;
-  padding-left: 1rem;
-}
-
-.format-item h4 {
-  margin: 0 0 0.5rem 0;
-  color: #28a745;
-}
-
-.format-item p {
-  margin: 0;
-  color: #586069;
-}
-
-.assessment-checklist {
-  background: #f8f9fa;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
-.assessment-checklist h4 {
-  margin-top: 0;
-  color: #0366d6;
-}
-
-.assessment-checklist ul {
-  margin-bottom: 0;
-}
-
-.assessment-checklist li {
-  margin: 0.5rem 0;
-}
-</style>
+<div class="ai-attribution">
+  <div class="ai-attribution__icon">
+    <i class="fas fa-robot" aria-hidden="true"></i>
+  </div>
+  <div class="ai-attribution__content">
+    <h4 class="ai-attribution__title">Enhanced Learning Experience</h4>
+    <p class="ai-attribution__text">These resources were curated and organized with AI assistance to support your <strong>Accelerate</strong> book club journey.</p>
+  </div>
+</div>
