@@ -98,11 +98,11 @@ Observability and alerting for rapid problem detection
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 2 Podcast Prompt](../notebooklm-prompts/podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 2 Podcast Prompt](podcast-prompt.md)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 2 Video Prompt](../notebooklm-prompts/video-prompt.md)
+Create a visual overview with the [Meeting 2 Video Prompt](video-prompt.md)
 
 ## Navigation
 
