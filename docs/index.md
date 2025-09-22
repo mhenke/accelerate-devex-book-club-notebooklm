@@ -26,8 +26,32 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 ## 🎯 What You'll Learn
 
+<div class="dora-metrics-visual">
+  <h3>The Four DORA Metrics</h3>
+  <div class="metrics-grid">
+    <div class="metric-card lead-time">
+      <div class="metric-icon">⏱️</div>
+      <h4>Lead Time</h4>
+      <p>Time from code commit to production deployment</p>
+    </div>
+    <div class="metric-card deployment-frequency">
+      <div class="metric-icon">🚀</div>
+      <h4>Deployment Frequency</h4>
+      <p>How often code gets deployed to production</p>
+    </div>
+    <div class="metric-card recovery-time">
+      <div class="metric-icon">🔧</div>
+      <h4>Mean Time to Recovery</h4>
+      <p>How quickly service is restored after incidents</p>
+    </div>
+    <div class="metric-card fail-rate">
+      <div class="metric-icon">⚠️</div>
+      <h4>Change Fail Rate</h4>
+      <p>Percentage of deployments causing failures</p>
+    </div>
+  </div>
+</div>
 
-- **The Four DORA Metrics** that define high-performing teams
 - How to **debunk the speed vs. stability myth**
 - **Organizational culture types** and how to drive transformation
 - **Continuous delivery practices** that improve both performance and culture
@@ -35,6 +59,40 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 - **Leadership practices** that create psychological safety and innovation
 
 ## 📅 Meeting Schedule
+
+<div class="timeline-visual">
+  <div class="timeline-line"></div>
+  <div class="timeline-nodes">
+    <div class="timeline-node node-1">
+      <div class="node-circle">1</div>
+      <div class="node-content">
+        <h4>Foundation</h4>
+        <p>DORA Metrics</p>
+      </div>
+    </div>
+    <div class="timeline-node node-2">
+      <div class="node-circle">2</div>
+      <div class="node-content">
+        <h4>Culture & CD</h4>
+        <p>Continuous Delivery</p>
+      </div>
+    </div>
+    <div class="timeline-node node-3">
+      <div class="node-circle">3</div>
+      <div class="node-content">
+        <h4>Architecture</h4>
+        <p>Lean Management</p>
+      </div>
+    </div>
+    <div class="timeline-node node-4">
+      <div class="node-circle">4</div>
+      <div class="node-content">
+        <h4>Leadership</h4>
+        <p>Transformation</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="meeting-grid">
   <div class="meeting-card">
@@ -88,9 +146,18 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
   </div>
 
   <div class="resource-card book-required">
-    <h3>📚 Required Reading</h3>
-    <p><strong>"Accelerate" by Forsgren, Humble, and Kim</strong></p>
-    <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
+    <div class="book-visual">
+      <div class="book-3d">
+        <div class="book-cover">
+          <h4>ACCELERATE</h4>
+          <p class="book-authors">Forsgren • Humble • Kim</p>
+          <div class="book-subtitle">The Science of Lean Software and DevOps</div>
+        </div>
+        <div class="book-spine"></div>
+      </div>
+      <h3>Required Reading</h3>
+      <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn-secondary">Get the Book</a>
+    </div>
   </div>
 </div>
 
