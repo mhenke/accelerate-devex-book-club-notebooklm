@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "minima";
 
 /* Custom Book Club Theme */
 :root {
@@ -58,49 +58,66 @@ h2::before {
 
 /* Hero Banner */
 .hero-banner {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  background-image: url('{{ "/assets/images/hero/hero-banner.png" | relative_url }}');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   color: white;
-  padding: 4rem 2rem;
-  margin: -2rem -1rem 2rem -1rem;
-  text-align: center;
+  padding: 6rem 2rem;
+  margin: -2rem -1rem 3rem -1rem;
+  text-align: left;
   position: relative;
+  overflow: hidden;
 }
 
-.hero-banner::before {
-  content: '';
+.hero-banner::after {
+  content: '🚀';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(26, 26, 46, 0.7);
-  z-index: 1;
+  right: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 6rem;
+  opacity: 0.3;
+  color: #7fb3d3;
 }
 
 .hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
   color: white;
   border: none;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: 1.3rem;
-  color: rgba(255,255,255,0.9);
-  font-style: italic;
+  font-size: 1.5rem;
+  color: #b8d4ea;
+  font-weight: 300;
   margin-bottom: 0;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+/* DORA Metrics Icons */
+.hero-metrics {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3rem;
+  opacity: 0.4;
+}
+
+.hero-metrics .metric-icon {
+  font-size: 2.5rem;
+  color: #7fb3d3;
 }
 
 /* Header and Navigation */
@@ -177,13 +194,11 @@ h2::before {
 .meeting-icon {
   text-align: center;
   margin-bottom: 1rem;
-}
-
-.meeting-icon img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 3rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Resources section */
@@ -287,7 +302,7 @@ h2::before {
 }
 
 /* Resource cards */
-.resource-grid {
+.resources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -299,19 +314,34 @@ h2::before {
   border: 1px solid var(--primary-blue);
   border-radius: 8px;
   padding: 1.5rem;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .resource-card:hover {
   background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .resource-card h3 {
   color: var(--primary-blue);
   margin-top: 0;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resource-card.book-required {
+  background: linear-gradient(135deg, var(--book-gold), #f4d03f);
+  border-color: var(--book-brown);
+  text-align: center;
+}
+
+.resource-card.book-required h3 {
+  color: var(--book-brown);
+}
+
+.resource-card.book-required p {
+  color: var(--book-brown);
+  font-weight: 600;
 }
 
 /* Success metrics styling */
@@ -534,16 +564,35 @@ pre {
   }
   
   .hero-banner {
-    padding: 2rem 1rem;
-    margin: -1rem -1rem 1rem -1rem;
+    padding: 3rem 1rem;
+    margin: -1rem -1rem 2rem -1rem;
+    text-align: center;
+  }
+  
+  .hero-banner::after {
+    right: 1rem;
+    font-size: 3rem;
   }
   
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
   }
   
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .hero-metrics {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  
+  .hero-metrics .metric-icon {
+    font-size: 2rem;
   }
   
   .meeting-grid {
