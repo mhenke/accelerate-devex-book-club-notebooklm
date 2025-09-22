@@ -115,7 +115,9 @@ h2 {
 }
 
 h2::before {
-  content: '📚';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: '\f02d';
   margin-right: 0.5rem;
   font-size: 1.5rem;
 }
@@ -543,7 +545,9 @@ h2::before {
 }
 
 .success-metrics h2::before {
-  content: '🎯';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: '\f05b';
 }
 
 .success-metrics ul {
@@ -560,7 +564,9 @@ h2::before {
 }
 
 .success-metrics li::before {
-  content: '✅';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: '\f058';
   font-size: 1.2rem;
 }
 
@@ -582,7 +588,9 @@ h2::before {
 }
 
 .key-question h2::before {
-  content: '🎯';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: '\f05b';
   margin-right: 0.5rem;
 }
 
