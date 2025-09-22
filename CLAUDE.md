@@ -39,6 +39,8 @@ This is a standard Jekyll site served by GitHub Pages:
 - **Local development:** `bundle exec jekyll serve` (if Jekyll/Ruby installed)
 - **GitHub Pages deployment:** Automatic on push to main branch
 - **Asset compilation:** Jekyll auto-compiles SCSS to CSS with proper asset paths
+- **No build scripts or test commands** - relies entirely on Jekyll/GitHub Pages
+- **Always commit and push after making changes** for deployment
 
 ### Styling and Visual Updates
 - Edit SCSS in `docs/assets/main.scss` (must include YAML front matter)
@@ -73,6 +75,25 @@ This is a standard Jekyll site served by GitHub Pages:
 - All AI-generated content should be clearly marked and attributed
 - Maintain consistency in meeting duration (1 hour) and biweekly schedule
 
+## Collections and Navigation
+
+### Jekyll Collections
+- **_meetings collection:** Four structured meetings (`meeting-1.md` to `meeting-4.md`)
+  - Each has layout: meeting, title, subtitle, chapters, duration, dora_color
+  - Contains visual sections, discussion questions, action items
+  - Media sections with podcast/video generation instructions
+- **_resources collection:** Additional educational materials
+- Navigation configured in `_config.yml` with header_pages
+
+### Meeting Page Structure
+All meeting pages follow consistent format:
+- Pre-reading assignment
+- Visual concept sections (DORA metrics, culture types, etc.)
+- Discussion questions
+- Action items
+- Supplementary content section
+- Media sections with generation instructions and HTML5 audio/video controls
+
 ## Important Notes
 
 - **No build scripts:** Relies on Jekyll/GitHub Pages for compilation
@@ -80,3 +101,4 @@ This is a standard Jekyll site served by GitHub Pages:
 - **Copilot instructions available** in `.github/copilot-instructions.md` with detailed visual guidance
 - **All content is educational** focused on DevOps practices and organizational transformation
 - **Four-meeting structure** covering DORA metrics, culture, architecture, and leadership themes
+- **Commit and push changes immediately** for GitHub Pages deployment
