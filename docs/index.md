@@ -43,7 +43,11 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
       <div class="metric-card deployment-frequency">
         <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 17h20M12 2v15m0 0l-4-4m4 4l4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="#4CAF50" stroke="#ffffff" stroke-width="2"/>
+            <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M12 7l-3 3M12 7l3 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </div>
         <h4>Deployment Frequency</h4>
         <p>How often code gets deployed to production</p>
@@ -52,7 +56,10 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
       <div class="metric-card recovery-time">
         <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/><path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="white" stroke-width="2"/><path d="M12 8v4l2 2" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="#FF9800" stroke="#ffffff" stroke-width="2"/>
+            <path d="M12 6.5l2.5 5 5.5 0.8-4 3.9 0.9 5.7-4.9-2.6-4.9 2.6 0.9-5.7-4-3.9 5.5-0.8z" fill="#ffffff"/>
+          </svg>
         </div>
         <h4>Mean Time to Recovery</h4>
         <p>How quickly service is restored after incidents</p>
@@ -61,7 +68,11 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
       </div>
       <div class="metric-card fail-rate">
         <div class="metric-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="12,2 22,21 2,21" stroke="white" stroke-width="2" fill="none"/><line x1="12" y1="8" x2="12" y2="13" stroke="white" stroke-width="2"/><circle cx="12" cy="16" r="1" fill="white"/></svg>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="#F44336" stroke="#ffffff" stroke-width="2"/>
+            <path d="M12 7v6M12 15h0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="12" cy="15" r="1" fill="#ffffff"/>
+          </svg>
         </div>
         <h4>Change Fail Rate</h4>
         <p>Percentage of deployments causing failures</p>
