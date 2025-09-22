@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<article class="meeting">
+  <header class="meeting-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.week %}<p class="meeting-meta"><strong>{{ page.week }}</strong> • {{ page.duration }}</p>{% endif %}
+    {% if page.chapters %}<p class="chapters">📖 {{ page.chapters }}</p>{% endif %}
+  </header>
+
+  <div class="meeting-content">
+    {{ content }}
+  </div>
+
+  <nav class="meeting-nav">
+    {% assign meetings = site.meetings | sort: "order" %}
+    {% for meeting in meetings %}
+      {% if meeting.url == page.url %}
+        {% assign current_index = forloop.index0 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
+    <div class="nav-links">
+      {% if current_index > 0 %}
+        {% assign prev_meeting = meetings[current_index | minus: 1] %}
+        <a href="{{ prev_meeting.url }}" class="nav-link prev">← {{ prev_meeting.title }}</a>
+      {% endif %}
+      
+      {% if current_index < meetings.size | minus: 1 %}
+        {% assign next_meeting = meetings[current_index | plus: 1] %}
+        <a href="{{ next_meeting.url }}" class="nav-link next">{{ next_meeting.title }} →</a>
+      {% endif %}
+    </div>
+  </nav>
+</article>
+
+<style>
+.meeting-header {
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.meeting-meta {
+  color: #586069;
+  font-size: 1.1em;
+  margin: 0.5rem 0;
+}
+
+.chapters {
+  background: #f1f8ff;
+  border: 1px solid #c8e1ff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.meeting-content {
+  max-width: none;
+}
+
+.meeting-nav {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e4e8;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  background: #f8f9fa;
+  border: 1px solid #d1d5da;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: #e1e4e8;
+}
+
+.nav-link.next {
+  margin-left: auto;
+}
+</style>
