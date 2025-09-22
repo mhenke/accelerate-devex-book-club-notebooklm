@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#4CAF50'
 ---
 
-## Pre-Reading Assignment
-
-**Chapters 5-8:** Architecture • Infosec • Management • Product Development
-
 ## Westrum's Organizational Culture Types
 
 <div class="culture-types-diagram">

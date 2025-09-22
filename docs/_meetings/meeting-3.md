@@ -8,10 +8,6 @@ duration: '1 Hour'
 dora_color: '#FF9800'
 ---
 
-## Pre-Reading Assignment
-
-**Chapters 9-12:** Organizational & Management Practices • Employee Satisfaction • Leadership • Diversity
-
 ## Architecture: Tightly Coupled vs Loosely Coupled
 
 <div class="architecture-comparison">
