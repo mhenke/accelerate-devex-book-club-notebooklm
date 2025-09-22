@@ -34,16 +34,14 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="wrapper">
-        <div class="site-header-content">
-          <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-          
-          <nav class="site-nav">
-            {% for page in site.header_pages %}
-              <a class="page-link" href="{{ page | relative_url }}">{{ page | replace: '.md', '' | capitalize }}</a>
-            {% endfor %}
-          </nav>
-        </div>
+      <div class="site-header-content">
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        
+        <nav class="site-nav">
+          {% for page in site.header_pages %}
+            <a class="page-link" href="{{ page | relative_url }}">{{ page | replace: '.md', '' | capitalize }}</a>
+          {% endfor %}
+        </nav>
       </div>
     </header>
     
