@@ -481,14 +481,44 @@ h2 {
 
 .meeting-card .meeting-icon {
   font-size: 3rem;
-  color: var(--accent-coral);
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
 
+.meeting-card:nth-child(1) .meeting-icon {
+  color: var(--dora-blue);
+}
+
+.meeting-card:nth-child(1)::before {
+  background: var(--dora-blue);
+}
+
+.meeting-card:nth-child(2) .meeting-icon {
+  color: var(--dora-green);
+}
+
+.meeting-card:nth-child(2)::before {
+  background: var(--dora-green);
+}
+
+.meeting-card:nth-child(3) .meeting-icon {
+  color: var(--dora-orange);
+}
+
+.meeting-card:nth-child(3)::before {
+  background: var(--dora-orange);
+}
+
+.meeting-card:nth-child(4) .meeting-icon {
+  color: var(--dora-red);
+}
+
+.meeting-card:nth-child(4)::before {
+  background: var(--dora-red);
+}
+
 .meeting-card:hover .meeting-icon {
   transform: scale(1.1);
-  color: var(--accent-teal);
 }
 
 .meeting-card h3 {
@@ -888,16 +918,11 @@ pre {
   top: 50%;
   left: 10%;
   right: 10%;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--dark-blue),
-    var(--primary-blue),
-    #7fb3d3,
-    var(--book-gold)
-  );
+  height: 4px;
+  background: linear-gradient(90deg, var(--dora-blue), var(--dora-green), var(--dora-orange), var(--dora-red));
   border-radius: 2px;
   transform: translateY(-50%);
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
 }
 
 .timeline-nodes {
@@ -905,32 +930,67 @@ pre {
   justify-content: space-between;
   position: relative;
   z-index: 2;
+  gap: 1rem;
 }
 
 .timeline-node {
   text-align: center;
   flex: 1;
-  max-width: 200px;
-  box-shadow: 0 4px 24px 0 rgba(33, 150, 243, 0.08),
-    0 1.5px 6px 0 rgba(0, 0, 0, 0.04);
-  border-radius: 12px;
-  background: #f8f9fa;
-  padding-bottom: 1rem;
+  max-width: 220px;
+  box-shadow: 0 8px 30px rgba(33, 150, 243, 0.1), 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  background: linear-gradient(145deg, var(--background-white), var(--background-light-gray));
+  padding: 1.5rem 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light);
+}
+
+.timeline-node:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(33, 150, 243, 0.15), 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .node-circle {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
-  color: white;
+  background: var(--text-white);
+  color: var(--header-dark-navy);
+  border: 4px solid;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 auto 1rem;
-  box-shadow: 0 4px 15px rgba(3, 102, 214, 0.3);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: -2rem auto 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.timeline-node.node-1 .node-circle {
+  border-color: var(--dora-blue);
+  color: var(--dora-blue);
+}
+
+.timeline-node.node-2 .node-circle {
+  border-color: var(--dora-green);
+  color: var(--dora-green);
+}
+
+.timeline-node.node-3 .node-circle {
+  border-color: var(--dora-orange);
+  color: var(--dora-orange);
+}
+
+.timeline-node.node-4 .node-circle {
+  border-color: var(--dora-red);
+  color: var(--dora-red);
+}
+
+.timeline-node:hover .node-circle {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .node-content h4 {
