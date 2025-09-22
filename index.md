@@ -4,7 +4,8 @@ title: Home
 ---
 
 # Accelerate DevEx Book Club
-*Building and Scaling High Performing Technology Organizations*
+
+_Building and Scaling High Performing Technology Organizations_
 
 Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim. This book club is designed specifically for developers, DevOps practitioners, and engineering leaders who want to transform their organizations through evidence-based practices.
 
@@ -12,7 +13,7 @@ Welcome to our structured 2-month journey through "Accelerate" by Nicole Forsgre
 
 **Duration:** 2 Months  
 **Format:** 4 Biweekly 1-Hour Sessions  
-**Approach:** Theme-Based Structure  
+**Approach:** Theme-Based Structure
 
 This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.
 
@@ -29,25 +30,25 @@ This book club follows the book's own principle of breaking work into small, man
 
 <div class="meeting-grid">
   <div class="meeting-card">
-    <h3><a href="/meetings/meeting-1/">Meeting 1: Foundation</a></h3>
+  <h3><a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-1/">Meeting 1: Foundation</a></h3>
     <p><strong>Week 1</strong> • Chapters 1-4</p>
     <p>DORA metrics and debunking the speed vs. stability myth</p>
   </div>
   
   <div class="meeting-card">
-    <h3><a href="/meetings/meeting-2/">Meeting 2: Culture & CD</a></h3>
+  <h3><a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/">Meeting 2: Culture & CD</a></h3>
     <p><strong>Week 3</strong> • Chapters 5-8</p>
     <p>Westrum culture types and continuous delivery practices</p>
   </div>
   
   <div class="meeting-card">
-    <h3><a href="/meetings/meeting-3/">Meeting 3: Architecture</a></h3>
+  <h3><a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-3/">Meeting 3: Architecture</a></h3>
     <p><strong>Week 5</strong> • Chapters 9-12</p>
     <p>Loosely coupled systems and lean management</p>
   </div>
   
   <div class="meeting-card">
-    <h3><a href="/meetings/meeting-4/">Meeting 4: Leadership</a></h3>
+  <h3><a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-4/">Meeting 4: Leadership</a></h3>
     <p><strong>Week 7</strong> • Chapters 13-15</p>
     <p>Transformational leadership and continuous learning</p>
   </div>
@@ -55,18 +56,22 @@ This book club follows the book's own principle of breaking work into small, man
 
 ## 🛠️ Resources
 
-### [📖 Meeting Materials](/meetings/)
+### [📖 Meeting Materials](/accelerate-devex-book-club-notebooklm/meetings/)
+
 Detailed agendas, discussion questions, and action items for each session.
 
-### [🎧 Audio & Video Content](/prompts/)
+### [🎧 Audio & Video Content](/accelerate-devex-book-club-notebooklm/prompts/)
+
 NotebookLM prompts for creating podcasts and videos to supplement your reading.
 
-### [📋 Between Meetings](/resources/)
+### [📋 Between Meetings](/accelerate-devex-book-club-notebooklm/resources/)
+
 Activities, reflection questions, and experiments to try between sessions.
 
 ## 🚀 Success Metrics
 
 By the end of this book club, participants will be able to:
+
 - ✅ Articulate and explain the four DORA metrics
 - ✅ Identify specific organizational bottlenecks and improvement opportunities
 - ✅ Implement action items from sessions in their daily work
@@ -81,7 +86,7 @@ Throughout our journey, we'll return to this central reflection:
 
 ---
 
-**Ready to get started?** Begin with [Meeting 1: Laying the Foundation](/meetings/meeting-1/) and join us in transforming your organization into a high-performing technology team.
+**Ready to get started?** Begin with [Meeting 1: Laying the Foundation](/accelerate-devex-book-club-notebooklm/meetings/meeting-1/) and join us in transforming your organization into a high-performing technology team.
 
 <style>
 .meeting-grid {
