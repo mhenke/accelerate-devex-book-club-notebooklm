@@ -33,18 +33,6 @@
     />
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header-content">
-        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-        
-        <nav class="site-nav">
-          {% for page in site.header_pages %}
-            <a class="page-link" href="{{ page | remove: '.md' | relative_url }}">{{ page | remove: '.md' | capitalize }}</a>
-          {% endfor %}
-        </nav>
-      </div>
-    </header>
-    
     <main class="page-content">
       {{ content }}
     </main>
