@@ -1,0 +1,78 @@
+// OFFLINE PAGE STYLES
+// =============================================================================
+// Extracted from offline.html inline styles
+
+.offline-icon {
+  animation: pulse 2s infinite;
+  color: #1a1a2e;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.offline-tip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding: var(--space-sm);
+  background: linear-gradient(
+    135deg,
+    rgba(122, 218, 209, 0.1),
+    rgba(122, 218, 209, 0.05)
+  );
+  border-radius: var(--radius-md);
+  color: var(--text-medium);
+  font-size: var(--font-size-body-small);
+
+  i {
+    color: var(--accent-teal);
+    flex-shrink: 0;
+  }
+}
+
+.offline-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: var(--space-2xl) 0 var(--space-xl);
+}
+
+// Ripple animation for buttons (from JavaScript)
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+// Mobile optimizations
+@media (max-width: #{$mobile}) {
+  .offline-actions {
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
+    }
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .offline-icon {
+    animation: none;
+  }
+}

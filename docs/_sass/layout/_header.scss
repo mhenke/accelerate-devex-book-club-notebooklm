@@ -9,17 +9,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: var(--space-64, 64px); // use token, fallback to 64px
+  min-height: var(--space-3xl, 64px); // use token, fallback to 64px
 }
 
 // Skip link for accessibility - critical for screen readers
 .skip-link {
   position: absolute;
-  top: calc(-1 * var(--space-40, 40px)); // use token, fallback to 40px
-  left: var(--space-8); // now from token
+  top: calc(-1 * var(--space-xl, 40px)); // use token, fallback to 40px
+  left: var(--space-sm); // now from token
   background: var(--accent-coral);
   color: var(--text-white);
-  padding: var(--space-8); // now from token
+  padding: var(--space-sm); // now from token
   text-decoration: none;
   border-radius: var(--border-radius); // now from tokens
   font-weight: 600;
@@ -29,6 +29,6 @@
 
   &:focus-visible {
     outline: 2px solid var(--accent-coral); // Accessible focus ring
-    top: var(--space-8); // now from token
+    top: var(--space-sm); // now from token
   }
 }

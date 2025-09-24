@@ -24,6 +24,7 @@
 
 // 4. LAYOUT - Major layout components (loaded after critical)
 @import "layout/grid"; // Grid system and containers
+@import "layout/meeting"; // Meeting layout styles - EXTRACTED
 
 // 5. MEETING THEMES - Dynamic theme system
 @import "components/meeting-themes"; // Meeting-specific color themes

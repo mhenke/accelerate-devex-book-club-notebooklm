@@ -370,7 +370,7 @@
 // =============================================================================
 // RESPONSIVE DESIGN
 // =============================================================================
-@media (max-width: 768px) {
+@media (max-width: #{$mobile - 1px}) {
   .checkpoint-card,
   .simple-checkpoint {
     padding: 1.25rem;

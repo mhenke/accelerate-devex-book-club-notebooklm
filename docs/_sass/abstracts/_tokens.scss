@@ -6,25 +6,24 @@
 // All spacing tokens below are multiples of 8px (except for legacy/fine detail tokens, clearly marked).
 
 :root {
-  // Layout Spacing Tokens (8px grid)
-  --space-8: 8px;
-  --space-16: 16px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-40: 40px;
-  --space-48: 48px;
-  --space-60: 60px;
-  --space-64: 64px;
-  --space-120: 120px;
+  // =============================================================================
+  // MATERIAL DESIGN 3 SPACING SYSTEM - 8px Grid
+  // =============================================================================
+  // Core spacing tokens following Material Design 3 specifications
+  // Reference: https://m3.material.io/foundations/layout/spacing
 
-  // Fine Detail Tokens (use ONLY for border radius, focus ring, hairline borders)
-  --space-4: 4px; // NOT for layout spacing
-  --space-12: 12px; // NOT for layout spacing
+  --space-xs: 4px;   // 0.25rem - Fine details (border radius, hairline borders)
+  --space-sm: 8px;   // 0.5rem  - Small gaps, padding
+  --space-md: 16px;  // 1rem    - Default spacing, button padding
+  --space-lg: 24px;  // 1.5rem  - Section spacing, card padding
+  --space-xl: 32px;  // 2rem    - Component spacing, margins
+  --space-2xl: 48px; // 3rem    - Page section spacing
+  --space-3xl: 64px; // 4rem    - Major layout spacing
 
-  // Border Width Tokens
-  --border-width-3: 3px; // Hairline/legacy only
-  --border-width-4: 4px; // For focus ring, border radius, NOT for spacing
-  --border-width-8: 8px;
+  // Border Width Tokens (Material Design 3 compliant)
+  --border-width-thin: 1px;    // Hairline borders
+  --border-width-medium: 2px;  // Standard borders
+  --border-width-thick: 4px;   // Focus indicators, accents
 }
 
 // Header and Layout Tokens
@@ -50,14 +49,26 @@
 // =============================================================================
 // BREAKPOINT SYSTEM
 // =============================================================================
-// Modern 3-breakpoint system - 2025 standards
+// Comprehensive breakpoint system covering all responsive needs
 
+// Primary breakpoints (main responsive design)
 $mobile: 768px;
 $tablet: 1024px;
 $desktop: 1200px;
 
+// Additional breakpoints (for specific responsive needs)
+$small: 480px;   // Small mobile devices
+$medium: 640px;  // Medium mobile/phablets
+
 // CSS Custom Properties for responsive design
 :root {
+  --breakpoint-small: #{$small};
+  --breakpoint-mobile: #{$mobile};
+  --breakpoint-medium: #{$medium};
+  --breakpoint-tablet: #{$tablet};
+  --breakpoint-desktop: #{$desktop};
+
+  // Legacy support (keep existing variables for compatibility)
   --mobile: #{$mobile};
   --tablet: #{$tablet};
   --desktop: #{$desktop};
@@ -361,37 +372,17 @@ $letter-spacing-wide: 0.025em;
 }
 
 // =============================================================================
-// SPACING TOKENS
+// MATERIAL DESIGN 3 SPACING SCSS VARIABLES
 // =============================================================================
+// SCSS variables for mixins and calculations (compiled to above CSS custom properties)
 
-// Base spacing unit (1rem = 16px)
-$space-base: 1rem;
-
-// Spacing Scale - 8px grid only for layout
-$space-sm: 0.5rem; // 8px
-$space-md: 1rem; // 16px
-$space-lg: 2rem; // 32px
-$space-xl: 3rem; // 48px
-$space-2xl: 4rem; // 64px
-$space-3xl: 7.5rem; // 120px
-
-// Fine detail tokens (for border radius, focus ring, NOT for layout)
-$space-xs: 0.25rem; // 4px
-$space-legacy-md: 0.75rem; // 12px
-
-// CSS Custom Properties for Spacing
-:root {
-  --space-sm: #{$space-sm};
-  --space-md: #{$space-md};
-  --space-lg: #{$space-lg};
-  --space-xl: #{$space-xl};
-  --space-2xl: #{$space-2xl};
-  --space-3xl: #{$space-3xl};
-
-  // Fine detail tokens
-  --space-xs: #{$space-xs};
-  --space-legacy-md: #{$space-legacy-md};
-}
+$space-xs: 0.25rem;  // 4px
+$space-sm: 0.5rem;   // 8px
+$space-md: 1rem;     // 16px
+$space-lg: 1.5rem;   // 24px
+$space-xl: 2rem;     // 32px
+$space-2xl: 3rem;    // 48px
+$space-3xl: 4rem;    // 64px
 
 // =============================================================================
 // AUDIT DOCUMENTATION
@@ -783,6 +774,9 @@ $touch-target-min: 44px;
 // =============================================================================
 // UTILITY FUNCTIONS
 // =============================================================================
+
+// SCSS VARIABLES - Required for mixins and calculations
+// Note: Breakpoint variables are defined earlier in the file (lines 61-62)
 
 // Convert px to rem
 @function rem($pixels, $base: 16) {

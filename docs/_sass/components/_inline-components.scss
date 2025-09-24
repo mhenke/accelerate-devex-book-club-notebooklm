@@ -1,0 +1,236 @@
+// =============================================================================
+// INLINE COMPONENTS - CONSOLIDATED FROM INLINE <STYLE> BLOCKS
+// =============================================================================
+// This file collects styles moved from inline <style> tags in includes
+// to fix HTML validation errors and centralize component styles
+
+// =============================================================================
+// DORA METRIC CARDS - from reusable-metric-card.html
+// =============================================================================
+
+/* Enhanced DORA Metric Card Styles */
+.dora-metric-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--elevation-1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dora-metric-card:hover {
+  transform: var(--transform-hover-lift);
+  box-shadow: var(--elevation-3);
+}
+
+.dora-metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+}
+
+.metric-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-20);
+}
+
+.metric-icon {
+  background: linear-gradient(135deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+  color: white;
+  width: var(--touch-target-default);
+  height: var(--touch-target-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-title-medium);
+  flex-shrink: 0;
+  box-shadow: var(--shadow-button-secondary);
+}
+
+.metric-info {
+  flex: 1;
+}
+
+.metric-title {
+  margin: 0 0 var(--space-sm) 0;
+  color: var(--color-neutral-10);
+  font-size: var(--font-size-title-medium);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.metric-description {
+  margin: 0;
+  color: var(--color-neutral-50);
+  font-size: var(--font-size-body-medium);
+  line-height: var(--line-height-normal);
+}
+
+.metric-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.metric-current,
+.metric-goal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  background: var(--color-neutral-95);
+  border-radius: var(--radius-sm);
+  border: var(--border-light);
+}
+
+.metric-label {
+  font-size: var(--font-size-body-medium);
+  color: var(--color-neutral-50);
+  font-weight: var(--font-weight-medium);
+  min-width: 60px;
+}
+
+.metric-value {
+  font-size: var(--font-size-title-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-10);
+}
+
+.goal-value {
+  font-size: var(--font-size-body-medium);
+  color: var(--color-success);
+  font-weight: var(--font-weight-semibold);
+  background: rgba(76, 175, 80, 0.1);
+  padding: var(--space-4) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.metric-trend {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-body-medium);
+  font-weight: var(--font-weight-semibold);
+  padding: var(--space-4) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.metric-trend.improving {
+  color: var(--color-success);
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.metric-trend.declining {
+  color: var(--color-error);
+  background: rgba(244, 67, 54, 0.1);
+}
+
+.metric-trend.stable {
+  color: var(--color-warning);
+  background: rgba(255, 152, 0, 0.1);
+}
+
+/* Metric Type Variations */
+.lead-time-metric::before {
+  background: linear-gradient(90deg, var(--meeting-4-primary), var(--meeting-4-secondary));
+}
+
+.lead-time-metric .metric-icon {
+  background: linear-gradient(135deg, var(--meeting-4-primary), var(--meeting-4-secondary));
+  box-shadow: var(--shadow-meeting-4);
+}
+
+.deploy-frequency-metric::before {
+  background: linear-gradient(90deg, var(--meeting-2-primary), var(--meeting-2-secondary));
+}
+
+.deploy-frequency-metric .metric-icon {
+  background: linear-gradient(135deg, var(--meeting-2-primary), var(--meeting-2-secondary));
+  box-shadow: var(--shadow-meeting-2);
+}
+
+.restore-time-metric::before {
+  background: linear-gradient(90deg, var(--color-error), #b91c1c);
+}
+
+.restore-time-metric .metric-icon {
+  background: linear-gradient(135deg, var(--color-error), #b91c1c);
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+}
+
+.change-fail-metric::before {
+  background: linear-gradient(90deg, var(--meeting-3-primary), var(--meeting-3-secondary));
+}
+
+.change-fail-metric .metric-icon {
+  background: linear-gradient(135deg, var(--meeting-3-primary), var(--meeting-3-secondary));
+  box-shadow: var(--shadow-meeting-3);
+}
+
+.security-metric::before {
+  background: linear-gradient(90deg, #7c2d12, #991b1b);
+}
+
+.security-metric .metric-icon {
+  background: linear-gradient(135deg, #7c2d12, #991b1b);
+  box-shadow: 0 4px 8px rgba(124, 45, 18, 0.3);
+}
+
+.performance-metric::before {
+  background: linear-gradient(90deg, #0891b2, #0e7490);
+}
+
+.performance-metric .metric-icon {
+  background: linear-gradient(135deg, #0891b2, #0e7490);
+  box-shadow: 0 4px 8px rgba(8, 145, 178, 0.3);
+}
+
+/* Grid Layout Support */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+}
+
+/* Responsive Design */
+@media (max-width: #{$mobile - 1px}) {
+  .dora-metric-card {
+    padding: var(--space-md);
+  }
+
+  .metric-header {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .metric-icon {
+    width: var(--space-xl);
+    height: var(--space-xl);
+  }
+
+  .metric-current,
+  .metric-goal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .metric-label {
+    min-width: auto;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}

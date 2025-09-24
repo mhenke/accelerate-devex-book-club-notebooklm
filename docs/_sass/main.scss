@@ -13,6 +13,7 @@
 
 // 2. BASE - Critical above-the-fold styles (inlined in HTML)
 @import 'base/critical'; // Critical CSS for hero, DORA metrics, typography
+@import 'base/critical-extracted'; // Critical styles extracted from default.html
 
 // 3. CRITICAL COMPONENTS - Above-the-fold UI components
 @import 'components/hero'; // Hero banner component - critical for landing
@@ -23,6 +24,7 @@
 @import 'layout/header'; // Site header and branding - EXISTS
 // @import 'layout/footer'; // Site footer - TODO: Create
 @import 'layout/grid'; // Grid system and containers - CREATED
+@import 'layout/meeting'; // Meeting layout styles - EXTRACTED
 // @import 'layout/sidebar'; // Sidebar layouts - TODO: Create
 
 // 5. PAGES - Page-specific styles (loaded per page as needed)
@@ -56,6 +58,13 @@
 @import 'components/meeting-themes'; // Meeting color themes
 @import 'components/meeting-content'; // Meeting content styles
 @import 'components/meeting-layout'; // Meeting layout styles
+
+// 8. EXTRACTED INLINE COMPONENTS - Styles moved from inline <style> blocks
+@import 'components/inline-components'; // Consolidated inline styles for HTML validation
+
+// 9. PAGE-SPECIFIC STYLES - Styles for specific pages
+@import 'pages/404'; // 404 error page styles
+@import 'pages/offline'; // Offline page styles
 
 // =============================================================================
 // PERFORMANCE MONITORING & DEBUGGING

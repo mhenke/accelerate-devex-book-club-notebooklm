@@ -105,7 +105,7 @@
 .nav-links {
   display: flex;
   justify-content: space-between;
-  gap: var(--space-8);
+  gap: var(--space-sm);
   margin-bottom: 0;
   flex-wrap: nowrap;
   width: 100%;
@@ -115,7 +115,7 @@
 .nav-link {
   display: flex;
   align-items: center;
-  gap: var(--space-12);
+  gap: var(--space-sm);
   background: var(--color-white);
   border: 2px solid transparent;
   padding: 0.75rem 1.5rem;
