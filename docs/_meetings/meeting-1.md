@@ -189,8 +189,8 @@ document.addEventListener('keydown', function(event) {
           <p class="media-subtitle">The Myth and the Measurement</p>
           <p class="media-description">Foundation concepts: Why software delivery matters, DORA metrics explained, and culture as the key enabler.</p>
           <div class="media-controls">
-            <video controls width="100%" poster="/accelerate-devex-book-club-notebooklm/assets/images/meeting-1-video-poster.jpg">
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
+            <video controls width="100%">
+              <source src="https://s3.amazonaws.com/accelerate-devex-book-club-notebooklm/meeting-1-video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -210,7 +210,7 @@ document.addEventListener('keydown', function(event) {
             <p class="podcast-subtitle">Expert discussion on foundational concepts</p>
             <div class="podcast-controls">
               <audio controls width="100%">
-                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-main.m4a" type="audio/mp4">
+                <source src="https://s3.amazonaws.com/accelerate-devex-book-club-notebooklm/meeting-1-podcast.m4a" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
             </div>
@@ -225,7 +225,7 @@ document.addEventListener('keydown', function(event) {
             <p class="podcast-subtitle">Technical deep-dive on measurement</p>
             <div class="podcast-controls">
               <audio controls width="100%">
-                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-dora.m4a" type="audio/mp4">
+                <source src="https://s3.amazonaws.com/accelerate-devex-book-club-notebooklm/meeting-1-podcast.m4a" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
             </div>
@@ -240,7 +240,7 @@ document.addEventListener('keydown', function(event) {
             <p class="podcast-subtitle">Real-world culture transformation stories</p>
             <div class="podcast-controls">
               <audio controls width="100%">
-                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-podcast-culture.m4a" type="audio/mp4">
+                <source src="https://s3.amazonaws.com/accelerate-devex-book-club-notebooklm/meeting-1-podcast.m4a" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
             </div>
