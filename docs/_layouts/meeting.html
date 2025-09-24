@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="meeting meeting-theme--{{ page.week | default: '1' }}">
+<article class="meeting meeting-themed" data-meeting="{{ page.week | default: '1' }}">
   <!-- Clean Meeting Header -->
   <header class="meeting-header">
     <div class="meeting-header-content">
@@ -138,16 +138,7 @@ layout: default
 </article>
 
 <style>
-  /* Dynamic Meeting-Specific Color Variables */
-  :root {
-    --meeting-primary: {{ page.dora_color | default: '#2196F3' }};
-    --meeting-secondary: {{ page.dora_color | default: '#2196F3' }}CC;
-    --meeting-surface: {{ page.dora_color | default: '#2196F3' }}05;
-    --meeting-light: {{ page.dora_color | default: '#2196F3' }}20;
-    --meeting-bg: {{ page.dora_color | default: '#2196F3' }}08;
-    --meeting-border: {{ page.dora_color | default: '#2196F3' }}40;
-    --meeting-hover: {{ page.dora_color | default: '#2196F3' }}E6;
-  }
+  /* Meeting-specific layout styles (color variables now handled by DRY theme system) */
 
   /* Meeting Header Styling */
   .meeting-header {

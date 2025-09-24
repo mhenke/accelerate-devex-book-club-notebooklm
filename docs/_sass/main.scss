@@ -14,15 +14,10 @@
 // 2. BASE - Critical above-the-fold styles (inlined in HTML)
 @import 'base/critical'; // Critical CSS for hero, DORA metrics, typography
 
-// 3. COMPONENTS - Reusable UI components (loaded async after critical)
-// Note: These will be imported conditionally based on performance budget
-
-@import 'components/buttons'; // Button variations and states - CREATED
-@import 'components/cards'; // Card components and variations - CREATED
-@import 'components/navigation'; // Site navigation and menus - EXISTS
-// @import 'components/forms'; // Form elements and validation - TODO: Create
-// @import 'components/modals'; // Modal dialogs and overlays - TODO: Create
-@import 'components/hero'; // Hero banner component - EXISTS
+// 3. CRITICAL COMPONENTS - Above-the-fold UI components
+@import 'components/hero'; // Hero banner component - critical for landing
+@import 'components/buttons'; // Button variations and states
+@import 'components/navigation'; // Site navigation and menus
 
 // 4. LAYOUT - Major layout components (loaded after critical)
 @import 'layout/header'; // Site header and branding - EXISTS
@@ -44,24 +39,23 @@
 // @import 'base/typography'; // Extended typography styles - TODO: Create
 // @import 'base/helpers'; // Utility classes - TODO: Create
 
-// Extended component styles
+// 5. GENERAL COMPONENTS - Non-critical reusable components
+@import 'components/cards'; // Card components and variations
+@import 'components/badges'; // Badge and label components
+@import 'components/icons'; // Icon styles and utilities
+@import 'components/media'; // Media containers and players
+@import 'components/sections'; // Section layouts and patterns
+
+// 6. SPECIALIZED COMPONENTS - Feature-specific components
+@import 'components/metrics'; // DORA metrics and visualizations
 @import 'components/assessments'; // Assessment forms and feedback
 @import 'components/timelines'; // Timeline and progress components
-@import 'components/badges'; // Badge and label components
-@import 'components/headers'; // Header and banner components
-@import 'components/metrics'; // DORA metrics and visualizations
-@import 'components/media'; // Media containers and players
-@import 'components/navigation-patterns'; // Navigation components and patterns
-// @import 'components/ai-content'; // AI-generated content styling - TODO: Create
-// @import 'components/animations'; // Non-critical animations - TODO: Create
+@import 'components/navigation-patterns'; // Advanced navigation patterns
 
-// Existing meeting-specific components
-@import 'components/meeting-content'; // Meeting content styles - EXISTS
-@import 'components/meeting-layout'; // Meeting layout styles - EXISTS
-
-// Added by plan/refactor-css-standardization-1.md
-@import 'components/icons';
-@import 'components/meeting-themes';
+// 7. MEETING-SPECIFIC COMPONENTS - Meeting page styles
+@import 'components/meeting-themes'; // Meeting color themes
+@import 'components/meeting-content'; // Meeting content styles
+@import 'components/meeting-layout'; // Meeting layout styles
 
 // =============================================================================
 // PERFORMANCE MONITORING & DEBUGGING

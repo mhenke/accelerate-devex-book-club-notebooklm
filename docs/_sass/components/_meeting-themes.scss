@@ -1,266 +1,194 @@
-// Material Design Meeting Themes System
-// ====================================
-// Each meeting has a complete Material Design color system
-// Following Material Design 3 color token structure
+// DRY Meeting Themes System
+// =========================
+// Eliminates 240+ lines of duplication while preserving exact color schemes
 
 // =============================================================================
-// MEETING 1: FOUNDATION (BLUE THEME)
+// MEETING THEME DATA - Single Source of Truth
 // =============================================================================
+
+// Meeting theme definitions (preserving your exact color schemes)
+$meeting-themes: (
+  1: (
+    name: "foundation",
+    primary: #0969da,    // GitHub blue - Primary brand color
+    secondary: #1f6feb,  // Secondary blue
+    accent: #388bfd,     // Accent blue
+    surface: #f6f8fa,    // Light surface
+    on-surface: #24292f  // Text on surface
+  ),
+  2: (
+    name: "technical",
+    primary: #1a7f37,    // GitHub green
+    secondary: #238636,  // Secondary green
+    accent: #2da44e,     // Accent green
+    surface: #f0fff4,    // Light green surface
+    on-surface: #0d2818  // Dark text on surface
+  ),
+  3: (
+    name: "management",
+    primary: #d97706,    // Orange primary
+    secondary: #f59e0b,  // Secondary amber
+    accent: #fbbf24,     // Accent yellow
+    surface: #fffbeb,    // Light amber surface
+    on-surface: #451a03  // Dark text on surface
+  ),
+  4: (
+    name: "leadership",
+    primary: #8b5cf6,    // Purple primary
+    secondary: #a78bfa,  // Secondary purple
+    accent: #c4b5fd,     // Accent lavender
+    surface: #faf5ff,    // Light purple surface
+    on-surface: #3c1361  // Dark text on surface
+  )
+);
+
+// =============================================================================
+// GENERATE THEME CSS CUSTOM PROPERTIES (Data-Driven)
+// =============================================================================
+
+@each $number, $theme in $meeting-themes {
+  [data-meeting="#{$number}"] {
+    // Direct theme tokens
+    --theme-primary: #{map-get($theme, primary)};
+    --theme-secondary: #{map-get($theme, secondary)};
+    --theme-accent: #{map-get($theme, accent)};
+    --theme-surface: #{map-get($theme, surface)};
+    --theme-on-surface: #{map-get($theme, on-surface)};
+
+    // Legacy compatibility tokens (for existing code)
+    --meeting-primary: var(--theme-primary);
+    --meeting-secondary: var(--theme-secondary);
+    --meeting-accent: var(--theme-accent);
+    --meeting-surface: var(--theme-surface);
+    --meeting-on-surface: var(--theme-on-surface);
+  }
+}
+
+// =============================================================================
+// UNIVERSAL THEME APPLICATION (Placeholder for DRY Theming)
+// =============================================================================
+
+%meeting-themed-base {
+  // Page-wide Material Design theme application
+  background: var(--theme-surface);
+  color: var(--theme-on-surface);
+
+  // Typography follows theme colors
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--theme-primary);
+  }
+
+  // Links use primary with accent hover
+  a {
+    color: var(--theme-primary);
+
+    &:hover, &:focus {
+      color: var(--theme-accent);
+    }
+  }
+
+  // Buttons follow Material Design theme
+  .btn, .btn--filled {
+    background: var(--theme-primary);
+    color: white;
+
+    &:hover {
+      background: var(--theme-secondary);
+    }
+  }
+
+  // Component-specific overrides
+  .card--dora::before,
+  .card--meeting::before {
+    background: var(--theme-primary);
+  }
+
+  .card__badge {
+    background: var(--theme-surface);
+    color: var(--theme-on-surface);
+  }
+
+  .card__icon {
+    color: var(--theme-primary);
+  }
+
+  .card__number {
+    background: var(--theme-primary);
+  }
+}
+
+// Concrete class for new data-attribute system
+.meeting-themed {
+  @extend %meeting-themed-base;
+}
+
+// =============================================================================
+// BACKWARD COMPATIBILITY CLASSES (for migration)
+// =============================================================================
+
+// Keep existing class names working during transition
 .meeting-theme--1 {
-  // Material Design color tokens for Meeting 1
-  --meeting-primary: var(--meeting-1-primary);
-  --meeting-secondary: var(--meeting-1-secondary);
-  --meeting-accent: var(--meeting-1-accent);
-  --meeting-surface: var(--meeting-1-surface);
-  --meeting-on-surface: var(--meeting-1-on-surface);
+  // Meeting 1: Foundation (Blue Theme)
+  --theme-primary: #0969da;
+  --theme-secondary: #1f6feb;
+  --theme-accent: #388bfd;
+  --theme-surface: #f6f8fa;
+  --theme-on-surface: #24292f;
+  --meeting-primary: var(--theme-primary);
+  --meeting-secondary: var(--theme-secondary);
+  --meeting-accent: var(--theme-accent);
+  --meeting-surface: var(--theme-surface);
+  --meeting-on-surface: var(--theme-on-surface);
 
-  // Dynamic theme application
-  --theme-primary: var(--meeting-primary);
-  --theme-secondary: var(--meeting-secondary);
-  --theme-surface: var(--meeting-surface);
-  --theme-on-surface: var(--meeting-on-surface);
-
-  // Page-wide Material Design theme application
-  background: var(--meeting-surface);
-  color: var(--meeting-on-surface);
-
-  // Typography follows theme colors
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--meeting-primary);
-  }
-
-  // Links use primary with accent hover
-  a {
-    color: var(--meeting-primary);
-
-    &:hover, &:focus {
-      color: var(--meeting-accent);
-    }
-  }
-
-  // Buttons follow Material Design theme
-  .btn, .btn--filled {
-    background: var(--meeting-primary);
-    color: white;
-
-    &:hover {
-      background: var(--meeting-secondary);
-    }
-  }
-
-  // Component-specific overrides
-  .card--dora::before,
-  .card--meeting::before {
-    background: var(--meeting-primary);
-  }
-
-  .card__badge {
-    background: var(--meeting-surface);
-    color: var(--meeting-on-surface);
-  }
-
-  .card__icon {
-    color: var(--meeting-primary);
-  }
-
-  .card__number {
-    background: var(--meeting-primary);
-  }
+  @extend %meeting-themed-base;
 }
 
-// =============================================================================
-// MEETING 2: TECHNICAL EXCELLENCE (GREEN THEME)
-// =============================================================================
 .meeting-theme--2 {
-  // Material Design color tokens for Meeting 2
-  --meeting-primary: var(--meeting-2-primary);
-  --meeting-secondary: var(--meeting-2-secondary);
-  --meeting-accent: var(--meeting-2-accent);
-  --meeting-surface: var(--meeting-2-surface);
-  --meeting-on-surface: var(--meeting-2-on-surface);
+  // Meeting 2: Technical Excellence (Green Theme)
+  --theme-primary: #1a7f37;
+  --theme-secondary: #238636;
+  --theme-accent: #2da44e;
+  --theme-surface: #f0fff4;
+  --theme-on-surface: #0d2818;
+  --meeting-primary: var(--theme-primary);
+  --meeting-secondary: var(--theme-secondary);
+  --meeting-accent: var(--theme-accent);
+  --meeting-surface: var(--theme-surface);
+  --meeting-on-surface: var(--theme-on-surface);
 
-  // Dynamic theme application
-  --theme-primary: var(--meeting-primary);
-  --theme-secondary: var(--meeting-secondary);
-  --theme-surface: var(--meeting-surface);
-  --theme-on-surface: var(--meeting-on-surface);
-
-  // Page-wide Material Design theme application
-  background: var(--meeting-surface);
-  color: var(--meeting-on-surface);
-
-  // Typography follows theme colors
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--meeting-primary);
-  }
-
-  // Links use primary with accent hover
-  a {
-    color: var(--meeting-primary);
-
-    &:hover, &:focus {
-      color: var(--meeting-accent);
-    }
-  }
-
-  // Buttons follow Material Design theme
-  .btn, .btn--filled {
-    background: var(--meeting-primary);
-    color: white;
-
-    &:hover {
-      background: var(--meeting-secondary);
-    }
-  }
-
-  // Component-specific overrides
-  .card--dora::before,
-  .card--meeting::before {
-    background: var(--meeting-primary);
-  }
-
-  .card__badge {
-    background: var(--meeting-surface);
-    color: var(--meeting-on-surface);
-  }
-
-  .card__icon {
-    color: var(--meeting-primary);
-  }
-
-  .card__number {
-    background: var(--meeting-primary);
-  }
+  @extend %meeting-themed-base;
 }
 
-// =============================================================================
-// MEETING 3: MANAGEMENT (ORANGE THEME)
-// =============================================================================
 .meeting-theme--3 {
-  // Material Design color tokens for Meeting 3
-  --meeting-primary: var(--meeting-3-primary);
-  --meeting-secondary: var(--meeting-3-secondary);
-  --meeting-accent: var(--meeting-3-accent);
-  --meeting-surface: var(--meeting-3-surface);
-  --meeting-on-surface: var(--meeting-3-on-surface);
+  // Meeting 3: Management (Orange Theme)
+  --theme-primary: #d97706;
+  --theme-secondary: #f59e0b;
+  --theme-accent: #fbbf24;
+  --theme-surface: #fffbeb;
+  --theme-on-surface: #451a03;
+  --meeting-primary: var(--theme-primary);
+  --meeting-secondary: var(--theme-secondary);
+  --meeting-accent: var(--theme-accent);
+  --meeting-surface: var(--theme-surface);
+  --meeting-on-surface: var(--theme-on-surface);
 
-  // Dynamic theme application
-  --theme-primary: var(--meeting-primary);
-  --theme-secondary: var(--meeting-secondary);
-  --theme-surface: var(--meeting-surface);
-  --theme-on-surface: var(--meeting-on-surface);
-
-  // Page-wide Material Design theme application
-  background: var(--meeting-surface);
-  color: var(--meeting-on-surface);
-
-  // Typography follows theme colors
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--meeting-primary);
-  }
-
-  // Links use primary with accent hover
-  a {
-    color: var(--meeting-primary);
-
-    &:hover, &:focus {
-      color: var(--meeting-accent);
-    }
-  }
-
-  // Buttons follow Material Design theme
-  .btn, .btn--filled {
-    background: var(--meeting-primary);
-    color: white;
-
-    &:hover {
-      background: var(--meeting-secondary);
-    }
-  }
-
-  // Component-specific overrides
-  .card--dora::before,
-  .card--meeting::before {
-    background: var(--meeting-primary);
-  }
-
-  .card__badge {
-    background: var(--meeting-surface);
-    color: var(--meeting-on-surface);
-  }
-
-  .card__icon {
-    color: var(--meeting-primary);
-  }
-
-  .card__number {
-    background: var(--meeting-primary);
-  }
+  @extend %meeting-themed-base;
 }
 
-// =============================================================================
-// MEETING 4: LEADERSHIP (PURPLE THEME)
-// =============================================================================
 .meeting-theme--4 {
-  // Material Design color tokens for Meeting 4
-  --meeting-primary: var(--meeting-4-primary);
-  --meeting-secondary: var(--meeting-4-secondary);
-  --meeting-accent: var(--meeting-4-accent);
-  --meeting-surface: var(--meeting-4-surface);
-  --meeting-on-surface: var(--meeting-4-on-surface);
+  // Meeting 4: Leadership (Purple Theme)
+  --theme-primary: #8b5cf6;
+  --theme-secondary: #a78bfa;
+  --theme-accent: #c4b5fd;
+  --theme-surface: #faf5ff;
+  --theme-on-surface: #3c1361;
+  --meeting-primary: var(--theme-primary);
+  --meeting-secondary: var(--theme-secondary);
+  --meeting-accent: var(--theme-accent);
+  --meeting-surface: var(--theme-surface);
+  --meeting-on-surface: var(--theme-on-surface);
 
-  // Dynamic theme application
-  --theme-primary: var(--meeting-primary);
-  --theme-secondary: var(--meeting-secondary);
-  --theme-surface: var(--meeting-surface);
-  --theme-on-surface: var(--meeting-on-surface);
-
-  // Page-wide Material Design theme application
-  background: var(--meeting-surface);
-  color: var(--meeting-on-surface);
-
-  // Typography follows theme colors
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--meeting-primary);
-  }
-
-  // Links use primary with accent hover
-  a {
-    color: var(--meeting-primary);
-
-    &:hover, &:focus {
-      color: var(--meeting-accent);
-    }
-  }
-
-  // Buttons follow Material Design theme
-  .btn, .btn--filled {
-    background: var(--meeting-primary);
-    color: white;
-
-    &:hover {
-      background: var(--meeting-secondary);
-    }
-  }
-
-  // Component-specific overrides
-  .card--dora::before,
-  .card--meeting::before {
-    background: var(--meeting-primary);
-  }
-
-  .card__badge {
-    background: var(--meeting-surface);
-    color: var(--meeting-on-surface);
-  }
-
-  .card__icon {
-    color: var(--meeting-primary);
-  }
-
-  .card__number {
-    background: var(--meeting-primary);
-  }
+  @extend %meeting-themed-base;
 }
 
 // =============================================================================

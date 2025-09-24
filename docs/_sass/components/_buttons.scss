@@ -248,14 +248,14 @@
 .btn--secondary-action {
   @extend %btn-base;
 
-  background: #0969da !important; // Meeting 1 blue theme
+  background: var(--theme-primary) !important;
   color: white !important;
   border: none !important;
   box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
 
   &:hover,
   &:hover:not(:disabled) {
-    background: #0550ae !important; // Darker Meeting 1 blue hover
+    background: var(--theme-secondary) !important;
     color: white !important;
     text-decoration: none !important;
     border: none !important;
@@ -278,14 +278,14 @@
 .btn--meeting-nav {
   @extend %btn-base;
 
-  background: var(--meeting-primary, #0969da) !important; // Default to Meeting 1 blue
+  background: var(--theme-primary) !important;
   color: white !important;
   border: none !important;
   box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
 
   &:hover,
   &:hover:not(:disabled) {
-    background: var(--meeting-secondary, #0550ae) !important;
+    background: var(--theme-secondary) !important;
     color: white !important;
     text-decoration: none !important;
     border: none !important;

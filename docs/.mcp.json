@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "ainative-design-system": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/mhenke/.nvm/versions/node/v21.6.2/lib/node_modules/ainative-design-system-mcp-server/build/index.js"
+      ],
+      "env": {
+        "DESIGN_SYSTEM_PATH": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass",
+        "OUTPUT_FORMAT": "yaml"
+      }
+    }
+  }
+}
