@@ -14,6 +14,8 @@ title: Home
   </div>
 </div>
 
+<div class="main-content">
+
 <div class="welcome-compact section-card" markdown="0">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
 <div class="welcome-cta">
@@ -326,3 +328,4 @@ document.addEventListener('keydown', function(event) {
     <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
   </div>
 </footer>
+</div>
