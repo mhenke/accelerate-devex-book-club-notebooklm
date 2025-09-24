@@ -2,9 +2,9 @@
 
 <div
   class="page-hero"
-  style="background: linear-gradient(135deg, #7adad1 0%, #6bc7bf 100%)"
+  data-bg="linear-gradient(135deg, #7adad1 0%, #6bc7bf 100%)"
 >
-  <p style="text-align: center; margin-top: 2rem">
+  <p class="offline-cta">
     <a href="/accelerate-devex-book-club-notebooklm/" class="btn btn-offline"
       >Reconnect to Book Club</a
     >
@@ -199,7 +199,7 @@
       rgba(122, 218, 209, 0.1),
       rgba(122, 218, 209, 0.05)
     );
-    
+
     color: var(--text-medium);
     font-size: 0.9rem;
   }
@@ -242,27 +242,25 @@
   // Check if back online
   window.addEventListener('online', function () {
     const notification = document.createElement('div');
-    notification.innerHTML = `
-    <div style="
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--success-green);
-      color: white;
-      padding: 1rem 2rem;
-      
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      z-index: 1000;
-      font-weight: 600;
-      font-family: var(--font-family);
-    ">
-      <i class="fas fa-wifi"></i> You're back online!
-    </div>
-  `;
-    document.body.appendChild(notification);
+    // Build notification element without embedding inline style attributes
+    const toast = document.createElement('div');
+    toast.className = 'online-notification';
+    toast.innerHTML = '<i class="fas fa-wifi"></i> You\'re back online!';
+    // Apply styles via DOM properties
+    toast.style.position = 'fixed';
+    toast.style.top = '20px';
+    toast.style.right = '20px';
+    toast.style.background = 'var(--success-green)';
+    toast.style.color = 'white';
+    toast.style.padding = '1rem 2rem';
+    toast.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+    toast.style.zIndex = '1000';
+    toast.style.fontWeight = '600';
+    toast.style.fontFamily = 'var(--font-family)';
+    document.body.appendChild(toast);
 
     setTimeout(function () {
-      notification.remove();
+      toast.remove();
       window.location.reload();
     }, 3000);
   });

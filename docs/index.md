@@ -139,7 +139,7 @@ title: Home
 </div>
 
 <!-- Expandable Details Section -->
-<div class="outcome-details" id="outcome-details" style="display: none;">
+<div class="outcome-details" id="outcome-details" hidden>
   <div class="outcome-detail" id="detail-dora">
     <h3><i class="fas fa-chart-line"></i> Master DORA Metrics</h3>
     <p>Learn to measure and improve the four key metrics that distinguish high-performing teams: <strong>Lead Time</strong> (time from commit to production), <strong>Deployment Frequency</strong> (how often you deploy), <strong>Mean Time to Recovery</strong> (how quickly you recover from failures), and <strong>Change Fail Rate</strong> (percentage of deployments causing failures).</p>
@@ -216,7 +216,11 @@ title: Home
 <h2><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
 <div class="book-visual">
-<img src="{{ '/assets/images/book-cover.jpg' | relative_url }}" alt="Accelerate: The Science of Lean Software and DevOps book cover">
+</div>
+<!-- markdownlint-disable MD033 -->
+![Accelerate: The Science of Lean Software and DevOps book cover]({{ '/assets/images/book-cover.jpg' | relative_url }})
+<!-- markdownlint-enable MD033 -->
+<div class="book-visual">
 </div>
 <div class="book-info">
 <h3>Accelerate: The Science of Lean Software and DevOps</h3>

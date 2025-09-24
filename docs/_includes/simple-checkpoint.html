@@ -13,186 +13,243 @@ Parameters:
 - slider_labels: Pipe-separated labels for slider (e.g. "Low|Medium|High")
 -->
 
-<div class="simple-checkpoint {{ include.type | default: 'radio' }}-checkpoint" markdown="0">
+<div
+  class="simple-checkpoint {{ include.type | default: 'radio' }}-checkpoint"
+  markdown="0"
+>
   <h4>
-    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
-    {{ include.title }}
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %} {{
+    include.title }}
   </h4>
-  {% if include.question %}<p>{{ include.question }}</p>{% endif %}
-
-  {% if include.type == "slider" %}
-    <!-- Slider Implementation -->
-    <div class="slider-container" markdown="0">
-      {% if include.slider_labels %}
-        {% assign labels = include.slider_labels | split: '|' %}
-        <div class="slider-labels" markdown="0">
-          {% for label in labels %}
-            <span>{{ label | strip }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
-      <div class="slider-track" markdown="0">
-        <div class="slider-thumb" data-feedback-id="{{ include.feedback_id }}"></div>
-      </div>
+  {% if include.question %}
+  <p>{{ include.question }}</p>
+  {% endif %} {% if include.type == "slider" %}
+  <!-- Slider Implementation -->
+  <div class="slider-container" markdown="0">
+    {% if include.slider_labels %} {% assign labels = include.slider_labels |
+    split: '|' %}
+    <div class="slider-labels" markdown="0">
+      {% for label in labels %}
+      <span>{{ label | strip }}</span>
+      {% endfor %}
     </div>
+    {% endif %}
+    <div class="slider-track" markdown="0">
+      <div
+        class="slider-thumb"
+        data-feedback-id="{{ include.feedback_id }}"
+      ></div>
+    </div>
+  </div>
   {% elsif include.type == "checkbox" %}
-    <!-- Checkbox Implementation -->
-    <div class="checkbox-grid" markdown="0">
-      {% for option in include.options %}
-        <label class="checkbox-item">
-          <input type="checkbox"
-                 name="{{ include.radio_name }}[]"
-                 value="{{ option.value }}"
-                 data-feedback-content="{{ option.feedback_content }}">
-          <span class="checkbox-mark"></span>
-          {{ option.text }}
-        </label>
-      {% endfor %}
-    </div>
+  <!-- Checkbox Implementation -->
+  <div class="checkbox-grid" markdown="0">
+    {% for option in include.options %}
+    <label class="checkbox-item">
+      <input
+        type="checkbox"
+        name="{{ include.radio_name }}[]"
+        value="{{ option.value }}"
+        data-feedback-content="{{ option.feedback_content }}"
+      />
+      <span class="checkbox-mark"></span>
+      {{ option.text }}
+    </label>
+    {% endfor %}
+  </div>
   {% else %}
-    <!-- Radio Implementation -->
-    <div class="option-buttons" markdown="0">
-      {% for option in include.options %}
-        <label class="option-btn {{ option.performance_class | default: 'performance-medium' }}">
-          <input type="radio" 
-                 name="{{ include.radio_name }}" 
-                 value="{{ option.value }}"
-                 data-feedback-title="{{ option.feedback_title }}"
-                 data-feedback-content="{{ option.feedback_content }}">
-          <span class="radio-mark"></span>
-          {{ option.text }}
-        </label>
-      {% endfor %}
-    </div>
+  <!-- Radio Implementation -->
+  <div class="option-buttons" markdown="0">
+    {% for option in include.options %}
+    <label
+      class="option-btn {{ option.performance_class | default: 'performance-medium' }}"
+    >
+      <input
+        type="radio"
+        name="{{ include.radio_name }}"
+        value="{{ option.value }}"
+        data-feedback-title="{{ option.feedback_title }}"
+        data-feedback-content="{{ option.feedback_content }}"
+      />
+      <span class="radio-mark"></span>
+      {{ option.text }}
+    </label>
+    {% endfor %}
+  </div>
   {% endif %}
 
   <div class="feedback-area" id="{{ include.feedback_id }}">
-    <p>{{ include.default_feedback | default: 'Make a selection to see feedback.' }}</p>
+    <p>
+      {{ include.default_feedback | default: 'Make a selection to see feedback.'
+      }}
+    </p>
   </div>
 </div>
 
 <!-- Styles moved to _checkpoint-components.scss -->
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Handle radio button interactions
-  document.querySelectorAll('.simple-checkpoint input[type="radio"]').forEach(input => {
-    input.addEventListener('change', function() {
-      const checkpoint = this.closest('.simple-checkpoint');
-      const feedbackAreaElement = checkpoint ? checkpoint.querySelector('.feedback-area') : null;
-      const feedbackArea = feedbackAreaElement && feedbackAreaElement.id ? document.getElementById(feedbackAreaElement.id) : feedbackAreaElement;
-      const feedbackTitle = this.dataset.feedbackTitle;
-      const feedbackContent = this.dataset.feedbackContent;
-      
-      if (feedbackArea && (feedbackTitle || feedbackContent)) {
-        feedbackArea.classList.add('active');
-        
-        // Get performance level for styling
-        const performanceClass = Array.from(this.closest('.option-btn').classList).find(cls => cls.startsWith('performance-'));
-        let borderColor = '#1E3A8A';
-        
-        if (performanceClass === 'performance-high') {
-          borderColor = '#16a34a';
-          feedbackArea.style.background = 'linear-gradient(135deg, #e8f8f5, #d1f2eb)';
-        } else if (performanceClass === 'performance-medium') {
-          borderColor = '#d97706';
-          feedbackArea.style.background = 'linear-gradient(135deg, #fff3cd, #ffeaa7)';
-        } else if (performanceClass === 'performance-low') {
-          borderColor = '#dc2626';
-          feedbackArea.style.background = 'linear-gradient(135deg, #f8d7da, #f5c6cb)';
-        }
-        
-        feedbackArea.style.borderLeftColor = borderColor;
-        feedbackArea.innerHTML = `
-          ${feedbackTitle ? `<h5 style="color: ${borderColor}">${feedbackTitle}</h5>` : ''}
-          ${feedbackContent ? `<p>${feedbackContent}</p>` : ''}
-        `;
-      }
-    });
-  });
+  document.addEventListener('DOMContentLoaded', function () {
+    // Handle radio button interactions
+    document
+      .querySelectorAll('.simple-checkpoint input[type="radio"]')
+      .forEach((input) => {
+        input.addEventListener('change', function () {
+          const checkpoint = this.closest('.simple-checkpoint');
+          const feedbackAreaElement = checkpoint
+            ? checkpoint.querySelector('.feedback-area')
+            : null;
+          const feedbackArea =
+            feedbackAreaElement && feedbackAreaElement.id
+              ? document.getElementById(feedbackAreaElement.id)
+              : feedbackAreaElement;
+          const feedbackTitle = this.dataset.feedbackTitle;
+          const feedbackContent = this.dataset.feedbackContent;
 
-  // Handle checkbox interactions
-  document.querySelectorAll('.simple-checkpoint input[type="checkbox"]').forEach(input => {
-    input.addEventListener('change', function() {
-      const checkpoint = this.closest('.simple-checkpoint');
-      const feedbackArea = checkpoint.querySelector('.feedback-area');
-      const checkboxes = checkpoint.querySelectorAll('input[type="checkbox"]');
-      const checkedBoxes = checkpoint.querySelectorAll('input[type="checkbox"]:checked');
-      
-      if (feedbackArea) {
-        feedbackArea.classList.add('active');
-        
-        if (checkedBoxes.length === 0) {
-          // No boxes checked - show default
-          feedbackArea.style.background = '#f8f9fa';
-          feedbackArea.style.borderLeftColor = '#1E3A8A';
-          feedbackArea.innerHTML = '<p>Select factors present in your organization to calculate transformation readiness.</p>';
-        } else {
-          // Calculate readiness score
-          const score = Math.round((checkedBoxes.length / checkboxes.length) * 100);
-          let scoreColor = '#dc2626'; // Low
-          let scoreBackground = 'linear-gradient(135deg, #f8d7da, #f5c6cb)';
-          let scoreEmoji = '🔧';
-          let scoreText = 'Limited readiness';
-          
-          if (score >= 75) {
-            scoreColor = '#16a34a';
-            scoreBackground = 'linear-gradient(135deg, #e8f8f5, #d1f2eb)';
-            scoreEmoji = '🚀';
-            scoreText = 'High transformation readiness';
-          } else if (score >= 50) {
-            scoreColor = '#d97706';
-            scoreBackground = 'linear-gradient(135deg, #fff3cd, #ffeaa7)';
-            scoreEmoji = '⚡';
-            scoreText = 'Moderate readiness';
+          if (feedbackArea && (feedbackTitle || feedbackContent)) {
+            feedbackArea.classList.add('active');
+
+            // Get performance level for styling
+            const performanceClass = Array.from(
+              this.closest('.option-btn').classList
+            ).find((cls) => cls.startsWith('performance-'));
+            let borderColor = '#1E3A8A';
+
+            if (performanceClass === 'performance-high') {
+              borderColor = '#16a34a';
+              feedbackArea.style.background =
+                'linear-gradient(135deg, #e8f8f5, #d1f2eb)';
+            } else if (performanceClass === 'performance-medium') {
+              borderColor = '#d97706';
+              feedbackArea.style.background =
+                'linear-gradient(135deg, #fff3cd, #ffeaa7)';
+            } else if (performanceClass === 'performance-low') {
+              borderColor = '#dc2626';
+              feedbackArea.style.background =
+                'linear-gradient(135deg, #f8d7da, #f5c6cb)';
+            }
+
+            feedbackArea.style.borderLeftColor = borderColor;
+            feedbackArea.innerHTML = `
+          ${
+            feedbackTitle
+              ? `<h5 class="feedback-title">${feedbackTitle}</h5>`
+              : ''
           }
-          
-          feedbackArea.style.background = scoreBackground;
-          feedbackArea.style.borderLeftColor = scoreColor;
-          feedbackArea.innerHTML = `
-            <h5 style="color: ${scoreColor}">${scoreEmoji} Transformation Readiness: ${score}%</h5>
-            <p>${scoreText} - ${checkedBoxes.length} of ${checkboxes.length} key factors present.</p>
-          `;
-        }
-      }
-    });
-  });
+          ${
+            feedbackContent
+              ? `<p class="feedback-text">${feedbackContent}</p>`
+              : ''
+          }
+        `;
+            const titleEl = feedbackArea.querySelector('.feedback-title');
+            if (titleEl) {
+              titleEl.style.color = borderColor;
+            }
+          }
+        });
+      });
 
-  // Handle slider interactions (basic implementation)
-  document.querySelectorAll('.slider-track').forEach(track => {
-    const thumb = track.querySelector('.slider-thumb');
-    let isDragging = false;
-    
-    track.addEventListener('mousedown', function(e) {
-      isDragging = true;
-      updateSliderPosition(e, track, thumb);
-    });
-    
-    document.addEventListener('mousemove', function(e) {
-      if (isDragging) {
+    // Handle checkbox interactions
+    document
+      .querySelectorAll('.simple-checkpoint input[type="checkbox"]')
+      .forEach((input) => {
+        input.addEventListener('change', function () {
+          const checkpoint = this.closest('.simple-checkpoint');
+          const feedbackArea = checkpoint.querySelector('.feedback-area');
+          const checkboxes = checkpoint.querySelectorAll(
+            'input[type="checkbox"]'
+          );
+          const checkedBoxes = checkpoint.querySelectorAll(
+            'input[type="checkbox"]:checked'
+          );
+
+          if (feedbackArea) {
+            feedbackArea.classList.add('active');
+
+            if (checkedBoxes.length === 0) {
+              // No boxes checked - show default
+              feedbackArea.style.background = '#f8f9fa';
+              feedbackArea.style.borderLeftColor = '#1E3A8A';
+              feedbackArea.innerHTML =
+                '<p>Select factors present in your organization to calculate transformation readiness.</p>';
+            } else {
+              // Calculate readiness score
+              const score = Math.round(
+                (checkedBoxes.length / checkboxes.length) * 100
+              );
+              let scoreColor = '#dc2626'; // Low
+              let scoreBackground = 'linear-gradient(135deg, #f8d7da, #f5c6cb)';
+              let scoreEmoji = '🔧';
+              let scoreText = 'Limited readiness';
+
+              if (score >= 75) {
+                scoreColor = '#16a34a';
+                scoreBackground = 'linear-gradient(135deg, #e8f8f5, #d1f2eb)';
+                scoreEmoji = '🚀';
+                scoreText = 'High transformation readiness';
+              } else if (score >= 50) {
+                scoreColor = '#d97706';
+                scoreBackground = 'linear-gradient(135deg, #fff3cd, #ffeaa7)';
+                scoreEmoji = '⚡';
+                scoreText = 'Moderate readiness';
+              }
+
+              feedbackArea.style.background = scoreBackground;
+              feedbackArea.style.borderLeftColor = scoreColor;
+              feedbackArea.innerHTML = `
+            <h5 class="feedback-title">${scoreEmoji} Transformation Readiness: ${score}%</h5>
+            <p class="feedback-text">${scoreText} - ${checkedBoxes.length} of ${checkboxes.length} key factors present.</p>
+          `;
+              const titleEl = feedbackArea.querySelector('.feedback-title');
+              if (titleEl) {
+                titleEl.style.color = scoreColor;
+              }
+            }
+          }
+        });
+      });
+
+    // Handle slider interactions (basic implementation)
+    document.querySelectorAll('.slider-track').forEach((track) => {
+      const thumb = track.querySelector('.slider-thumb');
+      let isDragging = false;
+
+      track.addEventListener('mousedown', function (e) {
+        isDragging = true;
         updateSliderPosition(e, track, thumb);
-      }
+      });
+
+      document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+          updateSliderPosition(e, track, thumb);
+        }
+      });
+
+      document.addEventListener('mouseup', function () {
+        isDragging = false;
+      });
     });
-    
-    document.addEventListener('mouseup', function() {
-      isDragging = false;
-    });
-  });
-  
-  function updateSliderPosition(e, track, thumb) {
-    const rect = track.getBoundingClientRect();
-    const percentage = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    thumb.style.left = `${percentage * 100}%`;
-    
-    // Update feedback based on slider position
-    const feedbackId = thumb.dataset.feedbackId;
-    if (feedbackId) {
-      const feedbackArea = document.getElementById(feedbackId);
-      if (feedbackArea) {
-        feedbackArea.classList.add('active');
-        feedbackArea.innerHTML = `<p>Slider value: ${Math.round(percentage * 100)}%</p>`;
+
+    function updateSliderPosition(e, track, thumb) {
+      const rect = track.getBoundingClientRect();
+      const percentage = Math.max(
+        0,
+        Math.min(1, (e.clientX - rect.left) / rect.width)
+      );
+      thumb.style.left = `${percentage * 100}%`;
+
+      // Update feedback based on slider position
+      const feedbackId = thumb.dataset.feedbackId;
+      if (feedbackId) {
+        const feedbackArea = document.getElementById(feedbackId);
+        if (feedbackArea) {
+          feedbackArea.classList.add('active');
+          feedbackArea.innerHTML = `<p>Slider value: ${Math.round(
+            percentage * 100
+          )}%</p>`;
+        }
       }
     }
-  }
-});
+  });
 </script>

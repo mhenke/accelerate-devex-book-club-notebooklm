@@ -28,7 +28,7 @@ Between Meetings Activities
 
 <div class="resource-grid" markdown="0">
 <div class="resource-card">
-<div class="resource-icon" style="color: #2196F3">
+<div class="resource-icon" data-color="#2196F3">
 <i class="fas fa-clipboard-check"></i>
 </div>
 <h3>Between Meetings</h3>
@@ -37,7 +37,7 @@ Between Meetings Activities
 </div>
 
 <div class="resource-card">
-<div class="resource-icon" style="color: #4CAF50">
+<div class="resource-icon" data-color="#4CAF50">
 <i class="fas fa-comments"></i>
 </div>
 <h3>Discussion Practices</h3>
@@ -46,7 +46,7 @@ Between Meetings Activities
 </div>
 
 <div class="resource-card">
-<div class="resource-icon" style="color: #FF9800">
+<div class="resource-icon" data-color="#FF9800">
 <i class="fas fa-arrow-up"></i>
 </div>
 <h3>Extensions</h3>
@@ -117,7 +117,7 @@ Between Meetings Activities
 {% assign meetings = site.meetings | sort: "week" %}
 {% for meeting in meetings %}
 <div class="meeting-resource-card">
-<div class="meeting-icon" style="color: {{ meeting.dora_color }}">
+<div class="meeting-icon" data-color="{{ meeting.dora_color }}">
 {% case forloop.index %}
 {% when 1 %}<i class="fas fa-chart-line"></i>
 {% when 2 %}<i class="fas fa-sync-alt"></i>
@@ -167,7 +167,7 @@ Between Meetings Activities
 <h4><i class="fas fa-dumbbell"></i> Practical Exercises</h4>
 <div class="exercise-timeline">
 <div class="exercise-week">
-<div class="week-marker" style="background: linear-gradient(135deg, #2196F3, #1976D2)">2</div>
+<div class="week-marker" data-bg="linear-gradient(135deg, #2196F3, #1976D2)">2</div>
 <div class="week-content">
 <strong>After Meeting 1:</strong>
 <ul>
@@ -179,7 +179,7 @@ Between Meetings Activities
 </div>
 
 <div class="exercise-week">
-<div class="week-marker" style="background: linear-gradient(135deg, #4CAF50, #388E3C)">4</div>
+<div class="week-marker" data-bg="linear-gradient(135deg, #4CAF50, #388E3C)">4</div>
 <div class="week-content">
 <strong>After Meeting 2:</strong>
 <ul>
@@ -191,7 +191,7 @@ Between Meetings Activities
 </div>
 
 <div class="exercise-week">
-<div class="week-marker" style="background: linear-gradient(135deg, #FF9800, #F57C00)">6</div>
+<div class="week-marker" data-bg="linear-gradient(135deg, #FF9800, #F57C00)">6</div>
 <div class="week-content">
 <strong>After Meeting 3:</strong>
 <ul>
@@ -203,7 +203,7 @@ Between Meetings Activities
 </div>
 
 <div class="exercise-week">
-<div class="week-marker" style="background: linear-gradient(135deg, #F44336, #D32F2F)">8</div>
+<div class="week-marker" data-bg="linear-gradient(135deg, #F44336, #D32F2F)">8</div>
 <div class="week-content">
 <strong>After Meeting 4:</strong>
 <ul>
@@ -286,7 +286,7 @@ Between Meetings Activities
 
 <div class="resource-grid" markdown="0">
 <div class="resource-card">
-<div class="resource-icon" style="color: #2196F3">
+<div class="resource-icon" data-color="#2196F3">
 <i class="fas fa-book"></i>
 </div>
 <h3>Advanced Reading</h3>
@@ -300,7 +300,7 @@ Between Meetings Activities
 </div>
 
 <div class="resource-card">
-<div class="resource-icon" style="color: #4CAF50">
+<div class="resource-icon" data-color="#4CAF50">
 <i class="fas fa-graduation-cap"></i>
 </div>
 <h3>Professional Development</h3>
@@ -325,7 +325,7 @@ Between Meetings Activities
 </div>
 
 <div class="resource-card">
-<div class="resource-icon" style="color: #FF9800">
+<div class="resource-icon" data-color="#FF9800">
 <i class="fas fa-chart-line"></i>
 </div>
 <h3>Measurement & Monitoring</h3>

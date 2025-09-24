@@ -12,8 +12,8 @@ nav_order: 6
     <svg viewBox="0 0 100 100" class="trophy-svg">
       <defs>
         <linearGradient id="trophy-gradient-unique" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-          <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+          <stop offset="0%" stop-color="#FFD700" stop-opacity="1" />
+          <stop offset="100%" stop-color="#FFA500" stop-opacity="1" />
         </linearGradient>
       </defs>
       <path d="M50 15 L35 25 L35 45 L50 55 L65 45 L65 25 Z" fill="url(#trophy-gradient-unique)"/>

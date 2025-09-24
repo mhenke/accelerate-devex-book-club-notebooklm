@@ -874,7 +874,6 @@ a {
   h2 {
     text-align: center;
     color: var(--primary-blue);
-
     font-size: clamp(
       var(--font-size-headline-small),
       4vw,
@@ -2223,7 +2222,6 @@ button:focus,
     color: var(--text-dark);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
-
     position: relative;
     z-index: 1;
     display: flex;

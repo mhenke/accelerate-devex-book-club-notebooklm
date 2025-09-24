@@ -140,6 +140,34 @@ layout: default
   </footer>
 </article>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Apply data-color attributes to element color
+    document.querySelectorAll('[data-color]').forEach((el) => {
+      const color = el.getAttribute('data-color');
+      if (color) {
+        el.style.color = color;
+      }
+    });
+
+    // Apply data-bg attributes to element background
+    document.querySelectorAll('[data-bg]').forEach((el) => {
+      const bg = el.getAttribute('data-bg');
+      if (bg) {
+        el.style.background = bg;
+      }
+    });
+
+    // For hero/backgrounds that used data-bg on the page-hero
+    document.querySelectorAll('.page-hero[data-bg]').forEach((el) => {
+      const bg = el.getAttribute('data-bg');
+      if (bg) {
+        el.style.background = bg;
+      }
+    });
+  });
+</script>
+
 <style>
   /* Meeting-specific layout styles (color variables now handled by DRY theme system) */
 
@@ -599,23 +627,23 @@ layout: default
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
     // Find Discussion Questions sections and add class to their ol elements
-    const headings = document.querySelectorAll("h2");
+    const headings = document.querySelectorAll('h2');
     headings.forEach((heading) => {
-      if (heading.textContent.includes("Discussion Questions")) {
+      if (heading.textContent.includes('Discussion Questions')) {
         const nextOl = heading.nextElementSibling;
-        if (nextOl && nextOl.tagName === "OL") {
-          nextOl.classList.add("discussion-questions-list");
+        if (nextOl && nextOl.tagName === 'OL') {
+          nextOl.classList.add('discussion-questions-list');
         }
       }
     });
 
     // Convert data-icon spans to Font Awesome icons
-    const iconSpans = document.querySelectorAll("[data-icon]");
+    const iconSpans = document.querySelectorAll('[data-icon]');
     iconSpans.forEach((span) => {
       const iconName = span.dataset.icon;
-      const iconElement = document.createElement("i");
+      const iconElement = document.createElement('i');
       iconElement.className = `fas fa-${iconName}`;
       span.parentNode.replaceChild(iconElement, span);
     });

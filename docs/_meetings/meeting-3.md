@@ -45,6 +45,7 @@ dora_color: "#d97706" # $meeting-3-primary
 
 #### Employee Satisfaction: The Four Pillars
 
+<!-- markdownlint-disable MD033 -->
 <svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Employee Satisfaction Framework</title>
   <rect x="10" y="10" width="880" height="260" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="4"/>
@@ -99,6 +100,7 @@ dora_color: "#d97706" # $meeting-3-primary
     </marker>
   </defs>
 </svg>
+<!-- markdownlint-enable MD033 -->
 
 #### Deployment Pain Spectrum
 
@@ -118,6 +120,7 @@ dora_color: "#d97706" # $meeting-3-primary
 
 ### Lean Product Development: Interactive Flow
 
+<!-- markdownlint-disable MD033 -->
 <svg width="100%" height="350" viewBox="0 0 1000 350" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Lean Product Development Flow</title>
   <rect x="10" y="10" width="980" height="330" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="3"/>
@@ -127,7 +130,7 @@ dora_color: "#d97706" # $meeting-3-primary
   <rect x="50" y="80" width="200" height="200" rx="15" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
   <circle cx="150" cy="110" r="20" fill="#d97706"/>
   <circle cx="150" cy="116" r="8" fill="white"/>
-  <text x="150" y="119" text-anchor="middle" font-size="10" fill="#d97706" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f075</text>
+  <text x="150" y="119" text-anchor="middle" font-size="10" fill="#d97706" font-family="'Font Awesome 6 Free'" font-weight="900">f075</text>
   <text x="150" y="140" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Customer Feedback</text>
   <text x="150" y="160" text-anchor="middle" font-size="12" fill="#92400e">Active Incorporation</text>
   
@@ -144,7 +147,7 @@ dora_color: "#d97706" # $meeting-3-primary
   <rect x="320" y="80" width="200" height="200" rx="15" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
   <circle cx="420" cy="110" r="20" fill="#d97706"/>
   <circle cx="420" cy="116" r="8" fill="white"/>
-  <text x="420" y="119" text-anchor="middle" font-size="10" fill="#d97706" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">f468</text>
+  <text x="420" y="119" text-anchor="middle" font-size="10" fill="#d97706" font-family="'Font Awesome 6 Free'" font-weight="900">f468</text>
   <text x="420" y="140" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Small Batches</text>
   <text x="420" y="160" text-anchor="middle" font-size="12" fill="#92400e">Less Than One Week</text>
   
@@ -189,6 +192,7 @@ dora_color: "#d97706" # $meeting-3-primary
     </marker>
   </defs>
 </svg>
+<!-- markdownlint-enable MD033 -->
 
 <style>
 /* eNPS Assessment Styling */

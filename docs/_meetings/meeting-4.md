@@ -45,8 +45,9 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 
 #### ING Netherlands Transformation Framework
 
+<!-- markdownlint-disable MD033 -->
 <svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="img">
-	<title>ING Transformation Framework</title>
+  <title>ING Transformation Framework</title>
 	<rect x="10" y="10" width="880" height="260" rx="20" fill="#f5f3ff" stroke="#7c3aed" stroke-width="4"/>
 	<text x="450" y="40" text-anchor="middle" font-size="24" fill="#6d28d9" font-family="Poppins, Inter, sans-serif">ING Transformation Framework</text>
 
@@ -100,6 +101,8 @@ dora_color: "#8b5cf6" # $meeting-4-primary
     </defs>
 
 </svg>
+
+<!-- markdownlint-enable MD033 -->
 
 ### Leadership Impact: Enabling vs. Commanding
 

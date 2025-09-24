@@ -12,338 +12,383 @@ Parameters:
 - default_feedback: Default feedback message (optional)
 -->
 
-<div class="checkpoint-card {{ include.card_class | default: 'culture-assessment' }}" markdown="0">
+<div
+  class="checkpoint-card {{ include.card_class | default: 'culture-assessment' }}"
+  markdown="0"
+>
   <h4>
-    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
-    {{ include.title }}
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %} {{
+    include.title }}
   </h4>
-  {% if include.question %}<p>{{ include.question }}</p>{% endif %}
-  
+  {% if include.question %}
+  <p>{{ include.question }}</p>
+  {% endif %}
+
   <div class="culture-selector" markdown="0">
-    {% if include.culture_types %}
-      {% for culture in include.culture_types %}
-      <label class="culture-option assessment-btn {{ culture.performance_class }}">
-        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="{{ culture.value }}">
-        <span class="radio-mark"></span>
-        <div class="culture-content">
-          <div class="culture-header">
-            <strong>{{ culture.name }}</strong>
-          </div>
-          <div class="culture-description">{{ culture.description }}</div>
+    {% if include.culture_types %} {% for culture in include.culture_types %}
+    <label
+      class="culture-option assessment-btn {{ culture.performance_class }}"
+    >
+      <input
+        type="radio"
+        name="{{ include.radio_name | default: 'culture-type' }}"
+        value="{{ culture.value }}"
+      />
+      <span class="radio-mark"></span>
+      <div class="culture-content">
+        <div class="culture-header">
+          <strong>{{ culture.name }}</strong>
         </div>
-      </label>
-      {% endfor %}
-    {% else %}
-      <!-- Default Westrum culture types -->
-      <label class="culture-option assessment-btn performance-low">
-        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="pathological">
-        <span class="radio-mark"></span>
-        <div class="culture-content">
-          <div class="culture-header">
-            <strong>Pathological</strong>
-          </div>
-          <div class="culture-description">Power-oriented, low cooperation, blame culture</div>
+        <div class="culture-description">{{ culture.description }}</div>
+      </div>
+    </label>
+    {% endfor %} {% else %}
+    <!-- Default Westrum culture types -->
+    <label class="culture-option assessment-btn performance-low">
+      <input
+        type="radio"
+        name="{{ include.radio_name | default: 'culture-type' }}"
+        value="pathological"
+      />
+      <span class="radio-mark"></span>
+      <div class="culture-content">
+        <div class="culture-header">
+          <strong>Pathological</strong>
         </div>
-      </label>
-      
-      <label class="culture-option assessment-btn performance-medium">
-        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="bureaucratic">
-        <span class="radio-mark"></span>
-        <div class="culture-content">
-          <div class="culture-header">
-            <strong>Bureaucratic</strong>
-          </div>
-          <div class="culture-description">Rule-oriented, modest cooperation, rules over mission</div>
+        <div class="culture-description">
+          Power-oriented, low cooperation, blame culture
         </div>
-      </label>
-      
-      <label class="culture-option assessment-btn performance-high">
-        <input type="radio" name="{{ include.radio_name | default: 'culture-type' }}" value="generative">
-        <span class="radio-mark"></span>
-        <div class="culture-content">
-          <div class="culture-header">
-            <strong>Generative</strong>
-          </div>
-          <div class="culture-description">Performance-oriented, high cooperation, mission focused</div>
+      </div>
+    </label>
+
+    <label class="culture-option assessment-btn performance-medium">
+      <input
+        type="radio"
+        name="{{ include.radio_name | default: 'culture-type' }}"
+        value="bureaucratic"
+      />
+      <span class="radio-mark"></span>
+      <div class="culture-content">
+        <div class="culture-header">
+          <strong>Bureaucratic</strong>
         </div>
-      </label>
+        <div class="culture-description">
+          Rule-oriented, modest cooperation, rules over mission
+        </div>
+      </div>
+    </label>
+
+    <label class="culture-option assessment-btn performance-high">
+      <input
+        type="radio"
+        name="{{ include.radio_name | default: 'culture-type' }}"
+        value="generative"
+      />
+      <span class="radio-mark"></span>
+      <div class="culture-content">
+        <div class="culture-header">
+          <strong>Generative</strong>
+        </div>
+        <div class="culture-description">
+          Performance-oriented, high cooperation, mission focused
+        </div>
+      </div>
+    </label>
     {% endif %}
   </div>
-  
+
   {% if include.feedback_id %}
   <div class="feedback-area" id="{{ include.feedback_id }}">
-    <p>{{ include.default_feedback | default: 'Select your organization\'s culture type to see how it impacts delivery performance.' }}</p>
+    <p>
+      {{ include.default_feedback | default: 'Select your organization\'s
+      culture type to see how it impacts delivery performance.' }}
+    </p>
   </div>
   {% endif %}
 </div>
 
 <style>
-/* Culture checkpoint styling */
-.culture-assessment {
-  background: white;
-  
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #7c2d12;
-  transition: all 0.3s ease;
-}
-
-.culture-assessment:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.culture-assessment h4 {
-  margin: 0 0 1rem 0;
-  color: #92400e;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.culture-assessment h4 i {
-  margin-right: 0.5rem;
-  color: inherit;
-}
-
-.culture-assessment p {
-  color: #666;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-
-/* Culture selector */
-.culture-selector {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.culture-option {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  padding: 1.25rem;
-  background: white;
-  border: 2px solid #e2e8f0;
-  
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-.culture-option:hover {
-  border-color: #cbd5e1;
-  transform: translateX(4px);
-}
-
-.culture-option input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.culture-option .radio-mark {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #cbd5e1;
-  border-radius: 50%;
-  margin-right: 1rem;
-  position: relative;
-  flex-shrink: 0;
-  transition: all 0.3s ease;
-  margin-top: 0.1rem;
-}
-
-.culture-option input[type="radio"]:checked + .radio-mark {
-  border-color: #92400e;
-  background: #92400e;
-}
-
-.culture-option input[type="radio"]:checked + .radio-mark::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  background: white;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.culture-content {
-  flex: 1;
-}
-
-.culture-header {
-  margin-bottom: 0.5rem;
-}
-
-.culture-header strong {
-  color: #374151;
-  font-size: 1.1rem;
-}
-
-.culture-description {
-  color: #6b7280;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-/* Performance-based styling - only show colors when selected */
-.culture-option.performance-low input[type="radio"]:checked + .radio-mark {
-  border-color: #dc2626;
-  background: #dc2626;
-}
-
-.culture-option.performance-low input[type="radio"]:checked ~ .culture-content .culture-header strong {
-  color: #dc2626;
-}
-
-.culture-option.performance-medium input[type="radio"]:checked + .radio-mark {
-  border-color: #d97706;
-  background: #d97706;
-}
-
-.culture-option.performance-medium input[type="radio"]:checked ~ .culture-content .culture-header strong {
-  color: #d97706;
-}
-
-.culture-option.performance-high input[type="radio"]:checked + .radio-mark {
-  border-color: #16a34a;
-  background: #16a34a;
-}
-
-.culture-option.performance-high input[type="radio"]:checked ~ .culture-content .culture-header strong {
-  color: #16a34a;
-}
-
-/* Feedback area */
-.culture-assessment .feedback-area {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: #fef3e2;
-  border-left: 4px solid #92400e;
-  
-  min-height: 60px;
-  transition: all 0.3s ease;
-}
-
-.culture-assessment .feedback-area.active {
-  background: linear-gradient(135deg, #fef3e2, #fed7aa);
-}
-
-.culture-assessment .feedback-area h5 {
-  margin: 0 0 0.5rem 0;
-  color: #92400e;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.culture-assessment .feedback-area p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #374151;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
+  /* Culture checkpoint styling */
   .culture-assessment {
-    padding: 1.25rem;
+    background: white;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #7c2d12;
+    transition: all 0.3s ease;
   }
-  
+
+  .culture-assessment:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  .culture-assessment h4 {
+    margin: 0 0 1rem 0;
+    color: #92400e;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .culture-assessment h4 i {
+    margin-right: 0.5rem;
+    color: inherit;
+  }
+
+  .culture-assessment p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* Culture selector */
+  .culture-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .culture-option {
-    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem;
+    background: white;
+    border: 2px solid #e2e8f0;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
   }
-  
+
+  .culture-option:hover {
+    border-color: #cbd5e1;
+    transform: translateX(4px);
+  }
+
+  .culture-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
   .culture-option .radio-mark {
-    width: 18px;
-    height: 18px;
-    margin-right: 0.75rem;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    margin-right: 1rem;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    margin-top: 0.1rem;
   }
-  
+
+  .culture-option input[type="radio"]:checked + .radio-mark {
+    border-color: #92400e;
+    background: #92400e;
+  }
+
   .culture-option input[type="radio"]:checked + .radio-mark::after {
-    width: 6px;
-    height: 6px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
   }
-  
+
+  .culture-content {
+    flex: 1;
+  }
+
+  .culture-header {
+    margin-bottom: 0.5rem;
+  }
+
   .culture-header strong {
-    font-size: 1rem;
+    color: #374151;
+    font-size: 1.1rem;
   }
-  
+
   .culture-description {
-    font-size: 0.85rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
-}
+
+  /* Performance-based styling - only show colors when selected */
+  .culture-option.performance-low input[type="radio"]:checked + .radio-mark {
+    border-color: #dc2626;
+    background: #dc2626;
+  }
+
+  .culture-option.performance-low
+    input[type="radio"]:checked
+    ~ .culture-content
+    .culture-header
+    strong {
+    color: #dc2626;
+  }
+
+  .culture-option.performance-medium input[type="radio"]:checked + .radio-mark {
+    border-color: #d97706;
+    background: #d97706;
+  }
+
+  .culture-option.performance-medium
+    input[type="radio"]:checked
+    ~ .culture-content
+    .culture-header
+    strong {
+    color: #d97706;
+  }
+
+  .culture-option.performance-high input[type="radio"]:checked + .radio-mark {
+    border-color: #16a34a;
+    background: #16a34a;
+  }
+
+  .culture-option.performance-high
+    input[type="radio"]:checked
+    ~ .culture-content
+    .culture-header
+    strong {
+    color: #16a34a;
+  }
+
+  /* Feedback area */
+  .culture-assessment .feedback-area {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #fef3e2;
+    border-left: 4px solid #92400e;
+
+    min-height: 60px;
+    transition: all 0.3s ease;
+  }
+
+  .culture-assessment .feedback-area.active {
+    background: linear-gradient(135deg, #fef3e2, #fed7aa);
+  }
+
+  .culture-assessment .feedback-area h5 {
+    margin: 0 0 0.5rem 0;
+    color: #92400e;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .culture-assessment .feedback-area p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #374151;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .culture-assessment {
+      padding: 1.25rem;
+    }
+
+    .culture-option {
+      padding: 1rem;
+    }
+
+    .culture-option .radio-mark {
+      width: 18px;
+      height: 18px;
+      margin-right: 0.75rem;
+    }
+
+    .culture-option input[type="radio"]:checked + .radio-mark::after {
+      width: 6px;
+      height: 6px;
+    }
+
+    .culture-header strong {
+      font-size: 1rem;
+    }
+
+    .culture-description {
+      font-size: 0.85rem;
+    }
+  }
 </style>
 
 <script>
-// Culture checkpoint interactivity
-document.addEventListener('DOMContentLoaded', function() {
-  // Westrum culture types data from Accelerate research
-  const cultureInfo = {
-    pathological: {
-      title: 'Pathological (Power-Oriented) Culture',
-      content: 'Characterized by large amounts of fear and threat. Information is hoarded and withheld for political reasons, or distorted to make individuals look better. These organizations show low cooperation across groups and a culture of blame. According to Westrum\'s research, pathological cultures correlate with poor performance and higher failure rates.',
-      performance: 'low'
-    },
-    bureaucratic: {
-      title: 'Bureaucratic (Rule-Oriented) Culture', 
-      content: 'Preoccupied with rules and positions, with responsibilities compartmentalized by department. There\'s little concern for the overall mission of the organization. Rules are more important than the mission. Information flows through official channels, but innovation and risk-taking are discouraged.',
-      performance: 'medium'
-    },
-    generative: {
-      title: 'Generative (Performance-Oriented) Culture',
-      content: 'Focuses fully on the mission with high cooperation and trust. Features good information flow, collaboration between teams, and conscious inquiry. According to Accelerate research, generative cultures predict both software delivery performance and organizational performance, leading to higher market share, productivity, and profitability.',
-      performance: 'high'
-    }
-  };
+  // Culture checkpoint interactivity
+  document.addEventListener('DOMContentLoaded', function () {
+    // Westrum culture types data from Accelerate research
+    const cultureInfo = {
+      pathological: {
+        title: 'Pathological (Power-Oriented) Culture',
+        content:
+          'Characterized by large amounts of fear and threat. Information is hoarded and withheld for political reasons, or distorted to make individuals look better. These organizations show low cooperation across groups and a culture of blame. According to Westrum\'s research, pathological cultures correlate with poor performance and higher failure rates.',
+        performance: 'low',
+      },
+      bureaucratic: {
+        title: 'Bureaucratic (Rule-Oriented) Culture',
+        content:
+          'Preoccupied with rules and positions, with responsibilities compartmentalized by department. There\'s little concern for the overall mission of the organization. Rules are more important than the mission. Information flows through official channels, but innovation and risk-taking are discouraged.',
+        performance: 'medium',
+      },
+      generative: {
+        title: 'Generative (Performance-Oriented) Culture',
+        content:
+          'Focuses fully on the mission with high cooperation and trust. Features good information flow, collaboration between teams, and conscious inquiry. According to Accelerate research, generative cultures predict both software delivery performance and organizational performance, leading to higher market share, productivity, and profitability.',
+        performance: 'high',
+      },
+    };
 
-  // Handle all culture checkpoint interactions
-  const cultureCards = document.querySelectorAll('.culture-assessment');
-  
-  cultureCards.forEach(card => {
-    const radioInputs = card.querySelectorAll('input[type="radio"]');
-    const feedbackArea = card.querySelector('.feedback-area');
-    
-    if (radioInputs.length > 0 && feedbackArea) {
-      radioInputs.forEach(input => {
-        input.addEventListener('change', function() {
-          const cultureType = this.value;
-          const info = cultureInfo[cultureType];
-          
-          if (info) {
-            // Add visual feedback
-            feedbackArea.classList.add('active');
-            
-            // Update feedback styling based on performance level
-            let borderColor = '#92400e';
-            let backgroundColor = 'linear-gradient(135deg, #fef3e2, #fed7aa)';
-            
-            if (info.performance === 'high') {
-              borderColor = '#16a34a';
-              backgroundColor = 'linear-gradient(135deg, #e8f8f5, #d1f2eb)';
-            } else if (info.performance === 'low') {
-              borderColor = '#dc2626';
-              backgroundColor = 'linear-gradient(135deg, #f8d7da, #f5c6cb)';
-            }
-            
-            feedbackArea.style.borderLeftColor = borderColor;
-            feedbackArea.style.background = backgroundColor;
-            feedbackArea.innerHTML = `
-              <h5 style="color: ${borderColor}; margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600;">
-                ${info.title}
-              </h5>
-              <p style="margin: 0; font-size: 0.9rem; line-height: 1.4; color: #374151;">
-                ${info.content}
-              </p>
+    // Handle all culture checkpoint interactions
+    const cultureCards = document.querySelectorAll('.culture-assessment');
+
+    cultureCards.forEach((card) => {
+      const radioInputs = card.querySelectorAll('input[type="radio"]');
+      const feedbackArea = card.querySelector('.feedback-area');
+
+      if (radioInputs.length > 0 && feedbackArea) {
+        radioInputs.forEach((input) => {
+          input.addEventListener('change', function () {
+            const cultureType = this.value;
+            const info = cultureInfo[cultureType];
+
+            if (info) {
+              // Add visual feedback
+              feedbackArea.classList.add('active');
+
+              // Update feedback styling based on performance level
+              let borderColor = '#92400e';
+              let backgroundColor = 'linear-gradient(135deg, #fef3e2, #fed7aa)';
+
+              if (info.performance === 'high') {
+                borderColor = '#16a34a';
+                backgroundColor = 'linear-gradient(135deg, #e8f8f5, #d1f2eb)';
+              } else if (info.performance === 'low') {
+                borderColor = '#dc2626';
+                backgroundColor = 'linear-gradient(135deg, #f8d7da, #f5c6cb)';
+              }
+
+              feedbackArea.style.borderLeftColor = borderColor;
+              feedbackArea.style.background = backgroundColor;
+              feedbackArea.innerHTML = `
+              <h5 class="feedback-title">${info.title}</h5>
+              <p class="feedback-text">${info.content}</p>
             `;
-          }
+              const titleEl = feedbackArea.querySelector('.feedback-title');
+              if (titleEl) {
+                titleEl.style.color = borderColor;
+              }
+            }
+          });
         });
-      });
-    }
+      }
+    });
   });
-});
 </script>
