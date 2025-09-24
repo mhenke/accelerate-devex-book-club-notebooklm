@@ -67,43 +67,12 @@ $desktop: 1200px;
 // COLOR TOKENS
 // =============================================================================
 
-// Primary Brand Colors - Enhanced for sophisticated design
-$header-dark-navy: #1a1a2e;
-$header-light-navy: #16213e;
-$primary-blue: #2196f3;
-$dark-blue: #16213e;
-$hero-dark: #0f1419; // Deeper dark for hero sections
-$card-dark: #1e2936; // Dark card backgrounds
-$card-darker: #151b23; // Even darker for contrast
-$light-gray-bg: #f8fafc; // Common light background
+// Keep only SCSS variables that are used in calculations or mixins
+// Most colors are now defined directly in CSS custom properties below
 
-// Accent Colors - Energetic and engaging
-$accent-coral: #ff7f50;
-$accent-gold: #d7ba89;
-$accent-teal: #7adad1;
-$accent-sage: #8b9eb7;
-$accent-emerald: #10b981; // Additional sophisticated accent
-
-// Interactive State Colors
-$hover-coral: #ff6347;
-$hover-gold: #c9a876;
-$hover-teal: #6bc7bf;
-$hover-emerald: #059669;
-
-// Background Colors - Enhanced palette
-$background-white: #ffffff;
-$background-off-white: #efe9e7;
-$background-light-gray: #f5f5f5;
-$background-light: #f5f5f5;
-$background-dark: #0f1419;
-$background-card-dark: #1e2936;
-$background-surface: #f8fafc;
-
-// Text Colors - Hierarchical and readable
-$text-dark: #2c3e50;
-$text-medium: #5a6c7d;
-$text-light: #8fa8b8;
-$text-white: #ffffff;
+// Keep essential SCSS variables for calculations only
+$background-white: #ffffff; // Used in mixins
+$text-dark: #2c3e50; // Used in legacy mixins
 
 // DORA Metrics Colors - Performance visualization
 $dora-blue: #2196f3;
@@ -154,54 +123,54 @@ $meeting-4-surface: #faf5ff; // Light purple surface
 $meeting-4-on-surface: #3c1361; // Dark text on surface
 
 // Border and Shadow Colors
-$border-light: #e8ecf0;
+$border-light: rgba(148, 163, 184, 0.3); // Standard border with transparency
 $border-color: #e8ecf0;
 $shadow-light: rgba(26, 26, 46, 0.1);
 $shadow-medium: rgba(26, 26, 46, 0.15);
 
 // CSS Custom Properties - Runtime Theme Control
 :root {
-  // Enhanced Dark Theme Colors
-  --hero-dark: #{$hero-dark};
-  --card-dark: #{$card-dark};
-  --card-darker: #{$card-darker};
-  --light-gray-bg: #{$light-gray-bg};
-  --background-dark: #{$background-dark};
-  --background-card-dark: #{$background-card-dark};
-  --background-surface: #{$background-surface};
-  --accent-emerald: #{$accent-emerald};
-  --hover-emerald: #{$hover-emerald};
+  // Enhanced Dark Theme Colors (direct values)
+  --hero-dark: #0f1419;
+  --card-dark: #1e2936;
+  --card-darker: #151b23;
+  --light-gray-bg: #f8fafc;
+  --background-dark: #0f1419;
+  --background-card-dark: #1e2936;
+  --background-surface: #f8fafc;
+  --accent-emerald: #10b981;
+  --hover-emerald: #059669;
 
   // Header Gradient Colors
-  --header-dark-navy: #{$header-dark-navy};
-  --header-light-navy: #{$header-light-navy};
+  --header-dark-navy: #1a1a2e;
+  --header-light-navy: #16213e;
 
   // Primary Colors
-  --primary-blue: #{$primary-blue};
-  --dark-blue: #{$dark-blue};
+  --primary-blue: #2196f3;
+  --dark-blue: #16213e;
 
   // Accent Colors
-  --accent-coral: #{$accent-coral};
-  --accent-gold: #{$accent-gold};
-  --accent-teal: #{$accent-teal};
-  --accent-sage: #{$accent-sage};
+  --accent-coral: #ff7f50;
+  --accent-gold: #d7ba89;
+  --accent-teal: #7adad1;
+  --accent-sage: #8b9eb7;
 
   // Interactive States
-  --hover-coral: #{$hover-coral};
-  --hover-gold: #{$hover-gold};
-  --hover-teal: #{$hover-teal};
+  --hover-coral: #ff6347;
+  --hover-gold: #c9a876;
+  --hover-teal: #6bc7bf;
 
-  // Background Colors
-  --background-white: #{$background-white};
-  --background-off-white: #{$background-off-white};
-  --background-light-gray: #{$background-light-gray};
-  --background-light: #{$background-light};
+  // Background Colors (direct values)
+  --background-white: #ffffff;
+  --background-off-white: #efe9e7;
+  --background-light-gray: #f5f5f5;
+  --background-light: #f5f5f5;
 
-  // Text Colors
-  --text-dark: #{$text-dark};
-  --text-medium: #{$text-medium};
-  --text-light: #{$text-light};
-  --text-white: #{$text-white};
+  // Text Colors (direct values)
+  --text-dark: #2c3e50;
+  --text-medium: #5a6c7d;
+  --text-light: #8fa8b8;
+  --text-white: #ffffff;
 
   // DORA Metrics Colors
   --dora-blue: #{$dora-blue};
@@ -247,6 +216,32 @@ $shadow-medium: rgba(26, 26, 46, 0.15);
   --border-color: #{$border-color};
   --shadow-light: #{$shadow-light};
   --shadow-medium: #{$shadow-medium};
+
+  // Additional color tokens for consistency
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-white: #ffffff;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #1976d2;
+  --color-orange-600: #f57c00;
+  --color-green-50: #f0fdf4;
+  --color-green-100: #ecfdf5;
+  --color-green-600: #16a34a;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-600: #64748b;
+  --color-cyan-600: #0891b2;
 }
 
 // =============================================================================

@@ -925,12 +925,12 @@ a {
 
 // Speed category styling
 .speed-category .category-icon {
-  background: linear-gradient(135deg, var(--dora-blue), #1976d2);
+  background: linear-gradient(135deg, var(--dora-blue), var(--color-blue-600));
 }
 
 // Stability category styling
 .stability-category .category-icon {
-  background: linear-gradient(135deg, var(--dora-orange), #f57c00);
+  background: linear-gradient(135deg, var(--dora-orange), var(--color-orange-600));
 }
 
 .metric-card {
@@ -972,7 +972,7 @@ a {
 // Welcome Compact - Above the Fold Focus
 .welcome-compact {
   background: var(--gradient-surface);
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
   margin: var(--space-lg) auto;
@@ -1006,7 +1006,7 @@ a {
 // About the Book Club Section - Material Design
 .quick-start {
   background: var(--gradient-surface);
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
   margin: var(--space-lg) auto;
@@ -1046,7 +1046,7 @@ a {
 // What You'll Learn Section
 .what-youll-learn-section {
   background: var(--gradient-surface);
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
   margin: var(--space-lg) auto;
@@ -1085,7 +1085,7 @@ a {
 
 // Enhanced Success Metrics with Material Design
 .success-metrics-compact {
-  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  background: linear-gradient(135deg, var(--color-green-50) 0%, var(--color-green-100) 100%);
   border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-2xl);
@@ -1354,7 +1354,7 @@ a {
 
 // Enhanced Get Started Section with Material Design
 .get-started-section {
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  background: linear-gradient(135deg, var(--color-blue-50) 0%, var(--color-blue-100) 100%);
   border: 1px solid rgba(33, 150, 243, 0.2);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-2xl);
@@ -1373,7 +1373,7 @@ a {
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(90deg, #2196f3, #1976d2);
+    background: linear-gradient(90deg, #2196f3, var(--color-blue-600));
     border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   }
 
@@ -1594,14 +1594,15 @@ a {
   }
 }
 
-// Meeting 1 override for standard buttons to use blue theme
+// Meeting themed buttons using new data-attribute system
+.meeting.meeting-themed,
 .meeting.meeting-theme--1 {
   .btn,
   .btn-primary {
     background: linear-gradient(
       135deg,
-      var(--meeting-1-primary),
-      var(--meeting-1-secondary)
+      var(--theme-primary),
+      var(--theme-secondary)
     );
     box-shadow: var(--elevation-2);
 
@@ -1661,6 +1662,7 @@ a {
   padding: var(
     --space-lg
   ); // Further reduced from xl to lg for more compact height
+
   text-align: left;
   position: relative;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1884,8 +1886,8 @@ a {
   .highlight-icon {
     background: linear-gradient(
       135deg,
-      var(--meeting-1-primary),
-      var(--meeting-1-secondary)
+      var(--theme-primary),
+      var(--theme-secondary)
     );
   }
 
@@ -1897,8 +1899,8 @@ a {
   &::after {
     background: linear-gradient(
       90deg,
-      var(--meeting-1-primary),
-      var(--meeting-1-secondary)
+      var(--theme-primary),
+      var(--theme-secondary)
     ); // Blue gradient for foundation
   }
 
@@ -2218,7 +2220,7 @@ button:focus,
 
     i,
     em {
-      color: #3b82f6;
+      color: var(--color-blue-500);
       font-size: var(--font-size-xl);
     }
   }
@@ -2521,7 +2523,7 @@ button:focus,
 // Required Reading Section - Material Design Card
 .required-reading-section {
   background: var(--gradient-surface);
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-xl);
   margin: var(--space-lg) auto;
@@ -2770,7 +2772,7 @@ button:focus,
     padding: var(--space-sm);
     border-radius: var(--radius-sm);
     margin-top: var(--space-md);
-    border-left: 3px solid #64748b;
+    border-left: 3px solid var(--color-slate-600);
 
     p {
       margin: 0;
@@ -2876,11 +2878,11 @@ button:focus,
 // Theme Colors
 .success-theme {
   .card-header i {
-    color: #16a34a;
+    color: var(--color-green-600);
   }
 
   .card-goal {
-    border-left-color: #16a34a;
+    border-left-color: var(--color-green-600);
     background: #f0fdf4;
   }
 }

@@ -50,23 +50,7 @@
 // MATERIAL DESIGN TYPOGRAPHY MIXINS
 // =============================================================================
 
-// Material Design Display Styles (Hero Headlines)
-@mixin display-large {
-  font-family: var(--font-display);
-  font-size: var(--font-size-display-large);
-  font-weight: var(--font-weight-normal);
-  line-height: 1.12;
-  letter-spacing: -0.25px;
-}
-
-@mixin display-medium {
-  font-family: var(--font-display);
-  font-size: var(--font-size-display-medium);
-  font-weight: var(--font-weight-normal);
-  line-height: 1.16;
-  letter-spacing: 0px;
-}
-
+// Essential Display Styles (only what's actually used)
 @mixin display-small {
   font-family: var(--font-display);
   font-size: var(--font-size-display-small);
@@ -100,30 +84,7 @@
   letter-spacing: 0px;
 }
 
-// Material Design Title Styles
-@mixin title-large {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-title-large);
-  font-weight: var(--font-weight-normal);
-  line-height: 1.27;
-  letter-spacing: 0px;
-}
-
-@mixin title-medium {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-title-medium);
-  font-weight: var(--font-weight-medium);
-  line-height: 1.5;
-  letter-spacing: 0.15px;
-}
-
-@mixin title-small {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-title-small);
-  font-weight: var(--font-weight-medium);
-  line-height: 1.43;
-  letter-spacing: 0.1px;
-}
+// Title styles removed - not used in codebase
 
 // Material Design Body Text
 @mixin body-large {
@@ -134,13 +95,7 @@
   letter-spacing: 0.5px;
 }
 
-@mixin body-medium {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-body-medium);
-  font-weight: var(--font-weight-normal);
-  line-height: 1.43;
-  letter-spacing: 0.25px;
-}
+// body-medium removed - not used
 
 @mixin body-small {
   font-family: var(--font-primary);
@@ -150,28 +105,12 @@
   letter-spacing: 0.4px;
 }
 
-// Material Design Label Styles
-@mixin label-large {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-label-large);
-  font-weight: var(--font-weight-medium);
-  line-height: 1.43;
-  letter-spacing: 0.1px;
-}
-
+// Essential Label styles (still used)
 @mixin label-medium {
   font-family: var(--font-primary);
   font-size: var(--font-size-label-medium);
   font-weight: var(--font-weight-medium);
-  line-height: 1.33;
-  letter-spacing: 0.5px;
-}
-
-@mixin label-small {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-label-small);
-  font-weight: var(--font-weight-medium);
-  line-height: 1.45;
+  line-height: 1.43;
   letter-spacing: 0.5px;
 }
 
@@ -180,14 +119,6 @@
 // =============================================================================
 
 // Heading styles with consistent hierarchy
-@mixin heading-base {
-  font-family: var(--font-display);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
-  margin-top: 0;
-  margin-bottom: var(--space-lg);
-}
 
 @mixin heading-1 {
   @include display-small;
@@ -230,16 +161,9 @@
   line-height: var(--line-height-relaxed);
 }
 
-// Legacy body text styles (use Material Design mixins instead)
+// Essential legacy text styles (still used)
 @mixin body-text {
   @include body-large; // Map to Material Design body-large
-}
-
-// Code and monospace text
-@mixin code-text {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-normal);
 }
 
 // =============================================================================
@@ -264,45 +188,14 @@
   flex-direction: column;
 }
 
-@mixin flex-column-center {
-  @include flex-column;
-
-  align-items: center;
-  justify-content: center;
-}
-
-// Grid utilities
+// Essential grid mixin (still used)
 @mixin grid-auto-fit($min-width: 250px) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
   gap: var(--space-lg);
 }
 
-@mixin grid-auto-fill($min-width: 250px) {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax($min-width, 1fr));
-  gap: var(--space-lg);
-}
-
-// Container with max-width
-@mixin container($max-width: $desktop) {
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 0 var(--space-lg);
-
-  @include mobile-only {
-    padding: 0 var(--space-md);
-  }
-}
-
-// Section spacing
-@mixin section-spacing {
-  padding: var(--space-4xl) 0;
-
-  @include mobile-only {
-    padding: var(--space-3xl) 0;
-  }
-}
+// Other unused layout mixins removed (flex-column-center, grid-auto-fill, container, section-spacing)
 
 // =============================================================================
 // VISUAL EFFECTS MIXINS
@@ -483,22 +376,7 @@
 // PERFORMANCE OPTIMIZATION MIXINS
 // =============================================================================
 
-// Will-change optimization - use sparingly and dynamically
-@mixin will-change-transform {
-  will-change: transform;
-
-  @include reduced-motion {
-    will-change: auto;
-  }
-}
-
-@mixin will-change-opacity {
-  will-change: opacity;
-
-  @include reduced-motion {
-    will-change: auto;
-  }
-}
+// Will-change optimization removed - not used in static site
 
 // GPU acceleration for animations
 @mixin hardware-acceleration {
@@ -531,159 +409,21 @@
   background: var(--hero-gradient);
 }
 
-// DORA metric gradients
-@mixin dora-elite {
-  background: var(--dora-elite);
-  color: var(--text-white);
-}
-
-@mixin dora-high {
-  background: var(--dora-high);
-  color: var(--text-white);
-}
-
-@mixin dora-medium {
-  background: var(--dora-medium);
-  color: var(--text-white);
-}
-
-@mixin dora-low {
-  background: var(--dora-low);
-  color: var(--text-white);
-}
+// DORA gradient mixins removed - not used
 
 // =============================================================================
 // ANIMATION MIXINS
 // =============================================================================
 
-// Fade in animation
-@mixin fade-in($duration: var(--duration-normal)) {
-  opacity: 0;
-  animation: fadeIn $duration var(--ease-out) forwards;
+// Animation mixins removed - not used in static site
 
-  @include reduced-motion {
-    opacity: 1;
-    animation: none;
-  }
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-// Slide up animation
-@mixin slide-up($distance: 20px, $duration: var(--duration-normal)) {
-  transform: translateY($distance);
-  opacity: 0;
-  animation: slideUp $duration var(--ease-out) forwards;
-
-  @include reduced-motion {
-    transform: none;
-    opacity: 1;
-    animation: none;
-  }
-}
-
-@keyframes slideUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-// Float animation for accent elements
-@mixin float-animation($duration: 3s) {
-  animation: float $duration ease-in-out infinite;
-
-  @include reduced-motion {
-    animation: none;
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
+// Float animation removed - not used in static site
 
 // =============================================================================
 // COMPONENT-SPECIFIC MIXINS
 // =============================================================================
 
-// Hero banner styling
-@mixin hero-banner {
-  @include hero-gradient;
-
-  padding: var(--space-4xl) var(--space-2xl);
-  margin-bottom: var(--space-3xl);
-  border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  color: var(--text-white);
-
-  @include mobile-only {
-    padding: var(--space-3xl) var(--space-lg);
-  }
-}
-
-// Metric card styling
-@mixin metric-card {
-  @include card-hover;
-
-  padding: var(--space-xl);
-  text-align: center;
-  background: linear-gradient(
-    135deg,
-    var(--background-white),
-    var(--background-light-gray)
-  );
-
-  .metric-icon {
-    @include flex-center;
-
-    width: 60px;
-    height: 60px;
-    border-radius: var(--radius-lg);
-    margin: 0 auto var(--space-lg);
-    font-size: var(--font-size-2xl);
-  }
-
-  .metric-title {
-    @include heading-4;
-
-    margin: 0 0 var(--space-sm);
-    color: var(--text-dark);
-  }
-
-  .metric-value {
-    font-family: var(--font-display);
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
-    color: var(--accent-coral);
-    margin: 0;
-  }
-}
-
-// Section accent header
-@mixin section-accent {
-  border-left: 4px solid var(--accent-teal);
-  padding-left: var(--space-lg);
-  margin-bottom: var(--space-xl);
-  font-family: var(--font-display);
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-semibold);
-  color: var(--header-dark-navy);
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
+// Component-specific mixins removed - not used (hero-banner, metric-card, section-accent)
 
 // =============================================================================
 // UTILITY FUNCTIONS
@@ -731,35 +471,7 @@
 // VALIDATION MIXINS
 // =============================================================================
 
-// Debug mixin for development
-@mixin debug($color: red) {
-  outline: 2px solid $color !important;
-  outline-offset: -2px !important;
-}
-
-// Aspect ratio mixin
-@mixin aspect-ratio($width, $height) {
-  aspect-ratio: $width / $height;
-
-  // Fallback for browsers that don't support aspect-ratio
-  @supports not (aspect-ratio: 1) {
-    position: relative;
-
-    &::before {
-      content: "";
-      display: block;
-      padding-top: ($height / $width) * 100%;
-    }
-
-    > * {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
+// Debug and aspect-ratio mixins removed - not used
 
 // =============================================================================
 // PERFORMANCE NOTES

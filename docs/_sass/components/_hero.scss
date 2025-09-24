@@ -1,6 +1,6 @@
-// Hero Banner Component - Critical CSS
-// ====================================
-// Above-the-fold hero section for immediate rendering
+// Heroes & Banners Component - Consolidated Headers
+// =================================================
+// Hero banners, page headers, and banner patterns
 
 .hero-banner {
   background: linear-gradient(
@@ -51,4 +51,198 @@
 .hero-cta {
   @include button-primary;
   @include touch-target-44px;
+}
+
+// =============================================================================
+// ADDITIONAL HEADER & BANNER COMPONENTS (from _headers.scss)
+// =============================================================================
+
+// Celebration Headers
+.celebration-header {
+  background: linear-gradient(135deg, var(--accent-coral), var(--accent-gold));
+  color: var(--text-white);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '🎉';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: var(--font-size-display-large);
+    opacity: 0.3;
+    animation: bounce 2s infinite;
+  }
+
+  &::after {
+    content: '🚀';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    font-size: var(--font-size-display-large);
+    opacity: 0.3;
+    animation: bounce 2s infinite 1s;
+  }
+
+  h2 {
+    font-size: clamp(var(--font-size-headline-small), 3vw, var(--font-size-display-medium));
+    margin: 0 0 var(--spacing-md) 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  p {
+    font-size: var(--font-size-lg);
+    margin: 0;
+    opacity: 0.95;
+  }
+}
+
+// Section Headers with Icons
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin: var(--spacing-xl) 0 var(--spacing-lg) 0;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--border-light);
+
+  i {
+    font-size: var(--font-size-headline-small);
+    color: var(--primary-blue);
+    min-width: 2rem;
+  }
+
+  h2,
+  h3 {
+    margin: 0;
+    flex: 1;
+  }
+}
+
+// Transform Complete Banner
+.transform-complete-banner {
+  background: linear-gradient(135deg, var(--success-green), var(--accent-teal));
+  color: var(--text-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(255,255,255,0.1)' fill-opacity='0.1'%3E%3Cpath d='M20 20l10-10v20z'/%3E%3Cpath d='M20 20l-10-10v20z'/%3E%3C/g%3E%3C/svg%3E")
+      repeat;
+    opacity: 0.2;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: clamp(var(--font-size-headline-large), 4vw, var(--font-size-display-small));
+    margin: 0 0 var(--spacing-lg) 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-xl);
+    opacity: 0.95;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .highlight-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+
+    .stat {
+      background: rgba(255, 255, 255, 0.1);
+      padding: var(--spacing-md);
+      border-radius: var(--border-radius);
+
+      .stat-number {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        display: block;
+      }
+
+      .stat-label {
+        font-size: var(--font-size-sm);
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+// Page Headers
+.page-header {
+  background: var(--bg-light);
+  padding: var(--spacing-lg) 0;
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--border-light);
+
+  h1 {
+    margin: 0;
+    color: var(--primary-navy);
+  }
+
+  .page-description {
+    color: var(--text-secondary);
+    font-size: var(--font-size-lg);
+    margin-top: var(--spacing-md);
+  }
+}
+
+// Announcement Headers
+.announcement-header {
+  background: linear-gradient(135deg, var(--dora-orange), var(--accent-coral));
+  color: var(--text-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-lg) 0;
+
+  h3 {
+    margin: 0 0 var(--spacing-sm) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+
+    i {
+      font-size: var(--font-size-title-large);
+    }
+  }
+
+  p {
+    margin: 0;
+    opacity: 0.95;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }

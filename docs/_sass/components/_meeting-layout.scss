@@ -130,9 +130,9 @@
 
 /* Meeting-specific colors using DORA color themes */
 .nav-link.meeting-1 {
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  border-color: #1e3a8a;
-  color: #1e3a8a;
+  background: var(--gradient-meeting-1);
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
 }
 
 .nav-link.meeting-1:hover {
