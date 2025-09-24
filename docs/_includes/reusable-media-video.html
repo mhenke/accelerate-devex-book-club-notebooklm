@@ -11,22 +11,37 @@ Parameters:
 - custom_class: Additional CSS class (optional)
 -->
 
-<div class="media-section video-section {{ include.custom_class }}" markdown="0">
+<div
+  class="media-section video-section {{ include.custom_class }}"
+  markdown="0"
+>
   {% if include.title %}
-  <h3 id="{{ include.video_id | default: 'video-section' }}">{{ include.title }}</h3>
+  <h3 id="{{ include.video_id | default: 'video-section' }}">
+    {{ include.title }}
+  </h3>
   {% elsif include.meeting_number %}
-  <h3 id="watch-meeting-{{ include.meeting_number }}-video">Watch the Meeting {{ include.meeting_number }} Video</h3>
+  <h3 id="watch-meeting-{{ include.meeting_number }}-video">
+    Watch the Meeting {{ include.meeting_number }} Video
+  </h3>
   {% else %}
   <h3 id="watch-video">Watch the Video</h3>
-  {% endif %}
-  
-  {% if include.description %}
+  {% endif %} {% if include.description %}
   <p class="media-description">{{ include.description }}</p>
   {% endif %}
 
   <div class="media-container" markdown="0">
-    <video controls width="100%" {% if include.poster %}poster="{{ include.poster }}"{% endif %}>
-      <source src="{{ include.video_url }}" type="video/mp4">
+    <video
+      controls
+      width="100%"
+      {%
+      if
+      include.poster
+      %}poster="{{ include.poster }}"
+      {%
+      endif
+      %}
+    >
+      <source src="{{ include.video_url }}" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
@@ -35,7 +50,11 @@ Parameters:
         <i class="fas fa-download"></i> Download Video
       </a>
       {% if include.transcript_url %}
-      <a href="{{ include.transcript_url }}" target="_blank" class="transcript-btn">
+      <a
+        href="{{ include.transcript_url }}"
+        target="_blank"
+        class="transcript-btn"
+      >
         <i class="fas fa-file-text"></i> View Transcript
       </a>
       {% endif %}
@@ -44,125 +63,122 @@ Parameters:
 </div>
 
 <style>
-/* Media Section Styles */
-.media-section {
-  margin: 2rem 0;
-  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
-  
-  padding: 1.5rem;
-  border: 1px solid #e2e8f0;
-}
-
-.media-section h3 {
-  color: #1e293b;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 1rem 0;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.media-section h3::before {
-  content: '🎥';
-  font-size: 1.5rem;
-}
-
-.media-description {
-  color: #64748b;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-.media-container {
-  background: white;
-  
-  padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  
-}
-
-.media-container video {
-  
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.media-download-controls {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.download-btn,
-.transcript-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  color: white;
-  text-decoration: none;
-  
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
-}
-
-.download-btn:hover,
-.transcript-btn:hover {
-  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
-  color: white;
-  text-decoration: none;
-}
-
-.transcript-btn {
-  background: linear-gradient(135deg, #059669, #047857);
-  box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
-}
-
-.transcript-btn:hover {
-  background: linear-gradient(135deg, #047857, #065f46);
-  box-shadow: 0 4px 8px rgba(5, 150, 105, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+  /* Media Section Styles */
   .media-section {
-    padding: 1.25rem;
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
   }
-  
-  .media-container {
-    padding: 0.75rem;
-  }
-  
-  .media-download-controls {
-    flex-direction: column;
+
+  .media-section h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    display: flex;
     align-items: center;
+    gap: 0.5rem;
   }
-  
+
+  .media-section h3::before {
+    content: "🎥";
+    font-size: 1.5rem;
+  }
+
+  .media-description {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .media-container {
+    background: white;
+
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .media-container video {
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .media-download-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .download-btn,
   .transcript-btn {
-    width: 100%;
-    max-width: 200px;
-    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    text-decoration: none;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
   }
-}
 
-/* Video-specific styles */
-.video-section .media-container video {
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
+  .download-btn:hover,
+  .transcript-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+    color: white;
+    text-decoration: none;
+  }
 
-/* Accessibility improvements */
-.media-container video:focus {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-}
+  .transcript-btn {
+    background: linear-gradient(135deg, #059669, #047857);
+    box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+  }
+
+  .transcript-btn:hover {
+    background: linear-gradient(135deg, #047857, #065f46);
+    box-shadow: 0 4px 8px rgba(5, 150, 105, 0.3);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .media-section {
+      padding: 1.25rem;
+    }
+
+    .media-container {
+      padding: 0.75rem;
+    }
+
+    .media-download-controls {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .download-btn,
+    .transcript-btn {
+      width: 100%;
+      max-width: 200px;
+      justify-content: center;
+    }
+  }
+
+  /* Video-specific styles */
+  .video-section .media-container video {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  /* Accessibility improvements */
+  .media-container video:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
 </style>

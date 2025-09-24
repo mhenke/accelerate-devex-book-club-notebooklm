@@ -527,7 +527,6 @@ document.addEventListener('keydown', function(event) {
             <div class="check-title">Record lead time for most recent production deploy</div>
             <div class="check-desc">Deliverable: add commit timestamp and production-available timestamp to `DORA-tracking` sheet.</div>
           </div>
-          <div class="action-due">Due: Before Meeting 2</div>
         </div>
       </li>
 
@@ -538,7 +537,6 @@ document.addEventListener('keydown', function(event) {
             <div class="check-title">Count deployments (last 14 days)</div>
             <div class="check-desc">Deliverable: add numeric count to `DORA-tracking` sheet.</div>
           </div>
-          <div class="action-due">Due: Before Meeting 2</div>
         </div>
       </li>
 
@@ -549,7 +547,6 @@ document.addEventListener('keydown', function(event) {
             <div class="check-title">Write a one-line deployment pain summary</div>
             <div class="check-desc">Deliverable: one-sentence (what, when, impact) pasted into meeting notes.</div>
           </div>
-          <div class="action-due">Due: Before Meeting 2</div>
         </div>
       </li>
     </ul>
@@ -585,7 +582,7 @@ document.addEventListener('keydown', function(event) {
 
 <!-- NEXT MEETING SECTION -->
 <section class="next-meeting-section" aria-labelledby="next-meeting-heading">
-  <h2 id="next-meeting-heading" style="margin-top:2rem;">Next Meeting</h2>
+  <h2 id="next-meeting-heading">Next Meeting</h2>
   <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
 <div class="next-meeting-btn-wrapper">
 <a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="btn btn--meeting-nav" role="button" aria-label="Go to Meeting 2: Technical Excellence">
@@ -642,10 +639,9 @@ h3 {
 
 .check-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.6rem;
   padding: 0.35rem 0;
-  min-height: 36px;
 }
 
 .check-icon {
@@ -654,12 +650,14 @@ h3 {
   min-width: 1.25rem;
   line-height: 1;
   font-size: 1.05rem;
-  margin-top: 3px;
+  /* visually align with the title instead of centering */
+  margin-top: 0.15rem;
 }
 
-.check-body { display:flex; align-items:center; justify-content:space-between; width:100%; }
-.check-title { font-weight:700; font-size:0.99rem; }
-.check-desc { color:#586170; font-size:0.88rem; margin-top:0.15rem; }
+.check-body { display:flex; align-items:flex-start; justify-content:space-between; width:100%; }
+.check-body > div { flex: 1 1 auto; }
+.check-title { font-weight:700; font-size:0.99rem; display:block; margin-bottom:0.125rem; }
+.check-desc { color:#586170; font-size:0.88rem; margin:0; }
 .action-due { color:#0b69d6; font-weight:700; font-size:0.85rem; margin-left:1rem; white-space:nowrap; }
 
 .check-body div { min-width:0; }
@@ -745,7 +743,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 /* Responsive adjustments for Related Resources */

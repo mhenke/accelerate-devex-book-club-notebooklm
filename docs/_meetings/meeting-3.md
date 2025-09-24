@@ -375,7 +375,7 @@ dora_color: "#d97706" # $meeting-3-primary
   grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #fff7ed, #fef3c7);
   
@@ -588,7 +588,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .discussion-card {
@@ -651,7 +651,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .discussion-card {
@@ -675,7 +675,7 @@ h3 {
   background: linear-gradient(135deg, #fff7ed, #e9ecef);
   padding: 2rem;
   border-left: 4px solid #d97706;
-  margin: 2rem 0;
+  
 }
 
 .checklist-intro {

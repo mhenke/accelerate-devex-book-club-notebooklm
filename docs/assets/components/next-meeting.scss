@@ -15,7 +15,7 @@
   color: var(--meeting-1-primary);
   font-size: var(--font-size-title-large);
   font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
   font-family: var(--font-display);
 }
 .next-meeting-section p {
@@ -36,7 +36,7 @@
   color: var(--color-white) !important;
   font-size: var(--font-size-body-large);
   font-weight: var(--font-weight-bold);
-  padding: var(--space-md) var(--space-xl);
+  padding: var(--space-md);
   border-radius: var(--radius-lg);
   text-decoration: none;
   margin-top: var(--space-md);

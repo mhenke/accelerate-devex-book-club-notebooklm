@@ -332,7 +332,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   
@@ -396,7 +396,7 @@ h3 {
   grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   
@@ -451,7 +451,7 @@ h3 {
   grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   
@@ -525,7 +525,7 @@ h3 {
 
 /* Tool Autonomy Impact */
 .tool-autonomy-impact {
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   
@@ -580,7 +580,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #fce4ec);
   
@@ -622,7 +622,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .insight-card {
@@ -661,7 +661,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   
@@ -859,7 +859,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
   
@@ -1330,7 +1330,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .discussion-card {
@@ -1393,7 +1393,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .action-item-card {
