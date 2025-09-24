@@ -1153,7 +1153,7 @@ a {
     gap: var(--space-lg);
     margin-top: var(--space-xl);
 
-    @media (min-width: 768px) {
+    @media (min-width: #{$mobile}) {
       grid-template-columns: repeat(5, 1fr); // 5 columns for better layout
     }
   }
@@ -1397,7 +1397,7 @@ a {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
 
-    @media (min-width: 768px) {
+    @media (min-width: #{$mobile}) {
       grid-template-columns: 3fr 2fr; // Streamlined to 2 columns: main content + resources
     }
   }
@@ -1484,7 +1484,7 @@ a {
       flex-direction: column;
       gap: var(--space-sm);
 
-      @media (min-width: 480px) {
+      @media (min-width: #{$small}) {
         flex-direction: row;
         justify-content: center;
         gap: var(--space-md);
@@ -1653,12 +1653,12 @@ a {
   padding: 0 var(--space-lg);
 
   // Material Design responsive pattern: 1 -> 2 -> 4 columns
-  @media (min-width: 640px) {
+  @media (min-width: #{$medium}) {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xl);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: #{$tablet}) {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-2xl);
     max-width: var(--container-reading);
@@ -1818,7 +1818,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-12) var(--space-24); // Fixed padding for consistent button appearance
+    padding: var(--space-sm) var(--space-lg); // Fixed padding for consistent button appearance
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
@@ -2295,7 +2295,7 @@ button:focus,
   padding: var(--space-lg);
   margin: var(--space-xl) auto;
   text-align: center;
-  max-width: min(1200px, calc(100vw - 2rem));
+  max-width: min(var(--container-max-width), calc(100vw - 2rem));
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-floating-teal);
@@ -2416,11 +2416,11 @@ button:focus,
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 640px) {
+  @media (min-width: #{$medium}) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: #{$tablet}) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -2551,7 +2551,7 @@ button:focus,
     gap: var(--space-2xl);
     align-items: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: #{$mobile}) {
       grid-template-columns: 280px 1fr;
       gap: var(--space-3xl);
     }
@@ -2575,7 +2575,7 @@ button:focus,
         box-shadow: var(--elevation-4);
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: #{$mobile}) {
         max-width: 200px;
       }
     }

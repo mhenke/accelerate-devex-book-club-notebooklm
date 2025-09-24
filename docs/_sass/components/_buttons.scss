@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   min-height: var(--touch-target-min);
-  padding: var(--space-16) var(--space-24); // 16px 24px - 8px grid compliant
+  padding: var(--space-md) var(--space-lg); // 16px 24px - 8px grid compliant
   border: none;
   border-radius: var(--radius-md); // Clean, modern rounded corners like "Get the Book"
   cursor: pointer;
@@ -158,7 +158,7 @@
   background: transparent;
   color: var(--meeting-1-primary);
   box-shadow: none;
-  padding: var(--space-8) var(--space-16); // 8px 16px - 8px grid compliant
+  padding: var(--space-sm) var(--space-md); // 8px 16px - 8px grid compliant
 
   &:hover {
     background: rgba(var(--meeting-1-primary), 0.08);
@@ -375,7 +375,7 @@
 
 .btn--small {
   min-height: var(--touch-target-44px); // Accessibility minimum
-  padding: var(--space-8) var(--space-16); // 8px 16px - 8px grid compliant
+  padding: var(--space-sm) var(--space-md); // 8px 16px - 8px grid compliant
 
   @include label-medium;
 }
@@ -395,7 +395,7 @@
 
 .btn-group {
   display: inline-flex;
-  gap: var(--space-8);
+  gap: var(--space-sm);
 
   &.btn-group--vertical {
     flex-direction: column;

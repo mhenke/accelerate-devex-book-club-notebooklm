@@ -1,0 +1,180 @@
+// =============================================================================
+// CRITICAL CSS - Extracted from default.html layout
+// =============================================================================
+// Above-the-fold styles for optimal performance
+
+/* Critical above-the-fold styles - extracted from main.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-white);
+  color: var(--text-dark);
+  line-height: var(--line-height-normal);
+}
+
+/* Header critical styles */
+.site-header {
+  background: var(--hero-gradient);
+  color: white;
+  padding: var(--space-md) 0;
+  position: relative;
+  box-shadow: var(--elevation-2);
+
+  .header-content {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: var(--font-size-headline-medium);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .site-nav {
+    display: flex;
+    gap: var(--space-lg);
+
+    @media (max-width: #{$mobile - 1px}) {
+      display: none;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      font-weight: var(--font-weight-medium);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--radius-md);
+      transition: all var(--duration-normal) var(--ease-out);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+      }
+    }
+  }
+}
+
+/* Hero section critical styles */
+.hero {
+  background: var(--hero-gradient);
+  color: white;
+  text-align: center;
+  padding: var(--space-3xl) var(--space-md);
+  position: relative;
+
+  .hero-content {
+    max-width: var(--container-content);
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: var(--font-size-display-large);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-lg);
+    text-shadow: var(--shadow-hero);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-headline-small);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: var(--space-xl);
+    opacity: 0.95;
+  }
+
+  @media (max-width: #{$mobile - 1px}) {
+    padding: var(--space-2xl) var(--space-md);
+
+    h1 {
+      font-size: var(--font-size-display-medium);
+    }
+
+    .hero-subtitle {
+      font-size: var(--font-size-headline-small);
+    }
+  }
+}
+
+/* Critical button styles */
+.btn-primary {
+  background: var(--color-success);
+  color: white;
+  padding: var(--space-md) var(--space-xl);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-body-large);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+  box-shadow: var(--shadow-button-primary);
+
+  &:hover {
+    background: #45a049;
+    transform: var(--transform-hover-lift);
+    box-shadow: var(--shadow-button-primary-hover);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-button-primary-active);
+  }
+}
+
+/* Critical layout styles */
+.main-content {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  min-height: 50vh;
+}
+
+/* Footer critical styles */
+.site-footer {
+  background: var(--color-neutral-10);
+  color: var(--color-neutral-90);
+  padding: var(--space-xl) var(--space-md);
+  margin-top: var(--space-3xl);
+
+  .footer-content {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-body-medium);
+  }
+
+  a {
+    color: var(--color-neutral-90);
+    text-decoration: underline;
+
+    &:hover {
+      color: white;
+    }
+  }
+}

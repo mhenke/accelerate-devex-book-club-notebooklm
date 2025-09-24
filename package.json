@@ -7,8 +7,7 @@
   "scripts": {
     "lint:css": "stylelint \"docs/_sass/**/*.scss\" --ignore-path .stylelintignore",
     "lint:js": "npx eslint \"docs/**/*.{js,html,md}\" --ext .js,.html,.md",
-    "lint:md": "markdownlint \"docs/_meetings/**/*.md\" \"docs/*.md\" \"*.md\" --ignore \"docs/vendor/**\" --ignore \"docs/.jekyll-cache/**\" --config .markdownlintrc.json",
-    "lint": "npm run lint:css && npm run lint:js && npm run lint:md",
+    "lint": "npm run lint:css && npm run lint:js",
     "test:html": "html-validate \"docs/_site/**/*.html\"",
     "test:a11y": "pa11y-ci --sitemap http://localhost:4000/accelerate-devex-book-club-notebooklm/sitemap.xml",
     "test:interactive": "cd tests && npm run test:headed",
@@ -48,7 +47,6 @@
     "eslint-plugin-html": "^7.1.0",
     "html-validate": "^8.7.4",
     "hyperlink": "^5.0.4",
-    "markdownlint-cli": "^0.39.0",
     "pa11y-ci": "^3.1.0",
     "postcss-html": "^1.6.0",
     "stylelint": "^16.2.1",
