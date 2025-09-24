@@ -5,10 +5,14 @@
 
 // Base section card styling
 .section-card {
-  background: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+  background: linear-gradient(
+    135deg,
+    var(--color-gray-50),
+    var(--color-gray-100)
+  );
   border: 1px solid var(--color-gray-300);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md);
   margin: var(--space-lg) auto;
   max-width: var(--container-max-width);
   text-align: center;
@@ -27,7 +31,7 @@
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md);
   margin: var(--space-lg) auto;
   max-width: var(--container-max-width);
   text-align: center;
@@ -37,7 +41,7 @@
     color: var(--theme-primary);
     font-size: var(--font-size-title-large);
     font-weight: var(--font-weight-semibold);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     font-family: var(--font-display);
 
     i {
@@ -70,7 +74,8 @@
     border-top: 3px solid transparent;
     border-radius: var(--radius-md);
     cursor: pointer;
-    transition: border-color 0.2s ease, border-top-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    transition: border-color 0.2s ease, border-top-color 0.2s ease,
+      box-shadow 0.2s ease, transform 0.2s ease;
     position: relative;
     text-align: center;
     font-weight: var(--font-weight-medium);
@@ -205,7 +210,7 @@
           position: relative;
 
           &::before {
-            content: '▶';
+            content: "▶";
             color: var(--theme-primary);
             position: absolute;
             left: 0;

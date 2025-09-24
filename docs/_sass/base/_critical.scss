@@ -150,7 +150,7 @@ h2 {
     color: var(--text-dark);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
 
     i,
     em {
@@ -349,7 +349,7 @@ a {
     var(--card-dark) 100%
   );
   color: var(--text-dark);
-  padding: var(--space-2xl);
+  padding: var(--space-lg);
   display: flex;
   align-items: center;
   gap: var(--space-xl);
@@ -550,7 +550,7 @@ a {
     font-weight: var(--font-weight-bold);
     color: var(--text-white);
     border: none;
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     line-height: 1.2;
     text-shadow: var(--text-shadow-md);
   }
@@ -762,7 +762,7 @@ a {
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
     border: none;
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     padding-bottom: 0;
     text-shadow: var(--hero-text-shadow);
     line-height: var(--line-height-tight);
@@ -874,7 +874,7 @@ a {
   h2 {
     text-align: center;
     color: var(--primary-blue);
-    margin-bottom: var(--space-2xl);
+
     font-size: clamp(
       var(--font-size-headline-small),
       4vw,
@@ -899,7 +899,7 @@ a {
   .category-header {
     @include flex-between;
 
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     padding-bottom: var(--space-lg);
     border-bottom: 2px solid var(--border-light);
 
@@ -930,7 +930,11 @@ a {
 
 // Stability category styling
 .stability-category .category-icon {
-  background: linear-gradient(135deg, var(--dora-orange), var(--color-orange-600));
+  background: linear-gradient(
+    135deg,
+    var(--dora-orange),
+    var(--color-orange-600)
+  );
 }
 
 .metric-card {
@@ -974,7 +978,7 @@ a {
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md);
   margin: var(--space-lg) auto;
   max-width: var(--container-content);
   text-align: center;
@@ -1008,7 +1012,7 @@ a {
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md);
   margin: var(--space-lg) auto;
   max-width: var(--container-reading);
   text-align: center;
@@ -1048,7 +1052,7 @@ a {
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md);
   margin: var(--space-lg) auto;
   max-width: var(--container-max-width);
   text-align: center;
@@ -1085,7 +1089,11 @@ a {
 
 // Enhanced Success Metrics with Material Design
 .success-metrics-compact {
-  background: linear-gradient(135deg, var(--color-green-50) 0%, var(--color-green-100) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-green-50) 0%,
+    var(--color-green-100) 100%
+  );
   border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-2xl);
@@ -1354,7 +1362,11 @@ a {
 
 // Enhanced Get Started Section with Material Design
 .get-started-section {
-  background: linear-gradient(135deg, var(--color-blue-50) 0%, var(--color-blue-100) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-blue-50) 0%,
+    var(--color-blue-100) 100%
+  );
   border: 1px solid rgba(33, 150, 243, 0.2);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-2xl);
@@ -2211,7 +2223,7 @@ button:focus,
     color: var(--text-dark);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
-    margin-bottom: var(--space-2xl);
+
     position: relative;
     z-index: 1;
     display: flex;
@@ -2235,7 +2247,7 @@ button:focus,
       display: flex;
       align-items: flex-start;
       gap: var(--space-lg);
-      margin-bottom: var(--space-xl);
+      margin-bottom: var(--space-md);
       padding: var(--space-xl);
       background: rgba(255, 255, 255, 0.6);
       border-radius: var(--radius-xl);
@@ -2282,7 +2294,7 @@ button:focus,
   );
   color: var(--text-white);
   border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
+  padding: var(--space-lg);
   margin: var(--space-xl) auto;
   text-align: center;
   max-width: min(1200px, calc(100vw - 2rem));
@@ -2328,7 +2340,7 @@ button:focus,
 
   h2 {
     color: var(--text-dark);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     font-size: clamp(
       var(--font-size-headline-small),
       4vw,
@@ -2352,7 +2364,7 @@ button:focus,
 
   p {
     font-size: var(--font-size-lg);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     position: relative;
     z-index: 1;
     color: var(--text-white);
@@ -2423,7 +2435,7 @@ button:focus,
   );
   border: 1px solid rgba(147, 51, 234, 0.2);
   border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
+  padding: var(--space-lg);
   text-align: center;
   transition: all var(--duration-normal) var(--ease-out);
   position: relative;
@@ -2456,7 +2468,7 @@ button:focus,
 
   h3 {
     color: var(--accent-coral);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2481,7 +2493,7 @@ button:focus,
   }
 
   p {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     line-height: var(--line-height-relaxed);
     color: var(--text-medium);
     position: relative;
@@ -2497,7 +2509,7 @@ button:focus,
     color: var(--text-dark);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
-    padding: var(--space-md) var(--space-xl);
+    padding: var(--space-md);
     border-radius: var(--radius-lg);
     text-decoration: none;
     display: inline-block;
@@ -2525,7 +2537,7 @@ button:focus,
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md);
   margin: var(--space-lg) auto;
   max-width: var(--container-max-width);
   text-align: center;
@@ -2694,11 +2706,11 @@ button:focus,
   @include mobile-only {
     order: 2; // Move sidebar after intro but before main content sections
     margin-top: var(--space-lg);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
   }
 
   .sidebar-section {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
 
     &:last-child {
       margin-bottom: 0;
@@ -2790,7 +2802,7 @@ button:focus,
 // Chapter Introduction Styles
 .chapter-intro-header {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
 
   h2 {
     margin: 0;
@@ -2811,7 +2823,6 @@ button:focus,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-lg);
-  margin-bottom: var(--space-3xl);
 }
 
 // Simple Card Base Styles (matching your image)

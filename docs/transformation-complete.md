@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Transformation Complete!'
+title: "Transformation Complete!"
 permalink: /transformation-complete/
 nav_order: 6
 ---
@@ -369,7 +369,7 @@ h3 {
 
 .celebration-header {
   text-align: center;
-  margin: 2rem 0;
+  
   padding: 2rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   
@@ -501,7 +501,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .metric-mastery-card {
@@ -658,7 +658,6 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 
 .ai-content-card {
@@ -891,7 +890,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .next-step-card {

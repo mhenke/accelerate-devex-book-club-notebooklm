@@ -18,335 +18,339 @@ Parameters:
 - layout: "horizontal" or "vertical" for mobile (default: "horizontal")
 -->
 
-<div class="simple-comparison {{ include.type | default: 'vs' }}-comparison {{ include.theme | default: 'primary' }}-theme" markdown="0">
-  
+<div
+  class="simple-comparison {{ include.type | default: 'vs' }}-comparison {{ include.theme | default: 'primary' }}-theme"
+  markdown="0"
+>
   <!-- Left Side -->
   <div class="comparison-side left-side" markdown="0">
     <div class="side-header">
-      {% if include.left_icon %}<i class="{{ include.left_icon }}"></i>{% endif %}
+      {% if include.left_icon %}<i class="{{ include.left_icon }}"></i>{% endif
+      %}
       <h4>{{ include.left_title }}</h4>
     </div>
-    {% if include.left_subtitle %}<p class="side-subtitle">{{ include.left_subtitle }}</p>{% endif %}
-    
+    {% if include.left_subtitle %}
+    <p class="side-subtitle">{{ include.left_subtitle }}</p>
+    {% endif %}
+
     <!-- Left Items -->
     {% if include.left_items %}
-      <ul class="side-items">
-        {% assign left_items = include.left_items | split: '|' %}
-        {% for item in left_items %}
-          <li>{{ item | strip }}</li>
-        {% endfor %}
-      </ul>
+    <ul class="side-items">
+      {% assign left_items = include.left_items | split: '|' %} {% for item in
+      left_items %}
+      <li>{{ item | strip }}</li>
+      {% endfor %}
+    </ul>
     {% endif %}
 
     <!-- Left Stats -->
     {% if include.left_stats %}
-      <div class="side-stats">
-        {% assign left_stats = include.left_stats | split: '|' %}
-        {% assign stat_count = left_stats.size %}
-        {% for i in (0..stat_count) %}
-          {% assign icon_index = i | times: 3 %}
-          {% assign value_index = icon_index | plus: 1 %}
-          {% assign text_index = icon_index | plus: 2 %}
-          {% if left_stats[icon_index] and left_stats[value_index] and left_stats[text_index] %}
-            <div class="stat-item">
-              <i class="{{ left_stats[icon_index] | strip }}"></i>
-              <strong>{{ left_stats[value_index] | strip }}</strong>
-              <span>{{ left_stats[text_index] | strip }}</span>
-            </div>
-          {% endif %}
-        {% endfor %}
+    <div class="side-stats">
+      {% assign left_stats = include.left_stats | split: '|' %} {% assign
+      stat_count = left_stats.size %} {% for i in (0..stat_count) %} {% assign
+      icon_index = i | times: 3 %} {% assign value_index = icon_index | plus: 1
+      %} {% assign text_index = icon_index | plus: 2 %} {% if
+      left_stats[icon_index] and left_stats[value_index] and
+      left_stats[text_index] %}
+      <div class="stat-item">
+        <i class="{{ left_stats[icon_index] | strip }}"></i>
+        <strong>{{ left_stats[value_index] | strip }}</strong>
+        <span>{{ left_stats[text_index] | strip }}</span>
       </div>
+      {% endif %} {% endfor %}
+    </div>
     {% endif %}
   </div>
 
   <!-- Center Divider -->
   <div class="comparison-divider" markdown="0">
     {% if include.divider_text %}
-      <span>{{ include.divider_text }}</span>
+    <span>{{ include.divider_text }}</span>
     {% elsif include.type == "flow" or include.type == "transform" %}
-      <i class="fas fa-arrow-right"></i>
+    <i class="fas fa-arrow-right"></i>
     {% else %}
-      <span>VS</span>
+    <span>VS</span>
     {% endif %}
   </div>
 
   <!-- Right Side -->
   <div class="comparison-side right-side" markdown="0">
     <div class="side-header">
-      {% if include.right_icon %}<i class="{{ include.right_icon }}"></i>{% endif %}
+      {% if include.right_icon %}<i class="{{ include.right_icon }}"></i>{%
+      endif %}
       <h4>{{ include.right_title }}</h4>
     </div>
-    {% if include.right_subtitle %}<p class="side-subtitle">{{ include.right_subtitle }}</p>{% endif %}
-    
+    {% if include.right_subtitle %}
+    <p class="side-subtitle">{{ include.right_subtitle }}</p>
+    {% endif %}
+
     <!-- Right Items -->
     {% if include.right_items %}
-      <ul class="side-items">
-        {% assign right_items = include.right_items | split: '|' %}
-        {% for item in right_items %}
-          <li>{{ item | strip }}</li>
-        {% endfor %}
-      </ul>
+    <ul class="side-items">
+      {% assign right_items = include.right_items | split: '|' %} {% for item in
+      right_items %}
+      <li>{{ item | strip }}</li>
+      {% endfor %}
+    </ul>
     {% endif %}
 
     <!-- Right Stats -->
     {% if include.right_stats %}
-      <div class="side-stats">
-        {% assign right_stats = include.right_stats | split: '|' %}
-        {% assign stat_count = right_stats.size %}
-        {% for i in (0..stat_count) %}
-          {% assign icon_index = i | times: 3 %}
-          {% assign value_index = icon_index | plus: 1 %}
-          {% assign text_index = icon_index | plus: 2 %}
-          {% if right_stats[icon_index] and right_stats[value_index] and right_stats[text_index] %}
-            <div class="stat-item">
-              <i class="{{ right_stats[icon_index] | strip }}"></i>
-              <strong>{{ right_stats[value_index] | strip }}</strong>
-              <span>{{ right_stats[text_index] | strip }}</span>
-            </div>
-          {% endif %}
-        {% endfor %}
+    <div class="side-stats">
+      {% assign right_stats = include.right_stats | split: '|' %} {% assign
+      stat_count = right_stats.size %} {% for i in (0..stat_count) %} {% assign
+      icon_index = i | times: 3 %} {% assign value_index = icon_index | plus: 1
+      %} {% assign text_index = icon_index | plus: 2 %} {% if
+      right_stats[icon_index] and right_stats[value_index] and
+      right_stats[text_index] %}
+      <div class="stat-item">
+        <i class="{{ right_stats[icon_index] | strip }}"></i>
+        <strong>{{ right_stats[value_index] | strip }}</strong>
+        <span>{{ right_stats[text_index] | strip }}</span>
       </div>
+      {% endif %} {% endfor %}
+    </div>
     {% endif %}
   </div>
 </div>
 
 <style>
-.simple-comparison {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  
-  border: 2px solid #3b82f6;
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-}
-
-/* Theme colors */
-.primary-theme { 
-  border-color: #3b82f6; 
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-}
-.success-theme { 
-  border-color: #10b981; 
-  background: linear-gradient(135deg, #d1fae5, #a7f3d0);
-}
-.warning-theme { 
-  border-color: #f59e0b; 
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
-}
-.info-theme { 
-  border-color: #06b6d4; 
-  background: linear-gradient(135deg, #cffafe, #a5f3fc);
-}
-.neutral-theme { 
-  border-color: #6b7280; 
-  background: linear-gradient(135deg, #f9fafb, #f3f4f6);
-}
-
-/* Comparison sides */
-.comparison-side {
-  flex: 1;
-  text-align: center;
-  background: white;
-  
-  padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.comparison-side:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.side-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.side-header i {
-  font-size: 1.5rem;
-}
-
-.side-header h4 {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #1f2937;
-}
-
-.side-subtitle {
-  color: #6b7280;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-/* Side items */
-.side-items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-.side-items li {
-  padding: 0.4rem 0;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #374151;
-}
-
-.side-items li i {
-  width: 16px;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-/* Side stats */
-.side-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
-  padding: 1rem 0;
-  border-top: 2px solid #e5e7eb;
-}
-
-.stat-item {
-  text-align: center;
-  padding: 0.75rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 0.85rem;
-  transition: all 0.3s ease;
-}
-
-.stat-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.stat-item i {
-  font-size: 1.2rem;
-  color: #3b82f6;
-}
-
-.stat-item strong {
-  font-size: 1.1rem;
-  color: #1f2937;
-  font-weight: 700;
-}
-
-.stat-item span {
-  color: #6b7280;
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-/* Center divider */
-.comparison-divider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #3b82f6;
-  background: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 3px solid #3b82f6;
-  flex-shrink: 0;
-  transition: all 0.3s ease;
-}
-
-.comparison-divider:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-}
-
-.comparison-divider span {
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
-.comparison-divider i {
-  font-size: 1.5rem;
-}
-
-/* Type-specific styling */
-.vs-comparison .left-side .side-header h4 {
-  color: #dc2626;
-}
-
-.vs-comparison .right-side .side-header h4 {
-  color: #16a34a;
-}
-
-.flow-comparison .comparison-divider {
-  background: linear-gradient(135deg, #10b981, #059669);
-  color: white;
-  border-color: #10b981;
-}
-
-.transform-comparison .comparison-divider {
-  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-  color: white;
-  border-color: #8b5cf6;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
   .simple-comparison {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 1.5rem;
+
+    border: 2px solid #3b82f6;
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
   }
 
-  .comparison-divider {
-    width: 50px;
-    height: 50px;
+  /* Theme colors */
+  .primary-theme {
+    border-color: #3b82f6;
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  }
+  .success-theme {
+    border-color: #10b981;
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+  }
+  .warning-theme {
+    border-color: #f59e0b;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+  }
+  .info-theme {
+    border-color: #06b6d4;
+    background: linear-gradient(135deg, #cffafe, #a5f3fc);
+  }
+  .neutral-theme {
+    border-color: #6b7280;
+    background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+  }
+
+  /* Comparison sides */
+  .comparison-side {
+    flex: 1;
+    text-align: center;
+    background: white;
+
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .comparison-side:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .side-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .side-header i {
     font-size: 1.5rem;
   }
 
-  .comparison-divider i {
-    transform: rotate(90deg);
+  .side-header h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f2937;
   }
 
-  .side-stats {
-    grid-template-columns: 1fr;
+  .side-subtitle {
+    color: #6b7280;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  /* Side items */
+  .side-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .side-items li {
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
     gap: 0.5rem;
+    color: #374151;
+  }
+
+  .side-items li i {
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  /* Side stats */
+  .side-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 2px solid #e5e7eb;
   }
 
   .stat-item {
-    font-size: 0.8rem;
-  }
-}
+    text-align: center;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 
-@media (max-width: 480px) {
-  .comparison-side {
-    padding: 1rem;
-  }
-  
-  .side-header h4 {
-    font-size: 1.1rem;
-  }
-  
-  .side-items li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
     font-size: 0.85rem;
+    transition: all 0.3s ease;
   }
-}
+
+  .stat-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .stat-item i {
+    font-size: 1.2rem;
+    color: #3b82f6;
+  }
+
+  .stat-item strong {
+    font-size: 1.1rem;
+    color: #1f2937;
+    font-weight: 700;
+  }
+
+  .stat-item span {
+    color: #6b7280;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  /* Center divider */
+  .comparison-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+  }
+
+  .comparison-divider:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  }
+
+  .comparison-divider span {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .comparison-divider i {
+    font-size: 1.5rem;
+  }
+
+  /* Type-specific styling */
+  .vs-comparison .left-side .side-header h4 {
+    color: #dc2626;
+  }
+
+  .vs-comparison .right-side .side-header h4 {
+    color: #16a34a;
+  }
+
+  .flow-comparison .comparison-divider {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border-color: #10b981;
+  }
+
+  .transform-comparison .comparison-divider {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: white;
+    border-color: #8b5cf6;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .simple-comparison {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    .comparison-divider {
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+    }
+
+    .comparison-divider i {
+      transform: rotate(90deg);
+    }
+
+    .side-stats {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+
+    .stat-item {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .comparison-side {
+      padding: 1rem;
+    }
+
+    .side-header h4 {
+      font-size: 1.1rem;
+    }
+
+    .side-items li {
+      font-size: 0.85rem;
+    }
+  }
 </style>

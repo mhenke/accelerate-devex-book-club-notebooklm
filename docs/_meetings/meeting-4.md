@@ -337,7 +337,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
 }
 
 .insight-card {
@@ -375,7 +375,7 @@ h3 {
   background: linear-gradient(135deg, var(--meeting-4-light), #e0e7ff);
   
   padding: 1.5rem;
-  margin: 2rem 0;
+  
   border: 2px solid var(--meeting-4-primary);
   text-align: center;
 }
@@ -400,7 +400,7 @@ h3 {
   grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
   
@@ -448,7 +448,7 @@ h3 {
   grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   align-items: center;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
   
@@ -499,7 +499,7 @@ h3 {
 
 /* Security Transformation */
 .security-transformation {
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
   
@@ -553,7 +553,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
   
@@ -1038,7 +1038,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin: 2rem 0;
+  
 }
 
 .discussion-section {
@@ -1129,7 +1129,7 @@ h3 {
 
 /* Action Items Styling */
 .action-items-section {
-  margin: 2rem 0;
+  
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
   border: 2px solid var(--meeting-4-primary);
@@ -1218,7 +1218,7 @@ h3 {
 
 /* New Action Section Styling */
 .action-section {
-  margin: 2rem 0;
+  
 }
 
 .section-title {
@@ -1244,7 +1244,7 @@ h3 {
   background: linear-gradient(135deg, #f5f3ff, #e9ecef);
   padding: 2rem;
   border-left: 4px solid #7c3aed;
-  margin: 2rem 0;
+  
 }
 
 .checklist-intro {
@@ -1316,7 +1316,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  
   background: linear-gradient(135deg, var(--meeting-4-light), #fce4ec);
   padding: 2rem;
   border: 2px solid var(--meeting-4-primary);
