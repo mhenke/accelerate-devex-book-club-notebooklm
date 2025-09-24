@@ -7,7 +7,7 @@
   background: var(--color-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  padding: var(--space-lg);
+
   margin-bottom: var(--space-lg);
   transition: all var(--duration-normal) var(--ease-out);
 
@@ -49,7 +49,11 @@
 
   // Visual variants
   &--gradient {
-    background: linear-gradient(135deg, var(--background-white), var(--background-light));
+    background: linear-gradient(
+      135deg,
+      var(--background-white),
+      var(--background-light)
+    );
   }
 
   &--elevated {
@@ -72,13 +76,17 @@
     overflow: hidden;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, var(--meeting-1-primary), var(--meeting-1-accent));
+      background: linear-gradient(
+        90deg,
+        var(--meeting-1-primary),
+        var(--meeting-1-accent)
+      );
     }
   }
 
@@ -86,7 +94,8 @@
   &__header {
     margin-bottom: var(--space-lg);
 
-    h3, h4 {
+    h3,
+    h4 {
       margin: 0 0 var(--space-sm) 0;
       color: var(--meeting-1-primary);
       font-size: var(--font-size-body-large);
@@ -124,7 +133,11 @@
   }
 
   &.card--border-top::before {
-    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+    background: linear-gradient(
+      90deg,
+      var(--theme-primary),
+      var(--theme-accent)
+    );
   }
 
   .card__header h3,
@@ -142,7 +155,11 @@
   }
 
   &.card--border-top::before {
-    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+    background: linear-gradient(
+      90deg,
+      var(--theme-primary),
+      var(--theme-accent)
+    );
   }
 
   .card__header h3,
@@ -161,7 +178,11 @@
   }
 
   &.card--border-top::before {
-    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+    background: linear-gradient(
+      90deg,
+      var(--theme-primary),
+      var(--theme-accent)
+    );
   }
 
   .card__header h3,
@@ -188,7 +209,7 @@
     padding-left: var(--space-sm);
 
     &::before {
-      content: '💭';
+      content: "💭";
       margin-right: var(--space-sm);
     }
   }
