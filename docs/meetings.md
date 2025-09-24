@@ -29,7 +29,7 @@ Our book club consists of four focused sessions over 2 months, each building upo
   {% assign meetings = site.meetings | sort: "week" %}
   {% for meeting in meetings %}
     <div class="meeting-card" markdown="0">
-      <div class="meeting-icon" style="color: {{ meeting.dora_color }}">
+  <div class="meeting-icon" data-color="{{ meeting.dora_color }}">
         {% case forloop.index %}
           {% when 1 %}<i class="fas fa-chart-line"></i>
           {% when 2 %}<i class="fas fa-sync-alt"></i>

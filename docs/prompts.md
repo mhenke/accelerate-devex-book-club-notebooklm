@@ -112,7 +112,7 @@ NotebookLM Content Generation
 <h4><i class="fas fa-shield-alt"></i> General Guidelines</h4>
 <div class="resource-grid">
 <div class="guideline-item">
-<div class="guideline-icon" style="color: #2196F3">
+<div class="guideline-icon" data-color="#2196F3">
 <i class="fas fa-check-circle"></i>
 </div>
 <div>
@@ -127,7 +127,7 @@ NotebookLM Content Generation
 </div>
 
 <div class="guideline-item">
-<div class="guideline-icon" style="color: #4CAF50">
+<div class="guideline-icon" data-color="#4CAF50">
 <i class="fas fa-lightbulb"></i>
 </div>
 <div>
@@ -156,7 +156,7 @@ Podcast Prompts
 
 <div class="prompt-container" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #2196F3">
+<div class="prompt-icon" data-color="#2196F3">
 <i class="fas fa-microphone-alt"></i>
 </div>
 <div class="prompt-meta">
@@ -170,21 +170,25 @@ Podcast Prompts
 Create a 15-minute podcast discussing the foundational concepts from "Accelerate" chapters 1-4. Focus on:
 
 **1. DORA Metrics Introduction** (5 minutes)
+
 - Lead Time, Deployment Frequency, MTTR, Change Fail Rate
 - Why these metrics matter for organizational performance
 - Common measurement pitfalls
 
 **2. Debunking Speed vs. Stability** (7 minutes)
+
 - The false trade-off myth
 - How high performers achieve both
 - Real-world examples from the research
 
 **3. Practical Application** (3 minutes)
+
 - First steps for measuring DORA metrics
 - Quick wins for improvement
 - Setting realistic expectations
 
 Keep the tone conversational and include concrete examples. Address common skepticism about DevOps practices.
+
 </div>
 
 </div>
@@ -194,7 +198,7 @@ Keep the tone conversational and include concrete examples. Address common skept
 
 <div class="prompt-container" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #4CAF50">
+<div class="prompt-icon" data-color="#4CAF50">
 <i class="fas fa-microphone-alt"></i>
 </div>
 <div class="prompt-meta">
@@ -208,21 +212,25 @@ Keep the tone conversational and include concrete examples. Address common skept
 Create a 18-minute podcast exploring organizational culture and continuous delivery from "Accelerate" chapters 5-8:
 
 **1. Westrum Culture Types** (6 minutes)
+
 - Pathological, Bureaucratic, Generative cultures
 - How culture predicts performance
 - Signs of each culture type in practice
 
 **2. Continuous Delivery Deep Dive** (8 minutes)
+
 - Core practices and their impact
 - Breaking down implementation barriers
 - The role of automation and testing
 
 **3. Culture Transformation** (4 minutes)
+
 - Practical steps to shift culture
 - Leadership behaviors that matter
 - Measuring cultural progress
 
 Include stories of successful transformations and address resistance to change.
+
 </div>
 
 </div>
@@ -232,7 +240,7 @@ Include stories of successful transformations and address resistance to change.
 
 <div class="prompt-container" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #FF9800">
+<div class="prompt-icon" data-color="#FF9800">
 <i class="fas fa-microphone-alt"></i>
 </div>
 <div class="prompt-meta">
@@ -246,21 +254,25 @@ Include stories of successful transformations and address resistance to change.
 Create a 16-minute podcast about architecture and team organization from "Accelerate" chapters 9-12:
 
 **1. Loosely Coupled Architecture** (6 minutes)
+
 - What loose coupling means in practice
 - Impact on team velocity and independence
 - Common architectural anti-patterns
 
 **2. Team Autonomy and Conway's Law** (6 minutes)
+
 - How organizational design affects system design
 - Enabling team independence
 - Balancing autonomy with alignment
 
 **3. Lean Management Principles** (4 minutes)
+
 - Applying lean thinking to software delivery
 - Visual management and feedback loops
 - Continuous improvement practices
 
 Focus on practical advice for technical leaders and architects.
+
 </div>
 
 </div>
@@ -270,7 +282,7 @@ Focus on practical advice for technical leaders and architects.
 
 <div class="prompt-container" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #F44336">
+<div class="prompt-icon" data-color="#F44336">
 <i class="fas fa-microphone-alt"></i>
 </div>
 <div class="prompt-meta">
@@ -284,21 +296,25 @@ Focus on practical advice for technical leaders and architects.
 Create a 20-minute podcast on transformational leadership from "Accelerate" chapters 13-15:
 
 **1. Transformational Leadership Behaviors** (8 minutes)
+
 - Vision, inspirational communication, intellectual stimulation
 - Personal recognition and supportive leadership
 - Real examples of these behaviors in action
 
 **2. Creating Learning Organizations** (8 minutes)
+
 - Psychological safety and its importance
 - Encouraging experimentation and learning from failure
 - Building continuous improvement mindsets
 
 **3. Sustaining Transformation** (4 minutes)
+
 - Long-term change strategies
 - Metrics for measuring transformation success
 - Avoiding common transformation pitfalls
 
 Include case studies from high-performing organizations and actionable leadership advice.
+
 </div>
 
 </div>
@@ -315,7 +331,7 @@ Video Prompts
 
 <div class="prompt-container video" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #2196F3">
+<div class="prompt-icon" data-color="#2196F3">
 <i class="fas fa-video"></i>
 </div>
 <div class="prompt-meta">
@@ -329,18 +345,21 @@ Video Prompts
 Create a 10-minute educational video introducing DORA metrics:
 
 **Structure:**
+
 - **Opening** (1 min): Hook with deployment horror story
 - **DORA Overview** (3 min): Visual explanation of each metric
 - **Research Findings** (4 min): Key insights from the State of DevOps reports
 - **Getting Started** (2 min): First steps for measurement
 
 **Visual elements:**
+
 - Animated metric definitions
 - Before/after transformation examples
 - Simple dashboard mockups
 - Clear, professional graphics
 
 **Target audience:** Technical teams new to DevOps metrics
+
 </div>
 
 </div>
@@ -350,7 +369,7 @@ Create a 10-minute educational video introducing DORA metrics:
 
 <div class="prompt-container video" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #4CAF50">
+<div class="prompt-icon" data-color="#4CAF50">
 <i class="fas fa-video"></i>
 </div>
 <div class="prompt-meta">
@@ -364,17 +383,20 @@ Create a 10-minute educational video introducing DORA metrics:
 Create a 12-minute video exploring organizational culture transformation:
 
 **Structure:**
+
 - **Culture Types Explained** (4 min): Visual representation of Westrum model
 - **CD Practices Demo** (5 min): Show automated pipeline in action
 - **Transformation Journey** (3 min): Timeline of typical culture change
 
 **Visual elements:**
+
 - Culture assessment diagrams
 - Pipeline automation demonstrations
 - Transformation roadmap templates
 - Team collaboration examples
 
 Include real organizational examples and practical next steps.
+
 </div>
 
 </div>
@@ -384,7 +406,7 @@ Include real organizational examples and practical next steps.
 
 <div class="prompt-container video" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #FF9800">
+<div class="prompt-icon" data-color="#FF9800">
 <i class="fas fa-video"></i>
 </div>
 <div class="prompt-meta">
@@ -398,11 +420,13 @@ Include real organizational examples and practical next steps.
 Create a 14-minute video exploring architecture and team organization:
 
 **Structure:**
+
 - **Architecture Overview** (4 min): Visual explanation of loosely coupled systems
 - **Conway's Law Demo** (6 min): Show how org structure affects system design
 - **Lean Management** (4 min): Visual management practices in action
 
 **Visual elements:**
+
 - System architecture diagrams
 - Team structure comparisons
 - Conway's Law examples
@@ -410,6 +434,7 @@ Create a 14-minute video exploring architecture and team organization:
 - Continuous improvement workflows
 
 **Target audience:** Technical leaders and architects looking to optimize team structure.
+
 </div>
 
 </div>
@@ -419,7 +444,7 @@ Create a 14-minute video exploring architecture and team organization:
 
 <div class="prompt-container video" markdown="0">
 <div class="prompt-header">
-<div class="prompt-icon" style="color: #F44336">
+<div class="prompt-icon" data-color="#F44336">
 <i class="fas fa-video"></i>
 </div>
 <div class="prompt-meta">
@@ -433,11 +458,13 @@ Create a 14-minute video exploring architecture and team organization:
 Create a 15-minute video on transformational leadership:
 
 **Structure:**
+
 - **Leadership Behaviors** (6 min): Demonstrate key transformational behaviors
 - **Learning Organizations** (6 min): Building psychological safety and continuous learning
 - **Sustaining Change** (3 min): Long-term transformation strategies
 
 **Visual elements:**
+
 - Leadership behavior examples
 - Psychological safety indicators
 - Learning organization frameworks
@@ -445,6 +472,7 @@ Create a 15-minute video on transformational leadership:
 - Success metrics dashboards
 
 Include real case studies and actionable leadership practices.
+
 </div>
 
 </div>

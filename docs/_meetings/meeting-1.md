@@ -43,7 +43,7 @@ dora_color: "#0969da" # $meeting-1-primary
 </div>
 
 <!-- Expandable Details Section -->
-<div class="chapter-details" id="chapter-details" style="display: none;">
+<div class="chapter-details" id="chapter-details" hidden>
   <div class="chapter-detail" id="detail-accelerate">
     <h3><i class="fas fa-rocket"></i> Accelerate</h3>
     <p>Software delivery capability drives organizational success across all industries. This chapter presents evidence from 23,000+ survey responses showing that digital transformation is real and software delivery creates competitive advantage.</p>
@@ -171,7 +171,7 @@ document.addEventListener('keydown', function(event) {
   <h2><i class="fas fa-key"></i> Meeting 1 Key Question</h2>
   <p>Throughout this meeting, we'll return to this central reflection:</p>
   <blockquote class="meeting-key-question">
-    "How do we currently <em>perceive</em> and <em>measure</em> performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?"
+    "How do we currently *perceive* and *measure* performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?"
   </blockquote>
 </div>
 

@@ -8,7 +8,7 @@ tags: [css, tech-debt, jekyll, variables, blocks, icons]
 ai_note: true
 summary: Actionable plan to remediate CSS tech debt by removing inline styles, refactoring duplicated blocks, and improving accessibility and performance.
 post_date: 2025-09-07
-featured_image: '/assets/images/css-tech-debt-remediation.png'
+featured_image: "/assets/images/css-tech-debt-remediation.png"
 ---
 
 ## Summary Table
@@ -40,7 +40,7 @@ CSS tech debt includes inline styles, duplicated block patterns, inconsistent va
 ## Implementation Steps
 
 1. **Audit and Remove Inline Styles**
-   - Search for `style="` and `<style>` in all HTML/Markdown files.
+   - Search for inline style attributes (for example: `style="..."`) and `<style>` blocks in all HTML/Markdown files.
    - Replace inline styles with CSS classes using variables from `:root`.
    - Validate with CSS linter.
 2. **Refactor Duplicated Blocks**
