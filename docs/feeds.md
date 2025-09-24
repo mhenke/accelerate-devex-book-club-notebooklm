@@ -4,11 +4,11 @@ title: 'RSS Feeds & Downloads'
 permalink: /feeds/
 ---
 
-# <i class="fas fa-rss"></i> RSS Feeds & Media Downloads
+# <i class="fas fa-rss"></i> RSS Feeds & Media Downloads {#rss-feeds-media-downloads}
 
 Subscribe to our RSS feeds to get the latest podcast episodes and videos delivered automatically, or download individual files directly.
 
-## <i class="fas fa-podcast"></i> Podcast Feeds
+## <i class="fas fa-podcast"></i> Podcast Feeds {#podcast-feeds}
 
 ### Audio Podcast Feed
 

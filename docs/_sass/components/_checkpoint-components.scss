@@ -1,0 +1,411 @@
+// =============================================================================
+// CHECKPOINT COMPONENTS - CONSOLIDATED FROM INLINE STYLES
+// =============================================================================
+// Contains styles for interactive checkpoints, simple checkpoints, and related components
+// Previously scattered across multiple inline <style> blocks
+
+// =============================================================================
+// CHECKPOINT CARD STYLES
+// =============================================================================
+.checkpoint-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #1E3A8A;
+  transition: all 0.3s ease;
+}
+
+.checkpoint-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.checkpoint-card h4 {
+  margin: 0 0 1rem 0;
+  color: #1e40af;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.checkpoint-card h4 i {
+  margin-right: 0.5rem;
+  color: inherit;
+}
+
+.checkpoint-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+// Assessment buttons
+.assessment-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.assessment-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.assessment-btn:hover {
+  border-color: #cbd5e1;
+  transform: translateX(4px);
+}
+
+.assessment-btn input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.assessment-btn .radio-mark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  margin-right: 1rem;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.assessment-btn input[type="radio"]:checked + .radio-mark {
+  border-color: #1e40af;
+  background: #1e40af;
+}
+
+.assessment-btn input[type="radio"]:checked + .radio-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.assessment-btn input[type="radio"]:checked ~ * {
+  color: #1e40af;
+}
+
+// Performance level styling - only show colors when selected
+.assessment-btn.performance-high input[type="radio"]:checked + .radio-mark {
+  border-color: #16a34a;
+  background: #16a34a;
+}
+
+.assessment-btn.performance-medium input[type="radio"]:checked + .radio-mark {
+  border-color: #d97706;
+  background: #d97706;
+}
+
+.assessment-btn.performance-low input[type="radio"]:checked + .radio-mark {
+  border-color: #dc2626;
+  background: #dc2626;
+}
+
+// Feedback area
+.feedback-area {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-left: 4px solid #1E3A8A;
+  border-radius: 4px;
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+
+.feedback-area.active {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+.feedback-area h5 {
+  margin: 0 0 0.5rem 0;
+  color: #1e40af;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.feedback-area p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+// =============================================================================
+// SIMPLE CHECKPOINT STYLES
+// =============================================================================
+.simple-checkpoint {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #1E3A8A;
+  transition: all 0.3s ease;
+}
+
+.simple-checkpoint:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.simple-checkpoint h4 {
+  margin: 0 0 1rem 0;
+  color: #1e40af;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.simple-checkpoint h4 i {
+  margin-right: 0.5rem;
+}
+
+.simple-checkpoint p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+// Radio Options
+.option-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.option-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  line-height: 1.4;
+  min-height: 48px;
+}
+
+.option-btn:hover {
+  border-color: #cbd5e1;
+  transform: translateX(4px);
+}
+
+.option-btn input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.option-btn .radio-mark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  margin-right: 1rem;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.option-btn input[type="radio"]:checked + .radio-mark {
+  border-color: #1e40af;
+  background: #1e40af;
+}
+
+.option-btn input[type="radio"]:checked + .radio-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Performance level colors when selected
+.option-btn.performance-high input[type="radio"]:checked + .radio-mark {
+  border-color: #16a34a;
+  background: #16a34a;
+}
+
+.option-btn.performance-medium input[type="radio"]:checked + .radio-mark {
+  border-color: #d97706;
+  background: #d97706;
+}
+
+.option-btn.performance-low input[type="radio"]:checked + .radio-mark {
+  border-color: #dc2626;
+  background: #dc2626;
+}
+
+// Checkbox Grid
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  line-height: 1.4;
+  min-height: 48px;
+}
+
+.checkbox-item:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.checkbox-item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-item .checkbox-mark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbd5e1;
+  border-radius: 4px;
+  margin-right: 1rem;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.checkbox-item input[type="checkbox"]:checked + .checkbox-mark {
+  border-color: #1e40af;
+  background: #1e40af;
+}
+
+.checkbox-item input[type="checkbox"]:checked + .checkbox-mark::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-item:has(input[type="checkbox"]:checked) {
+  border-color: #1e40af;
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+// Slider
+.slider-container {
+  margin: 1.5rem 0;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.slider-track {
+  position: relative;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.slider-thumb {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border: 3px solid #1E3A8A;
+  border-radius: 50%;
+  cursor: grab;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-thumb:active {
+  cursor: grabbing;
+}
+
+// =============================================================================
+// RESPONSIVE DESIGN
+// =============================================================================
+@media (max-width: 768px) {
+  .checkpoint-card,
+  .simple-checkpoint {
+    padding: 1.25rem;
+  }
+
+  .assessment-btn,
+  .option-btn {
+    padding: 0.75rem;
+  }
+
+  .assessment-btn .radio-mark,
+  .option-btn .radio-mark {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.75rem;
+  }
+
+  .assessment-btn input[type="radio"]:checked + .radio-mark::after,
+  .option-btn input[type="radio"]:checked + .radio-mark::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .checkbox-item {
+    padding: 0.75rem;
+  }
+
+  .checkbox-item .checkbox-mark {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.75rem;
+  }
+}
