@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<article class="meeting meeting-themed" data-meeting="{{ page.week | default: '1' }}">
+<article
+  class="meeting meeting-themed"
+  data-meeting="{{ page.week | default: '1' }}"
+>
   <!-- Clean Meeting Header -->
   <header class="meeting-header">
     <div class="meeting-header-content">
@@ -186,7 +189,7 @@ layout: default
   .meeting-nav-brand .brand-title {
     font-size: 1.25rem;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .meeting-nav-brand .brand-subtitle {
@@ -248,7 +251,7 @@ layout: default
   .meeting-container {
     background: #f8fafc;
     min-height: calc(100vh - 200px);
-    padding-bottom: var(--space-3xl);
+    padding-bottom: var(--space-md);
   }
 
   .meeting-content {
@@ -360,10 +363,8 @@ layout: default
   .meeting-footer {
     background: var(--card-darker);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: var(--space-3xl);
-    padding: var(--space-3xl) 0 var(--space-xl);
+    padding: var(--space-md) 0 var(--space-xl);
   }
-
 
   .footer-content {
     max-width: 1200px;
@@ -374,8 +375,7 @@ layout: default
   .footer-sections {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: var(--space-2xl);
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-md);
   }
 
   .footer-section h4 {
@@ -464,7 +464,11 @@ layout: default
 
   .progress-fill-small {
     height: 100%;
-    background: linear-gradient(135deg, var(--accent-emerald), var(--hover-emerald));
+    background: linear-gradient(
+      135deg,
+      var(--accent-emerald),
+      var(--hover-emerald)
+    );
     border-radius: var(--radius-md);
     transition: width var(--duration-normal) var(--ease-out);
   }
@@ -506,7 +510,7 @@ layout: default
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: var(--space-xl);
+    padding-top: var(--space-md);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -574,7 +578,6 @@ layout: default
     .footer-sections {
       grid-template-columns: 1fr;
       gap: var(--space-lg);
-      margin-bottom: var(--space-lg);
     }
 
     .footer-bottom {
@@ -597,23 +600,23 @@ layout: default
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener("DOMContentLoaded", function () {
     // Find Discussion Questions sections and add class to their ol elements
-    const headings = document.querySelectorAll('h2');
+    const headings = document.querySelectorAll("h2");
     headings.forEach((heading) => {
-      if (heading.textContent.includes('Discussion Questions')) {
+      if (heading.textContent.includes("Discussion Questions")) {
         const nextOl = heading.nextElementSibling;
-        if (nextOl && nextOl.tagName === 'OL') {
-          nextOl.classList.add('discussion-questions-list');
+        if (nextOl && nextOl.tagName === "OL") {
+          nextOl.classList.add("discussion-questions-list");
         }
       }
     });
 
     // Convert data-icon spans to Font Awesome icons
-    const iconSpans = document.querySelectorAll('[data-icon]');
+    const iconSpans = document.querySelectorAll("[data-icon]");
     iconSpans.forEach((span) => {
       const iconName = span.dataset.icon;
-      const iconElement = document.createElement('i');
+      const iconElement = document.createElement("i");
       iconElement.className = `fas fa-${iconName}`;
       span.parentNode.replaceChild(iconElement, span);
     });
