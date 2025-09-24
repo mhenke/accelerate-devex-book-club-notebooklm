@@ -251,6 +251,7 @@ document.addEventListener('keydown', function(event) {
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -456,49 +457,57 @@ document.addEventListener('keydown', function(event) {
   </div>
   <div class="discussion-content">
     <div class="discussion-questions">
-      <details class="question-item">
-        <summary>
-          <i class="fas fa-chart-bar"></i>
-          <span>Current State Assessment</span>
-          <i class="fas fa-chevron-down"></i>
-        </summary>
+      <div class="question-item static" role="group" aria-labelledby="q1">
+        <div class="question-row">
+          <div class="question-left">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i>
+            <div id="q1" class="question-title">Current State Assessment</div>
+          </div>
+          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        </div>
         <div class="question-content">
           <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
         </div>
-      </details>
+      </div>
 
-      <details class="question-item">
-        <summary>
-          <i class="fas fa-balance-scale"></i>
-          <span>Speed vs. Stability Myths</span>
-          <i class="fas fa-chevron-down"></i>
-        </summary>
+      <div class="question-item static" role="group" aria-labelledby="q2">
+        <div class="question-row">
+          <div class="question-left">
+            <i class="fas fa-balance-scale" aria-hidden="true"></i>
+            <div id="q2" class="question-title">Speed vs. Stability Myths</div>
+          </div>
+          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        </div>
         <div class="question-content">
           <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
         </div>
-      </details>
+      </div>
 
-      <details class="question-item">
-        <summary>
-          <i class="fas fa-recycle"></i>
-          <span>Building the Virtuous Cycle</span>
-          <i class="fas fa-chevron-down"></i>
-        </summary>
+      <div class="question-item static" role="group" aria-labelledby="q3">
+        <div class="question-row">
+          <div class="question-left">
+            <i class="fas fa-recycle" aria-hidden="true"></i>
+            <div id="q3" class="question-title">Building the Virtuous Cycle</div>
+          </div>
+          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        </div>
         <div class="question-content">
           <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
         </div>
-      </details>
+      </div>
 
-      <details class="question-item">
-        <summary>
-          <i class="fas fa-users"></i>
-          <span>Culture Indicators</span>
-          <i class="fas fa-chevron-down"></i>
-        </summary>
+      <div class="question-item static" role="group" aria-labelledby="q4">
+        <div class="question-row">
+          <div class="question-left">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <div id="q4" class="question-title">Culture Indicators</div>
+          </div>
+          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        </div>
         <div class="question-content">
           <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
         </div>
-      </details>
+      </div>
     </div>
 
   </div>
@@ -509,40 +518,44 @@ document.addEventListener('keydown', function(event) {
   <div class="step-header">
     <h2><i class="fas fa-check-circle"></i> Action Items for Next Meeting</h2>
   </div>
-  <div class="action-content compact-action-list">
-    <div class="action-item">
-      <div class="action-icon">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <div class="action-text">
-        <h3>Begin informal tracking of one DORA metric</h3>
-        <p>Start measuring lead time or deployment frequency. Focus on establishing baseline awareness.</p>
-      </div>
-    </div>
+  <div class="action-content">
+    <ul class="compact-checklist" aria-label="Action items for next meeting">
+      <li class="check-item">
+        <span class="check-icon" aria-hidden="true">✓</span>
+        <div class="check-body">
+          <div>
+            <div class="check-title">Record lead time for most recent production deploy</div>
+            <div class="check-desc">Deliverable: add commit timestamp and production-available timestamp to `DORA-tracking` sheet.</div>
+          </div>
+          <div class="action-due">Due: Before Meeting 2</div>
+        </div>
+      </li>
 
-    <div class="action-item">
-      <div class="action-icon">
-        <i class="fas fa-exclamation-triangle"></i>
-      </div>
-      <div class="action-text">
-        <h3>Identify your biggest deployment pain point</h3>
-        <p>Document the specific moment that causes the most anxiety, including technical and organizational factors.</p>
-      </div>
-    </div>
+      <li class="check-item">
+        <span class="check-icon" aria-hidden="true">✓</span>
+        <div class="check-body">
+          <div>
+            <div class="check-title">Count deployments (last 14 days)</div>
+            <div class="check-desc">Deliverable: add numeric count to `DORA-tracking` sheet.</div>
+          </div>
+          <div class="action-due">Due: Before Meeting 2</div>
+        </div>
+      </li>
 
-    <div class="action-item">
-      <div class="action-icon">
-        <i class="fas fa-users"></i>
-      </div>
-      <div class="action-text">
-        <h3>Observe culture behaviors in your organization</h3>
-        <p>Notice information flow patterns during incidents, planning, or daily work. Look for blame vs. learning behaviors.</p>
-      </div>
-    </div>
+      <li class="check-item">
+        <span class="check-icon" aria-hidden="true">✓</span>
+        <div class="check-body">
+          <div>
+            <div class="check-title">Write a one-line deployment pain summary</div>
+            <div class="check-desc">Deliverable: one-sentence (what, when, impact) pasted into meeting notes.</div>
+          </div>
+          <div class="action-due">Due: Before Meeting 2</div>
+        </div>
+      </li>
+    </ul>
 
   </div>
 </div>
-
 
 <div class="section-card" markdown="0">
   <div class="step-header">
@@ -589,6 +602,142 @@ h3 {
   padding: 1rem 1.5rem;
   margin: 2rem 0 1rem 0;
   font-weight: 600;
+}
+
+/* Chapters overview grid: make 1-4 items distribute evenly with no gaps */
+.chapter-metrics-compact .content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.chapter-metrics-compact .chapter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--color-white, #fff);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.chapter-metrics-compact .chapter-item .chapter-content {
+  flex: 1 1 auto;
+}
+
+.chapter-metrics-compact .chapter-item .chapter-number {
+  font-weight: 700;
+  color: var(--meeting-1-primary, #0969da);
+}
+
+/* Compact checklist styles for Action Items */
+.compact-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  min-height: 36px;
+}
+
+.check-icon {
+  color: var(--meeting-1-primary, #0969da);
+  font-weight: 700;
+  min-width: 1.25rem;
+  line-height: 1;
+  font-size: 1.05rem;
+  margin-top: 3px;
+}
+
+.check-body { display:flex; align-items:center; justify-content:space-between; width:100%; }
+.check-title { font-weight:700; font-size:0.99rem; }
+.check-desc { color:#586170; font-size:0.88rem; margin-top:0.15rem; }
+.action-due { color:#0b69d6; font-weight:700; font-size:0.85rem; margin-left:1rem; white-space:nowrap; }
+
+.check-body div { min-width:0; }
+.check-title + .check-desc { display:block; }
+
+/* Tighter layout on small screens */
+@media (max-width: 480px) {
+  .chapter-metrics-compact .content-grid { grid-template-columns: 1fr; }
+  .check-item { gap: 0.5rem; padding: 0.4rem 0; }
+  .check-icon { font-size: 1rem; }
+}
+
+/* Discussion questions: ensure details/summary render compactly and without default markers */
+.discussion-questions details.question-item,
+.discussion-questions details {
+  margin: 0;
+  padding: 0.25rem 0;
+  border: 0;
+}
+
+.discussion-questions summary {
+  list-style: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0;
+  font-weight: 600;
+  color: var(--color-gray-900, #111827);
+}
+
+.discussion-questions summary::-webkit-details-marker { display: none; }
+.discussion-questions summary::marker { display: none; }
+
+.discussion-questions summary i {
+  color: var(--meeting-1-accent, #0550ae);
+  min-width: 1.1rem;
+  text-align: center;
+}
+
+.discussion-questions .question-content {
+  padding: 0.4rem 1.6rem;
+  color: #374151;
+  font-size: 0.975rem;
+}
+
+.discussion-questions details[open] summary {
+  color: var(--meeting-1-primary, #0969da);
+}
+
+/* Static question card styles for discussion (non-collapsing) */
+.discussion-questions .question-item.static {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,250,251,0.95));
+  border: 1px solid rgba(15,23,42,0.06);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 6px rgba(9,30,66,0.04);
+}
+
+.discussion-questions .question-row { display:flex; justify-content:space-between; align-items:center; }
+.discussion-questions .question-left { display:flex; align-items:center; gap:0.75rem; }
+.discussion-questions .question-left i { color: var(--meeting-1-accent, #0550ae); font-size:1.1rem; }
+.discussion-questions .question-title { font-weight:700; font-size:1.02rem; }
+.discussion-questions .question-meta i { color:#7c8794; }
+.discussion-questions .question-content { margin-top:0.5rem; padding-left: calc(1.1rem + 0.75rem); }
+
+.discussion-questions .question-item.static:focus-within,
+.discussion-questions .question-item.static:hover {
+  border-color: rgba(9,105,218,0.12);
+  box-shadow: 0 6px 18px rgba(9,105,218,0.06);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+  .discussion-questions .question-content { padding-left: 0.6rem; }
 }
 
 /* Resource Grid */
