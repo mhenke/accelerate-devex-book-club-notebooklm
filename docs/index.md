@@ -217,21 +217,27 @@ title: Home
 <div class="required-reading-section section-card" markdown="0">
 <h2><i class="fas fa-book-open"></i> Required Reading</h2>
 <div class="book-showcase">
-<div class="book-visual">
-</div>
-<!-- markdownlint-disable MD033 -->
-![Accelerate: The Science of Lean Software and DevOps book cover]({{ '/assets/images/book-cover.jpg' | relative_url }})
-<!-- markdownlint-enable MD033 -->
-<div class="book-visual">
-</div>
-<div class="book-info">
-<h3>Accelerate: The Science of Lean Software and DevOps</h3>
-<p>Building and Scaling High Performing Technology Organizations</p>
-<p class="book-description">This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations. Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance.</p>
-<a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn--primary-action">Get the Book</a>
+  <div class="book-visual">
+    <img src="{{ '/assets/images/book-cover.jpg' | relative_url }}" alt="Accelerate: The Science of Lean Software and DevOps book cover" role="img" aria-label="Accelerate: The Science of Lean Software and DevOps book cover" loading="lazy" />
+  </div>
+  <div class="book-info">
+    <h3>Accelerate: The Science of Lean Software and DevOps</h3>
+    <p>Building and Scaling High Performing Technology Organizations</p>
+    <p class="book-description">This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations. Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance.</p>
+    <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn--primary-action">Get the Book</a>
+  </div>
 </div>
 </div>
-</div>
+
+<footer class="ai-attribution" markdown="0">
+  <div class="ai-attribution__icon">
+    <i class="fas fa-robot" role="img" aria-label="Robot"></i>
+  </div>
+  <div class="ai-attribution__content">
+    <h4 class="ai-attribution__title">AI-Generated Content</h4>
+    <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
+  </div>
+</footer>
 
 <script>
 // Interactive Success Outcomes Functionality
@@ -318,14 +324,3 @@ document.addEventListener('keydown', function(event) {
   }
 });
 </script>
-
-<footer class="ai-attribution" markdown="0">
-  <div class="ai-attribution__icon">
-    <i class="fas fa-robot" role="img" aria-label="Robot"></i>
-  </div>
-  <div class="ai-attribution__content">
-    <h4 class="ai-attribution__title">AI-Generated Content</h4>
-    <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
-  </div>
-</footer>
-</div>
