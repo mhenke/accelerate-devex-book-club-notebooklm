@@ -10,19 +10,19 @@
 
 /* Enhanced DORA Metric Card Styles */
 .dora-metric-card {
+  @extend %item-card;
+
   background: linear-gradient(145deg, #ffffff, #f8fafc);
   border: 1px solid #e2e8f0;
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   margin-bottom: var(--space-lg);
   box-shadow: var(--elevation-1);
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
 .dora-metric-card:hover {
-  transform: var(--transform-hover-lift);
   box-shadow: var(--elevation-3);
 }
 

@@ -199,6 +199,14 @@
     border-bottom: 2px solid var(--meeting-1-primary);
   }
 
+  // Override for section-cards - remove border-bottom for consistency
+  .section-card h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: var(--space-md) 0;
+    font-size: var(--font-size-title-large);
+  }
+
   h3 {
     color: var(--text-dark);
     font-size: var(--font-size-headline-small);
