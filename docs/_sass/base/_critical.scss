@@ -241,7 +241,6 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -270,7 +269,6 @@ a {
   }
 
   &::after {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -335,7 +333,6 @@ a {
 
   // Sophisticated pattern overlay
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -451,7 +448,6 @@ a {
 
   // Enhanced sophisticated pattern
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -480,7 +476,6 @@ a {
 
   // Additional overlay for depth
   &::after {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -570,7 +565,6 @@ a {
       overflow: hidden;
 
       &::before {
-        content: "";
         position: absolute;
         top: 0;
         left: -100%;
@@ -678,7 +672,6 @@ a {
 
     // Add subtle shine effect
     &::before {
-      content: "";
       position: absolute;
       top: -50%;
       left: -50%;
@@ -789,7 +782,6 @@ a {
 
   // Sophisticated gradient overlay
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1080,7 +1072,6 @@ a {
 
   // Enhance visual prominence with accent border
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1154,7 +1145,6 @@ a {
 
     // Add subtle gradient overlay
     &::before {
-      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -1352,7 +1342,6 @@ a {
 
   // Enhance visual prominence with accent border
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1405,7 +1394,6 @@ a {
 
       // Add subtle gradient top border
       &::before {
-        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -1483,7 +1471,6 @@ a {
 
       // Shimmer effect like other buttons
       &::before {
-        content: "";
         position: absolute;
         top: 0;
         left: -100%;
@@ -1663,7 +1650,6 @@ a {
 
   // Prominent colored top border
   &::after {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1696,7 +1682,6 @@ a {
 
   // Sophisticated gradient overlay
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1807,7 +1792,6 @@ a {
 
     // Shimmer effect
     &::before {
-      content: "";
       position: absolute;
       top: 0;
       left: -100%;
@@ -2178,7 +2162,6 @@ button:focus,
 
   // Sophisticated overlay
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -2376,7 +2359,6 @@ button:focus,
 
   // Sophisticated gradient overlay
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;

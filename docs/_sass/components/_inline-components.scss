@@ -27,13 +27,16 @@
 }
 
 .dora-metric-card::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--meeting-1-primary),
+    var(--meeting-1-secondary)
+  );
 }
 
 .metric-header {
@@ -44,7 +47,11 @@
 }
 
 .metric-icon {
-  background: linear-gradient(135deg, var(--meeting-1-primary), var(--meeting-1-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-1-primary),
+    var(--meeting-1-secondary)
+  );
   color: white;
   width: var(--touch-target-default);
   height: var(--touch-target-default);
@@ -141,20 +148,36 @@
 
 /* Metric Type Variations */
 .lead-time-metric::before {
-  background: linear-gradient(90deg, var(--meeting-4-primary), var(--meeting-4-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--meeting-4-primary),
+    var(--meeting-4-secondary)
+  );
 }
 
 .lead-time-metric .metric-icon {
-  background: linear-gradient(135deg, var(--meeting-4-primary), var(--meeting-4-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-4-primary),
+    var(--meeting-4-secondary)
+  );
   box-shadow: var(--shadow-meeting-4);
 }
 
 .deploy-frequency-metric::before {
-  background: linear-gradient(90deg, var(--meeting-2-primary), var(--meeting-2-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--meeting-2-primary),
+    var(--meeting-2-secondary)
+  );
 }
 
 .deploy-frequency-metric .metric-icon {
-  background: linear-gradient(135deg, var(--meeting-2-primary), var(--meeting-2-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-2-primary),
+    var(--meeting-2-secondary)
+  );
   box-shadow: var(--shadow-meeting-2);
 }
 
@@ -168,11 +191,19 @@
 }
 
 .change-fail-metric::before {
-  background: linear-gradient(90deg, var(--meeting-3-primary), var(--meeting-3-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--meeting-3-primary),
+    var(--meeting-3-secondary)
+  );
 }
 
 .change-fail-metric .metric-icon {
-  background: linear-gradient(135deg, var(--meeting-3-primary), var(--meeting-3-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--meeting-3-primary),
+    var(--meeting-3-secondary)
+  );
   box-shadow: var(--shadow-meeting-3);
 }
 
