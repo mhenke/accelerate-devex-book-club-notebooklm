@@ -14,7 +14,8 @@
   border-radius: var(--radius-lg);
   padding: var(--space-md);
   margin: var(--space-lg) auto;
-  max-width: var(--container-max-width);
+  width: 95%;
+  max-width: none;
   text-align: center;
   box-shadow: var(--elevation-1);
 }
@@ -33,7 +34,8 @@
   border-radius: var(--radius-lg);
   padding: var(--space-md);
   margin: var(--space-lg) auto;
-  max-width: var(--container-max-width);
+  width: 95%;
+  max-width: none;
   text-align: center;
   box-shadow: var(--elevation-1);
 
@@ -233,7 +235,8 @@
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   margin: var(--space-xl) auto;
-  max-width: min(var(--container-max-width), calc(100vw - 2rem)) !important;
+  width: 95% !important;
+  max-width: none !important;
   width: 100% !important;
   box-sizing: border-box !important;
   text-align: center;
