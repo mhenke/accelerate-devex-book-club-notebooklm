@@ -26,7 +26,6 @@
 }
 
 .hero-content {
-  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-md);
   z-index: 2;
@@ -69,7 +68,7 @@
   overflow: hidden;
 
   &::before {
-    content: '🎉';
+    content: "🎉";
     position: absolute;
     top: -10px;
     left: -10px;
@@ -79,7 +78,7 @@
   }
 
   &::after {
-    content: '🚀';
+    content: "🚀";
     position: absolute;
     bottom: -10px;
     right: -10px;
@@ -89,7 +88,11 @@
   }
 
   h2 {
-    font-size: clamp(var(--font-size-headline-small), 3vw, var(--font-size-display-medium));
+    font-size: clamp(
+      var(--font-size-headline-small),
+      3vw,
+      var(--font-size-display-medium)
+    );
     margin: 0 0 var(--spacing-md) 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
@@ -134,7 +137,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -151,7 +154,11 @@
   }
 
   h1 {
-    font-size: clamp(var(--font-size-headline-large), 4vw, var(--font-size-display-small));
+    font-size: clamp(
+      var(--font-size-headline-large),
+      4vw,
+      var(--font-size-display-small)
+    );
     margin: 0 0 var(--spacing-lg) 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }

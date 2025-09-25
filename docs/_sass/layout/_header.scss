@@ -3,7 +3,6 @@
 // Main site header structure for immediate rendering
 
 .header-container {
-  max-width: var(--container-max-width); // now from tokens
   margin: 0 auto;
   padding: 0 var(--spacing-md); // now from tokens
   display: flex;

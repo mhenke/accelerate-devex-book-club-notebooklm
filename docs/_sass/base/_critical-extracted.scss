@@ -31,7 +31,6 @@ body {
   box-shadow: var(--elevation-2);
 
   .header-content {
-    max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 var(--space-md);
     display: flex;
@@ -145,7 +144,6 @@ body {
 
 /* Critical layout styles */
 .main-content {
-  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: var(--space-xl) var(--space-md);
   min-height: 50vh;
@@ -159,7 +157,6 @@ body {
   margin-top: var(--space-3xl);
 
   .footer-content {
-    max-width: var(--container-max-width);
     margin: 0 auto;
     text-align: center;
   }

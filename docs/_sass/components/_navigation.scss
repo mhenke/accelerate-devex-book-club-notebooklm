@@ -6,7 +6,6 @@
 
 // Site header content layout
 .site-header-content {
-  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-md);
   display: flex;
@@ -73,7 +72,6 @@
 }
 
 .nav-container {
-  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-md);
   display: flex;
@@ -120,7 +118,7 @@
 
   // Shimmer effect on navigation links
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
@@ -147,7 +145,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
-  &[aria-current='page'] {
+  &[aria-current="page"] {
     background-color: var(--accent-teal);
     color: var(--text-white);
     box-shadow: 0 2px 8px rgba(122, 218, 209, 0.3);
