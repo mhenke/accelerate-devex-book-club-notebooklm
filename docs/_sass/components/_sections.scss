@@ -231,17 +231,6 @@
 // Key Question Section - High Specificity Fix
 .key-question {
   background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
-  color: white !important;
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl);
-  margin: var(--space-xl) auto;
-  width: 95% !important;
-  max-width: none !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-  text-align: center;
-  box-shadow: var(--elevation-2);
-  overflow: hidden !important;
 
   h2 {
     color: var(--color-gray-200) !important;
@@ -324,16 +313,7 @@
   // Responsive adjustments with higher specificity
   @include mobile-only {
     padding: var(--space-lg) !important;
-    margin: var(--space-lg) var(--space-md) !important;
-    max-width: calc(100vw - 2rem) !important;
-
-    h2 {
-      font-size: var(--font-size-title-medium) !important;
-    }
-
-    p {
-      font-size: var(--font-size-body-medium) !important;
-    }
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
 
     .key-question-quote {
       font-size: var(--font-size-body-medium) !important;
