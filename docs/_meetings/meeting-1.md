@@ -9,13 +9,11 @@ dora_color: "#0969da" # $meeting-1-primary
 ---
 
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
-<div class="meeting-content-layout" markdown="0">
-  <div class="meeting-main-content">
 
 <!-- Modern Chapters Overview -->
 <div class="chapter-metrics-compact section-card" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 1-3 Overview</h2>
-<div class="content-grid">
+<div class="chapters-grid">
 <div class="chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
   <i class="fas fa-rocket"></i>
   <div class="chapter-content">
@@ -24,6 +22,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
+
 <div class="chapter-item" data-chapter="measuring" onclick="showChapterDetail('measuring')">
   <i class="fas fa-chart-line"></i>
   <div class="chapter-content">
@@ -32,6 +31,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
+
 <div class="chapter-item" data-chapter="culture" onclick="showChapterDetail('culture')">
   <i class="fas fa-users"></i>
   <div class="chapter-content">
@@ -73,7 +73,6 @@ dora_color: "#0969da" # $meeting-1-primary
       <li>Key insight: "You can act your way to a better culture" through technical practices</li>
     </ul>
   </div>
-</div>
 </div>
 
 <script>
@@ -163,6 +162,7 @@ document.addEventListener('keydown', function(event) {
   }
 });
 </script>
+</div>
 
 <!-- MEETING 1 KEY QUESTION -->
 
@@ -577,8 +577,6 @@ document.addEventListener('keydown', function(event) {
     </div>
   </div>
 </div>
-
-<!-- NEXT MEETING SECTION -->
 
 <!-- NEXT MEETING SECTION -->
 <section class="next-meeting-section" aria-labelledby="next-meeting-heading">

@@ -18,6 +18,28 @@
   max-width: none;
   text-align: center;
   box-shadow: var(--elevation-1);
+
+  &.no-border {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  // Standardized h2 styling for all section-cards
+  h2 {
+    color: var(--theme-primary);
+    font-size: var(--font-size-title-large);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-md);
+    font-family: var(--font-display);
+
+    // No border-bottom for consistent clean look
+
+    i {
+      color: var(--theme-accent);
+      margin-right: var(--space-sm);
+    }
+  }
 }
 
 // Override section-card width inside meeting containers
@@ -25,6 +47,129 @@
   max-width: 100%; // Take full available width within the grid column
   margin-left: 0;
   margin-right: 0;
+}
+
+// =============================================================================
+// ITEM-CARD - Unified Interactive Card Base Class (Placeholder)
+// =============================================================================
+// Base placeholder for all interactive cards within sections
+// Provides consistent hover behavior, borders, and transitions
+
+%item-card {
+  background: var(--color-white);
+  border: 1px solid var(--border-light);
+  border-top: 3px solid transparent;
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  cursor: pointer;
+  transition: border-color 0.2s ease, border-top-color 0.2s ease,
+    box-shadow 0.2s ease, transform 0.2s ease;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    border-top-color: var(--theme-primary, var(--accent-emerald));
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: var(--transform-hover-lift);
+
+    i {
+      transform: scale(1.1);
+      color: var(--theme-primary, var(--accent-emerald));
+    }
+  }
+
+  i {
+    transition: all 0.3s ease;
+  }
+
+  // Dark theme modifier
+  &.dark-theme {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      border-top-color: var(--theme-primary, var(--accent-teal));
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 4px 12px rgba(0, 0, 0, 0.25);
+      transform: translateY(-3px);
+
+      i {
+        color: var(--theme-primary, var(--accent-teal));
+      }
+    }
+
+    h3, p {
+      color: white;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  // Simple mode modifier - simplified styling for get-started cards
+  &.simple-mode {
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border-top: none; // Remove the top border behavior for simple cards
+
+    &:hover {
+      border-top: none; // Keep no top border on hover
+      transform: var(--transform-hover-lift);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    h3 {
+      margin: 0 0 var(--space-sm);
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+
+      i {
+        font-size: var(--font-size-xl);
+        transition: all 0.3s ease;
+      }
+    }
+
+    p {
+      color: var(--text-medium);
+      font-size: var(--font-size-body-medium);
+      margin-bottom: var(--space-md);
+      line-height: var(--line-height-relaxed);
+    }
+
+    // Primary variant (colored background)
+    &.primary {
+      background: linear-gradient(135deg, var(--accent-emerald), var(--hover-emerald));
+      color: white;
+      border: 1px solid transparent;
+
+      h3, p {
+        color: white;
+      }
+
+      &:hover {
+        background: linear-gradient(135deg, var(--hover-emerald), var(--accent-emerald));
+      }
+    }
+
+    // Secondary variant uses default %item-card styling
+    &.secondary {
+      background: var(--light-gray-bg);
+      border: 1px solid rgba(16, 185, 129, 0.1);
+
+      &:hover {
+        background: #f1f5f9;
+        border-color: rgba(16, 185, 129, 0.2);
+      }
+    }
+  }
 }
 
 // Chapter Overview Section - Matching Success Outcomes Pattern
@@ -39,18 +184,6 @@
   text-align: center;
   box-shadow: var(--elevation-1);
 
-  h2 {
-    color: var(--theme-primary);
-    font-size: var(--font-size-title-large);
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: var(--space-md);
-    font-family: var(--font-display);
-
-    i {
-      color: var(--theme-accent);
-      margin-right: var(--space-sm);
-    }
-  }
 
   .chapters-grid {
     display: grid;
@@ -65,21 +198,14 @@
   }
 
   .chapter-item {
+    @extend %item-card;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: var(--space-sm);
     padding: var(--space-lg) var(--space-md);
-    background: var(--color-white);
-    border: 1px solid var(--border-light);
-    border-top: 3px solid transparent;
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: border-color 0.2s ease, border-top-color 0.2s ease,
-      box-shadow 0.2s ease, transform 0.2s ease;
-    position: relative;
-    text-align: center;
     font-weight: var(--font-weight-medium);
     color: var(--text-medium);
     min-height: 120px;
@@ -130,11 +256,6 @@
     }
 
     &:hover {
-      border-color: var(--theme-primary);
-      border-top-color: var(--theme-primary);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transform: var(--transform-hover-lift);
-
       .chapter-indicator {
         opacity: 1;
         transform: scale(1.1);

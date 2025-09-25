@@ -24,7 +24,7 @@ title: Home
 </div>
 </div>
 
-<div class="quick-start section-card">
+<div class="quick-start section-card no-border">
 <h2><i class="fas fa-book"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
@@ -36,7 +36,7 @@ title: Home
 <h2><i class="fas fa-bullseye"></i> What You'll Learn</h2>
 <div class="learning-highlights">
 <div class="card-grid">
-<div class="highlight-card meeting-1">
+<div class="highlight-card meeting-1 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
@@ -55,7 +55,7 @@ title: Home
   </div>
 </div>
 
-<div class="highlight-card meeting-2">
+<div class="highlight-card meeting-2 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
@@ -74,7 +74,7 @@ title: Home
   </div>
 </div>
 
-<div class="highlight-card meeting-3">
+<div class="highlight-card meeting-3 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-columns" role="img" aria-label="Columns"></i>
@@ -93,7 +93,7 @@ title: Home
   </div>
 </div>
 
-<div class="highlight-card meeting-4">
+<div class="highlight-card meeting-4 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-users" role="img" aria-label="Users"></i>
@@ -197,13 +197,13 @@ title: Home
 <div class="get-started-section section-card" markdown="0">
 <h2><i class="fas fa-rocket"></i> Get Started</h2>
 <div class="feature-grid">
-<div class="get-started-card primary">
+<div class="get-started-card simple-mode primary">
 <h3><i class="fas fa-book"></i> Meeting Materials</h3>
 <p>Complete structured guides for all 4 sessions with interactive learning checkpoints, discussion questions, and practical action items</p>
 <a href="{{ '/meetings' | relative_url }}" class="get-started-link">View All Guides →</a>
 </div>
 
-<div class="get-started-card secondary">
+<div class="get-started-card simple-mode secondary">
 <h3><i class="fas fa-toolbox"></i> Resources & Support</h3>
 <p>Downloads, activities, AI-generated content, and community resources</p>
 <div class="resource-links">
