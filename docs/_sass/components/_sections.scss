@@ -60,7 +60,7 @@
   border: 1px solid var(--border-light);
   border-top: 3px solid transparent;
   border-radius: var(--radius-md);
-  padding: var(--space-lg);
+
   cursor: pointer;
   transition: border-color 0.2s ease, border-top-color 0.2s ease,
     box-shadow 0.2s ease, transform 0.2s ease;
@@ -100,7 +100,8 @@
       }
     }
 
-    h3, p {
+    h3,
+    p {
       color: white;
     }
 
@@ -146,16 +147,25 @@
 
     // Primary variant (colored background)
     &.primary {
-      background: linear-gradient(135deg, var(--accent-emerald), var(--hover-emerald));
+      background: linear-gradient(
+        135deg,
+        var(--accent-emerald),
+        var(--hover-emerald)
+      );
       color: white;
       border: 1px solid transparent;
 
-      h3, p {
+      h3,
+      p {
         color: white;
       }
 
       &:hover {
-        background: linear-gradient(135deg, var(--hover-emerald), var(--accent-emerald));
+        background: linear-gradient(
+          135deg,
+          var(--hover-emerald),
+          var(--accent-emerald)
+        );
       }
     }
 
@@ -183,7 +193,6 @@
   max-width: none;
   text-align: center;
   box-shadow: var(--elevation-1);
-
 
   .chapters-grid {
     display: grid;
@@ -289,10 +298,9 @@
     .chapter-detail {
       display: none;
       text-align: left;
-      padding: var(--space-lg);
+
       background: rgba(9, 105, 218, 0.05);
       border-radius: var(--radius-md);
-      border-left: 4px solid var(--theme-primary);
 
       &.active {
         display: block;

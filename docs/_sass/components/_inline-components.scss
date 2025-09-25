@@ -15,7 +15,7 @@
   background: linear-gradient(145deg, #ffffff, #f8fafc);
   border: 1px solid #e2e8f0;
   border-radius: var(--radius-lg);
-  padding: var(--space-lg);
+
   margin-bottom: var(--space-lg);
   box-shadow: var(--elevation-1);
   position: relative;
@@ -25,7 +25,6 @@
 .dora-metric-card:hover {
   box-shadow: var(--elevation-3);
 }
-
 
 .metric-header {
   display: flex;
@@ -145,7 +144,6 @@
   box-shadow: var(--shadow-meeting-4);
 }
 
-
 .deploy-frequency-metric .metric-icon {
   background: linear-gradient(
     135deg,
@@ -155,12 +153,10 @@
   box-shadow: var(--shadow-meeting-2);
 }
 
-
 .restore-time-metric .metric-icon {
   background: linear-gradient(135deg, var(--color-error), #b91c1c);
   box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
 }
-
 
 .change-fail-metric .metric-icon {
   background: linear-gradient(
@@ -170,7 +166,6 @@
   );
   box-shadow: var(--shadow-meeting-3);
 }
-
 
 .security-metric .metric-icon {
   background: linear-gradient(135deg, #7c2d12, #991b1b);

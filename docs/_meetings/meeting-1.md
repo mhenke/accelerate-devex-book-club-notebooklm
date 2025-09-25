@@ -189,13 +189,17 @@ document.addEventListener('keydown', function(event) {
           <p class="media-subtitle">The Myth and the Measurement</p>
           <p class="media-description">Foundation concepts: Why software delivery matters, DORA metrics explained, and culture as the key enabler.</p>
           <div class="media-controls">
-            <video controls width="100%">
+            <video controls width="100%" class="meeting-video">
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="media-generation-note">
-            <p><strong>Generation Instructions:</strong> Create a 15-minute video featuring three personas (Dev, Ops, Product) discussing the key concepts from chapters 1-3, with visual aids showing DORA metrics and Westrum culture types.</p>
+
+          <!-- Alternative Video -->
+          <div class="alternative-video">
+            <h5><i class="fas fa-link"></i> Alternative Video</h5>
+            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a></p>
+            <p class="alt-video-desc">Alternative foundational overview with expert discussion on core concepts.</p>
           </div>
         </div>
       </div>
@@ -204,48 +208,39 @@ document.addEventListener('keydown', function(event) {
       <div class="media-section podcast-section">
         <h3><i class="fas fa-podcast"></i> Podcasts</h3>
         <div class="podcast-playlist">
-          <!-- Main Podcast -->
+          <!-- Brief Podcast -->
           <div class="podcast-item">
-            <h4>Meeting 1 Deep Dive</h4>
-            <p class="podcast-subtitle">Expert discussion on foundational concepts</p>
+            <h4>Accelerate Metrics Unlocked <span class="podcast-type brief">Brief</span></h4>
+            <p class="podcast-subtitle">How Speed and Stability Drive 2x Business Performance</p>
             <div class="podcast-controls">
               <audio controls width="100%">
-                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/meeting-1-podcast-brief.m4a" type="audio/mp4">
+             <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
-            </div>
-            <div class="podcast-generation-note">
-              <p><strong>Generation:</strong> 20-minute discussion covering business need, DORA metrics, and culture change principles.</p>
             </div>
           </div>
 
-          <!-- Bonus Podcast -->
+          <!-- Deep Dive Podcast -->
           <div class="podcast-item">
-            <h4>DORA Metrics Explained</h4>
-            <p class="podcast-subtitle">Technical deep-dive on measurement</p>
+            <h4>Accelerate Success <span class="podcast-type deep-dive">Deep Dive</span></h4>
+            <p class="podcast-subtitle">The Data-Driven Proof That Destroys the CAB Model</p>
             <div class="podcast-controls">
               <audio controls width="100%">
-                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/meeting-1-podcast-deep-dive.m4a" type="audio/mp4">
+             <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
-            </div>
-            <div class="podcast-generation-note">
-              <p><strong>Generation:</strong> 15-minute focused discussion on practical DORA metrics implementation.</p>
             </div>
           </div>
 
-          <!-- Culture Focus Podcast -->
+          <!-- Critique Podcast -->
           <div class="podcast-item">
-            <h4>Culture Change in Practice</h4>
-            <p class="podcast-subtitle">Real-world culture transformation stories</p>
+            <h4>Accelerate Your DevEx <span class="podcast-type critique">Critique</span></h4>
+            <p class="podcast-subtitle">Why Culture Must Precede Metrics and Why Traditional DevOps Gets It Wrong</p>
             <div class="podcast-controls">
               <audio controls width="100%">
-                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/meeting-1-podcast-critique.m4a" type="audio/mp4">
+             <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
-            </div>
-            <div class="podcast-generation-note">
-              <p><strong>Generation:</strong> 12-minute discussion on Westrum culture types with case studies.</p>
             </div>
           </div>
         </div>
@@ -514,49 +509,64 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="section-card" markdown="0">
+<div class="section-card action-items-clean" markdown="0">
   <div class="step-header">
-    <h2><i class="fas fa-check-circle"></i> Action Items for Next Meeting</h2>
+    <h2><i class="fas fa-tasks"></i> Action Items for Next Meeting</h2>
+    <p class="section-subtitle">Complete these tasks before Meeting 2 to maximize your learning</p>
   </div>
   <div class="action-content">
-    <ul class="compact-checklist" aria-label="Action items for next meeting">
-      <li class="check-item">
-        <span class="check-icon" aria-hidden="true">✓</span>
-        <div class="check-body">
-          <div>
-            <div class="check-title">Record lead time for most recent production deploy</div>
-            <div class="check-desc">Deliverable: add commit timestamp and production-available timestamp to `DORA-tracking` sheet.</div>
-          </div>
+    <div class="action-list">
+      <div class="action-item">
+        <div class="action-checkbox">
+          <i class="far fa-square"></i>
         </div>
-      </li>
-
-      <li class="check-item">
-        <span class="check-icon" aria-hidden="true">✓</span>
-        <div class="check-body">
-          <div>
-            <div class="check-title">Count deployments (last 14 days)</div>
-            <div class="check-desc">Deliverable: add numeric count to `DORA-tracking` sheet.</div>
-          </div>
+        <div class="action-content-item">
+          <h4 class="action-title">Record lead time for most recent production deploy</h4>
+          <p class="action-deliverable">
+            <i class="fas fa-file-alt"></i>
+            Add commit timestamp and production-available timestamp to `DORA-tracking` sheet
+          </p>
         </div>
-      </li>
+      </div>
 
-      <li class="check-item">
-        <span class="check-icon" aria-hidden="true">✓</span>
-        <div class="check-body">
-          <div>
-            <div class="check-title">Write a one-line deployment pain summary</div>
-            <div class="check-desc">Deliverable: one-sentence (what, when, impact) pasted into meeting notes.</div>
-          </div>
+      <div class="action-item">
+        <div class="action-checkbox">
+          <i class="far fa-square"></i>
         </div>
-      </li>
-    </ul>
+        <div class="action-content-item">
+          <h4 class="action-title">Count deployments (last 14 days)</h4>
+          <p class="action-deliverable">
+            <i class="fas fa-file-alt"></i>
+            Add numeric count to `DORA-tracking` sheet
+          </p>
+        </div>
+      </div>
 
+      <div class="action-item">
+        <div class="action-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <div class="action-content-item">
+          <h4 class="action-title">Write a one-line deployment pain summary</h4>
+          <p class="action-deliverable">
+            <i class="fas fa-file-alt"></i>
+            One-sentence (what, when, impact) pasted into meeting notes
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-due-date">
+      <i class="fas fa-clock"></i>
+      <span><strong>Due:</strong> Before Meeting 2 (Week 3)</span>
+    </div>
   </div>
 </div>
 
-<div class="section-card" markdown="0">
+<div class="section-card resources-clean" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-link"></i> Related Resources</h2>
+    <p class="section-subtitle">Dive deeper into the research and frameworks that power high-performing organizations</p>
   </div>
   <div class="resource-content">
     <div class="resource-grid">
@@ -564,6 +574,7 @@ document.addEventListener('keydown', function(event) {
         type="resource"
         icon="fas fa-chart-line"
         title="DORA Metrics & Research"
+        description="Evidence-based performance measurement"
         links="2024 State of DevOps Report|https://dora.dev/research/2024/dora-report/|DORA Research Program|https://dora.dev/|DORA Quick Check Assessment|https://dora.dev/quickcheck/|Four Key Metrics Guide|https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance"
         theme="primary"
       %}
@@ -571,6 +582,7 @@ document.addEventListener('keydown', function(event) {
         type="resource"
         icon="fas fa-users"
         title="Westrum Culture & Transformation"
+        description="Building generative organizational culture"
         links="Westrum Organizational Culture Types|https://dora.dev/capabilities/generative-organizational-culture/|IT Revolution Westrum Model|https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/|Generative Culture Assessment|https://continuousdelivery.com/implementing/culture/|Google's Project Aristotle|https://rework.withgoogle.com/print/guides/5312474543562752/"
         theme="info"
       %}
@@ -579,12 +591,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- NEXT MEETING SECTION -->
-<section class="next-meeting-section" aria-labelledby="next-meeting-heading">
-  <h2 id="next-meeting-heading">Next Meeting</h2>
+<div class="welcome-compact section-card next-meeting-card next-meeting-2" markdown="0">
+  <h2 id="next-meeting-heading"><i class="fas fa-arrow-right"></i> Next Meeting</h2>
   <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
-<div class="next-meeting-btn-wrapper">
-<a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="nav-item" role="button" aria-label="Go to Meeting 2: Technical Excellence">
-  Meeting 2: Technical Excellence
-</a>
+  <div class="welcome-cta">
+    <a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="btn btn--primary-action btn--meeting-2">
+      <i class="fas fa-code"></i> Meeting 2: Technical Excellence
+    </a>
+    <p class="welcome-cta-subtitle">Chapters 4-6 • Continuous Delivery • Architecture & Testing</p>
+  </div>
 </div>
-</section>

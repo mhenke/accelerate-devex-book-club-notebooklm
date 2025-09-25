@@ -265,10 +265,14 @@
 
 /* Meeting Footer */
 .meeting-footer {
-  background: linear-gradient(135deg, var(--hero-dark) 0%, var(--card-dark) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--hero-dark) 0%,
+    var(--card-dark) 100%
+  );
   color: var(--text-dark);
   padding: var(--space-2xl) var(--space-md);
-  margin-top: var(--space-3xl);
+
   position: relative;
   overflow: hidden;
 
