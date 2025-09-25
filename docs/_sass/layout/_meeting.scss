@@ -257,10 +257,12 @@
 
 /* Meeting Footer */
 .meeting-footer {
-  background: var(--color-gray-100);
-  color: var(--color-gray-800);
+  background: linear-gradient(135deg, var(--hero-dark) 0%, var(--card-dark) 100%);
+  color: var(--text-dark);
   padding: var(--space-2xl) var(--space-md);
   margin-top: var(--space-3xl);
+  position: relative;
+  overflow: hidden;
 
   .footer-content {
     margin: 0 auto;
@@ -274,7 +276,7 @@
 
     .footer-section {
       h4 {
-        color: var(--color-gray-900);
+        color: var(--text-dark);
         font-size: var(--font-size-title-medium);
         font-weight: var(--font-weight-semibold);
         margin-bottom: var(--space-md);
@@ -283,7 +285,7 @@
       p {
         font-size: var(--font-size-body-medium);
         line-height: var(--line-height-relaxed);
-        color: var(--color-gray-700);
+        color: var(--text-medium);
         margin-bottom: var(--space-sm);
       }
     }
@@ -311,12 +313,12 @@
           border-radius: var(--radius-md);
           font-style: italic;
           font-size: var(--font-size-body-medium);
-          color: var(--color-gray-900);
+          color: var(--text-dark);
         }
 
         .key-question-explanation {
           font-size: var(--font-size-body-small);
-          color: var(--color-gray-600);
+          color: var(--text-light);
         }
       }
     }
@@ -327,11 +329,11 @@
     justify-content: space-between;
     align-items: center;
     padding-top: var(--space-lg);
-    border-top: 1px solid var(--color-gray-300);
+    border-top: var(--border-light);
 
     .footer-attribution p {
       font-size: var(--font-size-body-small);
-      color: var(--color-gray-500);
+      color: var(--text-light);
       margin: 0;
     }
 
@@ -339,7 +341,7 @@
       display: flex;
       align-items: center;
       gap: var(--space-sm);
-      color: var(--color-gray-600);
+      color: var(--text-light);
       text-decoration: none;
       font-weight: var(--font-weight-medium);
       transition: all var(--duration-normal) var(--ease-out);
@@ -361,7 +363,7 @@
   align-items: center;
   gap: var(--space-sm);
   font-size: var(--font-size-body-small);
-  color: var(--color-gray-600);
+  color: var(--text-light);
 
   i {
     color: var(--accent-teal);

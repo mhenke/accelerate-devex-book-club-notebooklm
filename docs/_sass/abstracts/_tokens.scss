@@ -478,7 +478,7 @@ $shadow-gold: 0 4px 15px rgba(215, 186, 137, 0.3);
 
 // Common gradient patterns used throughout the app
 $gradient-meeting-bg: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-$gradient-section-card: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+$gradient-section-card: linear-gradient(135deg, var(--background-white), var(--background-light));
 $gradient-hero-dark: linear-gradient(135deg, #1a1a2e, #16213e);
 
 // Meeting-specific gradients

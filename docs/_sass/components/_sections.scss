@@ -7,10 +7,10 @@
 .section-card {
   background: linear-gradient(
     135deg,
-    var(--color-gray-50),
-    var(--color-gray-100)
+    var(--background-white),
+    var(--background-light)
   );
-  border: 1px solid var(--color-gray-300);
+  border: 1px solid var(--border-medium);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
   margin: var(--space-lg) auto;
@@ -72,7 +72,7 @@
     gap: var(--space-sm);
     padding: var(--space-lg) var(--space-md);
     background: var(--color-white);
-    border: 1px solid var(--color-gray-200);
+    border: 1px solid var(--border-light);
     border-top: 3px solid transparent;
     border-radius: var(--radius-md);
     cursor: pointer;
@@ -81,13 +81,13 @@
     position: relative;
     text-align: center;
     font-weight: var(--font-weight-medium);
-    color: var(--color-gray-700);
+    color: var(--text-medium);
     min-height: 120px;
     font-size: var(--font-size-body-small);
 
     i {
       font-size: var(--font-size-title-small);
-      color: var(--color-gray-600);
+      color: var(--text-medium);
       margin-bottom: var(--space-sm);
     }
 
@@ -99,7 +99,7 @@
 
       .chapter-number {
         font-size: var(--font-size-body-small);
-        color: var(--color-gray-500);
+        color: var(--text-light);
         font-weight: var(--font-weight-medium);
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -107,7 +107,7 @@
 
       .chapter-title {
         font-size: var(--font-size-body-medium);
-        color: var(--color-gray-700);
+        color: var(--text-medium);
         font-weight: var(--font-weight-semibold);
         text-align: center;
         line-height: var(--line-height-tight);
@@ -192,7 +192,7 @@
       }
 
       p {
-        color: var(--color-gray-600);
+        color: var(--text-medium);
         font-size: var(--font-size-body-medium);
         line-height: var(--line-height-relaxed);
         margin-bottom: var(--space-md);
@@ -204,7 +204,7 @@
         margin: 0;
 
         li {
-          color: var(--color-gray-700);
+          color: var(--text-medium);
           font-size: var(--font-size-body-medium);
           line-height: var(--line-height-relaxed);
           margin-bottom: var(--space-sm);
@@ -233,14 +233,14 @@
   background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
 
   h2 {
-    color: var(--color-gray-200) !important;
+    color: var(--border-light) !important;
     font-size: var(--font-size-title-large) !important;
     font-weight: var(--font-weight-semibold) !important;
     margin-bottom: var(--space-lg);
   }
 
   p {
-    color: var(--color-gray-300) !important;
+    color: var(--border-medium) !important;
     font-size: var(--font-size-body-large) !important;
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-lg);
@@ -257,7 +257,7 @@
     font-size: var(--font-size-body-large) !important;
     font-style: italic !important;
     line-height: var(--line-height-relaxed) !important;
-    color: var(--color-gray-100) !important;
+    color: var(--background-light) !important;
 
     // Critical text wrapping properties with highest specificity
     word-wrap: break-word !important;
