@@ -45,7 +45,8 @@ dora_color: "#d97706" # $meeting-3-primary
 
 #### Employee Satisfaction: The Four Pillars
 
-<svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" aria-label="Employee Satisfaction Framework">
+<svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Employee Satisfaction Framework</title>
   <rect x="10" y="10" width="880" height="260" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="4"/>
   <text x="450" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">Employee Satisfaction = Performance</text>
 
@@ -117,7 +118,8 @@ dora_color: "#d97706" # $meeting-3-primary
 
 ### Lean Product Development: Interactive Flow
 
-<svg width="100%" height="350" viewBox="0 0 1000 350" xmlns="http://www.w3.org/2000/svg" aria-label="Lean Product Development Flow">
+<svg width="100%" height="350" viewBox="0 0 1000 350" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Lean Product Development Flow</title>
   <rect x="10" y="10" width="980" height="330" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="3"/>
   <text x="500" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">Small Batches & Customer Feedback Flow</text>
 
