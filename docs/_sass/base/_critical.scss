@@ -2264,51 +2264,10 @@ button:focus,
     var(--hero-dark) 0%,
     var(--card-dark) 100%
   );
-  color: var(--text-white);
-  border-radius: var(--radius-xl);
-  padding: var(--space-lg);
-  margin: var(--space-xl) auto;
-  text-align: center;
-  max-width: min(var(--container-max-width), calc(100vw - 2rem));
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--shadow-floating-teal);
-  border: 2px solid var(--color-teal-20);
-  backdrop-filter: var(--backdrop-blur-lg);
-  transition: var(--transition-spring);
 
   // Ensure proper container constraints
   width: 100%;
   box-sizing: border-box;
-
-  // Strategic dark mode sophisticated pattern
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        rgba(122, 218, 209, 0.15) 2px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 80%,
-        rgba(255, 127, 80, 0.1) 1px,
-        transparent 1px
-      ),
-      radial-gradient(
-        circle at 40% 60%,
-        rgba(139, 158, 183, 0.08) 1px,
-        transparent 1px
-      );
-    background-size: 60px 60px, 40px 40px, 80px 80px;
-    background-position: 0 0, 30px 30px, 50px 10px;
-    opacity: 0.4;
-    pointer-events: none;
-  }
 
   h2 {
     color: var(--text-dark);
