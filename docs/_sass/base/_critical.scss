@@ -80,7 +80,7 @@ html {
 body {
   @include body-text;
 
-  background-color: var(--color-gray-50);
+  background-color: var(--background-white);
   position: relative;
 
   // Prevent horizontal scroll
@@ -240,48 +240,7 @@ a {
   background: var(--hero-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        rgba(122, 218, 209, 0.15) 2px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 80%,
-        rgba(255, 127, 80, 0.1) 1px,
-        transparent 1px
-      ),
-      radial-gradient(
-        circle at 40% 60%,
-        rgba(139, 158, 183, 0.08) 1px,
-        transparent 1px
-      );
-    background-size: 60px 60px, 40px 40px, 80px 80px;
-    background-position: 0 0, 30px 30px, 50px 10px;
-    opacity: 0.4;
-    z-index: 0;
-    pointer-events: none;
-  }
 
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      45deg,
-      transparent 30%,
-      rgba(122, 218, 209, 0.05) 70%
-    );
-    z-index: 0;
-    pointer-events: none;
-  }
   > * {
     position: relative;
     z-index: 1;
@@ -331,18 +290,6 @@ a {
   position: relative;
   overflow: hidden;
 
-  // Sophisticated pattern overlay
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--hero-dark);
-    opacity: 0.4;
-    pointer-events: none;
-    z-index: 0;
-  }
 
   &__icon {
     background: rgba(var(--accent-teal), var(--opacity-20));
@@ -429,48 +376,7 @@ a {
   margin-top: -1px; // Pull up to eliminate gap with site header
   overflow: hidden;
 
-  // Enhanced sophisticated pattern
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        rgba(122, 218, 209, 0.15) 2px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 80%,
-        rgba(255, 127, 80, 0.1) 1px,
-        transparent 1px
-      ),
-      radial-gradient(
-        circle at 40% 60%,
-        rgba(139, 158, 183, 0.08) 1px,
-        transparent 1px
-      );
-    background-size: 60px 60px, 40px 40px, 80px 80px;
-    background-position: 0 0, 30px 30px, 50px 10px;
-    opacity: 0.4;
-    z-index: 0;
-  }
 
-  // Additional overlay for depth
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      45deg,
-      transparent 30%,
-      rgba(122, 218, 209, 0.05) 70%
-    );
-    z-index: 0;
-  }
 
   .hero-content {
     position: relative;
@@ -547,21 +453,6 @@ a {
       position: relative;
       overflow: hidden;
 
-      &::before {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.2),
-          transparent
-        );
-        animation: shine 2s infinite;
-        pointer-events: none;
-      }
 
       &:hover {
         transform: translateY(-4px) rotateX(5deg);
@@ -653,22 +544,6 @@ a {
     position: relative;
     overflow: hidden;
 
-    // Add subtle shine effect
-    &::before {
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(
-        45deg,
-        transparent 30%,
-        rgba(255, 255, 255, 0.1) 50%,
-        transparent 70%
-      );
-      transition: transform 0.6s;
-      transform: translateX(-100%);
-    }
 
     &:hover,
     &:focus {
@@ -680,9 +555,6 @@ a {
         var(--hover-emerald),
         var(--accent-emerald)
       ) !important;
-      &::before {
-        transform: translateX(100%);
-      }
     }
 
     &:active {
@@ -763,20 +635,6 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow-hero-cta);
 
-  // Sophisticated gradient overlay
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      transparent 70%
-    );
-    pointer-events: none;
-  }
 
   &:hover {
     background: linear-gradient(
@@ -1002,7 +860,6 @@ a {
   border-radius: var(--radius-lg);
   padding: var(--space-md);
   margin: var(--space-lg) auto;
-
   text-align: center;
   box-shadow: var(--elevation-2);
   animation: fadeInUp 0.8s ease-out 0.2s both;
@@ -1053,20 +910,6 @@ a {
   position: relative;
   overflow: hidden;
 
-  // Enhance visual prominence with accent border
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(
-      90deg,
-      var(--accent-emerald),
-      var(--accent-teal)
-    );
-    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-  }
 
   h2 {
     // Inherit standardized h2 styling with icons and left alignment
@@ -1126,30 +969,12 @@ a {
     position: relative;
     overflow: hidden;
 
-    // Add subtle gradient overlay
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(
-        90deg,
-        var(--accent-emerald),
-        var(--accent-teal)
-      );
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
 
     &:hover {
       transform: var(--transform-hover-lift);
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
       border-color: rgba(16, 185, 129, 0.2);
 
-      &::before {
-        opacity: 1;
-      }
 
       i {
         transform: scale(1.1);
@@ -1592,7 +1417,6 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-lg);
-
   margin: 0 auto;
   padding: 0 var(--space-lg);
 
@@ -1631,20 +1455,6 @@ a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
   color: white;
 
-  // Prominent colored top border
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(
-      90deg,
-      var(--accent-emerald),
-      var(--accent-teal)
-    );
-    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-  }
 
   &:hover {
     // Enhanced hover elevation for dark theme
@@ -1652,31 +1462,8 @@ a {
     transform: translateY(-3px);
     border-color: rgba(255, 255, 255, 0.15);
 
-    &::after {
-      height: 6px; // Thicker border on hover
-      background: linear-gradient(
-        90deg,
-        var(--accent-teal),
-        var(--accent-coral),
-        var(--accent-emerald)
-      );
-    }
   }
 
-  // Sophisticated gradient overlay
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.05) 0%,
-      transparent 50%
-    );
-    pointer-events: none;
-  }
 
   &:hover {
     transform: translateY(-4px);
@@ -1773,26 +1560,7 @@ a {
     cursor: pointer;
     text-decoration: none;
 
-    // Shimmer effect
-    &::before {
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-      );
-      transition: left 0.5s ease;
-      z-index: 1;
-    }
 
-    &:hover::before {
-      left: 100%;
-    }
 
     &:hover {
       transform: var(--transform-hover-lift);
@@ -2137,26 +1905,11 @@ button:focus,
   box-shadow: var(--shadow-blue-glow);
   padding: var(--space-3xl);
   margin: var(--space-xl) 0;
-
   margin-left: auto;
   margin-right: auto;
   position: relative;
   overflow: hidden;
 
-  // Sophisticated overlay
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(122, 218, 209, 0.05) 0%,
-      transparent 50%
-    );
-    pointer-events: none;
-  }
 
   h2 {
     color: var(--text-dark);
@@ -2311,7 +2064,6 @@ button:focus,
   grid-template-columns: 1fr;
   gap: var(--space-xl);
   margin: var(--space-md) 0;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -2435,7 +2187,6 @@ button:focus,
   border-radius: var(--radius-lg);
   padding: var(--space-md);
   margin: var(--space-lg) auto;
-
   text-align: center;
   box-shadow: var(--elevation-2);
 
@@ -2801,7 +2552,7 @@ button:focus,
 
   .card-goal {
     border-left-color: var(--color-blue-600);
-    background: var(--color-gray-50);
+    background: var(--background-white);
   }
 }
 

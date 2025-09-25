@@ -26,18 +26,6 @@
   box-shadow: var(--elevation-3);
 }
 
-.dora-metric-card::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--meeting-1-primary),
-    var(--meeting-1-secondary)
-  );
-}
 
 .metric-header {
   display: flex;
@@ -147,13 +135,6 @@
 }
 
 /* Metric Type Variations */
-.lead-time-metric::before {
-  background: linear-gradient(
-    90deg,
-    var(--meeting-4-primary),
-    var(--meeting-4-secondary)
-  );
-}
 
 .lead-time-metric .metric-icon {
   background: linear-gradient(
@@ -164,13 +145,6 @@
   box-shadow: var(--shadow-meeting-4);
 }
 
-.deploy-frequency-metric::before {
-  background: linear-gradient(
-    90deg,
-    var(--meeting-2-primary),
-    var(--meeting-2-secondary)
-  );
-}
 
 .deploy-frequency-metric .metric-icon {
   background: linear-gradient(
@@ -181,22 +155,12 @@
   box-shadow: var(--shadow-meeting-2);
 }
 
-.restore-time-metric::before {
-  background: linear-gradient(90deg, var(--color-error), #b91c1c);
-}
 
 .restore-time-metric .metric-icon {
   background: linear-gradient(135deg, var(--color-error), #b91c1c);
   box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
 }
 
-.change-fail-metric::before {
-  background: linear-gradient(
-    90deg,
-    var(--meeting-3-primary),
-    var(--meeting-3-secondary)
-  );
-}
 
 .change-fail-metric .metric-icon {
   background: linear-gradient(
@@ -207,9 +171,6 @@
   box-shadow: var(--shadow-meeting-3);
 }
 
-.security-metric::before {
-  background: linear-gradient(90deg, #7c2d12, #991b1b);
-}
 
 .security-metric .metric-icon {
   background: linear-gradient(135deg, #7c2d12, #991b1b);
