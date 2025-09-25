@@ -24,7 +24,7 @@ body {
 
 /* Header critical styles */
 .site-header {
-  background: var(--hero-gradient);
+  background: var(--hero-dark);
   color: white;
   padding: var(--space-md) 0;
   position: relative;
@@ -75,7 +75,7 @@ body {
 
 /* Hero section critical styles */
 .hero {
-  background: var(--hero-gradient);
+  background: var(--hero-dark);
   color: white;
   text-align: center;
   padding: var(--space-3xl) var(--space-md);

@@ -224,7 +224,7 @@ title: Home
     <h3>Accelerate: The Science of Lean Software and DevOps</h3>
     <p>Building and Scaling High Performing Technology Organizations</p>
     <p class="book-description">This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations. Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance.</p>
-    <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn--primary-action">Get the Book</a>
+  <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn--primary-action">Get the Book</a>
   </div>
 </div>
 </div>

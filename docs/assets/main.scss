@@ -41,6 +41,7 @@
 
 .site-header {
   background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
+  background: var(--hero-dark);
   color: #fff;
   padding: 0.5rem 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -121,18 +122,18 @@
   transition: color 0.18s;
 }
 
-.nav-item.active,
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--accent-teal, #7adad1);
+  text-decoration: underline;
   background: #23304a;
-  color: #7adad1;
   box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
-  border-color: #7adad1;
+  border-color: var(--accent-teal, #7adad1);
 }
-.nav-item.active i,
-.nav-item:hover i {
-  color: #7adad1;
+.nav-item:hover i,
+.nav-item:focus i {
+  color: var(--accent-teal, #7adad1);
 }
-.nav-item.active:after,
 
 // Meeting navigation style for .nav-item (used on index and meeting pages)
 .nav-item {
@@ -183,11 +184,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(122, 218, 209, 0.1) 0%,
-    rgba(122, 218, 209, 0.12) 100%
-  );
+  background: var(--hero-dark);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -204,12 +201,13 @@
   border-color: var(--accent-teal, #7adad1);
   background: #23304a;
   box-shadow: 0 4px 16px rgba(122, 218, 209, 0.22);
+  text-decoration: underline;
 }
 
 .nav-item.external {
   color: var(--accent-teal, #7adad1);
   border-color: var(--accent-teal, #7adad1);
-  background: #181a2b;
+  background: var(--hero-dark);
 }
 .nav-item.external:hover,
 .nav-item.external:focus {

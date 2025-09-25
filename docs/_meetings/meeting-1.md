@@ -585,9 +585,8 @@ document.addEventListener('keydown', function(event) {
   <h2 id="next-meeting-heading">Next Meeting</h2>
   <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
 <div class="next-meeting-btn-wrapper">
-<a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="btn btn--meeting-nav" role="button" aria-label="Go to Meeting 2: Technical Excellence">
+<a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="nav-item" role="button" aria-label="Go to Meeting 2: Technical Excellence">
   Meeting 2: Technical Excellence
 </a>
 </div>
 </section>
-
