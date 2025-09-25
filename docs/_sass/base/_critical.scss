@@ -338,23 +338,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        rgba(122, 218, 209, 0.15) 2px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 80%,
-        rgba(255, 127, 80, 0.1) 1px,
-        transparent 1px
-      ),
-      radial-gradient(
-        circle at 40% 60%,
-        rgba(139, 158, 183, 0.08) 1px,
-        transparent 1px
-      );
-    background-size: 60px 60px, 40px 40px, 80px 80px;
-    background-position: 0 0, 30px 30px, 50px 10px;
+    background: var(--hero-dark);
     opacity: 0.4;
     pointer-events: none;
     z-index: 0;
@@ -395,14 +379,13 @@ a {
   }
 
   &__title {
-    color: var(--text-dark);
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--space-sm);
   }
 
   &__text {
-    color: var(--color-white-80);
+    color: var(--color-white);
     font-size: var(--font-size-sm);
     line-height: var(--line-height-relaxed);
     margin: 0;
@@ -713,7 +696,7 @@ a {
   }
 
   .hero-cta-subtitle {
-    color: var(--color-white-80);
+    color: var(--color-white);
     font-size: var(--font-size-base);
     margin: 0 auto;
     font-style: italic;
