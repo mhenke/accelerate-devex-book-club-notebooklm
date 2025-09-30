@@ -400,7 +400,9 @@ document.addEventListener('keydown', function(event) {
       <!-- Row 1: High Anxiety → Pathological -->
       <div class="assessment-row">
         <div class="experience-item anxiety">
-          <div class="emoji-face sad">😰</div>
+          <div class="icon-face anxiety">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
           <div class="experience-text">
             <strong>High Anxiety</strong>
             <span class="experience-detail">"stressful events"</span>
@@ -415,7 +417,9 @@ document.addEventListener('keydown', function(event) {
       <!-- Row 2: Moderate Concern → Transitioning -->
       <div class="assessment-row">
         <div class="experience-item concern">
-          <div class="emoji-face neutral">😐</div>
+          <div class="icon-face concern">
+            <i class="fas fa-question-circle"></i>
+          </div>
           <div class="experience-text">
             <strong>Moderate Concern</strong>
             <span class="experience-detail">"some worry, manageable"</span>
@@ -430,7 +434,9 @@ document.addEventListener('keydown', function(event) {
       <!-- Row 3: Confident → Generative -->
       <div class="assessment-row">
         <div class="experience-item confident">
-          <div class="emoji-face happy">😌</div>
+          <div class="icon-face confident">
+            <i class="fas fa-check-circle"></i>
+          </div>
           <div class="experience-text">
             <strong>Confident</strong>
             <span class="experience-detail">"routine, no stress"</span>
