@@ -210,7 +210,6 @@
 /* Media Container Styling */
 .media-container {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-
   margin: 1.5rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
@@ -233,7 +232,6 @@
   background: linear-gradient(135deg, var(--meeting-bg), #f5f5f5);
   border-left: 4px solid var(--meeting-primary);
   margin: 1.5rem 0;
-
   font-style: italic;
   font-size: var(--font-size-body-large);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);

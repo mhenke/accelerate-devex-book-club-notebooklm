@@ -60,7 +60,6 @@
   border: 1px solid var(--border-light);
   border-top: 3px solid transparent;
   border-radius: var(--radius-md);
-
   cursor: pointer;
   transition: border-color 0.2s ease, border-top-color 0.2s ease,
     box-shadow 0.2s ease, transform 0.2s ease;
@@ -298,7 +297,6 @@
     .chapter-detail {
       display: none;
       text-align: left;
-
       background: rgba(9, 105, 218, 0.05);
       border-radius: var(--radius-md);
 
@@ -357,109 +355,188 @@
   }
 }
 
-// Key Question Section - High Specificity Fix
-.key-question {
-  background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
+// Key Question Banner - Hero-style impactful design
+.key-question-banner {
+  background: linear-gradient(
+    135deg,
+    var(--header-dark-navy) 0%,
+    var(--header-light-navy) 100%
+  );
+  color: var(--text-white);
+  padding: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  margin: var(--spacing-xl) 0;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 
-  h2 {
-    color: var(--border-light) !important;
-    font-size: var(--font-size-title-large) !important;
-    font-weight: var(--font-weight-semibold) !important;
-    margin-bottom: var(--space-lg);
+  // Add subtle pattern overlay similar to hero
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='rgba(255,255,255,0.03)' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    z-index: 1;
   }
 
-  p {
-    color: var(--border-medium) !important;
-    font-size: var(--font-size-body-large) !important;
+  // Performance optimization with CSS containment
+  contain: layout style paint;
+
+  @include mobile-up {
+    min-height: 20vh;
+    padding: var(--spacing-lg) 0;
+    margin: var(--spacing-lg) 0;
+  }
+}
+
+.key-question-content {
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-lg);
+  z-index: 2;
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+
+  @include mobile-up {
+    margin: var(--space-lg) auto;
+    padding: 0 var(--space-md);
+  }
+}
+
+.key-question-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+
+  @include mobile-up {
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+.key-question-icon {
+  background: var(--accent-teal);
+  color: var(--text-white);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px rgba(122, 218, 209, 0.3);
+  animation: pulse-glow 3s ease-in-out infinite;
+  margin-right: var(--space-md);
+
+  @include mobile-up {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-right: var(--space-sm);
+  }
+}
+
+.key-question-banner .key-question-header .key-question-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--text-white);
+  display: inline;
+  text-align: center;
+}
+
+.key-question-intro {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-white);
+  line-height: var(--line-height-relaxed);
+
+  @include mobile-up {
+    font-size: var(--font-size-body-large);
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+.key-question-quote {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  margin: var(--spacing-lg) 0;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle inner glow
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(122, 218, 209, 0.5),
+      transparent
+    );
+  }
+
+  .quote-content {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-style: italic;
     line-height: var(--line-height-relaxed);
-    margin-bottom: var(--space-lg);
-    max-width: 100% !important;
-    box-sizing: border-box !important;
+    color: var(--text-white);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+
+    // Better text wrapping
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
-  .key-question-quote {
-    background: rgba(255, 255, 255, 0.1) !important;
-    border-left: 4px solid var(--color-blue-400) !important;
-    border-radius: var(--radius-md);
-    padding: var(--space-lg) !important;
-    margin: 0 !important;
-    font-size: var(--font-size-body-large) !important;
-    font-style: italic !important;
-    line-height: var(--line-height-relaxed) !important;
-    color: var(--background-light) !important;
-
-    // Critical text wrapping properties with highest specificity
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    word-break: break-word !important;
-    hyphens: auto !important;
-    white-space: normal !important;
-
-    // Prevent horizontal overflow but allow vertical expansion
-    max-width: 100% !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-
-    // Remove text truncation - we want text to wrap, not be cut off
-    overflow: visible !important;
-    text-overflow: unset !important;
-
-    // Ensure multi-line text display
-    display: block !important;
-    height: auto !important;
-
-    // Override Jekyll syntax highlighting for blockquotes
-    .language-plaintext,
-    .highlighter-rouge,
-    .highlight,
-    pre,
-    code {
-      background: transparent !important;
-      border: none !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      font-family: inherit !important;
-      font-size: inherit !important;
-      font-style: inherit !important;
-      color: inherit !important;
-      white-space: normal !important;
-      word-wrap: break-word !important;
-      overflow-wrap: break-word !important;
-      word-break: break-word !important;
-      overflow: visible !important;
-      display: inline !important;
-    }
-
-    // Specifically target the pre element inside blockquote
-    pre.highlight {
-      white-space: pre-wrap !important;
-      word-wrap: break-word !important;
-      overflow-wrap: break-word !important;
-      overflow: visible !important;
-    }
+  @include mobile-up {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-md) 0;
   }
+}
 
-  // Responsive adjustments with higher specificity
-  @include mobile-only {
-    padding: var(--space-lg) !important;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+.key-question-conclusion {
+  font-size: var(--font-size-body-large);
+  opacity: 0.9;
+  margin-top: var(--spacing-lg);
+  color: var(--text-white);
+  line-height: var(--line-height-relaxed);
 
-    .key-question-quote {
-      font-size: var(--font-size-body-medium) !important;
-      padding: var(--space-md) !important;
-      line-height: 1.6 !important;
-    }
+  @include mobile-up {
+    font-size: var(--font-size-body-medium);
+    margin-top: var(--spacing-md);
   }
+}
 
-  @include mobile-only {
-    padding: var(--space-md) !important;
-    margin: var(--space-md) var(--space-sm) !important;
-    max-width: calc(100vw - 1rem) !important;
-
-    .key-question-quote {
-      padding: var(--space-sm) var(--space-md) !important;
-      font-size: var(--font-size-body-small) !important;
-      line-height: 1.5 !important;
-    }
+// Pulse glow animation for the icon
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 16px rgba(122, 218, 209, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 4px 24px rgba(122, 218, 209, 0.5);
+    transform: scale(1.05);
   }
 }

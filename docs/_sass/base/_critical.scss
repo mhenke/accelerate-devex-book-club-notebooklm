@@ -309,7 +309,6 @@ a {
     var(--card-dark) 100%
   );
   color: var(--text-dark);
-
   display: flex;
   align-items: center;
   gap: var(--space-xl);
@@ -1447,7 +1446,7 @@ a {
   h3 {
     color: white; // White text for dark theme
     font-family: var(--font-display);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-semibold);
     margin: 0; // Remove margin since it's now inline with icon
     position: relative;
@@ -1494,18 +1493,20 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-sm) var(--space-lg); // Fixed padding for consistent button appearance
+    padding: var(--space-sm) var(--space-lg);
     border-radius: var(--radius-lg);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
     color: var(--text-white);
-    margin: 0 auto var(--space-md); // Center horizontally and add proper bottom margin
+    margin: 0 auto var(--space-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     position: relative;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     text-decoration: none;
+    white-space: nowrap;
+    min-width: fit-content;
 
     &:hover {
       transform: var(--transform-hover-lift);
@@ -1516,6 +1517,7 @@ a {
     span {
       position: relative;
       z-index: 2;
+      white-space: nowrap;
     }
 
     span:first-child {
@@ -1627,7 +1629,7 @@ a {
   }
 
   .highlight-card {
-    .highlight-icon {
+    .highlight-card .highlight-icon {
       width: 50px;
       height: 50px;
       font-size: var(--font-size-lg);
@@ -1939,6 +1941,7 @@ button:focus,
     color: var(
       --text-on-dark-high
     ) !important; // Design token for high contrast
+
     text-align: center;
     margin: 0 auto var(--space-xl);
     max-width: var(--content-width-optimal); // Design token
@@ -2102,7 +2105,6 @@ button:focus,
   border: 1px solid rgba(147, 51, 234, 0.2);
   border-top: 3px solid transparent;
   border-radius: var(--radius-xl);
-
   text-align: center;
   transition: border-color 0.2s ease, border-top-color 0.2s ease,
     box-shadow 0.2s ease, transform 0.2s ease;
@@ -2346,7 +2348,6 @@ button:focus,
 .meeting-sidebar {
   background: rgba(255, 255, 255, 0.95);
   border-radius: var(--radius-lg);
-
   height: fit-content;
   position: sticky;
   top: var(--space-lg);
@@ -2395,7 +2396,6 @@ button:focus,
 .media-card {
   background: var(--color-white);
   border-radius: var(--radius-md);
-
   border: 1px solid #e5e7eb;
   margin-bottom: var(--space-md);
 
@@ -2663,7 +2663,6 @@ button:focus,
       display: flex;
       align-items: flex-start;
       gap: var(--space-lg);
-
       background: var(--color-white);
       border-radius: var(--radius-md);
       border: 1px solid var(--border-subtle);
