@@ -166,13 +166,19 @@ document.addEventListener('keydown', function(event) {
 
 <!-- MEETING 1 KEY QUESTION -->
 
-<div class="key-question meeting-specific">
-
-  <h2><i class="fas fa-key"></i> Meeting 1 Key Question</h2>
-  <p>Throughout this meeting, we'll return to this central reflection:</p>
-  <blockquote class="meeting-key-question">
-    "How do we currently *perceive* and *measure* performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?"
-  </blockquote>
+<div class="key-question-banner" markdown="0">
+<div class="key-question-content">
+<div class="key-question-header">
+<div class="key-question-icon">
+<i class="fas fa-key" aria-hidden="true"></i>
+</div>
+<h2 class="key-question-title">MEETING 1 KEY QUESTION</h2>
+</div>
+<div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
+<div class="key-question-quote">
+<div class="quote-content">&ldquo;How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?&rdquo;</div>
+</div>
+</div>
 </div>
 
 <div class="section-card" markdown="0">
@@ -253,165 +259,195 @@ document.addEventListener('keydown', function(event) {
 <!-- Step-Based Progressive Learning Structure -->
 
 <!-- THE PROBLEM -->
-<div class="section-card" markdown="0">
-  <div class="step-header">
-    <h2><i class="fas fa-exclamation-triangle"></i> The Problem: False Choice</h2>
-  </div>
-  <div class="problem-content">
-    <div class="false-choice-myth">
-      <h3>Most teams believe they must choose:</h3>
-      <div class="choice-comparison">
-        <div class="choice-option speed">
-          <i class="fas fa-tachometer-alt"></i>
-          <h4>Fast Delivery</h4>
-          <span class="consequence">= High Risk</span>
+<div class="false-choice-visual" markdown="0">
+  <div class="false-choice-container">
+    <h2 class="false-choice-main-title">The Problem: False Choice</h2>
+    <h3 class="false-choice-subtitle">Most teams believe they must choose the optimal development approach</h3>
+
+    <div class="choice-options">
+      <div class="choice-option">
+        <div class="choice-circle">
+          <i class="fas fa-rocket"></i>
         </div>
-        <div class="vs-divider">VS</div>
-        <div class="choice-option stability">
+        <h4 class="choice-label">Fast Delivery</h4>
+        <p class="choice-consequence">High Risk</p>
+      </div>
+
+      <div class="choice-option">
+        <div class="choice-circle">
           <i class="fas fa-shield-alt"></i>
-          <h4>Stable Systems</h4>
-          <span class="consequence">= Slow Pace</span>
         </div>
+        <h4 class="choice-label">Stable Systems</h4>
+        <p class="choice-consequence">Slow Pace</p>
       </div>
     </div>
-    <div class="pain-signal">
-      <h3>The Signal: Deployment Anxiety</h3>
+
+    <div class="deployment-signal">
+      <h4>The Signal: Deployment Anxiety</h4>
       <p>That knot in your stomach before deployment isn't personal weakness—it's your organization sending you a message about deeper systemic problems.</p>
     </div>
   </div>
 </div>
 
-<!-- THE FRAMEWORK (Causality Flow) -->
-<div class="section-card" markdown="0">
-  <div class="step-header">
-    <h2><i class="fas fa-sitemap"></i> The Framework: How Culture Drives Performance</h2>
-  </div>
-  <div class="framework-content">
-    <div class="framework-intro">
-      <p><strong>4 years of research across 23,000+ organizations</strong> reveals this causal chain:</p>
+<!-- THE FRAMEWORK - Causal Chain Infographic -->
+<div class="causal-chain-infographic" markdown="0">
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2>The Framework: How Culture Drives Performance</h2>
+      <p class="research-foundation">4 years of research across <strong>23,000+ organizations</strong> reveals this causal chain:</p>
     </div>
 
-    <!-- Vertical Framework Flow -->
-    <div class="framework-flow-vertical">
-
+    <div class="causal-flow">
       <!-- Step 1: Business Need -->
-      <div class="framework-step">
-        <div class="step-number">1</div>
+      <div class="causal-step step-business">
+        <div class="step-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
         <div class="step-content">
-          <div class="step-icon">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <div class="step-info">
-            <h3>Business Need</h3>
-            <p class="step-subtitle">Chapter 1: Competitive Advantage</p>
-            <div class="step-tags">
-              <span class="tag">Market Share</span>
-              <span class="tag">Profitability</span>
-              <span class="tag">Productivity</span>
-            </div>
+          <h3>Business Need</h3>
+          <p class="step-chapter">Chapter 1: Competitive Advantage</p>
+          <div class="step-metrics">
+            <div class="metric-item">Market Share</div>
+            <div class="metric-item">Profitability</div>
+            <div class="metric-item">Productivity</div>
           </div>
         </div>
-        <div class="step-connector">
-          <i class="fas fa-arrow-down"></i>
-          <span class="connector-label">measured by</span>
-        </div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right"></i>
+        <span class="arrow-label">measured by</span>
       </div>
 
       <!-- Step 2: Measurement -->
-      <div class="framework-step">
-        <div class="step-number">2</div>
+      <div class="causal-step step-measurement">
+        <div class="step-icon">
+          <i class="fas fa-tachometer-alt"></i>
+        </div>
         <div class="step-content">
-          <div class="step-icon">
-            <i class="fas fa-tachometer-alt"></i>
-          </div>
-          <div class="step-info">
-            <h3>Measurement</h3>
-            <p class="step-subtitle">Chapter 2: DORA Metrics</p>
-            <div class="step-tags">
-              <span class="tag metric">Lead Time</span>
-              <span class="tag metric">Deploy Frequency</span>
-              <span class="tag metric">Recovery Time</span>
-              <span class="tag metric">Change Fail Rate</span>
-            </div>
+          <h3>Measurement</h3>
+          <p class="step-chapter">Chapter 2: DORA Metrics</p>
+          <div class="step-metrics">
+            <div class="metric-item">Lead Time</div>
+            <div class="metric-item">Deploy Frequency</div>
+            <div class="metric-item">Recovery Time</div>
+            <div class="metric-item">Change Fail Rate</div>
           </div>
         </div>
-        <div class="step-connector">
-          <i class="fas fa-arrow-down"></i>
-          <span class="connector-label">enabled by</span>
-        </div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right"></i>
+        <span class="arrow-label">enabled by</span>
       </div>
 
       <!-- Step 3: Cultural Foundation -->
-      <div class="framework-step">
-        <div class="step-number">3</div>
+      <div class="causal-step step-culture">
+        <div class="step-icon">
+          <i class="fas fa-users"></i>
+        </div>
         <div class="step-content">
-          <div class="step-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <div class="step-info">
-            <h3>Cultural Foundation</h3>
-            <p class="step-subtitle">Chapter 3: Westrum Culture</p>
-            <div class="step-tags">
-              <span class="tag culture pathological">Pathological</span>
-              <span class="tag culture bureaucratic">Bureaucratic</span>
-              <span class="tag culture generative">Generative</span>
-            </div>
+          <h3>Cultural Foundation</h3>
+          <p class="step-chapter">Chapter 3: Westrum Culture</p>
+          <div class="step-metrics">
+            <div class="metric-item pathological">Pathological</div>
+            <div class="metric-item bureaucratic">Bureaucratic</div>
+            <div class="metric-item generative">Generative</div>
           </div>
         </div>
       </div>
-
     </div>
 
-    <div class="evidence-foundation">
-      <h3>Research Foundation</h3>
-      <p>High performers achieve <strong>46x more frequent deployments</strong> + <strong>440x faster lead time</strong> + <strong>170x faster recovery</strong> because their culture enables better technical practices.</p>
+    <!-- Impact Stats Callout -->
+    <div class="impact-stats">
+      <h4>Research Impact</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">46x</div>
+          <div class="stat-label">More Frequent Deployments</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">440x</div>
+          <div class="stat-label">Faster Lead Time</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">170x</div>
+          <div class="stat-label">Faster Recovery</div>
+        </div>
+      </div>
+      <p class="stats-conclusion">High performers achieve these results because their culture enables better technical practices.</p>
     </div>
-
   </div>
 </div>
 
-<!-- INTEGRATED ASSESSMENT -->
-<div class="section-card assessment-elevated" markdown="0">
-  <div class="step-header">
-    <h2><i class="fas fa-stethoscope"></i> Assessment: Reading Your Organization's Signals</h2>
-  </div>
-  <div class="assessment-content">
-    <div class="assessment-intro">
-      <p>Your deployment pain level reveals where you are in the causal chain. Let's connect the dots:</p>
+<!-- ASSESSMENT SKETCH DIAGRAM -->
+<div class="assessment-sketch" markdown="0">
+  <div class="sketch-container">
+    <div class="sketch-header">
+      <h2>Assessment: Reading Signals</h2>
+      <p class="sketch-intro">Your deployment pain level reveals where you are in the causal chain. Let's connect the dots:</p>
     </div>
 
-    <!-- Simplified Assessment -->
-    <div class="simple-assessment">
-      <div class="pain-assessment">
-        <h3>Your Deployment Experience</h3>
-        <div class="pain-scale">
-          <label class="pain-option">
-            <input type="radio" name="pain-level" value="high">
-            <span class="option-text">😰 High Anxiety - Deployments are stressful events</span>
-          </label>
-          <label class="pain-option">
-            <input type="radio" name="pain-level" value="medium">
-            <span class="option-text">😐 Moderate Concern - Some worry but manageable</span>
-          </label>
-          <label class="pain-option">
-            <input type="radio" name="pain-level" value="low">
-            <span class="option-text">😌 Confident - Deployments feel routine</span>
-          </label>
+    <div class="sketch-diagram">
+      <!-- Left Side: Deployment Experience -->
+      <div class="experience-side">
+        <h3 class="sketch-title">Your Deployment Experience</h3>
+
+        <div class="experience-item anxiety">
+          <div class="emoji-face sad">😰</div>
+          <div class="experience-text">
+            <strong>High Anxiety</strong>
+            <span class="experience-detail">"stressful events"</span>
+          </div>
+          <div class="sketch-arrow">→</div>
+        </div>
+
+        <div class="experience-item concern">
+          <div class="emoji-face neutral">😐</div>
+          <div class="experience-text">
+            <strong>Moderate Concern</strong>
+            <span class="experience-detail">"some worry, manageable"</span>
+          </div>
+          <div class="sketch-arrow">→</div>
+        </div>
+
+        <div class="experience-item confident">
+          <div class="emoji-face happy">😌</div>
+          <div class="experience-text">
+            <strong>Confident</strong>
+            <span class="experience-detail">"routine, no stress"</span>
+          </div>
+          <div class="sketch-arrow">→</div>
         </div>
       </div>
 
-      <div class="assessment-insight">
-        <h4>What This Reveals</h4>
-        <p>Your deployment experience directly reflects your organizational culture type:</p>
-        <ul>
-          <li><strong>High anxiety</strong> → Pathological/Bureaucratic culture → Limited competitive advantage</li>
-          <li><strong>Moderate concern</strong> → Transitioning culture → Some competitive advantage</li>
-          <li><strong>Confident deployments</strong> → Generative culture → Strong competitive advantage</li>
-        </ul>
-        <p class="hope-message"><strong>Remember:</strong> Culture can be changed through better practices (covered in meetings 2-4).</p>
+      <!-- Right Side: Culture Types -->
+      <div class="culture-side">
+        <div class="culture-flow">
+          <div class="culture-bubble pathological">
+            Pathological/ Bureaucratic Culture
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="culture-bubble transitioning">
+            Transitioning Culture
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="culture-bubble generative">
+            Generative Culture
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- Bottom Message -->
+    <div class="sketch-message">
+      <div class="hope-bubble">
+        <strong>Remember: Culture CAN change through better practices!</strong>
+        <span class="meetings-note">(meetings 2-4)</span>
+      </div>
+    </div>
   </div>
 </div>
 

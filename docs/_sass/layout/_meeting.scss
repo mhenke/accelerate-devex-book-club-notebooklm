@@ -105,6 +105,7 @@
       justify-content: center;
       gap: var(--space-lg);
       flex-wrap: wrap;
+      align-items: center;
 
       .meeting-meta-item {
         display: flex;
@@ -120,7 +121,7 @@
         &.subtitle {
           font-size: var(--font-size-title-medium);
           font-weight: var(--font-weight-medium);
-          margin-top: var(--space-sm);
+          margin-top: 0;
         }
       }
     }
