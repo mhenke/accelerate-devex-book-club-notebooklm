@@ -490,12 +490,12 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="discussion-card" markdown="0">
+<div class="section-card discussion-questions" markdown="0">
   <div class="discussion-header">
     <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
   </div>
 
-  <div class="discussion-questions">
+  <div class="discussion-questions-list">
     <div class="question-item" role="group" aria-labelledby="q1">
       <div class="question-row">
         <div class="question-left">
@@ -551,7 +551,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="action-items-card" markdown="0">
+<div class="section-card action-items" markdown="0">
   <div class="action-header">
     <h2><i class="fas fa-tasks"></i> Action Items for Next Meeting</h2>
     <p class="subtitle">Complete these tasks before Meeting 2 to maximize your learning</p>
