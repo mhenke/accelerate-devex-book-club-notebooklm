@@ -30,33 +30,6 @@
 
   // Action Items modifier
   &.action-items {
-    text-align: left; // Override center alignment
-
-    .action-header {
-      text-align: center;
-      margin-bottom: var(--space-lg);
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: var(--space-md);
-
-      h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: var(--space-sm);
-        margin: 0 0 var(--space-sm) 0;
-
-        i {
-          color: var(--accent-teal);
-        }
-      }
-
-      .subtitle {
-        color: var(--text-medium);
-        font-size: var(--font-size-md);
-        margin: 0;
-      }
-    }
-
     .action-list {
       display: flex;
       flex-direction: column;
@@ -1433,35 +1406,6 @@
   margin: var(--space-lg) auto;
   box-shadow: var(--elevation-1);
   max-width: 100%;
-
-  .action-header {
-    text-align: center;
-    margin-bottom: var(--space-lg);
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: var(--space-md);
-
-    h2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--space-sm);
-      color: var(--text-dark);
-      font-weight: var(--font-weight-bold);
-      margin: 0 0 var(--space-sm) 0;
-      font-size: var(--font-size-title-large);
-
-      i {
-        color: var(--accent-teal);
-        font-size: 1.2em;
-      }
-    }
-
-    .subtitle {
-      color: var(--text-medium);
-      font-size: var(--font-size-md);
-      margin: 0;
-    }
-  }
 
   .action-list {
     display: flex;
