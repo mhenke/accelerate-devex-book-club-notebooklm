@@ -552,9 +552,9 @@
 .false-choice-visual {
   background: linear-gradient(135deg, #1a1a2e, #16213e);
   color: white;
-  padding: var(--space-2xl) var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
   border-radius: var(--border-radius-lg);
-  margin: var(--space-xl) 0;
+  margin: var(--space-md) 0;
 
   // Break out of meeting container to span full width
   .meeting-container & {
@@ -571,29 +571,29 @@
 }
 
 .false-choice-main-title {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  margin: 0 0 var(--space-lg) 0;
+  margin: 0 0 var(--space-sm) 0;
   color: white;
 }
 
 .false-choice-subtitle {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
-  margin: 0 0 var(--space-2xl) 0;
+  margin: 0 0 var(--space-lg) 0;
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .choice-options {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: var(--space-xl);
-  margin: var(--space-xl) 0;
+  gap: var(--space-md);
+  margin: var(--space-sm) 0;
 
   @include mobile-up {
-    gap: var(--space-lg);
+    gap: var(--space-md);
     flex-wrap: wrap;
   }
 }
@@ -611,34 +611,34 @@
 }
 
 .choice-circle {
-  width: 80px;
-  height: 80px;
+  width: var(--space-3xl);
+  height: var(--space-3xl);
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.25rem;
+  color: var(--color-white);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 
   @include mobile-up {
-    width: 70px;
-    height: 70px;
-    font-size: 1.75rem;
+    width: var(--space-2xl);
+    height: var(--space-2xl);
+    font-size: 1rem;
   }
 }
 
 .choice-label {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
   margin: 0;
-  color: white;
+  color: var(--color-white);
 }
 
 .choice-consequence {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
@@ -649,33 +649,33 @@
   align-items: flex-start;
   justify-content: center;
   flex-shrink: 0;
-  padding-top: 10px; // Align with the icon circles
+  padding-top: var(--space-xs);
 
   @include mobile-up {
-    padding-top: 8px;
+    padding-top: var(--space-xs);
   }
 }
 
 .vs-circle {
-  width: 60px;
-  height: 60px;
+  width: var(--space-2xl);
+  height: var(--space-2xl);
   border-radius: 50%;
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-black);
-  color: white;
+  color: var(--color-white);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 16px rgba(255, 107, 107, 0.4);
   animation: pulse-vs 2s ease-in-out infinite;
   letter-spacing: 1px;
 
   @include mobile-up {
-    width: 50px;
-    height: 50px;
-    font-size: var(--font-size-md);
+    width: var(--space-xl);
+    height: var(--space-xl);
+    font-size: var(--font-size-xs);
   }
 }
 
@@ -693,20 +693,20 @@
 .deployment-signal {
   background: rgba(0, 0, 0, 0.3);
   border-radius: var(--border-radius);
-  padding: var(--space-lg);
-  margin-top: var(--space-2xl);
+  padding: var(--space-sm);
+  margin-top: var(--space-sm);
   text-align: left;
 
   h4 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-semibold);
-    margin: 0 0 var(--space-md) 0;
+    margin: 0 0 var(--space-sm) 0;
     color: white;
   }
 
   p {
-    font-size: var(--font-size-md);
-    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-normal);
     margin: 0;
     color: rgba(255, 255, 255, 0.9);
   }
@@ -715,9 +715,9 @@
 // Causal Chain Infographic - Bold, clean design
 .causal-chain-infographic {
   background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-  padding: var(--space-2xl) var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
   border-radius: var(--border-radius-lg);
-  margin: var(--space-xl) 0;
+  margin: var(--space-md) 0;
   border: 1px solid rgba(0, 0, 0, 0.05);
 
   // Break out of meeting container to span full width
@@ -735,20 +735,20 @@
 
 .infographic-header {
   text-align: center;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-md);
 
   h2 {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
-    margin: 0 0 var(--space-lg) 0;
+    margin: 0 0 var(--space-xs) 0;
   }
 
   .research-foundation {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-sm);
     color: var(--text-secondary);
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 
@@ -756,24 +756,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-lg);
-  margin: var(--space-2xl) 0;
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
   flex-wrap: wrap;
 
   @include mobile-up {
-    gap: var(--space-md);
+    gap: var(--space-sm);
     justify-content: center;
   }
 }
 
 .causal-step {
-  background: white;
+  background: var(--color-white);
   border-radius: var(--border-radius-lg);
-  padding: var(--space-xl);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: var(--space-md);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
-  min-width: 280px;
-  border-top: 4px solid;
+  min-width: var(--space-5xl);
+  border-top: 2px solid;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -813,29 +813,29 @@
 }
 
 .step-icon {
-  width: 80px;
-  height: 80px;
+  width: var(--space-3xl);
+  height: var(--space-3xl);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  color: white;
-  margin: 0 auto var(--space-lg);
+  font-size: 1.25rem;
+  color: var(--color-white);
+  margin: 0 auto var(--space-sm);
 }
 
 .step-content {
   h3 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
-    margin: 0 0 var(--space-sm) 0;
+    margin: 0 0 var(--space-xs) 0;
   }
 
   .step-chapter {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-xs);
     color: var(--text-secondary);
-    margin: 0 0 var(--space-lg) 0;
+    margin: 0 0 var(--space-sm) 0;
     font-style: italic;
   }
 }
@@ -908,50 +908,50 @@
 }
 
 .impact-stats {
-  background: white;
+  background: var(--color-white);
   border-radius: var(--border-radius-lg);
-  padding: var(--space-xl);
-  margin-top: var(--space-2xl);
+  padding: var(--space-lg);
+  margin-top: var(--space-lg);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #059669;
+  border-left: 3px solid #059669;
 
   h4 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
-    margin: 0 0 var(--space-lg) 0;
+    margin: 0 0 var(--space-md) 0;
     text-align: center;
   }
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-lg);
-  margin-bottom: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
 }
 
 .stat-item {
   text-align: center;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   background: var(--bg-light);
   border-radius: var(--border-radius);
 }
 
 .stat-number {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: var(--font-weight-bold);
   color: #059669;
   line-height: 1;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 
   @include mobile-up {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
 }
 
 .stat-label {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
   color: var(--text-secondary);
 }
