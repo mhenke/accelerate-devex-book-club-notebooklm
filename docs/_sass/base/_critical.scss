@@ -2609,11 +2609,8 @@ button:focus,
     }
   }
 
-  // Action Items Clean Design
-  .action-items-clean {
-    // Override section-card center alignment for action items content
-    text-align: left;
-
+  // Action Items Design
+  .action-items {
     .step-header {
       text-align: center;
       margin-bottom: var(--space-lg);
@@ -2652,12 +2649,10 @@ button:focus,
     }
 
     .action-item {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-lg);
       background: var(--color-white);
       border-radius: var(--radius-md);
       border: 1px solid var(--border-subtle);
+      padding: var(--space-md) var(--space-lg);
       transition: all var(--duration-fast) var(--ease-out);
       box-shadow: var(--shadow-subtle);
     }
@@ -2668,44 +2663,10 @@ button:focus,
       transform: translateY(-2px);
     }
 
-    .action-checkbox {
-      flex-shrink: 0;
-      margin-top: 1px; // Align with text baseline
-      width: 20px;
-      height: 20px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-
-      i {
-        color: var(--accent-teal);
-        font-size: 1.1em;
-        cursor: pointer;
-        transition: all var(--duration-fast) var(--ease-out);
-        line-height: 1;
-      }
-
-      i:hover {
-        color: var(--accent-coral);
-        transform: scale(1.1);
-      }
-    }
-
-    .action-content-item {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .action-title {
-      margin: 0 0 var(--space-xs) 0;
-      font-weight: var(--font-weight-semibold);
-      color: var(--text-primary);
-      font-size: var(--font-size-md);
-      line-height: 1.4;
-    }
 
     .action-deliverable {
       margin: 0;
+      margin-left: var(--space-xl); // Indent to align under title text
       font-size: var(--font-size-sm);
       color: var(--text-muted);
       display: flex;
