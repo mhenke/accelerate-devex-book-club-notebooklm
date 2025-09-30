@@ -273,6 +273,12 @@ document.addEventListener('keydown', function(event) {
         <p class="choice-consequence">High Risk</p>
       </div>
 
+      <div class="vs-separator">
+        <div class="vs-circle">
+          VS
+        </div>
+      </div>
+
       <div class="choice-option">
         <div class="choice-circle">
           <i class="fas fa-shield-alt"></i>
