@@ -490,120 +490,117 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card" markdown="0">
-  <div class="step-header">
+<div class="discussion-card" markdown="0">
+  <div class="discussion-header">
     <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
   </div>
-  <div class="discussion-content">
-    <div class="discussion-questions">
-      <div class="question-item static" role="group" aria-labelledby="q1">
-        <div class="question-row">
-          <div class="question-left">
-            <i class="fas fa-chart-bar" aria-hidden="true"></i>
-            <div id="q1" class="question-title">Current State Assessment</div>
-          </div>
-          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
-        </div>
-        <div class="question-content">
-          <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
-        </div>
-      </div>
 
-      <div class="question-item static" role="group" aria-labelledby="q2">
-        <div class="question-row">
-          <div class="question-left">
-            <i class="fas fa-balance-scale" aria-hidden="true"></i>
-            <div id="q2" class="question-title">Speed vs. Stability Myths</div>
-          </div>
-          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+  <div class="discussion-questions">
+    <div class="question-item" role="group" aria-labelledby="q1">
+      <div class="question-row">
+        <div class="question-left">
+          <i class="fas fa-chart-bar" aria-hidden="true"></i>
+          <div id="q1" class="question-title">Current State Assessment</div>
         </div>
-        <div class="question-content">
-          <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
-        </div>
+        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
       </div>
-
-      <div class="question-item static" role="group" aria-labelledby="q3">
-        <div class="question-row">
-          <div class="question-left">
-            <i class="fas fa-recycle" aria-hidden="true"></i>
-            <div id="q3" class="question-title">Building the Virtuous Cycle</div>
-          </div>
-          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
-        </div>
-        <div class="question-content">
-          <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
-        </div>
-      </div>
-
-      <div class="question-item static" role="group" aria-labelledby="q4">
-        <div class="question-row">
-          <div class="question-left">
-            <i class="fas fa-users" aria-hidden="true"></i>
-            <div id="q4" class="question-title">Culture Indicators</div>
-          </div>
-          <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
-        </div>
-        <div class="question-content">
-          <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
-        </div>
+      <div class="question-content">
+        <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
       </div>
     </div>
 
+    <div class="question-item" role="group" aria-labelledby="q2">
+      <div class="question-row">
+        <div class="question-left">
+          <i class="fas fa-balance-scale" aria-hidden="true"></i>
+          <div id="q2" class="question-title">Speed vs. Stability Myths</div>
+        </div>
+        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+      </div>
+      <div class="question-content">
+        <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
+      </div>
+    </div>
+
+    <div class="question-item" role="group" aria-labelledby="q3">
+      <div class="question-row">
+        <div class="question-left">
+          <i class="fas fa-recycle" aria-hidden="true"></i>
+          <div id="q3" class="question-title">Building the Virtuous Cycle</div>
+        </div>
+        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+      </div>
+      <div class="question-content">
+        <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
+      </div>
+    </div>
+
+    <div class="question-item" role="group" aria-labelledby="q4">
+      <div class="question-row">
+        <div class="question-left">
+          <i class="fas fa-users" aria-hidden="true"></i>
+          <div id="q4" class="question-title">Culture Indicators</div>
+        </div>
+        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+      </div>
+      <div class="question-content">
+        <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="section-card action-items-clean" markdown="0">
-  <div class="step-header">
+<div class="action-items-card" markdown="0">
+  <div class="action-header">
     <h2><i class="fas fa-tasks"></i> Action Items for Next Meeting</h2>
-    <p class="section-subtitle">Complete these tasks before Meeting 2 to maximize your learning</p>
+    <p class="subtitle">Complete these tasks before Meeting 2 to maximize your learning</p>
   </div>
-  <div class="action-content">
-    <div class="action-list">
-      <div class="action-item">
-        <div class="action-checkbox">
-          <i class="far fa-square"></i>
-        </div>
-        <div class="action-content-item">
-          <h4 class="action-title">Record lead time for most recent production deploy</h4>
-          <p class="action-deliverable">
-            <i class="fas fa-file-alt"></i>
-            Add commit timestamp and production-available timestamp to `DORA-tracking` sheet
-          </p>
-        </div>
-      </div>
 
-      <div class="action-item">
-        <div class="action-checkbox">
+  <div class="action-list">
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <div class="action-content-item">
-          <h4 class="action-title">Count deployments (last 14 days)</h4>
-          <p class="action-deliverable">
-            <i class="fas fa-file-alt"></i>
-            Add numeric count to `DORA-tracking` sheet
-          </p>
-        </div>
+        <span class="task-title">Record lead time for most recent production deploy</span>
       </div>
-
-      <div class="action-item">
-        <div class="action-checkbox">
-          <i class="far fa-square"></i>
-        </div>
-        <div class="action-content-item">
-          <h4 class="action-title">Write a one-line deployment pain summary</h4>
-          <p class="action-deliverable">
-            <i class="fas fa-file-alt"></i>
-            One-sentence (what, when, impact) pasted into meeting notes
-          </p>
-        </div>
+      <div class="task-details">
+        <i class="fas fa-file-alt"></i>
+        Add commit timestamp and production-available timestamp to a DORA metrics tracking sheet (spreadsheet or tool of your choice)
       </div>
     </div>
 
-    <div class="action-due-date">
-      <i class="fas fa-clock"></i>
-      <span><strong>Due:</strong> Before Meeting 2 (Week 3)</span>
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Count deployments (last 14 days)</span>
+      </div>
+      <div class="task-details">
+        <i class="fas fa-file-alt"></i>
+        Add numeric count to your DORA metrics tracking sheet
+      </div>
     </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Write a one-line deployment pain summary</span>
+      </div>
+      <div class="task-details">
+        <i class="fas fa-file-alt"></i>
+        One-sentence (what, when, impact) pasted into meeting notes
+      </div>
+    </div>
+  </div>
+
+  <div class="due-date">
+    <i class="fas fa-clock"></i>
+    <strong>Due: Before Meeting 2 (Week 3)</strong>
   </div>
 </div>
 
