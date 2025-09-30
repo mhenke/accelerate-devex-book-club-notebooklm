@@ -490,7 +490,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card discussion-questions" markdown="0">
+<div class="section-card action-items" markdown="0">
   <div class="discussion-header">
     <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
   </div>
