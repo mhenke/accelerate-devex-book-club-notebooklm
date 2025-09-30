@@ -397,52 +397,48 @@ document.addEventListener('keydown', function(event) {
     </div>
 
     <div class="sketch-diagram">
-      <!-- Left Side: Deployment Experience -->
-      <div class="experience-side">
-        <h3 class="sketch-title">Your Deployment Experience</h3>
-
+      <!-- Row 1: High Anxiety → Pathological -->
+      <div class="assessment-row">
         <div class="experience-item anxiety">
           <div class="emoji-face sad">😰</div>
           <div class="experience-text">
             <strong>High Anxiety</strong>
             <span class="experience-detail">"stressful events"</span>
           </div>
-          <div class="sketch-arrow">→</div>
         </div>
+        <div class="connection-arrow">→</div>
+        <div class="culture-bubble pathological">
+          Pathological/Bureaucratic Culture
+        </div>
+      </div>
 
+      <!-- Row 2: Moderate Concern → Transitioning -->
+      <div class="assessment-row">
         <div class="experience-item concern">
           <div class="emoji-face neutral">😐</div>
           <div class="experience-text">
             <strong>Moderate Concern</strong>
             <span class="experience-detail">"some worry, manageable"</span>
           </div>
-          <div class="sketch-arrow">→</div>
         </div>
+        <div class="connection-arrow">→</div>
+        <div class="culture-bubble transitioning">
+          Transitioning Culture
+        </div>
+      </div>
 
+      <!-- Row 3: Confident → Generative -->
+      <div class="assessment-row">
         <div class="experience-item confident">
           <div class="emoji-face happy">😌</div>
           <div class="experience-text">
             <strong>Confident</strong>
             <span class="experience-detail">"routine, no stress"</span>
           </div>
-          <div class="sketch-arrow">→</div>
         </div>
-      </div>
-
-      <!-- Right Side: Culture Types -->
-      <div class="culture-side">
-        <div class="culture-flow">
-          <div class="culture-bubble pathological">
-            Pathological/ Bureaucratic Culture
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="culture-bubble transitioning">
-            Transitioning Culture
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="culture-bubble generative">
-            Generative Culture
-          </div>
+        <div class="connection-arrow">→</div>
+        <div class="culture-bubble generative">
+          Generative Culture
         </div>
       </div>
     </div>
