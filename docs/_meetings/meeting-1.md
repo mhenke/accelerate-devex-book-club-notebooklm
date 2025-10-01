@@ -191,9 +191,6 @@ document.addEventListener('keydown', function(event) {
       <div class="media-section video-section">
         <h3><i class="fas fa-video"></i> Video</h3>
         <div class="video-card">
-          <h4>Meeting 1: Foundation</h4>
-          <p class="media-subtitle">The Myth and the Measurement</p>
-          <p class="media-description">Foundation concepts: Why software delivery matters, DORA metrics explained, and culture as the key enabler.</p>
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
