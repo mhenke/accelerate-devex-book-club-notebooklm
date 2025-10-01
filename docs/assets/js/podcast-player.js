@@ -163,11 +163,13 @@
       // Mark current episode as playing
       if (currentItem) {
         currentItem.classList.add('is-playing');
+        console.log('Play event - Classes:', currentItem.className);
       } else {
         // User played from audio controls - activate first episode
         currentItem = podcastItems[0];
         currentItem.classList.add('is-current');
         currentItem.classList.add('is-playing');
+        console.log('Play event (from controls) - Classes:', currentItem.className);
         updateNowPlayingDisplay();
       }
     });
