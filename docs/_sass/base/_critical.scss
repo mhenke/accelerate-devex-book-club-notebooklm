@@ -313,8 +313,7 @@ a {
   align-items: center;
   gap: var(--space-xl);
   max-width: none;
-  margin-left: 0;
-  margin-right: 0;
+  padding: var(--space-lg);
   position: relative;
   overflow: hidden;
 
@@ -1420,27 +1419,26 @@ a {
   // Create a header section with icon and title side by side
   .card-header {
     display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    margin-bottom: var(
-      --space-sm
-    ); // Reduced margin for more compact appearance
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
   }
 
   .highlight-icon {
     @include flex-center;
 
-    width: 48px; // Even smaller for inline use
-    height: 48px; // Even smaller for inline use
-    border-radius: var(--radius-lg);
-    font-size: var(--font-size-lg); // Smaller icon font
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-md);
     position: relative;
     z-index: 1;
     border: 2px solid rgba(16, 185, 129, 0.3);
     background: rgba(16, 185, 129, 0.1);
     backdrop-filter: var(--backdrop-blur-lg);
     transition: all 0.3s ease;
-    flex-shrink: 0; // Prevent icon from shrinking
+    flex-shrink: 0;
+    margin-top: 2px;
   }
 
   h3 {
