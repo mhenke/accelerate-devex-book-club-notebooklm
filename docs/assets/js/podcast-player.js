@@ -92,12 +92,16 @@
     sharedPlayer.addEventListener('play', function () {
       if (currentItem) {
         activateItem(currentItem);
+        // Show equalizer (remove paused state)
         currentItem.classList.remove('paused');
       }
     });
 
     sharedPlayer.addEventListener('pause', function () {
-      // Visual state managed by handlePlayPause
+      if (currentItem) {
+        // Show pause button (add paused state)
+        currentItem.classList.add('paused');
+      }
     });
 
     sharedPlayer.addEventListener('ended', function () {
