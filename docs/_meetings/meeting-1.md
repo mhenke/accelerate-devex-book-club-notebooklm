@@ -389,7 +389,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ASSESSMENT SKETCH DIAGRAM -->
-<div class="assessment-sketch" markdown="0">
+<div class="section-card" markdown="0">
   <div class="sketch-container">
     <div class="sketch-header">
       <h2>Assessment: Reading Signals</h2>

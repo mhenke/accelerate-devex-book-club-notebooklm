@@ -1071,191 +1071,180 @@
   line-height: var(--line-height-relaxed);
 }
 
-// ASSESSMENT SECTION - Consistent with other card sections
-.assessment-sketch {
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-  border-radius: var(--border-radius-lg);
-  padding: var(--space-md) var(--space-lg);
-  margin: var(--space-md) 0;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  position: relative;
+// ASSESSMENT SECTION - Sketch container and child elements
+.sketch-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  // Break out of meeting container to span full width
-  .meeting-container & {
-    margin-left: calc(-1 * var(--space-md));
-    margin-right: calc(-1 * var(--space-md));
-    width: calc(100% + 2 * var(--space-md));
+.sketch-header {
+  text-align: center;
+  margin-bottom: var(--space-md);
+
+  h2 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-dark);
+    margin: 0 0 var(--space-xs) 0;
   }
 
-  .sketch-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  .sketch-intro {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.2;
+  }
+}
+
+.sketch-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: var(--space-sm) 0;
+}
+
+.assessment-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  justify-content: space-between;
+  margin-bottom: var(--space-xs);
+
+  @include mobile-up {
+    gap: var(--space-xs);
+  }
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: var(--space-5xl);
+  max-width: var(--space-6xl);
+  min-height: 60px;
+}
+
+.icon-face {
+  width: var(--space-xl);
+  height: var(--space-xl);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  i {
+    font-size: 1rem;
   }
 
-  .sketch-header {
-    text-align: center;
-    margin-bottom: var(--space-md);
-
-    h2 {
-      font-size: var(--font-size-lg);
-      font-weight: var(--font-weight-bold);
-      color: var(--text-dark);
-      margin: 0 0 var(--space-xs) 0;
-    }
-
-    .sketch-intro {
-      font-size: var(--font-size-sm);
-      color: var(--text-secondary);
-      margin: 0;
-      line-height: 1.2;
-    }
+  &.anxiety {
+    background: #fed7d7;
+    color: #e53e3e;
   }
 
-  .sketch-diagram {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-    margin: var(--space-sm) 0;
+  &.concern {
+    background: #feebc8;
+    color: #dd6b20;
   }
 
-  .assessment-row {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    justify-content: space-between;
+  &.confident {
+    background: #c6f6d5;
+    color: #38a169;
+  }
+}
+
+.experience-text {
+  flex: 1;
+
+  strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
     margin-bottom: var(--space-xs);
-
-    @include mobile-up {
-      gap: var(--space-xs);
-    }
   }
 
-  .experience-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    padding: var(--space-xs) var(--space-sm);
+  .experience-detail {
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+  }
+}
+
+.connection-arrow {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: bold;
+  flex-shrink: 0;
+  margin: 0 var(--space-xs);
+}
+
+.culture-bubble {
+  background: var(--color-white);
+  border: 2px solid var(--text-secondary);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm);
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xs);
+  min-width: var(--space-4xl);
+  max-width: var(--space-5xl);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.pathological {
+    background: #fed7d7;
+    border-color: #e53e3e;
+    color: #c53030;
+  }
+
+  &.transitioning {
+    background: #feebc8;
+    border-color: #dd6b20;
+    color: #c05621;
+  }
+
+  &.generative {
+    background: #c6f6d5;
+    border-color: #38a169;
+    color: #2f855a;
+  }
+}
+
+.sketch-message {
+  margin-top: var(--space-md);
+  text-align: center;
+
+  .hope-bubble {
     background: var(--color-white);
+    border: 2px solid #38b2ac;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: var(--space-sm);
+    display: inline-block;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    flex: 1;
-    min-width: var(--space-5xl);
-    max-width: var(--space-6xl);
-  }
-
-  .icon-face {
-    width: var(--space-xl);
-    height: var(--space-xl);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-
-    i {
-      font-size: 1rem;
-    }
-
-    &.anxiety {
-      background: #fed7d7;
-      color: #e53e3e;
-    }
-
-    &.concern {
-      background: #feebc8;
-      color: #dd6b20;
-    }
-
-    &.confident {
-      background: #c6f6d5;
-      color: #38a169;
-    }
-  }
-
-  .experience-text {
-    flex: 1;
 
     strong {
-      display: block;
-      color: var(--text-dark);
-      font-size: var(--font-size-sm);
+      color: #2c7a7b;
+      font-size: var(--font-size-md);
       font-weight: var(--font-weight-semibold);
+      display: block;
       margin-bottom: var(--space-xs);
     }
 
-    .experience-detail {
+    .meetings-note {
       font-style: italic;
       color: var(--text-secondary);
-      font-size: var(--font-size-xs);
-    }
-  }
-
-  .connection-arrow {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    font-weight: bold;
-    flex-shrink: 0;
-    margin: 0 var(--space-xs);
-  }
-
-  .culture-bubble {
-    background: var(--color-white);
-    border: 2px solid var(--text-secondary);
-    border-radius: var(--border-radius);
-    padding: var(--space-xs) var(--space-sm);
-    text-align: center;
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-xs);
-    min-width: var(--space-4xl);
-    max-width: var(--space-5xl);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    flex: 1;
-
-    &.pathological {
-      background: #fed7d7;
-      border-color: #e53e3e;
-      color: #c53030;
-    }
-
-    &.transitioning {
-      background: #feebc8;
-      border-color: #dd6b20;
-      color: #c05621;
-    }
-
-    &.generative {
-      background: #c6f6d5;
-      border-color: #38a169;
-      color: #2f855a;
-    }
-  }
-
-  .sketch-message {
-    margin-top: var(--space-md);
-    text-align: center;
-
-    .hope-bubble {
-      background: var(--color-white);
-      border: 2px solid #38b2ac;
-      border-radius: var(--border-radius);
-      padding: var(--space-sm);
-      display: inline-block;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
-      strong {
-        color: #2c7a7b;
-        font-size: var(--font-size-md);
-        font-weight: var(--font-weight-semibold);
-        display: block;
-        margin-bottom: var(--space-xs);
-      }
-
-      .meetings-note {
-        font-style: italic;
-        color: var(--text-secondary);
-        font-size: var(--font-size-sm);
-      }
+      font-size: var(--font-size-sm);
     }
   }
 }
@@ -1263,37 +1252,35 @@
 
 // Responsive design for assessment section
 @media (max-width: #{$tablet - 1px}) {
-  .assessment-sketch {
-    .assessment-row {
-      gap: var(--space-xs);
-    }
+  .assessment-row {
+    gap: var(--space-xs);
+  }
 
-    .experience-item {
-      min-width: var(--space-4xl);
-      max-width: var(--space-5xl);
-    }
+  .experience-item {
+    min-width: var(--space-4xl);
+    max-width: var(--space-5xl);
+  }
 
-    .culture-bubble {
-      min-width: var(--space-3xl);
-      max-width: var(--space-4xl);
-    }
+  .culture-bubble {
+    min-width: var(--space-3xl);
+    max-width: var(--space-4xl);
+  }
 
-    .connection-arrow {
+  .connection-arrow {
+    font-size: var(--font-size-sm);
+    margin: 0 var(--space-xs);
+  }
+
+  .experience-text strong {
+    font-size: var(--font-size-xs);
+  }
+
+  .icon-face {
+    width: var(--space-lg);
+    height: var(--space-lg);
+
+    i {
       font-size: var(--font-size-sm);
-      margin: 0 var(--space-xs);
-    }
-
-    .experience-text strong {
-      font-size: var(--font-size-xs);
-    }
-
-    .icon-face {
-      width: var(--space-lg);
-      height: var(--space-lg);
-
-      i {
-        font-size: var(--font-size-sm);
-      }
     }
   }
 }
