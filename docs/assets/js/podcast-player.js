@@ -1,134 +1,164 @@
 /**
- * Material Design 3 Podcast Playlist Component
- * Manages play/pause state and animated equalizer indicators
+ * Material Design 3 Compact Podcast Playlist with Shared Player
+ * Manages shared audio player and playlist item interactions
  *
- * USAGE:
- *
- * 1. Create podcast data in _data/meetingX_podcasts.yml:
- *    - id: brief
- *      title: "Episode Title"
- *      subtitle: "Episode Description"
- *      type: brief|deep-dive|critique
- *      duration: "15:30"
- *      audio_url: "https://..."
- *
- * 2. Include the component in your meeting page:
- *    {% include podcast-playlist.html episodes=site.data.meeting1_podcasts %}
- *
- * 3. Add script at bottom of page:
- *    <script src="{{ '/assets/js/podcast-player.js' | relative_url }}"></script>
- *
- * That's it! The component is fully self-contained and reusable.
+ * Features:
+ * - Single shared player for all episodes
+ * - Click-to-play list items
+ * - Visual playing state with animated equalizer
+ * - Keyboard navigation support
+ * - Auto-advance to next episode (optional)
  */
 
 (function () {
   'use strict';
 
-  /**
-   * Initialize podcast player functionality
-   */
-  function initPodcastPlayer() {
-    const podcastItems = document.querySelectorAll('.podcast-item');
+  let currentItem = null;
 
-    if (!podcastItems.length) {
-      return; // No podcast items on this page
+  /**
+   * Initialize compact podcast playlist functionality
+   */
+  function initPodcastPlaylist() {
+    const sharedPlayer = document.getElementById('shared-player');
+    const sharedPlayerSource = document.getElementById('shared-player-source');
+    const currentTrackTitle = document.getElementById('current-track-title');
+    const nowPlayingLabel = document.getElementById('now-playing-label');
+    const podcastItems = document.querySelectorAll('.podcast-item[data-src]');
+
+    if (!sharedPlayer || !podcastItems.length) {
+      return; // No playlist on this page
     }
 
+    // Initialize playing indicator visibility
+    const nowPlayingIndicator = nowPlayingLabel?.querySelector('.playing-indicator');
+    if (nowPlayingIndicator) {
+      nowPlayingIndicator.style.display = 'none';
+    }
+
+    // Add click handlers to playlist items
     podcastItems.forEach((item) => {
-      const audio = item.querySelector('audio');
-      if (!audio) {
-        return;
-      }
+      const src = item.getAttribute('data-src');
+      const title = item.getAttribute('data-title');
 
-      // Play event - activate this item, deactivate others
-      audio.addEventListener('play', function () {
-        activatePodcastItem(item);
+      // Click handler - load and play
+      item.addEventListener('click', function () {
+        loadTrack(src, title, item);
+        sharedPlayer.play();
       });
 
-      // Pause event - optionally deactivate
-      audio.addEventListener('pause', function () {
-        // Keep visual state on pause (user can resume)
-        // Only deactivate when ended or another podcast starts
-      });
-
-      // Ended event - deactivate when finished
-      audio.addEventListener('ended', function () {
-        deactivatePodcastItem(item);
-      });
-
-      // Keyboard navigation - click item to play/pause
-      item.addEventListener('click', function (e) {
-        // Don't trigger if clicking directly on audio controls
-        if (e.target.tagName === 'AUDIO' || e.target.closest('audio')) {
-          return;
-        }
-
-        if (audio.paused) {
-          audio.play();
-        } else {
-          audio.pause();
-        }
-      });
-
-      // Keyboard support - Enter/Space to play/pause
+      // Keyboard support - Enter/Space to play
       item.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          if (audio.paused) {
-            audio.play();
-          } else {
-            audio.pause();
-          }
+          loadTrack(src, title, item);
+          sharedPlayer.play();
         }
       });
     });
-  }
 
-  /**
-   * Activate a podcast item (show as playing)
-   * @param {HTMLElement} activeItem - The podcast item to activate
-   */
-  function activatePodcastItem(activeItem) {
-    // Deactivate all other items first
-    document.querySelectorAll('.podcast-item').forEach((item) => {
-      if (item !== activeItem) {
-        deactivatePodcastItem(item);
-        // Pause other audio players
-        const otherAudio = item.querySelector('audio');
-        if (otherAudio && !otherAudio.paused) {
-          otherAudio.pause();
-        }
+    // Shared player event listeners
+    sharedPlayer.addEventListener('play', function () {
+      if (currentItem) {
+        activateItem(currentItem);
+      }
+      // Show now-playing indicator
+      if (nowPlayingIndicator) {
+        nowPlayingIndicator.style.display = 'flex';
       }
     });
 
-    // Activate this item
-    activeItem.classList.add('playing');
-    activeItem.setAttribute('aria-current', 'true');
+    sharedPlayer.addEventListener('pause', function () {
+      // Keep visual state (user can resume)
+    });
 
-    const playingIndicator = activeItem.querySelector('.playing-indicator');
-    if (playingIndicator) {
-      playingIndicator.hidden = false;
+    sharedPlayer.addEventListener('ended', function () {
+      // Deactivate current item
+      if (currentItem) {
+        deactivateItem(currentItem);
+      }
+      // Hide now-playing indicator
+      if (nowPlayingIndicator) {
+        nowPlayingIndicator.style.display = 'none';
+      }
+
+      // Optional: Auto-play next episode
+      // autoPlayNext(podcastItems);
+    });
+
+    /**
+     * Load a track into the shared player
+     */
+    function loadTrack(src, title, item) {
+      // Update player source
+      sharedPlayerSource.src = src;
+      sharedPlayer.load();
+
+      // Update now-playing label
+      if (currentTrackTitle) {
+        currentTrackTitle.textContent = title;
+      }
+
+      // Deactivate previous item
+      if (currentItem && currentItem !== item) {
+        deactivateItem(currentItem);
+      }
+
+      // Set new current item
+      currentItem = item;
     }
-  }
 
-  /**
-   * Deactivate a podcast item (remove playing state)
-   * @param {HTMLElement} item - The podcast item to deactivate
-   */
-  function deactivatePodcastItem(item) {
-    item.classList.remove('playing');
-    item.setAttribute('aria-current', 'false');
+    /**
+     * Activate a playlist item (show as playing)
+     */
+    function activateItem(item) {
+      item.classList.add('playing');
+      item.setAttribute('aria-current', 'true');
 
-    const playingIndicator = item.querySelector('.playing-indicator');
-    if (playingIndicator) {
-      playingIndicator.hidden = true;
+      const playingIndicator = item.querySelector('.playing-indicator');
+      if (playingIndicator) {
+        playingIndicator.hidden = false;
+      }
+    }
+
+    /**
+     * Deactivate a playlist item
+     */
+    function deactivateItem(item) {
+      item.classList.remove('playing');
+      item.setAttribute('aria-current', 'false');
+
+      const playingIndicator = item.querySelector('.playing-indicator');
+      if (playingIndicator) {
+        playingIndicator.hidden = true;
+      }
+    }
+
+    /**
+     * Auto-play next episode in playlist (optional feature)
+     */
+    function autoPlayNext(items) {
+      if (!currentItem) {
+        return;
+      }
+
+      const currentIndex = Array.from(items).indexOf(currentItem);
+      const nextIndex = currentIndex + 1;
+
+      if (nextIndex < items.length) {
+        const nextItem = items[nextIndex];
+        const src = nextItem.getAttribute('data-src');
+        const title = nextItem.getAttribute('data-title');
+
+        loadTrack(src, title, nextItem);
+        sharedPlayer.play();
+      }
     }
   }
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initPodcastPlayer);
+    document.addEventListener('DOMContentLoaded', initPodcastPlaylist);
   } else {
-    initPodcastPlayer();
+    initPodcastPlaylist();
   }
 })();
