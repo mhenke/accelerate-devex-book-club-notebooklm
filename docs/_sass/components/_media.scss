@@ -258,15 +258,12 @@
     outline: 2px solid var(--theme-primary);
     outline-offset: 2px;
   }
+}
 
-  // Show pause icon when this episode is playing
-  .podcast-item.is-current.is-playing & i.fa-play {
-    margin-left: 0 !important; // Reset optical centering for pause
-  }
-
-  .podcast-item.is-current.is-playing & i.fa-play::before {
-    content: "\f04c" !important; // Font Awesome pause icon (fa-pause)
-  }
+// Show pause icon when track is playing (higher specificity)
+.podcast-item.is-playing .play-btn i.fas.fa-play::before {
+  content: "\f04c" !important; // Font Awesome pause icon
+  margin-left: 0 !important; // Reset optical centering
 }
 
 // Equalizer animation keyframes
@@ -382,8 +379,8 @@
   background: var(--theme-primary);
   padding: 6px;
 
-  // Show when this episode is playing
-  .podcast-item.is-current.is-playing & {
+  // Show when this track is playing
+  .podcast-item.is-playing & {
     display: flex;
   }
 
