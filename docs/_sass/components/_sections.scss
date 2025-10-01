@@ -59,47 +59,26 @@
       margin-bottom: var(--space-sm);
     }
 
-    .question-row {
-      justify-content: space-between;
-    }
-
-    .question-left {
-      display: flex;
-      align-items: center;
-      gap: var(--space-sm);
-    }
-
     .task-checkbox {
       flex-shrink: 0;
       width: 18px;
       height: 18px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       i {
         color: var(--accent-teal);
         font-size: 1em;
         transition: all var(--duration-fast) var(--ease-out);
+        line-height: 1;
 
         &:hover {
           color: var(--accent-coral);
           transform: scale(1.1);
         }
       }
-    }
-
-    .task-title,
-    .question-title {
-      flex: 1;
-      font-weight: var(--font-weight-semibold);
-      color: var(--text-dark);
-      font-size: var(--font-size-md);
-      line-height: var(--line-height-normal);
-      margin: 0;
-    }
-
-    .question-meta {
-      color: var(--accent-sage);
-      font-size: var(--font-size-sm);
     }
 
     .task-details,
@@ -855,7 +834,7 @@
 
   .research-foundation {
     font-size: var(--font-size-sm);
-    color: var(--text-secondary);
+    color: var(--text-medium);
     margin: 0;
     line-height: 1.2;
   }
@@ -942,7 +921,7 @@
 
   .step-chapter {
     font-size: var(--font-size-xs);
-    color: var(--text-secondary);
+    color: var(--text-medium);
     margin: 0 0 var(--space-sm) 0;
     font-style: italic;
   }
@@ -988,7 +967,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--space-sm);
-  color: var(--text-secondary);
+  color: var(--text-medium);
   flex-shrink: 0;
 
   i {
@@ -1060,12 +1039,12 @@
 .stat-label {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
-  color: var(--text-secondary);
+  color: var(--text-medium);
 }
 
 .stats-conclusion {
   font-size: var(--font-size-md);
-  color: var(--text-secondary);
+  color: var(--text-medium);
   text-align: center;
   margin: 0;
   line-height: var(--line-height-relaxed);
@@ -1090,7 +1069,7 @@
 
   .sketch-intro {
     font-size: var(--font-size-sm);
-    color: var(--text-secondary);
+    color: var(--text-medium);
     margin: 0;
     line-height: 1.2;
   }
@@ -1172,14 +1151,14 @@
 
   .experience-detail {
     font-style: italic;
-    color: var(--text-secondary);
+    color: var(--text-medium);
     font-size: var(--font-size-xs);
   }
 }
 
 .connection-arrow {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: var(--text-medium);
   font-weight: bold;
   flex-shrink: 0;
   margin: 0 var(--space-xs);
@@ -1187,7 +1166,7 @@
 
 .culture-bubble {
   background: var(--color-white);
-  border: 2px solid var(--text-secondary);
+  border: 2px solid var(--text-medium);
   border-radius: var(--border-radius);
   padding: var(--space-sm);
   text-align: center;
@@ -1243,12 +1222,11 @@
 
     .meetings-note {
       font-style: italic;
-      color: var(--text-secondary);
+      color: var(--text-medium);
       font-size: var(--font-size-sm);
     }
   }
 }
-
 
 // Responsive design for assessment section
 @media (max-width: #{$tablet - 1px}) {

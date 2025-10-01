@@ -557,11 +557,7 @@ document.addEventListener('keydown', function(event) {
   <div class="discussion-questions-list">
     <div class="question-item" role="group" aria-labelledby="q1">
       <div class="question-row">
-        <div class="question-left">
-          <i class="fas fa-chart-bar" aria-hidden="true"></i>
-          <div id="q1" class="question-title">Current State Assessment</div>
-        </div>
-        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        <div id="q1" class="question-title">Current State Assessment</div>
       </div>
       <div class="question-content">
         <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
@@ -570,11 +566,7 @@ document.addEventListener('keydown', function(event) {
 
     <div class="question-item" role="group" aria-labelledby="q2">
       <div class="question-row">
-        <div class="question-left">
-          <i class="fas fa-balance-scale" aria-hidden="true"></i>
-          <div id="q2" class="question-title">Speed vs. Stability Myths</div>
-        </div>
-        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        <div id="q2" class="question-title">Speed vs. Stability Myths</div>
       </div>
       <div class="question-content">
         <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
@@ -583,11 +575,7 @@ document.addEventListener('keydown', function(event) {
 
     <div class="question-item" role="group" aria-labelledby="q3">
       <div class="question-row">
-        <div class="question-left">
-          <i class="fas fa-recycle" aria-hidden="true"></i>
-          <div id="q3" class="question-title">Building the Virtuous Cycle</div>
-        </div>
-        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        <div id="q3" class="question-title">Building the Virtuous Cycle</div>
       </div>
       <div class="question-content">
         <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
@@ -596,11 +584,7 @@ document.addEventListener('keydown', function(event) {
 
     <div class="question-item" role="group" aria-labelledby="q4">
       <div class="question-row">
-        <div class="question-left">
-          <i class="fas fa-users" aria-hidden="true"></i>
-          <div id="q4" class="question-title">Culture Indicators</div>
-        </div>
-        <div class="question-meta"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+        <div id="q4" class="question-title">Culture Indicators</div>
       </div>
       <div class="question-content">
         <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
