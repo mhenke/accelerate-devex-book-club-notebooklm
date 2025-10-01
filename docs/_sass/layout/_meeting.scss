@@ -210,10 +210,17 @@
   }
 
   h3 {
-    color: var(--text-dark);
+    color: var(--theme-primary);
     font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-medium);
     margin: var(--space-lg) 0 var(--space-sm) 0;
+  }
+
+  h4 {
+    color: var(--theme-primary);
+    font-size: var(--font-size-title-large);
+    font-weight: var(--font-weight-medium);
+    margin: var(--space-md) 0 var(--space-sm) 0;
   }
 
   p {
