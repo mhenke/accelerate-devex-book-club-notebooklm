@@ -213,38 +213,99 @@ document.addEventListener('keydown', function(event) {
       <!-- Podcast Section -->
       <div class="media-section podcast-section">
         <h3><i class="fas fa-podcast"></i> Podcasts</h3>
-        <div class="podcast-playlist">
+        <div class="podcast-playlist" role="list">
+
           <!-- Brief Podcast -->
-          <div class="podcast-item">
-            <h4>Accelerate Metrics Unlocked <span class="podcast-type brief">Brief</span></h4>
-            <p class="podcast-subtitle">How Speed and Stability Drive 2x Business Performance</p>
+          <div class="podcast-item" role="listitem" data-episode-id="brief" tabindex="0">
+            <div class="podcast-start">
+              <div class="playing-indicator" hidden>
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <i class="fas fa-podcast podcast-icon"></i>
+            </div>
+
+            <div class="podcast-content">
+              <h4 class="podcast-headline">
+                Accelerate Metrics Unlocked
+                <span class="podcast-type brief">Brief</span>
+              </h4>
+              <p class="podcast-subtitle">How Speed and Stability Drive 2x Business Performance</p>
+              <div class="podcast-metadata">
+                <span class="duration">15:30</span>
+              </div>
+            </div>
+
             <div class="podcast-controls">
-              <audio controls width="100%">
-             <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" type="audio/mp4">
+              <audio controls data-episode="brief">
+                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
             </div>
           </div>
 
           <!-- Deep Dive Podcast -->
-          <div class="podcast-item">
-            <h4>Accelerate Success <span class="podcast-type deep-dive">Deep Dive</span></h4>
-            <p class="podcast-subtitle">The Data-Driven Proof That Destroys the CAB Model</p>
+          <div class="podcast-item" role="listitem" data-episode-id="deep-dive" tabindex="-1">
+            <div class="podcast-start">
+              <div class="playing-indicator" hidden>
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <i class="fas fa-podcast podcast-icon"></i>
+            </div>
+
+            <div class="podcast-content">
+              <h4 class="podcast-headline">
+                Accelerate Success
+                <span class="podcast-type deep-dive">Deep Dive</span>
+              </h4>
+              <p class="podcast-subtitle">The Data-Driven Proof That Destroys the CAB Model</p>
+              <div class="podcast-metadata">
+                <span class="duration">28:45</span>
+              </div>
+            </div>
+
             <div class="podcast-controls">
-              <audio controls width="100%">
-             <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" type="audio/mp4">
+              <audio controls data-episode="deep-dive">
+                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
             </div>
           </div>
 
           <!-- Critique Podcast -->
-          <div class="podcast-item">
-            <h4>Accelerate Your DevEx <span class="podcast-type critique">Critique</span></h4>
-            <p class="podcast-subtitle">Why Culture Must Precede Metrics and Why Traditional DevOps Gets It Wrong</p>
+          <div class="podcast-item" role="listitem" data-episode-id="critique" tabindex="-1">
+            <div class="podcast-start">
+              <div class="playing-indicator" hidden>
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <i class="fas fa-podcast podcast-icon"></i>
+            </div>
+
+            <div class="podcast-content">
+              <h4 class="podcast-headline">
+                Accelerate Your DevEx
+                <span class="podcast-type critique">Critique</span>
+              </h4>
+              <p class="podcast-subtitle">Why Culture Must Precede Metrics and Why Traditional DevOps Gets It Wrong</p>
+              <div class="podcast-metadata">
+                <span class="duration">22:15</span>
+              </div>
+            </div>
+
             <div class="podcast-controls">
-              <audio controls width="100%">
-             <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" type="audio/mp4">
+              <audio controls data-episode="critique">
+                <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" type="audio/mp4">
                 Your browser does not support the audio tag.
               </audio>
             </div>
@@ -685,3 +746,5 @@ document.addEventListener('keydown', function(event) {
     <p class="welcome-cta-subtitle">Chapters 4-6 • Continuous Delivery • Architecture & Testing</p>
   </div>
 </div>
+
+<script src="{{ '/assets/js/podcast-player.js' | relative_url }}"></script>
