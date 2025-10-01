@@ -200,7 +200,7 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Alternative Video -->
           <div class="alternative-video">
-            <h5><i class="fas fa-link"></i> Alternative Video</h5>
+            <h3><i class="fas fa-link"></i> Alternative Video</h3>
             <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a></p>
             <p class="alt-video-desc">Alternative foundational overview with expert discussion on core concepts.</p>
           </div>

@@ -183,6 +183,8 @@
 /* Meeting Content Container */
 .meeting-container {
   margin: 0 auto;
+  // Prevent layout shift with explicit containment
+  contain: layout style;
 }
 
 .meeting-content {
