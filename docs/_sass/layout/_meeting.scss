@@ -277,7 +277,7 @@
     var(--card-dark) 100%
   );
   color: var(--text-light);
-  padding: var(--space-2xl) var(--space-md);
+  padding: var(--space-md);
   position: relative;
   overflow: hidden;
 
@@ -288,8 +288,6 @@
   .footer-sections {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-2xl);
-    margin-bottom: var(--space-xl);
 
     .footer-section {
       h4 {
@@ -345,7 +343,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: var(--space-lg);
     border-top: var(--border-light);
 
     .footer-attribution p {

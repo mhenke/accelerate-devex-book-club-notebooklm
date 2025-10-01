@@ -101,7 +101,7 @@ body {
   }
 
   @media (max-width: #{$mobile - 1px}) {
-    padding: var(--space-2xl) var(--space-md);
+    padding: var(--space-lg) var(--space-md);
 
     h1 {
       font-size: var(--font-size-display-medium);
