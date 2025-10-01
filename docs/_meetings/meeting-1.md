@@ -743,11 +743,8 @@ function hideMetricsDetails() {
     </div>
 
     <!-- Bottom Message -->
-    <div class="sketch-message">
-      <div class="hope-bubble">
-        <strong>Remember: Culture CAN change through better practices!</strong>
-        <span class="meetings-note">(meetings 2-4)</span>
-      </div>
+    <div class="metric-warning">
+      <i class="fas fa-lightbulb"></i> <strong>Remember:</strong> Culture CAN change through better practices! <span class="meetings-note">(meetings 2-4)</span>
     </div>
 
   </div>
@@ -887,21 +884,81 @@ function hideMetricsDetails() {
 
     <!-- Impact Stats Callout -->
     <div class="impact-stats">
-      <h4>Why This Matters</h4>
+      <h4>Research Impact</h4>
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-label">Deployment pain reflects culture</div>
+          <div class="stat-number">2.6x</div>
+          <div class="stat-label">More Likely to Exceed Goals</div>
         </div>
         <div class="stat-item">
-          <div class="stat-label">High performers achieve speed AND stability</div>
+          <div class="stat-number">2x</div>
+          <div class="stat-label">Exceed Profitability Targets</div>
         </div>
         <div class="stat-item">
-          <div class="stat-label">Software delivery drives business success</div>
+          <div class="stat-number">46x</div>
+          <div class="stat-label">More Frequent Deployments</div>
         </div>
       </div>
-      <p class="stats-conclusion"><strong>The Hope:</strong> Meetings 2-4 will cover the specific technical practices that improve culture and performance.</p>
+      <p class="stats-conclusion">High performers achieve these results because their culture enables better technical practices.</p>
     </div>
 
+  </div>
+</div>
+
+<!-- THE ALTERNATIVE: METRICS AS MIRRORS -->
+<div class="section-card" markdown="0">
+  <div class="alternative-section">
+    <div class="alternative-header">
+      <h2><i class="fas fa-check-circle"></i> The Alternative: Metrics as Mirrors</h2>
+      <p class="alternative-intro">Instead of surveillance, policing, and judgment:</p>
+    </div>
+
+    <div class="alternative-grid">
+      <div class="alternative-item">
+        <i class="fas fa-search"></i>
+        <div class="alternative-content">
+          <strong>Reflection</strong>
+          <span>Use metrics to understand current state and identify improvement opportunities</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-users"></i>
+        <div class="alternative-content">
+          <strong>Collaboration</strong>
+          <span>Discuss metrics as a team, not as individual grades</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-lightbulb"></i>
+        <div class="alternative-content">
+          <strong>Learning</strong>
+          <span>Treat trends as experiments - what happened when we changed X?</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-cog"></i>
+        <div class="alternative-content">
+          <strong>System Thinking</strong>
+          <span>Focus on flow through the entire value stream</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-comments"></i>
+        <div class="alternative-content">
+          <strong>Context</strong>
+          <span>Adapt metrics and targets to each team's unique situation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="alternative-reminder">
+      <i class="fas fa-quote-left"></i>
+      <p><strong>Remember:</strong> Metrics are tools for improvement, not weapons for judgment. In a generative culture with psychological safety, teams use metrics to accelerate learning and delivery.</p>
+    </div>
   </div>
 </div>
 

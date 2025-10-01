@@ -673,6 +673,126 @@
 }
 
 // =============================================================================
+// THE ALTERNATIVE: METRICS AS MIRRORS
+// =============================================================================
+
+.alternative-section {
+  padding: var(--space-lg);
+
+  .alternative-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      color: var(--accent-teal);
+      font-size: var(--font-size-headline-medium);
+      font-weight: var(--font-weight-semibold);
+      margin-bottom: var(--space-md);
+
+      i {
+        color: var(--accent-teal);
+      }
+    }
+
+    .alternative-intro {
+      font-size: var(--font-size-body-large);
+      color: var(--text-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+}
+
+.alternative-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+
+  @include mobile-only {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
+
+.alternative-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  background: var(--background-white);
+  border: 2px solid var(--accent-teal);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: all var(--duration-fast) var(--ease-out);
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+    border-color: var(--theme-primary);
+  }
+
+  i {
+    color: var(--accent-teal);
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+    margin-top: var(--space-xs);
+  }
+
+  .alternative-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+
+    strong {
+      color: var(--text-dark);
+      font-size: var(--font-size-body-large);
+      font-weight: var(--font-weight-semibold);
+    }
+
+    span {
+      color: var(--text-medium);
+      font-size: var(--font-size-body-medium);
+      line-height: var(--line-height-relaxed);
+    }
+  }
+}
+
+.alternative-reminder {
+  background: linear-gradient(
+    135deg,
+    rgba(122, 218, 209, 0.1),
+    rgba(122, 218, 209, 0.05)
+  );
+  border-left: 4px solid var(--accent-teal);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+
+  i {
+    color: var(--accent-teal);
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+    margin-top: var(--space-xs);
+  }
+
+  p {
+    color: var(--text-dark);
+    font-size: var(--font-size-body-medium);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+
+    strong {
+      font-weight: var(--font-weight-bold);
+    }
+  }
+}
+
+// =============================================================================
 // COMMON PITFALLS SECTION
 // =============================================================================
 
