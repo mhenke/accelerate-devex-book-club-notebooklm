@@ -90,10 +90,10 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-// Shared player at bottom of playlist
+// Shared player at bottom of playlist - matches media control theme
 .playlist-player {
   padding: var(--space-md) var(--space-lg);
-  background: var(--background-white);
+  background: linear-gradient(135deg, #b8d4e0 0%, #d4e8f0 100%);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 
   audio {
