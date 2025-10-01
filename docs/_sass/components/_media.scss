@@ -103,6 +103,27 @@
   }
 }
 
+// Now Playing label above audio controls
+.now-playing-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-body-small);
+  color: var(--text-medium);
+  font-weight: var(--font-weight-medium);
+
+  i {
+    color: var(--theme-primary);
+    font-size: 1rem;
+  }
+
+  #now-playing-text {
+    color: var(--text-dark);
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
 // Podcast Item - M3 Three-Line List Pattern (Compact)
 .podcast-item {
   display: grid;

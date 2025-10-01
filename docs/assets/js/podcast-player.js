@@ -26,11 +26,15 @@
   function initPodcastPlaylist() {
     const sharedPlayer = document.getElementById('shared-player');
     const sharedPlayerSource = document.getElementById('shared-player-source');
+    const nowPlayingText = document.getElementById('now-playing-text');
     const podcastItems = document.querySelectorAll('.podcast-item[data-src]');
 
     if (!sharedPlayer || !podcastItems.length) {
       return; // No playlist on this page
     }
+
+    // Preset first episode as current (already loaded in HTML)
+    currentItem = podcastItems[0];
 
     // Add click handlers to playlist items and play buttons
     podcastItems.forEach((item) => {
@@ -94,6 +98,11 @@
         activateItem(currentItem);
         // Show equalizer (remove paused state)
         currentItem.classList.remove('paused');
+      } else {
+        // User played from audio controls without clicking episode
+        // Activate first episode
+        currentItem = podcastItems[0];
+        activateItem(currentItem);
       }
     });
 
@@ -121,6 +130,11 @@
       // Update player source
       sharedPlayerSource.src = src;
       sharedPlayer.load();
+
+      // Update "Now Playing" label
+      if (nowPlayingText) {
+        nowPlayingText.textContent = title;
+      }
 
       // Deactivate previous item
       if (currentItem && currentItem !== item) {

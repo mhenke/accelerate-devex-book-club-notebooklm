@@ -303,8 +303,12 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Shared Player at Bottom -->
           <div class="playlist-player">
+            <div class="now-playing-label" id="now-playing-label">
+              <i class="fas fa-podcast"></i>
+              <span id="now-playing-text">Accelerate Metrics Unlocked</span>
+            </div>
             <audio id="shared-player" controls>
-              <source src="" type="audio/mp4" id="shared-player-source">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
           </div>
