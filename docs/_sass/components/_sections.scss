@@ -556,6 +556,106 @@
 }
 
 // =============================================================================
+// METRICS BUBBLES (Good vs Bad Metrics)
+// =============================================================================
+
+.metrics-bubbles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.metric-bubble {
+  background: var(--color-white);
+  border: 2px solid var(--text-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-body-small);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  min-height: 80px;
+  transition: all var(--duration-fast) var(--ease-out);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  i {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-xs);
+  }
+
+  span {
+    line-height: var(--line-height-tight);
+  }
+
+  &.good {
+    background: #dcfce7;
+    color: #14532d;
+    border: 2px solid #16a34a;
+
+    i {
+      color: #16a34a;
+    }
+  }
+
+  &.bad {
+    background: #fee2e2;
+    color: #7f1d1d;
+    border: 2px solid #b91c1c;
+
+    i {
+      color: #b91c1c;
+    }
+  }
+}
+
+.metrics-intro {
+  font-size: var(--font-size-body-medium);
+  color: var(--text-medium);
+  margin-bottom: var(--space-md);
+  line-height: var(--line-height-relaxed);
+}
+
+.metric-focus,
+.metric-warning {
+  background: rgba(0, 0, 0, 0.03);
+  border-left: 4px solid var(--accent-teal);
+  padding: var(--space-sm) var(--space-md);
+  margin-top: var(--space-lg);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  i {
+    color: var(--accent-teal);
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+  }
+
+  strong {
+    color: var(--text-dark);
+  }
+}
+
+.metric-warning {
+  border-left-color: var(--accent-coral);
+
+  i {
+    color: var(--accent-coral);
+  }
+}
+
+// =============================================================================
 // COMMON PITFALLS SECTION
 // =============================================================================
 

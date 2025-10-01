@@ -547,15 +547,35 @@ document.addEventListener('keydown', function(event) {
 <div class="chapter-details" id="metrics-details" hidden>
   <div class="chapter-detail" id="detail-good-metrics">
     <h3><i class="fas fa-check-circle"></i> Good Metrics: System Health & Flow</h3>
-    <p>These metrics diagnose system issues and reveal opportunities for improvement. They focus on outcomes that matter to customers and the business.</p>
-    <ul>
-      <li><i class="fas fa-rocket"></i> <strong>Deployment frequency</strong> - How often you deliver value</li>
-      <li><i class="fas fa-clock"></i> <strong>Lead time for changes</strong> - Speed from commit to production</li>
-      <li><i class="fas fa-redo"></i> <strong>Time to restore service</strong> - Recovery speed from incidents</li>
-      <li><i class="fas fa-exclamation-triangle"></i> <strong>Change failure rate</strong> - Quality of deployments</li>
-      <li><i class="fas fa-stream"></i> <strong>Flow time through system</strong> - End-to-end delivery time</li>
-      <li><i class="fas fa-comment-dots"></i> <strong>Feedback loop duration</strong> - Time to learn from changes</li>
-    </ul>
+    <p class="metrics-intro">These metrics diagnose system issues and reveal opportunities for improvement.</p>
+
+    <div class="metrics-bubbles-grid">
+      <div class="metric-bubble good">
+        <i class="fas fa-rocket"></i>
+        <span>Deployment Frequency</span>
+      </div>
+      <div class="metric-bubble good">
+        <i class="fas fa-clock"></i>
+        <span>Lead Time for Changes</span>
+      </div>
+      <div class="metric-bubble good">
+        <i class="fas fa-redo"></i>
+        <span>Time to Restore Service</span>
+      </div>
+      <div class="metric-bubble good">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>Change Failure Rate</span>
+      </div>
+      <div class="metric-bubble good">
+        <i class="fas fa-stream"></i>
+        <span>Flow Time Through System</span>
+      </div>
+      <div class="metric-bubble good">
+        <i class="fas fa-comment-dots"></i>
+        <span>Feedback Loop Duration</span>
+      </div>
+    </div>
+
     <div class="metric-focus">
       <i class="fas fa-bullseye"></i> <strong>Focus:</strong> Diagnose system bottlenecks and improve flow
     </div>
@@ -563,15 +583,35 @@ document.addEventListener('keydown', function(event) {
 
   <div class="chapter-detail" id="detail-bad-metrics">
     <h3><i class="fas fa-times-circle"></i> Bad Metrics: Individual Performance & Vanity</h3>
-    <p>These metrics grade individual performance and create perverse incentives. They encourage gaming, hiding problems, and local optimization.</p>
-    <ul>
-      <li><i class="fas fa-code"></i> <strong>Lines of code written</strong> - Rewards verbosity over clarity</li>
-      <li><i class="fas fa-git-alt"></i> <strong>Number of commits</strong> - Incentivizes tiny, meaningless changes</li>
-      <li><i class="fas fa-user-clock"></i> <strong>Hours worked / utilization</strong> - Values presence over outcomes</li>
-      <li><i class="fas fa-tasks"></i> <strong>Story points completed</strong> - Encourages estimate inflation</li>
-      <li><i class="fas fa-percentage"></i> <strong>Code coverage percentage</strong> - Tests execution without validation</li>
-      <li><i class="fas fa-tachometer-alt"></i> <strong>Velocity trends</strong> - Easily gamed, meaningless comparisons</li>
-    </ul>
+    <p class="metrics-intro">These metrics grade individuals and create perverse incentives that encourage gaming.</p>
+
+    <div class="metrics-bubbles-grid">
+      <div class="metric-bubble bad">
+        <i class="fas fa-code"></i>
+        <span>Lines of Code Written</span>
+      </div>
+      <div class="metric-bubble bad">
+        <i class="fas fa-git-alt"></i>
+        <span>Number of Commits</span>
+      </div>
+      <div class="metric-bubble bad">
+        <i class="fas fa-user-clock"></i>
+        <span>Hours Worked / Utilization</span>
+      </div>
+      <div class="metric-bubble bad">
+        <i class="fas fa-tasks"></i>
+        <span>Story Points Completed</span>
+      </div>
+      <div class="metric-bubble bad">
+        <i class="fas fa-percentage"></i>
+        <span>Code Coverage %</span>
+      </div>
+      <div class="metric-bubble bad">
+        <i class="fas fa-tachometer-alt"></i>
+        <span>Velocity Trends</span>
+      </div>
+    </div>
+
     <div class="metric-warning">
       <i class="fas fa-exclamation-circle"></i> <strong>Problem:</strong> Grade individuals and encourage gaming
     </div>
@@ -965,32 +1005,32 @@ function hideMetricsDetails() {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card" markdown="0">
-  <div class="discussion-header">
-    <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
-  </div>
+<div class="false-choice-visual" markdown="0">
+  <div class="false-choice-container">
+    <h2 class="false-choice-main-title"><i class="fas fa-comments"></i> Discussion Questions</h2>
+    <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
 
-  <div class="discussion-questions-list">
-    <div class="deployment-signal">
-      <h4>Current State Assessment</h4>
-      <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
+    <div class="discussion-questions-list">
+      <div class="deployment-signal">
+        <h4>Current State Assessment</h4>
+        <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Speed vs. Stability Myths</h4>
+        <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Building the Virtuous Cycle</h4>
+        <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Culture Indicators</h4>
+        <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
+      </div>
     </div>
-
-    <div class="deployment-signal">
-      <h4>Speed vs. Stability Myths</h4>
-      <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
-    </div>
-
-    <div class="deployment-signal">
-      <h4>Building the Virtuous Cycle</h4>
-      <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
-    </div>
-
-    <div class="deployment-signal">
-      <h4>Culture Indicators</h4>
-      <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
-    </div>
-
   </div>
 </div>
 
