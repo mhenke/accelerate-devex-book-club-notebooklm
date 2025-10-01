@@ -964,142 +964,105 @@
   line-height: var(--line-height-relaxed);
 }
 
-// ASSESSMENT SKETCH DIAGRAM - Napkin doodle style
+// ASSESSMENT SECTION - Consistent with other card sections
 .assessment-sketch {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border: 2px dashed #6c757d;
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-xl);
-  margin: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-md) 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
-  overflow: hidden;
 
-  // Subtle paper texture
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-      repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 1px,
-        rgba(0,0,0,0.02) 1px,
-        rgba(0,0,0,0.02) 2px
-      );
-    pointer-events: none;
-    z-index: 1;
+  // Break out of meeting container to span full width
+  .meeting-container & {
+    margin-left: calc(-1 * var(--space-md));
+    margin-right: calc(-1 * var(--space-md));
+    width: calc(100% + 2 * var(--space-md));
   }
 
   .sketch-container {
-    position: relative;
-    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .sketch-header {
     text-align: center;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--space-md);
 
     h2 {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      color: #2d3748;
-      font-size: var(--font-size-headline-medium);
-      margin-bottom: var(--spacing-sm);
-      transform: rotate(-1deg);
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-bold);
+      color: var(--text-dark);
+      margin: 0 0 var(--space-xs) 0;
     }
 
     .sketch-intro {
-      font-style: italic;
-      color: #4a5568;
-      font-size: var(--font-size-body-medium);
-      transform: rotate(0.5deg);
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+      margin: 0;
+      line-height: 1.2;
     }
   }
 
   .sketch-diagram {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xl);
+    gap: var(--space-lg);
     align-items: start;
+    margin: var(--space-md) 0;
   }
 
   .experience-side {
     .sketch-title {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      font-size: var(--font-size-title-medium);
-      color: #2d3748;
-      margin-bottom: var(--spacing-lg);
+      font-size: var(--font-size-md);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-dark);
+      margin-bottom: var(--space-md);
       text-align: center;
-      transform: rotate(-0.5deg);
-      border-bottom: 2px wavy #4a5568;
-      padding-bottom: var(--spacing-sm);
+      border-bottom: 2px solid var(--text-secondary);
+      padding-bottom: var(--space-xs);
     }
 
     .experience-item {
       display: flex;
       align-items: center;
-      gap: var(--spacing-md);
-      margin-bottom: var(--spacing-lg);
-      padding: var(--spacing-md);
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: var(--radius-md);
-      border: 1px dashed #a0aec0;
-      position: relative;
-      transform: rotate(-0.3deg);
-
-      &:nth-child(even) {
-        transform: rotate(0.4deg);
-      }
-
-      &:nth-child(3n) {
-        transform: rotate(-0.2deg);
-      }
+      gap: var(--space-md);
+      margin-bottom: var(--space-md);
+      padding: var(--space-sm);
+      background: var(--color-white);
+      border-radius: var(--border-radius);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
     .emoji-face {
-      font-size: 2.5rem;
-      filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
-
-      &.sad {
-        animation: wobble 3s ease-in-out infinite;
-      }
-
-      &.neutral {
-        animation: float 4s ease-in-out infinite;
-      }
-
-      &.happy {
-        animation: bounce 2s ease-in-out infinite;
-      }
+      font-size: 2rem;
+      flex-shrink: 0;
     }
 
     .experience-text {
       flex: 1;
 
       strong {
-        font-family: 'Comic Sans MS', cursive, sans-serif;
         display: block;
-        color: #2d3748;
-        font-size: var(--font-size-body-large);
-        margin-bottom: var(--spacing-xs);
+        color: var(--text-dark);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-semibold);
+        margin-bottom: var(--space-xs);
       }
 
       .experience-detail {
         font-style: italic;
-        color: #4a5568;
-        font-size: var(--font-size-body-small);
+        color: var(--text-secondary);
+        font-size: var(--font-size-sm);
       }
     }
 
     .sketch-arrow {
-      font-size: 1.5rem;
-      color: #e53e3e;
+      font-size: 1.25rem;
+      color: var(--text-secondary);
       font-weight: bold;
-      animation: pulse 2s ease-in-out infinite;
+      flex-shrink: 0;
     }
   }
 
@@ -1108,102 +1071,69 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: var(--spacing-md);
+      gap: var(--space-sm);
     }
 
     .culture-bubble {
-      background: rgba(255, 255, 255, 0.9);
-      border: 2px solid #4a5568;
-      border-radius: 50px;
-      padding: var(--spacing-md) var(--spacing-lg);
+      background: var(--color-white);
+      border: 2px solid var(--text-secondary);
+      border-radius: var(--border-radius-lg);
+      padding: var(--space-sm) var(--space-md);
       text-align: center;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      font-weight: bold;
-      position: relative;
-      min-width: 180px;
+      font-weight: var(--font-weight-semibold);
+      font-size: var(--font-size-sm);
+      min-width: var(--space-5xl);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
       &.pathological {
         background: #fed7d7;
         border-color: #e53e3e;
         color: #c53030;
-        transform: rotate(-1deg);
       }
 
       &.transitioning {
         background: #feebc8;
         border-color: #dd6b20;
         color: #c05621;
-        transform: rotate(0.8deg);
       }
 
       &.generative {
         background: #c6f6d5;
         border-color: #38a169;
         color: #2f855a;
-        transform: rotate(-0.5deg);
-      }
-
-      // Hand-drawn bubble effect
-      &::before {
-        content: '';
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        border: 1px dashed currentColor;
-        border-radius: inherit;
-        opacity: 0.3;
       }
     }
 
     .flow-arrow {
-      font-size: 2rem;
-      color: #4a5568;
-      transform: rotate(5deg);
-      animation: bounce 3s ease-in-out infinite;
+      font-size: 1.5rem;
+      color: var(--text-secondary);
     }
   }
 
   .sketch-message {
-    margin-top: var(--spacing-xl);
+    margin-top: var(--space-lg);
     text-align: center;
 
     .hope-bubble {
-      background: #e6fffa;
-      border: 2px dashed #38b2ac;
-      border-radius: var(--radius-lg);
-      padding: var(--spacing-lg);
+      background: var(--color-white);
+      border: 2px solid #38b2ac;
+      border-radius: var(--border-radius);
+      padding: var(--space-md);
       display: inline-block;
-      transform: rotate(-0.5deg);
-      position: relative;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
       strong {
-        font-family: 'Comic Sans MS', cursive, sans-serif;
         color: #2c7a7b;
-        font-size: var(--font-size-body-large);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-semibold);
         display: block;
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--space-xs);
       }
 
       .meetings-note {
         font-style: italic;
-        color: #4a5568;
-        font-size: var(--font-size-body-small);
-      }
-
-      // Highlight effect
-      &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        height: 60%;
-        background: rgba(56, 178, 172, 0.1);
-        border-radius: var(--radius-md);
-        z-index: -1;
+        color: var(--text-secondary);
+        font-size: var(--font-size-sm);
       }
     }
   }
@@ -1238,22 +1168,17 @@
   }
 }
 
-// Responsive design for assessment sketch
+// Responsive design for assessment section
 @media (max-width: #{$tablet - 1px}) {
   .assessment-sketch {
     .sketch-diagram {
       grid-template-columns: 1fr;
-      gap: var(--spacing-lg);
+      gap: var(--space-md);
     }
 
     .experience-item {
-      flex-direction: column;
-      text-align: center;
-      gap: var(--spacing-sm);
-
       .sketch-arrow {
-        transform: rotate(90deg);
-        margin: var(--spacing-sm) 0;
+        display: none;
       }
     }
 
