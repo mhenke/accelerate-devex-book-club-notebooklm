@@ -262,10 +262,10 @@
   // Show pause icon when this episode is playing
   .podcast-item.is-current.is-playing & {
     i {
-      margin-left: 0; // Reset optical centering for pause
+      margin-left: 0 !important; // Reset optical centering for pause
 
       &::before {
-        content: "\f04c"; // Font Awesome pause icon (fa-pause)
+        content: "\f04c" !important; // Font Awesome pause icon (fa-pause)
       }
     }
   }
