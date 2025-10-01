@@ -712,10 +712,11 @@
   justify-content: center;
   gap: var(--space-lg);
   margin: var(--space-2xl) 0;
+  flex-wrap: wrap;
 
   @include mobile-up {
-    flex-direction: column;
-    gap: var(--space-xl);
+    gap: var(--space-md);
+    justify-content: center;
   }
 }
 
@@ -759,9 +760,9 @@
   }
 
   @include mobile-up {
-    min-width: auto;
-    width: 100%;
-    max-width: 400px;
+    min-width: 240px;
+    flex: 1;
+    max-width: 300px;
   }
 }
 
@@ -834,6 +835,7 @@
   align-items: center;
   gap: var(--space-sm);
   color: var(--text-secondary);
+  flex-shrink: 0;
 
   i {
     font-size: 2rem;
@@ -845,10 +847,17 @@
     font-weight: var(--font-weight-medium);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
   }
 
   @include mobile-up {
-    transform: rotate(90deg);
+    i {
+      font-size: 1.5rem;
+    }
+
+    .arrow-label {
+      font-size: var(--font-size-xs);
+    }
   }
 }
 
