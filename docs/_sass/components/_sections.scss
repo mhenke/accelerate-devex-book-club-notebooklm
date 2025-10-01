@@ -396,22 +396,30 @@
     margin-top: var(--space-xl);
     padding-top: var(--space-xl);
     border-top: 2px solid var(--theme-primary);
-    opacity: 0;
-    transform: translateY(-var(--space-md));
     transition: all 0.4s var(--ease-out);
 
-    &.show {
+    // Hidden attribute handling
+    &[hidden] {
+      display: none;
+    }
+
+    &:not([hidden]) {
       opacity: 1;
       transform: translateY(0);
     }
 
     .chapter-detail {
-      display: none;
       text-align: left;
       background: rgba(9, 105, 218, 0.05);
       border-radius: var(--radius-md);
+      padding: var(--space-lg);
 
-      &.active {
+      // Hidden attribute handling for individual details
+      &[hidden] {
+        display: none;
+      }
+
+      &:not([hidden]) {
         display: block;
       }
 
