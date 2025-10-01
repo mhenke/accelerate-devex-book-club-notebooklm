@@ -468,7 +468,7 @@
   padding: var(--spacing-xl) 0;
   position: relative;
   overflow: hidden;
-  min-height: 25vh;
+  height: 280px; // Fixed height prevents CLS
   display: flex;
   align-items: center;
   margin: var(--spacing-xl) 0;
@@ -497,9 +497,10 @@
 
   // Performance optimization with CSS containment
   contain: layout style paint;
+  content-visibility: auto;
 
   @include mobile-up {
-    min-height: 20vh;
+    height: 240px; // Slightly shorter on mobile
     padding: var(--spacing-lg) 0;
     margin: var(--spacing-lg) 0;
   }
