@@ -103,25 +103,100 @@
   }
 }
 
-// Now Playing label above audio controls
-.now-playing-label {
+// Now Playing header with equalizer and time
+.now-playing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+  gap: var(--space-md);
+}
+
+.now-playing-info {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  margin-bottom: var(--space-sm);
+  flex: 1;
+  min-width: 0; // Allow text truncation
+}
+
+// Large equalizer in Now Playing area (shows when playing)
+.playing-indicator-large {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--theme-primary);
+  padding: 6px;
+  flex-shrink: 0;
+  display: none; // Hidden by default
+  align-items: center;
+  justify-content: center;
+
+  // Show when audio is playing
+  .playlist-player.is-playing & {
+    display: flex;
+  }
+
+  .equalizer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 20px;
+    gap: 2px;
+    width: 100%;
+
+    .bar {
+      width: 3px;
+      height: 100%;
+      background: white;
+      border-radius: 2px;
+      animation: equalize 0.8s ease-in-out infinite;
+      transform-origin: bottom;
+
+      &:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+    }
+  }
+}
+
+.now-playing-text-wrapper {
+  flex: 1;
+  min-width: 0; // Allow text truncation
+}
+
+.now-playing-label {
   font-size: var(--font-size-body-small);
   color: var(--text-medium);
   font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
 
-  i {
-    color: var(--theme-primary);
-    font-size: 1rem;
-  }
+.now-playing-title {
+  font-size: var(--font-size-body-medium);
+  color: var(--text-dark);
+  font-weight: var(--font-weight-semibold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-  #now-playing-text {
-    color: var(--text-dark);
-    font-weight: var(--font-weight-semibold);
-  }
+.now-playing-time {
+  font-size: var(--font-size-body-small);
+  color: var(--text-medium);
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--font-weight-medium);
+  flex-shrink: 0;
 }
 
 // Podcast Item - M3 Three-Line List Pattern (Compact)
@@ -187,7 +262,7 @@
   }
 }
 
-// Leading element (start slot) - Single element: Play OR Equalizer OR Pause
+// Leading element - Simple play/pause button (matches media controls)
 .podcast-start {
   display: flex;
   align-items: center;
@@ -232,13 +307,8 @@
     outline-offset: 2px;
   }
 
-  // Hide button when playing (equalizer shows instead)
-  .podcast-item.playing & {
-    display: none;
-  }
-
-  // Show pause icon when paused
-  .podcast-item.paused & {
+  // Show pause icon when this episode is playing
+  .podcast-item.is-current.is-playing & {
     i::before {
       content: "\f04c"; // Font Awesome pause icon
       margin-left: 0; // Reset optical centering for pause
@@ -246,53 +316,7 @@
   }
 }
 
-// Animated Equalizer Bars (Replaces button when playing)
-.playing-indicator {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--theme-primary);
-  padding: 8px;
-
-  // Show ONLY when playing (not when paused)
-  .podcast-item.playing:not(.paused) & {
-    display: flex !important;
-  }
-}
-
-.equalizer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: 20px;
-  gap: 2px;
-  width: 100%;
-}
-
-.equalizer .bar {
-  width: 3px;
-  height: 100%;
-  background: white;
-  border-radius: 2px;
-  animation: equalize 0.8s ease-in-out infinite;
-  transform-origin: bottom;
-
-  &:nth-child(1) {
-    animation-delay: 0s;
-  }
-
-  &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-}
-
+// Equalizer animation keyframes
 @keyframes equalize {
   0%,
   100% {

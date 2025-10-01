@@ -1,18 +1,11 @@
 /**
- * Material Design 3 Compact Podcast Playlist with Shared Player
- * Manages shared audio player and playlist item interactions
+ * Material Design 3 Compact Podcast Playlist
+ * Simplified state management - matches media controls behavior
  *
- * Three-State Rotation:
- * 1. Idle: Play button
- * 2. Playing: Animated equalizer (replaces button)
- * 3. Paused: Pause button
- * 4. Resume: Back to equalizer
- *
- * Features:
- * - Single shared player for all episodes
- * - Click-to-play list items
- * - Visual state rotation: play → equalizer → pause → equalizer
- * - Keyboard navigation support
+ * Visual States:
+ * - Playlist buttons: Play/Pause only (no equalizer)
+ * - Now Playing area: Shows equalizer when playing
+ * - Both interfaces stay in perfect sync
  */
 
 (function () {
@@ -26,15 +19,18 @@
   function initPodcastPlaylist() {
     const sharedPlayer = document.getElementById('shared-player');
     const sharedPlayerSource = document.getElementById('shared-player-source');
-    const nowPlayingText = document.getElementById('now-playing-text');
+    const nowPlayingTitle = document.getElementById('now-playing-title');
+    const nowPlayingTime = document.getElementById('now-playing-time');
+    const playlistPlayer = document.querySelector('.playlist-player');
     const podcastItems = document.querySelectorAll('.podcast-item[data-src]');
 
     if (!sharedPlayer || !podcastItems.length) {
       return; // No playlist on this page
     }
 
-    // Preset first episode as current (already loaded in HTML)
+    // Preset first episode as current
     currentItem = podcastItems[0];
+    updateNowPlayingDisplay();
 
     // Add click handlers to playlist items and play buttons
     podcastItems.forEach((item) => {
@@ -65,63 +61,25 @@
     });
 
     /**
-     * Handle play/pause toggle with three states
+     * Handle play/pause toggle
      */
     function handlePlayPause(src, title, item) {
-      // If clicking same item that's currently active
-      if (currentItem === item) {
-        if (!sharedPlayer.paused) {
-          // State: Playing → Paused
-          // Show pause button, hide equalizer
-          sharedPlayer.pause();
-          item.classList.add('paused');
-          item.classList.add('playing'); // Keep playing class for pause button
-        } else {
-          // State: Paused → Playing (resume)
-          // Show equalizer again, hide pause button
-          sharedPlayer.play();
-          item.classList.remove('paused');
-        }
+      // If clicking same item that's currently playing
+      if (currentItem === item && !sharedPlayer.paused) {
+        sharedPlayer.pause();
+        return;
+      }
+
+      // If clicking same item that's paused
+      if (currentItem === item && sharedPlayer.paused) {
+        sharedPlayer.play();
         return;
       }
 
       // Load and play new track
-      // State: Idle → Playing
-      // Show equalizer
       loadTrack(src, title, item);
       sharedPlayer.play();
     }
-
-    // Shared player event listeners
-    sharedPlayer.addEventListener('play', function () {
-      if (currentItem) {
-        activateItem(currentItem);
-        // Show equalizer (remove paused state)
-        currentItem.classList.remove('paused');
-      } else {
-        // User played from audio controls without clicking episode
-        // Activate first episode
-        currentItem = podcastItems[0];
-        activateItem(currentItem);
-      }
-    });
-
-    sharedPlayer.addEventListener('pause', function () {
-      if (currentItem) {
-        // Show pause button (add paused state)
-        currentItem.classList.add('paused');
-      }
-    });
-
-    sharedPlayer.addEventListener('ended', function () {
-      // Deactivate current item
-      if (currentItem) {
-        deactivateItem(currentItem);
-      }
-
-      // Optional: Auto-play next episode
-      // autoPlayNext(podcastItems);
-    });
 
     /**
      * Load a track into the shared player
@@ -131,58 +89,117 @@
       sharedPlayerSource.src = src;
       sharedPlayer.load();
 
-      // Update "Now Playing" label
-      if (nowPlayingText) {
-        nowPlayingText.textContent = title;
-      }
-
       // Deactivate previous item
       if (currentItem && currentItem !== item) {
-        deactivateItem(currentItem);
+        currentItem.classList.remove('is-current');
+        currentItem.classList.remove('is-playing');
       }
 
       // Set new current item
       currentItem = item;
+      currentItem.classList.add('is-current');
+
+      // Update Now Playing display
+      updateNowPlayingDisplay();
     }
 
     /**
-     * Activate a playlist item (show as playing)
+     * Update Now Playing title and time display
      */
-    function activateItem(item) {
-      item.classList.add('playing');
-      item.classList.remove('paused'); // Ensure we show equalizer, not pause button
-      item.setAttribute('aria-current', 'true');
-    }
+    function updateNowPlayingDisplay() {
+      if (!currentItem) {return;}
 
-    /**
-     * Deactivate a playlist item
-     */
-    function deactivateItem(item) {
-      item.classList.remove('playing');
-      item.classList.remove('paused');
-      item.setAttribute('aria-current', 'false');
-    }
+      const title = currentItem.getAttribute('data-title');
+      const duration = currentItem.getAttribute('data-duration');
 
-    /**
-     * Auto-play next episode in playlist (optional feature)
-     */
-    function autoPlayNext(items) {
-      if (!currentItem) {
-        return;
+      if (nowPlayingTitle) {
+        nowPlayingTitle.textContent = title;
       }
 
-      const currentIndex = Array.from(items).indexOf(currentItem);
-      const nextIndex = currentIndex + 1;
-
-      if (nextIndex < items.length) {
-        const nextItem = items[nextIndex];
-        const src = nextItem.getAttribute('data-src');
-        const title = nextItem.getAttribute('data-title');
-
-        loadTrack(src, title, nextItem);
-        sharedPlayer.play();
+      if (nowPlayingTime && duration) {
+        nowPlayingTime.textContent = `0:00 / ${duration}`;
       }
     }
+
+    /**
+     * Update time display as audio plays
+     */
+    function updateTimeDisplay() {
+      if (!sharedPlayer || !nowPlayingTime) {return;}
+
+      const currentTime = formatTime(sharedPlayer.currentTime);
+      const duration =
+        sharedPlayer.duration && !isNaN(sharedPlayer.duration)
+          ? formatTime(sharedPlayer.duration)
+          : currentItem?.getAttribute('data-duration') || '0:00';
+
+      nowPlayingTime.textContent = `${currentTime} / ${duration}`;
+    }
+
+    /**
+     * Format seconds to M:SS or H:MM:SS
+     */
+    function formatTime(seconds) {
+      if (!seconds || isNaN(seconds)) {return '0:00';}
+
+      const h = Math.floor(seconds / 3600);
+      const m = Math.floor((seconds % 3600) / 60);
+      const s = Math.floor(seconds % 60);
+
+      if (h > 0) {
+        return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+      }
+      return `${m}:${s.toString().padStart(2, '0')}`;
+    }
+
+    // Shared player event listeners
+    sharedPlayer.addEventListener('play', function () {
+      // Show equalizer in Now Playing area
+      if (playlistPlayer) {
+        playlistPlayer.classList.add('is-playing');
+      }
+
+      // Mark current episode as playing
+      if (currentItem) {
+        currentItem.classList.add('is-playing');
+      } else {
+        // User played from audio controls - activate first episode
+        currentItem = podcastItems[0];
+        currentItem.classList.add('is-current');
+        currentItem.classList.add('is-playing');
+        updateNowPlayingDisplay();
+      }
+    });
+
+    sharedPlayer.addEventListener('pause', function () {
+      // Hide equalizer in Now Playing area
+      if (playlistPlayer) {
+        playlistPlayer.classList.remove('is-playing');
+      }
+
+      // Update current episode button to pause icon
+      if (currentItem) {
+        currentItem.classList.remove('is-playing');
+      }
+    });
+
+    sharedPlayer.addEventListener('ended', function () {
+      // Hide equalizer
+      if (playlistPlayer) {
+        playlistPlayer.classList.remove('is-playing');
+      }
+
+      // Reset current item state
+      if (currentItem) {
+        currentItem.classList.remove('is-playing');
+      }
+    });
+
+    // Update time display every 100ms while playing
+    sharedPlayer.addEventListener('timeupdate', updateTimeDisplay);
+
+    // Update duration when metadata loads
+    sharedPlayer.addEventListener('loadedmetadata', updateTimeDisplay);
   }
 
   // Initialize when DOM is ready
