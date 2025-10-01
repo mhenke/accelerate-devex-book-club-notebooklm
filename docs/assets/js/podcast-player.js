@@ -21,49 +21,59 @@
   function initPodcastPlaylist() {
     const sharedPlayer = document.getElementById('shared-player');
     const sharedPlayerSource = document.getElementById('shared-player-source');
-    const currentTrackTitle = document.getElementById('current-track-title');
-    const nowPlayingLabel = document.getElementById('now-playing-label');
     const podcastItems = document.querySelectorAll('.podcast-item[data-src]');
 
     if (!sharedPlayer || !podcastItems.length) {
       return; // No playlist on this page
     }
 
-    // Initialize playing indicator visibility
-    const nowPlayingIndicator = nowPlayingLabel?.querySelector('.playing-indicator');
-    if (nowPlayingIndicator) {
-      nowPlayingIndicator.style.display = 'none';
-    }
-
-    // Add click handlers to playlist items
+    // Add click handlers to playlist items and play buttons
     podcastItems.forEach((item) => {
       const src = item.getAttribute('data-src');
       const title = item.getAttribute('data-title');
+      const playBtn = item.querySelector('.play-btn');
 
-      // Click handler - load and play
+      // Click handler on play button
+      if (playBtn) {
+        playBtn.addEventListener('click', function (e) {
+          e.stopPropagation(); // Prevent item click
+          handlePlayPause(src, title, item);
+        });
+      }
+
+      // Click handler on item row
       item.addEventListener('click', function () {
-        loadTrack(src, title, item);
-        sharedPlayer.play();
+        handlePlayPause(src, title, item);
       });
 
       // Keyboard support - Enter/Space to play
       item.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          loadTrack(src, title, item);
-          sharedPlayer.play();
+          handlePlayPause(src, title, item);
         }
       });
     });
+
+    /**
+     * Handle play/pause toggle
+     */
+    function handlePlayPause(src, title, item) {
+      // If this item is already playing, pause it
+      if (currentItem === item && !sharedPlayer.paused) {
+        sharedPlayer.pause();
+        return;
+      }
+
+      // Load and play this track
+      loadTrack(src, title, item);
+      sharedPlayer.play();
+    }
 
     // Shared player event listeners
     sharedPlayer.addEventListener('play', function () {
       if (currentItem) {
         activateItem(currentItem);
-      }
-      // Show now-playing indicator
-      if (nowPlayingIndicator) {
-        nowPlayingIndicator.style.display = 'flex';
       }
     });
 
@@ -75,10 +85,6 @@
       // Deactivate current item
       if (currentItem) {
         deactivateItem(currentItem);
-      }
-      // Hide now-playing indicator
-      if (nowPlayingIndicator) {
-        nowPlayingIndicator.style.display = 'none';
       }
 
       // Optional: Auto-play next episode
@@ -92,11 +98,6 @@
       // Update player source
       sharedPlayerSource.src = src;
       sharedPlayer.load();
-
-      // Update now-playing label
-      if (currentTrackTitle) {
-        currentTrackTitle.textContent = title;
-      }
 
       // Deactivate previous item
       if (currentItem && currentItem !== item) {
