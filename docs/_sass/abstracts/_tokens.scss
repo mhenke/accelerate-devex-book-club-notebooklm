@@ -332,7 +332,7 @@ $letter-spacing-wide: 0.025em;
   --font-weight-semibold: #{$font-weight-semibold};
   --font-weight-bold: #{$font-weight-bold};
 
-  // Material Design Type Scale
+  // Material Design Type Scale (Legacy naming)
   --font-size-display-large: #{$font-size-display-large};
   --font-size-display-medium: #{$font-size-display-medium};
   --font-size-display-small: #{$font-size-display-small};
@@ -348,6 +348,23 @@ $letter-spacing-wide: 0.025em;
   --font-size-body-large: #{$font-size-body-large};
   --font-size-body-medium: #{$font-size-body-medium};
   --font-size-body-small: #{$font-size-body-small};
+
+  // Material Design 3 Type Scale (MD3 Standard Naming)
+  --md-sys-typescale-display-large: #{$font-size-display-large};
+  --md-sys-typescale-display-medium: #{$font-size-display-medium};
+  --md-sys-typescale-display-small: #{$font-size-display-small};
+  --md-sys-typescale-headline-large: #{$font-size-headline-large};
+  --md-sys-typescale-headline-medium: #{$font-size-headline-medium};
+  --md-sys-typescale-headline-small: #{$font-size-headline-small};
+  --md-sys-typescale-title-large: #{$font-size-title-large};
+  --md-sys-typescale-title-medium: #{$font-size-title-medium};
+  --md-sys-typescale-title-small: #{$font-size-title-small};
+  --md-sys-typescale-label-large: #{$font-size-label-large};
+  --md-sys-typescale-label-medium: #{$font-size-label-medium};
+  --md-sys-typescale-label-small: #{$font-size-label-small};
+  --md-sys-typescale-body-large: #{$font-size-body-large};
+  --md-sys-typescale-body-medium: #{$font-size-body-medium};
+  --md-sys-typescale-body-small: #{$font-size-body-small};
 
   // Line Heights
   --line-height-tight: #{$line-height-tight};
