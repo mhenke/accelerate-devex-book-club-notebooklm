@@ -120,24 +120,6 @@
   min-width: 0; // Allow text truncation
 }
 
-// Large equalizer in Now Playing area (shows when playing)
-.playing-indicator-large {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--theme-primary);
-  padding: 6px;
-  flex-shrink: 0;
-  display: none; // Hidden by default
-  align-items: center;
-  justify-content: center;
-
-  // Show when audio is playing
-  .playlist-player.is-playing & {
-    display: flex;
-  }
-}
-
 .now-playing-text-wrapper {
   flex: 1;
   min-width: 0; // Allow text truncation
@@ -279,9 +261,12 @@
 
   // Show pause icon when this episode is playing
   .podcast-item.is-current.is-playing & {
-    i::before {
-      content: "\f04c"; // Font Awesome pause icon
+    i {
       margin-left: 0; // Reset optical centering for pause
+
+      &::before {
+        content: "\f04c"; // Font Awesome pause icon (fa-pause)
+      }
     }
   }
 }
