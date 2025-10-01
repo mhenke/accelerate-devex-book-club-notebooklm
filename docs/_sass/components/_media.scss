@@ -93,7 +93,7 @@
 // Shared player at bottom of playlist
 .playlist-player {
   padding: var(--space-md) var(--space-lg);
-  background: linear-gradient(135deg, rgba(var(--theme-primary-rgb), 0.04), transparent);
+  background: var(--background-white);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 
   audio {
@@ -394,14 +394,76 @@
   }
 }
 
-// Trailing element - Duration in compact layout
+// Trailing element - Duration styled like podcast-type badge
+.podcast-end {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 80px;
+}
+
 .podcast-duration {
-  font-size: var(--font-size-body-small);
-  color: var(--text-medium);
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: #e8f5e9;
+  color: #2e7d32;
   font-variant-numeric: tabular-nums;
-  font-weight: var(--font-weight-medium);
-  text-align: right;
   white-space: nowrap;
+
+  // Hide when this episode is playing
+  .podcast-item.is-current.is-playing & {
+    display: none;
+  }
+}
+
+.podcast-equalizer {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--theme-primary);
+  padding: 6px;
+
+  // Show when this episode is playing
+  .podcast-item.is-current.is-playing & {
+    display: flex;
+  }
+
+  .equalizer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 20px;
+    gap: 2px;
+    width: 100%;
+
+    .bar {
+      width: 3px;
+      height: 100%;
+      background: white;
+      border-radius: 2px;
+      animation: equalize 0.8s ease-in-out infinite;
+      transform-origin: bottom;
+
+      &:nth-child(1) {
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+    }
+  }
 }
 
 // Remove individual audio controls (using shared player)
