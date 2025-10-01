@@ -240,7 +240,8 @@
   padding: 0;
   flex-shrink: 0;
 
-  i {
+  i,
+  em {
     font-size: 0.875rem;
     margin-left: 2px; // Optical centering for play icon
   }
@@ -260,8 +261,8 @@
   }
 }
 
-// Show pause icon when track is playing (higher specificity)
-.podcast-item.is-playing .play-btn i.fas.fa-play::before {
+// Show pause icon when track is playing
+.podcast-item.is-playing .play-btn .fas.fa-play::before {
   content: "\f04c" !important; // Font Awesome pause icon
   margin-left: 0 !important; // Reset optical centering
 }
