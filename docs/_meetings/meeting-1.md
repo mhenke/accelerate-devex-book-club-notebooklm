@@ -220,7 +220,7 @@ document.addEventListener('keydown', function(event) {
                data-duration="15:30"
                data-type="brief">
             <div class="podcast-start">
-              <button class="play-btn" aria-label="Play Accelerate Metrics Unlocked">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Metrics Unlocked">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -251,7 +251,7 @@ document.addEventListener('keydown', function(event) {
                data-duration="28:45"
                data-type="deep-dive">
             <div class="podcast-start">
-              <button class="play-btn" aria-label="Play Accelerate Success">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Success">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -282,7 +282,7 @@ document.addEventListener('keydown', function(event) {
                data-duration="22:15"
                data-type="critique">
             <div class="podcast-start">
-              <button class="play-btn" aria-label="Play Accelerate Your DevEx">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Your DevEx">
                 <i class="fas fa-play"></i>
               </button>
             </div>
