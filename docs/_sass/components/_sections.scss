@@ -28,6 +28,38 @@
     text-align: left;
   }
 
+  // Dark theme modifier - dark background with light text
+  &.dark-theme {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+
+    // Override heading colors for dark theme
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--text-light);
+    }
+  }
+
+  // Full-width modifier - no border-radius, spans full container
+  &.full-width {
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    // Break out of meeting container to span truly full width
+    .meeting-container & {
+      margin-left: calc(-1 * var(--space-md));
+      margin-right: calc(-1 * var(--space-md));
+      width: calc(100% + 2 * var(--space-md));
+    }
+  }
+
   // Action Items and Discussion Questions modifier (unified)
   &.action-items {
     .action-list,
