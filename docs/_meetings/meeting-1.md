@@ -910,7 +910,7 @@ function hideMetricsDetails() {
 <div class="section-card" markdown="0">
   <div class="alternative-section">
     <div class="alternative-header">
-      <h2><i class="fas fa-check-circle"></i> The Alternative: Metrics as Mirrors</h2>
+      <h2><i class="fas fa-check-circle" aria-hidden="true"></i> The Alternative: Metrics as Mirrors</h2>
       <p class="alternative-intro">Instead of surveillance, policing, and judgment:</p>
     </div>
 
