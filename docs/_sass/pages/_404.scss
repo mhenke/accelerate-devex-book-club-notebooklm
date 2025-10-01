@@ -9,7 +9,7 @@
   justify-content: center;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: #fff;
-  font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+  font-family: "Poppins", "Inter", "Roboto", sans-serif;
 }
 
 .not-found-hero {
@@ -61,7 +61,6 @@
 .not-found-links {
   display: flex;
   justify-content: center;
-  gap: var(--space-md);
   margin-top: var(--space-md);
 }
 

@@ -39,7 +39,7 @@
 
   // Size variants
   &--compact {
-    padding: var(--space-md);
+    padding: var(--space-sm);
   }
 
   &--spacious {
@@ -116,7 +116,7 @@
   }
 
   &__footer {
-    margin-top: var(--space-lg);
+    margin-top: var(--space-md);
     padding-top: var(--space-md);
     border-top: 1px solid var(--background-light);
   }
@@ -221,10 +221,6 @@
   justify-content: center;
   gap: var(--space-lg);
   margin: var(--space-lg) 0;
-
-  @include mobile-only {
-    gap: var(--space-md);
-  }
 }
 
 .enps-before,

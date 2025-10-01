@@ -51,7 +51,6 @@
     .meeting-nav-links {
       display: flex;
       align-items: center;
-      gap: var(--space-md);
 
       .nav-item {
         display: flex;
@@ -311,7 +310,7 @@
       }
 
       .meeting-navigation-links {
-        margin-top: var(--space-lg);
+        margin-top: var(--space-md);
       }
     }
 
@@ -320,7 +319,7 @@
         .footer-key-question-quote {
           background: var(--color-white);
           border-left: var(--border-width-accent) solid var(--accent-teal);
-          padding: var(--space-md);
+          padding: var(--space-sm);
           margin: var(--space-md) 0;
           border-radius: var(--radius-md);
           font-style: italic;
@@ -405,7 +404,7 @@
   }
 
   .meeting-container {
-    padding: var(--space-md);
+    padding: var(--space-sm);
   }
 
   .meeting-header {
@@ -413,7 +412,6 @@
 
     .meeting-nav-bar {
       flex-direction: column;
-      gap: var(--space-md);
       text-align: center;
 
       .meeting-nav-links {
@@ -440,7 +438,6 @@
 
     .footer-bottom {
       flex-direction: column;
-      gap: var(--space-md);
       text-align: center;
     }
   }

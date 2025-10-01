@@ -296,7 +296,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK - Causal Chain Infographic -->
-<div class="causal-chain-infographic" markdown="0">
+<div class="section-card" markdown="0">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2>The Framework: How Culture Drives Performance</h2>
@@ -461,31 +461,90 @@ document.addEventListener('keydown', function(event) {
 
 <!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
 <div class="section-card" markdown="0">
-  <div class="step-header">
-  <h2><i class="fas fa-sync" role="img" aria-label="Cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
-  </div>
-  <div class="understanding-content">
-    <div class="insight-card culture-practice">
-      <p class="insight-explanation">The most important takeaway from chapters 1-3: Culture isn't fixed. You change practices → which change daily interactions → which change culture over time.</p>
-      <div class="practice-cycle">
-        <span class="cycle-step">Better Practices</span>
-        <i class="fas fa-arrow-right"></i>
-        <span class="cycle-step">Better Interactions</span>
-        <i class="fas fa-arrow-right"></i>
-        <span class="cycle-step">Better Culture</span>
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2><i class="fas fa-sync" role="img" aria-label="Cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
+      <p class="research-foundation">The most important takeaway from chapters 1-3: <strong>Culture isn't fixed.</strong> You can intentionally change it.</p>
+    </div>
+
+    <div class="causal-flow">
+      <!-- Step 1: Better Practices -->
+      <div class="causal-step step-business">
+        <div class="step-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="step-content">
+          <h3>Better Practices</h3>
+          <p class="step-chapter">Technical Excellence</p>
+          <div class="step-metrics">
+            <div class="metric-item">CI/CD</div>
+            <div class="metric-item">Version Control</div>
+            <div class="metric-item">Testing</div>
+          </div>
+        </div>
       </div>
 
-      <div class="insight-explanation">
-        <h4>Why This Matters</h4>
-        <ul>
-          <li><strong>Deployment pain reflects culture</strong> - but culture can be intentionally improved</li>
-          <li><strong>High performers achieve both speed AND stability</strong> - it's not a trade-off</li>
-          <li><strong>Software delivery drives business success</strong> - across all industries, not just tech</li>
-        </ul>
-        <p><strong>The Hope:</strong> Meetings 2-4 will cover the specific technical practices that improve culture and performance.</p>
+      <!-- Arrow 1 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right"></i>
+        <span class="arrow-label">enable</span>
+      </div>
+
+      <!-- Step 2: Better Interactions -->
+      <div class="causal-step step-measurement">
+        <div class="step-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="step-content">
+          <h3>Better Interactions</h3>
+          <p class="step-chapter">Daily Work Changes</p>
+          <div class="step-metrics">
+            <div class="metric-item">Collaboration</div>
+            <div class="metric-item">Trust</div>
+            <div class="metric-item">Learning</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right"></i>
+        <span class="arrow-label">create</span>
+      </div>
+
+      <!-- Step 3: Better Culture -->
+      <div class="causal-step step-culture">
+        <div class="step-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <div class="step-content">
+          <h3>Better Culture</h3>
+          <p class="step-chapter">Generative Culture</p>
+          <div class="step-metrics">
+            <div class="metric-item generative">High Performance</div>
+            <div class="metric-item generative">Low Anxiety</div>
+            <div class="metric-item generative">Speed + Stability</div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- Impact Stats Callout -->
+    <div class="impact-stats">
+      <h4>Why This Matters</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-label">Deployment pain reflects culture</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">High performers achieve speed AND stability</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Software delivery drives business success</div>
+        </div>
+      </div>
+      <p class="stats-conclusion"><strong>The Hope:</strong> Meetings 2-4 will cover the specific technical practices that improve culture and performance.</p>
+    </div>
   </div>
 </div>
 
