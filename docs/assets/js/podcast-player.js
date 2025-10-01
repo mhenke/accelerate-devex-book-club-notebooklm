@@ -150,12 +150,8 @@
      */
     function activateItem(item) {
       item.classList.add('playing');
+      item.classList.remove('paused'); // Ensure we show equalizer, not pause button
       item.setAttribute('aria-current', 'true');
-
-      const playingIndicator = item.querySelector('.playing-indicator');
-      if (playingIndicator) {
-        playingIndicator.hidden = false;
-      }
     }
 
     /**
@@ -165,11 +161,6 @@
       item.classList.remove('playing');
       item.classList.remove('paused');
       item.setAttribute('aria-current', 'false');
-
-      const playingIndicator = item.querySelector('.playing-indicator');
-      if (playingIndicator) {
-        playingIndicator.hidden = true;
-      }
     }
 
     /**
