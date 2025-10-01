@@ -189,7 +189,6 @@ document.addEventListener('keydown', function(event) {
     <div class="feature-grid">
       <!-- Video Section -->
       <div class="media-section video-section">
-        <h3><i class="fas fa-video"></i> Video</h3>
         <div class="video-card">
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
@@ -210,7 +209,6 @@ document.addEventListener('keydown', function(event) {
 
       <!-- Podcast Section - Compact Playlist -->
       <div class="media-section podcast-section">
-        <h3><i class="fas fa-podcast"></i> Podcasts</h3>
         <div class="podcast-playlist" role="region" aria-label="Podcast playlist">
 
           <!-- Podcast Items (Compact List) -->
@@ -367,6 +365,7 @@ document.addEventListener('keydown', function(event) {
       <h4>The Signal: Deployment Anxiety</h4>
       <p>That knot in your stomach before deployment isn't personal weakness—it's your organization sending you a message about deeper systemic problems.</p>
     </div>
+
   </div>
 </div>
 
@@ -460,6 +459,7 @@ document.addEventListener('keydown', function(event) {
       </div>
       <p class="stats-conclusion">High performers achieve these results because their culture enables better technical practices.</p>
     </div>
+
   </div>
 </div>
 
@@ -531,6 +531,7 @@ document.addEventListener('keydown', function(event) {
         <span class="meetings-note">(meetings 2-4)</span>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -620,6 +621,7 @@ document.addEventListener('keydown', function(event) {
       </div>
       <p class="stats-conclusion"><strong>The Hope:</strong> Meetings 2-4 will cover the specific technical practices that improve culture and performance.</p>
     </div>
+
   </div>
 </div>
 
@@ -665,6 +667,7 @@ document.addEventListener('keydown', function(event) {
         <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -714,6 +717,7 @@ document.addEventListener('keydown', function(event) {
         One-sentence (what, when, impact) pasted into meeting notes
       </div>
     </div>
+
   </div>
 
   <div class="due-date">
