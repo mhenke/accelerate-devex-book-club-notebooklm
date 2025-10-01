@@ -216,24 +216,6 @@ document.addEventListener('keydown', function(event) {
         <h3><i class="fas fa-podcast"></i> Podcasts</h3>
         <div class="podcast-playlist" role="region" aria-label="Podcast playlist">
 
-          <!-- Shared Player -->
-          <div class="playlist-player">
-            <div class="now-playing" id="now-playing-label">
-              <div class="playing-indicator">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-              <span>Now Playing: <strong id="current-track-title">Select a podcast to play</strong></span>
-            </div>
-            <audio id="shared-player" controls>
-              <source src="" type="audio/mp4" id="shared-player-source">
-              Your browser does not support the audio tag.
-            </audio>
-          </div>
-
           <!-- Podcast Items (Compact List) -->
           <div class="podcast-item" role="button" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4"
@@ -247,7 +229,9 @@ document.addEventListener('keydown', function(event) {
                   <span class="bar"></span>
                 </div>
               </div>
-              <i class="fas fa-podcast podcast-icon"></i>
+              <button class="play-btn" aria-label="Play Accelerate Metrics Unlocked">
+                <i class="fas fa-play"></i>
+              </button>
             </div>
 
             <div class="podcast-content">
@@ -273,7 +257,9 @@ document.addEventListener('keydown', function(event) {
                   <span class="bar"></span>
                 </div>
               </div>
-              <i class="fas fa-podcast podcast-icon"></i>
+              <button class="play-btn" aria-label="Play Accelerate Success">
+                <i class="fas fa-play"></i>
+              </button>
             </div>
 
             <div class="podcast-content">
@@ -299,7 +285,9 @@ document.addEventListener('keydown', function(event) {
                   <span class="bar"></span>
                 </div>
               </div>
-              <i class="fas fa-podcast podcast-icon"></i>
+              <button class="play-btn" aria-label="Play Accelerate Your DevEx">
+                <i class="fas fa-play"></i>
+              </button>
             </div>
 
             <div class="podcast-content">
@@ -311,6 +299,14 @@ document.addEventListener('keydown', function(event) {
             </div>
 
             <div class="podcast-duration">22:15</div>
+          </div>
+
+          <!-- Shared Player at Bottom -->
+          <div class="playlist-player">
+            <audio id="shared-player" controls>
+              <source src="" type="audio/mp4" id="shared-player-source">
+              Your browser does not support the audio tag.
+            </audio>
           </div>
         </div>
       </div>
