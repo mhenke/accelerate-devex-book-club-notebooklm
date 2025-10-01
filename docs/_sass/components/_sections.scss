@@ -335,8 +335,8 @@
 
       .chapter-number {
         font-size: var(--font-size-body-small);
-        color: var(--text-light);
-        font-weight: var(--font-weight-medium);
+        color: var(--text-dark); // Improved contrast - was text-light
+        font-weight: var(--font-weight-semibold); // Increased weight for better readability
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
@@ -944,21 +944,21 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   &.pathological {
-    background: rgba(220, 38, 38, 0.1);
-    color: #dc2626;
-    border-color: rgba(220, 38, 38, 0.2);
+    background: #fff5f5; // Lighter background for better contrast
+    color: #7f1d1d; // Darker red for WCAG AA compliance (was #dc2626)
+    border-color: #b91c1c;
   }
 
   &.bureaucratic {
-    background: rgba(245, 158, 11, 0.1);
-    color: #d97706;
-    border-color: rgba(245, 158, 11, 0.2);
+    background: #fffbeb; // Lighter background for better contrast
+    color: #78350f; // Darker amber for WCAG AA compliance (was #d97706)
+    border-color: #d97706;
   }
 
   &.generative {
-    background: rgba(5, 150, 105, 0.1);
-    color: #059669;
-    border-color: rgba(5, 150, 105, 0.2);
+    background: #f0fdf4; // Lighter background for better contrast
+    color: #14532d; // Darker green for WCAG AA compliance (was #059669)
+    border-color: #16a34a;
   }
 }
 
@@ -1182,21 +1182,21 @@
   justify-content: center;
 
   &.pathological {
-    background: #fed7d7;
-    border-color: #e53e3e;
-    color: #c53030;
+    background: #fee2e2; // Adjusted for better contrast
+    color: #7f1d1d; // Darker text for WCAG AA compliance (was #c53030)
+    border: 2px solid #b91c1c;
   }
 
   &.transitioning {
-    background: #feebc8;
-    border-color: #dd6b20;
-    color: #c05621;
+    background: #fef3c7; // Adjusted for better contrast
+    color: #78350f; // Darker text for WCAG AA compliance (was #c05621)
+    border: 2px solid #d97706;
   }
 
   &.generative {
-    background: #c6f6d5;
-    border-color: #38a169;
-    color: #2f855a;
+    background: #dcfce7; // Adjusted for better contrast
+    color: #14532d; // Darker text for WCAG AA compliance (was #2f855a)
+    border: 2px solid #16a34a;
   }
 }
 
