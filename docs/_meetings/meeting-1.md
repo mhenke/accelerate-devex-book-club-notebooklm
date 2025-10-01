@@ -181,6 +181,59 @@ document.addEventListener('keydown', function(event) {
 </div>
 </div>
 
+<!-- CULTURE FIRST WARNING -->
+<div class="section-card" markdown="0">
+  <div class="culture-first-warning">
+    <div class="warning-header">
+      <i class="fas fa-exclamation-triangle warning-icon"></i>
+      <h2>⚠️ Critical Foundation: Culture Before Metrics</h2>
+    </div>
+
+    <div class="warning-content">
+      <div class="warning-section">
+        <h3 class="warning-subtitle"><i class="fas fa-skull-crossbones"></i> The Trap</h3>
+        <p>Teams often jump straight to measurement, hoping metrics alone will magically improve performance. This is the single most common mistake in DevOps transformation.</p>
+      </div>
+
+      <div class="warning-section">
+        <h3 class="warning-subtitle"><i class="fas fa-flask"></i> The Reality</h3>
+        <p>Without a healthy culture foundation, metrics become:</p>
+        <ul class="warning-list">
+          <li><strong>Surveillance tools</strong> that breed distrust and fear</li>
+          <li><strong>Vanity numbers</strong> like commit counts and lines of code</li>
+          <li><strong>Perverse incentives</strong> that encourage gaming the system</li>
+        </ul>
+        <p class="warning-callout"><i class="fas fa-quote-left"></i> Without trust, measurement is seen as surveillance. With trust, measurement becomes a tool for improvement.</p>
+      </div>
+
+      <div class="warning-section">
+        <h3 class="warning-subtitle"><i class="fas fa-arrow-right"></i> The Correct Sequence</h3>
+        <div class="sequence-flow">
+          <div class="sequence-step">
+            <div class="sequence-number">1</div>
+            <div class="sequence-label">Build Culture</div>
+          </div>
+          <i class="fas fa-arrow-right sequence-arrow"></i>
+          <div class="sequence-step">
+            <div class="sequence-number">2</div>
+            <div class="sequence-label">Introduce Metrics</div>
+          </div>
+          <i class="fas fa-arrow-right sequence-arrow"></i>
+          <div class="sequence-step">
+            <div class="sequence-number">3</div>
+            <div class="sequence-label">Achieve Acceleration</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warning-footer">
+        <p><strong>This Meeting:</strong> Establishes WHY culture must come first and WHAT to measure.</p>
+        <p><strong>Meetings 2-4:</strong> Cover HOW to build that culture through specific technical practices.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-play-circle"></i> Media</h2>
@@ -331,6 +384,8 @@ document.addEventListener('keydown', function(event) {
 
 <!-- Step-Based Progressive Learning Structure -->
 
+<!-- DEVELOPER EXPERIENCE DIMENSIONS -->
+
 <!-- THE PROBLEM -->
 <div class="false-choice-visual" markdown="0">
   <div class="false-choice-container">
@@ -463,6 +518,129 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- METRICS IN CONTEXT -->
+<div class="chapter-metrics-compact section-card" markdown="0">
+<h2><i class="fas fa-balance-scale"></i> Metrics in Context: What to Measure (and What to Avoid)</h2>
+<p class="section-intro">Not all metrics are created equal. Click each category to explore what drives improvement versus dysfunction.</p>
+
+<div class="chapters-grid">
+<div class="chapter-item" data-chapter="good-metrics" onclick="showMetricsDetail('good-metrics')">
+  <i class="fas fa-check-circle"></i>
+  <div class="chapter-content">
+    <div class="chapter-number">Good Metrics</div>
+    <div class="chapter-title">System Health & Flow</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+
+<div class="chapter-item" data-chapter="bad-metrics" onclick="showMetricsDetail('bad-metrics')">
+  <i class="fas fa-times-circle"></i>
+  <div class="chapter-content">
+    <div class="chapter-number">Bad Metrics</div>
+    <div class="chapter-title">Individual & Vanity</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+</div>
+
+<!-- Expandable Details Section -->
+<div class="chapter-details" id="metrics-details" hidden>
+  <div class="chapter-detail" id="detail-good-metrics">
+    <h3><i class="fas fa-check-circle"></i> Good Metrics: System Health & Flow</h3>
+    <p>These metrics diagnose system issues and reveal opportunities for improvement. They focus on outcomes that matter to customers and the business.</p>
+    <ul>
+      <li><i class="fas fa-rocket"></i> <strong>Deployment frequency</strong> - How often you deliver value</li>
+      <li><i class="fas fa-clock"></i> <strong>Lead time for changes</strong> - Speed from commit to production</li>
+      <li><i class="fas fa-redo"></i> <strong>Time to restore service</strong> - Recovery speed from incidents</li>
+      <li><i class="fas fa-exclamation-triangle"></i> <strong>Change failure rate</strong> - Quality of deployments</li>
+      <li><i class="fas fa-stream"></i> <strong>Flow time through system</strong> - End-to-end delivery time</li>
+      <li><i class="fas fa-comment-dots"></i> <strong>Feedback loop duration</strong> - Time to learn from changes</li>
+    </ul>
+    <div class="metric-focus">
+      <i class="fas fa-bullseye"></i> <strong>Focus:</strong> Diagnose system bottlenecks and improve flow
+    </div>
+  </div>
+
+  <div class="chapter-detail" id="detail-bad-metrics">
+    <h3><i class="fas fa-times-circle"></i> Bad Metrics: Individual Performance & Vanity</h3>
+    <p>These metrics grade individual performance and create perverse incentives. They encourage gaming, hiding problems, and local optimization.</p>
+    <ul>
+      <li><i class="fas fa-code"></i> <strong>Lines of code written</strong> - Rewards verbosity over clarity</li>
+      <li><i class="fas fa-git-alt"></i> <strong>Number of commits</strong> - Incentivizes tiny, meaningless changes</li>
+      <li><i class="fas fa-user-clock"></i> <strong>Hours worked / utilization</strong> - Values presence over outcomes</li>
+      <li><i class="fas fa-tasks"></i> <strong>Story points completed</strong> - Encourages estimate inflation</li>
+      <li><i class="fas fa-percentage"></i> <strong>Code coverage percentage</strong> - Tests execution without validation</li>
+      <li><i class="fas fa-tachometer-alt"></i> <strong>Velocity trends</strong> - Easily gamed, meaningless comparisons</li>
+    </ul>
+    <div class="metric-warning">
+      <i class="fas fa-exclamation-circle"></i> <strong>Problem:</strong> Grade individuals and encourage gaming
+    </div>
+  </div>
+</div>
+
+<script>
+// Interactive Metrics Comparison Functionality
+let currentActiveMetric = null;
+
+function showMetricsDetail(metricId) {
+  const detailsContainer = document.getElementById('metrics-details');
+  const targetDetail = document.getElementById('detail-' + metricId);
+  const clickedItem = document.querySelector('[data-chapter="' + metricId + '"]');
+
+  // If clicking the same item that's already active, close it
+  if (currentActiveMetric === metricId) {
+    hideMetricsDetails();
+    return;
+  }
+
+  // Remove active state from all items
+  document.querySelectorAll('[data-chapter^="good-metrics"], [data-chapter^="bad-metrics"]').forEach(item => {
+    item.classList.remove('active');
+    const indicator = item.querySelector('.chapter-indicator i');
+    if (indicator) {
+      indicator.className = 'fas fa-chevron-down';
+    }
+  });
+
+  // Hide all details
+  document.querySelectorAll('#metrics-details .chapter-detail').forEach(detail => {
+    detail.hidden = true;
+  });
+
+  // Show the container and target detail
+  detailsContainer.hidden = false;
+  targetDetail.hidden = false;
+  clickedItem.classList.add('active');
+  const indicator = clickedItem.querySelector('.chapter-indicator i');
+  if (indicator) {
+    indicator.className = 'fas fa-chevron-up';
+  }
+
+  currentActiveMetric = metricId;
+
+  // Smooth scroll to details
+  setTimeout(() => {
+    detailsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 100);
+}
+
+function hideMetricsDetails() {
+  document.getElementById('metrics-details').hidden = true;
+  document.querySelectorAll('[data-chapter^="good-metrics"], [data-chapter^="bad-metrics"]').forEach(item => {
+    item.classList.remove('active');
+    const indicator = item.querySelector('.chapter-indicator i');
+    if (indicator) {
+      indicator.className = 'fas fa-chevron-down';
+    }
+  });
+  document.querySelectorAll('#metrics-details .chapter-detail').forEach(detail => {
+    detail.hidden = true;
+  });
+  currentActiveMetric = null;
+}
+</script>
+</div>
+
 <!-- ASSESSMENT SKETCH DIAGRAM -->
 <div class="section-card" markdown="0">
   <div class="sketch-container">
@@ -532,6 +710,68 @@ document.addEventListener('keydown', function(event) {
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- PSYCHOLOGICAL SAFETY: THE FOUNDATION -->
+<div class="section-card" markdown="0">
+  <div class="psych-safety-section">
+    <div class="psych-safety-header">
+      <i class="fas fa-shield-alt psych-icon"></i>
+      <h2>Psychological Safety: The Critical Enabler</h2>
+    </div>
+
+    <div class="psych-safety-content">
+      <div class="psych-definition">
+        <h3><i class="fas fa-lightbulb"></i> What Is It?</h3>
+        <p>Psychological safety is the belief that you can take risks, make mistakes, ask questions, and share ideas without fear of punishment or humiliation.</p>
+        <p class="psych-quote"><i class="fas fa-quote-left"></i> In Westrum's research, psychological safety is what separates Generative cultures from Pathological and Bureaucratic ones.</p>
+      </div>
+
+      <div class="psych-indicators">
+        <h3><i class="fas fa-tasks"></i> Key Indicators</h3>
+        <div class="indicators-grid">
+          <div class="indicator-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Can you admit mistakes without fear of blame?</span>
+          </div>
+          <div class="indicator-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Can you ask "dumb" questions without judgment?</span>
+          </div>
+          <div class="indicator-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Can you challenge status quo without retaliation?</span>
+          </div>
+          <div class="indicator-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Can you surface problems early without pushback?</span>
+          </div>
+          <div class="indicator-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Can you share failures as learning opportunities?</span>
+          </div>
+          <div class="indicator-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Can you experiment and fail fast without career risk?</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="psych-impact">
+        <h3><i class="fas fa-rocket"></i> Why It Matters</h3>
+        <ul>
+          <li><strong>Enables Learning:</strong> Teams surface problems early instead of hiding them</li>
+          <li><strong>Drives Innovation:</strong> People take calculated risks that lead to breakthroughs</li>
+          <li><strong>Honest Metrics:</strong> Teams share accurate data instead of gaming numbers</li>
+          <li><strong>Faster Recovery:</strong> Incidents become learning opportunities, not witch hunts</li>
+        </ul>
+      </div>
+
+      <div class="psych-warning">
+        <p><i class="fas fa-exclamation-circle"></i> <strong>Without psychological safety, all the metrics and practices in the world will fail.</strong> People will hide problems, game numbers, and avoid necessary risks.</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -622,6 +862,105 @@ document.addEventListener('keydown', function(event) {
       <p class="stats-conclusion"><strong>The Hope:</strong> Meetings 2-4 will cover the specific technical practices that improve culture and performance.</p>
     </div>
 
+  </div>
+</div>
+
+<!-- COMMON PITFALLS -->
+<div class="section-card" markdown="0">
+  <div class="pitfalls-section">
+    <div class="pitfalls-header">
+      <i class="fas fa-exclamation-triangle pitfalls-icon"></i>
+      <h2>Common Pitfalls to Avoid</h2>
+      <p class="pitfalls-intro">Even with the best intentions, teams fall into these traps. Learn from others' mistakes.</p>
+    </div>
+
+    <div class="pitfalls-grid">
+      <!-- Pitfall 1: Surveillance -->
+      <div class="pitfall-card danger">
+        <div class="pitfall-header">
+          <i class="fas fa-video"></i>
+          <h3>🚫 Surveillance Mindset</h3>
+        </div>
+        <div class="pitfall-content">
+          <p class="pitfall-description">Using metrics as a policing tool to monitor and grade individuals.</p>
+          <div class="pitfall-symptoms">
+            <h4>Warning Signs:</h4>
+            <ul>
+              <li>Metrics dashboards shown in performance reviews</li>
+              <li>Individual commit/LOC tracking and rankings</li>
+              <li>"Productivity scores" tied to promotions</li>
+              <li>Team members gaming numbers to look good</li>
+            </ul>
+          </div>
+          <div class="pitfall-consequence">
+            <strong>Result:</strong> Fear, distrust, hiding problems, optimizing for metrics instead of outcomes.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pitfall 2: Local Optimization -->
+      <div class="pitfall-card warning">
+        <div class="pitfall-header">
+          <i class="fas fa-sitemap"></i>
+          <h3>🚫 Local Optimization</h3>
+        </div>
+        <div class="pitfall-content">
+          <p class="pitfall-description">Teams improving their numbers while hurting overall system performance.</p>
+          <div class="pitfall-symptoms">
+            <h4>Warning Signs:</h4>
+            <ul>
+              <li>Dev team deploys frequently but QA is overwhelmed</li>
+              <li>Fast features but slow incident resolution</li>
+              <li>High velocity but poor quality reaching production</li>
+              <li>"Not my problem" handoffs between teams</li>
+            </ul>
+          </div>
+          <div class="pitfall-consequence">
+            <strong>Result:</strong> Bottlenecks shift, total lead time increases, customer satisfaction drops.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pitfall 3: Ignoring Context -->
+      <div class="pitfall-card caution">
+        <div class="pitfall-header">
+          <i class="fas fa-balance-scale"></i>
+          <h3>🚫 Ignoring Context</h3>
+        </div>
+        <div class="pitfall-content">
+          <p class="pitfall-description">Applying same metrics and targets across different teams and situations.</p>
+          <div class="pitfall-symptoms">
+            <h4>Warning Signs:</h4>
+            <ul>
+              <li>Same deploy frequency targets for all teams</li>
+              <li>Comparing legacy system metrics to greenfield projects</li>
+              <li>Rigid benchmarks without considering domain constraints</li>
+              <li>"Everyone should deploy like Team X"</li>
+            </ul>
+          </div>
+          <div class="pitfall-consequence">
+            <strong>Result:</strong> Teams feel misunderstood, metrics lose meaning, context-appropriate improvements ignored.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pitfalls-alternative">
+      <div class="alternative-box">
+        <h3><i class="fas fa-check-circle"></i> The Alternative: Metrics as Mirrors</h3>
+        <div class="alternative-content">
+          <p><strong>Instead of surveillance, policing, and judgment:</strong></p>
+          <ul class="alternative-list">
+            <li><i class="fas fa-search"></i> <strong>Reflection:</strong> Use metrics to understand current state and identify improvement opportunities</li>
+            <li><i class="fas fa-users"></i> <strong>Collaboration:</strong> Discuss metrics as a team, not as individual grades</li>
+            <li><i class="fas fa-lightbulb"></i> <strong>Learning:</strong> Treat trends as experiments - what happened when we changed X?</li>
+            <li><i class="fas fa-cog"></i> <strong>System Thinking:</strong> Focus on flow through the entire value stream</li>
+            <li><i class="fas fa-comments"></i> <strong>Context:</strong> Adapt metrics and targets to each team's unique situation</li>
+          </ul>
+          <p class="alternative-quote"><i class="fas fa-quote-left"></i> <strong>Remember:</strong> Metrics are tools for improvement, not weapons for judgment. In a generative culture with psychological safety, teams use metrics to accelerate learning and delivery.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -723,33 +1062,6 @@ document.addEventListener('keydown', function(event) {
   <div class="due-date">
     <i class="fas fa-clock"></i>
     <strong>Due: Before Meeting 2 (Week 3)</strong>
-  </div>
-</div>
-
-<div class="section-card resources-clean" markdown="0">
-  <div class="step-header">
-    <h2><i class="fas fa-link"></i> Related Resources</h2>
-    <p class="section-subtitle">Dive deeper into the research and frameworks that power high-performing organizations</p>
-  </div>
-  <div class="resource-content">
-    <div class="resource-grid">
-      {% include simple-card.html
-        type="resource"
-        icon="fas fa-chart-line"
-        title="DORA Metrics & Research"
-        description="Evidence-based performance measurement"
-        links="2024 State of DevOps Report|https://dora.dev/research/2024/dora-report/|DORA Research Program|https://dora.dev/|DORA Quick Check Assessment|https://dora.dev/quickcheck/|Four Key Metrics Guide|https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance"
-        theme="primary"
-      %}
-      {% include simple-card.html
-        type="resource"
-        icon="fas fa-users"
-        title="Westrum Culture & Transformation"
-        description="Building generative organizational culture"
-        links="Westrum Organizational Culture Types|https://dora.dev/capabilities/generative-organizational-culture/|IT Revolution Westrum Model|https://itrevolution.com/articles/westrums-organizational-model-in-tech-orgs/|Generative Culture Assessment|https://continuousdelivery.com/implementing/culture/|Google's Project Aristotle|https://rework.withgoogle.com/print/guides/5312474543562752/"
-        theme="info"
-      %}
-    </div>
   </div>
 </div>
 
