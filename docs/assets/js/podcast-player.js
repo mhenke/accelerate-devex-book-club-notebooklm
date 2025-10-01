@@ -30,6 +30,7 @@
 
     // Preset first episode as current
     currentItem = podcastItems[0];
+    currentItem.classList.add('is-current');
     updateNowPlayingDisplay();
 
     // Add click handlers to playlist items and play buttons
