@@ -45,7 +45,7 @@ dora_color: "#0969da" # $meeting-1-primary
 <!-- Expandable Details Section -->
 <div class="chapter-details" id="chapter-details" hidden>
   <div class="chapter-detail" id="detail-accelerate">
-    <h3><i class="fas fa-rocket"></i> Accelerate</h3>
+    <h3><i class="fas fa-rocket" aria-hidden="true"></i> Accelerate</h3>
     <p>Software delivery capability drives organizational success across all industries. This chapter presents evidence from 23,000+ survey responses showing that digital transformation is real and software delivery creates competitive advantage.</p>
     <ul>
       <li>Software delivery capability drives organizational success across all industries (profitability, productivity, market share)</li>
@@ -55,7 +55,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 
   <div class="chapter-detail" id="detail-measuring">
-    <h3><i class="fas fa-chart-line"></i> Measuring Performance</h3>
+    <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Measuring Performance</h3>
     <p>Replaces flawed traditional metrics with four reliable DORA metrics that distinguish high-performing teams from low performers.</p>
     <ul>
       <li>Tempo metrics: Lead Time and Deployment Frequency</li>
@@ -65,7 +65,7 @@ dora_color: "#0969da" # $meeting-1-primary
   </div>
 
   <div class="chapter-detail" id="detail-culture">
-    <h3><i class="fas fa-users"></i> Measuring & Changing Culture</h3>
+    <h3><i class="fas fa-users" aria-hidden="true"></i> Measuring & Changing Culture</h3>
     <p>Proves that culture can be measured and intentionally improved using Westrum's typology. Culture is an outcome, not a precondition for transformation.</p>
     <ul>
       <li>Westrum organizational culture types: Pathological, Bureaucratic, Generative</li>
@@ -235,7 +235,7 @@ document.addEventListener('keydown', function(event) {
 
 <div class="section-card" markdown="0">
   <div class="step-header">
-    <h2><i class="fas fa-play-circle"></i> Media</h2>
+    <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
   </div>
   <div class="media-content">
     <div class="feature-grid">
@@ -252,7 +252,7 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Alternative Video -->
           <div class="alternative-video">
-            <h3><i class="fas fa-link"></i> Alternative Video</h3>
+            <h3><i class="fas fa-link" aria-hidden="true"></i> Alternative Video</h3>
             <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a></p>
             <p class="alt-video-desc">Alternative foundational overview with expert discussion on core concepts.</p>
           </div>
@@ -388,7 +388,7 @@ document.addEventListener('keydown', function(event) {
 <!-- THE PROBLEM -->
 <div class="false-choice-visual" markdown="0">
   <div class="false-choice-container">
-    <h2 class="false-choice-main-title">The Problem: False Choice</h2>
+    <h2 class="false-choice-main-title"><i class="fas fa-code-branch" aria-hidden="true"></i> The Problem: False Choice</h2>
     <h3 class="false-choice-subtitle">Most teams believe they must choose the optimal development approach</h3>
 
     <div class="choice-options">
@@ -438,7 +438,7 @@ document.addEventListener('keydown', function(event) {
           <i class="fas fa-chart-line"></i>
         </div>
         <div class="step-content">
-          <h3>Business Need</h3>
+          <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Business Need</h3>
           <p class="step-chapter">Chapter 1: Competitive Advantage</p>
           <div class="step-metrics">
             <div class="metric-item">Market Share</div>
@@ -460,7 +460,7 @@ document.addEventListener('keydown', function(event) {
           <i class="fas fa-tachometer-alt"></i>
         </div>
         <div class="step-content">
-          <h3>Measurement</h3>
+          <h3><i class="fas fa-tachometer-alt" aria-hidden="true"></i> Measurement</h3>
           <p class="step-chapter">Chapter 2: DORA Metrics</p>
           <div class="step-metrics">
             <div class="metric-item">Lead Time</div>
@@ -483,7 +483,7 @@ document.addEventListener('keydown', function(event) {
           <i class="fas fa-users"></i>
         </div>
         <div class="step-content">
-          <h3>Cultural Foundation</h3>
+          <h3><i class="fas fa-users" aria-hidden="true"></i> Cultural Foundation</h3>
           <p class="step-chapter">Chapter 3: Westrum Culture</p>
           <div class="step-metrics">
             <div class="metric-item pathological">Pathological</div>
@@ -519,7 +519,7 @@ document.addEventListener('keydown', function(event) {
 
 <!-- METRICS IN CONTEXT -->
 <div class="chapter-metrics-compact section-card" markdown="0">
-<h2><i class="fas fa-balance-scale"></i> Metrics in Context: What to Measure (and What to Avoid)</h2>
+<h2><i class="fas fa-balance-scale" aria-hidden="true"></i> Metrics in Context: What to Measure (and What to Avoid)</h2>
 <p class="section-intro">Not all metrics are created equal. Click each category to explore what drives improvement versus dysfunction.</p>
 
 <div class="chapters-grid">
@@ -545,7 +545,7 @@ document.addEventListener('keydown', function(event) {
 <!-- Expandable Details Section -->
 <div class="chapter-details" id="metrics-details" hidden>
   <div class="chapter-detail" id="detail-good-metrics">
-    <h3><i class="fas fa-check-circle"></i> Good Metrics: System Health & Flow</h3>
+    <h3><i class="fas fa-check-circle" aria-hidden="true"></i> Good Metrics: System Health & Flow</h3>
     <p class="metrics-intro">These metrics diagnose system issues and reveal opportunities for improvement.</p>
 
     <div class="metrics-bubbles-grid">
@@ -581,7 +581,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="chapter-detail" id="detail-bad-metrics">
-    <h3><i class="fas fa-times-circle"></i> Bad Metrics: Individual Performance & Vanity</h3>
+    <h3><i class="fas fa-times-circle" aria-hidden="true"></i> Bad Metrics: Individual Performance & Vanity</h3>
     <p class="metrics-intro">These metrics grade individuals and create perverse incentives that encourage gaming.</p>
 
     <div class="metrics-bubbles-grid">
@@ -759,13 +759,13 @@ function hideMetricsDetails() {
 
     <div class="psych-safety-content">
       <div class="psych-definition">
-        <h3><i class="fas fa-lightbulb"></i> What Is It?</h3>
+        <h3><i class="fas fa-lightbulb" aria-hidden="true"></i> What Is It?</h3>
         <p>Psychological safety is the belief that you can take risks, make mistakes, ask questions, and share ideas without fear of punishment or humiliation.</p>
         <p class="psych-quote"><i class="fas fa-quote-left"></i> In Westrum's research, psychological safety is what separates Generative cultures from Pathological and Bureaucratic ones.</p>
       </div>
 
       <div class="psych-indicators">
-        <h3><i class="fas fa-tasks"></i> Key Indicators</h3>
+        <h3><i class="fas fa-tasks" aria-hidden="true"></i> Key Indicators</h3>
         <div class="indicators-grid">
           <div class="indicator-item">
             <i class="fas fa-check-circle"></i>
@@ -795,7 +795,7 @@ function hideMetricsDetails() {
       </div>
 
       <div class="psych-impact">
-        <h3><i class="fas fa-rocket"></i> Why It Matters</h3>
+        <h3><i class="fas fa-rocket" aria-hidden="true"></i> Why It Matters</h3>
         <ul>
           <li><strong>Enables Learning:</strong> Teams surface problems early instead of hiding them</li>
           <li><strong>Drives Innovation:</strong> People take calculated risks that lead to breakthroughs</li>
@@ -815,7 +815,7 @@ function hideMetricsDetails() {
 <div class="section-card" markdown="0">
   <div class="causal-chain-container">
     <div class="infographic-header">
-      <h2><i class="fas fa-sync" role="img" aria-label="Cycle"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
+      <h2><i class="fas fa-sync" aria-hidden="true"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
       <p class="research-foundation">The most important takeaway from chapters 1-3: <strong>Culture isn't fixed.</strong> You can intentionally change it.</p>
     </div>
 
@@ -826,7 +826,7 @@ function hideMetricsDetails() {
           <i class="fas fa-code"></i>
         </div>
         <div class="step-content">
-          <h3>Better Practices</h3>
+          <h3><i class="fas fa-code" aria-hidden="true"></i> Better Practices</h3>
           <p class="step-chapter">Technical Excellence</p>
           <div class="step-metrics">
             <div class="metric-item">CI/CD</div>
@@ -848,7 +848,7 @@ function hideMetricsDetails() {
           <i class="fas fa-users"></i>
         </div>
         <div class="step-content">
-          <h3>Better Interactions</h3>
+          <h3><i class="fas fa-users" aria-hidden="true"></i> Better Interactions</h3>
           <p class="step-chapter">Daily Work Changes</p>
           <div class="step-metrics">
             <div class="metric-item">Collaboration</div>
@@ -870,7 +870,7 @@ function hideMetricsDetails() {
           <i class="fas fa-rocket"></i>
         </div>
         <div class="step-content">
-          <h3>Better Culture</h3>
+          <h3><i class="fas fa-rocket" aria-hidden="true"></i> Better Culture</h3>
           <p class="step-chapter">Generative Culture</p>
           <div class="step-metrics">
             <div class="metric-item generative">High Performance</div>
@@ -994,7 +994,7 @@ function hideMetricsDetails() {
 <!-- ACTION ITEMS -->
 <div class="section-card action-items" markdown="0">
   <div class="action-header">
-    <h2><i class="fas fa-tasks"></i> Action Items for Next Meeting</h2>
+    <h2><i class="fas fa-tasks" aria-hidden="true"></i> Action Items for Next Meeting</h2>
     <p class="subtitle">Complete these tasks before Meeting 2 to maximize your learning</p>
   </div>
 
@@ -1048,7 +1048,7 @@ function hideMetricsDetails() {
 
 <!-- NEXT MEETING SECTION -->
 <div class="welcome-compact section-card next-meeting-card next-meeting-2" markdown="0">
-  <h2 id="next-meeting-heading"><i class="fas fa-arrow-right"></i> Next Meeting</h2>
+  <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
   <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
   <div class="welcome-cta">
     <a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="btn btn--primary-action btn--meeting-2">
