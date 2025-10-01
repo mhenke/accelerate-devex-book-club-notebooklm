@@ -2,12 +2,17 @@
  * Material Design 3 Compact Podcast Playlist with Shared Player
  * Manages shared audio player and playlist item interactions
  *
+ * Three-State Rotation:
+ * 1. Idle: Play button
+ * 2. Playing: Animated equalizer (replaces button)
+ * 3. Paused: Pause button
+ * 4. Resume: Back to equalizer
+ *
  * Features:
  * - Single shared player for all episodes
  * - Click-to-play list items
- * - Visual playing state with animated equalizer
+ * - Visual state rotation: play → equalizer → pause → equalizer
  * - Keyboard navigation support
- * - Auto-advance to next episode (optional)
  */
 
 (function () {
@@ -56,16 +61,29 @@
     });
 
     /**
-     * Handle play/pause toggle
+     * Handle play/pause toggle with three states
      */
     function handlePlayPause(src, title, item) {
-      // If this item is already playing, pause it
-      if (currentItem === item && !sharedPlayer.paused) {
-        sharedPlayer.pause();
+      // If clicking same item that's currently active
+      if (currentItem === item) {
+        if (!sharedPlayer.paused) {
+          // State: Playing → Paused
+          // Show pause button, hide equalizer
+          sharedPlayer.pause();
+          item.classList.add('paused');
+          item.classList.add('playing'); // Keep playing class for pause button
+        } else {
+          // State: Paused → Playing (resume)
+          // Show equalizer again, hide pause button
+          sharedPlayer.play();
+          item.classList.remove('paused');
+        }
         return;
       }
 
-      // Load and play this track
+      // Load and play new track
+      // State: Idle → Playing
+      // Show equalizer
       loadTrack(src, title, item);
       sharedPlayer.play();
     }
@@ -74,11 +92,12 @@
     sharedPlayer.addEventListener('play', function () {
       if (currentItem) {
         activateItem(currentItem);
+        currentItem.classList.remove('paused');
       }
     });
 
     sharedPlayer.addEventListener('pause', function () {
-      // Keep visual state (user can resume)
+      // Visual state managed by handlePlayPause
     });
 
     sharedPlayer.addEventListener('ended', function () {
@@ -126,6 +145,7 @@
      */
     function deactivateItem(item) {
       item.classList.remove('playing');
+      item.classList.remove('paused');
       item.setAttribute('aria-current', 'false');
 
       const playingIndicator = item.querySelector('.playing-indicator');
