@@ -285,6 +285,22 @@
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
+<!-- Preload critical fonts for LCP optimization -->
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2"
+  crossorigin
+/>
+
 <!-- Performance validation in development -->
 {% if jekyll.environment == 'development' %} {% include
 performance-validation.html %} {% endif %}
