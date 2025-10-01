@@ -136,36 +136,6 @@
   .playlist-player.is-playing & {
     display: flex;
   }
-
-  .equalizer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 20px;
-    gap: 2px;
-    width: 100%;
-
-    .bar {
-      width: 3px;
-      height: 100%;
-      background: white;
-      border-radius: 2px;
-      animation: equalize 0.8s ease-in-out infinite;
-      transform-origin: bottom;
-
-      &:nth-child(1) {
-        animation-delay: 0s;
-      }
-
-      &:nth-child(2) {
-        animation-delay: 0.2s;
-      }
-
-      &:nth-child(3) {
-        animation-delay: 0.4s;
-      }
-    }
-  }
 }
 
 .now-playing-text-wrapper {
@@ -394,7 +364,7 @@
   }
 }
 
-// Trailing element - Duration styled like podcast-type badge
+// Trailing element - Equalizer only
 .podcast-end {
   position: relative;
   display: flex;
@@ -403,6 +373,7 @@
   min-width: 80px;
 }
 
+// Duration badge (inline with podcast-type in headline)
 .podcast-duration {
   display: inline-block;
   padding: 2px 6px;
@@ -415,11 +386,7 @@
   color: #2e7d32;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
-
-  // Hide when this episode is playing
-  .podcast-item.is-current.is-playing & {
-    display: none;
-  }
+  flex-shrink: 0;
 }
 
 .podcast-equalizer {
