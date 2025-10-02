@@ -487,7 +487,7 @@
   h2,
   h3,
   h4 {
-    color: var(--text-light);
+    color: var(--text-light) !important;
   }
 
   color: var(--text-white);
@@ -1382,7 +1382,7 @@
   margin: 0;
   letter-spacing: 0.05em;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  color: var(--text-light);
+  color: var(--text-light) !important;
   display: inline;
   text-align: center;
 }
@@ -1486,7 +1486,7 @@
   h2,
   h3,
   h4 {
-    color: var(--text-light);
+    color: var(--text-light) !important;
   }
 
   // Break out of meeting container to span full width
@@ -1507,7 +1507,7 @@
   font-size: var(--font-size-headline-medium);
   font-weight: var(--font-weight-bold);
   margin: 0 0 var(--space-sm) 0;
-  color: var(--text-light);
+  color: var(--text-light) !important;
 }
 
 .false-choice-subtitle {
@@ -1634,7 +1634,7 @@
   h2,
   h3,
   h4 {
-    color: var(--text-light);
+    color: var(--text-light) !important;
   }
 
   h4 {
