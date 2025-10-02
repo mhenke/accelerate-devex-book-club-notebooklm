@@ -193,33 +193,30 @@
   color: var(--text-dark);
 
   h2 {
-    color: var(--meeting-1-primary);
+    color: var(--theme-primary);
     font-size: var(--font-size-headline-medium);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-bold);
     margin: var(--space-xl) 0 var(--space-md) 0;
-    padding-bottom: var(--space-sm);
-    border-bottom: 2px solid var(--meeting-1-primary);
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
-  // Override for section-cards - remove border-bottom for consistency
+  // Section-cards use consistent styling
   .section-card h2 {
-    border-bottom: none;
-    padding-bottom: 0;
-    margin: var(--space-md) 0;
-    font-size: var(--font-size-title-large);
+    margin: var(--space-lg) 0 var(--space-md) 0;
   }
 
   h3 {
     color: var(--theme-primary);
     font-size: var(--font-size-headline-small);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-semibold);
     margin: var(--space-lg) 0 var(--space-sm) 0;
   }
 
   h4 {
     color: var(--theme-primary);
     font-size: var(--font-size-title-large);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-semibold);
     margin: var(--space-md) 0 var(--space-sm) 0;
   }
 
