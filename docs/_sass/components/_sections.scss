@@ -481,6 +481,15 @@
     var(--header-dark-navy) 0%,
     var(--header-light-navy) 100%
   );
+
+  // Override heading colors for dark theme
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--text-light);
+  }
+
   color: var(--text-white);
   padding: var(--spacing-xl) 0;
   position: relative;
@@ -680,22 +689,11 @@
   padding: var(--space-lg);
 
   .alternative-header {
-    text-align: center;
     margin-bottom: var(--space-xl);
 
     h2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--space-sm);
-      color: var(--accent-teal);
-      font-size: var(--font-size-headline-medium);
-      font-weight: var(--font-weight-semibold);
+      // Use default meeting h2 styling (left-aligned, theme-primary)
       margin-bottom: var(--space-md);
-
-      i {
-        color: var(--accent-teal);
-      }
     }
 
     .alternative-intro {
@@ -1509,10 +1507,18 @@
 // False Choice Visual - Clean minimal design like reference
 .false-choice-visual {
   background: linear-gradient(135deg, #1a1a2e, #16213e);
-  color: white;
+  color: var(--text-light);
   padding: var(--space-md) var(--space-lg);
   border-radius: var(--border-radius-lg);
   margin: var(--space-md) 0;
+
+  // Override heading colors for dark theme
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--text-light);
+  }
 
   // Break out of meeting container to span full width
   .meeting-container & {
@@ -1532,7 +1538,8 @@
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   margin: 0 0 var(--space-sm) 0;
-  color: white;
+
+  // Color inherited from .false-choice-visual h2 override
 }
 
 .false-choice-subtitle {
@@ -1654,11 +1661,20 @@
   margin-top: var(--space-sm);
   text-align: left;
 
+  // Override heading colors for dark background
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--text-light);
+  }
+
   h4 {
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--space-sm) 0;
-    color: white;
+
+    // Color inherited from heading override above
   }
 
   p {
