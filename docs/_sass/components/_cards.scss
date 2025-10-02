@@ -97,7 +97,7 @@
     h4 {
       margin: 0 0 var(--space-sm) 0;
       color: var(--meeting-1-primary);
-      font-size: var(--font-size-body-large);
+      font-size: var(--md-sys-typescale-title-large);
       font-weight: var(--font-weight-semibold);
     }
   }
@@ -105,7 +105,7 @@
   &__content {
     p {
       color: var(--text-light);
-      font-size: var(--font-size-body-medium);
+      font-size: var(--md-sys-typescale-body-medium);
       margin: 0 0 var(--space-sm) 0;
       line-height: var(--line-height-relaxed);
 
@@ -203,7 +203,7 @@
 
   span {
     color: var(--text-light);
-    font-size: var(--font-size-body-medium);
+    font-size: var(--md-sys-typescale-body-medium);
     line-height: var(--line-height-relaxed);
     padding-left: var(--space-sm);
 
@@ -232,18 +232,18 @@
 }
 
 .enps-label {
-  font-size: var(--font-size-body-medium);
+  font-size: var(--md-sys-typescale-body-medium);
   color: var(--text-light);
   font-weight: var(--font-weight-medium);
 }
 
 .enps-value {
-  font-size: var(--font-size-headline-large);
+  font-size: var(--md-sys-typescale-headline-large);
   font-weight: var(--font-weight-bold);
   color: var(--color-blue-700);
 
   @include mobile-only {
-    font-size: var(--font-size-headline-small);
+    font-size: var(--md-sys-typescale-headline-small);
   }
 }
 
@@ -256,7 +256,7 @@
 }
 
 .enps-arrow {
-  font-size: var(--font-size-headline-small);
+  font-size: var(--md-sys-typescale-headline-small);
   color: var(--color-blue-600);
 }
 
@@ -270,24 +270,24 @@
 }
 
 .stat-number {
-  font-size: var(--font-size-display-medium);
+  font-size: var(--md-sys-typescale-display-medium);
   font-weight: var(--font-weight-bold);
   color: var(--color-blue-700);
 
   @include mobile-only {
-    font-size: var(--font-size-headline-large);
+    font-size: var(--md-sys-typescale-headline-large);
   }
 }
 
 .stat-text {
-  font-size: var(--font-size-body-large);
+  font-size: var(--md-sys-typescale-body-large);
   color: var(--text-medium);
   font-weight: var(--font-weight-medium);
 }
 
 // Law statement quote styling
 .card .card__content blockquote {
-  font-size: var(--font-size-title-large);
+  font-size: var(--md-sys-typescale-headline-small);
   font-style: italic;
   color: var(--meeting-1-primary);
   margin: var(--space-md) 0 var(--space-lg) 0;
@@ -304,7 +304,7 @@
 .card .card__content cite {
   display: block;
   color: var(--text-light);
-  font-size: var(--font-size-body-medium);
+  font-size: var(--md-sys-typescale-body-medium);
   font-weight: var(--font-weight-medium);
   font-style: normal;
   text-transform: uppercase;

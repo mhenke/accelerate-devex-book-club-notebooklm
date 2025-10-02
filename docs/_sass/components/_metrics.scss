@@ -37,7 +37,7 @@
   }
 
   .metric-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--spacing-md) 0;
     color: var(--text-primary);
@@ -45,13 +45,13 @@
 
   .metric-description {
     color: var(--text-secondary);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-body-large);
     line-height: 1.6;
     margin-bottom: var(--spacing-md);
   }
 
   .metric-value {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     margin-bottom: var(--spacing-sm);
     font-weight: var(--font-weight-bold);
     color: var(--primary-navy);
@@ -116,12 +116,12 @@
 
   h4 {
     margin: 0 0 var(--spacing-md) 0;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-bold);
   }
 
   .level-description {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-body-large);
     opacity: 0.95;
     line-height: 1.5;
   }
@@ -172,14 +172,14 @@
   }
 
   .result-label {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--spacing-sm) 0;
   }
 
   .result-description {
     color: var(--text-secondary);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-body-large);
     line-height: 1.5;
   }
 
@@ -235,7 +235,7 @@
   }
 
   .stat-label {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     color: var(--text-secondary);
     margin-top: var(--spacing-sm);
     text-transform: uppercase;
@@ -243,7 +243,7 @@
   }
 
   .stat-trend {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     margin-top: var(--spacing-xs);
 
     &.positive {
@@ -287,7 +287,7 @@
     }
 
     .progress-percentage {
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-body-medium);
       color: var(--text-secondary);
     }
   }
@@ -327,14 +327,14 @@
     text-align: center;
 
     .metric-value {
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-headline-medium);
       font-weight: var(--font-weight-bold);
       display: block;
       margin-bottom: var(--spacing-xs);
     }
 
     .metric-label {
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-body-medium);
       color: var(--text-secondary);
       text-transform: uppercase;
       letter-spacing: 0.5px;

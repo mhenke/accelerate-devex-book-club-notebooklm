@@ -75,14 +75,14 @@
     flex-direction: column;
 
     .nav-label {
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-body-medium);
       color: var(--text-secondary);
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
     .nav-title {
-      font-size: var(--font-size-base);
+      font-size: var(--font-size-body-large);
       font-weight: var(--font-weight-semibold);
     }
   }
@@ -92,7 +92,7 @@
   text-align: center;
   font-weight: var(--font-weight-semibold);
   color: var(--text-secondary);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-headline-small);
 }
 
 // Breadcrumb Navigation
@@ -101,7 +101,7 @@
   align-items: center;
   gap: var(--spacing-xs);
   margin-bottom: var(--spacing-lg);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-body-medium);
   color: var(--text-secondary);
 
   a {
@@ -171,7 +171,7 @@
   margin: var(--spacing-lg) 0;
 
   .page-nav-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--spacing-md) 0;
     color: var(--text-primary);
@@ -286,13 +286,13 @@
 
   .tab-navigation {
     .tab-item {
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-body-medium);
       padding: var(--spacing-sm) var(--spacing-md);
     }
   }
 
   .breadcrumb-nav {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-label-small);
     flex-wrap: wrap;
   }
 }

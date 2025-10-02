@@ -137,21 +137,21 @@ h2 {
   @include heading-2;
 
   // Standardized h2 styling for all sections (except dark theme sections)
-  &:not(.key-question h2, .false-choice-visual h2, .key-question-banner h2, .deployment-signal h2, .section-card.dark-theme h2) {
+  &:not(.key-question h2, .section-card.dark-theme h2) {
     display: flex;
     align-items: center;
     gap: var(--space-md);
     text-align: left;
     justify-content: flex-start;
     color: var(--text-dark);
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-headline-large);
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--space-md);
 
     i,
     em {
       color: var(--accent-emerald);
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-headline-medium);
       width: 32px;
       height: 32px;
       display: flex;
@@ -333,7 +333,7 @@ a {
     i,
     em {
       color: var(--accent-teal);
-      font-size: var(--font-size-2xl);
+      font-size: var(--font-size-headline-large);
       font-style: normal; // Override em italic styling
       display: flex;
       align-items: center;
@@ -352,14 +352,14 @@ a {
   }
 
   &__title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--space-sm);
   }
 
   &__text {
     color: var(--color-white);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     line-height: var(--line-height-relaxed);
     margin: 0;
 
@@ -414,7 +414,7 @@ a {
       var(--hover-emerald)
     );
     color: white;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-bold);
     padding: var(--space-sm) var(--space-xl);
     border-radius: var(--radius-lg);
@@ -584,13 +584,13 @@ a {
     }
 
     i {
-      font-size: var(--font-size-2xl);
+      font-size: var(--font-size-headline-large);
     }
   }
 
   .hero-cta-subtitle {
     color: var(--color-white);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-body-large);
     margin: 0 auto;
     font-style: italic;
     max-width: var(--container-narrow);
@@ -648,7 +648,7 @@ a {
   border-radius: var(--radius-2xl);
   background: rgba(255, 255, 255, 0.1);
   color: var(--text-dark);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-headline-large);
   transition: all var(--duration-normal) var(--ease-out);
   backdrop-filter: var(--backdrop-blur-xl);
   border: var(--border-white-light);
@@ -670,7 +670,7 @@ a {
   @include mobile-only {
     width: 80px;
     height: 80px;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-headline-medium);
   }
 
   // Icon content
@@ -735,13 +735,13 @@ a {
       width: 50px;
       height: 50px;
       border-radius: var(--radius-lg);
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-headline-medium);
       color: var(--text-dark);
     }
 
     .category-title {
       color: var(--text-dark);
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-headline-small);
       font-weight: var(--font-weight-semibold);
       font-family: var(--font-display);
       margin: 0;
@@ -811,7 +811,7 @@ a {
 
   p {
     color: var(--text-dark);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-body-large);
     font-weight: var(--font-weight-medium);
     margin: 0 0 var(--space-lg);
     line-height: var(--line-height-relaxed);
@@ -826,7 +826,7 @@ a {
 
   .welcome-cta-subtitle {
     color: var(--text-medium);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     margin: 0;
     font-weight: var(--font-weight-medium);
   }
@@ -857,7 +857,7 @@ a {
 
   p {
     color: var(--text-medium);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-body-large);
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-lg);
 
@@ -903,7 +903,7 @@ a {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-headline-small);
       flex-shrink: 0;
       font-style: normal; // Override em italic styling
     }
@@ -948,7 +948,7 @@ a {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-headline-small);
       flex-shrink: 0;
       font-style: normal; // Override em italic styling
     }
@@ -1207,7 +1207,7 @@ a {
       color: var(--accent-teal);
       text-decoration: none !important;
       font-weight: var(--font-weight-semibold);
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-body-medium);
       display: inline-flex;
       align-items: center;
       gap: var(--space-sm);
@@ -1297,7 +1297,7 @@ a {
   transition: var(--transition-spring);
   border: none;
   cursor: pointer;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-headline-small);
   box-shadow: var(--elevation-2);
 
   &:hover {
@@ -1312,7 +1312,7 @@ a {
   }
 
   i {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-headline-medium);
   }
 }
 
@@ -1424,7 +1424,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: var(--radius-md);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-title-large);
     position: relative;
     z-index: 1;
     border: 2px solid rgba(16, 185, 129, 0.3);
@@ -1438,7 +1438,7 @@ a {
   h3 {
     color: white; // White text for dark theme
     font-family: var(--font-display);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-title-large);
     font-weight: var(--font-weight-semibold);
     margin: 0; // Remove margin since it's now inline with icon
     position: relative;
@@ -1450,7 +1450,7 @@ a {
     color: rgba(255, 255, 255, 0.85); // Light gray text for dark theme
     margin: 0 0 var(--space-sm); // Reduced bottom margin for more compact cards
     line-height: var(--line-height-relaxed);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-body-large);
     position: relative;
     z-index: 1;
     flex: 1; // Allow paragraph content to grow and push footer down
@@ -1487,7 +1487,7 @@ a {
     justify-content: center;
     padding: var(--space-sm) var(--space-lg);
     border-radius: var(--radius-lg);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-bold);
     color: var(--text-white);
     margin: 0 auto var(--space-md);
@@ -1518,7 +1518,7 @@ a {
   }
 
   .meeting-subtitle {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     text-align: center;
     font-style: italic;
     line-height: var(
@@ -1624,7 +1624,7 @@ a {
     .highlight-card .highlight-icon {
       width: 50px;
       height: 50px;
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-headline-small);
     }
   }
 }
@@ -1722,7 +1722,7 @@ button:focus,
     }
 
     .hero-subtitle {
-      font-size: var(--font-size-base);
+      font-size: var(--font-size-body-large);
     }
   }
 
@@ -1788,7 +1788,7 @@ button:focus,
 
   h2 {
     color: var(--text-dark);
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-headline-large);
     font-weight: var(--font-weight-bold);
     position: relative;
     z-index: 1;
@@ -1798,7 +1798,7 @@ button:focus,
     i,
     em {
       color: var(--color-blue-500);
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-headline-medium);
     }
   }
 
@@ -1830,7 +1830,7 @@ button:focus,
         content: "✓";
         color: var(--accent-emerald);
         font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-headline-medium);
         background: rgba(16, 185, 129, 0.2);
         border-radius: var(--radius-full);
         width: 32px;
@@ -1844,7 +1844,7 @@ button:focus,
       }
 
       color: var(--text-dark);
-      font-size: var(--font-size-base);
+      font-size: var(--font-size-body-large);
       line-height: var(--line-height-relaxed);
     }
   }
@@ -2128,14 +2128,14 @@ button:focus,
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-semibold);
     position: relative;
     z-index: 1;
 
     i,
     em {
-      font-size: var(--font-size-2xl);
+      font-size: var(--font-size-headline-large);
       background: rgba(255, 127, 80, 0.2);
       border-radius: var(--radius-full);
       width: 50px;
@@ -2162,7 +2162,7 @@ button:focus,
       var(--hover-coral)
     );
     color: var(--text-dark);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-semibold);
     padding: var(--space-sm);
     border-radius: var(--radius-lg);
@@ -2240,7 +2240,7 @@ button:focus,
   .book-info {
     h3 {
       color: var(--accent-coral);
-      font-size: var(--font-size-2xl);
+      font-size: var(--font-size-headline-large);
       margin-bottom: var(--space-md);
       font-weight: var(--font-weight-semibold);
     }
@@ -2248,7 +2248,7 @@ button:focus,
     p:not(.book-description) {
       color: var(--text-medium);
       font-weight: var(--font-weight-medium);
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-headline-small);
       margin-bottom: var(--space-md);
     }
 
@@ -2268,7 +2268,7 @@ button:focus,
       @include button-primary;
 
       margin-top: var(--space-xl) !important;
-      font-size: var(--font-size-base) !important;
+      font-size: var(--font-size-body-large) !important;
       padding: var(--space-lg) var(--space-2xl) !important;
       display: inline-flex !important;
       align-items: center !important;
@@ -2358,7 +2358,7 @@ button:focus,
     h3 {
       margin: 0 0 var(--space-md);
       color: var(--text-high-emphasis);
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-headline-small);
       display: flex;
       align-items: center;
       gap: var(--space-sm);
@@ -2391,18 +2391,18 @@ button:focus,
   h4 {
     margin: 0 0 var(--space-xs);
     color: var(--text-high-emphasis);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-title-large);
   }
 
   .media-subtitle {
     color: var(--text-medium-emphasis);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     margin: 0 0 var(--space-sm);
   }
 
   .media-description {
     color: var(--text-medium-emphasis);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     line-height: var(--line-height-relaxed);
     margin: 0 0 var(--space-md);
   }
@@ -2440,7 +2440,7 @@ button:focus,
 
     p {
       margin: 0;
-      font-size: var(--font-size-xs);
+      font-size: var(--font-size-label-small);
       color: var(--text-medium-emphasis);
       line-height: var(--line-height-relaxed);
     }
@@ -2469,7 +2469,7 @@ button:focus,
 
   .section-subtitle {
     color: var(--text-medium-emphasis);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-body-medium);
     margin: var(--space-xs) 0 0 0;
     font-weight: 400;
   }
@@ -2525,7 +2525,7 @@ button:focus,
 
         h3 {
           margin: 0;
-          font-size: var(--font-size-lg);
+          font-size: var(--font-size-headline-small);
           font-weight: 600;
           color: var(--text-high-emphasis);
           line-height: 1.2;
@@ -2533,7 +2533,7 @@ button:focus,
 
         .card-subtitle {
           color: var(--text-medium-emphasis);
-          font-size: var(--font-size-sm);
+          font-size: var(--font-size-body-medium);
           font-weight: 400;
           margin-top: 2px;
           display: block;
@@ -2582,7 +2582,7 @@ button:focus,
       span {
         flex: 1;
         font-weight: 500;
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-body-medium);
       }
 
       .material-icons.external {
@@ -2602,7 +2602,7 @@ button:focus,
   .action-items {
     .section-subtitle {
       color: var(--text-muted);
-      font-size: var(--font-size-md);
+      font-size: var(--font-size-title-large);
       margin-top: var(--space-sm);
       font-weight: var(--font-weight-normal);
     }
@@ -2634,7 +2634,7 @@ button:focus,
     .action-deliverable {
       margin: 0;
       margin-left: var(--space-xl); // Indent to align under title text
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-body-medium);
       color: var(--text-muted);
       display: flex;
       align-items: flex-start;
@@ -2658,11 +2658,11 @@ button:focus,
       }
 
       .action-title {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-body-medium);
       }
 
       .action-deliverable {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-label-small);
       }
     }
   }
@@ -2733,7 +2733,7 @@ button:focus,
     background: var(--background-subtle);
 
     i {
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-headline-medium);
       width: 40px;
       text-align: center;
       color: var(--text-muted);
@@ -2745,14 +2745,14 @@ button:focus,
       h4 {
         margin: 0;
         color: var(--text-primary);
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-headline-small);
         font-weight: var(--font-weight-semibold);
         line-height: var(--line-height-tight);
       }
 
       .card-subtitle {
         color: var(--text-muted);
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-body-medium);
         font-weight: var(--font-weight-normal);
         margin-top: var(--space-xs);
         display: block;
@@ -2765,7 +2765,7 @@ button:focus,
       margin: 0 0 var(--space-md);
       color: var(--text-secondary);
       line-height: var(--line-height-relaxed);
-      font-size: var(--font-size-base);
+      font-size: var(--font-size-body-large);
     }
 
     .card-goal {
@@ -2797,7 +2797,7 @@ button:focus,
         border: 1px solid var(--border-subtle);
         background: var(--background-white);
         transition: all var(--duration-fast) var(--ease-out);
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-body-medium);
         line-height: var(--line-height-normal);
 
         &:last-child {
@@ -2923,7 +2923,7 @@ button:focus,
     .card-titles h4 {
       margin: 0;
       color: var(--text-high-emphasis);
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-headline-small);
       font-weight: var(--font-weight-semibold);
       line-height: var(--line-height-tight);
     }
