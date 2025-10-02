@@ -813,12 +813,6 @@
     padding-bottom: var(--space-md);
     border-bottom: 2px solid rgba(255, 127, 80, 0.3);
 
-    .warning-icon {
-      color: var(--accent-coral);
-      font-size: var(--font-size-2xl);
-      margin-right: var(--space-sm);
-    }
-
     h2 {
       display: inline-flex;
       align-items: center;
@@ -828,6 +822,11 @@
       font-size: var(--font-size-headline-medium);
       font-weight: var(--font-weight-bold);
       margin: 0;
+
+      i {
+        color: var(--accent-coral);
+        font-size: var(--font-size-2xl);
+      }
     }
   }
 
@@ -1015,12 +1014,6 @@
     padding-bottom: var(--space-md);
     border-bottom: 2px solid var(--accent-teal);
 
-    .psych-icon {
-      color: var(--accent-teal);
-      font-size: var(--font-size-2xl);
-      margin-right: var(--space-sm);
-    }
-
     h2 {
       display: inline-flex;
       align-items: center;
@@ -1030,6 +1023,11 @@
       font-size: var(--font-size-headline-medium);
       font-weight: var(--font-weight-bold);
       margin: 0;
+
+      i {
+        color: var(--accent-teal);
+        font-size: var(--font-size-2xl);
+      }
     }
   }
 

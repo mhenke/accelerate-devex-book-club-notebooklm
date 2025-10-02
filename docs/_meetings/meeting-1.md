@@ -185,8 +185,7 @@ document.addEventListener('keydown', function(event) {
 <div class="section-card" markdown="0">
   <div class="culture-first-warning">
     <div class="warning-header">
-      <i class="fas fa-exclamation-triangle warning-icon"></i>
-      <h2>⚠️ Critical Foundation: Culture Before Metrics</h2>
+      <h2><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Critical Foundation: Culture Before Metrics</h2>
     </div>
 
     <div class="warning-content">
@@ -428,7 +427,7 @@ document.addEventListener('keydown', function(event) {
 <div class="section-card" markdown="0">
   <div class="causal-chain-container">
     <div class="infographic-header">
-      <h2>The Framework: How Culture Drives Performance</h2>
+      <h2><i class="fas fa-project-diagram" aria-hidden="true"></i> The Framework: How Culture Drives Performance</h2>
       <p class="research-foundation">4 years of research across <strong>23,000+ organizations</strong> reveals this causal chain:</p>
     </div>
 
@@ -685,7 +684,7 @@ function hideMetricsDetails() {
 <div class="section-card" markdown="0">
   <div class="sketch-container">
     <div class="sketch-header">
-      <h2>Assessment: Reading Signals</h2>
+      <h2><i class="fas fa-signal" aria-hidden="true"></i> Assessment: Reading Signals</h2>
       <p class="sketch-intro">Your deployment pain level reveals where you are in the causal chain. Let's connect the dots:</p>
     </div>
 
@@ -755,8 +754,7 @@ function hideMetricsDetails() {
 <div class="section-card" markdown="0">
   <div class="psych-safety-section">
     <div class="psych-safety-header">
-      <i class="fas fa-shield-alt psych-icon"></i>
-      <h2>Psychological Safety: The Critical Enabler</h2>
+      <h2><i class="fas fa-shield-alt" aria-hidden="true"></i> Psychological Safety: The Critical Enabler</h2>
     </div>
 
     <div class="psych-safety-content">
