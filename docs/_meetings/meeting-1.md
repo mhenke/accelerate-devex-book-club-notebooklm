@@ -232,12 +232,12 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-headline">
                 Accelerate Metrics Unlocked
                 <span class="podcast-type brief">Brief</span>
+                <span class="podcast-duration">15:30</span>
               </div>
               <div class="podcast-subtitle">How Speed and Stability Drive 2x Business Performance</div>
             </div>
 
             <div class="podcast-end">
-              <div class="podcast-duration">15:30</div>
               <div class="podcast-equalizer">
                 <div class="equalizer">
                   <span class="bar"></span>
@@ -263,12 +263,12 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-headline">
                 Accelerate Success
                 <span class="podcast-type deep-dive">Deep Dive</span>
+                <span class="podcast-duration">28:45</span>
               </div>
               <div class="podcast-subtitle">The Data-Driven Proof That Destroys the CAB Model</div>
             </div>
 
             <div class="podcast-end">
-              <div class="podcast-duration">28:45</div>
               <div class="podcast-equalizer">
                 <div class="equalizer">
                   <span class="bar"></span>
@@ -294,12 +294,12 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-headline">
                 Accelerate Your DevEx
                 <span class="podcast-type critique">Critique</span>
+                <span class="podcast-duration">22:15</span>
               </div>
               <div class="podcast-subtitle">Why Culture Must Precede Metrics and Why Traditional DevOps Gets It Wrong</div>
             </div>
 
             <div class="podcast-end">
-              <div class="podcast-duration">22:15</div>
               <div class="podcast-equalizer">
                 <div class="equalizer">
                   <span class="bar"></span>
@@ -314,13 +314,7 @@ document.addEventListener('keydown', function(event) {
           <div class="playlist-player">
             <div class="now-playing-header">
               <div class="now-playing-info">
-                <div class="playing-indicator-large">
-                  <div class="equalizer">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </div>
-                </div>
+                <div class="playing-indicator-large"></div>
                 <div class="now-playing-text-wrapper">
                   <div class="now-playing-label">Now Playing</div>
                   <div class="now-playing-title" id="now-playing-title">Accelerate Metrics Unlocked</div>
