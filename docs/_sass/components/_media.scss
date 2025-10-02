@@ -106,7 +106,7 @@
 // Podcast Item - M3 Three-Line List Pattern (Compact)
 .podcast-item {
   display: grid;
-  grid-template-columns: auto 1fr 80px;
+  grid-template-columns: 40px 1fr 80px;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
   background: transparent;
@@ -166,14 +166,12 @@
   }
 }
 
-// Leading element (start slot) - Play/Pause button + Equalizer
+// Leading element (start slot) - Single element: Play OR Equalizer OR Pause
 .podcast-start {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-xs);
-  width: auto;
-  min-width: 40px;
+  width: 40px;
   height: 40px;
   flex-shrink: 0;
   position: relative;
@@ -213,8 +211,13 @@
     outline-offset: 2px;
   }
 
-  // Show pause icon when playing
+  // Hide button when playing (equalizer shows instead)
   .podcast-item.playing & {
+    display: none;
+  }
+
+  // Show pause icon when paused
+  .podcast-item.paused & {
     i::before {
       content: "\f04c"; // Font Awesome pause icon
       margin-left: 0; // Reset optical centering for pause
@@ -222,17 +225,19 @@
   }
 }
 
-// Animated Equalizer Bars (Shows next to pause button when playing)
+// Animated Equalizer Bars (Replaces button when playing)
 .playing-indicator {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  padding: 6px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--theme-primary);
+  padding: 8px;
 
-  // Show when playing (appears next to pause button)
-  .podcast-item.playing & {
+  // Show ONLY when playing (not when paused)
+  .podcast-item.playing:not(.paused) & {
     display: flex !important;
   }
 }
@@ -241,7 +246,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 16px;
+  height: 20px;
   gap: 2px;
   width: 100%;
 }
@@ -249,7 +254,7 @@
 .equalizer .bar {
   width: 3px;
   height: 100%;
-  background: var(--theme-primary);
+  background: white;
   border-radius: 2px;
   animation: equalize 0.8s ease-in-out infinite;
   transform-origin: bottom;
