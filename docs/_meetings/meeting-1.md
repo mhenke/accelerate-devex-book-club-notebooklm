@@ -965,46 +965,30 @@ function hideMetricsDetails() {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card action-items" markdown="0">
+<div class="section-card" markdown="0">
   <div class="discussion-header">
     <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
   </div>
 
   <div class="discussion-questions-list">
-    <div class="question-item" role="group" aria-labelledby="q1">
-      <div class="question-row">
-        <div id="q1" class="question-title">Current State Assessment</div>
-      </div>
-      <div class="question-content">
-        <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
-      </div>
+    <div class="deployment-signal">
+      <h4>Current State Assessment</h4>
+      <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
     </div>
 
-    <div class="question-item" role="group" aria-labelledby="q2">
-      <div class="question-row">
-        <div id="q2" class="question-title">Speed vs. Stability Myths</div>
-      </div>
-      <div class="question-content">
-        <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
-      </div>
+    <div class="deployment-signal">
+      <h4>Speed vs. Stability Myths</h4>
+      <p>Where does your organization fall on the false "speed vs stability" spectrum? What evidence supports the idea that you can achieve both high speed AND high stability?</p>
     </div>
 
-    <div class="question-item" role="group" aria-labelledby="q3">
-      <div class="question-row">
-        <div id="q3" class="question-title">Building the Virtuous Cycle</div>
-      </div>
-      <div class="question-content">
-        <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
-      </div>
+    <div class="deployment-signal">
+      <h4>Building the Virtuous Cycle</h4>
+      <p>Chapter 3 introduces the idea that "you can act your way to a better culture" by implementing specific practices. What's one technical practice we could adopt that might positively shift our team from a "pathological" or "bureaucratic" culture toward a more "generative" one?</p>
     </div>
 
-    <div class="question-item" role="group" aria-labelledby="q4">
-      <div class="question-row">
-        <div id="q4" class="question-title">Culture Indicators</div>
-      </div>
-      <div class="question-content">
-        <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
-      </div>
+    <div class="deployment-signal">
+      <h4>Culture Indicators</h4>
+      <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
     </div>
 
   </div>
