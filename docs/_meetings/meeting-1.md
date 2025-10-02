@@ -236,7 +236,16 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-subtitle">How Speed and Stability Drive 2x Business Performance</div>
             </div>
 
-            <div class="podcast-duration">15:30</div>
+            <div class="podcast-end">
+              <div class="podcast-duration">15:30</div>
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="podcast-item" role="button" tabindex="0"
@@ -258,7 +267,16 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-subtitle">The Data-Driven Proof That Destroys the CAB Model</div>
             </div>
 
-            <div class="podcast-duration">28:45</div>
+            <div class="podcast-end">
+              <div class="podcast-duration">28:45</div>
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="podcast-item" role="button" tabindex="0"
@@ -280,7 +298,16 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-subtitle">Why Culture Must Precede Metrics and Why Traditional DevOps Gets It Wrong</div>
             </div>
 
-            <div class="podcast-duration">22:15</div>
+            <div class="podcast-end">
+              <div class="podcast-duration">22:15</div>
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Shared Player at Bottom -->
