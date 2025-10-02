@@ -72,7 +72,8 @@
           "function",
           "return",
           "use",
-          "forward"
+          "forward",
+          "warn"
         ]
       }
     ],

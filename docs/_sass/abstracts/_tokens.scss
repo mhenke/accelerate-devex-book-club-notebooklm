@@ -11,14 +11,15 @@
   // =============================================================================
   // Core spacing tokens following Material Design 3 specifications
   // Reference: https://m3.material.io/foundations/layout/spacing
+  // Using rem units for better accessibility and consistency
 
-  --space-xs: 4px;   // 0.25rem - Fine details (border radius, hairline borders)
-  --space-sm: 8px;   // 0.5rem  - Small gaps, padding
-  --space-md: 16px;  // 1rem    - Default spacing, button padding
-  --space-lg: 24px;  // 1.5rem  - Section spacing, card padding
-  --space-xl: 32px;  // 2rem    - Component spacing, margins
-  --space-2xl: 48px; // 3rem    - Page section spacing
-  --space-3xl: 64px; // 4rem    - Major layout spacing
+  --space-xs: 0.25rem;  // 4px  - Fine details (border radius, hairline borders)
+  --space-sm: 0.5rem;   // 8px  - Small gaps, padding
+  --space-md: 1rem;     // 16px - Default spacing, button padding
+  --space-lg: 1.5rem;   // 24px - Section spacing, card padding
+  --space-xl: 2rem;     // 32px - Component spacing, margins
+  --space-2xl: 3rem;    // 48px - Page section spacing
+  --space-3xl: 4rem;    // 64px - Major layout spacing
 
   // Border Width Tokens (Material Design 3 compliant)
   --border-width-thin: 1px;    // Hairline borders
@@ -51,93 +52,20 @@
 // =============================================================================
 // Comprehensive breakpoint system covering all responsive needs
 
-// Primary breakpoints (main responsive design)
+// Breakpoints (SCSS variables only - used in media queries)
+// Note: CSS custom properties removed - breakpoints are not dynamic values
 $mobile: 768px;
 $tablet: 1024px;
 $desktop: 1200px;
-
-// Additional breakpoints (for specific responsive needs)
 $small: 480px;   // Small mobile devices
 $medium: 640px;  // Medium mobile/phablets
-
-// CSS Custom Properties for responsive design
-:root {
-  --breakpoint-small: #{$small};
-  --breakpoint-mobile: #{$mobile};
-  --breakpoint-medium: #{$medium};
-  --breakpoint-tablet: #{$tablet};
-  --breakpoint-desktop: #{$desktop};
-
-  // Legacy support (keep existing variables for compatibility)
-  --mobile: #{$mobile};
-  --tablet: #{$tablet};
-  --desktop: #{$desktop};
-}
 
 // =============================================================================
 // COLOR TOKENS
 // =============================================================================
-
-// Keep only SCSS variables that are used in calculations or mixins
-// Most colors are now defined directly in CSS custom properties below
-
-// Keep essential SCSS variables for calculations only
-$background-white: #ffffff; // Used in mixins
-$text-dark: #2c3e50; // Used in legacy mixins
-
-// DORA Metrics Colors - Performance visualization
-$dora-blue: #2196f3;
-$dora-green: #4caf50;
-$dora-orange: #ff9800;
-$dora-red: #f44336;
-
-// Book Theme Colors - Warm and inviting
-$book-brown: #8b5c2a;
-$book-gold: #d7ba89;
-$book-cream: #fff8dc;
-
-// System Colors - Status and feedback
-$success-green: #4caf50;
-$warning-yellow: #ffc107;
-$danger-red: #f44336;
-$info-blue: #2196f3;
-
-// Meeting Colors - Material Design Color System
-// Each meeting has primary, secondary, and accent colors with proper contrast ratios
-
-// Meeting 1: Foundation (Blue Theme)
-$meeting-1-primary: #0969da; // GitHub blue - Primary brand color
-$meeting-1-secondary: #1f6feb; // Secondary blue
-$meeting-1-accent: #388bfd; // Accent blue
-$meeting-1-surface: #f6f8fa; // Light surface
-$meeting-1-on-surface: #24292f; // Text on surface
-
-// Meeting 2: Technical Excellence (Green Theme)
-$meeting-2-primary: #1a7f37; // GitHub green
-$meeting-2-secondary: #238636; // Secondary green
-$meeting-2-accent: #2da44e; // Accent green
-$meeting-2-surface: #f0fff4; // Light green surface
-$meeting-2-on-surface: #0d2818; // Dark text on surface
-
-// Meeting 3: Management (Orange/Amber Theme)
-$meeting-3-primary: #d97706; // Orange primary
-$meeting-3-secondary: #f59e0b; // Secondary amber
-$meeting-3-accent: #fbbf24; // Accent yellow
-$meeting-3-surface: #fffbeb; // Light amber surface
-$meeting-3-on-surface: #451a03; // Dark text on surface
-
-// Meeting 4: Leadership (Purple Theme)
-$meeting-4-primary: #8b5cf6; // Purple primary
-$meeting-4-secondary: #a78bfa; // Secondary purple
-$meeting-4-accent: #c4b5fd; // Accent lavender
-$meeting-4-surface: #faf5ff; // Light purple surface
-$meeting-4-on-surface: #3c1361; // Dark text on surface
-
-// Border and Shadow Colors
-$border-light: rgba(148, 163, 184, 0.3); // Standard border with transparency
-$border-color: #e8ecf0;
-$shadow-light: rgba(26, 26, 46, 0.1);
-$shadow-medium: rgba(26, 26, 46, 0.15);
+// Note: SCSS color variables removed - all colors defined as CSS custom properties
+// For Sass color functions (lighten, darken, etc.), extract values from CSS custom properties
+// Meeting colors moved to _mixins-themes.scss for dynamic theming
 
 // CSS Custom Properties - Runtime Theme Control
 :root {
@@ -184,49 +112,50 @@ $shadow-medium: rgba(26, 26, 46, 0.15);
   --text-white: #ffffff;
 
   // DORA Metrics Colors
-  --dora-blue: #{$dora-blue};
-  --dora-green: #{$dora-green};
-  --dora-orange: #{$dora-orange};
-  --dora-red: #{$dora-red};
+  --dora-blue: #2196f3;
+  --dora-green: #4caf50;
+  --dora-orange: #ff9800;
+  --dora-red: #f44336;
 
   // Book Colors
-  --book-brown: #{$book-brown};
-  --book-gold: #{$book-gold};
-  --book-cream: #{$book-cream};
+  --book-brown: #8b5c2a;
+  --book-gold: #d7ba89;
+  --book-cream: #fff8dc;
 
   // System Colors
-  --success-green: #{$success-green};
-  --warning-yellow: #{$warning-yellow};
-  --danger-red: #{$danger-red};
-  --info-blue: #{$info-blue};
+  --success-green: #4caf50;
+  --warning-yellow: #ffc107;
+  --danger-red: #f44336;
+  --info-blue: #2196f3;
 
-  // Meeting Colors - Material Design System
-  --meeting-1-primary: #{$meeting-1-primary};
-  --meeting-1-secondary: #{$meeting-1-secondary};
-  --meeting-1-accent: #{$meeting-1-accent};
-  --meeting-1-surface: #{$meeting-1-surface};
-  --meeting-1-on-surface: #{$meeting-1-on-surface};
-  --meeting-2-primary: #{$meeting-2-primary};
-  --meeting-2-secondary: #{$meeting-2-secondary};
-  --meeting-2-accent: #{$meeting-2-accent};
-  --meeting-2-surface: #{$meeting-2-surface};
-  --meeting-2-on-surface: #{$meeting-2-on-surface};
-  --meeting-3-primary: #{$meeting-3-primary};
-  --meeting-3-secondary: #{$meeting-3-secondary};
-  --meeting-3-accent: #{$meeting-3-accent};
-  --meeting-3-surface: #{$meeting-3-surface};
-  --meeting-3-on-surface: #{$meeting-3-on-surface};
-  --meeting-4-primary: #{$meeting-4-primary};
-  --meeting-4-secondary: #{$meeting-4-secondary};
-  --meeting-4-accent: #{$meeting-4-accent};
-  --meeting-4-surface: #{$meeting-4-surface};
-  --meeting-4-on-surface: #{$meeting-4-on-surface};
+  // Meeting Colors - Direct definitions (use meeting-theme mixin for dynamic theming)
+  // These are kept for backward compatibility but prefer using mixins
+  --meeting-1-primary: #0969da;
+  --meeting-1-secondary: #1f6feb;
+  --meeting-1-accent: #388bfd;
+  --meeting-1-surface: #f6f8fa;
+  --meeting-1-on-surface: #24292f;
+  --meeting-2-primary: #1a7f37;
+  --meeting-2-secondary: #238636;
+  --meeting-2-accent: #2da44e;
+  --meeting-2-surface: #f0fff4;
+  --meeting-2-on-surface: #0d2818;
+  --meeting-3-primary: #d97706;
+  --meeting-3-secondary: #f59e0b;
+  --meeting-3-accent: #fbbf24;
+  --meeting-3-surface: #fffbeb;
+  --meeting-3-on-surface: #451a03;
+  --meeting-4-primary: #8b5cf6;
+  --meeting-4-secondary: #a78bfa;
+  --meeting-4-accent: #c4b5fd;
+  --meeting-4-surface: #faf5ff;
+  --meeting-4-on-surface: #3c1361;
 
   // Border & Shadow
-  --border-light: #{$border-light};
-  --border-color: #{$border-color};
-  --shadow-light: #{$shadow-light};
-  --shadow-medium: #{$shadow-medium};
+  --border-light: rgba(148, 163, 184, 0.3);
+  --border-color: #e8ecf0;
+  --shadow-light: rgba(26, 26, 46, 0.1);
+  --shadow-medium: rgba(26, 26, 46, 0.15);
 
   // Additional color tokens for consistency
   --color-gray-50: #f9fafb;
@@ -297,15 +226,9 @@ $font-size-body-large: 1rem; // 16px - Body text
 $font-size-body-medium: 0.875rem; // 14px - Secondary text
 $font-size-body-small: 0.75rem; // 12px - Fine print
 
-// Legacy sizes for backward compatibility
-$font-size-xs: $font-size-label-small;
-$font-size-sm: $font-size-body-medium;
-$font-size-base: $font-size-body-large;
-$font-size-md: $font-size-title-large;
-$font-size-lg: $font-size-headline-small;
-$font-size-xl: $font-size-headline-medium;
-$font-size-2xl: $font-size-headline-large;
-$font-size-3xl: $font-size-display-small;
+// Note: Legacy font size aliases removed - use MD3 type scale directly
+// $font-size-xs through $font-size-3xl removed
+// Use $font-size-display-*, $font-size-headline-*, $font-size-title-*, etc.
 
 // Line Heights - Optimized for readability
 $line-height-tight: 1.1;
@@ -378,18 +301,8 @@ $letter-spacing-wide: 0.025em;
   --letter-spacing-wide: #{$letter-spacing-wide};
 }
 
-// =============================================================================
-// MATERIAL DESIGN 3 SPACING SCSS VARIABLES
-// =============================================================================
-// SCSS variables for mixins and calculations (compiled to above CSS custom properties)
-
-$space-xs: 0.25rem;  // 4px
-$space-sm: 0.5rem;   // 8px
-$space-md: 1rem;     // 16px
-$space-lg: 1.5rem;   // 24px
-$space-xl: 2rem;     // 32px
-$space-2xl: 3rem;    // 48px
-$space-3xl: 4rem;    // 64px
+// Note: Spacing SCSS variables removed - use CSS custom properties (var(--space-*))
+// This eliminates duplication and inconsistent units (px vs rem)
 
 // =============================================================================
 // AUDIT DOCUMENTATION
@@ -431,134 +344,37 @@ $radius-full: 50px;
 // MATERIAL DESIGN ELEVATION SYSTEM
 // =============================================================================
 
-// Material Design Elevation Levels - Standard MD3 specification
-$elevation-0: none; // Surface
-$elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
-  0px 1px 3px 1px rgba(0, 0, 0, 0.15); // Level 1
-$elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
-  0px 2px 6px 2px rgba(0, 0, 0, 0.15); // Level 2
-$elevation-3: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
-  0px 4px 8px 3px rgba(0, 0, 0, 0.15); // Level 3
-$elevation-4: 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
-  0px 6px 10px 4px rgba(0, 0, 0, 0.15); // Level 4
-$elevation-5: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
-  0px 8px 12px 6px rgba(0, 0, 0, 0.15); // Level 5
+// Note: Shadow SCSS variables removed - use MD3 elevation CSS custom properties
+// All legacy shadows, colored shadows, and specific-use shadows removed
+// Use var(--elevation-0) through var(--elevation-5) for consistent shadows
 
-// Legacy shadow system (for backward compatibility)
-$shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
-$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
-$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
-$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
-$shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15);
-
-// Colored Shadows - For interactive elements
-$shadow-coral: 0 4px 15px rgba(255, 127, 80, 0.3);
-$shadow-teal: 0 4px 15px rgba(135, 211, 209, 0.3);
-$shadow-gold: 0 4px 15px rgba(215, 186, 137, 0.3);
-
-// CSS Custom Properties for Material Design Elevation and Legacy Shadows
+// CSS Custom Properties for Material Design Elevation
 :root {
-  // Material Design Elevation
-  --elevation-0: #{$elevation-0};
-  --elevation-1: #{$elevation-1};
-  --elevation-2: #{$elevation-2};
-  --elevation-3: #{$elevation-3};
-  --elevation-4: #{$elevation-4};
-  --elevation-5: #{$elevation-5};
+  // Material Design 3 Elevation System (6 levels)
+  // Reference: https://m3.material.io/styles/elevation/overview
+  --elevation-0: none;
+  --elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --elevation-3: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  --elevation-4: 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+  --elevation-5: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
 
-  // Legacy Shadows (for backward compatibility)
-  --shadow-xs: #{$shadow-xs};
-  --shadow-sm: #{$shadow-sm};
-  --shadow-md: #{$shadow-md};
-  --shadow-lg: #{$shadow-lg};
-  --shadow-xl: #{$shadow-xl};
-  --shadow-2xl: #{$shadow-2xl};
-  --shadow-coral: #{$shadow-coral};
-  --shadow-teal: #{$shadow-teal};
-  --shadow-gold: #{$shadow-gold};
+  // Legacy shadow aliases (map to elevation for backward compatibility)
+  --shadow-xs: var(--elevation-1);
+  --shadow-sm: var(--elevation-1);
+  --shadow-md: var(--elevation-2);
+  --shadow-lg: var(--elevation-3);
+  --shadow-xl: var(--elevation-4);
+  --shadow-2xl: var(--elevation-5);
+
+  // Content shadows (semantic aliases)
+  --shadow-hero: var(--elevation-4);
+  --shadow-hover: var(--elevation-3);
 }
 
-// =============================================================================
-// STANDARDIZED GRADIENTS AND SHADOWS
-// =============================================================================
-
-// Common gradient patterns used throughout the app
-$gradient-meeting-bg: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-$gradient-section-card: linear-gradient(135deg, var(--background-white), var(--background-light));
-$gradient-hero-dark: linear-gradient(135deg, #1a1a2e, #16213e);
-
-// Meeting-specific gradients
-$gradient-meeting-1: linear-gradient(135deg, #dbeafe, #bfdbfe);
-$gradient-meeting-1-hover: linear-gradient(135deg, #1e3a8a, #1e40af);
-$gradient-meeting-2: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-$gradient-meeting-2-hover: linear-gradient(135deg, #0f766e, #134e4a);
-$gradient-meeting-3: linear-gradient(135deg, #fef3c7, #fde68a);
-$gradient-meeting-3-hover: linear-gradient(135deg, #d97706, #b45309);
-$gradient-meeting-4: linear-gradient(135deg, #f5f3ff, #ede9fe);
-$gradient-meeting-4-hover: linear-gradient(135deg, #7c3aed, #6d28d9);
-
-// Action button gradients
-$gradient-success: linear-gradient(135deg, #4caf50, #2e7d32);
-$gradient-stream: linear-gradient(135deg, #28a745, #34ce57);
-$gradient-stream-hover: linear-gradient(135deg, #34ce57, #28a745);
-
-// Common shadow patterns used throughout the app
-$shadow-button-primary: 0 4px 12px rgba(76, 175, 80, 0.3);
-$shadow-button-primary-hover: 0 6px 16px rgba(76, 175, 80, 0.4);
-$shadow-button-primary-active: 0 4px 8px rgba(76, 175, 80, 0.3);
-$shadow-button-secondary: 0 4px 12px rgba(9, 105, 218, 0.3);
-$shadow-button-secondary-hover: 0 6px 16px rgba(9, 105, 218, 0.4);
-$shadow-button-secondary-active: 0 4px 8px rgba(9, 105, 218, 0.3);
-
-// Meeting navigation shadows
-$shadow-nav-meeting-1: 0 4px 15px rgba(30, 58, 138, 0.3);
-$shadow-nav-meeting-2: 0 4px 15px rgba(15, 118, 110, 0.3);
-$shadow-nav-meeting-3: 0 4px 15px rgba(217, 119, 6, 0.3);
-$shadow-nav-meeting-4: 0 4px 15px rgba(124, 58, 237, 0.3);
-$shadow-nav-success: 0 4px 15px rgba(76, 175, 80, 0.3);
-
-// Common content shadows
-$shadow-content-light: 0 2px 8px rgba(0, 0, 0, 0.1);
-$shadow-content-medium: 0 4px 15px rgba(0, 0, 0, 0.2);
-$shadow-content-heavy: 0 8px 25px rgba(0, 0, 0, 0.12);
-$shadow-hero: 0 8px 32px rgba(0, 0, 0, 0.2);
-
-// CSS Custom Properties for gradients and shadows
-:root {
-  // Gradients
-  --gradient-meeting-bg: #{$gradient-meeting-bg};
-  --gradient-section-card: #{$gradient-section-card};
-  --gradient-hero-dark: #{$gradient-hero-dark};
-  --gradient-meeting-1: #{$gradient-meeting-1};
-  --gradient-meeting-1-hover: #{$gradient-meeting-1-hover};
-  --gradient-meeting-2: #{$gradient-meeting-2};
-  --gradient-meeting-2-hover: #{$gradient-meeting-2-hover};
-  --gradient-meeting-3: #{$gradient-meeting-3};
-  --gradient-meeting-3-hover: #{$gradient-meeting-3-hover};
-  --gradient-meeting-4: #{$gradient-meeting-4};
-  --gradient-meeting-4-hover: #{$gradient-meeting-4-hover};
-  --gradient-success: #{$gradient-success};
-  --gradient-stream: #{$gradient-stream};
-  --gradient-stream-hover: #{$gradient-stream-hover};
-
-  // Common shadows
-  --shadow-button-primary: #{$shadow-button-primary};
-  --shadow-button-primary-hover: #{$shadow-button-primary-hover};
-  --shadow-button-primary-active: #{$shadow-button-primary-active};
-  --shadow-button-secondary: #{$shadow-button-secondary};
-  --shadow-button-secondary-hover: #{$shadow-button-secondary-hover};
-  --shadow-button-secondary-active: #{$shadow-button-secondary-active};
-  --shadow-nav-meeting-1: #{$shadow-nav-meeting-1};
-  --shadow-nav-meeting-2: #{$shadow-nav-meeting-2};
-  --shadow-nav-meeting-3: #{$shadow-nav-meeting-3};
-  --shadow-nav-meeting-4: #{$shadow-nav-meeting-4};
-  --shadow-nav-success: #{$shadow-nav-success};
-  --shadow-content-light: #{$shadow-content-light};
-  --shadow-content-medium: #{$shadow-content-medium};
-  --shadow-content-heavy: #{$shadow-content-heavy};
-  --shadow-hero: #{$shadow-hero};
-}
+// Note: Gradient and shadow SCSS variables removed
+// Use meeting-gradient() and meeting-shadow() functions from _mixins-themes.scss
+// Use MD3 elevation system (--elevation-0 through --elevation-5) for shadows
 
 // =============================================================================
 // STANDARDIZED BORDER PATTERNS
