@@ -166,13 +166,13 @@ document.addEventListener('keydown', function(event) {
 
 <!-- MEETING 1 KEY QUESTION -->
 
-<div class="key-question-banner" markdown="0">
+<div class="section-card dark-theme full-width" markdown="0">
 <div class="key-question-content">
 <div class="key-question-header">
 <div class="key-question-icon">
 <i class="fas fa-key" aria-hidden="true"></i>
 </div>
-<h2 class="key-question-title">MEETING 1 KEY QUESTION</h2>
+<h2>MEETING 1 KEY QUESTION</h2>
 </div>
 <div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
 <div class="key-question-quote">
@@ -386,9 +386,9 @@ document.addEventListener('keydown', function(event) {
 <!-- DEVELOPER EXPERIENCE DIMENSIONS -->
 
 <!-- THE PROBLEM -->
-<div class="false-choice-visual" markdown="0">
+<div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
-    <h2 class="false-choice-main-title"><i class="fas fa-code-branch" aria-hidden="true"></i> The Problem: False Choice</h2>
+    <h2><i class="fas fa-code-branch" aria-hidden="true"></i> The Problem: False Choice</h2>
     <h3 class="false-choice-subtitle">Most teams believe they must choose the optimal development approach</h3>
 
     <div class="choice-options">
@@ -962,9 +962,9 @@ function hideMetricsDetails() {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="false-choice-visual" markdown="0">
+<div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
-    <h2 class="false-choice-main-title"><i class="fas fa-comments"></i> Discussion Questions</h2>
+    <h2><i class="fas fa-comments"></i> Discussion Questions</h2>
     <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
 
     <div class="discussion-questions-list">
