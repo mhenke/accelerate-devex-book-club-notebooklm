@@ -166,17 +166,14 @@ document.addEventListener('keydown', function(event) {
 
 <!-- MEETING 1 KEY QUESTION -->
 
-<div class="section-card dark-theme full-width" markdown="0">
-<div class="key-question-content">
-<div class="key-question-header">
-<div class="key-question-icon">
-<i class="fas fa-key" aria-hidden="true"></i>
-</div>
-<h2>MEETING 1 KEY QUESTION</h2>
-</div>
+<div class="key-question-banner" markdown="0">
+<div class="key-question-wrapper">
+<div class="key-question-label">MEETING 1 KEY QUESTION</div>
 <div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
-<div class="key-question-quote">
-<div class="quote-content">&ldquo;How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?&rdquo;</div>
+<div class="key-question-main">
+<div class="quote-mark-start">&ldquo;</div>
+<div class="question-text">How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?</div>
+<div class="quote-mark-end">&rdquo;</div>
 </div>
 </div>
 </div>
