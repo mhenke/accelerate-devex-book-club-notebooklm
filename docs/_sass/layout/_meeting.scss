@@ -276,7 +276,7 @@
     var(--hero-dark) 0%,
     var(--card-dark) 100%
   );
-  color: var(--text-dark);
+  color: var(--text-light);
   padding: var(--space-2xl) var(--space-md);
   position: relative;
   overflow: hidden;
@@ -323,14 +323,14 @@
     .footer-key-question {
       .key-question-content {
         .footer-key-question-quote {
-          background: var(--color-white);
+          background: rgba(0, 0, 0, 0.3);
           border-left: var(--border-width-accent) solid var(--accent-teal);
           padding: var(--space-sm);
           margin: var(--space-md) 0;
           border-radius: var(--radius-md);
           font-style: italic;
           font-size: var(--font-size-body-medium);
-          color: var(--text-dark);
+          color: rgba(255, 255, 255, 0.9);
         }
 
         .key-question-explanation {
