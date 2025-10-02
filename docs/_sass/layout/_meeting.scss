@@ -36,7 +36,7 @@
         }
 
         i {
-          font-size: var(--font-size-xl);
+          font-size: var(--md-sys-typescale-headline-medium);
           color: var(--accent-teal);
         }
 
@@ -93,7 +93,7 @@
   .meeting-title-section {
     .meeting-main-title {
       color: white;
-      font-size: var(--font-size-display-medium);
+      font-size: var(--md-sys-typescale-display-medium);
       font-weight: var(--font-weight-bold);
       margin-bottom: var(--space-md);
       text-shadow: var(--shadow-hero);
@@ -111,14 +111,14 @@
         align-items: center;
         gap: var(--space-sm);
         color: rgba(255, 255, 255, 0.9);
-        font-size: var(--font-size-body-medium);
+        font-size: var(--md-sys-typescale-body-medium);
 
         i {
           color: var(--accent-teal);
         }
 
         &.subtitle {
-          font-size: var(--font-size-title-medium);
+          font-size: var(--md-sys-typescale-title-medium);
           font-weight: var(--font-weight-medium);
           margin-top: 0;
         }
@@ -128,19 +128,19 @@
 
   .subtitle {
     color: rgba(255, 255, 255, 0.9);
-    font-size: var(--font-size-title-large);
+    font-size: var(--md-sys-typescale-headline-small);
     font-weight: var(--font-weight-medium);
   }
 
   // Brand text styles (extracted to reduce nesting)
   .brand-title {
-    font-size: var(--font-size-title-large);
+    font-size: var(--md-sys-typescale-headline-small);
     font-weight: var(--font-weight-bold);
     font-family: var(--font-display);
   }
 
   .brand-subtitle {
-    font-size: var(--font-size-body-medium);
+    font-size: var(--md-sys-typescale-body-medium);
     opacity: 0.8;
     font-weight: var(--font-weight-medium);
   }
@@ -194,7 +194,7 @@
 
   h2 {
     color: var(--theme-primary);
-    font-size: var(--font-size-headline-medium);
+    font-size: var(--md-sys-typescale-headline-medium);
     font-weight: var(--font-weight-bold);
     margin: var(--space-xl) 0 var(--space-md) 0;
     padding-bottom: 0;
@@ -208,14 +208,14 @@
 
   h3 {
     color: var(--theme-primary);
-    font-size: var(--font-size-headline-small);
+    font-size: var(--md-sys-typescale-headline-small);
     font-weight: var(--font-weight-semibold);
     margin: var(--space-lg) 0 var(--space-sm) 0;
   }
 
   h4 {
     color: var(--theme-primary);
-    font-size: var(--font-size-title-large);
+    font-size: var(--md-sys-typescale-title-large);
     font-weight: var(--font-weight-semibold);
     margin: var(--space-md) 0 var(--space-sm) 0;
   }
@@ -292,13 +292,13 @@
     .footer-section {
       h4 {
         color: var(--text-light);
-        font-size: var(--font-size-title-medium);
+        font-size: var(--md-sys-typescale-title-medium);
         font-weight: var(--font-weight-semibold);
         margin-bottom: var(--space-md);
       }
 
       p {
-        font-size: var(--font-size-body-medium);
+        font-size: var(--md-sys-typescale-body-medium);
         line-height: var(--line-height-relaxed);
         color: var(--text-white);
         margin-bottom: var(--space-sm);
@@ -327,12 +327,12 @@
           margin: var(--space-md) 0;
           border-radius: var(--radius-md);
           font-style: italic;
-          font-size: var(--font-size-body-medium);
+          font-size: var(--md-sys-typescale-body-medium);
           color: rgba(255, 255, 255, 0.9);
         }
 
         .key-question-explanation {
-          font-size: var(--font-size-body-small);
+          font-size: var(--md-sys-typescale-body-small);
           color: var(--text-light);
         }
       }
@@ -346,7 +346,7 @@
     border-top: var(--border-light);
 
     .footer-attribution p {
-      font-size: var(--font-size-body-small);
+      font-size: var(--md-sys-typescale-body-small);
       color: var(--text-white);
       margin: 0;
     }
@@ -365,7 +365,7 @@
       }
 
       i {
-        font-size: var(--font-size-lg);
+        font-size: var(--md-sys-typescale-headline-small);
       }
     }
   }
@@ -376,7 +376,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  font-size: var(--font-size-body-small);
+  font-size: var(--md-sys-typescale-body-small);
   color: var(--text-light);
 
   i {
@@ -424,7 +424,7 @@
     }
 
     .meeting-title-section .meeting-main-title {
-      font-size: var(--font-size-display-small);
+      font-size: var(--md-sys-typescale-display-small);
     }
 
     .meeting-meta {

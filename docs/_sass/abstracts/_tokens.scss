@@ -349,16 +349,6 @@ $letter-spacing-wide: 0.025em;
   --font-size-body-medium: #{$font-size-body-medium};
   --font-size-body-small: #{$font-size-body-small};
 
-  // Legacy Font Sizes (for backward compatibility)
-  --font-size-xs: #{$font-size-xs};
-  --font-size-sm: #{$font-size-sm};
-  --font-size-base: #{$font-size-base};
-  --font-size-md: #{$font-size-md};
-  --font-size-lg: #{$font-size-lg};
-  --font-size-xl: #{$font-size-xl};
-  --font-size-2xl: #{$font-size-2xl};
-  --font-size-3xl: #{$font-size-3xl};
-
   // Line Heights
   --line-height-tight: #{$line-height-tight};
   --line-height-normal: #{$line-height-normal};

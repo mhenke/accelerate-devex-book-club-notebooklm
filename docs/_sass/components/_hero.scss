@@ -72,7 +72,7 @@
     position: absolute;
     top: -10px;
     left: -10px;
-    font-size: var(--font-size-display-large);
+    font-size: var(--md-sys-typescale-display-large);
     opacity: 0.3;
     animation: bounce 2s infinite;
   }
@@ -82,23 +82,24 @@
     position: absolute;
     bottom: -10px;
     right: -10px;
-    font-size: var(--font-size-display-large);
+    font-size: var(--md-sys-typescale-display-large);
     opacity: 0.3;
     animation: bounce 2s infinite 1s;
   }
 
   h2 {
-    font-size: clamp(
-      var(--font-size-headline-small),
-      3vw,
-      var(--font-size-display-medium)
-    );
+    font-size: var(--md-sys-typescale-display-medium);
+
+    @include mobile-only {
+      font-size: var(--md-sys-typescale-headline-large);
+    }
+
     margin: 0 0 var(--spacing-md) 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   p {
-    font-size: var(--font-size-lg);
+    font-size: var(--md-sys-typescale-headline-small);
     margin: 0;
     opacity: 0.95;
   }
@@ -114,7 +115,7 @@
   border-bottom: 2px solid var(--border-light);
 
   i {
-    font-size: var(--font-size-headline-small);
+    font-size: var(--md-sys-typescale-headline-small);
     color: var(--primary-blue);
     min-width: 2rem;
   }
@@ -153,17 +154,18 @@
   }
 
   h1 {
-    font-size: clamp(
-      var(--font-size-headline-large),
-      4vw,
-      var(--font-size-display-small)
-    );
+    font-size: var(--md-sys-typescale-display-small);
+
+    @include mobile-only {
+      font-size: var(--md-sys-typescale-headline-large);
+    }
+
     margin: 0 0 var(--spacing-lg) 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .subtitle {
-    font-size: var(--font-size-xl);
+    font-size: var(--md-sys-typescale-headline-medium);
     opacity: 0.95;
     margin-bottom: var(--spacing-lg);
   }
@@ -180,13 +182,13 @@
       border-radius: var(--border-radius);
 
       .stat-number {
-        font-size: var(--font-size-xl);
+        font-size: var(--md-sys-typescale-headline-medium);
         font-weight: var(--font-weight-bold);
         display: block;
       }
 
       .stat-label {
-        font-size: var(--font-size-sm);
+        font-size: var(--md-sys-typescale-body-medium);
         opacity: 0.9;
       }
     }
@@ -207,7 +209,7 @@
 
   .page-description {
     color: var(--text-secondary);
-    font-size: var(--font-size-lg);
+    font-size: var(--md-sys-typescale-headline-small);
     margin-top: var(--spacing-md);
   }
 }
@@ -227,7 +229,7 @@
     gap: var(--spacing-sm);
 
     i {
-      font-size: var(--font-size-title-large);
+      font-size: var(--md-sys-typescale-title-large);
     }
   }
 
