@@ -995,64 +995,41 @@
 // =============================================================================
 
 .psych-safety-section {
-  padding: var(--space-lg);
+  padding: var(--space-md);
 
   .psych-safety-header {
-    text-align: center;
-    margin-bottom: var(--space-xl);
-    padding-bottom: var(--space-md);
-    border-bottom: 2px solid var(--accent-teal);
+    margin-bottom: var(--space-md);
 
     h2 {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--space-sm);
-      color: var(--accent-teal);
-      font-size: var(--font-size-headline-medium);
-      font-weight: var(--font-weight-bold);
-      margin: 0;
-
-      i {
-        color: var(--accent-teal);
-        font-size: var(--font-size-2xl);
-      }
+      // Uses default meeting h2 styling (left-aligned, theme-primary)
+      margin-bottom: 0;
     }
   }
 
   .psych-safety-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xl);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
   }
 
   .psych-definition,
   .psych-indicators,
   .psych-impact {
     background: var(--background-white);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--accent-teal);
+    border-left: 4px solid var(--theme-primary);
 
     h3 {
-      display: flex;
-      align-items: center;
-      gap: var(--space-sm);
-      color: var(--text-dark);
-      font-size: var(--font-size-title-large);
-      font-weight: var(--font-weight-semibold);
-      margin-bottom: var(--space-md);
-
-      i {
-        color: var(--accent-teal);
-      }
+      // Uses default meeting h3 styling
+      margin-bottom: var(--space-sm);
     }
 
     p {
       color: var(--text-medium);
-      font-size: var(--font-size-body-medium);
-      line-height: var(--line-height-relaxed);
-      margin-bottom: var(--space-md);
+      font-size: var(--font-size-body-small);
+      line-height: var(--line-height-normal);
+      margin-bottom: var(--space-sm);
 
       &:last-child {
         margin-bottom: 0;
@@ -1062,20 +1039,21 @@
     .psych-quote {
       background: linear-gradient(
         135deg,
-        rgba(122, 218, 209, 0.15),
-        rgba(122, 218, 209, 0.08)
+        rgba(9, 105, 218, 0.15),
+        rgba(9, 105, 218, 0.08)
       );
-      border-left: 4px solid var(--accent-teal);
-      padding: var(--space-md);
+      border-left: 4px solid var(--theme-primary);
+      padding: var(--space-sm);
       border-radius: var(--radius-sm);
       font-style: italic;
+      font-size: var(--font-size-body-small);
       display: flex;
       align-items: flex-start;
       gap: var(--space-sm);
-      margin-top: var(--space-md);
+      margin-top: var(--space-sm);
 
       i {
-        color: var(--accent-teal);
+        color: var(--theme-primary);
         margin-top: var(--space-xs);
         flex-shrink: 0;
       }
@@ -1085,8 +1063,8 @@
   .indicators-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-md);
-    margin-top: var(--space-md);
+    gap: var(--space-sm);
+    margin-top: var(--space-sm);
 
     @include mobile-only {
       grid-template-columns: 1fr;
@@ -1105,22 +1083,22 @@
     &:hover {
       background: linear-gradient(
         135deg,
-        rgba(122, 218, 209, 0.1),
-        rgba(122, 218, 209, 0.05)
+        rgba(9, 105, 218, 0.1),
+        rgba(9, 105, 218, 0.05)
       );
       transform: translateX(4px);
     }
 
     i {
-      color: var(--accent-teal);
-      font-size: var(--font-size-lg);
+      color: var(--theme-primary);
+      font-size: var(--font-size-md);
       flex-shrink: 0;
       margin-top: 2px;
     }
 
     span {
       color: var(--text-dark);
-      font-size: var(--font-size-body-medium);
+      font-size: var(--font-size-body-small);
       line-height: var(--line-height-normal);
     }
   }
@@ -1128,22 +1106,22 @@
   .psych-warning {
     background: linear-gradient(
       135deg,
-      rgba(255, 127, 80, 0.08),
-      rgba(255, 127, 80, 0.04)
+      rgba(9, 105, 218, 0.08),
+      rgba(9, 105, 218, 0.04)
     );
-    padding: var(--space-lg);
+    padding: var(--space-md);
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--accent-coral);
+    border-left: 4px solid var(--theme-primary);
 
     p {
       color: var(--text-dark);
-      font-size: var(--font-size-body-medium);
-      line-height: var(--line-height-relaxed);
+      font-size: var(--font-size-body-small);
+      line-height: var(--line-height-normal);
       margin: 0;
 
       strong {
         font-weight: var(--font-weight-bold);
-        color: var(--accent-coral);
+        color: var(--theme-primary);
       }
     }
   }
@@ -1399,12 +1377,12 @@
 
 .key-question-banner .key-question-header .key-question-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: var(--font-size-headline-medium);
   font-weight: var(--font-weight-bold);
   margin: 0;
   letter-spacing: 0.05em;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  color: var(--text-white);
+  color: var(--text-light);
   display: inline;
   text-align: center;
 }
@@ -1526,7 +1504,7 @@
 }
 
 .false-choice-main-title {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-headline-medium);
   font-weight: var(--font-weight-bold);
   margin: 0 0 var(--space-sm) 0;
 
