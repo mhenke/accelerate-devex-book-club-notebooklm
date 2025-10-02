@@ -743,8 +743,9 @@ function hideMetricsDetails() {
     </div>
 
     <!-- Bottom Message -->
-    <div class="metric-warning">
-      <i class="fas fa-lightbulb"></i> <strong>Remember:</strong> Culture CAN change through better practices! <span class="meetings-note">(meetings 2-4)</span>
+    <div class="alternative-reminder">
+      <i class="fas fa-quote-left"></i>
+      <p><strong>Remember:</strong> Culture CAN change through better practices! (meetings 2-4)</p>
     </div>
 
   </div>
