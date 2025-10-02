@@ -136,8 +136,8 @@ h1 {
 h2 {
   @include heading-2;
 
-  // Standardized h2 styling for all sections (except .key-question)
-  &:not(.key-question h2) {
+  // Standardized h2 styling for all sections (except dark theme sections)
+  &:not(.key-question h2, .false-choice-visual h2, .key-question-banner h2, .deployment-signal h2) {
     display: flex;
     align-items: center;
     gap: var(--space-md);
