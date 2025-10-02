@@ -1,0 +1,65 @@
+<!--
+  Material Design 3 Podcast Playlist Component
+
+  Usage:
+  {% include podcast-playlist.html
+    episodes=site.data.meeting1_podcasts
+  %}
+
+  Or inline:
+  {% include podcast-playlist.html
+    episodes='[
+      {
+        "id": "brief",
+        "title": "Episode Title",
+        "subtitle": "Episode Description",
+        "type": "brief",
+        "duration": "15:30",
+        "audio_url": "/path/to/audio.mp4"
+      }
+    ]'
+  %}
+-->
+
+<div class="media-section">
+  <h3><i class="fas fa-podcast" aria-hidden="true"></i> Podcast Episodes</h3>
+
+  <div class="podcast-playlist" role="list">
+    {% for episode in include.episodes %}
+    <div class="podcast-item" role="listitem" data-episode-id="{{ episode.id }}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}">
+      <div class="podcast-start">
+        <div class="playing-indicator" hidden>
+          <div class="equalizer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <i class="fas fa-podcast podcast-icon"></i>
+      </div>
+
+      <div class="podcast-content">
+        <h4 class="podcast-headline">
+          {{ episode.title }}
+          {% if episode.type %}
+          <span class="podcast-type {{ episode.type }}">{{ episode.type }}</span>
+          {% endif %}
+        </h4>
+        <p class="podcast-subtitle">{{ episode.subtitle }}</p>
+        {% if episode.duration %}
+        <div class="podcast-metadata">
+          <span class="duration">{{ episode.duration }}</span>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="podcast-controls">
+        <audio controls data-episode="{{ episode.id }}">
+          <source src="{{ episode.audio_url }}" type="audio/mp4">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

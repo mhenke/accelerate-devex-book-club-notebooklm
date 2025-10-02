@@ -1,14 +1,14 @@
-// Media Container Component - Video & Audio Controls
-// =================================================
-// Reusable media player with download controls
+// =============================================================================
+// MEDIA COMPONENTS - Material Design 3 Patterns
+// =============================================================================
 
+// Media Container Component - Video & Audio Controls
 .media-container {
   background: var(--background-white);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 15px var(--shadow-light);
   padding: var(--spacing-lg);
   margin: var(--spacing-xl) 0;
-  
 }
 
 .media-container video,
@@ -55,5 +55,295 @@
 
   i {
     font-size: 1rem;
+  }
+}
+
+// =============================================================================
+// PODCAST PLAYLIST - Material Design 3 Three-Line List Pattern
+// =============================================================================
+
+.media-section {
+  margin: var(--space-2xl) 0;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    color: var(--header-dark-navy);
+    font-size: var(--font-size-headline-small);
+    font-weight: var(--font-weight-semibold);
+
+    i {
+      color: var(--theme-primary);
+    }
+  }
+}
+
+.podcast-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+// Podcast Item - M3 Three-Line List Pattern
+.podcast-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--background-light);
+  border-radius: var(--radius-md);
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+  position: relative;
+  min-height: 88px;
+  cursor: pointer;
+
+  // M3 State Layer
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-md);
+    opacity: 0;
+    background: currentColor;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  // Hover state (8% opacity per M3)
+  &:hover::before {
+    opacity: 0.08;
+  }
+
+  // Active/Playing state
+  &.playing {
+    border-left-color: var(--theme-primary);
+    background: linear-gradient(
+      135deg,
+      rgba(var(--theme-primary-rgb), 0.05),
+      var(--background-light)
+    );
+
+    .playing-indicator {
+      display: flex !important;
+    }
+
+    .podcast-icon {
+      display: none;
+    }
+  }
+
+  // Focus state
+  &:focus-visible {
+    outline: 2px solid var(--theme-primary);
+    outline-offset: 2px;
+  }
+}
+
+// Leading element (start slot) - 48x48px per M3
+.podcast-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  position: relative;
+  grid-row: 1;
+}
+
+.podcast-icon {
+  font-size: 2rem;
+  color: var(--theme-primary);
+  transition: all 0.2s ease;
+}
+
+// Animated Equalizer Bars (Playing Indicator)
+.playing-indicator {
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+
+.equalizer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 24px;
+  gap: 3px;
+}
+
+.equalizer .bar {
+  width: 3px;
+  height: 100%;
+  background: var(--theme-primary);
+  border-radius: 2px;
+  animation: equalize 0.8s ease-in-out infinite;
+  transform-origin: bottom;
+
+  &:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes equalize {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(0.8);
+  }
+  75% {
+    transform: scaleY(0.2);
+  }
+}
+
+// Content area (headline + supporting text + metadata)
+.podcast-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 0;
+  grid-row: 1;
+}
+
+.podcast-headline {
+  font-size: var(--font-size-title-medium);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  line-height: var(--line-height-tight);
+}
+
+.podcast-subtitle {
+  font-size: var(--font-size-body-medium);
+  color: var(--text-medium);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+
+  // Two-line truncation
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Podcast type badge
+.podcast-type {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &.brief {
+    background: #e3f2fd;
+    color: #1976d2;
+  }
+
+  &.deep-dive {
+    background: #f3e5f5;
+    color: #7b1fa2;
+  }
+
+  &.critique {
+    background: #fff3e0;
+    color: #f57c00;
+  }
+}
+
+// Metadata (duration, etc.)
+.podcast-metadata {
+  display: flex;
+  gap: var(--space-md);
+  font-size: var(--font-size-body-small);
+  color: var(--text-medium);
+
+  .duration {
+    font-variant-numeric: tabular-nums;
+    font-weight: var(--font-weight-medium);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+
+    &::before {
+      content: "\f017";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 400;
+      opacity: 0.7;
+    }
+  }
+}
+
+// Audio controls - full width below content
+.podcast-controls {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin-top: var(--space-sm);
+
+  audio {
+    width: 100%;
+    height: 48px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+// Responsive adjustments
+@include mobile-only {
+  .podcast-item {
+    grid-template-columns: auto 1fr;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+  }
+
+  .podcast-start {
+    width: 40px;
+    height: 40px;
+  }
+
+  .podcast-icon {
+    font-size: 1.5rem;
+  }
+
+  .podcast-headline {
+    font-size: var(--font-size-title-small);
+  }
+
+  .podcast-subtitle {
+    font-size: var(--font-size-body-small);
+  }
+}
+
+// Print styles
+@media print {
+  .playing-indicator {
+    display: none !important;
+  }
+
+  .podcast-controls {
+    display: none !important;
   }
 }
