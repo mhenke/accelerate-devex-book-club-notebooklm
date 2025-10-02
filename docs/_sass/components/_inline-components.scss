@@ -28,7 +28,6 @@
 .metric-header {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-md);
   margin-bottom: var(--space-20);
 }
 
@@ -72,7 +71,6 @@
 .metric-content {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
 }
 
 .metric-current,
@@ -191,7 +189,7 @@
 /* Responsive Design */
 @media (max-width: #{$mobile - 1px}) {
   .dora-metric-card {
-    padding: var(--space-md);
+    padding: var(--space-sm);
   }
 
   .metric-header {
@@ -217,6 +215,5 @@
 
   .metrics-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-md);
   }
 }

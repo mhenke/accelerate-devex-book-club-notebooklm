@@ -28,7 +28,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--space-sm); // Reduced gap for compactness
-  padding: var(--space-md); // Reduced padding for more compact appearance
+  padding: var(--space-sm); // Reduced padding for more compact appearance
   border-radius: 0 0 var(--radius-xl) var(--radius-xl); // Match card border radius
 }
 
@@ -196,7 +196,7 @@ h6 {
   font-size: var(--font-size-body-large);
   font-weight: var(--font-weight-medium);
   color: var(--text-medium);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
   margin-bottom: var(--space-md);
 }
 
@@ -534,7 +534,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-md);
   }
 
   // Maximum specificity override for primary large buttons
@@ -804,7 +803,7 @@ a {
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-md);
+  padding: var(--space-sm);
   margin: var(--space-lg) auto;
   max-width: var(--container-content);
   text-align: center;
@@ -838,7 +837,7 @@ a {
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-md);
+  padding: var(--space-sm);
   margin: var(--space-lg) auto;
   max-width: var(--container-reading);
   text-align: center;
@@ -878,7 +877,7 @@ a {
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-md);
+  padding: var(--space-sm);
   margin: var(--space-lg) auto;
   text-align: center;
   box-shadow: var(--elevation-2);
@@ -888,7 +887,6 @@ a {
     // Inherit standardized h2 styling with icons and left alignment
     display: flex;
     align-items: center;
-    gap: var(--space-md);
     text-align: left;
 
     i,
@@ -934,7 +932,6 @@ a {
     // Inherit standardized h2 styling with icons and left alignment
     display: flex;
     align-items: center;
-    gap: var(--space-md);
     text-align: left;
 
     i,
@@ -974,7 +971,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-md);
     padding: var(--space-xl) var(--space-lg);
     border: 1px solid rgba(16, 185, 129, 0.1);
     border-radius: var(--radius-xl); // Material Design 3 radius
@@ -1086,7 +1082,6 @@ a {
     h3 {
       display: flex;
       align-items: center;
-      gap: var(--space-md);
       color: var(--text-dark);
       margin-bottom: var(--space-lg);
       font-size: var(--font-size-title-large);
@@ -1205,7 +1200,6 @@ a {
       @media (min-width: #{$small}) {
         flex-direction: row;
         justify-content: center;
-        gap: var(--space-md);
       }
     }
 
@@ -1733,7 +1727,6 @@ button:focus,
   }
 
   .hero-metrics {
-    gap: var(--space-md);
     margin-top: var(--space-xl);
   }
 
@@ -1801,7 +1794,6 @@ button:focus,
     z-index: 1;
     display: flex;
     align-items: center;
-    gap: var(--space-md);
 
     i,
     em {
@@ -1953,7 +1945,7 @@ button:focus,
         var(--font-size-body-large)
       );
       opacity: var(--opacity-medium);
-      margin-top: var(--space-lg);
+      margin-top: var(--space-md);
     }
   }
 
@@ -2137,7 +2129,6 @@ button:focus,
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-md);
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     position: relative;
@@ -2174,7 +2165,7 @@ button:focus,
     color: var(--text-dark);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
-    padding: var(--space-md);
+    padding: var(--space-sm);
     border-radius: var(--radius-lg);
     text-decoration: none;
     display: inline-block;
@@ -2202,7 +2193,7 @@ button:focus,
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-md);
+  padding: var(--space-sm);
   margin: var(--space-lg) auto;
   text-align: center;
   box-shadow: var(--elevation-2);
@@ -2354,7 +2345,7 @@ button:focus,
 
   @include mobile-only {
     order: 2; // Move sidebar after intro but before main content sections
-    margin-top: var(--space-lg);
+    margin-top: var(--space-md);
     margin-bottom: var(--space-md);
   }
 
@@ -2514,7 +2505,6 @@ button:focus,
       border-bottom: 1px solid rgba(0, 0, 0, 0.06);
       display: flex;
       align-items: center;
-      gap: var(--space-md);
 
       .header-icon {
         display: flex;
@@ -2625,7 +2615,6 @@ button:focus,
     .action-list {
       display: flex;
       flex-direction: column;
-      gap: var(--space-md);
     }
 
     .action-item {
@@ -2741,7 +2730,6 @@ button:focus,
   .card-header {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
     border-bottom: 1px solid var(--border-subtle);
     background: var(--background-subtle);
 
@@ -2796,7 +2784,7 @@ button:focus,
 
     // Resource card links styling
     .card-links {
-      margin-top: var(--space-lg);
+      margin-top: var(--space-md);
 
       a {
         display: flex;
@@ -2912,7 +2900,7 @@ button:focus,
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-xl);
-    margin-top: var(--space-lg);
+    margin-top: var(--space-md);
 
     @include mobile-up {
       grid-template-columns: 1fr 1fr;
@@ -2925,7 +2913,6 @@ button:focus,
   .card-header {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
     border-bottom: 1px solid #f1f3f4;
 
     i {
