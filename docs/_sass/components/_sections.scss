@@ -34,14 +34,66 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text-light);
 
-    // Override heading colors for dark theme
-    h1,
-    h2,
-    h3,
-    h4,
+    // Override heading colors and ensure MD3 typescale for dark theme
+    h1 {
+      font-family: var(--font-display);
+      font-size: var(--md-sys-typescale-display-small);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.22;
+      color: var(--text-light);
+      margin-bottom: var(--space-lg);
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: var(--md-sys-typescale-headline-large);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.25;
+      color: var(--text-light);
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+
+      i,
+      em {
+        color: var(--accent-teal);
+        font-size: var(--md-sys-typescale-headline-medium);
+        flex-shrink: 0;
+        font-style: normal;
+      }
+    }
+
+    h3 {
+      font-family: var(--font-display);
+      font-size: var(--md-sys-typescale-headline-medium);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.29;
+      color: var(--text-light);
+      margin-bottom: var(--space-sm);
+    }
+
+    h4 {
+      font-family: var(--font-display);
+      font-size: var(--md-sys-typescale-headline-small);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.33;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: var(--space-sm);
+    }
+
     h5,
     h6 {
-      color: var(--text-light);
+      font-family: var(--font-display);
+      font-size: var(--md-sys-typescale-title-large);
+      font-weight: var(--font-weight-medium);
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: var(--space-xs);
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.85);
+      line-height: var(--line-height-relaxed);
     }
   }
 
