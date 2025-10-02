@@ -1,14 +1,11 @@
 <div class="key-question-banner" markdown="0">
-<div class="key-question-content">
-<div class="key-question-header">
-<div class="key-question-icon">
-<i class="fas fa-lightbulb" aria-hidden="true"></i>
-</div>
-<h2 class="key-question-title">THE KEY QUESTION</h2>
-</div>
+<div class="key-question-wrapper">
+<div class="key-question-label">THE KEY QUESTION</div>
 <div class="key-question-intro">{{ include.intro | default: "Throughout our journey, we'll return to this central reflection:" }}</div>
-<div class="key-question-quote">
-<div class="quote-content">&ldquo;How can we build a virtuous cycle where improving our technical systems enhances our team culture, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?&rdquo;</div>
+<div class="key-question-main">
+<div class="quote-mark-start">&ldquo;</div>
+<div class="question-text">How can we build a virtuous cycle where improving our technical systems enhances our team culture, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?</div>
+<div class="quote-mark-end">&rdquo;</div>
 </div>
 {% if include.conclusion %}<div class="key-question-conclusion">{{ include.conclusion }}</div>{% endif %}
 </div>
