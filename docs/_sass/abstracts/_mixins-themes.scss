@@ -43,7 +43,6 @@ $meeting-themes: (
 // Usage:
 //   .meeting-1 { @include meeting-theme("meeting-1"); }
 //   .card { @include meeting-theme("meeting-2"); }
-//
 // This creates scoped CSS custom properties that cascade to children:
 //   --theme-primary, --theme-secondary, --theme-accent, etc.
 
