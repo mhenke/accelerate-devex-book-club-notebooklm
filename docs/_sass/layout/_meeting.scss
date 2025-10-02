@@ -293,7 +293,7 @@
 
     .footer-section {
       h4 {
-        color: var(--text-dark);
+        color: var(--text-light);
         font-size: var(--font-size-title-medium);
         font-weight: var(--font-weight-semibold);
         margin-bottom: var(--space-md);
@@ -302,7 +302,7 @@
       p {
         font-size: var(--font-size-body-medium);
         line-height: var(--line-height-relaxed);
-        color: var(--text-medium);
+        color: var(--text-white);
         margin-bottom: var(--space-sm);
       }
     }
