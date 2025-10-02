@@ -9,6 +9,7 @@
 // 1. ABSTRACTS - Design tokens and utilities (no CSS output)
 @import "abstracts/tokens"; // Design system tokens
 @import "abstracts/mixins"; // Utility mixins and functions
+@import "abstracts/mixins-themes"; // Meeting theme mixin system
 
 // 2. BASE - Critical above-the-fold styles (inlined in HTML)
 @import "base/critical"; // Critical CSS for hero, DORA metrics, typography
