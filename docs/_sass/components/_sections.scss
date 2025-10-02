@@ -793,6 +793,376 @@
 }
 
 // =============================================================================
+// CULTURE FIRST WARNING SECTION
+// =============================================================================
+
+.culture-first-warning {
+  padding: var(--space-lg);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 127, 80, 0.08),
+    rgba(255, 127, 80, 0.04)
+  );
+  border: 2px solid rgba(255, 127, 80, 0.3);
+  border-radius: var(--radius-lg);
+  margin: var(--space-xl) 0;
+
+  .warning-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-md);
+    border-bottom: 2px solid rgba(255, 127, 80, 0.3);
+
+    .warning-icon {
+      color: var(--accent-coral);
+      font-size: var(--font-size-2xl);
+      margin-right: var(--space-sm);
+    }
+
+    h2 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      color: var(--accent-coral);
+      font-size: var(--font-size-headline-medium);
+      font-weight: var(--font-weight-bold);
+      margin: 0;
+    }
+  }
+
+  .warning-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .warning-section {
+    background: var(--background-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--accent-coral);
+
+    .warning-subtitle {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      color: var(--text-dark);
+      font-size: var(--font-size-title-large);
+      font-weight: var(--font-weight-semibold);
+      margin-bottom: var(--space-md);
+
+      i {
+        color: var(--accent-coral);
+      }
+    }
+
+    p {
+      color: var(--text-medium);
+      font-size: var(--font-size-body-medium);
+      line-height: var(--line-height-relaxed);
+      margin-bottom: var(--space-md);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .warning-list {
+      list-style: none;
+      padding-left: 0;
+      margin: var(--space-md) 0;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-sm);
+        margin-bottom: var(--space-sm);
+        padding-left: var(--space-md);
+        position: relative;
+
+        &::before {
+          content: "⚠️";
+          position: absolute;
+          left: 0;
+        }
+
+        strong {
+          color: var(--text-dark);
+          font-weight: var(--font-weight-semibold);
+        }
+      }
+    }
+
+    .warning-callout {
+      background: linear-gradient(
+        135deg,
+        rgba(122, 218, 209, 0.1),
+        rgba(122, 218, 209, 0.05)
+      );
+      border-left: 4px solid var(--accent-teal);
+      padding: var(--space-md);
+      border-radius: var(--radius-sm);
+      font-style: italic;
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+
+      i {
+        color: var(--accent-teal);
+        margin-top: var(--space-xs);
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .sequence-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin: var(--space-lg) 0;
+    padding: var(--space-lg);
+    background: var(--color-neutral-95);
+    border-radius: var(--radius-md);
+
+    @include mobile-only {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+  }
+
+  .sequence-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    flex-shrink: 0;
+
+    .sequence-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--accent-teal);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-title-large);
+      font-weight: var(--font-weight-bold);
+      box-shadow: 0 2px 8px rgba(122, 218, 209, 0.3);
+    }
+
+    .sequence-label {
+      font-size: var(--font-size-body-small);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-dark);
+      text-align: center;
+    }
+  }
+
+  .sequence-arrow {
+    color: var(--accent-teal);
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+
+    @include mobile-only {
+      transform: rotate(90deg);
+      margin: var(--space-xs) 0;
+    }
+  }
+
+  .warning-footer {
+    background: linear-gradient(
+      135deg,
+      rgba(9, 105, 218, 0.08),
+      rgba(9, 105, 218, 0.04)
+    );
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--theme-primary);
+
+    p {
+      color: var(--text-dark);
+      font-size: var(--font-size-body-medium);
+      line-height: var(--line-height-relaxed);
+      margin-bottom: var(--space-sm);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      strong {
+        font-weight: var(--font-weight-bold);
+        color: var(--theme-primary);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// PSYCHOLOGICAL SAFETY SECTION
+// =============================================================================
+
+.psych-safety-section {
+  padding: var(--space-lg);
+
+  .psych-safety-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-md);
+    border-bottom: 2px solid var(--accent-teal);
+
+    .psych-icon {
+      color: var(--accent-teal);
+      font-size: var(--font-size-2xl);
+      margin-right: var(--space-sm);
+    }
+
+    h2 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      color: var(--accent-teal);
+      font-size: var(--font-size-headline-medium);
+      font-weight: var(--font-weight-bold);
+      margin: 0;
+    }
+  }
+
+  .psych-safety-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .psych-definition,
+  .psych-indicators,
+  .psych-impact {
+    background: var(--background-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--accent-teal);
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      color: var(--text-dark);
+      font-size: var(--font-size-title-large);
+      font-weight: var(--font-weight-semibold);
+      margin-bottom: var(--space-md);
+
+      i {
+        color: var(--accent-teal);
+      }
+    }
+
+    p {
+      color: var(--text-medium);
+      font-size: var(--font-size-body-medium);
+      line-height: var(--line-height-relaxed);
+      margin-bottom: var(--space-md);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .psych-quote {
+      background: linear-gradient(
+        135deg,
+        rgba(122, 218, 209, 0.15),
+        rgba(122, 218, 209, 0.08)
+      );
+      border-left: 4px solid var(--accent-teal);
+      padding: var(--space-md);
+      border-radius: var(--radius-sm);
+      font-style: italic;
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+
+      i {
+        color: var(--accent-teal);
+        margin-top: var(--space-xs);
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+
+    @include mobile-only {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .indicator-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+    background: var(--color-neutral-95);
+    border-radius: var(--radius-sm);
+    transition: all var(--duration-fast) var(--ease-out);
+
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        rgba(122, 218, 209, 0.1),
+        rgba(122, 218, 209, 0.05)
+      );
+      transform: translateX(4px);
+    }
+
+    i {
+      color: var(--accent-teal);
+      font-size: var(--font-size-lg);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    span {
+      color: var(--text-dark);
+      font-size: var(--font-size-body-medium);
+      line-height: var(--line-height-normal);
+    }
+  }
+
+  .psych-warning {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 127, 80, 0.08),
+      rgba(255, 127, 80, 0.04)
+    );
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--accent-coral);
+
+    p {
+      color: var(--text-dark);
+      font-size: var(--font-size-body-medium);
+      line-height: var(--line-height-relaxed);
+      margin: 0;
+
+      strong {
+        font-weight: var(--font-weight-bold);
+        color: var(--accent-coral);
+      }
+    }
+  }
+}
+
+// =============================================================================
 // COMMON PITFALLS SECTION
 // =============================================================================
 
