@@ -220,15 +220,9 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" role="button" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4"
                data-title="Accelerate Metrics Unlocked"
+               data-duration="15:30"
                data-type="brief">
             <div class="podcast-start">
-              <div class="playing-indicator">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
               <button class="play-btn" aria-label="Play Accelerate Metrics Unlocked">
                 <i class="fas fa-play"></i>
               </button>
@@ -248,15 +242,9 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" role="button" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4"
                data-title="Accelerate Success"
+               data-duration="28:45"
                data-type="deep-dive">
             <div class="podcast-start">
-              <div class="playing-indicator">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
               <button class="play-btn" aria-label="Play Accelerate Success">
                 <i class="fas fa-play"></i>
               </button>
@@ -276,15 +264,9 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" role="button" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4"
                data-title="Accelerate Your DevEx"
+               data-duration="22:15"
                data-type="critique">
             <div class="podcast-start">
-              <div class="playing-indicator">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
               <button class="play-btn" aria-label="Play Accelerate Your DevEx">
                 <i class="fas fa-play"></i>
               </button>
@@ -303,9 +285,21 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Shared Player at Bottom -->
           <div class="playlist-player">
-            <div class="now-playing-label" id="now-playing-label">
-              <i class="fas fa-podcast"></i>
-              <span id="now-playing-text">Accelerate Metrics Unlocked</span>
+            <div class="now-playing-header">
+              <div class="now-playing-info">
+                <div class="playing-indicator-large">
+                  <div class="equalizer">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <div class="now-playing-text-wrapper">
+                  <div class="now-playing-label">Now Playing</div>
+                  <div class="now-playing-title" id="now-playing-title">Accelerate Metrics Unlocked</div>
+                </div>
+              </div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 15:30</div>
             </div>
             <audio id="shared-player" controls>
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" type="audio/mp4" id="shared-player-source">
