@@ -1507,8 +1507,7 @@
   font-size: var(--font-size-headline-medium);
   font-weight: var(--font-weight-bold);
   margin: 0 0 var(--space-sm) 0;
-
-  // Color inherited from .false-choice-visual h2 override
+  color: var(--text-light);
 }
 
 .false-choice-subtitle {

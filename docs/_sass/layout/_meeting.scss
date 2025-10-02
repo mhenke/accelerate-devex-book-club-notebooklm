@@ -347,7 +347,7 @@
 
     .footer-attribution p {
       font-size: var(--font-size-body-small);
-      color: var(--text-light);
+      color: var(--text-white);
       margin: 0;
     }
 
@@ -355,7 +355,7 @@
       display: flex;
       align-items: center;
       gap: var(--space-sm);
-      color: var(--text-light);
+      color: var(--text-white);
       text-decoration: none;
       font-weight: var(--font-weight-medium);
       transition: all var(--duration-normal) var(--ease-out);
