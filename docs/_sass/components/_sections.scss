@@ -532,10 +532,6 @@
         opacity: 1;
       }
 
-      &:not([hidden]) {
-        display: block;
-      }
-
       h3 {
         color: var(--theme-primary);
         font-size: var(--font-size-title-medium);
