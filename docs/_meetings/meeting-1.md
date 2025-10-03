@@ -747,67 +747,6 @@ function hideMetricsDetails() {
   </div>
 </div>
 
-<!-- PSYCHOLOGICAL SAFETY: THE FOUNDATION -->
-<div class="section-card" markdown="0">
-  <div class="psych-safety-section">
-    <div class="psych-safety-header">
-      <h2><i class="fas fa-shield-alt" aria-hidden="true"></i> Psychological Safety: The Critical Enabler</h2>
-    </div>
-
-    <div class="psych-safety-content">
-      <div class="psych-definition">
-        <h3><i class="fas fa-lightbulb" aria-hidden="true"></i> What Is It?</h3>
-        <p>Psychological safety is the belief that you can take risks, make mistakes, ask questions, and share ideas without fear of punishment or humiliation.</p>
-        <p class="psych-quote"><i class="fas fa-quote-left"></i> In Westrum's research, psychological safety is what separates Generative cultures from Pathological and Bureaucratic ones.</p>
-      </div>
-
-      <div class="psych-indicators">
-        <h3><i class="fas fa-tasks" aria-hidden="true"></i> Key Indicators</h3>
-        <div class="indicators-grid">
-          <div class="indicator-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Can you admit mistakes without fear of blame?</span>
-          </div>
-          <div class="indicator-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Can you ask "dumb" questions without judgment?</span>
-          </div>
-          <div class="indicator-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Can you challenge status quo without retaliation?</span>
-          </div>
-          <div class="indicator-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Can you surface problems early without pushback?</span>
-          </div>
-          <div class="indicator-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Can you share failures as learning opportunities?</span>
-          </div>
-          <div class="indicator-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Can you experiment and fail fast without career risk?</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="psych-impact">
-        <h3><i class="fas fa-rocket" aria-hidden="true"></i> Why It Matters</h3>
-        <ul>
-          <li><strong>Enables Learning:</strong> Teams surface problems early instead of hiding them</li>
-          <li><strong>Drives Innovation:</strong> People take calculated risks that lead to breakthroughs</li>
-          <li><strong>Honest Metrics:</strong> Teams share accurate data instead of gaming numbers</li>
-          <li><strong>Faster Recovery:</strong> Incidents become learning opportunities, not witch hunts</li>
-        </ul>
-      </div>
-
-      <div class="psych-warning">
-        <p><i class="fas fa-exclamation-circle"></i> <strong>Without psychological safety, all the metrics and practices in the world will fail.</strong> People will hide problems, game numbers, and avoid necessary risks.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
 <div class="section-card" markdown="0">
   <div class="causal-chain-container">
