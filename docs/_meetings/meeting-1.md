@@ -767,8 +767,8 @@ function hideMetricsDetails() {
           <div class="stat-label">Exceed Profitability Targets</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">46x</div>
-          <div class="stat-label">More Frequent Deployments</div>
+          <div class="stat-number">50%</div>
+          <div class="stat-label">Higher Market Capitalization Growth</div>
         </div>
       </div>
       <p class="stats-conclusion">High performers achieve these results because their culture enables better technical practices.</p>
