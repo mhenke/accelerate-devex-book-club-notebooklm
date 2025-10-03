@@ -739,9 +739,9 @@ document.addEventListener('keydown', function(event) {
           <h3><i class="fas fa-code" aria-hidden="true"></i> Better Practices</h3>
           <p class="step-chapter">Technical Excellence</p>
           <div class="step-metrics">
-            <div class="metric-item">CI/CD</div>
-            <div class="metric-item">Version Control</div>
-            <div class="metric-item">Testing</div>
+            <div class="metric-item technical">CI/CD</div>
+            <div class="metric-item technical">Version Control</div>
+            <div class="metric-item technical">Testing</div>
           </div>
         </div>
       </div>
@@ -761,9 +761,9 @@ document.addEventListener('keydown', function(event) {
           <h3><i class="fas fa-users" aria-hidden="true"></i> Better Interactions</h3>
           <p class="step-chapter">Daily Work Changes</p>
           <div class="step-metrics">
-            <div class="metric-item">Collaboration</div>
-            <div class="metric-item">Trust</div>
-            <div class="metric-item">Learning</div>
+            <div class="metric-item interactions">Collaboration</div>
+            <div class="metric-item interactions">Trust</div>
+            <div class="metric-item interactions">Learning</div>
           </div>
         </div>
       </div>
