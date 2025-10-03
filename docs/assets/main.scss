@@ -210,7 +210,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background: var(--hero-dark);
+  background: #0f172a;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -233,7 +233,7 @@
 .nav-item.external {
   color: var(--accent-teal, #7adad1);
   border-color: var(--accent-teal, #7adad1);
-  background: var(--hero-dark);
+  background: #0f172a;
 }
 .nav-item.external:hover,
 .nav-item.external:focus {
