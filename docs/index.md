@@ -19,13 +19,13 @@ title: Home
 <div class="welcome-compact section-card" markdown="0">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
 <div class="welcome-cta">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action"><i class="fas fa-rocket"></i> Start Learning Now</a>
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
 <p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
 </div>
 </div>
 
 <div class="quick-start section-card no-border">
-<h2><i class="fas fa-book"></i> About the Book Club</h2>
+<h2><i class="fas fa-info-circle" aria-hidden="true"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
@@ -33,7 +33,7 @@ title: Home
 {% include key-question.html %}
 
 <div class="what-youll-learn-section section-card" markdown="0">
-<h2><i class="fas fa-bullseye"></i> What You'll Learn</h2>
+<h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> What You'll Learn</h2>
 <div class="learning-highlights">
 <div class="card-grid">
 <div class="highlight-card meeting-1 dark-theme">
@@ -41,15 +41,12 @@ title: Home
     <div class="highlight-icon">
       <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
     </div>
-    <h3>DORA Metrics</h3>
+    <h3>Foundation</h3>
   </div>
   <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
   <div class="card-footer">
-    <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="meeting-link">
-      <div class="meeting-badge">
-        <span>Meeting 1:</span>
-        <span>Foundation</span>
-      </div>
+    <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--1">
+      <span>MEETING 1</span>
     </a>
     <div class="meeting-subtitle">The Myth and the Measurement</div>
   </div>
@@ -60,15 +57,12 @@ title: Home
     <div class="highlight-icon">
       <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
     </div>
-    <h3>Continuous Delivery</h3>
+    <h3>Technical Excellence</h3>
   </div>
   <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
   <div class="card-footer">
-    <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="meeting-link">
-      <div class="meeting-badge">
-        <span>Meeting 2:</span>
-        <span>Technical Excellence</span>
-      </div>
+    <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--2">
+      <span>MEETING 2</span>
     </a>
     <div class="meeting-subtitle">Continuous Delivery & Architecture</div>
   </div>
@@ -79,15 +73,12 @@ title: Home
     <div class="highlight-icon">
       <i class="fas fa-columns" role="img" aria-label="Columns"></i>
     </div>
-    <h3>Lean Management</h3>
+    <h3>Management</h3>
   </div>
   <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
   <div class="card-footer">
-    <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="meeting-link">
-      <div class="meeting-badge">
-        <span>Meeting 3:</span>
-        <span>Management</span>
-      </div>
+    <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--3">
+      <span>MEETING 3</span>
     </a>
     <div class="meeting-subtitle">Product Development & Sustainability</div>
   </div>
@@ -98,15 +89,12 @@ title: Home
     <div class="highlight-icon">
       <i class="fas fa-users" role="img" aria-label="Users"></i>
     </div>
-    <h3>Transformational Leadership</h3>
+    <h3>Leadership</h3>
   </div>
   <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
   <div class="card-footer">
-    <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="meeting-link">
-      <div class="meeting-badge">
-        <span>Meeting 4:</span>
-        <span>Leadership</span>
-      </div>
+    <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--4">
+      <span>MEETING 4</span>
     </a>
     <div class="meeting-subtitle">Transformation & Case Study</div>
   </div>
@@ -143,7 +131,7 @@ title: Home
 <!-- Expandable Details Section -->
 <div class="outcome-details" id="outcome-details" hidden>
   <div class="outcome-detail" id="detail-dora">
-    <h3><i class="fas fa-chart-line"></i> Master DORA Metrics</h3>
+    <h3>Master DORA Metrics</h3>
     <p>Learn to measure and improve the four key metrics that distinguish high-performing teams: <strong>Lead Time</strong> (time from commit to production), <strong>Deployment Frequency</strong> (how often you deploy), <strong>Mean Time to Recovery</strong> (how quickly you recover from failures), and <strong>Change Fail Rate</strong> (percentage of deployments causing failures).</p>
     <ul>
       <li>Understand the research behind these metrics from 23,000+ organizations</li>
@@ -153,7 +141,7 @@ title: Home
   </div>
 
   <div class="outcome-detail" id="detail-bottlenecks">
-    <h3><i class="fas fa-search"></i> Identify Bottlenecks</h3>
+    <h3>Identify Bottlenecks</h3>
     <p>Develop skills to systematically identify and eliminate constraints in your software delivery pipeline using <strong>Theory of Constraints</strong> and <strong>Value Stream Mapping</strong> techniques.</p>
     <ul>
       <li>Map your current software delivery value stream</li>
@@ -163,7 +151,7 @@ title: Home
   </div>
 
   <div class="outcome-detail" id="detail-practices">
-    <h3><i class="fas fa-cogs"></i> Apply Daily Practices</h3>
+    <h3>Apply Daily Practices</h3>
     <p>Implement the technical and cultural practices that enable both <strong>speed and stability</strong> in software delivery, debunking the myth that you must choose between them.</p>
     <ul>
       <li>Continuous integration and deployment practices</li>
@@ -173,7 +161,7 @@ title: Home
   </div>
 
   <div class="outcome-detail" id="detail-culture">
-    <h3><i class="fas fa-users"></i> Understand Culture Impact</h3>
+    <h3>Understand Culture Impact</h3>
     <p>Learn how <strong>Westrum's organizational culture types</strong> (Pathological, Bureaucratic, Generative) directly impact software delivery performance and business outcomes.</p>
     <ul>
       <li>Assess your organization's current culture type</li>
@@ -183,7 +171,7 @@ title: Home
   </div>
 
   <div class="outcome-detail" id="detail-roadmap">
-    <h3><i class="fas fa-route"></i> Get Transformation Roadmap</h3>
+    <h3>Get Transformation Roadmap</h3>
     <p>Build a practical, evidence-based plan for transforming your organization using the <strong>24 capabilities framework</strong> and real-world case studies.</p>
     <ul>
       <li>Prioritize capabilities based on your current maturity and goals</li>
@@ -195,27 +183,27 @@ title: Home
 </div>
 
 <div class="get-started-section section-card" markdown="0">
-<h2><i class="fas fa-rocket"></i> Get Started</h2>
+<h2><i class="fas fa-rocket" aria-hidden="true"></i> Get Started</h2>
 <div class="feature-grid">
 <div class="get-started-card simple-mode primary">
-<h3><i class="fas fa-book"></i> Meeting Materials</h3>
+<h3>Meeting Materials</h3>
 <p>Complete structured guides for all 4 sessions with interactive learning checkpoints, discussion questions, and practical action items</p>
-<a href="{{ '/meetings' | relative_url }}" class="get-started-link">View All Guides →</a>
+<a href="{{ '/meetings' | relative_url }}" class="btn btn--primary-action">View All Guides →</a>
 </div>
 
 <div class="get-started-card simple-mode secondary">
-<h3><i class="fas fa-toolbox"></i> Resources & Support</h3>
+<h3>Resources & Support</h3>
 <p>Downloads, activities, AI-generated content, and community resources</p>
 <div class="resource-links">
-<a href="{{ '/resources' | relative_url }}" class="get-started-link">Downloads →</a>
-<a href="{{ '/prompts' | relative_url }}" class="get-started-link">AI Content →</a>
+<a href="{{ '/resources' | relative_url }}" class="btn btn--primary-action">Downloads →</a>
+<a href="{{ '/prompts' | relative_url }}" class="btn btn--primary-action">AI Content →</a>
 </div>
 </div>
 </div>
 </div>
 
 <div class="required-reading-section section-card" markdown="0">
-<h2><i class="fas fa-book-open"></i> Required Reading</h2>
+<h2><i class="fas fa-book" aria-hidden="true"></i> Required Reading</h2>
 <div class="book-showcase">
   <div class="book-visual">
     <img src="{{ '/assets/images/book-cover.jpg' | relative_url }}" alt="Accelerate: The Science of Lean Software and DevOps book cover" aria-label="Accelerate: The Science of Lean Software and DevOps book cover" loading="lazy" />

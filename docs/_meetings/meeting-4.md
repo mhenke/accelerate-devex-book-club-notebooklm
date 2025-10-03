@@ -39,7 +39,7 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 </div>
 
 <div class="research-finding" markdown="0">
-  <h4><i class="fas fa-chart-bar"></i> Research Finding</h4>
+  <h4>Research Finding</h4>
   <p>High-performing teams reported strongest transformational leadership across all dimensions. Teams with weakest leaders only <strong>half as likely</strong> to be high performers.</p>
 </div>
 
@@ -108,24 +108,24 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 
 <div class="leadership-impact-comparison" markdown="0">
   <div class="impact-side traditional" markdown="0">
-    <h4><i class="fas fa-exclamation-triangle"></i> Traditional Management</h4>
+    <h4>Traditional Management</h4>
     <ul>
-      <li><i class="fas fa-gavel"></i> Command and control approach</li>
-      <li><i class="fas fa-ban"></i> Direct problem-solving intervention</li>
-      <li><i class="fas fa-stopwatch"></i> Focus on individual productivity</li>
-      <li><i class="fas fa-chart-line"></i> Metrics without context</li>
+      <li>Command and control approach</li>
+      <li>Direct problem-solving intervention</li>
+      <li>Focus on individual productivity</li>
+      <li>Metrics without context</li>
     </ul>
   </div>
 
   <div class="vs-arrow" markdown="0"><i class="fas fa-arrow-right"></i></div>
 
   <div class="impact-side transformational" markdown="0">
-    <h4><i class="fas fa-hands-helping"></i> Transformational Leadership</h4>
+    <h4>Transformational Leadership</h4>
     <ul>
-      <li><i class="fas fa-graduation-cap"></i> Training and conference budgets</li>
-      <li><i class="fas fa-lightbulb"></i> Hack days and 20% time</li>
-      <li><i class="fas fa-link"></i> Connecting strategy to team work</li>
-      <li><i class="fas fa-tools"></i> Removing obstacles and barriers</li>
+      <li>Training and conference budgets</li>
+      <li>Hack days and 20% time</li>
+      <li>Connecting strategy to team work</li>
+      <li>Removing obstacles and barriers</li>
     </ul>
   </div>
 </div>
@@ -134,7 +134,7 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 
 <div class="coaching-transformation" markdown="0">
   <div class="coaching-before" markdown="0">
-    <h4><i class="fas fa-megaphone"></i> Command-and-Control</h4>
+    <h4>Command-and-Control</h4>
     <div class="quote-box" markdown="0">
       <p>"Why isn't this getting done?"</p>
       <p>"You need to fix this issue."</p>
@@ -142,12 +142,12 @@ dora_color: "#8b5cf6" # $meeting-4-primary
   </div>
 
   <div class="arrow-transform" markdown="0">
-    <i class="fas fa-sync-alt"></i>
+   
     <span>Transform to</span>
   </div>
 
   <div class="coaching-after" markdown="0">
-    <h4><i class="fas fa-comments"></i> Coaching Approach</h4>
+    <h4>Coaching Approach</h4>
     <div class="quote-box" markdown="0">
       <p>"Help me understand the problems you're encountering."</p>
       <p>"What can I do to better support you and the team?"</p>

@@ -52,6 +52,57 @@
   @include touch-target-44px;
 }
 
+// Large primary CTA button (homepage "Get the Book" button)
+.btn-primary-large {
+  background: linear-gradient(
+    135deg,
+    var(--accent-emerald),
+    var(--hover-emerald)
+  );
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-2xl) var(--space-4xl);
+  border-radius: var(--radius-2xl);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  transition: var(--transition-material);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-headline-small);
+  box-shadow: var(--shadow-card-metric), var(--shadow-subtle);
+  transform: var(--transform-reset);
+  position: relative;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    transform: var(--transform-hover-large);
+    box-shadow: var(--shadow-card-metric-hover), 0 3px 6px rgba(0, 0, 0, 0.16);
+    color: white;
+    background: linear-gradient(
+      135deg,
+      var(--hover-emerald),
+      var(--accent-emerald)
+    );
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-step-section), 0 1px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Hero CTA subtitle text
+.hero-cta-subtitle {
+  color: var(--color-white);
+  font-size: var(--font-size-body-large);
+  margin: 0 auto;
+  font-style: italic;
+  max-width: var(--container-narrow);
+}
+
 // =============================================================================
 // ADDITIONAL HEADER & BANNER COMPONENTS (from _headers.scss)
 // =============================================================================

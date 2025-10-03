@@ -135,50 +135,50 @@ h1 {
 
 h2 {
   @include heading-2;
+}
 
-  // Standardized h2 styling for all sections (except dark theme sections)
-  &:not(.key-question h2, .section-card.dark-theme h2) {
+// Standardized h2 styling for all sections (except dark theme and key-question sections)
+.section-card:not(.dark-theme) h2,
+.page-content > h2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: left;
+  justify-content: flex-start;
+  color: var(--text-dark);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-md);
+
+  i,
+  em {
+    color: var(--accent-emerald);
+    font-size: var(--font-size-headline-medium);
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
-    gap: var(--space-md);
-    text-align: left;
-    justify-content: flex-start;
-    color: var(--text-dark);
-    font-size: var(--font-size-headline-large);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--space-md);
+    justify-content: center;
+    background: linear-gradient(
+      135deg,
+      rgba(16, 185, 129, 0.1),
+      rgba(122, 218, 209, 0.1)
+    );
+    font-style: normal; // Override em italic styling
+    border-radius: var(--radius-full);
+    border: var(--border-emerald-light);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+  }
 
-    i,
-    em {
-      color: var(--accent-emerald);
-      font-size: var(--font-size-headline-medium);
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(
-        135deg,
-        rgba(16, 185, 129, 0.1),
-        rgba(122, 218, 209, 0.1)
-      );
-      font-style: normal; // Override em italic styling
-      border-radius: var(--radius-full);
-      border: var(--border-emerald-light);
-      flex-shrink: 0;
-      transition: all 0.3s ease;
-    }
-
-    &:hover i {
-      color: var(--accent-teal);
-      background: linear-gradient(
-        135deg,
-        rgba(122, 218, 209, 0.15),
-        rgba(16, 185, 129, 0.15)
-      );
-      border-color: rgba(122, 218, 209, 0.3);
-      transform: scale(1.05);
-    }
+  &:hover i {
+    color: var(--accent-teal);
+    background: linear-gradient(
+      135deg,
+      rgba(122, 218, 209, 0.15),
+      rgba(16, 185, 129, 0.15)
+    );
+    border-color: rgba(122, 218, 209, 0.3);
+    transform: scale(1.05);
   }
 }
 
@@ -346,7 +346,6 @@ a {
     i,
     em {
       color: var(--accent-teal);
-      font-size: var(--font-size-headline-large);
       font-style: normal; // Override em italic styling
       display: flex;
       align-items: center;
@@ -560,71 +559,12 @@ a {
   }
 
   .hero-cta {
-    margin-top: var(--space-xl);
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  // Maximum specificity override for primary large buttons
-  .btn.btn-primary-large,
-  a.btn.btn-primary-large,
-  .btn-primary-large.btn,
-  a.btn-primary-large.btn {
-    background: linear-gradient(
-      135deg,
-      var(--accent-emerald),
-      var(--hover-emerald)
-    ) !important;
-    color: white !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: var(--space-lg) !important;
-    padding: var(--space-2xl) var(--space-4xl) !important; // Increased padding for prominence
-    border-radius: var(--radius-2xl) !important; // Material Design 3 radius
-    font-weight: var(--font-weight-bold) !important;
-    text-decoration: none !important;
-    transition: var(--transition-material) !important; // Material Design easing
-    border: none !important;
-    cursor: pointer !important;
-    font-size: var(
-      --font-size-headline-small
-    ) !important; // Larger text for prominence
-    // Enhanced Material Design elevation
-    box-shadow: var(--shadow-card-metric), var(--shadow-subtle) !important;
-    transform: var(--transform-reset) !important;
-    position: relative;
-    overflow: hidden;
-
-    &:hover,
-    &:focus {
-      transform: var(--transform-hover-large) !important;
-      box-shadow: var(--shadow-card-metric-hover), 0 3px 6px rgba(0, 0, 0, 0.16) !important;
-      color: white !important;
-      background: linear-gradient(
-        135deg,
-        var(--hover-emerald),
-        var(--accent-emerald)
-      ) !important;
-    }
-
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: var(--shadow-step-section), 0 1px 2px rgba(0, 0, 0, 0.12);
-    }
-
-    i {
-      font-size: var(--font-size-headline-large);
-    }
-  }
-
-  .hero-cta-subtitle {
-    color: var(--color-white);
-    font-size: var(--font-size-body-large);
-    margin: 0 auto;
-    font-style: italic;
-    max-width: var(--container-narrow);
-  }
+  // Hero CTA styles moved to components/_hero.scss for better organization
 
   h1 {
     font-size: clamp(
@@ -678,7 +618,6 @@ a {
   border-radius: var(--radius-2xl);
   background: rgba(255, 255, 255, 0.1);
   color: var(--text-dark);
-  font-size: var(--font-size-headline-large);
   transition: all var(--duration-normal) var(--ease-out);
   backdrop-filter: var(--backdrop-blur-xl);
   border: var(--border-white-light);
@@ -781,7 +720,11 @@ a {
 
 // Speed category styling
 .speed-category .category-icon {
-  background: linear-gradient(135deg, var(--primary-blue), var(--color-blue-600));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--color-blue-600)
+  );
 }
 
 // Stability category styling
@@ -988,7 +931,6 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--space-lg);
-    margin-top: var(--space-xl);
 
     @media (min-width: #{$mobile}) {
       grid-template-columns: repeat(5, 1fr); // 5 columns for better layout
@@ -1080,7 +1022,6 @@ a {
 
 // Interactive Outcome Details Section
 .outcome-details {
-  margin-top: var(--space-xl);
   padding: var(--space-xl);
   background: linear-gradient(
     135deg,
@@ -1232,90 +1173,12 @@ a {
         justify-content: center;
       }
     }
-
-    .get-started-link {
-      color: var(--accent-teal);
-      text-decoration: none !important;
-      font-weight: var(--font-weight-semibold);
-      font-size: var(--font-size-body-medium);
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-sm);
-      padding: var(--space-sm) var(--space-md);
-      background: rgba(16, 185, 129, 0.1);
-      border-radius: var(--radius-md); // Consistent with button system
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
-
-      // Shimmer effect like other buttons
-      &::before {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.3),
-          transparent
-        );
-        transition: left 0.5s ease;
-      }
-
-      &:hover {
-        background: rgba(16, 185, 129, 0.2);
-        text-decoration: none !important;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-
-        &::before {
-          left: 100%;
-        }
-      }
-
-      &:active {
-        transform: translateY(0);
-        box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
-      }
-    }
-
-    &.primary .get-started-link {
-      color: white;
-      background: rgba(255, 255, 255, 0.2);
-      padding: var(--space-sm) var(--space-md);
-      border-radius: var(--radius-md); // Consistent with button system
-      display: inline-block;
-      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
-
-      // Enhanced shimmer for primary variant
-      &::before {
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.4),
-          transparent
-        );
-      }
-
-      &:hover {
-        background: rgba(255, 255, 255, 0.3);
-        text-decoration: none !important;
-        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-      }
-    }
   }
 }
 
 // Enhanced button styling for Material Design - Meeting 1 Blue Theme
 .btn-meeting-1 {
-  background: linear-gradient(
-    135deg,
-    var(--meeting-1-color),
-    #1f6feb
-  );
+  background: linear-gradient(135deg, var(--meeting-1-color), #1f6feb);
   color: white;
   display: inline-flex;
   align-items: center;
@@ -1334,11 +1197,7 @@ a {
     transform: var(--transform-hover-lift);
     box-shadow: var(--elevation-4);
     color: white;
-    background: linear-gradient(
-      135deg,
-      #388bfd,
-      var(--meeting-1-color)
-    );
+    background: linear-gradient(135deg, #388bfd, var(--meeting-1-color));
   }
 
   i {
@@ -1359,11 +1218,7 @@ a {
     box-shadow: var(--elevation-2);
 
     &:hover:not(:disabled) {
-      background: linear-gradient(
-        135deg,
-        #388bfd,
-        var(--meeting-1-color)
-      );
+      background: linear-gradient(135deg, #388bfd, var(--meeting-1-color));
       box-shadow: var(--elevation-4);
     }
   }
@@ -1591,11 +1446,7 @@ a {
 
 .highlight-card.meeting-2 {
   .highlight-icon {
-    background: linear-gradient(
-      135deg,
-      var(--meeting-2-color),
-      #238636
-    );
+    background: linear-gradient(135deg, var(--meeting-2-color), #238636);
   }
 
   .meeting-badge {
@@ -1609,11 +1460,7 @@ a {
 
 .highlight-card.meeting-3 {
   .highlight-icon {
-    background: linear-gradient(
-      135deg,
-      var(--meeting-3-color),
-      #f59e0b
-    );
+    background: linear-gradient(135deg, var(--meeting-3-color), #f59e0b);
   }
 
   .meeting-badge {
@@ -1627,11 +1474,7 @@ a {
 
 .highlight-card.meeting-4 {
   .highlight-icon {
-    background: linear-gradient(
-      135deg,
-      var(--meeting-4-color),
-      #a78bfa
-    );
+    background: linear-gradient(135deg, var(--meeting-4-color), #a78bfa);
   }
 
   .meeting-badge {
@@ -1662,19 +1505,11 @@ a {
 // =============================================================================
 // BUTTON STYLES - CRITICAL INTERACTIONS
 // =============================================================================
+// BUTTON STYLES - Defined in components/_buttons.scss
+// Removed duplicate definitions to prevent cascade conflicts
+// =============================================================================
 
-// Primary button
-.btn,
-.btn-primary {
-  @include button-primary;
-}
-
-// Secondary button
-.btn-secondary {
-  @include button-secondary;
-}
-
-// Button focus states for accessibility
+// Button focus states for accessibility (keep in critical for a11y)
 .btn:focus,
 button:focus,
 [role="button"]:focus {
@@ -1756,10 +1591,6 @@ button:focus,
     }
   }
 
-  .hero-metrics {
-    margin-top: var(--space-xl);
-  }
-
   .metrics-categories {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -1818,7 +1649,6 @@ button:focus,
 
   h2 {
     color: var(--text-dark);
-    font-size: var(--font-size-headline-large);
     font-weight: var(--font-weight-bold);
     position: relative;
     z-index: 1;
@@ -2165,7 +1995,6 @@ button:focus,
 
     i,
     em {
-      font-size: var(--font-size-headline-large);
       background: rgba(255, 127, 80, 0.2);
       border-radius: var(--radius-full);
       width: 50px;
@@ -2270,7 +2099,6 @@ button:focus,
   .book-info {
     h3 {
       color: var(--accent-coral);
-      font-size: var(--font-size-headline-large);
       margin-bottom: var(--space-md);
       font-weight: var(--font-weight-semibold);
     }
@@ -2306,7 +2134,7 @@ button:focus,
       gap: var(--space-sm) !important;
       border-radius: var(--radius-lg) !important;
       font-weight: var(--font-weight-semibold) !important;
-      text-decoration: none !important;
+      text-decoration: none;
       cursor: pointer !important;
       transition: all var(--duration-normal) var(--ease-out) !important;
       min-height: var(--touch-target-min) !important;
@@ -2369,7 +2197,6 @@ button:focus,
 
   @include tablet-only {
     position: static;
-    margin-top: var(--space-xl);
   }
 
   @include mobile-only {

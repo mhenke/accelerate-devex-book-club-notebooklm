@@ -33,25 +33,30 @@
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.meeting-title {
+// Meeting header h1 - higher specificity than base h1
+.meeting-hero h1.meeting-title,
+h1.meeting-title {
   font-size: var(--font-size-display-large);
   font-weight: 700;
   margin-bottom: 1rem;
-  color: white !important;
-  border: none !important;
-  background: none !important;
+  color: white;
+  border: none;
+  background: none;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   font-family: "Poppins", sans-serif;
   line-height: 1.1;
+  padding: 0; // Override any base h1 padding
 }
 
-.meeting-subtitle {
+// Meeting subtitle p - higher specificity than base p
+.meeting-hero p.meeting-subtitle,
+p.meeting-subtitle {
   font-size: var(--font-size-title-large);
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.9) !important;
-  margin-bottom: 2rem !important;
-  border: none !important;
-  background: none !important;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  border: none;
+  background: none;
   font-family: "Inter", sans-serif;
 }
 
@@ -335,11 +340,11 @@
     margin-bottom: 0;
   }
 
-  .nav-link {
+  .nav-links .nav-link {
     justify-content: center;
     text-align: center;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
     white-space: normal;
     min-height: 3rem;
   }

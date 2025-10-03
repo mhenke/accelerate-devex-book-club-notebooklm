@@ -70,33 +70,71 @@
     }
 
     h2 {
+      // Match regular section-card h2 characteristics
       font-family: var(--font-display);
-      font-size: var(--md-sys-typescale-headline-small);
-      font-weight: var(--font-weight-semibold);
+
+      // Match base
+      font-weight: var(--font-weight-bold); // Match base
       line-height: 1.25;
-      color: var(--text-light);
       margin-bottom: var(--space-md);
       display: flex;
       align-items: center;
-      gap: var(--space-sm);
+      gap: var(--space-md); // Match base (was sm)
+      text-align: left;
+      justify-content: flex-start;
 
-      i {
-        color: var(--accent-teal);
-        margin-right: 0; // gap handles spacing
+      // Only color is different
+      color: var(--text-light);
+
+      i,
+      em {
+        // Match base icon treatment but with dark-theme colors
+        font-size: var(--font-size-headline-medium); // Match base
+        width: 32px; // Match base
+        height: 32px; // Match base
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        border-radius: var(--radius-full);
         flex-shrink: 0;
+        margin-right: 0; // gap handles spacing
+        transition: all 0.3s ease;
+
+        // Only colors are different
+        color: var(--accent-teal);
+        background: linear-gradient(
+          135deg,
+          rgba(122, 218, 209, 0.1),
+          rgba(16, 185, 129, 0.1)
+        );
+        border: 1px solid rgba(122, 218, 209, 0.3);
+      }
+
+      &:hover i,
+      &:hover em {
+        color: var(--accent-emerald);
+        background: linear-gradient(
+          135deg,
+          rgba(16, 185, 129, 0.15),
+          rgba(122, 218, 209, 0.15)
+        );
+        border-color: rgba(16, 185, 129, 0.4);
+        transform: scale(1.05);
       }
     }
 
     h3 {
-      font-family: var(--font-display);
-      font-size: var(--md-sys-typescale-headline-medium);
-      font-weight: var(--font-weight-semibold);
-      line-height: 1.29;
-      color: var(--text-light);
+      // Match base h3 characteristics (heading-3 mixin)
+      @include headline-medium;
+
       margin-bottom: var(--space-sm);
       display: flex;
       align-items: center;
       gap: var(--space-sm);
+
+      // Only color is different
+      color: var(--text-light);
 
       i {
         color: var(--accent-teal);
@@ -105,15 +143,16 @@
     }
 
     h4 {
-      font-family: var(--font-display);
-      font-size: var(--md-sys-typescale-headline-small);
-      font-weight: var(--font-weight-semibold);
-      line-height: 1.33;
-      color: rgba(255, 255, 255, 0.9);
+      // Match base h4 characteristics (heading-4 mixin)
+      @include headline-small;
+
       margin-bottom: var(--space-sm);
       display: flex;
       align-items: center;
       gap: var(--space-sm);
+
+      // Only color is different (using slightly transparent white for h4 in dark theme)
+      color: rgba(255, 255, 255, 0.9);
 
       i {
         color: var(--accent-teal);
@@ -417,7 +456,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
-    margin-top: var(--space-xl);
 
     @include mobile-only {
       grid-template-columns: 1fr;
@@ -1323,7 +1361,6 @@
   border: 2px solid var(--accent-teal);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
-  margin-top: var(--space-xl);
 
   h3 {
     display: flex;
@@ -1614,7 +1651,8 @@
   text-align: center;
   min-width: var(--space-5xl);
   border-top: 2px solid;
-  transition: transform var(--duration-normal) var(--ease-out), box-shadow var(--duration-normal) var(--ease-out);
+  transition: transform var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
 
   &:hover {
     transform: translateY(-4px);
