@@ -143,7 +143,7 @@
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
       padding: var(--space-sm);
-      transition: all var(--duration-fast) var(--ease-out);
+      transition: all var(--duration-normal) var(--ease-out);
 
       &:hover {
         border-color: var(--accent-teal);
@@ -172,7 +172,7 @@
       i {
         color: var(--accent-teal);
         font-size: 1em;
-        transition: all var(--duration-fast) var(--ease-out);
+        transition: all var(--duration-normal) var(--ease-out);
         line-height: 1;
 
         &:hover {
@@ -265,8 +265,10 @@
   border-top: 3px solid transparent;
   border-radius: var(--radius-md);
   cursor: pointer;
-  transition: border-color 0.2s ease, border-top-color 0.2s ease,
-    box-shadow 0.2s ease, transform 0.2s ease;
+  transition: border-color var(--duration-normal) var(--ease-out),
+    border-top-color var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out);
   position: relative;
   text-align: center;
 
@@ -282,7 +284,7 @@
   }
 
   i {
-    transition: all 0.3s ease;
+    transition: all var(--duration-normal) var(--ease-out);
   }
 
   // Dark theme modifier
@@ -337,7 +339,7 @@
 
       i {
         font-size: var(--font-size-headline-medium);
-        transition: all 0.3s ease;
+        transition: all var(--duration-normal) var(--ease-out);
       }
     }
 
@@ -470,7 +472,7 @@
       color: var(--theme-primary);
       font-size: var(--font-size-body-medium);
       opacity: 0.6;
-      transition: all 0.3s ease;
+      transition: all var(--duration-normal) var(--ease-out);
 
       i {
         margin-bottom: 0;
@@ -497,10 +499,7 @@
   }
 
   .chapter-details {
-    margin-top: var(--space-xl);
-    padding-top: var(--space-xl);
-    border-top: 2px solid var(--theme-primary);
-    transition: all 0.4s var(--ease-out);
+    transition: all var(--duration-slow) var(--ease-out);
 
     // Hidden attribute handling
     &[hidden] {
@@ -519,7 +518,7 @@
       padding: var(--space-lg);
       display: none; // Hidden by default
       opacity: 0;
-      transition: opacity 0.3s var(--ease-out);
+      transition: opacity var(--duration-normal) var(--ease-out);
 
       // Hidden attribute handling for individual details
       &[hidden] {
@@ -609,7 +608,7 @@
   justify-content: center;
   gap: var(--space-xs);
   min-height: 80px;
-  transition: all var(--duration-fast) var(--ease-out);
+  transition: all var(--duration-normal) var(--ease-out);
 
   &:hover {
     transform: translateY(-2px);
@@ -726,7 +725,7 @@
   border: 2px solid var(--accent-teal);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
-  transition: all var(--duration-fast) var(--ease-out);
+  transition: all var(--duration-normal) var(--ease-out);
 
   &:hover {
     box-shadow: var(--shadow-hover);
@@ -1080,7 +1079,7 @@
     padding: var(--space-sm);
     background: var(--color-neutral-95);
     border-radius: var(--radius-sm);
-    transition: all var(--duration-fast) var(--ease-out);
+    transition: all var(--duration-normal) var(--ease-out);
 
     &:hover {
       background: linear-gradient(
@@ -1347,7 +1346,7 @@
   padding: var(--space-md);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
-  transition: all var(--duration-fast) var(--ease-out);
+  transition: all var(--duration-normal) var(--ease-out);
 
   &:hover {
     border-color: var(--accent-teal);
@@ -1540,7 +1539,7 @@
   text-align: center;
   min-width: var(--space-5xl);
   border-top: 2px solid;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--duration-normal) var(--ease-out), box-shadow var(--duration-normal) var(--ease-out);
 
   &:hover {
     transform: translateY(-4px);
