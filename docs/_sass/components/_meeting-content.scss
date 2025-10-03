@@ -1,151 +1,186 @@
 /* Meeting Content Styles - Typography, Lists, and Content Elements */
+/* Uses meeting theme CSS variables that are set inline per meeting page */
 
-/* Enhanced Section Styling */
-.meeting-content h2 {
-  color: var(--header-dark-navy);
-  font-size: var(--font-size-headline-medium);
-  font-weight: 600;
-  border-left: 8px solid var(--meeting-primary) !important; // 8px for grid consistency
-  padding-left: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(
-    135deg,
-    var(--meeting-bg),
-    var(--meeting-light)
-  ) !important;
-  padding: 1rem 1rem 1rem 2rem;
-  border-radius: var(--radius-md); // Single value for consistency
-  position: relative;
-}
+// =============================================================================
+// MEETING CONTENT HEADINGS
+// =============================================================================
 
-.meeting-content h2::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(
-    to bottom,
-    var(--meeting-primary),
-    var(--meeting-hover)
-  ) !important;
-}
+/* Enhanced Section Styling - Higher specificity than base h2 */
+.meeting-content {
+  h2 {
+    color: var(--header-dark-navy);
+    font-size: var(--font-size-headline-medium);
+    font-weight: 600;
+    border-left: 8px solid var(--meeting-primary); // 8px for grid consistency
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(
+      135deg,
+      var(--meeting-bg),
+      var(--meeting-light)
+    );
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: var(--radius-md);
+    position: relative;
 
-.meeting-content h3 {
-  color: var(--text-dark);
-  font-size: var(--font-size-title-large);
-  font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  background: linear-gradient(
-    135deg,
-    var(--meeting-bg),
-    var(--background-white)
-  ) !important;
-  .meeting-content h4 {
-    color: var(--meeting-primary) !important;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(
+        to bottom,
+        var(--meeting-primary),
+        var(--meeting-hover)
+      );
+    }
+  }
+
+  h3 {
+    color: var(--text-dark);
+    font-size: var(--font-size-title-large);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: linear-gradient(
+      135deg,
+      var(--meeting-bg),
+      var(--background-white)
+    );
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
+  }
+
+  h4 {
+    color: var(--meeting-primary);
     font-size: var(--font-size-body-large);
-    font-weight: 600; // tokenized
-    padding-left: var(--space-md);
+    font-weight: 600;
+    padding: var(--space-md) var(--space-md) var(--space-md) var(--space-xl);
     margin-top: var(--space-md);
     margin-bottom: var(--space-md);
-    padding: var(--space-md) var(--space-md) var(--space-md) var(--space-xl);
-    border-radius: var(--space-sm); // tokenized
-    background: var(--meeting-bg) !important;
-    border-left: 3px solid var(--meeting-primary) !important;
+    border-radius: var(--space-sm);
+    background: var(--meeting-bg);
+    border-left: 3px solid var(--meeting-primary);
   }
 
-  /* Modern Cards for Content Sections */
-  .meeting-content ul {
+  /* Lists */
+  ul,
+  ol {
     padding: 0.75rem;
-    border-left: 3px solid var(--meeting-primary) !important;
+    border-left: 3px solid var(--meeting-primary);
     margin: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      var(--meeting-primary),
-      transparent
-    ) !important;
-  }
-
-  .meeting-content ol {
-    margin-top: var(--space-md);
-    margin-bottom: var(--space-sm);
-    padding: 0.75rem;
-    border-left: 3px solid var(--meeting-primary) !important;
-    margin: 1rem 0;
-    box-shadow: 0 2px 10px var(--meeting-border);
     position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        var(--meeting-primary),
+        transparent
+      );
+    }
   }
 
-  padding: var(--space-sm);
-  border-left: var(--border-width-3) solid var(--meeting-primary) !important;
-  margin: var(--space-md) 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  height: var(--border-width-3);
+  li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 0.25rem;
+  }
+
+  /* Media Sections */
+  h2[id*="listen"],
+  h2[id*="watch"] {
+    padding: var(--space-sm);
+    background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+    border-left-color: var(--meeting-primary);
+    margin-top: 4rem;
+  }
+
+  /* Paragraphs */
+  p {
+    margin-bottom: 1.2rem;
+  }
+
+  strong {
+    color: var(--header-dark-navy);
+    font-weight: 600;
+  }
+
+  /* Audio/Video */
+  audio,
+  video {
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  audio {
+    height: var(--space-2xl); // 60px for audio controls
+  }
+
+  /* Blockquotes */
+  blockquote {
+    background: linear-gradient(135deg, var(--meeting-bg), #f5f5f5);
+    border-left: 4px solid var(--meeting-primary);
+    margin: 1.5rem 0;
+    padding: 1.5rem 2rem;
+    font-style: italic;
+    font-size: var(--font-size-body-large);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+
+    &::before {
+      content: '"';
+      font-size: var(--font-size-display-large);
+      color: var(--meeting-primary);
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+  }
+
+  /* First h2 special spacing */
+  h2:first-of-type {
+    margin-top: 1rem;
+  }
 }
 
-.meeting-content li {
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 0.25rem;
-}
+// =============================================================================
+// SPECIAL SECTIONS
+// =============================================================================
 
 /* Discussion Questions reduced padding */
 .discussion-questions-list {
-  padding: 0.5rem !important;
+  padding: var(--space-sm);
 }
 
-/* Action Items Special Styling */
-.meeting-content h2:contains("Action Items") {
+/* Media Container Styling */
+.media-container {
   background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-  margin-bottom: var(--space-sm);
-  padding-left: var(--space-4);
+  padding: var(--space-lg);
+  margin: 1.5rem 0;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Enhanced Media Sections */
-.meeting-content h2[id*="listen"],
-.meeting-content h2[id*="watch"] {
-  padding: var(--space-sm) !important;
-  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-  border-left-color: var(--meeting-primary);
-  margin-top: 4rem;
-}
-.meeting-content h2:contains("Listen to") + p,
-.meeting-content h2:contains("Watch the") + p {
-  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-  border: 1px solid var(--meeting-border);
-  gap: var(--space-sm);
-  margin: var(--space-md) 0;
-  font-style: italic;
-  color: var(--meeting-primary);
-  box-shadow: 0 2px 8px var(--meeting-border);
-}
+// =============================================================================
+// MEDIA CONTROLS
+// =============================================================================
 
-.meeting-content h2:contains("Listen to") + p a,
-.meeting-content h2:contains("Watch the") + p a {
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: var(--meeting-light);
-}
-
-.meeting-content h2:contains("Watch the") + p a:hover {
-  color: var(--meeting-hover);
-  text-decoration-color: var(--meeting-primary);
-}
-
-/* Media Download Controls */
 .media-controls {
   display: flex;
   gap: var(--space-sm);
@@ -166,6 +201,10 @@
   border: 2px solid transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: var(--radius-md);
+
+  i {
+    font-size: var(--font-size-body-large);
+  }
 }
 
 .download-btn {
@@ -176,103 +215,46 @@
   );
   color: white;
   border-color: var(--meeting-primary);
-}
 
-.download-btn:hover {
-  background: linear-gradient(
-    135deg,
-    var(--meeting-hover),
-    var(--meeting-primary)
-  );
-  color: white;
-  transform: var(--transform-hover-lift);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      var(--meeting-hover),
+      var(--meeting-primary)
+    );
+    color: white;
+    transform: var(--transform-hover-lift);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .stream-btn {
   background: linear-gradient(135deg, #28a745, #34ce57);
   color: white;
   border-color: #28a745;
-}
 
-.stream-btn:hover {
-  background: linear-gradient(135deg, #34ce57, #28a745);
-  color: white;
-  transform: var(--transform-hover-lift);
-  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-}
-
-.download-btn i,
-.stream-btn i {
-  font-size: var(--font-size-body-large);
-}
-
-/* Media Container Styling */
-.media-container {
-  background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
-  margin: 1.5rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* Audio/Video Styling */
-.meeting-content audio,
-.meeting-content video {
-  width: 100%;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  margin: 1rem 0;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.meeting-content audio {
-  height: var(--space-2xl); // 60px for audio controls
-}
-
-/* Quote Styling */
-.meeting-content blockquote {
-  background: linear-gradient(135deg, var(--meeting-bg), #f5f5f5);
-  border-left: 4px solid var(--meeting-primary);
-  margin: 1.5rem 0;
-  font-style: italic;
-  font-size: var(--font-size-body-large);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  position: relative;
-}
-
-.meeting-content blockquote::before {
-  content: '"';
-  font-size: var(--font-size-display-large);
-  color: var(--meeting-primary);
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  line-height: 1;
-  font-family: Georgia, serif;
-}
-
-/* Special Styling for Different Content Types */
-.meeting-content h2:nth-child(1) {
-  margin-top: 1rem;
-}
-
-/* Improve readability for content sections */
-.meeting-content p {
-  margin-bottom: 1.2rem;
-}
-
-.meeting-content strong {
-  color: var(--header-dark-navy);
-  font-weight: 600;
-}
-
-/* Mobile content adjustments */
-@include mobile-only {
-  .meeting-content h2 {
-    font-size: var(--font-size-headline-small);
-    padding: 1rem;
+  &:hover {
+    background: linear-gradient(135deg, #34ce57, #28a745);
+    color: white;
+    transform: var(--transform-hover-lift);
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
   }
+}
 
-  .meeting-content h3 {
-    font-size: var(--font-size-title-large);
-    padding: 0.75rem 1rem;
+// =============================================================================
+// RESPONSIVE
+// =============================================================================
+
+@include mobile-only {
+  .meeting-content {
+    h2 {
+      font-size: var(--font-size-headline-small);
+      padding: 1rem;
+    }
+
+    h3 {
+      font-size: var(--font-size-title-large);
+      padding: 0.75rem 1rem;
+    }
   }
 }

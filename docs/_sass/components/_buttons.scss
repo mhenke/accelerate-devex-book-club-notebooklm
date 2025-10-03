@@ -16,7 +16,7 @@
   border: none;
   border-radius: var(--radius-md); // Clean, modern rounded corners like "Get the Book"
   cursor: pointer;
-  text-decoration: none !important; // Prevent all underlines
+  text-decoration: none; // Prevent all underlines
   text-align: center;
   font-family: var(--font-ui);
   font-size: var(--font-size-body-large);
@@ -83,24 +83,24 @@
 // MATERIAL DESIGN BUTTON VARIANTS
 // =============================================================================
 
-// Filled Button (Primary) - Clean Modern Style - Override existing coral styles
+// Filled Button (Primary) - Clean Modern Style
 .btn,
 .btn--filled {
   @extend %btn-base;
 
-  background: #4CAF50 !important; // Clean green like the image - override coral
-  color: white !important;
-  border: none !important; // Remove any coral borders
+  background: #4CAF50; // Clean green
+  color: white;
+  border: none;
   box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
 
   &:hover,
   &:hover:not(:disabled) {
-    background: #45a049 !important; // Override coral hover
-    color: white !important;
-    text-decoration: none !important; // Fix underline issue
+    background: #45a049;
+    color: white;
+    text-decoration: none;
     box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
     transform: translateY(-1px);
-    border: none !important;
+    border: none;
   }
 
   &:active {
@@ -209,13 +209,13 @@
 // SPECIALIZED BUTTON VARIANTS
 // =============================================================================
 
-// Primary Action Button (Get the Book, Start Learning, etc.) - Override coral styles
+// Primary Action Button (Get the Book, Start Learning, etc.)
 .btn--primary-action {
   @extend %btn-base;
 
-  background: #4CAF50 !important; // Override coral styles
-  color: white !important;
-  border: none !important; // Remove any existing borders
+  background: #4CAF50;
+  color: white;
+  border: none;
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
   border-radius: var(--radius-lg);
   min-height: 52px;
@@ -225,10 +225,10 @@
 
   &:hover,
   &:hover:not(:disabled) {
-    background: #45a049 !important; // Override coral hover
-    color: white !important;
-    text-decoration: none !important; // Fix underline issue
-    border: none !important;
+    background: #45a049;
+    color: white;
+    text-decoration: none;
+    border: none;
     box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
     transform: var(--transform-hover-lift);
   }
@@ -248,17 +248,17 @@
 .btn--secondary-action {
   @extend %btn-base;
 
-  background: var(--theme-primary) !important;
-  color: white !important;
-  border: none !important;
+  background: var(--theme-primary);
+  color: white;
+  border: none;
   box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
 
   &:hover,
   &:hover:not(:disabled) {
-    background: var(--theme-secondary) !important;
-    color: white !important;
-    text-decoration: none !important;
-    border: none !important;
+    background: var(--theme-secondary);
+    color: white;
+    text-decoration: none;
+    border: none;
     box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
     transform: var(--transform-hover-lift);
   }
@@ -278,17 +278,17 @@
 .btn--meeting-nav {
   @extend %btn-base;
 
-  background: var(--theme-primary) !important;
-  color: white !important;
-  border: none !important;
+  background: var(--theme-primary);
+  color: white;
+  border: none;
   box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
 
   &:hover,
   &:hover:not(:disabled) {
-    background: var(--theme-secondary) !important;
-    color: white !important;
-    text-decoration: none !important;
-    border: none !important;
+    background: var(--theme-secondary);
+    color: white;
+    text-decoration: none;
+    border: none;
     box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
     transform: var(--transform-hover-lift);
   }
@@ -366,6 +366,82 @@
     &:hover {
       background: rgba(var(--btn-primary), 0.08);
     }
+  }
+}
+
+// =============================================================================
+// MEETING BADGE BUTTONS
+// =============================================================================
+
+// Base meeting badge styling (inherits from btn--primary-action)
+.meeting-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  white-space: nowrap;
+  font-size: var(--font-size-body-medium);
+  min-height: 40px;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md);
+
+  // Ensure text appears above shimmer effect
+  span {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// Meeting-specific badge colors
+.btn--primary-action.meeting-badge--1 {
+  background: linear-gradient(135deg, var(--meeting-1-color), #1f6feb);
+  box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
+
+  &:hover,
+  &:hover:not(:disabled),
+  &:focus {
+    background: linear-gradient(135deg, #388bfd, var(--meeting-1-color));
+    box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
+    color: white;
+  }
+}
+
+.btn--primary-action.meeting-badge--2 {
+  background: linear-gradient(135deg, var(--meeting-2-color), #238636);
+  box-shadow: 0 4px 12px rgba(26, 127, 55, 0.3);
+
+  &:hover,
+  &:hover:not(:disabled),
+  &:focus {
+    background: linear-gradient(135deg, #2ea043, var(--meeting-2-color));
+    box-shadow: 0 6px 16px rgba(26, 127, 55, 0.4);
+    color: white;
+  }
+}
+
+.btn--primary-action.meeting-badge--3 {
+  background: linear-gradient(135deg, var(--meeting-3-color), #f59e0b);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+
+  &:hover,
+  &:hover:not(:disabled),
+  &:focus {
+    background: linear-gradient(135deg, #f59e0b, var(--meeting-3-color));
+    box-shadow: 0 6px 16px rgba(217, 119, 6, 0.4);
+    color: white;
+  }
+}
+
+.btn--primary-action.meeting-badge--4 {
+  background: linear-gradient(135deg, var(--meeting-4-color), #a78bfa);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+
+  &:hover,
+  &:hover:not(:disabled),
+  &:focus {
+    background: linear-gradient(135deg, #a78bfa, var(--meeting-4-color));
+    box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+    color: white;
   }
 }
 

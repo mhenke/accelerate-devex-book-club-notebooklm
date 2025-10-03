@@ -194,24 +194,28 @@
 }
 
 // Material Design spacing adjustments per breakpoint
+// Using data attributes for higher specificity without !important
+[data-md-spacing="mobile"],
 .md-spacing-mobile {
   @include mobile-only {
-    gap: var(--space-sm) !important;
-    padding: var(--space-md) !important;
+    gap: var(--space-sm);
+    padding: var(--space-md);
   }
 }
 
+[data-md-spacing="tablet"],
 .md-spacing-tablet {
   @include tablet-only {
-    gap: var(--space-lg) !important;
-    padding: var(--space-lg) !important;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
   }
 }
 
+[data-md-spacing="desktop"],
 .md-spacing-desktop {
   @include desktop-up {
-    gap: var(--space-xl) !important;
-    padding: var(--space-xl) !important;
+    gap: var(--space-xl);
+    padding: var(--space-xl);
   }
 }
 
@@ -266,6 +270,7 @@
 
   @include mobile-up {
     grid-template-columns: repeat(2, 1fr); // Tablet: 2 columns
+    gap: var(--space-md);
   }
 
   @include tablet-up {
