@@ -645,14 +645,19 @@ function showMetricsDetail(metricId) {
     }
   });
 
-  // Hide all details
+  // Hide all detail sections using .active class (not hidden attribute)
   document.querySelectorAll('#metrics-details .chapter-detail').forEach(detail => {
-    detail.hidden = true;
+    detail.classList.remove('active');
   });
 
-  // Show the container and target detail
-  detailsContainer.hidden = false;
-  targetDetail.hidden = false;
+  // Show the container with display and animation
+  detailsContainer.style.display = 'block';
+  setTimeout(() => {
+    detailsContainer.classList.add('show');
+  }, 10);
+
+  // Show the specific detail and mark item as active
+  targetDetail.classList.add('active');
   clickedItem.classList.add('active');
   const indicator = clickedItem.querySelector('.chapter-indicator i');
   if (indicator) {
@@ -661,14 +666,19 @@ function showMetricsDetail(metricId) {
 
   currentActiveMetric = metricId;
 
-  // Smooth scroll to details
+  // Smooth scroll to the details section
   setTimeout(() => {
-    detailsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }, 100);
+    detailsContainer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest'
+    });
+  }, 300);
 }
 
 function hideMetricsDetails() {
-  document.getElementById('metrics-details').hidden = true;
+  const detailsContainer = document.getElementById('metrics-details');
+
+  // Remove active states
   document.querySelectorAll('[data-chapter^="good-metrics"], [data-chapter^="bad-metrics"]').forEach(item => {
     item.classList.remove('active');
     const indicator = item.querySelector('.chapter-indicator i');
@@ -676,11 +686,38 @@ function hideMetricsDetails() {
       indicator.className = 'fas fa-chevron-down';
     }
   });
+
   document.querySelectorAll('#metrics-details .chapter-detail').forEach(detail => {
-    detail.hidden = true;
+    detail.classList.remove('active');
   });
+
+  // Hide with animation
+  detailsContainer.classList.remove('show');
+  setTimeout(() => {
+    detailsContainer.style.display = 'none';
+  }, 400);
+
   currentActiveMetric = null;
 }
+
+// Close details when clicking outside
+document.addEventListener('click', function(event) {
+  const detailsContainer = document.getElementById('metrics-details');
+  const metricItems = document.querySelectorAll('[data-chapter^="good-metrics"], [data-chapter^="bad-metrics"]');
+
+  if (currentActiveMetric &&
+      !detailsContainer.contains(event.target) &&
+      !Array.from(metricItems).some(item => item.contains(event.target))) {
+    hideMetricsDetails();
+  }
+});
+
+// Keyboard accessibility
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && currentActiveMetric) {
+    hideMetricsDetails();
+  }
+});
 </script>
 </div>
 
