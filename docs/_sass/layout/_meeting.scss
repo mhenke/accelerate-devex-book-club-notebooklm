@@ -178,7 +178,7 @@
     }
 
     &.current {
-      background: var(--meeting-1-primary);
+      background: var(--meeting-1-color);
       color: white;
     }
   }
@@ -242,7 +242,7 @@
 
   blockquote {
     background: var(--color-neutral-95);
-    border-left: var(--border-width-accent) solid var(--meeting-1-primary);
+    border-left: var(--border-width-accent) solid var(--meeting-1-color);
     padding: var(--space-md) var(--space-lg);
     margin: var(--space-lg) 0;
     border-radius: var(--radius-md);
@@ -267,7 +267,7 @@
 
   .progress-bar {
     height: 100%;
-    background: var(--meeting-1-primary);
+    background: var(--meeting-1-color);
     width: 0%;
     transition: width 0.3s ease;
   }

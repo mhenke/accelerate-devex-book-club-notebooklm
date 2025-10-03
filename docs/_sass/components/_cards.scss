@@ -66,11 +66,11 @@
 
   // Border accent variants
   &--border-left {
-    border-left: 4px solid var(--meeting-1-primary);
+    border-left: 4px solid var(--meeting-1-color);
   }
 
   &--border-top {
-    border-top: 4px solid var(--meeting-1-primary);
+    border-top: 4px solid var(--meeting-1-color);
     position: relative;
     overflow: hidden;
 
@@ -83,8 +83,8 @@
       height: 4px;
       background: linear-gradient(
         90deg,
-        var(--meeting-1-primary),
-        var(--meeting-1-accent)
+        var(--meeting-1-color),
+        var(--theme-accent)
       );
     }
   }
@@ -96,7 +96,7 @@
     h3,
     h4 {
       margin: 0 0 var(--space-sm) 0;
-      color: var(--meeting-1-primary);
+      color: var(--meeting-1-color);
       font-size: var(--md-sys-typescale-title-large);
       font-weight: var(--font-weight-semibold);
     }
@@ -169,8 +169,8 @@
 
 // Meeting-specific themes
 .card--meeting-1 {
-  --theme-primary: var(--meeting-1-primary);
-  --theme-accent: var(--meeting-1-accent);
+  --theme-primary: var(--meeting-1-color);
+  --theme-accent: var(--theme-accent);
 
   &.card--border-left {
     border-left-color: var(--theme-primary);
@@ -289,7 +289,7 @@
 .card .card__content blockquote {
   font-size: var(--md-sys-typescale-headline-small);
   font-style: italic;
-  color: var(--meeting-1-primary);
+  color: var(--meeting-1-color);
   margin: var(--space-md) 0 var(--space-lg) 0;
   font-weight: var(--font-weight-medium);
   text-align: center;
