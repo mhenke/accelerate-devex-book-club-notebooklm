@@ -42,7 +42,7 @@
 }
 
 .site-header {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: var(--hero-dark);
   color: #fff;
   padding: 0.5rem 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
