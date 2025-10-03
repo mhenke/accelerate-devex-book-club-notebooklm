@@ -61,21 +61,21 @@
 // Themed DORA Metrics
 .dora-metric.deployment-frequency {
   .metric-icon {
-    background: var(--dora-blue);
+    background: var(--primary-blue);
   }
 
   &:hover {
-    border-color: var(--dora-blue);
+    border-color: var(--primary-blue);
   }
 }
 
 .dora-metric.lead-time {
   .metric-icon {
-    background: var(--dora-green);
+    background: var(--success-green);
   }
 
   &:hover {
-    border-color: var(--dora-green);
+    border-color: var(--success-green);
   }
 }
 
@@ -91,11 +91,11 @@
 
 .dora-metric.change-fail-rate {
   .metric-icon {
-    background: var(--dora-red);
+    background: var(--danger-red);
   }
 
   &:hover {
-    border-color: var(--dora-red);
+    border-color: var(--danger-red);
   }
 }
 
