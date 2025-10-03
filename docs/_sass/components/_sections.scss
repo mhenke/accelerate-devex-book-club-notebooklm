@@ -492,10 +492,19 @@
       background: rgba(9, 105, 218, 0.05);
       border-radius: var(--radius-md);
       padding: var(--space-lg);
+      display: none; // Hidden by default
+      opacity: 0;
+      transition: opacity 0.3s var(--ease-out);
 
       // Hidden attribute handling for individual details
       &[hidden] {
         display: none;
+      }
+
+      // Show when active (used by JavaScript)
+      &.active {
+        display: block;
+        opacity: 1;
       }
 
       &:not([hidden]) {
