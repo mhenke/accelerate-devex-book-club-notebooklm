@@ -1493,6 +1493,67 @@
   }
 }
 
+// =============================================================================
+// DEPLOYMENT SIGNAL & DISCUSSION QUESTIONS - Glassmorphic Callouts
+// =============================================================================
+// Matches key-question-main styling for visual consistency
+
+.deployment-signal {
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  margin-bottom: var(--space-md);
+
+  h4 {
+    font-family: var(--font-display);
+    font-size: var(--md-sys-typescale-title-large);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    margin: 0 0 var(--space-sm) 0;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--md-sys-typescale-body-medium);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.discussion-questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+
+  .deployment-signal {
+    // Inherits all deployment-signal styles above
+    transition: all var(--duration-normal) var(--ease-out);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.false-choice-container {
+  .false-choice-subtitle {
+    font-size: var(--md-sys-typescale-body-large);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+    margin-bottom: var(--space-lg);
+  }
+}
+
 // Causal Chain Container - Used within section-card
 .causal-chain-container {
   max-width: 1200px;
