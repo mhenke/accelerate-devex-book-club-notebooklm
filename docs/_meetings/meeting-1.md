@@ -172,7 +172,7 @@ document.addEventListener('keydown', function(event) {
 <div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
 <div class="key-question-main">
 <div class="quote-mark-start">&ldquo;</div>
-<div class="question-text">How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?</div>
+<div class="question-text">What one thing could we change to shift our focus from local outputs (like story points) to the global outcomes of speed and stability (like operational excellence)?</div>
 <div class="quote-mark-end">&rdquo;</div>
 </div>
 </div>
@@ -227,6 +227,7 @@ document.addEventListener('keydown', function(event) {
         <p><strong>Meetings 2-4:</strong> Cover HOW to build that culture through specific technical practices.</p>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -507,6 +508,10 @@ document.addEventListener('keydown', function(event) {
           <div class="stat-number">170x</div>
           <div class="stat-label">Faster Recovery</div>
         </div>
+        <div class="stat-item">
+          <div class="stat-number">5x</div>
+          <div class="stat-label">Lower Change Failure Rate</div>
+        </div>
       </div>
       <p class="stats-conclusion">High performers achieve these results because their culture enables better technical practices.</p>
     </div>
@@ -575,6 +580,7 @@ document.addEventListener('keydown', function(event) {
     <div class="metric-focus">
       <i class="fas fa-bullseye"></i> <strong>Focus:</strong> Diagnose system bottlenecks and improve flow
     </div>
+
   </div>
 
   <div class="chapter-detail" id="detail-bad-metrics">
@@ -611,6 +617,7 @@ document.addEventListener('keydown', function(event) {
     <div class="metric-warning">
       <i class="fas fa-exclamation-circle"></i> <strong>Problem:</strong> Grade individuals and encourage gaming
     </div>
+
   </div>
 </div>
 
@@ -824,6 +831,7 @@ function hideMetricsDetails() {
       <i class="fas fa-quote-left"></i>
       <p><strong>Remember:</strong> Metrics are tools for improvement, not weapons for judgment. In a generative culture with psychological safety, teams use metrics to accelerate learning and delivery.</p>
     </div>
+
   </div>
 </div>
 
@@ -854,6 +862,7 @@ function hideMetricsDetails() {
         <p>Using Westrum's model, what behaviors indicate your organization's culture type? How do these behaviors manifest in your technical practices and architecture decisions?</p>
       </div>
     </div>
+
   </div>
 </div>
 
