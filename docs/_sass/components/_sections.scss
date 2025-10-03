@@ -1696,6 +1696,18 @@
   color: var(--text-dark);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
+  &.technical {
+    background: #eff6ff; // Light blue background
+    color: #1e3a8a; // Dark blue for WCAG AA compliance
+    border-color: #2563eb; // Matches step-business icon
+  }
+
+  &.interactions {
+    background: #fff7ed; // Light orange background
+    color: #7c2d12; // Dark orange for WCAG AA compliance
+    border-color: #ea580c; // Matches step-measurement icon
+  }
+
   &.pathological {
     background: #fff5f5; // Lighter background for better contrast
     color: #7f1d1d; // Darker red for WCAG AA compliance (was #dc2626)
