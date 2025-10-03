@@ -30,9 +30,34 @@
 
   // Dark theme modifier - dark background with light text
   &.dark-theme {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text-light);
+    position: relative;
+    overflow: hidden;
+
+    // Subtle gradient overlay (matches key-question-banner)
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(
+        circle at top right,
+        rgba(9, 105, 218, 0.1),
+        transparent 60%
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    // Ensure content is above the overlay
+    > * {
+      position: relative;
+      z-index: 1;
+    }
 
     // Override heading colors and ensure MD3 typescale for dark theme
     h1 {
