@@ -42,14 +42,38 @@
 }
 
 .site-header {
-  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
-  background: var(--hero-dark);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   color: #fff;
   padding: 0.5rem 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   min-height: 56px;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle gradient overlay (matches footer and key-question-banner)
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at top right,
+      rgba(9, 105, 218, 0.1),
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // Ensure content is above the overlay
+  .site-header-content {
+    position: relative;
+    z-index: 1;
+  }
 }
 .site-header-content {
   display: flex;

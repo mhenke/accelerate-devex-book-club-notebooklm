@@ -271,15 +271,34 @@
 
 /* Meeting Footer */
 .meeting-footer {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
-  );
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   color: var(--text-light);
   padding: var(--space-md);
   position: relative;
   overflow: hidden;
+
+  // Subtle gradient overlay (matches header and key-question-banner)
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at top right,
+      rgba(9, 105, 218, 0.1),
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // Ensure content is above the overlay
+  .footer-content {
+    position: relative;
+    z-index: 1;
+  }
 
   .footer-content {
     margin: 0 auto;
