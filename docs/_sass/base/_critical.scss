@@ -303,11 +303,7 @@ a {
 
 // AI Attribution Footer - Dark Theme Bottom Anchor
 .ai-attribution {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
-  );
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   color: var(--text-dark);
   display: flex;
   align-items: center;
@@ -316,6 +312,23 @@ a {
   padding: var(--space-lg);
   position: relative;
   overflow: hidden;
+
+  // Subtle gradient overlay (matches header, footer, and key-question-banner)
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at top right,
+      rgba(9, 105, 218, 0.1),
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
 
   &__icon {
     background: rgba(var(--accent-teal), var(--opacity-20));
