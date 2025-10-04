@@ -1,533 +1,146 @@
 // =============================================================================
-// AUDIT: STRICT 8PX GRID & MUI SCALE - SPACING/BORDER TOKENS
+// SIMPLIFIED TOKENS - Essential Only
 // =============================================================================
-// Only multiples of 8px allowed for layout spacing. 4px allowed for border radius, focus ring, and hairline borders only.
-// 3px allowed ONLY for border width (legacy/hairline) and elevation, NOT for spacing.
-// All spacing tokens below are multiples of 8px (except for legacy/fine detail tokens, clearly marked).
+// For a 5-page static site, we only need meeting theme colors and basic spacing.
+// Everything else is just hardcoded in the SCSS where it's used.
 
-:root {
-  // =============================================================================
-  // MATERIAL DESIGN 3 SPACING SYSTEM - 8px Grid
-  // =============================================================================
-  // Core spacing tokens following Material Design 3 specifications
-  // Reference: https://m3.material.io/foundations/layout/spacing
-  // Using rem units for better accessibility and consistency
-
-  --space-xs: 0.25rem;  // 4px  - Fine details (border radius, hairline borders)
-  --space-sm: 0.5rem;   // 8px  - Small gaps, padding
-  --space-md: 1rem;     // 16px - Default spacing, button padding
-  --space-lg: 1.5rem;   // 24px - Section spacing, card padding
-  --space-xl: 2rem;     // 32px - Component spacing, margins
-  --space-2xl: 3rem;    // 48px - Page section spacing
-  --space-3xl: 4rem;    // 64px - Major layout spacing
-
-  // Border Width Tokens (Material Design 3 compliant)
-  --border-width-thin: 1px;    // Hairline borders
-  --border-width-medium: 2px;  // Standard borders
-  --border-width-thick: 4px;   // Focus indicators, accents
-}
-
-// Header and Layout Tokens
-:root {
-  // Container Sizes (simplified from 6 to 3)
-  --container-sm: 800px;   // Reading content, narrow layouts
-  --container-md: 1200px;  // Default max-width, standard layouts
-  --container-lg: 1400px;  // Wide layouts, dashboards
-
-  // Legacy container aliases (backward compatibility)
-  --container-max-width: var(--container-md);
-  --container-narrow: var(--container-sm);
-  --container-content: var(--container-sm);
-  --container-reading: var(--container-sm);
-  --container-medium: var(--container-md);
-  --container-wide: var(--container-lg);
-
-  // Border Radius (8px grid compliant)
-  --border-radius: 8px;
-
-  // Touch Targets (Accessibility - WCAG 2.2)
-  --touch-target-44px: 44px;      // Minimum touch target
-  --touch-target-large: 56px;     // Large buttons (8px grid: 7×8)
-  --touch-target-compact: 48px;   // Compact buttons (8px grid: 6×8)
-}
-
-// Design Token System - Critical Rendering Path Optimization
-// ============================================================
-// This file defines the core design tokens for the Accelerate DevEx Book Club site.
-// It provides both SCSS variables and CSS custom properties for flexible theming.
-
-// =============================================================================
-// BREAKPOINT SYSTEM
-// =============================================================================
-// Comprehensive breakpoint system covering all responsive needs
-
-// Breakpoints (SCSS variables only - used in media queries)
-// Note: CSS custom properties removed - breakpoints are not dynamic values
+// Breakpoints (SCSS variables for media queries)
+$small: 480px;
+$medium: 640px;
 $mobile: 768px;
 $tablet: 1024px;
 $desktop: 1200px;
-$small: 480px;   // Small mobile devices
-$medium: 640px;  // Medium mobile/phablets
 
-// =============================================================================
-// COLOR TOKENS
-// =============================================================================
-// Note: SCSS color variables removed - all colors defined as CSS custom properties
-// For Sass color functions (lighten, darken, etc.), extract values from CSS custom properties
-// Meeting colors moved to _mixins-themes.scss for dynamic theming
-
-// CSS Custom Properties - Runtime Theme Control
 :root {
-  // Enhanced Dark Theme Colors (direct values)
-  --hero-dark: #0f1419;
-  --card-dark: #1e2936;
-  --light-gray-bg: #f8fafc;
-  --accent-emerald: #10b981;
-  --hover-emerald: #059669;
+  // =============================================================================
+  // SPACING - 8px Grid
+  // =============================================================================
+  --space-xs: 0.25rem; // 4px
+  --space-sm: 0.5rem; // 8px
+  --space-md: 1rem; // 16px
+  --space-lg: 1.5rem; // 24px
+  --space-xl: 2rem; // 32px
+  --space-2xl: 3rem; // 48px
+  --space-3xl: 4rem; // 64px
 
-  // Header Gradient Colors
-  --header-dark-navy: #1a1a2e;
-  --header-light-navy: #16213e;
+  // =============================================================================
+  // MEETING THEME COLORS - The only dynamic colors
+  // =============================================================================
+  --meeting-1-color: #0969da; // Foundation (Blue)
+  --meeting-2-color: #1a7f37; // Technical (Green)
+  --meeting-3-color: #d97706; // Management (Orange)
+  --meeting-4-color: #8b5cf6; // Leadership (Purple)
 
-  // Primary Colors
-  --primary-blue: #2196f3;
-
-  // Accent Colors
-  --accent-coral: #ff7f50;
-  --accent-gold: #d7ba89;
+  // =============================================================================
+  // ACCENT COLORS - Used for visual effects
+  // =============================================================================
   --accent-teal: #7adad1;
+  --accent-coral: #ff7f50;
+  --accent-emerald: #10b981;
+  --hover-emerald: #34d399; // Lighter emerald for hover/gradient effects
   --accent-sage: #8b9eb7;
+  --accent-gold: #d7ba89;
+  --theme-primary: #10b981; // Primary theme color (emerald)
 
-  // Interactive States
-  --hover-coral: #ff6347;
-  --hover-teal: #6bc7bf;
-
-  // Background Colors (direct values)
+  // =============================================================================
+  // BACKGROUND COLORS
+  // =============================================================================
+  --hero-dark: #0f1419;
   --background-white: #ffffff;
-  --background-light-gray: #f5f5f5;
   --background-light: #f5f5f5;
 
-  // Text Colors (direct values)
-  --text-dark: #2c3e50;
-  --text-medium: #5a6c7d;
+  // =============================================================================
+  // TEXT COLORS
+  // =============================================================================
   --text-light: #8fa8b8;
   --text-white: #ffffff;
+  --text-dark: #1a1a2e;
 
-  // DORA Metrics Colors
-  --dora-orange: #ff9800;
+  // =============================================================================
+  // BORDER RADIUS - Used everywhere
+  // =============================================================================
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 50px;
 
-  // System Colors
-  --success-green: #4caf50;
-  --warning-yellow: #ffc107;
-  --danger-red: #f44336;
+  // =============================================================================
+  // ELEVATION/SHADOWS
+  // =============================================================================
+  --elevation-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --elevation-2: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-hero-cta: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --shadow-card-metric: 0 4px 12px rgba(16, 185, 129, 0.15);
 
-  // Meeting Colors - For cross-meeting references (navigation, cards, icons)
-  // Within meeting pages, use dynamic tokens (--theme-primary, etc.) via [data-meeting] attribute
-  --meeting-1-color: #0969da;   // Foundation (Blue)
-  --meeting-2-color: #1a7f37;   // Technical (Green)
-  --meeting-3-color: #d97706;   // Management (Orange)
-  --meeting-4-color: #8b5cf6;   // Leadership (Purple)
+  // =============================================================================
+  // TRANSITIONS
+  // =============================================================================
+  --transition-spring: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
-  // Border & Shadow
-  --border-light: rgba(148, 163, 184, 0.3);
-  --shadow-light: rgba(26, 26, 46, 0.1);
-  --shadow-medium: rgba(26, 26, 46, 0.15);
+  // =============================================================================
+  // BORDERS
+  // =============================================================================
+  --border-medium: rgba(0, 0, 0, 0.12);
+  --border-white-light: 1px solid rgba(255, 255, 255, 0.2);
 
-  // Additional color tokens for consistency
-  --color-gray-50: #f9fafb;
-  --color-gray-700: #374151;
-  --color-white: #ffffff;
-  --color-blue-500: #3b82f6;
-  --color-blue-600: #1976d2;
-  --color-orange-600: #f57c00;
-  --color-green-50: #f0fdf4;
-  --color-green-100: #ecfdf5;
-  --color-green-600: #16a34a;
-  --color-blue-50: #eff6ff;
-  --color-blue-100: #dbeafe;
-  --color-slate-600: #64748b;
+  // =============================================================================
+  // EFFECTS
+  // =============================================================================
+  --backdrop-blur-lg: blur(12px);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --shadow-hero-cta-hover: 0 12px 32px rgba(0, 0, 0, 0.2);
+  --text-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 // =============================================================================
-// TYPOGRAPHY TOKENS
+// TYPOGRAPHY - Minimal font system
 // =============================================================================
-
-// Material Design Typography System
-// ================================
-
-// Font Families (Material Design 3 recommendations)
 $font-primary: "Roboto", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
   sans-serif;
-$font-display: "Roboto", "Poppins", sans-serif;
-$font-mono: "Roboto Mono", "SFMono-Regular", "Consolas", "Liberation Mono",
-  monospace;
 
-// Material Design Font Weights
-$font-weight-light: 300;
+// Font sizes - Complete Material Design scale
+$font-size-body: 1rem; // 16px - Body text
+$font-size-h6: 1.125rem; // 18px - Small headings
+$font-size-h5: 1.25rem; // 20px - Subsection headings
+$font-size-h4: 1.375rem; // 22px - Card titles
+$font-size-h3: 1.5rem; // 24px - Section headings
+$font-size-h2: 1.75rem; // 28px - Major headings
+$font-size-h1: 2.25rem; // 36px - Page titles
+$font-size-display: 2.8rem; // 45px - Hero headlines
+
+// Font weights
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
-// Material Design Type Scale (Material Design 3 specification)
-$font-size-display-large: 3.5rem; // 56px - Hero headlines
-$font-size-display-medium: 2.8rem; // 45px - Large headlines
-$font-size-display-small: 2.25rem; // 36px - Medium headlines
-
-$font-size-headline-large: 2rem; // 32px - Section headlines
-$font-size-headline-medium: 1.75rem; // 28px - Subsection headlines
-$font-size-headline-small: 1.5rem; // 24px - Card headlines
-
-$font-size-title-large: 1.375rem; // 22px - Card titles
-$font-size-title-medium: 1rem; // 16px - Button labels
-$font-size-title-small: 0.875rem; // 14px - Tab labels
-
-$font-size-label-large: 0.875rem; // 14px - Form labels
-$font-size-label-medium: 0.75rem; // 12px - Button labels
-$font-size-label-small: 0.6875rem; // 11px - Captions
-
-$font-size-body-large: 1rem; // 16px - Body text
-$font-size-body-medium: 0.875rem; // 14px - Secondary text
-$font-size-body-small: 0.75rem; // 12px - Fine print
-
-// Note: Legacy font size aliases removed - use MD3 type scale directly
-// $font-size-xs through $font-size-3xl removed
-// Use $font-size-display-*, $font-size-headline-*, $font-size-title-*, etc.
-
-// Line Heights - Optimized for readability
-$line-height-tight: 1.1;
+// Line heights
 $line-height-normal: 1.4;
 $line-height-relaxed: 1.6;
-$line-height-loose: 1.8;
 
-// Letter Spacing - Refined typography
-$letter-spacing-tight: -0.03em;
-$letter-spacing-normal: 0;
-$letter-spacing-wide: 0.025em;
-
-// CSS Custom Properties for Material Design Typography
+// CSS Custom Properties
 :root {
-  // Font Families
   --font-primary: #{$font-primary};
-  --font-display: #{$font-display};
-  --font-mono: #{$font-mono};
-
-  // Font Weights
-  --font-weight-light: #{$font-weight-light};
+  --font-display: #{$font-primary}; // Same as primary for simplicity
+  --font-size-body: #{$font-size-body};
+  --font-size-h6: #{$font-size-h6};
+  --font-size-h5: #{$font-size-h5};
+  --font-size-h4: #{$font-size-h4};
+  --font-size-h3: #{$font-size-h3};
+  --font-size-h2: #{$font-size-h2};
+  --font-size-h1: #{$font-size-h1};
+  --font-size-display: #{$font-size-display};
   --font-weight-normal: #{$font-weight-normal};
   --font-weight-medium: #{$font-weight-medium};
   --font-weight-semibold: #{$font-weight-semibold};
   --font-weight-bold: #{$font-weight-bold};
-
-  // Material Design Type Scale (Legacy naming)
-  --font-size-display-large: #{$font-size-display-large};
-  --font-size-display-medium: #{$font-size-display-medium};
-  --font-size-display-small: #{$font-size-display-small};
-  --font-size-headline-large: #{$font-size-headline-large};
-  --font-size-headline-medium: #{$font-size-headline-medium};
-  --font-size-headline-small: #{$font-size-headline-small};
-  --font-size-title-large: #{$font-size-title-large};
-  --font-size-title-medium: #{$font-size-title-medium};
-  --font-size-title-small: #{$font-size-title-small};
-  --font-size-label-large: #{$font-size-label-large};
-  --font-size-label-medium: #{$font-size-label-medium};
-  --font-size-label-small: #{$font-size-label-small};
-  --font-size-body-large: #{$font-size-body-large};
-  --font-size-body-medium: #{$font-size-body-medium};
-  --font-size-body-small: #{$font-size-body-small};
-
-  // Material Design 3 Type Scale (MD3 Standard Naming)
-  --md-sys-typescale-display-large: #{$font-size-display-large};
-  --md-sys-typescale-display-medium: #{$font-size-display-medium};
-  --md-sys-typescale-display-small: #{$font-size-display-small};
-  --md-sys-typescale-headline-large: #{$font-size-headline-large};
-  --md-sys-typescale-headline-medium: #{$font-size-headline-medium};
-  --md-sys-typescale-headline-small: #{$font-size-headline-small};
-  --md-sys-typescale-title-large: #{$font-size-title-large};
-  --md-sys-typescale-title-medium: #{$font-size-title-medium};
-  --md-sys-typescale-title-small: #{$font-size-title-small};
-  --md-sys-typescale-label-large: #{$font-size-label-large};
-  --md-sys-typescale-label-medium: #{$font-size-label-medium};
-  --md-sys-typescale-label-small: #{$font-size-label-small};
-  --md-sys-typescale-body-large: #{$font-size-body-large};
-  --md-sys-typescale-body-medium: #{$font-size-body-medium};
-  --md-sys-typescale-body-small: #{$font-size-body-small};
-
-  // Line Heights
-  --line-height-tight: #{$line-height-tight};
   --line-height-normal: #{$line-height-normal};
   --line-height-relaxed: #{$line-height-relaxed};
-  --line-height-loose: #{$line-height-loose};
+  --line-height-tight: 1.2; // For hero text
+  --letter-spacing-tight: -0.02em; // Slight tightening for large text
 
-  // Letter Spacing
-  --letter-spacing-tight: #{$letter-spacing-tight};
-  --letter-spacing-normal: #{$letter-spacing-normal};
-  --letter-spacing-wide: #{$letter-spacing-wide};
+  // Essential MD3 aliases for hero banner
+  --font-size-headline-small: #{$font-size-h3}; // 1.5rem - Used in hero
+  --font-size-display-medium: #{$font-size-display}; // 2.8rem - Used in hero
 }
-
-// Note: Spacing SCSS variables removed - use CSS custom properties (var(--space-*))
-// This eliminates duplication and inconsistent units (px vs rem)
-
-// =============================================================================
-// AUDIT DOCUMENTATION
-// =============================================================================
-/*
-TOKEN USAGE GUIDELINES (2025 AUDIT):
-1. Layout spacing must use multiples of 8px only (8, 16, 24, 32, 40, 48, 64, 120).
-2. 4px and 12px tokens are allowed ONLY for border radius, focus ring, or hairline borders, NOT for layout spacing.
-3. 3px border width is legacy/hairline only, NOT for spacing.
-4. All new components must use 8px grid for spacing and MUI scale for typography.
-5. Accessibility tokens (focus ring, touch target) must be present and correct.
-6. Border radius and elevation tokens must follow design system rules.
-7. Document any exceptions with comments and rationale.
-8. Run CSS lint and HTML validation after any token changes.
-*/
-
-// =============================================================================
-// BORDER RADIUS TOKENS
-// =============================================================================
-
-$radius-sm: 4px;
-$radius-md: 8px;
-$radius-lg: 12px;
-$radius-xl: 16px;
-$radius-2xl: 20px;
-$radius-full: 50px;
-
-// CSS Custom Properties for Border Radius
-:root {
-  --radius-sm: #{$radius-sm};
-  --radius-md: #{$radius-md};
-  --radius-lg: #{$radius-lg};
-  --radius-xl: #{$radius-xl};
-  --radius-2xl: #{$radius-2xl};
-  --radius-full: #{$radius-full};
-}
-
-// =============================================================================
-// MATERIAL DESIGN ELEVATION SYSTEM
-// =============================================================================
-
-// Note: Shadow SCSS variables removed - use MD3 elevation CSS custom properties
-// All legacy shadows, colored shadows, and specific-use shadows removed
-// Use var(--elevation-0) through var(--elevation-5) for consistent shadows
-
-// CSS Custom Properties for Material Design Elevation
-:root {
-  // Material Design 3 Elevation System (6 levels)
-  // Reference: https://m3.material.io/styles/elevation/overview
-  --elevation-0: none;
-  --elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  --elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
-  --elevation-3: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-  --elevation-4: 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
-  --elevation-5: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
-
-  // Legacy shadow aliases (map to elevation for backward compatibility)
-  --shadow-xs: var(--elevation-1);
-  --shadow-sm: var(--elevation-1);
-  --shadow-md: var(--elevation-2);
-  --shadow-lg: var(--elevation-3);
-  --shadow-xl: var(--elevation-4);
-  --shadow-2xl: var(--elevation-5);
-
-  // Content shadows (semantic aliases)
-  --shadow-hero: var(--elevation-4);
-  --shadow-hover: var(--elevation-3);
-}
-
-// Note: Gradient and shadow SCSS variables removed
-// Use meeting-gradient() and meeting-shadow() functions from _mixins-themes.scss
-// Use MD3 elevation system (--elevation-0 through --elevation-5) for shadows
-
-// =============================================================================
-// SIMPLIFIED BORDER SYSTEM
-// =============================================================================
-// Reduced from 18 patterns to 6 semantic tokens
-// Use with color and width tokens for flexibility
-
-// Note: SCSS border variables removed - use CSS custom properties
-// Build borders with: border: var(--border-width-thin) solid var(--color-*)
-
-:root {
-  // Semantic Border Patterns (6 core patterns)
-  --border-subtle: 1px solid rgba(0, 0, 0, 0.05);      // Very light borders
-  --border-light: 1px solid rgba(148, 163, 184, 0.3);  // Standard light border
-  --border-medium: 1px solid rgba(0, 0, 0, 0.12);      // Medium contrast border
-  --border-strong: 2px solid rgba(0, 0, 0, 0.2);       // Strong emphasis border
-
-  // Accent Borders (left-border for callouts/sections)
-  --border-accent-sm: 3px solid var(--theme-primary);  // Small accent (3px)
-  --border-accent-md: 4px solid var(--theme-primary);  // Medium accent (4px)
-}
-
-// =============================================================================
-// TRANSFORM AND INTERACTION TOKENS
-// =============================================================================
-
-// Common transform values used throughout the app
-$transform-hover-lift: translateY(-2px);
-$transform-active-press: translateY(-1px);
-$transform-neutral: translateY(0);
-
-// CSS Custom Properties for transforms
-:root {
-  --transform-hover-lift: #{$transform-hover-lift};
-  --transform-active-press: #{$transform-active-press};
-  --transform-neutral: #{$transform-neutral};
-}
-
-// =============================================================================
-// ANIMATION TOKENS
-// =============================================================================
-
-// Duration - Consistent timing
-$duration-fast: 0.15s;
-$duration-normal: 0.3s;
-$duration-slow: 0.5s;
-
-// Easing - Natural motion
-$ease-in: cubic-bezier(0.4, 0, 1, 1);
-$ease-out: cubic-bezier(0, 0, 0.2, 1);
-$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-
-// CSS Custom Properties for Animations
-:root {
-  --duration-fast: #{$duration-fast};
-  --duration-normal: #{$duration-normal};
-  --duration-slow: #{$duration-slow};
-  --ease-in: #{$ease-in};
-  --ease-out: #{$ease-out};
-  --ease-in-out: #{$ease-in-out};
-}
-
-// =============================================================================
-// Z-INDEX TOKENS
-// =============================================================================
-
-// Z-index scale - Layer management
-$z-dropdown: 1000;
-$z-sticky: 1020;
-$z-fixed: 1030;
-$z-modal-backdrop: 1040;
-$z-modal: 1050;
-$z-popover: 1060;
-$z-tooltip: 1070;
-
-// CSS Custom Properties for Z-index
-:root {
-  --z-dropdown: #{$z-dropdown};
-  --z-sticky: #{$z-sticky};
-  --z-fixed: #{$z-fixed};
-  --z-modal-backdrop: #{$z-modal-backdrop};
-  --z-modal: #{$z-modal};
-  --z-popover: #{$z-popover};
-  --z-tooltip: #{$z-tooltip};
-}
-
-// =============================================================================
-// ACCESSIBILITY TOKENS
-// =============================================================================
-
-// Focus Ring - WCAG 2.2 compliant
-$focus-ring-width: 2px;
-$focus-ring-offset: 2px;
-$focus-ring-color: var(--accent-teal);
-
-// Touch Targets - 44px minimum
-$touch-target-min: 44px;
-
-// CSS Custom Properties for Accessibility
-:root {
-  --focus-ring-width: #{$focus-ring-width};
-  --focus-ring-offset: #{$focus-ring-offset};
-  --focus-ring-color: #{$focus-ring-color};
-  --touch-target-min: #{$touch-target-min};
-}
-
-// =============================================================================
-// THEME VARIATIONS
-// =============================================================================
-
-// High Contrast Mode - Accessibility enhancement
-@media (prefers-contrast: high) {
-  :root {
-    --background-white: #000000;
-    --text-dark: #ffffff;
-    --border-color: #ffffff;
-    --shadow-light: rgba(255, 255, 255, 0.2);
-    --shadow-medium: rgba(255, 255, 255, 0.3);
-  }
-}
-
-// Reduced Motion - Respect user preferences
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --duration-fast: 0.01ms;
-    --duration-normal: 0.01ms;
-    --duration-slow: 0.01ms;
-  }
-}
-
-// Dark Mode - Future enhancement ready
-@media (prefers-color-scheme: dark) {
-  :root {
-    // Dark mode tokens can be added here when needed
-    // Currently maintaining light theme for consistency
-  }
-}
-
-// Note: Component-specific tokens removed (hero, DORA, button)
-// Define these in component SCSS files where they're used
-// This keeps tokens.scss focused on global design system tokens
-
-// =============================================================================
-// UTILITY FUNCTIONS
-// =============================================================================
-
-// SCSS VARIABLES - Required for mixins and calculations
-// Note: Breakpoint variables are defined earlier in the file (lines 61-62)
-
-// Convert px to rem
-@function rem($pixels, $base: 16) {
-  @return #{$pixels / $base}rem;
-}
-
-// Calculate line height from font size
-@function line-height($font-size, $target-height) {
-  @return $target-height / $font-size;
-}
-
-// Generate color variations
-@function lighten-color($color, $amount: 10%) {
-  @return lighten($color, $amount);
-}
-
-@function darken-color($color, $amount: 10%) {
-  @return darken($color, $amount);
-}
-
-// =============================================================================
-// PERFORMANCE OPTIMIZATION NOTES
-// =============================================================================
-
-/*
-CRITICAL RENDERING PATH OPTIMIZATION:
-1. This file contains design tokens for above-the-fold content
-2. CSS custom properties enable runtime theming without re-compilation
-3. SCSS variables provide build-time optimization and calculations
-4. Token-based system ensures consistent UI and easier maintenance
-5. Accessibility tokens ensure WCAG 2.2 compliance
-
-USAGE GUIDELINES:
-- Use CSS custom properties (--token-name) for runtime values
-- Use SCSS variables ($token-name) for build-time calculations
-- Prioritize semantic naming over descriptive naming
-- Group related tokens together for better organization
-- Always provide fallbacks for CSS custom properties
-
-PERFORMANCE CONSIDERATIONS:
-- Tokens are loaded once and cached by the browser
-- CSS custom properties have minimal performance impact
-- SCSS variables are compiled away at build time
-- This file should be included before all other stylesheets
-*/
