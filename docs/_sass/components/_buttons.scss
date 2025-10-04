@@ -118,13 +118,13 @@
 .btn--tonal {
   @extend %btn-base;
 
-  background: var(--meeting-1-surface);
-  color: var(--meeting-1-on-surface);
+  background: var(--theme-surface);
+  color: var(--theme-on-surface);
   box-shadow: none;
 
   &:hover {
     box-shadow: var(--elevation-1);
-    background: var(--meeting-1-accent);
+    background: var(--theme-accent);
   }
 
   &:active {
@@ -137,17 +137,17 @@
   @extend %btn-base;
 
   background: transparent;
-  color: var(--meeting-1-primary);
-  border: 1px solid var(--meeting-1-primary);
+  color: var(--meeting-1-color);
+  border: 1px solid var(--meeting-1-color);
   box-shadow: none;
 
   &:hover {
-    background: rgba(var(--meeting-1-primary), 0.08);
+    background: rgba(var(--meeting-1-color), 0.08);
     box-shadow: none;
   }
 
   &:active {
-    background: rgba(var(--meeting-1-primary), 0.12);
+    background: rgba(var(--meeting-1-color), 0.12);
   }
 }
 
@@ -156,16 +156,16 @@
   @extend %btn-base;
 
   background: transparent;
-  color: var(--meeting-1-primary);
+  color: var(--meeting-1-color);
   box-shadow: none;
   padding: var(--space-sm) var(--space-md); // 8px 16px - 8px grid compliant
 
   &:hover {
-    background: rgba(var(--meeting-1-primary), 0.08);
+    background: rgba(var(--meeting-1-color), 0.08);
   }
 
   &:active {
-    background: rgba(var(--meeting-1-primary), 0.12);
+    background: rgba(var(--meeting-1-color), 0.12);
   }
 }
 
@@ -180,7 +180,7 @@
   height: 56px;
   padding: 0;
   border-radius: 50%;
-  background: var(--meeting-1-primary);
+  background: var(--meeting-1-color);
   color: white;
   box-shadow: var(--elevation-3);
 
@@ -310,31 +310,31 @@
 
 // Meeting theme variations
 .btn--meeting-1 {
-  --btn-primary: var(--meeting-1-primary);
-  --btn-secondary: var(--meeting-1-secondary);
-  --btn-surface: var(--meeting-1-surface);
-  --btn-on-surface: var(--meeting-1-on-surface);
+  --btn-primary: var(--meeting-1-color);
+  --btn-secondary: var(--theme-secondary);
+  --btn-surface: var(--theme-surface);
+  --btn-on-surface: var(--theme-on-surface);
 }
 
 .btn--meeting-2 {
-  --btn-primary: var(--meeting-2-primary);
-  --btn-secondary: var(--meeting-2-secondary);
-  --btn-surface: var(--meeting-2-surface);
-  --btn-on-surface: var(--meeting-2-on-surface);
+  --btn-primary: var(--meeting-2-color);
+  --btn-secondary: var(--theme-secondary);
+  --btn-surface: var(--theme-surface);
+  --btn-on-surface: var(--theme-on-surface);
 }
 
 .btn--meeting-3 {
-  --btn-primary: var(--meeting-3-primary);
-  --btn-secondary: var(--meeting-3-secondary);
-  --btn-surface: var(--meeting-3-surface);
-  --btn-on-surface: var(--meeting-3-on-surface);
+  --btn-primary: var(--meeting-3-color);
+  --btn-secondary: var(--theme-secondary);
+  --btn-surface: var(--theme-surface);
+  --btn-on-surface: var(--theme-on-surface);
 }
 
 .btn--meeting-4 {
-  --btn-primary: var(--meeting-4-primary);
-  --btn-secondary: var(--meeting-4-secondary);
-  --btn-surface: var(--meeting-4-surface);
-  --btn-on-surface: var(--meeting-4-on-surface);
+  --btn-primary: var(--meeting-4-color);
+  --btn-secondary: var(--theme-secondary);
+  --btn-surface: var(--theme-surface);
+  --btn-on-surface: var(--theme-on-surface);
 }
 
 // Apply meeting theme colors

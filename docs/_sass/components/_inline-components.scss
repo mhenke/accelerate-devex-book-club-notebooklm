@@ -34,8 +34,8 @@
 .metric-icon {
   background: linear-gradient(
     135deg,
-    var(--meeting-1-primary),
-    var(--meeting-1-secondary)
+    var(--meeting-1-color),
+    #1f6feb
   );
   color: white;
   width: var(--touch-target-default);
@@ -135,8 +135,8 @@
 .lead-time-metric .metric-icon {
   background: linear-gradient(
     135deg,
-    var(--meeting-4-primary),
-    var(--meeting-4-secondary)
+    var(--meeting-4-color),
+    #a78bfa
   );
   box-shadow: var(--shadow-meeting-4);
 }
@@ -144,8 +144,8 @@
 .deploy-frequency-metric .metric-icon {
   background: linear-gradient(
     135deg,
-    var(--meeting-2-primary),
-    var(--meeting-2-secondary)
+    var(--meeting-2-color),
+    #238636
   );
   box-shadow: var(--shadow-meeting-2);
 }
@@ -158,8 +158,8 @@
 .change-fail-metric .metric-icon {
   background: linear-gradient(
     135deg,
-    var(--meeting-3-primary),
-    var(--meeting-3-secondary)
+    var(--meeting-3-color),
+    #f59e0b
   );
   box-shadow: var(--shadow-meeting-3);
 }

@@ -121,25 +121,12 @@ $medium: 640px;  // Medium mobile/phablets
   --warning-yellow: #ffc107;
   --danger-red: #f44336;
 
-  // Meeting Colors - Direct definitions (use meeting-theme mixin for dynamic theming)
-  // Each meeting has its own distinct color theme
-  --meeting-1-primary: #0969da;
-  --meeting-1-secondary: #1f6feb;
-  --meeting-1-accent: #388bfd;
-  --meeting-1-surface: #f6f8fa;
-  --meeting-1-on-surface: #24292f;
-  --meeting-2-primary: #1a7f37;
-  --meeting-2-secondary: #238636;
-  --meeting-2-surface: #f0fff4;
-  --meeting-2-on-surface: #0d2818;
-  --meeting-3-primary: #d97706;
-  --meeting-3-secondary: #f59e0b;
-  --meeting-3-surface: #fffbeb;
-  --meeting-3-on-surface: #451a03;
-  --meeting-4-primary: #8b5cf6;
-  --meeting-4-secondary: #a78bfa;
-  --meeting-4-surface: #faf5ff;
-  --meeting-4-on-surface: #3c1361;
+  // Meeting Colors - For cross-meeting references (navigation, cards, icons)
+  // Within meeting pages, use dynamic tokens (--theme-primary, etc.) via [data-meeting] attribute
+  --meeting-1-color: #0969da;   // Foundation (Blue)
+  --meeting-2-color: #1a7f37;   // Technical (Green)
+  --meeting-3-color: #d97706;   // Management (Orange)
+  --meeting-4-color: #8b5cf6;   // Leadership (Purple)
 
   // Border & Shadow
   --border-light: rgba(148, 163, 184, 0.3);

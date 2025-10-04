@@ -1313,8 +1313,8 @@ a {
 .btn-meeting-1 {
   background: linear-gradient(
     135deg,
-    var(--meeting-1-primary),
-    var(--meeting-1-secondary)
+    var(--meeting-1-color),
+    #1f6feb
   );
   color: white;
   display: inline-flex;
@@ -1336,8 +1336,8 @@ a {
     color: white;
     background: linear-gradient(
       135deg,
-      var(--meeting-1-accent),
-      var(--meeting-1-primary)
+      #388bfd,
+      var(--meeting-1-color)
     );
   }
 
@@ -1361,8 +1361,8 @@ a {
     &:hover:not(:disabled) {
       background: linear-gradient(
         135deg,
-        var(--meeting-1-accent),
-        var(--meeting-1-primary)
+        #388bfd,
+        var(--meeting-1-color)
       );
       box-shadow: var(--elevation-4);
     }
@@ -1372,7 +1372,7 @@ a {
   h2:not(.key-question h2) {
     i,
     em {
-      color: var(--meeting-1-primary) !important;
+      color: var(--meeting-1-color) !important;
     }
   }
 }
@@ -1581,11 +1581,11 @@ a {
   }
 
   .meeting-badge {
-    background: var(--meeting-1-primary);
+    background: var(--meeting-1-color);
   }
 
   &:hover {
-    border-top-color: var(--meeting-1-primary);
+    border-top-color: var(--meeting-1-color);
   }
 }
 
@@ -1593,17 +1593,17 @@ a {
   .highlight-icon {
     background: linear-gradient(
       135deg,
-      var(--meeting-2-primary),
-      var(--meeting-2-secondary)
+      var(--meeting-2-color),
+      #238636
     );
   }
 
   .meeting-badge {
-    background: var(--meeting-2-primary);
+    background: var(--meeting-2-color);
   }
 
   &:hover {
-    border-top-color: var(--meeting-2-primary);
+    border-top-color: var(--meeting-2-color);
   }
 }
 
@@ -1611,17 +1611,17 @@ a {
   .highlight-icon {
     background: linear-gradient(
       135deg,
-      var(--meeting-3-primary),
-      var(--meeting-3-secondary)
+      var(--meeting-3-color),
+      #f59e0b
     );
   }
 
   .meeting-badge {
-    background: var(--meeting-3-primary);
+    background: var(--meeting-3-color);
   }
 
   &:hover {
-    border-top-color: var(--meeting-3-primary);
+    border-top-color: var(--meeting-3-color);
   }
 }
 
@@ -1629,17 +1629,17 @@ a {
   .highlight-icon {
     background: linear-gradient(
       135deg,
-      var(--meeting-4-primary),
-      var(--meeting-4-secondary)
+      var(--meeting-4-color),
+      #a78bfa
     );
   }
 
   .meeting-badge {
-    background: var(--meeting-4-primary);
+    background: var(--meeting-4-color);
   }
 
   &:hover {
-    border-top-color: var(--meeting-4-primary);
+    border-top-color: var(--meeting-4-color);
   }
 }
 

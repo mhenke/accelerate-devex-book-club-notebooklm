@@ -115,11 +115,11 @@
 // =============================================================================
 
 .icon--primary {
-  color: var(--meeting-1-primary);
+  color: var(--meeting-1-color);
 }
 
 .icon--secondary {
-  color: var(--meeting-1-secondary);
+  color: var(--theme-secondary);
 }
 
 .icon--success {
@@ -140,19 +140,19 @@
 
 // Meeting-specific icon colors
 .icon--meeting-1 {
-  color: var(--meeting-1-primary);
+  color: var(--meeting-1-color);
 }
 
 .icon--meeting-2 {
-  color: var(--meeting-2-primary);
+  color: var(--meeting-2-color);
 }
 
 .icon--meeting-3 {
-  color: var(--meeting-3-primary);
+  color: var(--meeting-3-color);
 }
 
 .icon--meeting-4 {
-  color: var(--meeting-4-primary);
+  color: var(--meeting-4-color);
 }
 
 // =============================================================================
@@ -190,24 +190,24 @@
 
 // Card icons
 .card__icon {
-  color: var(--meeting-1-primary);
+  color: var(--meeting-1-color);
   font-size: var(--icon-size-xl);
   margin-bottom: var(--space-md);
 
   .card--meeting-1 & {
-    color: var(--meeting-1-primary);
+    color: var(--meeting-1-color);
   }
 
   .card--meeting-2 & {
-    color: var(--meeting-2-primary);
+    color: var(--meeting-2-color);
   }
 
   .card--meeting-3 & {
-    color: var(--meeting-3-primary);
+    color: var(--meeting-3-color);
   }
 
   .card--meeting-4 & {
-    color: var(--meeting-4-primary);
+    color: var(--meeting-4-color);
   }
 }
 
@@ -242,24 +242,24 @@
 
 .dora-icon {
   font-size: var(--icon-size-2xl);
-  color: var(--meeting-1-primary);
+  color: var(--meeting-1-color);
   margin-bottom: var(--space-lg);
 
   // Specific DORA metric colors
   &.dora-icon--deployment-frequency {
-    color: var(--meeting-1-primary);
+    color: var(--meeting-1-color);
   }
 
   &.dora-icon--lead-time {
-    color: var(--meeting-2-primary);
+    color: var(--meeting-2-color);
   }
 
   &.dora-icon--mttr {
-    color: var(--meeting-3-primary);
+    color: var(--meeting-3-color);
   }
 
   &.dora-icon--change-failure {
-    color: var(--meeting-4-primary);
+    color: var(--meeting-4-color);
   }
 }
 
