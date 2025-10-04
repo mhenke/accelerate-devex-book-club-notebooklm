@@ -255,7 +255,7 @@ a {
   // Performance optimizations
   contain: layout style;
   will-change: auto; // Managed dynamically via JavaScript
-  background: var(--hero-dark);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   > * {
@@ -405,7 +405,7 @@ a {
 // =============================================================================
 
 .hero-banner {
-  background: var(--hero-dark);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: var(--space-lg) var(--space-lg);
   text-align: center;
@@ -414,6 +414,23 @@ a {
   margin: 0;
   margin-top: -1px; // Pull up to eliminate gap with site header
   overflow: hidden;
+
+  // Subtle gradient overlay (matches headers and footers)
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at top right,
+      rgba(9, 105, 218, 0.1),
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
 
   .hero-content {
     position: relative;
