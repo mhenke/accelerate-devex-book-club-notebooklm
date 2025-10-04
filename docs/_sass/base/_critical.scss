@@ -255,7 +255,7 @@ a {
   // Performance optimizations
   contain: layout style;
   will-change: auto; // Managed dynamically via JavaScript
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: var(--hero-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   > * {
@@ -303,7 +303,7 @@ a {
 
 // AI Attribution Footer - Dark Theme Bottom Anchor
 .ai-attribution {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: var(--hero-dark);
   color: var(--text-dark);
   display: flex;
   align-items: center;
@@ -405,7 +405,7 @@ a {
 // =============================================================================
 
 .hero-banner {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: var(--hero-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: var(--space-lg) var(--space-lg);
   text-align: center;
