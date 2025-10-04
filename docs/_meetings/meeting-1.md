@@ -185,13 +185,15 @@ document.addEventListener('keydown', function(event) {
       <h2><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Critical Foundation: Culture Before Metrics</h2>
     </div>
 
-    <div class="warning-content">
-      <div class="warning-section">
-        <h3 class="warning-subtitle">The Trap</h3>
-        <p>Teams often jump straight to measurement, hoping metrics alone will magically improve performance. This is the single most common mistake in DevOps transformation.</p>
-      </div>
+    <!-- The Trap - Full Width Warning -->
+    <div class="trap-warning">
+      <h3 class="trap-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> The Trap</h3>
+      <p class="trap-text">Teams often jump straight to measurement, hoping metrics alone will magically improve performance. <strong>This is the single most common mistake in DevOps transformation.</strong></p>
+    </div>
 
-      <div class="warning-section">
+    <!-- Main Content Grid -->
+    <div class="warning-content">
+      <div class="warning-section reality-section">
         <h3 class="warning-subtitle">The Reality</h3>
         <p>Without a healthy culture foundation, metrics become:</p>
         <ul class="warning-list">
@@ -199,33 +201,34 @@ document.addEventListener('keydown', function(event) {
           <li><strong>Vanity numbers</strong> like commit counts and lines of code</li>
           <li><strong>Perverse incentives</strong> that encourage gaming the system</li>
         </ul>
-        <p class="warning-callout">Without trust, measurement is seen as surveillance. With trust, measurement becomes a tool for improvement.</p>
+        <p class="warning-callout"><i class="fas fa-lightbulb" aria-hidden="true"></i> Without trust, measurement is seen as surveillance. With trust, measurement becomes a tool for improvement.</p>
       </div>
 
-      <div class="warning-section">
+      <div class="warning-section sequence-section">
         <h3 class="warning-subtitle">The Correct Sequence</h3>
         <div class="sequence-flow">
           <div class="sequence-step">
             <div class="sequence-number">1</div>
             <div class="sequence-label">Build Culture</div>
           </div>
-         
+          <i class="fas fa-arrow-right sequence-arrow" aria-hidden="true"></i>
           <div class="sequence-step">
             <div class="sequence-number">2</div>
             <div class="sequence-label">Introduce Metrics</div>
           </div>
-         
+          <i class="fas fa-arrow-right sequence-arrow" aria-hidden="true"></i>
           <div class="sequence-step">
             <div class="sequence-number">3</div>
             <div class="sequence-label">Achieve Acceleration</div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="warning-footer">
-        <p><strong>This Meeting:</strong> Establishes WHY culture must come first and WHAT to measure.</p>
-        <p><strong>Meetings 2-4:</strong> Cover HOW to build that culture through specific technical practices.</p>
-      </div>
+    <!-- Full Width Footer -->
+    <div class="warning-footer">
+      <p><strong>This Meeting:</strong> Establishes WHY culture must come first and WHAT to measure.</p>
+      <p><strong>Meetings 2-4:</strong> Cover HOW to build that culture through specific technical practices.</p>
     </div>
 
   </div>
@@ -269,7 +272,7 @@ document.addEventListener('keydown', function(event) {
                data-type="brief">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Accelerate Metrics Unlocked">
-               
+
               </button>
             </div>
 
@@ -300,7 +303,7 @@ document.addEventListener('keydown', function(event) {
                data-type="deep-dive">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Accelerate Success">
-               
+
               </button>
             </div>
 
@@ -331,7 +334,7 @@ document.addEventListener('keydown', function(event) {
                data-type="critique">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Accelerate Your DevEx">
-               
+
               </button>
             </div>
 
@@ -543,27 +546,27 @@ document.addEventListener('keydown', function(event) {
 
     <div class="metrics-bubbles-grid">
       <div class="metric-bubble good">
-       
+
         <span>Deployment Frequency</span>
       </div>
       <div class="metric-bubble good">
-       
+
         <span>Lead Time for Changes</span>
       </div>
       <div class="metric-bubble good">
-       
+
         <span>Time to Restore Service</span>
       </div>
       <div class="metric-bubble good">
-       
+
         <span>Change Failure Rate</span>
       </div>
       <div class="metric-bubble good">
-       
+
         <span>Flow Time Through System</span>
       </div>
       <div class="metric-bubble good">
-       
+
         <span>Feedback Loop Duration</span>
       </div>
     </div>
@@ -580,27 +583,27 @@ document.addEventListener('keydown', function(event) {
 
     <div class="metrics-bubbles-grid">
       <div class="metric-bubble bad">
-       
+
         <span>Lines of Code Written</span>
       </div>
       <div class="metric-bubble bad">
-       
+
         <span>Number of Commits</span>
       </div>
       <div class="metric-bubble bad">
-       
+
         <span>Hours Worked / Utilization</span>
       </div>
       <div class="metric-bubble bad">
-       
+
         <span>Story Points Completed</span>
       </div>
       <div class="metric-bubble bad">
-       
+
         <span>Code Coverage %</span>
       </div>
       <div class="metric-bubble bad">
-       
+
         <span>Velocity Trends</span>
       </div>
     </div>
@@ -806,7 +809,7 @@ document.addEventListener('keydown', function(event) {
 
     <div class="alternative-grid">
       <div class="alternative-item">
-       
+
         <div class="alternative-content">
           <strong>Reflection</strong>
           <span>Use metrics to understand current state and identify improvement opportunities</span>
@@ -814,7 +817,7 @@ document.addEventListener('keydown', function(event) {
       </div>
 
       <div class="alternative-item">
-       
+
         <div class="alternative-content">
           <strong>Collaboration</strong>
           <span>Discuss metrics as a team, not as individual grades</span>
@@ -822,7 +825,7 @@ document.addEventListener('keydown', function(event) {
       </div>
 
       <div class="alternative-item">
-       
+
         <div class="alternative-content">
           <strong>Learning</strong>
           <span>Treat trends as experiments - what happened when we changed X?</span>
@@ -830,7 +833,7 @@ document.addEventListener('keydown', function(event) {
       </div>
 
       <div class="alternative-item">
-       
+
         <div class="alternative-content">
           <strong>System Thinking</strong>
           <span>Focus on flow through the entire value stream</span>
@@ -838,7 +841,7 @@ document.addEventListener('keydown', function(event) {
       </div>
 
       <div class="alternative-item">
-       
+
         <div class="alternative-content">
           <strong>Context</strong>
           <span>Adapt metrics and targets to each team's unique situation</span>
@@ -847,7 +850,7 @@ document.addEventListener('keydown', function(event) {
     </div>
 
     <div class="alternative-reminder">
-     
+
       <p><strong>Remember:</strong> Metrics are tools for improvement, not weapons for judgment. In a generative culture with psychological safety, teams use metrics to accelerate learning and delivery.</p>
     </div>
 
