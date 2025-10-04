@@ -259,10 +259,10 @@ document.addEventListener('keydown', function(event) {
 
       <!-- Podcast Section - Compact Playlist -->
       <div class="media-section podcast-section">
-        <div class="podcast-playlist" role="region" aria-label="Podcast playlist">
+        <section class="podcast-playlist" aria-label="Podcast playlist">
 
           <!-- Podcast Items (Compact List) -->
-          <div class="podcast-item" role="button" tabindex="0"
+          <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4"
                data-title="Accelerate Metrics Unlocked"
                data-duration="15:30"
@@ -293,7 +293,7 @@ document.addEventListener('keydown', function(event) {
             </div>
           </div>
 
-          <div class="podcast-item" role="button" tabindex="0"
+          <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4"
                data-title="Accelerate Success"
                data-duration="28:45"
@@ -324,7 +324,7 @@ document.addEventListener('keydown', function(event) {
             </div>
           </div>
 
-          <div class="podcast-item" role="button" tabindex="0"
+          <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4"
                data-title="Accelerate Your DevEx"
                data-duration="22:15"
@@ -372,7 +372,7 @@ document.addEventListener('keydown', function(event) {
               Your browser does not support the audio tag.
             </audio>
           </div>
-        </div>
+        </section>
       </div>
     </div>
 
