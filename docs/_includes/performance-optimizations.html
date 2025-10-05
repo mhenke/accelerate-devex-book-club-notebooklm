@@ -300,7 +300,8 @@
   href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2"
   crossorigin
 />
+{% if jekyll.environment == 'development' %}
 
 <!-- Performance validation in development -->
-{% if jekyll.environment == 'development' %} {% include
-performance-validation.html %} {% endif %}
+{% include performance-validation.html %}
+{% endif %}

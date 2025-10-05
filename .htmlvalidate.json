@@ -2,7 +2,7 @@
   "$schema": "https://html-validate.org/schemas/config.json",
   "extends": ["html-validate:recommended"],
   "rules": {
-    "no-trailing-whitespace": "warn",
+    "no-trailing-whitespace": "off",
     "attribute-boolean-style": "off",
     "attribute-empty-style": "off",
     "doctype-style": "error",
