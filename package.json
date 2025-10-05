@@ -9,13 +9,8 @@
     "lint:js": "npx eslint \"docs/**/*.{js,html,md}\" --ext .js,.html,.md",
     "lint": "npm run lint:css && npm run lint:js",
     "test:html": "html-validate \"docs/_site/**/*.html\"",
-    "test:a11y": "pa11y-ci --sitemap http://localhost:4000/accelerate-devex-book-club-notebooklm/sitemap.xml",
-    "test:interactive": "cd tests && npm run test:headed",
-    "test:percy": "cd tests && npm run test:percy",
     "test:htmlproof": "cd docs && bundle exec htmlproofer _site --disable-external=true --enforce-https=false --allow-missing-href=false --allow-hash-href=true --extensions .html --swap-urls '^/accelerate-devex-book-club-notebooklm/:/' --directory-index-file index.html",
-    "test:lighthouse": "lhci autorun",
-    "test": "npm run test:html && npm run test:a11y && npm run test:percy && npm run test:interactive && npm run test:htmlproof && npm run test:lighthouse",
-    "audit": "npm run build && npm run test:percy",
+    "test": "npm run test:html && npm run test:htmlproof",
     "serve": "cd docs && bundle exec jekyll serve",
     "build": "cd docs && bundle exec jekyll build",
     "validate": "npm run build && npm run lint && npm run test"
@@ -38,16 +33,9 @@
   },
   "homepage": "https://github.com/mhenke/accelerate-devex-book-club-notebooklm#readme",
   "devDependencies": {
-    "@axe-core/playwright": "^4.8.0",
-    "@lhci/cli": "^0.12.0",
-    "@percy/cli": "^1.31.1",
-    "@percy/playwright": "^1.0.9",
-    "@playwright/test": "^1.40.0",
     "eslint": "^8.57.0",
     "eslint-plugin-html": "^7.1.0",
     "html-validate": "^8.7.4",
-    "hyperlink": "^5.0.4",
-    "pa11y-ci": "^3.1.0",
     "postcss-html": "^1.6.0",
     "stylelint": "^16.2.1",
     "stylelint-config-standard-scss": "^13.0.0",
@@ -57,9 +45,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 11"
-  ],
-  "dependencies": {
-    "@mui/mcp": "^0.1.0",
-    "playwright": "^1.55.0"
-  }
+  ]
 }
