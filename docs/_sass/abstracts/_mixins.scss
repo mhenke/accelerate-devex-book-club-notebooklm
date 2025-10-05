@@ -50,68 +50,89 @@
 // MATERIAL DESIGN TYPOGRAPHY MIXINS
 // =============================================================================
 
-// Essential Display Styles (only what's actually used)
+// Material Design Display (Hero text)
 @mixin display-small {
-  font-family: var(--font-display);
-  font-size: var(--font-size-display-small);
-  font-weight: var(--font-weight-normal);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-bold);
   line-height: 1.22;
-  letter-spacing: 0px;
+  letter-spacing: -0.02em;
 }
 
-// Material Design Headline Styles
+// Material Design Headline Styles (h1-h3)
 @mixin headline-large {
-  font-family: var(--font-display);
-  font-size: var(--font-size-headline-large);
-  font-weight: var(--font-weight-normal);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
   line-height: 1.25;
-  letter-spacing: 0px;
+  letter-spacing: -0.01em;
 }
 
 @mixin headline-medium {
-  font-family: var(--font-display);
-  font-size: var(--font-size-headline-medium);
-  font-weight: var(--font-weight-normal);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
   line-height: 1.29;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 @mixin headline-small {
-  font-family: var(--font-display);
-  font-size: var(--font-size-headline-small);
-  font-weight: var(--font-weight-normal);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
   line-height: 1.33;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
-// Title styles removed - not used in codebase
+// Material Design Title Styles (h4-h6)
+@mixin title-large {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+@mixin title-medium {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+@mixin title-small {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
 
 // Material Design Body Text
 @mixin body-large {
   font-family: var(--font-primary);
-  font-size: var(--font-size-body-large);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-normal);
   line-height: 1.5;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.01em;
 }
-
-// body-medium removed - not used
 
 @mixin body-small {
   font-family: var(--font-primary);
-  font-size: var(--font-size-body-small);
+  font-size: 0.875rem;
   font-weight: var(--font-weight-normal);
-  line-height: 1.33;
-  letter-spacing: 0.4px;
+  line-height: 1.43;
+  letter-spacing: 0.01em;
 }
 
-// Essential Label styles (still used)
+// Essential Label styles
 @mixin label-medium {
   font-family: var(--font-primary);
-  font-size: var(--font-size-label-medium);
+  font-size: 0.75rem;
   font-weight: var(--font-weight-medium);
   line-height: 1.43;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.02em;
 }
 
 // =============================================================================
@@ -121,27 +142,45 @@
 // Heading styles with consistent hierarchy
 
 @mixin heading-1 {
-  @include display-small;
+  @include headline-large;
 
-  color: var(--text-dark);
+  color: #1a1a2e;
+  margin: var(--space-2xl) 0 var(--space-lg) 0; // 48px 0 24px 0
 }
 
 @mixin heading-2 {
-  @include headline-large;
+  @include headline-medium;
 
-  color: var(--header-dark-navy);
+  color: #16213e;
+  margin: var(--space-xl) 0 var(--space-md) 0; // 32px 0 16px 0
 }
 
 @mixin heading-3 {
-  @include headline-medium;
+  @include headline-small;
 
-  color: var(--text-dark);
+  color: #2c3e50;
+  margin: var(--space-lg) 0 var(--space-sm) 0; // 24px 0 8px 0
 }
 
 @mixin heading-4 {
-  @include headline-small;
+  @include title-large;
 
-  color: var(--text-medium);
+  color: #5a6c7d;
+  margin: var(--space-md) 0 var(--space-sm) 0; // 16px 0 8px 0
+}
+
+@mixin heading-5 {
+  @include title-medium;
+
+  color: #5a6c7d;
+  margin: var(--space-md) 0 var(--space-xs) 0; // 16px 0 4px 0
+}
+
+@mixin heading-6 {
+  @include title-small;
+
+  color: #5a6c7d;
+  margin: var(--space-sm) 0 var(--space-xs) 0; // 8px 0 4px 0
 }
 
 // Hero and large text styles

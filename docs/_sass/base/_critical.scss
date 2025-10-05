@@ -190,14 +190,12 @@ h4 {
   @include heading-4;
 }
 
-h5,
+h5 {
+  @include heading-5;
+}
+
 h6 {
-  font-family: var(--font-display);
-  font-size: var(--font-size-body-large);
-  font-weight: var(--font-weight-medium);
-  color: var(--text-medium);
-  margin-top: var(--space-md);
-  margin-bottom: var(--space-md);
+  @include heading-6;
 }
 
 // Paragraph styles
@@ -453,16 +451,11 @@ a {
   }
 
   .hero-headline {
-    font-size: clamp(
-      var(--font-size-headline-large),
-      5vw,
-      var(--font-size-display-large)
-    );
+    font-size: clamp(var(--font-size-h1), 5vw, var(--font-size-display));
     font-weight: var(--font-weight-bold);
     color: var(--text-white);
-    border: none;
     margin-bottom: var(--space-md);
-    line-height: 1.2;
+    line-height: var(--line-height-tight);
     text-shadow: var(--text-shadow-md);
   }
 
@@ -567,31 +560,20 @@ a {
   // Hero CTA styles moved to components/_hero.scss for better organization
 
   h1 {
-    font-size: clamp(
-      var(--font-size-headline-large),
-      5vw,
-      var(--font-size-display-large)
-    );
+    font-size: clamp(var(--font-size-h1), 5vw, var(--font-size-display));
     font-weight: var(--font-weight-bold);
-    color: var(--text-dark);
-    border: none;
+    color: var(--text-white);
     margin-bottom: var(--space-md);
-    padding-bottom: 0;
-    text-shadow: var(--hero-text-shadow);
     line-height: var(--line-height-tight);
     letter-spacing: var(--letter-spacing-tight);
+    text-shadow: var(--text-shadow-md);
   }
 
   .hero-subtitle {
-    font-size: clamp(
-      var(--font-size-body-large),
-      3vw,
-      var(--font-size-title-large)
-    );
+    font-size: clamp(var(--font-size-body), 3vw, var(--font-size-h4));
     color: var(--text-white);
     font-weight: var(--font-weight-normal);
     margin-bottom: var(--space-md);
-    font-family: var(--font-primary);
     line-height: var(--line-height-relaxed);
   }
 }

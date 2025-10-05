@@ -4,30 +4,30 @@
 
 .header-container {
   margin: 0 auto;
-  padding: 0 var(--spacing-md); // now from tokens
+  padding: 0 var(--space-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: var(--space-3xl, 64px); // use token, fallback to 64px
+  min-height: var(--space-3xl);
 }
 
 // Skip link for accessibility - critical for screen readers
 .skip-link {
   position: absolute;
-  top: calc(-1 * var(--space-xl, 40px)); // use token, fallback to 40px
-  left: var(--space-sm); // now from token
-  background: var(--accent-coral);
-  color: var(--text-white);
-  padding: var(--space-sm); // now from token
+  top: calc(-1 * var(--space-xl));
+  left: var(--space-sm);
+  background: #ff7f50;
+  color: #ffffff;
+  padding: var(--space-sm);
   text-decoration: none;
-  border-radius: var(--border-radius); // now from tokens
+  border-radius: var(--radius-md);
   font-weight: 600;
   z-index: 9999;
-
-  @include touch-target-44px;
+  min-height: 44px;
+  min-width: 44px;
 
   &:focus-visible {
-    outline: 2px solid var(--accent-coral); // Accessible focus ring
-    top: var(--space-sm); // now from token
+    outline: 2px solid #ff7f50;
+    top: var(--space-sm);
   }
 }
