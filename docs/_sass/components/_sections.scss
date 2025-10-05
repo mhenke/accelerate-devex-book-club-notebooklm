@@ -484,6 +484,8 @@
     color: var(--text-medium);
     min-height: 120px;
     font-size: var(--font-size-body-small);
+    border: 2px solid rgba(148, 163, 184, 0.5); // Make border more visible
+    border-top: 3px solid rgba(148, 163, 184, 0.5); // Visible default state
 
     i {
       font-size: var(--font-size-title-small);
