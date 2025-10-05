@@ -132,7 +132,7 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Unified Site Header -->
-    {% unless page.layout == 'meeting' %}
+    {%- unless page.layout == 'meeting' -%}
     <header class="site-header">
       <div class="site-header-content">
         <div class="site-nav__brand">
@@ -172,7 +172,7 @@
         </nav>
       </div>
     </header>
-    {% endunless %}
+    {%- endunless -%}
 
     <main id="main-content" class="page-content" aria-label="Main content area">
       {{ content }}
