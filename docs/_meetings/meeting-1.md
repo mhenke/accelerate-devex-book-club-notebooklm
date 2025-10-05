@@ -392,7 +392,7 @@ document.addEventListener('keydown', function(event) {
     <div class="choice-options">
       <div class="choice-option">
         <div class="choice-circle">
-         
+          <i class="fas fa-rocket" aria-hidden="true"></i>
         </div>
         <h4 class="choice-label">Fast Delivery</h4>
         <p class="choice-consequence">High Risk</p>
@@ -406,7 +406,7 @@ document.addEventListener('keydown', function(event) {
 
       <div class="choice-option">
         <div class="choice-circle">
-         
+          <i class="fas fa-shield-alt" aria-hidden="true"></i>
         </div>
         <h4 class="choice-label">Stable Systems</h4>
         <p class="choice-consequence">Slow Pace</p>
