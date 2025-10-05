@@ -57,7 +57,7 @@ Between Meetings Activities
 </div>
 </div>
 
-## <i class="fas fa-folder-open"></i> Direct Resource Links {#direct-resource-links}
+## <i class="fas fa-folder-open"></i> Resource Categories {#direct-resource-links}
 
 <div class="card-grid" markdown="0">
 <div class="card card--gradient card--border-left card--theme-green">
@@ -65,11 +65,8 @@ Between Meetings Activities
 <h4><i class="fas fa-clipboard-list"></i> Activities</h4>
 </div>
 <div class="card__content">
-<ul class="resource-list">
-<li><a href="../resources/activities/README.md">README: Activities</a></li>
-<li><a href="../resources/activities/between-meetings.md">Between Meetings Guide</a></li>
-<li><a href="../resources/activities/discussion-practices.md">Discussion Practices</a></li>
-</ul>
+<p>Reflection questions and practical exercises to deepen understanding between sessions.</p>
+<a href="#section-between-meetings" class="btn btn--secondary-action">View Activities →</a>
 </div>
 </div>
 
@@ -78,11 +75,8 @@ Between Meetings Activities
 <h4><i class="fas fa-chart-bar"></i> Assessments</h4>
 </div>
 <div class="card__content">
-<ul class="resource-list">
-<li><a href="../resources/assessments/README.md">README: Assessments</a></li>
-<li><a href="../resources/assessments/culture-assessment-worksheet.md">Culture Assessment Worksheet</a></li>
-<li><a href="../resources/assessments/dora-metrics-template.md">DORA Metrics Template</a></li>
-</ul>
+<p>Tools and templates for measuring your team's DevOps performance and culture.</p>
+<a href="#section-assessments" class="btn btn--secondary-action">View Assessments →</a>
 </div>
 </div>
 
@@ -91,10 +85,8 @@ Between Meetings Activities
 <h4><i class="fas fa-arrow-up"></i> Extensions</h4>
 </div>
 <div class="card__content">
-<ul class="resource-list">
-<li><a href="../resources/extensions/README.md">README: Extensions</a></li>
-<li><a href="../resources/extensions/extensions.md">Extension Pathways</a></li>
-</ul>
+<p>Advanced topics and learning paths to continue your DevOps transformation journey.</p>
+<a href="#section-extensions" class="btn btn--secondary-action">Explore Extensions →</a>
 </div>
 </div>
 
@@ -103,12 +95,8 @@ Between Meetings Activities
 <h4><i class="fas fa-users"></i> Meeting Resources</h4>
 </div>
 <div class="card__content">
-<ul class="resource-list">
-<li><a href="https://mhenke.github.io/accelerate-devex-book-club-notebooklm/resources/meetings/README.md">README: Meetings</a></li>
-<li><a href="../resources/templates/README.md">README: Templates</a></li>
-<li><a href="../resources/templates/meeting-notes-template.md">Meeting Notes Template</a></li>
-<li><a href="../resources/templates/retrospective-format.md">Retrospective Format</a></li>
-</ul>
+<p>Templates and formats for organizing effective book club meetings.</p>
+<a href="#section-meeting-templates" class="btn btn--secondary-action">View Templates →</a>
 </div>
 </div>
 </div>
@@ -350,6 +338,66 @@ Between Meetings Activities
 </div>
 </div>
 
+## Assessments {#section-assessments}
+
+<div class="learning-checkpoint" markdown="0">
+<div class="checkpoint-card">
+<h4><i class="fas fa-chart-bar"></i> DORA Metrics Assessment</h4>
+<p>Use these tools to measure your team's current DevOps performance:</p>
+<ul>
+<li>Track deployment frequency over the last month</li>
+<li>Measure lead time from commit to production</li>
+<li>Calculate mean time to restore service</li>
+<li>Monitor change failure rate</li>
+</ul>
+<p>See the <a href="#dora-metrics-summary">DORA Metrics Summary</a> below for performance benchmarks.</p>
+</div>
+
+<div class="checkpoint-card">
+<h4><i class="fas fa-users"></i> Culture Assessment</h4>
+<p>Evaluate your organizational culture using Westrum's model:</p>
+<ul>
+<li>How is information shared across teams?</li>
+<li>How are failures handled and discussed?</li>
+<li>Is cross-functional collaboration encouraged?</li>
+<li>Do teams have autonomy to make decisions?</li>
+</ul>
+<p>See the <a href="#culture-types-westrum">Culture Types</a> below for reference.</p>
+</div>
+</div>
+
+## Meeting Templates {#section-meeting-templates}
+
+<div class="resource-grid" markdown="0">
+<div class="resource-card">
+<div class="resource-icon" data-color="#2196F3">
+<i class="fas fa-clipboard-list"></i>
+</div>
+<h3>Meeting Notes Template</h3>
+<p>Structured template for capturing key discussions, insights, and action items from each session.</p>
+<ul>
+<li>Date, attendees, and chapter coverage</li>
+<li>Key discussion points and insights</li>
+<li>Action items and commitments</li>
+<li>Questions for next meeting</li>
+</ul>
+</div>
+
+<div class="resource-card">
+<div class="resource-icon" data-color="#4CAF50">
+<i class="fas fa-sync-alt"></i>
+</div>
+<h3>Retrospective Format</h3>
+<p>Framework for reflecting on the book club experience and planning improvements.</p>
+<ul>
+<li>What went well?</li>
+<li>What could be improved?</li>
+<li>Action items for next cycle</li>
+<li>Celebration of progress</li>
+</ul>
+</div>
+</div>
+
 ---
 
 <div class="section-accent" markdown="0">
@@ -357,7 +405,7 @@ Between Meetings Activities
 Quick Reference
 </div>
 
-### DORA Metrics Summary
+### DORA Metrics Summary {#dora-metrics-summary}
 
 <div class="content-grid" markdown="0">
 <div class="metric-card lead-time">
@@ -401,7 +449,7 @@ Quick Reference
 </div>
 </div>
 
-### Culture Types (Westrum)
+### Culture Types (Westrum) {#culture-types-westrum}
 
 <div class="culture-types" markdown="0">
 <div class="culture-card pathological">
