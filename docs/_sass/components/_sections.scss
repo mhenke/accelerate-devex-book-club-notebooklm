@@ -190,7 +190,14 @@
       flex-direction: column;
     }
 
-    .action-item,
+    .action-item {
+      background: var(--color-neutral-98);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-sm);
+      // No hover effect for action items - they're static checklist items
+    }
+
     .question-item {
       background: var(--color-neutral-98);
       border: 1px solid var(--border-subtle);
