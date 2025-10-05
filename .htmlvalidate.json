@@ -3,6 +3,7 @@
   "extends": ["html-validate:recommended"],
   "rules": {
     "no-trailing-whitespace": "off",
+    "prefer-native-element": "off",
     "attribute-boolean-style": "off",
     "attribute-empty-style": "off",
     "doctype-style": "error",
