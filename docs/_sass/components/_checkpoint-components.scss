@@ -12,7 +12,7 @@
   padding: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #1E3A8A;
+  border-left: 4px solid #1e3a8a;
   transition: all 0.3s ease;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .assessment-btn input[type="radio"]:checked + .radio-mark::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -124,7 +124,7 @@
   margin-top: 1.5rem;
   padding: var(--space-md); // 16px
   background: #f8f9fa;
-  border-left: 4px solid #1E3A8A;
+  border-left: 4px solid #1e3a8a;
   border-radius: 4px;
   min-height: 60px;
   transition: all 0.3s ease;
@@ -155,7 +155,7 @@
   padding: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #1E3A8A;
+  border-left: 4px solid #1e3a8a;
   transition: all 0.3s ease;
 }
 
@@ -232,7 +232,7 @@
 }
 
 .option-btn input[type="radio"]:checked + .radio-mark::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -312,7 +312,7 @@
 }
 
 .checkbox-item input[type="checkbox"]:checked + .checkbox-mark::after {
-  content: '✓';
+  content: "✓";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -356,7 +356,7 @@
   width: 22px;
   height: 22px;
   background: white;
-  border: 3px solid #1E3A8A;
+  border: 3px solid #1e3a8a;
   border-radius: 50%;
   cursor: grab;
   transition: border-color 0.3s ease;
