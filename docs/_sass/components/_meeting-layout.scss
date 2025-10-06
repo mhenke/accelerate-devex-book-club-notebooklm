@@ -3,7 +3,7 @@
 /* Meeting Hero Section */
 .meeting-hero {
   color: white;
-  padding: 6rem 2rem 4rem;
+  padding: 6rem 2rem 4rem; // TODO Phase 6: Consider tokenizing (96px 32px 64px) - intentionally large for hero impact
   margin: -2rem -1rem 0;
   position: relative;
   overflow: hidden;
@@ -21,7 +21,7 @@
   display: inline-flex;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.75rem 1.5rem;
+  padding: var(--space-sm) var(--space-lg); // 8px 24px
   margin-bottom: 2rem;
   font-weight: 500;
   backdrop-filter: blur(10px);
@@ -64,7 +64,7 @@ p.meeting-subtitle {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0.75rem 1.5rem;
+  padding: var(--space-sm) var(--space-lg); // 8px 24px
   font-weight: 600;
   font-size: var(--font-size-body-large);
   backdrop-filter: blur(10px);
@@ -83,7 +83,7 @@ p.meeting-subtitle {
 /* Meeting Container */
 .meeting-container {
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: var(--space-xl) var(--space-lg); // 32px 24px
   background: var(--color-white);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   margin-top: 1rem;
@@ -121,7 +121,7 @@ p.meeting-subtitle {
   gap: var(--space-sm);
   background: var(--color-white);
   border: 2px solid transparent;
-  padding: 0.75rem 1.5rem;
+  padding: var(--space-sm) var(--space-lg); // 8px 24px
   text-decoration: none;
   color: var(--text-dark);
   transition: all 0.2s ease;
@@ -253,7 +253,7 @@ p.meeting-subtitle {
 .meeting-progress {
   text-align: center;
   width: 100%;
-  padding: 1.5rem 0 0;
+  padding: var(--space-lg) 0 0; // 24px 0 0
   border-top: 1px solid var(--border-light);
   grid-row: 2;
 }
@@ -306,7 +306,7 @@ p.meeting-subtitle {
 /* Mobile responsive design */
 @include mobile-only {
   .meeting-hero {
-    padding: 4rem 1rem 2rem;
+    padding: 4rem 1rem 2rem; // TODO Phase 6: Consider tokenizing (64px 16px 32px)
     margin: -2rem -0.5rem 0;
   }
 
@@ -325,7 +325,7 @@ p.meeting-subtitle {
   }
 
   .meeting-container {
-    padding: 2rem 1rem;
+    padding: var(--space-xl) var(--space-md); // 32px 16px
     margin-top: 1rem;
   }
 

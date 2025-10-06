@@ -43,14 +43,14 @@
 .assessment-buttons {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--space-sm); // 8px
 }
 
 .assessment-btn {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: var(--space-md); // 16px
   background: white;
   border: 2px solid #e2e8f0;
   border-radius: 8px;
@@ -122,7 +122,7 @@
 // Feedback area
 .feedback-area {
   margin-top: 1.5rem;
-  padding: 1rem;
+  padding: var(--space-md); // 16px
   background: #f8f9fa;
   border-left: 4px solid #1E3A8A;
   border-radius: 4px;
@@ -185,7 +185,7 @@
 .option-buttons {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--space-sm); // 8px
   margin-bottom: 1.5rem;
 }
 
@@ -193,7 +193,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: var(--space-md); // 16px
   background: white;
   border: 2px solid #e2e8f0;
   border-radius: 8px;
@@ -271,7 +271,7 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  padding: 1rem;
+  padding: var(--space-md); // 16px
   background: white;
   border: 2px solid #e2e8f0;
   border-radius: 8px;
@@ -329,7 +329,7 @@
 
 // Slider
 .slider-container {
-  margin: 1.5rem 0;
+  margin: var(--space-lg) 0; // 24px 0
 }
 
 .slider-labels {
@@ -373,19 +373,19 @@
 @media (max-width: #{$mobile - 1px}) {
   .checkpoint-card,
   .simple-checkpoint {
-    padding: 1.25rem;
+    padding: var(--space-lg); // 24px - maintain larger padding on mobile
   }
 
   .assessment-btn,
   .option-btn {
-    padding: 0.75rem;
+    padding: var(--space-sm); // 8px - compact on mobile
   }
 
   .assessment-btn .radio-mark,
   .option-btn .radio-mark {
     width: 18px;
     height: 18px;
-    margin-right: 0.75rem;
+    margin-right: var(--space-sm); // 8px
   }
 
   .assessment-btn input[type="radio"]:checked + .radio-mark::after,
@@ -396,16 +396,16 @@
 
   .checkbox-grid {
     grid-template-columns: 1fr;
-    gap: 0.75rem;
+    gap: var(--space-sm); // 8px
   }
 
   .checkbox-item {
-    padding: 0.75rem;
+    padding: var(--space-sm); // 8px - compact on mobile
   }
 
   .checkbox-item .checkbox-mark {
     width: 18px;
     height: 18px;
-    margin-right: 0.75rem;
+    margin-right: var(--space-sm); // 8px
   }
 }

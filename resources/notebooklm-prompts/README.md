@@ -1,244 +1,337 @@
 # NotebookLM Prompts for Accelerate Book Club
 
-This directory contains ready-to-use prompts for generating AI-powered podcasts and videos using Google's NotebookLM to supplement your book club experience.
+This directory contains **32 ready-to-use, copy-paste prompts** for generating AI-powered podcasts and videos using Google's NotebookLM to supplement your Accelerate DevEx Book Club experience.
+
+---
 
 ## What is NotebookLM?
 
-[NotebookLM](https://notebooklm.google.com/) is Google's AI-powered research assistant that can generate audio podcasts and video overviews from your uploaded sources (PDFs, documents, web pages). For this book club, you can upload relevant chapters from "Accelerate" and use our prompts to generate high-quality supplementary content.
+[NotebookLM](https://notebooklm.google.com/) is Google's AI-powered research assistant that can generate audio podcasts and video overviews from your uploaded sources. Upload chapters from "Accelerate" and use our pre-crafted prompts to generate high-quality supplementary content for each book club meeting.
 
-## Available Formats
+---
 
-### 🎙️ Podcast Formats
+## New Per-Meeting Structure 🎯
 
-| Format | Length | Best For | File |
-|--------|--------|----------|------|
-| **Deep Dive** | 15-25 min | Comprehensive preparation, detailed understanding | [podcasts/deep-dive.md](podcasts/deep-dive.md) |
-| **Brief** | 5-10 min | Quick overviews, busy schedules, concept refreshers | [podcasts/brief.md](podcasts/brief.md) |
-| **Critique** | 10-15 min | Critical analysis, identifying challenges | [podcasts/critique.md](podcasts/critique.md) |
-| **Debate** | 15-20 min | Exploring controversies, understanding trade-offs | [podcasts/debate.md](podcasts/debate.md) |
+**Each meeting has its own directory** with complete, copy-paste-ready prompts for all formats. No more searching through long files - just go to your meeting folder and pick your format!
 
-### 📺 Video Format
+```
+notebooklm-prompts/
+  meeting-1/  (8 prompts)
+  meeting-2/  (8 prompts)
+  meeting-3/  (8 prompts)
+  meeting-4/  (8 prompts)
+```
 
-| Format | Length | Best For | File |
-|--------|--------|----------|------|
-| **Overview** | 15-25 min | Visual learning, concept visualization, structured presentation | [videos/overview.md](videos/overview.md) |
+### Available Formats (Per Meeting)
+
+Each meeting includes these formats:
+
+| Format | Length | Purpose | File Name |
+|--------|--------|---------|-----------|
+| **Deep Dive (Default)** | 15-20 min | Balanced, comprehensive coverage | `podcast-deep-dive-default.md` |
+| **Deep Dive (Shorter)** | 10-15 min | Quick overview | `podcast-deep-dive-shorter.md` |
+| **Deep Dive (Longer)** | 20-25 min | Detailed exploration | `podcast-deep-dive-longer.md` |
+| **Brief** | 5-10 min | Essential takeaways only | `podcast-brief.md` |
+| **Critique** | 15-20 min | Critical analysis | `podcast-critique.md` |
+| **Debate** | 15-20 min | Pro/con exploration | `podcast-debate.md` |
+| **Video** | 10-15 min | Visual summary | `video.md` |
+| **Sources Guide** | N/A | What to upload | `ALL-SOURCES-TO-UPLOAD.md` |
+
+---
 
 ## Quick Start Guide
 
-### Step 1: Set Up NotebookLM
+### Step 1: Choose Your Meeting
 
-1. Go to [notebooklm.google.com](https://notebooklm.google.com/)
-2. Create a new notebook for your book club
-3. Upload the "Accelerate" book (PDF) or relevant chapters
-4. Add any additional sources (meeting notes, articles, etc.)
+Navigate to your meeting's directory:
 
-### Step 2: Choose Your Format
+- **[meeting-1/](meeting-1/)** - Foundation (Chapters 1-3: DORA Metrics, Culture)
+- **[meeting-2/](meeting-2/)** - Technical Excellence (Chapters 4-6: CD Practices, Architecture)
+- **[meeting-3/](meeting-3/)** - Management & Sustainability (Chapters 7-10: Lean, Burnout)
+- **[meeting-4/](meeting-4/)** - Leadership & Transformation (Chapters 11, 16, Conclusion)
 
-Select the format that best fits your needs:
+### Step 2: Upload Sources to NotebookLM
 
-- **First time preparing?** Start with **Brief** for quick overview
-- **Want comprehensive prep?** Use **Deep Dive**
-- **Planning implementation?** Try **Critique** to identify challenges
-- **Have divided opinions?** Use **Debate** to explore different perspectives
-- **Visual learner?** Generate **Video Overview**
+1. Open [notebooklm.google.com](https://notebooklm.google.com/)
+2. Create a new notebook (e.g., "Accelerate Book Club - Meeting 1")
+3. **See the meeting's `ALL-SOURCES-TO-UPLOAD.md`** for complete source list
+4. Upload required chapters from "Accelerate" book
+5. (Optional) Upload meeting chapter notes for additional context
 
-### Step 3: Generate Content
+### Step 3: Choose Your Format
 
-1. In NotebookLM, click "Generate" (for audio) or "Create Video" (for video)
-2. Select "Customize" option
-3. Copy the appropriate prompt from our files
-4. Paste into NotebookLM's customization fields:
-   - **Focus** field: What topics to cover
-   - **Topic/Discussion** field: Specific aspects to emphasize
-   - **Audience** field (optional): Who is this for
-5. Click "Generate"
+**Which format should you use?**
 
-### Step 4: Use in Book Club
+| If you want... | Use this format |
+|----------------|-----------------|
+| Quick prep before meeting | **Brief** (5-10 min) |
+| Comprehensive preparation | **Deep Dive Default** (15-20 min) ⭐ Recommended |
+| Maximum detail | **Deep Dive Longer** (20-25 min) |
+| Minimum time | **Deep Dive Shorter** (10-15 min) |
+| Critical analysis | **Critique** |
+| Multiple perspectives | **Debate** |
+| Visual learning | **Video** |
 
-- **Share 3-5 days before meeting** for participant preparation
-- **Reference during discussion** to reinforce key concepts
-- **Revisit after meeting** for retention and follow-up
+### Step 4: Generate Content
 
-## Format Selection Guide
+1. In NotebookLM, click **Audio Overview** (for podcasts) or **Video** (if available)
+2. Click **Customize**
+3. Open your chosen prompt file (e.g., `meeting-1/podcast-deep-dive-default.md`)
+4. **Copy the ENTIRE prompt** from the "COPY-PASTE PROMPT FOR NOTEBOOKLM" section
+5. **Paste into NotebookLM's prompt field**
+6. Click **Generate**
+7. Wait 3-5 minutes for generation
+8. Download and share with participants!
 
-### By Participant Type
+---
 
-**Busy Professionals:**
-- Primary: Brief (5-10 min quick overview)
-- Supplementary: Video Overview (can watch at 1.5x speed)
+## Meeting-Specific Content
 
-**Deep Learners:**
-- Primary: Deep Dive (comprehensive coverage)
-- Supplementary: Critique (understanding limitations)
+### Meeting 1: Foundation (Week 1)
+**Chapters:** 1-3 (Measuring Performance, Speed + Stability, Culture)
+**Directory:** [meeting-1/](meeting-1/)
 
-**Skeptical Team Members:**
-- Primary: Critique (addresses concerns constructively)
-- Supplementary: Debate (acknowledges valid counterarguments)
+**Key Topics:**
+- Four DORA metrics
+- Speed + stability myth-busting
+- Westrum's organizational culture types
 
-**Visual Learners:**
-- Primary: Video Overview (diagrams and visualizations)
-- Supplementary: Deep Dive (for audio during commutes)
+**Best formats:**
+- **Default Deep Dive** - Comprehensive prep for facilitators
+- **Brief** - Quick overview for participants
+- **Video** - Visual DORA metrics and culture types
 
-### By Meeting Phase
+---
 
-**Pre-Meeting Preparation:**
-1. Brief (initial overview)
-2. Read assigned chapters
-3. Deep Dive or Video (detailed preparation)
+### Meeting 2: Technical Excellence (Week 3)
+**Chapters:** 4-6 (Technical Practices, Architecture, Security)
+**Directory:** [meeting-2/](meeting-2/)
 
-**During Meeting:**
-- Reference Video segments for key concepts
-- Use Critique points in discussion
-- Explore Debate topics for controversial areas
+**Key Topics:**
+- 8 continuous delivery practices
+- Loosely coupled architecture
+- Shift-left security
 
-**Post-Meeting Review:**
-- Brief (refresh key takeaways)
-- Debate (explore unresolved tensions)
+**Best formats:**
+- **Default Deep Dive** - All CD practices explained
+- **Critique** - Implementation challenges
+- **Debate** - Trunk-based vs. feature branches, microservices vs. monolith
 
-## Content by Meeting
+---
 
-All formats cover all four meetings:
+### Meeting 3: Management & Sustainability (Week 5)
+**Chapters:** 7-10 (Lean Management, Product Development, Burnout, Satisfaction)
+**Directory:** [meeting-3/](meeting-3/)
 
-| Meeting | Chapters | Key Topics |
-|---------|----------|------------|
-| **1** | 1-3 | DORA metrics, speed+stability myth, Westrum culture types |
-| **2** | 4-6 | Continuous delivery, loosely coupled architecture, shift-left security |
-| **3** | 7-10 | Lean management, product development, sustainability, burnout |
-| **4** | 11, 16, Conclusion | Transformational leadership, ING case study, transformation |
+**Key Topics:**
+- 5 lean management practices
+- Deployment pain → burnout connection
+- Employee satisfaction drivers
+
+**Best formats:**
+- **Default Deep Dive** - All lean practices
+- **Debate** - WIP limits, CABs, deployment frequency
+- **Video** - WIP visualization, burnout cycle
+
+---
+
+### Meeting 4: Leadership & Transformation (Week 7)
+**Chapters:** 11, 16, Conclusion (Leadership, ING Case Study, Path Forward)
+**Directory:** [meeting-4/](meeting-4/)
+
+**Key Topics:**
+- 5 transformational leadership characteristics
+- ING Netherlands case study
+- Creating transformation roadmap
+- Sustaining improvement
+
+**Best formats:**
+- **Longer Deep Dive** - Complete transformation guidance
+- **Video** - Inspiring visual summary
+- **Default Deep Dive** - ING practices and roadmap
+
+---
+
+## How Prompts Are Structured
+
+Each prompt file includes:
+
+✅ **Book club context** - Meeting number, chapters, focus
+✅ **Overall framing question** - Connecting all 4 meetings
+✅ **Meeting-specific core question** - From [key-questions.md](../key-questions.md)
+✅ **Complete prompt** - Copy-paste ready, no editing needed
+✅ **Length guidance** - Exact duration expectations
+✅ **Target audience** - Who this format serves best
+✅ **Discussion preparation** - Questions to explore in meeting
+✅ **Prerequisites** - What sources to upload first
+
+---
+
+## When to Generate Content
+
+### Pre-Meeting (Recommended)
+**Timing:** 2-3 days before meeting
+**Format:** Brief or Default Deep Dive
+**Purpose:** Give participants time to listen before meeting
+
+### Post-Meeting (Optional)
+**Timing:** After meeting for review
+**Format:** Same as pre-meeting, or Critique for reflection
+**Purpose:** Reinforce learning, catchup for absent members
+
+### Throughout Book Club
+**Generate progressively:**
+- Week 0: Meeting 1 Brief for all participants
+- Week 1: Meeting 2 Default for facilitator prep
+- Week 2: Meeting 2 Brief for participants
+- Repeat for Meetings 3-4
+
+---
 
 ## Customization Tips
 
-### Length Customization (Deep Dive only)
+### Adjust for Your Context
 
-When generating Deep Dive podcasts, NotebookLM offers length options:
-- **Shorter** (10-15 min): Key concepts only
-- **Default** (15-20 min): Balanced coverage ✅ Recommended
-- **Longer** (20-25 min): Comprehensive with examples
+While prompts are copy-paste ready, you can customize by:
 
-### Focus Customization
+1. **Adding your team's context** to sources:
+   - Upload your DORA metrics baseline
+   - Include your pain points documentation
+   - Add your culture assessment
 
-Modify prompts for your specific context:
+2. **Modifying prompts** (optional):
+   - Add your industry-specific examples
+   - Emphasize topics most relevant to your team
+   - Adjust length guidance
 
-**Industry-Specific:**
-```
-[Original prompt] with examples relevant to healthcare/finance/retail
-```
+### Format Combinations
 
-**Role-Specific:**
-```
-[Original prompt] targeting product managers/executives/developers
-```
+**Effective combinations:**
+- **Brief** (for all) + **Longer Deep Dive** (for facilitator)
+- **Default Deep Dive** (pre-meeting) + **Critique** (post-meeting)
+- **Video** (team viewing) + **Brief** (individual prep)
 
-**Challenge-Specific:**
-```
-[Original prompt] with focus on addressing legacy system constraints/regulatory compliance
-```
+---
 
-### Structure Customization (Video only)
+## Troubleshooting
 
-For videos, you can specify show structure:
+### NotebookLM says "Source material doesn't match prompt"
+- Make sure you uploaded the correct chapters (see `ALL-SOURCES-TO-UPLOAD.md`)
+- Try uploading chapter notes as additional source
 
-```
-Start by talking about [topic], then [next topic], and end with [final topic]
-```
+### Generated content is too generic
+- Upload more specific sources (your team's metrics, pain points)
+- Use Longer Deep Dive format for more detail
 
-Example:
-```
-Start by talking about the research methodology, present each DORA metric with examples, and end with how teams can begin measuring.
-```
+### Audio is too long/short
+- Use different length variant (Shorter/Default/Longer)
+- Brief format is shortest (5-10 min)
+
+### Want different perspective
+- Try Critique format (skeptical analysis)
+- Try Debate format (multiple viewpoints)
+
+---
 
 ## Best Practices
 
 ### For Facilitators
 
-- ✅ **Generate all formats** for each meeting to have options
-- ✅ **Review content** before sharing with participants
-- ✅ **Note timestamps** of key concepts for discussion references
-- ✅ **Customize prompts** based on your organization's context
-- ✅ **Combine formats** (e.g., Brief for prep + Debate for discussion)
+✅ **Generate 3 days before meeting** - Give participants time to listen
+✅ **Use Default Deep Dive for yourself** - Comprehensive prep
+✅ **Share Brief with participants** - Easier to consume
+✅ **Listen before sharing** - Ensure quality matches expectations
+✅ **Provide context when sharing** - "This is AI-generated supplement, not replacement for reading"
 
 ### For Participants
 
-- ✅ **Listen/watch** 2-3 days before meeting
-- ✅ **Take notes** on questions or points of interest
-- ✅ **Bring examples** from your work that relate to concepts
-- ✅ **Revisit** after meeting for retention
+✅ **Listen during commute or exercise** - Make use of downtime
+✅ **Take notes while listening** - Capture questions for discussion
+✅ **Don't treat as replacement for reading** - Supplement, not substitute
+✅ **Share feedback** - Help facilitator improve content selection
 
 ### For Organizations
 
-- ✅ **Create playlist** of all meeting content
-- ✅ **Share with stakeholders** who can't attend meetings
-- ✅ **Use for onboarding** new book club participants mid-series
-- ✅ **Archive** for future reference and team sharing
-
-## Troubleshooting
-
-### "The generated content doesn't match the prompt"
-
-- Ensure you've uploaded the correct chapters to NotebookLM
-- Try being more specific in the customization fields
-- Use the exact prompts from our files as starting points
-
-### "Content is too long/short"
-
-- For podcasts: Try different formats (Brief vs. Deep Dive)
-- For Deep Dive: Use the length selector (shorter/default/longer)
-- For videos: Add structure guidance to focus on specific topics
-
-### "Content is too technical/not technical enough"
-
-- Modify the "Target Audience" field
-- Add context like "explain to beginners" or "assume technical expertise"
-
-## Examples in Action
-
-### Example 1: Preparing for Meeting 1
-
-**Goal:** Team members need quick prep before first meeting
-
-**Approach:**
-1. Generate **Brief** podcast (5-10 min)
-2. Share via email with reading assignment
-3. Generate **Video Overview** for visual learners
-4. Save **Deep Dive** as optional for those wanting more
-
-### Example 2: Addressing Implementation Concerns
-
-**Goal:** Team is skeptical about continuous delivery practices
-
-**Approach:**
-1. Generate **Critique** podcast for Meeting 2
-2. Play relevant sections during discussion
-3. Generate **Debate** podcast to explore trade-offs
-4. Use both to acknowledge concerns constructively
-
-### Example 3: Executive Summary
-
-**Goal:** Share key findings with leadership who haven't read the book
-
-**Approach:**
-1. Generate **Brief** podcasts for all four meetings
-2. Customize with "explain to executives" audience
-3. Create playlist with 20-minute total listening time
-4. Supplement with **Video Overview** of Meeting 1 (foundation)
-
-## Related Resources
-
-- [Key Questions](../key-questions.md) - Core discussion questions for each meeting
-- [Meeting Resources](../meetings/) - Complete facilitator guides and outlines
-- [Book Club Roadmap](../book-club-roadmap.md) - Overall 2-month plan
-
-## Feedback and Iteration
-
-As you use these prompts:
-
-- **Document what works:** Note which formats resonate with your team
-- **Customize and improve:** Adapt prompts to your context
-- **Share learnings:** Help others by documenting your approach
-- **Iterate:** Refine prompts based on participant feedback
+✅ **Create library** - Generate all formats for all meetings upfront
+✅ **Version control** - Track which prompts generated which content
+✅ **Internal sharing** - Create shared folder for all participants
+✅ **Measure engagement** - Survey whether podcasts/videos helped
 
 ---
 
-Happy generating! 🎙️📺
+## Technical Notes
 
-For questions about using NotebookLM, visit [notebooklm.google.com/help](https://notebooklm.google.com/help)
+### File Organization
+
+```
+meeting-1/
+  ALL-SOURCES-TO-UPLOAD.md        ← Start here
+  podcast-deep-dive-default.md    ← Recommended
+  podcast-deep-dive-shorter.md
+  podcast-deep-dive-longer.md
+  podcast-brief.md
+  podcast-critique.md
+  podcast-debate.md
+  video.md
+```
+
+### Prompt File Format
+
+All prompts use this structure:
+- **Title and metadata** - Meeting, chapters, format, length
+- **Prerequisites section** - What sources to upload
+- **Complete prompt in code block** - Copy everything between backticks
+- **What to expect** - Coverage summary
+- **When to use** - Ideal scenarios
+
+---
+
+## FAQ
+
+**Q: Do I need to edit the prompts?**
+A: No! They're copy-paste ready. Just upload sources and paste the prompt.
+
+**Q: Which format should I start with?**
+A: **Default Deep Dive** for comprehensive prep, **Brief** for quick overview.
+
+**Q: Can I use multiple formats?**
+A: Yes! Different perspectives are valuable. Try Default + Critique.
+
+**Q: How long does generation take?**
+A: Usually 3-5 minutes for podcasts, possibly longer for videos.
+
+**Q: Can I share generated content?**
+A: Yes, with your book club participants. Consider AI-generated content policies.
+
+**Q: What if NotebookLM doesn't support video yet?**
+A: Use video prompts as script/outline for manual video creation.
+
+---
+
+## Related Resources
+
+- **[Book Club Roadmap](../book-club-roadmap.md)** - Overall plan and schedule
+- **[Key Questions](../key-questions.md)** - Core questions for each meeting
+- **[Meeting Guides](../meetings/)** - Complete facilitator materials
+- **[Handouts](../handouts/)** - Printable participant materials
+
+---
+
+## Support
+
+**Questions about NotebookLM?**
+- NotebookLM Help: [support.google.com](https://support.google.com/notebooklm/)
+
+**Questions about prompts?**
+- See individual prompt files for detailed guidance
+- Check [key-questions.md](../key-questions.md) for framing questions
+
+**Feedback on prompts?**
+- These prompts are maintained as part of the book club resources
+- Suggest improvements via issues or pull requests
+
+---
+
+**Total prompts available:** 32 (8 per meeting × 4 meetings)
+
+**Ready to start?** Go to [meeting-1/ALL-SOURCES-TO-UPLOAD.md](meeting-1/ALL-SOURCES-TO-UPLOAD.md) to begin!
