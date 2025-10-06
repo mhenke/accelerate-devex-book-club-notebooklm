@@ -9,8 +9,8 @@
 // =============================================================================
 .checkpoint-card {
   background: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  padding: var(--space-lg); // 24px
+  margin-bottom: var(--space-xl); // 32px
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border-left: 4px solid #1e3a8a;
   transition: all 0.3s ease;
@@ -22,20 +22,20 @@
 }
 
 .checkpoint-card h4 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 var(--space-md) 0; // 16px
   color: #1e40af;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
 .checkpoint-card h4 i {
-  margin-right: 0.5rem;
+  margin-right: var(--space-sm); // 8px
   color: inherit;
 }
 
 .checkpoint-card p {
   color: #666;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-lg); // 24px
   font-size: 0.95rem;
 }
 
@@ -76,7 +76,7 @@
   height: 20px;
   border: 2px solid #cbd5e1;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: var(--space-md); // 16px
   position: relative;
   flex-shrink: 0;
   transition: all 0.3s ease;
@@ -121,7 +121,7 @@
 
 // Feedback area
 .feedback-area {
-  margin-top: 1.5rem;
+  margin-top: var(--space-lg); // 24px
   padding: var(--space-md); // 16px
   background: #f8f9fa;
   border-left: 4px solid #1e3a8a;
@@ -135,7 +135,7 @@
 }
 
 .feedback-area h5 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 var(--space-sm) 0; // 8px
   color: #1e40af;
   font-size: 1rem;
   font-weight: 600;
@@ -152,8 +152,8 @@
 // =============================================================================
 .simple-checkpoint {
   background: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  padding: var(--space-lg); // 24px
+  margin-bottom: var(--space-xl); // 32px
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border-left: 4px solid #1e3a8a;
   transition: all 0.3s ease;
@@ -165,19 +165,19 @@
 }
 
 .simple-checkpoint h4 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 var(--space-md) 0; // 16px
   color: #1e40af;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
 .simple-checkpoint h4 i {
-  margin-right: 0.5rem;
+  margin-right: var(--space-sm); // 8px
 }
 
 .simple-checkpoint p {
   color: #666;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-lg); // 24px
   font-size: 0.95rem;
 }
 
@@ -186,7 +186,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-sm); // 8px
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-lg); // 24px
 }
 
 .option-btn {
@@ -220,7 +220,7 @@
   height: 20px;
   border: 2px solid #cbd5e1;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: var(--space-md); // 16px
   position: relative;
   flex-shrink: 0;
   transition: all 0.3s ease;
@@ -263,8 +263,8 @@
 .checkbox-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: var(--space-md); // 16px
+  margin-bottom: var(--space-lg); // 24px
 }
 
 .checkbox-item {
@@ -299,7 +299,7 @@
   height: 20px;
   border: 2px solid #cbd5e1;
   border-radius: 4px;
-  margin-right: 1rem;
+  margin-right: var(--space-md); // 16px
   position: relative;
   flex-shrink: 0;
   transition: all 0.3s ease;
@@ -335,7 +335,7 @@
 .slider-labels {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md); // 16px
   font-size: 0.85rem;
   color: #666;
   font-weight: 500;

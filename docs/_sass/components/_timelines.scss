@@ -5,19 +5,19 @@
 // Base Timeline Container
 .timeline-container {
   position: relative;
-  margin: var(--spacing-2xl) 0;
+  margin: var(--space-2xl) 0;
 }
 
 // Journey Timeline (Vertical)
 .journey-timeline {
   position: relative;
-  padding-left: var(--spacing-xl);
+  padding-left: var(--space-xl);
 
   // Timeline line
   &::before {
     content: '';
     position: absolute;
-    left: calc(var(--spacing-lg) - 2px);
+    left: calc(var(--space-lg) - 2px);
     top: 0;
     bottom: 0;
     width: 4px;
@@ -32,16 +32,16 @@
 
 .timeline-item {
   position: relative;
-  margin-bottom: var(--spacing-2xl);
-  padding-left: var(--spacing-xl);
+  margin-bottom: var(--space-2xl);
+  padding-left: var(--space-xl);
 
   // Timeline marker (node)
   .timeline-marker {
     @include touch-target-44px;
 
     position: absolute;
-    left: calc(-1 * var(--spacing-xl) - 22px);
-    top: var(--spacing-sm);
+    left: calc(-1 * var(--space-xl) - 22px);
+    top: var(--space-sm);
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -79,11 +79,11 @@
 
 .timeline-content {
   background: var(--background-white);
-  padding: var(--spacing-lg);
-  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
   box-shadow: 0 2px 8px var(--shadow-light);
   border-left: 4px solid var(--accent-teal);
-  margin-left: var(--spacing-md);
+  margin-left: var(--space-md);
 
   h3,
   h4 {
@@ -92,14 +92,14 @@
   }
 
   p {
-    margin-bottom: var(--spacing-md);
-    color: var(--text-medium);
+    margin-bottom: var(--space-md);
+    color: #666;
   }
 }
 
 // Meeting Progress Bar
 .meeting-progress {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--space-lg);
   text-align: center;
 }
 
@@ -108,7 +108,7 @@
   height: 8px;
   background: var(--background-light-gray);
   overflow: hidden;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .progress-fill {
@@ -131,16 +131,16 @@
 }
 
 .progress-text {
-  font-size: var(--font-size-body-medium);
-  color: var(--text-medium);
+  font-size: var(--font-size-body);
+  color: #666;
   font-weight: var(--font-weight-medium);
 }
 
 // Deployment Flow (Horizontal Process)
 .deployment-flow {
   display: grid;
-  gap: var(--spacing-lg);
-  margin: var(--spacing-2xl) 0;
+  gap: var(--space-lg);
+  margin: var(--space-2xl) 0;
 
   @include mobile-up {
     grid-template-columns: 1fr;
@@ -160,11 +160,11 @@
   text-align: center;
 
   h4 {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--space-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-sm);
+    gap: var(--space-sm);
   }
 
   ul {
@@ -172,7 +172,7 @@
     padding: 0;
 
     li {
-      padding: var(--spacing-sm) 0;
+      padding: var(--space-sm) 0;
       border-bottom: 1px solid var(--border-light);
 
       &:last-child {
@@ -208,13 +208,13 @@
 
 .flow-arrow {
   font-size: 2rem;
-  color: var(--text-medium);
+  color: #666;
   font-weight: bold;
   text-align: center;
 
   @include mobile-up {
     transform: rotate(90deg);
-    margin: var(--spacing-md) 0;
+    margin: var(--space-md) 0;
   }
 
   @include tablet-up {

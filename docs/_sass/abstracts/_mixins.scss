@@ -261,8 +261,8 @@
 @mixin card-hover {
   @include card;
 
-  transition: transform var(--duration-normal) var(--ease-out),
-    box-shadow var(--duration-normal) var(--ease-out);
+  transition: transform 0.3s ease-out,
+    box-shadow 0.3s ease-out;
 
   &:hover {
     transform: translateY(-4px);
@@ -281,11 +281,11 @@
   border-radius: var(--radius-lg);
   font-family: var(--font-display);
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: all 0.3s ease-out;
   min-height: var(--touch-target-min);
   letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
@@ -311,7 +311,7 @@
 
   &:hover:not(:disabled) {
     background: var(--button-hover-gradient);
-    transform: var(--transform-hover-lift);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
   }
 }
@@ -327,7 +327,7 @@
   &:hover:not(:disabled) {
     background: var(--accent-coral);
     color: var(--text-white);
-    transform: var(--transform-hover-lift);
+    transform: translateY(-2px);
   }
 }
 

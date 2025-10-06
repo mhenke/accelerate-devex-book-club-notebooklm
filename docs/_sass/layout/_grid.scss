@@ -10,10 +10,10 @@
 // Default container
 .container {
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--space-md);
 
   @include tablet-up {
-    padding: 0 var(--spacing-lg);
+    padding: 0 var(--space-lg);
   }
 }
 
@@ -28,7 +28,7 @@
 // Grid system
 .grid {
   display: grid;
-  gap: var(--spacing-lg);
+  gap: var(--space-lg);
 }
 
 .grid--2-col {
@@ -73,7 +73,7 @@
 // Flexbox utilities
 .flex {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--space-md);
 }
 
 .flex--center {
@@ -103,28 +103,28 @@
 
 // Gap utilities
 .gap-sm {
-  gap: var(--spacing-sm);
+  gap: var(--space-sm);
 }
 .gap-md {
-  gap: var(--spacing-md);
+  gap: var(--space-md);
 }
 .gap-lg {
-  gap: var(--spacing-lg);
+  gap: var(--space-lg);
 }
 .gap-xl {
-  gap: var(--spacing-xl);
+  gap: var(--space-xl);
 }
 
 // Section spacing
 .section {
-  padding: var(--spacing-2xl) 0;
+  padding: var(--space-2xl) 0;
 
   &.section--sm {
-    padding: var(--spacing-lg) 0;
+    padding: var(--space-lg) 0;
   }
 
   &.section--lg {
-    padding: var(--spacing-3xl) 0;
+    padding: var(--space-3xl) 0;
   }
 }
 

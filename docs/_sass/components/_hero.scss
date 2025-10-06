@@ -9,7 +9,7 @@
     var(--header-light-navy) 100%
   );
   color: var(--text-white);
-  padding: var(--spacing-lg) 0;
+  padding: var(--space-lg) 0;
   position: relative;
   overflow: hidden;
   min-height: 30vh;
@@ -21,13 +21,13 @@
 
   @include mobile-up {
     min-height: 25vh;
-    padding: var(--spacing-md) 0;
+    padding: var(--space-md) 0;
   }
 }
 
 .hero-content {
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--space-md);
   z-index: 2;
   position: relative;
 }
@@ -35,7 +35,7 @@
 .hero-title {
   @include heading-xl;
 
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--space-md);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -43,7 +43,7 @@
   @include text-lg;
 
   opacity: 0.9;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--space-lg);
   max-width: 600px;
 }
 
@@ -72,13 +72,13 @@
   cursor: pointer;
   font-size: var(--font-size-headline-small);
   box-shadow: var(--shadow-card-metric), var(--shadow-subtle);
-  transform: var(--transform-reset);
+  transform: translateY(0);
   position: relative;
   overflow: hidden;
 
   &:hover,
   &:focus {
-    transform: var(--transform-hover-large);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-card-metric-hover), 0 3px 6px rgba(0, 0, 0, 0.16);
     color: white;
     background: linear-gradient(
@@ -96,7 +96,7 @@
 
 // Hero CTA subtitle text
 .hero-cta-subtitle {
-  color: var(--color-white);
+  color: var(--text-white);
   font-size: var(--font-size-body-large);
   margin: 0 auto;
   font-style: italic;
@@ -111,10 +111,10 @@
 .celebration-header {
   background: linear-gradient(135deg, var(--accent-coral), var(--accent-gold));
   color: var(--text-white);
-  padding: var(--spacing-xl) var(--spacing-lg);
-  border-radius: var(--border-radius);
+  padding: var(--space-xl) var(--space-lg);
+  border-radius: var(--radius-md);
   text-align: center;
-  margin: var(--spacing-xl) 0;
+  margin: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
 
@@ -145,7 +145,7 @@
       font-size: var(--md-sys-typescale-headline-large);
     }
 
-    margin: 0 0 var(--spacing-md) 0;
+    margin: 0 0 var(--space-md) 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
@@ -160,9 +160,9 @@
 .section-header {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
-  margin: var(--spacing-xl) 0 var(--spacing-lg) 0;
-  padding-bottom: var(--spacing-md);
+  gap: var(--space-md);
+  margin: var(--space-xl) 0 var(--space-lg) 0;
+  padding-bottom: var(--space-md);
   border-bottom: 2px solid var(--border-light);
 
   i {
@@ -182,10 +182,10 @@
 .transform-complete-banner {
   background: linear-gradient(135deg, var(--success-green), var(--accent-teal));
   color: var(--text-white);
-  padding: var(--spacing-xl);
-  border-radius: var(--border-radius);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
   text-align: center;
-  margin: var(--spacing-xl) 0;
+  margin: var(--space-xl) 0;
   position: relative;
 
   &::before {
@@ -211,26 +211,26 @@
       font-size: var(--md-sys-typescale-headline-large);
     }
 
-    margin: 0 0 var(--spacing-lg) 0;
+    margin: 0 0 var(--space-lg) 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .subtitle {
     font-size: var(--md-sys-typescale-headline-medium);
     opacity: 0.95;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--space-lg);
   }
 
   .highlight-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
 
     .stat {
       background: rgba(255, 255, 255, 0.1);
-      padding: var(--spacing-md);
-      border-radius: var(--border-radius);
+      padding: var(--space-md);
+      border-radius: var(--radius-md);
 
       .stat-number {
         font-size: var(--md-sys-typescale-headline-medium);
@@ -248,9 +248,9 @@
 
 // Page Headers
 .page-header {
-  background: var(--bg-light);
-  padding: var(--spacing-lg) 0;
-  margin-bottom: var(--spacing-xl);
+  background: var(--background-light);
+  padding: var(--space-lg) 0;
+  margin-bottom: var(--space-xl);
   border-bottom: 1px solid var(--border-light);
 
   h1 {
@@ -259,9 +259,9 @@
   }
 
   .page-description {
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-size: var(--md-sys-typescale-headline-small);
-    margin-top: var(--spacing-md);
+    margin-top: var(--space-md);
   }
 }
 
@@ -269,15 +269,15 @@
 .announcement-header {
   background: linear-gradient(135deg, var(--dora-orange), var(--accent-coral));
   color: var(--text-white);
-  padding: var(--spacing-lg);
-  border-radius: var(--border-radius);
-  margin: var(--spacing-lg) 0;
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin: var(--space-lg) 0;
 
   h3 {
-    margin: 0 0 var(--spacing-sm) 0;
+    margin: 0 0 var(--space-sm) 0;
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--space-sm);
 
     i {
       font-size: var(--md-sys-typescale-title-large);

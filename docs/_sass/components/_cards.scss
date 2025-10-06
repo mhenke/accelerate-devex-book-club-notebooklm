@@ -4,15 +4,15 @@
 
 // Base Card Class - Core component used throughout the site
 .card {
-  background: var(--color-white);
+  background: var(--text-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   margin-bottom: var(--space-lg);
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: all 0.3s ease-out;
 
   &:hover {
     box-shadow: var(--shadow-md);
-    transform: var(--transform-hover);
+    transform: translateY(-2px);
   }
 
   // Interactive variant
@@ -24,7 +24,7 @@
 
     &:active {
       box-shadow: var(--shadow-sm);
-      transform: var(--transform-reset);
+      transform: translateY(0);
     }
   }
 
@@ -60,7 +60,7 @@
 
     &:hover {
       box-shadow: var(--shadow-xl);
-      transform: var(--transform-hover-large);
+      transform: translateY(-4px);
     }
   }
 
@@ -281,7 +281,7 @@
 
 .stat-text {
   font-size: var(--md-sys-typescale-body-large);
-  color: var(--text-medium);
+  color: #666;
   font-weight: var(--font-weight-medium);
 }
 

@@ -45,7 +45,7 @@
     min-height: var(--touch-target-min);
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color var(--duration-normal) var(--ease-out);
+    transition: background-color 0.3s ease-out;
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.04);
@@ -135,7 +135,7 @@
 }
 
 .icon--muted {
-  color: var(--text-medium);
+  color: #666;
 }
 
 // Meeting-specific icon colors
@@ -227,7 +227,7 @@
 // Header icons
 .header__icon {
   font-size: var(--icon-size-lg);
-  color: var(--text-medium);
+  color: #666;
 }
 
 // Navigation icons

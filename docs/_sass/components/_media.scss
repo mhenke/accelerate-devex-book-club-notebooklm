@@ -5,23 +5,23 @@
 // Media Container Component - Video & Audio Controls
 .media-container {
   background: var(--background-white);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius-md);
   box-shadow: 0 4px 15px var(--shadow-light);
-  padding: var(--spacing-lg);
-  margin: var(--spacing-xl) 0;
+  padding: var(--space-lg);
+  margin: var(--space-xl) 0;
 }
 
 .media-container video,
 .media-container audio {
   width: 100%;
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
 }
 
 .media-download-controls {
   display: flex;
   justify-content: center;
-  margin-top: var(--spacing-md);
+  margin-top: var(--space-md);
 }
 
 .download-btn {
@@ -30,19 +30,19 @@
 
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: var(--space-sm);
   background: var(--accent-coral);
   color: var(--text-white);
   text-decoration: none;
-  padding: var(--spacing-md) var(--spacing-lg);
-  border-radius: var(--border-radius);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
   font-weight: var(--font-weight-medium);
   transition: all 0.2s ease;
 
   &:hover,
   &:focus {
     background: var(--hover-coral);
-    transform: var(--transform-hover-lift);
+    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
     text-decoration: none;
     color: var(--text-white);
@@ -125,7 +125,7 @@
 
 .now-playing-label {
   font-size: var(--font-size-body-small);
-  color: var(--text-medium);
+  color: #666;
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -133,7 +133,7 @@
 }
 
 .now-playing-title {
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   color: var(--text-dark);
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
@@ -143,7 +143,7 @@
 
 .now-playing-time {
   font-size: var(--font-size-body-small);
-  color: var(--text-medium);
+  color: #666;
   font-variant-numeric: tabular-nums;
   font-weight: var(--font-weight-medium);
   flex-shrink: 0;
@@ -308,7 +308,7 @@
 
 .podcast-subtitle {
   font-size: var(--font-size-body-small);
-  color: var(--text-medium);
+  color: #666;
   line-height: 1.4;
   margin: 0;
   white-space: nowrap;
@@ -441,7 +441,7 @@
   }
 
   .podcast-headline {
-    font-size: var(--font-size-body-medium);
+    font-size: var(--font-size-body);
   }
 
   .podcast-subtitle {

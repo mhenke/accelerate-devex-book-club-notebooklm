@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--color-white);
+  background-color: var(--text-white);
   color: var(--text-dark);
   line-height: var(--line-height-normal);
 }
@@ -63,7 +63,7 @@ body {
       font-weight: var(--font-weight-medium);
       padding: var(--space-sm) var(--space-md);
       border-radius: var(--radius-md);
-      transition: all var(--duration-normal) var(--ease-out);
+      transition: all 0.3s ease-out;
 
       &:hover {
         background: rgba(255, 255, 255, 0.1);
@@ -127,12 +127,12 @@ body {
   align-items: center;
   gap: var(--space-sm);
   cursor: pointer;
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: all 0.3s ease-out;
   box-shadow: var(--shadow-button-primary);
 
   &:hover {
     background: #45a049;
-    transform: var(--transform-hover-lift);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-button-primary-hover);
   }
 
@@ -162,7 +162,7 @@ body {
 
   p {
     margin-bottom: var(--space-sm);
-    font-size: var(--font-size-body-medium);
+    font-size: var(--font-size-body);
   }
 
   a {

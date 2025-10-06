@@ -84,7 +84,7 @@ p.meeting-subtitle {
 .meeting-container {
   margin: 0 auto;
   padding: var(--space-xl) var(--space-lg); // 32px 24px
-  background: var(--color-white);
+  background: var(--text-white);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -119,14 +119,14 @@ p.meeting-subtitle {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  background: var(--color-white);
+  background: var(--text-white);
   border: 2px solid transparent;
   padding: var(--space-sm) var(--space-lg); // 8px 24px
   text-decoration: none;
   color: var(--text-dark);
   transition: all 0.2s ease;
   font-weight: 500;
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   white-space: nowrap;
 }
@@ -245,7 +245,7 @@ p.meeting-subtitle {
 
 .nav-title {
   font-weight: 600;
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   line-height: 1.2;
 }
 
@@ -280,7 +280,7 @@ p.meeting-subtitle {
 }
 
 .progress-text {
-  color: var(--text-medium);
+  color: #666;
   font-size: var(--font-size-body-large);
   font-weight: 600;
   display: block;
@@ -377,6 +377,6 @@ p.meeting-subtitle {
   }
 
   .progress-text {
-    font-size: var(--font-size-body-medium);
+    font-size: var(--font-size-body);
   }
 }
