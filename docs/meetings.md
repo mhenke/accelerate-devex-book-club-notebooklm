@@ -362,20 +362,20 @@ title: Meetings
 }
 
 .schedule-item i {
-  font-size: var(--font-size-title-large);
+  font-size: 1.25rem;
   color: #0969da;
   flex-shrink: 0;
 }
 
 .schedule-content {
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   color: var(--text-dark);
 }
 
 .schedule-content strong {
   display: block;
-  margin-bottom: var(--space-1);
-  color: var(--header-dark-navy);
+  margin-bottom: var(--space-xs);
+  color: var(--text-dark);
 }
 
 /* Meeting Date Badge */
@@ -388,7 +388,7 @@ title: Meetings
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--radius-sm);
   font-weight: 600;
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   margin-bottom: var(--space-md);
   backdrop-filter: blur(10px);
 }
@@ -405,17 +405,17 @@ title: Meetings
 
 .structure-time {
   font-weight: 700;
-  font-size: var(--font-size-title-large);
+  font-size: 1.25rem;
   color: #0969da;
   white-space: nowrap;
   min-width: 80px;
 }
 
 .structure-content h4 {
-  font-size: var(--font-size-body-large);
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: var(--space-sm);
-  color: var(--header-dark-navy);
+  color: var(--text-dark);
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -426,8 +426,8 @@ title: Meetings
 }
 
 .structure-content p {
-  font-size: var(--font-size-body-medium);
-  color: var(--text-medium);
+  font-size: var(--font-size-body);
+  color: #666;
   margin: 0;
 }
 
@@ -448,19 +448,19 @@ title: Meetings
 }
 
 .between-item i {
-  font-size: var(--font-size-display-small);
+  font-size: var(--font-size-display);
   color: rgba(255, 255, 255, 0.9);
 }
 
 .between-content h4 {
-  font-size: var(--font-size-body-large);
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: var(--space-sm);
   color: white;
 }
 
 .between-content p {
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
@@ -487,21 +487,21 @@ title: Meetings
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-title-large);
+  font-size: 1.25rem;
   font-weight: 700;
   flex-shrink: 0;
 }
 
 .prep-content h4 {
-  font-size: var(--font-size-body-large);
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: var(--space-sm);
-  color: var(--header-dark-navy);
+  color: var(--text-dark);
 }
 
 .prep-content p {
-  font-size: var(--font-size-body-medium);
-  color: var(--text-medium);
+  font-size: var(--font-size-body);
+  color: #666;
   margin-bottom: var(--space-md);
 }
 
