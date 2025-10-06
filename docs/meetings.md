@@ -30,6 +30,37 @@ title: Meetings
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
 
+<!-- Schedule Overview -->
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-clock" aria-hidden="true"></i> Book Club Schedule</h2>
+<div class="schedule-details">
+<div class="schedule-item">
+<i class="fas fa-calendar-day"></i>
+<div class="schedule-content">
+<strong>Kickoff:</strong> October 22, 2025 (30 min)
+</div>
+</div>
+<div class="schedule-item">
+<i class="fas fa-calendar-week"></i>
+<div class="schedule-content">
+<strong>Frequency:</strong> Biweekly (every 2 weeks)
+</div>
+</div>
+<div class="schedule-item">
+<i class="fas fa-clock"></i>
+<div class="schedule-content">
+<strong>Time:</strong> Wednesdays, 12:00 PM - 1:00 PM
+</div>
+</div>
+<div class="schedule-item">
+<i class="fas fa-calendar-check"></i>
+<div class="schedule-content">
+<strong>End Date:</strong> December 17, 2025
+</div>
+</div>
+</div>
+</div>
+
 <!-- Meeting Cards -->
 <div class="what-youll-learn-section section-card" markdown="0">
 <h2><i class="fas fa-calendar-alt" aria-hidden="true"></i> Meeting Schedule</h2>
