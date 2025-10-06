@@ -22,7 +22,7 @@ title: Meetings
 </div>
 
 <!-- Schedule Overview -->
-<div class="welcome-compact section-card" markdown="0">
+<div class="section-card" markdown="0">
 <h2><i class="fas fa-clock" aria-hidden="true"></i> Book Club Schedule</h2>
 <div class="schedule-details">
 <div class="schedule-item">
