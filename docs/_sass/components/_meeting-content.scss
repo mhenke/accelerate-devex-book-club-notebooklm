@@ -194,7 +194,7 @@
   padding: var(--space-sm) var(--space-lg); // 8px 24px
   text-decoration: none;
   font-weight: 500;
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   transition: all 0.3s ease;
   border: 2px solid transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -221,7 +221,7 @@
       var(--meeting-primary)
     );
     color: white;
-    transform: var(--transform-hover-lift);
+    transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
 }
@@ -234,7 +234,7 @@
   &:hover {
     background: linear-gradient(135deg, #34ce57, #28a745);
     color: white;
-    transform: var(--transform-hover-lift);
+    transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
   }
 }

@@ -139,8 +139,5 @@ $line-height-relaxed: 1.6;
   --line-height-relaxed: #{$line-height-relaxed};
   --line-height-tight: 1.2; // For hero text
   --letter-spacing-tight: -0.02em; // Slight tightening for large text
-
-  // Essential MD3 aliases for hero banner
-  --font-size-headline-small: #{$font-size-h3}; // 1.5rem - Used in hero
-  --font-size-display-medium: #{$font-size-display}; // 2.8rem - Used in hero
 }
+

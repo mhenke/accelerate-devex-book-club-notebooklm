@@ -32,7 +32,7 @@
         gap: var(--space-sm);
         color: white;
         text-decoration: none;
-        transition: all var(--duration-normal) var(--ease-out);
+        transition: all 0.3s ease-out;
 
         &:hover {
           color: var(--accent-teal);
@@ -65,7 +65,7 @@
         font-weight: var(--font-weight-medium);
         padding: var(--space-sm) var(--space-md);
         border-radius: var(--radius-md);
-        transition: all var(--duration-normal) var(--ease-out);
+        transition: all 0.3s ease-out;
         border: 1px solid transparent;
 
         &:hover {
@@ -169,12 +169,12 @@
     text-decoration: none;
     color: var(--text-dark);
     border-radius: var(--radius-md);
-    transition: all var(--duration-normal) var(--ease-out);
+    transition: all 0.3s ease-out;
     font-weight: var(--font-weight-medium);
 
     &:hover {
       background: var(--color-neutral-90);
-      transform: var(--transform-hover-lift);
+      transform: translateY(-2px);
     }
 
     &.current {

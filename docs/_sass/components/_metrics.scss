@@ -6,15 +6,15 @@
 .dora-metrics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
-  margin: var(--spacing-xl) 0;
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
 }
 
 .dora-metric {
-  background: var(--bg-white);
+  background: var(--background-white);
   border: 1px solid var(--border-light);
-  border-radius: var(--border-radius);
-  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
   text-align: center;
   position: relative;
   transition: all 0.3s ease;
@@ -28,7 +28,7 @@
   .metric-icon {
     width: 60px;
     height: 60px;
-    margin: 0 auto var(--spacing-md) auto;
+    margin: 0 auto var(--space-md) auto;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -39,20 +39,20 @@
   .metric-title {
     font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-semibold);
-    margin: 0 0 var(--spacing-md) 0;
-    color: var(--text-primary);
+    margin: 0 0 var(--space-md) 0;
+    color: var(--text-dark);
   }
 
   .metric-description {
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-size: var(--font-size-body-large);
     line-height: 1.6;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--space-md);
   }
 
   .metric-value {
     font-size: var(--font-size-headline-small);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--space-sm);
     font-weight: var(--font-weight-bold);
     color: var(--primary-navy);
   }
@@ -103,19 +103,19 @@
 .performance-levels {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--spacing-md);
-  margin: var(--spacing-lg) 0;
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
 }
 
 .performance-level {
-  padding: var(--spacing-lg);
-  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
   text-align: center;
   color: var(--text-white);
   position: relative;
 
   h4 {
-    margin: 0 0 var(--spacing-md) 0;
+    margin: 0 0 var(--space-md) 0;
     font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-bold);
   }
@@ -147,20 +147,20 @@
 .assessment-results {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-lg);
-  margin: var(--spacing-xl) 0;
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
 }
 
 .assessment-result {
-  background: var(--bg-white);
+  background: var(--background-white);
   border: 2px solid transparent;
-  border-radius: var(--border-radius);
-  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
   text-align: center;
   transition: all 0.3s ease;
 
   &:hover {
-    transform: var(--transform-hover-lift);
+    transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   }
 
@@ -168,17 +168,17 @@
     font-size: var(--font-size-display-large);
     font-weight: var(--font-weight-bold);
     line-height: 1;
-    margin: 0 0 var(--spacing-md) 0;
+    margin: 0 0 var(--space-md) 0;
   }
 
   .result-label {
     font-size: var(--font-size-headline-small);
     font-weight: var(--font-weight-semibold);
-    margin: 0 0 var(--spacing-sm) 0;
+    margin: 0 0 var(--space-sm) 0;
   }
 
   .result-description {
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-size: var(--font-size-body-large);
     line-height: 1.5;
   }
@@ -216,15 +216,15 @@
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--spacing-md);
-  margin: var(--spacing-lg) 0;
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
 }
 
 .stat-item {
   text-align: center;
-  padding: var(--spacing-lg);
-  background: var(--bg-light);
-  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  background: var(--background-light);
+  border-radius: var(--radius-md);
 
   .stat-number {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
@@ -235,16 +235,16 @@
   }
 
   .stat-label {
-    font-size: var(--font-size-body-medium);
-    color: var(--text-secondary);
-    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-body);
+    color: var(--text-light);
+    margin-top: var(--space-sm);
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
 
   .stat-trend {
-    font-size: var(--font-size-body-medium);
-    margin-top: var(--spacing-xs);
+    font-size: var(--font-size-body);
+    margin-top: var(--space-xs);
 
     &.positive {
       color: var(--success-green);
@@ -263,7 +263,7 @@
     }
 
     &.neutral {
-      color: var(--text-secondary);
+      color: var(--text-light);
 
       &::before {
         content: '→ ';
@@ -274,21 +274,21 @@
 
 // Progress Indicators
 .progress-indicator {
-  margin: var(--spacing-lg) 0;
+  margin: var(--space-lg) 0;
 
   .progress-label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--space-sm);
 
     .progress-title {
       font-weight: var(--font-weight-semibold);
     }
 
     .progress-percentage {
-      font-size: var(--font-size-body-medium);
-      color: var(--text-secondary);
+      font-size: var(--font-size-body);
+      color: var(--text-light);
     }
   }
 
@@ -315,12 +315,12 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-lg);
-  background: var(--bg-white);
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--background-white);
   border: 1px solid var(--border-light);
-  border-radius: var(--border-radius);
-  margin: var(--spacing-md) 0;
+  border-radius: var(--radius-md);
+  margin: var(--space-md) 0;
 
   .before-metric,
   .after-metric {
@@ -330,12 +330,12 @@
       font-size: var(--font-size-headline-medium);
       font-weight: var(--font-weight-bold);
       display: block;
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: var(--space-xs);
     }
 
     .metric-label {
-      font-size: var(--font-size-body-medium);
-      color: var(--text-secondary);
+      font-size: var(--font-size-body);
+      color: var(--text-light);
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }

@@ -64,7 +64,7 @@
 .metric-description {
   margin: 0;
   color: var(--color-neutral-50);
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   line-height: var(--line-height-normal);
 }
 
@@ -85,7 +85,7 @@
 }
 
 .metric-label {
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   color: var(--color-neutral-50);
   font-weight: var(--font-weight-medium);
   min-width: 60px;
@@ -98,7 +98,7 @@
 }
 
 .goal-value {
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   color: var(--color-success);
   font-weight: var(--font-weight-semibold);
   background: rgba(76, 175, 80, 0.1);
@@ -109,7 +109,7 @@
 .metric-trend {
   display: inline-flex;
   align-items: center;
-  font-size: var(--font-size-body-medium);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-semibold);
   padding: var(--space-4) var(--space-sm);
   border-radius: var(--radius-sm);
