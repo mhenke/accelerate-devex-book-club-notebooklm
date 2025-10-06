@@ -3,26 +3,35 @@ layout: default
 title: Meetings
 ---
 
-<div class="page-hero page-hero--blue">
+<div class="hero-banner" markdown="0">
 <div class="hero-content">
-<div class="hero-icon">
-<i class="fas fa-calendar-alt"></i>
+<div class="hero-value-prop">Accelerate DevEx Book Club</div>
+<h1 class="hero-headline">Meeting Schedule</h1>
+<div class="site-title">
+<h3>Four focused sessions over 2 months</h3>
 </div>
-<h1 class="page-title">Meeting Schedule</h1>
-<p class="page-subtitle">Four focused sessions over 2 months, each building upon the previous meeting's insights</p>
+<p class="hero-subtitle">Biweekly Wednesdays 12-1 PM • Oct 22 kickoff • Ends Dec 17</p>
+</div>
+</div>
+
+<div class="welcome-compact section-card" markdown="0">
+<p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
+<div class="welcome-cta">
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
+<p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
 </div>
 </div>
 
 <div class="page-container">
-<div class="navigation-tabs">
-<a href="{{ '/' | relative_url }}" class="nav-tab"><i class="fas fa-home"></i> Home</a>
-<a href="{{ '/meetings' | relative_url }}" class="nav-tab active"><i class="fas fa-calendar-alt"></i> Meetings</a>
-<a href="{{ '/prompts' | relative_url }}" class="nav-tab"><i class="fas fa-microphone-alt"></i> AI Content</a>
-<a href="{{ '/resources' | relative_url }}" class="nav-tab"><i class="fas fa-book-open"></i> Resources</a>
+
+<div class="quick-start section-card no-border" markdown="0">
+<h2><em class="fas fa-info-circle" aria-hidden="true"></em> About the Book Club</h2>
+<p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
+<p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 </div>
 
 <!-- Schedule Overview -->
-<div class="welcome-compact section-card" markdown="0">
+<div class="section-card" markdown="0">
 <h2><i class="fas fa-clock" aria-hidden="true"></i> Book Club Schedule</h2>
 <div class="schedule-details">
 <div class="schedule-item">
