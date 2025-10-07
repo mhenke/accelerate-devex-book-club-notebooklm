@@ -200,11 +200,11 @@
     color: var(--theme-primary);
     font-size: var(--font-size-h2); // 1.75rem
     font-weight: var(--font-weight-semibold);
-    margin: var(--space-xl) 0 var(--space-md) 0; // Standardized: 32px 0 16px 0
+    margin: var(--space-md) 0 var(--space-sm) 0; // Standardized: 16px 0 8px 0
   }
 
   .section-card h2 {
-    margin: var(--space-xl) 0 var(--space-md) 0; // Match parent h2 margin
+    margin: var(--space-md) 0 var(--space-sm) 0; // Match parent h2 margin
   }
 
   h3 {

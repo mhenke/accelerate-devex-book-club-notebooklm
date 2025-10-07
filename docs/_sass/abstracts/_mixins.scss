@@ -152,7 +152,7 @@
   @include headline-medium;
 
   color: #16213e;
-  margin: var(--space-xl) 0 var(--space-md) 0; // 32px 0 16px 0
+  margin: var(--space-md) 0 var(--space-sm) 0; // 16px 0 8px 0
 }
 
 @mixin heading-3 {
@@ -276,7 +276,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  padding: var(--space-lg) var(--space-2xl);
+  padding: var(--space-sm) var(--space-md); // 8px 16px (changed from 24px 48px)
   border: none;
   border-radius: var(--radius-lg);
   font-family: var(--font-display);

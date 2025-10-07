@@ -12,7 +12,7 @@
   );
   border: 2px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
-  padding: var(--space-sm);
+  padding: var(--space-lg); // 24px - standard breathing room
   margin: var(--space-lg) auto;
   width: 95%;
   max-width: none;
@@ -28,11 +28,20 @@
     text-align: left;
   }
 
+  // Compact variant - tighter padding for dense content
+  &.compact {
+    padding: var(--space-md); // 16px
+  }
+
   // Dark theme modifier - dark background with light text
   &.dark-theme {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text-light);
+    padding: var(
+      --space-sm
+    ); // 8px - keeps current tight layout (TODO: consider increasing to space-md)
+
     position: relative;
     overflow: hidden;
 
@@ -293,7 +302,7 @@
     font-size: var(--font-size-h3); // 1.5rem
     font-weight: var(--font-weight-semibold);
     line-height: 1.25;
-    margin: var(--space-xl) 0 var(--space-md) 0; // Standardized: 32px 0 16px 0
+    margin: var(--space-md) 0 var(--space-sm) 0; // Standardized: 16px 0 8px 0
     display: flex;
     align-items: center;
     gap: var(--space-md);
@@ -479,7 +488,7 @@
   background: var(--gradient-surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: var(--space-sm);
+  padding: var(--space-md); // 16px - compact variant
   margin: var(--space-lg) auto;
   width: 95%;
   max-width: none;
@@ -949,6 +958,7 @@
         var(--danger-red) 80%,
         black
       ); // Darker red for better contrast
+
       font-size: var(--font-size-title-large);
       font-weight: var(--font-weight-bold);
       margin-bottom: var(--space-sm);
@@ -1765,7 +1775,8 @@
     font-size: var(--font-size-h3); // 1.5rem - matches section-card
     font-weight: var(--font-weight-bold);
     color: var(--text-dark);
-    margin: var(--space-xl) 0 var(--space-md) 0; // Standardized: 32px 0 16px 0
+
+    // Uses standard h2 margin: 16px 0 8px 0
   }
 
   .research-foundation {
