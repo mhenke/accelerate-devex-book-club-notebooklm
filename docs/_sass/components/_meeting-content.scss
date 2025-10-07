@@ -77,17 +77,13 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       height: 1px;
-      background: linear-gradient(
-        90deg,
-        var(--meeting-primary),
-        transparent
-      );
+      background: linear-gradient(90deg, var(--meeting-primary), transparent);
     }
   }
 
@@ -100,7 +96,11 @@
   h2[id*="listen"],
   h2[id*="watch"] {
     padding: var(--space-sm);
-    background: linear-gradient(135deg, var(--meeting-bg), var(--meeting-light));
+    background: linear-gradient(
+      135deg,
+      var(--meeting-bg),
+      var(--meeting-light)
+    );
     border-left-color: var(--meeting-primary);
     margin-top: 4rem;
   }
