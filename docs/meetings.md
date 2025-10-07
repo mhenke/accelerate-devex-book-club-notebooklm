@@ -7,10 +7,7 @@ title: Meetings
 <div class="hero-content">
 <div class="hero-value-prop">Accelerate DevEx Book Club</div>
 <h1 class="hero-headline">Meeting Schedule</h1>
-<div class="site-title">
-<h3>Four focused sessions over 2 months</h3>
-</div>
-<p class="hero-subtitle">Biweekly Wednesdays 12-1 PM • Oct 22 kickoff • Ends Dec 17</p>
+<p class="hero-subtitle">4 focused sessions over 2 months • Biweekly Wednesdays 12-1 PM • Oct 22 - Dec 17</p>
 </div>
 </div>
 
