@@ -20,13 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-Create a visual video summary for Meeting 4 (FINAL MEETING) of an Accelerate DevEx Book Club covering Chapters 11, 16, and Conclusion. Use diagrams, visual metaphors, and on-screen elements to make transformational leadership, ING practices, and transformation roadmap clear and inspiring.
+TARGET AUDIENCE:
+Assume the viewer is a book club participant - leader, manager, or practitioner - who wants to leave the final meeting energized and ready to transform. They prefer visual learning and want inspiration.
 
-MEETING 4 CORE QUESTION:
-"What leadership behaviors enable transformation, and how do we sustain improvement?"
+SOURCE FOCUS:
+Focus on Chapters 11, 16, and Conclusion from uploaded Accelerate sources.
 
-VIDEO STRUCTURE:
+FORMAT & LENGTH:
+Create a 10-15 minute visual video summary with diagrams and visual metaphors. Use star/pillar diagrams for leadership, before/after comparisons for ING, roadmap with three stages, and circular virtuous cycle. End on inspiring, motivating note - this is the beginning.
+
+VIDEO SEGMENTS:
 
 INTRO (30 seconds):
 - Title: "Accelerate Book Club - Meeting 4: Leadership & Transformation"
@@ -241,28 +244,8 @@ Resources shown:
 - Book club retrospective
 - Post-book club resources
 
-VISUAL STYLE:
-- Use star/pillar diagrams for leadership characteristics
-- Before/after comparisons for ING transformation
-- Kanban/visual boards for Obeya concept
-- Back-and-forth animation for catchball
-- Timeline for 7-week journey
-- Roadmap with three stages (short/medium/long term)
-- Circular cycle diagram for virtuous cycle
-- Color progression: Meeting 1 (Blue) → Meeting 2 (Green) → Meeting 3 (Orange) → Meeting 4 (Purple)
-- Inspirational and motivating tone (this is final meeting)
-
-TARGET AUDIENCE:
-All book club participants - leaders, managers, practitioners. Teams watching together for final meeting. People who want to leave energized and ready to transform.
-
-LENGTH GUIDANCE:
-10-15 minutes. Balance narration with strong visuals. Make abstract leadership concepts concrete through visual metaphors. End on inspiring, motivating note - this is the beginning.
-
-ACCESSIBILITY:
-- Captions for all narration
-- High contrast visuals
-- Label all diagrams clearly
-- Don't rely solely on color to convey meaning
+DISCUSSION PREPARATION:
+Help viewers identify which leadership characteristic their org needs most, what ING practice to adapt, #1 priority for next 3 months, and how to sustain momentum. Final message: "The book club ends. Your transformation begins."
 ```
 
 ---

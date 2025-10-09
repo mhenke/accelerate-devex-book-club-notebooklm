@@ -20,17 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast prepares participants for Meeting 4 (FINAL MEETING) of an Accelerate DevEx Book Club focused on Chapters 11, 16, and Conclusion - transformational leadership characteristics, the ING Netherlands case study showing leadership in practice, and creating a sustainable transformation roadmap.
+TARGET AUDIENCE:
+Assume the listener is preparing for the final book club meeting - a leader, manager, or practitioner who wants to understand leadership's role in transformation and create a sustainable path forward after the book club ends.
 
-OVERALL FRAMING QUESTION:
-"How can we build a virtuous cycle where improving our technical systems enhances our team culture, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?"
+SOURCE FOCUS:
+Focus on Chapters 11, 16, and Conclusion from uploaded Accelerate sources.
 
-MEETING 4 CORE QUESTION:
-"What single supportive behavior could our leaders adopt to best enable team experimentation and a generative culture, and what practical steps (like the Obeya rooms or 'catchball' at ING) could we use to make that leadership support visible and effective?"
+FORMAT & LENGTH:
+Create a 15-20 minute conversational deep dive podcast. This is the FINAL MEETING - tie together all concepts from Meetings 1-3, focus on transformational leadership, ING case study, roadmap creation, and sustainability. Emphasize this is the beginning, not the end.
 
-FOCUS:
-Cover chapters 11, 16, and Conclusion of Accelerate. This is the FINAL MEETING - tie together all concepts from Meetings 1-3 and focus on leadership's role in transformation and sustaining improvement.
+TOPICS TO COVER:
 
 1. TRANSFORMATIONAL LEADERSHIP (Chapter 11)
 
@@ -225,21 +224,8 @@ Cover chapters 11, 16, and Conclusion of Accelerate. This is the FINAL MEETING -
    - Practice with highest leadership support
    - Team's most passionate interest
 
-TARGET AUDIENCE:
-All book club participants preparing for the final meeting - leaders, managers, and practitioners who want to understand leadership's role in transformation and create a sustainable path forward after the book club ends.
-
-LENGTH GUIDANCE:
-Aim for 15-20 minutes of conversational content. Cover all five transformational leadership characteristics, key ING practices with practical examples, roadmap creation guidance, and sustainability strategies. Emphasize this is the beginning, not the end.
-
 DISCUSSION PREPARATION:
-Help listeners prepare to discuss:
-- Which leadership characteristic is most present/absent in their organization?
-- What practical ING practice (Obeya, catchball, empowered teams) could they adapt?
-- What's their biggest transformation success from the 7-week journey?
-- What's their biggest challenge or blocker?
-- What 2-3 practices will they prioritize in next 3 months?
-- How will they sustain momentum after book club ends?
-- What does "transformational leadership" look like in their specific context?
+Help listeners discuss which leadership characteristic is most present/absent in their organization, what ING practice (Obeya, catchball, empowered teams) they could adapt, biggest transformation success from 7-week journey, biggest challenge/blocker, what 2-3 practices to prioritize in next 3 months, how to sustain momentum after book club ends, and what transformational leadership looks like in their specific context.
 ```
 
 ---

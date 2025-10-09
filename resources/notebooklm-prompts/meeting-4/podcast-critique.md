@@ -20,13 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast provides CRITICAL ANALYSIS of the transformational leadership claims, ING case study applicability, and transformation sustainability advice in Chapters 11, 16, and Conclusion of Accelerate. Examine what's evidence-based versus idealistic, and what contextual factors matter.
+TARGET AUDIENCE:
+Assume the listener is a leader or practitioner who wants realistic assessment of what transformation requires, what can go wrong, and what contextual factors matter beyond just "good leadership."
 
-MEETING 4 CORE QUESTION (Reframed):
-"What are the prerequisites and limitations of transformational leadership approaches, and what critical success factors are required beyond 'good leadership' for transformation to succeed?"
+SOURCE FOCUS:
+Focus on Chapters 11, 16, and Conclusion from uploaded Accelerate sources.
 
-CRITICAL ANALYSIS FOCUS:
+FORMAT & LENGTH:
+Create a 15-20 minute critical analysis podcast. Examine prerequisites and limitations of transformational leadership, question ING case study generalizability, and explore what's missing from transformation advice.
+
+TOPICS TO CRITICALLY EXAMINE:
 
 1. TRANSFORMATIONAL LEADERSHIP - IDEALS VS. REALITY
 
@@ -211,20 +214,8 @@ CRITICAL ANALYSIS FOCUS:
    - Cynefin: Different contexts require different approaches
    - Kotter's 8 steps: More comprehensive change management model
 
-TARGET AUDIENCE:
-Leaders and practitioners who want realistic assessment of what transformation requires, what can go wrong, and what contextual factors matter beyond just "good leadership."
-
-TONE:
-Constructively critical. Acknowledge leadership matters while honestly examining what's required for transformation beyond charismatic leaders and best practices. Help listeners make realistic plans.
-
 DISCUSSION PREPARATION:
-Help listeners discuss:
-- What leadership and organizational prerequisites exist in their context vs. missing?
-- How ING's advantages differ from their situation?
-- What political and resource realities will they face?
-- How to create realistic expectations about timeline and difficulty?
-- What failure modes to watch for and how to respond?
-- When to pivot vs. persevere when transformation stalls?
+Help listeners discuss what leadership and organizational prerequisites exist in their context vs. missing, how ING's advantages differ from their situation, what political and resource realities they'll face, how to create realistic expectations about timeline and difficulty, what failure modes to watch for and how to respond, and when to pivot vs. persevere when transformation stalls.
 ```
 
 ---
