@@ -34,43 +34,7 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-TARGET AUDIENCE:
-Assume the viewer is a visual learner (developer, DevOps engineer, or manager) preparing for a book club discussion. They benefit from charts, diagrams, and visual representations of concepts.
-
-SOURCE FOCUS:
-Focus on Chapters 1-3 from uploaded Accelerate sources.
-
-FORMAT & LENGTH:
-Create a 10-15 minute visual summary video with clear diagrams, charts, and on-screen text for key statistics. Emphasize visual elements over narration when concepts can be shown graphically.
-
-VISUAL SEGMENTS TO INCLUDE:
-
-1. THE FOUR DORA METRICS (3-4 minutes)
-   - Visual: Four cards/quadrants showing each metric
-   - Lead Time (commit → production pipeline visual)
-   - Deployment Frequency (calendar showing cadence)
-   - Time to Restore (incident timeline visual)
-   - Change Fail Rate (success/failure ratio chart)
-   - Comparison table: Elite vs. Low performers with key stats (46x, 440x, 170x)
-
-2. SPEED + STABILITY MYTH-BUSTING (2-3 minutes)
-   - MYTH diagram: Speed ↔ Stability (see-saw, inverse relationship)
-   - REALITY diagram: Speed ↑ Stability ↑ (both increase together)
-   - Scatter plot: High performers cluster in top-right quadrant
-   - On-screen text: "High performers achieve BOTH through automation and technical practices"
-
-3. WESTRUM'S THREE CULTURE TYPES (3-4 minutes)
-   - Visual: Three color-coded columns comparing types
-   - Pathological (Red): Power-oriented, low cooperation, blame culture
-   - Bureaucratic (Yellow): Rule-oriented, modest cooperation, process-focused
-   - Generative (Green): Performance-oriented, high cooperation, learning culture
-   - Visual examples of each type's behaviors
-
-4. VIRTUOUS CYCLE DIAGRAM (1-2 minutes)
-   - Show how technical practices → culture change → better outcomes → reinforcement
-
-DISCUSSION PREPARATION:
-Help viewers think visually about: Which DORA metric would they measure first? What culture type describes their organization? What practices could shift culture?
+Assume viewer is visual learner for book club. Focus Ch 1-3 Accelerate. Create 10-15min visual video: (1) Four DORA metrics WITH charts (Lead Time, Deploy Freq, MTTR, Change Fail Rate) + elite vs low comparison (46x/440x/170x), (2) Speed+stability myth-busting WITH diagrams (inverse vs both increase), (3) Three culture types WITH color-coded columns (Pathological/red, Bureaucratic/yellow, Generative/green). Discuss: which metric first? Culture type? Practice to shift?
 ```
 
 ---
