@@ -32,13 +32,47 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-BOOK CLUB CONTEXT:
-This is a BRIEF 5-10 minute summary for Meeting 1 of an Accelerate DevEx Book Club. Provide only the most essential takeaways from Chapters 1-3.
+TARGET AUDIENCE:
+Assume the listener is a busy professional (developer, DevOps engineer, or manager) needing quick preparation before a book club meeting. They need the absolute essentials only.
 
-MEETING 1 CORE QUESTION:
+SOURCE FOCUS:
+Focus on Chapters 1-3 from uploaded Accelerate sources.
+
+FORMAT & LENGTH:
+Create an EXTREMELY concise 5-10 minute brief podcast. Focus only on what listeners absolutely must know - no deep dives, minimal examples.
+
+TOPICS TO COVER (Essential Takeaways Only):
+
+1. THE FOUR DORA METRICS
+   - Lead Time (commit to production)
+   - Deployment Frequency (how often we deploy)
+   - Time to Restore (recovery speed)
+   - Change Fail Rate (% of deployments that fail)
+
+   ONE KEY STAT: High performers deploy 46x more frequently with 440x faster lead time
+
+2. SPEED + STABILITY ARE NOT A TRADE-OFF
+   - High performers achieve BOTH simultaneously
+   - This debunks the most common myth in software delivery
+
+3. THREE CULTURE TYPES (30 seconds max)
+   - Pathological (blame/fear), Bureaucratic (rules/process), Generative (learning/performance)
+   - Culture can be changed through practice
+
+DISCUSSION PREPARATION:
+Prompt listeners to think about: Which DORA metric would they measure first? Do they believe speed and stability trade off in their context?
+
+SKIP: Research methodology, detailed performance levels, deployment pain concept, extensive examples.
+```
+
+---
+
+### Extended Context (For Reference - Do Not Copy to NotebookLM)
+
+**MEETING 1 CORE QUESTION:**
 "How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs to the global outcomes of speed and stability that matter?"
 
-ESSENTIAL TAKEAWAYS ONLY:
+**ESSENTIAL TAKEAWAYS ONLY:**
 
 1. THE FOUR DORA METRICS
    - Lead Time: Commit to production
@@ -59,17 +93,16 @@ ESSENTIAL TAKEAWAYS ONLY:
 
    Culture can be changed through practice
 
-TARGET AUDIENCE:
+**TARGET AUDIENCE:**
 Busy professionals who need the absolute essentials before a book club meeting.
 
-LENGTH REQUIREMENT:
+**LENGTH REQUIREMENT:**
 Keep this EXTREMELY concise - 5-10 minutes maximum. Focus only on what listeners absolutely must know. No deep dives, no examples unless they're essential for understanding.
 
-CALL TO ACTION:
+**CALL TO ACTION:**
 Prompt listeners to think about:
 - Which DORA metric would they measure first?
 - Do they believe speed and stability trade off in their context?
-```
 
 ---
 

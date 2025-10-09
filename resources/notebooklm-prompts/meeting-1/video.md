@@ -34,16 +34,56 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-BOOK CLUB CONTEXT:
-Create a visual video summary for Meeting 1 of an Accelerate DevEx Book Club covering Chapters 1-3. Use visuals, diagrams, and on-screen text to make concepts clear and engaging.
+TARGET AUDIENCE:
+Assume the viewer is a visual learner (developer, DevOps engineer, or manager) preparing for a book club discussion. They benefit from charts, diagrams, and visual representations of concepts.
 
-OVERALL FRAMING QUESTION:
+SOURCE FOCUS:
+Focus on Chapters 1-3 from uploaded Accelerate sources.
+
+FORMAT & LENGTH:
+Create a 10-15 minute visual summary video with clear diagrams, charts, and on-screen text for key statistics. Emphasize visual elements over narration when concepts can be shown graphically.
+
+VISUAL SEGMENTS TO INCLUDE:
+
+1. THE FOUR DORA METRICS (3-4 minutes)
+   - Visual: Four cards/quadrants showing each metric
+   - Lead Time (commit → production pipeline visual)
+   - Deployment Frequency (calendar showing cadence)
+   - Time to Restore (incident timeline visual)
+   - Change Fail Rate (success/failure ratio chart)
+   - Comparison table: Elite vs. Low performers with key stats (46x, 440x, 170x)
+
+2. SPEED + STABILITY MYTH-BUSTING (2-3 minutes)
+   - MYTH diagram: Speed ↔ Stability (see-saw, inverse relationship)
+   - REALITY diagram: Speed ↑ Stability ↑ (both increase together)
+   - Scatter plot: High performers cluster in top-right quadrant
+   - On-screen text: "High performers achieve BOTH through automation and technical practices"
+
+3. WESTRUM'S THREE CULTURE TYPES (3-4 minutes)
+   - Visual: Three color-coded columns comparing types
+   - Pathological (Red): Power-oriented, low cooperation, blame culture
+   - Bureaucratic (Yellow): Rule-oriented, modest cooperation, process-focused
+   - Generative (Green): Performance-oriented, high cooperation, learning culture
+   - Visual examples of each type's behaviors
+
+4. VIRTUOUS CYCLE DIAGRAM (1-2 minutes)
+   - Show how technical practices → culture change → better outcomes → reinforcement
+
+DISCUSSION PREPARATION:
+Help viewers think visually about: Which DORA metric would they measure first? What culture type describes their organization? What practices could shift culture?
+```
+
+---
+
+### Extended Context (For Reference - Do Not Copy to NotebookLM)
+
+**OVERALL FRAMING QUESTION:**
 "How can we build a virtuous cycle where improving our technical systems enhances our team culture, and where an improved culture, in turn, accelerates our ability to deliver value?"
 
-MEETING 1 CORE QUESTION:
+**MEETING 1 CORE QUESTION:**
 "How do we currently perceive and measure performance, and what would it take to shift from local outputs to global outcomes?"
 
-VIDEO STRUCTURE:
+**VIDEO STRUCTURE:**
 
 INTRO (30 seconds):
 - Title: "Accelerate Book Club - Meeting 1: Laying the Foundation"
@@ -133,7 +173,7 @@ Resources shown:
 - Attendee guide
 - DORA metrics template
 
-VISUAL STYLE PREFERENCES:
+**VISUAL STYLE PREFERENCES:**
 - Clean, professional diagrams
 - Use color coding consistently (Red/Yellow/Green for culture types)
 - Show data visualizations (charts, graphs, comparisons)
@@ -141,17 +181,16 @@ VISUAL STYLE PREFERENCES:
 - Use icons and illustrations to break up talking heads
 - Show real-world examples where possible
 
-TARGET AUDIENCE:
+**TARGET AUDIENCE:**
 Visual learners, teams watching together in a meeting, people who prefer video to audio, facilitators who want to show content during the meeting.
 
-LENGTH GUIDANCE:
+**LENGTH GUIDANCE:**
 Aim for 10-15 minutes. Balance narration with visual content. Ensure key concepts are visible on screen, not just spoken.
 
-ACCESSIBILITY:
+**ACCESSIBILITY:**
 - Include captions/subtitles for all narration
 - Use high contrast for text readability
 - Don't rely solely on color to convey meaning
-```
 
 ---
 
