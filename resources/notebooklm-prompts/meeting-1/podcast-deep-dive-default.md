@@ -31,10 +31,8 @@
 
 ### Complete Prompt (Copy Everything Below)
 
-**Note:** This prompt is optimized for NotebookLM's 500-character steering prompt limit. The full context is in your uploaded sources.
-
 ```
-Assume the listener is a software developer or engineering manager preparing for a book club discussion. Focus on Chapters 1-3 from the uploaded Accelerate sources. Create a conversational 15-20 minute deep dive covering: (1) the research foundation and DORA metrics with the speed-vs-stability myth-busting stats, (2) Westrum's three culture types, and (3) deployment pain as a signal. Help prepare listeners to discuss how their current metrics reinforce behaviors and which practices could shift culture.
+Assume listener is developer/manager preparing for book club. Focus on Ch 1-3 Accelerate. Create 15min deep dive on: (1) Research foundation (23K+ surveys), (2) Four DORA metrics (Lead Time, Deploy Freq, MTTR, Change Fail Rate) - high performers achieve BOTH speed AND stability (46x/440x/170x), (3) Westrum culture types (Pathological, Bureaucratic, Generative), (4) Deployment pain as signal. Help discuss current metrics reinforcing behaviors and culture shift practices.
 ```
 
 ---

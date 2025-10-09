@@ -4,25 +4,32 @@ This guide explains how to create effective NotebookLM prompts based on research
 
 ## Key Principles
 
-### 1. Character Limit (1000-1500 Characters Target)
+### 1. Character Limit (~500 Characters Maximum)
 
-NotebookLM customization prompts should be **concise but complete** - aim for 1000-1500 characters. This provides enough context for clear steering while remaining focused.
+NotebookLM's Audio Overview customization prompt field has a **~500 character hard limit**. This is a technical constraint of the platform that cannot be exceeded.
 
 **Best Practice:**
-- Target 1000-1500 characters for the main prompt
-- Use clear structure: TARGET AUDIENCE → SOURCE FOCUS → FORMAT & LENGTH → TOPICS → DISCUSSION PREP
-- Put facilitator notes and extended context in a separate section
-- Balance between too terse (loses clarity) and too verbose (loses focus)
+- Target 400-480 characters (leaves buffer for safety)
+- Use ultra-concise structure: AUDIENCE → SOURCES → FORMAT → TOPICS → DISCUSSION
+- Put ALL extended context in separate "For Facilitators" section (not copied to NotebookLM)
+- Trust uploaded sources for detailed content - prompt only steers focus
+- Every word must earn its place
 
-**Example:**
+**The Constraint:**
+NotebookLM's UI prompt input field truncates after approximately 500 characters. Longer prompts will be cut off and not fully processed.
+
+**Compression Techniques:**
+- Use "Ch 1-3" not "Chapters 1-3"
+- Use "15min" not "15 minute" or "15-20 minutes"
+- Use "(1), (2), (3)" not "First, Second, Third"
+- Remove articles: "Create podcast on" not "Create a podcast covering"
+- Use "/" for alternatives: "developer/manager" not "developer or manager"
+- Combine related items: "DORA metrics (Lead Time, Deployment Freq, MTTR, Change Fail Rate)"
+
+**Examples:**
+
 ```
-❌ TOO COMPRESSED (400 characters):
-Make 15min podcast on Ch 1-3. Cover DORA metrics and culture.
-
-❌ TOO VERBOSE (2,500+ characters):
-This podcast prepares participants for Meeting 1 of an Accelerate DevEx Book Club focused on Chapters 1-3. In Chapter 1, the authors Nicole Forsgren, Jez Humble, and Gene Kim discuss the extensive research foundation with over 23,000 survey responses collected from more than 2,000 organizations spanning multiple years...
-
-✅ WELL-STRUCTURED (1,200 characters):
+❌ TOO VERBOSE (1,200 characters) - WILL BE TRUNCATED:
 TARGET AUDIENCE:
 Assume the listener is a software developer or engineering manager preparing for a book club discussion.
 
@@ -40,6 +47,12 @@ TOPICS TO COVER:
 
 DISCUSSION PREPARATION:
 Help prepare listeners to discuss current metrics, culture type, and practices to shift culture.
+
+❌ TOO COMPRESSED (185 characters) - LOSES CLARITY:
+Make 15min podcast on Ch 1-3. Cover DORA metrics and culture.
+
+✅ OPTIMAL (475 characters) - FITS LIMIT WITH CLARITY:
+Assume listener is developer/manager preparing for book club. Focus on Ch 1-3 from Accelerate. Create 15min deep dive on: (1) Research foundation with 23K+ surveys establishing credibility, (2) Four DORA metrics (Lead Time, Deploy Freq, MTTR, Change Fail Rate) with key finding that high performers achieve BOTH speed AND stability (46x/440x/170x stats), (3) Westrum culture types (Pathological, Bureaucratic, Generative), (4) Deployment pain as signal. Help discuss current metrics and culture shift practices.
 ```
 
 ---
@@ -328,7 +341,7 @@ Create a 15-20 minute conversational deep dive on chapters 1-3. Balance research
 ## 10. Testing Your Prompts
 
 **Quick Check:**
-1. ✅ Character count under 500?
+1. ✅ Character count ≤500? (Use counter below)
 2. ✅ Persona specified at beginning?
 3. ✅ Sources explicitly named?
 4. ✅ Topics listed with structure?
@@ -340,6 +353,8 @@ Use any online character counter or this bash command:
 ```bash
 echo "Your prompt here" | wc -m
 ```
+
+**Target:** 400-480 characters (leaves buffer below 500 limit)
 
 ---
 

@@ -32,44 +32,7 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-TARGET AUDIENCE:
-Assume the listener is a software developer, DevOps practitioner, or engineering manager preparing for a book club discussion on the technical practices, architecture patterns, and security integration that enable continuous delivery and high performance.
-
-SOURCE FOCUS:
-Focus on Chapters 4-6 from uploaded Accelerate sources (Forsgren, Humble, Kim).
-
-FORMAT & LENGTH:
-Create a 15-20 minute conversational deep dive podcast. Balance technical detail with practical applicability. Connect practices back to DORA metrics from Meeting 1.
-
-TOPICS TO COVER:
-
-1. CONTINUOUS DELIVERY FOUNDATIONS (Chapter 4)
-   - Five key principles: Build quality in, work in small batches, automate repetitive tasks, continuous improvement, everyone is responsible
-   - Eight CD technical practices: Version control, deployment automation, CI, trunk-based development, test automation, test data management, shift-left security, CD (always deployable)
-   - Key insight: CD is the "engine" that drives DORA metrics improvements
-
-2. LOOSELY COUPLED ARCHITECTURE (Chapter 5)
-   - Core principle: Teams can test, deploy, and change systems without depending on other teams
-   - Characteristics: Testability, independent deployability, small modules, clear APIs, team ownership
-   - Research finding: Architecture matters MORE than microservices vs monoliths - pattern is loose coupling with clear boundaries
-   - Cultural connection: Tight coupling creates blame/delays (pathological), loose coupling enables independence/trust (generative)
-
-3. INTEGRATING SECURITY (Chapter 6)
-   - Shift-left security: Move from end-of-process gate to integrated daily practice
-   - What it looks like: Security reviews throughout lifecycle, pre-approved tools, self-service capabilities, automated testing in pipeline
-   - Research finding: Shifting left IMPROVES both speed AND security (no trade-off)
-   - Cultural impact: Security becomes "everyone's job", reduces friction, enables shared responsibility
-
-4. HOW PRACTICES DRIVE METRICS AND CULTURE
-   - Automation → Deployment Frequency increases
-   - Testing → Change Fail Rate decreases
-   - Trunk-based development → Lead Time decreases
-   - Loosely coupled architecture → Time to Restore decreases
-
-   - Practices → Culture: Automation removes handoffs (collaboration improves), testing builds confidence (risk-taking increases), architecture independence (trust grows), security integration (shared responsibility)
-
-DISCUSSION PREPARATION:
-Help listeners prepare to discuss: (1) Which CD practices are they already doing vs. missing? (2) How does their architecture enable or prevent independent work? (3) What friction exists between development and security teams? (4) What's the smallest practice change they could make this week? (5) How might adopting one CD practice improve both systems AND culture?
+Assume listener is developer/DevOps for book club. Focus Ch 4-6 Accelerate. Create 15-20min deep dive: (1) CD - 5 principles (quality in, small batches, automate, improve, shared responsibility) + 8 practices (version control, deploy automation, CI, trunk-based, test automation, test data, shift-left security, CD), (2) Loosely coupled arch - teams test/deploy independently, (3) Shift-left security. Discuss practices missing, architecture enabling independence, practice to start.
 ```
 
 ---

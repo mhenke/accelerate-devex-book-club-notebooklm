@@ -32,40 +32,7 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-TARGET AUDIENCE:
-Assume the listener is a software developer, DevOps practitioner, or engineering manager preparing for a book club discussion who wants comprehensive understanding of the research foundation and evidence-based approach to measuring and improving delivery performance and organizational culture.
-
-SOURCE FOCUS:
-Focus on Chapters 1-3 from uploaded Accelerate sources (Forsgren, Humble, Kim).
-
-FORMAT & LENGTH:
-Create a comprehensive 20-25 minute conversational deep dive podcast. This is the LONGER format - include detailed explanations, all performance levels, and methodology.
-
-TOPICS TO COVER:
-
-1. RESEARCH FOUNDATION (Chapter 1)
-   - 23,000+ survey responses, scientific rigor, why this research is trustworthy
-   - Cross-sectional studies, statistical significance, cluster analysis
-   - Evidence-based approach vs. opinions and best practices
-
-2. FOUR DORA METRICS (Chapter 2) - COMPREHENSIVE
-   - Define all four metrics with performance levels (elite, high, medium, low)
-   - Lead Time, Deployment Frequency, Time to Restore, Change Fail Rate
-   - Key stats: 46x deployments, 440x faster lead time, 170x faster recovery
-   - Debunk speed-vs-stability trade-off myth with detailed explanation
-   - Why utilization and velocity are local outputs, not global outcomes
-
-3. WESTRUM'S THREE CULTURE TYPES (Chapter 3) - DETAILED
-   - Pathological, Bureaucratic, Generative with specific behaviors
-   - Examples listeners can recognize in their workplace
-   - Critical insight: Culture can be changed through technical practices
-
-4. DEPLOYMENT PAIN AS SIGNAL
-   - Anxiety indicates process problems, not personal failure
-   - Connection to daily developer experience
-
-DISCUSSION PREPARATION:
-Help listeners prepare to discuss: (1) how their current metrics might reinforce wrong behaviors, (2) which culture type describes their organization with specific examples, (3) what one technical practice could shift culture toward generative, (4) whether they believe high performers really achieve both speed and stability in their context.
+Assume listener wants comprehensive understanding. Focus on Ch 1-3 Accelerate. Create 20-25min detailed deep dive: (1) Research (23K+ surveys, scientific rigor), (2) DORA metrics WITH performance levels (elite/high/med/low) plus 46x/440x/170x stats and myth-debunking, (3) Westrum culture types WITH behaviors, (4) Deployment pain. Help discuss metrics reinforcing wrong behaviors, culture examples, practices to shift culture toward generative.
 ```
 
 ---

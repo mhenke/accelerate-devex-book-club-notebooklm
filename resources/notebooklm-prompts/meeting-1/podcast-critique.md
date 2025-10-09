@@ -32,39 +32,7 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-TARGET AUDIENCE:
-Assume the listener is a skeptical practitioner, engineering leader, or critical thinker who wants to examine assumptions and limitations before adopting these ideas. Use a constructively critical tone - appreciating strengths while questioning weaknesses.
-
-SOURCE FOCUS:
-Focus on Chapters 1-3 from uploaded Accelerate sources.
-
-FORMAT & LENGTH:
-Create a 15-20 minute critical analysis podcast. Question assumptions, explore limitations, and examine real-world applicability challenges.
-
-TOPICS TO CRITICALLY EXAMINE:
-
-1. RESEARCH METHODOLOGY - STRENGTHS & LIMITATIONS
-   - Strengths: Large sample (23,000+), peer-reviewed, statistical rigor
-   - Questions: Self-reported data bias? Survivorship bias? Correlation vs. causation? Generalizability from 2014-2017 to today? Context matters (regulated industries, legacy systems)?
-
-2. DORA METRICS - WHAT'S MISSING?
-   - What they measure well: Delivery speed, stability, operational excellence
-   - Critical gaps: Customer value (are we building the right things?), business outcomes, code quality/maintainability, team wellbeing, innovation
-   - Can you game these metrics? What unintended behaviors might they incentivize?
-
-3. SPEED + STABILITY CLAIM - DEEPER EXAMINATION
-   - Research finding: High performers achieve both
-   - Skeptical questions: What's the causal mechanism? Contexts where this doesn't hold (safety-critical, embedded)? Initial investment required? Survivorship bias in success stories?
-
-4. CULTURE ASSESSMENT - METHODOLOGICAL CONCERNS
-   - Westrum model strengths: Evidence-based, observable behaviors
-   - Concerns: Self-assessment bias, reductionist (only 3 types?), "culture can be changed" evidence, power dynamics (whose assessment counts?), measurement challenges
-
-5. PRACTICAL IMPLEMENTATION CHALLENGES
-   - Legacy systems and tech debt, leadership support, funding, regulatory constraints, time horizon for results, human cost during transformation
-
-DISCUSSION PREPARATION:
-Help listeners prepare to discuss: What limitations should we consider before applying this research? What context-specific factors might make these findings less applicable? What alternative perspectives should we explore?
+Assume listener is skeptical practitioner examining assumptions. Focus on Ch 1-3 Accelerate. Create 15-20min critical analysis: (1) Research (strengths: 23K+ peer-reviewed; limits: self-reported bias?), (2) DORA gaps (measures speed/stability, misses value/wellbeing), (3) Speed+stability claim (causal mechanism? where fails?), (4) Culture assessment (self-bias, oversimplified?), (5) Implementation obstacles. Help discuss limitations and context factors affecting applicability.
 ```
 
 ---
