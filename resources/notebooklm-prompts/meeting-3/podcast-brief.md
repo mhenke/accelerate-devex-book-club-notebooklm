@@ -10,42 +10,30 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This is a BRIEF 5-10 minute summary for Meeting 3 of an Accelerate DevEx Book Club. Provide only the most essential takeaways from Chapters 7-10.
-
-MEETING 3 CORE QUESTION:
-"How could we apply Lean principles to improve delivery flow AND reduce burnout?"
-
-ESSENTIAL TAKEAWAYS ONLY:
-
-1. FIVE LEAN PRACTICES (2 minutes)
-   - Limit WIP (work in progress)
-   - Visual management (kanban boards)
-   - Monitoring with proactive notifications
-   - Lightweight change approval (peer review, not CABs)
-   - Work in small batches
-
-   KEY INSIGHT: These practices reduce cognitive load and improve flow
-
-2. DEPLOYMENT PAIN CAUSES BURNOUT (2 minutes)
-   - Manual, complex deployments create anxiety
-   - Off-hours work and pager fatigue
-   - Automation reduces deployment pain
-   - Reduced pain → reduced burnout
-
-3. EMPLOYEE SATISFACTION DRIVERS (1 minute)
-   - Having the right tools
-   - Doing meaningful work
-   - Generative culture
-
 TARGET AUDIENCE:
-Busy professionals who need the absolute essentials before a book club meeting.
+Assume the listener is a busy professional needing the absolute essentials before a book club meeting. They need only the most essential takeaways from Chapters 7-10.
 
-LENGTH REQUIREMENT:
-Keep this EXTREMELY concise - 5-10 minutes maximum.
+SOURCE FOCUS:
+Focus on Chapters 7-10 from uploaded Accelerate sources.
 
-CALL TO ACTION:
-- What's your current WIP?
-- How painful are your deployments?
-- Do you have the right tools?
+FORMAT & LENGTH:
+Create an extremely concise 5-10 minute brief podcast. Focus only on what listeners absolutely must know - no deep dives, minimal examples.
+
+TOPICS TO COVER (Essential Takeaways Only):
+
+1. FIVE LEAN PRACTICES
+   - List only: Limit WIP, visual management (kanban), monitoring with proactive notifications, lightweight change approval (peer review not CABs), work in small batches
+   - ONE KEY INSIGHT: These reduce cognitive load and improve flow
+
+2. DEPLOYMENT PAIN CAUSES BURNOUT
+   - Manual/complex deployments create anxiety, off-hours work, pager fatigue
+   - Automation reduces deployment pain
+   - Key finding: Deployment pain predicts burnout
+
+3. EMPLOYEE SATISFACTION DRIVERS
+   - Having right tools, doing meaningful work, generative culture
+   - Virtuous cycle: Satisfied employees → better performance
+
+DISCUSSION PREPARATION:
+Prompt listeners to think about: Current WIP levels? How painful are deployments? Do they have right tools, meaningful work, and generative culture?
 ```

@@ -20,13 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast explores CONTROVERSIAL TOPICS from Chapters 7-10 of Accelerate through structured debate. Present both sides of contentious issues around WIP limits, deployment practices, burnout factors, and employee satisfaction.
+TARGET AUDIENCE:
+Assume the listener values hearing multiple perspectives on lean practices, deployment strategies, and employee satisfaction initiatives. They're balancing competing priorities and constraints.
 
-DEBATE FORMAT:
-For each topic, present PRO, CON, and SYNTHESIS positions.
+SOURCE FOCUS:
+Focus on Chapters 7-10 from uploaded Accelerate sources.
 
-MEETING 3 DEBATES:
+FORMAT & LENGTH:
+Create a 15-20 minute debate-style podcast. For each topic: (1) present PRO position, (2) present CON/skeptical position, (3) synthesize where both might be right. Present strongest version of each argument.
+
+DEBATES TO EXPLORE:
 
 DEBATE 1: "Strict WIP Limits vs. Flexible Capacity Management"
 
@@ -183,24 +186,8 @@ CON - Measurement Creates Problems:
 SYNTHESIS:
 When is employee satisfaction measurement helpful vs. harmful? How to measure while maintaining psychological safety?
 
----
-
-TARGET AUDIENCE:
-Teams making decisions about lean practices, deployment strategies, and employee satisfaction initiatives. Managers balancing competing priorities and constraints.
-
-TONE:
-Balanced. Both sides have valid points depending on context. Encourage nuanced thinking over binary choices.
-
-LENGTH GUIDANCE:
-15-20 minutes. Give each side fair airtime. Present strongest version of each argument.
-
 DISCUSSION PREPARATION:
-Help listeners discuss:
-- Which side resonates with their experience?
-- What would change their mind?
-- Can they see contexts where each is valid?
-- What experiments could test these debates in their organization?
-- How to hold nuance rather than picking a "side"?
+Help listeners discuss which side resonates with their experience, what would change their mind, contexts where each is valid, experiments to test these debates in their organization, and how to hold nuance rather than picking a "side".
 ```
 
 ---
