@@ -32,34 +32,7 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-TARGET AUDIENCE:
-Assume the listener values hearing multiple perspectives before forming opinions. They want to explore tensions and trade-offs in the research.
-
-SOURCE FOCUS:
-Focus on Chapters 1-3 from uploaded Accelerate sources.
-
-FORMAT & LENGTH:
-Create a 15-20 minute debate-style podcast with two distinct voices exploring contrasting viewpoints. For each topic: (1) present the PRO position supporting Accelerate's claims, (2) present the CON/SKEPTICAL position questioning claims, (3) synthesize where both sides might be right depending on context.
-
-DEBATES TO EXPLORE:
-
-DEBATE 1: "Metrics as Weapons vs. Metrics as Learning"
-- PRO: DORA metrics provide objective data, enable improvement, reduce guesswork, research shows correlation with outcomes
-- CON: Metrics get gamed (Goodhart's Law), create pressure leading to shortcuts, can't capture everything (customer value, team health), risk of using for performance reviews destroys safety
-- SYNTHESIS: When are metrics helpful vs. harmful? How do you measure without perverse incentives?
-
-DEBATE 2: "Speed vs. Stability - Universal or Context-Dependent?"
-- PRO: 46x deployments/440x lead time proves it works everywhere, all industries/sizes, automation enables both
-- CON: Regulated industries have legitimate constraints, legacy systems, embedded/safety-critical have different trade-offs, not all orgs can afford automation investment, research may have survivorship bias
-- SYNTHESIS: What principles are universal vs. what tactics depend on context?
-
-DEBATE 3: "Culture Change Through Practice vs. Leadership First"
-- PRO: "Act your way to better culture", implementing CD creates generative culture, bottom-up change works
-- CON: Without leadership support practices don't stick, top-down mandate required, middle management can block, need psychological safety first
-- SYNTHESIS: How do practice and leadership interact? What comes first?
-
-DISCUSSION PREPARATION:
-Help listeners think about which perspectives resonate with their experience and what tensions they see in their own context.
+Assume listener values multiple perspectives. Focus on Ch 1-3 Accelerate. Create 15-20min debate with PRO/CON/synthesis: (1) Metrics as weapons vs learning (PRO: objective data; CON: gets gamed; Synthesis: when helpful?), (2) Speed+stability universal? (PRO: 46x/440x proves it; CON: regulated/legacy differ; Synthesis: principles vs tactics?), (3) Culture change practice vs leadership first? Help listeners identify which perspectives resonate with their experience.
 ```
 
 ---

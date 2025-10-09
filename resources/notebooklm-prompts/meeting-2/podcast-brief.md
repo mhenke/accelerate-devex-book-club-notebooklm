@@ -20,44 +20,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This is a BRIEF 5-10 minute summary for Meeting 2 of an Accelerate DevEx Book Club. Provide only the most essential takeaways from Chapters 4-6.
-
-MEETING 2 CORE QUESTION:
-"Which of our current practices create the most friction, and what is the smallest technical change we could make to enable more independent, 'shift-left' work?"
-
-ESSENTIAL TAKEAWAYS ONLY:
-
-TARGET AUDIENCE:
-Assume the listener is a busy professional (developer, DevOps engineer, or manager) needing quick preparation before a book club meeting. They need the absolute essentials only.
-
-SOURCE FOCUS:
-Focus on Chapters 4-6 from uploaded Accelerate sources.
-
-FORMAT & LENGTH:
-Create an EXTREMELY concise 5-10 minute brief podcast. Focus only on what listeners absolutely must know - no deep dives, minimal examples.
-
-TOPICS TO COVER (Essential Takeaways Only):
-
-1. CONTINUOUS DELIVERY = 8 PRACTICES (2 minutes)
-   - List only: Version control, deployment automation, CI, trunk-based development, test automation, test data management, shift-left security, CD capability
-   - ONE KEY INSIGHT: CD is the "engine" driving high performance
-
-2. LOOSELY COUPLED ARCHITECTURE (2 minutes)
-   - Core idea: Teams can deploy independently without coordination
-   - Biggest contributor to CD capability
-   - Architecture matters MORE than microservices vs. monolith
-   - Critical question: Can you test and deploy without dependencies on other teams?
-
-3. SHIFT-LEFT SECURITY (1 minute)
-   - Move security from end-gate to integrated daily practice
-   - Pre-approved tools, automated testing
-   - Result: Improves BOTH speed AND security
-
-DISCUSSION PREPARATION:
-Prompt listeners to think about: Which of the 8 CD practices are we missing? Can our team deploy independently? Is security a gate or integrated?
-
-SKIP: Practice details, implementation patterns, cultural connections.
+Assume listener needs essentials for book club. Focus on Ch 4-6 Accelerate. Create 5-10min brief: (1) Eight CD practices (version control, deploy automation, CI, trunk-based dev, test automation, test data, shift-left security, CD) - CD drives performance, (2) Loosely coupled arch - teams deploy independently, biggest CD factor, (3) Shift-left security - gate to integrated. Discuss: which practices missing? Deploy independently? Security integrated?
 ```
 
 ---

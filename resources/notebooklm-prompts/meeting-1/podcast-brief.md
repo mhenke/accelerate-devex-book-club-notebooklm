@@ -32,37 +32,7 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-TARGET AUDIENCE:
-Assume the listener is a busy professional (developer, DevOps engineer, or manager) needing quick preparation before a book club meeting. They need the absolute essentials only.
-
-SOURCE FOCUS:
-Focus on Chapters 1-3 from uploaded Accelerate sources.
-
-FORMAT & LENGTH:
-Create an EXTREMELY concise 5-10 minute brief podcast. Focus only on what listeners absolutely must know - no deep dives, minimal examples.
-
-TOPICS TO COVER (Essential Takeaways Only):
-
-1. THE FOUR DORA METRICS
-   - Lead Time (commit to production)
-   - Deployment Frequency (how often we deploy)
-   - Time to Restore (recovery speed)
-   - Change Fail Rate (% of deployments that fail)
-
-   ONE KEY STAT: High performers deploy 46x more frequently with 440x faster lead time
-
-2. SPEED + STABILITY ARE NOT A TRADE-OFF
-   - High performers achieve BOTH simultaneously
-   - This debunks the most common myth in software delivery
-
-3. THREE CULTURE TYPES (30 seconds max)
-   - Pathological (blame/fear), Bureaucratic (rules/process), Generative (learning/performance)
-   - Culture can be changed through practice
-
-DISCUSSION PREPARATION:
-Prompt listeners to think about: Which DORA metric would they measure first? Do they believe speed and stability trade off in their context?
-
-SKIP: Research methodology, detailed performance levels, deployment pain concept, extensive examples.
+Assume listener needs essentials for book club. Focus on Ch 1-3 Accelerate. Create 5-10min brief: (1) Four DORA metrics (Lead Time, Deploy Freq, MTTR, Change Fail Rate) - KEY: high performers 46x/440x, (2) Speed+stability NOT trade-off - achievable together, (3) Three culture types (Pathological/blame, Bureaucratic/rules, Generative/learning). Discuss: which metric first? Speed/stability trade off in your context? SKIP: methodology, details, examples.
 ```
 
 ---

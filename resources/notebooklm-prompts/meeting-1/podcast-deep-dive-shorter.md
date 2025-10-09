@@ -31,10 +31,8 @@
 
 ### Complete Prompt (Copy Everything Below)
 
-**Note:** This prompt is optimized for NotebookLM's 500-character steering prompt limit.
-
 ```
-Assume the listener is a developer or manager needing a quick overview before a book club meeting. Focus on Chapters 1-3 from Accelerate sources. Create a concise 10-15 minute podcast emphasizing: (1) Four DORA metrics definitions, (2) speed vs stability myth-busting with key stats (46x, 440x, 170x), (3) brief overview of Westrum's three culture types. Help prepare listeners to discuss which metric to measure first and whether speed/stability trade off.
+Assume listener is developer/manager needing quick overview before book club. Focus on Ch 1-3 Accelerate. Create concise 10-15min podcast on: (1) Four DORA metrics (Lead Time, Deploy Freq, MTTR, Change Fail Rate), (2) Speed+stability myth-busting with 46x/440x/170x stats, (3) Westrum culture types brief (Pathological, Bureaucratic, Generative). Help discuss which metric to measure first and whether speed/stability trade off in their context.
 ```
 
 ---
