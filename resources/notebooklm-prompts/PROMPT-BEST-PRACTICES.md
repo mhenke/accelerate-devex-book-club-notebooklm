@@ -4,22 +4,42 @@ This guide explains how to create effective NotebookLM prompts based on research
 
 ## Key Principles
 
-### 1. Character Limit (500 Characters)
+### 1. Character Limit (1000-1500 Characters Target)
 
-NotebookLM steering prompts have a **500-character limit** for the customization field when generating audio overviews or summaries.
+NotebookLM customization prompts should be **concise but complete** - aim for 1000-1500 characters. This provides enough context for clear steering while remaining focused.
 
 **Best Practice:**
-- Keep the actual prompt concise (under 500 chars)
-- Put detailed context in your uploaded sources, not the prompt
-- Use the prompt to steer focus and format, not provide content
+- Target 1000-1500 characters for the main prompt
+- Use clear structure: TARGET AUDIENCE → SOURCE FOCUS → FORMAT & LENGTH → TOPICS → DISCUSSION PREP
+- Put facilitator notes and extended context in a separate section
+- Balance between too terse (loses clarity) and too verbose (loses focus)
 
 **Example:**
 ```
-❌ TOO LONG (1,200+ characters):
-This podcast prepares participants for Meeting 1 of an Accelerate DevEx Book Club focused on Chapters 1-3. Cover the research foundation with 23,000+ survey responses from 2,000+ organizations, scientific rigor including cross-sectional studies and statistical significance...
+❌ TOO COMPRESSED (400 characters):
+Make 15min podcast on Ch 1-3. Cover DORA metrics and culture.
 
-✅ OPTIMIZED (450 characters):
-Assume the listener is a software developer preparing for a book club discussion. Focus on Chapters 1-3 from uploaded Accelerate sources. Create a 15-20 minute deep dive covering: (1) research foundation and DORA metrics, (2) Westrum's three culture types, and (3) deployment pain as signal. Help prepare listeners to discuss metrics and culture practices.
+❌ TOO VERBOSE (2,500+ characters):
+This podcast prepares participants for Meeting 1 of an Accelerate DevEx Book Club focused on Chapters 1-3. In Chapter 1, the authors Nicole Forsgren, Jez Humble, and Gene Kim discuss the extensive research foundation with over 23,000 survey responses collected from more than 2,000 organizations spanning multiple years...
+
+✅ WELL-STRUCTURED (1,200 characters):
+TARGET AUDIENCE:
+Assume the listener is a software developer or engineering manager preparing for a book club discussion.
+
+SOURCE FOCUS:
+Focus on Chapters 1-3 from uploaded Accelerate sources.
+
+FORMAT & LENGTH:
+Create a 15-20 minute conversational deep dive podcast.
+
+TOPICS TO COVER:
+1. RESEARCH FOUNDATION - 23,000+ survey responses, why research is trustworthy
+2. FOUR DORA METRICS - Lead Time, Deployment Frequency, Time to Restore, Change Fail Rate with key stats (46x, 440x, 170x)
+3. WESTRUM'S CULTURE TYPES - Pathological, Bureaucratic, Generative with behaviors
+4. DEPLOYMENT PAIN AS SIGNAL - Process problems vs personal failure
+
+DISCUSSION PREPARATION:
+Help prepare listeners to discuss current metrics, culture type, and practices to shift culture.
 ```
 
 ---
@@ -169,18 +189,71 @@ Help listeners prepare to discuss: (1) how their current metrics reinforce wrong
 
 ## 7. Complete Prompt Template
 
-**Optimized Structure (Under 500 Characters):**
+**Recommended Structure (1000-1500 Characters):**
 
 ```
-Assume the listener is [persona]. Focus on [sources]. Create a [length] [format] covering: (1) [topic 1], (2) [topic 2], (3) [topic 3]. [Special emphasis]. Help prepare listeners to discuss [key questions].
+TARGET AUDIENCE:
+Assume the [listener/viewer] is [persona with details]. [Context about their needs/goals].
+
+SOURCE FOCUS:
+Focus on [specific chapters/sources] from uploaded [book/materials].
+
+FORMAT & LENGTH:
+Create a [length] [format type] [style/tone]. [Any special format notes].
+
+TOPICS TO COVER:
+
+1. [TOPIC 1 HEADING]
+   - [Key point 1]
+   - [Key point 2]
+   - [Key stats or examples]
+
+2. [TOPIC 2 HEADING]
+   - [Key point 1]
+   - [Key point 2]
+
+3. [TOPIC 3 HEADING]
+   - [Key point 1]
+   - [Key point 2]
+
+[4. Additional topics as needed]
+
+DISCUSSION PREPARATION:
+Help [listeners/viewers] prepare to discuss: [Question 1], [Question 2], [Question 3].
+
+[Optional: SKIP or EMPHASIS sections for clarity]
 ```
 
 **Example Application:**
 ```
-Assume the listener is a software developer preparing for a book club. Focus on Chapters 4-6 from Accelerate. Create a 15-20 minute deep dive covering: (1) continuous delivery principles, (2) architecture for testability, (3) trunk-based development. Emphasize how practices enable both speed and stability. Help prepare listeners to discuss deployment frequency and testing strategies.
+TARGET AUDIENCE:
+Assume the listener is a software developer or DevOps engineer preparing for a book club discussion on continuous delivery practices.
+
+SOURCE FOCUS:
+Focus on Chapters 4-6 from uploaded Accelerate sources.
+
+FORMAT & LENGTH:
+Create a 15-20 minute conversational deep dive podcast. Balance technical detail with practical applicability.
+
+TOPICS TO COVER:
+
+1. CONTINUOUS DELIVERY PRINCIPLES
+   - Definition and core practices
+   - How CD enables both speed and stability
+
+2. ARCHITECTURE FOR TESTABILITY
+   - Loosely coupled architecture benefits
+   - Testing pyramid and automation
+
+3. TRUNK-BASED DEVELOPMENT
+   - Branch strategies comparison
+   - Why short-lived branches work better
+
+DISCUSSION PREPARATION:
+Help prepare listeners to discuss: current deployment frequency, testing automation gaps, and branch strategy trade-offs in their context.
 ```
 
-*Character count: 423*
+*Character count: 1,104*
 
 ---
 

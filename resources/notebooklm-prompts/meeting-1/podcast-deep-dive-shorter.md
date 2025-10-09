@@ -31,55 +31,55 @@
 
 ### Complete Prompt (Copy Everything Below)
 
+**Note:** This prompt is optimized for NotebookLM's 500-character steering prompt limit.
+
 ```
-BOOK CLUB CONTEXT:
-This podcast prepares participants for Meeting 1 of an Accelerate DevEx Book Club focused on Chapters 1-3. This is a SHORTER format - focus on the most critical concepts only.
+Assume the listener is a developer or manager needing a quick overview before a book club meeting. Focus on Chapters 1-3 from Accelerate sources. Create a concise 10-15 minute podcast emphasizing: (1) Four DORA metrics definitions, (2) speed vs stability myth-busting with key stats (46x, 440x, 170x), (3) brief overview of Westrum's three culture types. Help prepare listeners to discuss which metric to measure first and whether speed/stability trade off.
+```
 
-OVERALL FRAMING QUESTION:
-"How can we build a virtuous cycle where improving our technical systems enhances our team culture, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?"
+---
 
-MEETING 1 CORE QUESTION:
-"How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?"
+### Extended Context (For Reference - Do Not Copy to NotebookLM)
 
-FOCUS:
-Cover chapters 1-3 of Accelerate by Forsgren, Humble, and Kim. Discuss ONLY the most essential points:
+**Meeting:** 1 - Laying the Foundation
+**Chapters:** 1-3
+**Format:** Shorter Deep Dive (10-15 min)
 
-1. FOUR DORA METRICS (Chapter 2) - PRIMARY FOCUS
+**Target Audience:**
+"Assume the listener is a software developer, DevOps practitioner, or engineering manager who needs a quick overview before the book club meeting."
+
+**Source Focus:**
+- Primary: Chapters 1-3 from "Accelerate"
+- Focus most on Chapter 2 (DORA metrics)
+
+**Topic Focus - Essential Points Only:**
+
+1. **Four DORA Metrics (Chapter 2) - PRIMARY FOCUS**
    - Lead Time for Changes
    - Deployment Frequency
    - Time to Restore Service
    - Change Fail Rate
+   - **Key Finding:** High performers achieve BOTH speed AND stability (46x deployments, 440x faster lead time, 170x faster recovery)
 
-   KEY FINDING: High performers achieve BOTH speed AND stability:
-   - 46x more frequent deployments
-   - 440x faster lead time
-   - 170x faster recovery
+2. **Speed vs. Stability Myth (Chapter 2)**
+   - Debunk the false trade-off
+   - Use concrete relatable examples
 
-   Spend most time here - these metrics are the foundation for all future discussions.
+3. **Westrum's Three Culture Types (Chapter 3) - BRIEF OVERVIEW**
+   - Pathological (power-oriented), Bureaucratic (rule-oriented), Generative (performance-oriented)
+   - **Key Insight:** Culture can be changed through practice
 
-2. SPEED VS. STABILITY MYTH (Chapter 2)
-   - Debunk the false trade-off between speed and stability
-   - High performers excel at both simultaneously
-   - Use concrete examples listeners can relate to
+**What to Skip:**
+- Research methodology details (save for longer format)
+- Deployment pain deep dive
 
-3. WESTRUM'S THREE CULTURE TYPES (Chapter 3) - BRIEF OVERVIEW
-   - Pathological: Power-oriented, low cooperation
-   - Bureaucratic: Rule-oriented, modest cooperation
-   - Generative: Performance-oriented, high cooperation
+**Discussion Preparation:**
+- Which DORA metric would be easiest to measure first?
+- Do you believe speed and stability trade off?
+- Which culture type describes your organization?
 
-   KEY INSIGHT: Culture can be changed through practice
-
-TARGET AUDIENCE:
-Software developers, DevOps practitioners, and engineering managers who need a quick overview before the book club meeting.
-
-LENGTH GUIDANCE:
-Keep this CONCISE - aim for 10-15 minutes maximum. Focus on DORA metrics definition and speed+stability myth-busting. Only briefly mention culture types. Skip research methodology details - listeners can dive deeper in the book or use longer podcast format.
-
-DISCUSSION PREPARATION:
-Help listeners prepare to discuss:
-- Which DORA metric would be easiest for their team to measure first
-- Whether they currently believe speed and stability trade off
-- Which culture type best describes their organization
+**Meeting Core Question:**
+"How do we shift focus from local outputs (utilization, story points) to global outcomes (speed and stability) that research proves matter?"
 ```
 
 ---
