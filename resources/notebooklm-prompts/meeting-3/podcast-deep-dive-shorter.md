@@ -20,39 +20,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-TARGET AUDIENCE:
-Assume the listener needs a quick overview of the most important lean management and sustainability concepts before a book club meeting. They're short on time but want the essentials.
-
-SOURCE FOCUS:
-Focus on Chapters 7-10 from uploaded Accelerate sources.
-
-FORMAT & LENGTH:
-Create a concise 10-15 minute podcast. Focus on essentials only - five lean practices (names + brief explanations), deployment pain → burnout connection, and three satisfaction drivers. Skip detailed examples.
-
-TOPICS TO COVER:
-
-1. FIVE LEAN PRACTICES - ESSENTIALS ONLY
-   - Limit WIP (reduces context switching, improves focus)
-   - Visual management (kanban boards, everyone sees blockers/flow)
-   - Monitoring & feedback (proactive notifications, data-driven decisions)
-   - Lightweight change approval (peer review not CABs - high performers use peer review + automation)
-   - Small batch work (reduces cycle time/risk, connects to CD from Meeting 2)
-   - Key point: These reduce cognitive load and enable sustainable pace
-
-2. DEPLOYMENT PAIN CAUSES BURNOUT
-   - What is deployment pain: Manual/complex deployments, off-hours work, high failure rates, anxiety
-   - Why it causes burnout: Disrupts work-life balance, chronic stress, pager fatigue, fear of breaking production
-   - How to reduce: Automation, comprehensive testing, feature flags, better monitoring/rollback
-   - Research finding: Deployment pain predicts burnout
-
-3. EMPLOYEE SATISFACTION DRIVERS
-   - Having right tools (modern dev environment, CI/CD, freedom to choose tools)
-   - Doing meaningful work (connection to mission, visible impact, autonomy, learning)
-   - Generative culture (psychological safety from Meeting 1, trust, learning from failures)
-   - Virtuous cycle: Satisfied employees → better performance → more satisfaction
-
-DISCUSSION PREPARATION:
-Help listeners discuss: Current WIP levels (too high?), deployment pain (1-10 scale?), whether they have right tools/meaningful work/generative culture, which lean practice would have biggest impact on burnout.
+Assume listener needs quick overview. Focus Ch 7-10 Accelerate. Create 10-15min: (1) Five Lean (WIP, visual, monitoring, approval, batches), (2) Product (customer-centric, MVP), (3) Deployment pain → burnout, automation helps, (4) Satisfaction = tools + meaning + culture. Discuss: WIP? Pain? Satisfaction?
 ```
 
 ---
