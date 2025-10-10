@@ -7,35 +7,35 @@
 // Meeting 1: Foundation (Blue)
 [data-meeting="1"] {
   --theme-primary: #0969da;
-  --theme-secondary: #1f6feb;
-  --theme-accent: #388bfd;
-  --theme-surface: #f6f8fa;
-  --theme-on-surface: #24292f;
+  --accent-teal: #1f6feb;
+  --accent-coral: #388bfd;
+  --background-white: #f6f8fa;
+  --text-dark: #24292f;
 }
 
 // Meeting 2: Technical Excellence (Green)
 [data-meeting="2"] {
   --theme-primary: #1a7f37;
-  --theme-secondary: #238636;
-  --theme-accent: #2da44e;
-  --theme-surface: #f0fff4;
-  --theme-on-surface: #0d2818;
+  --accent-teal: #238636;
+  --accent-coral: #2da44e;
+  --background-white: #f0fff4;
+  --text-dark: #0d2818;
 }
 
 // Meeting 3: Management (Orange)
 [data-meeting="3"] {
   --theme-primary: #d97706;
-  --theme-secondary: #f59e0b;
-  --theme-accent: #fbbf24;
-  --theme-surface: #fffbeb;
-  --theme-on-surface: #451a03;
+  --accent-teal: #f59e0b;
+  --accent-coral: #fbbf24;
+  --background-white: #fffbeb;
+  --text-dark: #451a03;
 }
 
 // Meeting 4: Leadership (Purple)
 [data-meeting="4"] {
   --theme-primary: #8b5cf6;
-  --theme-secondary: #a78bfa;
-  --theme-accent: #c4b5fd;
-  --theme-surface: #faf5ff;
-  --theme-on-surface: #3c1361;
+  --accent-teal: #a78bfa;
+  --accent-coral: #c4b5fd;
+  --background-white: #faf5ff;
+  --text-dark: #3c1361;
 }

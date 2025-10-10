@@ -23,14 +23,14 @@
 }
 
 .not-found-title {
-  font-size: var(--font-size-display-small);
+  font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
   margin: var(--space-lg) 0 var(--space-sm) 0;
   color: #1a1a2e;
 }
 
 .not-found-subtitle {
-  font-size: var(--font-size-title-medium);
+  font-size: var(--font-size-h5);
   color: #16213e;
   margin-bottom: var(--space-lg);
 }
@@ -108,10 +108,10 @@
   }
 
   .not-found-title {
-    font-size: var(--font-size-headline-large);
+    font-size: var(--font-size-h3);
   }
 
   .not-found-subtitle {
-    font-size: var(--font-size-title-small);
+    font-size: var(--font-size-h6);
   }
 }

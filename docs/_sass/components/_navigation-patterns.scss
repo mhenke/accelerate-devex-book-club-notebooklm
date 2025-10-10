@@ -12,7 +12,7 @@
   padding: var(--space-lg);
   background: linear-gradient(135deg, var(--background-light), #e5e7eb);
   border-radius: var(--radius-md);
-  border: 2px solid var(--border-light);
+  border: 2px solid var(--border-medium);
 }
 
 .nav-item {
@@ -54,9 +54,9 @@
   }
 
   &:hover {
-    background: var(--primary-blue);
+    background: var(--meeting-1-color);
     color: var(--text-white);
-    border-color: var(--primary-blue);
+    border-color: var(--meeting-1-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
   }
@@ -82,7 +82,7 @@
     }
 
     .nav-title {
-      font-size: var(--font-size-body-large);
+      font-size: var(--font-size-h6);
       font-weight: var(--font-weight-semibold);
     }
   }
@@ -92,7 +92,7 @@
   text-align: center;
   font-weight: var(--font-weight-semibold);
   color: var(--text-light);
-  font-size: var(--font-size-headline-small);
+  font-size: var(--font-size-h5);
 }
 
 // Breadcrumb Navigation
@@ -105,12 +105,8 @@
   color: var(--text-light);
 
   a {
-    color: var(--primary-blue);
+    color: var(--meeting-1-color);
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .breadcrumb-separator {
@@ -127,7 +123,7 @@
 // Tab Navigation
 .tab-navigation {
   display: flex;
-  border-bottom: 2px solid var(--border-light);
+  border-bottom: 2px solid var(--border-medium);
   margin-bottom: var(--space-lg);
   overflow-x: auto;
 
@@ -146,13 +142,13 @@
     white-space: nowrap;
 
     &:hover {
-      color: var(--primary-blue);
+      color: var(--meeting-1-color);
       background: rgba(33, 150, 243, 0.05);
     }
 
     &.active {
-      color: var(--primary-blue);
-      border-bottom-color: var(--primary-blue);
+      color: var(--meeting-1-color);
+      border-bottom-color: var(--meeting-1-color);
       background: rgba(33, 150, 243, 0.1);
     }
 
@@ -165,13 +161,13 @@
 // Page Navigation (Table of Contents)
 .page-nav {
   background: var(--background-light);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
 
   .page-nav-title {
-    font-size: var(--font-size-headline-small);
+    font-size: var(--font-size-h5);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--space-md) 0;
     color: var(--text-dark);
@@ -180,7 +176,7 @@
     gap: var(--space-sm);
 
     i {
-      color: var(--primary-blue);
+      color: var(--meeting-1-color);
     }
   }
 
@@ -204,7 +200,7 @@
 
         &:hover {
           background: var(--background-white);
-          color: var(--primary-blue);
+          color: var(--meeting-1-color);
         }
 
         i {
@@ -215,7 +211,7 @@
       }
 
       &.current a {
-        background: var(--primary-blue);
+        background: var(--meeting-1-color);
         color: var(--text-white);
         font-weight: var(--font-weight-medium);
       }
@@ -292,7 +288,7 @@
   }
 
   .breadcrumb-nav {
-    font-size: var(--font-size-label-small);
+    font-size: var(--font-size-body);
     flex-wrap: wrap;
   }
 }
@@ -301,6 +297,6 @@
 .nav-item:focus,
 .tab-item:focus,
 .page-nav-list a:focus {
-  outline: 3px solid var(--primary-blue);
+  outline: 3px solid var(--meeting-1-color);
   outline-offset: 2px;
 }

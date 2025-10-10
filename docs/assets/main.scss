@@ -14,21 +14,32 @@
 @import "base/critical"; // Critical CSS for hero, DORA metrics, typography
 
 // 3. COMPONENTS - Reusable UI components (loaded async after critical)
+@import "components/hero"; // Hero banner component - critical for landing
 @import "components/buttons"; // Button variations and states
-@import "components/cards"; // Modular card system with BEM methodology
-@import "components/checkpoint-components"; // Interactive checkpoint and assessment components
+@import "components/navigation"; // Site navigation and menus
+@import "components/cards"; // Modular card system with BEM methodology (defines %card placeholder)
+@import "components/badges"; // Badge and label components
 @import "components/icons"; // Font Awesome with Material Design integration
 @import "components/media"; // Material Design 3 podcast playlist and media components
-@import "components/navigation"; // Main site navigation
-@import "components/navigation-patterns"; // Navigation patterns and meeting nav
 @import "components/sections"; // Section layouts and content containers
+@import "components/metrics"; // DORA metrics and visualizations
+@import "components/assessments"; // Assessment forms and feedback
+@import "components/timelines"; // Timeline and progress components (extends %card - must come after cards)
+@import "components/navigation-patterns"; // Navigation patterns and meeting nav
+@import "components/meeting-themes"; // Meeting-specific color themes
+@import "components/meeting-content"; // Meeting content styles
+@import "components/meeting-layout"; // Meeting layout styles
+@import "components/checkpoint-components"; // Interactive checkpoint and assessment components
+@import "components/inline-components"; // Consolidated inline styles for HTML validation
 
 // 4. LAYOUT - Major layout components (loaded after critical)
+@import "layout/header"; // Site header and branding
 @import "layout/grid"; // Grid system and containers
-@import "layout/meeting"; // Meeting layout styles - EXTRACTED
+@import "layout/meeting"; // Meeting layout styles
 
-// 5. MEETING THEMES - Dynamic theme system
-@import "components/meeting-themes"; // Meeting-specific color themes
+// 5. PAGE-SPECIFIC - Page-specific styles
+@import "pages/404"; // 404 error page styles
+@import "pages/offline"; // Offline page styles
 
 // Main content wrapper for semantic structure and spacing
 // Remove left/right padding and margin to eliminate dead space
@@ -150,7 +161,6 @@
 .nav-item:hover,
 .nav-item:focus {
   color: var(--accent-teal, #7adad1);
-  text-decoration: underline;
   background: #23304a;
   box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
   border-color: var(--accent-teal, #7adad1);
@@ -226,7 +236,6 @@
   border-color: var(--accent-teal, #7adad1);
   background: #23304a;
   box-shadow: 0 4px 16px rgba(122, 218, 209, 0.22);
-  text-decoration: underline;
 }
 
 .nav-item.external {

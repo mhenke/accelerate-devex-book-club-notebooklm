@@ -6,17 +6,8 @@
 // =============================================================================
 // MATERIAL DESIGN ICON SIZES
 // =============================================================================
-
-// Icon size tokens following Material Design
-:root {
-  --icon-size-xs: 12px;     // Extra small icons
-  --icon-size-sm: 16px;     // Small icons
-  --icon-size-md: 20px;     // Default icon size
-  --icon-size-lg: 24px;     // Large icons
-  --icon-size-xl: 32px;     // Extra large icons
-  --icon-size-2xl: 40px;    // 2x large icons
-  --icon-size-3xl: 48px;    // 3x large icons
-}
+// Icon size tokens now defined globally in abstracts/_tokens.scss
+// This ensures consistency across all components
 
 // =============================================================================
 // BASE ICON STYLES
@@ -41,8 +32,8 @@
 
   // Material Design touch target (when interactive)
   &.icon--interactive {
-    min-width: var(--touch-target-min);
-    min-height: var(--touch-target-min);
+    min-width: 48px;
+    min-height: 48px;
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.3s ease-out;
@@ -119,11 +110,11 @@
 }
 
 .icon--secondary {
-  color: var(--theme-secondary);
+  color: var(--accent-teal);
 }
 
 .icon--success {
-  color: var(--success-green);
+  color: var(--accent-emerald);
 }
 
 .icon--warning {
@@ -131,7 +122,7 @@
 }
 
 .icon--danger {
-  color: var(--danger-red);
+  color: var(--accent-coral);
 }
 
 .icon--muted {

@@ -50,7 +50,7 @@
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
-  border: 2px solid var(--border-light);
+  border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   background: var(--background-white);
   cursor: pointer;
@@ -68,7 +68,7 @@
   .radio-mark {
     width: 20px;
     height: 20px;
-    border: 2px solid var(--border-light);
+    border: 2px solid var(--border-medium);
     border-radius: 50%;
     flex-shrink: 0;
     position: relative;
@@ -115,14 +115,14 @@
 .assessment-btn.high-performance {
   &:hover,
   input[type='radio']:checked ~ & {
-    border-color: var(--success-green);
+    border-color: var(--accent-emerald);
     background: rgba(76, 175, 80, 0.1);
 
     .radio-mark {
-      border-color: var(--success-green);
+      border-color: var(--accent-emerald);
 
       &::after {
-        background: var(--success-green);
+        background: var(--accent-emerald);
       }
     }
   }
@@ -131,14 +131,14 @@
 .assessment-btn.medium-performance {
   &:hover,
   input[type='radio']:checked ~ & {
-    border-color: var(--dora-orange);
+    border-color: var(--meeting-3-color);
     background: rgba(255, 152, 0, 0.1);
 
     .radio-mark {
-      border-color: var(--dora-orange);
+      border-color: var(--meeting-3-color);
 
       &::after {
-        background: var(--dora-orange);
+        background: var(--meeting-3-color);
       }
     }
   }
@@ -147,14 +147,14 @@
 .assessment-btn.low-performance {
   &:hover,
   input[type='radio']:checked ~ & {
-    border-color: var(--danger-red);
+    border-color: var(--accent-coral);
     background: rgba(244, 67, 54, 0.1);
 
     .radio-mark {
-      border-color: var(--danger-red);
+      border-color: var(--accent-coral);
 
       &::after {
-        background: var(--danger-red);
+        background: var(--accent-coral);
       }
     }
   }

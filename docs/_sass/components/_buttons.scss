@@ -11,7 +11,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: var(--touch-target-min);
+  min-height: 48px;
   padding: var(--space-md) var(--space-lg); // 16px 24px - 8px grid compliant
   border: none;
   border-radius: var(--radius-md); // Clean, modern rounded corners like "Get the Book"
@@ -19,7 +19,7 @@
   text-decoration: none; // Prevent all underlines
   text-align: center;
   font-family: var(--font-ui);
-  font-size: var(--font-size-body-large);
+  font-size: var(--font-size-h6);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -118,13 +118,13 @@
 .btn--tonal {
   @extend %btn-base;
 
-  background: var(--theme-surface);
-  color: var(--theme-on-surface);
+  background: var(--background-white);
+  color: var(--text-dark);
   box-shadow: none;
 
   &:hover {
     box-shadow: var(--elevation-1);
-    background: var(--theme-accent);
+    background: var(--accent-coral);
   }
 
   &:active {
@@ -255,7 +255,7 @@
 
   &:hover,
   &:hover:not(:disabled) {
-    background: var(--theme-secondary);
+    background: var(--accent-teal);
     color: white;
     text-decoration: none;
     border: none;
@@ -285,7 +285,7 @@
 
   &:hover,
   &:hover:not(:disabled) {
-    background: var(--theme-secondary);
+    background: var(--accent-teal);
     color: white;
     text-decoration: none;
     border: none;
@@ -311,30 +311,30 @@
 // Meeting theme variations
 .btn--meeting-1 {
   --btn-primary: var(--meeting-1-color);
-  --btn-secondary: var(--theme-secondary);
-  --btn-surface: var(--theme-surface);
-  --btn-on-surface: var(--theme-on-surface);
+  --btn-secondary: var(--accent-teal);
+  --btn-surface: var(--background-white);
+  --btn-on-surface: var(--text-dark);
 }
 
 .btn--meeting-2 {
   --btn-primary: var(--meeting-2-color);
-  --btn-secondary: var(--theme-secondary);
-  --btn-surface: var(--theme-surface);
-  --btn-on-surface: var(--theme-on-surface);
+  --btn-secondary: var(--accent-teal);
+  --btn-surface: var(--background-white);
+  --btn-on-surface: var(--text-dark);
 }
 
 .btn--meeting-3 {
   --btn-primary: var(--meeting-3-color);
-  --btn-secondary: var(--theme-secondary);
-  --btn-surface: var(--theme-surface);
-  --btn-on-surface: var(--theme-on-surface);
+  --btn-secondary: var(--accent-teal);
+  --btn-surface: var(--background-white);
+  --btn-on-surface: var(--text-dark);
 }
 
 .btn--meeting-4 {
   --btn-primary: var(--meeting-4-color);
-  --btn-secondary: var(--theme-secondary);
-  --btn-surface: var(--theme-surface);
-  --btn-on-surface: var(--theme-on-surface);
+  --btn-secondary: var(--accent-teal);
+  --btn-surface: var(--background-white);
+  --btn-on-surface: var(--text-dark);
 }
 
 // Apply meeting theme colors
@@ -450,7 +450,7 @@
 // =============================================================================
 
 .btn--small {
-  min-height: var(--touch-target-44px); // Accessibility minimum
+  min-height: 44px; // Accessibility minimum
   padding: var(--space-sm) var(--space-md); // 8px 16px - 8px grid compliant
 
   @include label-medium;
@@ -459,7 +459,7 @@
 .btn--large {
   min-height: 52px;
   padding: 16px 40px;
-  font-size: var(--font-size-title-medium);
+  font-size: var(--font-size-h5);
   font-weight: var(--font-weight-bold);
   border-radius: var(--radius-lg);
   letter-spacing: 0.75px;
@@ -511,8 +511,8 @@
   &::after {
     content: '';
     position: absolute;
-    width: var(--space-20);
-    height: var(--space-20);
+    width: 20px;
+    height: 20px;
     border: 2px solid transparent;
     border-top: 2px solid currentColor;
     border-radius: 50%;
@@ -528,7 +528,7 @@
 
 // Success state
 .btn--success {
-  background: var(--success-green);
+  background: var(--accent-emerald);
 
   &:hover {
     background: #388e3c;
@@ -547,7 +547,7 @@
 
 // Danger state
 .btn--danger {
-  background: var(--danger-red);
+  background: var(--accent-coral);
 
   &:hover {
     background: #d32f2f;

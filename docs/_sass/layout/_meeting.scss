@@ -40,7 +40,7 @@
         }
 
         i {
-          font-size: var(--md-sys-typescale-headline-medium);
+          font-size: var(--font-size-h4);
           color: var(--accent-teal);
         }
 
@@ -97,7 +97,7 @@
   .meeting-title-section {
     .meeting-main-title {
       color: white;
-      font-size: var(--md-sys-typescale-display-medium);
+      font-size: var(--font-size-h1);
       font-weight: var(--font-weight-bold);
       margin-bottom: var(--space-md);
       text-shadow: var(--shadow-hero);
@@ -115,14 +115,14 @@
         align-items: center;
         gap: var(--space-sm);
         color: rgba(255, 255, 255, 0.9);
-        font-size: var(--md-sys-typescale-body-medium);
+        font-size: var(--font-size-body);
 
         i {
           color: var(--accent-teal);
         }
 
         &.subtitle {
-          font-size: var(--md-sys-typescale-title-medium);
+          font-size: var(--font-size-h5);
           font-weight: var(--font-weight-medium);
           margin-top: 0;
         }
@@ -132,19 +132,19 @@
 
   .subtitle {
     color: rgba(255, 255, 255, 0.9);
-    font-size: var(--md-sys-typescale-headline-small);
+    font-size: var(--font-size-h5);
     font-weight: var(--font-weight-medium);
   }
 
   // Brand text styles (extracted to reduce nesting)
   .brand-title {
-    font-size: var(--md-sys-typescale-headline-small);
+    font-size: var(--font-size-h5);
     font-weight: var(--font-weight-bold);
     font-family: var(--font-display);
   }
 
   .brand-subtitle {
-    font-size: var(--md-sys-typescale-body-medium);
+    font-size: var(--font-size-body);
     opacity: 0.8;
     font-weight: var(--font-weight-medium);
   }
@@ -152,9 +152,9 @@
 
 /* Meeting Navigation */
 .meeting-nav {
-  background: var(--color-neutral-95);
+  background: #f5f5f5;
   padding: var(--space-md) 0;
-  border-bottom: var(--border-light);
+  border-bottom: var(--border-medium);
 
   .nav-container {
     margin: 0 auto;
@@ -173,7 +173,7 @@
     font-weight: var(--font-weight-medium);
 
     &:hover {
-      background: var(--color-neutral-90);
+      background: #e5e5e5;
       transform: translateY(-2px);
     }
 
@@ -356,7 +356,7 @@
       }
 
       i {
-        font-size: var(--font-size-headline-small);
+        font-size: var(--font-size-h5);
       }
     }
   }
@@ -367,7 +367,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  font-size: var(--md-sys-typescale-body-small);
+  font-size: var(--font-size-body);
   color: var(--text-light);
 
   i {
@@ -415,7 +415,7 @@
     }
 
     .meeting-title-section .meeting-main-title {
-      font-size: var(--md-sys-typescale-display-small);
+      font-size: var(--font-size-h2);
     }
 
     .meeting-meta {

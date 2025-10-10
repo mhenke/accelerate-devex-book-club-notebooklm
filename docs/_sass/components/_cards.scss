@@ -6,12 +6,12 @@
 .card {
   background: var(--text-white);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--elevation-1);
   margin-bottom: var(--space-lg);
   transition: all 0.3s ease-out;
 
   &:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--elevation-1);
     transform: translateY(-2px);
   }
 
@@ -23,7 +23,7 @@
     color: inherit;
 
     &:active {
-      box-shadow: var(--shadow-sm);
+      box-shadow: var(--elevation-1);
       transform: translateY(0);
     }
   }
@@ -56,7 +56,7 @@
   }
 
   &--elevated {
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--elevation-2);
 
     &:hover {
       box-shadow: var(--shadow-xl);
@@ -84,7 +84,7 @@
       background: linear-gradient(
         90deg,
         var(--meeting-1-color),
-        var(--theme-accent)
+        var(--accent-coral)
       );
     }
   }
@@ -97,7 +97,7 @@
     h4 {
       margin: 0 0 var(--space-sm) 0;
       color: var(--meeting-1-color);
-      font-size: var(--md-sys-typescale-title-large);
+      font-size: var(--font-size-h4);
       font-weight: var(--font-weight-semibold);
     }
   }
@@ -105,7 +105,7 @@
   &__content {
     p {
       color: var(--text-light);
-      font-size: var(--md-sys-typescale-body-medium);
+      font-size: var(--font-size-body);
       margin: 0 0 var(--space-sm) 0;
       line-height: var(--line-height-relaxed);
 
@@ -124,8 +124,8 @@
 
 // Theme variants using CSS custom properties
 .card--theme-blue {
-  --theme-primary: var(--color-blue-600);
-  --theme-accent: var(--color-blue-800);
+  --theme-primary: var(--meeting-1-color);
+  --accent-coral: var(--meeting-1-color);
 
   &.card--border-left {
     border-left-color: var(--theme-primary);
@@ -135,7 +135,7 @@
     background: linear-gradient(
       90deg,
       var(--theme-primary),
-      var(--theme-accent)
+      var(--accent-coral)
     );
   }
 
@@ -146,8 +146,8 @@
 }
 
 .card--theme-green {
-  --theme-primary: var(--color-green-600);
-  --theme-accent: #388e3c;
+  --theme-primary: var(--meeting-2-color);
+  --accent-coral: #388e3c;
 
   &.card--border-left {
     border-left-color: var(--theme-primary);
@@ -157,7 +157,7 @@
     background: linear-gradient(
       90deg,
       var(--theme-primary),
-      var(--theme-accent)
+      var(--accent-coral)
     );
   }
 
@@ -170,7 +170,7 @@
 // Meeting-specific themes
 .card--meeting-1 {
   --theme-primary: var(--meeting-1-color);
-  --theme-accent: var(--theme-accent);
+  --accent-coral: var(--accent-coral);
 
   &.card--border-left {
     border-left-color: var(--theme-primary);
@@ -180,7 +180,7 @@
     background: linear-gradient(
       90deg,
       var(--theme-primary),
-      var(--theme-accent)
+      var(--accent-coral)
     );
   }
 
@@ -203,7 +203,7 @@
 
   span {
     color: var(--text-light);
-    font-size: var(--md-sys-typescale-body-medium);
+    font-size: var(--font-size-body);
     line-height: var(--line-height-relaxed);
     padding-left: var(--space-sm);
 
@@ -232,32 +232,32 @@
 }
 
 .enps-label {
-  font-size: var(--md-sys-typescale-body-medium);
+  font-size: var(--font-size-body);
   color: var(--text-light);
   font-weight: var(--font-weight-medium);
 }
 
 .enps-value {
-  font-size: var(--md-sys-typescale-headline-large);
+  font-size: var(--font-size-h3);
   font-weight: var(--font-weight-bold);
-  color: var(--color-blue-700);
+  color: var(--meeting-1-color);
 
   @include mobile-only {
-    font-size: var(--md-sys-typescale-headline-small);
+    font-size: var(--font-size-h5);
   }
 }
 
 .enps-before .enps-value {
-  color: var(--danger-red);
+  color: var(--accent-coral);
 }
 
 .enps-after .enps-value {
-  color: var(--success-green);
+  color: var(--accent-emerald);
 }
 
 .enps-arrow {
-  font-size: var(--md-sys-typescale-headline-small);
-  color: var(--color-blue-600);
+  font-size: var(--font-size-h5);
+  color: var(--meeting-1-color);
 }
 
 // Stats highlight styling
@@ -270,24 +270,24 @@
 }
 
 .stat-number {
-  font-size: var(--md-sys-typescale-display-medium);
+  font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
-  color: var(--color-blue-700);
+  color: var(--meeting-1-color);
 
   @include mobile-only {
-    font-size: var(--md-sys-typescale-headline-large);
+    font-size: var(--font-size-h3);
   }
 }
 
 .stat-text {
-  font-size: var(--md-sys-typescale-body-large);
+  font-size: var(--font-size-h6);
   color: #666;
   font-weight: var(--font-weight-medium);
 }
 
 // Law statement quote styling
 .card .card__content blockquote {
-  font-size: var(--md-sys-typescale-headline-small);
+  font-size: var(--font-size-h5);
   font-style: italic;
   color: var(--meeting-1-color);
   margin: var(--space-md) 0 var(--space-lg) 0;
@@ -304,7 +304,7 @@
 .card .card__content cite {
   display: block;
   color: var(--text-light);
-  font-size: var(--md-sys-typescale-body-medium);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-medium);
   font-style: normal;
   text-transform: uppercase;

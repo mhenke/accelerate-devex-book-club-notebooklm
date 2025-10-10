@@ -68,8 +68,8 @@
     align-items: center;
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
-    color: var(--header-dark-navy);
-    font-size: var(--font-size-headline-small);
+    color: var(--text-dark);
+    font-size: var(--font-size-h5);
     font-weight: var(--font-weight-semibold);
 
     i {
@@ -124,7 +124,7 @@
 }
 
 .now-playing-label {
-  font-size: var(--font-size-body-small);
+  font-size: var(--font-size-body);
   color: #666;
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
@@ -142,7 +142,7 @@
 }
 
 .now-playing-time {
-  font-size: var(--font-size-body-small);
+  font-size: var(--font-size-body);
   color: #666;
   font-variant-numeric: tabular-nums;
   font-weight: var(--font-weight-medium);
@@ -292,7 +292,7 @@
 }
 
 .podcast-headline {
-  font-size: var(--font-size-body-large);
+  font-size: var(--font-size-h6);
   font-weight: var(--font-weight-semibold);
   color: var(--text-dark);
   margin: 0;
@@ -307,7 +307,7 @@
 }
 
 .podcast-subtitle {
-  font-size: var(--font-size-body-small);
+  font-size: var(--font-size-body);
   color: #666;
   line-height: 1.4;
   margin: 0;
@@ -445,7 +445,7 @@
   }
 
   .podcast-subtitle {
-    font-size: var(--font-size-body-small);
+    font-size: var(--font-size-body);
   }
 
   .podcast-duration {
