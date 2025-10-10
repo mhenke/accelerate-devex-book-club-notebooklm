@@ -235,6 +235,14 @@ While prompts are copy-paste ready, you can customize by:
 
 ## Best Practices
 
+**📖 [Complete Prompt Engineering Guide](PROMPT-BEST-PRACTICES.md)**
+
+Learn how to create effective NotebookLM prompts:
+- Character limits (500 chars for steering prompts)
+- Target audience (persona pattern)
+- Source and topic focusing techniques
+- Common mistakes to avoid
+
 ### For Facilitators
 
 ✅ **Generate 3 days before meeting** - Give participants time to listen
@@ -242,6 +250,7 @@ While prompts are copy-paste ready, you can customize by:
 ✅ **Share Brief with participants** - Easier to consume
 ✅ **Listen before sharing** - Ensure quality matches expectations
 ✅ **Provide context when sharing** - "This is AI-generated supplement, not replacement for reading"
+✅ **Follow prompt best practices** - See [PROMPT-BEST-PRACTICES.md](PROMPT-BEST-PRACTICES.md)
 
 ### For Participants
 

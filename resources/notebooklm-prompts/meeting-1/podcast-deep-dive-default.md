@@ -31,60 +31,58 @@
 
 ### Complete Prompt (Copy Everything Below)
 
+**Note:** This prompt is optimized for NotebookLM's 500-character steering prompt limit. The full context is in your uploaded sources.
+
 ```
-BOOK CLUB CONTEXT:
-This podcast prepares participants for Meeting 1 of an Accelerate DevEx Book Club focused on Chapters 1-3.
+Assume the listener is a software developer or engineering manager preparing for a book club discussion. Focus on Chapters 1-3 from the uploaded Accelerate sources. Create a conversational 15-20 minute deep dive covering: (1) the research foundation and DORA metrics with the speed-vs-stability myth-busting stats, (2) Westrum's three culture types, and (3) deployment pain as a signal. Help prepare listeners to discuss how their current metrics reinforce behaviors and which practices could shift culture.
+```
 
-OVERALL FRAMING QUESTION:
-"How can we build a virtuous cycle where improving our technical systems enhances our team culture, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?"
+---
 
-MEETING 1 CORE QUESTION:
-"How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?"
+### Extended Context (For Reference - Do Not Copy to NotebookLM)
 
-FOCUS:
-Cover chapters 1-3 of Accelerate by Forsgren, Humble, and Kim. Discuss:
+**This section provides background for facilitators. NotebookLM will use your uploaded sources for detailed content.**
 
-1. RESEARCH FOUNDATION (Chapter 1)
+**Book Club Context:**
+Meeting 1 of Accelerate DevEx Book Club - Chapters 1-3
+
+**Target Audience Pattern:**
+"Assume the listener is a software developer, DevOps practitioner, or engineering manager preparing for a book club discussion who wants to understand the evidence-based approach to measuring and improving delivery performance and organizational culture."
+
+**Source Focus:**
+- Primary: Chapters 1-3 from "Accelerate" by Forsgren, Humble, and Kim
+- Supporting: Meeting 1 Chapter Notes (if uploaded)
+
+**Topic Focus:**
+
+1. **Research Foundation (Chapter 1)**
    - 23,000+ survey responses from 2,000+ organizations
-   - Scientific rigor: cross-sectional studies, statistical significance, peer-reviewed methodology
+   - Scientific rigor: cross-sectional studies, statistical significance
    - Evidence-based approach to software delivery performance
 
-2. FOUR DORA METRICS (Chapter 2)
-   - Lead Time for Changes - Time from code commit to production
-   - Deployment Frequency - How often code deploys to production
-   - Time to Restore Service - How long to recover from failures
-   - Change Fail Rate - Percentage of deployments causing failures
+2. **Four DORA Metrics (Chapter 2)**
+   - Lead Time for Changes
+   - Deployment Frequency
+   - Time to Restore Service
+   - Change Fail Rate
+   - **Key Finding:** High performers achieve BOTH speed AND stability (46x deployments, 440x faster lead time, 170x faster recovery)
 
-   KEY FINDING: High performers achieve BOTH speed AND stability simultaneously:
-   - 46x more frequent deployments than low performers
-   - 440x faster lead time from commit to deploy
-   - 170x faster recovery from incidents
-   - Debunk the myth that you must trade speed for stability
+3. **Westrum's Culture Types (Chapter 3)**
+   - Pathological (power-oriented) vs. Bureaucratic (rule-oriented) vs. Generative (performance-oriented)
+   - **Key Insight:** Culture can be changed through specific technical and management practices
 
-3. WESTRUM'S ORGANIZATIONAL CULTURE TYPES (Chapter 3)
-   - Pathological (power-oriented): Low cooperation, messengers shot, responsibilities shirked
-   - Bureaucratic (rule-oriented): Modest cooperation, messengers neglected, narrow responsibilities
-   - Generative (performance-oriented): High cooperation, messengers trained, risks shared
-
-   KEY INSIGHT: Culture can be changed through implementing specific technical and management practices
-
-4. DEPLOYMENT PAIN AS SIGNAL
+4. **Deployment Pain as Signal**
    - Deployment anxiety indicates process problems, not personal failure
-   - Pain points reveal opportunities for improvement
-   - Connect to daily developer workflows and team experiences
+   - Pain points reveal improvement opportunities
 
-TARGET AUDIENCE:
-Software developers, DevOps practitioners, and engineering managers preparing for a book club discussion who want to understand the evidence-based approach to measuring and improving delivery performance and organizational culture.
+**Discussion Preparation Questions:**
+- How do current metrics reinforce wrong behaviors?
+- Which culture type describes your organization?
+- What practice could shift culture toward generative?
+- Do high performers really achieve both speed and stability?
 
-LENGTH GUIDANCE:
-Aim for 15-20 minutes of conversational content. Include research methodology overview, deployment pain as signal concept, and how culture can be changed through practice. Balance statistical rigor with real-world applicability.
-
-DISCUSSION PREPARATION:
-Help listeners prepare to discuss:
-- How their current metrics might reinforce wrong behaviors (local outputs vs. global outcomes)
-- Which culture type best describes their organization and why
-- What one technical practice they could adopt to positively shift their team culture toward generative
-- Whether they believe high performers really achieve both speed and stability in their context
+**Meeting Core Question:**
+"How do we shift focus from local outputs (utilization, story points) to global outcomes (speed and stability) that research proves matter?"
 ```
 
 ---
