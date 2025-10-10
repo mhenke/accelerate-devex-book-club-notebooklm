@@ -195,7 +195,7 @@
 
 @mixin text-lg {
   font-family: var(--font-primary);
-  font-size: var(--font-size-headline-small);
+  font-size: var(--font-size-h5);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-relaxed);
 }
@@ -244,14 +244,14 @@
 @mixin card($elevation: "md") {
   background: var(--background-white);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-medium);
 
   @if $elevation == "sm" {
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--elevation-1);
   } @else if $elevation == "md" {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--elevation-1);
   } @else if $elevation == "lg" {
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--elevation-2);
   } @else if $elevation == "xl" {
     box-shadow: var(--shadow-xl);
   }
@@ -286,7 +286,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
-  min-height: var(--touch-target-min);
+  min-height: 48px;
   letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
 
@@ -312,7 +312,7 @@
   &:hover:not(:disabled) {
     background: var(--button-hover-gradient);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--elevation-2);
   }
 }
 
@@ -380,8 +380,8 @@
 
 // Touch target size for mobile
 @mixin touch-target {
-  min-height: var(--touch-target-min);
-  min-width: var(--touch-target-min);
+  min-height: 48px;
+  min-width: 48px;
 }
 
 // 44px touch target for WCAG 2.1 AA compliance

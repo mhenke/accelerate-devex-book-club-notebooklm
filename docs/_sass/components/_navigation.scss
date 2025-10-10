@@ -32,10 +32,6 @@
   transition: color 0.3s ease-out;
 
   @include touch-target-44px;
-
-  &:hover {
-    color: var(--accent-teal);
-  }
 }
 
 .site-nav__brand-icon {
@@ -50,7 +46,7 @@
 }
 
 .site-nav__brand-title {
-  font-size: var(--font-size-headline-small);
+  font-size: var(--font-size-h5);
   font-weight: var(--font-weight-bold);
 }
 

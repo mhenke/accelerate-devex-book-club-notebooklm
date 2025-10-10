@@ -61,7 +61,7 @@
 
   // Completed state
   &.completed .timeline-marker {
-    background: var(--success-green);
+    background: var(--accent-emerald);
 
     &::after {
       content: '✓';
@@ -155,9 +155,18 @@
 .flow-problem,
 .flow-solution,
 .flow-result {
-  @extend %card;
-
+  // Card base styles - duplicated to avoid @extend .card stylelint warning
+  background: var(--text-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--elevation-1);
+  margin-bottom: var(--space-lg);
+  transition: all 0.3s ease-out;
   text-align: center;
+
+  &:hover {
+    box-shadow: var(--elevation-1);
+    transform: translateY(-2px);
+  }
 
   h4 {
     margin-bottom: var(--space-md);
@@ -173,7 +182,7 @@
 
     li {
       padding: var(--space-sm) 0;
-      border-bottom: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-medium);
 
       &:last-child {
         border-bottom: none;
@@ -183,26 +192,26 @@
 }
 
 .flow-problem {
-  border-left: 4px solid var(--danger-red);
+  border-left: 4px solid var(--accent-coral);
 
   h4 {
-    color: var(--danger-red);
+    color: var(--accent-coral);
   }
 }
 
 .flow-solution {
-  border-left: 4px solid var(--dora-orange);
+  border-left: 4px solid var(--meeting-3-color);
 
   h4 {
-    color: var(--dora-orange);
+    color: var(--meeting-3-color);
   }
 }
 
 .flow-result {
-  border-left: 4px solid var(--success-green);
+  border-left: 4px solid var(--accent-emerald);
 
   h4 {
-    color: var(--success-green);
+    color: var(--accent-emerald);
   }
 }
 

@@ -30,7 +30,7 @@
   @extend %badge;
   @include touch-target-44px;
 
-  background: var(--success-green);
+  background: var(--accent-emerald);
   color: var(--text-white);
   font-weight: var(--font-weight-semibold);
   box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
@@ -39,7 +39,7 @@
   margin-bottom: var(--space-md);
 
   &:hover {
-    background: var(--success-green);
+    background: var(--accent-emerald);
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
   }
@@ -69,7 +69,7 @@
   background: rgba(255, 255, 255, 0.1);
   color: var(--text-white);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: var(--font-size-title-large);
+  font-size: var(--font-size-h4);
   padding: var(--space-md) var(--space-lg);
 
   i {
@@ -137,12 +137,12 @@
   @extend %badge;
 
   &.completed {
-    background: var(--success-green);
+    background: var(--accent-emerald);
     color: var(--text-white);
   }
 
   &.in-progress {
-    background: var(--dora-orange);
+    background: var(--meeting-3-color);
     color: var(--text-white);
   }
 
@@ -152,7 +152,7 @@
   }
 
   &.high-priority {
-    background: var(--danger-red);
+    background: var(--accent-coral);
     color: var(--text-white);
   }
 }
@@ -181,7 +181,7 @@
 
   p {
     margin: 0;
-    font-size: var(--font-size-headline-small);
+    font-size: var(--font-size-h5);
     line-height: 1.6;
   }
 
@@ -195,31 +195,31 @@
 .perf-level {
   @extend %badge;
 
-  font-size: var(--font-size-headline-small);
+  font-size: var(--font-size-h5);
   padding: var(--space-md) var(--space-lg);
   font-weight: var(--font-weight-semibold);
 
   &.elite {
-    background: var(--success-green);
+    background: var(--accent-emerald);
     color: var(--text-white);
-    border: 2px solid var(--success-green);
+    border: 2px solid var(--accent-emerald);
   }
 
   &.high {
-    background: var(--primary-blue);
+    background: var(--meeting-1-color);
     color: var(--text-white);
-    border: 2px solid var(--primary-blue);
+    border: 2px solid var(--meeting-1-color);
   }
 
   &.medium {
-    background: var(--dora-orange);
+    background: var(--meeting-3-color);
     color: var(--text-white);
-    border: 2px solid var(--dora-orange);
+    border: 2px solid var(--meeting-3-color);
   }
 
   &.low {
-    background: var(--danger-red);
+    background: var(--accent-coral);
     color: var(--text-white);
-    border: 2px solid var(--danger-red);
+    border: 2px solid var(--accent-coral);
   }
 }

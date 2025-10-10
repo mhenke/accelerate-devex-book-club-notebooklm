@@ -8,8 +8,8 @@
 /* Enhanced Section Styling - Higher specificity than base h2 */
 .meeting-content {
   h2 {
-    color: var(--header-dark-navy);
-    font-size: var(--font-size-headline-medium);
+    color: var(--text-dark);
+    font-size: var(--font-size-h4);
     font-weight: 600;
     border-left: 8px solid var(--meeting-primary); // 8px for grid consistency
     margin-top: var(--space-lg); // 24px
@@ -39,7 +39,7 @@
 
   h3 {
     color: var(--text-dark);
-    font-size: var(--font-size-title-large);
+    font-size: var(--font-size-h4);
     font-weight: 600;
     margin-top: var(--space-lg); // 24px
     margin-bottom: 0.75rem;
@@ -57,7 +57,7 @@
 
   h4 {
     color: var(--meeting-primary);
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-h6);
     font-weight: 600;
     padding: var(--space-md) var(--space-md) var(--space-md) var(--space-xl);
     margin-top: var(--space-md);
@@ -111,7 +111,7 @@
   }
 
   strong {
-    color: var(--header-dark-navy);
+    color: var(--text-dark);
     font-weight: 600;
   }
 
@@ -135,13 +135,13 @@
     margin: var(--space-lg) 0; // 24px 0
     padding: var(--space-lg) var(--space-xl); // 24px 32px
     font-style: italic;
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-h6);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     position: relative;
 
     &::before {
       content: '"';
-      font-size: var(--font-size-display-large);
+      font-size: var(--font-size-display);
       color: var(--meeting-primary);
       position: absolute;
       top: 0;
@@ -201,7 +201,7 @@
   border-radius: var(--radius-md);
 
   i {
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-h6);
   }
 }
 
@@ -246,12 +246,12 @@
 @include mobile-only {
   .meeting-content {
     h2 {
-      font-size: var(--font-size-headline-small);
+      font-size: var(--font-size-h5);
       padding: var(--space-md); // 16px
     }
 
     h3 {
-      font-size: var(--font-size-title-large);
+      font-size: var(--font-size-h4);
       padding: var(--space-sm) var(--space-md); // 8px 16px
     }
   }

@@ -12,7 +12,7 @@
 
 .dora-metric {
   background: var(--background-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   text-align: center;
@@ -32,12 +32,12 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-headline-small);
+    font-size: var(--font-size-h5);
     color: var(--text-white);
   }
 
   .metric-title {
-    font-size: var(--font-size-headline-small);
+    font-size: var(--font-size-h5);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--space-md) 0;
     color: var(--text-dark);
@@ -45,57 +45,57 @@
 
   .metric-description {
     color: var(--text-light);
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-h6);
     line-height: 1.6;
     margin-bottom: var(--space-md);
   }
 
   .metric-value {
-    font-size: var(--font-size-headline-small);
+    font-size: var(--font-size-h5);
     margin-bottom: var(--space-sm);
     font-weight: var(--font-weight-bold);
-    color: var(--primary-navy);
+    color: var(--hero-dark);
   }
 }
 
 // Themed DORA Metrics
 .dora-metric.deployment-frequency {
   .metric-icon {
-    background: var(--primary-blue);
+    background: var(--meeting-1-color);
   }
 
   &:hover {
-    border-color: var(--primary-blue);
+    border-color: var(--meeting-1-color);
   }
 }
 
 .dora-metric.lead-time {
   .metric-icon {
-    background: var(--success-green);
+    background: var(--accent-emerald);
   }
 
   &:hover {
-    border-color: var(--success-green);
+    border-color: var(--accent-emerald);
   }
 }
 
 .dora-metric.mean-time-recovery {
   .metric-icon {
-    background: var(--dora-orange);
+    background: var(--meeting-3-color);
   }
 
   &:hover {
-    border-color: var(--dora-orange);
+    border-color: var(--meeting-3-color);
   }
 }
 
 .dora-metric.change-fail-rate {
   .metric-icon {
-    background: var(--danger-red);
+    background: var(--accent-coral);
   }
 
   &:hover {
-    border-color: var(--danger-red);
+    border-color: var(--accent-coral);
   }
 }
 
@@ -116,30 +116,30 @@
 
   h4 {
     margin: 0 0 var(--space-md) 0;
-    font-size: var(--font-size-headline-small);
+    font-size: var(--font-size-h5);
     font-weight: var(--font-weight-bold);
   }
 
   .level-description {
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-h6);
     opacity: 0.95;
     line-height: 1.5;
   }
 
   &.elite {
-    background: linear-gradient(135deg, var(--success-green), #2e7d32);
+    background: linear-gradient(135deg, var(--accent-emerald), #2e7d32);
   }
 
   &.high {
-    background: linear-gradient(135deg, var(--primary-blue), #1976d2);
+    background: linear-gradient(135deg, var(--meeting-1-color), #1976d2);
   }
 
   &.medium {
-    background: linear-gradient(135deg, var(--dora-orange), #f57c00);
+    background: linear-gradient(135deg, var(--meeting-3-color), #f57c00);
   }
 
   &.low {
-    background: linear-gradient(135deg, var(--danger-red), #d32f2f);
+    background: linear-gradient(135deg, var(--accent-coral), #d32f2f);
   }
 }
 
@@ -165,49 +165,49 @@
   }
 
   .result-score {
-    font-size: var(--font-size-display-large);
+    font-size: var(--font-size-display);
     font-weight: var(--font-weight-bold);
     line-height: 1;
     margin: 0 0 var(--space-md) 0;
   }
 
   .result-label {
-    font-size: var(--font-size-headline-small);
+    font-size: var(--font-size-h5);
     font-weight: var(--font-weight-semibold);
     margin: 0 0 var(--space-sm) 0;
   }
 
   .result-description {
     color: var(--text-light);
-    font-size: var(--font-size-body-large);
+    font-size: var(--font-size-h6);
     line-height: 1.5;
   }
 
   &.excellent {
-    border-color: var(--success-green);
+    border-color: var(--accent-emerald);
     .result-score {
-      color: var(--success-green);
+      color: var(--accent-emerald);
     }
   }
 
   &.good {
-    border-color: var(--primary-blue);
+    border-color: var(--meeting-1-color);
     .result-score {
-      color: var(--primary-blue);
+      color: var(--meeting-1-color);
     }
   }
 
   &.needs-improvement {
-    border-color: var(--dora-orange);
+    border-color: var(--meeting-3-color);
     .result-score {
-      color: var(--dora-orange);
+      color: var(--meeting-3-color);
     }
   }
 
   &.poor {
-    border-color: var(--danger-red);
+    border-color: var(--accent-coral);
     .result-score {
-      color: var(--danger-red);
+      color: var(--accent-coral);
     }
   }
 }
@@ -229,7 +229,7 @@
   .stat-number {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: var(--font-weight-bold);
-    color: var(--primary-navy);
+    color: var(--hero-dark);
     display: block;
     line-height: 1.2;
   }
@@ -247,7 +247,7 @@
     margin-top: var(--space-xs);
 
     &.positive {
-      color: var(--success-green);
+      color: var(--accent-emerald);
 
       &::before {
         content: '↗ ';
@@ -255,7 +255,7 @@
     }
 
     &.negative {
-      color: var(--danger-red);
+      color: var(--accent-coral);
 
       &::before {
         content: '↘ ';
@@ -295,15 +295,15 @@
   .progress-bar {
     width: 100%;
     height: 8px;
-    background: var(--border-light);
+    background: var(--border-medium);
     overflow: hidden;
 
     .progress-fill {
       height: 100%;
       background: linear-gradient(
         90deg,
-        var(--primary-blue),
-        var(--success-green)
+        var(--meeting-1-color),
+        var(--accent-emerald)
       );
       transition: width 0.6s ease;
     }
@@ -318,7 +318,7 @@
   gap: var(--space-md);
   padding: var(--space-lg);
   background: var(--background-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
   margin: var(--space-md) 0;
 
@@ -327,7 +327,7 @@
     text-align: center;
 
     .metric-value {
-      font-size: var(--font-size-headline-medium);
+      font-size: var(--font-size-h4);
       font-weight: var(--font-weight-bold);
       display: block;
       margin-bottom: var(--space-xs);
@@ -342,15 +342,15 @@
   }
 
   .before-metric .metric-value {
-    color: var(--danger-red);
+    color: var(--accent-coral);
   }
 
   .after-metric .metric-value {
-    color: var(--success-green);
+    color: var(--accent-emerald);
   }
 
   .comparison-arrow {
-    font-size: var(--font-size-headline-small);
-    color: var(--primary-blue);
+    font-size: var(--font-size-h5);
+    color: var(--meeting-1-color);
   }
 }
