@@ -20,13 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast provides CRITICAL ANALYSIS of the lean management practices, product development claims, and burnout/satisfaction relationships in Chapters 7-10 of Accelerate. Examine what's evidence-based versus what's idealistic, and what context matters.
+TARGET AUDIENCE:
+Assume the listener is a manager or practitioner who has tried implementing lean practices and found complications. They're preparing for honest discussions about what works and what doesn't in their specific context.
 
-MEETING 3 CORE QUESTION (Reframed):
-"What are the prerequisites and limitations of implementing lean practices like WIP limits and visual management, and what factors beyond deployment pain contribute to burnout that the book may underemphasize?"
+SOURCE FOCUS:
+Focus on Chapters 7-10 from uploaded Accelerate sources.
 
-CRITICAL ANALYSIS FOCUS:
+FORMAT & LENGTH:
+Create a 15-20 minute critical analysis podcast. Examine prerequisites and limitations of lean practices, question deployment pain as sole burnout cause, and explore what's missing from the employee satisfaction model.
+
+TOPICS TO CRITICALLY EXAMINE:
 
 1. LEAN MANAGEMENT PRACTICES - IMPLEMENTATION REALITIES
 
@@ -182,19 +185,8 @@ CRITICAL ANALYSIS FOCUS:
    - Systemic solutions can't address all individual needs
    - Risk of blaming individuals who still struggle despite "fixed" systems
 
-TARGET AUDIENCE:
-Managers and practitioners who have tried implementing these practices and found complications. Teams preparing for honest discussions about what works and what doesn't in their specific context.
-
-TONE:
-Constructively critical. Acknowledge the research's value while examining gaps, assumptions, and context-dependencies. Help listeners think critically about applying these practices rather than following prescriptions blindly.
-
 DISCUSSION PREPARATION:
-Help listeners discuss:
-- Which lean practices would actually work in their context vs. which wouldn't?
-- What sources of burnout exist beyond deployment pain?
-- What prerequisites do they need before these practices will work?
-- How to avoid oversimplifying complex human problems with technical solutions?
-- What's missing from the employee satisfaction model in their experience?
+Help listeners discuss which lean practices would work in their context vs. which wouldn't, what burnout sources exist beyond deployment pain, what prerequisites they need before practices will work, how to avoid oversimplifying human problems with technical solutions, and what's missing from the employee satisfaction model in their experience.
 ```
 
 ---

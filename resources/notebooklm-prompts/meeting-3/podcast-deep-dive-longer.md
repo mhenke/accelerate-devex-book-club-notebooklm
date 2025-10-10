@@ -20,16 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast provides comprehensive preparation for Meeting 3 of an Accelerate DevEx Book Club. This is a LONGER format - include all details, examples, implementation guidance, and connections between lean management, sustainability, and employee satisfaction.
+TARGET AUDIENCE:
+Assume the listener is a manager, team lead, or practitioner who wants deep understanding of lean management practices with implementation guidance, sustainability factors, and connections between practices, culture, and performance.
 
-OVERALL FRAMING QUESTION:
-"How can we build a virtuous cycle where improving our technical systems enhances our team culture, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?"
+SOURCE FOCUS:
+Focus on Chapters 7-10 from uploaded Accelerate sources (Forsgren, Humble, Kim).
 
-MEETING 3 CORE QUESTION:
-"How could we apply Lean principles like limiting WIP and visualizing work to not only improve our delivery flow but also directly reduce deployment pain and burnout, making our work more sustainable and satisfying?"
+FORMAT & LENGTH:
+Create a comprehensive 20-25 minute deep dive podcast. Include detailed explanations of all five lean practices with implementation guidance, deployment pain discussion, employee satisfaction drivers with examples, and virtuous cycle connections.
 
-COMPREHENSIVE COVERAGE (Chapters 7-10):
+TOPICS TO COVER - COMPREHENSIVE:
 
 1. LEAN MANAGEMENT PRACTICES - DETAILED (8-9 minutes)
 
@@ -336,20 +336,8 @@ COMPREHENSIVE COVERAGE (Chapters 7-10):
    - Success builds momentum
    - Each practice reinforces others
 
-TARGET AUDIENCE:
-Managers, team leads, and practitioners who want deep understanding of lean management practices, implementation guidance, sustainability factors, and the connections between practices, culture, and performance.
-
-LENGTH: 20-25 minutes. Include detailed explanations of all five lean practices with implementation guidance, comprehensive deployment pain discussion, all employee satisfaction drivers with examples, and clear articulation of the virtuous cycle connecting everything.
-
 DISCUSSION PREPARATION:
-Help listeners discuss:
-- How to implement each lean practice in their context
-- What their current WIP is and how to experiment with limits
-- Specific deployment pain points and automation opportunities
-- Burnout factors beyond deployment pain
-- Whether they have right tools, meaningful work, generative culture
-- How to create virtuous cycle starting from current state
-- Realistic timeline and milestones for transformation
+Help listeners discuss how to implement each lean practice in their context, current WIP levels and how to experiment with limits, specific deployment pain points and automation opportunities, burnout factors beyond deployment pain, whether they have right tools/meaningful work/generative culture, how to create virtuous cycle from current state, and realistic timelines for transformation.
 ```
 
 ---

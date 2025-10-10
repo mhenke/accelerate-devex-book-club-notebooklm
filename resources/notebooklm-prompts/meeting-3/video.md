@@ -20,13 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-Create a visual video summary for Meeting 3 of an Accelerate DevEx Book Club covering Chapters 7-10. Use diagrams, visualizations, and on-screen elements to make lean management practices, WIP concepts, deployment pain, and satisfaction factors clear and engaging.
+TARGET AUDIENCE:
+Assume the viewer is a visual learner, manager, or team member who prefers diagrams to understand abstract management concepts like WIP, deployment pain, and employee satisfaction.
 
-MEETING 3 CORE QUESTION:
-"How could we apply Lean principles to improve delivery flow AND reduce burnout?"
+SOURCE FOCUS:
+Focus on Chapters 7-10 from uploaded Accelerate sources.
 
-VIDEO STRUCTURE:
+FORMAT & LENGTH:
+Create a 10-15 minute visual video summary with diagrams and animations. Use kanban visuals for WIP, flow diagrams for deployment pain → burnout, three pillar diagram for satisfaction, and circular diagrams for virtuous cycles.
+
+VIDEO SEGMENTS:
 
 INTRO (30 seconds):
 - Title: "Accelerate Book Club - Meeting 3: Management & Sustainability"
@@ -172,26 +175,8 @@ Resources shown:
 - 24 Capabilities Assessment (lean practices 15-19)
 - Between-meetings activities
 
-VISUAL STYLE:
-- Use kanban board visuals for WIP limits
-- Flow diagrams for deployment pain → burnout → solution
-- Three pillar diagram for satisfaction drivers
-- Circular/cycle diagram for virtuous cycle
-- Color coding: Red for pain/problems, Green for solutions/health, Blue for practices
-- Icons and illustrations for abstract concepts
-- Before/after comparisons
-
-TARGET AUDIENCE:
-Visual learners, managers, teams watching together before meeting. People who prefer visual explanations of abstract management concepts.
-
-LENGTH GUIDANCE:
-10-15 minutes. Balance narration with strong visuals. Ensure abstract concepts (WIP, deployment pain, satisfaction) are visualized clearly, not just explained.
-
-ACCESSIBILITY:
-- Captions for all narration
-- High contrast visuals
-- Label all diagrams clearly
-- Don't rely solely on color to convey meaning
+DISCUSSION PREPARATION:
+Help viewers identify current WIP per person (too high?), deployment pain (1-10 scale?), biggest burnout factor in their team, and whether they have right tools/meaningful work/generative culture.
 ```
 
 ---
