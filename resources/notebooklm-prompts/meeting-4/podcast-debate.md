@@ -20,13 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast explores CONTROVERSIAL TOPICS from Chapters 11, 16, and Conclusion of Accelerate through structured debate. Present both sides of contentious issues around leadership, organizational transformation, and sustaining change.
+TARGET AUDIENCE:
+Assume the listener is a leader or team member making decisions about transformation approach, timeline, and investment. They're debating whether/how to start transformation.
 
-DEBATE FORMAT:
-For each topic, present PRO, CON, and SYNTHESIS positions.
+SOURCE FOCUS:
+Focus on Chapters 11, 16, and Conclusion from uploaded Accelerate sources.
 
-MEETING 4 DEBATES:
+FORMAT & LENGTH:
+Create a 15-20 minute debate-style podcast. For each topic: (1) present PRO position, (2) present CON/skeptical position, (3) synthesize where both might be right. Present strongest version of each argument.
+
+DEBATES TO EXPLORE:
 
 DEBATE 1: "Transformational Leadership - Can It Be Learned vs. Born With It"
 
@@ -185,22 +188,8 @@ How to balance "transformation complete" with "continuous improvement"? Differen
 
 ---
 
-TARGET AUDIENCE:
-Leaders and teams making decisions about transformation approach, timeline, and investment. Organizations debating whether/how to start transformation.
-
-TONE:
-Balanced. Both sides have valid points depending on context. Encourage nuanced thinking over binary choices.
-
-LENGTH GUIDANCE:
-15-20 minutes. Give each side fair airtime. Present strongest version of each argument.
-
 DISCUSSION PREPARATION:
-Help listeners discuss:
-- Which side resonates with their experience and context?
-- What would it take to change their mind?
-- Can they see situations where each approach is valid?
-- What experiments could test these debates in their organization?
-- How to hold tension between opposing views rather than picking a "side"?
+Help listeners discuss which side resonates with their experience and context, what would change their mind, situations where each approach is valid, experiments to test these debates in their organization, and how to hold tension between opposing views rather than picking a "side".
 ```
 
 ---

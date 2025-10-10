@@ -20,13 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast provides comprehensive preparation for Meeting 4 (FINAL MEETING) of an Accelerate DevEx Book Club. This is a LONGER format - include all details, examples, implementation guidance, and comprehensive roadmap creation for sustaining transformation after the book club ends.
+TARGET AUDIENCE:
+Assume the listener is a leader or manager planning transformation who wants comprehensive understanding of transformational leadership with implementation guidance, ING case study details, and roadmap creation for sustaining improvement.
 
-MEETING 4 CORE QUESTION:
-"What single supportive behavior could our leaders adopt to best enable team experimentation and a generative culture, and what practical steps could we use to make that leadership support visible and effective?"
+SOURCE FOCUS:
+Focus on Chapters 11, 16, and Conclusion from uploaded Accelerate sources.
 
-COMPREHENSIVE COVERAGE (Chapters 11, 16, Conclusion):
+FORMAT & LENGTH:
+Create a comprehensive 20-25 minute deep dive podcast. Include all details, examples, implementation guidance for transformational leadership, complete ING case study, and comprehensive roadmap creation for sustaining transformation after book club ends.
+
+TOPICS TO COVER - COMPREHENSIVE:
 
 1. TRANSFORMATIONAL LEADERSHIP - DETAILED (7-8 minutes)
 
@@ -371,19 +374,8 @@ COMPREHENSIVE COVERAGE (Chapters 11, 16, Conclusion):
    THE VIRTUOUS CYCLE COMPLETE:
    Leadership → Practices → Metrics → Culture → Sustainability → Performance → Leadership Support (amplifies)
 
-TARGET AUDIENCE:
-Leaders and practitioners who want comprehensive understanding of transformational leadership, detailed ING lessons, thorough roadmap creation guidance, and complete sustainability strategy for long-term success.
-
-LENGTH: 20-25 minutes. Include all leadership characteristics with detailed examples, complete ING story with all practices, comprehensive roadmap creation process, detailed sustainability strategies, and full 4-meeting synthesis.
-
 DISCUSSION PREPARATION:
-Help listeners discuss:
-- How to develop each leadership characteristic in their leaders
-- Which ING practices to adapt and how
-- Complete transformation roadmap with specific milestones
-- Sustainability plan with assigned responsibilities
-- How to tie together all learnings from 4 meetings
-- Realistic 12-month vision for their organization
+Help listeners discuss how to develop each leadership characteristic in their leaders, which ING practices to adapt and how, complete transformation roadmap with specific milestones, sustainability plan with assigned responsibilities, how to tie together all learnings from 4 meetings, and realistic 12-month vision for their organization.
 ```
 
 ---

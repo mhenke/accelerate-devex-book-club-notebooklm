@@ -20,16 +20,16 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-BOOK CLUB CONTEXT:
-This podcast prepares participants for Meeting 4 (FINAL MEETING) of an Accelerate DevEx Book Club. This is a SHORTER format - focus on the most critical leadership and transformation concepts only.
+TARGET AUDIENCE:
+Assume the listener needs a quick overview of the most critical leadership and transformation concepts before the final book club meeting. They're short on time but want the essentials.
 
-OVERALL FRAMING QUESTION:
-"How can we build a virtuous cycle where improving our technical systems enhances our team culture?"
+SOURCE FOCUS:
+Focus on Chapters 11, 16, and Conclusion from uploaded Accelerate sources.
 
-MEETING 4 CORE QUESTION:
-"What leadership behaviors enable transformation, and how do we sustain improvement?"
+FORMAT & LENGTH:
+Create a concise 10-15 minute podcast. Focus on essentials only - five leadership characteristics (names + brief explanations), three ING practices, and roadmap approach. Skip detailed implementation guidance.
 
-FOCUS (Chapters 11, 16, Conclusion):
+TOPICS TO COVER:
 
 1. TRANSFORMATIONAL LEADERSHIP - FIVE CHARACTERISTICS (4 minutes)
 
@@ -88,18 +88,8 @@ FOCUS (Chapters 11, 16, Conclusion):
 
    THIS IS THE BEGINNING, NOT THE END
 
-TARGET AUDIENCE:
-Participants who need quick overview before final book club meeting focused on the most important leadership and transformation concepts.
-
-LENGTH GUIDANCE:
-Keep this CONCISE - aim for 10-15 minutes maximum. List five leadership characteristics briefly, cover three ING practices, explain roadmap approach. Skip detailed implementation guidance and examples.
-
 DISCUSSION PREPARATION:
-Help listeners prepare to discuss:
-- Which leadership characteristic is most present/absent in their org?
-- Which ING practice (Obeya, catchball, empowered teams) could they adapt?
-- What will they prioritize in next 3 months?
-- How will they sustain momentum?
+Help listeners discuss which leadership characteristic is most present/absent in their org, which ING practice (Obeya, catchball, empowered teams) they could adapt, what to prioritize in next 3 months, and how to sustain momentum.
 ```
 
 ---
