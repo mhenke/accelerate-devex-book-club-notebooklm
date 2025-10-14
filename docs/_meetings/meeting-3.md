@@ -1,312 +1,719 @@
 ---
 layout: meeting
-title: "Meeting 3: Management &amp; Sustainability"
-subtitle: "Management, Product Development &amp; Sustainability"
+title: "Management & Sustainability"
+subtitle: "Lean Practices, Sustainable Work, and Employee Satisfaction"
 week: 5
 chapters: "7-10"
 duration: "1 Hour"
 dora_color: "#d97706" # $meeting-3-primary
 ---
 
-{% include simple-card.html
-  type="media"
-  title="Meeting 3 Video"
-  description="AI-generated video content covering lean management, work visualization, and sustainable practices"
-  media_type="video"
-  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-video.mp4"
-  theme="warning"
-%}
+<!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
-{% include simple-card.html
-  type="media"
-  title="Meeting 3 Podcast"
-  description="AI-generated podcast discussing WIP limits, employee satisfaction, and burnout prevention"
-  media_type="audio"
-  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-podcast.m4a"
-  theme="warning"
-%}
-
-### Key Insights
-
-#### Lean vs Traditional Management
-
-{% include simple-comparison.html
-  type="vs"
-  left_title="Traditional Management"
-  left_icon="fas fa-clipboard-list"
-  left_subtitle="Command & Control"
-  left_items="<i class='fas fa-user-tie'></i> Approval-heavy processes|<i class='fas fa-exclamation-triangle'></i> Blame-oriented culture|<i class='fas fa-hourglass-half'></i> Slow decision making|<i class='fas fa-chart-line-down'></i> Focus on individual metrics"
-  right_title="Lean Management"
-  right_icon="fas fa-rocket"
-  right_subtitle="Enable & Empower"
-  right_items="<i class='fas fa-users'></i> Peer review processes|<i class='fas fa-graduation-cap'></i> Learning from failures|<i class='fas fa-tachometer-alt'></i> Fast feedback loops|<i class='fas fa-chart-line'></i> System-level outcomes"
-  theme="warning"
-%}
-
-#### Employee Satisfaction: The Four Pillars
-
-<!-- markdownlint-disable MD033 -->
-<svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="img">
-  <title>Employee Satisfaction Framework</title>
-  <rect x="10" y="10" width="880" height="260" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="4"/>
-  <text x="450" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">Employee Satisfaction = Performance</text>
-
-  <!-- Pillar 1: Meaningful Work -->
-  <rect x="70" y="70" width="160" height="120" rx="12" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
-  <text x="150" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Meaningful Work</text>
-  <text x="150" y="115" text-anchor="middle" font-size="11" fill="#92400e">Challenging &amp;</text>
-  <text x="150" y="130" text-anchor="middle" font-size="11" fill="#92400e">Purposeful Tasks</text>
-  <circle cx="150" cy="155" r="15" fill="#d97706"/>
-  <text x="150" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">1</text>
-
-  <!-- Pillar 2: Learning -->
-  <rect x="260" y="70" width="160" height="120" rx="12" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
-  <text x="340" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Learning</text>
-  <text x="340" y="115" text-anchor="middle" font-size="11" fill="#92400e">Growth &amp;</text>
-  <text x="340" y="130" text-anchor="middle" font-size="11" fill="#92400e">Development</text>
-  <circle cx="340" cy="155" r="15" fill="#d97706"/>
-  <text x="340" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">2</text>
-
-  <!-- Pillar 3: Support -->
-  <rect x="450" y="70" width="160" height="120" rx="12" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
-  <text x="530" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Support</text>
-  <text x="530" y="115" text-anchor="middle" font-size="11" fill="#92400e">Team Culture &amp;</text>
-  <text x="530" y="130" text-anchor="middle" font-size="11" fill="#92400e">Psychological Safety</text>
-  <circle cx="530" cy="155" r="15" fill="#d97706"/>
-  <text x="530" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">3</text>
-
-  <!-- Pillar 4: Tools -->
-  <rect x="640" y="70" width="160" height="120" rx="12" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
-  <text x="720" y="95" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">Right Tools</text>
-  <text x="720" y="115" text-anchor="middle" font-size="11" fill="#92400e">Resources &amp;</text>
-  <text x="720" y="130" text-anchor="middle" font-size="11" fill="#92400e">Technology Access</text>
-  <circle cx="720" cy="155" r="15" fill="#d97706"/>
-  <text x="720" y="160" text-anchor="middle" font-size="12" fill="white" font-weight="bold">4</text>
-
-  <!-- Connection arrows -->
-  <line x1="230" y1="130" x2="260" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
-  <line x1="420" y1="130" x2="450" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
-  <line x1="610" y1="130" x2="640" y2="130" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-amber)"/>
-
-  <!-- Research Finding -->
-
-<text x="450" y="225" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Research Finding</text>
-<text x="450" y="245" text-anchor="middle" font-size="12" fill="#92400e">Teams scoring high on all four pillars are 2.2x more likely</text>
-<text x="450" y="260" text-anchor="middle" font-size="12" fill="#92400e">to recommend their organization as a great place to work</text>
-
-  <defs>
-    <marker id="arrow-amber" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L10,5 L0,10 Z" fill="#d97706" />
-    </marker>
-  </defs>
-</svg>
-<!-- markdownlint-enable MD033 -->
-
-#### Deployment Pain Spectrum
-
-{% include simple-comparison.html
-  type="flow"
-  left_title="High Deployment Pain"
-  left_icon="fas fa-fire"
-  left_subtitle="High stress, low performance, team burnout"
-  left_items="<i class='fas fa-clock'></i> Hours/days to deploy|<i class='fas fa-exclamation-triangle'></i> Frequent rollbacks|<i class='fas fa-user-clock'></i> Weekend deployments|<i class='fas fa-phone-alt'></i> All-hands meetings"
-  right_title="Low Deployment Pain"
-  right_icon="fas fa-check-circle"
-  right_subtitle="Confident releases, sustainable pace, happy teams"
-  right_items="<i class='fas fa-tachometer-alt'></i> Minutes to deploy|<i class='fas fa-shield-check'></i> Reliable releases|<i class='fas fa-calendar-check'></i> Business hours only|<i class='fas fa-coffee'></i> Normal workday"
-  divider_text="Lean Practices"
-  theme="success"
-%}
-
-### Lean Product Development: Interactive Flow
-
-<!-- markdownlint-disable MD033 -->
-<svg width="100%" height="350" viewBox="0 0 1000 350" xmlns="http://www.w3.org/2000/svg" role="img">
-  <title>Lean Product Development Flow</title>
-  <rect x="10" y="10" width="980" height="330" rx="20" fill="#fff7ed" stroke="#d97706" stroke-width="3"/>
-  <text x="500" y="40" text-anchor="middle" font-size="24" fill="#92400e" font-family="Poppins, Inter, sans-serif">Small Batches & Customer Feedback Flow</text>
-
-  <!-- Customer Feedback Integration -->
-  <rect x="50" y="80" width="200" height="200" rx="15" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
-  <circle cx="150" cy="110" r="20" fill="#d97706"/>
-  <circle cx="150" cy="116" r="8" fill="white"/>
-  <text x="150" y="119" text-anchor="middle" font-size="10" fill="#d97706" font-family="'Font Awesome 6 Free'" font-weight="900">f075</text>
-  <text x="150" y="140" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Customer Feedback</text>
-  <text x="150" y="160" text-anchor="middle" font-size="12" fill="#92400e">Active Incorporation</text>
-  
-  <text x="60" y="185" font-size="11" fill="#92400e">• Regular feedback cycles</text>
-  <text x="60" y="200" font-size="11" fill="#92400e">• Direct customer input</text>
-  <text x="60" y="215" font-size="11" fill="#92400e">• Design iteration</text>
-  <text x="60" y="230" font-size="11" fill="#92400e">• Quick response</text>
-  <text x="150" y="260" text-anchor="middle" font-size="14" fill="#d97706" font-weight="bold">Research: 2.3x better outcomes</text>
-
-  <!-- Arrow 1 -->
-  <line x1="250" y1="180" x2="300" y2="180" stroke="#d97706" stroke-width="4" marker-end="url(#arrow-amber)"/>
-
-  <!-- Small Batches -->
-  <rect x="320" y="80" width="200" height="200" rx="15" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
-  <circle cx="420" cy="110" r="20" fill="#d97706"/>
-  <circle cx="420" cy="116" r="8" fill="white"/>
-  <text x="420" y="119" text-anchor="middle" font-size="10" fill="#d97706" font-family="'Font Awesome 6 Free'" font-weight="900">f468</text>
-  <text x="420" y="140" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Small Batches</text>
-  <text x="420" y="160" text-anchor="middle" font-size="12" fill="#92400e">Less Than One Week</text>
-  
-  <text x="330" y="185" font-size="11" fill="#92400e">• MVP approach</text>
-  <text x="330" y="200" font-size="11" fill="#92400e">• Rapid learning cycles</text>
-  <text x="330" y="215" font-size="11" fill="#92400e">• Frequent delivery</text>
-  <text x="330" y="230" font-size="11" fill="#92400e">• Reduced risk</text>
-  <text x="420" y="260" text-anchor="middle" font-size="14" fill="#d97706" font-weight="bold">Batch size ↓ = Performance ↑</text>
-
-  <!-- Arrow 2 -->
-  <line x1="520" y1="180" x2="570" y2="180" stroke="#d97706" stroke-width="4" marker-end="url(#arrow-amber)"/>
-
-  <!-- Team Experimentation -->
-  <rect x="590" y="80" width="200" height="200" rx="15" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
-  <circle cx="690" cy="110" r="20" fill="#d97706"/>
-  <text x="690" y="116" text-anchor="middle" font-size="16" fill="white" font-weight="bold">🧪</text>
-  <text x="690" y="140" text-anchor="middle" font-size="16" fill="#92400e" font-weight="bold">Team Autonomy</text>
-  <text x="690" y="160" text-anchor="middle" font-size="12" fill="#92400e">Authority to Adapt</text>
-  
-  <text x="600" y="185" font-size="11" fill="#92400e">• Create specifications</text>
-  <text x="600" y="200" font-size="11" fill="#92400e">• Change requirements</text>
-  <text x="600" y="215" font-size="11" fill="#92400e">• No external approval</text>
-  <text x="600" y="230" font-size="11" fill="#92400e">• Data-driven decisions</text>
-  <text x="690" y="260" text-anchor="middle" font-size="14" fill="#d97706" font-weight="bold">Autonomy drives innovation</text>
-
-  <!-- Arrow 3 -->
-  <line x1="790" y1="180" x2="840" y2="180" stroke="#d97706" stroke-width="4" marker-end="url(#arrow-amber)"/>
-
-  <!-- Value Stream Result -->
-  <circle cx="900" cy="180" r="60" fill="#f59e0b" stroke="#d97706" stroke-width="3"/>
-  <text x="900" y="170" text-anchor="middle" font-size="14" fill="white" font-weight="bold">Value Stream</text>
-  <text x="900" y="185" text-anchor="middle" font-size="14" fill="white" font-weight="bold">Visibility</text>
-  <text x="900" y="200" text-anchor="middle" font-size="12" fill="white">End-to-End</text>
-
-  <!-- Bottom insight -->
-
-<text x="500" y="320" text-anchor="middle" font-size="18" fill="#92400e" font-weight="bold">Research Finding: Teams with all four practices deliver 50% faster</text>
-
-  <defs>
-    <marker id="arrow-amber-2" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#d97706" />
-    </marker>
-  </defs>
-</svg>
-<!-- markdownlint-enable MD033 -->
-
-
-### Interactive Learning Checkpoint
-
-<div class="learning-checkpoint" markdown="0">
-  {% include simple-checkpoint.html 
-    title="Lean Management Maturity"
-    icon="fas fa-chart-line"
-    question="Rate your team's current lean management practices:"
-    type="radio"
-    options=site.data.checkpoint_answers.lean_management
-    radio_name="lean-maturity"
-    feedback_id="lean-feedback"
-    default_feedback="Select your current maturity level to see research-backed insights and improvement strategies."
-  %}
-
-{% include simple-checkpoint.html
-    title="Deployment Pain Level"
-    icon="fas fa-rocket"
-    question="How painful are your deployments on a 1-10 scale?"
-    type="radio"
-    options=site.data.checkpoint_answers.deployment_pain
-    radio_name="deployment-pain"
-    feedback_id="deployment-feedback"
-    default_feedback="Rate your deployment pain to see improvement strategies and performance correlations."
-  %}
-
+<!-- Modern Chapters Overview -->
+<div class="chapter-metrics-compact section-card" markdown="0">
+<h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 7-10 Overview</h2>
+<div class="chapters-grid">
+<div class="chapter-item" data-chapter="management" onclick="showChapterDetail('management')">
+ 
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 7</div>
+    <div class="chapter-title">Management Practices</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-### Discussion Questions
-
-<div class="resource-grid" markdown="0">
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-chart-line" 
-    title="Lean Management Assessment" 
-    question="Which lean management practices do you currently use? What's missing?" 
-    items="Peer review vs. approval processes|Visual work management and WIP limits|Learning from failures vs. blame culture|Fast feedback loops and decision making" 
-    theme="warning"
-  %}
-
-{% include simple-card.html
-    type="discussion"
-    icon="fas fa-rocket"
-    title="Deployment Pain Check"
-    question="On a scale of 1-10, how painful are your deployments? What causes the anxiety?"
-    items="Manual coordination and handoff processes|Weekend and after-hours deployment schedule|Rollback complexity and recovery procedures|Team stress and work-life balance impact"
-    theme="warning"
-  %}
-
-{% include simple-card.html
-    type="discussion"
-    icon="fas fa-users"
-    title="Employee Engagement"
-    question="How would your team score on employee Net Promoter Score?"
-    items="Meaningful work and growth opportunities|Team support and psychological safety|Access to right tools and resources|Organizational culture and values alignment"
-    theme="warning"
-  %}
-
+<div class="chapter-item" data-chapter="product" onclick="showChapterDetail('product')">
+ 
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 8</div>
+    <div class="chapter-title">Product Development</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-### Action Items for Next Meeting
-
-<div class="resource-grid" markdown="0">
-  {% include simple-card.html 
-    type="action"
-    icon="fas fa-columns"
-    title="Create a visual work board"
-    question="Can you see everything your team is juggling right now?"
-    description="Set up kanban board with WIP limits to make work visible and prevent overload."
-    items="Set up To Do, In Progress, Done columns|Add WIP limits to prevent overload|Start tracking cycle time to spot bottlenecks|Make work visible, make problems obvious"
-    theme="warning"
-  %}
-
-{% include simple-card.html
-    type="action"
-    icon="fas fa-chart-line"
-    title="Run an eNPS pulse check"
-    question="Would your teammates recommend your org as a great place to work?"
-    description="Conduct employee Net Promoter Score assessment to measure team satisfaction."
-    items="Ask: \"On a scale 0-10, how likely are you to recommend our organization as a great place to work?\"|Follow up with \"What would make it better?\"|Listen deeply to the answers|Analyze results against the four satisfaction pillars"
-    theme="warning"
-  %}
-
-{% include simple-card.html
-    type="action"
-    icon="fas fa-balance-scale"
-    title="Pick ONE practice that boosts both performance AND wellbeing"
-    question="What will reduce stress while improving delivery?"
-    description="Choose a lean practice that improves both team performance and work-life balance."
-    items="Consider deployment automation to eliminate weekend work|Try blameless post-mortems to build psychological safety|Implement work visualization to reduce context switching|Focus on practices that help people AND performance"
-    theme="warning"
-  %}
-
+<div class="chapter-item" data-chapter="sustainable" onclick="showChapterDetail('sustainable')">
+ 
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 9</div>
+    <div class="chapter-title">Making Work Sustainable</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-### Related Resources
-
-<div class="resource-grid" markdown="0">
-  {% include simple-card.html 
-    type="resource" 
-    icon="fas fa-users" 
-    title="Lean Management & Team Performance" 
-    links="Kanban Boards|https://www.atlassian.com/agile/kanban/boards|Value Stream Mapping|https://www.lean.org/lexicon-terms/value-stream-mapping/|eNPS Calculator|https://blog.officevibe.com/employee-net-promoter-score|Psychological Safety Guide|https://rework.withgoogle.com/guides/understanding-team-effectiveness/|Team Topologies|https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819" 
-    theme="warning"
-  %}
-
-{% include simple-card.html
-    type="resource"
-    icon="fas fa-chart-line"
-    title="DevOps Culture & Assessment"
-    links="DORA Capabilities|https://dora.dev/devops-capabilities/|Four Keys Project|https://github.com/dora-team/fourkeys|Burnout Prevention Toolkit|https://www.mindgarden.com/maslach-burnout-toolkit/"
-    theme="warning"
-  %}
-
+<div class="chapter-item" data-chapter="satisfaction" onclick="showChapterDetail('satisfaction')">
+ 
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 10</div>
+    <div class="chapter-title">Employee Satisfaction</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
+</div>
+
+<!-- Expandable Details Section -->
+<div class="chapter-details" id="chapter-details" hidden>
+  <div class="chapter-detail" id="detail-management">
+    <h3>Management Practices for Software</h3>
+    <p>Lean management for software delivery: limiting WIP, visualizing work, and using monitoring for business decisions. Lightweight change approval processes outperform formal external approval bodies.</p>
+    <ul>
+      <li>Limit Work In Progress (WIP): Using WIP limits to expose systemic problems and drive process improvement</li>
+      <li>Visualize Work: Dashboards and Kanban boards make work and problems visible to teams and stakeholders</li>
+      <li>Monitor for Business Decisions: Leveraging production data to inform business choices and create feedback loops</li>
+      <li>Lightweight Change Approval: Peer review (pair programming, code reviews) achieves higher performance than CABs</li>
+    </ul>
+  </div>
+
+  <div class="chapter-detail" id="detail-product">
+    <h3>Product Development</h3>
+    <p>Lean approach to the "fuzzy front end" of product development, emphasizing continuous user research and experimental approach from the beginning.</p>
+    <ul>
+      <li>Working in Small Batches: Decomposing work into pieces completed in less than a week for faster feedback</li>
+      <li>Making Work Visible: Clear understanding of flow from business ideation to customer delivery</li>
+      <li>Customer Feedback Integration: Actively seeking and incorporating customer input throughout the lifecycle</li>
+      <li>Team Experimentation: Authority to try ideas and change specifications without external approval</li>
+    </ul>
+  </div>
+
+  <div class="chapter-detail" id="detail-sustainable">
+    <h3>Making Work Sustainable</h3>
+    <p>Deployment pain and burnout are symptoms of systemic issues, not inevitable consequences. The same practices that improve performance also improve work-life balance.</p>
+    <ul>
+      <li>Deployment Pain as Signal: Fear and anxiety during releases indicate friction between development and operations</li>
+      <li>Burnout Prevention: CD practices reduce burnout by eliminating manual, error-prone processes</li>
+      <li>Six Burnout Risk Factors: Work overload, lack of control, insufficient rewards, community breakdown, unfairness, value conflicts</li>
+      <li>Sustainable Pace: Microsoft Bing team saw work/life satisfaction jump from 38% to 75% with CD practices</li>
+    </ul>
+  </div>
+
+  <div class="chapter-detail" id="detail-satisfaction">
+    <h3>Employee Satisfaction, Identity, and Engagement</h3>
+    <p>Employee satisfaction drives business outcomes. High performers are 2.2x more likely to recommend their organization, creating competitive advantage through engagement.</p>
+    <ul>
+      <li>Employee Net Promoter Score (eNPS): Measure of employee loyalty correlating with business performance</li>
+      <li>Organizational Identity: Employees' values alignment with organization goals reduces burnout</li>
+      <li>Job Satisfaction: Dependent on right tools, resources, autonomy for challenging and meaningful work</li>
+      <li>Diversity Impact: Diverse teams achieve better performance and business outcomes</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+// Interactive Chapter Overview Functionality
+let currentActiveChapter = null;
+
+function showChapterDetail(chapterId) {
+  const detailsContainer = document.getElementById('chapter-details');
+  const targetDetail = document.getElementById('detail-' + chapterId);
+  const clickedItem = document.querySelector('[data-chapter="' + chapterId + '"]');
+
+  // If clicking the same item that's already active, close it
+  if (currentActiveChapter === chapterId) {
+    hideChapterDetails();
+    return;
+  }
+
+  // Remove active state from all items
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  // Hide all detail sections
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  // Show the details container
+  detailsContainer.style.display = 'block';
+  setTimeout(() => {
+    detailsContainer.classList.add('show');
+  }, 10);
+
+  // Show the specific detail and mark item as active
+  targetDetail.classList.add('active');
+  clickedItem.classList.add('active');
+  currentActiveChapter = chapterId;
+
+  // Smooth scroll to the details section
+  setTimeout(() => {
+    detailsContainer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest'
+    });
+  }, 300);
+}
+
+function hideChapterDetails() {
+  const detailsContainer = document.getElementById('chapter-details');
+
+  // Remove active states
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  // Hide with animation
+  detailsContainer.classList.remove('show');
+  setTimeout(() => {
+    detailsContainer.style.display = 'none';
+  }, 400);
+
+  currentActiveChapter = null;
+}
+
+// Close details when clicking outside
+document.addEventListener('click', function(event) {
+  const detailsContainer = document.getElementById('chapter-details');
+  const chapterItems = document.querySelectorAll('.chapter-item');
+
+  if (currentActiveChapter &&
+      !detailsContainer.contains(event.target) &&
+      !Array.from(chapterItems).some(item => item.contains(event.target))) {
+    hideChapterDetails();
+  }
+});
+
+// Keyboard accessibility
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && currentActiveChapter) {
+    hideChapterDetails();
+  }
+});
+</script>
+</div>
+
+<!-- MEETING 3 KEY QUESTION -->
+
+<div class="key-question-banner" markdown="0">
+<div class="key-question-wrapper">
+<div class="key-question-label">MEETING 3 KEY QUESTION</div>
+<div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
+<div class="key-question-main">
+<div class="quote-mark-start">&ldquo;</div>
+<div class="question-text">How could we apply Lean principles like limiting WIP and visualizing work to not only improve our delivery flow but also directly reduce 'deployment pain' and burnout, making our work more sustainable and satisfying?</div>
+<div class="quote-mark-end">&rdquo;</div>
+</div>
+</div>
+</div>
+
+<div class="section-card" markdown="0">
+  <div class="step-header">
+    <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
+  </div>
+  <div class="media-content">
+    <div class="feature-grid">
+      <!-- Video Section -->
+      <div class="media-section video-section">
+        <div class="video-card">
+          <div class="media-controls">
+            <video controls width="100%" class="meeting-video">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3-video.mp4" type="video/mp4">
+              <track kind="captions" src="{{ '/assets/captions/meeting-3-video.vtt' | relative_url }}" srclang="en" label="English" default>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Alternative Video -->
+          <div class="alternative-video">
+            <h3>Alternative Video</h3>
+            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/visual-lean-practices.mp4" target="_blank">Visual Lean Management Flow</a></p>
+            <p class="alt-video-desc">Five lean practices with flow diagrams, deployment pain timeline, and satisfaction virtuous cycle.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Podcast Section - Compact Playlist -->
+      <div class="media-section podcast-section">
+        <section class="podcast-playlist" aria-label="Podcast playlist">
+
+          <!-- Podcast Items (Compact List) -->
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/lean-essentials-brief.mp4"
+               data-title="Lean Essentials Brief"
+               data-duration="7:30"
+               data-type="brief">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Lean Essentials Brief">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Lean Essentials Brief
+                <span class="podcast-type brief">Brief</span>
+                <span class="podcast-duration">7:30</span>
+              </div>
+              <div class="podcast-subtitle">Five Lean Practices & Deployment Pain Connection</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/management-sustainability-deep-dive.mp4"
+               data-title="Management & Sustainability"
+               data-duration="17:20"
+               data-type="deep-dive">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Management & Sustainability">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Management & Sustainability
+                <span class="podcast-type deep-dive">Deep Dive</span>
+                <span class="podcast-duration">17:20</span>
+              </div>
+              <div class="podcast-subtitle">Lean Management, Product Dev & Employee Satisfaction Drivers</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/lean-reality-critique.mp4"
+               data-title="Lean Reality Check"
+               data-duration="16:45"
+               data-type="critique">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Lean Reality Check">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Lean Reality Check
+                <span class="podcast-type critique">Critique</span>
+                <span class="podcast-duration">16:45</span>
+              </div>
+              <div class="podcast-subtitle">When Lean Doesn't Work & Satisfaction Complexity</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shared Player at Bottom -->
+          <div class="playlist-player">
+            <div class="now-playing-header">
+              <div class="now-playing-info">
+                <div class="playing-indicator-large"></div>
+                <div class="now-playing-text-wrapper">
+                  <div class="now-playing-label">Now Playing</div>
+                  <div class="now-playing-title" id="now-playing-title">Lean Essentials Brief</div>
+                </div>
+              </div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 7:30</div>
+            </div>
+            <audio id="shared-player" controls>
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/lean-essentials-brief.mp4" type="audio/mp4" id="shared-player-source">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TRADITIONAL VS LEAN MANAGEMENT -->
+<div class="section-card dark-theme full-width" markdown="0">
+  <div class="false-choice-container">
+    <h2><i class="fas fa-balance-scale" aria-hidden="true"></i> Traditional vs Lean Management</h2>
+    <h3 class="false-choice-subtitle">Most organizations default to command-and-control management approaches</h3>
+
+    <div class="choice-options">
+      <div class="choice-option">
+        <div class="choice-circle">
+          <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+        </div>
+        <h4 class="choice-label">Traditional</h4>
+        <p class="choice-consequence">Approval-Heavy Processes</p>
+      </div>
+
+      <div class="vs-separator">
+        <div class="vs-circle">
+          VS
+        </div>
+      </div>
+
+      <div class="choice-option">
+        <div class="choice-circle">
+          <i class="fas fa-users" aria-hidden="true"></i>
+        </div>
+        <h4 class="choice-label">Lean</h4>
+        <p class="choice-consequence">Enable & Empower Teams</p>
+      </div>
+    </div>
+
+    <div class="deployment-signal">
+      <h4>The Signal: Change Advisory Boards (CABs)</h4>
+      <p>Formal external approval processes are negatively correlated with performance. They slow delivery without improving stability.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- THE FRAMEWORK - Lean Management Practices -->
+<div class="section-card" markdown="0">
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2><i class="fas fa-rocket" aria-hidden="true"></i> The Framework: Five Lean Management Practices</h2>
+      <p class="research-foundation">Research shows these practices significantly boost <strong>performance, culture, and reduce burnout</strong>:</p>
+    </div>
+
+    <div class="causal-flow">
+      <!-- Step 1: Limit WIP -->
+      <div class="causal-step step-business">
+        <div class="step-content">
+          <h3>Limit WIP</h3>
+          <p class="step-chapter">Chapter 7: Expose Problems</p>
+          <div class="step-metrics">
+            <div class="metric-item">Reduce Context Switching</div>
+            <div class="metric-item">Expose Bottlenecks</div>
+            <div class="metric-item">Drive Improvement</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <span class="arrow-label">enables</span>
+      </div>
+
+      <!-- Step 2: Visualize Work -->
+      <div class="causal-step step-measurement">
+        <div class="step-content">
+          <h3>Visualize Work</h3>
+          <p class="step-chapter">Chapter 7: Make Visible</p>
+          <div class="step-metrics">
+            <div class="metric-item">Kanban Boards</div>
+            <div class="metric-item">Dashboards</div>
+            <div class="metric-item">Quality Metrics</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <span class="arrow-label">supports</span>
+      </div>
+
+      <!-- Step 3: Monitor for Decisions -->
+      <div class="causal-step step-culture">
+        <div class="step-content">
+          <h3>Monitor & Decide</h3>
+          <p class="step-chapter">Chapter 7: Business Feedback</p>
+          <div class="step-metrics">
+            <div class="metric-item">Production Data</div>
+            <div class="metric-item">Business Intelligence</div>
+            <div class="metric-item">Fast Feedback</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impact Stats Callout -->
+    <div class="impact-stats">
+      <h4>Lean Management Impact</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2x</div>
+          <div class="stat-label">Better Software Delivery Performance</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1.8x</div>
+          <div class="stat-label">More Generative Culture</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50%</div>
+          <div class="stat-label">Less Burnout</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">38%→75%</div>
+          <div class="stat-label">Work-Life Satisfaction (Microsoft)</div>
+        </div>
+      </div>
+      <p class="stats-conclusion">Lean practices create a virtuous cycle: better performance reduces stress, improving satisfaction and culture.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- DEPLOYMENT PAIN: THE BURNOUT PREDICTOR -->
+<div class="section-card" markdown="0">
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2><i class="fas fa-fire" aria-hidden="true"></i> Deployment Pain: The Burnout Predictor</h2>
+      <p class="research-foundation">Deployment pain is the <strong>strongest predictor of burnout</strong> and indicates systemic problems</p>
+    </div>
+
+    <div class="causal-flow">
+      <!-- Step 1: Manual Processes -->
+      <div class="causal-step step-business">
+        <div class="step-content">
+          <h3>Manual Processes</h3>
+          <p class="step-chapter">Chapter 9: The Root Cause</p>
+          <div class="step-metrics">
+            <div class="metric-item pathological">Weekend Deployments</div>
+            <div class="metric-item pathological">Manual Coordination</div>
+            <div class="metric-item pathological">Error-Prone Steps</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <span class="arrow-label">creates</span>
+      </div>
+
+      <!-- Step 2: Deployment Pain -->
+      <div class="causal-step step-measurement">
+        <div class="step-content">
+          <h3>Deployment Pain</h3>
+          <p class="step-chapter">Chapter 9: The Signal</p>
+          <div class="step-metrics">
+            <div class="metric-item bureaucratic">Fear & Anxiety</div>
+            <div class="metric-item bureaucratic">Stress & Pressure</div>
+            <div class="metric-item bureaucratic">All-Hands Meetings</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <span class="arrow-label">leads to</span>
+      </div>
+
+      <!-- Step 3: Burnout -->
+      <div class="causal-step step-culture">
+        <div class="step-content">
+          <h3>Team Burnout</h3>
+          <p class="step-chapter">Chapter 9: The Outcome</p>
+          <div class="step-metrics">
+            <div class="metric-item pathological">Emotional Exhaustion</div>
+            <div class="metric-item pathological">Cynicism</div>
+            <div class="metric-item pathological">Ineffectiveness</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution Callout -->
+    <div class="impact-stats">
+      <h4>The Solution: Technical Practices</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">Automation</div>
+          <div class="stat-label">Eliminates Manual Steps</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">CD Pipeline</div>
+          <div class="stat-label">Reduces Deployment Risk</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Monitoring</div>
+          <div class="stat-label">Provides Fast Feedback</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Rollback</div>
+          <div class="stat-label">Reduces Recovery Time</div>
+        </div>
+      </div>
+      <p class="stats-conclusion">Fixing the deployment process fixes burnout at its source, not by treating symptoms.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- EMPLOYEE SATISFACTION: THE FOUR PILLARS -->
+<div class="section-card" markdown="0">
+  <div class="alternative-section">
+    <div class="alternative-header">
+      <h2><i class="fas fa-users" aria-hidden="true"></i> Employee Satisfaction: The Four Pillars</h2>
+      <p class="alternative-intro">Research shows high performers are 2.2x more likely to recommend their organization as a great place to work:</p>
+    </div>
+
+    <div class="alternative-grid">
+      <div class="alternative-item">
+        <i class="fas fa-bullseye" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Meaningful Work</strong>
+          <span>Challenging, purposeful tasks that align with personal values and organizational mission</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Learning & Growth</strong>
+          <span>Opportunities for skill development, career advancement, and continuous improvement</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-hands-helping" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Team Support</strong>
+          <span>Psychological safety, collaborative culture, and supportive relationships with colleagues</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-tools" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Right Tools</strong>
+          <span>Access to appropriate technology, resources, and infrastructure needed to be effective</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="alternative-reminder">
+      <i class="fas fa-lightbulb" aria-hidden="true"></i>
+      <p><strong>Key Insight:</strong> The practices that drive high performance (CD, Lean management, architecture) also create these satisfaction conditions. It's a virtuous cycle.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- DISCUSSION QUESTIONS -->
+<div class="section-card dark-theme full-width" markdown="0">
+  <div class="false-choice-container">
+    <h2>Discussion Questions</h2>
+    <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
+
+    <div class="discussion-questions-list">
+      <div class="deployment-signal">
+        <h4>Lean Management Assessment</h4>
+        <p>Which lean management practices do you currently use? What's missing? How do approval processes in your organization affect delivery speed and team autonomy?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Work Visualization</h4>
+        <p>How does your team currently visualize WIP and quality metrics? Can everyone see the flow of work from ideation to customer delivery?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Deployment Pain Check</h4>
+        <p>On a scale of 1-10, how painful are your deployments? What causes the anxiety? How does deployment stress affect work-life balance?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Employee Engagement</h4>
+        <p>How would your team score on employee Net Promoter Score? Which of the four satisfaction pillars (meaningful work, learning, support, tools) needs the most improvement?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ACTION ITEMS -->
+<div class="section-card action-items" markdown="0">
+  <div class="action-header">
+    <h2><i class="fas fa-tasks" aria-hidden="true"></i> Action Items for Next Meeting</h2>
+    <p class="subtitle">Complete these tasks before Meeting 4 to maximize your learning</p>
+  </div>
+
+  <div class="action-list">
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Read Chapters 11, 16, and Conclusion (Leadership & Transformation)</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Experiment with visualizing work using a simple kanban board</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Identify one change approval step that could be streamlined</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Observe and document burnout risk factors in your environment</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Run an informal eNPS pulse check with your team</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="due-date">
+    <i class="fas fa-calendar-check" aria-hidden="true"></i>
+    <strong>Due: Before Meeting 4 (Week 7)</strong>
+  </div>
+</div>
+
+<!-- NEXT MEETING SECTION -->
+<div class="welcome-compact section-card next-meeting-card next-meeting-4" markdown="0">
+  <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
+  <p>Complete your journey: <strong>Meeting 4 · Leadership</strong> covers transformational leadership and real-world transformation case studies.</p>
+  <div class="welcome-cta">
+    <a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-4/" class="btn btn--primary-action btn--meeting-4">
+      Meeting 4: Leadership & Transformation
+    </a>
+    <p class="welcome-cta-subtitle">Chapters 11, 16, Conclusion • Transformational Leadership • ING Case Study</p>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/podcast-player.js' | relative_url }}"></script>
 

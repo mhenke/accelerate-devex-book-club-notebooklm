@@ -1,258 +1,668 @@
 ---
 layout: meeting
-title: "Meeting 2: Technical Excellence"
-subtitle: "Technical Excellence &amp; Continuous Delivery"
+title: "Technical Excellence"
+subtitle: "Continuous Delivery and Architecture for Speed + Stability"
 week: 3
 chapters: "4-6"
 duration: "1 Hour"
 dora_color: "#1a7f37" # $meeting-2-primary
 ---
 
-{% include simple-card.html
-  type="media"
-  title="Meeting 2 Video"
-  description="AI-generated video content covering technical excellence and continuous delivery"
-  media_type="video"
-  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4"
-  theme="primary"
-%}
+<!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
-{% include simple-card.html
-  type="media"
-  title="Meeting 2 Podcast"
-  description="AI-generated podcast discussing technical practices and CD principles"
-  media_type="audio"
-  media_url="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-podcast.m4a"
-  theme="info"
-%}
-
-### Key Insights
-
-#### Continuous Delivery Practices
-
-<div class="content-grid" markdown="0">
-  {% include simple-card.html type="metric" icon="fas fa-robot" title="Automation First" description="Automated testing, building, and deployment pipelines" goal="Zero manual deployment steps" theme="success" %}
-  {% include simple-card.html type="metric" icon="fas fa-code-branch" title="Trunk-Based Development" description="Short-lived feature branches with frequent integration" goal="Daily code integration" theme="primary" %}
-  {% include simple-card.html type="metric" icon="fas fa-shield-alt" title="Built-in Security" description="Security testing integrated throughout the development process" goal="Security as Code" theme="warning" %}
-  {% include simple-card.html type="metric" icon="fas fa-puzzle-piece" title="Loosely Coupled Architecture" description="Independent deployable services with minimal dependencies" goal="Team Autonomy" theme="info" %}
+<!-- Modern Chapters Overview -->
+<div class="chapter-metrics-compact section-card" markdown="0">
+<h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 4-6 Overview</h2>
+<div class="chapters-grid">
+<div class="chapter-item" data-chapter="technical" onclick="showChapterDetail('technical')">
+ 
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 4</div>
+    <div class="chapter-title">Technical Practices</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-#### Architecture: Loosely Coupled Systems Enable Team Independence
-
-{% include simple-comparison.html
-  type="vs"
-  left_title="Tightly Coupled"
-  left_icon="fas fa-link"
-  left_subtitle="High Dependencies"
-  left_items="<i class='fas fa-ban'></i> Teams block each other|<i class='fas fa-phone'></i> Constant coordination needed|<i class='fas fa-turtle'></i> Slower deployment cycles|<i class='fas fa-fire'></i> Cascading failures"
-  right_title="Loosely Coupled"
-  right_icon="fas fa-puzzle-piece"
-  right_subtitle="Independent Teams"
-  right_items="<i class='fas fa-check'></i> Autonomous team work|<i class='fas fa-rocket'></i> Faster feature delivery|<i class='fas fa-shield-alt'></i> Isolated failures|<i class='fas fa-chart-line'></i> Better scalability"
-  theme="primary"
-%}
-
-#### Continuous Delivery Core Principles
-
-<div class="content-grid" markdown="0">
-  {% include simple-card.html type="insight" icon="fas fa-tools" title="Build Quality In" description="Start with quality, don't inspect later" theme="success" %}
-  {% include simple-card.html type="insight" icon="fas fa-box" title="Small Batches" description="Manageable, testable units" theme="primary" %}
-  {% include simple-card.html type="insight" icon="fas fa-robot" title="Automate Tasks" description="Free humans for creative work" theme="info" %}
-  {% include simple-card.html type="insight" icon="fas fa-folder" title="Version Control" description="All artifacts under control" theme="neutral" %}
-  {% include simple-card.html type="insight" icon="fas fa-code-branch" title="Trunk-Based Dev" description="Short branches, frequent integration" theme="warning" %}
-  {% include simple-card.html type="insight" icon="fas fa-flask" title="Test Automation" description="Automated testing at all levels" theme="success" %}
+<div class="chapter-item" data-chapter="architecture" onclick="showChapterDetail('architecture')">
+ 
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 5</div>
+    <div class="chapter-title">Architecture</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-#### Breaking the "Wall of Confusion"
-
-{% include simple-comparison.html
-  type="flow"
-  left_title="Traditional Silos"
-  left_icon="fas fa-wall-brick"
-  left_subtitle="Conflicting Incentives"
-  left_items="<i class='fas fa-code'></i> Development optimizes for throughput|<i class='fas fa-server'></i> Operations optimizes for stability|<i class='fas fa-times-circle'></i> Conflicting incentives create friction|<i class='fas fa-handshake-slash'></i> Blame culture emerges from misalignment"
-  right_title="System-Level Outcomes"
-  right_icon="fas fa-hands-helping"
-  right_subtitle="CD Solution"
-  right_items="<i class='fas fa-bullseye'></i> Shared responsibility for both speed and stability|<i class='fas fa-chart-line'></i> Metrics that reward collaboration|<i class='fas fa-tools'></i> Technical practices that enable both goals|<i class='fas fa-seedling'></i> Culture transformation through behavioral change"
-  divider_text="CD Solution"
-  theme="success"
-%}
-
-#### Security: Shift Left for Speed AND Safety
-
-{% include simple-comparison.html
-  type="vs"
-  left_title="Bolt-On Security"
-  left_icon="fas fa-shield-alt"
-  left_subtitle="Traditional Approach"
-  left_items="<i class='fas fa-clock'></i> Security review at the end|<i class='fas fa-exclamation-triangle'></i> 50% more remediation time|<i class='fas fa-turtle'></i> Delayed releases"
-  right_title="Built-In Security"
-  right_icon="fas fa-lock"
-  right_subtitle="Shift-Left Approach"
-  right_items="<i class='fas fa-rocket'></i> Security checks in CI/CD pipeline|<i class='fas fa-chart-line'></i> 50% faster remediation|<i class='fas fa-balance-scale'></i> Better security AND faster delivery"
-  theme="warning"
-%}
-
-#### Conway's Law & Team Structure
-
-{% include statistic-card.html
-  icon="fas fa-sitemap"
-  title="Conway's Law"
-  subtitle="Organizations design systems that mirror their communication structures"
-  description="Team structure directly impacts system architecture - cross-functional teams create loosely coupled, independently deployable services"
-  attribution="Melvin Conway, 1967"
-  theme="meeting-2"
-%}
-
-{% include simple-comparison.html
-  type="transform"
-  left_title="Traditional Organization"
-  left_icon="fas fa-sitemap"
-  left_subtitle="Structure: Separate dev, QA, ops teams"
-  left_items="<i class='fas fa-times'></i> Monolithic systems with handoff bottlenecks|<i class='fas fa-hourglass-half'></i> Coordination delays|<i class='fas fa-chain'></i> Tightly coupled architecture"
-  right_title="Cross-Functional Teams"
-  right_icon="fas fa-users"
-  right_subtitle="Structure: Full-stack teams with all skills"
-  right_items="<i class='fas fa-check'></i> Loosely coupled, independently deployable services|<i class='fas fa-rocket'></i> Autonomous team delivery|<i class='fas fa-puzzle-piece'></i> Service-oriented architecture"
-  divider_text="Inverse Conway"
-  theme="info"
-%}
-
-### Interactive Learning Checkpoint
-
-<div class="learning-checkpoint" markdown="0">
-  {% include simple-checkpoint.html 
-    title="CD Maturity Assessment"
-    icon="fas fa-chart-line"
-    question="Rate your organization's maturity in Continuous Delivery practices:"
-    type="radio"
-    options=site.data.checkpoint_answers.technical_maturity
-    feedback_id="cd-maturity-feedback"
-    radio_name="cd-maturity"
-    default_feedback="Select your organization's CD maturity level to see improvement opportunities."
-  %}
-
-{% include simple-checkpoint.html
-    title="Tool Freedom"
-    icon="fas fa-palette"
-    question="Rate your team's tool selection autonomy:"
-    type="slider"
-    slider_labels="Restricted|Flexible|Full Freedom"
-    feedback_id="slider-feedback"
-    default_feedback="Move the slider to assess your team's tool autonomy level"
-  %}
-
+<div class="chapter-item" data-chapter="integrating" onclick="showChapterDetail('integrating')">
+ 
+  <div class="chapter-content">
+    <div class="chapter-number">Chapter 6</div>
+    <div class="chapter-title">Integrating Infosec</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
 </div>
 
-### Real-World Applications
+<!-- Expandable Details Section -->
+<div class="chapter-details" id="chapter-details" hidden>
+  <div class="chapter-detail" id="detail-technical">
+    <h3>Technical Practices</h3>
+    <p>Five key practices that distinguish high-performing teams: version control, test automation, trunk-based development, continuous integration, and shift-left security.</p>
+    <ul>
+      <li>Version control for everything: application code, configuration, system configuration, and scripts</li>
+      <li>Test automation: developers primarily create and maintain automated tests</li>
+      <li>Trunk-based development: short-lived feature branches (less than one day) with frequent integration</li>
+      <li>Continuous integration: code is regularly checked into trunk, triggering automated build and test</li>
+      <li>Shift-left security: build security into the software delivery process from the beginning</li>
+    </ul>
+  </div>
 
-<div class="real-world-applications" markdown="0">
-  {% include simple-card.html 
-    type="application"
-    icon="fas fa-robot"
-    title="Automation Success Stories"
-    description="Share examples from your experience:"
-    items="What manual process did you recently automate? What was the impact?|How did test automation change your team's deployment confidence?|What task took hours manually but now takes minutes with automation?"
-    theme="success"
-  %}
+  <div class="chapter-detail" id="detail-architecture">
+    <h3>Architecture</h3>
+    <p>Loosely coupled architecture enables teams to deploy independently and test effectively without requiring integrated environments.</p>
+    <ul>
+      <li>Loosely coupled systems: teams can deploy on demand without depending on other teams</li>
+      <li>Services are testable: most testing can be performed without integrated environment</li>
+      <li>Teams can choose their own tools: appropriate technology stack without being constrained by other teams</li>
+      <li>Conway's Law: system design reflects communication structure—organize teams to create desired architecture</li>
+    </ul>
+  </div>
 
-{% include simple-card.html
-    type="application"
-    icon="fas fa-sitemap"
-    title="Architectural Decisions"
-    description="Discuss decisions that impacted team independence:"
-    items="Which architectural changes improved your team's deployment frequency?|What dependencies currently prevent independent deployments?|How did microservices or modular design affect your delivery speed?"
-    theme="primary"
-  %}
-
+  <div class="chapter-detail" id="detail-integrating">
+    <h3>Integrating Information Security</h3>
+    <p>Security must be integrated throughout the software delivery lifecycle, not bolted on at the end. This "shift-left" approach improves both security and delivery performance.</p>
+    <ul>
+      <li>Security reviews conducted for all major features</li>
+      <li>Information security team provides feedback during development</li>
+      <li>Application security testing integrated into deployment pipeline</li>
+      <li>Security teams use shared repositories and collaborate on security concerns</li>
+    </ul>
+  </div>
 </div>
 
-### Discussion Questions
+<script>
+// Interactive Chapter Overview Functionality
+let currentActiveChapter = null;
 
-<div class="resource-grid" markdown="0">
-  {% include simple-card.html 
-    type="discussion" 
-    icon="fas fa-chart-line" 
-    title="CD Maturity Assessment" 
-    question="Which CD practices is your organization currently implementing well/poorly?" 
-    items="Trunk-based development and branching strategy|Automated testing coverage and quality|Deployment pipeline automation|Feature flags and rollback capabilities" 
-    theme="primary"
-  %}
+function showChapterDetail(chapterId) {
+  const detailsContainer = document.getElementById('chapter-details');
+  const targetDetail = document.getElementById('detail-' + chapterId);
+  const clickedItem = document.querySelector('[data-chapter="' + chapterId + '"]');
 
-{% include simple-card.html
-    type="discussion"
-    icon="fas fa-project-diagram"
-    title="Architecture Dependencies"
-    question="What prevents your team from deploying independently?"
-    items="Shared databases and data dependencies|Coordinated release schedules|Service coupling and API contracts|Infrastructure and deployment bottlenecks"
-    theme="warning"
-  %}
+  // If clicking the same item that's already active, close it
+  if (currentActiveChapter === chapterId) {
+    hideChapterDetails();
+    return;
+  }
 
-{% include simple-card.html
-    type="discussion"
-    icon="fas fa-tools"
-    title="Tool Autonomy"
-    question="How much freedom do teams have in tool selection? What are the constraints?"
-    items="Security and compliance requirements|Standardization vs. innovation balance|Budget and licensing considerations|Support and maintenance capabilities"
-    theme="primary"
-  %}
+  // Remove active state from all items
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
 
+  // Hide all detail sections
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  // Show the details container
+  detailsContainer.style.display = 'block';
+  setTimeout(() => {
+    detailsContainer.classList.add('show');
+  }, 10);
+
+  // Show the specific detail and mark item as active
+  targetDetail.classList.add('active');
+  clickedItem.classList.add('active');
+  currentActiveChapter = chapterId;
+
+  // Smooth scroll to the details section
+  setTimeout(() => {
+    detailsContainer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest'
+    });
+  }, 300);
+}
+
+function hideChapterDetails() {
+  const detailsContainer = document.getElementById('chapter-details');
+
+  // Remove active states
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  // Hide with animation
+  detailsContainer.classList.remove('show');
+  setTimeout(() => {
+    detailsContainer.style.display = 'none';
+  }, 400);
+
+  currentActiveChapter = null;
+}
+
+// Close details when clicking outside
+document.addEventListener('click', function(event) {
+  const detailsContainer = document.getElementById('chapter-details');
+  const chapterItems = document.querySelectorAll('.chapter-item');
+
+  if (currentActiveChapter &&
+      !detailsContainer.contains(event.target) &&
+      !Array.from(chapterItems).some(item => item.contains(event.target))) {
+    hideChapterDetails();
+  }
+});
+
+// Keyboard accessibility
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && currentActiveChapter) {
+    hideChapterDetails();
+  }
+});
+</script>
 </div>
 
-### Action Items for Next Meeting
+<!-- MEETING 2 KEY QUESTION -->
 
-<div class="resource-grid" markdown="0">
-  {% include simple-card.html 
-    type="action"
-    icon="fas fa-robot"
-    title="Automate one manual process"
-    question="Which repetitive task will you tackle first?"
-    description="Identify a repetitive deployment, testing, or configuration task and automate it within 1-2 weeks."
-    items="Choose a manual process to automate|Research automation tools and approaches|Implement basic automation|Document time savings and benefits"
-    theme="success"
-  %}
-
-{% include simple-card.html
-    type="action"
-    icon="fas fa-project-diagram"
-    title="Map your dependencies"
-    question="What prevents independent deployments?"
-    description="Document shared databases, services, and infrastructure dependencies that impact team autonomy."
-    items="List all shared databases and services|Document coordination requirements|Identify deployment bottlenecks|Create dependency visualization diagram"
-    theme="warning"
-  %}
-
-{% include simple-card.html
-    type="action"
-    icon="fas fa-flask"
-    title="Experiment with a CD practice"
-    question="Which practice will move you forward?"
-    description="Try trunk-based development, test automation, or feature flags. Set goals and share results next meeting."
-    items="Choose one CD practice to experiment with|Set measurable goals and timeline|Implement pilot or proof of concept|Prepare results to share with team"
-    theme="primary"
-  %}
-
+<div class="key-question-banner" markdown="0">
+<div class="key-question-wrapper">
+<div class="key-question-label">MEETING 2 KEY QUESTION</div>
+<div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
+<div class="key-question-main">
+<div class="quote-mark-start">&ldquo;</div>
+<div class="question-text">Which of our current architectural or security practices create the most friction and dependencies for our teams, and what is the smallest technical change—like improving test automation or adopting trunk-based development—we could make to move toward more independent, 'shift-left' work?</div>
+<div class="quote-mark-end">&rdquo;</div>
+</div>
+</div>
 </div>
 
-### Related Resources
+<div class="section-card" markdown="0">
+  <div class="step-header">
+    <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
+  </div>
+  <div class="media-content">
+    <div class="feature-grid">
+      <!-- Video Section -->
+      <div class="media-section video-section">
+        <div class="video-card">
+          <div class="media-controls">
+            <video controls width="100%" class="meeting-video">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4" type="video/mp4">
+              <track kind="captions" src="{{ '/assets/captions/meeting-2-video.vtt' | relative_url }}" srclang="en" label="English" default>
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-<div class="resource-grid" markdown="0">
-  {% include simple-card.html 
-    type="resource" 
-    icon="fas fa-tools" 
-    title="CI/CD Tools & Platforms" 
-    links="GitHub Actions|https://github.com/features/actions|Jenkins|https://www.jenkins.io/|CircleCI|https://circleci.com/|Argo CD|https://argoproj.github.io/cd/" 
-    theme="primary"
-  %}
+          <!-- Alternative Video -->
+          <div class="alternative-video">
+            <h3>Alternative Video</h3>
+            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/visual-cd-practices.mp4" target="_blank">Visual CD Practices Overview</a></p>
+            <p class="alt-video-desc">Eight CD practices with diagrams, architecture independence patterns, and shift-left security comparison.</p>
+          </div>
+        </div>
+      </div>
 
-{% include simple-card.html
-    type="resource"
-    icon="fas fa-shield-alt"
-    title="Security Integration"
-    links="OWASP DevSecOps Guidelines|https://owasp.org/www-project-devsecops-guideline/|Snyk|https://snyk.io/|GitHub Security|https://github.com/features/security|SonarQube|https://www.sonarqube.org/"
-    theme="warning"
-  %}
+      <!-- Podcast Section - Compact Playlist -->
+      <div class="media-section podcast-section">
+        <section class="podcast-playlist" aria-label="Podcast playlist">
 
+          <!-- Podcast Items (Compact List) -->
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/cd-practices-brief.mp4"
+               data-title="CD Practices Brief"
+               data-duration="8:15"
+               data-type="brief">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play CD Practices Brief">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                CD Practices Brief
+                <span class="podcast-type brief">Brief</span>
+                <span class="podcast-duration">8:15</span>
+              </div>
+              <div class="podcast-subtitle">Eight CD Practices & Loosely Coupled Architecture Essentials</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/technical-excellence-deep-dive.mp4"
+               data-title="Technical Excellence Deep Dive"
+               data-duration="18:45"
+               data-type="deep-dive">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Technical Excellence Deep Dive">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Technical Excellence Deep Dive
+                <span class="podcast-type deep-dive">Deep Dive</span>
+                <span class="podcast-duration">18:45</span>
+              </div>
+              <div class="podcast-subtitle">CD Principles, Architecture Independence & Shift-Left Security</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/cd-reality-check-critique.mp4"
+               data-title="CD Reality Check"
+               data-duration="19:30"
+               data-type="critique">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play CD Reality Check">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                CD Reality Check
+                <span class="podcast-type critique">Critique</span>
+                <span class="podcast-duration">19:30</span>
+              </div>
+              <div class="podcast-subtitle">Legacy Retrofits, Investment Reality & When CD Doesn't Apply</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shared Player at Bottom -->
+          <div class="playlist-player">
+            <div class="now-playing-header">
+              <div class="now-playing-info">
+                <div class="playing-indicator-large"></div>
+                <div class="now-playing-text-wrapper">
+                  <div class="now-playing-label">Now Playing</div>
+                  <div class="now-playing-title" id="now-playing-title">CD Practices Brief</div>
+                </div>
+              </div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 8:15</div>
+            </div>
+            <audio id="shared-player" controls>
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/cd-practices-brief.mp4" type="audio/mp4" id="shared-player-source">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<!-- THE WALL OF CONFUSION -->
+<div class="section-card dark-theme full-width" markdown="0">
+  <div class="false-choice-container">
+    <h2><i class="fas fa-wall-brick" aria-hidden="true"></i> The Wall of Confusion</h2>
+    <h3 class="false-choice-subtitle">Traditional organizations create conflicting incentives between development and operations</h3>
+
+    <div class="choice-options">
+      <div class="choice-option">
+        <div class="choice-circle">
+          <i class="fas fa-code" aria-hidden="true"></i>
+        </div>
+        <h4 class="choice-label">Development</h4>
+        <p class="choice-consequence">Optimize for Throughput</p>
+      </div>
+
+      <div class="vs-separator">
+        <div class="vs-circle">
+          VS
+        </div>
+      </div>
+
+      <div class="choice-option">
+        <div class="choice-circle">
+          <i class="fas fa-server" aria-hidden="true"></i>
+        </div>
+        <h4 class="choice-label">Operations</h4>
+        <p class="choice-consequence">Optimize for Stability</p>
+      </div>
+    </div>
+
+    <div class="deployment-signal">
+      <h4>The Signal: Change Advisory Boards (CABs)</h4>
+      <p>The existence of manual change approval processes signals that your organization lacks the technical practices necessary to deploy safely at speed.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- THE FRAMEWORK - Technical Practices Enable Culture -->
+<div class="section-card" markdown="0">
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2><i class="fas fa-tools" aria-hidden="true"></i> The Framework: Technical Practices Drive Performance</h2>
+      <p class="research-foundation">Research shows these <strong>5 key practices</strong> distinguish high performers:</p>
+    </div>
+
+    <div class="causal-flow">
+      <!-- Step 1: Version Control -->
+      <div class="causal-step step-business">
+        <div class="step-content">
+          <h3>Version Control</h3>
+          <p class="step-chapter">Chapter 4: Foundation</p>
+          <div class="step-metrics">
+            <div class="metric-item">Application Code</div>
+            <div class="metric-item">Configuration</div>
+            <div class="metric-item">Scripts</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <span class="arrow-label">enables</span>
+      </div>
+
+      <!-- Step 2: Test Automation -->
+      <div class="causal-step step-measurement">
+        <div class="step-content">
+          <h3>Test Automation</h3>
+          <p class="step-chapter">Chapter 4: Quality</p>
+          <div class="step-metrics">
+            <div class="metric-item">Unit Tests</div>
+            <div class="metric-item">Integration Tests</div>
+            <div class="metric-item">Acceptance Tests</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <span class="arrow-label">supports</span>
+      </div>
+
+      <!-- Step 3: Trunk-Based Development -->
+      <div class="causal-step step-culture">
+        <div class="step-content">
+          <h3>Trunk-Based Dev</h3>
+          <p class="step-chapter">Chapter 4: Integration</p>
+          <div class="step-metrics">
+            <div class="metric-item">Short-Lived Branches</div>
+            <div class="metric-item">Daily Integration</div>
+            <div class="metric-item">Fast Feedback</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impact Stats Callout -->
+    <div class="impact-stats">
+      <h4>Continuous Delivery Impact</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2x</div>
+          <div class="stat-label">More Likely to Exceed Goals</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50%</div>
+          <div class="stat-label">Less Time on Unplanned Work</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">22%</div>
+          <div class="stat-label">Less Time on Manual Work</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">29%</div>
+          <div class="stat-label">More Time on New Work</div>
+        </div>
+      </div>
+      <p class="stats-conclusion">Teams with comprehensive CD practices spend more time creating value and less time fighting fires.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ARCHITECTURE: THE KEY TO TEAM INDEPENDENCE -->
+<div class="section-card" markdown="0">
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2><i class="fas fa-puzzle-piece" aria-hidden="true"></i> Architecture: The Key to Team Independence</h2>
+      <p class="research-foundation">Conway's Law in action: <strong>Team structure drives system architecture</strong></p>
+    </div>
+
+    <div class="causal-flow">
+      <!-- Step 1: Tightly Coupled Architecture -->
+      <div class="causal-step step-business">
+        <div class="step-content">
+          <h3>Tightly Coupled</h3>
+          <p class="step-chapter">Traditional Approach</p>
+          <div class="step-metrics">
+            <div class="metric-item pathological">Coordination Required</div>
+            <div class="metric-item pathological">Shared Dependencies</div>
+            <div class="metric-item pathological">Integration Testing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="causal-arrow">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <span class="arrow-label">versus</span>
+      </div>
+
+      <!-- Step 2: Loosely Coupled Architecture -->
+      <div class="causal-step step-culture">
+        <div class="step-content">
+          <h3>Loosely Coupled</h3>
+          <p class="step-chapter">CD-Enabling Approach</p>
+          <div class="step-metrics">
+            <div class="metric-item generative">Independent Deploy</div>
+            <div class="metric-item generative">Tool Freedom</div>
+            <div class="metric-item generative">Local Testing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conway's Law Callout -->
+    <div class="impact-stats">
+      <h4>Conway's Law Applied</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2x</div>
+          <div class="stat-label">Better Software Delivery Performance</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1.8x</div>
+          <div class="stat-label">More Likely to Exceed Goals</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Cross-Functional</div>
+          <div class="stat-label">Teams Drive Architecture</div>
+        </div>
+      </div>
+      <p class="stats-conclusion">Organizations that structure teams around services create more deployable, maintainable systems.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- SECURITY: SHIFT LEFT FOR SPEED + SAFETY -->
+<div class="section-card" markdown="0">
+  <div class="alternative-section">
+    <div class="alternative-header">
+      <h2><i class="fas fa-shield-alt" aria-hidden="true"></i> Security: Shift Left for Speed + Safety</h2>
+      <p class="alternative-intro">Traditional "bolt-on" security creates a false trade-off between speed and safety:</p>
+    </div>
+
+    <div class="alternative-grid">
+      <div class="alternative-item">
+        <i class="fas fa-times-circle" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Traditional: Bolt-On Security</strong>
+          <span>Security reviews at the end → 50% more time to remediate issues</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-check-circle" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Shift-Left: Built-In Security</strong>
+          <span>Security integrated throughout → 50% faster remediation + better security posture</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-robot" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Automation</strong>
+          <span>Security testing in CI/CD pipeline catches issues early when they're cheap to fix</span>
+        </div>
+      </div>
+
+      <div class="alternative-item">
+        <i class="fas fa-users" aria-hidden="true"></i>
+        <div class="alternative-content">
+          <strong>Collaboration</strong>
+          <span>Security teams collaborate during development, not after completion</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="alternative-reminder">
+      <i class="fas fa-lightbulb" aria-hidden="true"></i>
+      <p><strong>Key Insight:</strong> Security isn't about saying "no" to deployments. It's about building systems that are secure by default and providing fast feedback when issues arise.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- DISCUSSION QUESTIONS -->
+<div class="section-card dark-theme full-width" markdown="0">
+  <div class="false-choice-container">
+    <h2>Discussion Questions</h2>
+    <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
+
+    <div class="discussion-questions-list">
+      <div class="deployment-signal">
+        <h4>Technical Practice Assessment</h4>
+        <p>Of the five key practices (version control, test automation, trunk-based development, CI, shift-left security), which is your team strongest/weakest at? What's preventing progress on the weakest practice?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Architecture Independence</h4>
+        <p>How independently can your team deploy? What dependencies (shared databases, coordinated releases, integrated testing environments) prevent you from deploying on demand?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Conway's Law in Action</h4>
+        <p>How does your current team structure influence your system architecture? If you could restructure teams to improve delivery performance, what would you change?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>Security Integration</h4>
+        <p>Where in your current process do security concerns get raised? How could you "shift left" to catch security issues earlier while maintaining development velocity?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ACTION ITEMS -->
+<div class="section-card action-items" markdown="0">
+  <div class="action-header">
+    <h2><i class="fas fa-tasks" aria-hidden="true"></i> Action Items for Next Meeting</h2>
+    <p class="subtitle">Complete these tasks before Meeting 3 to maximize your learning</p>
+  </div>
+
+  <div class="action-list">
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Read Chapters 7-10 (Management, Product Development, Sustainability)</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Identify one manual process to automate (testing, deployment, or configuration)</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Document one key dependency that prevents independent deployment</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Calculate your team's "blast radius"—how many other teams are affected by your changes?</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="due-date">
+    <i class="fas fa-calendar-check" aria-hidden="true"></i>
+    <strong>Due: Before Meeting 3 (Week 5)</strong>
+  </div>
+</div>
+
+<!-- NEXT MEETING SECTION -->
+<div class="welcome-compact section-card next-meeting-card next-meeting-3" markdown="0">
+  <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
+  <p>Continue your journey: <strong>Meeting 3 · Management</strong> covers lean management practices and sustainable work patterns.</p>
+  <div class="welcome-cta">
+    <a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-3/" class="btn btn--primary-action btn--meeting-3">
+      Meeting 3: Management & Sustainability
+    </a>
+    <p class="welcome-cta-subtitle">Chapters 7-10 • Lean Management • Reducing Burnout</p>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/podcast-player.js' | relative_url }}"></script>
 

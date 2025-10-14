@@ -168,7 +168,7 @@ document.addEventListener('keydown', function(event) {
 <div class="question-text">How can we build a virtuous cycle where improving our <em>technical systems</em> enhances our <em>team culture</em>, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?</div>
 <div class="quote-mark-end">&rdquo;</div>
 </div>
-<p class="key-question-context">This reflects the book's core argument that technical practices, cultural norms, and organizational performance are mutually reinforcing—not separate concerns.</p>
+<p class="key-question-context">This reflects the book's core argument: technical practices, cultural norms, and organizational performance are mutually reinforcing — not separate concerns.</p>
 </div>
 </div>
 
