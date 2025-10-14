@@ -1,0 +1,1024 @@
+CSS Class Usage Analysis - Wed Oct 15 12:55:18 PM CDT 2025
+========================================
+
+Top 100 Most Used Classes:
+===========================
+    792 fas
+    158 metric-item
+    134 section-card
+     86 btn
+     72 bar
+     68 stat-number
+     68 stat-label
+     68 stat-item
+     64 fa-check-circle
+     62 step-content
+     56 btn--primary-action
+     54 fa-chevron-down
+     52 step-metrics
+     52 step-chapter
+     52 causal-step
+     50 fa-arrow-right
+     50 deployment-signal
+     48 dark-theme
+     46 alternative-item
+     46 alternative-content
+     45 fa-rocket
+     44 chapter-title
+     44 chapter-number
+     44 chapter-item
+     44 chapter-indicator
+     44 chapter-detail
+     44 chapter-content
+     42 task-title
+     42 task-row
+     42 task-checkbox
+     42 fa-square
+     42 far
+     42 action-item
+     41 nav-item
+     41 fa-users
+     38 highlight
+     36 footnote
+     35 reversefootnote
+     34 generative
+     34 causal-arrow
+     34 arrow-label
+     32 perf-level
+     26 meeting-subtitle
+     26 meeting-badge
+     26 highlight-icon
+     26 highlight-card
+     26 card-header
+     26 card-footer
+     24 resource-card
+     24 podcast-type
+     24 podcast-subtitle
+     24 podcast-start
+     24 podcast-item
+     24 podcast-headline
+     24 podcast-equalizer
+     24 podcast-end
+     24 podcast-duration
+     24 podcast-content
+     24 play-btn
+     24 metric-bubble
+     24 fa-play
+     24 fa-book
+     24 equalizer
+     23 fa-calendar
+     22 welcome-cta-subtitle
+     22 pathological
+     22 highlighter-rouge
+     22 fa-book-open
+     21 fa-video
+     21 fa-home
+     21 fa-chart-line
+     20 welcome-cta
+     20 research-foundation
+     20 infographic-header
+     20 full-width
+     20 fa-microphone-alt
+     20 false-choice-subtitle
+     20 false-choice-container
+     20 fa-lightbulb
+     20 checkpoint-card
+     20 causal-chain-container
+     18 welcome-compact
+     18 step-culture
+     18 step-business
+     18 stats-grid
+     18 stats-conclusion
+     18 resource-item
+     18 meeting-meta-item
+     18 impact-stats
+     18 fa-clock
+     18 causal-flow
+     17 language-ruby
+     17 fab
+     16 subtitle
+     16 step-measurement
+     16 resource-icon
+     16 prompt-text
+     16 prompt-meta
+     16 prompt-icon
+     16 prompt-header
+
+=== Component Families (by prefix) ===
+     89 fa
+     48 meeting
+     16 footer
+     12 site
+     12 btn
+     11 podcast
+     10 step
+     10 language
+      9 page
+      9 key
+      8 next
+      8 metric
+      8 chapter
+      8 alternative
+      7 warning
+      7 prompt
+      7 post
+      7 not
+      6 task
+      6 sequence
+      6 reflection
+      6 now
+      6 hero
+      6 card
+      6 ai
+      5 resource
+      5 nav
+      5 choice
+      5 book
+      4 ws
+      4 outcome
+      4 offline
+      4 mastery
+      4 feed
+      4 culture
+      4 causal
+      4 brand
+      4 action
+      3 welcome
+      3 vs
+      3 trap
+      3 structure
+      3 stat
+      3 section
+      3 schedule
+      3 prep
+      3 media
+      3 learning
+      3 celebration
+      3 between
+
+=== Classes Used Only Once ===
+'/'
+==
+block-class
+-class
+class2
+clear
+contact-list
+contains
+dl-horizontal
+dl-other
+dt-published
+e-content
+fa-{{
+footer-col-1
+footer-col-2
+footer-col-3
+footer-col-wrapper
+footer-heading
+h-entry
+home
+icon--github
+icon--twitter
+include.icon
+include.meeting_number
+katz
+key-question-conclusion
+language-act-iii
+language-asn.1
+language-asn#w1
+language-js
+language-русский
+markdown-body
+meeting-icon--{{
+meeting-icon--1
+meeting-icon--2
+meeting-icon--3
+meeting-icon--4
+'/meetings'
+menu-icon
+myclass
+nav-trigger
+next-meeting
+none
+no_toc
+other-class
+page-heading
+page-link
+p-author
+post-link
+post-list
+
+=== Classes Used 2-3 Times ===
+2 }}
+2 active{%
+2 ai-enhanced
+2 apple
+2 between-sessions-grid
+2 book-description
+2 book-info
+2 book-list
+2 book-showcase
+2 book-visual
+2 btn-404
+2 btn-feeds
+2 btn--meeting-1
+2 btn--meeting-2
+2 btn--meeting-3
+2 btn--meeting-4
+2 btn-offline
+2 btn-primary
+2 btn-secondary
+2 celebration-cta
+2 celebration-final
+2 celebration-icon
+2 change-fail
+2 class1
+2 cls1
+2 cls2
+2 container
+2 continue-journey
+2 copy-btn
+2 culture-first-warning
+2 culture-types
+2 deploy-frequency
+2 deployment
+2 development-paths
+2 endif
+2 exercise-timeline
+2 fa-apple
+2 fa-arrow-left
+2 fa-bookmark
+2 fa-book-reader
+2 fa-calendar-day
+2 fa-calendar-week
+2 fa-certificate
+2 fa-check
+2 facilitation-techniques
+2 fa-code
+2 fa-code-branch
+2 fa-cogs
+2 fa-copy
+2 fa-crown
+2 fa-dumbbell
+2 fa-eye
+2 fa-file-alt
+2 fa-fire
+2 fa-flask
+2 fa-folder-open
+2 fa-forward
+2 fa-gift
+2 fa-globe
+2 fa-hammer
+2 fa-handshake
+2 fa-heartbeat
+2 fa-industry
+2 fa-list-check
+2 fa-project-diagram
+2 fa-road
+2 fa-server
+2 fa-sitemap
+2 fa-spotify
+2 fa-sticky-note
+2 fa-sync
+2 fa-tachometer-alt
+2 fa-user
+2 fa-user-cog
+2 fa-user-tie
+2 fa-wall-brick
+2 fa-wifi
+2 feed-actions
+2 feedback-message
+2 feed-link
+2 feed-subscription-box
+2 feed-url-container
+2 get-started-section
+2 h-card
+2 hund
+2 icon
+2 if
+2 immediate
+2 insights-grid
+2 intro-text
+2 k
+2 kdmath
+2 key-question-context
+2 language-php
+2 language-plaintext
+2 language-python
+2 lead-time
+2 leadtime
+2 long-term
+2 meeting-0
+2 meeting-1-color
+2 meeting-1-insight
+2 meeting-1-theme
+2 meeting-2-color
+2 meeting-2-insight
+2 meeting-2-theme
+2 meeting-3-color
+2 meeting-3-insight
+2 meeting-3-theme
+2 meeting-4-color
+2 meeting-4-discussion-questions
+2 meeting-4-insight
+2 meeting-4-theme
+2 meeting-badge--0
+2 metric-focus
+2 metric-warning
+2 monitoring-practices
+2 myth-buster
+2 myth-side
+2 nav-item{%
+2 nc
+2 next-meeting-1
+2 next-meeting-2
+2 next-meeting-3
+2 next-meeting-4
+2 next-meeting-complete
+2 not-found-btn
+2 not-found-container
+2 not-found-hero
+2 not-found-links
+2 not-found-subtitle
+2 not-found-title
+2 nv
+2 nx
+2 offline-actions
+2 offline-cta
+2 offline-icon
+2 outcome-details
+2 page-hero--orange
+2 page-hero--teal
+2 page.url
+2 p-name
+2 post
+2 post-content
+2 post-header
+2 post-meta
+2 post-title
+2 preparation-steps
+2 primary
+2 process-steps
+2 reality-section
+2 reality-side
+2 recovery
+2 reflection-feedback
+2 reflection-items
+2 reflection-options
+2 reflection-section
+2 reliability
+2 required-reading-section
+2 restore-time
+2 safety-practices
+2 schedule-details
+2 secondary
+2 sequence-flow
+2 sequence-section
+2 short-term
+2 spotify
+2 success-message
+2 success-metrics-compact
+2 task-list
+2 trap-text
+2 trap-title
+2 trap-warning
+2 trophy-svg
+2 u-url
+2 vs-divider
+2 warning-callout
+2 warning-content
+2 warning-footer
+2 warning-header
+2 warning-list
+3 custom-class
+3 footer-col
+3 language-html
+3 nb
+3 s2
+3 wrapper
+
+=== Summary ===
+Total unique CSS classes: 618
+Files analyzed: 368
+
+=== All Unique Classes (alphabetical) ===
+%}
+'/'
+==
+}}
+achievement-badge
+achievement-list
+action-header
+action-item
+action-items
+action-list
+active
+active{%
+ai-attribution
+ai-attribution__content
+ai-attribution__icon
+ai-attribution__text
+ai-attribution__title
+ai-enhanced
+alternative-content
+alternative-grid
+alternative-header
+alternative-intro
+alternative-item
+alternative-reminder
+alternative-section
+alternative-video
+alt-video-desc
+apple
+arrow-label
+bad
+bar
+between-content
+between-item
+between-sessions-grid
+block-class
+book-description
+book-info
+book-list
+book-showcase
+book-visual
+brand-link
+brand-subtitle
+brand-text
+brand-title
+brief
+btn
+btn-404
+btn-feeds
+btn--meeting-1
+btn--meeting-2
+btn--meeting-3
+btn--meeting-4
+btn-offline
+btn-primary
+btn--primary-action
+btn--secondary
+btn-secondary
+btn--secondary-action
+bureaucratic
+card
+card--border-left
+card__content
+card-footer
+card--gradient
+card-grid
+card-header
+card__header
+card--theme-green
+causal-arrow
+causal-chain-container
+causal-flow
+causal-step
+celebration-cta
+celebration-final
+celebration-icon
+change-fail
+chapter-content
+chapter-detail
+chapter-details
+chapter-indicator
+chapter-item
+chapter-metrics-compact
+chapter-number
+chapters-grid
+chapter-title
+checkpoint-card
+choice-circle
+choice-consequence
+choice-label
+choice-option
+choice-options
+-class
+class
+class1
+class2
+clear
+cls
+cls1
+cls2
+completed
+contact-list
+container
+contains
+content-grid
+continue-journey
+copy-btn
+critique
+culture-card
+culture-first-warning
+culture-icon
+culture-types
+current-meeting
+custom-class
+dark-theme
+deep-dive
+deploy-frequency
+deployment
+deployment-signal
+development-paths
+discussion-questions-list
+dl-horizontal
+dl-other
+dt-published
+due-date
+e-content
+elite
+endif
+equalizer
+examples
+exercise-timeline
+exercise-week
+external
+fa-{{
+fa-apple
+fa-arrow-left
+fa-arrow-right
+fa-arrow-up
+fab
+fa-balance-scale
+fa-book
+fa-bookmark
+fa-book-open
+fa-book-reader
+fa-building
+fa-bullseye
+fa-calendar
+fa-calendar-alt
+fa-calendar-check
+fa-calendar-day
+fa-calendar-week
+fa-certificate
+fa-chart-bar
+fa-chart-line
+fa-check
+fa-check-circle
+fa-chevron-down
+facilitation-techniques
+fa-clipboard-check
+fa-clipboard-list
+fa-clock
+fa-code
+fa-code-branch
+fa-cogs
+fa-columns
+fa-comments
+fa-copy
+fa-crown
+fa-dumbbell
+fa-exclamation-triangle
+fa-eye
+fa-file-alt
+fa-fire
+fa-flask
+fa-folder-open
+fa-forward
+fa-gift
+fa-github
+fa-globe
+fa-graduation-cap
+fa-hammer
+fa-handshake
+fa-hands-helping
+fa-heartbeat
+fa-home
+fa-industry
+fa-info-circle
+fa-lightbulb
+fa-list-check
+false-choice-container
+false-choice-subtitle
+fa-map-marker-alt
+fa-microphone-alt
+fa-play
+fa-play-circle
+fa-podcast
+fa-project-diagram
+fa-puzzle-piece
+fa-question-circle
+far
+fa-road
+fa-robot
+fa-rocket
+fa-route
+fa-rss
+fas
+fa-search
+fa-server
+fa-shield-alt
+fa-sitemap
+fa-spotify
+fa-square
+fa-star
+fa-sticky-note
+fa-sync
+fa-sync-alt
+fa-tachometer-alt
+fa-tasks
+fa-times-circle
+fa-tools
+fa-trophy
+fa-user
+fa-user-cog
+fa-users
+fa-user-tie
+fa-video
+fa-wall-brick
+fa-wifi
+feature-grid
+feed-actions
+feedback-message
+feed-link
+feed-subscription-box
+feed-url-container
+footer-about
+footer-attribution
+footer-bottom
+footer-col
+footer-col-1
+footer-col-2
+footer-col-3
+footer-col-wrapper
+footer-content
+footer-heading
+footer-key-question
+footer-key-question-quote
+footer-meta
+footer-section
+footer-sections
+footer-social
+footnote
+footnotes
+full-width
+generative
+get-started-card
+get-started-section
+good
+guideline-icon
+guideline-item
+h-card
+h-entry
+hero-banner
+hero-content
+hero-headline
+hero-icon
+hero-subtitle
+hero-value-prop
+high
+highlight
+highlight-card
+highlighter-rouge
+highlight-icon
+home
+hund
+icon
+icon--github
+icon--twitter
+if
+immediate
+impact-stats
+include.icon
+include.meeting_number
+infographic-header
+insights-grid
+interactions
+intro-text
+k
+katz
+kdmath
+key-question-banner
+key-question-conclusion
+key-question-content
+key-question-context
+key-question-explanation
+key-question-intro
+key-question-label
+key-question-main
+key-question-wrapper
+language-act-iii
+language-asn.1
+language-asn#w1
+language-html
+language-js
+language-php
+language-plaintext
+language-python
+language-ruby
+language-русский
+lead-time
+leadtime
+learning-category
+learning-checkpoint
+learning-highlights
+long-term
+low
+main-content
+markdown-body
+mastery-bar
+mastery-fill
+mastery-label
+mastery-level
+media-content
+media-controls
+media-section
+medium
+meeting
+meeting-0
+meeting-1
+meeting-1-color
+meeting-1-insight
+meeting-1-theme
+meeting-2
+meeting-2-color
+meeting-2-insight
+meeting-2-theme
+meeting-3
+meeting-3-color
+meeting-3-insight
+meeting-3-theme
+meeting-4
+meeting-4-color
+meeting-4-discussion-questions
+meeting-4-insight
+meeting-4-theme
+meeting-badge
+meeting-badge--0
+meeting-badge--1
+meeting-badge--2
+meeting-badge--3
+meeting-badge--4
+meeting-card
+meeting-container
+meeting-date-badge
+meeting-footer
+meeting-header
+meeting-header-content
+meeting-icon
+meeting-icon--{{
+meeting-icon--1
+meeting-icon--2
+meeting-icon--3
+meeting-icon--4
+meeting-main-title
+meeting-meta
+meeting-meta-item
+meeting-nav-bar
+meeting-nav-brand
+meeting-navigation-links
+meeting-nav-links
+meeting-resource-card
+'/meetings'
+meeting-subtitle
+meeting-themed
+meeting-title-section
+meeting-video
+menu-icon
+metric-bubble
+metric-card
+metric-focus
+metric-icon
+metric-item
+metric-mastery-card
+metrics-bubbles-grid
+metrics-intro
+metric-title
+metric-warning
+monitoring-practices
+mt-lg
+myclass
+myth-buster
+myth-side
+n
+navigation-tabs
+nav-item
+nav-item{%
+nav-separator
+nav-tab
+nav-trigger
+nb
+nc
+next-meeting
+next-meeting-1
+next-meeting-2
+next-meeting-3
+next-meeting-4
+next-meeting-card
+next-meeting-complete
+next-step-card
+nf
+no
+no-border
+none
+not-found-btn
+not-found-container
+not-found-hero
+not-found-link
+not-found-links
+not-found-subtitle
+not-found-title
+no_toc
+now-playing-header
+now-playing-info
+now-playing-label
+now-playing-text-wrapper
+now-playing-time
+now-playing-title
+nt
+nv
+nx
+o
+offline-actions
+offline-cta
+offline-icon
+offline-tip
+option-content
+other-class
+outcome-detail
+outcome-details
+outcome-indicator
+outcome-item
+p
+page-container
+page-content
+page-heading
+page-hero
+page-hero--orange
+page-hero--teal
+page-link
+page-subtitle
+page-title
+page.url
+path-item
+pathological
+p-author
+perf-level
+performance-levels
+play-btn
+playing-indicator-large
+playlist-player
+p-name
+podcast-content
+podcast-duration
+podcast-end
+podcast-equalizer
+podcast-headline
+podcast-item
+podcast-playlist
+podcast-section
+podcast-start
+podcast-subtitle
+podcast-type
+post
+post-content
+post-header
+post-link
+post-list
+post-list-heading
+post-meta
+post-title
+practice-item
+preparation-steps
+prep-content
+prep-number
+prep-step
+prev-meeting
+primary
+process-steps
+prompt-container
+prompt-content
+prompt-header
+prompt-icon
+prompt-links
+prompt-meta
+prompt-text
+question-text
+quick-start
+quote-mark-end
+quote-mark-start
+reality-section
+reality-side
+recovery
+red
+reflection-feedback
+reflection-item
+reflection-items
+reflection-option
+reflection-options
+reflection-section
+reliability
+required-reading-section
+research-foundation
+resource-card
+resource-grid
+resource-icon
+resource-item
+resource-links
+restore-time
+reversefootnote
+rss-subscribe
+s1
+s2
+safety-practices
+schedule-content
+schedule-details
+schedule-item
+secondary
+section-accent
+section-card
+section-intro
+sequence-arrow
+sequence-flow
+sequence-label
+sequence-number
+sequence-section
+sequence-step
+short-term
+show-whitespaces
+simple-mode
+site-footer
+site-header
+site-header-content
+site-nav
+site-nav__brand
+site-nav__brand-icon
+site-nav__brand-link
+site-nav__brand-subtitle
+site-nav__brand-text
+site-nav__brand-title
+site-nav-main
+site-title
+skip-link
+social-media-list
+spotify
+stat-item
+stat-label
+stat-number
+stats-conclusion
+stats-grid
+step-business
+step-chapter
+step-content
+step-culture
+step-header
+step-item
+step-measurement
+step-metrics
+step-number
+step-timeline
+structure-content
+structure-item
+structure-time
+subscribe-link
+subtitle
+success-message
+success-metrics-compact
+svg-icon
+task-checkbox
+task-list
+task-list-item
+task-list-item-checkbox
+task-row
+task-title
+technical
+technique-card
+test
+testit
+text-center
+trap-text
+trap-title
+trap-warning
+trigger
+trophy-svg
+u-email
+username
+u-url
+video
+video-card
+video-section
+vs-circle
+vs-divider
+vs-separator
+warning-callout
+warning-content
+warning-footer
+warning-header
+warning-list
+warning-section
+warning-subtitle
+week-content
+week-marker
+welcome-compact
+welcome-cta
+welcome-cta-subtitle
+what-youll-learn-section
+wrapper
+ws-space
+ws-space-l
+ws-space-r
+ws-tab
+
+Current main.scss: 252 lines
