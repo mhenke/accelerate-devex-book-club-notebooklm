@@ -43,6 +43,12 @@ Guidelines for facilitating productive, inclusive, and action-oriented discussio
 
 ### Meeting-Specific Application
 
+#### Meeting 0 (Kickoff) - Optional
+- **Focus:** Setting expectations and building excitement
+- **Key technique:** Create welcoming atmosphere, emphasize learning over judgment
+- **Challenge:** Participants may be skeptical about time commitment
+- **Solution:** Share success stories, emphasize small experiments
+
 #### Meeting 1 (Foundation)
 - **Focus:** Establishing psychological safety for honest assessment
 - **Key technique:** Normalize sharing deployment anxiety stories
@@ -91,6 +97,21 @@ Structured activities, experiments, and reflection questions to maintain momentu
 - Build evidence for discussions
 
 ### Meeting-Specific Activity Guide
+
+#### After Meeting 0 / Before Meeting 1 (Week 0)
+
+**Primary activities:**
+- **Get the Book** - Purchase or obtain _Accelerate_
+- **Complete 24 Capabilities Assessment** - Establish baseline (~10 minutes)
+- **Read Chapters 1-3** - Prepare for Meeting 1 discussion
+
+**Preparation checklist:**
+- Obtain book (physical, audiobook, or Kindle)
+- Complete [24 Capabilities Assessment](../assessments/24-capabilities-assessment.md)
+- Read assigned chapters
+- Review [Key Questions - Meeting 1](../key-questions.md#meeting-1)
+
+---
 
 #### Between Meetings 1-2 (Weeks 1-3)
 

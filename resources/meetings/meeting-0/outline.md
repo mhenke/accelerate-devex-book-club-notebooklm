@@ -8,6 +8,12 @@
 
 Set expectations, explain the format, and prepare everyone for a successful 2-month learning journey.
 
+**Central Question for the Entire Book Club:**
+
+> "How can we build a virtuous cycle where improving our _technical systems_ enhances our _team culture_, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?"
+
+This question connects all four meetings and reflects the book's core argument that technical practices, cultural norms, and organizational performance are mutually reinforcing.
+
 ---
 
 ## 📋 Agenda
@@ -161,6 +167,20 @@ A: Great! We have extension resources including working groups, related readings
 This book club is about **transformation through action**.
 
 Each session builds on the last. Each experiment teaches us something. Small improvements compound over time.
+
+### Remember the Virtuous Cycle
+
+As you read and prepare for Meeting 1, keep this central question in mind:
+
+**"How can we build a virtuous cycle where improving our _technical systems_ enhances our _team culture_, and where an improved culture, in turn, accelerates our ability to deliver value and achieve better outcomes?"**
+
+Throughout the 2-month journey, we'll explore:
+- **Meeting 1:** How we measure performance and culture
+- **Meeting 2:** Technical practices that enable both speed and stability
+- **Meeting 3:** Management practices that make work sustainable
+- **Meeting 4:** Leadership that supports transformation
+
+Each meeting reveals how technical systems and team culture reinforce each other—for better or worse—and how we can intentionally build a positive cycle.
 
 **Your homework before Meeting 1:**
 

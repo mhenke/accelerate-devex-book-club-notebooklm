@@ -17,9 +17,19 @@ This book club follows the book's own principle of breaking work into small, man
 
 ## Meeting Schedule
 
+### Meeting 0: Kickoff Meeting – Setting the Foundation
+
+**Week 0 | Duration:** 30 Minutes
+**Chapters:** No Reading Required
+
+- Purpose: Set expectations, explain format, and prepare for 2-month journey
+- Core topics: Book club overview, discussion best practices, preparation checklist, virtuous cycle concept
+- Interactive page: [docs/\_meetings/meeting-0.md](docs/_meetings/meeting-0.md)
+- Resources: [resources/meetings/meeting-0/](resources/meetings/meeting-0/)
+
 ### Meeting 1: Laying the Foundation – The Myth and the Measurement
 
-**Week 1 | Duration:** 1 Hour  
+**Week 1 | Duration:** 1 Hour
 **Chapters:** 1-3 (Accelerate, Measuring Performance, Measuring and Changing Culture)
 
 - Core concepts: DORA metrics, Westrum culture types, speed vs stability myth, deployment pain
@@ -98,6 +108,7 @@ accelerate-devex-book-club-notebooklm/
 │   ├── index.md                      # Homepage with hero banner
 │   ├── _config.yml                   # Jekyll configuration
 │   ├── _meetings/                    # Interactive meeting pages
+│   │   ├── meeting-0.md             # Week 0: Kickoff (30 min)
 │   │   ├── meeting-1.md             # Week 1: Chapters 1-3
 │   │   ├── meeting-2.md             # Week 3: Chapters 4-6
 │   │   ├── meeting-3.md             # Week 5: Chapters 7-10
@@ -110,6 +121,11 @@ accelerate-devex-book-club-notebooklm/
     │   ├── audio.md                 # NotebookLM podcast prompts
     │   └── video.md                 # NotebookLM video prompts
     ├── meetings/                     # Individual meeting resources
+    │   ├── meeting-0/               # Kickoff resources
+    │   ├── meeting-1/               # Week 1 resources
+    │   ├── meeting-2/               # Week 3 resources
+    │   ├── meeting-3/               # Week 5 resources
+    │   └── meeting-4/               # Week 7 resources
     ├── activities/                   # Discussion practices
     ├── assessments/                  # DORA metrics worksheets
     └── templates/                    # Meeting notes templates

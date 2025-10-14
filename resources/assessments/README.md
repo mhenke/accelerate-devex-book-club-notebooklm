@@ -29,13 +29,14 @@ Westrum organizational culture assessment and action planning tool.
 
 ## When to Use Each Assessment
 
-| Assessment | Pre-Meeting 1 | Meeting 1 | Between Meetings | Meeting 2 | Meeting 3 | Meeting 4 | Post-Book Club |
-|------------|---------------|-----------|------------------|-----------|-----------|-----------|----------------|
-| **24 Capabilities** | ✅ Baseline | | 📊 Track | | | 📊 Track | ✅ Final |
-| **DORA Metrics** | ✅ Baseline | ✅ Discuss | ✅ Track | 📊 Review | 📊 Review | 📊 Review | ✅ Compare |
-| **Culture** | | ✅ Identify | 📈 Observe | | 📈 Reassess | | ✅ Final |
+| Assessment | Meeting 0 | Pre-Meeting 1 | Meeting 1 | Between Meetings | Meeting 2 | Meeting 3 | Meeting 4 | Post-Book Club |
+|------------|-----------|---------------|-----------|------------------|-----------|-----------|-----------|----------------|
+| **24 Capabilities** | 📋 Intro | ✅ Baseline | | 📊 Track | | | 📊 Track | ✅ Final |
+| **DORA Metrics** | 📋 Intro | ✅ Baseline | ✅ Discuss | ✅ Track | 📊 Review | 📊 Review | 📊 Review | ✅ Compare |
+| **Culture** | | | ✅ Identify | 📈 Observe | | 📈 Reassess | | ✅ Final |
 
 **Legend:**
+- 📋 Introduce - Explain tool and distribute
 - ✅ Primary use - Complete assessment
 - 📊 Review progress - Check data trends
 - 📈 Track changes - Observe and document
@@ -45,7 +46,21 @@ Westrum organizational culture assessment and action planning tool.
 
 ## Meeting-Specific Usage Guide
 
-### Pre-Meeting 1 (Week 0)
+### Meeting 0: Kickoff (Week 0) - Optional
+
+**Purpose: Orient participants and distribute assessment tools**
+
+During the kickoff meeting:
+- **Introduce** the [24 Capabilities Assessment](24-capabilities-assessment.md)
+- **Explain** why baseline measurement matters
+- **Distribute** assessment links or worksheets
+- **Set expectation** that baseline should be completed before Meeting 1
+
+**Note:** If your team skips the kickoff, send assessment instructions via email before Meeting 1.
+
+---
+
+### Pre-Meeting 1 / After Meeting 0 (Week 0)
 
 **Priority: Establish Baselines**
 

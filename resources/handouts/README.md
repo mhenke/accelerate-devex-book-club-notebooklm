@@ -12,6 +12,19 @@ Each meeting folder contains three core handouts that create a consistent, repea
 
 ## By Meeting
 
+### Meeting 0: Kickoff - No Printed Handouts Required
+
+**Purpose:** 30-minute orientation and book distribution
+
+**Materials needed:**
+- Book copies for distribution (if applicable)
+- Optional: Digital link to [Meeting 0 resources](../meetings/meeting-0/)
+- Optional: Assessment instructions to distribute
+
+**Note:** Meeting 0 is an informal kickoff to set expectations. All detailed resources are available in [resources/meetings/meeting-0/](../meetings/meeting-0/) but don't require printing.
+
+---
+
 ### [Meeting 1: Laying the Foundation](meeting-1/)
 - [Attendee Guide](meeting-1/attendee-guide.md) - DORA metrics, speed+stability, culture types
 - [Meeting Agenda](meeting-1/meeting-agenda.md) - 60-minute structured agenda
