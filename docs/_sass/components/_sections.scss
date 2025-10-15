@@ -361,7 +361,8 @@
   border-top: 3px solid transparent;
   border-radius: var(--radius-md);
   cursor: pointer;
-  transition: border-color 0.3s ease-out,
+  transition:
+    border-color 0.3s ease-out,
     border-top-color 0.3s ease-out,
     box-shadow 0.3s ease-out,
     transform 0.3s ease-out;
@@ -370,7 +371,9 @@
 
   &:hover {
     border-top-color: var(--theme-primary, var(--accent-emerald));
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow:
+      0 3px 6px rgba(0, 0, 0, 0.16),
+      0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-2px);
 
     i {
@@ -388,12 +391,16 @@
     background: linear-gradient(135deg, #1a202c, #2d3748);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.25),
+      0 2px 6px rgba(0, 0, 0, 0.15);
 
     &:hover {
       border-color: rgba(255, 255, 255, 0.15);
       border-top-color: var(--theme-primary, var(--accent-teal));
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 4px 12px rgba(0, 0, 0, 0.25);
+      box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.35),
+        0 4px 12px rgba(0, 0, 0, 0.25);
       transform: translateY(-3px);
 
       i {
@@ -421,7 +428,9 @@
     &:hover {
       border-top: none; // Keep no top border on hover
       transform: translateY(-2px);
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
     }
 
     h3 {
@@ -1808,7 +1817,8 @@
   text-align: center;
   min-width: var(--space-3xl);
   border-top: 2px solid;
-  transition: transform 0.3s ease-out,
+  transition:
+    transform 0.3s ease-out,
     box-shadow 0.3s ease-out;
 
   &:hover {
@@ -2240,7 +2250,9 @@
 .key-question-banner {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   padding: var(--space-xl) var(--space-lg);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 
@@ -2326,6 +2338,15 @@
     line-height: var(--line-height-relaxed);
     text-align: center;
     flex: 1;
+  }
+
+  .key-question-context {
+    color: var(--text-on-dark-high);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-relaxed);
+    max-width: 900px;
+    margin: var(--space-md) auto 0;
+    text-align: center;
   }
 
   @include mobile-only {

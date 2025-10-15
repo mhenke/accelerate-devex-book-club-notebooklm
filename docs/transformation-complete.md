@@ -5,93 +5,210 @@ permalink: /transformation-complete/
 nav_order: 6
 ---
 
-# <i class="fas fa-trophy"></i> Transformation Complete {#transformation-complete}
-
-<div class="celebration-header" markdown="0">
-  <div class="celebration-icon" markdown="0">
-    <svg viewBox="0 0 100 100" class="trophy-svg">
-      <defs>
-        <linearGradient id="trophy-gradient-unique" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#FFD700" stop-opacity="1" />
-          <stop offset="100%" stop-color="#FFA500" stop-opacity="1" />
-        </linearGradient>
-      </defs>
-      <path d="M50 15 L35 25 L35 45 L50 55 L65 45 L65 25 Z" fill="url(#trophy-gradient-unique)"/>
-      <rect x="45" y="55" width="10" height="20" fill="url(#trophy-gradient-unique)"/>
-      <rect x="35" y="75" width="30" height="5" fill="url(#trophy-gradient-unique)"/>
-      <circle cx="30" cy="35" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
-      <circle cx="70" cy="35" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
-    </svg>
-  </div>
-  <h2>Congratulations on completing your DevOps transformation journey!</h2>
-  <p class="celebration-subtitle">You've explored the science behind high-performing technology organizations</p>
-</div>
-
-## <i class="fas fa-rocket"></i> Your Transformation Journey {#transformation-journey}
-
-<div class="journey-timeline" markdown="0">
-  <div class="timeline-item completed" data-meeting="1">
-    <div class="timeline-marker" markdown="0"></div>
-    <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-chart-bar"></i> DORA Metrics Mastery Achieved</div>
-      <h3><a href="{{ '/meetings/meeting-1/' | relative_url }}">Meeting 1: Foundation & Metrics</a></h3>
-      <p>Mastered the four key measurements that drive high-performing teams and assessed organizational culture</p>
-      <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-chart-line"></i> Lead Time, Deployment Frequency, Recovery Time & Change Fail Rate</div>
-        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-users"></i> Westrum culture assessment completed</div>
-        <div class="finding-pill meeting-1-theme" markdown="0"><i class="fas fa-balance-scale"></i> Speed vs stability myth busted</div>
-      </div>
+<div class="hero-banner" markdown="0">
+  <div class="hero-content">
+    <div class="hero-value-prop">🎉 Transformation Complete!</div>
+    <h1 class="hero-headline">You've Mastered DevOps Excellence</h1>
+    <div class="site-title">
+      <h3>Your 2-month journey through "Accelerate" is complete</h3>
     </div>
-  </div>
-  
-  <div class="timeline-item completed" data-meeting="2">
-    <div class="timeline-marker" markdown="0"></div>
-    <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-rocket"></i> Technical Practices Mastered</div>
-      <h3><a href="{{ '/meetings/meeting-2/' | relative_url }}">Meeting 2: Technical Excellence</a></h3>
-      <p>Learned technical practices that enable both speed and stability: automated testing, deployment pipelines, trunk-based development</p>
-      <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-code-branch"></i> Trunk-based development & automated testing</div>
-        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-shield-alt"></i> Shift-left security integration</div>
-        <div class="finding-pill meeting-2-theme" markdown="0"><i class="fas fa-sitemap"></i> Conway's Law & loosely coupled architecture</div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="timeline-item completed" data-meeting="3">
-    <div class="timeline-marker" markdown="0"></div>
-    <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-columns"></i> Work Visualization & WIP Limits Implemented</div>
-      <h3><a href="{{ '/meetings/meeting-3/' | relative_url }}">Meeting 3: Management & Sustainability</a></h3>
-      <p>Implemented work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level</p>
-      <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-columns"></i> Kanban boards & WIP limits implemented</div>
-        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-fire-extinguisher"></i> Burnout prevention through sustainable practices</div>
-        <div class="finding-pill meeting-3-theme" markdown="0"><i class="fas fa-heart"></i> Employee satisfaction & work-life balance</div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="timeline-item completed" data-meeting="4">
-    <div class="timeline-marker" markdown="0"></div>
-    <div class="timeline-content" markdown="0">
-      <div class="achievement-badge" markdown="0"><i class="fas fa-users"></i> Five Leadership Characteristics Developed</div>
-      <h3><a href="{{ '/meetings/meeting-4/' | relative_url }}">Meeting 4: Leadership & Transformation</a></h3>
-      <p>Developed the five key leadership characteristics that enable teams to implement technical and organizational changes</p>
-      <div class="key-findings" markdown="0">
-        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-crown"></i> Vision, inspiration, intellectual stimulation, supportive leadership, personal recognition</div>
-        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-comments"></i> Coaching vs commanding mindset developed</div>
-        <div class="finding-pill meeting-4-theme" markdown="0"><i class="fas fa-chart-bar"></i> Transformation readiness assessment completed</div>
-      </div>
-    </div>
+    <p class="hero-subtitle">4 meetings • DORA metrics mastery • Evidence-based transformation knowledge</p>
   </div>
 </div>
 
-## <i class="fas fa-chart-bar"></i> Your DORA Metrics Mastery {#dora-metrics-mastery}
+<div class="main-content">
 
-<div class="content-grid" markdown="0">
-  <div class="metric-mastery-card deployment" markdown="0">
-    <div class="metric-icon" markdown="0">
+<!-- CELEBRATION MESSAGE -->
+<div class="welcome-compact section-card" markdown="0">
+<div class="celebration-icon" markdown="0">
+  <svg viewBox="0 0 100 100" class="trophy-svg">
+    <defs>
+      <linearGradient id="trophy-gradient-unique" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFD700" stop-opacity="1" />
+        <stop offset="100%" stop-color="#FFA500" stop-opacity="1" />
+      </linearGradient>
+    </defs>
+    <path d="M50 15 L35 25 L35 45 L50 55 L65 45 L65 25 Z" fill="url(#trophy-gradient-unique)"/>
+    <rect x="45" y="55" width="10" height="20" fill="url(#trophy-gradient-unique)"/>
+    <rect x="35" y="75" width="30" height="5" fill="url(#trophy-gradient-unique)"/>
+    <circle cx="30" cy="35" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="70" cy="35" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
+  </svg>
+</div>
+<p><strong>Congratulations!</strong> You've completed a comprehensive DevOps transformation education through evidence-based practices from 23,000+ organizations.</p>
+<div class="welcome-cta">
+<a href="{{ '/' | relative_url }}" class="btn btn--primary-action">Share Your Success</a>
+<p class="welcome-cta-subtitle">Tell others about your transformation journey</p>
+</div>
+</div>
+
+<!-- YOUR TRANSFORMATION JOURNEY -->
+<div class="chapter-metrics-compact section-card" markdown="0">
+<h2><i class="fas fa-rocket" aria-hidden="true"></i> Your Transformation Journey</h2>
+<div class="chapters-grid">
+<div class="chapter-item completed" data-chapter="meeting-1" onclick="showJourneyDetail('meeting-1')">
+  <div class="chapter-content">
+    <div class="chapter-number"><i class="fas fa-chart-bar meeting-1-color"></i></div>
+    <div class="chapter-title">Foundation & Metrics</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+
+<div class="chapter-item completed" data-chapter="meeting-2" onclick="showJourneyDetail('meeting-2')">
+  <div class="chapter-content">
+    <div class="chapter-number"><i class="fas fa-rocket meeting-2-color"></i></div>
+    <div class="chapter-title">Technical Excellence</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+
+<div class="chapter-item completed" data-chapter="meeting-3" onclick="showJourneyDetail('meeting-3')">
+  <div class="chapter-content">
+    <div class="chapter-number"><i class="fas fa-columns meeting-3-color"></i></div>
+    <div class="chapter-title">Management & Sustainability</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+
+<div class="chapter-item completed" data-chapter="meeting-4" onclick="showJourneyDetail('meeting-4')">
+  <div class="chapter-content">
+    <div class="chapter-number"><i class="fas fa-users meeting-4-color"></i></div>
+    <div class="chapter-title">Leadership & Transformation</div>
+  </div>
+  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+</div>
+</div>
+
+<!-- Expandable Journey Details Section -->
+<div class="chapter-details" id="journey-details" hidden>
+  <div class="chapter-detail" id="detail-meeting-1">
+    <h3><a href="{{ '/meetings/meeting-1/' | relative_url }}">Meeting 1: Foundation & Metrics</a></h3>
+    <div class="achievement-badge"><i class="fas fa-check-circle"></i> DORA Metrics Mastery Achieved</div>
+    <p>Mastered the four key measurements that drive high-performing teams and assessed organizational culture</p>
+    <ul>
+      <li><strong>Lead Time, Deployment Frequency, Recovery Time & Change Fail Rate:</strong> Understanding the four key metrics</li>
+      <li><strong>Westrum Culture Assessment:</strong> Evaluated organizational culture type (Pathological, Bureaucratic, Generative)</li>
+      <li><strong>Speed vs Stability Myth:</strong> Debunked the false choice between speed and stability</li>
+    </ul>
+  </div>
+
+  <div class="chapter-detail" id="detail-meeting-2">
+    <h3><a href="{{ '/meetings/meeting-2/' | relative_url }}">Meeting 2: Technical Excellence</a></h3>
+    <div class="achievement-badge"><i class="fas fa-check-circle"></i> Technical Practices Mastered</div>
+    <p>Learned technical practices that enable both speed and stability through automation and quality practices</p>
+    <ul>
+      <li><strong>Continuous Delivery:</strong> Automated testing, deployment pipelines, trunk-based development</li>
+      <li><strong>Shift-Left Security:</strong> Security integration in CI/CD pipeline (50% faster remediation)</li>
+      <li><strong>Conway's Law & Architecture:</strong> Team structure influences system design for independence</li>
+    </ul>
+  </div>
+
+  <div class="chapter-detail" id="detail-meeting-3">
+    <h3><a href="{{ '/meetings/meeting-3/' | relative_url }}">Meeting 3: Management & Sustainability</a></h3>
+    <div class="achievement-badge"><i class="fas fa-check-circle"></i> Work Visualization & WIP Limits Implemented</div>
+    <p>Implemented work visualization and WIP limits that expose bottlenecks and drive process improvement</p>
+    <ul>
+      <li><strong>Kanban Boards & WIP Limits:</strong> Visual management systems to expose systemic problems</li>
+      <li><strong>Burnout Prevention:</strong> Sustainable work practices that improve both performance and satisfaction</li>
+      <li><strong>Employee Satisfaction:</strong> Work-life balance strategies proven to increase team performance</li>
+    </ul>
+  </div>
+
+  <div class="chapter-detail" id="detail-meeting-4">
+    <h3><a href="{{ '/meetings/meeting-4/' | relative_url }}">Meeting 4: Leadership & Transformation</a></h3>
+    <div class="achievement-badge"><i class="fas fa-check-circle"></i> Five Leadership Characteristics Developed</div>
+    <p>Developed the five key leadership characteristics that enable teams to implement technical and organizational changes</p>
+    <ul>
+      <li><strong>Transformational Leadership:</strong> Vision, inspiration, intellectual stimulation, supportive leadership, personal recognition</li>
+      <li><strong>Coaching vs Commanding:</strong> Asking supportive questions instead of giving direct orders</li>
+      <li><strong>ING Case Study:</strong> Obeya rooms, catchball communication, tribe/squad structure adaptation</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+// Interactive Journey Overview Functionality
+let currentActiveJourney = null;
+
+function showJourneyDetail(journeyId) {
+  const detailsContainer = document.getElementById('journey-details');
+  const targetDetail = document.getElementById('detail-' + journeyId);
+  const clickedItem = document.querySelector('[data-chapter="' + journeyId + '"]');
+
+  if (currentActiveJourney === journeyId) {
+    hideJourneyDetails();
+    return;
+  }
+
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  detailsContainer.style.display = 'block';
+  setTimeout(() => {
+    detailsContainer.classList.add('show');
+  }, 10);
+
+  targetDetail.classList.add('active');
+  clickedItem.classList.add('active');
+  currentActiveJourney = journeyId;
+
+  setTimeout(() => {
+    detailsContainer.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest'
+    });
+  }, 300);
+}
+
+function hideJourneyDetails() {
+  const detailsContainer = document.getElementById('journey-details');
+
+  document.querySelectorAll('.chapter-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  document.querySelectorAll('.chapter-detail').forEach(detail => {
+    detail.classList.remove('active');
+  });
+
+  detailsContainer.classList.remove('show');
+  setTimeout(() => {
+    detailsContainer.style.display = 'none';
+  }, 400);
+
+  currentActiveJourney = null;
+}
+
+document.addEventListener('click', function(event) {
+  const detailsContainer = document.getElementById('journey-details');
+  const journeyItems = document.querySelectorAll('.chapter-item');
+
+  if (currentActiveJourney &&
+      !detailsContainer.contains(event.target) &&
+      !Array.from(journeyItems).some(item => item.contains(event.target))) {
+    hideJourneyDetails();
+  }
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && currentActiveJourney) {
+    hideJourneyDetails();
+  }
+});
+</script>
+</div>
+
+<!-- DORA METRICS MASTERY -->
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-chart-bar" aria-hidden="true"></i> Your DORA Metrics Mastery</h2>
+<div class="content-grid">
+  <div class="metric-mastery-card deployment">
+    <div class="metric-icon">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#4CAF50" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
@@ -99,8 +216,8 @@ nav_order: 6
       </svg>
     </div>
     <h3>Deployment Frequency</h3>
-    <div class="mastery-level" markdown="0">
-      <div class="mastery-bar" markdown="0">
+    <div class="mastery-level">
+      <div class="mastery-bar">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -108,16 +225,16 @@ nav_order: 6
     <p>Mastered measurement techniques and understand the path from weekly to daily deployments through automation</p>
   </div>
   
-  <div class="metric-mastery-card leadtime" markdown="0">
-    <div class="metric-icon" markdown="0">
+  <div class="metric-mastery-card leadtime">
+    <div class="metric-icon">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#2196F3" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </div>
     <h3>Lead Time</h3>
-    <div class="mastery-level" markdown="0">
-      <div class="mastery-bar" markdown="0">
+    <div class="mastery-level">
+      <div class="mastery-bar">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -125,8 +242,8 @@ nav_order: 6
     <p>Learned value stream mapping, bottleneck identification, and techniques to reduce lead time through small batches</p>
   </div>
   
-  <div class="metric-mastery-card reliability" markdown="0">
-    <div class="metric-icon" markdown="0">
+  <div class="metric-mastery-card reliability">
+    <div class="metric-icon">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#F44336" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 7v6M12 15h0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
@@ -134,8 +251,8 @@ nav_order: 6
       </svg>
     </div>
     <h3>Change Failure Rate</h3>
-    <div class="mastery-level" markdown="0">
-      <div class="mastery-bar" markdown="0">
+    <div class="mastery-level">
+      <div class="mastery-bar">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -143,16 +260,16 @@ nav_order: 6
     <p>Learned comprehensive testing strategies, quality gates, and practices to achieve &lt;15% change failure rates</p>
   </div>
   
-  <div class="metric-mastery-card recovery" markdown="0">
-    <div class="metric-icon" markdown="0">
+  <div class="metric-mastery-card recovery">
+    <div class="metric-icon">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="10" fill="#FF9800" stroke="#ffffff" stroke-width="2"/>
         <path d="M12 6.5l2.5 5 5.5 0.8-4 3.9 0.9 5.7-4.9-2.6-4.9 2.6 0.9-5.7-4-3.9 5.5-0.8z" fill="#ffffff"/>
       </svg>
     </div>
     <h3>Mean Time to Recovery</h3>
-    <div class="mastery-level" markdown="0">
-      <div class="mastery-bar" markdown="0">
+    <div class="mastery-level">
+      <div class="mastery-bar">
         <div class="mastery-fill" data-level="100"></div>
       </div>
       <span class="mastery-label">Expert Level</span>
@@ -160,11 +277,13 @@ nav_order: 6
     <p>Developed incident response capabilities and learned techniques to achieve &lt;1 hour recovery times</p>
   </div>
 </div>
+</div>
 
-## <i class="fas fa-graduation-cap"></i> Key Learnings & Achievements {#key-learnings-achievements}
-
-<div class="learning-highlights" markdown="0">
-  <div class="learning-category meeting-1-theme" markdown="0">
+<!-- KEY LEARNINGS & ACHIEVEMENTS -->
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Key Learnings & Achievements</h2>
+<div class="learning-highlights">
+  <div class="learning-category meeting-1-theme">
     <h3><i class="fas fa-chart-bar"></i> DORA Metrics Learning</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> Four key measurements mastered: Lead Time, Deployment Frequency, Recovery Time, Change Fail Rate</li>
@@ -175,7 +294,7 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="learning-category meeting-2-theme" markdown="0">
+  <div class="learning-category meeting-2-theme">
     <h3><i class="fas fa-rocket"></i> Technical Practices Mastered</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> Automated testing, deployment pipelines, and trunk-based development implemented</li>
@@ -186,7 +305,7 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="learning-category meeting-3-theme" markdown="0">
+  <div class="learning-category meeting-3-theme">
     <h3><i class="fas fa-columns"></i> Work Visualization & WIP Limits</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> Kanban boards and work visualization systems implemented</li>
@@ -197,7 +316,7 @@ nav_order: 6
     </ul>
   </div>
 
-  <div class="learning-category meeting-4-theme" markdown="0">
+  <div class="learning-category meeting-4-theme">
     <h3><i class="fas fa-users"></i> Five Leadership Characteristics</h3>
     <ul class="achievement-list">
       <li><i class="fas fa-check-circle"></i> Five transformational leadership characteristics mastered: vision, inspiration, intellectual stimulation, supportive leadership, personal recognition</li>
@@ -208,12 +327,14 @@ nav_order: 6
     </ul>
   </div>
 </div>
+</div>
 
-## <i class="fas fa-lightbulb"></i> Interactive Reflection {#interactive-reflection}
-
-<div class="reflection-section" markdown="0">
+<!-- INTERACTIVE REFLECTION -->
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-lightbulb" aria-hidden="true"></i> Interactive Reflection</h2>
+<div class="reflection-section">
   <h3>What was your biggest transformation insight?</h3>
-  <div class="reflection-options" markdown="0">
+  <div class="reflection-options">
     <label class="reflection-option meeting-1-insight">
       <input type="radio" name="insight" value="measurement">
       <span class="option-content">
@@ -248,12 +369,14 @@ nav_order: 6
     <p>Select your biggest insight to see personalized next steps!</p>
   </div>
 </div>
+</div>
 
-## <i class="fas fa-bullseye"></i> Your Next Steps {#next-steps}
-
-<div class="content-grid" markdown="0">
-  <div class="next-step-card immediate" markdown="0">
-    <div class="step-timeline" markdown="0">This Week</div>
+<!-- YOUR NEXT STEPS -->
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-bullseye" aria-hidden="true"></i> Your Next Steps</h2>
+<div class="content-grid">
+  <div class="next-step-card immediate">
+    <div class="step-timeline">This Week</div>
     <h3><i class="fas fa-rocket"></i> Start Small</h3>
     <ul>
       <li>Measure your current DORA metrics baseline using the assessment tools from Meeting 1</li>
@@ -262,8 +385,8 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="next-step-card short-term" markdown="0">
-    <div class="step-timeline" markdown="0">Next Month</div>
+  <div class="next-step-card short-term">
+    <div class="step-timeline">Next Month</div>
     <h3><i class="fas fa-chart-line"></i> Build Momentum</h3>
     <ul>
       <li>Implement trunk-based development or test automation from Meeting 2</li>
@@ -272,8 +395,8 @@ nav_order: 6
     </ul>
   </div>
   
-  <div class="next-step-card long-term" markdown="0">
-    <div class="step-timeline" markdown="0">Next Quarter</div>
+  <div class="next-step-card long-term">
+    <div class="step-timeline">Next Quarter</div>
     <h3><i class="fas fa-star"></i> Scale Impact</h3>
     <ul>
       <li>Apply Conway's Law to reorganize teams around architecture</li>
@@ -282,14 +405,16 @@ nav_order: 6
     </ul>
   </div>
 </div>
+</div>
 
-## <i class="fas fa-book-open"></i> Continue Your Journey {#continue-journey}
-
-<div class="continue-journey" markdown="0">
+<!-- CONTINUE YOUR JOURNEY -->
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-book-open" aria-hidden="true"></i> Continue Your Journey</h2>
+<div class="continue-journey">
   <h3>Resources to Keep You Growing</h3>
   
-  <div class="resource-grid" markdown="0">
-    <div class="resource-card" markdown="0">
+  <div class="resource-grid">
+    <div class="resource-card">
       <h4><i class="fas fa-book"></i> Further Reading</h4>
       <ul>
         <li><a href="https://itrevolution.com/product/the-devops-handbook-second-edition/" target="_blank" rel="noopener noreferrer">The DevOps Handbook</a></li>
@@ -299,7 +424,7 @@ nav_order: 6
       </ul>
     </div>
     
-    <div class="resource-card" markdown="0">
+    <div class="resource-card">
       <h4><i class="fas fa-podcast"></i> Podcasts & Videos</h4>
       <ul>
         <li><a href="https://devops.com/category/podcasts/" target="_blank" rel="noopener noreferrer">DevOps Chat</a></li>
@@ -309,7 +434,7 @@ nav_order: 6
       </ul>
     </div>
     
-    <div class="resource-card" markdown="0">
+    <div class="resource-card">
       <h4><i class="fas fa-users"></i> Communities</h4>
       <ul>
         <li><a href="https://events.itrevolution.com/" target="_blank" rel="noopener noreferrer">DevOps Enterprise Summit</a></li>
@@ -319,10 +444,10 @@ nav_order: 6
       </ul>
     </div>
     
-    <div class="resource-card ai-enhanced" markdown="0">
+    <div class="resource-card ai-enhanced">
       <h4><i class="fas fa-robot"></i> AI-Enhanced Learning</h4>
       <ul>
-  <li><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/">Browse Resources Folder</a></li>
+        <li><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/">Browse Resources Folder</a></li>
         <li>Create custom discussion prompts</li>
         <li>Generate team-specific scenarios</li>
         <li>Build organization assessment tools</li>
@@ -330,20 +455,25 @@ nav_order: 6
     </div>
   </div>
 </div>
+</div>
 
-## <i class="fas fa-trophy"></i> Celebrate Your Success {#celebrate-success}
-
-<div class="celebration-final" markdown="0">
-  <div class="success-message" markdown="0">
+<!-- CELEBRATION FINAL -->
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-trophy" aria-hidden="true"></i> Celebrate Your Success</h2>
+<div class="celebration-final">
+  <div class="success-message">
     <h3>You've completed a comprehensive DevOps transformation education!</h3>
     <p>You now have the knowledge, tools, and confidence to drive meaningful change in your organization. Remember: transformation is a journey, not a destination. Keep learning, keep improving, and keep sharing your knowledge with others.</p>
     
-    <div class="celebration-cta" markdown="0">
-      <a href="/accelerate-devex-book-club-notebooklm/" class="btn btn-primary">Return to Home</a>
-  <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/activities/" class="btn btn-secondary">Browse Activities Resources</a>
+    <div class="celebration-cta">
+      <a href="{{ '/' | relative_url }}" class="btn btn--primary-action">Return to Home</a>
+      <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/activities/" class="btn btn--secondary">Browse Activities Resources</a>
     </div>
   </div>
 </div>
+</div>
+
+</div> <!-- End main-content -->
 
 ---
 

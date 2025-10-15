@@ -346,6 +346,11 @@
     &:hover {
       background: var(--btn-secondary);
     }
+
+    &:focus-visible {
+      outline: 3px solid var(--btn-primary);
+      outline-offset: 2px;
+    }
   }
 
   &.btn--tonal {
@@ -356,6 +361,11 @@
       background: var(--btn-primary);
       color: white;
     }
+
+    &:focus-visible {
+      outline: 3px solid var(--btn-primary);
+      outline-offset: 2px;
+    }
   }
 
   &.btn--outlined,
@@ -365,6 +375,11 @@
 
     &:hover {
       background: rgba(var(--btn-primary), 0.08);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--btn-primary);
+      outline-offset: 2px;
     }
   }
 }
@@ -398,11 +413,15 @@
   box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
 
   &:hover,
-  &:hover:not(:disabled),
-  &:focus {
+  &:hover:not(:disabled) {
     background: linear-gradient(135deg, #388bfd, var(--meeting-1-color));
     box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
     color: white;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(9, 105, 218, 0.4);
+    outline-offset: 2px;
   }
 }
 
@@ -411,11 +430,15 @@
   box-shadow: 0 4px 12px rgba(26, 127, 55, 0.3);
 
   &:hover,
-  &:hover:not(:disabled),
-  &:focus {
+  &:hover:not(:disabled) {
     background: linear-gradient(135deg, #2ea043, var(--meeting-2-color));
     box-shadow: 0 6px 16px rgba(26, 127, 55, 0.4);
     color: white;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(26, 127, 55, 0.4);
+    outline-offset: 2px;
   }
 }
 
@@ -424,11 +447,15 @@
   box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
 
   &:hover,
-  &:hover:not(:disabled),
-  &:focus {
+  &:hover:not(:disabled) {
     background: linear-gradient(135deg, #f59e0b, var(--meeting-3-color));
     box-shadow: 0 6px 16px rgba(217, 119, 6, 0.4);
     color: white;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(217, 119, 6, 0.4);
+    outline-offset: 2px;
   }
 }
 
@@ -437,11 +464,15 @@
   box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
 
   &:hover,
-  &:hover:not(:disabled),
-  &:focus {
+  &:hover:not(:disabled) {
     background: linear-gradient(135deg, #a78bfa, var(--meeting-4-color));
     box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
     color: white;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(139, 92, 246, 0.4);
+    outline-offset: 2px;
   }
 }
 

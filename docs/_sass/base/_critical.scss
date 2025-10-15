@@ -1054,29 +1054,58 @@ a {
   }
 }
 
-// Meeting themed buttons using new data-attribute system
-.meeting.meeting-themed,
-.meeting.meeting-theme--1 {
+// Meeting themed buttons using data-meeting attribute system
+[data-meeting] {
   .btn,
   .btn-primary {
-    background: linear-gradient(
-      135deg,
-      var(--theme-primary),
-      var(--accent-teal)
-    );
-    box-shadow: var(--elevation-2);
+    &:not(.btn--primary-action, .btn--secondary-action, .btn--meeting-nav) {
+      background: linear-gradient(
+        135deg,
+        var(--theme-primary),
+        var(--accent-teal)
+      );
+      box-shadow: var(--elevation-2);
 
-    &:hover:not(:disabled) {
-      background: linear-gradient(135deg, #388bfd, var(--meeting-1-color));
-      box-shadow: var(--elevation-4);
+      &:hover:not(:disabled) {
+        background: linear-gradient(135deg, var(--accent-teal), var(--theme-primary));
+        box-shadow: var(--elevation-4);
+        transform: translateY(-1px);
+      }
+
+      &:focus-visible {
+        outline: 3px solid var(--accent-coral);
+        outline-offset: 2px;
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: var(--elevation-2);
+      }
     }
   }
 
-  // Meeting 1 icon color pattern: H2 blue, others gray
+  // Meeting-specific button classes should use their theme colors
+  .btn--meeting-1:hover:not(:disabled) {
+    background: linear-gradient(135deg, var(--accent-teal), var(--meeting-1-color)) !important;
+  }
+
+  .btn--meeting-2:hover:not(:disabled) {
+    background: linear-gradient(135deg, #2ea043, var(--meeting-2-color)) !important;
+  }
+
+  .btn--meeting-3:hover:not(:disabled) {
+    background: linear-gradient(135deg, #fbbf24, var(--meeting-3-color)) !important;
+  }
+
+  .btn--meeting-4:hover:not(:disabled) {
+    background: linear-gradient(135deg, #a78bfa, var(--meeting-4-color)) !important;
+  }
+
+  // Icon color pattern: H2 uses theme primary, others gray
   h2:not(.key-question h2) {
     i,
     em {
-      color: var(--meeting-1-color) !important;
+      color: var(--theme-primary) !important;
     }
   }
 }
@@ -2343,20 +2372,86 @@ button:focus,
     }
   }
 
-  /* Next Meeting Section Styling */
+  /* Next Meeting Section Styling - Use target meeting's theme */
+  .next-meeting-1 {
+    --meeting-primary: var(--meeting-1-color);
+    --meeting-secondary: #1f6feb;
+    --meeting-light: rgba(9, 105, 218, 0.1);
+    --meeting-hover: #0550ae;
+
+    .btn--meeting-1:hover:not(:disabled) {
+      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
+      box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
+    }
+
+    .btn--meeting-1:focus-visible {
+      outline: 3px solid rgba(9, 105, 218, 0.4);
+      outline-offset: 2px;
+    }
+  }
+
   .next-meeting-2 {
-    --meeting-primary: #1a7f37;
+    --meeting-primary: var(--meeting-2-color);
+    --meeting-secondary: #238636;
     --meeting-light: rgba(26, 127, 55, 0.1);
     --meeting-hover: #16632d;
 
-    .btn--meeting-2 {
-      background: var(--meeting-primary);
-      border-color: var(--meeting-primary);
+    .btn--meeting-2:hover:not(:disabled) {
+      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
+      box-shadow: 0 6px 16px rgba(26, 127, 55, 0.4);
+    }
 
-      &:hover {
-        background: var(--meeting-hover);
-        border-color: var(--meeting-hover);
-      }
+    .btn--meeting-2:focus-visible {
+      outline: 3px solid rgba(26, 127, 55, 0.4);
+      outline-offset: 2px;
+    }
+  }
+
+  .next-meeting-3 {
+    --meeting-primary: var(--meeting-3-color);
+    --meeting-secondary: #f59e0b;
+    --meeting-light: rgba(217, 119, 6, 0.1);
+    --meeting-hover: #d97706;
+
+    .btn--meeting-3:hover:not(:disabled) {
+      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
+      box-shadow: 0 6px 16px rgba(217, 119, 6, 0.4);
+    }
+
+    .btn--meeting-3:focus-visible {
+      outline: 3px solid rgba(217, 119, 6, 0.4);
+      outline-offset: 2px;
+    }
+  }
+
+  .next-meeting-4 {
+    --meeting-primary: var(--meeting-4-color);
+    --meeting-secondary: #a78bfa;
+    --meeting-light: rgba(139, 92, 246, 0.1);
+    --meeting-hover: #7c3aed;
+
+    .btn--meeting-4:hover:not(:disabled) {
+      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
+      box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+    }
+
+    .btn--meeting-4:focus-visible {
+      outline: 3px solid rgba(139, 92, 246, 0.4);
+      outline-offset: 2px;
+    }
+  }
+
+  /* Completion section styling */
+  .next-meeting-complete {
+    .btn:hover:not(:disabled) {
+      background: linear-gradient(135deg, #a78bfa, #c4b5fd) !important;
+      color: #3c1361 !important;
+      box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid rgba(139, 92, 246, 0.4);
+      outline-offset: 2px;
     }
   }
 }
