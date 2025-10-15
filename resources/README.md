@@ -10,13 +10,13 @@ This directory contains all supporting materials for the Accelerate DevEx Book C
 2. Review [**key-questions.md**](key-questions.md) - Core framing questions for each meeting
 3. Check [**handouts/**](handouts/) - Print attendee materials 2-3 days before each meeting
 4. Use [**meetings/meeting-X/**](meetings/) - Complete facilitator guides for each session
-5. Generate NotebookLM content with [**notebooklm-prompts/**](notebooklm-prompts/) - AI-generated podcasts/videos
+5. Generate NotebookLM content from each meeting's `notebooklm/` folder - AI-generated podcasts/videos
 
 **Quick prep checklist:**
 - ✅ Print [handouts](handouts/) for participants
 - ✅ Review [meeting outline](meetings/) and [leader cheatsheet](meetings/meeting-1/leader-cheatsheet.md)
 - ✅ Complete [baseline assessments](assessments/) before Meeting 1
-- ✅ Generate [NotebookLM podcast](notebooklm-prompts/podcasts/) for pre-meeting prep (optional)
+- ✅ Generate NotebookLM podcast from meeting's `notebooklm/` folder for pre-meeting prep (optional)
 
 ---
 
@@ -71,20 +71,29 @@ Ready-to-print materials for standard 8.5" × 11" paper:
 
 ---
 
-### 🎙️ `/notebooklm-prompts` - AI-Generated Content
+### 🎙️ NotebookLM Content - AI-Generated Supplementary Materials
 
 Use Google's NotebookLM to generate supplementary podcasts and videos for pre-meeting prep or post-meeting review.
 
-#### Podcast Formats:
-- **[podcasts/deep-dive.md](notebooklm-prompts/podcasts/deep-dive.md)** - Comprehensive exploration (3 length options: shorter/default/longer)
-- **[podcasts/brief.md](notebooklm-prompts/podcasts/brief.md)** - Quick 5-10 min overview
-- **[podcasts/critique.md](notebooklm-prompts/podcasts/critique.md)** - Critical analysis examining research methodology
-- **[podcasts/debate.md](notebooklm-prompts/podcasts/debate.md)** - Pro/con exploration of controversial topics
+#### Location:
+Each meeting folder contains a `notebooklm/` subdirectory with meeting-specific prompts:
+- `/meetings/meeting-1/notebooklm/` - Foundation and DORA metrics
+- `/meetings/meeting-2/notebooklm/` - Technical excellence and CD
+- `/meetings/meeting-3/notebooklm/` - Management and sustainability
+- `/meetings/meeting-4/notebooklm/` - Leadership and transformation
+
+#### Podcast Formats Available:
+- **podcast-brief.md** - Quick 5-10 min overview
+- **podcast-deep-dive-default.md** - Comprehensive exploration (15-20 min)
+- **podcast-critique.md** - Critical analysis examining research methodology
+- **podcast-debate.md** - Pro/con exploration of controversial topics
+- **podcast-deep-dive-shorter.md** & **podcast-deep-dive-longer.md** - Length variants
 
 #### Video Format:
-- **[videos/overview.md](notebooklm-prompts/videos/overview.md)** - Visual summary with customization examples
+- **video.md** - Visual summary with customization examples
 
-**See [notebooklm-prompts/README.md](notebooklm-prompts/README.md) for complete usage guide**
+#### Documentation:
+- **[notebooklm-docs/](notebooklm-docs/)** - Best practices, audit reports, and usage guides
 
 ---
 
@@ -139,13 +148,13 @@ Templates for capturing meeting outcomes and reflections:
    - Print [Meeting 1 handouts](handouts/meeting-1/)
    - Review [Meeting 1 outline](meetings/meeting-1/outline.md)
    - Review [leader cheatsheet](meetings/meeting-1/leader-cheatsheet.md)
-   - (Optional) Generate [Deep Dive podcast](notebooklm-prompts/podcasts/deep-dive.md) for pre-meeting prep
+   - (Optional) Generate Deep Dive podcast from [meetings/meeting-1/notebooklm/](meetings/meeting-1/notebooklm/) for pre-meeting prep
 
 ### During Book Club (Weeks 1-7)
 
 **Each meeting cycle:**
 1. Distribute [attendee guide](handouts/) 2-3 days before meeting
-2. Generate [NotebookLM podcast](notebooklm-prompts/podcasts/brief.md) for prep (optional)
+2. Generate NotebookLM podcast from meeting's `notebooklm/` folder for prep (optional)
 3. Facilitate meeting using [outline](meetings/) and [agenda](handouts/)
 4. Track commitments with [action items tracker](handouts/)
 5. Between meetings: Use [activities](activities/between-meetings.md) to maintain momentum
@@ -187,7 +196,8 @@ Templates for capturing meeting outcomes and reflections:
 | Meeting facilitation guide | Meeting Outlines | [meetings/](meetings/) |
 | Quick facilitator reference | Leader Cheatsheets | [meetings/meeting-X/leader-cheatsheet.md](meetings/meeting-1/leader-cheatsheet.md) |
 | Participant workbooks | Attendee Guides | [handouts/](handouts/) |
-| AI-generated prep content | NotebookLM Prompts | [notebooklm-prompts/](notebooklm-prompts/) |
+| AI-generated prep content | NotebookLM Prompts | [meetings/meeting-X/notebooklm/](meetings/meeting-1/notebooklm/) |
+| NotebookLM documentation | Best Practices & Guides | [notebooklm-docs/](notebooklm-docs/) |
 | Baseline measurements | Assessments | [assessments/](assessments/) |
 | Discussion facilitation tips | Discussion Practices | [activities/discussion-practices.md](activities/discussion-practices.md) |
 | Meeting notes capture | Templates | [templates/](templates/) |
