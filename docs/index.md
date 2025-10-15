@@ -126,25 +126,30 @@ title: Home
 <div class="card__content">
 <h2><i class="fas fa-bullseye" aria-hidden="true"></i> Success Outcomes</h2>
 <div class="resource-grid">
-<div class="outcome-item" data-outcome="dora" onclick="showOutcomeDetail('dora')">
-  <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i> Master DORA metrics
-  <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
+<div class="expandable-item outcome-item" data-outcome="dora" onclick="showOutcomeDetail('dora')">
+  <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
+  <span class="expandable-label">Master DORA metrics</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
-<div class="outcome-item" data-outcome="bottlenecks" onclick="showOutcomeDetail('bottlenecks')">
-  <i class="fas fa-search" role="img" aria-label="Search"></i> Identify bottlenecks
-  <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
+<div class="expandable-item outcome-item" data-outcome="bottlenecks" onclick="showOutcomeDetail('bottlenecks')">
+  <i class="fas fa-search" role="img" aria-label="Search"></i>
+  <span class="expandable-label">Identify bottlenecks</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
-<div class="outcome-item" data-outcome="practices" onclick="showOutcomeDetail('practices')">
-  <i class="fas fa-cogs" role="img" aria-label="Cogs"></i> Apply daily practices
-  <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
+<div class="expandable-item outcome-item" data-outcome="practices" onclick="showOutcomeDetail('practices')">
+  <i class="fas fa-cogs" role="img" aria-label="Cogs"></i>
+  <span class="expandable-label">Apply daily practices</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
-<div class="outcome-item" data-outcome="culture" onclick="showOutcomeDetail('culture')">
-  <i class="fas fa-users" role="img" aria-label="Users"></i> Understand culture impact
-  <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
+<div class="expandable-item outcome-item" data-outcome="culture" onclick="showOutcomeDetail('culture')">
+  <i class="fas fa-users" role="img" aria-label="Users"></i>
+  <span class="expandable-label">Understand culture impact</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
-<div class="outcome-item" data-outcome="roadmap" onclick="showOutcomeDetail('roadmap')">
-  <i class="fas fa-route" role="img" aria-label="Route"></i> Get transformation roadmap
-  <div class="outcome-indicator"><i class="fas fa-chevron-down"></i></div>
+<div class="expandable-item outcome-item" data-outcome="roadmap" onclick="showOutcomeDetail('roadmap')">
+  <i class="fas fa-route" role="img" aria-label="Route"></i>
+  <span class="expandable-label">Get transformation roadmap</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 </div>
 

@@ -14,22 +14,22 @@ dora_color: "#0969da" # $meeting-1-primary
 <div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 1-3 Overview</h2>
 <div class="chapters-grid">
-<div class="chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
+<div class="expandable-item chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
   <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
-  <span class="chapter-label">Chapter 1: Accelerate</span>
-  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+  <span class="expandable-label">Chapter 1: Accelerate</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-<div class="chapter-item" data-chapter="measuring" onclick="showChapterDetail('measuring')">
+<div class="expandable-item chapter-item" data-chapter="measuring" onclick="showChapterDetail('measuring')">
   <i class="fas fa-tachometer-alt" role="img" aria-label="Tachometer"></i>
-  <span class="chapter-label">Chapter 2: Measuring Performance</span>
-  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+  <span class="expandable-label">Chapter 2: Measuring Performance</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-<div class="chapter-item" data-chapter="culture" onclick="showChapterDetail('culture')">
+<div class="expandable-item chapter-item" data-chapter="culture" onclick="showChapterDetail('culture')">
   <i class="fas fa-users" role="img" aria-label="Users"></i>
-  <span class="chapter-label">Chapter 3: Measuring & Changing Culture</span>
-  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
+  <span class="expandable-label">Chapter 3: Measuring & Changing Culture</span>
+  <div class="item-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 </div>
 

@@ -14,7 +14,101 @@
 }
 
 // =============================================================================
-// ITEM-CARD - Unified Interactive Card Base Class (Placeholder)
+// EXPANDABLE ITEM - Shared base for interactive expandable cards
+// =============================================================================
+// Used by: .outcome-item (Success Outcomes), .chapter-item (Chapter Overviews)
+
+.expandable-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl) var(--space-lg);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  border-radius: var(--radius-xl);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  gap: var(--space-xs);
+  transition: all 0.3s ease-out;
+
+  // Label
+  .expandable-label {
+    font-size: var(--font-size-body);
+    line-height: 1.3;
+    color: var(--text-dark);
+  }
+
+  // Icon styling - circular with gradient background
+  > i {
+    color: var(--accent-emerald);
+    font-size: var(--font-size-h5);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      135deg,
+      rgba(16, 185, 129, 0.1),
+      rgba(122, 218, 209, 0.1)
+    );
+    border-radius: var(--radius-full);
+    transition: all 0.3s ease-out;
+    margin-bottom: var(--space-xs);
+  }
+
+  // Chevron indicator (top-right corner)
+  .item-indicator {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    font-size: var(--font-size-body);
+    color: var(--accent-emerald);
+
+    i {
+      width: auto;
+      height: auto;
+      background: none;
+      margin: 0;
+    }
+  }
+
+  // Hover state
+  &:hover {
+    border-color: rgba(16, 185, 129, 0.2);
+
+    > i {
+      color: var(--accent-teal);
+    }
+
+    .item-indicator {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  // Active (expanded) state
+  &.active {
+    border-color: var(--accent-emerald);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+
+    .item-indicator {
+      transform: rotate(180deg);
+      color: var(--accent-teal);
+      opacity: 1;
+    }
+  }
+}
+
+// =============================================================================
+// ITEM-CARD - Legacy placeholder for backward compatibility
 // =============================================================================
 // Base placeholder for all interactive cards within sections
 // Provides consistent hover behavior, borders, and transitions
@@ -187,90 +281,8 @@
     }
   }
 
-  .chapter-item {
-    @extend %item-card;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-xl) var(--space-lg);
-    border: 1px solid rgba(16, 185, 129, 0.1);
-    border-radius: var(--radius-xl);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-semibold);
-    color: var(--text-dark);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    gap: var(--space-xs);
-
-    > i {
-      color: var(--accent-emerald);
-      font-size: var(--font-size-h5);
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(
-        135deg,
-        rgba(16, 185, 129, 0.1),
-        rgba(122, 218, 209, 0.1)
-      );
-      border-radius: var(--radius-full);
-      transition: all 0.3s ease-out;
-      margin-bottom: var(--space-xs);
-    }
-
-    .chapter-label {
-      font-size: var(--font-size-body);
-      line-height: 1.3;
-      color: var(--text-dark);
-    }
-
-    .chapter-indicator {
-      position: absolute;
-      top: var(--space-sm);
-      right: var(--space-sm);
-      opacity: 0.6;
-      transition: all 0.3s ease;
-      font-size: var(--font-size-body);
-      color: var(--accent-emerald);
-
-      i {
-        width: auto;
-        height: auto;
-        background: none;
-        margin: 0;
-      }
-    }
-
-    &:hover {
-      border-color: rgba(16, 185, 129, 0.2);
-
-      > i {
-        color: var(--accent-teal);
-      }
-
-      .chapter-indicator {
-        opacity: 1;
-        transform: scale(1.1);
-      }
-    }
-
-    &.active {
-      border-color: var(--accent-emerald);
-      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
-
-      .chapter-indicator {
-        transform: rotate(180deg);
-        color: var(--accent-teal);
-        opacity: 1;
-      }
-    }
-  }
+  // Items now reuse .expandable-item styles via HTML class
+  .chapter-item { /* no-op: styled by .expandable-item */ }
 
   .chapter-details {
     transition: all 0.5s ease-out;
