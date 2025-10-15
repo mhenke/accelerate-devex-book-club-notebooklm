@@ -1,0 +1,201 @@
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm); // Reduced gap for compactness
+  padding: var(--space-sm); // Reduced padding for more compact appearance
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl); // Match card border radius
+}
+
+// =====================================
+// These styles are critical for above-the-fold content rendering.
+// They should be inlined in the HTML <head> for optimal performance.
+// ANIMATIONS & KEYFRAMES
+// =============================================================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+--
+.highlight-card {
+  @extend %item-card;
+
+  // Specific styling for What You'll Learn cards
+  border-radius: var(--radius-xl); // Material Design 3 radius
+  padding: var(
+    --space-lg
+  ); // Further reduced from xl to lg for more compact height
+
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+
+  // Use flexbox to ensure consistent footer positioning
+  display: flex;
+  flex-direction: column;
+
+  // Enhanced Material Design elevation for dark theme
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: white;
+
+  &:hover {
+    // Enhanced hover elevation for dark theme
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 4px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-top-color: var(--accent-teal);
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  // Create a header section with icon and title side by side
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+  }
+
+  .highlight-icon {
+    @include flex-center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-h4);
+    position: relative;
+--
+.highlight-card.meeting-1 {
+  .highlight-icon {
+    background: linear-gradient(
+      135deg,
+      var(--theme-primary),
+      var(--accent-teal)
+    );
+  }
+
+  .meeting-badge {
+    background: var(--meeting-1-color);
+  }
+
+  &:hover {
+    border-top-color: var(--meeting-1-color);
+  }
+}
+
+.highlight-card.meeting-2 {
+  .highlight-icon {
+    background: linear-gradient(135deg, var(--meeting-2-color), #238636);
+  }
+
+  .meeting-badge {
+    background: var(--meeting-2-color);
+  }
+
+  &:hover {
+    border-top-color: var(--meeting-2-color);
+  }
+}
+
+.highlight-card.meeting-3 {
+  .highlight-icon {
+    background: linear-gradient(135deg, var(--meeting-3-color), #f59e0b);
+  }
+
+  .meeting-badge {
+    background: var(--meeting-3-color);
+  }
+
+  &:hover {
+    border-top-color: var(--meeting-3-color);
+  }
+}
+
+.highlight-card.meeting-4 {
+  .highlight-icon {
+    background: linear-gradient(135deg, var(--meeting-4-color), #a78bfa);
+  }
+
+  .meeting-badge {
+    background: var(--meeting-4-color);
+  }
+
+  &:hover {
+    border-top-color: var(--meeting-4-color);
+  }
+}
+
+// Responsive behavior
+@include mobile-only {
+  .highlight-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .highlight-card {
+    .highlight-card .highlight-icon {
+      width: 50px;
+      height: 50px;
+      font-size: var(--font-size-h5);
+    }
+  }
+}
+
+// =============================================================================
+// BUTTON STYLES - CRITICAL INTERACTIONS
+// =============================================================================
+// BUTTON STYLES - Defined in components/_buttons.scss
+// Removed duplicate definitions to prevent cascade conflicts
+// =============================================================================
+
+// Button focus states for accessibility (keep in critical for a11y)
+.btn:focus,
+button:focus,
+[role="button"]:focus {
+  @include focus-ring;
+}
+
+// =============================================================================
+// ACCESSIBILITY ENHANCEMENTS - CRITICAL
+// =============================================================================
+
+// Focus management
+.focus-visible {
+  outline: 3px solid var(--accent-teal) !important;

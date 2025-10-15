@@ -191,6 +191,152 @@
 }
 
 // =============================================================================
+// CARD TYPE MODIFIERS - Unified system for all card types
+// =============================================================================
+
+// Section Card - Most common card type (134 uses)
+// Used for: General content sections, meeting content, guides
+.card--section {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.97),
+    rgba(245, 245, 245, 0.95)
+  );
+  border: 2px solid rgba(148, 163, 184, 0.3);
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+// Resource Card - Resource hub items (24 uses)
+// Used for: Resource listings, external links, documentation
+.card--resource {
+  background: linear-gradient(
+    135deg,
+    var(--surface-light),
+    var(--surface-subtle)
+  );
+  border: 1px solid rgba(147, 51, 234, 0.2);
+  border-top: 3px solid transparent;
+  border-radius: var(--radius-xl);
+  position: relative;
+  overflow: hidden;
+
+  // Gradient overlay
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 127, 80, 0.05) 0%,
+      transparent 50%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // Enhanced hover for resources
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+      0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 127, 80, 0.3);
+    border-top-color: var(--accent-coral);
+  }
+
+  // Ensure content is above overlay
+  .card__header,
+  .card__content,
+  .card__footer {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Highlight Card - Feature highlights (26 uses)
+// Used for: "What you'll learn" cards, feature callouts
+.card--highlight {
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 4px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+  }
+
+  // Ensure good contrast for dark backgrounds
+  .card__header h3,
+  .card__header h4 {
+    color: inherit;
+  }
+}
+
+// =============================================================================
+// REUSABLE UTILITY MODIFIERS
+// =============================================================================
+
+// Plain Card - No styling (for custom designs)
+.card--plain {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+
+// Dark Theme Card - Dark background with light text
+.card--dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+
+  // Subtle gradient overlay
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at top right,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    );
+    pointer-events: none;
+  }
+
+  // Adjust text colors for dark background
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .card__header,
+  .card__content,
+  .card__footer {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// =============================================================================
 // SPECIALIZED CARD CONTENT COMPONENTS
 // =============================================================================
 

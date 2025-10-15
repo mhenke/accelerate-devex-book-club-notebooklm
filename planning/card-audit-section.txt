@@ -1,0 +1,51 @@
+.section-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.97),
+    rgba(245, 245, 245, 0.95)
+  );
+  border: 2px solid rgba(148, 163, 184, 0.3);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg); // 24px - standard breathing room
+  margin: var(--space-lg) auto;
+  width: 95%;
+  max-width: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  &.no-border {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  &.left-align {
+    text-align: left;
+  }
+
+  // Compact variant - tighter padding for dense content
+  &.compact {
+    padding: var(--space-md); // 16px
+  }
+
+  // Dark theme modifier - dark background with light text
+  &.dark-theme {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    padding: var(
+      --space-sm
+    ); // 8px - keeps current tight layout (TODO: consider increasing to space-md)
+
+    position: relative;
+    overflow: hidden;
+
+    // Subtle gradient overlay (matches key-question-banner)
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(
+        circle at top right,
