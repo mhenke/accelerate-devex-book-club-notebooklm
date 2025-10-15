@@ -116,8 +116,6 @@ title: Resources
     <div class="meeting-subtitle">Chapters 11, 16 • Leadership • ING</div>
   </div>
 </div>
-
-</div>
 </div>
 </div>
 
@@ -170,11 +168,9 @@ title: Resources
   </div>
 </div>
 </div>
-</div>
 
 <div class="section-card" markdown="0">
 <h2><i class="fas fa-clipboard-check"></i> Assessments & Templates</h2>
-
 
 <div class="resource-callout-grid">
   <div class="resource-callout">
@@ -220,7 +216,6 @@ title: Resources
       <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/templates/" class="resource-link">View templates →</a></p>
     </div>
   </div>
-</div>
 </div>
 </div>
 
