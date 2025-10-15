@@ -27,27 +27,33 @@ Between Meetings Activities
 </div>
 
 <div class="resource-grid" markdown="0">
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#2196F3">
 <i class="fas fa-clipboard-check"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Between Meetings</h3>
 <p>Reflection questions, practical exercises, and activities to deepen your understanding between sessions.</p>
 <a href="#section-between-meetings" class="btn btn--secondary-action">View Activities →</a>
 </div>
 
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#4CAF50">
 <i class="fas fa-comments"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Discussion Practices</h3>
 <p>Facilitation guidelines and techniques for productive book club discussions.</p>
 <a href="#section-discussion-practices" class="btn btn--secondary-action">Facilitation Guide →</a>
 </div>
 
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#FF9800">
 <i class="fas fa-arrow-up"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Extensions</h3>
 <p>Advanced topics and learning paths to continue your DevOps transformation journey.</p>
@@ -61,8 +67,10 @@ Between Meetings Activities
 
 <div class="card-grid" markdown="0">
 <div class="card card--gradient card--border-left card--theme-green">
+<div class="card__content">
 <div class="card__header">
 <h4><i class="fas fa-clipboard-list"></i> Activities</h4>
+</div>  <!-- /card__content -->
 </div>
 <div class="card__content">
 <p>Reflection questions and practical exercises to deepen understanding between sessions.</p>
@@ -71,8 +79,10 @@ Between Meetings Activities
 </div>
 
 <div class="card card--gradient card--border-left card--theme-green">
+<div class="card__content">
 <div class="card__header">
 <h4><i class="fas fa-chart-bar"></i> Assessments</h4>
+</div>  <!-- /card__content -->
 </div>
 <div class="card__content">
 <p>Tools and templates for measuring your team's DevOps performance and culture.</p>
@@ -81,8 +91,10 @@ Between Meetings Activities
 </div>
 
 <div class="card card--gradient card--border-left card--theme-green">
+<div class="card__content">
 <div class="card__header">
 <h4><i class="fas fa-arrow-up"></i> Extensions</h4>
+</div>  <!-- /card__content -->
 </div>
 <div class="card__content">
 <p>Advanced topics and learning paths to continue your DevOps transformation journey.</p>
@@ -91,8 +103,10 @@ Between Meetings Activities
 </div>
 
 <div class="card card--gradient card--border-left card--theme-green">
+<div class="card__content">
 <div class="card__header">
 <h4><i class="fas fa-users"></i> Meeting Resources</h4>
+</div>  <!-- /card__content -->
 </div>
 <div class="card__content">
 <p>Templates and formats for organizing effective book club meetings.</p>
@@ -132,12 +146,14 @@ Between Meetings Activities
 ## Between Meetings Activities {#section-between-meetings}
 
 <div class="learning-checkpoint" markdown="0">
-<div class="checkpoint-card">
+<div class="card card--border-left card--theme-blue">
+<div class="card__content">
 <h4><i class="fas fa-lightbulb"></i> Post-Meeting Reflection</h4>
 <p>After each session, spend 10-15 minutes reflecting on these key areas:</p>
 <div class="reflection-items">
 <div class="reflection-item">
 <strong><i class="fas fa-star"></i> Key Insights:</strong> What surprised you most from this meeting?
+</div>  <!-- /card__content -->
 </div>
 <div class="reflection-item">
 <strong><i class="fas fa-user-cog"></i> Personal Application:</strong> How can you apply these concepts in your current role?
@@ -151,7 +167,8 @@ Between Meetings Activities
 </div>
 </div>
 
-<div class="checkpoint-card">
+<div class="card card--border-left card--theme-blue">
+<div class="card__content">
 <h4><i class="fas fa-dumbbell"></i> Practical Exercises</h4>
 <div class="exercise-timeline">
 <div class="exercise-week">
@@ -163,6 +180,7 @@ Between Meetings Activities
 <li>Identify the biggest bottleneck in your deployment pipeline</li>
 <li>Start a "deployment pain journal"</li>
 </ul>
+</div>  <!-- /card__content -->
 </div>
 </div>
 
@@ -273,9 +291,11 @@ Between Meetings Activities
 ## Extensions {#section-extensions}
 
 <div class="resource-grid" markdown="0">
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#2196F3">
 <i class="fas fa-book"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Advanced Reading</h3>
 <p>After completing "Accelerate," consider these follow-up books:</p>
@@ -287,9 +307,11 @@ Between Meetings Activities
 </ul>
 </div>
 
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#4CAF50">
 <i class="fas fa-graduation-cap"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Professional Development</h3>
 <div class="development-paths">
@@ -312,9 +334,11 @@ Between Meetings Activities
 </div>
 </div>
 
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#FF9800">
 <i class="fas fa-chart-line"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Measurement & Monitoring</h3>
 <div class="monitoring-practices">
@@ -341,7 +365,8 @@ Between Meetings Activities
 ## Assessments {#section-assessments}
 
 <div class="learning-checkpoint" markdown="0">
-<div class="checkpoint-card">
+<div class="card card--border-left card--theme-blue">
+<div class="card__content">
 <h4><i class="fas fa-chart-bar"></i> DORA Metrics Assessment</h4>
 <p>Use these tools to measure your team's current DevOps performance:</p>
 <ul>
@@ -351,9 +376,11 @@ Between Meetings Activities
 <li>Monitor change failure rate</li>
 </ul>
 <p>See the <a href="#dora-metrics-summary">DORA Metrics Summary</a> below for performance benchmarks.</p>
+</div>  <!-- /card__content -->
 </div>
 
-<div class="checkpoint-card">
+<div class="card card--border-left card--theme-blue">
+<div class="card__content">
 <h4><i class="fas fa-users"></i> Culture Assessment</h4>
 <p>Evaluate your organizational culture using Westrum's model:</p>
 <ul>
@@ -363,15 +390,18 @@ Between Meetings Activities
 <li>Do teams have autonomy to make decisions?</li>
 </ul>
 <p>See the <a href="#culture-types-westrum">Culture Types</a> below for reference.</p>
+</div>  <!-- /card__content -->
 </div>
 </div>
 
 ## Meeting Templates {#section-meeting-templates}
 
 <div class="resource-grid" markdown="0">
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#2196F3">
 <i class="fas fa-clipboard-list"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Meeting Notes Template</h3>
 <p>Structured template for capturing key discussions, insights, and action items from each session.</p>
@@ -383,9 +413,11 @@ Between Meetings Activities
 </ul>
 </div>
 
-<div class="resource-card">
+<div class="card card--resource card--centered card--border-top">
+<div class="card__content">
 <div class="resource-icon" data-color="#4CAF50">
 <i class="fas fa-sync-alt"></i>
+</div>  <!-- /card__content -->
 </div>
 <h3>Retrospective Format</h3>
 <p>Framework for reflecting on the book club experience and planning improvements.</p>

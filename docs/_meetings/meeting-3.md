@@ -11,7 +11,7 @@ dora_color: "#d97706" # $meeting-3-primary
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
 <!-- Modern Chapters Overview -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 7-10 Overview</h2>
 <div class="chapters-grid">
 <div class="chapter-item" data-chapter="management" onclick="showChapterDetail('management')">
@@ -199,9 +199,11 @@ document.addEventListener('keydown', function(event) {
 </div>
 </div>
 
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="step-header">
     <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
+</div>  <!-- /card__content -->
   </div>
   <div class="media-content">
     <div class="feature-grid">
@@ -348,7 +350,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- TRADITIONAL VS LEAN MANAGEMENT -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2><i class="fas fa-balance-scale" aria-hidden="true"></i> Traditional vs Lean Management</h2>
     <h3 class="false-choice-subtitle">Most organizations default to command-and-control management approaches</h3>
@@ -357,6 +360,7 @@ document.addEventListener('keydown', function(event) {
       <div class="choice-option">
         <div class="choice-circle">
           <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+</div>  <!-- /card__content -->
         </div>
         <h4 class="choice-label">Traditional</h4>
         <p class="choice-consequence">Approval-Heavy Processes</p>
@@ -386,11 +390,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK - Lean Management Practices -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-rocket" aria-hidden="true"></i> The Framework: Five Lean Management Practices</h2>
       <p class="research-foundation">Research shows these practices significantly boost <strong>performance, culture, and reduce burnout</strong>:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -474,11 +480,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DEPLOYMENT PAIN: THE BURNOUT PREDICTOR -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-fire" aria-hidden="true"></i> Deployment Pain: The Burnout Predictor</h2>
       <p class="research-foundation">Deployment pain is the <strong>strongest predictor of burnout</strong> and indicates systemic problems</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -562,11 +570,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- EMPLOYEE SATISFACTION: THE FOUR PILLARS -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="alternative-section">
     <div class="alternative-header">
       <h2><i class="fas fa-users" aria-hidden="true"></i> Employee Satisfaction: The Four Pillars</h2>
       <p class="alternative-intro">Research shows high performers are 2.2x more likely to recommend their organization as a great place to work:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="alternative-grid">
@@ -612,7 +622,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2>Discussion Questions</h2>
     <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
@@ -621,6 +632,7 @@ document.addEventListener('keydown', function(event) {
       <div class="deployment-signal">
         <h4>Lean Management Assessment</h4>
         <p>Which lean management practices do you currently use? What's missing? How do approval processes in your organization affect delivery speed and team autonomy?</p>
+</div>  <!-- /card__content -->
       </div>
 
       <div class="deployment-signal">
@@ -643,10 +655,12 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="section-card action-items" markdown="0">
+<div class="card card--section action-items" markdown="0">
+<div class="card__content">
   <div class="action-header">
     <h2><i class="fas fa-tasks" aria-hidden="true"></i> Action Items for Next Meeting</h2>
     <p class="subtitle">Complete these tasks before Meeting 4 to maximize your learning</p>
+</div>  <!-- /card__content -->
   </div>
 
   <div class="action-list">
@@ -704,7 +718,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- NEXT MEETING SECTION -->
-<div class="welcome-compact section-card next-meeting-card next-meeting-4" markdown="0">
+<div class="welcome-compact card card--section next-meeting-card next-meeting-4" markdown="0">
   <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
   <p>Complete your journey: <strong>Meeting 4 · Leadership</strong> covers transformational leadership and real-world transformation case studies.</p>
   <div class="welcome-cta">

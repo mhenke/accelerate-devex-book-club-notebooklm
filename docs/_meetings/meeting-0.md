@@ -11,7 +11,7 @@ dora_color: "#6e7681" # Neutral gray for kickoff
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
 <!-- Meeting Overview Section -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-rocket" aria-hidden="true"></i> Kickoff Meeting Overview</h2>
 <p class="section-intro">This 30-minute informational session sets expectations and prepares everyone for a successful 2-month learning journey through <em>Accelerate</em>.</p>
 
@@ -173,11 +173,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- WHY THIS BOOK MATTERS -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-book-open" aria-hidden="true"></i> Why Accelerate?</h2>
       <p class="research-foundation">This book stands apart from other DevOps resources</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -260,14 +262,16 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE 2-MONTH JOURNEY -->
-<div class="what-youll-learn-section section-card" markdown="0">
+<div class="what-youll-learn-section card card--section" markdown="0">
 <h2><i class="fas fa-road" aria-hidden="true"></i> Your 2-Month Journey</h2>
 <div class="learning-highlights">
 <div class="card-grid">
-<div class="highlight-card meeting-1 dark-theme">
+<div class="card card--highlight card--elevated meeting-1 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
+</div>  <!-- /card__content -->
     </div>
     <h3>Week 1: Foundation</h3>
   </div>
@@ -280,10 +284,12 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<div class="highlight-card meeting-2 dark-theme">
+<div class="card card--highlight card--elevated meeting-2 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
+</div>  <!-- /card__content -->
     </div>
     <h3>Week 3: Technical Excellence</h3>
   </div>
@@ -296,10 +302,12 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<div class="highlight-card meeting-3 dark-theme">
+<div class="card card--highlight card--elevated meeting-3 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-columns" role="img" aria-label="Columns"></i>
+</div>  <!-- /card__content -->
     </div>
     <h3>Week 5: Management</h3>
   </div>
@@ -312,10 +320,12 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<div class="highlight-card meeting-4 dark-theme">
+<div class="card card--highlight card--elevated meeting-4 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-users" role="img" aria-label="Users"></i>
+</div>  <!-- /card__content -->
     </div>
     <h3>Week 7: Leadership</h3>
   </div>
@@ -332,7 +342,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- WHAT SUCCESS LOOKS LIKE -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2><i class="fas fa-bullseye" aria-hidden="true"></i> What Success Looks Like</h2>
     <h3 class="false-choice-subtitle">By the end of 2 months, you'll be able to:</h3>
@@ -341,6 +352,7 @@ document.addEventListener('keydown', function(event) {
       <div class="deployment-signal">
         <h4><i class="fas fa-check-circle"></i> Identify Improvement Opportunities</h4>
         <p>Recognize specific capabilities your team can build to improve software delivery performance and organizational outcomes.</p>
+</div>  <!-- /card__content -->
       </div>
 
       <div class="deployment-signal">
@@ -363,11 +375,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- COMMON QUESTIONS -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-question-circle" aria-hidden="true"></i> Common Questions</h2>
       <p class="research-foundation">Answers to questions teams often ask before starting</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="alternative-section">
@@ -426,10 +440,12 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="section-card action-items" markdown="0">
+<div class="card card--section action-items" markdown="0">
+<div class="card__content">
   <div class="action-header">
     <h2><i class="fas fa-tasks" aria-hidden="true"></i> Preparation for Meeting 1</h2>
     <p class="subtitle">Complete these tasks before Meeting 1 (Week 1) to be ready</p>
+</div>  <!-- /card__content -->
   </div>
 
   <div class="action-list">
@@ -478,7 +494,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- NEXT MEETING SECTION -->
-<div class="welcome-compact section-card next-meeting-card next-meeting-1" markdown="0">
+<div class="welcome-compact card card--section next-meeting-card next-meeting-1" markdown="0">
   <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
   <p>Start your journey: <strong>Meeting 1 · Foundation</strong> explores the four DORA metrics and how culture drives performance.</p>
   <div class="welcome-cta">

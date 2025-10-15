@@ -11,7 +11,7 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
 <!-- Modern Chapters Overview -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 11, 16 & Conclusion Overview</h2>
 <div class="chapters-grid">
 <div class="chapter-item" data-chapter="leaders" onclick="showChapterDetail('leaders')">
@@ -181,9 +181,11 @@ document.addEventListener('keydown', function(event) {
 </div>
 </div>
 
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="step-header">
     <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
+</div>  <!-- /card__content -->
   </div>
   <div class="media-content">
     <div class="feature-grid">
@@ -330,7 +332,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- TRANSFORMATIONAL LEADERSHIP: THE INDIRECT ENABLER -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2><i class="fas fa-crown" aria-hidden="true"></i> Leadership's Indirect Impact</h2>
     <h3 class="false-choice-subtitle">Leaders don't directly improve DORA metrics—they enable teams to implement the practices that do</h3>
@@ -339,6 +342,7 @@ document.addEventListener('keydown', function(event) {
       <div class="choice-option">
         <div class="choice-circle">
           <i class="fas fa-user-tie" aria-hidden="true"></i>
+</div>  <!-- /card__content -->
         </div>
         <h4 class="choice-label">Direct Approach</h4>
         <p class="choice-consequence">Leader Tries to Fix Metrics</p>
@@ -368,11 +372,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK - Five Transformational Leadership Characteristics -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-star" aria-hidden="true"></i> The Framework: Five Transformational Leadership Characteristics</h2>
       <p class="research-foundation">Research shows these characteristics <strong>amplify team effectiveness</strong> and enable high performance:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -456,11 +462,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ING CASE STUDY: TRANSFORMATION IN ACTION -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-building" aria-hidden="true"></i> ING Case Study: Real-World Transformation</h2>
       <p class="research-foundation">ING Netherlands shows how <strong>leaders became learning teams</strong> to transform a global financial institution</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -544,11 +552,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE PATH FORWARD: TRANSFORMATION PRINCIPLES -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="alternative-section">
     <div class="alternative-header">
       <h2><i class="fas fa-route" aria-hidden="true"></i> The Path Forward: Make It Your Own</h2>
       <p class="alternative-intro">The book's conclusion emphasizes transformation principles for sustained success:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="alternative-grid">
@@ -594,7 +604,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE SINGLE SMALLEST CHANGE -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2><i class="fas fa-bullseye" aria-hidden="true"></i> The Single Smallest Change</h2>
     <h3 class="false-choice-subtitle">The culminating reflection question that connects all four meetings</h3>
@@ -602,13 +613,15 @@ document.addEventListener('keydown', function(event) {
     <div class="deployment-signal" style="margin-top: 2rem;">
       <h4 style="font-size: 1.5rem; margin-bottom: 1rem;">🎯 "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"</h4>
       <p>This question captures the essence of the entire book: start small, focus on flow, reduce friction, and let improvements compound over time.</p>
+</div>  <!-- /card__content -->
     </div>
 
   </div>
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2>Discussion Questions</h2>
     <p class="false-choice-subtitle">Reflect on these questions as a team to complete your transformation journey</p>
@@ -617,6 +630,7 @@ document.addEventListener('keydown', function(event) {
       <div class="deployment-signal">
         <h4>Leadership Assessment</h4>
         <p>What transformational leadership behaviors do you see in your organization? Which of the five characteristics (vision, communication, stimulation, support, recognition) are missing?</p>
+</div>  <!-- /card__content -->
       </div>
 
       <div class="deployment-signal">
@@ -639,10 +653,12 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- FINAL ACTION ITEMS & COMMITMENTS -->
-<div class="section-card action-items" markdown="0">
+<div class="card card--section action-items" markdown="0">
+<div class="card__content">
   <div class="action-header">
     <h2><i class="fas fa-rocket" aria-hidden="true"></i> Final Commitments & Next Steps</h2>
     <p class="subtitle">Your transformation journey begins now—commit to concrete actions</p>
+</div>  <!-- /card__content -->
   </div>
 
   <div class="action-list">
@@ -700,7 +716,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- TRANSFORMATION COMPLETE SECTION -->
-<div class="welcome-compact section-card next-meeting-card next-meeting-complete" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); border: 2px solid #a78bfa;" markdown="0">
+<div class="welcome-compact card card--section next-meeting-card next-meeting-complete" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); border: 2px solid #a78bfa;" markdown="0">
   <h2 id="next-meeting-heading"><i class="fas fa-trophy" aria-hidden="true"></i> Congratulations!</h2>
   <p>You've completed your structured journey through "Accelerate." Your transformation adventure continues with practical implementation and ongoing learning.</p>
   <div class="welcome-cta">

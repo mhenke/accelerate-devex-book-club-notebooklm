@@ -11,7 +11,7 @@ title: Meetings
 </div>
 </div>
 
-<div class="welcome-compact section-card" markdown="0">
+<div class="welcome-compact card card--section" markdown="0">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
 <div class="welcome-cta">
 <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
@@ -21,7 +21,8 @@ title: Meetings
 
 <div class="page-container">
 
-<div class="quick-start section-card no-border" markdown="0">
+<div class="quick-start card card--section card--plain" markdown="0">
+<div class="card__content">
 <h2><em class="fas fa-info-circle" aria-hidden="true"></em> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
@@ -52,16 +53,19 @@ title: Meetings
 </div>
 </div>
 </div>
+</div>  <!-- /card__content -->
 </div>
 
 <!-- Meeting Cards -->
-<div class="what-youll-learn-section section-card" markdown="0">
+<div class="what-youll-learn-section card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-calendar-alt" aria-hidden="true"></i> Meeting Schedule</h2>
 <div class="learning-highlights">
 <div class="card-grid">
 
 <!-- Meeting 0 - Kickoff -->
-<div class="highlight-card meeting-0 dark-theme" style="grid-column: 1 / -1;">
+<div class="card card--highlight card--elevated meeting-0 dark-theme" style="grid-column: 1 / -1;">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-gift" role="img" aria-label="Gift"></i>
@@ -79,10 +83,12 @@ title: Meetings
     </a>
     <div class="meeting-subtitle">Optional Attendance • Book Distribution • Q&A</div>
   </div>
+</div>  <!-- /card__content -->
 </div>
 
 <!-- Meeting 1 -->
-<div class="highlight-card meeting-1 dark-theme">
+<div class="card card--highlight card--elevated meeting-1 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
@@ -103,10 +109,12 @@ title: Meetings
 </div>
 
 <!-- Meeting 2 -->
-<div class="highlight-card meeting-2 dark-theme">
+<div class="card card--highlight card--elevated meeting-2 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
+</div>  <!-- /card__content -->
     </div>
     <h3>Technical Excellence</h3>
   </div>
@@ -124,10 +132,12 @@ title: Meetings
 </div>
 
 <!-- Meeting 3 -->
-<div class="highlight-card meeting-3 dark-theme">
+<div class="card card--highlight card--elevated meeting-3 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-columns" role="img" aria-label="Columns"></i>
+</div>  <!-- /card__content -->
     </div>
     <h3>Management & Sustainability</h3>
   </div>
@@ -145,10 +155,12 @@ title: Meetings
 </div>
 
 <!-- Meeting 4 -->
-<div class="highlight-card meeting-4 dark-theme">
+<div class="card card--highlight card--elevated meeting-4 dark-theme">
+<div class="card__content">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-users" role="img" aria-label="Users"></i>
+</div>  <!-- /card__content -->
     </div>
     <h3>Leadership & Transformation</h3>
   </div>
@@ -170,7 +182,8 @@ title: Meetings
 </div>
 
 <!-- Meeting Structure -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-list-check" aria-hidden="true"></i> Meeting Structure</h2>
 <p class="section-intro">Each 1-hour session follows a consistent, research-backed format designed to maximize engagement and learning:</p>
 
@@ -180,6 +193,7 @@ title: Meetings
   <div class="structure-content">
     <h4><i class="fas fa-comments"></i> Welcome & Check-in</h4>
     <p>Share key insights from reading and create psychological safety</p>
+</div>  <!-- /card__content -->
   </div>
 </div>
 
@@ -218,7 +232,8 @@ title: Meetings
 </div>
 
 <!-- Between Sessions -->
-<div class="section-card dark-theme" markdown="0">
+<div class="card card--section dark-theme" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-clipboard-check" aria-hidden="true"></i> Between Sessions</h2>
 <p class="section-intro">Maximize your learning with activities between meetings:</p>
 
@@ -228,6 +243,7 @@ title: Meetings
   <div class="between-content">
     <h4>Reflection Questions</h4>
     <p>Process insights from each meeting and identify patterns in your work</p>
+</div>  <!-- /card__content -->
   </div>
 </div>
 
@@ -258,7 +274,8 @@ title: Meetings
 </div>
 
 <!-- Preparation Guide -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-book-reader" aria-hidden="true"></i> How to Prepare</h2>
 
 <div class="preparation-steps">
@@ -267,6 +284,7 @@ title: Meetings
   <div class="prep-content">
     <h4>Attend Kickoff (Optional but Recommended)</h4>
     <p>Join Meeting 0 on <strong>Wednesday, October 22</strong> to receive your book, meet fellow participants, and get oriented to the format.</p>
+</div>  <!-- /card__content -->
   </div>
 </div>
 
@@ -304,7 +322,7 @@ title: Meetings
 </div>
 
 <!-- CTA -->
-<div class="welcome-compact section-card" markdown="0">
+<div class="welcome-compact card card--section" markdown="0">
 <h2><i class="fas fa-rocket" aria-hidden="true"></i> Ready to Start?</h2>
 <p>Join us for the kickoff session to get your book and meet the group!</p>
 <div class="welcome-cta">

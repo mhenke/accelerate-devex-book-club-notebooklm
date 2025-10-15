@@ -19,7 +19,7 @@ nav_order: 6
 <div class="main-content">
 
 <!-- CELEBRATION MESSAGE -->
-<div class="welcome-compact section-card" markdown="0">
+<div class="welcome-compact card card--section" markdown="0">
 <div class="celebration-icon" markdown="0">
   <svg viewBox="0 0 100 100" class="trophy-svg">
     <defs>
@@ -43,7 +43,7 @@ nav_order: 6
 </div>
 
 <!-- YOUR TRANSFORMATION JOURNEY -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-rocket" aria-hidden="true"></i> Your Transformation Journey</h2>
 <div class="chapters-grid">
 <div class="chapter-item completed" data-chapter="meeting-1" onclick="showJourneyDetail('meeting-1')">
@@ -204,7 +204,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DORA METRICS MASTERY -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-chart-bar" aria-hidden="true"></i> Your DORA Metrics Mastery</h2>
 <div class="content-grid">
   <div class="metric-mastery-card deployment">
@@ -214,6 +215,7 @@ document.addEventListener('keydown', function(event) {
         <path d="M12 7v10M7 12h10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
         <path d="M12 7l-3 3M12 7l3 3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
       </svg>
+</div>  <!-- /card__content -->
     </div>
     <h3>Deployment Frequency</h3>
     <div class="mastery-level">
@@ -280,7 +282,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- KEY LEARNINGS & ACHIEVEMENTS -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Key Learnings & Achievements</h2>
 <div class="learning-highlights">
   <div class="learning-category meeting-1-theme">
@@ -292,6 +295,7 @@ document.addEventListener('keydown', function(event) {
       <li><i class="fas fa-check-circle"></i> Speed vs stability myth debunked - both achievable simultaneously</li>
       <li><i class="fas fa-check-circle"></i> Deployment confidence assessment and pain evaluation completed</li>
     </ul>
+</div>  <!-- /card__content -->
   </div>
   
   <div class="learning-category meeting-2-theme">
@@ -330,7 +334,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- INTERACTIVE REFLECTION -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-lightbulb" aria-hidden="true"></i> Interactive Reflection</h2>
 <div class="reflection-section">
   <h3>What was your biggest transformation insight?</h3>
@@ -363,6 +368,7 @@ document.addEventListener('keydown', function(event) {
         Transformational leadership enables organizational change
       </span>
     </label>
+</div>  <!-- /card__content -->
   </div>
   
   <div class="reflection-feedback" id="insight-feedback">
@@ -372,7 +378,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- YOUR NEXT STEPS -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-bullseye" aria-hidden="true"></i> Your Next Steps</h2>
 <div class="content-grid">
   <div class="next-step-card immediate">
@@ -383,6 +390,7 @@ document.addEventListener('keydown', function(event) {
       <li>Choose one deployment bottleneck to automate this week</li>
       <li>Conduct Westrum culture assessment with your team</li>
     </ul>
+</div>  <!-- /card__content -->
   </div>
   
   <div class="next-step-card short-term">
@@ -408,13 +416,15 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- CONTINUE YOUR JOURNEY -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Continue Your Journey</h2>
 <div class="continue-journey">
   <h3>Resources to Keep You Growing</h3>
   
   <div class="resource-grid">
-    <div class="resource-card">
+    <div class="card card--resource card--centered card--border-top">
+<div class="card__content">
       <h4><i class="fas fa-book"></i> Further Reading</h4>
       <ul>
         <li><a href="https://itrevolution.com/product/the-devops-handbook-second-edition/" target="_blank" rel="noopener noreferrer">The DevOps Handbook</a></li>
@@ -422,9 +432,11 @@ document.addEventListener('keydown', function(event) {
         <li><a href="https://teamtopologies.com/book" target="_blank" rel="noopener noreferrer">Team Topologies</a></li>
         <li><a href="https://itrevolution.com/product/the-phoenix-project/" target="_blank" rel="noopener noreferrer">The Phoenix Project</a></li>
       </ul>
+</div>  <!-- /card__content -->
     </div>
     
-    <div class="resource-card">
+    <div class="card card--resource card--centered card--border-top">
+<div class="card__content">
       <h4><i class="fas fa-podcast"></i> Podcasts & Videos</h4>
       <ul>
         <li><a href="https://devops.com/category/podcasts/" target="_blank" rel="noopener noreferrer">DevOps Chat</a></li>
@@ -432,9 +444,11 @@ document.addEventListener('keydown', function(event) {
         <li><a href="https://softwareengineeringdaily.com/" target="_blank" rel="noopener noreferrer">Software Engineering Daily</a></li>
         <li><a href="https://dora.dev/" target="_blank" rel="noopener noreferrer">DORA Research Talks</a></li>
       </ul>
+</div>  <!-- /card__content -->
     </div>
     
-    <div class="resource-card">
+    <div class="card card--resource card--centered card--border-top">
+<div class="card__content">
       <h4><i class="fas fa-users"></i> Communities</h4>
       <ul>
         <li><a href="https://events.itrevolution.com/" target="_blank" rel="noopener noreferrer">DevOps Enterprise Summit</a></li>
@@ -442,9 +456,11 @@ document.addEventListener('keydown', function(event) {
         <li><a href="https://platformengineering.org/" target="_blank" rel="noopener noreferrer">Platform Engineering Community</a></li>
         <li><a href="https://dora.community/" target="_blank" rel="noopener noreferrer">DORA Community of Practice</a></li>
       </ul>
+</div>  <!-- /card__content -->
     </div>
     
-    <div class="resource-card ai-enhanced">
+    <div class="card card--resource card--centered card--border-top ai-enhanced">
+<div class="card__content">
       <h4><i class="fas fa-robot"></i> AI-Enhanced Learning</h4>
       <ul>
         <li><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/">Browse Resources Folder</a></li>
@@ -452,13 +468,16 @@ document.addEventListener('keydown', function(event) {
         <li>Generate team-specific scenarios</li>
         <li>Build organization assessment tools</li>
       </ul>
+</div>  <!-- /card__content -->
     </div>
+</div>  <!-- /card__content -->
   </div>
 </div>
 </div>
 
 <!-- CELEBRATION FINAL -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-trophy" aria-hidden="true"></i> Celebrate Your Success</h2>
 <div class="celebration-final">
   <div class="success-message">
@@ -468,6 +487,7 @@ document.addEventListener('keydown', function(event) {
     <div class="celebration-cta">
       <a href="{{ '/' | relative_url }}" class="btn btn--primary-action">Return to Home</a>
       <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/activities/" class="btn btn--secondary">Browse Activities Resources</a>
+</div>  <!-- /card__content -->
     </div>
   </div>
 </div>

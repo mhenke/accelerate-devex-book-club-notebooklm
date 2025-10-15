@@ -67,7 +67,8 @@ NotebookLM Content Generation
 ## How to Use These Prompts
 
 <div class="learning-checkpoint" markdown="0">
-<div class="checkpoint-card">
+<div class="card card--border-left card--theme-blue">
+<div class="card__content">
 <h4><i class="fas fa-play-circle"></i> Step-by-Step Process</h4>
 <div class="process-steps">
 <div class="step-item">
@@ -75,6 +76,7 @@ NotebookLM Content Generation
 <div class="step-content">
 <strong>Visit NotebookLM</strong>
 <p>Go to <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer">NotebookLM</a> and create a new notebook</p>
+</div>  <!-- /card__content -->
 </div>
 </div>
 <div class="step-item">
@@ -108,12 +110,14 @@ NotebookLM Content Generation
 </div>
 </div>
 
-<div class="checkpoint-card">
+<div class="card card--border-left card--theme-blue">
+<div class="card__content">
 <h4><i class="fas fa-shield-alt"></i> General Guidelines</h4>
 <div class="resource-grid">
 <div class="guideline-item">
 <div class="guideline-icon" data-color="#2196F3">
 <i class="fas fa-check-circle"></i>
+</div>  <!-- /card__content -->
 </div>
 <div>
 <strong>Content Quality Standards</strong>

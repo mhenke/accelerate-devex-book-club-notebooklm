@@ -11,7 +11,7 @@ dora_color: "#0969da" # $meeting-1-primary
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
 <!-- Modern Chapters Overview -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 1-3 Overview</h2>
 <div class="chapters-grid">
 <div class="chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
@@ -179,10 +179,12 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- CULTURE FIRST WARNING -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="culture-first-warning">
     <div class="warning-header">
       <h2><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Critical Foundation: Culture Before Metrics</h2>
+</div>  <!-- /card__content -->
     </div>
 
     <!-- The Trap - Full Width Warning -->
@@ -234,9 +236,11 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="step-header">
     <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
+</div>  <!-- /card__content -->
   </div>
   <div class="media-content">
     <div class="feature-grid">
@@ -387,7 +391,8 @@ document.addEventListener('keydown', function(event) {
 <!-- DEVELOPER EXPERIENCE DIMENSIONS -->
 
 <!-- THE PROBLEM -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2><i class="fas fa-code-branch" aria-hidden="true"></i> The Problem: False Choice</h2>
     <h3 class="false-choice-subtitle">Most teams believe they must choose the optimal development approach</h3>
@@ -396,6 +401,7 @@ document.addEventListener('keydown', function(event) {
       <div class="choice-option">
         <div class="choice-circle">
           <i class="fas fa-rocket" aria-hidden="true"></i>
+</div>  <!-- /card__content -->
         </div>
         <h4 class="choice-label">Fast Delivery</h4>
         <p class="choice-consequence">High Risk</p>
@@ -425,11 +431,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK - Causal Chain Infographic -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-project-diagram" aria-hidden="true"></i> The Framework: How Culture Drives Performance</h2>
       <p class="research-foundation">4 years of research across <strong>23,000+ organizations</strong> reveals this causal chain:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -514,7 +522,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- METRICS IN CONTEXT -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-balance-scale" aria-hidden="true"></i> Metrics in Context: What to Measure (and What to Avoid)</h2>
 <p class="section-intro">Not all metrics are created equal. Click each category to explore what drives improvement versus dysfunction.</p>
 
@@ -716,11 +724,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-sync" aria-hidden="true"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
       <p class="research-foundation">The most important takeaway from chapters 1-3: <strong>Culture isn't fixed.</strong> You can intentionally change it.</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -800,11 +810,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE ALTERNATIVE: METRICS AS MIRRORS -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="alternative-section">
     <div class="alternative-header">
       <h2><i class="fas fa-check-circle" aria-hidden="true"></i> The Alternative: Metrics as Mirrors</h2>
       <p class="alternative-intro">Instead of surveillance, policing, and judgment:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="alternative-grid">
@@ -858,7 +870,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2>Discussion Questions</h2>
     <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
@@ -867,6 +880,7 @@ document.addEventListener('keydown', function(event) {
       <div class="deployment-signal">
         <h4>Current State Assessment</h4>
         <p>Honestly assess your team's current deployment experience. What anxiety levels exist? What does this reveal about your organizational culture and technical practices?</p>
+</div>  <!-- /card__content -->
       </div>
 
       <div class="deployment-signal">
@@ -889,10 +903,12 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="section-card action-items" markdown="0">
+<div class="card card--section action-items" markdown="0">
+<div class="card__content">
   <div class="action-header">
     <h2><i class="fas fa-tasks" aria-hidden="true"></i> Action Items for Next Meeting</h2>
     <p class="subtitle">Complete these tasks before Meeting 2 to maximize your learning</p>
+</div>  <!-- /card__content -->
   </div>
 
   <div class="action-list">
@@ -932,7 +948,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- NEXT MEETING SECTION -->
-<div class="welcome-compact section-card next-meeting-card next-meeting-2" markdown="0">
+<div class="welcome-compact card card--section next-meeting-card next-meeting-2" markdown="0">
   <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
   <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
   <div class="welcome-cta">

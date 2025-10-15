@@ -11,7 +11,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
 <!-- Modern Chapters Overview -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact card card--section" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 4-6 Overview</h2>
 <div class="chapters-grid">
 <div class="chapter-item" data-chapter="technical" onclick="showChapterDetail('technical')">
@@ -180,9 +180,11 @@ document.addEventListener('keydown', function(event) {
 </div>
 </div>
 
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="step-header">
     <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
+</div>  <!-- /card__content -->
   </div>
   <div class="media-content">
     <div class="feature-grid">
@@ -329,7 +331,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE WALL OF CONFUSION -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2><i class="fas fa-wall-brick" aria-hidden="true"></i> The Wall of Confusion</h2>
     <h3 class="false-choice-subtitle">Traditional organizations create conflicting incentives between development and operations</h3>
@@ -338,6 +341,7 @@ document.addEventListener('keydown', function(event) {
       <div class="choice-option">
         <div class="choice-circle">
           <i class="fas fa-code" aria-hidden="true"></i>
+</div>  <!-- /card__content -->
         </div>
         <h4 class="choice-label">Development</h4>
         <p class="choice-consequence">Optimize for Throughput</p>
@@ -367,11 +371,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- THE FRAMEWORK - Technical Practices Enable Culture -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-tools" aria-hidden="true"></i> The Framework: Technical Practices Drive Performance</h2>
       <p class="research-foundation">Research shows these <strong>5 key practices</strong> distinguish high performers:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -455,11 +461,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ARCHITECTURE: THE KEY TO TEAM INDEPENDENCE -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="causal-chain-container">
     <div class="infographic-header">
       <h2><i class="fas fa-puzzle-piece" aria-hidden="true"></i> Architecture: The Key to Team Independence</h2>
       <p class="research-foundation">Conway's Law in action: <strong>Team structure drives system architecture</strong></p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="causal-flow">
@@ -520,11 +528,13 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- SECURITY: SHIFT LEFT FOR SPEED + SAFETY -->
-<div class="section-card" markdown="0">
+<div class="card card--section" markdown="0">
+<div class="card__content">
   <div class="alternative-section">
     <div class="alternative-header">
       <h2><i class="fas fa-shield-alt" aria-hidden="true"></i> Security: Shift Left for Speed + Safety</h2>
       <p class="alternative-intro">Traditional "bolt-on" security creates a false trade-off between speed and safety:</p>
+</div>  <!-- /card__content -->
     </div>
 
     <div class="alternative-grid">
@@ -570,7 +580,8 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- DISCUSSION QUESTIONS -->
-<div class="section-card dark-theme full-width" markdown="0">
+<div class="card card--section dark-theme full-width" markdown="0">
+<div class="card__content">
   <div class="false-choice-container">
     <h2>Discussion Questions</h2>
     <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
@@ -579,6 +590,7 @@ document.addEventListener('keydown', function(event) {
       <div class="deployment-signal">
         <h4>Technical Practice Assessment</h4>
         <p>Of the five key practices (version control, test automation, trunk-based development, CI, shift-left security), which is your team strongest/weakest at? What's preventing progress on the weakest practice?</p>
+</div>  <!-- /card__content -->
       </div>
 
       <div class="deployment-signal">
@@ -601,10 +613,12 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- ACTION ITEMS -->
-<div class="section-card action-items" markdown="0">
+<div class="card card--section action-items" markdown="0">
+<div class="card__content">
   <div class="action-header">
     <h2><i class="fas fa-tasks" aria-hidden="true"></i> Action Items for Next Meeting</h2>
     <p class="subtitle">Complete these tasks before Meeting 3 to maximize your learning</p>
+</div>  <!-- /card__content -->
   </div>
 
   <div class="action-list">
@@ -653,7 +667,7 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- NEXT MEETING SECTION -->
-<div class="welcome-compact section-card next-meeting-card next-meeting-3" markdown="0">
+<div class="welcome-compact card card--section next-meeting-card next-meeting-3" markdown="0">
   <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
   <p>Continue your journey: <strong>Meeting 3 · Management</strong> covers lean management practices and sustainable work patterns.</p>
   <div class="welcome-cta">
