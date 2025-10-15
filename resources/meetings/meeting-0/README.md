@@ -23,8 +23,8 @@ This kickoff meeting sets expectations and prepares participants for a successfu
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - Complete 2-month plan overview
 
 ### AI-Generated Content
-Generate supplementary content using [NotebookLM Prompts](../../notebooklm-prompts/):
-- **Overview:** [Brief Podcast](../../notebooklm-prompts/podcasts/brief.md) about the book's core themes
+Generate supplementary content using NotebookLM (prompts available in meeting folders):
+- **Overview:** Brief podcast about the book's core themes (see any meeting's `notebooklm/` folder for examples)
 
 ### Assessments & Activities
 - **[24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)** - Complete before Meeting 1
@@ -79,7 +79,7 @@ Before Meeting 1 (Week 1), participants must:
 - ⬜ Read Chapters 1-3 (Foundation, Measurement, Culture)
 - ⬜ Complete [24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)
 - ⬜ Review [Key Questions - Meeting 1](../../key-questions.md#meeting-1)
-- ⬜ (Optional) Listen to [NotebookLM Brief Podcast](../../notebooklm-prompts/podcasts/brief.md)
+- ⬜ (Optional) Listen to NotebookLM Brief Podcast (see meeting-1/notebooklm/podcast-brief.md)
 
 ## Next Meeting
 

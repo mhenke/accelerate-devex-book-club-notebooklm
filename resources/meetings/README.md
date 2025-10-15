@@ -255,7 +255,7 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 
 2. **Materials prep:**
    - Print [handouts](../handouts/) for all participants (2-3 days before meeting)
-   - Generate [NotebookLM podcast](../notebooklm-prompts/podcasts/brief.md) for pre-meeting prep (optional)
+   - Generate NotebookLM podcast (use meeting-X/notebooklm/podcast-brief.md) for pre-meeting prep (optional)
    - Prepare whiteboard/flipchart for discussion capture
 
 3. **Logistics:**
@@ -284,7 +284,8 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 - **[Book Club Roadmap](../book-club-roadmap.md)** - Overall plan and schedule
 - **[Key Questions](../key-questions.md)** - Core framing questions for all meetings
 - **[Handouts](../handouts/)** - Printable participant materials
-- **[NotebookLM Prompts](../notebooklm-prompts/)** - AI-generated podcast/video prompts
+- **NotebookLM Prompts** - AI-generated podcast/video prompts (in each meeting's `notebooklm/` folder)
+- **[NotebookLM Docs](../notebooklm-docs/)** - Best practices and usage guides
 - **[Assessments](../assessments/)** - Measurement tools and worksheets
 - **[Activities](../activities/)** - Discussion practices and between-meeting activities
 - **[Templates](../templates/)** - Meeting notes and retrospective formats

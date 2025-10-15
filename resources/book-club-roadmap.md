@@ -136,7 +136,8 @@ Continue your transformation journey after completing the four sessions:
 - [24 Capabilities Assessment](assessments/24-capabilities-assessment.md) - Self-assessment framework
 
 ### AI-Generated Supplementary Content
-- [NotebookLM Prompts](notebooklm-prompts/) - Generate podcasts (4 formats) and video overviews
+- NotebookLM Prompts - Generate podcasts (4 formats) and video overviews (located in each meeting's `notebooklm/` folder)
+- [NotebookLM Documentation](notebooklm-docs/) - Best practices and usage guides
 
 ### Assessments & Activities
 - [Assessments](assessments/) - DORA metrics, culture, capabilities
@@ -165,7 +166,7 @@ Each meeting folder contains:
 2. **Before Each Meeting:**
    - Complete assigned chapter reading
    - Review meeting-specific [Key Question](key-questions.md)
-   - (Optional) Listen to [NotebookLM podcast](notebooklm-prompts/) for supplementary insights
+   - (Optional) Listen to NotebookLM podcast (found in each meeting's `notebooklm/` folder) for supplementary insights
 
 3. **During Each Meeting:**
    - Follow facilitator [Outline](meetings/)

@@ -23,10 +23,10 @@ This first meeting establishes the foundation for understanding high-performing 
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - Overall 2-month plan
 
 ### AI-Generated Content
-Generate supplementary podcasts and videos using [NotebookLM Prompts](../../notebooklm-prompts/):
-- **Quick Prep:** [Brief Podcast](../../notebooklm-prompts/podcasts/brief.md) (5-10 min)
-- **Comprehensive:** [Deep Dive Podcast](../../notebooklm-prompts/podcasts/deep-dive.md) (15-25 min)
-- **Visual Learning:** [Video Overview](../../notebooklm-prompts/videos/overview.md) (15-25 min)
+Generate supplementary podcasts and videos using NotebookLM Prompts (in this folder's `notebooklm/` subdirectory):
+- **Quick Prep:** [Brief Podcast](notebooklm/podcast-brief.md) (5-10 min)
+- **Comprehensive:** [Deep Dive Podcast](notebooklm/podcast-deep-dive-default.md) (15-25 min)
+- **Visual Learning:** [Video Overview](notebooklm/video.md) (15-25 min)
 
 ### Assessments & Activities
 - **[DORA Metrics Template](../../assessments/dora-metrics-template.md)** - Begin baseline measurement
@@ -38,13 +38,13 @@ Generate supplementary podcasts and videos using [NotebookLM Prompts](../../note
 ### For Facilitators
 1. ✅ Read chapters 1-3 thoroughly
 2. ✅ Review [Leader Cheatsheet](leader-cheatsheet.md) and [Outline](outline.md)
-3. ✅ Generate optional [NotebookLM content](../../notebooklm-prompts/) and review
+3. ✅ Generate optional [NotebookLM content](notebooklm/) and review
 4. ✅ Prepare [DORA Metrics Template](../../assessments/dora-metrics-template.md) for distribution
 5. ✅ Review [Key Question](../../key-questions.md#meeting-1) to frame discussion
 
 ### For Participants
 1. 📖 Read chapters 1-3 from "Accelerate"
-2. 🎧 (Optional) Listen to [Brief](../../notebooklm-prompts/podcasts/brief.md) or [Deep Dive](../../notebooklm-prompts/podcasts/deep-dive.md) podcast
+2. 🎧 (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
 3. 📝 Review [Discussion Guide](discussion-guide.md) and note personal examples
 4. 🔍 Observe deployment practices and culture patterns in your organization
 

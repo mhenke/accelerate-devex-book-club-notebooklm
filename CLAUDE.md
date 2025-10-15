@@ -29,7 +29,8 @@ All visuals are implemented using **web-native technologies** (SCSS, CSS, SVG, H
   - `_config.yml` - Jekyll configuration
 - `resources/` - Comprehensive resource collection including:
   - `plan/` - Updated book club plan with corrected chapter mappings
-  - `meetings/` - Individual meeting guides and NotebookLM prompts
+  - `meetings/` - Individual meeting guides with `notebooklm/` subdirectories for AI prompt files
+  - `notebooklm-docs/` - Best practices and usage guides for NotebookLM content generation
   - `activities/` - Discussion practices and between-meeting activities
   - `assessments/` - DORA metrics and culture assessment worksheets
   - `templates/` - Meeting notes and retrospective formats
@@ -107,8 +108,9 @@ npm run test:jekyll-audit  # Full audit suite
 
 ### Content Updates
 
-- Meeting content in `meeting-resources/` using Markdown
-- AI generation prompts in `notebooklm-prompts/` for podcasts and videos
+- Meeting content in `resources/meetings/meeting-X/` using Markdown
+- AI generation prompts in `resources/meetings/meeting-X/notebooklm/` for podcasts and videos
+- NotebookLM documentation in `resources/notebooklm-docs/` for best practices and guides
 - Website pages in `docs/` following Jekyll conventions
 - All content should be clearly attributed when AI-generated
 
@@ -171,7 +173,8 @@ All meeting pages follow consistent format:
 - **No build scripts:** Relies on Jekyll/GitHub Pages for compilation
 - **Site serves from subpath:** `/accelerate-devex-book-club-notebooklm/`
 - **Updated plan available** in `resources/plan/plan.md` with corrected chapter mappings and learning objectives
-- **NotebookLM prompts** in `resources/plan/audio.md` and `resources/plan/video.md` for AI-generated content
+- **NotebookLM prompts** organized by meeting in `resources/meetings/meeting-X/notebooklm/` folders for AI-generated content
+- **NotebookLM documentation** in `resources/notebooklm-docs/` with best practices and audit reports
 - **All content is educational** focused on DevOps practices and organizational transformation based on Accelerate research
 - **Four-meeting structure** with biweekly cadence (Weeks 1, 3, 5, 7) covering foundation, technical practices, management, and leadership
 - **24 capabilities framework** referenced throughout for practical transformation guidance
