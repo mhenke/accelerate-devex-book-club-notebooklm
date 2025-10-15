@@ -26,6 +26,23 @@ title: Resources
 Between Meetings Activities
 </div>
 
+<!-- FEATURED RESOURCE: Culture Before Metrics -->
+<div class="featured-resource" markdown="0">
+<div class="featured-banner">
+<div class="featured-icon">
+<i class="fas fa-exclamation-triangle"></i>
+</div>
+<div class="featured-content">
+<h3>⚠️ Critical Foundation: Culture Before Metrics</h3>
+<p>The single most common mistake in DevOps transformation is jumping to metrics without building culture first. This foundational handout explains why sequence matters and how to build the right foundation for sustainable improvement.</p>
+<div class="featured-actions">
+<a href="{{ '/resources/meetings/meeting-1/handouts/culture-before-metrics' | relative_url }}" class="btn btn--primary-action">Read the Guide →</a>
+<span class="featured-badge">Required Reading</span>
+</div>
+</div>
+</div>
+</div>
+
 <div class="resource-grid" markdown="0">
 <div class="resource-card">
 <div class="resource-icon" data-color="#2196F3">
@@ -335,6 +352,43 @@ Between Meetings Activities
 <span>Regular culture assessments</span>
 </div>
 </div>
+</div>
+</div>
+
+## Handouts & Printable Resources {#section-handouts}
+
+<div class="resource-grid" markdown="0">
+<div class="resource-card featured">
+<div class="resource-icon" data-color="#F44336">
+<i class="fas fa-exclamation-triangle"></i>
+</div>
+<h3>Culture Before Metrics</h3>
+<p><strong>Critical Foundation:</strong> Why culture must come before measurement in DevOps transformation. The single most important handout for avoiding transformation pitfalls.</p>
+<ul>
+<li>Understanding the trap of metrics-first transformation</li>
+<li>The correct sequence: Culture → Metrics → Acceleration</li>
+<li>Self-assessment for cultural readiness</li>
+<li>Practical guidance for building trust first</li>
+</ul>
+<a href="{{ '/resources/meetings/meeting-1/handouts/culture-before-metrics' | relative_url }}" class="btn btn--primary-action">Read Guide →</a>
+</div>
+
+<div class="resource-card">
+<div class="resource-icon" data-color="#2196F3">
+<i class="fas fa-book-reader"></i>
+</div>
+<h3>Meeting Handouts</h3>
+<p>Each meeting includes comprehensive handouts: attendee guides, facilitator agendas, and action item trackers.</p>
+<a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-1/handouts" class="btn btn--secondary-action">View Handouts →</a>
+</div>
+
+<div class="resource-card">
+<div class="resource-icon" data-color="#4CAF50">
+<i class="fas fa-tasks"></i>
+</div>
+<h3>Deep-Dive Guides</h3>
+<p>Comprehensive reference materials on architecture, security, metrics, and culture change available in each meeting's handouts folder.</p>
+<a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings" class="btn btn--secondary-action">Browse All Meetings →</a>
 </div>
 </div>
 

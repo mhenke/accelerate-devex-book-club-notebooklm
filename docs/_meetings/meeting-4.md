@@ -455,141 +455,35 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<!-- ING CASE STUDY: TRANSFORMATION IN ACTION -->
+<!-- RESOURCES -->
 <div class="section-card" markdown="0">
-  <div class="causal-chain-container">
-    <div class="infographic-header">
-      <h2><i class="fas fa-building" aria-hidden="true"></i> ING Case Study: Real-World Transformation</h2>
-      <p class="research-foundation">ING Netherlands shows how <strong>leaders became learning teams</strong> to transform a global financial institution</p>
-    </div>
-
-    <div class="causal-flow">
-      <!-- Step 1: Obeya Rooms -->
-      <div class="causal-step step-business">
-        <div class="step-content">
-          <h3>Obeya Rooms</h3>
-          <p class="step-chapter">Chapter 16: Visual Management</p>
-          <div class="step-metrics">
-            <div class="metric-item generative">Strategic Objectives</div>
-            <div class="metric-item generative">Performance Gaps</div>
-            <div class="metric-item generative">Problem Visibility</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 1 -->
-      <div class="causal-arrow">
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        <span class="arrow-label">enables</span>
-      </div>
-
-      <!-- Step 2: Catchball -->
-      <div class="causal-step step-measurement">
-        <div class="step-content">
-          <h3>Catchball Communication</h3>
-          <p class="step-chapter">Chapter 16: Information Flow</p>
-          <div class="step-metrics">
-            <div class="metric-item generative">Vertical Flow</div>
-            <div class="metric-item generative">Horizontal Learning</div>
-            <div class="metric-item generative">Rapid Feedback</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 2 -->
-      <div class="causal-arrow">
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        <span class="arrow-label">supports</span>
-      </div>
-
-      <!-- Step 3: BizDevOps Teams -->
-      <div class="causal-step step-culture">
-        <div class="step-content">
-          <h3>Tribe/Squad Structure</h3>
-          <p class="step-chapter">Chapter 16: Empowered Teams</p>
-          <div class="step-metrics">
-            <div class="metric-item generative">Cross-Functional</div>
-            <div class="metric-item generative">Two Pizza Rule</div>
-            <div class="metric-item generative">End-to-End Ownership</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ING Results Callout -->
-    <div class="impact-stats">
-      <h4>ING Transformation Results</h4>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">CEO</div>
-          <div class="stat-label">Total Leadership Commitment</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Years</div>
-          <div class="stat-label">Patient, Disciplined Approach</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Learning</div>
-          <div class="stat-label">Leaders Became Learning Team</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Culture</div>
-          <div class="stat-label">Changed Work to Change Culture</div>
-        </div>
-      </div>
-      <p class="stats-conclusion">ING proves large, complex organizations can transform by changing how leaders lead and how teams work.</p>
-    </div>
-
+  <div class="step-header">
+    <h2><i class="fas fa-book-reader" aria-hidden="true"></i> Resources</h2>
+    <p class="section-intro">Deep-dive guides on real-world transformation and how to make it your own</p>
   </div>
-</div>
 
-<!-- THE PATH FORWARD: TRANSFORMATION PRINCIPLES -->
-<div class="section-card" markdown="0">
-  <div class="alternative-section">
-    <div class="alternative-header">
-      <h2><i class="fas fa-route" aria-hidden="true"></i> The Path Forward: Make It Your Own</h2>
-      <p class="alternative-intro">The book's conclusion emphasizes transformation principles for sustained success:</p>
-    </div>
-
-    <div class="alternative-grid">
-      <div class="alternative-item">
-        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Learn How to Learn</strong>
-          <span>Create environment for shared organizational learning and continuous improvement</span>
-        </div>
+  <div class="resource-callout-grid">
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-building" aria-hidden="true"></i>
       </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Go Deep Before Wide</strong>
-          <span>Focus on thorough transformation in one area before scaling to others</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-calendar-check" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Practice, Patience, Discipline</strong>
-          <span>Establish rhythm and routine until new habits become embedded culture</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-flask" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Evidence-Based Experimentation</strong>
-          <span>Try, measure, learn, adjust, repeat in continuous cycles of improvement</span>
-        </div>
+      <div class="callout-content">
+        <h3>🏦 ING Case Study: Real-World Transformation</h3>
+        <p>How a global financial institution transformed through learning and leadership. ING proves large, complex, regulated organizations CAN transform by having leaders become a learning team and patiently executing over years.</p>
+        <p><strong>Case Study Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/handouts/ing-case-study.html" class="resource-link"><strong>Learn from ING's Journey</strong></a></p>
       </div>
     </div>
 
-    <div class="alternative-reminder">
-      <i class="fas fa-lightbulb" aria-hidden="true"></i>
-      <p><strong>Key Insight:</strong> The 24 capabilities are guides, not checklists. Develop your own capabilities within your unique context through sustained effort and patient experimentation.</p>
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-route" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>🚀 The Path Forward: Make It Your Own</h3>
+        <p>Transformation principles for sustained success. The 24 capabilities are guides, not checklists. Learn the four principles: learn how to learn, go deep before wide, practice patience and discipline, and embrace evidence-based experimentation.</p>
+        <p><strong>Transformation Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/handouts/transformation-principles.html" class="resource-link"><strong>Your Transformation Journey</strong></a></p>
+      </div>
     </div>
-
   </div>
 </div>
 
