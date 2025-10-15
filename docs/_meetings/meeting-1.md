@@ -15,29 +15,20 @@ dora_color: "#0969da" # $meeting-1-primary
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 1-3 Overview</h2>
 <div class="chapters-grid">
 <div class="chapter-item" data-chapter="accelerate" onclick="showChapterDetail('accelerate')">
- 
-  <div class="chapter-content">
-    <div class="chapter-number">Chapter 1</div>
-    <div class="chapter-title">Accelerate</div>
-  </div>
+  <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
+  <span class="chapter-label">Chapter 1: Accelerate</span>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
 <div class="chapter-item" data-chapter="measuring" onclick="showChapterDetail('measuring')">
- 
-  <div class="chapter-content">
-    <div class="chapter-number">Chapter 2</div>
-    <div class="chapter-title">Measuring Performance</div>
-  </div>
+  <i class="fas fa-tachometer-alt" role="img" aria-label="Tachometer"></i>
+  <span class="chapter-label">Chapter 2: Measuring Performance</span>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
 <div class="chapter-item" data-chapter="culture" onclick="showChapterDetail('culture')">
- 
-  <div class="chapter-content">
-    <div class="chapter-number">Chapter 3</div>
-    <div class="chapter-title">Measuring and Changing Culture</div>
-  </div>
+  <i class="fas fa-users" role="img" aria-label="Users"></i>
+  <span class="chapter-label">Chapter 3: Measuring & Changing Culture</span>
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 </div>
