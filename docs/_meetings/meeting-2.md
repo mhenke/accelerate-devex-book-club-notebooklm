@@ -454,118 +454,35 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<!-- ARCHITECTURE: THE KEY TO TEAM INDEPENDENCE -->
+<!-- RESOURCES -->
 <div class="section-card" markdown="0">
-  <div class="causal-chain-container">
-    <div class="infographic-header">
-      <h2><i class="fas fa-puzzle-piece" aria-hidden="true"></i> Architecture: The Key to Team Independence</h2>
-      <p class="research-foundation">Conway's Law in action: <strong>Team structure drives system architecture</strong></p>
-    </div>
-
-    <div class="causal-flow">
-      <!-- Step 1: Tightly Coupled Architecture -->
-      <div class="causal-step step-business">
-        <div class="step-content">
-          <h3>Tightly Coupled</h3>
-          <p class="step-chapter">Traditional Approach</p>
-          <div class="step-metrics">
-            <div class="metric-item pathological">Coordination Required</div>
-            <div class="metric-item pathological">Shared Dependencies</div>
-            <div class="metric-item pathological">Integration Testing</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 1 -->
-      <div class="causal-arrow">
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        <span class="arrow-label">versus</span>
-      </div>
-
-      <!-- Step 2: Loosely Coupled Architecture -->
-      <div class="causal-step step-culture">
-        <div class="step-content">
-          <h3>Loosely Coupled</h3>
-          <p class="step-chapter">CD-Enabling Approach</p>
-          <div class="step-metrics">
-            <div class="metric-item generative">Independent Deploy</div>
-            <div class="metric-item generative">Tool Freedom</div>
-            <div class="metric-item generative">Local Testing</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Conway's Law Callout -->
-    <div class="impact-stats">
-      <h4>Conway's Law Applied</h4>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">2x</div>
-          <div class="stat-label">Better Software Delivery Performance</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">1.8x</div>
-          <div class="stat-label">More Likely to Exceed Goals</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Cross-Functional</div>
-          <div class="stat-label">Teams Drive Architecture</div>
-        </div>
-      </div>
-      <p class="stats-conclusion">Organizations that structure teams around services create more deployable, maintainable systems.</p>
-    </div>
-
+  <div class="step-header">
+    <h2><i class="fas fa-book-reader" aria-hidden="true"></i> Resources</h2>
+    <p class="section-intro">Deep-dive guides on architecture and security practices that enable continuous delivery</p>
   </div>
-</div>
 
-<!-- SECURITY: SHIFT LEFT FOR SPEED + SAFETY -->
-<div class="section-card" markdown="0">
-  <div class="alternative-section">
-    <div class="alternative-header">
-      <h2><i class="fas fa-shield-alt" aria-hidden="true"></i> Security: Shift Left for Speed + Safety</h2>
-      <p class="alternative-intro">Traditional "bolt-on" security creates a false trade-off between speed and safety:</p>
-    </div>
-
-    <div class="alternative-grid">
-      <div class="alternative-item">
-        <i class="fas fa-times-circle" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Traditional: Bolt-On Security</strong>
-          <span>Security reviews at the end → 50% more time to remediate issues</span>
-        </div>
+  <div class="resource-callout-grid">
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
       </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-check-circle" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Shift-Left: Built-In Security</strong>
-          <span>Security integrated throughout → 50% faster remediation + better security posture</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-robot" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Automation</strong>
-          <span>Security testing in CI/CD pipeline catches issues early when they're cheap to fix</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-users" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Collaboration</strong>
-          <span>Security teams collaborate during development, not after completion</span>
-        </div>
+      <div class="callout-content">
+        <h3>🏗️ Architecture: The Key to Team Independence</h3>
+        <p>Conway's Law in action: team structure drives system architecture. Learn how loosely coupled architecture enables teams to deploy independently, test effectively, and choose their own tools—the foundation for continuous delivery.</p>
+        <p><strong>Architecture Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/handouts/architecture-team-independence.html" class="resource-link"><strong>Building for Independence</strong></a></p>
       </div>
     </div>
 
-    <div class="alternative-reminder">
-      <i class="fas fa-lightbulb" aria-hidden="true"></i>
-      <p><strong>Key Insight:</strong> Security isn't about saying "no" to deployments. It's about building systems that are secure by default and providing fast feedback when issues arise.</p>
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>🔒 Security: Shift Left for Speed + Safety</h3>
+        <p>Security and speed are NOT in conflict. Shifting security left—integrating it throughout development—creates both better security AND faster delivery. Learn the four practices that enable 50% faster remediation with better security posture.</p>
+        <p><strong>Security Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-2/handouts/security-shift-left.html" class="resource-link"><strong>Building Security In</strong></a></p>
+      </div>
     </div>
-
   </div>
 </div>
 

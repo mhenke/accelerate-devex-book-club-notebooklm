@@ -178,62 +178,6 @@ document.addEventListener('keydown', function(event) {
 </div>
 </div>
 
-<!-- CULTURE FIRST WARNING -->
-<div class="section-card" markdown="0">
-  <div class="culture-first-warning">
-    <div class="warning-header">
-      <h2><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Critical Foundation: Culture Before Metrics</h2>
-    </div>
-
-    <!-- The Trap - Full Width Warning -->
-    <div class="trap-warning">
-      <h3 class="trap-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> The Trap</h3>
-      <p class="trap-text">Teams often jump straight to measurement, hoping metrics alone will magically improve performance. <strong>This is the single most common mistake in DevOps transformation.</strong></p>
-    </div>
-
-    <!-- Main Content Grid -->
-    <div class="warning-content">
-      <div class="warning-section reality-section">
-        <h3 class="warning-subtitle">The Reality</h3>
-        <p>Without a healthy culture foundation, metrics become:</p>
-        <ul class="warning-list">
-          <li><strong>Surveillance tools</strong> that breed distrust and fear</li>
-          <li><strong>Vanity numbers</strong> like commit counts and lines of code</li>
-          <li><strong>Perverse incentives</strong> that encourage gaming the system</li>
-        </ul>
-        <p class="warning-callout"><i class="fas fa-lightbulb" aria-hidden="true"></i> Without trust, measurement is seen as surveillance. With trust, measurement becomes a tool for improvement.</p>
-      </div>
-
-      <div class="warning-section sequence-section">
-        <h3 class="warning-subtitle">The Correct Sequence</h3>
-        <div class="sequence-flow">
-          <div class="sequence-step">
-            <div class="sequence-number">1</div>
-            <div class="sequence-label">Build Culture</div>
-          </div>
-          <i class="fas fa-arrow-right sequence-arrow" aria-hidden="true"></i>
-          <div class="sequence-step">
-            <div class="sequence-number">2</div>
-            <div class="sequence-label">Introduce Metrics</div>
-          </div>
-          <i class="fas fa-arrow-right sequence-arrow" aria-hidden="true"></i>
-          <div class="sequence-step">
-            <div class="sequence-number">3</div>
-            <div class="sequence-label">Achieve Acceleration</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Full Width Footer -->
-    <div class="warning-footer">
-      <p><strong>This Meeting:</strong> Establishes WHY culture must come first and WHAT to measure.</p>
-      <p><strong>Meetings 2-4:</strong> Cover HOW to build that culture through specific technical practices.</p>
-    </div>
-
-  </div>
-</div>
-
 <div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-play-circle" aria-hidden="true"></i> Media</h2>
@@ -513,347 +457,46 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<!-- METRICS IN CONTEXT -->
-<div class="chapter-metrics-compact section-card" markdown="0">
-<h2><i class="fas fa-balance-scale" aria-hidden="true"></i> Metrics in Context: What to Measure (and What to Avoid)</h2>
-<p class="section-intro">Not all metrics are created equal. Click each category to explore what drives improvement versus dysfunction.</p>
-
-<div class="chapters-grid">
-<div class="chapter-item" data-chapter="good-metrics" onclick="showMetricsDetail('good-metrics')">
- 
-  <div class="chapter-content">
-    <div class="chapter-number">Good Metrics</div>
-    <div class="chapter-title">System Health & Flow</div>
-  </div>
-  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
-</div>
-
-<div class="chapter-item" data-chapter="bad-metrics" onclick="showMetricsDetail('bad-metrics')">
- 
-  <div class="chapter-content">
-    <div class="chapter-number">Bad Metrics</div>
-    <div class="chapter-title">Individual & Vanity</div>
-  </div>
-  <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
-</div>
-</div>
-
-<!-- Expandable Details Section -->
-<div class="chapter-details" id="metrics-details" hidden>
-  <div class="chapter-detail" id="detail-good-metrics">
-    <h3>Good Metrics: System Health & Flow</h3>
-    <p class="metrics-intro">These metrics diagnose system issues and reveal opportunities for improvement.</p>
-
-    <div class="metrics-bubbles-grid">
-      <div class="metric-bubble good">
-
-        <span>Deployment Frequency</span>
-      </div>
-      <div class="metric-bubble good">
-
-        <span>Lead Time for Changes</span>
-      </div>
-      <div class="metric-bubble good">
-
-        <span>Time to Restore Service</span>
-      </div>
-      <div class="metric-bubble good">
-
-        <span>Change Failure Rate</span>
-      </div>
-      <div class="metric-bubble good">
-
-        <span>Flow Time Through System</span>
-      </div>
-      <div class="metric-bubble good">
-
-        <span>Feedback Loop Duration</span>
-      </div>
-    </div>
-
-    <div class="metric-focus">
-      <strong>Focus:</strong> Diagnose system bottlenecks and improve flow
-    </div>
-
-  </div>
-
-  <div class="chapter-detail" id="detail-bad-metrics">
-    <h3>Bad Metrics: Individual Performance & Vanity</h3>
-    <p class="metrics-intro">These metrics grade individuals and create perverse incentives that encourage gaming.</p>
-
-    <div class="metrics-bubbles-grid">
-      <div class="metric-bubble bad">
-
-        <span>Lines of Code Written</span>
-      </div>
-      <div class="metric-bubble bad">
-
-        <span>Number of Commits</span>
-      </div>
-      <div class="metric-bubble bad">
-
-        <span>Hours Worked / Utilization</span>
-      </div>
-      <div class="metric-bubble bad">
-
-        <span>Story Points Completed</span>
-      </div>
-      <div class="metric-bubble bad">
-
-        <span>Code Coverage %</span>
-      </div>
-      <div class="metric-bubble bad">
-
-        <span>Velocity Trends</span>
-      </div>
-    </div>
-
-    <div class="metric-warning">
-      <strong>Problem:</strong> Grade individuals and encourage gaming
-    </div>
-
-  </div>
-</div>
-
-<script>
-// Interactive Metrics Comparison Functionality
-let currentActiveMetric = null;
-
-function showMetricsDetail(metricId) {
-  const detailsContainer = document.getElementById('metrics-details');
-  const targetDetail = document.getElementById('detail-' + metricId);
-  const clickedItem = document.querySelector('[data-chapter="' + metricId + '"]');
-
-  // If clicking the same item that's already active, close it
-  if (currentActiveMetric === metricId) {
-    hideMetricsDetails();
-    return;
-  }
-
-  // Remove active state from all items
-  document.querySelectorAll('[data-chapter^="good-metrics"], [data-chapter^="bad-metrics"]').forEach(item => {
-    item.classList.remove('active');
-    const indicator = item.querySelector('.chapter-indicator i');
-    if (indicator) {
-      indicator.className = 'fas fa-chevron-down';
-    }
-  });
-
-  // Hide all detail sections using .active class (not hidden attribute)
-  document.querySelectorAll('#metrics-details .chapter-detail').forEach(detail => {
-    detail.classList.remove('active');
-  });
-
-  // Show the container with display and animation
-  detailsContainer.style.display = 'block';
-  setTimeout(() => {
-    detailsContainer.classList.add('show');
-  }, 10);
-
-  // Show the specific detail and mark item as active
-  targetDetail.classList.add('active');
-  clickedItem.classList.add('active');
-  const indicator = clickedItem.querySelector('.chapter-indicator i');
-  if (indicator) {
-    indicator.className = 'fas fa-chevron-up';
-  }
-
-  currentActiveMetric = metricId;
-
-  // Smooth scroll to the details section
-  setTimeout(() => {
-    detailsContainer.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest'
-    });
-  }, 300);
-}
-
-function hideMetricsDetails() {
-  const detailsContainer = document.getElementById('metrics-details');
-
-  // Remove active states
-  document.querySelectorAll('[data-chapter^="good-metrics"], [data-chapter^="bad-metrics"]').forEach(item => {
-    item.classList.remove('active');
-    const indicator = item.querySelector('.chapter-indicator i');
-    if (indicator) {
-      indicator.className = 'fas fa-chevron-down';
-    }
-  });
-
-  document.querySelectorAll('#metrics-details .chapter-detail').forEach(detail => {
-    detail.classList.remove('active');
-  });
-
-  // Hide with animation
-  detailsContainer.classList.remove('show');
-  setTimeout(() => {
-    detailsContainer.style.display = 'none';
-  }, 400);
-
-  currentActiveMetric = null;
-}
-
-// Close details when clicking outside
-document.addEventListener('click', function(event) {
-  const detailsContainer = document.getElementById('metrics-details');
-  const metricItems = document.querySelectorAll('[data-chapter^="good-metrics"], [data-chapter^="bad-metrics"]');
-
-  if (currentActiveMetric &&
-      !detailsContainer.contains(event.target) &&
-      !Array.from(metricItems).some(item => item.contains(event.target))) {
-    hideMetricsDetails();
-  }
-});
-
-// Keyboard accessibility
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape' && currentActiveMetric) {
-    hideMetricsDetails();
-  }
-});
-</script>
-</div>
-
-<!-- KEY INSIGHT: CULTURE CAN BE CHANGED -->
+<!-- RESOURCES -->
 <div class="section-card" markdown="0">
-  <div class="causal-chain-container">
-    <div class="infographic-header">
-      <h2><i class="fas fa-sync" aria-hidden="true"></i> Key Insight: You Can Act Your Way to Better Culture</h2>
-      <p class="research-foundation">The most important takeaway from chapters 1-3: <strong>Culture isn't fixed.</strong> You can intentionally change it.</p>
-    </div>
-
-    <div class="causal-flow">
-      <!-- Step 1: Better Practices -->
-      <div class="causal-step step-business">
-        <div class="step-content">
-          <h3>Better Practices</h3>
-          <p class="step-chapter">Technical Excellence</p>
-          <div class="step-metrics">
-            <div class="metric-item technical">CI/CD</div>
-            <div class="metric-item technical">Version Control</div>
-            <div class="metric-item technical">Testing</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 1 -->
-      <div class="causal-arrow">
-
-        <span class="arrow-label">enable</span>
-      </div>
-
-      <!-- Step 2: Better Interactions -->
-      <div class="causal-step step-measurement">
-        <div class="step-content">
-          <h3>Better Interactions</h3>
-          <p class="step-chapter">Daily Work Changes</p>
-          <div class="step-metrics">
-            <div class="metric-item interactions">Collaboration</div>
-            <div class="metric-item interactions">Trust</div>
-            <div class="metric-item interactions">Learning</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 2 -->
-      <div class="causal-arrow">
-
-        <span class="arrow-label">create</span>
-      </div>
-
-      <!-- Step 3: Better Culture -->
-      <div class="causal-step step-culture">
-        <div class="step-content">
-          <h3>Better Culture</h3>
-          <p class="step-chapter">Generative Culture</p>
-          <div class="step-metrics">
-            <div class="metric-item generative">High Performance</div>
-            <div class="metric-item generative">Low Anxiety</div>
-            <div class="metric-item generative">Speed + Stability</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Impact Stats Callout -->
-    <div class="impact-stats">
-      <h4>Research Impact</h4>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">2.6x</div>
-          <div class="stat-label">More Likely to Exceed Goals</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">2x</div>
-          <div class="stat-label">Exceed Profitability Targets</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">50%</div>
-          <div class="stat-label">Higher Market Capitalization Growth</div>
-        </div>
-      </div>
-      <p class="stats-conclusion">High performers achieve these results because their culture enables better technical practices.</p>
-    </div>
-
+  <div class="step-header">
+    <h2><i class="fas fa-book-reader" aria-hidden="true"></i> Resources</h2>
+    <p class="section-intro">Essential handouts and guides to support your transformation journey</p>
   </div>
-</div>
 
-<!-- THE ALTERNATIVE: METRICS AS MIRRORS -->
-<div class="section-card" markdown="0">
-  <div class="alternative-section">
-    <div class="alternative-header">
-      <h2><i class="fas fa-check-circle" aria-hidden="true"></i> The Alternative: Metrics as Mirrors</h2>
-      <p class="alternative-intro">Instead of surveillance, policing, and judgment:</p>
-    </div>
-
-    <div class="alternative-grid">
-      <div class="alternative-item">
-
-        <div class="alternative-content">
-          <strong>Reflection</strong>
-          <span>Use metrics to understand current state and identify improvement opportunities</span>
-        </div>
+  <div class="resource-callout-grid">
+    <div class="resource-callout warning-style">
+      <div class="callout-icon">
+        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
       </div>
-
-      <div class="alternative-item">
-
-        <div class="alternative-content">
-          <strong>Collaboration</strong>
-          <span>Discuss metrics as a team, not as individual grades</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-
-        <div class="alternative-content">
-          <strong>Learning</strong>
-          <span>Treat trends as experiments - what happened when we changed X?</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-
-        <div class="alternative-content">
-          <strong>System Thinking</strong>
-          <span>Focus on flow through the entire value stream</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-
-        <div class="alternative-content">
-          <strong>Context</strong>
-          <span>Adapt metrics and targets to each team's unique situation</span>
-        </div>
+      <div class="callout-content">
+        <h3>⚠️ Before You Measure: Culture Must Come First</h3>
+        <p>The single most common mistake in DevOps transformation is jumping straight to metrics without building a healthy culture foundation. Without trust, measurement becomes surveillance rather than improvement.</p>
+        <p><strong>Required Reading:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/handouts/culture-before-metrics.html" class="resource-link"><strong>Culture Before Metrics</strong></a></p>
       </div>
     </div>
 
-    <div class="alternative-reminder">
-
-      <p><strong>Remember:</strong> Metrics are tools for improvement, not weapons for judgment. In a generative culture with psychological safety, teams use metrics to accelerate learning and delivery.</p>
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-balance-scale" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>📊 The DORA Metrics Guide</h3>
+        <p>Not all metrics are created equal. Learn which metrics drive improvement (DORA metrics: deployment frequency, lead time, MTTR, change failure rate) and which create dysfunction (individual performance, vanity metrics).</p>
+        <p><strong>Reference Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/handouts/dora-metrics-guide.html" class="resource-link"><strong>What to Measure (and What to Avoid)</strong></a></p>
+      </div>
     </div>
 
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-sync" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>🔄 The Virtuous Cycle</h3>
+        <p>Culture isn't fixed—you can act your way to better culture. Understand how technical practices create better interactions, which create generative culture, which enables high performance.</p>
+        <p><strong>Change Model:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/handouts/culture-change-model.html" class="resource-link"><strong>Acting Your Way to Better Culture</strong></a></p>
+      </div>
+    </div>
   </div>
 </div>
 

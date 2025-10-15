@@ -473,141 +473,46 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<!-- DEPLOYMENT PAIN: THE BURNOUT PREDICTOR -->
+<!-- RESOURCES -->
 <div class="section-card" markdown="0">
-  <div class="causal-chain-container">
-    <div class="infographic-header">
-      <h2><i class="fas fa-fire" aria-hidden="true"></i> Deployment Pain: The Burnout Predictor</h2>
-      <p class="research-foundation">Deployment pain is the <strong>strongest predictor of burnout</strong> and indicates systemic problems</p>
-    </div>
-
-    <div class="causal-flow">
-      <!-- Step 1: Manual Processes -->
-      <div class="causal-step step-business">
-        <div class="step-content">
-          <h3>Manual Processes</h3>
-          <p class="step-chapter">Chapter 9: The Root Cause</p>
-          <div class="step-metrics">
-            <div class="metric-item pathological">Weekend Deployments</div>
-            <div class="metric-item pathological">Manual Coordination</div>
-            <div class="metric-item pathological">Error-Prone Steps</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 1 -->
-      <div class="causal-arrow">
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        <span class="arrow-label">creates</span>
-      </div>
-
-      <!-- Step 2: Deployment Pain -->
-      <div class="causal-step step-measurement">
-        <div class="step-content">
-          <h3>Deployment Pain</h3>
-          <p class="step-chapter">Chapter 9: The Signal</p>
-          <div class="step-metrics">
-            <div class="metric-item bureaucratic">Fear & Anxiety</div>
-            <div class="metric-item bureaucratic">Stress & Pressure</div>
-            <div class="metric-item bureaucratic">All-Hands Meetings</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 2 -->
-      <div class="causal-arrow">
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        <span class="arrow-label">leads to</span>
-      </div>
-
-      <!-- Step 3: Burnout -->
-      <div class="causal-step step-culture">
-        <div class="step-content">
-          <h3>Team Burnout</h3>
-          <p class="step-chapter">Chapter 9: The Outcome</p>
-          <div class="step-metrics">
-            <div class="metric-item pathological">Emotional Exhaustion</div>
-            <div class="metric-item pathological">Cynicism</div>
-            <div class="metric-item pathological">Ineffectiveness</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Solution Callout -->
-    <div class="impact-stats">
-      <h4>The Solution: Technical Practices</h4>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">Automation</div>
-          <div class="stat-label">Eliminates Manual Steps</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">CD Pipeline</div>
-          <div class="stat-label">Reduces Deployment Risk</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Monitoring</div>
-          <div class="stat-label">Provides Fast Feedback</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">Rollback</div>
-          <div class="stat-label">Reduces Recovery Time</div>
-        </div>
-      </div>
-      <p class="stats-conclusion">Fixing the deployment process fixes burnout at its source, not by treating symptoms.</p>
-    </div>
-
+  <div class="step-header">
+    <h2><i class="fas fa-book-reader" aria-hidden="true"></i> Resources</h2>
+    <p class="section-intro">Deep-dive guides on lean management, burnout prevention, and employee satisfaction</p>
   </div>
-</div>
 
-<!-- EMPLOYEE SATISFACTION: THE FOUR PILLARS -->
-<div class="section-card" markdown="0">
-  <div class="alternative-section">
-    <div class="alternative-header">
-      <h2><i class="fas fa-users" aria-hidden="true"></i> Employee Satisfaction: The Four Pillars</h2>
-      <p class="alternative-intro">Research shows high performers are 2.2x more likely to recommend their organization as a great place to work:</p>
-    </div>
-
-    <div class="alternative-grid">
-      <div class="alternative-item">
-        <i class="fas fa-bullseye" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Meaningful Work</strong>
-          <span>Challenging, purposeful tasks that align with personal values and organizational mission</span>
-        </div>
+  <div class="resource-callout-grid">
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-chart-line" aria-hidden="true"></i>
       </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Learning & Growth</strong>
-          <span>Opportunities for skill development, career advancement, and continuous improvement</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-hands-helping" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Team Support</strong>
-          <span>Psychological safety, collaborative culture, and supportive relationships with colleagues</span>
-        </div>
-      </div>
-
-      <div class="alternative-item">
-        <i class="fas fa-tools" aria-hidden="true"></i>
-        <div class="alternative-content">
-          <strong>Right Tools</strong>
-          <span>Access to appropriate technology, resources, and infrastructure needed to be effective</span>
-        </div>
+      <div class="callout-content">
+        <h3>📊 Lean Management Practices</h3>
+        <p>How lean principles enable flow, reduce waste, and improve performance. Learn the four key practices: limit WIP, visualize work, monitor for business decisions, and use lightweight approval to optimize flow over utilization.</p>
+        <p><strong>Management Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/handouts/lean-management-practices.html" class="resource-link"><strong>Optimizing for Flow</strong></a></p>
       </div>
     </div>
 
-    <div class="alternative-reminder">
-      <i class="fas fa-lightbulb" aria-hidden="true"></i>
-      <p><strong>Key Insight:</strong> The practices that drive high performance (CD, Lean management, architecture) also create these satisfaction conditions. It's a virtuous cycle.</p>
+    <div class="resource-callout warning-style">
+      <div class="callout-icon">
+        <i class="fas fa-fire" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>🔥 Deployment Pain: The Burnout Predictor</h3>
+        <p>Deployment pain is the strongest predictor of burnout. Learn how manual, error-prone deployment processes create sustained anxiety and how technical practices eliminate pain at its source—not by treating symptoms.</p>
+        <p><strong>Burnout Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/handouts/deployment-pain-burnout.html" class="resource-link"><strong>Preventing Burnout</strong></a></p>
+      </div>
     </div>
 
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-users" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>👥 Employee Satisfaction: The Four Pillars</h3>
+        <p>High performers are 2.2× more likely to recommend their organization. Discover the four pillars of satisfaction—meaningful work, learning & growth, team support, and right tools—and how high-performance practices create them.</p>
+        <p><strong>Satisfaction Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-3/handouts/employee-satisfaction.html" class="resource-link"><strong>Building Engagement</strong></a></p>
+      </div>
+    </div>
   </div>
 </div>
 
