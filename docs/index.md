@@ -16,15 +16,18 @@ title: Home
 
 <div class="main-content">
 
-<div class="welcome-compact section-card" markdown="0">
+<div class="welcome-compact card card--section" markdown="0">
+<div class="card__content">
 <p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
 <div class="welcome-cta">
 <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
 <p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
 </div>
 </div>
+</div>
 
-<div class="quick-start section-card no-border">
+<div class="quick-start card card--section card--plain">
+<div class="card__content">
 <h2><i class="fas fa-info-circle" aria-hidden="true"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
@@ -34,21 +37,25 @@ title: Home
 <p class="welcome-cta-subtitle">30 minutes • No reading required • Set expectations</p>
 </div>
 </div>
+</div>
 
 {% include key-question.html %}
 
-<div class="what-youll-learn-section section-card" markdown="0">
+<div class="what-youll-learn-section card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> What You'll Learn</h2>
 <div class="learning-highlights">
 <div class="card-grid">
-<div class="highlight-card meeting-1 dark-theme">
+<div class="card card--highlight card--elevated meeting-1 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
     </div>
     <h3>Foundation</h3>
   </div>
+  <div class="card__content">
   <p>Master the four key measurements that drive high-performing teams: Lead Time, Deployment Frequency, Recovery Time, and Change Fail Rate.</p>
+  </div>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--1">
       <span>MEETING 1</span>
@@ -57,14 +64,16 @@ title: Home
   </div>
 </div>
 
-<div class="highlight-card meeting-2 dark-theme">
+<div class="card card--highlight card--elevated meeting-2 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
     </div>
     <h3>Technical Excellence</h3>
   </div>
+  <div class="card__content">
   <p>Learn technical practices that enable both speed and stability: automated testing, deployment pipelines, and trunk-based development.</p>
+  </div>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-2/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--2">
       <span>MEETING 2</span>
@@ -73,14 +82,16 @@ title: Home
   </div>
 </div>
 
-<div class="highlight-card meeting-3 dark-theme">
+<div class="card card--highlight card--elevated meeting-3 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-columns" role="img" aria-label="Columns"></i>
     </div>
     <h3>Management</h3>
   </div>
+  <div class="card__content">
   <p>Implement work visualization and WIP limits that expose bottlenecks and drive process improvement at the team level.</p>
+  </div>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-3/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--3">
       <span>MEETING 3</span>
@@ -89,14 +100,16 @@ title: Home
   </div>
 </div>
 
-<div class="highlight-card meeting-4 dark-theme">
+<div class="card card--highlight card--elevated meeting-4 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-users" role="img" aria-label="Users"></i>
     </div>
     <h3>Leadership</h3>
   </div>
+  <div class="card__content">
   <p>Develop the five key leadership characteristics that enable teams to implement technical and organizational changes.</p>
+  </div>
   <div class="card-footer">
     <a href="{{ '/meetings/meeting-4/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--4">
       <span>MEETING 4</span>
@@ -107,8 +120,10 @@ title: Home
 </div>
 </div>
 </div>
+</div>
 
-<div class="success-metrics-compact section-card" markdown="0">
+<div class="success-metrics-compact card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-bullseye" aria-hidden="true"></i> Success Outcomes</h2>
 <div class="resource-grid">
 <div class="outcome-item" data-outcome="dora" onclick="showOutcomeDetail('dora')">
@@ -186,8 +201,10 @@ title: Home
   </div>
 </div>
 </div>
+</div>
 
-<div class="get-started-section section-card" markdown="0">
+<div class="get-started-section card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-rocket" aria-hidden="true"></i> Get Started</h2>
 <div class="feature-grid">
 <div class="get-started-card simple-mode primary">
@@ -206,8 +223,10 @@ title: Home
 </div>
 </div>
 </div>
+</div>
 
-<div class="required-reading-section section-card" markdown="0">
+<div class="required-reading-section card card--section" markdown="0">
+<div class="card__content">
 <h2><i class="fas fa-book" aria-hidden="true"></i> Required Reading</h2>
 <div class="book-showcase">
   <div class="book-visual">
@@ -219,6 +238,7 @@ title: Home
     <p class="book-description">This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations. Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance.</p>
   <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn--primary-action">Get the Book</a>
   </div>
+</div>
 </div>
 </div>
 

@@ -1,0 +1,109 @@
+docs/transformation-complete.md:22:<div class="welcome-compact section-card" markdown="0">
+docs/transformation-complete.md:46:<div class="chapter-metrics-compact section-card" markdown="0">
+docs/transformation-complete.md:207:<div class="section-card" markdown="0">
+docs/transformation-complete.md:283:<div class="section-card" markdown="0">
+docs/transformation-complete.md:333:<div class="section-card" markdown="0">
+docs/transformation-complete.md:375:<div class="section-card" markdown="0">
+docs/transformation-complete.md:411:<div class="section-card" markdown="0">
+docs/transformation-complete.md:417:    <div class="resource-card">
+docs/transformation-complete.md:427:    <div class="resource-card">
+docs/transformation-complete.md:437:    <div class="resource-card">
+docs/transformation-complete.md:447:    <div class="resource-card ai-enhanced">
+docs/transformation-complete.md:461:<div class="section-card" markdown="0">
+docs/index.md:19:<div class="welcome-compact section-card" markdown="0">
+docs/index.md:27:<div class="quick-start section-card no-border">
+docs/index.md:40:<div class="what-youll-learn-section section-card" markdown="0">
+docs/index.md:44:<div class="highlight-card meeting-1 dark-theme">
+docs/index.md:60:<div class="highlight-card meeting-2 dark-theme">
+docs/index.md:76:<div class="highlight-card meeting-3 dark-theme">
+docs/index.md:92:<div class="highlight-card meeting-4 dark-theme">
+docs/index.md:111:<div class="success-metrics-compact section-card" markdown="0">
+docs/index.md:190:<div class="get-started-section section-card" markdown="0">
+docs/index.md:210:<div class="required-reading-section section-card" markdown="0">
+docs/resources.md:30:<div class="resource-card">
+docs/resources.md:39:<div class="resource-card">
+docs/resources.md:48:<div class="resource-card">
+docs/resources.md:107:<div class="meeting-resource-card">
+docs/resources.md:135:<div class="checkpoint-card">
+docs/resources.md:154:<div class="checkpoint-card">
+docs/resources.md:276:<div class="resource-card">
+docs/resources.md:290:<div class="resource-card">
+docs/resources.md:315:<div class="resource-card">
+docs/resources.md:344:<div class="checkpoint-card">
+docs/resources.md:356:<div class="checkpoint-card">
+docs/resources.md:372:<div class="resource-card">
+docs/resources.md:386:<div class="resource-card">
+docs/resources.md:411:<div class="metric-card lead-time">
+docs/resources.md:421:<div class="metric-card deploy-frequency">
+docs/resources.md:431:<div class="metric-card restore-time">
+docs/resources.md:441:<div class="metric-card change-fail">
+docs/offline.html:101:    <div class="checkpoint-card">
+docs/offline.html:113:    <div class="checkpoint-card">
+docs/offline.html:125:    <div class="checkpoint-card">
+docs/offline.html:137:    <div class="checkpoint-card">
+docs/prompts.md:70:<div class="checkpoint-card">
+docs/prompts.md:111:<div class="checkpoint-card">
+docs/_includes/performance-optimizations.html:86:        '.timeline-node, .metric-card, .ai-tool'
+docs/_includes/performance-optimizations.html:137:        '.timeline-node, .metric-card, .hero-banner, .dora-metrics-visual, .timeline-visual, .ai-tool'
+docs/meetings.md:14:<div class="welcome-compact section-card" markdown="0">
+docs/meetings.md:24:<div class="quick-start section-card no-border" markdown="0">
+docs/meetings.md:58:<div class="what-youll-learn-section section-card" markdown="0">
+docs/meetings.md:64:<div class="highlight-card meeting-0 dark-theme" style="grid-column: 1 / -1;">
+docs/meetings.md:85:<div class="highlight-card meeting-1 dark-theme">
+docs/meetings.md:106:<div class="highlight-card meeting-2 dark-theme">
+docs/meetings.md:127:<div class="highlight-card meeting-3 dark-theme">
+docs/meetings.md:148:<div class="highlight-card meeting-4 dark-theme">
+docs/meetings.md:173:<div class="section-card" markdown="0">
+docs/meetings.md:221:<div class="section-card dark-theme" markdown="0">
+docs/meetings.md:261:<div class="section-card" markdown="0">
+docs/meetings.md:307:<div class="welcome-compact section-card" markdown="0">
+docs/_meetings/meeting-2.md:14:<div class="chapter-metrics-compact section-card" markdown="0">
+docs/_meetings/meeting-2.md:183:<div class="section-card" markdown="0">
+docs/_meetings/meeting-2.md:332:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-2.md:370:<div class="section-card" markdown="0">
+docs/_meetings/meeting-2.md:458:<div class="section-card" markdown="0">
+docs/_meetings/meeting-2.md:523:<div class="section-card" markdown="0">
+docs/_meetings/meeting-2.md:573:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-2.md:604:<div class="section-card action-items" markdown="0">
+docs/_meetings/meeting-2.md:656:<div class="welcome-compact section-card next-meeting-card next-meeting-3" markdown="0">
+docs/_meetings/meeting-4.md:14:<div class="chapter-metrics-compact section-card" markdown="0">
+docs/_meetings/meeting-4.md:184:<div class="section-card" markdown="0">
+docs/_meetings/meeting-4.md:333:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-4.md:371:<div class="section-card" markdown="0">
+docs/_meetings/meeting-4.md:459:<div class="section-card" markdown="0">
+docs/_meetings/meeting-4.md:547:<div class="section-card" markdown="0">
+docs/_meetings/meeting-4.md:597:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-4.md:611:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-4.md:642:<div class="section-card action-items" markdown="0">
+docs/_meetings/meeting-4.md:703:<div class="welcome-compact section-card next-meeting-card next-meeting-complete" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); border: 2px solid #a78bfa;" markdown="0">
+docs/_meetings/meeting-1.md:14:<div class="chapter-metrics-compact section-card" markdown="0">
+docs/_meetings/meeting-1.md:182:<div class="section-card" markdown="0">
+docs/_meetings/meeting-1.md:237:<div class="section-card" markdown="0">
+docs/_meetings/meeting-1.md:390:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-1.md:428:<div class="section-card" markdown="0">
+docs/_meetings/meeting-1.md:517:<div class="chapter-metrics-compact section-card" markdown="0">
+docs/_meetings/meeting-1.md:719:<div class="section-card" markdown="0">
+docs/_meetings/meeting-1.md:803:<div class="section-card" markdown="0">
+docs/_meetings/meeting-1.md:861:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-1.md:892:<div class="section-card action-items" markdown="0">
+docs/_meetings/meeting-1.md:935:<div class="welcome-compact section-card next-meeting-card next-meeting-2" markdown="0">
+docs/_meetings/meeting-0.md:14:<div class="chapter-metrics-compact section-card" markdown="0">
+docs/_meetings/meeting-0.md:176:<div class="section-card" markdown="0">
+docs/_meetings/meeting-0.md:263:<div class="what-youll-learn-section section-card" markdown="0">
+docs/_meetings/meeting-0.md:267:<div class="highlight-card meeting-1 dark-theme">
+docs/_meetings/meeting-0.md:283:<div class="highlight-card meeting-2 dark-theme">
+docs/_meetings/meeting-0.md:299:<div class="highlight-card meeting-3 dark-theme">
+docs/_meetings/meeting-0.md:315:<div class="highlight-card meeting-4 dark-theme">
+docs/_meetings/meeting-0.md:335:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-0.md:366:<div class="section-card" markdown="0">
+docs/_meetings/meeting-0.md:429:<div class="section-card action-items" markdown="0">
+docs/_meetings/meeting-0.md:481:<div class="welcome-compact section-card next-meeting-card next-meeting-1" markdown="0">
+docs/_meetings/meeting-3.md:14:<div class="chapter-metrics-compact section-card" markdown="0">
+docs/_meetings/meeting-3.md:202:<div class="section-card" markdown="0">
+docs/_meetings/meeting-3.md:351:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-3.md:389:<div class="section-card" markdown="0">
+docs/_meetings/meeting-3.md:477:<div class="section-card" markdown="0">
+docs/_meetings/meeting-3.md:565:<div class="section-card" markdown="0">
+docs/_meetings/meeting-3.md:615:<div class="section-card dark-theme full-width" markdown="0">
+docs/_meetings/meeting-3.md:646:<div class="section-card action-items" markdown="0">
+docs/_meetings/meeting-3.md:707:<div class="welcome-compact section-card next-meeting-card next-meeting-4" markdown="0">
