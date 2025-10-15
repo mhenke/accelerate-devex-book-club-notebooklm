@@ -16,12 +16,7 @@
   }
 }
 
-.highlight-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-}
+// REMOVED: .highlight-card block (6 lines) - migrated to unified card system
 
 .card-footer {
   display: flex;
@@ -1790,109 +1785,7 @@ button:focus,
   }
 }
 
-.resource-card {
-  background: linear-gradient(
-    135deg,
-    var(--surface-light),
-    var(--surface-subtle)
-  );
-  border: 1px solid rgba(147, 51, 234, 0.2);
-  border-top: 3px solid transparent;
-  border-radius: var(--radius-xl);
-  text-align: center;
-  transition: border-color 0.2s ease, border-top-color 0.2s ease,
-    box-shadow 0.2s ease, transform 0.2s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
-  // Sophisticated gradient overlay
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 127, 80, 0.05) 0%,
-      transparent 50%
-    );
-    pointer-events: none;
-  }
-
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
-      0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    border-color: rgba(255, 127, 80, 0.3);
-    border-top-color: var(--accent-coral);
-  }
-
-  h3 {
-    color: var(--accent-coral);
-    margin-bottom: var(--space-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--font-size-h5);
-    font-weight: var(--font-weight-semibold);
-    position: relative;
-    z-index: 1;
-
-    i,
-    em {
-      background: rgba(255, 127, 80, 0.2);
-      border-radius: var(--radius-full);
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid var(--accent-coral);
-    }
-  }
-
-  p {
-    margin-bottom: var(--space-md);
-    line-height: var(--line-height-relaxed);
-    color: #666;
-    position: relative;
-    z-index: 1;
-  }
-
-  .resource-link {
-    background: linear-gradient(
-      135deg,
-      var(--accent-coral),
-      var(--hover-coral)
-    );
-    color: var(--text-dark);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-semibold);
-    padding: var(--space-sm);
-    border-radius: var(--radius-lg);
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease-out;
-    position: relative;
-    z-index: 1;
-    border: 2px solid transparent;
-    backdrop-filter: var(--backdrop-blur-lg);
-
-    &:hover {
-      background: linear-gradient(
-        135deg,
-        var(--hover-coral),
-        var(--accent-coral)
-      );
-      transform: translateY(-2px);
-      box-shadow: 0 8px 16px rgba(255, 127, 80, 0.3);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-  }
-}
+// REMOVED: .resource-card block (103 lines) - migrated to unified card system
 
 // Required Reading Section - Material Design Card
 .required-reading-section {

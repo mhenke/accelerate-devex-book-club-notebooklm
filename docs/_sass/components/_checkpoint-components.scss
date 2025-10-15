@@ -7,14 +7,7 @@
 // =============================================================================
 // CHECKPOINT CARD STYLES
 // =============================================================================
-.checkpoint-card {
-  background: white;
-  padding: var(--space-lg); // 24px
-  margin-bottom: var(--space-xl); // 32px
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #1e3a8a;
-  transition: all 0.3s ease;
-}
+// REMOVED: .checkpoint-card block (8 lines) - migrated to unified card system
 
 .checkpoint-card:hover {
   transform: translateY(-2px);
