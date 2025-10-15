@@ -1,9 +1,0 @@
-{% comment %}
-  Reusable DORA metric card component
-  Usage: {% include metric-card.html type="lead-time" icon="fas fa-chart-line" title="Delivery Lead Time" description="Time from code commit to production deployment" goal="Hours/Days not Weeks/Months" %}
-{% endcomment %}
-<div class="metric-card {{ include.type }}" markdown="0">
-  <div class="metric-title" markdown="0"><i class="{{ include.icon }}"></i> {{ include.title }}</div>
-  <p class="metric-description">{{ include.description }}</p>
-  <div class="metric-goal" markdown="0">Goal: {{ include.goal }}</div>
-</div>
