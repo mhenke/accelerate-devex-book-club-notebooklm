@@ -198,10 +198,9 @@ title: Home
 
 <div class="get-started-card simple-mode secondary">
 <h3>Resources & Support</h3>
-<p>Downloads, activities, AI-generated content, and community resources</p>
+<p>Downloads, handouts, assessments, and facilitator guides</p>
 <div class="resource-links">
-<a href="{{ '/resources' | relative_url }}" class="btn btn--primary-action">Downloads →</a>
-<a href="{{ '/prompts' | relative_url }}" class="btn btn--primary-action">AI Content →</a>
+<a href="{{ '/resources' | relative_url }}" class="btn btn--primary-action">View All Resources →</a>
 </div>
 </div>
 </div>
