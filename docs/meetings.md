@@ -74,6 +74,9 @@ title: Meetings
   <p><strong>Purpose:</strong> Book giveaway, book club overview, and preparation for Meeting 1</p>
   <p>Join us for a brief kickoff session where we'll distribute books, explain the format, answer questions, and set expectations for our 7-week journey through Accelerate.</p>
   <div class="card-footer">
+    <a href="{{ '/meetings/meeting-0/' | relative_url }}" class="btn btn--primary-action meeting-badge meeting-badge--0">
+      <span>VIEW KICKOFF</span>
+    </a>
     <div class="meeting-subtitle">Optional Attendance • Book Distribution • Q&A</div>
   </div>
 </div>
@@ -343,6 +346,18 @@ title: Meetings
   background: rgba(251, 191, 36, 0.2);
   border-color: #fbbf24;
   color: #fef3c7;
+}
+
+.meeting-badge--0 {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b) !important;
+  border-color: #fbbf24 !important;
+  color: #1e3a8a !important;
+}
+
+.meeting-badge--0:hover {
+  background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
 }
 
 /* Schedule Details Grid */
