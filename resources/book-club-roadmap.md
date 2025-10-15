@@ -16,6 +16,19 @@ This book club follows the book's own principle of breaking work into small, man
 
 ## Meeting Schedule
 
+### Meeting 0: Kickoff Meeting – Setting the Foundation
+**Week 0 | 30 Minutes | No Reading Required**
+
+Preparing for a successful 2-month learning journey.
+
+- **Core Focus:** Book club format, discussion best practices, preparation checklist, introducing the virtuous cycle concept
+- **Key Insight:** This isn't about copying practices—it's about building your own capabilities through experimentation
+- **Action Items:** Get the book, read chapters 1-3, complete 24 Capabilities Self-Assessment
+
+[View Meeting Resources →](meetings/meeting-0/)
+
+---
+
 ### Meeting 1: Laying the Foundation – The Myth and the Measurement
 **Week 1 | Chapters 1-3**
 
@@ -141,11 +154,13 @@ Each meeting folder contains:
 
 ## Getting Started
 
-1. **Week 0 (Preparation):**
+1. **Week 0 (Kickoff Meeting - Optional but Recommended):**
+   - Attend the [kickoff meeting](meetings/meeting-0/) (30 minutes) to understand the format
    - Purchase/obtain copies of "Accelerate" by Forsgren, Humble, and Kim
    - Complete [24 Capabilities Assessment](assessments/24-capabilities-assessment.md) to establish baseline
    - Review [Discussion Best Practices](activities/discussion-practices.md)
    - Read [Key Questions](key-questions.md) to understand the connecting thread
+   - Read Chapters 1-3 before Meeting 1
 
 2. **Before Each Meeting:**
    - Complete assigned chapter reading
