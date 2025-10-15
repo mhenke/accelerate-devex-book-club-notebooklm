@@ -292,7 +292,8 @@
 }
 
 // Dark Theme Card - Dark background with light text
-.card--dark {
+.card--dark,
+.dark-theme {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-light);
