@@ -4,18 +4,87 @@
 
 // Reduce excessive whitespace on resources page
 .page-container .section-card {
-  margin: var(--space-md) auto; // 16px instead of 24px
+  margin: var(--space-sm) auto; // 8px instead of 24px - much more compact
+  padding: var(--space-md); // 16px instead of 24px
+
+  h2 {
+    margin: 0 0 var(--space-sm) 0; // Reduce h2 bottom margin
+  }
+}
+
+// Make resource callout grid more compact - 2 columns on desktop
+.resource-callout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm); // Reduced gap
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.resource-callout {
+  padding: var(--space-sm); // Reduce padding
+
+  h3 {
+    font-size: var(--font-size-body); // Smaller heading
+    margin-bottom: var(--space-xs);
+  }
+
+  p {
+    font-size: 0.9rem; // Slightly smaller text
+    margin-bottom: var(--space-xs);
+    line-height: 1.4;
+  }
+}
+
+// Compact card grid for meeting handouts
+.what-youll-learn-section .card-grid {
+  grid-template-columns: repeat(2, 1fr); // 2x2 grid instead of single column
+  gap: var(--space-sm);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.what-youll-learn-section .highlight-card {
+  padding: var(--space-sm); // Reduce card padding
+
+  .card-header h3 {
+    font-size: var(--font-size-h6); // Smaller heading
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.85rem; // Smaller description
+    margin: var(--space-xs) 0;
+    line-height: 1.3;
+  }
+
+  .resource-list {
+    margin: var(--space-xs) 0;
+  }
+
+  .card-footer {
+    margin-top: var(--space-xs);
+
+    .meeting-subtitle {
+      font-size: 0.8rem;
+      margin-top: var(--space-xs);
+    }
+  }
 }
 
 // Resource List Styles
 .resource-list {
   list-style: none;
   padding: 0;
-  margin: var(--space-md) 0;
-  font-size: var(--font-size-body);
+  margin: var(--space-sm) 0;
+  font-size: 0.85rem; // Smaller font
 
   li {
-    padding: var(--space-xs) 0;
+    padding: 2px 0; // Minimal padding
     color: rgba(255, 255, 255, 0.9);
   }
 }
