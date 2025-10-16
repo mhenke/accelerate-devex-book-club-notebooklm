@@ -21,11 +21,8 @@ title: Resources
 
 <div class="page-container">
 
-<div class="section-card" markdown="0">
-<h2><i class="fas fa-books"></i> Meeting Handouts</h2>
-</div>
-
 <div class="what-youll-learn-section section-card" markdown="0">
+<h2><i class="fas fa-books"></i> Meeting Handouts</h2>
 <p>Each meeting includes printable handouts: deep-dive guides on key concepts, attendee guides, facilitator agendas, and action item trackers.</p>
 
 <div class="learning-highlights">
