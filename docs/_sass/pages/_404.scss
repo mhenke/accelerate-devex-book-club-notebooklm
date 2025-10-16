@@ -20,6 +20,11 @@
   padding: var(--space-xl) var(--space-xl);
   max-width: 420px;
   text-align: center;
+
+  svg {
+    display: block;
+    margin: 0 auto var(--space-md) auto;
+  }
 }
 
 .not-found-title {
@@ -61,6 +66,7 @@
 .not-found-links {
   display: flex;
   justify-content: center;
+  gap: var(--space-md);
   margin-top: var(--space-md);
 }
 
