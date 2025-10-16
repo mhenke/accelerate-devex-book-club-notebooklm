@@ -227,28 +227,25 @@ title: Resources
 <div class="section-card" markdown="0">
 <h2><i class="fas fa-question-circle"></i> Key Questions Framework</h2>
 
-
-<div class="resource-callout warning-style" style="max-width: 100%;">
+<div class="resource-callout warning-style">
   <div class="callout-icon">
     <i class="fas fa-lightbulb" aria-hidden="true"></i>
   </div>
   <div class="callout-content">
     <h3>🎯 The Thread That Connects All Meetings</h3>
-    <p>Each meeting explores one core question that builds toward the culminating question of the book club:</p>
-    <blockquote style="margin: var(--space-lg) 0; padding: var(--space-md); background: rgba(255,255,255,0.1); border-left: 4px solid currentColor; font-style: italic;">
+    <p>Each meeting explores one core question that builds toward the culminating question:</p>
+    <blockquote>
       "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
     </blockquote>
     <p><strong>View the complete framework:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/key-questions.md" class="resource-link">Key Questions for each meeting →</a></p>
   </div>
 </div>
 </div>
-</div>
 
 <div class="section-card" markdown="0">
 <h2><i class="fas fa-microphone-alt"></i> AI-Generated Content</h2>
 
-
-<p>Each meeting includes NotebookLM prompts to generate supplementary podcasts and video overviews in multiple formats.</p>
+<p>Each meeting includes NotebookLM prompts to generate supplementary podcasts and video overviews.</p>
 
 <div class="resource-callout-grid">
   <div class="resource-callout">
@@ -285,28 +282,26 @@ title: Resources
   </div>
 </div>
 
-<div style="margin-top: var(--space-lg); padding: var(--space-md); background: rgba(33, 150, 243, 0.1); border-radius: var(--radius-md); border-left: 4px solid #2196F3;">
-  <p><strong><i class="fas fa-info-circle"></i> About AI Content:</strong> All podcasts and video scripts are generated using <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Google NotebookLM</a>. Find detailed prompts and instructions in each meeting's <code>notebooklm/</code> folder on <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
-</div>
+<div class="ai-content-info">
+  <p><strong><i class="fas fa-info-circle"></i> About AI Content:</strong> All podcasts and video scripts are generated using <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Google NotebookLM</a>. Find detailed prompts in each meeting's <code>notebooklm/</code> folder on <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
 </div>
 </div>
 
 <div class="section-card" markdown="0">
 <h2><i class="fas fa-route"></i> Transformation Roadmap</h2>
 
-
-<div class="resource-callout warning-style" style="max-width: 100%;">
+<div class="resource-callout warning-style">
   <div class="callout-icon">
     <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
   </div>
   <div class="callout-content">
     <h3>🗺️ Complete Book Club Journey</h3>
-    <p>The full roadmap covers: meeting schedule, rationale for biweekly format, success metrics, discussion best practices, and post-book club extensions.</p>
+    <p>The full roadmap covers: meeting schedule, success metrics, discussion best practices, and extensions.</p>
     <p><strong>Features:</strong></p>
-    <ul style="margin: var(--space-md) 0; padding-left: var(--space-lg);">
-      <li>4 meeting overview with core focus and key insights</li>
-      <li>Between-meeting activities and experiments</li>
-      <li>Success metrics for the book club</li>
+    <ul class="roadmap-features">
+      <li>4 meeting overview with core focus</li>
+      <li>Between-meeting activities</li>
+      <li>Success metrics</li>
       <li>Discussion best practices</li>
       <li>Post-book club extensions</li>
       <li>Getting started checklist</li>
@@ -327,31 +322,3 @@ title: Resources
 <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
 </div>
 </footer>
-
-<style>
-/* Resource List Styles */
-.resource-list {
-  list-style: none;
-  padding: 0;
-  margin: var(--space-md) 0;
-  font-size: var(--font-size-sm);
-}
-
-.resource-list li {
-  padding: var(--space-xs) 0;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Resource link styling */
-.resource-link {
-  color: currentColor;
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-.resource-link:hover {
-  opacity: 0.8;
-}
-
-/* Blockquote styling for key question */
-blockquote {

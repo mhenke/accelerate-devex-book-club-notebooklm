@@ -277,11 +277,10 @@ title: Meetings
     <p>Complete assigned content 3-5 days before each meeting using your preferred learning style:</p>
     <ul>
       <li><strong>Read:</strong> Work through the assigned book chapters, taking notes on key concepts</li>
-      <li><strong>Listen:</strong> Use NotebookLM podcasts during commute or exercise</li>
-      <li><strong>Watch:</strong> View NotebookLM videos for visual learning</li>
+      <li><strong>Listen:</strong> Use NotebookLM podcasts during commute or exercise (see <a href="{{ '/resources' | relative_url }}#ai-generated-content">AI Content in Resources</a>)</li>
+      <li><strong>Watch:</strong> View NotebookLM videos for visual learning (see <a href="{{ '/resources' | relative_url }}#ai-generated-content">AI Content in Resources</a>)</li>
       <li><strong>Combine:</strong> Mix formats to reinforce understanding (e.g., read + listen)</li>
     </ul>
-    <a href="{{ '/prompts' | relative_url }}" class="btn btn--primary-action">AI Content →</a>
   </div>
 </div>
 

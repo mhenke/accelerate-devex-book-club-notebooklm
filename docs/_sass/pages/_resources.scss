@@ -1,0 +1,70 @@
+// RESOURCES PAGE STYLES
+// =============================================================================
+// Extracted from resources.md inline styles
+
+// Resource List Styles
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0;
+  font-size: var(--font-size-body);
+
+  li {
+    padding: var(--space-xs) 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+// Resource link styling
+.resource-link {
+  color: currentColor;
+  text-decoration: underline;
+  font-weight: var(--font-weight-semibold);
+  transition: opacity 0.2s ease-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Blockquote styling for key question
+.resource-callout {
+  blockquote {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid currentColor;
+    font-style: italic;
+    border-radius: var(--radius-sm);
+  }
+}
+
+// AI content info box
+.ai-content-info {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(33, 150, 243, 0.1);
+  border-radius: var(--radius-md);
+  border-left: 4px solid #2196f3;
+
+  strong {
+    font-weight: var(--font-weight-semibold);
+  }
+
+  code {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.125rem 0.375rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9em;
+  }
+}
+
+// Roadmap features list
+.roadmap-features {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-lg);
+
+  li {
+    margin-bottom: var(--space-xs);
+  }
+}
