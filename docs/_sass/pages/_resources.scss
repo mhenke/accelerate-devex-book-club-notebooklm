@@ -2,6 +2,11 @@
 // =============================================================================
 // Extracted from resources.md inline styles
 
+// Reduce excessive whitespace on resources page
+.page-container .section-card {
+  margin: var(--space-md) auto; // 16px instead of 24px
+}
+
 // Resource List Styles
 .resource-list {
   list-style: none;
