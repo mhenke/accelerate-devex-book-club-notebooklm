@@ -33,10 +33,14 @@
   },
   "homepage": "https://github.com/mhenke/accelerate-devex-book-club-notebooklm#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
     "eslint": "^8.57.0",
     "eslint-plugin-html": "^7.1.0",
     "html-validate": "^8.7.4",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "postcss-html": "^1.6.0",
+    "purgecss": "^7.0.2",
     "stylelint": "^16.2.1",
     "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-scss": "^6.1.0"
