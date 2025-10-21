@@ -257,51 +257,6 @@ title: Meetings
 </div>
 </div>
 
-<!-- Preparation Guide -->
-<div class="section-card" markdown="0">
-<h2><i class="fas fa-book-reader" aria-hidden="true"></i> How to Prepare</h2>
-
-<div class="preparation-steps">
-<div class="prep-step">
-  <div class="prep-number">1</div>
-  <div class="prep-content">
-    <h4>Attend Kickoff (Optional but Recommended)</h4>
-    <p>Join Meeting 0 on <strong>Wednesday, October 22</strong> to receive your book, meet fellow participants, and get oriented to the format.</p>
-  </div>
-</div>
-
-<div class="prep-step">
-  <div class="prep-number">2</div>
-  <div class="prep-content">
-    <h4>Engage with the Content (Choose Your Format)</h4>
-    <p>Complete assigned content 3-5 days before each meeting using your preferred learning style:</p>
-    <ul>
-      <li><strong>Read:</strong> Work through the assigned book chapters, taking notes on key concepts</li>
-      <li><strong>Listen:</strong> Use NotebookLM podcasts during commute or exercise (see <a href="{{ '/resources' | relative_url }}#ai-generated-content">AI Content in Resources</a>)</li>
-      <li><strong>Watch:</strong> View NotebookLM videos for visual learning (see <a href="{{ '/resources' | relative_url }}#ai-generated-content">AI Content in Resources</a>)</li>
-      <li><strong>Combine:</strong> Mix formats to reinforce understanding (e.g., read + listen)</li>
-    </ul>
-  </div>
-</div>
-
-<div class="prep-step">
-  <div class="prep-number">3</div>
-  <div class="prep-content">
-    <h4>Complete Action Items</h4>
-    <p>Work on action items from previous meeting (e.g., measure DORA metrics, document deployment pain).</p>
-  </div>
-</div>
-
-<div class="prep-step">
-  <div class="prep-number">4</div>
-  <div class="prep-content">
-    <h4>Review Discussion Questions</h4>
-    <p>Preview questions in the meeting guide to prepare thoughtful contributions.</p>
-  </div>
-</div>
-</div>
-</div>
-
 <!-- CTA -->
 <div class="welcome-compact section-card" markdown="0">
 <h2><i class="fas fa-rocket" aria-hidden="true"></i> Ready to Start?</h2>
