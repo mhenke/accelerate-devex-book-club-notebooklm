@@ -13,7 +13,10 @@
     "test": "npm run test:html && npm run test:htmlproof",
     "serve": "cd docs && bundle exec jekyll serve",
     "build": "cd docs && bundle exec jekyll build",
-    "validate": "npm run build && npm run lint && npm run test"
+    "build:production": "npm run build && npm run purgecss",
+    "validate": "npm run build && npm run lint && npm run test",
+    "purgecss": "bash scripts/purgecss.sh",
+    "purgecss:analyze": "npx purgecss --css docs/_site/assets/main.css --content 'docs/_site/**/*.html' --output /tmp/purged-analysis/ && echo '=== SIZE COMPARISON ===' && du -h docs/_site/assets/main.css /tmp/purged-analysis/main.css"
   },
   "repository": {
     "type": "git",
