@@ -12,9 +12,9 @@
   );
   border: 2px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg); // 24px - standard breathing room
-  margin: var(--space-lg) auto;
-  width: 95%;
+  padding: var(--space-lg); // 24px vertical + horizontal
+  margin: var(--space-lg) var(--space-lg); // Add horizontal margin for spacing from container edges
+  width: calc(100% - var(--space-2xl)); // Account for horizontal margins
   max-width: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
@@ -181,6 +181,8 @@
   // Full-width modifier - no border-radius, spans full container
   &.full-width {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 0;
     padding: var(--space-lg);
   }
