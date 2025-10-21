@@ -257,17 +257,6 @@ title: Meetings
 </div>
 </div>
 
-<!-- CTA -->
-<div class="welcome-compact section-card" markdown="0">
-<h2><i class="fas fa-rocket" aria-hidden="true"></i> Ready to Start?</h2>
-<p>Join us for the kickoff session to get your book and meet the group!</p>
-<div class="welcome-cta">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">View Meeting 1 →</a>
-<p class="welcome-cta-subtitle"><strong>Kickoff:</strong> Wednesday, October 22, 2025 • 12:00-12:30 PM (Book Giveaway)</p>
-<p class="welcome-cta-subtitle"><strong>Meeting 1:</strong> Wednesday, November 5, 2025 • 12:00-1:00 PM (Chapters 1-3)</p>
-</div>
-</div>
-
 </div>
 
 <footer class="ai-attribution" markdown="0">
