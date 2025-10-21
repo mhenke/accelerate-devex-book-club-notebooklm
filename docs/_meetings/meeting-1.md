@@ -472,7 +472,7 @@ document.addEventListener('keydown', function(event) {
       <div class="callout-content">
         <h3>⚠️ Before You Measure: Culture Must Come First</h3>
         <p>The single most common mistake in DevOps transformation is jumping straight to metrics without building a healthy culture foundation. Without trust, measurement becomes surveillance rather than improvement.</p>
-        <p><strong>Required Reading:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/handouts/culture-before-metrics.html" class="resource-link"><strong>Culture Before Metrics</strong></a></p>
+        <p><strong>Required Reading:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-before-metrics.md" class="resource-link"><strong>Culture Before Metrics</strong></a></p>
       </div>
     </div>
 
@@ -483,7 +483,7 @@ document.addEventListener('keydown', function(event) {
       <div class="callout-content">
         <h3>📊 The DORA Metrics Guide</h3>
         <p>Not all metrics are created equal. Learn which metrics drive improvement (DORA metrics: deployment frequency, lead time, MTTR, change failure rate) and which create dysfunction (individual performance, vanity metrics).</p>
-        <p><strong>Reference Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/handouts/dora-metrics-guide.html" class="resource-link"><strong>What to Measure (and What to Avoid)</strong></a></p>
+        <p><strong>Reference Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/dora-metrics-guide.md" class="resource-link"><strong>What to Measure (and What to Avoid)</strong></a></p>
       </div>
     </div>
 
@@ -494,7 +494,7 @@ document.addEventListener('keydown', function(event) {
       <div class="callout-content">
         <h3>🔄 The Virtuous Cycle</h3>
         <p>Culture isn't fixed—you can act your way to better culture. Understand how technical practices create better interactions, which create generative culture, which enables high performance.</p>
-        <p><strong>Change Model:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-1/handouts/culture-change-model.html" class="resource-link"><strong>Acting Your Way to Better Culture</strong></a></p>
+        <p><strong>Change Model:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-change-model.md" class="resource-link"><strong>Acting Your Way to Better Culture</strong></a></p>
       </div>
     </div>
   </div>
