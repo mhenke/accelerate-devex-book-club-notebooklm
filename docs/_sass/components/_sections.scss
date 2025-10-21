@@ -283,10 +283,6 @@
       margin-top: var(--space-md);
       padding-top: var(--space-md);
       padding-bottom: var(--space-md);
-      /* Use explicit width token and a slightly stronger color so the top border is visible
-         across gradients and subtle backgrounds. This keeps the border-system tokens intact
-         while improving contrast for this specific component. */
-      border-top: var(--border-width-thin) solid rgba(148, 163, 184, 0.45);
       color: #666;
       font-size: var(--font-size-body);
       display: flex;
