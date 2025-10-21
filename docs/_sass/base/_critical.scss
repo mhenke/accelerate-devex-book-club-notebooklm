@@ -2323,11 +2323,15 @@ button:focus,
 
     .action-item {
       background: var(--text-white);
-      border-radius: var(--radius-md);
       border: 1px solid var(--border-medium);
       padding: var(--space-md) var(--space-lg);
       transition: all 0.2s ease-out;
       box-shadow: var(--shadow-subtle);
+    }
+
+    // Zebra striping - shade every other row
+    .action-item:nth-child(even) {
+      background: #fafafa;
     }
 
     .action-item:hover {
