@@ -283,29 +283,30 @@ title: Meetings
 <style>
 /* Meeting 0 Kickoff Special Styling */
 .meeting-0 {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
-  border: 2px solid rgba(122, 218, 209, 0.3);
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid rgba(122, 218, 209, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .meeting-0 .highlight-icon {
-  background: rgba(122, 218, 209, 0.2);
-  border-color: rgba(122, 218, 209, 0.4);
+  background: var(--accent-teal);
+  border-color: var(--hover-teal);
 }
 
 .meeting-0 .highlight-icon i {
-  color: var(--accent-teal);
+  color: white;
 }
 
 .meeting-0 .meeting-date-badge {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.95);
+  background: rgba(122, 218, 209, 0.2);
+  border-color: var(--accent-teal);
+  color: var(--text-dark);
 }
 
 .meeting-badge--0 {
   background: linear-gradient(135deg, var(--accent-teal), var(--hover-teal)) !important;
   border-color: var(--accent-teal) !important;
-  color: var(--text-dark) !important;
+  color: white !important;
 }
 
 .meeting-badge--0:hover {
