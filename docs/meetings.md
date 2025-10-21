@@ -218,7 +218,7 @@ title: Meetings
 </div>
 
 <!-- Between Sessions -->
-<div class="section-card dark-theme" markdown="0">
+<div class="section-card" markdown="0">
 <h2><i class="fas fa-clipboard-check" aria-hidden="true"></i> Between Sessions</h2>
 <p class="section-intro">Maximize your learning with activities between meetings:</p>
 
@@ -419,19 +419,19 @@ title: Meetings
 
 .between-item i {
   font-size: var(--font-size-display);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--accent-teal);
 }
 
 .between-content h4 {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: var(--space-sm);
-  color: white;
+  color: var(--text-dark);
 }
 
 .between-content p {
   font-size: var(--font-size-body);
-  color: rgba(255, 255, 255, 0.8);
+  color: #666;
   margin: 0;
 }
 
