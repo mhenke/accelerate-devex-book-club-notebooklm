@@ -282,9 +282,13 @@ title: Meetings
 
 <style>
 /* Meeting 0 Kickoff Special Styling */
-.meeting-0 {
-  background: rgba(255, 255, 255, 0.2) !important;
-  border: 2px solid rgba(122, 218, 209, 0.5);
+.highlight-card.meeting-0.dark-theme {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.25) 100%
+  ) !important;
+  border: 2px solid var(--accent-teal);
   backdrop-filter: blur(10px);
 }
 
@@ -301,6 +305,11 @@ title: Meetings
   background: rgba(122, 218, 209, 0.2);
   border-color: var(--accent-teal);
   color: var(--text-dark);
+}
+
+.meeting-0 h3,
+.meeting-0 p {
+  color: var(--text-dark) !important;
 }
 
 .meeting-badge--0 {
