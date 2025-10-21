@@ -191,11 +191,8 @@ $desktop: 1200px;
   // =============================================================================
   // CONTAINER WIDTHS
   // =============================================================================
-  --container-narrow: 600px;
-  --container-reading: 720px;
-  --container-content: 900px;
-  --container-medium: 1000px;
-  --desktop: 1200px;
+  --content-max-width: 1200px; // Single max-width for content, use media queries for responsiveness
+  --text-max-width: 720px; // Optimal reading width (45-75 characters)
   --nav-height: 64px;
 
   // =============================================================================

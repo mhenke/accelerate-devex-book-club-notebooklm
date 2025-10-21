@@ -167,7 +167,11 @@
 
   opacity: 0.9;
   margin-bottom: var(--space-lg);
-  max-width: 600px;
+  max-width: 100%; // Responsive width, constrained by hero container
+
+  @media (min-width: #{$tablet}) {
+    max-width: var(--text-max-width); // Optimal reading width on larger screens
+  }
 }
 
 .hero-cta {
@@ -223,7 +227,7 @@
   font-size: var(--font-size-h6);
   margin: 0 auto;
   font-style: italic;
-  max-width: var(--container-narrow);
+  max-width: var(--text-max-width);
 }
 
 // =============================================================================

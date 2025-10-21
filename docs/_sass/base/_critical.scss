@@ -531,7 +531,7 @@ a {
 .metrics-categories {
   @include grid-auto-fit(300px);
 
-  max-width: var(--desktop);
+  max-width: var(--content-max-width);
   margin: 0 auto;
   padding: 0 var(--space-lg);
 }
@@ -628,7 +628,7 @@ a {
   border-radius: var(--radius-lg);
   padding: var(--space-sm);
   margin: var(--space-lg) auto;
-  max-width: var(--container-content);
+  max-width: var(--content-max-width);
   text-align: center;
   box-shadow: var(--elevation-2);
 
@@ -662,7 +662,7 @@ a {
   border-radius: var(--radius-lg);
   padding: var(--space-sm);
   margin: var(--space-lg) auto;
-  max-width: var(--container-reading);
+  max-width: var(--text-max-width);
   text-align: center;
   box-shadow: var(--elevation-2);
 
@@ -744,7 +744,7 @@ a {
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-2xl);
   margin: var(--space-xl) auto;
-  max-width: var(--container-medium);
+  max-width: var(--content-max-width);
   box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 0.8s ease-out 0.4s both;
   position: relative;
@@ -969,7 +969,7 @@ a {
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-2xl);
   margin: var(--space-xl) auto;
-  max-width: var(--container-medium);
+  max-width: var(--content-max-width);
   text-align: center;
   box-shadow: 0 8px 24px rgba(33, 150, 243, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -1134,7 +1134,7 @@ a {
   @media (min-width: #{$tablet}) {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-2xl);
-    max-width: var(--container-reading);
+    max-width: var(--text-max-width);
   }
 }
 
@@ -1643,9 +1643,9 @@ button:focus,
 
     text-align: center;
     margin: 0 auto var(--space-xl);
-    max-width: var(--content-width-optimal); // Design token
-    line-height: var(--line-height-relaxed); // Design token
-    text-shadow: var(--shadow-text-medium); // Design token
+    max-width: var(--text-max-width);
+    line-height: var(--line-height-relaxed);
+    text-shadow: var(--shadow-text-medium);
     position: relative;
     z-index: 1;
 
