@@ -106,7 +106,7 @@ accelerate-devex-book-club-notebooklm/
 - Edit content and styles in Markdown and SCSS files
 - Use semantic HTML and ARIA for accessibility
 - Responsive design required for all components
-- No build scripts; rely on Jekyll/GitHub Pages for compilation
+- Jekyll builds automatically on GitHub Pages (npm scripts available for local optimization)
 - Branching: Standard GitHub flow (feature branches, PRs)
 
 ---
@@ -145,10 +145,39 @@ accelerate-devex-book-club-notebooklm/
 
 ### Building the Site
 
+**Basic build (development):**
 ```bash
 cd docs
 bundle exec jekyll build
+# OR from root: npm run build
 ```
+
+**Production build with CSS optimization:**
+```bash
+npm run build:production
+# Runs: build + purgecss (removes unused CSS)
+```
+
+**Note:** GitHub Pages uses automatic Jekyll build (without PurgeCSS). CSS optimization is only applied locally for testing/analysis.
+
+---
+
+## 🎨 CSS Optimization (Optional)
+
+PurgeCSS removes unused CSS classes from the built site. This is **optional** and only runs locally.
+
+**Analyze CSS usage:**
+```bash
+npm run analyze:css          # Show top 50 most-used classes
+npm run purgecss:analyze     # Compare original vs purged CSS size
+```
+
+**Apply PurgeCSS:**
+```bash
+npm run purgecss             # Purge unused CSS from _site/assets/
+```
+
+**Configuration:** See `purgecss.config.cjs` for safelist rules.
 
 ---
 
