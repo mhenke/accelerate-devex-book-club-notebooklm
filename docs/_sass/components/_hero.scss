@@ -78,22 +78,6 @@
     z-index: 1;
   }
 
-  .hero-value-prop {
-    background: linear-gradient(
-      135deg,
-      var(--accent-emerald),
-      var(--hover-emerald)
-    );
-    color: white;
-    font-size: var(--font-size-h5);
-    font-weight: var(--font-weight-bold);
-    padding: var(--space-sm) var(--space-xl);
-    border-radius: var(--radius-lg);
-    display: inline-block;
-    margin-bottom: var(--space-lg);
-    box-shadow: var(--shadow-card-metric);
-  }
-
   .hero-headline {
     font-size: clamp(var(--font-size-h1), 5vw, var(--font-size-display));
     font-weight: var(--font-weight-bold);

@@ -667,7 +667,6 @@ hero-content
 hero-headline
 hero-icon
 hero-subtitle
-hero-value-prop
 high
 highlight
 highlight-card
