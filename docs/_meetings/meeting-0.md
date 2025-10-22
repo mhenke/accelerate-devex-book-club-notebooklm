@@ -190,7 +190,64 @@ document.addEventListener('keydown', function(event) {
           </div>
         </div>
       </div>
+
+      <!-- Podcast Section - Compact Playlist -->
+      <div class="media-section podcast-section">
+        <section class="podcast-playlist" aria-label="Podcast playlist">
+
+          <!-- Podcast Items (Compact List) -->
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/accelerate-mastery-deep-dive.m4a"
+               data-title="Accelerate Mastery"
+               data-duration="18:30"
+               data-type="deep-dive">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Mastery">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Accelerate Mastery
+                <span class="podcast-type deep-dive">Deep Dive</span>
+                <span class="podcast-duration">18:30</span>
+              </div>
+              <div class="podcast-subtitle">The Data-Driven Blueprint Proving Speed and Stability</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shared Player at Bottom -->
+          <div class="playlist-player">
+            <div class="now-playing-header">
+              <div class="now-playing-info">
+                <div class="playing-indicator-large"></div>
+                <div class="now-playing-text-wrapper">
+                  <div class="now-playing-label">Now Playing</div>
+                  <div class="now-playing-title" id="now-playing-title">Accelerate Mastery</div>
+                </div>
+              </div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 18:30</div>
+            </div>
+            <audio id="shared-player" controls>
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/accelerate-mastery-deep-dive.m4a" type="audio/mp4" id="shared-player-source">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </section>
+      </div>
     </div>
+
   </div>
 </div>
 
@@ -510,3 +567,5 @@ document.addEventListener('keydown', function(event) {
     <p class="welcome-cta-subtitle">Chapters 1-3 • DORA Metrics • Westrum Culture Types</p>
   </div>
 </div>
+
+<script src="{{ '/assets/js/podcast-player.js' | relative_url }}"></script>
