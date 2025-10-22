@@ -101,6 +101,12 @@
   }
 }
 
+// Small text utility for secondary links
+.text-sm {
+  font-size: 0.85rem;
+  margin-top: var(--space-xs);
+}
+
 // Blockquote styling for key question on resources page
 .page-container .resource-callout {
   blockquote {
