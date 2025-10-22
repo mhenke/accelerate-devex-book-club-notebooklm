@@ -177,7 +177,7 @@ This comprehensive test planning and quality assurance documentation follows IST
 4. **Review Sample Issues**: See template-based examples for consistent implementation
 5. **Begin Implementation**: Start with foundational test strategy and infrastructure setup
 
-This documentation provides a complete framework for professional-grade quality assurance while maintaining focus on educational effectiveness and accessibility compliance for the DevOps learning platform.
+This documentation provides a complete framework for professional-grade quality assurance while maintaining focus on educational effectiveness and accessibility compliance for the DevEx learning platform.
 
 ---
 
