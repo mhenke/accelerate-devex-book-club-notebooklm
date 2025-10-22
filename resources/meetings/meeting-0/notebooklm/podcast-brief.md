@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload book club plan and overview materials to NotebookLM
-2. (Optional but recommended) Upload [Book Club Plan](../../../plan/plan.md)
+2. (Optional but recommended) Upload [Book Club Roadmap](../../../book-club-roadmap.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -128,5 +128,5 @@ Keep this EXTREMELY concise - 5-10 minutes maximum. Only absolute essentials.
 
 ## Related Resources
 
-- **[Book Club Plan](../../../plan/plan.md)** - Complete structure
+- **[Book Club Roadmap](../../../book-club-roadmap.md)** - Complete structure
 - **[Meeting 1 Outline](../../meeting-1/outline.md)** - First meeting preview

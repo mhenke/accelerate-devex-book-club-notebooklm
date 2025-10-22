@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload book club plan and overview materials to NotebookLM
-2. (Optional but recommended) Upload [Book Club Plan](../../../plan/plan.md)
+2. (Optional but recommended) Upload [Book Club Roadmap](../../../book-club-roadmap.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -161,6 +161,6 @@ Use [podcast-deep-dive-shorter.md](podcast-deep-dive-shorter.md) instead (10-15 
 
 ## Related Resources
 
-- **[Book Club Plan](../../../plan/plan.md)** - Complete 2-month structure
+- **[Book Club Roadmap](../../../book-club-roadmap.md)** - Complete 2-month structure
 - **[Meeting Overview](../../../README.md)** - Repository introduction
 - **[Meeting 1 Outline](../../meeting-1/outline.md)** - Preview of first meeting

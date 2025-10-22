@@ -11,7 +11,7 @@ This book club follows the book's own principle of breaking work into small, man
 ## Quick Start
 
 1. **Get the Book:** "Accelerate" by Nicole Forsgren, Jez Humble, and Gene Kim
-2. **Review Updated Plan:** See [resources/plan/plan.md](resources/plan/plan.md) for corrected chapter mappings
+2. **Review Updated Plan:** See [resources/book-club-roadmap.md](resources/book-club-roadmap.md) for corrected chapter mappings
 3. **Generate Content:** Use [resources/plan/audio.md](resources/plan/audio.md) and [resources/plan/video.md](resources/plan/video.md) for NotebookLM prompts
 4. **Access Website:** Visit the [GitHub Pages site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) for interactive experience
 
@@ -61,9 +61,9 @@ This book club follows the book's own principle of breaking work into small, man
 
 ## Resources
 
-### Book Club Plan & Prompts
+### Book Club Roadmap & Prompts
 
-- [resources/plan/plan.md](resources/plan/plan.md) - Updated book club plan with corrected chapter mappings
+- [resources/book-club-roadmap.md](resources/book-club-roadmap.md) - Updated book club plan with corrected chapter mappings
 - [resources/plan/audio.md](resources/plan/audio.md) - NotebookLM podcast generation prompts
 - [resources/plan/video.md](resources/plan/video.md) - NotebookLM video generation prompts
 
@@ -133,4 +133,4 @@ accelerate-devex-book-club-notebooklm/
 
 ---
 
-**Ready to transform your organization?** Review the [updated plan](resources/plan/plan.md), explore the [interactive meeting pages](docs/_meetings/), or visit the [interactive website](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) for the full experience.
+**Ready to transform your organization?** Review the [updated plan](resources/book-club-roadmap.md), explore the [interactive meeting pages](docs/_meetings/), or visit the [interactive website](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/) for the full experience.

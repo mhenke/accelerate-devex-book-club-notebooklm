@@ -16,7 +16,7 @@ Before generating any podcast or video, upload these sources to your NotebookLM 
 
 ## Optional But Recommended Sources
 
-3. **[Book Club Plan](../../../plan/plan.md)**
+3. **[Book Club Roadmap](../../../book-club-roadmap.md)**
    - Complete 2-month journey structure
    - Four meeting schedule (Weeks 1, 3, 5, 7)
    - Chapter mappings and learning objectives
