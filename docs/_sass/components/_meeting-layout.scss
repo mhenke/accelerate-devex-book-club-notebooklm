@@ -83,7 +83,6 @@ p.meeting-subtitle {
 /* Meeting Container */
 .meeting-container {
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-lg); // 32px 24px
   background: var(--text-white);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   margin-top: 1rem;
@@ -325,7 +324,6 @@ p.meeting-subtitle {
   }
 
   .meeting-container {
-    padding: var(--space-xl) var(--space-md); // 32px 16px
     margin-top: 1rem;
   }
 
