@@ -24,7 +24,23 @@
 }
 
 .resource-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
   padding: var(--space-sm); // Reduce padding
+
+  .callout-icon {
+    flex-shrink: 0;
+
+    i {
+      font-size: var(--font-size-h3);
+      color: var(--accent-teal);
+    }
+  }
+
+  .callout-content {
+    flex: 1;
+  }
 
   h3 {
     font-size: var(--font-size-body); // Smaller heading
