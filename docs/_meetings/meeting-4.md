@@ -468,7 +468,7 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-building" aria-hidden="true"></i>
       </div>
       <div class="callout-content">
-        <h3>🏦 ING Case Study: Real-World Transformation</h3>
+        <h3>ING Case Study: Real-World Transformation</h3>
         <p>How a global financial institution transformed through learning and leadership. ING proves large, complex, regulated organizations CAN transform by having leaders become a learning team and patiently executing over years.</p>
         <p><strong>Case Study Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/handouts/ing-case-study.md" class="resource-link"><strong>Learn from ING's Journey</strong></a></p>
       </div>
@@ -479,7 +479,7 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-route" aria-hidden="true"></i>
       </div>
       <div class="callout-content">
-        <h3>🚀 The Path Forward: Make It Your Own</h3>
+        <h3>The Path Forward: Make It Your Own</h3>
         <p>Transformation principles for sustained success. The 24 capabilities are guides, not checklists. Learn the four principles: learn how to learn, go deep before wide, practice patience and discipline, and embrace evidence-based experimentation.</p>
         <p><strong>Transformation Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/handouts/transformation-principles.md" class="resource-link"><strong>Your Transformation Journey</strong></a></p>
       </div>
@@ -494,7 +494,7 @@ document.addEventListener('keydown', function(event) {
     <h3 class="false-choice-subtitle">The culminating reflection question that connects all four meetings</h3>
 
     <div class="deployment-signal" style="margin-top: 2rem;">
-      <h4 style="font-size: 1.5rem; margin-bottom: 1rem;">🎯 "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"</h4>
+      <h4 style="font-size: 1.5rem; margin-bottom: 1rem;"><i class="fas fa-bullseye"></i> "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"</h4>
       <p>This question captures the essence of the entire book: start small, focus on flow, reduce friction, and let improvements compound over time.</p>
     </div>
 
