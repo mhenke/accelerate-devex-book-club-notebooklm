@@ -2421,6 +2421,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 4px; // Align icon with the h3 baseline
 
     i,
     em {
@@ -2432,12 +2433,13 @@
 
   .callout-content {
     flex: 1;
+    min-width: 0; // Prevent flex item from overflowing
 
     h3 {
       font-size: var(--font-size-h5);
       font-weight: var(--font-weight-semibold);
       color: var(--text-dark);
-      margin-bottom: var(--space-sm);
+      margin: 0 0 var(--space-sm) 0; // Remove top margin to keep on same line
     }
 
     p {
