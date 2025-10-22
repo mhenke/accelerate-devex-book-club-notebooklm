@@ -26,17 +26,15 @@
 .page-container .resource-callout {
   padding: var(--space-sm); // Reduce padding
 
-  .callout-content {
-    h3 {
-      font-size: var(--font-size-body); // Smaller heading
-      margin-bottom: var(--space-xs);
-    }
+  h3 {
+    font-size: var(--font-size-body); // Smaller heading
+    margin-bottom: var(--space-xs);
+  }
 
-    p {
-      font-size: 0.9rem; // Slightly smaller text
-      margin-bottom: var(--space-xs);
-      line-height: 1.4;
-    }
+  p {
+    font-size: 0.9rem; // Slightly smaller text
+    margin-bottom: var(--space-xs);
+    line-height: 1.4;
   }
 }
 
