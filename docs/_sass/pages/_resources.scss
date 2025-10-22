@@ -13,8 +13,7 @@
 }
 
 // Make resource callout grid more compact - 2 columns on desktop
-.resource-callout-grid {
-  display: grid;
+.page-container .resource-callout-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-sm); // Reduced gap
 
@@ -23,34 +22,21 @@
   }
 }
 
-.resource-callout {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-md);
+// Override resource callout styling for resources page (more compact)
+.page-container .resource-callout {
   padding: var(--space-sm); // Reduce padding
 
-  .callout-icon {
-    flex-shrink: 0;
-
-    i {
-      font-size: var(--font-size-h3);
-      color: var(--accent-teal);
-    }
-  }
-
   .callout-content {
-    flex: 1;
-  }
+    h3 {
+      font-size: var(--font-size-body); // Smaller heading
+      margin-bottom: var(--space-xs);
+    }
 
-  h3 {
-    font-size: var(--font-size-body); // Smaller heading
-    margin-bottom: var(--space-xs);
-  }
-
-  p {
-    font-size: 0.9rem; // Slightly smaller text
-    margin-bottom: var(--space-xs);
-    line-height: 1.4;
+    p {
+      font-size: 0.9rem; // Slightly smaller text
+      margin-bottom: var(--space-xs);
+      line-height: 1.4;
+    }
   }
 }
 
@@ -117,8 +103,8 @@
   }
 }
 
-// Blockquote styling for key question
-.resource-callout {
+// Blockquote styling for key question on resources page
+.page-container .resource-callout {
   blockquote {
     margin: var(--space-lg) 0;
     padding: var(--space-md);
