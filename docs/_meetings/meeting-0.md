@@ -504,6 +504,49 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- RESOURCES -->
+<div class="section-card" markdown="0">
+  <div class="step-header">
+    <h2><i class="fas fa-book-reader" aria-hidden="true"></i> Resources</h2>
+    <p class="section-intro">Essential materials to prepare for your book club journey</p>
+  </div>
+
+  <div class="resource-callout-grid">
+    <div class="resource-callout warning-style">
+      <div class="callout-icon">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>📄 Welcome Guide</h3>
+        <p>A comprehensive introduction to the Accelerate DevEx Book Club. This guide covers the book club format, meeting schedule, discussion practices, and preparation checklist to help you get the most out of your 2-month journey.</p>
+        <p><strong>Kickoff Resource:</strong> <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/welcome-devex-book-club.pdf" class="resource-link" target="_blank"><strong>Download Welcome Guide (PDF)</strong></a></p>
+      </div>
+    </div>
+
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>📋 24 Capabilities Assessment</h3>
+        <p>Before starting your journey, complete this self-assessment to understand your team's current state across all 24 capabilities. This baseline will help you track progress and identify high-impact improvement opportunities.</p>
+        <p><strong>Pre-Work Assessment:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/24-capabilities-assessment.md" class="resource-link" target="_blank"><strong>Complete Self-Assessment</strong></a></p>
+      </div>
+    </div>
+
+    <div class="resource-callout">
+      <div class="callout-icon">
+        <i class="fas fa-chart-line" aria-hidden="true"></i>
+      </div>
+      <div class="callout-content">
+        <h3>📊 DORA Metrics Baseline</h3>
+        <p>Establish your baseline measurements for the four DORA metrics: Lead Time, Deployment Frequency, MTTR, and Change Failure Rate. You'll use these to measure improvement throughout the book club.</p>
+        <p><strong>Metrics Template:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/dora-metrics-template.md" class="resource-link" target="_blank"><strong>Track Your Metrics</strong></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ACTION ITEMS -->
 <div class="section-card action-items" markdown="0">
   <div class="action-header">
