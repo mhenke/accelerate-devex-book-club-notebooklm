@@ -23,8 +23,11 @@ This kickoff meeting sets expectations and prepares participants for a successfu
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - Complete 2-month plan overview
 
 ### AI-Generated Content
-Generate supplementary content using NotebookLM (prompts available in meeting folders):
-- **Overview:** Brief podcast about the book's core themes (see any meeting's `notebooklm/` folder for examples)
+Generate supplementary podcasts and videos using NotebookLM Prompts (in this folder's `notebooklm/` subdirectory):
+- **Quick Prep:** [Brief Podcast](notebooklm/podcast-brief.md) (5-10 min)
+- **Comprehensive:** [Deep Dive Podcast](notebooklm/podcast-deep-dive-default.md) (15-20 min)
+- **Visual Format:** [Video Summary](notebooklm/video.md) (10-15 min)
+- **All Formats:** See [notebooklm/](notebooklm/) folder for all available prompts
 
 ### Assessments & Activities
 - **[24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)** - Complete before Meeting 1
