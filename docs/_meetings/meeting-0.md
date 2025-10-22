@@ -512,7 +512,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="resource-callout-grid">
-    <div class="resource-callout warning-style">
+    <div class="resource-callout">
       <h3><i class="fas fa-file-pdf" aria-hidden="true"></i> Welcome Guide</h3>
       <p>A comprehensive introduction to the Accelerate DevEx Book Club. This guide covers the book club format, meeting schedule, discussion practices, and preparation checklist to help you get the most out of your 2-month journey.</p>
       <p><strong>Kickoff Resource:</strong> <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/welcome-devex-book-club.pdf" class="resource-link" target="_blank"><strong>Download Welcome Guide (PDF)</strong></a></p>

@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(tilix:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(chmod:*)",
+      "WebFetch(domain:gist.github.com)",
+      "Bash(ruby:*)",
+      "Bash(gem install:*)",
+      "Bash(sudo gem install:*)",
+      "Bash(dpkg:*)",
+      "Bash(gem list:*)",
+      "Bash(gem environment:*)",
+      "Read(//usr/**)",
+      "Bash(sudo update-alternatives:*)",
+      "Bash(python3:*)",
+      "Bash(bundle exec jekyll build:*)",
+      "Bash(git checkout:*)",
+      "Bash(npm install:*)",
+      "Bash(sass-migrator:*)",
+      "Bash(1)",
+      "Bash(find:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm run lint:css:*)",
+      "Bash(npm ci:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run validate:*)",
+      "Bash(git fetch:*)",
+      "Bash(git merge:*)",
+      "Bash(aws s3:*)",
+      "Bash(aws s3api delete-bucket-policy:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

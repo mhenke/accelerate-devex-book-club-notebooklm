@@ -487,7 +487,7 @@ document.addEventListener('keydown', function(event) {
       <p><strong>Management Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/lean-management-practices.md" class="resource-link"><strong>Optimizing for Flow</strong></a></p>
     </div>
 
-    <div class="resource-callout warning-style">
+    <div class="resource-callout">
       <h3><i class="fas fa-fire" aria-hidden="true"></i> Deployment Pain: The Burnout Predictor</h3>
       <p>Deployment pain is the strongest predictor of burnout. Learn how manual, error-prone deployment processes create sustained anxiety and how technical practices eliminate pain at its source—not by treating symptoms.</p>
       <p><strong>Burnout Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/deployment-pain-burnout.md" class="resource-link"><strong>Preventing Burnout</strong></a></p>
