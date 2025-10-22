@@ -5,7 +5,6 @@ title: Home
 
 <div class="hero-banner" markdown="0">
   <div class="hero-content">
-    <div class="hero-value-prop">Accelerate DevEx Book Club</div>
     <h1 class="hero-headline" id="building-high-performing-tech-organizations">Building High Performing Technology Organizations</h1>
     <div class="site-title">
       <h3 id="accelerate-devex-book-club">Transform your tech organization in 2 months</h3>
