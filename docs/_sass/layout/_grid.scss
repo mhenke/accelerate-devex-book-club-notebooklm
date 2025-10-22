@@ -18,11 +18,11 @@
 }
 
 .container--narrow {
-  max-width: 800px;
+  max-width: var(--text-max-width);
 }
 
 .container--wide {
-  max-width: 1400px;
+  max-width: var(--content-max-width);
 }
 
 // Grid system

@@ -517,7 +517,7 @@
     // When only 2 items (like metrics comparison), center them
     &:has(.chapter-item:nth-child(2):last-child) {
       grid-template-columns: repeat(2, 1fr);
-      max-width: 800px;
+      max-width: var(--text-max-width);
       margin-left: auto;
       margin-right: auto;
     }
@@ -1374,7 +1374,7 @@
     .pitfalls-intro {
       font-size: var(--font-size-h6);
       color: #666;
-      max-width: 800px;
+      max-width: var(--text-max-width);
       margin: 0 auto;
       line-height: var(--line-height-relaxed);
     }
@@ -1772,7 +1772,7 @@
 
 // Causal Chain Container - Used within section-card
 .causal-chain-container {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: 0 auto;
 }
 
@@ -2032,7 +2032,7 @@
 
 // ASSESSMENT SECTION - Sketch container and child elements
 .sketch-container {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: 0 auto;
 }
 
@@ -2275,7 +2275,7 @@
   .key-question-wrapper {
     position: relative;
     z-index: 1;
-    max-width: 1000px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
   }
 
@@ -2344,7 +2344,7 @@
     color: var(--text-on-dark-high);
     font-size: var(--font-size-body);
     line-height: var(--line-height-relaxed);
-    max-width: 900px;
+    max-width: var(--content-max-width);
     margin: var(--space-md) auto 0;
     text-align: center;
   }
