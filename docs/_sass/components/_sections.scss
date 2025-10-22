@@ -194,10 +194,14 @@
     }
 
     .action-item {
-      background: #fafafa;
+      background: var(--text-white);
       border: 1px solid var(--border-medium);
-      border-radius: var(--radius-md);
       padding: var(--space-sm);
+
+      // Zebra striping - shade every other row
+      &:nth-child(even) {
+        background: #fafafa;
+      }
 
       // No hover effect for action items - they're static checklist items
     }
