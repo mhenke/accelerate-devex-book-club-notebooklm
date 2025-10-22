@@ -470,7 +470,7 @@ document.addEventListener('keydown', function(event) {
       <div class="callout-content">
         <h3>🏦 ING Case Study: Real-World Transformation</h3>
         <p>How a global financial institution transformed through learning and leadership. ING proves large, complex, regulated organizations CAN transform by having leaders become a learning team and patiently executing over years.</p>
-        <p><strong>Case Study Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/handouts/ing-case-study.html" class="resource-link"><strong>Learn from ING's Journey</strong></a></p>
+        <p><strong>Case Study Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/handouts/ing-case-study.md" class="resource-link"><strong>Learn from ING's Journey</strong></a></p>
       </div>
     </div>
 
@@ -481,7 +481,7 @@ document.addEventListener('keydown', function(event) {
       <div class="callout-content">
         <h3>🚀 The Path Forward: Make It Your Own</h3>
         <p>Transformation principles for sustained success. The 24 capabilities are guides, not checklists. Learn the four principles: learn how to learn, go deep before wide, practice patience and discipline, and embrace evidence-based experimentation.</p>
-        <p><strong>Transformation Guide:</strong> <a href="/accelerate-devex-book-club-notebooklm/resources/meetings/meeting-4/handouts/transformation-principles.html" class="resource-link"><strong>Your Transformation Journey</strong></a></p>
+        <p><strong>Transformation Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/handouts/transformation-principles.md" class="resource-link"><strong>Your Transformation Journey</strong></a></p>
       </div>
     </div>
   </div>
