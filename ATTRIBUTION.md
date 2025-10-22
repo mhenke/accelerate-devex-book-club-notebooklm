@@ -27,6 +27,30 @@
 - Meeting templates and organizational tools
 - Repository structure and documentation
 
+### Claude Code (Anthropic)
+
+- Code development and site implementation
+- Jekyll site structure and styling
+- Repository automation and tooling
+
+### Napkin AI
+
+- Visual content creation
+- Diagram generation
+- Infographic design
+
+### Gamma
+
+- Presentation and slide deck creation
+- Visual storytelling content
+- Interactive learning materials
+
+### GitHub Copilot
+
+- Code assistance and development
+- Documentation support
+- Automation scripts
+
 ### Human Curation and Direction
 
 - Strategic guidance and content direction

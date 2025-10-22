@@ -5,7 +5,6 @@ title: Meetings
 
 <div class="hero-banner" markdown="0">
 <div class="hero-content">
-<div class="hero-value-prop">Accelerate DevEx Book Club</div>
 <h1 class="hero-headline">Meeting Schedule</h1>
 <p class="hero-subtitle">4 focused sessions over 2 months • Biweekly Wednesdays 12-1 PM • Oct 22 - Dec 17</p>
 </div>
@@ -265,7 +264,7 @@ title: Meetings
 </div>
 <div class="ai-attribution__content">
 <h4 class="ai-attribution__title">AI-Generated Content</h4>
-<p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
+<p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, <strong><a href="https://gamma.app/" target="_blank" rel="noopener noreferrer">Gamma</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
 </div>
 </footer>
 
