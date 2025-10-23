@@ -158,8 +158,8 @@ title: Resources
   <div class="resource-callout">
     <h3><i class="fas fa-tasks" aria-hidden="true"></i> 24 Capabilities Assessment</h3>
     <p>Interactive self-assessment across all 24 capabilities with automatic scoring and performance level tracking. Evaluate CD practices, architecture, product development, lean management, and culture.</p>
-    <p><a href="/accelerate-devex-book-club-notebooklm/assessment" class="resource-link btn btn--primary-action" style="display: inline-block; margin-top: 0.5rem;">Take Interactive Assessment →</a></p>
-    <p style="margin-top: 0.5rem; font-size: 0.85rem;"><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/24-capabilities-assessment.md" class="resource-link">View printable version →</a></p>
+    <p><a href="/accelerate-devex-book-club-notebooklm/assessment" class="btn btn--primary-action">Take Interactive Assessment →</a></p>
+    <p class="text-sm"><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/24-capabilities-assessment.md" class="resource-link">View printable version →</a></p>
   </div>
 
   <div class="resource-callout">
