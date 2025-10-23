@@ -465,8 +465,8 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="resource-callout-grid">
-    <div class="resource-callout warning-style">
-      <h3><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Before You Measure: Culture Must Come First</h3>
+    <div class="resource-callout">
+      <h3><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Culture Must Come First</h3>
       <p>The single most common mistake in DevOps transformation is jumping straight to metrics without building a healthy culture foundation. Without trust, measurement becomes surveillance rather than improvement.</p>
       <p><strong>Required Reading:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-before-metrics.md" class="resource-link"><strong>Culture Before Metrics</strong></a></p>
     </div>
