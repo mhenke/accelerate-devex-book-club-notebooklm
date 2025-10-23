@@ -44,9 +44,6 @@ module.exports = {
   },
   keyframes: true,
   fontFace: true,
-  variables: true,
-  // Don't remove these important selectors
-  rejected: true,
-  rejectedCss: true
+  variables: true
 };
 
