@@ -6,14 +6,16 @@ This directory contains all supporting materials for the Accelerate DevEx Book C
 
 **New to facilitating?** Follow this path:
 
-1. Read [**book-club-roadmap.md**](book-club-roadmap.md) - Overall 2-month plan and structure
-2. Review [**key-questions.md**](key-questions.md) - Core framing questions for each meeting
-3. Check [**handouts/**](handouts/) - Print attendee materials 2-3 days before each meeting
-4. Use [**meetings/meeting-X/**](meetings/) - Complete facilitator guides for each session
-5. Generate NotebookLM content from each meeting's `notebooklm/` folder - AI-generated podcasts/videos
+1. **Get oriented:** Read [**book-club-roadmap.md**](book-club-roadmap.md) (5 min) - High-level overview
+2. **Understand program:** Read [**book-club-plan.md**](book-club-plan.md) (15 min) - Detailed 2-month structure with facilitation guidance
+3. **Know core questions:** Review [**key-questions.md**](key-questions.md) - Framing questions for each meeting
+4. **Prepare materials:** Check [**handouts/**](handouts/) - Print attendee materials 2-3 days before each meeting
+5. **Facilitate meetings:** Use [**meetings/meeting-X/**](meetings/) - Complete facilitator guides for each session
+6. **Create AI content:** Generate NotebookLM content from each meeting's `notebooklm/` folder - Podcasts/videos for prep
 
 **Quick prep checklist:**
-- ✅ Print [handouts](handouts/) for participants
+- ✅ Read [book-club-plan.md](book-club-plan.md) for program structure and facilitation guidance
+- ✅ Print [handouts](handouts/) for participants (2-3 days before each meeting)
 - ✅ Review [meeting outline](meetings/) and [leader cheatsheet](meetings/meeting-1/leader-cheatsheet.md)
 - ✅ Complete [baseline assessments](assessments/) before Meeting 1
 - ✅ Generate NotebookLM podcast from meeting's `notebooklm/` folder for pre-meeting prep (optional)
@@ -24,16 +26,48 @@ This directory contains all supporting materials for the Accelerate DevEx Book C
 
 ### 📋 Core Planning Documents
 
-**[book-club-roadmap.md](book-club-roadmap.md)**
-- Complete 2-month plan with meeting schedule (Weeks 1, 3, 5, 7)
-- Success metrics and discussion best practices
+**[book-club-roadmap.md](book-club-roadmap.md)** - Quick Reference (5 min read)
+- High-level 2-month meeting schedule overview (Weeks 1, 3, 5, 7)
+- Key focus, insights, and action items for each meeting
 - Between-meeting activities and post-book club extensions
-- **Start here** for overall understanding
+- Success metrics summary
+- Quick links to resources
+- **Best for:** Quick lookup, orientation, getting a bird's-eye view
+
+**[book-club-plan.md](book-club-plan.md)** - Comprehensive Program Guide (20 min read)
+- Complete 2-month program structure with detailed timelines
+- Success metrics and expected outcomes for each meeting
+- Meeting preparation requirements and between-session activities
+- Facilitation guidelines (psychological safety, action planning, inclusive participation)
+- Sample weekly timeline and continuation plans (3-6 months)
+- Key program principles and skill development progression
+- **Best for:** Detailed planning, facilitator preparation, understanding the full program flow
 
 **[key-questions.md](key-questions.md)**
 - Overall framing question connecting all 4 meetings
 - Meeting-specific core questions with anchor links for easy referencing
 - Use these to guide discussions and keep meetings focused
+
+---
+
+### 📚 Book Club Context & Reference Documents
+
+**[accelerate-book-overview.md](accelerate-book-overview.md)** - Understanding the Book
+- Complete book overview including structure and chapters
+- Author credentials and backgrounds (Forsgren, Humble, Kim)
+- Research methodology, findings, and key concepts
+- Why the book matters for different organizational roles
+- Expected learning outcomes
+- **Best for:** Understanding the book's foundation and author credibility for participants and facilitators
+
+**[meeting-format-learning-objectives.md](meeting-format-learning-objectives.md)** - Program Format & Outcomes
+- Standard 1-hour meeting agenda structure (5-15-30-10-5 minute breakdown)
+- Learning objectives for each meeting (0-4)
+- Skill development progression across 8 weeks
+- Learning pathways for different roles (Technical/Management/Leadership)
+- Assessment and measurement approach
+- Facilitator and participant guidance
+- **Best for:** Understanding meeting structure, learning outcomes, and participant expectations
 
 ---
 
@@ -136,13 +170,17 @@ Templates for capturing meeting outcomes and reflections:
 
 ### Before Book Club Begins (Week 0)
 
-1. **Review overall plan:**
-   - Read [book-club-roadmap.md](book-club-roadmap.md)
-   - Review [key-questions.md](key-questions.md)
+1. **Get oriented to the program:**
+   - **Quick overview (5 min):** Read [book-club-roadmap.md](book-club-roadmap.md)
+   - **Deep dive (20 min):** Read [book-club-plan.md](book-club-plan.md) for facilitation approach
+   - **Context (10 min):** Review [accelerate-book-overview.md](accelerate-book-overview.md)
+   - **Program format (10 min):** Review [meeting-format-learning-objectives.md](meeting-format-learning-objectives.md)
+   - **Core questions:** Review [key-questions.md](key-questions.md)
 
 2. **Complete baseline assessments:**
    - [24 Capabilities Assessment](assessments/24-capabilities-assessment.md)
    - [DORA Metrics Template](assessments/dora-metrics-template.md) - establish baseline
+   - [Culture Assessment Worksheet](assessments/culture-assessment-worksheet.md)
 
 3. **Prepare Meeting 1 materials:**
    - Print [Meeting 1 handouts](handouts/meeting-1/)
@@ -189,9 +227,10 @@ Templates for capturing meeting outcomes and reflections:
 
 ## Resource Cross-Reference
 
-| Need | Resource | Location |
-|------|----------|----------|
-| Overall book club plan | Book Club Roadmap | [book-club-roadmap.md](book-club-roadmap.md) |
+| Overall quick reference | Book Club Roadmap | [book-club-roadmap.md](book-club-roadmap.md) |
+| Detailed program guide | Book Club Plan | [book-club-plan.md](book-club-plan.md) |
+| Book foundation & authors | Accelerate Book Overview | [accelerate-book-overview.md](accelerate-book-overview.md) |
+| Meeting structure & outcomes | Meeting Format & Learning Objectives | [meeting-format-learning-objectives.md](meeting-format-learning-objectives.md) |
 | Core framing questions | Key Questions | [key-questions.md](key-questions.md) |
 | Meeting facilitation guide | Meeting Outlines | [meetings/](meetings/) |
 | Quick facilitator reference | Leader Cheatsheets | [meetings/meeting-X/leader-cheatsheet.md](meetings/meeting-1/leader-cheatsheet.md) |
