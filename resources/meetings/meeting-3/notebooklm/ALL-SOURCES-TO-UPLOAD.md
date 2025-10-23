@@ -10,14 +10,19 @@ Before generating any podcast or video, upload these sources to your NotebookLM 
    - Chapter 9: Making Work Sustainable
    - Chapter 10: Employee Satisfaction, Identity, and Engagement
 
+2. **Book Club Context** (helpful for AI understanding)
+   - **[Book Club Plan](../../../book-club-plan.md)** - Complete 2-month program structure
+   - **[Book Club Schedule](../../../book-club-schedule.md)** - Meeting dates, times, and reading sequence
+   - **[Accelerate Book Overview](../../../accelerate-book-overview.md)** - Research foundation and key concepts
+
 ## Optional But Recommended Sources
 
-2. **[Meeting 3 Chapter Notes](../../meetings/meeting-3/chapter-notes.md)**
+3. **[Meeting 3 Chapter Notes](../../meeting-3/chapter-notes.md)**
    - Detailed summaries of key concepts
    - Research findings and statistics
    - Provides additional context for AI generation
 
-3. **Your Team's Context** (if applicable)
+4. **Your Team's Context** (if applicable)
    - WIP limits observations
    - Deployment pain documentation
    - Burnout assessment data

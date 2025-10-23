@@ -5,26 +5,26 @@ Before generating any podcast or video, upload these sources to your NotebookLM 
 ## Required Sources
 
 1. **Book Club Overview Materials**
-   - Book club plan and schedule
-   - Meeting format explanation
-   - Learning objectives overview
+   - **[Book Club Plan](../../../book-club-plan.md)** - Complete 2-month program structure and success metrics
+   - **[Book Club Schedule](../../../book-club-schedule.md)** - Detailed meeting dates, times, reading assignments, and timeline
+   - **[Meeting Format & Learning Objectives](../../../meeting-format-learning-objectives.md)** - Meeting structure, agenda, and learning outcomes
 
 2. **"Accelerate" Book Introduction**
-   - Book overview and structure
-   - Authors' credentials (Forsgren, Humble, Kim)
-   - Research foundation overview
+   - **[Accelerate Book Overview](../../../accelerate-book-overview.md)** - Book structure, research foundation, key concepts, and author credentials
+   - [The three authors' backgrounds and expertise]
+   - [Research foundation and methodology]
 
 ## Optional But Recommended Sources
 
 3. **[Book Club Roadmap](../../../book-club-roadmap.md)**
-   - Complete 2-month journey structure
+   - Quick reference overview of 2-month journey
    - Four meeting schedule (Weeks 1, 3, 5, 7)
    - Chapter mappings and learning objectives
 
 4. **Your Team's Context** (if applicable)
-   - Current team pain points
-   - Existing metrics or processes
-   - Initial questions about DevOps transformation
+   - Book club plan and schedule
+   - Meeting format explanation
+   - Learning objectives overview
 
 ---
 

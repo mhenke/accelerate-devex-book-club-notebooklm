@@ -9,14 +9,19 @@ Before generating any podcast or video, upload these sources to your NotebookLM 
    - Chapter 16: High-Performance Leadership and Management (ING Netherlands case study)
    - Conclusion: The Path Forward
 
+2. **Book Club Context** (helpful for AI understanding)
+   - **[Book Club Plan](../../../book-club-plan.md)** - Complete 2-month program structure
+   - **[Book Club Schedule](../../../book-club-schedule.md)** - Meeting dates, times, and reading sequence
+   - **[Accelerate Book Overview](../../../accelerate-book-overview.md)** - Research foundation and key concepts
+
 ## Optional But Recommended Sources
 
-2. **[Meeting 4 Chapter Notes](../../meetings/meeting-4/chapter-notes.md)**
+3. **[Meeting 4 Chapter Notes](../../meeting-4/chapter-notes.md)**
    - Detailed summaries of key concepts
    - Research findings and statistics
    - Provides additional context for AI generation
 
-3. **Your Team's Context** (if applicable)
+4. **Your Team's Context** (if applicable)
    - Complete DORA metrics trends from Weeks 1-7
    - All practice experiments and results from Meetings 1-3
    - Transformation successes and challenges observed

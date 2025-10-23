@@ -9,15 +9,22 @@ Before generating any podcast or video, upload these sources to your NotebookLM 
    - Chapter 2: Measuring Performance
    - Chapter 3: Measuring and Changing Culture
 
+2. **Book Club Context** (helpful for AI understanding)
+   - **[Book Club Plan](../../../book-club-plan.md)** - Complete 2-month program structure
+   - **[Book Club Schedule](../../../book-club-schedule.md)** - Meeting dates, times, and reading sequence
+   - **[Accelerate Book Overview](../../../accelerate-book-overview.md)** - Research foundation and key concepts
+
 ## Optional But Recommended Sources
 
-2. **[Meeting 1 Chapter Notes](../../meetings/meeting-1/chapter-notes.md)**
+3. **[Meeting 1 Chapter Notes](../../meeting-1/chapter-notes.md)**
    - Detailed summaries of key concepts
    - Research findings and statistics
    - Provides additional context for AI generation
 
-3. **Your Team's Context** (if applicable)
+4. **Your Team's Context** (if applicable)
    - Current DORA metrics baseline (if measured)
+   - Deployment pain points documented
+   - Culture assessment observations
    - Deployment pain points documented
    - Culture assessment observations
 
