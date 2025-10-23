@@ -237,7 +237,7 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 ## 📚 References & Links
 
-- [Updated Book Club Plan](resources/plan/plan.md) - Corrected chapter mappings and learning objectives
+- [Book Club Roadmap](resources/book-club-roadmap.md) - Corrected chapter mappings and learning objectives
 - [Interactive Site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/)
 - [Meeting Pages](docs/_meetings/) - Four interactive meeting pages
 - [NotebookLM Prompts](resources/plan/) - AI generation prompts for audio and video
