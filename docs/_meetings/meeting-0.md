@@ -521,7 +521,8 @@ document.addEventListener('keydown', function(event) {
     <div class="resource-callout">
       <h3><i class="fas fa-clipboard-check" aria-hidden="true"></i> 24 Capabilities Assessment</h3>
       <p>Before starting your journey, complete this self-assessment to understand your team's current state across all 24 capabilities. This baseline will help you track progress and identify high-impact improvement opportunities.</p>
-      <p><strong>Pre-Work Assessment:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/24-capabilities-assessment.md" class="resource-link" target="_blank"><strong>Complete Self-Assessment</strong></a></p>
+      <p><strong>Pre-Work Assessment:</strong> <a href="/accelerate-devex-book-club-notebooklm/assessment" class="resource-link btn btn--primary-action" style="display: inline-block; margin-top: 0.5rem;"><strong>Take Interactive Assessment</strong></a></p>
+      <p style="margin-top: 0.5rem; font-size: 0.85rem;"><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/24-capabilities-assessment.md" class="resource-link" target="_blank">View printable version →</a></p>
     </div>
 
     <div class="resource-callout">
