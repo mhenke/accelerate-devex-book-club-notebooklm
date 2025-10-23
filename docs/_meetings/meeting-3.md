@@ -486,7 +486,7 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-chart-line" aria-hidden="true"></i>
       </div>
       <div class="callout-content">
-        <h3>📊 Lean Management Practices</h3>
+        <h3>Lean Management Practices</h3>
         <p>How lean principles enable flow, reduce waste, and improve performance. Learn the four key practices: limit WIP, visualize work, monitor for business decisions, and use lightweight approval to optimize flow over utilization.</p>
         <p><strong>Management Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/lean-management-practices.md" class="resource-link"><strong>Optimizing for Flow</strong></a></p>
       </div>
@@ -497,7 +497,7 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-fire" aria-hidden="true"></i>
       </div>
       <div class="callout-content">
-        <h3>🔥 Deployment Pain: The Burnout Predictor</h3>
+        <h3>Deployment Pain: The Burnout Predictor</h3>
         <p>Deployment pain is the strongest predictor of burnout. Learn how manual, error-prone deployment processes create sustained anxiety and how technical practices eliminate pain at its source—not by treating symptoms.</p>
         <p><strong>Burnout Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/deployment-pain-burnout.md" class="resource-link"><strong>Preventing Burnout</strong></a></p>
       </div>
@@ -508,7 +508,7 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-users" aria-hidden="true"></i>
       </div>
       <div class="callout-content">
-        <h3>👥 Employee Satisfaction: The Four Pillars</h3>
+        <h3>Employee Satisfaction: The Four Pillars</h3>
         <p>High performers are 2.2× more likely to recommend their organization. Discover the four pillars of satisfaction—meaningful work, learning & growth, team support, and right tools—and how high-performance practices create them.</p>
         <p><strong>Satisfaction Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/employee-satisfaction.md" class="resource-link"><strong>Building Engagement</strong></a></p>
       </div>

@@ -467,7 +467,7 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
       </div>
       <div class="callout-content">
-        <h3>🏗️ Architecture: The Key to Team Independence</h3>
+        <h3>Architecture: The Key to Team Independence</h3>
         <p>Conway's Law in action: team structure drives system architecture. Learn how loosely coupled architecture enables teams to deploy independently, test effectively, and choose their own tools—the foundation for continuous delivery.</p>
         <p><strong>Architecture Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-2/handouts/architecture-team-independence.md" class="resource-link"><strong>Building for Independence</strong></a></p>
       </div>
@@ -478,7 +478,7 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-shield-alt" aria-hidden="true"></i>
       </div>
       <div class="callout-content">
-        <h3>🔒 Security: Shift Left for Speed + Safety</h3>
+        <h3>Security: Shift Left for Speed + Safety</h3>
         <p>Security and speed are NOT in conflict. Shifting security left—integrating it throughout development—creates both better security AND faster delivery. Learn the four practices that enable 50% faster remediation with better security posture.</p>
         <p><strong>Security Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-2/handouts/security-shift-left.md" class="resource-link"><strong>Building Security In</strong></a></p>
       </div>
