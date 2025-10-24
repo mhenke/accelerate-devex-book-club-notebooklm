@@ -29,6 +29,15 @@ feed:
 markdown: kramdown
 highlighter: rouge
 
+# Sass/SCSS settings
+sass:
+  # Silence @import deprecation warnings (Dart Sass 1.80.0+)
+  # @import will be removed in Dart Sass 3.0.0 (2+ years away)
+  # Migration to @use/@forward requires significant refactoring of placeholders and module structure
+  # See: https://sass-lang.com/d/import
+  silence_deprecations:
+    - import
+
 # Kramdown options
 kramdown:
   input: GFM
