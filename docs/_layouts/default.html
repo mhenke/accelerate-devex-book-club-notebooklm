@@ -148,7 +148,20 @@
           </a>
         </div>
 
-        <nav class="site-nav-main">
+        <!-- Hamburger Menu Button (Mobile) -->
+        <button
+          class="hamburger-menu"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="site-nav-main site-nav-desktop">
           <a
             href="{{ '/resources' | relative_url }}"
             class="nav-item{% if page.url contains '/resources' %} active{% endif %}"
@@ -171,11 +184,38 @@
           </a>
         </nav>
       </div>
+
+      <!-- Mobile Navigation Menu -->
+      <nav class="site-nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
+        <a
+          href="{{ '/resources' | relative_url }}"
+          class="nav-item-mobile{% if page.url contains '/resources' %} active{% endif %}"
+        >
+          <i class="fas fa-book-open"></i> Resources
+        </a>
+        <a
+          href="{{ '/meetings' | relative_url }}"
+          class="nav-item-mobile{% if page.url contains '/meetings' %} active{% endif %}"
+        >
+          <i class="fas fa-calendar"></i> Meetings
+        </a>
+        <a
+          href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm"
+          target="_blank"
+          rel="noopener"
+          class="nav-item-mobile external"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </nav>
     </header>
     {%- endunless -%}
 
     <main id="main-content" class="page-content" aria-label="Main content area">
       {{ content }}
     </main>
+
+    <!-- Mobile Menu JavaScript -->
+    <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}" defer></script>
   </body>
 </html>
