@@ -199,7 +199,7 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/accelerate-mastery-deep-dive.m4a"
                data-title="Accelerate Mastery"
-               data-duration="18:30"
+               data-duration="11:38"
                data-type="deep-dive">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Accelerate Mastery">
@@ -211,7 +211,7 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-headline">
                 Accelerate Mastery
                 <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">18:30</span>
+                <span class="podcast-duration">11:38</span>
               </div>
               <div class="podcast-subtitle">The Data-Driven Blueprint Proving Speed and Stability</div>
             </div>
