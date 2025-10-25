@@ -533,13 +533,8 @@ document.addEventListener('keydown', function(event) {
       </div>
 
       <div class="deployment-signal">
-        <h4>ING Practices Adaptation</h4>
-        <p>Which practices from the ING case study could work in your context? What would need adaptation? What's your organization's appetite for the discipline and patience required?</p>
-      </div>
-
-      <div class="deployment-signal">
-        <h4>Investment in Learning</h4>
-        <p>How does your organization currently invest in developing team capabilities? What support do leaders provide for training, conference attendance, hack days, or experimentation time?</p>
+        <h4>Learning & ING Case Study Adaptation</h4>
+        <p>How does your organization invest in developing team capabilities? Which practices from the ING case study could work in your context? What would need adaptation?</p>
       </div>
 
       <div class="deployment-signal">
