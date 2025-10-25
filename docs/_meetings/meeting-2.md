@@ -558,7 +558,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Identify one manual process to automate (testing, deployment, or configuration)</span>
+        <span class="task-title">Identify one manual process to automate or one key dependency blocking independent deployment</span>
       </div>
     </div>
 
@@ -567,7 +567,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Document one key dependency that prevents independent deployment</span>
+        <span class="task-title">Calculate your team's "blast radius"—how many teams are affected by your changes?</span>
       </div>
     </div>
 
@@ -576,16 +576,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Calculate your team's "blast radius"—how many other teams are affected by your changes?</span>
-      </div>
-    </div>
-
-    <div class="action-item">
-      <div class="task-row">
-        <div class="task-checkbox">
-          <i class="far fa-square"></i>
-        </div>
-        <span class="task-title">Experiment with Claude Code: Use it to refactor a function or write unit tests for existing code</span>
+        <span class="task-title">Experiment with Claude Code: Use it to refactor a function or write unit tests</span>
       </div>
     </div>
 
