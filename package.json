@@ -53,5 +53,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 11"
-  ]
+  ],
+  "dependencies": {
+    "get-media-duration": "^1.0.1",
+    "music-metadata": "^11.9.0"
+  }
 }

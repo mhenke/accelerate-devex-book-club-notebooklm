@@ -214,7 +214,7 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_s_Data_Secrets__The_4_DORA_Metrics_That_Kill_the_Spe.m4a"
                data-title="Accelerate's Data Secrets: The 4 DORA Metrics"
-               data-duration="2:48"
+               data-duration="1:31"
                data-type="brief">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Accelerate's Data Secrets: The 4 DORA Metrics">
@@ -226,7 +226,7 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-headline">
                 Accelerate's Data Secrets: The 4 DORA Metrics
                 <span class="podcast-type brief">Brief</span>
-                <span class="podcast-duration">2:48</span>
+                <span class="podcast-duration">1:31</span>
               </div>
               <div class="podcast-subtitle">The Key Metrics That Kill the Speed vs. Stability Myth</div>
             </div>
@@ -245,7 +245,7 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_Under_the_Microscope__Critiquing_DORA_Metrics,_Surve.m4a"
                data-title="Accelerate Under the Microscope"
-               data-duration="19:12"
+               data-duration="10:19"
                data-type="critique">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Accelerate Under the Microscope">
@@ -257,7 +257,7 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-headline">
                 Accelerate Under the Microscope
                 <span class="podcast-type critique">Critique</span>
-                <span class="podcast-duration">19:12</span>
+                <span class="podcast-duration">10:19</span>
               </div>
               <div class="podcast-subtitle">Critiquing DORA Metrics, Survey Methods, and Cultural Assumptions</div>
             </div>
@@ -293,7 +293,7 @@ document.addEventListener('keydown', function(event) {
                   <div class="now-playing-title" id="now-playing-title">Accelerate's Data Secrets: The 4 DORA Metrics</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 2:48</div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 1:31</div>
             </div>
             <audio id="shared-player" controls>
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_s_Data_Secrets__The_4_DORA_Metrics_That_Kill_the_Spe.m4a" type="audio/mp4" id="shared-player-source">
