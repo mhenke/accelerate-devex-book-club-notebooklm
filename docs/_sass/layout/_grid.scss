@@ -264,8 +264,7 @@
 // Pattern: 3→2→1 responsive with tighter spacing
 .resource-grid {
   display: grid;
-
-  // 16px for compact layout
+  gap: var(--space-lg); // 24px for better vertical spacing on mobile (stacked items)
   grid-template-columns: 1fr; // Mobile: 1 column
 
   @include mobile-up {

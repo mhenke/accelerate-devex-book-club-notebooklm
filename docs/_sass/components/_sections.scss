@@ -12,9 +12,9 @@
   );
   border: 2px solid rgba(148, 163, 184, 0.3);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg); // 24px vertical + horizontal
-  margin: var(--space-lg) var(--space-lg); // Add horizontal margin for spacing from container edges
-  width: calc(100% - var(--space-2xl)); // Account for horizontal margins
+  padding: var(--space-lg) var(--space-md); // 24px vertical, 16px horizontal (reduced from 24px)
+  margin: var(--space-lg) var(--space-md); // 16px horizontal margin (reduced from 24px)
+  width: calc(100% - var(--space-xl)); // Account for reduced horizontal margins (32px total)
   max-width: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
@@ -1774,7 +1774,6 @@
 
 // Causal Chain Container - Used within section-card
 .causal-chain-container {
-  
   margin: 0 auto;
 }
 
@@ -2034,7 +2033,6 @@
 
 // ASSESSMENT SECTION - Sketch container and child elements
 .sketch-container {
-  
   margin: 0 auto;
 }
 
@@ -2277,7 +2275,6 @@
   .key-question-wrapper {
     position: relative;
     z-index: 1;
-    
     margin: 0 auto;
   }
 
@@ -2346,7 +2343,6 @@
     color: var(--text-on-dark-high);
     font-size: var(--font-size-body);
     line-height: var(--line-height-relaxed);
-    
     margin: var(--space-md) auto 0;
     text-align: center;
   }
