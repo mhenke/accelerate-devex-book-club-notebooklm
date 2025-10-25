@@ -93,6 +93,11 @@ accelerate-devex-book-club-notebooklm/
 - **Four structured meetings** with corrected chapter mappings aligned to book content
 - **Interactive learning checkpoints** with radio buttons and research-backed feedback
 - **Visual concept sections**: DORA metrics, Westrum culture types, CD principles, lean practices
+- **AI Tool Spotlights**: Hands-on demonstrations of tools powering this book club
+  - Meeting 1: NotebookLM (audio generation)
+  - Meeting 2: Claude Code (development & documentation)
+  - Meeting 3: Gamma (presentation creation)
+  - Meeting 4: GitHub Copilot (AI pair programming)
 - **AI-generated content prompts** for NotebookLM podcasts and videos
 - **Comprehensive resources**: assessments, templates, activities, and discussion guides
 - **24 capabilities framework** integration for practical developer experience transformation

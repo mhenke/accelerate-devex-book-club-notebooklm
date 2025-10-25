@@ -491,6 +491,35 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- AI TOOL SPOTLIGHT -->
+<div class="section-card ai-spotlight" markdown="0">
+  <div class="spotlight-header">
+    <h2><i class="fas fa-robot" aria-hidden="true"></i> AI Tool Spotlight</h2>
+    <p class="spotlight-subtitle">Practical AI tools powering this book club</p>
+  </div>
+
+  <div class="spotlight-content">
+    <div class="tool-card">
+      <div class="tool-header">
+        <h3><i class="fab fa-github" aria-hidden="true"></i> GitHub Copilot</h3>
+        <span class="tool-badge">AI Pair Programming</span>
+      </div>
+
+      <div class="tool-description">
+        <p><strong>What it does:</strong> GitHub Copilot is Microsoft's AI coding assistant that provides real-time code suggestions, completions, and explanations directly in your editor (VS Code, JetBrains, Vim, etc.). Includes CLI for terminal commands and chat for technical questions.</p>
+
+        <p><strong>How we use it:</strong> Accelerate development by generating boilerplate code, writing tests, explaining complex functions, and suggesting best practices. The CLI helps with git operations, shell commands, and infrastructure tasks. Chat provides instant answers to technical questions without leaving your workflow.</p>
+
+        <p><strong>Key benefit:</strong> Reduces cognitive load and speeds up learning. Perfect embodiment of "investing in dev tooling" (Chapter 11) - the tool enables developers to focus on solving problems rather than syntax. Directly supports continuous learning and reduces time-to-productivity for new team members.</p>
+
+        <div class="tool-demo">
+          <p><i class="fas fa-external-link-alt"></i> <a href="https://github.com/features/copilot" target="_blank">Try GitHub Copilot</a> | <a href="https://githubnext.com/projects/copilot-cli" target="_blank">Copilot CLI</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- DISCUSSION QUESTIONS -->
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
@@ -572,6 +601,15 @@ document.addEventListener('keydown', function(event) {
           <i class="far fa-square"></i>
         </div>
         <span class="task-title">Next steps: Decide on next book or continue with annual State of DevOps Reports</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Experiment with GitHub Copilot: Use CLI for git operations or chat to explain complex code</span>
       </div>
     </div>
 
