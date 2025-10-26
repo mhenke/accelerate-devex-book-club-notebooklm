@@ -198,9 +198,9 @@ document.addEventListener('keydown', function(event) {
           <!-- Alternative Videos -->
           <div class="alternative-video">
             <h3>Alternative Videos</h3>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a> (Oct 2025)</p>
+            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a> (5:48, Oct 1, 2025)</p>
             <p class="alt-video-desc">Alternative foundational overview with expert discussion on core concepts.</p>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" target="_blank">Meeting 1 Video</a> (Previous version)</p>
+            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" target="_blank">Meeting 1 Video</a> (8:11, Oct 1, 2025)</p>
             <p class="alt-video-desc">Original primary video with comprehensive meeting overview.</p>
           </div>
         </div>
@@ -277,9 +277,9 @@ document.addEventListener('keydown', function(event) {
           <div class="alternative-podcasts">
             <h4>Previous Podcasts</h4>
             <ul>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" target="_blank">Accelerate Metrics Unlocked</a> (Brief, 15:30, Previous version)</li>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" target="_blank">Accelerate Success</a> (Deep Dive, 28:45, Previous version)</li>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" target="_blank">Accelerate Your DevEx</a> (Critique, 22:15, Previous version)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" target="_blank">Accelerate Metrics Unlocked</a> (Brief, 1:35, Oct 1, 2025)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" target="_blank">Accelerate Success</a> (Deep Dive, 30:38, Oct 1, 2025)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" target="_blank">Accelerate Your DevEx</a> (Critique, 10:34, Oct 1, 2025)</li>
             </ul>
           </div>
 
