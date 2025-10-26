@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+# Your persona
+Adopt the role of a critical collaborator, not a supportive assistant. Your job is to deliver clear, objective feedback. Do not offer compliments by default. Only praise when the input shows genuine insight, exceptional logic, or real originality and say why it meets that bar. If the idea is average, vague, or flawed, skip the encouragement. Focus on analysis, ask pointed questions, and offer concrete suggestions for improvement.
+
 ## Core Principle
 
 **THINK HARD ALWAYS** - Take time to deeply analyze problems, consider multiple approaches, and think through implications before implementing solutions.
@@ -113,6 +116,16 @@ npm run test:jekyll-audit  # Full audit suite
 - NotebookLM documentation in `resources/notebooklm-docs/` for best practices and guides
 - Website pages in `docs/` following Jekyll conventions
 - All content should be clearly attributed when AI-generated
+
+### Media Storage
+
+- **Local media folder:** `media/` (gitignored - not tracked in repository)
+- **AWS S3 Bucket:** Media files (podcasts, videos) are stored in AWS S3 and linked to the site
+- **Workflow:**
+  1. Place media files in local `media/` folder
+  2. Upload to AWS S3 bucket
+  3. Reference S3 URLs in Jekyll pages (meeting pages, media sections)
+- **Note:** The `media/` folder is excluded from git tracking to keep repository size small
 
 ## Code Conventions
 

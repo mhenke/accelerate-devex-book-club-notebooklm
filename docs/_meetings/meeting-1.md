@@ -189,17 +189,19 @@ document.addEventListener('keydown', function(event) {
         <div class="video-card">
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" type="video/mp4">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/The_Accelerate_Blueprint.mp4" type="video/mp4">
               <track kind="captions" src="{{ '/assets/captions/meeting-1-video.vtt' | relative_url }}" srclang="en" label="English" default>
               Your browser does not support the video tag.
             </video>
           </div>
 
-          <!-- Alternative Video -->
+          <!-- Alternative Videos -->
           <div class="alternative-video">
-            <h3>Alternative Video</h3>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a></p>
+            <h3>Alternative Videos</h3>
+            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a> (Oct 2025)</p>
             <p class="alt-video-desc">Alternative foundational overview with expert discussion on core concepts.</p>
+            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" target="_blank">Meeting 1 Video</a> (Previous version)</p>
+            <p class="alt-video-desc">Original primary video with comprehensive meeting overview.</p>
           </div>
         </div>
       </div>
@@ -210,23 +212,23 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Podcast Items (Compact List) -->
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4"
-               data-title="Accelerate Metrics Unlocked"
-               data-duration="15:30"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_s_Data_Secrets__The_4_DORA_Metrics_That_Kill_the_Spe.m4a"
+               data-title="Accelerate's Data Secrets: The 4 DORA Metrics"
+               data-duration="2:48"
                data-type="brief">
             <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Accelerate Metrics Unlocked">
+              <button type="button" class="play-btn" aria-label="Play Accelerate's Data Secrets: The 4 DORA Metrics">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Accelerate Metrics Unlocked
+                Accelerate's Data Secrets: The 4 DORA Metrics
                 <span class="podcast-type brief">Brief</span>
-                <span class="podcast-duration">15:30</span>
+                <span class="podcast-duration">2:48</span>
               </div>
-              <div class="podcast-subtitle">How Speed and Stability Drive 2x Business Performance</div>
+              <div class="podcast-subtitle">The Key Metrics That Kill the Speed vs. Stability Myth</div>
             </div>
 
             <div class="podcast-end">
@@ -241,54 +243,23 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4"
-               data-title="Accelerate Success"
-               data-duration="28:45"
-               data-type="deep-dive">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Accelerate Success">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                Accelerate Success
-                <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">28:45</span>
-              </div>
-              <div class="podcast-subtitle">The Data-Driven Proof That Destroys the CAB Model</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4"
-               data-title="Accelerate Your DevEx"
-               data-duration="22:15"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_Under_the_Microscope__Critiquing_DORA_Metrics,_Surve.m4a"
+               data-title="Accelerate Under the Microscope"
+               data-duration="19:12"
                data-type="critique">
             <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Accelerate Your DevEx">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Under the Microscope">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Accelerate Your DevEx
+                Accelerate Under the Microscope
                 <span class="podcast-type critique">Critique</span>
-                <span class="podcast-duration">22:15</span>
+                <span class="podcast-duration">19:12</span>
               </div>
-              <div class="podcast-subtitle">Why Culture Must Precede Metrics and Why Traditional DevOps Gets It Wrong</div>
+              <div class="podcast-subtitle">Critiquing DORA Metrics, Survey Methods, and Cultural Assumptions</div>
             </div>
 
             <div class="podcast-end">
@@ -300,6 +271,16 @@ document.addEventListener('keydown', function(event) {
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- Alternative Podcasts -->
+          <div class="alternative-podcasts">
+            <h4>Previous Podcasts</h4>
+            <ul>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" target="_blank">Accelerate Metrics Unlocked</a> (Brief, 15:30, Previous version)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" target="_blank">Accelerate Success</a> (Deep Dive, 28:45, Previous version)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" target="_blank">Accelerate Your DevEx</a> (Critique, 22:15, Previous version)</li>
+            </ul>
           </div>
 
           <!-- Shared Player at Bottom -->
@@ -309,13 +290,13 @@ document.addEventListener('keydown', function(event) {
                 <div class="playing-indicator-large"></div>
                 <div class="now-playing-text-wrapper">
                   <div class="now-playing-label">Now Playing</div>
-                  <div class="now-playing-title" id="now-playing-title">Accelerate Metrics Unlocked</div>
+                  <div class="now-playing-title" id="now-playing-title">Accelerate's Data Secrets: The 4 DORA Metrics</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 15:30</div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 2:48</div>
             </div>
             <audio id="shared-player" controls>
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" type="audio/mp4" id="shared-player-source">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_s_Data_Secrets__The_4_DORA_Metrics_That_Kill_the_Spe.m4a" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
           </div>
