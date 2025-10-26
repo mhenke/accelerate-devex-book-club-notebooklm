@@ -476,6 +476,35 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- AI TOOL SPOTLIGHT -->
+<div class="section-card ai-spotlight" markdown="0">
+  <div class="spotlight-header">
+    <h2><i class="fas fa-robot" aria-hidden="true"></i> AI Tool Spotlight</h2>
+    <p class="spotlight-subtitle">Practical AI tools powering this book club</p>
+  </div>
+
+  <div class="spotlight-content">
+    <div class="tool-card">
+      <div class="tool-header">
+        <h3><i class="fas fa-code" aria-hidden="true"></i> Claude Code</h3>
+        <span class="tool-badge">Development & Documentation</span>
+      </div>
+
+      <div class="tool-description">
+        <p><strong>What it does:</strong> Anthropic's Claude Code is an AI-powered coding assistant that helps build, test, and refactor code while maintaining context across your entire codebase.</p>
+
+        <p><strong>How we use it:</strong> This entire book club website (Jekyll, SCSS, JavaScript) was built with Claude Code. It handles complex refactoring, creates consistent documentation, generates meeting pages, and even commits changes to Git with proper messaging.</p>
+
+        <p><strong>Key benefit:</strong> Accelerates development velocity while maintaining quality. Perfect example of "acting your way to better culture" - the tool enables better practices (testing, documentation, consistent patterns) that would be tedious manually.</p>
+
+        <div class="tool-demo">
+          <p><i class="fas fa-external-link-alt"></i> <a href="https://claude.ai/code" target="_blank">Try Claude Code</a> | <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm" target="_blank">View this site's code</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- DISCUSSION QUESTIONS -->
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
@@ -548,6 +577,15 @@ document.addEventListener('keydown', function(event) {
           <i class="far fa-square"></i>
         </div>
         <span class="task-title">Calculate your team's "blast radius"—how many other teams are affected by your changes?</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Experiment with Claude Code: Use it to refactor a function or write unit tests for existing code</span>
       </div>
     </div>
 

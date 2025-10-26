@@ -63,6 +63,7 @@ A comprehensive, evidence-based learning program spanning 2 months with 4 biweek
 - DORA metrics baseline establishment
 - Culture assessment using Westrum model
 - Team discussion on current deployment pain points
+- **AI Tool Spotlight:** NotebookLM (audio generation for meeting content)
 
 **Preparation After Meeting 1:**
 - Read *Accelerate* Chapters 4-6
@@ -93,6 +94,7 @@ A comprehensive, evidence-based learning program spanning 2 months with 4 biweek
 - Identify automation opportunities
 - Experiment with one CD practice and measure results
 - Assess architecture coupling and team structure alignment
+- **AI Tool Spotlight:** Claude Code (development & documentation assistance)
 
 **Preparation After Meeting 2:**
 - Read *Accelerate* Chapters 7-10
@@ -124,6 +126,7 @@ A comprehensive, evidence-based learning program spanning 2 months with 4 biweek
 - Streamline change approval processes
 - Document burnout risk factors and mitigation strategies
 - Establish monitoring and feedback loops
+- **AI Tool Spotlight:** Gamma (presentation creation for visualizing transformation)
 
 **Preparation After Meeting 3:**
 - Read *Accelerate* Chapters 11, 16, and Conclusion
@@ -161,6 +164,7 @@ A comprehensive, evidence-based learning program spanning 2 months with 4 biweek
 - Create team transformation roadmaps (3-6 months)
 - Commit to ongoing measurement and improvement
 - Plan continuation beyond the book club
+- **AI Tool Spotlight:** GitHub Copilot (AI pair programming to accelerate development)
 
 **Post-Book Club Continuation:**
 - Monthly check-ins for 6 months

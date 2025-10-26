@@ -501,6 +501,35 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- AI TOOL SPOTLIGHT -->
+<div class="section-card ai-spotlight" markdown="0">
+  <div class="spotlight-header">
+    <h2><i class="fas fa-robot" aria-hidden="true"></i> AI Tool Spotlight</h2>
+    <p class="spotlight-subtitle">Practical AI tools powering this book club</p>
+  </div>
+
+  <div class="spotlight-content">
+    <div class="tool-card">
+      <div class="tool-header">
+        <h3><i class="fas fa-presentation" aria-hidden="true"></i> Gamma</h3>
+        <span class="tool-badge">Presentation Creation</span>
+      </div>
+
+      <div class="tool-description">
+        <p><strong>What it does:</strong> Gamma is an AI-powered presentation tool that generates beautiful, professional slide decks from simple text prompts or outlines. No design skills required.</p>
+
+        <p><strong>How we use it:</strong> Create visual summaries of book chapters, build training materials for team presentations, or generate executive summaries of DORA metrics. Turns meeting notes into shareable presentations in minutes.</p>
+
+        <p><strong>Key benefit:</strong> Reduces time spent on presentation design from hours to minutes. Perfect for visualizing work (Chapter 9's theme!) and communicating transformation progress to leadership. Embodies lean thinking - eliminate waste, deliver value faster.</p>
+
+        <div class="tool-demo">
+          <p><i class="fas fa-external-link-alt"></i> <a href="https://gamma.app/" target="_blank">Try Gamma</a> | <a href="https://gamma.app/docs/Welcome-to-Gamma-nqz1sw7ojz5r94c" target="_blank">View examples</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- DISCUSSION QUESTIONS -->
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
@@ -582,6 +611,15 @@ document.addEventListener('keydown', function(event) {
           <i class="far fa-square"></i>
         </div>
         <span class="task-title">Run an informal eNPS pulse check with your team</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Experiment with Gamma: Create a presentation summarizing your team's DORA metrics</span>
       </div>
     </div>
 

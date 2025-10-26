@@ -466,6 +466,35 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- AI TOOL SPOTLIGHT -->
+<div class="section-card ai-spotlight" markdown="0">
+  <div class="spotlight-header">
+    <h2><i class="fas fa-robot" aria-hidden="true"></i> AI Tool Spotlight</h2>
+    <p class="spotlight-subtitle">Practical AI tools powering this book club</p>
+  </div>
+
+  <div class="spotlight-content">
+    <div class="tool-card">
+      <div class="tool-header">
+        <h3><i class="fas fa-microphone-alt" aria-hidden="true"></i> NotebookLM</h3>
+        <span class="tool-badge">Meeting Audio Generation</span>
+      </div>
+
+      <div class="tool-description">
+        <p><strong>What it does:</strong> Google's NotebookLM transforms our source materials (book chapters, notes, articles) into engaging podcast-style audio discussions and video explainers.</p>
+
+        <p><strong>How we use it:</strong> All meeting podcasts and videos you hear are AI-generated from carefully crafted prompts. This allows us to create multiple perspectives (Brief, Deep Dive, Critique) on the same content, giving you flexible learning options.</p>
+
+        <p><strong>Key benefit:</strong> Consume content while commuting, exercising, or multitasking. The conversational format makes complex DevOps concepts more accessible.</p>
+
+        <div class="tool-demo">
+          <p><i class="fas fa-external-link-alt"></i> <a href="https://notebooklm.google.com/" target="_blank">Try NotebookLM</a> | <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-1/notebooklm" target="_blank">View our prompts</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- DISCUSSION QUESTIONS -->
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
@@ -529,6 +558,15 @@ document.addEventListener('keydown', function(event) {
           <i class="far fa-square"></i>
         </div>
         <span class="task-title">Write a one-line deployment pain summary</span>
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="task-row">
+        <div class="task-checkbox">
+          <i class="far fa-square"></i>
+        </div>
+        <span class="task-title">Experiment with NotebookLM: Upload a document and generate an audio overview</span>
       </div>
     </div>
 
