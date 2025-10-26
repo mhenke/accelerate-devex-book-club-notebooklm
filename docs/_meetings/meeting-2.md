@@ -191,7 +191,7 @@ document.addEventListener('keydown', function(event) {
         <div class="video-card">
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2-video.mp4" type="video/mp4">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/meeting-2-video.mp4" type="video/mp4">
               <track kind="captions" src="{{ '/assets/captions/meeting-2-video.vtt' | relative_url }}" srclang="en" label="English" default>
               Your browser does not support the video tag.
             </video>
@@ -199,9 +199,8 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Alternative Video -->
           <div class="alternative-video">
-            <h3>Alternative Video</h3>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/visual-cd-practices.mp4" target="_blank">Visual CD Practices Overview</a></p>
-            <p class="alt-video-desc">Eight CD practices with diagrams, architecture independence patterns, and shift-left security comparison.</p>
+            <h3>Alternative Videos</h3>
+            <p>More videos coming soon</p>
           </div>
         </div>
       </div>
@@ -212,40 +211,9 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Podcast Items (Compact List) -->
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/cd-practices-brief.mp4"
-               data-title="CD Practices Brief"
-               data-duration="8:15"
-               data-type="brief">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play CD Practices Brief">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                CD Practices Brief
-                <span class="podcast-type brief">Brief</span>
-                <span class="podcast-duration">8:15</span>
-              </div>
-              <div class="podcast-subtitle">Eight CD Practices & Loosely Coupled Architecture Essentials</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/technical-excellence-deep-dive.mp4"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/meeting-2-podcast.m4a"
                data-title="Technical Excellence Deep Dive"
-               data-duration="18:45"
+               data-duration="54:26"
                data-type="deep-dive">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Technical Excellence Deep Dive">
@@ -257,40 +225,9 @@ document.addEventListener('keydown', function(event) {
               <div class="podcast-headline">
                 Technical Excellence Deep Dive
                 <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">18:45</span>
+                <span class="podcast-duration">54:26</span>
               </div>
               <div class="podcast-subtitle">CD Principles, Architecture Independence & Shift-Left Security</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/cd-reality-check-critique.mp4"
-               data-title="CD Reality Check"
-               data-duration="19:30"
-               data-type="critique">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play CD Reality Check">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                CD Reality Check
-                <span class="podcast-type critique">Critique</span>
-                <span class="podcast-duration">19:30</span>
-              </div>
-              <div class="podcast-subtitle">Legacy Retrofits, Investment Reality & When CD Doesn't Apply</div>
             </div>
 
             <div class="podcast-end">
@@ -314,10 +251,10 @@ document.addEventListener('keydown', function(event) {
                   <div class="now-playing-title" id="now-playing-title">CD Practices Brief</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 8:15</div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 54:26</div>
             </div>
             <audio id="shared-player" controls>
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/cd-practices-brief.mp4" type="audio/mp4" id="shared-player-source">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/meeting-2-podcast.m4a" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
           </div>
