@@ -127,6 +127,37 @@ npm run test:jekyll-audit  # Full audit suite
   3. Reference S3 URLs in Jekyll pages (meeting pages, media sections)
 - **Note:** The `media/` folder is excluded from git tracking to keep repository size small
 
+### Extracting Media Durations
+
+To get accurate durations for media files (required for meeting pages):
+
+**Setup (one-time):**
+```bash
+npm install music-metadata
+```
+
+**Extract durations from local files:**
+```bash
+# Download media files from S3 to local media/ folder
+aws s3 cp s3://accelerate-devex-book-club-notebooklm/meeting-X-video.mp4 media/meeting-X/
+aws s3 cp s3://accelerate-devex-book-club-notebooklm/meeting-X-podcast.m4a media/meeting-X/
+
+# Run the extraction script
+node extract-durations.js
+```
+
+The `extract-durations.js` script uses the `music-metadata` NPM package to extract duration metadata from MP4, M4A, and MP3 files. It outputs durations in MM:SS format for all media files in the `media/` folder.
+
+**Current media durations (as of Oct 2025):**
+- **Meeting 0:** Video: 4:51, Podcast: 11:38
+- **Meeting 1:** Video: 7:33, Podcast (Brief): 1:31, Podcast (Critique): 10:19
+- **Meeting 2:** Video: 6:55, Podcast: 54:26
+- **Meeting 3:** Video: 6:35, Podcast: 46:23
+- **Meeting 4:** Video: 6:31, Podcast: 34:17
+
+**Why not use ffprobe/ffmpeg?**
+The `music-metadata` package is pure JavaScript and doesn't require ffmpeg/ffprobe binaries to be installed on the system, making it more portable across different environments.
+
 ## Code Conventions
 
 ### Visual Implementation Rules
