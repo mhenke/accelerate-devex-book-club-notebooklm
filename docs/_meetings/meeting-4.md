@@ -564,7 +564,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Individual commitment: Choose one specific capability from the 24 to implement</span>
+        <span class="task-title">Choose one capability to implement and identify small experiments to try over 2-4 weeks</span>
       </div>
     </div>
 
@@ -573,7 +573,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Team experiment: Identify small experiments to try over next 2-4 weeks</span>
+        <span class="task-title">Establish DORA metrics tracking and plan monthly check-ins for continued learning</span>
       </div>
     </div>
 
@@ -582,7 +582,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Measurement plan: Establish how to track progress on DORA metrics</span>
+        <span class="task-title">Decide on next book or continue with annual State of DevOps Reports</span>
       </div>
     </div>
 
@@ -591,25 +591,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Follow-up strategy: Plan monthly check-ins to share results and continued learning</span>
-      </div>
-    </div>
-
-    <div class="action-item">
-      <div class="task-row">
-        <div class="task-checkbox">
-          <i class="far fa-square"></i>
-        </div>
-        <span class="task-title">Next steps: Decide on next book or continue with annual State of DevOps Reports</span>
-      </div>
-    </div>
-
-    <div class="action-item">
-      <div class="task-row">
-        <div class="task-checkbox">
-          <i class="far fa-square"></i>
-        </div>
-        <span class="task-title">Experiment with GitHub Copilot: Use CLI for git operations or chat to explain complex code</span>
+        <span class="task-title">Experiment with GitHub Copilot: Use CLI for git operations or chat to explain code</span>
       </div>
     </div>
 

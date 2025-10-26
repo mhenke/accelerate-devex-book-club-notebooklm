@@ -583,7 +583,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Experiment with visualizing work using a simple kanban board</span>
+        <span class="task-title">Visualize work using a kanban board and identify one approval step to streamline</span>
       </div>
     </div>
 
@@ -592,25 +592,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Identify one change approval step that could be streamlined</span>
-      </div>
-    </div>
-
-    <div class="action-item">
-      <div class="task-row">
-        <div class="task-checkbox">
-          <i class="far fa-square"></i>
-        </div>
-        <span class="task-title">Observe and document burnout risk factors in your environment</span>
-      </div>
-    </div>
-
-    <div class="action-item">
-      <div class="task-row">
-        <div class="task-checkbox">
-          <i class="far fa-square"></i>
-        </div>
-        <span class="task-title">Run an informal eNPS pulse check with your team</span>
+        <span class="task-title">Observe burnout risk factors and run an informal eNPS pulse check with your team</span>
       </div>
     </div>
 
