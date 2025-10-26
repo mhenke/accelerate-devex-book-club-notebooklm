@@ -3,6 +3,7 @@ layout: meeting
 title: "Leadership & Transformation"
 subtitle: "Transformational Leadership and Real-World Case Studies"
 week: 7
+meeting: 4
 chapters: "11, 16, Conclusion"
 duration: "1 Hour"
 dora_color: "#8b5cf6" # $meeting-4-primary

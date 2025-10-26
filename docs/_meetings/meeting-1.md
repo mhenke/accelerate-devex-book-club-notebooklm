@@ -3,6 +3,7 @@ layout: meeting
 title: "Foundation"
 subtitle: "Laying the Foundation – The Myth and the Measurement"
 week: 1
+meeting: 1
 chapters: "1-3"
 duration: "1 Hour"
 dora_color: "#0969da" # $meeting-1-primary
