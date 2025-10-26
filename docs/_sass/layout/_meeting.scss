@@ -70,8 +70,7 @@
 
         &:hover {
           color: var(--text-white);
-          background: rgba(122, 218, 209, 0.2);
-          border-color: var(--border-teal-light);
+          border-color: rgba(255, 255, 255, 0.3);
         }
         
         &:focus {
@@ -96,6 +95,27 @@
         border-radius: var(--radius-md);
         border: var(--border-width-thin) solid var(--border-teal-light);
       }
+    }
+
+    // Meeting-specific hover colors for nav links
+    &[data-meeting="0"] .meeting-nav-link:hover {
+      background: rgba(0, 105, 218, 0.15);
+    }
+
+    &[data-meeting="1"] .meeting-nav-link:hover {
+      background: rgba(9, 105, 218, 0.15);
+    }
+
+    &[data-meeting="2"] .meeting-nav-link:hover {
+      background: rgba(26, 127, 55, 0.15);
+    }
+
+    &[data-meeting="3"] .meeting-nav-link:hover {
+      background: rgba(217, 119, 6, 0.15);
+    }
+
+    &[data-meeting="4"] .meeting-nav-link:hover {
+      background: rgba(139, 92, 246, 0.15);
     }
   }
 
