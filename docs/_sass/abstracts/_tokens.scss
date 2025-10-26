@@ -66,6 +66,9 @@ $desktop: 1200px;
   --surface-glass-prominent: rgba(255, 255, 255, 0.95);
   --meeting-bg: rgba(255, 255, 255, 0.03);
   --meeting-border: rgba(0, 0, 0, 0.1);
+  --nav-background: #181a2b;
+  --nav-background-hover: #23304a;
+  --nav-background-dark: #0f172a;
 
   // =============================================================================
   // TEXT COLORS
@@ -74,6 +77,8 @@ $desktop: 1200px;
   --text-white: #ffffff;
   --text-dark: #1a1a2e;
   --text-on-dark-high: rgba(255, 255, 255, 0.95);
+  --text-on-dark-medium: rgba(255, 255, 255, 0.8);
+  --text-on-dark-subtle: rgba(255, 255, 255, 0.5);
 
   // =============================================================================
   // BORDER RADIUS - Used everywhere
@@ -134,6 +139,11 @@ $desktop: 1200px;
   // =============================================================================
   --transition-spring: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   --transition-material: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 0.15s;
+  --duration-normal: 0.18s;
+  --duration-slow: 0.3s;
+  --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.6, 1);
 
   // =============================================================================
   // BORDERS
@@ -150,6 +160,8 @@ $desktop: 1200px;
   --border-glass: rgba(255, 255, 255, 0.15);
   --border-emerald-light: 1px solid rgba(16, 185, 129, 0.3);
   --border-white-light: 1px solid rgba(255, 255, 255, 0.2);
+  --border-white-subtle: rgba(255, 255, 255, 0.08);
+  --border-teal-light: rgba(122, 218, 209, 0.3);
 
   // =============================================================================
   // ICON SIZES - Standard scale for consistent iconography

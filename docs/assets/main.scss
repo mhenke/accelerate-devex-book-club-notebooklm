@@ -54,9 +54,9 @@
 
 .site-header {
   background: var(--hero-dark);
-  color: #fff;
-  padding: 0.5rem 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-white);
+  padding: var(--space-sm) var(--space-xl);
+  border-bottom: var(--border-width-thin) solid var(--border-white-subtle);
   display: flex;
   align-items: center;
   min-height: 56px;
@@ -100,8 +100,8 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
-  gap: 1rem;
+  color: var(--text-white);
+  gap: var(--space-md);
 }
 .site-nav__brand-icon {
   font-size: 2rem;
@@ -127,129 +127,135 @@
 .site-nav-main {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: var(--space-xl);
 }
+
+// Consolidated .nav-item definition - replaces all duplicates
+// Used for site navigation and meeting navigation
 .nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: var(--space-sm);
   min-width: 140px;
   font-size: 1.1rem;
-  color: #7adad1;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5em 1.5em;
-  border-radius: 14px;
-
-  background: #181a2b;
-  box-shadow: none;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.18s, color 0.18s, box-shadow 0.18s,
-    border-color 0.18s;
-  outline: none;
-  z-index: 1;
-  letter-spacing: 0.01em;
-}
-.nav-item i {
-  margin-right: 0.5em;
-  font-size: 1.2em;
-  vertical-align: middle;
-  color: #7adad1;
-  transition: color 0.18s;
-}
-
-.nav-item:hover,
-.nav-item:focus {
-  color: var(--accent-teal, #7adad1);
-  background: #23304a;
-  box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
-  border-color: var(--accent-teal, #7adad1);
-}
-.nav-item:hover i,
-.nav-item:focus i {
-  color: var(--accent-teal, #7adad1);
-}
-
-// Meeting navigation style for .nav-item (used on index and meeting pages)
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--accent-teal);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-md);
-  transition: all var(--duration-normal) var(--ease-out);
-  border: 1px solid transparent;
-  background: #181a2b;
+  background: var(--nav-background);
+  border: var(--border-width-thin) solid transparent;
   position: relative;
   overflow: hidden;
-  min-width: 140px;
-  font-size: 1.1rem;
+  transition: all var(--duration-normal) var(--ease-out);
   outline: none;
   z-index: 1;
   letter-spacing: 0.01em;
+  
+  // Icon styling
+  i {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: var(--accent-teal);
+    transition: color var(--duration-normal) var(--ease-out);
+  }
+  
+  // Hover and focus states
+  &:hover,
+  &:focus {
+    color: var(--accent-teal);
+    background: var(--nav-background-hover);
+    box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
+    border-color: var(--accent-teal);
+    
+    i {
+      color: var(--accent-teal);
+    }
+  }
+  
+  // Active state
+  &.active {
+    background: var(--nav-background-hover);
+    color: var(--accent-teal);
+    box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
+    border-color: var(--accent-teal);
+    
+    i {
+      color: var(--accent-teal);
+    }
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+  
+  // Background overlay effect
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--nav-background-dark);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s var(--transition-material);
+    z-index: 0;
+  }
+  
+  &:hover::after,
+  &.active::after {
+    opacity: 1;
+  }
+  
+  // Enhanced focus state for accessibility
+  &:focus {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: var(--focus-ring-offset);
+    box-shadow: 0 4px 16px rgba(122, 218, 209, 0.22);
+  }
+  
+  // External link variant
+  &.external {
+    color: var(--accent-teal);
+    border-color: var(--accent-teal);
+    background: var(--nav-background-dark);
+    
+    &:hover,
+    &:focus {
+      color: var(--accent-teal);
+      background: var(--nav-background-hover);
+      border-color: var(--accent-teal);
+      box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
+    }
+  }
+  
+  // Disabled state
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
-.nav-item.active,
-.nav-item:hover {
-  background: #23304a;
-  color: var(--accent-teal, #7adad1);
-  box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
-  border-color: var(--accent-teal, #7adad1);
-}
+// Navigation item content structure (for meeting navigation)
+.nav-content {
+  display: flex;
+  flex-direction: column;
 
-.nav-item i {
-  margin-right: 0.5em;
-  font-size: 1.2em;
-  vertical-align: middle;
-  color: var(--accent-teal, #7adad1);
-  transition: color 0.18s;
-}
+  .nav-label {
+    font-size: var(--font-size-body);
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
 
-.nav-item.active i,
-.nav-item:hover i {
-  color: var(--accent-teal, #7adad1);
-}
-
-.nav-item:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #0f172a;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 0;
-}
-
-.nav-item.active:after,
-.nav-item:hover:after {
-  opacity: 1;
-}
-
-.nav-item:focus {
-  outline-offset: 2px;
-  border-color: var(--accent-teal, #7adad1);
-  background: #23304a;
-  box-shadow: 0 4px 16px rgba(122, 218, 209, 0.22);
-}
-
-.nav-item.external {
-  color: var(--accent-teal, #7adad1);
-  border-color: var(--accent-teal, #7adad1);
-  background: #0f172a;
-}
-.nav-item.external:hover,
-.nav-item.external:focus {
-  color: var(--accent-teal, #7adad1);
-  background: #23304a;
-  border-color: var(--accent-teal, #7adad1);
-  box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
+  .nav-title {
+    font-size: var(--font-size-h6);
+    font-weight: var(--font-weight-semibold);
+  }
 }
 
 // =============================================================================
