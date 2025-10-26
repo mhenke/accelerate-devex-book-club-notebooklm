@@ -466,18 +466,6 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<!-- NEXT MEETING SECTION -->
-<div class="welcome-compact section-card next-meeting-card next-meeting-2" markdown="0">
-  <h2 id="next-meeting-heading"><i class="fas fa-arrow-right" aria-hidden="true"></i> Next Meeting</h2>
-  <p>Continue your journey: <strong>Meeting 2 · Technical Excellence</strong> covers the practices that drive high performance and reliability.</p>
-  <div class="welcome-cta">
-    <a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-2/" class="btn btn--primary-action btn--meeting-2">
-      Meeting 2: Technical Excellence
-    </a>
-    <p class="welcome-cta-subtitle">Chapters 4-6 • Continuous Delivery • Architecture & Testing</p>
-  </div>
-</div>
-
 <!-- AI TOOL SPOTLIGHT -->
 <div class="section-card ai-spotlight" markdown="0">
   <div class="spotlight-header">
