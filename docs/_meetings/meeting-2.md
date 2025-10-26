@@ -518,13 +518,8 @@ document.addEventListener('keydown', function(event) {
       </div>
 
       <div class="deployment-signal">
-        <h4>Architecture Independence</h4>
-        <p>How independently can your team deploy? What dependencies (shared databases, coordinated releases, integrated testing environments) prevent you from deploying on demand?</p>
-      </div>
-
-      <div class="deployment-signal">
-        <h4>Conway's Law in Action</h4>
-        <p>How does your current team structure influence your system architecture? If you could restructure teams to improve delivery performance, what would you change?</p>
+        <h4>Architecture & Team Structure</h4>
+        <p>How independently can your team deploy? How does your current team structure influence your system architecture (Conway's Law)? What dependencies prevent deploying on demand?</p>
       </div>
 
       <div class="deployment-signal">

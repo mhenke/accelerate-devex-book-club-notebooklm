@@ -538,18 +538,13 @@ document.addEventListener('keydown', function(event) {
 
     <div class="discussion-questions-list">
       <div class="deployment-signal">
-        <h4>Lean Management Assessment</h4>
-        <p>Which lean management practices do you currently use? What's missing? How do approval processes in your organization affect delivery speed and team autonomy?</p>
+        <h4>Lean Management & Approval Processes</h4>
+        <p>Which lean management practices do you currently use? How do approval processes affect delivery speed and team autonomy? Can everyone see work flow from ideation to delivery?</p>
       </div>
 
       <div class="deployment-signal">
-        <h4>Work Visualization</h4>
-        <p>How does your team currently visualize WIP and quality metrics? Can everyone see the flow of work from ideation to customer delivery?</p>
-      </div>
-
-      <div class="deployment-signal">
-        <h4>Deployment Pain Check</h4>
-        <p>On a scale of 1-10, how painful are your deployments? What causes the anxiety? How does deployment stress affect work-life balance?</p>
+        <h4>Deployment Pain & Work-Life Balance</h4>
+        <p>On a scale of 1-10, how painful are your deployments? What causes the anxiety? How does deployment stress affect work-life balance and burnout risk?</p>
       </div>
 
       <div class="deployment-signal">
