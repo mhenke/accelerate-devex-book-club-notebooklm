@@ -294,7 +294,7 @@
 }
 
 // Focus Management - Enhanced for accessibility
-.nav-item:focus,
+.meeting-navigation .nav-item:focus,
 .tab-item:focus,
 .page-nav-list a:focus {
   outline: var(--focus-ring-width) solid var(--focus-ring-color);
