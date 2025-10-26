@@ -150,7 +150,6 @@
 
         <!-- Hamburger Menu Button (Mobile) -->
         <button
-          type="button"
           class="hamburger-menu"
           aria-label="Toggle navigation menu"
           aria-expanded="false"
@@ -162,7 +161,7 @@
         </button>
 
         <!-- Desktop Navigation -->
-        <nav class="site-nav-main site-nav-desktop" aria-label="Main navigation">
+        <nav class="site-nav-main site-nav-desktop">
           <a
             href="{{ '/resources' | relative_url }}"
             class="nav-item{% if page.url contains '/resources' %} active{% endif %}"

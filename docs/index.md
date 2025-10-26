@@ -15,14 +15,6 @@ title: Home
 
 <div class="main-content">
 
-<div class="welcome-compact section-card" markdown="0">
-<p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
-<div class="welcome-cta">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
-<p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
-</div>
-</div>
-
 <div class="quick-start section-card no-border">
 <h2><i class="fas fa-info-circle" aria-hidden="true"></i> About the Book Club</h2>
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
@@ -217,6 +209,14 @@ title: Home
     <p class="book-description">This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations. Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance.</p>
   <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="btn btn--primary-action">Get the Book</a>
   </div>
+</div>
+</div>
+
+<div class="welcome-compact section-card" markdown="0">
+<p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
+<div class="welcome-cta">
+<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
+<p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
 </div>
 </div>
 
