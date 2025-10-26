@@ -3,6 +3,7 @@ layout: meeting
 title: "Management & Sustainability"
 subtitle: "Lean Practices, Sustainable Work, and Employee Satisfaction"
 week: 5
+meeting: 3
 chapters: "7-10"
 duration: "1 Hour"
 dora_color: "#d97706" # $meeting-3-primary

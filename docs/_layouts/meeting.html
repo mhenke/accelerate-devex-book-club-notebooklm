@@ -4,7 +4,7 @@ layout: default
 
 <article
   class="meeting meeting-themed"
-  data-meeting="{{ page.week | default: '1' }}"
+  data-meeting="{{ page.meeting | default: '1' }}"
 >
   <!-- Clean Meeting Header -->
   <header class="meeting-header">
@@ -30,7 +30,7 @@ layout: default
           </a>
           <span class="nav-separator">|</span>
           <span class="current-meeting">
-            <i class="fas fa-map-marker-alt"></i> Meeting {{ page.week |
+            <i class="fas fa-map-marker-alt"></i> Meeting {{ page.meeting |
             default: '1' }}
           </span>
         </nav>

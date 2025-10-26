@@ -3,6 +3,7 @@ layout: meeting
 title: "Kickoff"
 subtitle: "Setting the Foundation – Preparing for Your 2-Month Journey"
 week: 0
+meeting: 0
 chapters: "No Reading Required"
 duration: "30 Minutes"
 dora_color: "#6e7681" # Neutral gray for kickoff

@@ -3,6 +3,7 @@ layout: meeting
 title: "Technical Excellence"
 subtitle: "Continuous Delivery and Architecture for Speed + Stability"
 week: 3
+meeting: 2
 chapters: "4-6"
 duration: "1 Hour"
 dora_color: "#1a7f37" # $meeting-2-primary
