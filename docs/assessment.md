@@ -72,7 +72,7 @@ title: 24 Capabilities Assessment
       <span class="category-value"><span id="leadershipScore">0</span>/10</span>
     </div>
   </div>
-  <button type="button" class="btn btn--primary-action" id="resetBtn" style="margin-top: 1rem; width: 100%;">
+  <button class="btn btn--primary-action" id="resetBtn" style="margin-top: 1rem; width: 100%;">
     <i class="fas fa-redo"></i> Reset Assessment
   </button>
 </div>
@@ -397,7 +397,7 @@ title: 24 Capabilities Assessment
   <h2><i class="fas fa-trophy"></i> Your Results</h2>
 
   <div class="results-performance-level">
-    <h3 id="performanceLevel">Loading...</h3>
+    <h3 id="performanceLevel"></h3>
     <p id="performanceDescription"></p>
   </div>
 

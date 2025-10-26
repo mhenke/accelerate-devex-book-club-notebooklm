@@ -199,18 +199,10 @@ title: Meetings
 </div>
 
 <div class="structure-item">
-  <div class="structure-time">45-50 min</div>
+  <div class="structure-time">45-55 min</div>
   <div class="structure-content">
     <h4><i class="fas fa-tasks"></i> Action Planning</h4>
     <p>Define concrete next steps and individual commitments</p>
-  </div>
-</div>
-
-<div class="structure-item">
-  <div class="structure-time">50-55 min</div>
-  <div class="structure-content">
-    <h4><i class="fas fa-robot"></i> AI Tool Spotlight</h4>
-    <p>Learn about AI tools that enhance your DevOps learning and practice</p>
   </div>
 </div>
 
@@ -251,14 +243,6 @@ title: Meetings
   <div class="between-content">
     <h4>Practical Exercises</h4>
     <p>Apply concepts in your work environment with guided activities</p>
-  </div>
-</div>
-
-<div class="between-item">
-  <i class="fas fa-robot"></i>
-  <div class="between-content">
-    <h4>AI Tool Practice</h4>
-    <p>Experiment with featured AI tools to enhance your learning experience</p>
   </div>
 </div>
 
