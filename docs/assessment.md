@@ -13,25 +13,23 @@ title: 24 Capabilities Assessment
 <div class="page-container">
 
 <div class="section-card" markdown="0">
-<h2>Purpose</h2>
-<p>This assessment helps you evaluate your team's current state across the 24 key capabilities identified in <em>Accelerate</em>. Use this to:</p>
-<ul>
-  <li>Establish a baseline before starting the book club</li>
-  <li>Identify high-impact improvement opportunities</li>
-  <li>Track progress over time</li>
-  <li>Prioritize which capabilities to focus on first</li>
-</ul>
+  <h2>Purpose & Instructions</h2>
 
-<h3>Instructions</h3>
-<p>For each capability below, rate your team on a scale of 1-5:</p>
-<ul>
-  <li><strong>1 = Not at all</strong> - We don't do this or it's extremely rare</li>
-  <li><strong>2 = Rarely</strong> - We do this occasionally but inconsistently</li>
-  <li><strong>3 = Sometimes</strong> - We do this about half the time</li>
-  <li><strong>4 = Often</strong> - We do this most of the time with good consistency</li>
-  <li><strong>5 = Always</strong> - This is fully embedded in how we work</li>
-</ul>
-<p><strong>Important:</strong> Be honest! This is about understanding where you are now, not where you want to be.</p>
+  <p>If you're running this with your team, use the 24-item assessment to quickly establish a baseline and highlight priority improvement areas. Select a 1–5 rating for each capability (1 = Not at all, 5 = Always). When all items are answered, a results summary will appear.</p>
+
+  <details>
+    <summary>Rating scale (1–5)</summary>
+
+    <p>For each capability below, select the number that best reflects your team's current practice:</p>
+    <ul>
+      <li><strong>1 — Not at all</strong> — We don't do this or it's extremely rare</li>
+      <li><strong>2 — Rarely</strong> — We do this occasionally but inconsistently</li>
+      <li><strong>3 — Sometimes</strong> — We do this about half the time</li>
+      <li><strong>4 — Often</strong> — We do this most of the time with good consistency</li>
+      <li><strong>5 — Always</strong> — This is fully embedded in how we work</li>
+    </ul>
+    <p><strong>Important:</strong> Be honest — this reflects current practice, not aspirations.</p>
+  </details>
 </div>
 
 <div class="assessment-container" markdown="0">
@@ -40,11 +38,8 @@ title: 24 Capabilities Assessment
 <div class="score-summary" id="scoreSummary">
   <h3><i class="fas fa-chart-bar"></i> Your Progress</h3>
   <div class="overall-score">
-    <div class="score-circle">
-      <span class="score-value" id="overallScore">0</span>
-      <span class="score-total">/120</span>
-    </div>
     <div class="score-percentage" id="overallPercentage">0%</div>
+    <div class="answered-count" id="answeredCount" aria-live="polite">0/24 questions</div>
   </div>
   <div class="category-scores">
     <div class="category-score">
@@ -75,6 +70,10 @@ title: 24 Capabilities Assessment
   <button type="button" class="btn btn--primary-action" id="resetBtn" style="margin-top: 1rem; width: 100%;">
     <i class="fas fa-redo"></i> Reset Assessment
   </button>
+  <div class="score-circle" aria-hidden="true" aria-label="Raw score">
+    <span class="score-value" id="overallScore">0</span>
+    <span class="score-total">/120 score total</span>
+  </div>
 </div>
 
 <!-- Accessible confirmation dialog for Reset -->
@@ -537,8 +536,10 @@ title: 24 Capabilities Assessment
     document.getElementById('cultureScore').textContent = scores.culture;
     document.getElementById('leadershipScore').textContent = scores.leadership;
 
-    // Show results if all answered
+    // Update answered counter and show results if all answered
     const totalAnswered = document.querySelectorAll('input[type="radio"]:checked').length;
+    const answeredEl = document.getElementById('answeredCount');
+    if (answeredEl) { answeredEl.textContent = `${totalAnswered}/24 questions`; }
     if (totalAnswered === 24) {
       showResults(scores, totalScore, totalPercentage);
     }
@@ -707,21 +708,37 @@ title: 24 Capabilities Assessment
   margin-bottom: var(--space-sm);
 }
 
-.score-value {
-  font-size: 3rem;
+.score-percentage {
+  font-size: 3rem; /* make percentage visually dominant */
   font-weight: var(--font-weight-bold);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+  color: #fff;
+}
+
+.score-circle {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+}
+
+.score-value {
+  font-size: 1.3rem; /* smaller, secondary */
+  font-weight: var(--font-weight-semibold);
   line-height: 1;
 }
 
 .score-total {
-  font-size: 1.5rem;
-  opacity: 0.8;
-  margin-left: var(--space-xs);
+  font-size: 0.95rem;
+  opacity: 0.85;
 }
 
-.score-percentage {
-  font-size: var(--font-size-h5);
-  opacity: 0.9;
+.answered-count {
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  color: rgba(255,255,255,0.95);
 }
 
 .category-scores {
