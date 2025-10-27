@@ -199,11 +199,12 @@ document.addEventListener('keydown', function(event) {
             </video>
           </div>
 
-          <!-- Alternative Video -->
+          <!-- Previous Videos (concise list) -->
           <div class="alternative-video">
-            <h3>Alternative Video</h3>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/leadership-transformation-roadmap.mp4" target="_blank">Leadership & Transformation Roadmap</a></p>
-            <p class="alt-video-desc">Five leadership characteristics with diagrams, ING transformation timeline, and 3-6-12 month milestone roadmap.</p>
+            <h4>Previous Videos</h4>
+            <ul>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/leadership-transformation-roadmap.mp4" target="_blank">Leadership & Transformation Roadmap</a></li>
+            </ul>
           </div>
         </div>
       </div>

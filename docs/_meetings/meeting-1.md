@@ -196,13 +196,13 @@ document.addEventListener('keydown', function(event) {
             </video>
           </div>
 
-          <!-- Alternative Videos -->
+          <!-- Previous Videos (concise list) -->
           <div class="alternative-video">
-            <h3>Alternative Videos</h3>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a> (5:48, Oct 1, 2025)</p>
-            <p class="alt-video-desc">Alternative foundational overview with expert discussion on core concepts.</p>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" target="_blank">Meeting 1 Video</a> (8:11, Oct 1, 2025)</p>
-            <p class="alt-video-desc">Original primary video with comprehensive meeting overview.</p>
+            <h4>Previous Videos</h4>
+            <ul>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a> (5:48, Oct 1, 2025)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" target="_blank">Meeting 1 Video</a> (8:11, Oct 1, 2025)</li>
+            </ul>
           </div>
         </div>
       </div>
