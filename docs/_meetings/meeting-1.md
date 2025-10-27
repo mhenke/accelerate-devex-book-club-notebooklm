@@ -274,6 +274,37 @@ document.addEventListener('keydown', function(event) {
             </div>
           </div>
 
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_Your_Book_Club__The_Science_of_High-Performing_Tech_.m4a"
+               data-title="Accelerate Your Book Club: The Science of High-Performing Tech"
+               data-duration="15:10"
+               data-type="deep-dive">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Your Book Club: The Science of High-Performing Tech">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Accelerate Your Book Club: The Science of High-Performing Tech
+                <span class="podcast-type deep-dive">Deep Dive</span>
+                <span class="podcast-duration">15:10</span>
+              </div>
+              <div class="podcast-subtitle">The Science Behind High-Performing Tech Teams and Culture Transformation</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Alternative Podcasts -->
           <div class="alternative-podcasts">
             <h4>Previous Podcasts</h4>
