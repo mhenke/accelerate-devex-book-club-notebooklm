@@ -1,50 +1,44 @@
 # Supplementary media files (NotebookLM-generated audio, extra videos, etc.)
 # Organized by meeting week (key must match the meeting.week front matter)
+# Note: Media files are sourced from S3 bucket and must exist before adding
 
 meeting_1:
   audio:
     - title: "Accelerate's Data Secrets: The 4 DORA Metrics That Kill the Speed Myths"
-      filename: "Accelerate_s_Data_Secrets__The_4_DORA_Metrics_That_Kill_the_Spe.m4a"
+      filename: "meeting-1/Accelerate_s_Data_Secrets__The_4_DORA_Metrics_That_Kill_the_Spe.m4a"
       description: "Deep dive into the DORA metrics and their scientific foundation"
       type: "audio/x-m4a"
     - title: "Accelerate Under the Microscope: Critiquing DORA Metrics, Surveys, and Speed"
-      filename: "Accelerate_Under_the_Microscope__Critiquing_DORA_Metrics,_Surve.m4a"
+      filename: "meeting-1/Accelerate_Under_the_Microscope__Critiquing_DORA_Metrics,_Surve.m4a"
       description: "Critical analysis of DORA metrics methodology and limitations"
       type: "audio/x-m4a"
     - title: "Accelerate Your Book Club: The Science of High-Performing Tech Teams"
-      filename: "Accelerate_Your_Book_Club__The_Science_of_High-Performing_Tech_.m4a"
+      filename: "meeting-1/Accelerate_Your_Book_Club__The_Science_of_High-Performing_Tech_.m4a"
       description: "Guide to applying Accelerate principles in your organization"
       type: "audio/x-m4a"
     - title: "Culture or Code First? Accelerate's Battle for Transformation Priority"
-      filename: "Culture_or_Code_First_Accelerate_s_Battle_for_Transformation_Pr.m4a"
+      filename: "meeting-1/Culture_or_Code_First_Accelerate_s_Battle_for_Transformation_Pr.m4a"
       description: "Exploring the relationship between culture and technical practices"
       type: "audio/x-m4a"
   video:
     - title: "The Accelerate Blueprint"
-      filename: "The_Accelerate_Blueprint.mp4"
+      filename: "meeting-1/The_Accelerate_Blueprint.mp4"
       description: "Visual overview of the Accelerate framework"
       type: "video/mp4"
     - title: "Accelerate Success Deep Dive"
-      filename: "accelerate-success-deep-dive.mp4"
+      filename: "meeting-1/accelerate-success-deep-dive.mp4"
       description: "Comprehensive analysis of successful DevOps transformations"
       type: "video/mp4"
     - title: "Accelerate DevEx Critique"
-      filename: "accelerate-devex-critique.mp4"
+      filename: "meeting-1/accelerate-devex-critique.mp4"
       description: "Critical examination of developer experience improvements"
       type: "video/mp4"
     - title: "Accelerate Metrics Unlocked"
-      filename: "accelerate-metrics-unlocked.mp4"
+      filename: "meeting-1/accelerate-metrics-unlocked.mp4"
       description: "Understanding and measuring DevOps metrics"
       type: "video/mp4"
     - title: "The Explainer: Unpacking Accelerate"
-      filename: "the-explainer-unpacking-accelerate.mp4"
+      filename: "meeting-1/the-explainer-unpacking-accelerate.mp4"
       description: "Beginner-friendly introduction to Accelerate concepts"
       type: "video/mp4"
-
-meeting_3:
-  audio:
-    - title: "Accelerate Your Code: Continuous Delivery, Independent Teams, and Flow"
-      filename: "Accelerate_Your_Code__Continuous_Delivery,_Independent_Teams,_a.m4a"
-      description: "Implementing continuous delivery and team independence"
-      type: "audio/x-m4a"
 

@@ -81,7 +81,7 @@ layout: null
       {% assign meeting_key = 'meeting_' | append: meeting.week %}
       {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].audio %}
         {% for audio in site.data.supplementary_media[meeting_key].audio %}
-          {% assign supp_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-' | append: meeting.week | append: '/' | append: audio.filename %}
+          {% assign supp_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: audio.filename %}
           <item>
             <title>{{ audio.title | xml_escape }} (Bonus)</title>
             <description>{{ audio.description | xml_escape }} - From meeting {{ meeting.week }}</description>
