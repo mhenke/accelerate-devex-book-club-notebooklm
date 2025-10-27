@@ -48,234 +48,81 @@ practical activities.
    ```sh
    git clone https://github.com/mhenke/accelerate-devex-book-club-notebooklm.git
    ```
+# Accelerate DevEx Book Club
 
-2. Edit SCSS in `docs/assets/main.scss` (YAML front matter required)
-3. Push changes to GitHub; Jekyll auto-compiles and deploys via GitHub Pages
-4. Access the site at:  
-   `https://mhenke.github.io/accelerate-devex-book-club-notebooklm/`
+Concise, useful README for the Jekyll site and resource hub built around the book "Accelerate" (Forsgren, Humble, Kim).
 
----
+This repository contains a static site (Jekyll) with meeting guides, AI-generated prompts and media workflows, assessments, and reusable UI/CSS components used for an interactive, accessibility-minded book club experience.
 
-## 📁 Project Structure
+Key goals:
+- Teach and apply high-performing DevEx practices using the 24-capabilities framework and DORA metrics.
+- Provide meeting materials, notebook prompts (NotebookLM), and podcast/video-ready content.
+- Ship responsive, accessible visuals built with SCSS + SVG (no primary static images).
 
-```text
-accelerate-devex-book-club-notebooklm/
-├── README.md
-├── CLAUDE.md
-├── book-club-guide.md
-├── docs/                          # Main Jekyll site
-│   ├── index.md                   # Homepage with hero banner
-│   ├── _config.yml               # Jekyll configuration
-│   ├── _meetings/                # Four interactive meeting pages
-│   │   ├── meeting-1.md          # Week 1: Chapters 1-3 (Foundation)
-│   │   ├── meeting-2.md          # Week 3: Chapters 4-6 (Technical Excellence)
-│   │   ├── meeting-3.md          # Week 5: Chapters 7-10 (Management)
-│   │   └── meeting-4.md          # Week 7: Chapters 11,16 (Leadership)
-│   ├── _layouts/                 # Jekyll layouts
-│   └── assets/                   # SCSS stylesheets
-├── resources/                     # Comprehensive resource collection
-│   ├── plan/                     # Updated book club plan
-│   │   ├── plan.md              # Corrected chapter mappings
-│   │   ├── audio.md             # NotebookLM podcast prompts
-│   │   └── video.md             # NotebookLM video prompts
-│   ├── meetings/                 # Individual meeting resources
-│   ├── activities/               # Discussion practices
-│   ├── assessments/              # DORA metrics worksheets
-│   └── templates/                # Meeting notes templates
-└── .github/                      # GitHub configuration
-    └── copilot-instructions.md   # Visual design guidance
-```
+Contents at a glance
+- `docs/` — Jekyll site source (pages, layouts, assets, and `_meetings/` content).
+- `resources/` — AI prompts, meeting plans, assessments, and templates.
+- `assets/` and `docs/_sass/` — styles and design tokens (`_tokens.scss`).
+- `media/` — local media used to compute durations (not committed to repo).
+- `scripts/` — helpers (e.g., `extract-durations.js`).
 
----
+Quick start (local)
+1. Install Ruby + Bundler and Node.js/npm.
+2. From repo root, install site gems and start Jekyll dev server:
 
-## ✨ Key Features
-
-- **Four structured meetings** with corrected chapter mappings aligned to book content
-- **Interactive learning checkpoints** with radio buttons and research-backed feedback
-- **Visual concept sections**: DORA metrics, Westrum culture types, CD principles, lean practices
-- **AI Tool Spotlights**: Hands-on demonstrations of tools powering this book club
-  - Meeting 1: NotebookLM (audio generation)
-  - Meeting 2: Claude Code (development & documentation)
-  - Meeting 3: Gamma (presentation creation)
-  - Meeting 4: GitHub Copilot (AI pair programming)
-- **AI-generated content prompts** for NotebookLM podcasts and videos
-- **Comprehensive resources**: assessments, templates, activities, and discussion guides
-- **24 capabilities framework** integration for practical developer experience transformation
-- **Responsive design** with meeting-specific color themes and modern web technologies
-- **Biweekly structure** (Weeks 1, 3, 5, 7) supporting progressive learning
-
----
-
-## 🔄 Development Workflow
-
-- Edit content and styles in Markdown and SCSS files
-- Use semantic HTML and ARIA for accessibility
-- Responsive design required for all components
-- Jekyll builds automatically on GitHub Pages (npm scripts available for local optimization)
-- Branching: Standard GitHub flow (feature branches, PRs)
-
----
-
-## 🧑‍💻 Coding Standards
-
-- All visuals: CSS/SVG/HTML/JS (no static images except fallback)
-- Use color palette and font guidelines for branding
-- Semantic HTML and ARIA for accessibility
-- Responsive, maintainable SCSS (see `docs/assets/main.scss`)
-- AI-generated content is clearly marked and attributed
-
----
-
-## 💻 Local Development
-
-### Starting the Jekyll Server
-
-1. **Install dependencies:**
-
-   ```bash
-   cd docs
-   bundle install --path vendor/bundle
-   ```
-
-2. **Start the development server:**
-
-   ```bash
-   cd docs
-   bundle exec jekyll serve --port 4000
-   ```
-
-3. **Access the site locally:**
-   - Site URL: `http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/`
-   - Meeting pages: `http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/meetings/meeting-1/`
-
-### Building the Site
-
-**Basic build (development):**
 ```bash
+# in zsh
 cd docs
-bundle exec jekyll build
-# OR from root: npm run build
+bundle install --path vendor/bundle
+bundle exec jekyll serve --port 4000
 ```
 
-**Production build with CSS optimization:**
-```bash
-npm run build:production
-# Runs: build + purgecss (removes unused CSS)
-```
+Open: http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/
 
-**Note:** GitHub Pages uses automatic Jekyll build (without PurgeCSS). CSS optimization is only applied locally for testing/analysis.
+Common npm scripts (run from repo root)
+- npm run serve       # runs Jekyll local server via npm script
+- npm run build       # build site (Jekyll)
+- npm run build:production  # build + optimize CSS (PurgeCSS)
+- npm run lint        # run ESLint + Stylelint
+- npm run validate    # full pipeline: build + lint + tests
 
----
+Editing & conventions
+- Edit content in `docs/` and `resources/` (meeting prompts live in `resources/meetings/`).
+- SCSS tokens live in `docs/_sass/abstracts/_tokens.scss` — change tokens for global palette/spacing.
+- All SCSS partials in `docs/assets/` must include YAML front matter so Jekyll compiles them.
+- Visuals: prefer CSS/SVG for hero, infographics, and badges (no primary raster images).
+- Accessibility: use semantic HTML and ARIA landmarks; all landmarks should have non-empty accessible names.
 
-## 🎨 CSS Optimization (Optional)
+Testing & validation
+- Quick: `npm run lint && npm run build` — fast feedback during development.
+- Full validation (recommended before commits): `npm run validate` — runs build, linters, and tests.
+- HTML validation: `npm run test:html` or `bundle exec htmlproofer _site` after running the server.
+- Playwright E2E tests live in `tests/` (run via `npm test` inside `tests/`).
 
-PurgeCSS removes unused CSS classes from the built site. This is **optional** and only runs locally.
-
-**Analyze CSS usage:**
-```bash
-npm run analyze:css          # Show top 50 most-used classes
-npm run purgecss:analyze     # Compare original vs purged CSS size
-```
-
-**Apply PurgeCSS:**
-```bash
-npm run purgecss             # Purge unused CSS from _site/assets/
-```
-
-**Configuration:** See `purgecss.config.cjs` for safelist rules.
-
----
-
-## 🎨 CSS Standardization & Reusable Blocks
-
-This project uses a modern, maintainable CSS architecture based on:
-
-- **Design Tokens**: All colors, spacing, typography, and border radius are defined as CSS custom properties in `docs/assets/main.scss` and `docs/_sass/abstracts/_tokens.scss`.
-- **Utility Classes**: For spacing (`.mb-md`, `.mt-lg`, `.p-sm`), text alignment (`.text-center`), and more. See `main.scss` for full list.
-- **Reusable Block Components**: Hero sections, meta badges, chapters badges, navigation, and progress bars are implemented as reusable classes (see `main.scss` and `_meeting-content.scss`).
-- **Meeting Themes**: Each meeting page uses a theme class (`.meeting-theme--1`, `.meeting-theme--2`, etc.) for color and style overrides. See `_meeting-themes.scss`.
-- **Icon Classes**: Standardized icon usage via `.icon`, `.icon--sm`, `.icon--lg` in `_icons.scss`. Use `<span class="icon">...</span>` or `<i class="icon">...</i>` for consistent icon rendering.
-- **Accessibility**: Semantic HTML and ARIA roles are required for all interactive components. Use `.sr-only` for screen-reader-only text.
-
-**How to use:**
-
-- Add utility classes to HTML/Markdown for spacing and alignment.
-- Wrap meeting content in `.meeting-content` and apply the appropriate `.meeting-theme--X` class for theming.
-- Use block classes for hero, badges, navigation, and progress as documented in `main.scss`.
-- Reference icons using standardized classes for consistent sizing and alignment.
-
-**Maintainers:**
-
-- Edit and extend styles in `docs/assets/main.scss` and partials in `docs/_sass/components/`.
-- Update design tokens in `_tokens.scss` for global changes.
-- See code exemplars in `.github/copilot-instructions.md` for best practices.
-
-## 🧪 Testing
-
-### HTML Validation with HTML Proofer
-
-**Start Jekyll server first**, then run HTML Proofer:
+Media tooling
+- To update media durations used in meeting pages:
 
 ```bash
-# Recommended command for testing against live server
-cd docs
-bundle exec htmlproofer _site \
-  --disable-external=true \
-  --enforce-https=false \
-  --swap-urls "^/accelerate-devex-book-club-notebooklm:http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm"
+node extract-durations.js
 ```
 
-**Alternative npm test commands** (from root directory):
+Notes for maintainers
+- Keep interactive scripts accessible: avoid browser `confirm()` and prefer managed dialogs with focus management.
+- When changing layout/partials, edit source under `docs/_layouts/` (do not edit `docs/_site/` directly).
+- Use the design tokens and meeting theme classes (`.meeting-theme--N`) for consistent theming.
 
-```bash
-npm run test:html    # HTML validation with html-validate
-npm run test:links   # Link checking with hyperlink
-npm run test:css     # CSS linting with stylelint
-npm run test         # Full test suite
-```
+Contributing
+- Follow standard GitHub flow: feature branches and PRs.
+- Run `npm run validate` before creating a PR to ensure build and lint pass.
 
-### Playwright End-to-End Tests
+License
+- Creative Commons Attribution 4.0 International (CC BY 4.0). See `LICENSE`.
 
-```bash
-cd tests
-npm test            # Run all Playwright tests
-npm run test:ui     # Run with UI mode
-npm run test:report # View test report
-```
+Useful links
+- Site source: `docs/`
+- Meeting prompts & AI tools: `resources/`
+- SCSS entry: `docs/assets/main.scss`
+- Copilot/agent guidance: `.github/copilot-instructions.md`
 
-### Test Results Summary
+If you'd like this tightened further (one-page quick-start only) or expanded with contributor checklists and example PR templates, tell me which direction and I will adjust.
 
-- **HTML Proofer**: Validates internal links, images, and HTML structure
-- **Playwright**: Tests interactive components, accessibility, and cross-browser functionality
-- **Manual testing**: Visual validation and responsive design checks
-
----
-
-## 🤝 Contributing
-
-Contributions welcome for:
-
-- New meeting formats or session guides
-- Additional AI-generated content prompts
-- Improved accessibility and design
-- See code exemplars and instructions in `.github/copilot-instructions.md`
-
----
-
-## 📄 License
-
-Creative Commons Attribution 4.0 International (CC BY 4.0)
-(see LICENSE file)
-
----
-
-## 📚 References & Links
-
-- [Book Club Roadmap](resources/book-club-roadmap.md) - Corrected chapter mappings and learning objectives
-- [Interactive Site](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/)
-- [Meeting Pages](docs/_meetings/) - Four interactive meeting pages
-- [NotebookLM Prompts](resources/plan/) - AI generation prompts for audio and video
-- [Assessment Tools](resources/assessments/) - DORA metrics and culture worksheets
-- [SCSS Main Stylesheet](docs/assets/main.scss)
-
----
