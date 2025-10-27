@@ -47,8 +47,9 @@
   }
 
   @include mobile-only {
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-md) var(--space-sm); // 16px 8px (reduced from 24px 16px)
     border-radius: 0;
+    min-height: 20vh; // Reduce minimum height on mobile
 
     h1 {
       font-size: clamp(
@@ -69,6 +70,10 @@
   padding: 0 var(--space-md);
   z-index: 2;
   position: relative;
+
+  @include mobile-only {
+    padding: 0 var(--space-sm); // 8px on mobile
+  }
 }
 
 // Nested hero elements that appear inside .hero-banner
