@@ -9,13 +9,36 @@
   box-shadow: 0 4px 15px var(--shadow-light);
   padding: var(--space-lg);
   margin: var(--space-xl) 0;
+  max-width: 100%;
+  overflow: hidden;
+
+  @include mobile-only {
+    padding: var(--space-sm);
+    margin: var(--space-md) 0;
+  }
 }
 
 .media-container video,
 .media-container audio {
   width: 100%;
+  max-width: 100%;
   border-radius: var(--radius-md);
   margin-bottom: var(--space-md);
+  display: block;
+  height: auto;
+}
+
+// Video section and card containers
+.video-section,
+.video-card {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.video-card {
+  background: var(--background-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
 }
 
 .media-download-controls {
@@ -63,6 +86,9 @@
 // =============================================================================
 
 .media-section {
+  max-width: 100%;
+  overflow: hidden;
+
   h3 {
     display: flex;
     align-items: center;
