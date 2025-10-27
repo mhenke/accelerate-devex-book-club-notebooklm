@@ -77,6 +77,18 @@ title: 24 Capabilities Assessment
   </button>
 </div>
 
+<!-- Accessible confirmation dialog for Reset -->
+<dialog id="confirmResetDialog" aria-labelledby="confirmResetTitle" aria-describedby="confirmResetDesc">
+  <form method="dialog" class="confirm-reset-form">
+    <h2 id="confirmResetTitle">Reset assessment?</h2>
+    <p id="confirmResetDesc">This will clear all answers you have selected. This action cannot be undone. Do you want to continue?</p>
+    <div class="dialog-actions">
+      <button id="confirmResetConfirm" type="button" class="btn btn--primary-action">Reset</button>
+      <button id="confirmResetCancel" type="button" class="btn">Cancel</button>
+    </div>
+  </form>
+</dialog>
+
 <!-- Assessment Questions -->
 <div class="assessment-questions">
 
@@ -585,24 +597,74 @@ title: 24 Capabilities Assessment
     });
   }
 
-  function resetAssessment() {
-    // eslint-disable-next-line no-alert
-    if (confirm('Are you sure you want to reset all answers?')) {
-      document.querySelectorAll('input[type="radio"]').forEach(radio => {
-        radio.checked = false;
-      });
-      document.getElementById('resultsSection').style.display = 'none';
-      updateScoreSummary();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+
+  // Perform the actual reset of the assessment (clears radios, hides results)
+  function performReset() {
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+      radio.checked = false;
+    });
+    document.getElementById('resultsSection').style.display = 'none';
+    updateScoreSummary();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  // Accessible confirmation dialog handling
+  const confirmDialog = document.getElementById('confirmResetDialog');
+  const confirmBtn = document.getElementById('confirmResetConfirm');
+  const cancelBtn = document.getElementById('confirmResetCancel');
+  let _previousActiveElement = null;
+
+  function openConfirmDialog() {
+    _previousActiveElement = document.activeElement;
+    if (confirmDialog && typeof confirmDialog.showModal === 'function') {
+      confirmDialog.showModal();
+    } else if (confirmDialog) {
+      // Fallback for browsers without <dialog>
+      confirmDialog.setAttribute('open', '');
+    }
+    // Move focus to the confirm button for keyboard users
+    if (confirmBtn) {confirmBtn.focus();}
+  }
+
+  function closeConfirmDialog() {
+    if (confirmDialog && typeof confirmDialog.close === 'function') {
+      try { confirmDialog.close(); } catch (e) { /* ignore */ }
+    } else if (confirmDialog) {
+      confirmDialog.removeAttribute('open');
+    }
+    if (_previousActiveElement) {_previousActiveElement.focus();}
+  }
+
+  // Wire dialog buttons
+  if (confirmBtn) {
+    confirmBtn.addEventListener('click', function () {
+      performReset();
+      closeConfirmDialog();
+    });
+  }
+
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', function () {
+      closeConfirmDialog();
+    });
+  }
+
+  // Close dialog on escape when using the fallback open attribute
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && confirmDialog && confirmDialog.hasAttribute && confirmDialog.hasAttribute('open')) {
+      closeConfirmDialog();
+    }
+  });
 
   // Event listeners
   document.querySelectorAll('input[type="radio"]').forEach(radio => {
     radio.addEventListener('change', updateScoreSummary);
   });
 
-  document.getElementById('resetBtn').addEventListener('click', resetAssessment);
+  document.getElementById('resetBtn').addEventListener('click', function (e) {
+    e.preventDefault();
+    openConfirmDialog();
+  });
 
   // Initialize
   updateScoreSummary();
