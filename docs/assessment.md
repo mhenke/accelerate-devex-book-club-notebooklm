@@ -16,20 +16,11 @@ title: 24 Capabilities Assessment
   <h2>Purpose & Instructions</h2>
 
   <p>If you're running this with your team, use the 24-item assessment to quickly establish a baseline and highlight priority improvement areas. Select a 1–5 rating for each capability (1 = Not at all, 5 = Always). When all items are answered, a results summary will appear.</p>
+</div>
 
-  <details>
-    <summary>Rating scale (1–5)</summary>
-
-    <p>For each capability below, select the number that best reflects your team's current practice:</p>
-    <ul>
-      <li><strong>1 — Not at all</strong> — We don't do this or it's extremely rare</li>
-      <li><strong>2 — Rarely</strong> — We do this occasionally but inconsistently</li>
-      <li><strong>3 — Sometimes</strong> — We do this about half the time</li>
-      <li><strong>4 — Often</strong> — We do this most of the time with good consistency</li>
-      <li><strong>5 — Always</strong> — This is fully embedded in how we work</li>
-    </ul>
-    <p><strong>Important:</strong> Be honest — this reflects current practice, not aspirations.</p>
-  </details>
+<!-- Top results placeholder: explains where results will appear once assessment is complete -->
+<div class="section-card" id="resultsTopPlaceholder" markdown="0">
+  <p style="margin:0"><strong>Results preview:</strong> After you answer all 24 questions a detailed results panel will appear below and here showing your performance level, category breakdown, and suggested next steps.</p>
 </div>
 
 <div class="assessment-container" markdown="0">
@@ -38,9 +29,10 @@ title: 24 Capabilities Assessment
 <div class="score-summary" id="scoreSummary">
   <h3><i class="fas fa-chart-bar"></i> Your Progress</h3>
   <div class="overall-score">
-    <div class="score-percentage" id="overallPercentage">0%</div>
+    <div class="score-percentage" id="overallPercentage">0% <span class="score-label">score</span></div>
     <div class="answered-count" id="answeredCount" aria-live="polite">0/24 questions</div>
   </div>
+  <div class="results-placeholder" id="resultsSummaryPlaceholder">Detailed results will appear in the "Your Results" panel when all questions are answered.</div>
   <div class="category-scores">
     <div class="category-score">
       <span class="category-name">Continuous Delivery</span>
@@ -404,7 +396,7 @@ title: 24 Capabilities Assessment
 </div>
 
 <!-- Results Section -->
-<div class="section-card" markdown="0" id="resultsSection" style="display: none;">
+  <div class="section-card" markdown="0" id="resultsSection" style="display: none;">
   <h2><i class="fas fa-trophy"></i> Your Results</h2>
 
     <div class="results-performance-level">
@@ -468,6 +460,11 @@ title: 24 Capabilities Assessment
 
 </div>
 
+<!-- Link to jump to results/placeholder (autoscroll) -->
+<p style="text-align:center; margin-top: 1rem;">
+  <a href="#resultsTopPlaceholder" id="gotoResultsLink" class="btn btn--link">Jump to results</a>
+</p>
+
 <script>
 // Assessment logic
 (function() {
@@ -527,7 +524,7 @@ title: 24 Capabilities Assessment
     const totalPercentage = Math.round((totalScore / 120) * 100);
 
     document.getElementById('overallScore').textContent = totalScore;
-    document.getElementById('overallPercentage').textContent = totalPercentage + '%';
+    document.getElementById('overallPercentage').innerHTML = totalPercentage + '% <span class="score-label">score</span>';
 
     document.getElementById('cdScore').textContent = scores.cd;
     document.getElementById('archScore').textContent = scores.arch;
@@ -547,8 +544,26 @@ title: 24 Capabilities Assessment
 
   function showResults(scores, totalScore, totalPercentage) {
     const resultsSection = document.getElementById('resultsSection');
-    resultsSection.style.display = 'block';
-    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    const topPlaceholder = document.getElementById('resultsTopPlaceholder');
+    const summaryPlaceholder = document.getElementById('resultsSummaryPlaceholder');
+
+    // Instead of showing the full results at the bottom, copy the results HTML
+    // to the top placeholder and hide the bottom panel so results aren't duplicated.
+    if (topPlaceholder && resultsSection) {
+      // copy results content into top placeholder
+      topPlaceholder.innerHTML = resultsSection.innerHTML;
+      // mark it so styles apply consistently
+      topPlaceholder.classList.add('section-card');
+    }
+
+    // hide the bottom results panel
+    if (resultsSection) { resultsSection.style.display = 'none'; }
+
+    // hide the small summary placeholder inside the score card
+    if (summaryPlaceholder) { summaryPlaceholder.style.display = 'none'; }
+
+    // scroll to the top placeholder where results now appear
+    if (topPlaceholder) { topPlaceholder.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 
     // Determine performance level
     let level, description;
@@ -605,9 +620,18 @@ title: 24 Capabilities Assessment
       radio.checked = false;
     });
     document.getElementById('resultsSection').style.display = 'none';
+    // restore placeholders
+    const topPlaceholder = document.getElementById('resultsTopPlaceholder');
+    if (topPlaceholder) { topPlaceholder.style.display = ''; topPlaceholder.innerHTML = _topPlaceholderOriginalHTML; }
+    const summaryPlaceholder = document.getElementById('resultsSummaryPlaceholder');
+    if (summaryPlaceholder) { summaryPlaceholder.style.display = ''; }
     updateScoreSummary();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  // store original top placeholder so we can restore on reset
+  const _topPlaceholder = document.getElementById('resultsTopPlaceholder');
+  const _topPlaceholderOriginalHTML = _topPlaceholder ? _topPlaceholder.innerHTML : '';
 
   // Accessible confirmation dialog handling
   const confirmDialog = document.getElementById('confirmResetDialog');
@@ -667,6 +691,16 @@ title: 24 Capabilities Assessment
     openConfirmDialog();
   });
 
+  // smooth-scroll link from the bottom to the results placeholder at top
+  const gotoLink = document.getElementById('gotoResultsLink');
+  if (gotoLink) {
+    gotoLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      const topPlaceholder = document.getElementById('resultsTopPlaceholder');
+      if (topPlaceholder) { topPlaceholder.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  }
+
   // Initialize
   updateScoreSummary();
 })();
@@ -714,6 +748,21 @@ title: 24 Capabilities Assessment
   line-height: 1;
   margin-bottom: var(--space-sm);
   color: #fff;
+}
+
+.score-percentage .score-label {
+  font-size: 0.45em;
+  opacity: 0.95;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.results-placeholder {
+  margin-top: var(--space-sm);
+  font-size: 0.95rem;
+  opacity: 0.95;
+  text-align: center;
 }
 
 .score-circle {
