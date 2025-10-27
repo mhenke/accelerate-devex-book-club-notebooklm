@@ -10,6 +10,11 @@
   margin-bottom: var(--space-lg);
   transition: all 0.3s ease-out;
 
+  // Mobile: Reduce margin
+  @include mobile-only {
+    margin-bottom: var(--space-sm); // 8px on mobile
+  }
+
   &:hover {
     box-shadow: var(--elevation-1);
     transform: translateY(-2px);
@@ -40,10 +45,18 @@
   // Size variants
   &--compact {
     padding: var(--space-sm);
+
+    @include mobile-only {
+      padding: var(--space-xs); // 4px on mobile
+    }
   }
 
   &--spacious {
     padding: var(--space-xl);
+
+    @include mobile-only {
+      padding: var(--space-md); // 16px on mobile (reduced from 32px)
+    }
   }
 
   // Visual variants

@@ -327,11 +327,11 @@
 /* Responsive Design */
 @media (max-width: #{$mobile - 1px}) {
   .meeting-container {
-    padding: var(--space-sm);
+    padding: var(--space-xs); // 4px on mobile (reduced from 8px)
   }
 
   .meeting-header {
-    padding: var(--space-xl) var(--space-md);
+    padding: var(--space-md) var(--space-sm); // 16px 8px (reduced from 32px 16px)
 
     .meeting-title-section .meeting-main-title {
       font-size: var(--font-size-h2);
@@ -339,14 +339,16 @@
 
     .meeting-meta {
       flex-direction: column;
-      gap: var(--space-sm);
+      gap: var(--space-xs); // 4px gap (reduced from 8px)
     }
   }
 
   .meeting-footer {
+    padding: var(--space-sm); // 8px on mobile
+
     .footer-sections {
       grid-template-columns: 1fr;
-      gap: var(--space-xl);
+      gap: var(--space-md); // 16px gap (reduced from 32px)
     }
 
     .footer-bottom {

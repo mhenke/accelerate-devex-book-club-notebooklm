@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: space-between;
   min-height: var(--space-3xl);
+
+  @include mobile-only {
+    padding: 0 var(--space-xs); // 4px on mobile (reduced from 16px)
+  }
 }
 
 // Skip link for accessibility - critical for screen readers

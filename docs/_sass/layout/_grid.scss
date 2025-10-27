@@ -12,6 +12,10 @@
   margin: 0 auto;
   padding: 0 var(--space-md);
 
+  @include mobile-only {
+    padding: 0 var(--space-xs); // 4px on mobile (reduced from 16px)
+  }
+
   @include tablet-up {
     padding: 0 var(--space-lg);
   }
@@ -104,27 +108,55 @@
 // Gap utilities
 .gap-sm {
   gap: var(--space-sm);
+
+  @include mobile-only {
+    gap: var(--space-xs); // 4px on mobile
+  }
 }
 .gap-md {
   gap: var(--space-md);
+
+  @include mobile-only {
+    gap: var(--space-sm); // 8px on mobile
+  }
 }
 .gap-lg {
   gap: var(--space-lg);
+
+  @include mobile-only {
+    gap: var(--space-sm); // 8px on mobile
+  }
 }
 .gap-xl {
   gap: var(--space-xl);
+
+  @include mobile-only {
+    gap: var(--space-md); // 16px on mobile
+  }
 }
 
 // Section spacing
 .section {
   padding: var(--space-2xl) 0;
 
+  @include mobile-only {
+    padding: var(--space-md) 0; // 16px on mobile (reduced from 48px)
+  }
+
   &.section--sm {
     padding: var(--space-lg) 0;
+
+    @include mobile-only {
+      padding: var(--space-sm) 0; // 8px on mobile
+    }
   }
 
   &.section--lg {
     padding: var(--space-3xl) 0;
+
+    @include mobile-only {
+      padding: var(--space-lg) 0; // 24px on mobile (reduced from 64px)
+    }
   }
 }
 
@@ -255,7 +287,7 @@
 
   @include mobile-only {
     grid-template-columns: 1fr; // Mobile: Force single column for readability
-    // Tighter gap on mobile
+    gap: var(--space-sm); // 8px tighter gap on mobile
   }
 }
 
@@ -266,6 +298,10 @@
   display: grid;
   gap: var(--space-lg); // 24px for better vertical spacing on mobile (stacked items)
   grid-template-columns: 1fr; // Mobile: 1 column
+
+  @include mobile-only {
+    gap: var(--space-sm); // 8px on mobile for tighter layout
+  }
 
   @include mobile-up {
     grid-template-columns: repeat(2, 1fr); // Tablet: 2 columns

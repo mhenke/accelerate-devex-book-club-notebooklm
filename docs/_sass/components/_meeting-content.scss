@@ -23,6 +23,12 @@
     border-radius: var(--radius-md);
     position: relative;
 
+    @include mobile-only {
+      padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-md); // 8px 8px 8px 16px on mobile
+      margin-top: var(--space-sm); // 8px
+      margin-bottom: var(--space-xs); // 4px
+    }
+
     &::before {
       position: absolute;
       left: 0;
@@ -53,6 +59,13 @@
     );
     padding: var(--space-md);
     border-radius: var(--radius-sm);
+
+    @include mobile-only {
+      padding: var(--space-sm); // 8px on mobile
+      margin-top: var(--space-sm); // 8px
+      margin-bottom: var(--space-xs); // 4px
+      gap: var(--space-xs); // 4px gap
+    }
   }
 
   h4 {
@@ -65,6 +78,12 @@
     border-radius: var(--space-sm);
     background: var(--meeting-bg);
     border-left: 3px solid var(--meeting-primary);
+
+    @include mobile-only {
+      padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-md); // 8px 8px 8px 16px on mobile
+      margin-top: var(--space-sm); // 8px
+      margin-bottom: var(--space-sm); // 8px
+    }
   }
 
   /* Lists */
@@ -75,6 +94,11 @@
     margin: var(--space-md) 0; // 16px 0
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
     position: relative;
+
+    @include mobile-only {
+      padding: var(--space-xs); // 4px on mobile
+      margin: var(--space-sm) 0; // 8px 0 on mobile
+    }
 
     &::before {
       content: "";
@@ -90,6 +114,10 @@
   li {
     position: relative;
     padding: var(--space-md) var(--space-md) var(--space-md) var(--space-xl); // 16px 16px 16px 32px
+
+    @include mobile-only {
+      padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-md); // 8px 8px 8px 16px on mobile
+    }
   }
 
   /* Media Sections */
