@@ -10,13 +10,6 @@ title: Meetings
 </div>
 </div>
 
-<div class="welcome-compact section-card" markdown="0">
-<p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
-<div class="welcome-cta">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
-<p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
-</div>
-</div>
 
 <div class="page-container">
 

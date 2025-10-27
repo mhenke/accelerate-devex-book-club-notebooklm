@@ -15,9 +15,22 @@
   function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger-menu');
     const mobileMenu = document.getElementById('mobile-menu');
+    const siteHeader = document.querySelector('.site-header');
+    const root = document.documentElement;
 
     if (!hamburger || !mobileMenu) {
       return; // Exit if elements don't exist (e.g., on meeting pages)
+    }
+
+    if (siteHeader && root) {
+      const updateHeaderHeight = function () {
+        const headerHeight = Math.round(siteHeader.getBoundingClientRect().height);
+        root.style.setProperty('--site-header-height', headerHeight + 'px');
+      };
+
+      updateHeaderHeight();
+      window.addEventListener('resize', updateHeaderHeight);
+      window.addEventListener('load', updateHeaderHeight);
     }
 
     // Toggle menu on hamburger click

@@ -9,35 +9,11 @@ layout: default
   <!-- Clean Meeting Header -->
   <header class="meeting-header">
     <div class="meeting-header-content">
-      <!-- Unified Navigation Bar -->
-      <div class="meeting-nav-bar">
-        <div class="meeting-nav-brand">
-          <a href="{{ '/' | relative_url }}" class="brand-link">
-            <i class="fas fa-rocket"></i>
-            <span class="brand-text">
-              <span class="brand-title">Accelerate DevEx</span>
-              <span class="brand-subtitle">Book Club</span>
-            </span>
-          </a>
-        </div>
-
-        <nav class="meeting-nav-links">
-          <a href="{{ '/resources' | relative_url }}" class="meeting-nav-link">
-            <i class="fas fa-book-open"></i> Resources
-          </a>
-          <a href="{{ '/meetings' | relative_url }}" class="meeting-nav-link">
-            <i class="fas fa-calendar"></i> All Meetings
-          </a>
-          <span class="nav-separator">|</span>
-          <span class="current-meeting">
-            <i class="fas fa-map-marker-alt"></i> Meeting {{ page.meeting |
-            default: '1' }}
-          </span>
-        </nav>
-      </div>
-
       <div class="meeting-title-section">
-        <h1 class="meeting-main-title">{{ page.title }}</h1>
+        <h1 class="meeting-main-title">
+          Meeting {{ page.meeting | default: '1' }}:
+          <span class="meeting-main-title__text">{{ page.title }}</span>
+        </h1>
         <div class="meeting-meta">
           <div class="meeting-meta-item">
             <i class="fas fa-clock"></i>

@@ -120,10 +120,12 @@
       @font-face {
         font-family: 'Font Awesome 6 Free';
         font-display: swap;
+        src: local('Font Awesome 6 Free');
       }
       @font-face {
         font-family: 'Font Awesome 6 Brands';
         font-display: swap;
+        src: local('Font Awesome 6 Brands');
       }
     </style>
   </head>
@@ -132,7 +134,6 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Unified Site Header -->
-    {%- unless page.layout == 'meeting' -%}
   <header class="site-header" aria-label="Site header">
       <div class="site-header-content">
         <div class="site-nav__brand">
@@ -221,8 +222,7 @@
           <i class="fab fa-github"></i> GitHub
         </a>
       </nav>
-    </header>
-    {%- endunless -%}
+  </header>
 
     <main id="main-content" class="page-content" aria-label="Main content area">
       {{ content }}
