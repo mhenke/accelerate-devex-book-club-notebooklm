@@ -22,18 +22,18 @@ permalink: /feeds/
   <div class="feed-url-container">
     <label for="podcast-feed-url"><strong>Podcast RSS URL:</strong></label>
     <input type="text" id="podcast-feed-url" value="{{ site.url }}{{ site.baseurl }}/podcast.xml" readonly>
-    <button type="button" onclick="copyToClipboard('podcast-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyFeedUrl('podcast-feed-url')" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
   <div class="feed-actions">
-    <a href="{{ site.baseurl }}/podcast.xml" class="btn btn--primary-action">
+    <a href="{{ site.baseurl }}/podcast.xml" class="btn btn--primary-action" target="_blank">
       <i class="fas fa-rss"></i> View Feed
     </a>
-    <a href="https://podcasts.apple.com/podcast/subscribe?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="btn btn--secondary">
+    <a href="https://podcasts.apple.com/podcast/subscribe?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="btn btn--secondary" target="_blank">
       <i class="fab fa-apple"></i> Apple Podcasts
     </a>
-    <a href="https://open.spotify.com/show/rss?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="btn btn--secondary">
+    <a href="https://open.spotify.com/show/rss?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="btn btn--secondary" target="_blank">
       <i class="fab fa-spotify"></i> Spotify
     </a>
   </div>
@@ -49,16 +49,13 @@ permalink: /feeds/
   <div class="feed-url-container">
     <label for="video-feed-url"><strong>Video RSS URL:</strong></label>
     <input type="text" id="video-feed-url" value="{{ site.url }}{{ site.baseurl }}/videos.xml" readonly>
-    <button type="button" onclick="copyToClipboard('video-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyFeedUrl('video-feed-url')" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
   <div class="feed-actions">
-    <a href="{{ site.baseurl }}/videos.xml" class="btn btn--primary-action">
+    <a href="{{ site.baseurl }}/videos.xml" class="btn btn--primary-action" target="_blank">
       <i class="fas fa-rss"></i> View Feed
-    </a>
-    <a href="https://www.youtube.com/feeds/videos.xml" class="btn btn--secondary">
-      <i class="fab fa-youtube"></i> YouTube
     </a>
   </div>
 </div>
@@ -73,12 +70,12 @@ permalink: /feeds/
   <div class="feed-url-container">
     <label for="media-feed-url"><strong>Complete Media RSS URL:</strong></label>
     <input type="text" id="media-feed-url" value="{{ site.url }}{{ site.baseurl }}/media-feed.xml" readonly>
-    <button type="button" onclick="copyToClipboard('media-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyFeedUrl('media-feed-url')" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
   <div class="feed-actions">
-    <a href="{{ site.baseurl }}/media-feed.xml" class="btn btn--primary-action">
+    <a href="{{ site.baseurl }}/media-feed.xml" class="btn btn--primary-action" target="_blank">
       <i class="fas fa-rss"></i> View Feed
     </a>
   </div>
@@ -86,3 +83,21 @@ permalink: /feeds/
 </div>
 
 </div>
+
+<script>
+function copyFeedUrl(elementId) {
+  const input = document.getElementById(elementId);
+  const button = event.target.closest('.copy-btn');
+  
+  input.select();
+  navigator.clipboard.writeText(input.value).then(() => {
+    const originalText = button.innerHTML;
+    button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    setTimeout(() => {
+      button.innerHTML = originalText;
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy:', err);
+  });
+}
+</script>

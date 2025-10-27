@@ -23,7 +23,7 @@ layout: null
     {% assign meetings = site.meetings | sort: 'week' %}
     {% for meeting in meetings %}
       <!-- Audio Episode -->
-      {% assign podcast_file = 'meeting-' | append: meeting.week | append: '-podcast.m4a' %}
+      {% assign podcast_file = 'meeting-' | append: meeting.meeting | append: '-podcast.m4a' %}
   {% assign full_podcast_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: podcast_file %}
       
       <item>
@@ -47,7 +47,7 @@ layout: null
       </item>
       
       <!-- Video Episode -->
-      {% assign video_file = 'meeting-' | append: meeting.week | append: '-video.mp4' %}
+      {% assign video_file = 'meeting-' | append: meeting.meeting | append: '-video.mp4' %}
   {% assign full_video_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: video_file %}
       
       <item>
