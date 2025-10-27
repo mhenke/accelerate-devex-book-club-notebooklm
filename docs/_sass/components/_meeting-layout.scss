@@ -8,6 +8,12 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+  // Mobile: Reduce padding significantly
+  @include mobile-only {
+    padding: 2rem 1rem 1.5rem; // 32px 16px 24px - much tighter on mobile
+    margin: -1rem -0.5rem 0; // Less negative margin on mobile
+  }
 }
 
 .meeting-hero-content {
@@ -25,6 +31,11 @@
   margin-bottom: 2rem;
   font-weight: 500;
   backdrop-filter: blur(10px);
+
+  @include mobile-only {
+    padding: var(--space-xs) var(--space-sm); // 4px 8px on mobile
+    margin-bottom: 1rem; // 16px on mobile
+  }
 }
 
 .meeting-week {
@@ -58,6 +69,11 @@ p.meeting-subtitle {
   border: none;
   background: none;
   font-family: "Inter", sans-serif;
+
+  @include mobile-only {
+    font-size: var(--font-size-h6); // Smaller on mobile
+    margin-bottom: 1rem; // 16px on mobile
+  }
 }
 
 .chapters-badge {
@@ -68,6 +84,11 @@ p.meeting-subtitle {
   font-weight: 600;
   font-size: var(--font-size-h6);
   backdrop-filter: blur(10px);
+
+  @include mobile-only {
+    padding: var(--space-xs) var(--space-sm); // 4px 8px on mobile
+    font-size: var(--font-size-body); // Smaller on mobile
+  }
 }
 
 .meeting-icon {
@@ -87,6 +108,11 @@ p.meeting-subtitle {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   margin-top: 1rem;
   margin-bottom: 1rem;
+
+  @include mobile-only {
+    margin-top: 0.5rem; // 8px on mobile
+    margin-bottom: 0.5rem; // 8px on mobile
+  }
 }
 
 .meeting-content {
