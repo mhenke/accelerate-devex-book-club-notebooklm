@@ -68,6 +68,55 @@ layout: null
           <media:keywords>devops, accelerate, dora metrics, video</media:keywords>
         </media:content>
       </item>
+      
+      <!-- Supplementary audio files for this meeting -->
+      {% assign meeting_key = 'meeting_' | append: meeting.week %}
+      {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].audio %}
+        {% for audio in site.data.supplementary_media[meeting_key].audio %}
+          {% assign supp_audio_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-' | append: meeting.week | append: '/' | append: audio.filename %}
+          <item>
+            <title>{{ audio.title | xml_escape }} (Bonus Audio)</title>
+            <description>{{ audio.description | xml_escape }} - From meeting {{ meeting.week }}</description>
+            <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#supplementary</link>
+            <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#audio-{{ audio.filename }}</guid>
+            <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+            <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+            <enclosure url="{{ supp_audio_url }}" type="{{ audio.type }}" length="0"/>
+            <category>Audio</category>
+            <category>Bonus Content</category>
+            
+            <media:content url="{{ supp_audio_url }}" type="{{ audio.type }}" medium="audio">
+              <media:title>{{ audio.title | xml_escape }}</media:title>
+              <media:description>{{ audio.description | xml_escape }}</media:description>
+              <media:keywords>devops, accelerate, bonus, supplementary</media:keywords>
+            </media:content>
+          </item>
+        {% endfor %}
+      {% endif %}
+      
+      <!-- Supplementary video files for this meeting -->
+      {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].video %}
+        {% for video in site.data.supplementary_media[meeting_key].video %}
+          {% assign supp_video_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-' | append: meeting.week | append: '/' | append: video.filename %}
+          <item>
+            <title>{{ video.title | xml_escape }} (Bonus Video)</title>
+            <description>{{ video.description | xml_escape }} - From meeting {{ meeting.week }}</description>
+            <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#supplementary</link>
+            <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#video-{{ video.filename }}</guid>
+            <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+            <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+            <enclosure url="{{ supp_video_url }}" type="{{ video.type }}" length="0"/>
+            <category>Video</category>
+            <category>Bonus Content</category>
+            
+            <media:content url="{{ supp_video_url }}" type="{{ video.type }}" medium="video">
+              <media:title>{{ video.title | xml_escape }}</media:title>
+              <media:description>{{ video.description | xml_escape }}</media:description>
+              <media:keywords>devops, accelerate, bonus, supplementary, video</media:keywords>
+            </media:content>
+          </item>
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </channel>
 </rss>
