@@ -4,36 +4,85 @@ title: 'RSS Feeds & Downloads'
 permalink: /feeds/
 ---
 
-# <i class="fas fa-rss"></i> RSS Feeds & Media Downloads {#rss-feeds-media-downloads}
+<div class="hero-banner" markdown="0">
+<div class="hero-content">
+<h1 class="hero-headline"><i class="fas fa-rss"></i> Subscribe to Audio & Video Feeds</h1>
+<p class="hero-subtitle">Get the latest DevOps insights delivered automatically to your favorite podcast or video app</p>
+</div>
+</div>
 
-Subscribe to our RSS feeds to get the latest podcast episodes and videos delivered automatically, or download individual files directly.
+<div class="page-container">
 
-## <i class="fas fa-podcast"></i> Podcast Feeds {#podcast-feeds}
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-podcast"></i> Podcast Feed</h2>
 
-### Audio Podcast Feed
-
-Subscribe to get audio-only podcast episodes covering each meeting's content:
+<p>Subscribe to audio-only episodes covering key concepts from each meeting. Perfect for commutes and learning on-the-go.</p>
 
 <div class="feed-subscription-box">
-  <p class="text-center mt-lg">
-    <a href="/accelerate-devex-book-club-notebooklm/feeds/" class="btn btn-feeds">Explore RSS Feeds & Downloads</a>
-  </p>
   <div class="feed-url-container">
-    <label for="podcast-feed-url">Podcast RSS URL:</label>
+    <label for="podcast-feed-url"><strong>Podcast RSS URL:</strong></label>
     <input type="text" id="podcast-feed-url" value="{{ site.url }}{{ site.baseurl }}/podcast.xml" readonly>
     <button type="button" onclick="copyToClipboard('podcast-feed-url')" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
   <div class="feed-actions">
-    <a href="{{ site.baseurl }}/podcast.xml" class="feed-link" target="_blank">
-      <i class="fas fa-rss"></i> View RSS Feed
+    <a href="{{ site.baseurl }}/podcast.xml" class="btn btn--primary-action">
+      <i class="fas fa-rss"></i> View Feed
     </a>
-    <a href="https://podcasts.apple.com/podcast/subscribe?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="subscribe-link apple" target="_blank">
+    <a href="https://podcasts.apple.com/podcast/subscribe?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="btn btn--secondary">
       <i class="fab fa-apple"></i> Apple Podcasts
     </a>
-    <a href="https://open.spotify.com/show/rss?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="subscribe-link spotify" target="_blank">
+    <a href="https://open.spotify.com/show/rss?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="btn btn--secondary">
       <i class="fab fa-spotify"></i> Spotify
     </a>
   </div>
+</div>
+</div>
+
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-video"></i> Video Feed</h2>
+
+<p>Subscribe to video series covering visual explanations and meeting overviews.</p>
+
+<div class="feed-subscription-box">
+  <div class="feed-url-container">
+    <label for="video-feed-url"><strong>Video RSS URL:</strong></label>
+    <input type="text" id="video-feed-url" value="{{ site.url }}{{ site.baseurl }}/videos.xml" readonly>
+    <button type="button" onclick="copyToClipboard('video-feed-url')" class="copy-btn">
+      <i class="fas fa-copy"></i> Copy
+    </button>
+  </div>
+  <div class="feed-actions">
+    <a href="{{ site.baseurl }}/videos.xml" class="btn btn--primary-action">
+      <i class="fas fa-rss"></i> View Feed
+    </a>
+    <a href="https://www.youtube.com/feeds/videos.xml" class="btn btn--secondary">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="section-card" markdown="0">
+<h2><i class="fas fa-files"></i> Combined Media Feed</h2>
+
+<p>Subscribe to all audio and video content in one comprehensive feed.</p>
+
+<div class="feed-subscription-box">
+  <div class="feed-url-container">
+    <label for="media-feed-url"><strong>Complete Media RSS URL:</strong></label>
+    <input type="text" id="media-feed-url" value="{{ site.url }}{{ site.baseurl }}/media-feed.xml" readonly>
+    <button type="button" onclick="copyToClipboard('media-feed-url')" class="copy-btn">
+      <i class="fas fa-copy"></i> Copy
+    </button>
+  </div>
+  <div class="feed-actions">
+    <a href="{{ site.baseurl }}/media-feed.xml" class="btn btn--primary-action">
+      <i class="fas fa-rss"></i> View Feed
+    </a>
+  </div>
+</div>
+</div>
+
 </div>
