@@ -18,6 +18,13 @@
   max-width: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
+  // Mobile: Reduce padding and margins significantly
+  @include mobile-only {
+    padding: var(--space-sm) var(--space-sm); // 8px all around
+    margin: var(--space-sm) var(--space-xs); // 8px vertical, 4px horizontal
+    width: calc(100% - var(--space-sm)); // Account for reduced horizontal margins (8px total)
+  }
+
   &.no-border {
     border: none;
     box-shadow: none;
@@ -31,6 +38,10 @@
   // Compact variant - tighter padding for dense content
   &.compact {
     padding: var(--space-md); // 16px
+
+    @include mobile-only {
+      padding: var(--space-xs); // 4px on mobile
+    }
   }
 
   // Dark theme modifier - dark background with light text
@@ -41,6 +52,10 @@
     padding: var(
       --space-sm
     ); // 8px - keeps current tight layout (TODO: consider increasing to space-md)
+
+    @include mobile-only {
+      padding: var(--space-xs); // 4px on mobile for even tighter layout
+    }
 
     position: relative;
     overflow: hidden;
@@ -2256,6 +2271,11 @@
   position: relative;
   overflow: hidden;
 
+  // Mobile: Reduce padding significantly
+  @include mobile-only {
+    padding: var(--space-md) var(--space-sm); // 16px vertical, 8px horizontal
+  }
+
   // Subtle gradient overlay
   &::before {
     content: "";
@@ -2307,6 +2327,11 @@
     border-radius: var(--radius-md);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+
+    @include mobile-only {
+      padding: var(--space-sm); // 8px on mobile
+      gap: var(--space-xs); // 4px gap on mobile
+    }
   }
 
   .quote-mark-start,
