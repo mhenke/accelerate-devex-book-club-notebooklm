@@ -275,6 +275,37 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Culture_or_Code_First_Accelerate_s_Battle_for_Transformation_Pr.m4a"
+               data-title="Culture or Code First? Accelerate's Battle for Transformation"
+               data-duration="16:35"
+               data-type="debate">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Culture or Code First? Accelerate's Battle for Transformation">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Culture or Code First? Accelerate's Battle for Transformation
+                <span class="podcast-type debate">Debate</span>
+                <span class="podcast-duration">16:35</span>
+              </div>
+              <div class="podcast-subtitle">Debating Which Comes First: Cultural Change or Technical Practices</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_Under_the_Microscope__Critiquing_DORA_Metrics%2C_Survey_Methods_And_Cultural_Assumptions.m4a"
                data-title="Accelerate Under the Microscope"
                data-duration="10:19"
