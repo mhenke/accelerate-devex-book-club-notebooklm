@@ -1,12 +1,48 @@
 /**
  * Podcast Playlist Player
  * Simple, clean state management for compact playlist
+ * Includes media caching and prefetching
  */
 
 (function () {
   'use strict';
 
   let currentTrack = null;
+
+  // Media cache: store metadata and preload hints
+  const mediaCache = {
+    tracks: new Map(),
+    prefetched: new Set(),
+
+    // Store track info for quick lookup
+    set(src, data) {
+      this.tracks.set(src, { ...data, timestamp: Date.now() });
+    },
+
+    get(src) {
+      return this.tracks.get(src);
+    },
+
+    // Prefetch audio (resource hint only, don't load into memory)
+    prefetch(src) {
+      if (this.prefetched.has(src)) return;
+      
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = src;
+      link.as = 'audio';
+      document.head.appendChild(link);
+      this.prefetched.add(src);
+    },
+
+    // Preload next track in sequence
+    preloadNext(currentIndex, allTracks) {
+      if (currentIndex + 1 < allTracks.length) {
+        const nextSrc = allTracks[currentIndex + 1].getAttribute('data-src');
+        if (nextSrc) this.prefetch(nextSrc);
+      }
+    }
+  };
 
   function init() {
     const player = document.getElementById('shared-player');
@@ -20,11 +56,26 @@
       return;
     }
 
+    // Prefetch all track URLs for better performance
+    tracks.forEach((track, index) => {
+      const src = track.getAttribute('data-src');
+      const title = track.getAttribute('data-title');
+      const duration = track.getAttribute('data-duration');
+      
+      // Cache metadata
+      if (src) {
+        mediaCache.set(src, { title, duration, index });
+        
+        // Prefetch audio resources (browser-controlled, non-blocking)
+        mediaCache.prefetch(src);
+      }
+    });
+
     // Load first track by default
     loadTrack(tracks[0]);
 
     // Add click handlers to all tracks
-    tracks.forEach((track) => {
+    tracks.forEach((track, index) => {
       const playBtn = track.querySelector('.play-btn');
       const src = track.getAttribute('data-src');
       const title = track.getAttribute('data-title');
@@ -34,12 +85,14 @@
         playBtn.addEventListener('click', (e) => {
           e.stopPropagation();
           handlePlayPause(track, src, title);
+          mediaCache.preloadNext(index, tracks);
         });
       }
 
       // Click on track row
       track.addEventListener('click', () => {
         handlePlayPause(track, src, title);
+        mediaCache.preloadNext(index, tracks);
       });
 
       // Keyboard support
@@ -47,6 +100,7 @@
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           handlePlayPause(track, src, title);
+          mediaCache.preloadNext(index, tracks);
         }
       });
     });
