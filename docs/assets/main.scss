@@ -61,7 +61,12 @@
   align-items: center;
   min-height: 56px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  --site-header-height: 56px;
+
+  @media (min-width: #{$mobile}) {
+    overflow: hidden;
+  }
 
   // Subtle gradient overlay (matches footer and key-question-banner)
   &::before {
@@ -320,11 +325,11 @@
 .site-nav-mobile {
   display: none;
   position: fixed;
-  top: 56px;
+  top: var(--site-header-height, 72px);
   right: 0;
   width: 280px;
   max-width: 85vw;
-  height: calc(100vh - 56px);
+  height: calc(100vh - var(--site-header-height, 72px));
   background: var(--hero-dark);
   border-left: 1px solid rgba(122, 218, 209, 0.2);
   padding: 2rem 1rem;

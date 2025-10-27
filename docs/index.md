@@ -212,14 +212,6 @@ title: Home
 </div>
 </div>
 
-<div class="welcome-compact section-card" markdown="0">
-<p>Ready to build a high-performing tech organization? Join our evidence-based 2-month journey through "Accelerate."</p>
-<div class="welcome-cta">
-<a href="{{ '/meetings/meeting-1/' | relative_url }}" class="btn btn--primary-action">Start Learning Now</a>
-<p class="welcome-cta-subtitle">4 sessions • 1 hour each • Proven results</p>
-</div>
-</div>
-
 <footer class="ai-attribution" aria-label="AI attribution" markdown="0">
   <div class="ai-attribution__icon">
     <i class="fas fa-robot" role="img" aria-label="Robot"></i>
