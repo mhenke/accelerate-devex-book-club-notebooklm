@@ -27,7 +27,7 @@
 @import "components/meeting-content"; // Meeting content styles
 @import "components/meeting-layout"; // Meeting layout styles
 // Removed duplicate checkpoint partial; assessment UI lives in components/_assessments.scss
-@import "components/inline-components"; // Consolidated inline styles for HTML validation
+// (Removed) inline-components import — DORA metric card styles not used in built HTML
 
 // 4. LAYOUT - Major layout components (loaded after critical)
 @import "layout/header"; // Site header and branding

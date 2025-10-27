@@ -104,27 +104,7 @@
     opacity: 0.08;
   }
 
-  // Active/Playing state
-  &.playing {
-    background: linear-gradient(
-      135deg,
-      rgba(var(--theme-primary-rgb), 0.08),
-      rgba(var(--theme-primary-rgb), 0.02)
-    );
-
-    .playing-indicator {
-      display: flex !important;
-    }
-
-    .podcast-icon {
-      display: none;
-    }
-
-    .podcast-headline {
-      color: var(--theme-primary);
-      font-weight: var(--font-weight-bold);
-    }
-  }
+  // Removed unused legacy `.playing` state (JS uses `.is-playing`)
 
   // Focus state
   &:focus-visible {

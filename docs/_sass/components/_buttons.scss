@@ -64,19 +64,6 @@
     pointer-events: none;
   }
 
-  // Icon support
-  .btn__icon {
-    width: 18px;
-    height: 18px;
-
-    &--leading {
-      margin-right: 8px;
-    }
-
-    &--trailing {
-      margin-left: 8px;
-    }
-  }
 }
 
 // =============================================================================
@@ -84,8 +71,7 @@
 // =============================================================================
 
 // Filled Button (Primary) - Clean Modern Style
-.btn,
-.btn--filled {
+.btn {
   @extend %btn-base;
 
   background: #4CAF50; // Clean green

@@ -85,39 +85,7 @@
   }
 }
 
-/* Meeting Navigation */
-.meeting-nav {
-  background: #f5f5f5;
-  padding: var(--space-md) 0;
-  border-bottom: var(--border-medium);
-
-  .nav-container {
-    margin: 0 auto;
-    padding: 0 var(--space-md);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-link {
-    padding: var(--space-sm) var(--space-md);
-    text-decoration: none;
-    color: var(--text-dark);
-    border-radius: var(--radius-md);
-    transition: all 0.3s ease-out;
-    font-weight: var(--font-weight-medium);
-
-    &:hover {
-      background: #e5e5e5;
-      transform: translateY(-2px);
-    }
-
-    &.current {
-      background: var(--meeting-1-color);
-      color: white;
-    }
-  }
-}
+// (Removed) Meeting navigation bar — not used in built HTML
 
 /* Meeting Content Container */
 .meeting-container {
@@ -129,54 +97,9 @@
   contain: layout style;
 }
 
-.meeting-content {
-  margin: 0 auto;
-  max-width: 100%;
-  overflow: hidden;
+// (Removed) Meeting-content heading overrides — not used (no `.meeting-content` wrapper)
 
-  h2 {
-    color: var(--theme-primary);
-    font-size: var(--font-size-h2); // 1.75rem
-    font-weight: var(--font-weight-semibold);
-    margin: var(--space-md) 0 var(--space-sm) 0; // Standardized: 16px 0 8px 0
-  }
-
-  .section-card h2 {
-    margin: var(--space-md) 0 var(--space-sm) 0; // Match parent h2 margin
-  }
-
-  h3 {
-    color: var(--theme-primary);
-    font-size: var(--font-size-h3); // 1.5rem
-    font-weight: var(--font-weight-semibold);
-    margin: var(--space-lg) 0 var(--space-sm) 0; // Standardized: 24px 0 8px 0
-  }
-
-  h4 {
-    color: var(--theme-primary);
-    font-size: var(--font-size-h4); // 1.375rem
-    font-weight: var(--font-weight-semibold);
-    margin: var(--space-md) 0 var(--space-sm) 0; // Standardized: 16px 0 8px 0
-  }
-}
-
-/* Meeting Progress Indicator */
-.meeting-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  z-index: var(--z-fixed);
-
-  .progress-bar {
-    height: 100%;
-    background: var(--meeting-1-color);
-    width: 0%;
-    transition: width 0.3s ease;
-  }
-}
+// (Removed) Meeting progress indicator — not used in built HTML
 
 /* Meeting Footer */
 .meeting-footer {
