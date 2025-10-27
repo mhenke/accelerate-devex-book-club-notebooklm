@@ -201,6 +201,13 @@
   margin: var(--space-lg) 0; // 24px 0
   border-radius: var(--radius-md);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  overflow: hidden;
+
+  @include mobile-only {
+    padding: var(--space-sm);
+    margin: var(--space-md) 0;
+  }
 }
 
 // =============================================================================
@@ -212,6 +219,12 @@
   gap: var(--space-sm);
   margin: 1rem 0;
   flex-wrap: wrap;
+  max-width: 100%;
+  overflow: hidden;
+
+  @include mobile-only {
+    margin: var(--space-sm) 0;
+  }
 }
 
 .download-btn,

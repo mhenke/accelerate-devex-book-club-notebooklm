@@ -2114,6 +2114,12 @@ button:focus,
 
   .media-controls {
     margin: var(--space-md) 0;
+    max-width: 100%;
+    overflow: hidden;
+
+    @include mobile-only {
+      margin: var(--space-sm) 0;
+    }
 
     video,
     audio {
