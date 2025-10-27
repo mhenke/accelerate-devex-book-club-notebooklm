@@ -1,52 +1,8 @@
 /* Meeting Layout Components - Hero, Navigation, and Container Styles */
 
-// (Removed) Meeting hero header elements — unused
-
-.chapters-badge {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: var(--space-sm) var(--space-lg); // 8px 24px
-  font-weight: 600;
-  font-size: var(--font-size-h6);
-  backdrop-filter: blur(10px);
-
-  @include mobile-only {
-    padding: var(--space-xs) var(--space-sm); // 4px 8px on mobile
-    font-size: var(--font-size-body); // Smaller on mobile
-  }
-}
-
-.meeting-icon {
-  position: absolute;
-  right: 3rem;
-  top: 3rem;
-  font-size: var(--font-size-display);
-  opacity: 0.3;
-  color: rgba(255, 255, 255, 0.6);
-  z-index: 1;
-}
+// (Removed) Meeting hero header elements, chapters-badge, meeting-icon, meeting-content — unused
 
 /* Meeting Container */
-.meeting-container {
-  margin: 0 auto;
-  background: var(--text-white);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-
-  @include mobile-only {
-    margin-top: 0.5rem; // 8px on mobile
-    margin-bottom: 0.5rem; // 8px on mobile
-  }
-}
-
-.meeting-content {
-  line-height: 1.5;
-  font-size: var(--font-size-h6);
-}
-
-/* (Removed) Enhanced meeting navigation — unused */
 
 /* (Removed) Progress Indicator — unused */
 

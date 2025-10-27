@@ -2,18 +2,7 @@
 // ======================================
 // Main site header structure for immediate rendering
 
-.header-container {
-  margin: 0 auto;
-  padding: 0 var(--space-md);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: var(--space-3xl);
-
-  @include mobile-only {
-    padding: 0 var(--space-xs); // 4px on mobile (reduced from 16px)
-  }
-}
+// (Removed) header-container — not used in built HTML
 
 // Skip link for accessibility - critical for screen readers
 .skip-link {
