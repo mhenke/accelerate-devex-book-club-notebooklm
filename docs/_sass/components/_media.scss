@@ -293,10 +293,6 @@
     height: 32px;
   }
 
-  .podcast-icon {
-    font-size: 1.25rem;
-  }
-
   .podcast-headline {
     font-size: var(--font-size-body);
   }
@@ -310,13 +306,4 @@
   }
 }
 
-// Print styles
-@media print {
-  .playing-indicator {
-    display: none !important;
-  }
-
-  .podcast-controls {
-    display: none !important;
-  }
-}
+// (Removed) print hiding of .playing-indicator and .podcast-controls — elements not present

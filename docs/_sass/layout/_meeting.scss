@@ -72,17 +72,7 @@
   }
 
   // Brand text styles (extracted to reduce nesting)
-  .brand-title {
-    font-size: var(--font-size-h5);
-    font-weight: var(--font-weight-bold);
-    font-family: var(--font-display);
-  }
-
-  .brand-subtitle {
-    font-size: var(--font-size-body);
-    opacity: 0.8;
-    font-weight: var(--font-weight-medium);
-  }
+  // (Removed) .brand-title and .brand-subtitle — not used in meeting header
 }
 
 // (Removed) Meeting navigation bar — not used in built HTML

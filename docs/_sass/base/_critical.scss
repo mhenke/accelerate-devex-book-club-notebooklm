@@ -540,12 +540,7 @@ a {
       margin-bottom: var(--space-xs);
     }
 
-    // Metric-style text
-    .metric-text {
-      font-size: var(--font-size-h6);
-      font-weight: var(--font-weight-bold);
-      line-height: 1.2;
-    }
+    // (Removed) .metric-text — not used in built HTML
 
     // Interactive enhancements
     cursor: pointer;

@@ -1557,7 +1557,7 @@ ACCESSIBILITY COMPLIANCE:
   color: var(--theme-primary);
 }
 
- .achievement-badge {
+.achievement-badge {
   display: inline-flex;
   align-items: center;
   gap: var(--space-sm);
@@ -1569,7 +1569,7 @@ ACCESSIBILITY COMPLIANCE:
   white-space: nowrap;
   line-height: 1.2;
 }
- .achievement-badge i {
+.achievement-badge i {
   font-size: 0.9rem;
 }
 
