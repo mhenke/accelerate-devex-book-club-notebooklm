@@ -1,3 +1,56 @@
+## Copilot / AI agent instructions — Accelerate DevEx Book Club (concise)
+
+Purpose: give AI coding agents the exact, discoverable knowledge they need to be productive in this repo.
+
+1) Big picture (what you'll edit)
+- This is a Jekyll-based GitHub Pages site. Primary source lives in `docs/` (content, layouts, SCSS).
+- Supporting resources and AI prompts live under `resources/` and `planning/`.
+
+2) Where to make changes (quick map)
+- Site pages & layouts: `docs/` (see `docs/_layouts/`, `docs/index.md`, `docs/_meetings/`).
+- Styles: `docs/assets/main.scss` and `docs/_sass/` partials (tokens in `_tokens.scss`).
+- AI prompts & meeting content: `resources/meetings/meeting-*/notebooklm/` and `resources/plan/`.
+- Scripts and utilities: `extract-durations.js`, `scripts/purgecss.cjs`, `purgecss.config.cjs`.
+
+3) Critical workflows and exact commands
+- Local Jekyll dev server: `npm run serve` (runs `cd docs && bundle exec jekyll serve`).
+- Build: `npm run build` (runs Jekyll build in `docs`).
+- Lint: `npm run lint` (runs `stylelint` + `eslint`).
+- Full validation (recommended before commits): `npm run validate` (build + lint + tests).
+- HTML tests: `npm run test` and `npm run test:htmlproof` (uses `html-validate` and `htmlproofer`).
+- CSS analysis/purge: `npm run analyze:css`, `npm run purgecss`.
+
+4) Repo-specific conventions (do this, not generic advice)
+- No static images for main visuals — implement banners/infographics using CSS/SVG.
+- SCSS tokens centralized in `docs/_sass/abstracts/_tokens.scss`. Change tokens there for global palette/spacing.
+- Meeting themes: apply `.meeting-theme--N` classes (see `_meeting-themes.scss`) for color overrides.
+- All SCSS partials must include YAML front matter when placed under `docs/assets/` so Jekyll compiles them.
+
+5) Media workflow (explicit example)
+- Local media folder: `media/` (not committed). Workflow: drop files in `media/`, upload to S3, then reference S3 URLs in meeting pages.
+- To update durations: install `music-metadata` then run `node extract-durations.js` (script reads `media/` and writes MM:SS durations used in `docs` pages).
+
+6) Integration points & dependencies to be aware of
+- Jekyll (Ruby) for site generation: `bundle` + `jekyll` in `docs/`.
+- Node tools for linting and CSS optimization: `stylelint`, `eslint`, `purgecss`, `html-validate` (see `package.json` scripts).
+- Tests: Playwright lives in `tests/` (run `npm test` in `tests`).
+
+7) Examples of common edits
+- Small style tweak: edit token in `_tokens.scss` -> `npm run build` -> `npm run lint` -> check `http://127.0.0.1:4000`.
+- Add meeting prompt: create `resources/meetings/meeting-X/notebooklm/prompt.md`, follow existing folder structure, update `resources/plan/` index.
+
+8) Files and locations to reference when answering questions
+- `package.json` — exact npm scripts and devDependencies.
+- `docs/_config.yml` — baseurl, collections, and Jekyll plugin configuration.
+- `docs/assets/main.scss` and `docs/_sass/` — design tokens and component styles.
+- `extract-durations.js` — how media durations are computed (uses `music-metadata`).
+
+9) Safety and practical notes for agents
+- Preserve accessibility (semantic HTML, ARIA) when modifying interactive components.
+- Keep site pathing consistent with `baseurl` (/accelerate-devex-book-club-notebooklm). Use absolute paths when referencing built assets.
+- Do not add large binary media to git — use `media/` local + S3 pattern used in this repo.
+
+If anything in this concise guide is unclear or you want a specific example (e.g., how to add a new meeting page, or how to run Playwright tests), tell me which area to expand and I will iterate.
 # Copilot Instructions for Accelerate DevEx Book Club
 
 ## Project Overview

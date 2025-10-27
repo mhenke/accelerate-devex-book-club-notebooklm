@@ -476,7 +476,7 @@ document.addEventListener('keydown', function(event) {
 
 ---
 
-<footer class="ai-attribution" markdown="0">
+<footer class="ai-attribution" aria-label="AI attribution" markdown="0">
   <div class="ai-attribution__icon">
     <i class="fas fa-robot" aria-hidden="true"></i>
   </div>

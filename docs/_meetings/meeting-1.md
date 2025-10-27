@@ -336,16 +336,6 @@ document.addEventListener('keydown', function(event) {
             </div>
           </div>
 
-          <!-- Alternative Podcasts -->
-          <div class="alternative-podcasts">
-            <h4>Previous Podcasts</h4>
-            <ul>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" target="_blank">Accelerate Metrics Unlocked</a> (Brief, 1:35, Oct 1, 2025)</li>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" target="_blank">Accelerate Success</a> (Deep Dive, 30:38, Oct 1, 2025)</li>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" target="_blank">Accelerate Your DevEx</a> (Critique, 10:34, Oct 1, 2025)</li>
-            </ul>
-          </div>
-
           <!-- Shared Player at Bottom -->
           <div class="playlist-player">
             <div class="now-playing-header">
@@ -363,6 +353,17 @@ document.addEventListener('keydown', function(event) {
               Your browser does not support the audio tag.
             </audio>
           </div>
+
+          <!-- Alternative Podcasts -->
+          <div class="alternative-podcasts">
+            <h4>Previous Podcasts</h4>
+            <ul>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-metrics-unlocked.mp4" target="_blank">Accelerate Metrics Unlocked</a> (Brief, 1:35, Oct 1, 2025)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-success-deep-dive.mp4" target="_blank">Accelerate Success</a> (Deep Dive, 30:38, Oct 1, 2025)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/accelerate-devex-critique.mp4" target="_blank">Accelerate Your DevEx</a> (Critique, 10:34, Oct 1, 2025)</li>
+            </ul>
+          </div>
+
         </section>
       </div>
     </div>

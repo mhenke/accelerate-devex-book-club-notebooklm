@@ -25,8 +25,8 @@
 
     // Prefetch audio (resource hint only, don't load into memory)
     prefetch(src) {
-      if (this.prefetched.has(src)) return;
-      
+      if (this.prefetched.has(src)) {return;}
+
       const link = document.createElement('link');
       link.rel = 'prefetch';
       link.href = src;
@@ -39,7 +39,7 @@
     preloadNext(currentIndex, allTracks) {
       if (currentIndex + 1 < allTracks.length) {
         const nextSrc = allTracks[currentIndex + 1].getAttribute('data-src');
-        if (nextSrc) this.prefetch(nextSrc);
+        if (nextSrc) {this.prefetch(nextSrc);}
       }
     }
   };
@@ -61,11 +61,11 @@
       const src = track.getAttribute('data-src');
       const title = track.getAttribute('data-title');
       const duration = track.getAttribute('data-duration');
-      
+
       // Cache metadata
       if (src) {
         mediaCache.set(src, { title, duration, index });
-        
+
         // Prefetch audio resources (browser-controlled, non-blocking)
         mediaCache.prefetch(src);
       }
