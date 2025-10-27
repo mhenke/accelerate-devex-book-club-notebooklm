@@ -23,7 +23,11 @@ layout: null
     {% assign meetings = site.meetings | sort: 'week' %}
     {% for meeting in meetings %}
       <!-- Audio Episode -->
-      {% assign podcast_file = 'meeting-' | append: meeting.meeting | append: '-podcast.m4a' %}
+      {% if meeting.meeting == 0 %}
+        {% assign podcast_file = 'meeting-0/accelerate-mastery-deep-dive.m4a' %}
+      {% else %}
+        {% assign podcast_file = 'meeting-' | append: meeting.meeting | append: '-podcast.m4a' %}
+      {% endif %}
   {% assign full_podcast_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: podcast_file %}
       
       <item>

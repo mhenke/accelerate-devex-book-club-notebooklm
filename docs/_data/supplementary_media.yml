@@ -1,6 +1,13 @@
 # Supplementary media files (NotebookLM-generated audio, extra videos, etc.)
 # Organized by meeting week (key must match the meeting.week front matter)
-# Note: Media files are sourced from S3 bucket and must exist before adding
+# AUDITED: Only files that actually exist in S3 bucket
+
+meeting_0:
+  audio:
+    - title: "Accelerate Mastery: Deep Dive"
+      filename: "meeting-0/accelerate-mastery-deep-dive.m4a"
+      description: "Deep dive into Accelerate mastery and DevOps principles"
+      type: "audio/x-m4a"
 
 meeting_1:
   audio:
@@ -42,3 +49,9 @@ meeting_1:
       description: "Beginner-friendly introduction to Accelerate concepts"
       type: "video/mp4"
 
+meeting_3:
+  audio:
+    - title: "Accelerate Your Code: Continuous Delivery, Independent Teams, and Flow"
+      filename: "meeting-2/Accelerate_Your_Code__Continuous_Delivery,_Independent_Teams,_a.m4a"
+      description: "Implementing continuous delivery and team independence"
+      type: "audio/x-m4a"
