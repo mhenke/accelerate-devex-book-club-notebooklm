@@ -614,7 +614,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: var(--space-sm) 0;
+  margin: var(--space-xl) 0; // increased top/bottom spacing for visual breathing room
 
   @include mobile-up {
     flex-wrap: wrap;
@@ -1117,6 +1117,34 @@
 
     &:hover {
       border-color: var(--accent-coral);
+    }
+  }
+}
+
+// Playlist / shared player styling — ensure audio controls fill container width
+.playlist-player {
+  width: 100%;
+  // Make the native audio control expand to available width
+  audio#shared-player,
+  audio.playlist-audio,
+  .playlist-player audio {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  // Ensure the header and controls stack nicely on narrow screens
+  .now-playing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+
+    @include mobile-only {
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--space-sm);
     }
   }
 }

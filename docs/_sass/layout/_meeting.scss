@@ -146,6 +146,13 @@
       }
     }
 
+    .footer-about h3 {
+      color: #8fa8b8;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: var(--space-md);
+    }
+
     .footer-about {
       .footer-meta {
         display: flex;
