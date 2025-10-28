@@ -12,7 +12,7 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 ---
 
 ## Meeting 0
-- [ ] Video
+- [x] Video
 - [ ] Brief Podcast
 - [x] Deep Dive Podcast (default)
 
@@ -68,3 +68,5 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 - After Meeting 2 is complete, move to Meeting 3
 - Remember to update the "Now Playing" default player source for each meeting
 - Push changes after each meeting is fully updated
+- Make sure local and aws structures are in sync
+- Update feeds if necessary
