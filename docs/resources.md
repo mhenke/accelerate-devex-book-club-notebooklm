@@ -21,7 +21,7 @@ title: Resources
 <div class="page-container">
 
 <div class="what-youll-learn-section section-card" markdown="0">
-<h2><i class="fas fa-books"></i> Meeting Handouts</h2>
+<h2>Meeting Handouts</h2>
 <p>Each meeting includes printable handouts: deep-dive guides on key concepts, attendee guides, facilitator agendas, and action item trackers.</p>
 
 <div class="learning-highlights">
@@ -30,9 +30,7 @@ title: Resources
 <!-- Meeting 1 Handouts -->
 <div class="highlight-card meeting-1 dark-theme">
   <div class="card-header">
-    <div class="highlight-icon">
-      <i class="fas fa-chart-line" role="img" aria-label="Chart line"></i>
-    </div>
+    
     <h3>Meeting 1: Foundation</h3>
   </div>
   <p><strong>6 handouts:</strong> Culture Before Metrics, DORA Metrics, Culture Change Model, + Standard Materials</p>
@@ -47,9 +45,7 @@ title: Resources
 <!-- Meeting 2 Handouts -->
 <div class="highlight-card meeting-2 dark-theme">
   <div class="card-header">
-    <div class="highlight-icon">
-      <i class="fas fa-rocket" role="img" aria-label="Rocket"></i>
-    </div>
+    
     <h3>Meeting 2: Technical Excellence</h3>
   </div>
   <p><strong>5 handouts:</strong> Architecture: Team Independence, Security: Shift Left, + Standard Materials</p>
@@ -64,9 +60,7 @@ title: Resources
 <!-- Meeting 3 Handouts -->
 <div class="highlight-card meeting-3 dark-theme">
   <div class="card-header">
-    <div class="highlight-icon">
-      <i class="fas fa-columns" role="img" aria-label="Columns"></i>
-    </div>
+    
     <h3>Meeting 3: Management</h3>
   </div>
   <p><strong>6 handouts:</strong> Lean Management Practices, Deployment Pain & Burnout, Employee Satisfaction, + Standard Materials</p>
@@ -81,9 +75,7 @@ title: Resources
 <!-- Meeting 4 Handouts -->
 <div class="highlight-card meeting-4 dark-theme">
   <div class="card-header">
-    <div class="highlight-icon">
-      <i class="fas fa-users" role="img" aria-label="Users"></i>
-    </div>
+    
     <h3>Meeting 4: Leadership</h3>
   </div>
   <p><strong>4 handouts:</strong> Servant Leadership, Organizational Structure, Transformation Insights, + Standard Materials</p>
@@ -96,29 +88,29 @@ title: Resources
 </div>
 
 <div class="section-card" markdown="0">
-<h2><i class="fas fa-chalkboard-teacher"></i> Facilitator Guides</h2>
+<h2>Facilitator Guides</h2>
 
 <div class="resource-callout-grid">
   <div class="resource-callout">
-    <h3><i class="fas fa-map" aria-hidden="true"></i> Meeting Outlines</h3>
+  <h3>Meeting Outlines</h3>
     <p>Complete facilitator guides with timing, activities, and flow for each meeting.</p>
     <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/" class="resource-link">View all meeting outlines →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Leader Cheatsheets</h3>
+  <h3>Leader Cheatsheets</h3>
     <p>One-page quick references with key points and facilitation tips.</p>
     <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-1/leadership/" class="resource-link">Example: Meeting 1 →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-comments" aria-hidden="true"></i> Discussion Guides</h3>
+  <h3>Discussion Guides</h3>
     <p>Open-ended questions for deep exploration, organized by topic.</p>
     <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-1/leadership/" class="resource-link">Example: Meeting 1 →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-book-open" aria-hidden="true"></i> Chapter Notes</h3>
+  <h3>Chapter Notes</h3>
     <p>Detailed chapter summaries with key concepts and research findings.</p>
     <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-1/" class="resource-link">Example: Meeting 1 →</a></p>
   </div>
@@ -126,30 +118,30 @@ title: Resources
 </div>
 
 <div class="section-card" markdown="0">
-<h2><i class="fas fa-clipboard-check"></i> Assessments & Templates</h2>
+<h2>Assessments & Templates</h2>
 
 <div class="resource-callout-grid">
   <div class="resource-callout">
-    <h3><i class="fas fa-tachometer-alt" aria-hidden="true"></i> DORA Metrics Assessment</h3>
+  <h3>DORA Metrics Assessment</h3>
     <p>Measure your team's performance across key DevOps metrics.</p>
     <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/assessments/" class="resource-link">View DORA assessment →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-tasks" aria-hidden="true"></i> 24 Capabilities Assessment</h3>
+  <h3>24 Capabilities Assessment</h3>
     <p>Interactive self-assessment across all 24 capabilities with automatic scoring and performance level tracking. Evaluate CD practices, architecture, product development, lean management, and culture.</p>
     <p><a href="/accelerate-devex-book-club-notebooklm/assessment" class="btn btn--primary-action">Take Interactive Assessment →</a></p>
     <p class="text-sm"><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/24-capabilities-assessment.md" class="resource-link">View printable version →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-sitemap" aria-hidden="true"></i> Culture Assessment</h3>
+  <h3>Culture Assessment</h3>
     <p>Westrum organizational culture assessment. Identify whether your culture is pathological, bureaucratic, or generative.</p>
     <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/culture-assessment-worksheet.md" class="resource-link">View culture assessment →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-file-alt" aria-hidden="true"></i> Meeting Templates</h3>
+  <h3>Meeting Templates</h3>
     <p>Templates for meeting notes, retrospectives, and action tracking. Structured formats to capture insights and commitments.</p>
     <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/templates/" class="resource-link">View templates →</a></p>
   </div>
@@ -157,10 +149,10 @@ title: Resources
 </div>
 
 <div class="section-card" markdown="0">
-<h2><i class="fas fa-question-circle"></i> Key Questions Framework</h2>
+<h2>Key Questions Framework</h2>
 
 <div class="resource-callout warning-style">
-  <h3><i class="fas fa-lightbulb" aria-hidden="true"></i> The Thread That Connects All Meetings</h3>
+  <h3>The Thread That Connects All Meetings</h3>
   <p>Each meeting explores one core question that builds toward the culminating question:</p>
   <blockquote>
     "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
@@ -170,38 +162,46 @@ title: Resources
 </div>
 
 <div class="section-card" markdown="0">
-<h2><i class="fas fa-microphone-alt"></i> Audio & Video Content</h2>
+<h2>Audio, Video, & Presentations Content</h2>
 
 <div class="resource-callout-grid">
   <div class="resource-callout">
-    <h3><i class="fas fa-podcast" aria-hidden="true"></i> Podcast Feeds</h3>
+  <h3>Podcast Feeds</h3>
     <p>Subscribe to supplementary podcasts covering key concepts from each meeting.</p>
     <p><a href="/accelerate-devex-book-club-notebooklm/feeds/" class="resource-link">Subscribe to podcast feed →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-video" aria-hidden="true"></i> Video Series</h3>
+  <h3>Video Series</h3>
     <p>Visual learning companion to reading and podcasts with meeting overviews.</p>
     <p><a href="/accelerate-devex-book-club-notebooklm/feeds/" class="resource-link">View video feed →</a></p>
   </div>
 
   <div class="resource-callout">
-    <h3><i class="fas fa-file-upload" aria-hidden="true"></i> AI Prompts</h3>
-    <p>NotebookLM prompts to generate additional content for your book club.</p>
-    <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-1/notebooklm/" class="resource-link">View prompts →</a></p>
+  <h3>NotebookLM Prompts</h3>
+  <p>NotebookLM prompts to generate additional content for your book club.</p>
+  <p><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-1/notebooklm/" class="resource-link">View Meeting 1 prompt →</a></p>
+  </div>
+
+  <div class="resource-callout">
+    <h3>Gamma Presentations & Prompts</h3>
+    <p>AI-generated slide decks and outlines for meetings, built with Gamma.</p>
+    <p>
+      <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/gamma.md" class="resource-link">View Meeting 1 prompt →</a>
+    </p>
   </div>
 </div>
 
 <div class="ai-content-info">
-  <p><strong><i class="fas fa-info-circle"></i> Generated with:</strong> <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Google NotebookLM</a> • <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a> • <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></p>
+  <p><strong>Generated with:</strong> <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Google NotebookLM</a> • <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a> • <a href="https://gamma.app/" target="_blank" rel="noopener noreferrer">Gamma</a> • <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></p>
 </div>
 </div>
 
 <div class="section-card" markdown="0">
-<h2><i class="fas fa-route"></i> Transformation Roadmap</h2>
+<h2>Transformation Roadmap</h2>
 
 <div class="resource-callout warning-style">
-  <h3><i class="fas fa-map-marked-alt" aria-hidden="true"></i> Complete Book Club Journey</h3>
+  <h3>Complete Book Club Journey</h3>
   <p>Meeting schedule, success metrics, discussion best practices, between-meeting activities, and extensions.</p>
   <p><strong>View the roadmap:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/book-club-roadmap.md" class="resource-link">Book Club Roadmap →</a></p>
 </div>
@@ -210,9 +210,7 @@ title: Resources
 </div>
 
 <footer class="ai-attribution" aria-label="AI attribution" markdown="0">
-<div class="ai-attribution__icon">
-<i class="fas fa-robot" aria-hidden="true"></i>
-</div>
+<div class="ai-attribution__icon" aria-hidden="true"></div>
 <div class="ai-attribution__content">
 <h4 class="ai-attribution__title">AI-Generated Content</h4>
 <p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, <strong><a href="https://gamma.app/" target="_blank" rel="noopener noreferrer">Gamma</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>

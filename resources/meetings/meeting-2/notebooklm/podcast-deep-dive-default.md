@@ -27,6 +27,10 @@
 
 ---
 
+> AI Tool Spotlight Tip: After generation, mark a 60-90 second excerpt (key stat + reflection prompt) to play during the meeting's NotebookLM spotlight segment.
+
+---
+
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ### Complete Prompt (Copy Everything Below)
