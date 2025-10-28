@@ -1,0 +1,143 @@
+{
+  "analyzedAt": "2025-10-28T21:55:08.474Z",
+  "results": [
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_assessments.scss",
+      "defined": 16,
+      "removed": 8,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_badges.scss",
+      "defined": 30,
+      "removed": 22,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_buttons.scss",
+      "defined": 45,
+      "removed": 29,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_cards.scss",
+      "defined": 20,
+      "removed": 18,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_checkpoint-components.scss",
+      "defined": 28,
+      "removed": 18,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_hero.scss",
+      "defined": 34,
+      "removed": 16,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_icons.scss",
+      "defined": 50,
+      "removed": 39,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_inline-components.scss",
+      "defined": 26,
+      "removed": 23,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_media.scss",
+      "defined": 56,
+      "removed": 10,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_meeting-content.scss",
+      "defined": 11,
+      "removed": 4,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_meeting-layout.scss",
+      "defined": 41,
+      "removed": 27,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_meeting-themes.scss",
+      "defined": 1,
+      "removed": 0,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_metrics.scss",
+      "defined": 55,
+      "removed": 44,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_navigation-patterns.scss",
+      "defined": 32,
+      "removed": 18,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_navigation.scss",
+      "defined": 28,
+      "removed": 5,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_sections.scss",
+      "defined": 193,
+      "removed": 97,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/components/_timelines.scss",
+      "defined": 20,
+      "removed": 16,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/layout/_grid.scss",
+      "defined": 44,
+      "removed": 38,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/layout/_header.scss",
+      "defined": 2,
+      "removed": 1,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/layout/_meeting.scss",
+      "defined": 39,
+      "removed": 10,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/pages/_404.scss",
+      "defined": 13,
+      "removed": 0,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/pages/_offline.scss",
+      "defined": 8,
+      "removed": 1,
+      "status": "partial"
+    },
+    {
+      "file": "/home/mhenke/Projects/accelerate-devex-book-club-notebooklm/docs/_sass/pages/_resources.scss",
+      "defined": 29,
+      "removed": 9,
+      "status": "partial"
+    }
+  ]
+}

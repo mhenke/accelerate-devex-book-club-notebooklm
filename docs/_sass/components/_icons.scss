@@ -39,27 +39,6 @@
   vertical-align: middle;
 }
 
-.icon {
-  @extend %icon-base;
-
-  // Material Design touch target (when interactive)
-  &.icon--interactive {
-    min-width: 48px;
-    min-height: 48px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s ease-out;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.04);
-    }
-
-    &:active {
-      background-color: rgba(0, 0, 0, 0.08);
-    }
-  }
-}
-
 .fas,
 .far,
 .fal,
@@ -71,200 +50,39 @@
 // MATERIAL DESIGN ICON SIZES
 // =============================================================================
 
-.icon--xs {
-  width: var(--icon-size-xs);
-  height: var(--icon-size-xs);
-  font-size: var(--icon-size-xs);
-}
-
-.icon--sm {
-  width: var(--icon-size-sm);
-  height: var(--icon-size-sm);
-  font-size: var(--icon-size-sm);
-}
-
-.icon--md {
-  width: var(--icon-size-md);
-  height: var(--icon-size-md);
-  font-size: var(--icon-size-md);
-}
-
-.icon--lg {
-  width: var(--icon-size-lg);
-  height: var(--icon-size-lg);
-  font-size: var(--icon-size-lg);
-}
-
-.icon--xl {
-  width: var(--icon-size-xl);
-  height: var(--icon-size-xl);
-  font-size: var(--icon-size-xl);
-}
-
-.icon--2xl {
-  width: var(--icon-size-2xl);
-  height: var(--icon-size-2xl);
-  font-size: var(--icon-size-2xl);
-}
-
-.icon--3xl {
-  width: var(--icon-size-3xl);
-  height: var(--icon-size-3xl);
-  font-size: var(--icon-size-3xl);
-}
+// Removed unused size modifiers (.icon--xs/sm/md/lg/xl/2xl/3xl)
 
 // =============================================================================
 // MATERIAL DESIGN ICON COLORS
 // =============================================================================
 
-.icon--primary {
-  color: var(--meeting-1-color);
-}
-
-.icon--secondary {
-  color: var(--accent-teal);
-}
-
-.icon--success {
-  color: var(--accent-emerald);
-}
-
-.icon--warning {
-  color: var(--warning-yellow);
-}
-
-.icon--danger {
-  color: var(--accent-coral);
-}
-
-.icon--muted {
-  color: #666;
-}
-
-// Meeting-specific icon colors
-.icon--meeting-1 {
-  color: var(--meeting-1-color);
-}
-
-.icon--meeting-2 {
-  color: var(--meeting-2-color);
-}
-
-.icon--meeting-3 {
-  color: var(--meeting-3-color);
-}
-
-.icon--meeting-4 {
-  color: var(--meeting-4-color);
-}
+// Removed unused color and meeting-specific modifiers
 
 // =============================================================================
 // ICON POSITIONING AND SPACING
 // =============================================================================
 
 // Icons with text
-.icon-with-text {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-
-  &.icon-with-text--reverse {
-    flex-direction: row-reverse;
-  }
-}
-
-// Icon positioning utilities
-.icon--leading {
-  margin-right: var(--space-sm);
-}
-
-.icon--trailing {
-  margin-left: var(--space-sm);
-}
-
-.icon--center {
-  margin: 0 auto;
-  display: block;
-}
+// Removed unused icon-with-text and positioning utilities
 
 // =============================================================================
 // COMPONENT-SPECIFIC ICON STYLES
 // =============================================================================
 
 // Card icons
-.card__icon {
-  color: var(--meeting-1-color);
-  font-size: var(--icon-size-xl);
-  margin-bottom: var(--space-md);
-
-  .card--meeting-1 & {
-    color: var(--meeting-1-color);
-  }
-
-  .card--meeting-2 & {
-    color: var(--meeting-2-color);
-  }
-
-  .card--meeting-3 & {
-    color: var(--meeting-3-color);
-  }
-
-  .card--meeting-4 & {
-    color: var(--meeting-4-color);
-  }
-}
+// Removed unused .card__icon styles
 
 // Button icons
-.btn__icon {
-  font-size: var(--icon-size-sm);
-
-  &--leading {
-    margin-right: var(--space-sm);
-  }
-
-  &--trailing {
-    margin-left: var(--space-sm);
-  }
-}
+// Removed unused .btn__icon styles
 
 // Header icons
-.header__icon {
-  font-size: var(--icon-size-lg);
-  color: #666;
-}
-
-// Navigation icons
-.nav__icon {
-  font-size: var(--icon-size-md);
-  margin-right: var(--space-sm);
-}
+// Removed unused header/nav icon helpers
 
 // =============================================================================
 // DORA METRICS ICONS
 // =============================================================================
 
-.dora-icon {
-  font-size: var(--icon-size-2xl);
-  color: var(--meeting-1-color);
-  margin-bottom: var(--space-lg);
-
-  // Specific DORA metric colors
-  &.dora-icon--deployment-frequency {
-    color: var(--meeting-1-color);
-  }
-
-  &.dora-icon--lead-time {
-    color: var(--meeting-2-color);
-  }
-
-  &.dora-icon--mttr {
-    color: var(--meeting-3-color);
-  }
-
-  &.dora-icon--change-failure {
-    color: var(--meeting-4-color);
-  }
-}
+// Removed unused DORA icon helpers
 
 // =============================================================================
 // ACCESSIBILITY ENHANCEMENTS
@@ -283,43 +101,22 @@
   border: 0 !important;
 }
 
-// Decorative icons should be hidden from screen readers
-.icon[aria-hidden="true"] {
-  display: inline-flex;
-}
+// Decorative icons are hidden from screen readers elsewhere if needed
 
 // =============================================================================
 // RESPONSIVE BEHAVIOR
 // =============================================================================
 
-@include mobile-only {
-  .icon--responsive {
-    width: var(--icon-size-sm);
-    height: var(--icon-size-sm);
-    font-size: var(--icon-size-sm);
-  }
-
-  .dora-icon {
-    font-size: var(--icon-size-xl);
-  }
-}
+// Removed unused responsive icon helpers
 
 // =============================================================================
 // HIGH CONTRAST MODE
 // =============================================================================
 
-@media (prefers-contrast: high) {
-  .icon {
-    filter: contrast(1.2);
-  }
-}
+// Removed high-contrast adjustments for base .icon (unused)
 
 // =============================================================================
 // REDUCED MOTION
 // =============================================================================
 
-@media (prefers-reduced-motion: reduce) {
-  .icon--interactive {
-    transition: none;
-  }
-}
+// Removed reduced-motion adjustments for icon interactivity (unused)

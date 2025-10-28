@@ -22,14 +22,11 @@
 @import "components/icons"; // Font Awesome with Material Design integration
 @import "components/media"; // Material Design 3 podcast playlist and media components
 @import "components/sections"; // Section layouts and content containers
-@import "components/metrics"; // DORA metrics and visualizations
 @import "components/assessments"; // Assessment forms and feedback
-@import "components/timelines"; // Timeline and progress components (extends %card - must come after cards)
-@import "components/navigation-patterns"; // Navigation patterns and meeting nav
 @import "components/meeting-themes"; // Meeting-specific color themes
 @import "components/meeting-content"; // Meeting content styles
 @import "components/meeting-layout"; // Meeting layout styles
-@import "components/checkpoint-components"; // Interactive checkpoint and assessment components
+// Removed duplicate checkpoint partial; assessment UI lives in components/_assessments.scss
 @import "components/inline-components"; // Consolidated inline styles for HTML validation
 
 // 4. LAYOUT - Major layout components (loaded after critical)
@@ -129,139 +126,7 @@
   font-weight: 400;
   opacity: 0.8;
 }
-.site-nav-main {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xl);
-}
-
-// Consolidated .nav-item definition - replaces all duplicates
-// Used for site navigation and meeting navigation
-.nav-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-sm);
-  min-width: 140px;
-  font-size: 1.1rem;
-  color: var(--accent-teal);
-  text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  padding: var(--space-sm) var(--space-lg);
-  border-radius: var(--radius-md);
-  background: var(--nav-background);
-  border: var(--border-width-thin) solid transparent;
-  position: relative;
-  overflow: hidden;
-  transition: all var(--duration-normal) var(--ease-out);
-  outline: none;
-  z-index: 1;
-  letter-spacing: 0.01em;
-  
-  // Icon styling
-  i {
-    margin-right: 0.5em;
-    font-size: 1.2em;
-    vertical-align: middle;
-    color: var(--accent-teal);
-    transition: color var(--duration-normal) var(--ease-out);
-  }
-  
-  // Hover and focus states
-  &:hover,
-  &:focus {
-    color: var(--accent-teal);
-    background: var(--nav-background-hover);
-    box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
-    border-color: var(--accent-teal);
-    
-    i {
-      color: var(--accent-teal);
-    }
-  }
-  
-  // Active state
-  &.active {
-    background: var(--nav-background-hover);
-    color: var(--accent-teal);
-    box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
-    border-color: var(--accent-teal);
-    
-    i {
-      color: var(--accent-teal);
-    }
-    
-    &::after {
-      opacity: 1;
-    }
-  }
-  
-  // Background overlay effect
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--nav-background-dark);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.35s var(--transition-material);
-    z-index: 0;
-  }
-  
-  &:hover::after,
-  &.active::after {
-    opacity: 1;
-  }
-  
-  // Enhanced focus state for accessibility
-  &:focus {
-    outline: var(--focus-ring-width) solid var(--focus-ring-color);
-    outline-offset: var(--focus-ring-offset);
-    box-shadow: 0 4px 16px rgba(122, 218, 209, 0.22);
-  }
-  
-  // External link variant
-  &.external {
-    color: var(--accent-teal);
-    border-color: var(--accent-teal);
-    background: var(--nav-background-dark);
-    
-    &:hover,
-    &:focus {
-      color: var(--accent-teal);
-      background: var(--nav-background-hover);
-      border-color: var(--accent-teal);
-      box-shadow: 0 2px 8px rgba(122, 218, 209, 0.18);
-    }
-  }
-  
-  // Disabled state
-  &.disabled {
-    opacity: 0.5;
-    pointer-events: none;
-  }
-}
-
-// Navigation item content structure (for meeting navigation)
-.nav-content {
-  display: flex;
-  flex-direction: column;
-
-  .nav-label {
-    font-size: var(--font-size-body);
-    color: var(--text-light);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .nav-title {
-    font-size: var(--font-size-h6);
-    font-weight: var(--font-weight-semibold);
-  }
-}
+// (Removed) `.nav-item` and `.nav-content` blocks are unused in built HTML.
 
 // =============================================================================
 // HAMBURGER MENU - Mobile Navigation
