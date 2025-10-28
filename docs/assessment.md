@@ -979,12 +979,4 @@ title: 24 Capabilities Assessment
 }
 </style>
 
-<footer class="ai-attribution" aria-label="AI attribution" markdown="0">
-<div class="ai-attribution__icon">
-<i class="fas fa-robot" aria-hidden="true"></i>
-</div>
-<div class="ai-attribution__content">
-<h4 class="ai-attribution__title">AI-Generated Content</h4>
-<p class="ai-attribution__text">This interactive assessment was created with AI assistance from <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>.</p>
-</div>
-</footer>
+
