@@ -76,6 +76,38 @@ layout: null
           <media:keywords>devops, accelerate, dora metrics, continuous delivery, culture, transformation</media:keywords>
         </media:content>
       </item>
+      
+      <!-- Supplementary audio files for this meeting -->
+      {% assign meeting_key = 'meeting_' | append: meeting.week %}
+      {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].audio %}
+        {% for audio in site.data.supplementary_media[meeting_key].audio %}
+          {% assign supp_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-' | append: meeting.week | append: '/' | append: audio.filename %}
+          <item>
+            <title>{{ audio.title | xml_escape }} (Bonus)</title>
+            <description>{{ audio.description | xml_escape }} - From meeting {{ meeting.week }}</description>
+            <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#supplementary</link>
+            <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#{{ audio.filename }}</guid>
+            <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+            <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+            <enclosure url="{{ supp_url }}" type="{{ audio.type }}" length="0"/>
+            <category>Audio</category>
+            <category>Bonus Content</category>
+            
+            <itunes:title>{{ audio.title | xml_escape }} (Bonus)</itunes:title>
+            <itunes:subtitle>Supplementary audio for meeting {{ meeting.week }}</itunes:subtitle>
+            <itunes:summary>{{ audio.description | xml_escape }}</itunes:summary>
+            <itunes:author>{{ site.author | default: "Accelerate DevEx Book Club" }}</itunes:author>
+            <itunes:episodeType>bonus</itunes:episodeType>
+            <itunes:explicit>clean</itunes:explicit>
+            
+            <media:content url="{{ supp_url }}" type="{{ audio.type }}" medium="audio">
+              <media:title>{{ audio.title | xml_escape }}</media:title>
+              <media:description>{{ audio.description | xml_escape }}</media:description>
+              <media:keywords>devops, accelerate, dora metrics, continuous delivery, culture, transformation, bonus</media:keywords>
+            </media:content>
+          </item>
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </channel>
 </rss>
