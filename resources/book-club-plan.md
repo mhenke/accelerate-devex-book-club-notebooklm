@@ -266,7 +266,7 @@ By the end of the 2-month program, participants should be able to:
 
 ### Meeting Day
 - **30 min before:** Facilitator arrives early, tech check
-- **During:** Follow outline timing (5-15-45-10 min structure)
+- **During:** Follow outline timing (5-10-25-5-10-5 minute structure with AI tool spotlight)
 - **Immediately after:** Note action items and assignments
 
 ### Week After Meeting

@@ -14,6 +14,8 @@ This document describes the structure, format, and learning objectives for each 
 
 ### Standard Meeting Agenda (1-hour meetings)
 
+**Segment Overview:** 0-5 Welcome & Check-in (5 min) · 5-15 Key Concepts (10 min) · 15-40 Core Discussion (25 min) · 40-45 AI Tool Spotlight (5 min) · 45-55 Action Planning (10 min) · 55-60 Wrap-up (5 min)
+
 #### **0-5 Minutes: Welcome & Check-in** (5 min)
 **Purpose:** Build psychological safety and create connection
 
@@ -31,7 +33,7 @@ This document describes the structure, format, and learning objectives for each 
 
 ---
 
-#### **5-20 Minutes: Key Concepts Review** (15 min)
+#### **5-15 Minutes: Key Concepts Review** (10 min)
 **Purpose:** Ensure shared understanding of core research and frameworks
 
 **Activities:**
@@ -56,7 +58,7 @@ This document describes the structure, format, and learning objectives for each 
 
 ---
 
-#### **20-50 Minutes: Core Discussion** (30 min)
+#### **15-40 Minutes: Core Discussion** (25 min)
 **Purpose:** Apply concepts to participants' real contexts through guided questions
 
 **Activities:**
@@ -82,7 +84,24 @@ This document describes the structure, format, and learning objectives for each 
 
 ---
 
-#### **50-55 Minutes: Action Planning** (10 min)
+#### **40-45 Minutes: AI Tool Spotlight** (5 min)
+**Purpose:** Demonstrate the week's featured AI assistant in context
+
+**Activities:**
+- Highlight how the selected AI tool supports the meeting's focus area
+- Share a brief live demo, workflow example, or success story
+- Invite one participant to share how they use the tool (if applicable)
+- Capture questions for deeper follow-up offline
+
+**Facilitator Notes:**
+- Keep the demo practical and directly tied to the week's theme
+- Reinforce responsible and ethical AI usage guidelines
+- Encourage experimentation between meetings using the showcased tool
+- Offer quick-start resources or templates created for the tool
+
+---
+
+#### **45-55 Minutes: Action Planning** (10 min)
 **Purpose:** Define concrete next steps and individual commitments
 
 **Activities:**

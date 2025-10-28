@@ -25,6 +25,8 @@
 4. **Copy and paste the complete prompt below** into NotebookLM's prompt field
 5. Click **Generate**
 
+> **AI Tool Spotlight Tip:** After generation, mark a 60-90 second excerpt (key stat + reflection prompt) to play during the meeting's NotebookLM spotlight segment.
+
 ---
 
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
@@ -91,6 +93,11 @@ Prompt listeners to think about:
 - ❌ Culture type behaviors in depth
 - ❌ Deployment pain concept
 - ❌ Examples and case studies
+
+**Spotlight-ready talking points (pick one to play live):**
+- DORA metrics headline stat (46x deployments, 440x lead time, 170x recovery)
+- Speed + stability myth buster soundbite
+- Culture type comparison with actionable reflection question
 
 ---
 

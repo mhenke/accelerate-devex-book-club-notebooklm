@@ -17,6 +17,10 @@
 
 ---
 
+> AI Tool Spotlight Tip: Produce a 60-90 second highlight reel (e.g., key practice + call-to-action) to feature during the in-meeting NotebookLM segment.
+
+---
+
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
@@ -32,6 +36,8 @@ Assume viewer is visual learner. Focus Ch 4-6 Accelerate. Create 10-15min visual
 - Team viewing before meeting
 - Architecture discussions
 - Sharing with technical leadership
+
+**Teaser:** Export an additional 60-90 second highlight clip for the AI Tool Spotlight segment.
 
 ---
 

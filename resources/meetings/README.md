@@ -158,7 +158,8 @@ Each 60-minute meeting follows this consistent format:
 |------|---------|---------|
 | **0-5 min** | Welcome & Check-in | Create psychological safety, warm-up activity |
 | **5-15 min** | Key Concepts Review | Ensure shared understanding of chapters |
-| **15-45 min** | Core Discussion | Apply concepts to team's context (3 x 10-min segments) |
+| **15-40 min** | Core Discussion | Apply concepts to team's context (guided questions & breakouts) |
+| **40-45 min** | AI Tool Spotlight | Demonstrate featured assistant aligned to the week's theme |
 | **45-55 min** | Action Items & Commitments | Individual commitments for next meeting |
 | **55-60 min** | Wrap-up & Preview | Reinforce learning, prepare for next session |
 

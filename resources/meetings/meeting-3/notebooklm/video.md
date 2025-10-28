@@ -17,6 +17,10 @@
 
 ---
 
+> AI Tool Spotlight Tip: Produce a 60-90 second highlight reel (e.g., a visual of flow/WIP + call-to-action) to feature during the in-meeting NotebookLM segment.
+
+---
+
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
@@ -32,6 +36,8 @@ Assume viewer is visual learner. Focus Ch 7-10 Accelerate. Create 10-15min visua
 - Team viewing session before book club meeting
 - Managers wanting to understand lean concepts visually
 - Sharing with leadership to explain sustainability importance
+
+**Teaser:** Export an additional 60-90 second highlight clip for the AI Tool Spotlight segment.
 
 ---
 

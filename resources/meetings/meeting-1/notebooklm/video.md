@@ -27,6 +27,8 @@
    - Use this prompt as guidance for creating slides or video script manually
    - Or wait for video feature to launch
 
+> **AI Tool Spotlight Tip:** Produce a 60-90 second highlight reel (e.g., DORA metrics headline + call-to-action) to feature during the in-meeting NotebookLM segment.
+
 ---
 
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
@@ -136,6 +138,8 @@ Resources shown:
 - Meeting 1 outline
 - Attendee guide
 - DORA metrics template
+- QR code or short link to NotebookLM notebook
+- 60-90 second teaser clip for live demo
 
 **VISUAL STYLE PREFERENCES:**
 - Clean, professional diagrams
@@ -149,7 +153,7 @@ Resources shown:
 Visual learners, teams watching together in a meeting, people who prefer video to audio, facilitators who want to show content during the meeting.
 
 **LENGTH GUIDANCE:**
-Aim for 10-15 minutes. Balance narration with visual content. Ensure key concepts are visible on screen, not just spoken.
+Aim for 10-15 minutes. Balance narration with visual content. Ensure key concepts are visible on screen, not just spoken. Export an additional 60-90 second teaser for the spotlight.
 
 **ACCESSIBILITY:**
 - Include captions/subtitles for all narration
@@ -170,6 +174,7 @@ Aim for 10-15 minutes. Balance narration with visual content. Ensure key concept
 - ✅ Three culture types with color-coded columns
 - ✅ Virtuous cycle visualization
 - ✅ Call to action with discussion questions
+- ✅ Teaser clip ready for the AI spotlight
 
 ---
 

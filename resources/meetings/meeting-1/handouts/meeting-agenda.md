@@ -45,7 +45,7 @@
 
 ---
 
-### 3. Core Discussion (30 minutes) | 0:15-0:45
+### 3. Core Discussion (25 minutes) | 0:15-0:40
 
 **Objective:** Apply concepts to team's context through guided discussion
 
@@ -71,7 +71,7 @@
 
 **Capture:** List practices that support both
 
-#### Part C: Culture Patterns (10 min) | 0:35-0:45
+#### Part C: Culture Patterns (5 min) | 0:35-0:40
 
 **Facilitator prompts:**
 1. "Give concrete examples of each culture type you've observed"
@@ -81,8 +81,24 @@
 **Capture:** Culture change ideas
 
 ---
+### 4. AI Tool Spotlight (5 minutes) | 0:40-0:45
 
-### 4. Action Items & Commitments (10 minutes) | 0:45-0:55
+**Objective:** Showcase NotebookLM for rapid recap and supplementary learning
+
+**Facilitator Actions:**
+- ✅ Play a 60-90 second clip from the NotebookLM brief podcast or summarize generated insights
+- ✅ Highlight how participants can use NotebookLM to reinforce chapter takeaways between sessions
+- ✅ Share the direct link to Meeting 1 prompts in `notebooklm/`
+- ✅ Capture participant questions about applying AI support responsibly
+
+**Materials:**
+- Laptop with audio output (or speaker)
+- [NotebookLM Brief Podcast Prompt](../notebooklm/podcast-brief.md)
+- QR code or short URL linking to NotebookLM resources
+
+---
+
+### 5. Action Items & Commitments (10 minutes) | 0:45-0:55
 
 **Objective:** Ensure each participant commits to specific actions
 
@@ -100,7 +116,7 @@
 
 ---
 
-### 5. Wrap-Up & Preview (5 minutes) | 0:55-1:00
+### 6. Wrap-Up & Preview (5 minutes) | 0:55-1:00
 
 **Objective:** Reinforce learning and prepare for next meeting
 
@@ -172,8 +188,8 @@
 
 **If Running Behind:**
 - Shorten welcome (but keep icebreaker)
-- Focus core discussion on just DORA metrics and speed+stability
-- Move culture discussion to written reflection in handout
+- Focus core discussion on DORA metrics first, culture as personal reflection
+- Replace live NotebookLM demo with take-home link and quick overview
 - **Never skip action items** - this is critical for book club success
 
 ---

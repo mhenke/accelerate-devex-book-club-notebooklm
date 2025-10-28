@@ -11,7 +11,8 @@
 | **0-5 min** | Welcome & Check-in | Icebreaker: "Share one deployment anxiety story" |
 | **5-15 min** | DORA Metrics Overview | Focus on "what" not "how to measure" |
 | **15-30 min** | Speed + Stability Discussion | Use [Key Question](../../key-questions.md#meeting-1) |
-| **30-45 min** | Westrum Culture Types | Have participants self-assess using examples |
+| **30-40 min** | Westrum Culture Types | Have participants self-assess using examples |
+| **40-45 min** | AI Tool Spotlight | Demo NotebookLM summary to reinforce key concepts |
 | **45-55 min** | Action Items & Commitments | Each person commits to one metric to track |
 | **55-60 min** | Preview Meeting 2 | Brief overview of CD practices |
 
