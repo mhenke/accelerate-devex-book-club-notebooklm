@@ -53,7 +53,7 @@ title: Meetings
 <div class="card-grid">
 
 <!-- Meeting 0 - Kickoff -->
-<div class="highlight-card meeting-0 dark-theme" style="grid-column: 1 / -1;">
+<div class="highlight-card highlight-card--full-span meeting-0 dark-theme">
   <div class="card-header">
     <div class="highlight-icon">
       <i class="fas fa-gift" role="img" aria-label="Gift"></i>

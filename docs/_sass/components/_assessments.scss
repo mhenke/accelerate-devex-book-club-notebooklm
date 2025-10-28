@@ -185,3 +185,26 @@
     }
   }
 }
+
+// =============================================================================
+// RESULTS UTILITIES
+// =============================================================================
+
+.results-preview-text {
+  margin: 0;
+}
+
+.assessment-reset-button {
+  margin-top: var(--space-lg);
+  width: 100%;
+}
+
+.assessment-results-panel {
+  display: none;
+}
+
+.assessment-results-link {
+  text-align: center;
+  margin-top: var(--space-lg);
+  margin-bottom: 0;
+}

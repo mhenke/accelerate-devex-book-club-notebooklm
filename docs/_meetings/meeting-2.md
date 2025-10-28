@@ -192,7 +192,7 @@ document.addEventListener('keydown', function(event) {
         <div class="video-card">
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/meeting-2-video.mp4" type="video/mp4">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Pillars_of_Tech_Excellence.mp4" type="video/mp4">
               <track kind="captions" src="{{ '/assets/captions/meeting-2-video.vtt' | relative_url }}" srclang="en" label="English" default>
               Your browser does not support the video tag.
             </video>
@@ -245,23 +245,85 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/meeting-2-podcast.m4a"
-               data-title="Technical Excellence Deep Dive"
-               data-duration="54:26"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Accelerate_s_Technical_Engine__The_Blueprints_for_Continuous_De.m4a"
+               data-title="Accelerate's Technical Engine: Blueprints for Continuous Delivery"
+               data-duration="14:03"
                data-type="deep-dive">
             <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Technical Excellence Deep Dive">
+              <button type="button" class="play-btn" aria-label="Play Accelerate's Technical Engine: Blueprints for Continuous Delivery">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Technical Excellence Deep Dive
+                Accelerate's Technical Engine: Blueprints for Continuous Delivery
                 <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">54:26</span>
+                <span class="podcast-duration">14:03</span>
               </div>
               <div class="podcast-subtitle">CD Principles, Architecture Independence & Shift-Left Security</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Architecture_vs_Action_The_Great_Debate_Over_Accelerate's_Technical_Engine_for_Elite_Software_Performance.m4a"
+               data-title="Architecture vs Action: The Great Debate"
+               data-duration="19:42"
+               data-type="debate">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Architecture vs Action: The Great Debate">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Architecture vs Action: The Great Debate
+                <span class="podcast-type debate">Debate</span>
+                <span class="podcast-duration">19:42</span>
+              </div>
+              <div class="podcast-subtitle">Pro/Con Exploration of Technical Practices & Architecture Decisions</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Bridging_the_Gap__Tactical_Solutions_for_Accelerate_s_Continuou.m4a"
+               data-title="Bridging the Gap: Tactical Solutions"
+               data-duration="12:52"
+               data-type="critic">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Bridging the Gap: Tactical Solutions">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Bridging the Gap: Tactical Solutions
+                <span class="podcast-type critic">Critic</span>
+                <span class="podcast-duration">12:52</span>
+              </div>
+              <div class="podcast-subtitle">Critical Analysis & Practical Implementation Challenges</div>
             </div>
 
             <div class="podcast-end">

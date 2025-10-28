@@ -652,7 +652,16 @@ a {
     font-size: var(--font-size-body);
     margin: 0;
     font-weight: var(--font-weight-medium);
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
+}
+
+.welcome-cta--offset {
+  margin-top: var(--space-lg);
 }
 
 // About the Book Club Section - Material Design
@@ -1301,6 +1310,10 @@ a {
   .card-footer {
     margin-top: auto; // Push footer to bottom when using flexbox
   }
+}
+
+.highlight-card--full-span {
+  grid-column: 1 / -1;
 }
 
 // Meeting-specific styling for highlight cards
@@ -2453,16 +2466,37 @@ button:focus,
 
   /* Completion section styling */
   .next-meeting-complete {
-    .btn:hover:not(:disabled) {
-      background: linear-gradient(135deg, #a78bfa, #c4b5fd) !important;
-      color: #3c1361 !important;
-      box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    border: 2px solid #a78bfa;
+    color: var(--text-white);
+
+    h2 {
+      color: var(--text-white);
     }
 
-    .btn:focus-visible {
-      outline: 3px solid rgba(139, 92, 246, 0.4);
-      outline-offset: 2px;
+    p {
+      color: rgba(255, 255, 255, 0.92);
     }
+
+    .welcome-cta-subtitle {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.next-meeting-complete__cta {
+  background: linear-gradient(135deg, #a78bfa, #c4b5fd);
+  color: #3c1361;
+
+  &:hover:not(:disabled) {
+    background: linear-gradient(135deg, #a78bfa, #c4b5fd) !important;
+    color: #3c1361 !important;
+    box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(139, 92, 246, 0.4);
+    outline-offset: 2px;
   }
 }
 
