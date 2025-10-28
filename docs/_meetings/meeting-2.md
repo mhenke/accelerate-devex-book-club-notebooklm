@@ -193,7 +193,6 @@ document.addEventListener('keydown', function(event) {
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Pillars_of_Tech_Excellence.mp4" type="video/mp4">
-              <track kind="captions" src="{{ '/assets/captions/meeting-2-video.vtt' | relative_url }}" srclang="en" label="English" default>
               Your browser does not support the video tag.
             </video>
           </div>
