@@ -1,36 +1,4 @@
-// Key animations for enhanced visual appeal
-@keyframes subtleShimmer {
-  0% {
-    opacity: 0.3;
-    transform: scale(1) rotate(0deg);
-  }
-
-  50% {
-    opacity: 0.6;
-    transform: scale(1.05) rotate(1deg);
-  }
-
-  100% {
-    opacity: 0.4;
-    transform: scale(1.02) rotate(-0.5deg);
-  }
-}
-
-.highlight-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-}
-
-.card-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-sm); // Reduced gap for compactness
-  padding: var(--space-sm); // Reduced padding for more compact appearance
-  border-radius: 0 0 var(--radius-xl) var(--radius-xl); // Match card border radius
-}
+// (Removed) subtleShimmer animation — unused
 
 // =====================================
 // These styles are critical for above-the-fold content rendering.
@@ -261,9 +229,7 @@ a {
   }
 }
 
-.site-main {
-  min-height: 50vh;
-}
+// (Removed) .site-main — not used in current layouts
 
 // Font Awesome fallback support for Jekyll HTML conversion
 .fas,
@@ -298,103 +264,7 @@ a {
   ) !important; // 400 - matches design token
 }
 
-// AI Attribution Footer - Dark Theme Bottom Anchor
-.ai-attribution {
-  background: var(--hero-dark);
-  color: var(--text-white);
-  display: flex;
-  align-items: center;
-  gap: var(--space-xl);
-  max-width: none;
-  padding: var(--space-lg);
-  position: relative;
-  overflow: hidden;
-
-  // Subtle gradient overlay (matches header, footer, and key-question-banner)
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-      circle at top right,
-      rgba(9, 105, 218, 0.1),
-      transparent 60%
-    );
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  &__icon {
-    background: rgba(var(--accent-teal), var(--opacity-20));
-    border-radius: var(--radius-full);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    border: 2px solid var(--accent-teal);
-    position: relative;
-    z-index: 1;
-
-    i,
-    em {
-      color: var(--accent-teal);
-      font-style: normal; // Override em italic styling
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      line-height: 1;
-    }
-  }
-
-  &__content {
-    flex: 1;
-    position: relative;
-    z-index: 1;
-  }
-
-  &__title {
-    font-size: var(--font-size-h5);
-    font-weight: var(--font-weight-semibold);
-    margin: 0 0 var(--space-sm);
-  }
-
-  &__text {
-    color: var(--text-white);
-    font-size: var(--font-size-body);
-    line-height: var(--line-height-relaxed);
-    margin: 0;
-
-    a {
-      color: var(--accent-teal);
-      text-decoration: none;
-
-      &:hover {
-        color: var(--hover-teal);
-        text-decoration: underline;
-      }
-    }
-  }
-
-  // Mobile responsive
-  @include mobile-only {
-    flex-direction: column;
-    text-align: center;
-    gap: var(--space-lg);
-    padding: var(--space-xl);
-
-    &__content {
-      text-align: center;
-    }
-  }
-}
+// (Removed) AI Attribution Footer block (.ai-attribution) — not used in built pages
 
 // =============================================================================
 // HERO ANIMATIONS - GLOBAL KEYFRAMES
@@ -446,176 +316,13 @@ a {
 // =============================================================================
 // All .hero-banner styles now consolidated in _hero.scss for better organization
 
-// Hero metrics - critical above-the-fold content
-.hero-metrics {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-xl);
-  margin-top: var(--space-2xl);
-
-  @include mobile-only {
-    flex-wrap: wrap;
-    gap: var(--space-lg);
-  }
-}
-
-.metric-icon {
-  @include flex-center;
-  @include touch-target;
-
-  width: 100px;
-  height: 100px;
-  border-radius: var(--radius-2xl);
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--text-dark);
-  transition: all 0.3s ease-out;
-  backdrop-filter: var(--backdrop-blur-xl);
-  border: var(--border-white-light);
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--shadow-hero-cta);
-
-  &:hover {
-    background: linear-gradient(
-      135deg,
-      var(--accent-teal) 0%,
-      var(--accent-coral) 100%
-    );
-    transform: translateY(-6px) scale(1.05);
-    box-shadow: var(--shadow-floating-teal);
-    border-color: rgba(255, 255, 255, 0.4);
-  }
-
-  @include mobile-only {
-    width: 80px;
-    height: 80px;
-    font-size: var(--font-size-h4);
-  }
-
-  // Icon content
-  span {
-    display: block;
-    font-size: var(--font-size-body);
-    line-height: 1.2;
-    text-align: center;
-    font-weight: var(--font-weight-semibold);
-    margin-top: var(--space-xs);
-    white-space: nowrap;
-    position: relative;
-    z-index: 1;
-  }
-
-  // Flex column layout for icon and text
-  flex-direction: column;
-  gap: var(--space-xs);
-}
+// (Removed) Hero metrics blocks (.hero-metrics, .metric-icon) — legacy visual no longer used
 
 // =============================================================================
 // DORA METRICS VISUAL - CRITICAL CONTENT
 // =============================================================================
 
-.dora-metrics-visual {
-  padding: var(--space-md) 0;
-
-  h2 {
-    text-align: center;
-    color: var(--meeting-1-color);
-    font-size: clamp(
-      var(--font-size-h5),
-      4vw,
-      var(--font-size-h3)
-    );
-  }
-}
-
-.metrics-categories {
-  @include grid-auto-fit(300px);
-
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-  padding: 0 var(--space-lg);
-}
-
-.metrics-category {
-  @include card("lg");
-
-  padding: var(--space-xl);
-
-  .category-header {
-    @include flex-between;
-
-    margin-bottom: var(--space-md);
-    padding-bottom: var(--space-lg);
-    border-bottom: 2px solid var(--border-medium);
-
-    .category-icon {
-      @include flex-center;
-
-      width: 50px;
-      height: 50px;
-      border-radius: var(--radius-lg);
-      font-size: var(--font-size-h4);
-      color: var(--text-dark);
-    }
-
-    .category-title {
-      color: var(--text-dark);
-      font-size: var(--font-size-h5);
-      font-weight: var(--font-weight-semibold);
-      font-family: var(--font-display);
-      margin: 0;
-    }
-  }
-}
-
-// Speed category styling
-.speed-category .category-icon {
-  background: linear-gradient(
-    135deg,
-    var(--meeting-1-color),
-    var(--meeting-1-color)
-  );
-}
-
-// Stability category styling
-.stability-category .category-icon {
-  background: linear-gradient(
-    135deg,
-    var(--meeting-3-color),
-    var(--meeting-3-color)
-  );
-}
-
-.metric-card {
-  @extend %item-card;
-  @include card("md");
-
-  padding: var(--space-xl);
-  margin-bottom: var(--space-lg);
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
-  }
-
-  .metric-title {
-    @include heading-4;
-
-    margin: 0 0 var(--space-sm);
-    color: var(--text-dark);
-  }
-
-  .metric-description {
-    @include body-small;
-
-    color: #666;
-    margin: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
+// (Removed) DORA metrics visual and cards (.dora-metrics-visual, .metrics-categories, .metrics-category, .metric-card) — unused
 
 // =============================================================================
 // MATERIAL DESIGN SECTIONS - WELCOME & ABOUT
@@ -742,7 +449,7 @@ a {
   }
 }
 
-// Enhanced Success Metrics with Material Design
+// Enhanced Success Metrics with Material Design (compact version)
 .success-metrics-compact {
   background: linear-gradient(
     135deg,
@@ -785,15 +492,7 @@ a {
     }
   }
 
-  .outcomes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-lg);
-
-    @media (min-width: #{$mobile}) {
-      grid-template-columns: repeat(5, 1fr); // 5 columns for better layout
-    }
-  }
+  // (Removed) .outcomes-grid — container not used
 
   .outcome-item {
     @extend %item-card;
@@ -999,15 +698,7 @@ a {
     text-align: left; // Override center alignment for consistency
   }
 
-  .get-started-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-
-    @media (min-width: #{$mobile}) {
-      grid-template-columns: 3fr 2fr; // Streamlined to 2 columns: main content + resources
-    }
-  }
+  // (Removed) .get-started-grid — replaced by .feature-grid structure
 
   .get-started-card {
     @extend %item-card;
@@ -1034,34 +725,7 @@ a {
   }
 }
 
-// Enhanced button styling for Material Design - Meeting 1 Blue Theme
-.btn-meeting-1 {
-  background: linear-gradient(135deg, var(--meeting-1-color), #1f6feb);
-  color: white;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  padding: var(--space-lg) var(--space-2xl);
-  border-radius: var(--radius-lg);
-  font-weight: var(--font-weight-semibold);
-  text-decoration: none;
-  transition: var(--transition-spring);
-  border: none;
-  cursor: pointer;
-  font-size: var(--font-size-h5);
-  box-shadow: var(--elevation-2);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--elevation-4);
-    color: white;
-    background: linear-gradient(135deg, #388bfd, var(--meeting-1-color));
-  }
-
-  i {
-    font-size: var(--font-size-h4);
-  }
-}
+// (Removed) .btn-meeting-1 — superseded by meeting badge/btn variants
 
 // Meeting themed buttons using data-meeting attribute system
 [data-meeting] {
@@ -1127,25 +791,7 @@ a {
   padding: var(--space-md) 0;
 }
 
-.highlight-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-lg);
-  margin: 0 auto;
-  padding: 0 var(--space-lg);
-
-  // Material Design responsive pattern: 1 -> 2 -> 4 columns
-  @media (min-width: #{$medium}) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
-  }
-
-  @media (min-width: #{$tablet}) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-2xl);
-    max-width: var(--text-max-width);
-  }
-}
+// (Removed) .highlight-grid — not used; layout handled elsewhere
 
 .highlight-card {
   @extend %item-card;
@@ -1235,23 +881,7 @@ a {
     transform: scale(1.05);
   }
 
-  .meeting-link {
-    display: block;
-    text-decoration: none;
-    margin-top: var(--space-md); // Reduced margin for better spacing
-    transition: all 0.3s ease-out;
-    position: relative;
-    z-index: 1;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
-
-    &:active {
-      transform: translateY(0);
-      transition: none; // Instant feedback on click
-    }
-  }
+  // (Removed) legacy .meeting-link block — unused
 
   .meeting-badge {
     display: flex;
@@ -1379,18 +1009,7 @@ a {
 
 // Responsive behavior
 @include mobile-only {
-  .highlight-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-  }
-
-  .highlight-card {
-    .highlight-card .highlight-icon {
-      width: 50px;
-      height: 50px;
-      font-size: var(--font-size-h5);
-    }
-  }
+  // (Removed) .highlight-grid mobile tweaks — grid removed
 }
 
 // =============================================================================
@@ -1419,11 +1038,7 @@ button:focus,
 
 // High contrast support for critical elements
 @include high-contrast {
-  // .hero-banner moved to components/_hero.scss
-  .metric-icon:hover,
-  .metric-card:hover {
-    outline: 3px solid currentColor;
-  }
+  // (Removed) high-contrast outlines for legacy metric elements — unused
 }
 
 // Reduced motion support for critical animations
@@ -1441,20 +1056,8 @@ button:focus,
 // PERFORMANCE OPTIMIZATIONS - CRITICAL
 // =============================================================================
 
-// Remove will-change from critical elements (will be added via JavaScript)
-.metric-card,
-.metric-icon {
-  // will-change will be managed dynamically by JavaScript
-  // Static declarations cause memory overconsumption
-}
-
 // .hero-banner will-change moved to components/_hero.scss
-
-// GPU acceleration for smooth transforms
-.metric-icon,
-.metric-card {
-  @include hardware-acceleration;
-}
+// (Removed) GPU acceleration for legacy metric elements — unused
 
 // =============================================================================
 // MOBILE OPTIMIZATIONS - CRITICAL
@@ -1462,12 +1065,7 @@ button:focus,
 
 @include mobile-only {
   // .hero-banner mobile styles moved to components/_hero.scss
-
-  .metrics-categories {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-    padding: 0 var(--space-md);
-  }
+  // (Removed) .metrics-categories — legacy DORA layout not used
 }
 
 // =============================================================================
@@ -1477,11 +1075,7 @@ button:focus,
 @media print {
   // .hero-banner print styles moved to components/_hero.scss
 
-  .metric-icon {
-    background: none !important;
-    border: 2px solid black !important;
-    color: black !important;
-  }
+  // (Removed) .metric-icon print overrides — unused
 
   // Remove shadows and transitions for print
   * {
@@ -1499,413 +1093,11 @@ button:focus,
 // HOMEPAGE CONTENT SECTIONS - Material Design Styling
 // =============================================================================
 
-// Success Metrics Section
-.success-metrics {
-  background: linear-gradient(135deg, #eff6ff, #dbeafe);
-  border-radius: var(--radius-2xl);
-  border: 1px solid rgba(33, 150, 243, 0.2);
-  box-shadow: var(--shadow-blue-glow);
-  padding: var(--space-3xl);
-  margin: var(--space-xl) 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
+// (Removed) Legacy Success Metrics section (.success-metrics) — replaced by compact version
 
-  h2 {
-    color: var(--text-dark);
-    font-weight: var(--font-weight-bold);
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
+// (Removed) Legacy Key Question section (.key-question) — superseded by .key-question-banner
 
-    i,
-    em {
-      color: var(--color-blue-500);
-      font-size: var(--font-size-h4);
-    }
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    position: relative;
-    z-index: 1;
-
-    li {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-lg);
-      margin-bottom: var(--space-md);
-      padding: var(--space-xl);
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: var(--radius-xl);
-      border: 1px solid rgba(33, 150, 243, 0.2);
-      transition: all 0.3s ease-out;
-      backdrop-filter: var(--backdrop-blur-lg);
-
-      &:hover {
-        background: rgba(255, 255, 255, 0.8);
-        border-color: rgba(33, 150, 243, 0.4);
-        transform: translateY(-2px);
-      }
-
-      &::before {
-        content: "✓";
-        color: var(--accent-emerald);
-        font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-h4);
-        background: rgba(16, 185, 129, 0.2);
-        border-radius: var(--radius-full);
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: var(--space-xs);
-        flex-shrink: 0;
-        border: 2px solid var(--accent-emerald);
-      }
-
-      color: var(--text-dark);
-      font-size: var(--font-size-h6);
-      line-height: var(--line-height-relaxed);
-    }
-  }
-}
-
-// Key Question Section - Strategic Dark Mode Emphasis
-.key-question {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    var(--card-dark) 100%
-  );
-  padding: var(--space-2xl) var(--space-xl);
-  margin: var(--space-xl) auto;
-  border-radius: var(--radius-xl);
-  position: relative;
-  overflow: hidden;
-
-  // Add subtle animated background pattern
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-        circle at 20% 30%,
-        rgba(122, 218, 209, 0.1) 0%,
-        transparent 50%
-      ),
-      radial-gradient(
-        circle at 80% 70%,
-        rgba(255, 127, 80, 0.08) 0%,
-        transparent 50%
-      );
-    animation: subtleShimmer 8s ease-in-out infinite alternate;
-    z-index: 0;
-  }
-
-  // Ensure proper container constraints
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2);
-  transform: translateY(0);
-  transition: all 0.3s ease-out;
-
-  h2 {
-    color: var(--accent-teal);
-    margin-bottom: var(--space-xl);
-    font-size: clamp(
-      var(--font-size-h1),
-      8vw,
-      var(--font-size-display)
-    ); // Using design tokens for sizing
-
-    font-weight: var(--font-weight-black); // Maximum weight token
-    font-family: var(--font-display);
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    letter-spacing: var(--letter-spacing-tight); // Design token
-    text-shadow: var(--shadow-text-strong); // Design token
-    text-transform: uppercase;
-    line-height: var(--line-height-tight); // Design token
-
-    // Enhanced glow effect using accent color tokens
-
-    filter: drop-shadow(0 0 30px rgba(var(--accent-teal-rgb), 0.5))
-      drop-shadow(0 0 60px rgba(var(--accent-teal-rgb), 0.2));
-  }
-
-  p {
-    font-size: clamp(
-      var(--font-size-h6),
-      2.5vw,
-      var(--font-size-h5)
-    ); // Using design tokens
-
-    font-weight: var(--font-weight-medium); // Design token
-    color: var(
-      --text-on-dark-high
-    ) !important; // Design token for high contrast
-
-    text-align: center;
-    margin: 0 auto var(--space-xl);
-    max-width: var(--text-max-width);
-    line-height: var(--line-height-relaxed);
-    text-shadow: var(--shadow-text-medium);
-    position: relative;
-    z-index: 1;
-
-    // Enhanced styling for conclusion paragraph
-    &:last-of-type {
-      font-size: clamp(var(--font-size-body), 2vw, var(--font-size-h6));
-      opacity: var(--opacity-medium);
-      margin-top: var(--space-md);
-    }
-  }
-
-  .key-question-quote {
-    background: var(--surface-glass-prominent) !important; // Design token
-    backdrop-filter: var(--blur-strong); // Design token
-    border: var(--border-prominent) solid var(--border-glass); // Design tokens
-    border-left: var(--border-thick) solid var(--accent-teal); // Design tokens
-    border-radius: var(--radius-xl); // Design token
-    padding: var(--space-2xl) var(--space-3xl); // Design tokens
-    position: relative;
-    z-index: 1;
-    box-shadow: var(--elevation-high); // Design token for depth
-
-    // Enhanced typography using design tokens
-
-    font-size: clamp(
-      var(--font-size-h4),
-      4vw,
-      var(--font-size-h2)
-    ) !important; // Design tokens
-
-    font-style: italic;
-    font-weight: var(--font-weight-semibold); // Design token
-    line-height: var(--line-height-comfortable) !important; // Design token
-    color: var(--text-on-dark-high) !important; // Design token
-    text-shadow: var(--shadow-text-strong); // Design token
-    letter-spacing: var(--letter-spacing-wide); // Design token
-
-    // Add quotation marks with enhanced styling
-    quotes: "" " " "" "'" "'";
-
-    &::before {
-      content: open-quote;
-      font-size: var(--font-size-quote-large); // Design token
-      color: var(--accent-teal);
-      position: absolute;
-      top: var(--quote-offset-top); // Design token
-      left: var(--space-lg);
-      line-height: 1;
-      opacity: var(--opacity-high); // Design token
-      font-weight: var(--font-weight-black); // Design token
-      text-shadow: var(--glow-accent-teal); // Design token
-    }
-
-    &::after {
-      content: close-quote;
-      font-size: var(--font-size-quote-large); // Design token
-      color: var(--accent-teal);
-      position: absolute;
-      bottom: var(--quote-offset-bottom); // Design token
-      right: var(--space-lg);
-      line-height: 1;
-      opacity: var(--opacity-high); // Design token
-      font-weight: var(--font-weight-black); // Design token
-      text-shadow: var(--glow-accent-teal); // Design token
-    }
-  }
-
-  // Add hover effect to entire section for interactive emphasis
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
-      0 0 60px rgba(122, 218, 209, 0.3);
-
-    .key-question-quote {
-      background: rgba(255, 255, 255, 0.18) !important;
-      border-left-color: var(--accent-coral);
-
-      &::before,
-      &::after {
-        color: var(--accent-coral);
-        opacity: 1;
-      }
-    }
-  }
-
-  // Responsive adjustments - maintain impact on mobile
-  @include mobile-only {
-    padding: var(--space-xl) var(--space-lg);
-    margin: var(--space-lg) var(--space-md);
-
-    h2 {
-      font-size: clamp(
-        var(--font-size-h2),
-        10vw,
-        var(--font-size-h1)
-      ); // Design tokens for mobile
-
-      margin-bottom: var(--space-lg);
-      letter-spacing: var(--letter-spacing-normal); // Design token
-    }
-
-    p {
-      font-size: clamp(
-        var(--font-size-body),
-        3vw,
-        var(--font-size-h6)
-      ); // Design tokens
-    }
-
-    .key-question-quote {
-      font-size: clamp(
-        var(--font-size-h5),
-        5vw,
-        var(--font-size-h4)
-      ) !important; // Design tokens
-
-      padding: var(--space-xl) var(--space-lg);
-
-      &::before,
-      &::after {
-        font-size: var(--font-size-quote-medium); // Design token for mobile
-      }
-    }
-  }
-}
-
-// Resources Grid Enhancement
-.resources-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
-  margin: var(--space-md) 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: #{$medium}) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: #{$tablet}) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.resource-card {
-  background: linear-gradient(
-    135deg,
-    var(--surface-light),
-    var(--surface-subtle)
-  );
-  border: 1px solid rgba(147, 51, 234, 0.2);
-  border-top: 3px solid transparent;
-  border-radius: var(--radius-xl);
-  text-align: center;
-  transition: border-color 0.2s ease, border-top-color 0.2s ease,
-    box-shadow 0.2s ease, transform 0.2s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
-  // Sophisticated gradient overlay
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 127, 80, 0.05) 0%,
-      transparent 50%
-    );
-    pointer-events: none;
-  }
-
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
-      0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    border-color: rgba(255, 127, 80, 0.3);
-    border-top-color: var(--accent-coral);
-  }
-
-  h3 {
-    color: var(--accent-coral);
-    margin-bottom: var(--space-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--font-size-h5);
-    font-weight: var(--font-weight-semibold);
-    position: relative;
-    z-index: 1;
-
-    i,
-    em {
-      background: rgba(255, 127, 80, 0.2);
-      border-radius: var(--radius-full);
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid var(--accent-coral);
-    }
-  }
-
-  p {
-    margin-bottom: var(--space-md);
-    line-height: var(--line-height-relaxed);
-    color: #666;
-    position: relative;
-    z-index: 1;
-  }
-
-  .resource-link {
-    background: linear-gradient(
-      135deg,
-      var(--accent-coral),
-      var(--hover-coral)
-    );
-    color: var(--text-dark);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-semibold);
-    padding: var(--space-sm);
-    border-radius: var(--radius-lg);
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease-out;
-    position: relative;
-    z-index: 1;
-    border: 2px solid transparent;
-    backdrop-filter: var(--backdrop-blur-lg);
-
-    &:hover {
-      background: linear-gradient(
-        135deg,
-        var(--hover-coral),
-        var(--accent-coral)
-      );
-      transform: translateY(-2px);
-      box-shadow: 0 8px 16px rgba(255, 127, 80, 0.3);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-  }
-}
+// (Removed) Legacy resources grid/cards (.resources-grid, .resource-card) — resources now use section-card/callouts
 
 // Required Reading Section - Material Design Card
 .required-reading-section {
@@ -1981,9 +1173,7 @@ button:focus,
     .btn,
     a.btn,
     .btn.btn-primary,
-    a.btn.btn-primary,
-    .btn.btn-large,
-    a.btn.btn-large {
+    a.btn.btn-primary {
       @include button-primary;
 
       margin-top: var(--space-xl) !important;
@@ -1998,7 +1188,7 @@ button:focus,
       text-decoration: none;
       cursor: pointer !important;
       transition: all 0.3s ease-out !important;
-      min-height: 48px !important;
+  min-height: 48px !important;
 
       // Ensure consistent emerald styling
       background: linear-gradient(
@@ -2024,465 +1214,19 @@ button:focus,
   }
 }
 
-// Performance markers for measurement
-.perf-measure-start {
-  // Used by performance validation scripts
-  visibility: hidden;
-
-  &::before {
-    content: "critical-css-loaded";
-    display: none;
-  }
-}
+// (Removed) .perf-measure-start marker — not present in HTML
 
 // =============================================================================
 // MEETING LAYOUT STYLES
 // =============================================================================
 
-.meeting-main-content {
-  min-width: 0; // Prevent overflow
-  width: 100%; // Take full available width in grid column
+// (Removed) .meeting-main-content — unused
 
-  @include mobile-only {
-    display: flex;
-    flex-direction: column;
-  }
-}
+// (Removed) .meeting-sidebar — unused
 
-.meeting-sidebar {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: var(--radius-lg);
-  height: fit-content;
-  position: sticky;
-  top: var(--space-lg);
+// (Removed) mobile ordering for legacy chapter intro grid
 
-  @include tablet-only {
-    position: static;
-  }
-
-  @include mobile-only {
-    order: 2; // Move sidebar after intro but before main content sections
-    margin-top: var(--space-md);
-    margin-bottom: var(--space-md);
-  }
-
-  .sidebar-section {
-    margin-bottom: var(--space-md);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    h3 {
-      margin: 0 0 var(--space-md);
-      color: var(--text-dark);
-      font-size: var(--font-size-h5);
-      display: flex;
-      align-items: center;
-      gap: var(--space-sm);
-
-      i {
-        color: var(--accent-blue);
-      }
-    }
-  }
-}
-
-// Mobile ordering for content sections
-@include mobile-only {
-  .chapter-intro-header,
-  .chapter-cards-grid {
-    order: 1; // Keep intro at top
-  }
-}
-
-.media-card {
-  background: var(--text-white);
-  border-radius: var(--radius-md);
-  border: 1px solid #e5e7eb;
-  margin-bottom: var(--space-md);
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  h4 {
-    margin: 0 0 var(--space-xs);
-    color: var(--text-dark);
-    font-size: var(--font-size-h4);
-  }
-
-  .media-subtitle {
-    color: var(--text-light);
-    font-size: var(--font-size-body);
-    margin: 0 0 var(--space-sm);
-  }
-
-  .media-description {
-    color: var(--text-light);
-    font-size: var(--font-size-body);
-    line-height: var(--line-height-relaxed);
-    margin: 0 0 var(--space-md);
-  }
-
-  .media-controls {
-    margin: var(--space-md) 0;
-    max-width: 100%;
-    overflow: hidden;
-
-    @include mobile-only {
-      margin: var(--space-sm) 0;
-    }
-
-    video,
-    audio {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border-radius: var(--radius-sm);
-      display: block;
-      /* Prevent layout shift during load */
-      aspect-ratio: 16/9;
-    }
-
-    video,
-    .meeting-video {
-      /* Prevent full-screen flash on page load */
-      max-height: 400px;
-      max-width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-  }
-
-  .media-generation-note {
-    background: var(--light-gray-bg);
-    padding: var(--space-sm);
-    border-radius: var(--radius-sm);
-    margin-top: var(--space-md);
-    border-left: 3px solid #475569;
-
-    p {
-      margin: 0;
-      font-size: var(--font-size-body);
-      color: var(--text-light);
-      line-height: var(--line-height-relaxed);
-    }
-
-    strong {
-      color: var(--text-dark);
-    }
-  }
-
-  /* Material Design Resources Section */
-  .resources-elevated {
-    background: linear-gradient(
-      135deg,
-      var(--background-subtle) 0%,
-      var(--background-muted) 100%
-    );
-    border: none;
-    box-shadow: var(--shadow-elevated);
-
-    .resource-header-icon {
-      font-size: var(--icon-size-lg);
-      vertical-align: middle;
-      color: var(--accent-teal);
-    }
-  }
-
-  .section-subtitle {
-    color: var(--text-light);
-    font-size: var(--font-size-body);
-    margin: var(--space-xs) 0 0 0;
-    font-weight: 400;
-  }
-
-  .resource-grid--material {
-    display: grid;
-    gap: var(--space-xl);
-    grid-template-columns: 1fr;
-
-    @include mobile-up {
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-2xl);
-    }
-  }
-
-  .material-card {
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-
-    &:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15),
-        0 10px 10px rgba(0, 0, 0, 0.12);
-      transform: translateY(-2px);
-    }
-
-    .card-header {
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-      display: flex;
-      align-items: center;
-
-      .header-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
-        .material-icons {
-          color: white;
-          font-size: 24px;
-        }
-      }
-
-      .card-titles {
-        flex: 1;
-
-        h3 {
-          margin: 0;
-          font-size: var(--font-size-h5);
-          font-weight: 600;
-          color: var(--text-dark);
-          line-height: 1.2;
-        }
-
-        .card-subtitle {
-          color: var(--text-light);
-          font-size: var(--font-size-body);
-          font-weight: 400;
-          margin-top: 2px;
-          display: block;
-        }
-      }
-    }
-
-    &.primary-theme .header-icon {
-      background: linear-gradient(135deg, #0969da 0%, #0550ae 100%);
-    }
-
-    &.info-theme .header-icon {
-      background: linear-gradient(135deg, #1a7f37 0%, #116329 100%);
-    }
-  }
-
-  .resource-links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-
-    .resource-link {
-      display: flex;
-      align-items: center;
-      gap: var(--space-sm);
-      padding: var(--space-sm) var(--space-md);
-      border-radius: 8px;
-      text-decoration: none;
-      color: var(--text-dark);
-      transition: all 0.2s ease;
-      border: 1px solid transparent;
-
-      &:hover {
-        background: rgba(0, 0, 0, 0.04);
-        border-color: rgba(0, 0, 0, 0.08);
-        text-decoration: none;
-        color: var(--text-dark);
-      }
-
-      .material-icons:first-child {
-        color: var(--text-light);
-        font-size: 18px;
-        flex-shrink: 0;
-      }
-
-      span {
-        flex: 1;
-        font-weight: 500;
-        font-size: var(--font-size-body);
-      }
-
-      .material-icons.external {
-        color: var(--text-light);
-        font-size: 16px;
-        opacity: 0.6;
-        transition: opacity 0.2s ease;
-      }
-
-      &:hover .material-icons.external {
-        opacity: 1;
-      }
-    }
-  }
-
-  // Action Items Design
-  .action-items {
-    .section-subtitle {
-      color: var(--text-light);
-      font-size: var(--font-size-h4);
-      margin-top: var(--space-sm);
-      font-weight: var(--font-weight-normal);
-    }
-
-    .action-content {
-      max-width: none;
-    }
-
-    .action-list {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .action-item {
-      background: var(--text-white);
-      border: 1px solid var(--border-medium);
-      padding: var(--space-md) var(--space-lg);
-      transition: all 0.2s ease-out;
-      box-shadow: var(--shadow-subtle);
-    }
-
-    // Zebra striping - shade every other row
-    .action-item:nth-child(even) {
-      background: #fafafa;
-    }
-
-    .action-item:hover {
-      border-color: var(--accent-teal);
-      box-shadow: var(--elevation-2);
-      transform: translateY(-2px);
-    }
-
-    .action-deliverable {
-      margin: 0;
-      margin-left: var(--space-xl); // Indent to align under title text
-      font-size: var(--font-size-body);
-      color: var(--text-light);
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-sm);
-      line-height: 1.4;
-
-      i {
-        color: var(--accent-sage);
-        flex-shrink: 0;
-        margin-top: 1px; // Better alignment with text
-        font-size: 0.9em;
-        line-height: 1;
-      }
-    }
-
-    // Responsive adjustments
-    @include mobile-only {
-      .action-item {
-        padding: var(--space-sm) var(--space-md);
-        gap: var(--space-sm);
-      }
-
-      .action-title {
-        font-size: var(--font-size-body);
-      }
-
-      .action-deliverable {
-        font-size: var(--font-size-body);
-      }
-    }
-  }
-
-  /* Next Meeting Section Styling - Use target meeting's theme */
-  .next-meeting-1 {
-    --meeting-primary: var(--meeting-1-color);
-    --meeting-secondary: #1f6feb;
-    --meeting-light: rgba(9, 105, 218, 0.1);
-    --meeting-hover: #0550ae;
-
-    .btn--meeting-1:hover:not(:disabled) {
-      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
-      box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
-    }
-
-    .btn--meeting-1:focus-visible {
-      outline: 3px solid rgba(9, 105, 218, 0.4);
-      outline-offset: 2px;
-    }
-  }
-
-  .next-meeting-2 {
-    --meeting-primary: var(--meeting-2-color);
-    --meeting-secondary: #238636;
-    --meeting-light: rgba(26, 127, 55, 0.1);
-    --meeting-hover: #16632d;
-
-    .btn--meeting-2:hover:not(:disabled) {
-      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
-      box-shadow: 0 6px 16px rgba(26, 127, 55, 0.4);
-    }
-
-    .btn--meeting-2:focus-visible {
-      outline: 3px solid rgba(26, 127, 55, 0.4);
-      outline-offset: 2px;
-    }
-  }
-
-  .next-meeting-3 {
-    --meeting-primary: var(--meeting-3-color);
-    --meeting-secondary: #f59e0b;
-    --meeting-light: rgba(217, 119, 6, 0.1);
-    --meeting-hover: #d97706;
-
-    .btn--meeting-3:hover:not(:disabled) {
-      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
-      box-shadow: 0 6px 16px rgba(217, 119, 6, 0.4);
-    }
-
-    .btn--meeting-3:focus-visible {
-      outline: 3px solid rgba(217, 119, 6, 0.4);
-      outline-offset: 2px;
-    }
-  }
-
-  .next-meeting-4 {
-    --meeting-primary: var(--meeting-4-color);
-    --meeting-secondary: #a78bfa;
-    --meeting-light: rgba(139, 92, 246, 0.1);
-    --meeting-hover: #7c3aed;
-
-    .btn--meeting-4:hover:not(:disabled) {
-      background: linear-gradient(135deg, var(--meeting-secondary), var(--meeting-primary)) !important;
-      box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
-    }
-
-    .btn--meeting-4:focus-visible {
-      outline: 3px solid rgba(139, 92, 246, 0.4);
-      outline-offset: 2px;
-    }
-  }
-
-  /* Completion section styling */
-  .next-meeting-complete {
-    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-    border: 2px solid #a78bfa;
-    color: var(--text-white);
-
-    h2 {
-      color: var(--text-white);
-    }
-
-    p {
-      color: rgba(255, 255, 255, 0.92);
-    }
-
-    .welcome-cta-subtitle {
-      color: rgba(255, 255, 255, 0.85);
-    }
-  }
-}
+// (Removed) Media card pattern and nested resource/material variants — unused
 
 .next-meeting-complete__cta {
   background: linear-gradient(135deg, #a78bfa, #c4b5fd);
@@ -2500,305 +1244,13 @@ button:focus,
   }
 }
 
-// Chapter Introduction Styles
-.chapter-intro-header {
-  text-align: center;
-  margin-bottom: var(--space-md);
+// (Removed) Chapter intro grid styles — replaced by compact chapter components
 
-  h2 {
-    margin: 0;
-    color: var(--text-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-sm);
-    font-size: var(--font-size-h4);
-
-    i {
-      color: #0891b2;
-    }
-  }
-}
-
-.chapter-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-lg);
-}
-
-// Simple Card Base Styles (matching your image)
-.simple-card {
-  background: var(--text-white);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border-medium);
-  overflow: hidden;
-  transition: all 0.3s ease-out;
-  box-shadow: var(--shadow-subtle);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--elevation-2);
-    border-color: var(--border-hover);
-  }
-
-  .card-header {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--border-medium);
-    background: var(--background-subtle);
-
-    i {
-      font-size: var(--font-size-h4);
-      width: 40px;
-      text-align: center;
-      color: var(--text-light);
-    }
-
-    .card-titles {
-      flex: 1;
-
-      h4 {
-        margin: 0;
-        color: var(--text-dark);
-        font-size: var(--font-size-h5);
-        font-weight: var(--font-weight-semibold);
-        line-height: var(--line-height-tight);
-      }
-
-      .card-subtitle {
-        color: var(--text-light);
-        font-size: var(--font-size-body);
-        font-weight: var(--font-weight-normal);
-        margin-top: var(--space-xs);
-        display: block;
-      }
-    }
-  }
-
-  .card-content {
-    .card-description {
-      margin: 0 0 var(--space-md);
-      color: var(--text-light);
-      line-height: var(--line-height-relaxed);
-      font-size: var(--font-size-h6);
-    }
-
-    .card-goal {
-      background: var(--background-muted);
-      padding: var(--space-sm) var(--space-md);
-      border-radius: var(--radius-sm);
-      border-left: 3px solid currentColor;
-      margin-top: var(--space-md);
-
-      strong {
-        color: var(--text-dark);
-        font-weight: var(--font-weight-semibold);
-      }
-    }
-
-    // Resource card links styling
-    .card-links {
-      margin-top: var(--space-md);
-
-      a {
-        display: flex;
-        align-items: center;
-        gap: var(--space-sm);
-        padding: var(--space-sm) var(--space-md);
-        margin-bottom: var(--space-sm);
-        color: var(--text-dark);
-        text-decoration: none;
-        border-radius: var(--radius-sm);
-        border: 1px solid var(--border-medium);
-        background: var(--background-white);
-        transition: all 0.2s ease-out;
-        font-size: var(--font-size-body);
-        line-height: var(--line-height-normal);
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &:hover {
-          background: var(--background-subtle);
-          border-color: var(--border-hover);
-          color: var(--text-dark);
-          text-decoration: none;
-          transform: translateX(2px);
-        }
-
-        .resource-bullet {
-          color: var(--accent-teal);
-          font-size: 0.6em;
-          flex-shrink: 0;
-        }
-
-        .fa-external-link-alt {
-          color: var(--text-light);
-          font-size: 0.8em;
-          margin-left: auto;
-          opacity: 0.6;
-          transition: opacity 0.2s ease-out;
-        }
-
-        &:hover .fa-external-link-alt {
-          opacity: 1;
-          color: var(--accent-teal);
-        }
-      }
-    }
-  }
-
-  // Theme-specific styling
-  &.primary-theme {
-    .card-header i {
-      color: var(--meeting-1-color);
-    }
-
-    .card-goal {
-      border-left-color: var(--meeting-1-color);
-    }
-
-    &:hover {
-      border-top-color: var(--meeting-1-color);
-    }
-  }
-
-  &.info-theme {
-    .card-header i {
-      color: var(--accent-emerald);
-    }
-
-    .card-goal {
-      border-left-color: var(--accent-emerald);
-    }
-
-    &:hover {
-      border-top-color: var(--accent-emerald);
-    }
-  }
-
-  &.success-theme {
-    .card-header i {
-      color: var(--accent-emerald);
-    }
-
-    .card-goal {
-      border-left-color: var(--accent-emerald);
-    }
-
-    &:hover {
-      border-top-color: var(--accent-emerald);
-    }
-  }
-
-  // Resource-specific grid styling
-  &.resource-card {
-    // Enhanced Material Design elevation for resource cards
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-    &:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-      transform: translateY(-2px);
-    }
-  }
-}
+// (Removed) Simple card pattern — superseded by section-card and material variants
 
 // Resources section specific styling
-.resources-clean {
-  .resource-content {
-    max-width: none;
-  }
-
-  .resource-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-    margin-top: var(--space-md);
-
-    @include mobile-up {
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-2xl);
-    }
-  }
-}
-
-.metric-card {
-  .card-header {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #f1f3f4;
-
-    i {
-      font-size: var(--font-size-h5);
-      width: 40px;
-      text-align: center;
-    }
-
-    .card-titles h4 {
-      margin: 0;
-      color: var(--text-dark);
-      font-size: var(--font-size-h5);
-      font-weight: var(--font-weight-semibold);
-      line-height: var(--line-height-tight);
-    }
-  }
-
-  .card-content {
-    .card-description {
-      margin: 0 0 var(--space-md);
-      color: var(--text-light);
-      line-height: var(--line-height-relaxed);
-    }
-
-    .card-goal {
-      background: var(--light-gray-bg);
-      padding: var(--space-sm) var(--space-md);
-      border-radius: var(--radius-sm);
-      border-left: 3px solid currentColor;
-      margin-top: var(--space-md);
-
-      strong {
-        color: var(--text-dark);
-        font-weight: var(--font-weight-medium);
-      }
-    }
-  }
-}
-
-// Theme Colors
-.success-theme {
-  .card-header i {
-    color: var(--meeting-2-color);
-  }
-
-  .card-goal {
-    border-left-color: var(--meeting-2-color);
-    background: #f0fdf4;
-  }
-}
-
-.primary-theme {
-  .card-header i {
-    color: #2563eb;
-  }
-
-  .card-goal {
-    border-left-color: var(--meeting-1-color);
-    background: var(--background-white);
-  }
-}
-
-.culture-theme {
-  .card-header i {
-    color: var(--accent-purple);
-  }
-
-  .card-goal {
-    border-left-color: var(--accent-purple);
-    background: #f3e5f5;
-  }
-}
+// (Removed) .resources-clean — unused
+// (Removed) Legacy metric-card and theme wrappers — not used in current layouts
 
 // =============================================================================
 // CRITICAL CSS SIZE OPTIMIZATION
