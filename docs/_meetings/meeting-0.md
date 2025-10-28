@@ -189,6 +189,14 @@ document.addEventListener('keydown', function(event) {
               Your browser does not support the video tag.
             </video>
           </div>
+
+          <!-- Previous Videos (concise list) -->
+          <div class="alternative-video">
+            <h4>Previous Videos</h4>
+            <ul>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/meeting-0-video.mp4" target="_blank">Meeting 0 Video</a> (4:51, Oct 22, 2025)</li>
+            </ul>
+          </div>
         </div>
       </div>
 
