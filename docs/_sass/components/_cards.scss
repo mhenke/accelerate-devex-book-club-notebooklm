@@ -31,14 +31,7 @@
     );
   }
 
-  &--elevated {
-    box-shadow: var(--elevation-2);
-
-    &:hover {
-      box-shadow: var(--shadow-xl);
-      transform: translateY(-4px);
-    }
-  }
+  // (Removed) card--elevated, card__footer, card--theme-green (border-top variant) — not used in built HTML
 
   // Border accent variants
   &--border-left {
@@ -72,38 +65,8 @@
       }
     }
   }
-
-  &__footer {
-    margin-top: var(--space-md);
-    padding-top: var(--space-md);
-    border-top: 1px solid var(--background-light);
-  }
 }
 
-// Removed unused theme-blue variant
-
-.card--theme-green {
-  --theme-primary: var(--meeting-2-color);
-  --accent-coral: #388e3c;
-
-  &.card--border-left {
-    border-left-color: var(--theme-primary);
-  }
-
-  &.card--border-top::before {
-    background: linear-gradient(
-      90deg,
-      var(--theme-primary),
-      var(--accent-coral)
-    );
-  }
-
-  .card__header h3,
-  .card__header h4 {
-    color: var(--theme-primary);
-  }
-}
-
-// Removed unused meeting-1 card theme
+// Removed unused theme-blue variant and card--theme-green
 
 // Removed unused specialized card content components and quote styling
