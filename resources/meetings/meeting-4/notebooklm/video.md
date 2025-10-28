@@ -17,6 +17,10 @@
 
 ---
 
+> AI Tool Spotlight Tip: Produce a 60-90 second highlight reel (e.g., leadership characteristic + next-step prompt) to feature during the in-meeting NotebookLM segment.
+
+---
+
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
@@ -33,6 +37,8 @@ Assume viewer is visual learner. Focus Ch 11,16,Conclusion Accelerate. Create 10
 - Leadership presentations about transformation
 - Inspiring and motivating teams to take action
 - Showing complete journey from Meetings 1-4
+
+**Teaser:** Export an additional 60-90 second highlight clip for the AI Tool Spotlight segment.
 
 ---
 

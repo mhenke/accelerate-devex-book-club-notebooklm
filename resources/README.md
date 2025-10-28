@@ -61,7 +61,7 @@ This directory contains all supporting materials for the Accelerate DevEx Book C
 - **Best for:** Understanding the book's foundation and author credibility for participants and facilitators
 
 **[meeting-format-learning-objectives.md](meeting-format-learning-objectives.md)** - Program Format & Outcomes
-- Standard 1-hour meeting agenda structure (5-15-30-10-5 minute breakdown)
+- Standard 1-hour meeting agenda structure (5-10-25-5-10-5 minute breakdown with AI tool spotlight)
 - Learning objectives for each meeting (0-4)
 - Skill development progression across 8 weeks
 - Learning pathways for different roles (Technical/Management/Leadership)

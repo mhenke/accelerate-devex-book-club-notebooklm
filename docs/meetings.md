@@ -184,10 +184,18 @@ title: Meetings
 </div>
 
 <div class="structure-item">
-  <div class="structure-time">15-45 min</div>
+  <div class="structure-time">15-40 min</div>
   <div class="structure-content">
     <h4><i class="fas fa-users"></i> Core Discussion</h4>
     <p>Apply concepts to your team's context through guided questions</p>
+  </div>
+</div>
+
+<div class="structure-item">
+  <div class="structure-time">40-45 min</div>
+  <div class="structure-content">
+    <h4><i class="fas fa-robot"></i> AI Tool Spotlight</h4>
+    <p>Showcase the featured AI assistant with a quick demo or workflow example</p>
   </div>
 </div>
 
