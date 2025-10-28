@@ -20,44 +20,7 @@
     transform: translateY(-2px);
   }
 
-  // Interactive variant
-  &--interactive {
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    color: inherit;
-
-    &:active {
-      box-shadow: var(--elevation-1);
-      transform: translateY(0);
-    }
-  }
-
-  // Layout variants
-  &--centered {
-    text-align: center;
-  }
-
-  &--left-aligned {
-    text-align: left;
-  }
-
-  // Size variants
-  &--compact {
-    padding: var(--space-sm);
-
-    @include mobile-only {
-      padding: var(--space-xs); // 4px on mobile
-    }
-  }
-
-  &--spacious {
-    padding: var(--space-xl);
-
-    @include mobile-only {
-      padding: var(--space-md); // 16px on mobile (reduced from 32px)
-    }
-  }
+  // Removed unused variants: interactive, centered/left, compact, spacious
 
   // Visual variants
   &--gradient {
@@ -82,25 +45,7 @@
     border-left: 4px solid var(--meeting-1-color);
   }
 
-  &--border-top {
-    border-top: 4px solid var(--meeting-1-color);
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(
-        90deg,
-        var(--meeting-1-color),
-        var(--accent-coral)
-      );
-    }
-  }
+  // Removed unused border-top variant
 
   // Content structure elements
   &__header {
@@ -135,28 +80,7 @@
   }
 }
 
-// Theme variants using CSS custom properties
-.card--theme-blue {
-  --theme-primary: var(--meeting-1-color);
-  --accent-coral: var(--meeting-1-color);
-
-  &.card--border-left {
-    border-left-color: var(--theme-primary);
-  }
-
-  &.card--border-top::before {
-    background: linear-gradient(
-      90deg,
-      var(--theme-primary),
-      var(--accent-coral)
-    );
-  }
-
-  .card__header h3,
-  .card__header h4 {
-    color: var(--theme-primary);
-  }
-}
+// Removed unused theme-blue variant
 
 .card--theme-green {
   --theme-primary: var(--meeting-2-color);
@@ -180,147 +104,6 @@
   }
 }
 
-// Meeting-specific themes
-.card--meeting-1 {
-  --theme-primary: var(--meeting-1-color);
-  --accent-coral: var(--accent-coral);
+// Removed unused meeting-1 card theme
 
-  &.card--border-left {
-    border-left-color: var(--theme-primary);
-  }
-
-  &.card--border-top::before {
-    background: linear-gradient(
-      90deg,
-      var(--theme-primary),
-      var(--accent-coral)
-    );
-  }
-
-  .card__header h3,
-  .card__header h4 {
-    color: var(--theme-primary);
-  }
-}
-
-// =============================================================================
-// SPECIALIZED CARD CONTENT COMPONENTS
-// =============================================================================
-
-// Discussion prompts styling
-.discussion-prompts {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  margin-top: var(--space-md);
-
-  span {
-    color: var(--text-light);
-    font-size: var(--font-size-body);
-    line-height: var(--line-height-relaxed);
-    padding-left: var(--space-sm);
-
-    &::before {
-      content: "💭";
-      margin-right: var(--space-sm);
-    }
-  }
-}
-
-// ENPS comparison styling
-.enps-comparison {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-lg);
-  margin: var(--space-lg) 0;
-}
-
-.enps-before,
-.enps-after {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.enps-label {
-  font-size: var(--font-size-body);
-  color: var(--text-light);
-  font-weight: var(--font-weight-medium);
-}
-
-.enps-value {
-  font-size: var(--font-size-h3);
-  font-weight: var(--font-weight-bold);
-  color: var(--meeting-1-color);
-
-  @include mobile-only {
-    font-size: var(--font-size-h5);
-  }
-}
-
-.enps-before .enps-value {
-  color: var(--accent-coral);
-}
-
-.enps-after .enps-value {
-  color: var(--accent-emerald);
-}
-
-.enps-arrow {
-  font-size: var(--font-size-h5);
-  color: var(--meeting-1-color);
-}
-
-// Stats highlight styling
-.stat-highlight {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-sm);
-  margin: var(--space-md) 0;
-}
-
-.stat-number {
-  font-size: var(--font-size-h1);
-  font-weight: var(--font-weight-bold);
-  color: var(--meeting-1-color);
-
-  @include mobile-only {
-    font-size: var(--font-size-h3);
-  }
-}
-
-.stat-text {
-  font-size: var(--font-size-h6);
-  color: #666;
-  font-weight: var(--font-weight-medium);
-}
-
-// Law statement quote styling
-.card .card__content blockquote {
-  font-size: var(--font-size-h5);
-  font-style: italic;
-  color: var(--meeting-1-color);
-  margin: var(--space-md) 0 var(--space-lg) 0;
-  font-weight: var(--font-weight-medium);
-  text-align: center;
-  position: relative;
-
-  &::before,
-  &::after {
-    content: none !important;
-  }
-}
-
-.card .card__content cite {
-  display: block;
-  color: var(--text-light);
-  font-size: var(--font-size-body);
-  font-weight: var(--font-weight-medium);
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  text-align: center;
-}
+// Removed unused specialized card content components and quote styling

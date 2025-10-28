@@ -2,31 +2,7 @@
 // MEDIA COMPONENTS - Material Design 3 Patterns
 // =============================================================================
 
-// Media Container Component - Video & Audio Controls
-.media-container {
-  background: var(--background-white);
-  border-radius: var(--radius-md);
-  box-shadow: 0 4px 15px var(--shadow-light);
-  padding: var(--space-lg);
-  margin: var(--space-xl) 0;
-  max-width: 100%;
-  overflow: hidden;
-
-  @include mobile-only {
-    padding: var(--space-sm);
-    margin: var(--space-md) 0;
-  }
-}
-
-.media-container video,
-.media-container audio {
-  width: 100%;
-  max-width: 100%;
-  border-radius: var(--radius-md);
-  margin-bottom: var(--space-md);
-  display: block;
-  height: auto;
-}
+// Removed unused .media-container (video/audio are embedded within sections)
 
 // Video section and card containers
 .video-section,
@@ -35,51 +11,9 @@
   overflow: hidden;
 }
 
-.video-card {
-  background: var(--background-white);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-}
+// Removed unused .video-card wrapper (not used in built HTML)
 
-.media-download-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--space-md);
-}
-
-.download-btn {
-  @include touch-target-44px;
-  @include button-primary;
-
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  background: var(--accent-coral);
-  color: var(--text-white);
-  text-decoration: none;
-  padding: var(--space-md) var(--space-lg);
-  border-radius: var(--radius-md);
-  font-weight: var(--font-weight-medium);
-  transition: all 0.2s ease;
-
-  &:hover,
-  &:focus {
-    background: var(--hover-coral);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
-    text-decoration: none;
-    color: var(--text-white);
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--accent-coral);
-    outline-offset: 2px;
-  }
-
-  i {
-    font-size: 1rem;
-  }
-}
+// Removed unused media download controls and button styles
 
 // =============================================================================
 // PODCAST PLAYLIST - Material Design 3 Compact Playlist Pattern
@@ -131,73 +65,10 @@
 }
 
 // Shared player at bottom of playlist - matches media control theme
-.playlist-player {
-  padding: var(--space-md) var(--space-lg);
-  background: linear-gradient(135deg, #b8d4e0 0%, #d4e8f0 100%);
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  max-width: 100%;
-  overflow: hidden;
-
-  @include mobile-only {
-    padding: var(--space-sm) var(--space-md);
-  }
-
-  audio {
-    width: 100%;
-    max-width: 100%;
-    height: 48px;
-    border-radius: var(--radius-sm);
-    display: block;
-  }
-}
+// Removed unused shared playlist player block
 
 // Now Playing header with equalizer and time
-.now-playing-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: var(--space-sm);
-  gap: var(--space-md);
-}
-
-.now-playing-info {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  flex: 1;
-  min-width: 0; // Allow text truncation
-}
-
-.now-playing-text-wrapper {
-  flex: 1;
-  min-width: 0; // Allow text truncation
-}
-
-.now-playing-label {
-  font-size: var(--font-size-body);
-  color: #666;
-  font-weight: var(--font-weight-medium);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 2px;
-}
-
-.now-playing-title {
-  font-size: var(--font-size-body);
-  color: var(--text-dark);
-  font-weight: var(--font-weight-semibold);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.now-playing-time {
-  font-size: var(--font-size-body);
-  color: #666;
-  font-variant-numeric: tabular-nums;
-  font-weight: var(--font-weight-medium);
-  flex-shrink: 0;
-}
+// Removed unused now-playing header/info styles
 
 // Podcast Item - M3 Three-Line List Pattern (Compact)
 .podcast-item {
@@ -273,47 +144,10 @@
   position: relative;
 }
 
-.play-btn {
-  width: 36px;
-  height: 36px;
-  border: none;
-  border-radius: 50%;
-  background: var(--theme-primary);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0;
-  flex-shrink: 0;
-
-  i,
-  em {
-    font-size: 0.875rem;
-    margin-left: 2px; // Optical centering for play icon
-  }
-
-  &:hover {
-    background: color-mix(in srgb, var(--theme-primary) 90%, black);
-    transform: scale(1.05);
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--theme-primary);
-    outline-offset: 2px;
-  }
-}
+// Removed unused .play-btn styles (not present in built HTML)
 
 // Show pause icon when track is playing
-.podcast-item.is-playing .play-btn .fas.fa-play::before {
-  content: "\f04c" !important; // Font Awesome pause icon
-  margin-left: 0 !important; // Reset optical centering
-}
+// Removed unused FA play/pause override tied to .play-btn
 
 // Equalizer animation keyframes
 @keyframes equalize {
@@ -463,14 +297,7 @@
 }
 
 // Remove individual audio controls (using shared player)
-.podcast-controls {
-  display: none;
-}
-
-// Metadata (duration, etc.) - Moved to trailing slot
-.podcast-metadata {
-  display: none; // Duration moved to trailing element
-}
+// Removed unused podcast-controls and podcast-metadata
 
 // Responsive adjustments - Keep compact on mobile
 @include mobile-only {
