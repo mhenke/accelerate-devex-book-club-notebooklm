@@ -198,10 +198,12 @@ document.addEventListener('keydown', function(event) {
             </video>
           </div>
 
-          <!-- Alternative Video -->
+          <!-- Previous Videos (concise list) -->
           <div class="alternative-video">
-            <h3>Alternative Videos</h3>
-            <p>More videos coming soon</p>
+            <h4>Previous Videos</h4>
+            <ul>
+              <li>More videos coming soon</li>
+            </ul>
           </div>
         </div>
       </div>

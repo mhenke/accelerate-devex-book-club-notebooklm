@@ -76,6 +76,21 @@
       color: var(--theme-primary);
     }
   }
+
+  // Support h4 headings used for concise lists (e.g., "Previous Videos")
+  h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    color: var(--text-dark);
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-weight-semibold);
+
+    i {
+      color: var(--theme-primary);
+    }
+  }
 }
 
 .podcast-playlist {

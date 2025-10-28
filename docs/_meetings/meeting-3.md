@@ -217,11 +217,12 @@ document.addEventListener('keydown', function(event) {
             </video>
           </div>
 
-          <!-- Alternative Video -->
+          <!-- Previous Videos (concise list) -->
           <div class="alternative-video">
-            <h3>Alternative Video</h3>
-            <p><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/visual-lean-practices.mp4" target="_blank">Visual Lean Management Flow</a></p>
-            <p class="alt-video-desc">Five lean practices with flow diagrams, deployment pain timeline, and satisfaction virtuous cycle.</p>
+            <h4>Previous Videos</h4>
+            <ul>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/visual-lean-practices.mp4" target="_blank">Visual Lean Management Flow</a></li>
+            </ul>
           </div>
         </div>
       </div>
