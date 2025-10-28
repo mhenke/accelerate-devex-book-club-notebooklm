@@ -205,6 +205,39 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Podcast Items (Compact List) -->
           <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/Accelerate_DevEx_Book_Club__Turn_Research_into_Action_and_Nail_.m4a"
+               data-title="Less Burnout Brief"
+               data-duration="1:33"
+               data-type="brief">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Less Burnout Brief">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Less Burnout Brief
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type brief">Brief</span>
+                <span class="podcast-duration">1:33</span>
+              </div>
+              <div class="podcast-subtitle">Turn Research Into Action and Nail Your Preparations</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/accelerate-mastery-deep-dive.m4a"
                data-title="Accelerate Mastery"
                data-duration="11:38"
@@ -244,13 +277,13 @@ document.addEventListener('keydown', function(event) {
                 <div class="playing-indicator-large"></div>
                 <div class="now-playing-text-wrapper">
                   <div class="now-playing-label">Now Playing</div>
-                  <div class="now-playing-title" id="now-playing-title">Accelerate Mastery</div>
+                  <div class="now-playing-title" id="now-playing-title">Less Burnout Brief</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 18:30</div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 1:33</div>
             </div>
             <audio id="shared-player" controls>
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/accelerate-mastery-deep-dive.m4a" type="audio/mp4" id="shared-player-source">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/Accelerate_DevEx_Book_Club__Turn_Research_into_Action_and_Nail_.m4a" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
           </div>

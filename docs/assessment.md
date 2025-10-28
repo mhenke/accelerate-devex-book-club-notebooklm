@@ -62,23 +62,13 @@ title: 24 Capabilities Assessment
   <button type="button" class="btn btn--primary-action assessment-reset-button" id="resetBtn">
     <i class="fas fa-redo"></i> Reset Assessment
   </button>
-  <div class="score-circle" aria-hidden="true" aria-label="Raw score">
+  <div class="score-circle" aria-hidden="true">
     <span class="score-value" id="overallScore">0</span>
     <span class="score-total">/120 score total</span>
   </div>
 </div>
 
-<!-- Accessible confirmation dialog for Reset -->
-<dialog id="confirmResetDialog" aria-labelledby="confirmResetTitle" aria-describedby="confirmResetDesc">
-  <form method="dialog" class="confirm-reset-form">
-    <h2 id="confirmResetTitle">Reset assessment?</h2>
-    <p id="confirmResetDesc">This will clear all answers you have selected. This action cannot be undone. Do you want to continue?</p>
-    <div class="dialog-actions">
-      <button id="confirmResetConfirm" type="button" class="btn btn--primary-action">Reset</button>
-      <button id="confirmResetCancel" type="button" class="btn">Cancel</button>
-    </div>
-  </form>
-</dialog>
+<!-- Note: confirmation dialog removed — Reset will act immediately -->
 
 <!-- Assessment Questions -->
 <div class="assessment-questions">
@@ -633,53 +623,7 @@ title: 24 Capabilities Assessment
   const _topPlaceholder = document.getElementById('resultsTopPlaceholder');
   const _topPlaceholderOriginalHTML = _topPlaceholder ? _topPlaceholder.innerHTML : '';
 
-  // Accessible confirmation dialog handling
-  const confirmDialog = document.getElementById('confirmResetDialog');
-  const confirmBtn = document.getElementById('confirmResetConfirm');
-  const cancelBtn = document.getElementById('confirmResetCancel');
-  let _previousActiveElement = null;
-
-  function openConfirmDialog() {
-    _previousActiveElement = document.activeElement;
-    if (confirmDialog && typeof confirmDialog.showModal === 'function') {
-      confirmDialog.showModal();
-    } else if (confirmDialog) {
-      // Fallback for browsers without <dialog>
-      confirmDialog.setAttribute('open', '');
-    }
-    // Move focus to the confirm button for keyboard users
-    if (confirmBtn) {confirmBtn.focus();}
-  }
-
-  function closeConfirmDialog() {
-    if (confirmDialog && typeof confirmDialog.close === 'function') {
-      try { confirmDialog.close(); } catch (e) { /* ignore */ }
-    } else if (confirmDialog) {
-      confirmDialog.removeAttribute('open');
-    }
-    if (_previousActiveElement) {_previousActiveElement.focus();}
-  }
-
-  // Wire dialog buttons
-  if (confirmBtn) {
-    confirmBtn.addEventListener('click', function () {
-      performReset();
-      closeConfirmDialog();
-    });
-  }
-
-  if (cancelBtn) {
-    cancelBtn.addEventListener('click', function () {
-      closeConfirmDialog();
-    });
-  }
-
-  // Close dialog on escape when using the fallback open attribute
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && confirmDialog && confirmDialog.hasAttribute && confirmDialog.hasAttribute('open')) {
-      closeConfirmDialog();
-    }
-  });
+  // Confirmation dialog removed — Reset acts immediately
 
   // Event listeners
   document.querySelectorAll('input[type="radio"]').forEach(radio => {
@@ -688,7 +632,7 @@ title: 24 Capabilities Assessment
 
   document.getElementById('resetBtn').addEventListener('click', function (e) {
     e.preventDefault();
-    openConfirmDialog();
+    performReset();
   });
 
   // smooth-scroll link from the bottom to the results placeholder at top

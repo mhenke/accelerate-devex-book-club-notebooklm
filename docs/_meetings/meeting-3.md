@@ -211,7 +211,7 @@ document.addEventListener('keydown', function(event) {
         <div class="video-card">
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/meeting-3-video.mp4" type="video/mp4">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/The_Human_Engine__Beat_Burnout.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -220,7 +220,7 @@ document.addEventListener('keydown', function(event) {
           <div class="alternative-video">
             <h4>Previous Videos</h4>
             <ul>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/visual-lean-practices.mp4" target="_blank">Visual Lean Management Flow</a></li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/meeting-3-video.mp4" target="_blank">Management & Sustainability Overview</a></li>
             </ul>
           </div>
         </div>
@@ -232,25 +232,25 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Podcast Items (Compact List) -->
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/lean-essentials-brief.mp4"
-               data-title="Lean Essentials Brief"
-               data-duration="7:30"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean,_Less_Burnout,_and_the_Data_That_Proves_Tech_Fixes_Employe.m4a"
+               data-title="Less Burnout Brief"
+               data-duration="1:20"
                data-type="brief">
             <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Lean Essentials Brief">
+              <button type="button" class="play-btn" aria-label="Play Less Burnout Brief">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Lean Essentials Brief
+                Less Burnout Brief
               </div>
               <div class="podcast-meta">
                 <span class="podcast-type brief">Brief</span>
-                <span class="podcast-duration">7:30</span>
+                <span class="podcast-duration">1:20</span>
               </div>
-              <div class="podcast-subtitle">Five Lean Practices & Deployment Pain Connection</div>
+              <div class="podcast-subtitle">The Data That Proves Tech Fixes Employee Satisfaction</div>
             </div>
 
             <div class="podcast-end">
@@ -265,58 +265,58 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/management-sustainability-deep-dive.mp4"
-               data-title="Management & Sustainability"
-               data-duration="17:20"
-               data-type="deep-dive">
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean_Mechanics_vs.m4a"
+               data-title="Lean Mechanics Debate"
+               data-duration="14:06"
+               data-type="debate">
             <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Management & Sustainability">
+              <button type="button" class="play-btn" aria-label="Play Lean Mechanics Debate">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Management & Sustainability
+                Lean Mechanics Debate
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type debate">Debate</span>
+                <span class="podcast-duration">14:06</span>
+              </div>
+              <div class="podcast-subtitle">WIP Limits, Kanban, and Real-World Trade-Offs</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/meeting-3-podcast.m4a"
+               data-title="Management & Sustainability Deep Dive"
+               data-duration="29:30"
+               data-type="deep-dive">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Management & Sustainability Deep Dive">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Management & Sustainability Deep Dive
               </div>
               <div class="podcast-meta">
                 <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">17:20</span>
+                <span class="podcast-duration">29:30</span>
               </div>
               <div class="podcast-subtitle">Lean Management, Product Dev & Employee Satisfaction Drivers</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/lean-reality-critique.mp4"
-               data-title="Lean Reality Check"
-               data-duration="16:45"
-               data-type="critique">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Lean Reality Check">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                Lean Reality Check
-              </div>
-              <div class="podcast-meta">
-                <span class="podcast-type critique">Critique</span>
-                <span class="podcast-duration">16:45</span>
-              </div>
-              <div class="podcast-subtitle">When Lean Doesn't Work & Satisfaction Complexity</div>
             </div>
 
             <div class="podcast-end">
@@ -337,13 +337,13 @@ document.addEventListener('keydown', function(event) {
                 <div class="playing-indicator-large"></div>
                 <div class="now-playing-text-wrapper">
                   <div class="now-playing-label">Now Playing</div>
-                  <div class="now-playing-title" id="now-playing-title">Lean Essentials Brief</div>
+                  <div class="now-playing-title" id="now-playing-title">Less Burnout Brief</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 7:30</div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 1:20</div>
             </div>
             <audio id="shared-player" controls>
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/lean-essentials-brief.mp4" type="audio/mp4" id="shared-player-source">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean,_Less_Burnout,_and_the_Data_That_Proves_Tech_Fixes_Employe.m4a" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
           </div>
