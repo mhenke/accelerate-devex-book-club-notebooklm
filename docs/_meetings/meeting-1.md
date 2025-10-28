@@ -511,6 +511,12 @@ document.addEventListener('keydown', function(event) {
 
   <div class="resource-callout-grid">
     <div class="resource-callout">
+      <h3><i class="fas fa-file-pdf" aria-hidden="true"></i> Accelerating Software Delivery</h3>
+      <p>A comprehensive guide to understanding DORA metrics, culture transformation, and the foundational concepts that drive high-performing teams. This resource complements Chapters 1-3 and provides practical frameworks for measuring and improving your organization's software delivery capability.</p>
+      <p><strong>Meeting Resource:</strong> <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerating-Software-Delivery.pdf" class="resource-link" target="_blank"><strong>Download Guide (PDF)</strong></a></p>
+    </div>
+
+    <div class="resource-callout">
       <h3><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Culture Must Come First</h3>
       <p>The single most common mistake in DevOps transformation is jumping straight to metrics without building a healthy culture foundation. Without trust, measurement becomes surveillance rather than improvement.</p>
       <p><strong>Required Reading:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-before-metrics.md" class="resource-link"><strong>Culture Before Metrics</strong></a></p>
