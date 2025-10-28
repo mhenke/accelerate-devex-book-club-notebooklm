@@ -212,6 +212,68 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Podcast Items (Compact List) -->
           <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Accelerate_Your_Code__Continuous_Delivery,_Independent_Teams,_a.m4a"
+               data-title="Accelerate Your Code: Continuous Delivery & Independent Teams"
+               data-duration="1:47"
+               data-type="brief">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Your Code: Continuous Delivery & Independent Teams">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Accelerate Your Code: Continuous Delivery & Independent Teams
+                <span class="podcast-type brief">Brief</span>
+                <span class="podcast-duration">1:47</span>
+              </div>
+              <div class="podcast-subtitle">Quick Overview of CD Practices and Team Architecture</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Culture_or_Code_First_Accelerate_s_Battle_for_Transformation_Pr.m4a"
+               data-title="Culture or Code First? Accelerate's Battle for Transformation"
+               data-duration="16:35"
+               data-type="debate">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Culture or Code First? Accelerate's Battle for Transformation">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Culture or Code First? Accelerate's Battle for Transformation
+                <span class="podcast-type debate">Debate</span>
+                <span class="podcast-duration">16:35</span>
+              </div>
+              <div class="podcast-subtitle">Debating Transformation Priorities and Implementation Paths</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/meeting-2-podcast.m4a"
                data-title="Technical Excellence Deep Dive"
                data-duration="54:26"
@@ -249,13 +311,13 @@ document.addEventListener('keydown', function(event) {
                 <div class="playing-indicator-large"></div>
                 <div class="now-playing-text-wrapper">
                   <div class="now-playing-label">Now Playing</div>
-                  <div class="now-playing-title" id="now-playing-title">CD Practices Brief</div>
+                  <div class="now-playing-title" id="now-playing-title">Accelerate Your Code: Continuous Delivery & Independent Teams</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 54:26</div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 1:47</div>
             </div>
             <audio id="shared-player" controls>
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/meeting-2-podcast.m4a" type="audio/mp4" id="shared-player-source">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Accelerate_Your_Code__Continuous_Delivery,_Independent_Teams,_a.m4a" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
           </div>
