@@ -192,9 +192,7 @@ title: Resources
   </div>
 </div>
 
-<div class="ai-content-info">
-  <p><strong>Generated with:</strong> <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Google NotebookLM</a> • <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a> • <a href="https://gamma.app/" target="_blank" rel="noopener noreferrer">Gamma</a> • <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></p>
-</div>
+<!-- Removed per standardization: duplicated generation info now replaced by global AI attribution footer include -->
 </div>
 
 <div class="section-card" markdown="0">
@@ -209,10 +207,4 @@ title: Resources
 
 </div>
 
-<footer class="ai-attribution" aria-label="AI attribution" markdown="0">
-<div class="ai-attribution__icon" aria-hidden="true"></div>
-<div class="ai-attribution__content">
-<h4 class="ai-attribution__title">AI-Generated Content</h4>
-<p class="ai-attribution__text">This content was created with AI assistance from <strong><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a></strong>, <strong><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a></strong>, <strong><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a></strong>, <strong><a href="https://www.napkin.ai/" target="_blank" rel="noopener noreferrer">Napkin AI</a></strong>, <strong><a href="https://gamma.app/" target="_blank" rel="noopener noreferrer">Gamma</a></strong>, and <strong><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></strong>.</p>
-</div>
-</footer>
+
