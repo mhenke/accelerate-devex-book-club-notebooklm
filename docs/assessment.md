@@ -72,7 +72,7 @@ title: 24 Capabilities Assessment
       <span class="category-value"><span id="leadershipScore">0</span>/10</span>
     </div>
   </div>
-  <button class="btn btn--primary-action" id="resetBtn" style="margin-top: 1rem; width: 100%;">
+  <button type="button" class="btn btn--primary-action" id="resetBtn" style="margin-top: 1rem; width: 100%;">
     <i class="fas fa-redo"></i> Reset Assessment
   </button>
 </div>
@@ -396,8 +396,8 @@ title: 24 Capabilities Assessment
 <div class="section-card" markdown="0" id="resultsSection" style="display: none;">
   <h2><i class="fas fa-trophy"></i> Your Results</h2>
 
-  <div class="results-performance-level">
-    <h3 id="performanceLevel"></h3>
+    <div class="results-performance-level">
+    <h3 id="performanceLevel">Performance Level</h3>
     <p id="performanceDescription"></p>
   </div>
 
@@ -586,6 +586,7 @@ title: 24 Capabilities Assessment
   }
 
   function resetAssessment() {
+    // eslint-disable-next-line no-alert
     if (confirm('Are you sure you want to reset all answers?')) {
       document.querySelectorAll('input[type="radio"]').forEach(radio => {
         radio.checked = false;
@@ -850,7 +851,7 @@ title: 24 Capabilities Assessment
 }
 </style>
 
-<footer class="ai-attribution" markdown="0">
+<footer class="ai-attribution" aria-label="AI attribution" markdown="0">
 <div class="ai-attribution__icon">
 <i class="fas fa-robot" aria-hidden="true"></i>
 </div>

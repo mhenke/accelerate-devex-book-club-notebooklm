@@ -133,7 +133,7 @@
 
     <!-- Unified Site Header -->
     {%- unless page.layout == 'meeting' -%}
-    <header class="site-header">
+  <header class="site-header" aria-label="Site header">
       <div class="site-header-content">
         <div class="site-nav__brand">
           <a href="{{ '/' | relative_url }}" class="site-nav__brand-link">
@@ -150,6 +150,7 @@
 
         <!-- Hamburger Menu Button (Mobile) -->
         <button
+          type="button"
           class="hamburger-menu"
           aria-label="Toggle navigation menu"
           aria-expanded="false"
@@ -160,8 +161,8 @@
           <span class="hamburger-line"></span>
         </button>
 
-        <!-- Desktop Navigation -->
-        <nav class="site-nav-main site-nav-desktop">
+  <!-- Desktop Navigation -->
+  <nav class="site-nav-main site-nav-desktop" aria-label="Primary navigation">
           <a
             href="{{ '/resources' | relative_url }}"
             class="site-nav-link{% if page.url contains '/resources' %} active{% endif %}"

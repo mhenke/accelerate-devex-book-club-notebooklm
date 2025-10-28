@@ -220,7 +220,7 @@ title: Home
 </div>
 </div>
 
-<footer class="ai-attribution" markdown="0">
+<footer class="ai-attribution" aria-label="AI attribution" markdown="0">
   <div class="ai-attribution__icon">
     <i class="fas fa-robot" role="img" aria-label="Robot"></i>
   </div>
