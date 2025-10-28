@@ -195,7 +195,6 @@ document.addEventListener('keydown', function(event) {
             <h4>Previous Videos</h4>
             <ul>
               <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/Accelerate_Book_Club_Kickoff.mp4" target="_blank">Accelerate Book Club Kickoff</a> (4:51, Oct 22, 2025)</li>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/meeting-0-video.mp4" target="_blank">Meeting 0 Video</a> (4:51, Oct 22, 2025)</li>
             </ul>
           </div>
         </div>
