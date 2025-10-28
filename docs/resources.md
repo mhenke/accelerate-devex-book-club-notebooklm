@@ -14,7 +14,7 @@ title: Resources
 <p>Access comprehensive handouts, facilitator guides, learning materials, and podcast/video feeds for each meeting.</p>
 <div class="welcome-cta">
 <a href="#meeting-handouts" class="btn btn--primary-action">Browse All Resources</a>
-<p class="welcome-cta-subtitle">13 handouts • 4 meetings • <a href="/accelerate-devex-book-club-notebooklm/feeds/" style="color: inherit; text-decoration: underline;">RSS feeds</a></p>
+<p class="welcome-cta-subtitle">13 handouts • 4 meetings • <a href="/accelerate-devex-book-club-notebooklm/feeds/">RSS feeds</a></p>
 </div>
 </div>
 

@@ -3,6 +3,18 @@
 // Font Awesome 6.4.0 integrated with Material Design principles
 // Consistent sizing, spacing, and accessibility for all icons
 
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  src: local('Font Awesome 6 Free');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  src: local('Font Awesome 6 Brands');
+  font-display: swap;
+}
+
 // =============================================================================
 // MATERIAL DESIGN ICON SIZES
 // =============================================================================
@@ -273,7 +285,7 @@
 
 // Decorative icons should be hidden from screen readers
 .icon[aria-hidden="true"] {
-  speak: none;
+  display: inline-flex;
 }
 
 // =============================================================================

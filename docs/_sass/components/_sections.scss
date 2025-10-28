@@ -1759,6 +1759,10 @@
   }
 }
 
+.deployment-signal--spaced {
+  margin-top: var(--space-2xl);
+}
+
 .discussion-questions-list {
   display: flex;
   flex-direction: column;

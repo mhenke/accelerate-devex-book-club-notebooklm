@@ -20,7 +20,7 @@ title: Home
 <p><strong>Duration:</strong> 2 Months | <strong>Format:</strong> 4 Biweekly 1-Hour Sessions | <strong>Approach:</strong> Theme-Based Structure</p>
 <p>This book club follows the book's own principle of breaking work into small, manageable chunks with a steady, regular pace that allows for deep understanding and practical application.</p>
 
-<div class="welcome-cta" style="margin-top: 1.5rem;">
+<div class="welcome-cta welcome-cta--offset">
 <a href="{{ '/meetings/meeting-0/' | relative_url }}" class="btn btn--secondary">Start with Kickoff Meeting (Week 0)</a>
 <p class="welcome-cta-subtitle">30 minutes • No reading required • Set expectations</p>
 </div>

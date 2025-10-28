@@ -20,7 +20,7 @@ title: 24 Capabilities Assessment
 
 <!-- Top results placeholder: explains where results will appear once assessment is complete -->
 <div class="section-card" id="resultsTopPlaceholder" markdown="0">
-  <p style="margin:0"><strong>Results preview:</strong> After you answer all 24 questions a detailed results panel will appear below and here showing your performance level, category breakdown, and suggested next steps.</p>
+  <p class="results-preview-text"><strong>Results preview:</strong> After you answer all 24 questions a detailed results panel will appear below and here showing your performance level, category breakdown, and suggested next steps.</p>
 </div>
 
 <div class="assessment-container" markdown="0">
@@ -59,7 +59,7 @@ title: 24 Capabilities Assessment
       <span class="category-value"><span id="leadershipScore">0</span>/10</span>
     </div>
   </div>
-  <button type="button" class="btn btn--primary-action" id="resetBtn" style="margin-top: 1rem; width: 100%;">
+  <button type="button" class="btn btn--primary-action assessment-reset-button" id="resetBtn">
     <i class="fas fa-redo"></i> Reset Assessment
   </button>
   <div class="score-circle" aria-hidden="true" aria-label="Raw score">
@@ -396,7 +396,7 @@ title: 24 Capabilities Assessment
 </div>
 
 <!-- Results Section -->
-  <div class="section-card" markdown="0" id="resultsSection" style="display: none;">
+  <div class="section-card assessment-results-panel" markdown="0" id="resultsSection">
   <h2><i class="fas fa-trophy"></i> Your Results</h2>
 
     <div class="results-performance-level">
@@ -461,7 +461,7 @@ title: 24 Capabilities Assessment
 </div>
 
 <!-- Link to jump to results/placeholder (autoscroll) -->
-<p style="text-align:center; margin-top: 1rem;">
+<p class="assessment-results-link">
   <a href="#resultsTopPlaceholder" id="gotoResultsLink" class="btn btn--link">Jump to results</a>
 </p>
 

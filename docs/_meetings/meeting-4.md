@@ -485,8 +485,8 @@ document.addEventListener('keydown', function(event) {
     <h2><i class="fas fa-bullseye" aria-hidden="true"></i> The Single Smallest Change</h2>
     <h3 class="false-choice-subtitle">The culminating reflection question that connects all four meetings</h3>
 
-    <div class="deployment-signal" style="margin-top: 2rem;">
-      <h4 style="font-size: 1.5rem; margin-bottom: 1rem;"><i class="fas fa-bullseye"></i> "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"</h4>
+    <div class="deployment-signal deployment-signal--spaced">
+      <h4><i class="fas fa-bullseye"></i> "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"</h4>
       <p>This question captures the essence of the entire book: start small, focus on flow, reduce friction, and let improvements compound over time.</p>
     </div>
 
@@ -601,11 +601,11 @@ document.addEventListener('keydown', function(event) {
 </div>
 
 <!-- TRANSFORMATION COMPLETE SECTION -->
-<div class="welcome-compact section-card next-meeting-card next-meeting-complete" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); border: 2px solid #a78bfa;" markdown="0">
+<div class="welcome-compact section-card next-meeting-card next-meeting-complete" markdown="0">
   <h2 id="next-meeting-heading"><i class="fas fa-trophy" aria-hidden="true"></i> Congratulations!</h2>
   <p>You've completed your structured journey through "Accelerate." Your transformation adventure continues with practical implementation and ongoing learning.</p>
   <div class="welcome-cta">
-    <a href="/accelerate-devex-book-club-notebooklm/transformation-complete/" class="btn btn--primary-action" style="background: linear-gradient(135deg, #a78bfa, #c4b5fd); color: #3c1361;">
+    <a href="/accelerate-devex-book-club-notebooklm/transformation-complete/" class="btn btn--primary-action next-meeting-complete__cta">
       Continue Your Transformation →
     </a>
     <p class="welcome-cta-subtitle">Extension Resources • Post-Book Club Activities • Capability Implementation</p>

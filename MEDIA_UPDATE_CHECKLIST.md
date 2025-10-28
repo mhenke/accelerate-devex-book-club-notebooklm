@@ -12,10 +12,8 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 ---
 
 ## Meeting 0
-- [x] Video
-- [x] Brief Podcast
-- [x] Debate Podcast
-- [x] Critic Podcast
+- [ ] Video
+- [ ] Brief Podcast
 - [x] Deep Dive Podcast (default)
 
 **Status:** ✅ COMPLETE
@@ -34,13 +32,13 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 ---
 
 ## Meeting 2
-- [ ] Video
+- [x] Video - 8:04
 - [x] Brief Podcast - 1:47
-- [ ] Debate Podcast
-- [ ] Critic Podcast
-- [ ] Deep Dive Podcast (default)
+- [x] Debate Podcast - 19:42
+- [x] Critic Podcast - 12:52
+- [x] Deep Dive Podcast (default) - 14:03
 
-**Status:** 🔄 IN PROGRESS
+**Status:** ✅ COMPLETE
 
 ---
 
