@@ -22,7 +22,7 @@ permalink: /feeds/
   <div class="feed-url-container">
     <label for="podcast-feed-url"><strong>Podcast RSS URL:</strong></label>
     <input type="text" id="podcast-feed-url" value="{{ site.url }}{{ site.baseurl }}/podcast.xml" readonly>
-    <button type="button" onclick="copyFeedUrl('podcast-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyToClipboard('podcast-feed-url', this)" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
@@ -49,7 +49,7 @@ permalink: /feeds/
   <div class="feed-url-container">
     <label for="video-feed-url"><strong>Video RSS URL:</strong></label>
     <input type="text" id="video-feed-url" value="{{ site.url }}{{ site.baseurl }}/videos.xml" readonly>
-    <button type="button" onclick="copyFeedUrl('video-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyToClipboard('video-feed-url', this)" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
@@ -70,7 +70,7 @@ permalink: /feeds/
   <div class="feed-url-container">
     <label for="media-feed-url"><strong>Complete Media RSS URL:</strong></label>
     <input type="text" id="media-feed-url" value="{{ site.url }}{{ site.baseurl }}/media-feed.xml" readonly>
-    <button type="button" onclick="copyFeedUrl('media-feed-url')" class="copy-btn">
+    <button type="button" onclick="copyToClipboard('media-feed-url', this)" class="copy-btn">
       <i class="fas fa-copy"></i> Copy
     </button>
   </div>
@@ -83,21 +83,3 @@ permalink: /feeds/
 </div>
 
 </div>
-
-<script>
-function copyFeedUrl(elementId) {
-  const input = document.getElementById(elementId);
-  const button = event.target.closest('.copy-btn');
-  
-  input.select();
-  navigator.clipboard.writeText(input.value).then(() => {
-    const originalText = button.innerHTML;
-    button.innerHTML = '<i class="fas fa-check"></i> Copied!';
-    setTimeout(() => {
-      button.innerHTML = originalText;
-    }, 2000);
-  }).catch(err => {
-    console.error('Failed to copy:', err);
-  });
-}
-</script>
