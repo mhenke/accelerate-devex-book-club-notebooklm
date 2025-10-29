@@ -751,21 +751,38 @@ a {
     }
   }
 
+  // Meeting-specific button base backgrounds
+  .btn--meeting-1 {
+    background: linear-gradient(135deg, #4CAF50, var(--meeting-1-color));
+  }
+
+  .btn--meeting-2 {
+    background: linear-gradient(135deg, #4CAF50, var(--meeting-2-color));
+  }
+
+  .btn--meeting-3 {
+    background: linear-gradient(135deg, #4CAF50, var(--meeting-3-color));
+  }
+
+  .btn--meeting-4 {
+    background: linear-gradient(135deg, #4CAF50, var(--meeting-4-color));
+  }
+
   // Meeting-specific button classes should use their theme colors
   .btn--meeting-1:hover:not(:disabled) {
-    background: linear-gradient(135deg, var(--accent-teal), var(--meeting-1-color)) !important;
+    background: linear-gradient(135deg, var(--accent-teal), var(--meeting-1-color));
   }
 
   .btn--meeting-2:hover:not(:disabled) {
-    background: linear-gradient(135deg, #2ea043, var(--meeting-2-color)) !important;
+    background: linear-gradient(135deg, #2ea043, var(--meeting-2-color));
   }
 
   .btn--meeting-3:hover:not(:disabled) {
-    background: linear-gradient(135deg, #fbbf24, var(--meeting-3-color)) !important;
+    background: linear-gradient(135deg, #fbbf24, var(--meeting-3-color));
   }
 
   .btn--meeting-4:hover:not(:disabled) {
-    background: linear-gradient(135deg, #a78bfa, var(--meeting-4-color)) !important;
+    background: linear-gradient(135deg, #a78bfa, var(--meeting-4-color));
   }
 
   // Icon color pattern: H2 uses theme primary, others gray
