@@ -3,6 +3,8 @@ layout: default
 title: Meetings
 ---
 
+<div class="meetings-index-page">
+
 <div class="hero-banner" markdown="0">
 <div class="hero-content">
 <h1 class="hero-headline">Meeting Schedule</h1>
@@ -259,9 +261,14 @@ title: Meetings
 
 </div>
 
+</div>
+
 
 
 <style>
+/* SCOPE ALL STYLES TO MEETINGS INDEX PAGE ONLY */
+.meetings-index-page {
+
 /* Meeting 0 Kickoff Special Styling */
 .highlight-card.meeting-0.dark-theme {
   background: linear-gradient(
@@ -485,4 +492,6 @@ title: Meetings
     min-width: auto;
   }
 }
+
+} /* END .meetings-index-page scope */
 </style>

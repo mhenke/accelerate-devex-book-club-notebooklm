@@ -218,6 +218,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Accelerate Mastery
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type deep-dive">Deep Dive</span>
                 <span class="podcast-duration">11:38</span>
               </div>

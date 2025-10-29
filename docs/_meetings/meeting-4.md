@@ -227,6 +227,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Leadership Essentials Brief
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type brief">Brief</span>
                 <span class="podcast-duration">9:15</span>
               </div>
@@ -258,6 +260,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Leadership & Transformation
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type deep-dive">Deep Dive</span>
                 <span class="podcast-duration">18:30</span>
               </div>
@@ -289,6 +293,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Transformation Reality Check
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type critique">Critique</span>
                 <span class="podcast-duration">17:45</span>
               </div>

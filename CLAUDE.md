@@ -116,6 +116,8 @@ npm run test:jekyll-audit  # Full audit suite
 - NotebookLM documentation in `resources/notebooklm-docs/` for best practices and guides
 - Website pages in `docs/` following Jekyll conventions
 - All content should be clearly attributed when AI-generated
+- **Podcast ordering convention**: Podcasts must always be ordered: (1) Brief, (2) Deep Dive, (3) Debate, (4) Critique/Critic. This creates a progressive learning journey from quick overview → in-depth exploration → structured discussion → critical analysis.
+- **Podcast layout structure**: Type badge and duration must be displayed on a separate row from the title, inside a `.podcast-meta` div within `.podcast-content`.
 
 ### Media Storage
 
