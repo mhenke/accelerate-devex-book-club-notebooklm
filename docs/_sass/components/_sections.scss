@@ -1378,9 +1378,10 @@
 // Playlist / shared player styling — ensure audio controls fill container width
 .playlist-player {
   width: 100%;
+  
   // Make the native audio control expand to available width
-  audio#shared-player,
-  audio.playlist-audio,
+  #shared-player,
+  .playlist-audio,
   .playlist-player audio {
     width: 100% !important;
     max-width: 100% !important;
