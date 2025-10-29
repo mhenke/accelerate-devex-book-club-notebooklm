@@ -30,14 +30,6 @@ async function runPurgeCSS() {
     for (const result of purgeCSSResults) {
       const outputPath = path.join(outputDir, path.basename(result.file || 'main.css'));
       fs.writeFileSync(outputPath, result.css);
-
-      // Also write a purged artifact inside the repo for inspection (git can track if desired)
-      const repoArtifact = path.join(__dirname, '..', 'docs', 'assets', 'main.purged.css');
-      try {
-        fs.writeFileSync(repoArtifact, result.css);
-      } catch (e) {
-        // non-fatal
-      }
     }
 
     // Get new file size
@@ -48,31 +40,11 @@ async function runPurgeCSS() {
     // Aggregate rejected selectors across results
     const rejected = purgeCSSResults.flatMap(r => Array.isArray(r.rejected) ? r.rejected : []);
 
-    // Write machine-readable report
-    const report = {
-      cssPath,
-      originalSize,
-      newSize: fs.statSync(cssPath).size,
-      originalSizeKB: Math.round(originalSize / 1024),
-      newSizeKB: Math.round(fs.statSync(cssPath).size / 1024),
-      savingsPercent: Math.round(((originalSize - fs.statSync(cssPath).size) / originalSize) * 100),
-      rejectedCount: rejected.length,
-      rejectedSelectors: rejected,
-      generatedAt: new Date().toISOString()
-    };
-    const planningDir = path.join(__dirname, '..', 'planning');
-    try {
-      fs.mkdirSync(planningDir, { recursive: true });
-      fs.writeFileSync(path.join(planningDir, 'purgecss-report.json'), JSON.stringify(report, null, 2));
-    } catch (e) {
-      // ignore write failures
-    }
-
     console.log('✅ PurgeCSS Complete!');
     console.log(`   Before: ${originalSizeKB}KB`);
     console.log(`   After:  ${newSizeKB}KB`);
     console.log(`   Saved:  ${savings}% (${originalSizeKB - newSizeKB}KB)`);
-    console.log(`   Rejected selectors: ${report.rejectedCount}`);
+    console.log(`   Rejected selectors: ${rejected.length}`);
     console.log('');
   } catch (error) {
     console.error('❌ PurgeCSS failed:', error.message);
