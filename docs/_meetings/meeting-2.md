@@ -226,6 +226,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Accelerate Your Code: Continuous Delivery & Independent Teams
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type brief">Brief</span>
                 <span class="podcast-duration">1:47</span>
               </div>
@@ -257,6 +259,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Accelerate's Technical Engine: Blueprints for Continuous Delivery
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type deep-dive">Deep Dive</span>
                 <span class="podcast-duration">14:03</span>
               </div>
@@ -288,6 +292,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Architecture vs Action: The Great Debate
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type debate">Debate</span>
                 <span class="podcast-duration">19:42</span>
               </div>
@@ -319,6 +325,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Bridging the Gap: Tactical Solutions
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type critic">Critic</span>
                 <span class="podcast-duration">12:52</span>
               </div>
@@ -422,7 +430,6 @@ document.addEventListener('keydown', function(event) {
 
       <!-- Arrow 1 -->
       <div class="causal-arrow">
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
         <span class="arrow-label">enables</span>
       </div>
 
@@ -441,7 +448,6 @@ document.addEventListener('keydown', function(event) {
 
       <!-- Arrow 2 -->
       <div class="causal-arrow">
-        <i class="fas fa-arrow-right" aria-hidden="true"></i>
         <span class="arrow-label">supports</span>
       </div>
 

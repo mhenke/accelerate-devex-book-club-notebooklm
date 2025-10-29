@@ -225,10 +225,45 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Accelerate's Data Secrets: The 4 DORA Metrics
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type brief">Brief</span>
                 <span class="podcast-duration">1:31</span>
               </div>
               <div class="podcast-subtitle">The Key Metrics That Kill the Speed vs. Stability Myth</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_Your_Book_Club__The_Science_of_High-Performing_Tech_.m4a"
+               data-title="Accelerate Your Book Club: The Science of High-Performing Tech"
+               data-duration="15:10"
+               data-type="deep-dive">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Your Book Club: The Science of High-Performing Tech">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Accelerate Your Book Club: The Science of High-Performing Tech
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type deep-dive">Deep Dive</span>
+                <span class="podcast-duration">15:10</span>
+              </div>
+              <div class="podcast-subtitle">The Science Behind High-Performing Tech Teams and Culture Transformation</div>
             </div>
 
             <div class="podcast-end">
@@ -256,6 +291,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Culture or Code First? Accelerate's Battle for Transformation
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type debate">Debate</span>
                 <span class="podcast-duration">16:35</span>
               </div>
@@ -287,41 +324,12 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Accelerate Under the Microscope
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type critique">Critique</span>
                 <span class="podcast-duration">10:19</span>
               </div>
               <div class="podcast-subtitle">Critiquing DORA Metrics, Survey Methods, and Cultural Assumptions</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_Your_Book_Club__The_Science_of_High-Performing_Tech_.m4a"
-               data-title="Accelerate Your Book Club: The Science of High-Performing Tech"
-               data-duration="15:10"
-               data-type="deep-dive">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Accelerate Your Book Club: The Science of High-Performing Tech">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                Accelerate Your Book Club: The Science of High-Performing Tech
-                <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">15:10</span>
-              </div>
-              <div class="podcast-subtitle">The Science Behind High-Performing Tech Teams and Culture Transformation</div>
             </div>
 
             <div class="podcast-end">

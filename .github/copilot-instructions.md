@@ -25,6 +25,8 @@ Purpose: give AI coding agents the exact, discoverable knowledge they need to be
 - SCSS tokens centralized in `docs/_sass/abstracts/_tokens.scss`. Change tokens there for global palette/spacing.
 - Meeting themes: apply `.meeting-theme--N` classes (see `_meeting-themes.scss`) for color overrides.
 - All SCSS partials must include YAML front matter when placed under `docs/assets/` so Jekyll compiles them.
+- **Podcast ordering convention**: Podcasts must always be ordered: (1) Brief, (2) Deep Dive, (3) Debate, (4) Critique. This creates a progressive learning journey from quick overview → in-depth exploration → structured discussion → critical analysis.
+- **Podcast layout structure**: Type badge and duration must be on a separate row from the title, inside a `.podcast-meta` div within `.podcast-content`.
 
 5) Media workflow (explicit example)
 - Local media folder: `media/` (not committed). Workflow: drop files in `media/`, upload to S3, then reference S3 URLs in meeting pages.

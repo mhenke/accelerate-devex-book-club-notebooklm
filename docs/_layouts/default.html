@@ -159,7 +159,7 @@
           </a>
           <a
             href="{{ '/meetings' | relative_url }}"
-            class="site-nav-link{% if page.url contains '/meetings' %} active{% endif %}"
+            class="site-nav-link{% if page.url == '/meetings.html' or page.url == '/meetings/' or page.url == '/accelerate-devex-book-club-notebooklm/meetings/' or page.url == '/accelerate-devex-book-club-notebooklm/meetings.html' %} active{% endif %}"
           >
             <i class="fas fa-calendar"></i> Meetings
           </a>
@@ -190,7 +190,7 @@
         </a>
         <a
           href="{{ '/meetings' | relative_url }}"
-          class="site-nav-link-mobile{% if page.url contains '/meetings' %} active{% endif %}"
+          class="site-nav-link-mobile{% if page.url == '/meetings.html' or page.url == '/meetings/' or page.url == '/accelerate-devex-book-club-notebooklm/meetings/' or page.url == '/accelerate-devex-book-club-notebooklm/meetings.html' %} active{% endif %}"
         >
           <i class="fas fa-calendar"></i> Meetings
         </a>

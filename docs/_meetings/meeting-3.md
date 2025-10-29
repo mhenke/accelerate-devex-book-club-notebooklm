@@ -245,6 +245,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Lean Essentials Brief
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type brief">Brief</span>
                 <span class="podcast-duration">7:30</span>
               </div>
@@ -276,6 +278,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Management & Sustainability
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type deep-dive">Deep Dive</span>
                 <span class="podcast-duration">17:20</span>
               </div>
@@ -307,6 +311,8 @@ document.addEventListener('keydown', function(event) {
             <div class="podcast-content">
               <div class="podcast-headline">
                 Lean Reality Check
+              </div>
+              <div class="podcast-meta">
                 <span class="podcast-type critique">Critique</span>
                 <span class="podcast-duration">16:45</span>
               </div>
