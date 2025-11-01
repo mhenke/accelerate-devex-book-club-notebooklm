@@ -124,9 +124,10 @@
 
     // Load track into player
     function loadTrack(track, src, title) {
-      // Clear previous track
+      // Clear previous track and reset its play icon
       if (currentTrack) {
         currentTrack.classList.remove('is-playing');
+        updatePlayButtonIcon(currentTrack, false);
       }
 
       // Set new track
@@ -151,6 +152,31 @@
       }
     }
 
+    // Update the play/pause icon inside a track's .play-btn
+    function updatePlayButtonIcon(track, playing) {
+      if (!track) { return; }
+      const btn = track.querySelector('.play-btn');
+      if (!btn) { return; }
+      const em = btn.querySelector('em');
+      const title = track.getAttribute('data-title') || '';
+
+      if (playing) {
+        // show pause
+        if (em) {
+          em.classList.remove('fa-play');
+          em.classList.add('fa-pause');
+        }
+        btn.setAttribute('aria-label', `Pause ${title}`);
+      } else {
+        // show play
+        if (em) {
+          em.classList.remove('fa-pause');
+          em.classList.add('fa-play');
+        }
+        btn.setAttribute('aria-label', `Play ${title}`);
+      }
+    }
+
     // Player event: Play
     player.addEventListener('play', () => {
       if (playlistContainer) {
@@ -158,6 +184,7 @@
       }
       if (currentTrack) {
         currentTrack.classList.add('is-playing');
+        updatePlayButtonIcon(currentTrack, true);
       }
     });
 
@@ -168,6 +195,7 @@
       }
       if (currentTrack) {
         currentTrack.classList.remove('is-playing');
+        updatePlayButtonIcon(currentTrack, false);
       }
     });
 

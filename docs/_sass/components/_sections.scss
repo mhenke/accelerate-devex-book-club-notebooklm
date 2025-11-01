@@ -1343,29 +1343,11 @@
     font-weight: var(--font-weight-semibold);
   }
 
-  /* Icon column */
-  .tool-icon {
-    flex: 0 0 56px;
-    width: 56px;
-    height: 56px;
-    border-radius: var(--radius-full);
-    background: linear-gradient(135deg, rgba(34,197,94,0.08), rgba(16,185,129,0.06));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-teal);
-    font-size: var(--font-size-h4);
-    border: 1px solid rgba(122,218,209,0.14);
-  }
-
+  /* Icon column styles removed: .tool-icon class not used in templates; simplifies PurgeCSS output */
   @include mobile-only {
     .tool-card {
       flex-direction: column;
       align-items: stretch;
-    }
-
-    .tool-icon {
-      margin-bottom: var(--space-sm);
     }
   }
 
@@ -1381,7 +1363,6 @@
   
   // Make the native audio control expand to available width
   #shared-player,
-  .playlist-audio,
   .playlist-player audio {
     width: 100% !important;
     max-width: 100% !important;

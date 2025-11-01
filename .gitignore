@@ -88,3 +88,6 @@ lighthouse-results/
 
 # Optional: local-only Lighthouse config overrides
 lighthouse-local-config.js
+
+# PurgeCSS runtime report (generated, local only)
+planning/purgecss-report.json

@@ -11,6 +11,43 @@
   overflow: hidden;
 }
 
+// Stronger visual separation for "Now Playing" area
+// Make the header look like a distinct card beneath the playlist
+.playlist-player .now-playing-header {
+  background: linear-gradient(135deg, rgba(25,118,210,0.14), rgba(25,118,210,0.06));
+  border: 1px solid rgba(25,118,210,0.28);
+  border-radius: 10px;
+  padding: var(--space-sm) var(--space-md);
+  box-shadow: 0 3px 10px rgba(25, 118, 210, 0.12);
+  margin-top: var(--space-sm);
+}
+
+// The text block itself becomes a pill with a bold accent bar
+.now-playing-text-wrapper {
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-left: 4px solid var(--theme-primary, #1976d2);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.now-playing-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--theme-primary, #1976d2);
+  margin: 0;
+}
+
+.now-playing-title {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
 // Removed unused .video-card wrapper (not used in built HTML)
 
 // Removed unused media download controls and button styles
@@ -123,6 +160,44 @@
   flex-shrink: 0;
   position: relative;
 }
+
+// Play button (circular blue background with white icon) — restore previous look
+.play-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1976d2; // force classic blue circular button
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+// When the track is playing, invert the button to white with blue icon (subtle outline)
+.podcast-item.is-playing .play-btn {
+  background: #fff;
+  color: #1976d2; // keep icon blue when playing
+  border: 1px solid rgba(25, 118, 210, 0.12);
+}
+
+// Ensure the FontAwesome <em> icon inside the button scales and remains centered
+.play-btn em {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  font-style: normal; /* some builds use <em> for icons */
+  text-align: center;
+}
+
 
 // Removed unused .play-btn styles (not present in built HTML)
 
@@ -242,7 +317,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--theme-primary);
+  background: #1976d2;
   padding: 6px;
 
   // Show when this track is playing

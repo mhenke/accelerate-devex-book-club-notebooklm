@@ -46,6 +46,32 @@ async function runPurgeCSS() {
     console.log(`   Saved:  ${savings}% (${originalSizeKB - newSizeKB}KB)`);
     console.log(`   Rejected selectors: ${rejected.length}`);
     console.log('');
+
+    // Write a machine-readable report so CI and humans can inspect results
+    try {
+      const report = {
+        cssPath,
+        originalSize,
+        newSize,
+        originalSizeKB,
+        newSizeKB,
+        savingsPercent: savings,
+        rejectedCount: rejected.length,
+        rejectedSelectors: rejected,
+        generatedAt: new Date().toISOString()
+      };
+
+      const reportDir = path.join(__dirname, '..', 'planning');
+      if (!fs.existsSync(reportDir)) {
+        fs.mkdirSync(reportDir, { recursive: true });
+      }
+
+      const reportPath = path.join(reportDir, 'purgecss-report.json');
+      fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf8');
+      console.log(`   Report written: ${reportPath}`);
+    } catch (err) {
+      console.warn('   Warning: Failed to write purgecss report:', err.message);
+    }
   } catch (error) {
     console.error('❌ PurgeCSS failed:', error.message);
     process.exit(1);
