@@ -354,7 +354,7 @@ document.addEventListener('keydown', function(event) {
                   <div class="now-playing-title" id="now-playing-title">Accelerate Your Code: Continuous Delivery & Independent Teams</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 1:47</div>
+              
             </div>
             <audio id="shared-player" controls>
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Accelerate_Your_Code__Continuous_Delivery,_Independent_Teams,_a.m4a" type="audio/mp4" id="shared-player-source">

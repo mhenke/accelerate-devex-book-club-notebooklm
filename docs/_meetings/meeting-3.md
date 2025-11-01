@@ -373,7 +373,7 @@ document.addEventListener('keydown', function(event) {
                   <div class="now-playing-title" id="now-playing-title">Less Burnout Brief</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 1:20</div>
+              
             </div>
             <audio id="shared-player" controls>
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean,_Less_Burnout,_and_the_Data_That_Proves_Tech_Fixes_Employe.m4a" type="audio/mp4" id="shared-player-source">

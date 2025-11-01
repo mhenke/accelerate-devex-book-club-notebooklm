@@ -353,7 +353,7 @@ document.addEventListener('keydown', function(event) {
                   <div class="now-playing-title" id="now-playing-title">Accelerate's Data Secrets: The 4 DORA Metrics</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 1:31</div>
+              
             </div>
             <audio id="shared-player" controls>
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerate_s_Data_Secrets__The_4_DORA_Metrics_That_Kill_the_Spe.m4a" type="audio/mp4" id="shared-player-source">
