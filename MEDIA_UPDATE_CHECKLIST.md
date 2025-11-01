@@ -65,7 +65,8 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 
 ## Notes
 - Remember to update the "Now Playing" default player source for each meeting
-- The order in the playlist should be bried, deep dive, debate, and critic
+- The order in the playlist should be brief, deep dive, debate, and critic
 - Push changes after each meeting is fully updated
+- Update the times with the :extract-durations.js 
 - Make sure local and aws structures are in sync
-- Update feeds if necessary
+- Update all feeds if necessary
