@@ -267,7 +267,7 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Accelerate_Chapters_7-10__How_Lean_Management,_WIP_Limits,_and_.m4a"
                data-title="Accelerate Chapters 7-10: How Lean Management, WIP Limits, and Fixing Deployment Pain"
-               data-duration="29:30"
+               data-duration="11:42"
                data-type="deep-dive">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Accelerate Chapters 7-10 Deep Dive">
@@ -333,7 +333,7 @@ document.addEventListener('keydown', function(event) {
           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Beyond_the_Code__Challenging_Lean,_Burnout,_and_Loyalty_Through.m4a"
                data-title="Beyond the Code: Challenging Lean, Burnout, and Loyalty"
-               data-duration="16:00"
+               data-duration="11:13"
                data-type="critique">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Beyond the Code Critique">

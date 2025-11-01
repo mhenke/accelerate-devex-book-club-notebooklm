@@ -216,7 +216,7 @@ document.addEventListener('keydown', function(event) {
     <div class="podcast-item" tabindex="0"
       data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/Accelerate_s_Final_Playbook__Vision,_Air_Cover,_and_the_Five_Ke.m4a"
       data-title="Accelerate's Final Playbook: Vision, Air Cover, and the Five Keys"
-      data-duration="9:15"
+               data-duration="1:40"
       data-type="brief">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Leadership Essentials Brief">
@@ -258,7 +258,7 @@ document.addEventListener('keydown', function(event) {
                   <div class="now-playing-title" id="now-playing-title">Accelerate's Final Playbook: Vision, Air Cover, and the Five Keys (Brief)</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 9:15</div>
+              <div class="now-playing-time" id="now-playing-time">0:00 / 1:40</div>
             </div>
             <audio id="shared-player" controls>
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/Accelerate_s_Final_Playbook__Vision,_Air_Cover,_and_the_Five_Ke.m4a" type="audio/mp4" id="shared-player-source">
