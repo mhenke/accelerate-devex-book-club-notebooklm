@@ -193,7 +193,7 @@ document.addEventListener('keydown', function(event) {
         <div class="video-card">
           <div class="media-controls">
             <video controls width="100%" class="meeting-video">
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/meeting-4-video.mp4" type="video/mp4">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/The_Leadership_Amplifier.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -213,11 +213,11 @@ document.addEventListener('keydown', function(event) {
         <section class="podcast-playlist" aria-label="Podcast playlist">
 
           <!-- Podcast Items (Compact List) -->
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/leadership-essentials-brief.mp4"
-               data-title="Leadership Essentials Brief"
-               data-duration="9:15"
-               data-type="brief">
+    <div class="podcast-item" tabindex="0"
+      data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/Accelerate_s_Final_Playbook__Vision,_Air_Cover,_and_the_Five_Ke.m4a"
+      data-title="Accelerate's Final Playbook: Vision, Air Cover, and the Five Keys"
+      data-duration="9:15"
+      data-type="brief">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Leadership Essentials Brief">
                 <i class="fas fa-play" aria-hidden="true"></i>
@@ -246,71 +246,7 @@ document.addEventListener('keydown', function(event) {
             </div>
           </div>
 
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/leadership-transformation-deep-dive.mp4"
-               data-title="Leadership & Transformation"
-               data-duration="18:30"
-               data-type="deep-dive">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Leadership & Transformation">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                Leadership & Transformation
-              </div>
-              <div class="podcast-meta">
-                <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">18:30</span>
-              </div>
-              <div class="podcast-subtitle">Transformational Leadership, ING Case Study & Roadmap Planning</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/transformation-reality-critique.mp4"
-               data-title="Transformation Reality Check"
-               data-duration="17:45"
-               data-type="critique">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Transformation Reality Check">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                Transformation Reality Check
-              </div>
-              <div class="podcast-meta">
-                <span class="podcast-type critique">Critique</span>
-                <span class="podcast-duration">17:45</span>
-              </div>
-              <div class="podcast-subtitle">Leadership Causation, ING Context & Realistic Transformation Timelines</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Deep dive and critique items moved to Meeting 3 per updated assignment -->
 
           <!-- Shared Player at Bottom -->
           <div class="playlist-player">
@@ -325,7 +261,7 @@ document.addEventListener('keydown', function(event) {
               <div class="now-playing-time" id="now-playing-time">0:00 / 9:15</div>
             </div>
             <audio id="shared-player" controls>
-              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/leadership-essentials-brief.mp4" type="audio/mp4" id="shared-player-source">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/Accelerate_s_Final_Playbook__Vision,_Air_Cover,_and_the_Five_Ke.m4a" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
           </div>

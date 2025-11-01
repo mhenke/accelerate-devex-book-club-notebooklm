@@ -298,25 +298,58 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/meeting-3-podcast.m4a"
-               data-title="Management & Sustainability Deep Dive"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Accelerate_Chapters_7-10__How_Lean_Management,_WIP_Limits,_and_.m4a"
+               data-title="Accelerate Chapters 7-10: How Lean Management, WIP Limits, and Fixing Deployment Pain"
                data-duration="29:30"
                data-type="deep-dive">
             <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Management & Sustainability Deep Dive">
+              <button type="button" class="play-btn" aria-label="Play Accelerate Chapters 7-10 Deep Dive">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Management & Sustainability Deep Dive
+                Accelerate Chapters 7-10 — Deep Dive
               </div>
               <div class="podcast-meta">
                 <span class="podcast-type deep-dive">Deep Dive</span>
                 <span class="podcast-duration">29:30</span>
               </div>
-              <div class="podcast-subtitle">Lean Management, Product Dev & Employee Satisfaction Drivers</div>
+              <div class="podcast-subtitle">Lean Management, WIP Limits, and Fixing Deployment Pain</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Beyond_the_Code__Challenging_Lean,_Burnout,_and_Loyalty_Through.m4a"
+               data-title="Beyond the Code: Challenging Lean, Burnout, and Loyalty"
+               data-duration="16:00"
+               data-type="critique">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Beyond the Code Critique">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Beyond the Code: Critique
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type critique">Critique</span>
+                <span class="podcast-duration">16:00</span>
+              </div>
+              <div class="podcast-subtitle">Challenging Lean, Burnout, and Loyalty Through Operational Friction</div>
             </div>
 
             <div class="podcast-end">
