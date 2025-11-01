@@ -255,7 +255,7 @@ document.addEventListener('keydown', function(event) {
                 <div class="playing-indicator-large"></div>
                 <div class="now-playing-text-wrapper">
                   <div class="now-playing-label">Now Playing</div>
-                  <div class="now-playing-title" id="now-playing-title">Leadership Essentials Brief</div>
+                  <div class="now-playing-title" id="now-playing-title">Accelerate's Final Playbook: Vision, Air Cover, and the Five Keys (Brief)</div>
                 </div>
               </div>
               <div class="now-playing-time" id="now-playing-time">0:00 / 9:15</div>
