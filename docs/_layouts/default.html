@@ -82,10 +82,11 @@
 
     <!-- Critical CSS - Now loaded from main.css via SCSS imports -->
 
-    <!-- Non-critical CSS - Deferred loading -->
+    <!-- Non-critical CSS - Deferred loading (with cache-busting) -->
+    {% assign css_version = site.github.build_revision | default: site.time | date: '%Y%m%d%H%M%S' %}
     <link
       rel="preload"
-      href="{{ '/assets/main.css' | relative_url }}"
+      href="{{ '/assets/main.css' | relative_url }}?v={{ css_version }}"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
       media="screen"
@@ -93,7 +94,7 @@
     <noscript>
       <link
         rel="stylesheet"
-        href="{{ '/assets/main.css' | relative_url }}"
+        href="{{ '/assets/main.css' | relative_url }}?v={{ css_version }}"
         media="screen"
       />
     </noscript>
