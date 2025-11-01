@@ -280,7 +280,7 @@ document.addEventListener('keydown', function(event) {
                   <div class="now-playing-title" id="now-playing-title">Less Burnout Brief</div>
                 </div>
               </div>
-              <div class="now-playing-time" id="now-playing-time">0:00 / 1:33</div>
+              
             </div>
             <audio id="shared-player" controls>
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-0/Accelerate_DevEx_Book_Club__Turn_Research_into_Action_and_Nail_.m4a" type="audio/mp4" id="shared-player-source">

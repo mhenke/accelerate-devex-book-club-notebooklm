@@ -48,7 +48,6 @@
     const player = document.getElementById('shared-player');
     const playerSource = document.getElementById('shared-player-source');
     const nowPlayingTitle = document.getElementById('now-playing-title');
-    const nowPlayingTime = document.getElementById('now-playing-time');
     const playlistContainer = document.querySelector('.playlist-player');
     const tracks = document.querySelectorAll('.podcast-item[data-src]');
 
@@ -139,16 +138,10 @@
         player.load();
       }
 
-      // Update Now Playing display
+      // Update Now Playing display (title only)
       const trackTitle = title || track.getAttribute('data-title');
-      const duration = track.getAttribute('data-duration');
-
       if (nowPlayingTitle) {
         nowPlayingTitle.textContent = trackTitle;
-      }
-
-      if (nowPlayingTime && duration) {
-        nowPlayingTime.textContent = `0:00 / ${duration}`;
       }
     }
 
@@ -209,41 +202,7 @@
       }
     });
 
-    // Update time display
-    player.addEventListener('timeupdate', () => {
-      if (!nowPlayingTime) {return;}
-
-      const current = formatTime(player.currentTime);
-      const total = player.duration && !isNaN(player.duration)
-        ? formatTime(player.duration)
-        : currentTrack?.getAttribute('data-duration') || '0:00';
-
-      nowPlayingTime.textContent = `${current} / ${total}`;
-    });
-
-    // Update duration when metadata loads
-    player.addEventListener('loadedmetadata', () => {
-      if (!nowPlayingTime) {return;}
-
-      const current = formatTime(player.currentTime);
-      const total = formatTime(player.duration);
-
-      nowPlayingTime.textContent = `${current} / ${total}`;
-    });
-
-    // Format seconds to M:SS or H:MM:SS
-    function formatTime(seconds) {
-      if (!seconds || isNaN(seconds)) {return '0:00';}
-
-      const h = Math.floor(seconds / 3600);
-      const m = Math.floor((seconds % 3600) / 60);
-      const s = Math.floor(seconds % 60);
-
-      if (h > 0) {
-        return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-      }
-      return `${m}:${s.toString().padStart(2, '0')}`;
-    }
+    // Removed: time display and related event listeners (timeupdate, loadedmetadata)
   }
 
   // Initialize when DOM is ready
