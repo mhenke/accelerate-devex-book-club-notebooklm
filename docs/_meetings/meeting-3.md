@@ -265,39 +265,6 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean_Mechanics_vs.m4a"
-               data-title="Lean Mechanics Debate"
-               data-duration="14:06"
-               data-type="debate">
-            <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Lean Mechanics Debate">
-                <i class="fas fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <div class="podcast-content">
-              <div class="podcast-headline">
-                Lean Mechanics Debate
-              </div>
-              <div class="podcast-meta">
-                <span class="podcast-type debate">Debate</span>
-                <span class="podcast-duration">14:06</span>
-              </div>
-              <div class="podcast-subtitle">WIP Limits, Kanban, and Real-World Trade-Offs</div>
-            </div>
-
-            <div class="podcast-end">
-              <div class="podcast-equalizer">
-                <div class="equalizer">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Accelerate_Chapters_7-10__How_Lean_Management,_WIP_Limits,_and_.m4a"
                data-title="Accelerate Chapters 7-10: How Lean Management, WIP Limits, and Fixing Deployment Pain"
                data-duration="29:30"
@@ -317,6 +284,39 @@ document.addEventListener('keydown', function(event) {
                 <span class="podcast-duration">29:30</span>
               </div>
               <div class="podcast-subtitle">Lean Management, WIP Limits, and Fixing Deployment Pain</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean_Mechanics_vs_Human_Cost_The_High-Stakes_Debate_on_Performance_and_Burnout.m4a"
+               data-title="Lean Mechanics Debate"
+               data-duration="14:06"
+               data-type="debate">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Lean Mechanics Debate">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Lean Mechanics Debate
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type debate">Debate</span>
+                <span class="podcast-duration">14:06</span>
+              </div>
+              <div class="podcast-subtitle">WIP Limits, Kanban, and Real-World Trade-Offs</div>
             </div>
 
             <div class="podcast-end">
