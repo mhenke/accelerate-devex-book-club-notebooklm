@@ -266,7 +266,7 @@ document.addEventListener('keydown', function(event) {
 
           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Accelerate_Chapters_7-10__How_Lean_Management,_WIP_Limits,_and_.m4a"
-               data-title="Accelerate Chapters 7-10: How Lean Management, WIP Limits, and Fixing Deployment Pain"
+               data-title="Accelerate Chapters 7-10: How Lean Management, WIP Limits, and Fixing Deployment Pain Cure Burnout"
                data-duration="11:42"
                data-type="deep-dive">
             <div class="podcast-start">
@@ -277,13 +277,13 @@ document.addEventListener('keydown', function(event) {
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Accelerate Chapters 7-10 — Deep Dive
+                Accelerate Chapters 7-10: How Lean Management, WIP Limits, and Fixing Deployment Pain Cure Burnout
               </div>
               <div class="podcast-meta">
                 <span class="podcast-type deep-dive">Deep Dive</span>
-                <span class="podcast-duration">29:30</span>
+                <span class="podcast-duration">11:42</span>
               </div>
-              <div class="podcast-subtitle">Lean Management, WIP Limits, and Fixing Deployment Pain</div>
+              <div class="podcast-subtitle">Deep dive on lean management, WIP limits, and how reducing deployment pain can lower burnout</div>
             </div>
 
             <div class="podcast-end">
@@ -299,7 +299,7 @@ document.addEventListener('keydown', function(event) {
 
           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean_Mechanics_vs_Human_Cost_The_High-Stakes_Debate_on_Performance_and_Burnout.m4a"
-               data-title="Lean Mechanics Debate"
+               data-title="Lean Mechanics vs Human Cost: The High-Stakes Debate on Performance and Burnout"
                data-duration="14:06"
                data-type="debate">
             <div class="podcast-start">
@@ -310,13 +310,13 @@ document.addEventListener('keydown', function(event) {
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Lean Mechanics Debate
+                Lean Mechanics vs Human Cost: The High-Stakes Debate on Performance and Burnout
               </div>
               <div class="podcast-meta">
                 <span class="podcast-type debate">Debate</span>
                 <span class="podcast-duration">14:06</span>
               </div>
-              <div class="podcast-subtitle">WIP Limits, Kanban, and Real-World Trade-Offs</div>
+              <div class="podcast-subtitle">A debate about WIP limits, system trade-offs, and human cost</div>
             </div>
 
             <div class="podcast-end">

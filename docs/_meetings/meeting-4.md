@@ -214,10 +214,10 @@ document.addEventListener('keydown', function(event) {
 
           <!-- Podcast Items (Compact List) -->
     <div class="podcast-item" tabindex="0"
-      data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/Accelerate_s_Final_Playbook__Vision,_Air_Cover,_and_the_Five_Ke.m4a"
-      data-title="Accelerate's Final Playbook: Vision, Air Cover, and the Five Keys"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/Accelerate_s_Final_Playbook__Vision,_Air_Cover,_and_the_Five_Ke.m4a"
+               data-title="Accelerate's Final Playbook: Vision, Air Cover, and the Five Keys to Transformational Leadership"
                data-duration="1:40"
-      data-type="brief">
+               data-type="brief">
             <div class="podcast-start">
               <button type="button" class="play-btn" aria-label="Play Leadership Essentials Brief">
                 <i class="fas fa-play" aria-hidden="true"></i>
@@ -226,13 +226,13 @@ document.addEventListener('keydown', function(event) {
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Leadership Essentials Brief
+                Accelerate's Final Playbook: Vision, Air Cover, and the Five Keys to Transformational Leadership
               </div>
               <div class="podcast-meta">
                 <span class="podcast-type brief">Brief</span>
-                <span class="podcast-duration">9:15</span>
+                <span class="podcast-duration">1:40</span>
               </div>
-              <div class="podcast-subtitle">Five Leadership Characteristics & ING Transformation Essentials</div>
+              <div class="podcast-subtitle">Concise playbook on leadership behaviors and practical steps to enable transformation</div>
             </div>
 
             <div class="podcast-end">

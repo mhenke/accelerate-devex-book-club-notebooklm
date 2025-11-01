@@ -32,6 +32,19 @@ Purpose: give AI coding agents the exact, discoverable knowledge they need to be
 - Local media folder: `media/` (not committed). Workflow: drop files in `media/`, upload to S3, then reference S3 URLs in meeting pages.
 - To update durations: install `music-metadata` then run `node extract-durations.js` (script reads `media/` and writes MM:SS durations used in `docs` pages).
 
+## Media update checklist (operational)
+
+When updating meeting media, follow this short operational checklist so the site, feeds, and S3 stay consistent:
+
+- Remember to update the "Now Playing" default player source for each meeting (set the brief or configured default in the meeting page).
+- The order in the playlist should always be: brief, deep dive, debate, critic.
+- Push changes after each meeting is fully updated so CI/build picks up the changes and regenerates feeds.
+- Update the times by running `node extract-durations.js` and apply the MM:SS durations to meeting pages (and optionally to `docs/_data/supplementary_media.yml`).
+- Make sure local `media/` and S3 structures are in sync (use `aws s3 sync media/ s3://<bucket>/meeting-X/` without ACL flags on buckets that disallow ACLs).
+- After changes, rebuild the site to regenerate feeds: `npm run build` (or `npm run validate` for full checks). Verify the generated files under `docs/_site` (e.g., `media-feed.xml`, `podcast.xml`, `videos.xml`) contain the new entries.
+
+These steps reflect recent updates and common gotchas (ACL-disabled buckets, YAML indentation in `docs/_data/supplementary_media.yml`, and staged-but-uncommitted edits). Adding these to the instructions helps avoid missed steps when publishing new meeting media.
+
 6) Integration points & dependencies to be aware of
 - Jekyll (Ruby) for site generation: `bundle` + `jekyll` in `docs/`.
 - Node tools for linting and CSS optimization: `stylelint`, `eslint`, `purgecss`, `html-validate` (see `package.json` scripts).
