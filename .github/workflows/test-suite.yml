@@ -1,7 +1,11 @@
 # GitHub Actions CI/CD Pipeline for Jekyll Site Testing
 name: Jekyll Site Test Suite
 
-on: [push, pull_request]
+# Run tests on pull requests and manually, but not on direct pushes to avoid
+# duplicate runs alongside GitHub Pages build & deployment.
+on:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build-and-test:
