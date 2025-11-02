@@ -540,6 +540,12 @@ document.addEventListener('keydown', function(event) {
       <p>Culture isn't fixed—you can act your way to better culture. Understand how technical practices create better interactions, which create generative culture, which enables high performance.</p>
       <p><strong>Change Model:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-change-model.md" class="resource-link"><strong>Acting Your Way to Better Culture</strong></a></p>
     </div>
+
+    <div class="resource-callout">
+      <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Culture Assessment</h3>
+      <p>Measure your organization's culture using Westrum's validated survey questions with Likert-scale ratings. Establish a baseline, track improvements over time, and identify specific areas for cultural transformation.</p>
+      <p><strong>Assessment Tool:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-assessment.md" class="resource-link"><strong>Culture Assessment Survey</strong></a></p>
+    </div>
   </div>
 </div>
 
