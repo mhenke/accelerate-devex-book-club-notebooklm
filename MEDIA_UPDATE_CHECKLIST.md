@@ -13,7 +13,7 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 
 ## Meeting 0
 - [x] Video
-- [ ] Brief Podcast
+- [x] Brief Podcast
 - [x] Deep Dive Podcast (default)
 
 **Status:** ✅ COMPLETE
@@ -51,8 +51,7 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 
 **Status:** ⏳ PENDING
 
----
-
+--- 
 ## Meeting 4
 - [ ] Video
 - [ ] Brief Podcast
