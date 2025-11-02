@@ -544,7 +544,8 @@ document.addEventListener('keydown', function(event) {
     <div class="resource-callout">
       <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Culture Assessment</h3>
       <p>Measure your organization's culture using Westrum's validated survey questions with Likert-scale ratings. Establish a baseline, track improvements over time, and identify specific areas for cultural transformation.</p>
-      <p><strong>Assessment Tool:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-assessment.md" class="resource-link"><strong>Culture Assessment Survey</strong></a></p>
+      <p><strong>Interactive Assessment:</strong> <a href="/accelerate-devex-book-club-notebooklm/culture-assessment/" class="resource-link"><strong>Take the Culture Assessment</strong></a></p>
+      <p><strong>Printable Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-assessment.md" class="resource-link"><strong>Culture Assessment Handout</strong></a></p>
     </div>
   </div>
 </div>
