@@ -438,10 +438,10 @@ title: Culture Assessment
     
     document.getElementById('resultsSection').style.display = 'none';
     
-    const topPlaceholder = document.getElementById('resultsTopPlaceholder');
-    if (topPlaceholder) {
-      topPlaceholder.style.display = '';
-      topPlaceholder.innerHTML = _topPlaceholderOriginalHTML;
+    const resetTopPlaceholder = document.getElementById('resultsTopPlaceholder');
+    if (resetTopPlaceholder) {
+      resetTopPlaceholder.style.display = '';
+      resetTopPlaceholder.innerHTML = topPlaceholderOriginalHTML;
     }
     
     const summaryPlaceholder = document.getElementById('resultsSummaryPlaceholder');
@@ -454,8 +454,8 @@ title: Culture Assessment
   }
 
   // Store original placeholder HTML
-  const _topPlaceholder = document.getElementById('resultsTopPlaceholder');
-  const _topPlaceholderOriginalHTML = _topPlaceholder ? _topPlaceholder.innerHTML : '';
+  const topPlaceholder = document.getElementById('resultsTopPlaceholder');
+  const topPlaceholderOriginalHTML = topPlaceholder ? topPlaceholder.innerHTML : '';
 
   // Event listeners
   document.querySelectorAll('input[type="radio"]').forEach(radio => {

@@ -274,8 +274,8 @@ Use these questions with your team to deepen understanding:
 - [DORA Metrics Guide](dora-metrics-guide.md) - What to measure once culture is ready
 
 **Meeting Materials:**
-- [Meeting 1: Foundation](../../docs/_meetings/meeting-1.md) - Full meeting guide with culture context
-- [Meeting 3: Culture & Management](../meeting-3/) - Deep dive on culture and lean management
+- [Meeting 1: Foundation](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-1/) - Full meeting guide with culture context
+- [Meeting 3: Culture & Management](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/tree/main/resources/meetings/meeting-3/) - Deep dive on culture and lean management
 
 ---
 
