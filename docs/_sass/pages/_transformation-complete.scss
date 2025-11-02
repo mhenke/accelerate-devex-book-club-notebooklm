@@ -1,0 +1,244 @@
+// =============================================================================
+// TRANSFORMATION COMPLETE PAGE
+// =============================================================================
+// Beautiful, engaging finish page with modern cards, grids, and subtle motion.
+
+// Trophy visual sizing and centering
+.celebration-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--space-lg) auto var(--space-md);
+
+  .trophy-svg {
+    width: min(680px, 90vw);
+    height: auto;
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,0.08)) drop-shadow(0 2px 8px rgba(0,0,0,0.06));
+  }
+}
+
+// Welcome compact tweaks for this page
+.welcome-compact.section-card {
+  .btn.btn--primary-action {
+    @include button-primary;
+  }
+}
+
+// Journey grid styles are provided by components/_sections.scss (chapter-*),
+// here we just ensure spacing to the details section
+.chapter-metrics-compact.section-card {
+  .chapter-details {
+    margin-top: var(--space-md);
+  }
+}
+
+// DORA Mastery cards
+.content-grid {
+  .metric-mastery-card {
+    background: var(--background-white);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--elevation-1);
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    &:hover {
+      box-shadow: var(--elevation-2);
+      transform: translateY(-2px);
+    }
+
+    h3 {
+      margin: var(--space-sm) 0;
+      font-weight: var(--font-weight-semibold);
+    }
+
+    .mastery-level {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin: var(--space-sm) 0 var(--space-xs);
+
+      .mastery-bar {
+        flex: 1;
+        height: 10px;
+        border-radius: 999px;
+        background: rgba(148,163,184,0.25);
+        overflow: hidden;
+        position: relative;
+
+        .mastery-fill {
+          height: 100%;
+          width: 0%;
+          background: linear-gradient(90deg, var(--accent-emerald), var(--accent-teal));
+          border-radius: 999px;
+          animation: fillBar 1.6s ease forwards;
+        }
+
+        // Attribute-based widths for quick authoring
+        .mastery-fill[data-level="25"] { width: 25%; }
+        .mastery-fill[data-level="50"] { width: 50%; }
+        .mastery-fill[data-level="75"] { width: 75%; }
+        .mastery-fill[data-level="100"] { width: 100%; }
+      }
+
+      .mastery-label {
+        font-size: .9rem;
+        font-weight: var(--font-weight-semibold);
+        color: #475569;
+      }
+    }
+  }
+}
+
+@keyframes fillBar { from { width: 0%; } to { width: 100%; } }
+
+// Learning highlights list refinement
+.learning-highlights {
+  .learning-category {
+    background: var(--background-white);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+
+    h3 {
+      margin-top: 0;
+    }
+    .achievement-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-sm) 0 0;
+    }
+    .achievement-list li {
+      display: flex;
+      gap: var(--space-sm);
+      align-items: flex-start;
+      color: #475569;
+      margin-bottom: .5rem;
+    }
+  }
+
+  // Theme variants using design tokens
+  .meeting-1-theme { border-left: 4px solid var(--meeting-1-color); }
+  .meeting-2-theme { border-left: 4px solid var(--meeting-2-color); }
+  .meeting-3-theme { border-left: 4px solid var(--meeting-3-color); }
+  .meeting-4-theme { border-left: 4px solid var(--meeting-4-color); }
+}
+
+// Reflection section (radio cards)
+.reflection-section {
+  background: var(--gradient-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+
+  .reflection-options {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .reflection-option {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: var(--space-sm);
+    align-items: flex-start;
+    padding: var(--space-md);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    background: var(--background-white);
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+
+    input { margin-top: 3px; }
+    .option-content {
+      color: #475569;
+    }
+    strong {
+      color: var(--text-dark);
+    }
+
+    &:hover {
+      box-shadow: var(--elevation-2);
+      transform: translateY(-1px);
+    }
+    input:checked + .option-content {
+      color: var(--text-dark);
+    }
+  }
+
+  #insight-feedback {
+    margin-top: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+  }
+}
+
+// Next steps cards
+.next-step-card {
+  background: var(--background-white);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--elevation-1);
+
+  .step-timeline {
+    font-weight: var(--font-weight-semibold);
+    color: #64748b;
+    margin-bottom: var(--space-xs);
+  }
+
+  &.immediate { border-top: 4px solid var(--meeting-1-color); }
+  &.short-term { border-top: 4px solid var(--meeting-2-color); }
+  &.long-term { border-top: 4px solid var(--meeting-4-color); }
+}
+
+// Continue journey resource cards
+.continue-journey {
+  .resource-card {
+    background: var(--background-white);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    box-shadow: var(--elevation-1);
+    transition: transform .2s ease, box-shadow .2s ease;
+    h4 {
+      margin-top: 0;
+    }
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--elevation-2);
+    }
+  }
+
+  .ai-enhanced { border-left: 4px solid var(--accent-purple); }
+}
+
+// Celebration final section
+.celebration-final {
+  background: linear-gradient(135deg, rgba(122,218,209,0.08), rgba(9,105,218,0.06));
+  border: 1px solid rgba(122,218,209,0.25);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  box-shadow: 0 10px 30px rgba(9,105,218,0.08);
+
+  .success-message {
+    text-align: center;
+    h3 {
+      margin-top: 0;
+    }
+    .celebration-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      justify-content: center;
+      margin-top: var(--space-md);
+    }
+  }
+}
+
+// Small accessibility and spacing tweaks
+.hero-banner .hero-subtitle {
+  opacity: .9;
+}
