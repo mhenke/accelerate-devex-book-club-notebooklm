@@ -43,29 +43,29 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 ---
 
 ## Meeting 3
-- [ ] Video
-- [ ] Brief Podcast
-- [ ] Debate Podcast
-- [ ] Critic Podcast
-- [ ] Deep Dive Podcast (default)
+- [x] Video
+- [x] Brief Podcast
+- [x] Debate Podcast
+- [x] Critic Podcast
+- [x] Deep Dive Podcast (default)
 
-**Status:** ⏳ PENDING
+**Status:** ✅ COMPLETE
 
 --- 
 ## Meeting 4
-- [ ] Video
-- [ ] Brief Podcast
+- [x] Video
+- [x] Brief Podcast
 - [ ] Debate Podcast
 - [ ] Critic Podcast
 - [ ] Deep Dive Podcast (default)
 
-**Status:** ⏳ PENDING
+**Status:** ⏳ PARTIALLY UPDATED
 
 ---
 
 ## Notes
-- After Meeting 2 is complete, move to Meeting 3
 - Remember to update the "Now Playing" default player source for each meeting
+- The order in the playlist should be bried, deep dive, debate, and critic
 - Push changes after each meeting is fully updated
 - Make sure local and aws structures are in sync
 - Update feeds if necessary
