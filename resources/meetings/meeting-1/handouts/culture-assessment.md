@@ -42,33 +42,17 @@ For each statement below, select the response that best describes your organizat
 
 ---
 
-### Information Flow
+### Westrum Culture Questions (Figure 3.1 from "Accelerate")
 
 | Statement | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 |-----------|---|---|---|---|---|---|---|
-| **Information is actively sought.** Information is proactively shared and people actively look for information that will help them work more effectively. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| **Messengers are not punished when they deliver news of failures or other bad news.** People who surface problems are valued, not blamed. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| **Information is freely shared across organizational boundaries.** Teams and departments share information openly without hoarding or gatekeeping. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-
----
-
-### Collaboration & Responsibility
-
-| Statement | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-|-----------|---|---|---|---|---|---|---|
-| **Responsibilities are shared.** Teams take collective ownership of outcomes rather than pointing fingers when things go wrong. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| **Cross-functional collaboration is encouraged and rewarded.** Working across team boundaries is the norm, not the exception. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| **Teams are encouraged to bridge between departments.** Connecting different parts of the organization is valued and supported. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-
----
-
-### Learning & Innovation
-
-| Statement | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-|-----------|---|---|---|---|---|---|---|
-| **Failure causes inquiry.** When things go wrong, we ask "what can we learn?" instead of "who is responsible?" | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| **New ideas are welcomed.** Innovation and experimentation are encouraged, even if they might fail. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| **Failures are treated primarily as opportunities to improve the system.** We focus on systemic improvements rather than individual blame. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| **Information is actively sought.** | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| **Messengers are not punished when they deliver news of failures or other bad news.** | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| **Responsibilities are shared.** | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| **Cross-functional collaboration is encouraged and rewarded.** | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| **Failure causes inquiry.** | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| **New ideas are welcomed.** | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| **Failures are treated primarily as opportunities to improve the system.** | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 
 ---
 
@@ -76,8 +60,8 @@ For each statement below, select the response that best describes your organizat
 
 ### Calculate Your Scores
 
-1. **Add up all your ratings** for the 9 questions
-2. **Divide by 9** to get your average score
+1. **Add up all your ratings** for the 7 questions
+2. **Divide by 7** to get your average score
 
 **Your Organization's Culture Score: _____ / 7**
 

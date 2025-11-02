@@ -15,14 +15,14 @@ title: Culture Assessment
 <div class="section-card" markdown="0">
   <h2>Purpose & Instructions</h2>
 
-  <p>This assessment measures your organization's culture using Westrum's typology model. Research from "Accelerate" shows that <strong>generative culture strongly predicts both software delivery performance and organizational performance</strong>.</p>
+  <p>This assessment measures your organization's culture using Westrum's typology model from Figure 3.1 in "Accelerate." Research shows that <strong>generative culture strongly predicts both software delivery performance and organizational performance</strong>.</p>
   
-  <p>For each statement below, select the rating that best describes your organization (1 = Strongly Disagree, 7 = Strongly Agree). When all 9 questions are answered, your results will appear showing your culture type and specific areas for improvement.</p>
+  <p>For each statement below, select the rating that best describes your organization (1 = Strongly Disagree, 7 = Strongly Agree). When all 7 questions are answered, your results will appear showing your culture type and specific recommendations for improvement.</p>
 </div>
 
 <!-- Top results placeholder -->
 <div class="section-card" id="resultsTopPlaceholder" markdown="0">
-  <p class="results-preview-text"><strong>Results preview:</strong> After you answer all 9 questions, a detailed results panel will appear showing your culture type (Pathological, Bureaucratic, or Generative), category breakdown, and specific recommendations for improvement.</p>
+  <p class="results-preview-text"><strong>Results preview:</strong> After you answer all 7 questions from Figure 3.1 ("Accelerate"), a detailed results panel will appear showing your culture type (Pathological, Bureaucratic, or Generative) and specific recommendations for improvement.</p>
 </div>
 
 <div class="assessment-container" markdown="0">
@@ -32,23 +32,9 @@ title: Culture Assessment
   <h3><i class="fas fa-chart-bar"></i> Your Progress</h3>
   <div class="overall-score">
     <div class="score-percentage" id="overallPercentage">0.0 <span class="score-label">score</span></div>
-    <div class="answered-count" id="answeredCount" aria-live="polite">0/9 questions</div>
+    <div class="answered-count" id="answeredCount" aria-live="polite">0/7 questions</div>
   </div>
   <div class="results-placeholder" id="resultsSummaryPlaceholder">Detailed results will appear when all questions are answered.</div>
-  <div class="category-scores">
-    <div class="category-score">
-      <span class="category-name">Information Flow</span>
-      <span class="category-value"><span id="infoScore">0.0</span>/7.0</span>
-    </div>
-    <div class="category-score">
-      <span class="category-name">Collaboration</span>
-      <span class="category-value"><span id="collabScore">0.0</span>/7.0</span>
-    </div>
-    <div class="category-score">
-      <span class="category-name">Learning & Innovation</span>
-      <span class="category-value"><span id="learnScore">0.0</span>/7.0</span>
-    </div>
-  </div>
   <button type="button" class="btn btn--primary-action assessment-reset-button" id="resetBtn">
     <i class="fas fa-redo"></i> Reset Assessment
   </button>
@@ -61,13 +47,12 @@ title: Culture Assessment
 <!-- Assessment Questions -->
 <div class="assessment-questions">
 
-<div class="capability-section" data-category="info">
-  <h2><i class="fas fa-share-alt"></i> Information Flow (3 questions)</h2>
-  <p class="category-description">How information is shared and messengers are treated in your organization</p>
+<div class="capability-section">
+  <h2><i class="fas fa-clipboard-check"></i> Westrum Culture Questions (7 questions from Figure 3.1)</h2>
+  <p class="category-description">These validated questions are from "Accelerate" Chapter 3, Figure 3.1</p>
 
   <div class="capability-item" data-capability="1">
     <h3>1. Information is actively sought</h3>
-    <p class="capability-description">Information is proactively shared and people actively look for information that will help them work more effectively.</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-1" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-1" value="2"> 2 - Disagree</label>
@@ -81,7 +66,6 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="2">
     <h3>2. Messengers are not punished when they deliver news of failures or other bad news</h3>
-    <p class="capability-description">People who surface problems are valued, not blamed.</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-2" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-2" value="2"> 2 - Disagree</label>
@@ -94,8 +78,7 @@ title: Culture Assessment
   </div>
 
   <div class="capability-item" data-capability="3">
-    <h3>3. Information is freely shared across organizational boundaries</h3>
-    <p class="capability-description">Teams and departments share information openly without hoarding or gatekeeping.</p>
+    <h3>3. Responsibilities are shared</h3>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-3" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-3" value="2"> 2 - Disagree</label>
@@ -106,15 +89,9 @@ title: Culture Assessment
       <label class="rating-label"><input type="radio" name="capability-3" value="7"> 7 - Strongly Agree</label>
     </div>
   </div>
-</div>
-
-<div class="capability-section" data-category="collab">
-  <h2><i class="fas fa-users"></i> Collaboration & Responsibility (3 questions)</h2>
-  <p class="category-description">How teams work together and share responsibility</p>
 
   <div class="capability-item" data-capability="4">
-    <h3>4. Responsibilities are shared</h3>
-    <p class="capability-description">Teams take collective ownership of outcomes rather than pointing fingers when things go wrong.</p>
+    <h3>4. Cross-functional collaboration is encouraged and rewarded</h3>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-4" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-4" value="2"> 2 - Disagree</label>
@@ -127,8 +104,7 @@ title: Culture Assessment
   </div>
 
   <div class="capability-item" data-capability="5">
-    <h3>5. Cross-functional collaboration is encouraged and rewarded</h3>
-    <p class="capability-description">Working across team boundaries is the norm, not the exception.</p>
+    <h3>5. Failure causes inquiry</h3>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-5" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-5" value="2"> 2 - Disagree</label>
@@ -141,8 +117,7 @@ title: Culture Assessment
   </div>
 
   <div class="capability-item" data-capability="6">
-    <h3>6. Teams are encouraged to bridge between departments</h3>
-    <p class="capability-description">Connecting different parts of the organization is valued and supported.</p>
+    <h3>6. New ideas are welcomed</h3>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-6" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-6" value="2"> 2 - Disagree</label>
@@ -153,15 +128,9 @@ title: Culture Assessment
       <label class="rating-label"><input type="radio" name="capability-6" value="7"> 7 - Strongly Agree</label>
     </div>
   </div>
-</div>
-
-<div class="capability-section" data-category="learn">
-  <h2><i class="fas fa-lightbulb"></i> Learning & Innovation (3 questions)</h2>
-  <p class="category-description">How your organization treats failure and encourages innovation</p>
 
   <div class="capability-item" data-capability="7">
-    <h3>7. Failure causes inquiry</h3>
-    <p class="capability-description">When things go wrong, we ask "what can we learn?" instead of "who is responsible?"</p>
+    <h3>7. Failures are treated primarily as opportunities to improve the system</h3>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-7" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-7" value="2"> 2 - Disagree</label>
@@ -170,34 +139,6 @@ title: Culture Assessment
       <label class="rating-label"><input type="radio" name="capability-7" value="5"> 5 - Somewhat Agree</label>
       <label class="rating-label"><input type="radio" name="capability-7" value="6"> 6 - Agree</label>
       <label class="rating-label"><input type="radio" name="capability-7" value="7"> 7 - Strongly Agree</label>
-    </div>
-  </div>
-
-  <div class="capability-item" data-capability="8">
-    <h3>8. New ideas are welcomed</h3>
-    <p class="capability-description">Innovation and experimentation are encouraged, even if they might fail.</p>
-    <div class="rating-group">
-      <label class="rating-label"><input type="radio" name="capability-8" value="1"> 1 - Strongly Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-8" value="2"> 2 - Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-8" value="3"> 3 - Somewhat Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-8" value="4"> 4 - Neither Agree nor Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-8" value="5"> 5 - Somewhat Agree</label>
-      <label class="rating-label"><input type="radio" name="capability-8" value="6"> 6 - Agree</label>
-      <label class="rating-label"><input type="radio" name="capability-8" value="7"> 7 - Strongly Agree</label>
-    </div>
-  </div>
-
-  <div class="capability-item" data-capability="9">
-    <h3>9. Failures are treated primarily as opportunities to improve the system</h3>
-    <p class="capability-description">We focus on systemic improvements rather than individual blame.</p>
-    <div class="rating-group">
-      <label class="rating-label"><input type="radio" name="capability-9" value="1"> 1 - Strongly Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-9" value="2"> 2 - Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-9" value="3"> 3 - Somewhat Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-9" value="4"> 4 - Neither Agree nor Disagree</label>
-      <label class="rating-label"><input type="radio" name="capability-9" value="5"> 5 - Somewhat Agree</label>
-      <label class="rating-label"><input type="radio" name="capability-9" value="6"> 6 - Agree</label>
-      <label class="rating-label"><input type="radio" name="capability-9" value="7"> 7 - Strongly Agree</label>
     </div>
   </div>
 </div>
@@ -213,33 +154,6 @@ title: Culture Assessment
   <div class="results-performance-level">
     <h3 id="performanceLevel">Culture Type</h3>
     <p id="performanceDescription"></p>
-  </div>
-
-  <div class="results-breakdown">
-    <h3>Category Breakdown</h3>
-    <div class="category-breakdown-grid">
-      <div class="category-breakdown-item">
-        <span class="category-breakdown-name">Information Flow</span>
-        <div class="category-breakdown-bar">
-          <div class="category-breakdown-fill" id="infoBar"></div>
-        </div>
-        <span class="category-breakdown-score" id="infoPercent"></span>
-      </div>
-      <div class="category-breakdown-item">
-        <span class="category-breakdown-name">Collaboration & Responsibility</span>
-        <div class="category-breakdown-bar">
-          <div class="category-breakdown-fill" id="collabBar"></div>
-        </div>
-        <span class="category-breakdown-score" id="collabPercent"></span>
-      </div>
-      <div class="category-breakdown-item">
-        <span class="category-breakdown-name">Learning & Innovation</span>
-        <div class="category-breakdown-bar">
-          <div class="category-breakdown-fill" id="learnBar"></div>
-        </div>
-        <span class="category-breakdown-score" id="learnPercent"></span>
-      </div>
-    </div>
   </div>
 
   <div class="results-actions">
@@ -268,75 +182,48 @@ title: Culture Assessment
 <script>
 // Culture Assessment Logic
 (function() {
-  const TOTAL_QUESTIONS = 9;
+  const TOTAL_QUESTIONS = 7;
   const MAX_SCORE = 7.0;
 
   function calculateScores() {
-    const scores = {
-      info: [],
-      collab: [],
-      learn: []
-    };
+    let totalScore = 0;
+    let answeredCount = 0;
 
-    // Map questions to categories
-    const categoryMap = {
-      info: [1, 2, 3],
-      collab: [4, 5, 6],
-      learn: [7, 8, 9]
-    };
-
-    for (const [category, questions] of Object.entries(categoryMap)) {
-      questions.forEach(q => {
-        const selected = document.querySelector(`input[name="capability-${q}"]:checked`);
-        if (selected) {
-          scores[category].push(parseInt(selected.value));
-        }
-      });
+    for (let i = 1; i <= TOTAL_QUESTIONS; i++) {
+      const selected = document.querySelector(`input[name="capability-${i}"]:checked`);
+      if (selected) {
+        totalScore += parseInt(selected.value);
+        answeredCount++;
+      }
     }
 
-    // Calculate averages
-    const averages = {};
-    for (const [category, values] of Object.entries(scores)) {
-      averages[category] = values.length > 0 
-        ? values.reduce((a, b) => a + b, 0) / values.length 
-        : 0;
-    }
-
-    return averages;
+    return { totalScore, answeredCount };
   }
 
   function updateScoreSummary() {
-    const scores = calculateScores();
-    const totalAnswered = document.querySelectorAll('input[type="radio"]:checked').length;
+    const { totalScore, answeredCount } = calculateScores();
     
     // Calculate overall average
-    const categoryValues = Object.values(scores);
-    const overallScore = categoryValues.length > 0 
-      ? categoryValues.reduce((a, b) => a + b, 0) / categoryValues.length 
-      : 0;
+    const overallScore = answeredCount > 0 ? totalScore / answeredCount : 0;
 
     // Update display
     document.getElementById('overallScore').textContent = overallScore.toFixed(1);
     document.getElementById('overallPercentage').innerHTML = 
       overallScore.toFixed(1) + ' <span class="score-label">/ 7.0</span>';
-    
-    document.getElementById('infoScore').textContent = scores.info.toFixed(1);
-    document.getElementById('collabScore').textContent = scores.collab.toFixed(1);
-    document.getElementById('learnScore').textContent = scores.learn.toFixed(1);
 
     // Update answered counter
     const answeredEl = document.getElementById('answeredCount');
     if (answeredEl) {
-      answeredEl.textContent = `${totalAnswered}/${TOTAL_QUESTIONS} questions`;
+      answeredEl.textContent = `${answeredCount}/${TOTAL_QUESTIONS} questions`;
     }
 
     // Show results if all answered
-    if (totalAnswered === TOTAL_QUESTIONS) {
-      showResults(scores, overallScore);
+    if (answeredCount === TOTAL_QUESTIONS) {
+      showResults(overallScore);
     }
   }
 
-  function showResults(scores, overallScore) {
+  function showResults(overallScore) {
     const resultsSection = document.getElementById('resultsSection');
     const topPlaceholder = document.getElementById('resultsTopPlaceholder');
     const summaryPlaceholder = document.getElementById('resultsSummaryPlaceholder');
@@ -410,16 +297,6 @@ title: Culture Assessment
     // Update results display
     document.getElementById('performanceLevel').textContent = cultureType;
     document.getElementById('performanceDescription').textContent = description;
-
-    // Update category bars
-    for (const [category, score] of Object.entries(scores)) {
-      const percentage = (score / MAX_SCORE) * 100;
-      const barId = category + 'Bar';
-      const percentId = category + 'Percent';
-      
-      document.getElementById(barId).style.width = percentage + '%';
-      document.getElementById(percentId).textContent = score.toFixed(1) + '/7.0';
-    }
 
     // Generate recommendations list
     const nextStepsList = document.getElementById('nextStepsList');
