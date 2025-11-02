@@ -167,7 +167,7 @@ title: Culture Assessment
       <li><a href="/accelerate-devex-book-club-notebooklm/meetings/meeting-1/">Meeting 1: Foundation - Measuring and Changing Culture</a></li>
       <li><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-before-metrics.md">Culture Before Metrics - Why culture enables measurement</a></li>
       <li><a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-change-model.md">Acting Your Way to Better Culture - The Virtuous Cycle</a></li>
-      <li><a href="/accelerate-devex-book-club-notebooklm/assessment/">24 Capabilities Assessment - Full technical assessment</a></li>
+      <li><a href="/accelerate-devex-book-club-notebooklm/assessment">24 Capabilities Assessment - Full technical assessment</a></li>
     </ul>
   </div>
 </div>
