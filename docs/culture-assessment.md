@@ -172,18 +172,17 @@ title: Culture Assessment
   </div>
 </div>
 
-</div>
-
 <!-- Link to jump to results -->
 <p class="assessment-results-link">
   <a href="#resultsTopPlaceholder" id="gotoResultsLink" class="btn btn--link">Jump to results</a>
 </p>
 
+</div>
+
 <script>
 // Culture Assessment Logic
 (function() {
   const TOTAL_QUESTIONS = 7;
-  const MAX_SCORE = 7.0;
 
   function calculateScores() {
     let totalScore = 0;
@@ -295,17 +294,26 @@ title: Culture Assessment
     }
 
     // Update results display
-    document.getElementById('performanceLevel').textContent = cultureType;
-    document.getElementById('performanceDescription').textContent = description;
+    const performanceLevelElem = document.getElementById('performanceLevel');
+    if (performanceLevelElem) {
+      performanceLevelElem.textContent = cultureType;
+    }
+    
+    const performanceDescriptionElem = document.getElementById('performanceDescription');
+    if (performanceDescriptionElem) {
+      performanceDescriptionElem.textContent = description;
+    }
 
     // Generate recommendations list
     const nextStepsList = document.getElementById('nextStepsList');
-    nextStepsList.innerHTML = '';
-    recommendations.forEach(rec => {
-      const li = document.createElement('li');
-      li.textContent = rec;
-      nextStepsList.appendChild(li);
-    });
+    if (nextStepsList) {
+      nextStepsList.innerHTML = '';
+      recommendations.forEach(rec => {
+        const li = document.createElement('li');
+        li.textContent = rec;
+        nextStepsList.appendChild(li);
+      });
+    }
   }
 
   function performReset() {
@@ -339,10 +347,13 @@ title: Culture Assessment
     radio.addEventListener('change', updateScoreSummary);
   });
 
-  document.getElementById('resetBtn').addEventListener('click', function(e) {
-    e.preventDefault();
-    performReset();
-  });
+  const resetBtn = document.getElementById('resetBtn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      performReset();
+    });
+  }
 
   const gotoLink = document.getElementById('gotoResultsLink');
   if (gotoLink) {
