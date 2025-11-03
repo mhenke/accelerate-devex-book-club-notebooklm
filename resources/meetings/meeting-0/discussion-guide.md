@@ -171,7 +171,7 @@ The book will show us how these elements reinforce each other—for better or wo
 Before Meeting 1, explore these resources:
 
 - **[24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)** - Establish your baseline
-- **[Key Questions - Meeting 1](../../key-questions.md#meeting-1)** - Preview the first meeting's focus
+ - **[Key Questions - Meeting 1](../../key-questions.md#meeting-1)** - Preview the first meeting's focus
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - See the full 2-month journey
 - **[Discussion Practices](../../activities/discussion-practices.md)** - Learn facilitation best practices
 
