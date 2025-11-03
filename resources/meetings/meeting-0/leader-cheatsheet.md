@@ -127,7 +127,7 @@ This helps participants articulate their personal goals and creates buy-in from 
   - Get the book
   - Read chapters 1-3
   - Complete 24 Capabilities Assessment
-  - Review [Key Questions - Meeting 1](../../key-questions.md#meeting-1)
+      - Review [Key Questions - Meeting 1](../../key-questions.md#meeting-1)
 - ✅ Share link to [Meeting 1 resources](../meeting-1/)
 - ✅ Confirm logistics (date/time/location)
 - ✅ (Optional) Generate and share [NotebookLM Brief Podcast](../meeting-1/notebooklm/podcast-brief.md)
