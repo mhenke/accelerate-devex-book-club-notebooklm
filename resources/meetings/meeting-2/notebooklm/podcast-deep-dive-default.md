@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 4-6 from "Accelerate" to NotebookLM
-2. (Optional but recommended) Upload [Meeting 2 Chapter Notes](../../meetings/meeting-2/chapter-notes.md)
+2. (Optional but recommended) Upload [Meeting 2 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -104,6 +104,6 @@ Use [podcast-deep-dive-shorter.md](podcast-deep-dive-shorter.md) instead (10-15 
 
 ## Related Resources
 
-- **[Meeting 2 Outline](../../meetings/meeting-2/outline.md)** - Complete meeting structure
-- **[Key Questions](../../key-questions.md)** - Core framing question for Meeting 2
-- **[24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)** - Focus on CD practices (1-8)
+- **[Meeting 2 Outline](../outline.md)** - Complete meeting structure
+- **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 2
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Focus on CD practices (1-8)

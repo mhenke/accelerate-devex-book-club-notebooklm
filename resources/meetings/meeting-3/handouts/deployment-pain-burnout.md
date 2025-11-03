@@ -405,7 +405,7 @@ Christina Maslach's research identifies six organizational factors that cause bu
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 3: Management & Sustainability](../../../meetings/meeting-3/) - Full meeting guide
+- [Meeting 3: Management & Sustainability](../../../../meeting-3/) - Full meeting guide
 - [Chapter 9 Notes](../../chapter-notes.md) - Detailed burnout discussion
 
 **Other Handouts:**
@@ -413,7 +413,7 @@ Christina Maslach's research identifies six organizational factors that cause bu
 - [Lean Management Practices](lean-management-practices.md) - Reducing overload
 
 **Assessments:**
-- [Culture Assessment](../../../../assessments/culture-assessment-worksheet.md) - Psychological safety
+- [Culture Assessment](../../../../../../assessments/culture-assessment-worksheet.md) - Psychological safety
 
 ---
 

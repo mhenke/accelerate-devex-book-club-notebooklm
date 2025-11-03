@@ -463,7 +463,7 @@ eNPS = % Promoters - % Detractors
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 3: Management & Sustainability](../../../meetings/meeting-3/) - Full meeting guide
+- [Meeting 3: Management & Sustainability](../../../../meeting-3/) - Full meeting guide
 - [Chapter 10 Notes](../../chapter-notes.md) - Detailed satisfaction discussion
 
 **Other Handouts:**
@@ -471,7 +471,7 @@ eNPS = % Promoters - % Detractors
 - [Lean Management Practices](lean-management-practices.md) - Enabling satisfaction
 
 **Assessments:**
-- [24 Capabilities Assessment](../../../../assessments/24-capabilities-assessment.md) - Organizational practices
+- [24 Capabilities Assessment](../../../../../../assessments/24-capabilities-assessment.md) - Organizational practices
 
 ---
 

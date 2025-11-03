@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 4-6 from "Accelerate" to NotebookLM
-2. (Optional) Upload [Meeting 2 Chapter Notes](../../meetings/meeting-2/chapter-notes.md)
+2. (Optional) Upload [Meeting 2 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -44,4 +44,4 @@ Assume viewer is visual learner. Focus Ch 4-6 Accelerate. Create 10-15min visual
 ## Related Resources
 
 - **[Deep Dive Podcast (15-20 min)](podcast-deep-dive-default.md)** - Audio format
-- **[Meeting 2 Outline](../../meetings/meeting-2/outline.md)** - Complete meeting structure
+- **[Meeting 2 Outline](../outline.md)** - Complete meeting structure

@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 11, 16, and Conclusion from "Accelerate" to NotebookLM
-2. (Optional) Upload [Meeting 4 Chapter Notes](../../meetings/meeting-4/chapter-notes.md)
+2. (Optional) Upload [Meeting 4 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -70,6 +70,6 @@ Assume listener needs quick overview. Focus Ch 11,16,Conclusion Accelerate. Crea
 
 ## Related Resources
 
-- **[Meeting 4 Outline](../../meetings/meeting-4/outline.md)** - Complete meeting structure
+- **[Meeting 4 Outline](../outline.md)** - Complete meeting structure
 - **[Meeting 4 Retrospective](../../meetings/meeting-4/retrospective-template.md)** - Final reflection and roadmap
-- **[Key Questions](../../key-questions.md)** - Core framing question for Meeting 4
+- **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 4

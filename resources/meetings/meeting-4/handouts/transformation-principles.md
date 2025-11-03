@@ -488,14 +488,14 @@ Sustainable transformation follows a continuous cycle:
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 4: Leadership & Transformation](../../../meetings/meeting-4/) - Full meeting guide
+- [Meeting 4: Leadership & Transformation](../../../../meeting-4/) - Full meeting guide
 - [Conclusion Notes](../../chapter-notes.md) - Making it your own
 
 **Other Handouts:**
 - [ING Case Study](ing-case-study.md) - Real-world transformation example
 
 **Assessments:**
-- [24 Capabilities Assessment](../../../../assessments/24-capabilities-assessment.md) - Comprehensive evaluation
+- [24 Capabilities Assessment](../../../../../../assessments/24-capabilities-assessment.md) - Comprehensive evaluation
 
 ---
 

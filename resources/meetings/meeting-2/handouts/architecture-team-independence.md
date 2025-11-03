@@ -400,15 +400,15 @@ Architecture isn't just about technology—it's about **enabling team independen
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 2: Technical Excellence](../meetings/meeting-2/) - Full meeting guide
-- [Chapter 5 Notes](../meetings/meeting-2/chapter-notes.md) - Detailed architecture discussion
+- [Meeting 2: Technical Excellence](../../meeting-2/) - Full meeting guide
+- [Chapter 5 Notes](../../meeting-2/chapter-notes.md) - Detailed architecture discussion
 
 **Other Handouts:**
 - [Security: Shift Left](security-shift-left.md) - Security in loosely coupled systems
 - [Culture Before Metrics](culture-before-metrics.md) - Why culture enables architectural change
 
 **Assessments:**
-- [24 Capabilities Assessment](../assessments/24-capabilities-assessment.md) - Includes architecture questions
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Includes architecture questions
 
 ---
 

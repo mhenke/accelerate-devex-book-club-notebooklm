@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 4-6 from "Accelerate" to NotebookLM
-2. (Optional) Upload [Meeting 2 Chapter Notes](../../meetings/meeting-2/chapter-notes.md)
+2. (Optional) Upload [Meeting 2 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -34,5 +34,5 @@ Assume listener wants comprehensive understanding. Focus Ch 4-6 Accelerate. Crea
 ## Related Resources
 
 - **[Default (15-20 min)](podcast-deep-dive-default.md)** - Balanced coverage
-- **[Meeting 2 Outline](../../meetings/meeting-2/outline.md)**
-- **[24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)** - Practices 1-8
+- **[Meeting 2 Outline](../outline.md)**
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Practices 1-8

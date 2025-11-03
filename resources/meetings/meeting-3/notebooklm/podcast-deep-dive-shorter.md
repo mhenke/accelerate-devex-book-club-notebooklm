@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 7-10 from "Accelerate" to NotebookLM
-2. (Optional) Upload [Meeting 3 Chapter Notes](../../meetings/meeting-3/chapter-notes.md)
+2. (Optional) Upload [Meeting 3 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -69,6 +69,6 @@ Assume listener needs quick overview. Focus Ch 7-10 Accelerate. Create 10-15min:
 
 ## Related Resources
 
-- **[Meeting 3 Outline](../../meetings/meeting-3/outline.md)** - Complete meeting structure
+- **[Meeting 3 Outline](../outline.md)** - Complete meeting structure
 - **[Meeting 3 Attendee Guide](../meeting-3/handouts/attendee-guide.md)** - Printable workbook (when created)
-- **[Key Questions](../../key-questions.md)** - Core framing question for Meeting 3
+- **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 3

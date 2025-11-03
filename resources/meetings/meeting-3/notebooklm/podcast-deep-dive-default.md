@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 7-10 from "Accelerate" to NotebookLM
-2. (Optional but recommended) Upload [Meeting 3 Chapter Notes](../../meetings/meeting-3/chapter-notes.md)
+2. (Optional but recommended) Upload [Meeting 3 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -46,6 +46,6 @@ Assume listener is manager/practitioner for book club. Focus Ch 7-10 Accelerate.
 
 ## Related Resources
 
-- **[Meeting 3 Outline](../../meetings/meeting-3/outline.md)** - Complete meeting structure
-- **[Key Questions](../../key-questions.md)** - Core framing question for Meeting 3
-- **[24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)** - Focus on lean management (15-19)
+- **[Meeting 3 Outline](../outline.md)** - Complete meeting structure
+- **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 3
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Focus on lean management (15-19)

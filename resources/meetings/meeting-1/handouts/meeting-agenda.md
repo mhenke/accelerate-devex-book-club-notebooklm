@@ -172,8 +172,8 @@
 
 **Optional but Helpful:**
 - ✅ Name tags
-- ✅ [DORA Metrics Template](../../../assessments/dora-metrics-template.md) - printed copies
-- ✅ [Culture Assessment Worksheet](../../../assessments/culture-assessment-worksheet.md) - printed copies
+- ✅ [DORA Metrics Template](../../../../../assessments/dora-metrics-template.md) - printed copies
+- ✅ [Culture Assessment Worksheet](../../../../../assessments/culture-assessment-worksheet.md) - printed copies
 - ✅ Laptop/projector for showing visuals
 - ✅ Timer for time management
 

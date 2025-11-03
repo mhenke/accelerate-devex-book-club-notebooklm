@@ -424,15 +424,15 @@ Review   Collab   Auto   Auto   Monitor
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 2: Technical Excellence](../meetings/meeting-2/) - Full meeting guide
-- [Chapter 6 Notes](../meetings/meeting-2/chapter-notes.md) - Detailed security discussion
+- [Meeting 2: Technical Excellence](../../meeting-2/) - Full meeting guide
+- [Chapter 6 Notes](../../meeting-2/chapter-notes.md) - Detailed security discussion
 
 **Other Handouts:**
 - [Architecture Guide](architecture-team-independence.md) - Securing loosely coupled systems
 - [DORA Metrics Guide](dora-metrics-guide.md) - Measuring security's impact on delivery
 
 **Assessments:**
-- [24 Capabilities Assessment](../assessments/24-capabilities-assessment.md) - Includes security questions
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Includes security questions
 
 ---
 

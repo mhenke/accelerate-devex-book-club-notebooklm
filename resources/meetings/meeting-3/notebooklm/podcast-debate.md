@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 7-10 from "Accelerate" to NotebookLM
-2. (Optional) Upload [Meeting 3 Chapter Notes](../../meetings/meeting-3/chapter-notes.md)
+2. (Optional) Upload [Meeting 3 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
