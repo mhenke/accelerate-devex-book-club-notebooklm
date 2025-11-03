@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 1-3 from "Accelerate" to NotebookLM
-2. (Optional but recommended) Upload [Meeting 1 Chapter Notes](../../meetings/meeting-1/chapter-notes.md)
+2. (Optional but recommended) Upload [Meeting 1 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -185,7 +185,7 @@ Help listeners prepare to discuss:
 
 ## Related Resources
 
-- **[Meeting 1 Outline](../../meetings/meeting-1/outline.md)** - Complete meeting structure
+- **[Meeting 1 Outline](../outline.md)** - Complete meeting structure
 - **[Meeting 1 Attendee Guide](../meeting-1/handouts/attendee-guide.md)** - Printable workbook
-- **[Key Questions](../../key-questions.md)** - Core framing question for Meeting 1
-- **[24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)** - Self-assessment tool
+- **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 1
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Self-assessment tool

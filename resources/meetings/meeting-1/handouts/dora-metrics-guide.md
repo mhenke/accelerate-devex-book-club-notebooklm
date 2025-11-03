@@ -387,16 +387,16 @@ From "Accelerate" research across 23,000+ survey responses:
 ## 🔗 Related Resources
 
 **Assessments:**
-- [DORA Metrics Template](../assessments/dora-metrics-template.md) - Start tracking your metrics
-- [24 Capabilities Assessment](../assessments/24-capabilities-assessment.md) - Identify improvement areas
+- [DORA Metrics Template](../../../assessments/dora-metrics-template.md) - Start tracking your metrics
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Identify improvement areas
 
 **Handouts:**
 - [Culture Before Metrics](culture-before-metrics.md) - Why sequence matters
 - [Culture Change Model](culture-change-model.md) - How practices improve culture
 
 **Meeting Materials:**
-- [Meeting 1: Foundation](../meetings/meeting-1/) - Full meeting guide
-- [Meeting 2: Technical Excellence](../meetings/meeting-2/) - CD practices that improve metrics
+- [Meeting 1: Foundation](../../meeting-1/) - Full meeting guide
+- [Meeting 2: Technical Excellence](../../meeting-2/) - CD practices that improve metrics
 
 ---
 

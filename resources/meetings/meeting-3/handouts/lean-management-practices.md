@@ -469,7 +469,7 @@ Less Pressure → Sustainable Pace
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 3: Management & Sustainability](../../../meetings/meeting-3/) - Full meeting guide
+- [Meeting 3: Management & Sustainability](../../../../meeting-3/) - Full meeting guide
 - [Chapter 7 Notes](../../chapter-notes.md) - Detailed lean management discussion
 
 **Other Handouts:**
@@ -477,7 +477,7 @@ Less Pressure → Sustainable Pace
 - [Employee Satisfaction](employee-satisfaction.md) - How lean enables satisfaction
 
 **Assessments:**
-- [24 Capabilities Assessment](../../../../assessments/24-capabilities-assessment.md) - Lean practices included
+- [24 Capabilities Assessment](../../../../../../assessments/24-capabilities-assessment.md) - Lean practices included
 
 ---
 

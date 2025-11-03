@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome participants and review meeting objectives
 - ✅ Quick round: "What’s one technical practice that’s working well for you now?"
-- ✅ Review [Discussion Practices](../../activities/discussion-practices.md) ground rules
+- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md) ground rules
 
 **Materials:**
 - [Attendee Guide](attendee-guide.md) - printed for all participants
@@ -129,10 +129,10 @@
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../../meetings/meeting-2/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-2/leadership/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../../meetings/meeting-2/leadership/discussion-guide.md)
-- **Assessments:** [24 Capabilities](../../assessments/24-capabilities-assessment.md)
+- **Complete facilitation guide:** [Outline](../../../meeting-2/outline.md)
+- **Quick reference:** [Leader Cheatsheet](../../../meeting-2/leadership/leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](../../../meeting-2/leadership/discussion-guide.md)
+- **Assessments:** [24 Capabilities](../../../../assessments/24-capabilities-assessment.md)
 
 ---
 

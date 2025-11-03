@@ -474,12 +474,12 @@ ING didn't copy anyone's transformation playbook. They developed practices that 
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 4: Leadership & Transformation](../../../meetings/meeting-4/) - Full meeting guide
+- [Meeting 4: Leadership & Transformation](../../../../meeting-4/) - Full meeting guide
 - [Chapter 16 Notes](../../chapter-notes.md) - Detailed ING case study
 
 **Other Handouts:**
 - [Transformation Principles](transformation-principles.md) - How to make it your own
-- [Leadership Characteristics](../../../meetings/meeting-4/) - Transformational leadership
+- [Leadership Characteristics](../../../../meeting-4/) - Transformational leadership
 
 **Book References:**
 - Chapter 16: High Performance Leadership and Management (ING case study)

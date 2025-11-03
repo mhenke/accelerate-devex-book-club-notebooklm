@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome + objectives
 - ✅ Quick round: "Who is a leader you admire and why?"
-- ✅ Review [Discussion Practices](../../activities/discussion-practices.md)
+- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md)
 
 ---
 
@@ -106,6 +106,6 @@
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../../meetings/meeting-4/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-4/leadership/leader-cheatsheet.md)
-- **Retrospective:** [Transformation Template](../../meetings/meeting-4/retrospective-template.md)
+- **Complete facilitation guide:** [Outline](../../../meeting-4/outline.md)
+- **Quick reference:** [Leader Cheatsheet](../../../meeting-4/leadership/leader-cheatsheet.md)
+- **Retrospective:** [Transformation Template](../../../meeting-4/retrospective-template.md)

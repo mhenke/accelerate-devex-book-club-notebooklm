@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 11, 16, and Conclusion from "Accelerate" to NotebookLM
-2. (Optional) Upload [Meeting 4 Chapter Notes](../../meetings/meeting-4/chapter-notes.md)
+2. (Optional) Upload [Meeting 4 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -45,5 +45,5 @@ Assume viewer is visual learner. Focus Ch 11,16,Conclusion Accelerate. Create 10
 ## Related Resources
 
 - **[Deep Dive Podcast (15-20 min)](podcast-deep-dive-default.md)** - Audio format
-- **[Meeting 4 Outline](../../meetings/meeting-4/outline.md)** - Complete meeting structure
+- **[Meeting 4 Outline](../outline.md)** - Complete meeting structure
 - **[Meeting 4 Retrospective](../../meetings/meeting-4/retrospective-template.md)** - Transformation roadmap template

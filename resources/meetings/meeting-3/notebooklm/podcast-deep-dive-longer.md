@@ -11,7 +11,7 @@
 
 **Before using this prompt:**
 1. Upload Chapters 7-10 from "Accelerate" to NotebookLM
-2. (Optional but recommended) Upload [Meeting 3 Chapter Notes](../../meetings/meeting-3/chapter-notes.md)
+2. (Optional but recommended) Upload [Meeting 3 Chapter Notes](../chapter-notes.md)
 
 **See [ALL-SOURCES-TO-UPLOAD.md](ALL-SOURCES-TO-UPLOAD.md) for complete source list**
 
@@ -41,5 +41,5 @@ Assume listener wants comprehensive understanding. Focus Ch 7-10 Accelerate. Cre
 
 ## Related Resources
 
-- **[Meeting 3 Outline](../../meetings/meeting-3/outline.md)**
-- **[24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)** - Lean practices (15-19)
+- **[Meeting 3 Outline](../outline.md)**
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Lean practices (15-19)

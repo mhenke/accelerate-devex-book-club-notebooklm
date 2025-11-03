@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome + objectives
 - ✅ Quick round: "How sustainable did last week feel (1-10)?"
-- ✅ Review [Discussion Practices](../../activities/discussion-practices.md)
+- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md)
 
 ---
 
@@ -106,9 +106,9 @@
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../../meetings/meeting-3/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-3/leadership/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../../meetings/meeting-3/leadership/discussion-guide.md)
+- **Complete facilitation guide:** [Outline](../../../meeting-3/outline.md)
+- **Quick reference:** [Leader Cheatsheet](../../../meeting-3/leadership/leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](../../../meeting-3/leadership/discussion-guide.md)
 
 ---
 

@@ -439,13 +439,13 @@ Dr. Ron Westrum identified three organizational culture types:
 - [DORA Metrics Guide](dora-metrics-guide.md) - What to measure
 
 **Assessments:**
-- [Culture Assessment Worksheet](../assessments/culture-assessment-worksheet.md) - Assess your culture type
-- [24 Capabilities Assessment](../assessments/24-capabilities-assessment.md) - Identify practices to adopt
+- [Culture Assessment Worksheet](../../../assessments/culture-assessment-worksheet.md) - Assess your culture type
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Identify practices to adopt
 
 **Meeting Materials:**
-- [Meeting 1: Foundation](../meetings/meeting-1/) - Introduction to culture and metrics
-- [Meeting 2: Technical Excellence](../meetings/meeting-2/) - Practices that start the cycle
-- [Meeting 3: Management & Sustainability](../meetings/meeting-3/) - Practices that sustain the cycle
+- [Meeting 1: Foundation](../../meeting-1/) - Introduction to culture and metrics
+- [Meeting 2: Technical Excellence](../../meeting-2/) - Practices that start the cycle
+- [Meeting 3: Management & Sustainability](../../meeting-3/) - Practices that sustain the cycle
 
 ---
 

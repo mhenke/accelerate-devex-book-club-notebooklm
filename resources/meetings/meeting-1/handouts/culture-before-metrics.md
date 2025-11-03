@@ -255,16 +255,16 @@ Once culture is established, a virtuous cycle emerges:
 ## 🔗 Related Resources
 
 **Assessments:**
-- [Culture Assessment Worksheet](../assessments/culture-assessment-worksheet.md) - Evaluate your team's culture type
-- [24 Capabilities Assessment](../assessments/24-capabilities-assessment.md) - Identify improvement areas
+- [Culture Assessment Worksheet](../../../assessments/culture-assessment-worksheet.md) - Evaluate your team's culture type
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Identify improvement areas
 
 **Activities:**
-- [Discussion Practices](../activities/discussion-practices.md) - Build psychological safety in meetings
-- [Between Meetings Activities](../activities/between-meetings.md) - Culture-building exercises
+- [Discussion Practices](../../../activities/discussion-practices.md) - Build psychological safety in meetings
+- [Between Meetings Activities](../../../activities/between-meetings.md) - Culture-building exercises
 
 **Meeting Materials:**
-- [Meeting 1: Foundation](../meetings/meeting-1/) - Full meeting guide
-- [Meeting 3: Culture & Management](../meetings/meeting-3/) - Deep dive on culture
+- [Meeting 1: Foundation](../../meeting-1/) - Full meeting guide
+- [Meeting 3: Culture & Management](../../meeting-3/) - Deep dive on culture
 
 ---
 

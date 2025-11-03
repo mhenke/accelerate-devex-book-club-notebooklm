@@ -226,8 +226,8 @@ ________________________________________________________________
 ## Resources
 
 - **Full discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
-- **Assessment tools:** [DORA Metrics Template](../../../assessments/dora-metrics-template.md)
-- **Culture assessment:** [Westrum Culture Worksheet](../../../assessments/culture-assessment-worksheet.md)
+- **Assessment tools:** [DORA Metrics Template](../../../../../assessments/dora-metrics-template.md)
+- **Culture assessment:** [Westrum Culture Worksheet](../../../../../assessments/culture-assessment-worksheet.md)
 
 ---
 
