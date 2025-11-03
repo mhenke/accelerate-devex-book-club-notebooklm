@@ -70,6 +70,6 @@ Assume listener needs quick overview. Focus Ch 11,16,Conclusion Accelerate. Crea
 
 ## Related Resources
 
-- **[Meeting 4 Outline](../outline.md)** - Complete meeting structure
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/retrospective-template.md)** - Final reflection and roadmap
+- **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
+- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Final reflection and roadmap
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 4

@@ -413,7 +413,7 @@ Christina Maslach's research identifies six organizational factors that cause bu
 - [Lean Management Practices](lean-management-practices.md) - Reducing overload
 
 **Assessments:**
-- [Culture Assessment](../../../../../../assessments/culture-assessment-worksheet.md) - Psychological safety
+- [Culture Assessment](../../../assessments/culture-assessment-worksheet.md) - Psychological safety
 
 ---
 

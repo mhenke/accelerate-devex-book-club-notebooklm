@@ -34,5 +34,5 @@ Assume listener wants comprehensive understanding. Focus Ch 4-6 Accelerate. Crea
 ## Related Resources
 
 - **[Default (15-20 min)](podcast-deep-dive-default.md)** - Balanced coverage
-- **[Meeting 2 Outline](../outline.md)**
+- **[Meeting 2 Outline](../leadership/outline.md)**
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Practices 1-8

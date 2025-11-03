@@ -52,7 +52,7 @@ Assume listener is leader/practitioner. Focus Ch 11,16,Conclusion Accelerate. Cr
 
 ## Related Resources
 
-- **[Meeting 4 Outline](../outline.md)** - Complete meeting structure
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/retrospective-template.md)** - Final reflection and roadmap template
+- **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
+- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Final reflection and roadmap template
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 4
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - Post-book club guidance

@@ -32,12 +32,12 @@ This directory contains complete facilitator guides and supporting materials for
 - **[leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md)** - 1-page quick reference for facilitators
 - **[discussion-guide.md](meeting-1/leadership/discussion-guide.md)** - 40+ open-ended discussion questions and scenarios
 - **[chapter-notes.md](meeting-1/chapter-notes.md)** - Detailed summaries of chapters 1-3
-- **[retrospective-template.md](meeting-1/retrospective-template.md)** - Post-meeting reflection format
+- **[leadership/retrospective.md](meeting-1/leadership/retrospective.md)** - Post-meeting reflection format
 - **[README.md](meeting-1/README.md)** - Complete resource index and prep guide
 
 **Related handouts (in [meeting-1/handouts/](meeting-1/handouts/)):**
 - [Attendee Guide](meeting-1/handouts/attendee-guide.md) - Printable participant workbook
-- [Meeting Agenda](meeting-1/handouts/meeting-agenda.md) - 60-minute structured agenda
+- [Meeting Agenda](meeting-1/handouts/agenda.md) - 60-minute structured agenda
 - [Action Items Tracker](meeting-1/handouts/action-items-tracker.md) - Commitment tracking sheet
 
 **Related assessments:**
@@ -63,7 +63,7 @@ This directory contains complete facilitator guides and supporting materials for
 **In [meeting-2/](meeting-2/) folder:**
 - **[outline.md](meeting-2/outline.md)** - Complete meeting structure
 - **[chapter-notes.md](meeting-2/chapter-notes.md)** - Detailed summaries of chapters 4-6
-- **[retrospective-template.md](meeting-2/retrospective-template.md)** - Post-meeting reflection format
+- **[leadership/retrospective.md](meeting-2/leadership/retrospective.md)** - Post-meeting reflection format
 
 **To create (use Meeting 1 as template):**
 - README.md - Resource index
@@ -98,7 +98,7 @@ This directory contains complete facilitator guides and supporting materials for
 **In [meeting-3/](meeting-3/) folder:**
 - **[outline.md](meeting-3/outline.md)** - Complete meeting structure
 - **[chapter-notes.md](meeting-3/chapter-notes.md)** - Detailed summaries of chapters 7-10
-- **[retrospective-template.md](meeting-3/retrospective-template.md)** - Post-meeting reflection format
+- **[leadership/retrospective.md](meeting-3/leadership/retrospective.md)** - Post-meeting reflection format
 
 **To create (use Meeting 1 as template):**
 - README.md - Resource index
@@ -133,7 +133,7 @@ This directory contains complete facilitator guides and supporting materials for
 **In [meeting-4/](meeting-4/) folder:**
 - **[outline.md](meeting-4/outline.md)** - Complete meeting structure
 - **[chapter-notes.md](meeting-4/chapter-notes.md)** - Detailed summaries of chapters 11, 16, conclusion
-- **[retrospective-template.md](meeting-4/retrospective-template.md)** - Post-meeting reflection and transformation roadmap
+- **[leadership/retrospective.md](meeting-4/leadership/retrospective.md)** - Post-meeting reflection and transformation roadmap
 
 **To create (use Meeting 1 as template):**
 - README.md - Resource index
@@ -206,7 +206,7 @@ Detailed chapter summaries including:
 
 **When to use:** Pre-meeting facilitator prep, reference during meeting for statistics/quotes
 
-### retrospective-template.md
+### leadership/retrospective.md
 Post-meeting reflection format including:
 - What we learned
 - Progress review from previous meeting
@@ -266,14 +266,14 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 
 ### During Meeting
 
-1. **Use [meeting agenda](meeting-1/handouts/meeting-agenda.md)** for minute-by-minute timing
+1. **Use [meeting agenda](meeting-1/handouts/agenda.md)** for minute-by-minute timing
 2. **Keep [leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md)** at your side for quick reference
 3. **Pull from [discussion-guide.md](meeting-1/leadership/discussion-guide.md)** if discussion needs prompting
 4. **Distribute [action items tracker](meeting-1/handouts/action-items-tracker.md)** during commitment segment
 
 ### After Meeting
 
-1. **Complete [retrospective-template.md](meeting-1/retrospective-template.md)** within 24 hours
+1. **Complete [leadership/retrospective.md](meeting-1/leadership/retrospective.md)** within 24 hours
 2. **Send meeting notes** using [template](../templates/meeting-notes-template.md)
 3. **Share action item commitments** with all participants
 4. **Prepare next meeting materials** using this same workflow
@@ -303,7 +303,7 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 
 ### Time Management
 - Use the 60-minute standard structure
-- Keep [meeting agenda](meeting-1/handouts/meeting-agenda.md) visible for timing
+- Keep [meeting agenda](meeting-1/handouts/agenda.md) visible for timing
 - **Never skip action items segment** - critical for accountability
 - If running behind, shorten concepts review, not discussion or commitments
 

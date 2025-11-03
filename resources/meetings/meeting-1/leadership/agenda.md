@@ -226,7 +226,7 @@ By end of meeting, participants should:
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../outline.md)
+- **Complete facilitation guide:** [Outline](outline.md)
 - **Quick reference:** [Leader Cheatsheet](../leadership/leader-cheatsheet.md)
 - **All discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
 

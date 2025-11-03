@@ -44,4 +44,4 @@ Assume viewer is visual learner. Focus Ch 7-10 Accelerate. Create 10-15min visua
 ## Related Resources
 
 - **[Deep Dive Podcast (15-20 min)](podcast-deep-dive-default.md)** - Audio format
-- **[Meeting 3 Outline](../outline.md)** - Complete meeting structure
+- **[Meeting 3 Outline](../leadership/outline.md)** - Complete meeting structure

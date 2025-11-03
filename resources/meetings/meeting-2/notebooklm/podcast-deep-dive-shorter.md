@@ -32,4 +32,4 @@ Assume listener needs quick overview for book club. Focus Ch 4-6 Accelerate. Cre
 ## Related Resources
 
 - **[Default (15-20 min)](podcast-deep-dive-default.md)** - More comprehensive
-- **[Meeting 2 Outline](../outline.md)**
+- **[Meeting 2 Outline](../leadership/outline.md)**

@@ -45,5 +45,5 @@ Assume viewer is visual learner. Focus Ch 11,16,Conclusion Accelerate. Create 10
 ## Related Resources
 
 - **[Deep Dive Podcast (15-20 min)](podcast-deep-dive-default.md)** - Audio format
-- **[Meeting 4 Outline](../outline.md)** - Complete meeting structure
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/retrospective-template.md)** - Transformation roadmap template
+- **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
+- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Transformation roadmap template

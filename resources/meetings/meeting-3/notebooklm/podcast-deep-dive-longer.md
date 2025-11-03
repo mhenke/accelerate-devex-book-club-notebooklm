@@ -41,5 +41,5 @@ Assume listener wants comprehensive understanding. Focus Ch 7-10 Accelerate. Cre
 
 ## Related Resources
 
-- **[Meeting 3 Outline](../outline.md)**
+- **[Meeting 3 Outline](../leadership/outline.md)**
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Lean practices (15-19)

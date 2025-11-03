@@ -495,7 +495,7 @@ Sustainable transformation follows a continuous cycle:
 - [ING Case Study](ing-case-study.md) - Real-world transformation example
 
 **Assessments:**
-- [24 Capabilities Assessment](../../../../../../assessments/24-capabilities-assessment.md) - Comprehensive evaluation
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Comprehensive evaluation
 
 ---
 

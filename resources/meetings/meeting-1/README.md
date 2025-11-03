@@ -9,7 +9,7 @@ This first meeting establishes the foundation for understanding high-performing 
 ## Resources in This Folder
 
 ### Facilitator Resources
-- **[Outline](outline.md)** - Complete facilitator guide with timing, discussion questions, and activities
+- **[Outline](leadership/outline.md)** - Complete facilitator guide with timing, discussion questions, and activities
 - **[Leader Cheatsheet](leadership/leader-cheatsheet.md)** - 1-page quick reference for meeting facilitation
 - **[Chapter Notes](chapter-notes.md)** - Detailed summaries of chapters 1-3 concepts
 
@@ -37,7 +37,7 @@ Generate supplementary podcasts and videos using NotebookLM Prompts (in this fol
 
 ### For Facilitators
 1. ✅ Read chapters 1-3 thoroughly
-2. ✅ Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](outline.md)
+2. ✅ Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](leadership/outline.md)
 3. ✅ Generate optional [NotebookLM content](notebooklm/) and review
 4. ✅ Prepare [DORA Metrics Template](../../assessments/dora-metrics-template.md) for distribution
 5. ✅ Review [Key Question](../../key-questions.md#meeting-1) to frame discussion

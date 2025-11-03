@@ -226,6 +226,6 @@ Help listeners prepare to discuss:
 
 ## Related Resources
 
-- **[Meeting 1 Outline](../outline.md)** - Complete meeting structure
+- **[Meeting 1 Outline](../leadership/outline.md)** - Complete meeting structure
 - **[Meeting 1 Discussion Guide](../../meetings/meeting-1/leadership/discussion-guide.md)** - Questions for exploration
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 1
