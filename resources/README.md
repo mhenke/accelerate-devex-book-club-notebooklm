@@ -16,7 +16,7 @@ This directory contains all supporting materials for the Accelerate DevEx Book C
 **Quick prep checklist:**
 - ✅ Read [book-club-plan.md](book-club-plan.md) for program structure and facilitation guidance
 - ✅ Print [handouts](handouts/) for participants (2-3 days before each meeting)
-- ✅ Review [meeting outline](meetings/) and [leader cheatsheet](meetings/meeting-1/leader-cheatsheet.md)
+- ✅ Review [meeting outline](meetings/) and [leader cheatsheet](meetings/meeting-1/leadership/leader-cheatsheet.md)
 - ✅ Complete [baseline assessments](assessments/) before Meeting 1
 - ✅ Generate NotebookLM podcast from meeting's `notebooklm/` folder for pre-meeting prep (optional)
 
@@ -183,9 +183,9 @@ Templates for capturing meeting outcomes and reflections:
    - [Culture Assessment Worksheet](assessments/culture-assessment-worksheet.md)
 
 3. **Prepare Meeting 1 materials:**
-   - Print [Meeting 1 handouts](handouts/meeting-1/)
+   - Print [Meeting 1 handouts](meetings/meeting-1/handouts/)
    - Review [Meeting 1 outline](meetings/meeting-1/outline.md)
-   - Review [leader cheatsheet](meetings/meeting-1/leader-cheatsheet.md)
+   - Review [leader cheatsheet](meetings/meeting-1/leadership/leader-cheatsheet.md)
    - (Optional) Generate Deep Dive podcast from [meetings/meeting-1/notebooklm/](meetings/meeting-1/notebooklm/) for pre-meeting prep
 
 ### During Book Club (Weeks 1-7)
@@ -233,7 +233,7 @@ Templates for capturing meeting outcomes and reflections:
 | Meeting structure & outcomes | Meeting Format & Learning Objectives | [meeting-format-learning-objectives.md](meeting-format-learning-objectives.md) |
 | Core framing questions | Key Questions | [key-questions.md](key-questions.md) |
 | Meeting facilitation guide | Meeting Outlines | [meetings/](meetings/) |
-| Quick facilitator reference | Leader Cheatsheets | [meetings/meeting-X/leader-cheatsheet.md](meetings/meeting-1/leader-cheatsheet.md) |
+| Quick facilitator reference | Leader Cheatsheets | [meetings/meeting-X/leader-cheatsheet.md](meetings/meeting-1/leadership/leader-cheatsheet.md) |
 | Participant workbooks | Attendee Guides | [handouts/](handouts/) |
 | AI-generated prep content | NotebookLM Prompts | [meetings/meeting-X/notebooklm/](meetings/meeting-1/notebooklm/) |
 | NotebookLM documentation | Best Practices & Guides | [notebooklm-docs/](notebooklm-docs/) |
@@ -259,7 +259,7 @@ All resources can be customized:
 ### Questions?
 
 - **Facilitation best practices:** See [activities/discussion-practices.md](activities/discussion-practices.md)
-- **Meeting-specific guidance:** See [meetings/meeting-X/leader-cheatsheet.md](meetings/meeting-1/leader-cheatsheet.md)
+- **Meeting-specific guidance:** See [meetings/meeting-X/leader-cheatsheet.md](meetings/meeting-1/leadership/leader-cheatsheet.md)
 - **Assessment usage:** See [assessments/README.md](assessments/README.md)
 - **Printing handouts:** See [handouts/README.md](handouts/README.md)
 

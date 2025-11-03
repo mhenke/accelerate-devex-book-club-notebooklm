@@ -219,15 +219,15 @@ ________________________________________________________________
 
 **Preview question:** _Which of our current architectural or security practices create the most friction and dependencies for our teams?_
 
-**Optional prep:** Listen to [NotebookLM Brief podcast](../../notebooklm-prompts/podcasts/brief.md) (5-10 min)
+**Optional prep:** Listen to [NotebookLM Brief podcast](../notebooklm/podcast-brief.md) (5-10 min)
 
 ---
 
 ## Resources
 
-- **Full discussion questions:** [Discussion Guide](../../meetings/meeting-1/discussion-guide.md)
-- **Assessment tools:** [DORA Metrics Template](../../assessments/dora-metrics-template.md)
-- **Culture assessment:** [Westrum Culture Worksheet](../../assessments/culture-assessment-worksheet.md)
+- **Full discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
+- **Assessment tools:** [DORA Metrics Template](../../../assessments/dora-metrics-template.md)
+- **Culture assessment:** [Westrum Culture Worksheet](../../../assessments/culture-assessment-worksheet.md)
 
 ---
 

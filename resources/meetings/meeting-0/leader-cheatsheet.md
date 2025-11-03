@@ -130,7 +130,7 @@ This helps participants articulate their personal goals and creates buy-in from 
   - Review [Key Questions - Meeting 1](../../key-questions.md#meeting-1)
 - ✅ Share link to [Meeting 1 resources](../meeting-1/)
 - ✅ Confirm logistics (date/time/location)
-- ✅ (Optional) Generate and share [NotebookLM Brief Podcast](../../notebooklm-prompts/podcasts/brief.md)
+- ✅ (Optional) Generate and share [NotebookLM Brief Podcast](../meeting-1/notebooklm/podcast-brief.md)
 
 ### The 2-Month Journey at a Glance
 

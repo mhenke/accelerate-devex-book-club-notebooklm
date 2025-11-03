@@ -336,7 +336,7 @@ ___________________________________________________________________________
 
 ### Optional Prep
 
-- ⬜ Listen to [NotebookLM Brief Podcast](../../notebooklm-prompts/podcasts/brief.md)
+- ⬜ Listen to [NotebookLM Brief Podcast](../meeting-1/notebooklm/podcast-brief.md)
 - ⬜ Review [DORA Metrics Template](../../assessments/dora-metrics-template.md)
 - ⬜ Document current deployment practices
 
@@ -360,8 +360,8 @@ ___________________________________________________________________________
 
 - ⬜ [DORA Metrics Template](../../assessments/dora-metrics-template.md) handouts
 - ⬜ 24 Capabilities Assessment results summary
-- ⬜ [Discussion Guide](../meeting-1/discussion-guide.md) questions
-- ⬜ [Leader Cheatsheet](../meeting-1/leader-cheatsheet.md)
+- ⬜ [Discussion Guide](../meeting-1/leadership/discussion-guide.md) questions
+- ⬜ [Leader Cheatsheet](../meeting-1/leadership/leader-cheatsheet.md)
 - ⬜ Whiteboard/flipchart for examples
 
 ---

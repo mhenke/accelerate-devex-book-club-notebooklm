@@ -107,8 +107,8 @@
 ## Related Resources
 
 - **Complete facilitation guide:** [Outline](../../meetings/meeting-3/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-3/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../../meetings/meeting-3/discussion-guide.md)
+- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-3/leadership/leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](../../meetings/meeting-3/leadership/discussion-guide.md)
 
 ---
 

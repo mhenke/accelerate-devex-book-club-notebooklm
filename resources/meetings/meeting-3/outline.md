@@ -64,7 +64,7 @@
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 3 Podcast Prompt](../notebooklm-prompts/meeting-3-podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 3 Podcast Prompts](notebooklm/)
 
 ### Video Summary
 

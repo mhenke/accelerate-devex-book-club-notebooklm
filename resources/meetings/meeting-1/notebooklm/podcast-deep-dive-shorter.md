@@ -122,5 +122,5 @@ Assume listener is developer/manager needing quick overview before book club. Fo
 ## Related Resources
 
 - **[Meeting 1 Outline](../../meetings/meeting-1/outline.md)** - Complete meeting structure
-- **[Meeting 1 Attendee Guide](../../handouts/meeting-1/attendee-guide.md)** - Printable workbook
+- **[Meeting 1 Attendee Guide](../meeting-1/handouts/attendee-guide.md)** - Printable workbook
 - **[Key Questions](../../key-questions.md)** - Core framing question for Meeting 1

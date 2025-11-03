@@ -70,5 +70,5 @@ Assume listener needs quick overview. Focus Ch 7-10 Accelerate. Create 10-15min:
 ## Related Resources
 
 - **[Meeting 3 Outline](../../meetings/meeting-3/outline.md)** - Complete meeting structure
-- **[Meeting 3 Attendee Guide](../../handouts/meeting-3/attendee-guide.md)** - Printable workbook (when created)
+- **[Meeting 3 Attendee Guide](../meeting-3/handouts/attendee-guide.md)** - Printable workbook (when created)
 - **[Key Questions](../../key-questions.md)** - Core framing question for Meeting 3
