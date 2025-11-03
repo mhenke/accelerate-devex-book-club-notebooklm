@@ -4,7 +4,7 @@
 
 ## Core Framing Question
 
-> **See [Key Questions - Meeting 1](../../key-questions.md#meeting-1)**
+> **See [Key Questions - Meeting 1](../../../key-questions.md#meeting-1)**
 
 **"How do we currently _perceive_ and _measure_ performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?"**
 
@@ -195,4 +195,4 @@ Preview question to consider:
 
 ---
 
-[← Meeting 1 Resources](README.md) | [Key Questions](../../key-questions.md) →
+[← Meeting 1 Resources](../README.md) | [Key Questions](../../../key-questions.md) →
