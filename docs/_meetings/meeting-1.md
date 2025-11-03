@@ -522,11 +522,12 @@ document.addEventListener('keydown', function(event) {
       <p>A comprehensive guide to understanding DORA metrics, culture transformation, and the foundational concepts that drive high-performing teams. This resource complements Chapters 1-3 and provides practical frameworks for measuring and improving your organization's software delivery capability.</p>
       <p><strong>Meeting Resource:</strong> <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/Accelerating-Software-Delivery.pdf" class="resource-link" target="_blank"><strong>Download Guide (PDF)</strong></a></p>
     </div>
-
     <div class="resource-callout">
       <h3><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Culture Must Come First</h3>
-      <p>The single most common mistake in DevOps transformation is jumping straight to metrics without building a healthy culture foundation. Without trust, measurement becomes surveillance rather than improvement.</p>
+      <p>The single most common mistake in DevOps transformation is jumping straight to metrics without building a healthy culture foundation. Without trust, measurement becomes surveillance rather than improvement. Use Westrum's validated assessment to establish a baseline and track improvements over time.</p>
       <p><strong>Required Reading:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-before-metrics.md" class="resource-link"><strong>Culture Before Metrics</strong></a></p>
+      <p><strong>Interactive Assessment:</strong> <a href="/accelerate-devex-book-club-notebooklm/culture-assessment" class="resource-link"><strong>Take the Culture Assessment</strong></a></p>
+      <p><strong>Printable Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-assessment.md" class="resource-link"><strong>Culture Assessment Handout</strong></a></p>
     </div>
 
     <div class="resource-callout">
@@ -539,13 +540,6 @@ document.addEventListener('keydown', function(event) {
       <h3><i class="fas fa-sync" aria-hidden="true"></i> The Virtuous Cycle</h3>
       <p>Culture isn't fixed—you can act your way to better culture. Understand how technical practices create better interactions, which create generative culture, which enables high performance.</p>
       <p><strong>Change Model:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-change-model.md" class="resource-link"><strong>Acting Your Way to Better Culture</strong></a></p>
-    </div>
-
-    <div class="resource-callout">
-      <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Culture Assessment</h3>
-      <p>Measure your organization's culture using Westrum's validated survey questions with Likert-scale ratings. Establish a baseline, track improvements over time, and identify specific areas for cultural transformation.</p>
-      <p><strong>Interactive Assessment:</strong> <a href="/accelerate-devex-book-club-notebooklm/culture-assessment" class="resource-link"><strong>Take the Culture Assessment</strong></a></p>
-      <p><strong>Printable Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/handouts/culture-assessment.md" class="resource-link"><strong>Culture Assessment Handout</strong></a></p>
     </div>
   </div>
 </div>
