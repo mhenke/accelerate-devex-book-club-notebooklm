@@ -64,9 +64,9 @@ This immediately surfaces deployment pain and makes the research personal.
 
 ### Assessments to Use This Meeting
 
-- **[DORA Metrics Template](../../assessments/dora-metrics-template.md)** - Distribute for baseline tracking
-- **[Culture Assessment Worksheet](../../assessments/culture-assessment-worksheet.md)** - Help participants identify culture type
-- **[24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)** - Optional: Establish complete baseline
+- **[DORA Metrics Template](../../../assessments/dora-metrics-template.md)** - Distribute for baseline tracking
+- **[Culture Assessment Worksheet](../../../assessments/culture-assessment-worksheet.md)** - Help participants identify culture type
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Optional: Establish complete baseline
 
 ### Time-Saving Tips
 
@@ -92,17 +92,17 @@ This immediately surfaces deployment pain and makes the research personal.
 
 ### Materials Needed
 
-- ✅ Copies of [DORA Metrics Template](../../assessments/dora-metrics-template.md)
+- ✅ Copies of [DORA Metrics Template](../../../assessments/dora-metrics-template.md)
 - ✅ [Discussion Guide](discussion-guide.md) questions ready
 - ✅ Whiteboard/flipchart for capturing examples
-- ✅ [Meeting Notes Template](../../templates/meeting-notes-template.md)
+- ✅ [Meeting Notes Template](../../../templates/meeting-notes-template.md)
 
 ### Critical Success Factors
 
 1. **Establish Psychological Safety**
    - Emphasize: deployment pain is system problem, not personal failure
    - Model vulnerability by sharing your own struggles
-   - Use [Discussion Practices](../../activities/discussion-practices.md)
+   - Use [Discussion Practices](../../../activities/discussion-practices.md)
 
 2. **Ground in Evidence**
    - Reference research constantly: "23,000+ surveys over 4 years"
@@ -135,15 +135,15 @@ This immediately surfaces deployment pain and makes the research personal.
 
 ### Post-Meeting Follow-Up
 
-- ✅ Send [Meeting Notes](../../templates/meeting-notes-template.md) within 24 hours
-- ✅ Share [Meeting 2 resources](../meeting-2/) for preparation
+- ✅ Send [Meeting Notes](../../../templates/meeting-notes-template.md) within 24 hours
+- ✅ Share [Meeting 2 resources](../../meeting-2/) for preparation
 - ✅ Check in on action items before next meeting
 - ✅ Generate and share [NotebookLM podcasts](../notebooklm/) if not done pre-meeting
 
 ---
 
-**Need more detail?** See full [Meeting Outline](outline.md)
+**Need more detail?** See full [Meeting Outline](../outline.md)
 
 **Questions during facilitation?** Refer to [Discussion Guide](discussion-guide.md)
 
-**Having issues?** Review [Discussion Practices](../../activities/discussion-practices.md)
+**Having issues?** Review [Discussion Practices](../../../activities/discussion-practices.md)
