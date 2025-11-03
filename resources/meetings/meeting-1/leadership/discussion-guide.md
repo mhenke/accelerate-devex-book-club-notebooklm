@@ -1,6 +1,14 @@
-# Meeting 1 Discussion Guide
+# Meeting 1 Discussion Questions Resource Bank
 
 **Laying the Foundation – The Myth and the Measurement**
+
+## Purpose of This Document
+
+This is a **question bank** containing 40+ discussion questions for Meeting 1. **You will NOT use all of these questions.** Facilitators should select 8-10 questions that best fit their team's context and the 60-minute meeting format.
+
+See [Quick Start Guide](#quick-start-recommended-meeting-flow) below for a default meeting flow, or browse the [Question Bank](#question-bank-all-options) to customize your discussion.
+
+---
 
 ## Core Framing Question
 
@@ -12,9 +20,41 @@ This question challenges common metrics (lines of code, velocity) and prompts ev
 
 ---
 
-## Open Discussion Questions
+## Quick Start: Recommended Meeting Flow
 
-### Understanding Current State
+**Total Time: 60 minutes | Questions Used: 10-12**
+
+### Opening (5 min)
+- **Icebreaker (Question 6):** "On a scale of 1-10, how anxious are you before a production deployment? What specific factors contribute to that anxiety?"
+
+### Part 1: Understanding DORA Metrics (15 min)
+- **Question 1:** What metrics does your organization currently use to assess software delivery performance?
+- **Question 3:** If you could only track one metric starting tomorrow, which DORA metric would you choose and why?
+- **Question 17:** Which DORA metric would be easiest to improve? Which would be hardest?
+
+### Part 2: Speed vs. Stability Myth (15 min)
+- **Question 13:** Before reading the book, did you believe there was a trade-off between speed and stability?
+- **Question 14:** How does the research finding (46x, 440x, 170x) challenge assumptions in your organization?
+- **Question 16:** Can you think of a time when slowing down deployment actually made things worse?
+
+### Part 3: Culture & Change (10 min)
+- **Question 9:** Using Westrum's model, what culture type best describes your organization?
+- **Question 21:** Do you believe culture can be changed through implementing technical practices?
+
+### Part 4: Commitment & Action (10 min)
+- **Question 37:** Which DORA metric will you start tracking before Meeting 2?
+- **Question 39:** What deployment pain point will you document or address?
+
+### Wrap-Up (5 min)
+- **Question 36:** What's your biggest takeaway from Meeting 1?
+
+---
+
+## Question Bank: All Options
+
+**Instructions:** Browse questions below and select 8-10 that fit your team's context. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical 60-minute meeting.
+
+### Section A: Understanding Current State
 
 **On Performance Measurement:**
 1. What metrics does your organization currently use to assess software delivery performance?
@@ -34,7 +74,7 @@ This question challenges common metrics (lines of code, velocity) and prompts ev
 11. What happens when someone brings bad news to leadership or management?
 12. Can you identify specific behaviors that indicate your organization's culture type?
 
-### Exploring Concepts
+### Section B: Exploring Concepts
 
 **On the Speed vs. Stability Myth:**
 13. Before reading the book, did you believe there was a trade-off between speed and stability? What examples influenced that belief?
@@ -69,7 +109,7 @@ This question challenges common metrics (lines of code, velocity) and prompts ev
 - "Who has influence over this?"
 - "What small experiment could we try?"
 
-### Real-World Scenarios
+### Section C: Real-World Scenarios
 
 **Scenario 1: The Metrics Debate**
 Your manager wants to start tracking individual developer productivity using lines of code and story points completed. How would you use concepts from chapters 1-3 to propose an alternative?
@@ -95,7 +135,7 @@ Your team wants to adopt trunk-based development, but another team insists on lo
 - How does culture impact technical choices?
 - What conversation might bridge the gap?
 
-### Team Self-Assessment
+### Section D: Team Self-Assessment
 
 **Deployment Frequency:**
 25. How often does your team deploy to production?
@@ -133,7 +173,7 @@ Your team wants to adopt trunk-based development, but another team insists on lo
 
 32. What typically causes deployment failures?
 
-### Reflection and Commitment
+### Section E: Reflection and Commitment
 
 **Personal Reflection:**
 33. What surprised you most in chapters 1-3?
@@ -149,30 +189,51 @@ Your team wants to adopt trunk-based development, but another team insists on lo
 
 ---
 
-## Using This Discussion Guide
+## How to Customize Your Discussion
 
 ### For Facilitators
 
-- **Don't try to cover all questions** - Select 8-10 most relevant for your group
-- **Start with current state** questions to ground discussion in experience
-- **Use follow-up prompts** to deepen superficial answers
-- **Reference scenarios** when abstract discussion needs concrete grounding
-- **End with commitment** questions to drive action
+**Step 1: Choose Your Approach**
+- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (10-12 pre-selected questions)
+- **Option B:** Build custom discussion by selecting 8-10 questions from the [Question Bank](#question-bank-all-options)
+
+**Step 2: Selection Guidelines**
+- **Always include:** 1-2 questions from Section E (Reflection & Commitment) at the end
+- **Start with current state:** Select 2-3 questions from Section A to ground discussion in team's experience
+- **Focus on 1-2 key concepts:** Choose either speed/stability myth OR culture change, not both in depth
+- **Use scenarios sparingly:** Pick 1 scenario only if time permits (adds 10 minutes)
+
+**Step 3: Facilitation Tips**
+- **Use follow-up prompts** provided in each section to deepen superficial answers
+- **Reference book statistics** (46x, 440x, 170x) when challenging assumptions
+- **Capture commitments** in writing - these become Meeting 2 accountability check-ins
+- **If running short on time:** Skip scenarios, keep reflection questions
 
 ### For Participants
 
-- **Come prepared** with specific examples from your work
-- **Be honest** about current state - psychological safety is essential
-- **Challenge assumptions** constructively and respectfully
-- **Connect to evidence** from the research
-- **Commit to action** - select one metric to track
+- **Come prepared** with specific examples from your work (deployment stories, culture observations)
+- **Be honest** about current state - psychological safety is essential for real discussion
+- **Challenge assumptions** constructively - this is a learning space
+- **Connect to evidence** from chapters 1-3 when making points
+- **Commit to action** - you'll be asked which metric you'll track before Meeting 2
 
-### Time Management
+### Meeting Time Allocation (60 minutes)
 
-- **Current State (15 min):** Questions 1-12
-- **Exploring Concepts (20 min):** Questions 13-24 (select 6-8)
-- **Scenarios or Self-Assessment (10 min):** Choose 1 scenario OR do quick self-assessment
-- **Reflection & Commitment (10 min):** Questions 33-40
+**Using Quick Start Guide:**
+- Opening/Icebreaker: 5 min
+- Part 1 (DORA Metrics): 15 min
+- Part 2 (Speed vs Stability): 15 min
+- Part 3 (Culture): 10 min
+- Part 4 (Commitment): 10 min
+- Wrap-Up: 5 min
+
+**Custom Discussion Flow:**
+- Opening: 5 min (1 icebreaker question)
+- Current State: 10-15 min (2-3 questions from Section A)
+- Core Concepts: 20-25 min (4-6 questions from Section B)
+- Scenarios OR Self-Assessment: 5-10 min (optional)
+- Reflection & Commitment: 10 min (2-3 questions from Section E)
+- Wrap-Up: 5 min
 
 ---
 
