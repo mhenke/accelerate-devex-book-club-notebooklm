@@ -89,13 +89,13 @@ Observability and alerting for rapid problem detection
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 2 Podcast Prompt](podcast-prompt.md)
+Generate a discussion podcast using the [Meeting 2 Podcast Prompts](notebooklm/)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 2 Video Prompt](video-prompt.md)
+Create a visual overview with the [Meeting 2 Video Prompt](notebooklm/video.md)
 
 ## Navigation
 
-- Previous [Meeting 1: Laying the Foundation](../meeting-1/meeting-guide.md)
-- Next [Meeting 3: Management, Product Development & Sustainability](../meeting-3/meeting-guide.md)
+- Previous [Meeting 1: Laying the Foundation](../meeting-1/outline.md)
+- Next [Meeting 3: Management, Product Development & Sustainability](../meeting-3/outline.md)

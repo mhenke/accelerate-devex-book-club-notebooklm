@@ -68,9 +68,9 @@ Generate a discussion podcast using the [Meeting 3 Podcast Prompts](notebooklm/)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 3 Video Prompt](video-prompt.md)
+Create a visual overview with the [Meeting 3 Video Prompt](notebooklm/video.md)
 
 ## Navigation
 
-- Previous [Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/meeting-guide.md)
-- Next [Meeting 4: Leadership, Research Methods & Transformation](../meeting-4/meeting-guide.md)
+- Previous [Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/outline.md)
+- Next [Meeting 4: Leadership, Research Methods & Transformation](../meeting-4/outline.md)
