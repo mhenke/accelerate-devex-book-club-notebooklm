@@ -130,8 +130,8 @@
 ## Related Resources
 
 - **Complete facilitation guide:** [Outline](../../meetings/meeting-2/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-2/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../../meetings/meeting-2/discussion-guide.md)
+- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-2/leadership/leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](../../meetings/meeting-2/leadership/discussion-guide.md)
 - **Assessments:** [24 Capabilities](../../assessments/24-capabilities-assessment.md)
 
 ---

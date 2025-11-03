@@ -138,7 +138,7 @@ This immediately surfaces deployment pain and makes the research personal.
 - ✅ Send [Meeting Notes](../../templates/meeting-notes-template.md) within 24 hours
 - ✅ Share [Meeting 2 resources](../meeting-2/) for preparation
 - ✅ Check in on action items before next meeting
-- ✅ Generate and share [NotebookLM podcasts](../../notebooklm-prompts/) if not done pre-meeting
+- ✅ Generate and share [NotebookLM podcasts](../notebooklm/) if not done pre-meeting
 
 ---
 

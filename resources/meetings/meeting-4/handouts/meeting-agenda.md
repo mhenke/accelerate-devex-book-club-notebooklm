@@ -107,5 +107,5 @@
 ## Related Resources
 
 - **Complete facilitation guide:** [Outline](../../meetings/meeting-4/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-4/leader-cheatsheet.md)
+- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-4/leadership/leader-cheatsheet.md)
 - **Retrospective:** [Transformation Template](../../meetings/meeting-4/retrospective-template.md)

@@ -29,16 +29,16 @@ This directory contains complete facilitator guides and supporting materials for
 
 **In [meeting-1/](meeting-1/) folder:**
 - **[outline.md](meeting-1/outline.md)** - Complete meeting structure with objectives, timing, discussion flow
-- **[leader-cheatsheet.md](meeting-1/leader-cheatsheet.md)** - 1-page quick reference for facilitators
-- **[discussion-guide.md](meeting-1/discussion-guide.md)** - 40+ open-ended discussion questions and scenarios
+- **[leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md)** - 1-page quick reference for facilitators
+- **[discussion-guide.md](meeting-1/leadership/discussion-guide.md)** - 40+ open-ended discussion questions and scenarios
 - **[chapter-notes.md](meeting-1/chapter-notes.md)** - Detailed summaries of chapters 1-3
 - **[retrospective-template.md](meeting-1/retrospective-template.md)** - Post-meeting reflection format
 - **[README.md](meeting-1/README.md)** - Complete resource index and prep guide
 
-**Related handouts (in [../handouts/meeting-1/](../handouts/meeting-1/)):**
-- [Attendee Guide](../handouts/meeting-1/attendee-guide.md) - Printable participant workbook
-- [Meeting Agenda](../handouts/meeting-1/meeting-agenda.md) - 60-minute structured agenda
-- [Action Items Tracker](../handouts/meeting-1/action-items-tracker.md) - Commitment tracking sheet
+**Related handouts (in [meeting-1/handouts/](meeting-1/handouts/)):**
+- [Attendee Guide](meeting-1/handouts/attendee-guide.md) - Printable participant workbook
+- [Meeting Agenda](meeting-1/handouts/meeting-agenda.md) - 60-minute structured agenda
+- [Action Items Tracker](meeting-1/handouts/action-items-tracker.md) - Commitment tracking sheet
 
 **Related assessments:**
 - [DORA Metrics Template](../assessments/dora-metrics-template.md) - Establish baseline
@@ -70,7 +70,7 @@ This directory contains complete facilitator guides and supporting materials for
 - leader-cheatsheet.md - 1-page facilitator reference
 - discussion-guide.md - Open-ended questions
 
-**Related handouts (to create in [../handouts/meeting-2/](../handouts/meeting-2/)):**
+**Related handouts (to create in [meeting-2/handouts/](meeting-2/handouts/)):**
 - Attendee Guide - Printable participant workbook
 - Meeting Agenda - 60-minute structured agenda
 - Action Items Tracker - Commitment tracking sheet
@@ -105,7 +105,7 @@ This directory contains complete facilitator guides and supporting materials for
 - leader-cheatsheet.md - 1-page facilitator reference
 - discussion-guide.md - Open-ended questions
 
-**Related handouts (to create in [../handouts/meeting-3/](../handouts/meeting-3/)):**
+**Related handouts (to create in [meeting-3/handouts/](meeting-3/handouts/)):**
 - Attendee Guide - Printable participant workbook
 - Meeting Agenda - 60-minute structured agenda
 - Action Items Tracker - Commitment tracking sheet
@@ -140,7 +140,7 @@ This directory contains complete facilitator guides and supporting materials for
 - leader-cheatsheet.md - 1-page facilitator reference
 - discussion-guide.md - Open-ended questions
 
-**Related handouts (to create in [../handouts/meeting-4/](../handouts/meeting-4/)):**
+**Related handouts (to create in [meeting-4/handouts/](meeting-4/handouts/)):**
 - Attendee Guide - Printable participant workbook
 - Meeting Agenda - 60-minute structured agenda
 - Action Items Tracker - Commitment tracking sheet
@@ -250,8 +250,8 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 
 1. **Facilitator prep:**
    - Read [outline.md](meeting-1/outline.md) for complete meeting plan
-   - Review [leader-cheatsheet.md](meeting-1/leader-cheatsheet.md) for quick reference
-   - Scan [discussion-guide.md](meeting-1/discussion-guide.md) for question options
+   - Review [leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md) for quick reference
+   - Scan [discussion-guide.md](meeting-1/leadership/discussion-guide.md) for question options
    - Read [chapter-notes.md](meeting-1/chapter-notes.md) to refresh on key concepts
 
 2. **Materials prep:**
@@ -261,15 +261,15 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 
 3. **Logistics:**
    - Send calendar invite with chapters to read
-   - Distribute [Attendee Guide](../handouts/meeting-1/attendee-guide.md)
+   - Distribute [Attendee Guide](meeting-1/handouts/attendee-guide.md)
    - Confirm room setup (circle or U-shape seating preferred)
 
 ### During Meeting
 
-1. **Use [meeting agenda](../handouts/meeting-1/meeting-agenda.md)** for minute-by-minute timing
-2. **Keep [leader-cheatsheet.md](meeting-1/leader-cheatsheet.md)** at your side for quick reference
-3. **Pull from [discussion-guide.md](meeting-1/discussion-guide.md)** if discussion needs prompting
-4. **Distribute [action items tracker](../handouts/meeting-1/action-items-tracker.md)** during commitment segment
+1. **Use [meeting agenda](meeting-1/handouts/meeting-agenda.md)** for minute-by-minute timing
+2. **Keep [leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md)** at your side for quick reference
+3. **Pull from [discussion-guide.md](meeting-1/leadership/discussion-guide.md)** if discussion needs prompting
+4. **Distribute [action items tracker](meeting-1/handouts/action-items-tracker.md)** during commitment segment
 
 ### After Meeting
 
@@ -296,14 +296,14 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 ## Best Practices for Facilitators
 
 ### Creating Psychological Safety
-- Start each meeting with icebreaker (see [leader-cheatsheet.md](meeting-1/leader-cheatsheet.md))
+- Start each meeting with icebreaker (see [leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md))
 - Use [discussion practices](../activities/discussion-practices.md) ground rules
 - Focus on learning, not blaming
 - Celebrate progress, however small
 
 ### Time Management
 - Use the 60-minute standard structure
-- Keep [meeting agenda](../handouts/meeting-1/meeting-agenda.md) visible for timing
+- Keep [meeting agenda](meeting-1/handouts/meeting-agenda.md) visible for timing
 - **Never skip action items segment** - critical for accountability
 - If running behind, shorten concepts review, not discussion or commitments
 
@@ -311,13 +311,13 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 - Use round-robin format to hear from everyone
 - Balance theory with practical application to your team's work
 - Connect discussions to team's DORA metrics and pain points
-- Use scenarios from [discussion-guide.md](meeting-1/discussion-guide.md) to make concepts concrete
+- Use scenarios from [discussion-guide.md](meeting-1/leadership/discussion-guide.md) to make concepts concrete
 
 ### Between-Meeting Accountability
 - Check in on progress mid-cycle
-- Use [action items tracker](../handouts/meeting-1/action-items-tracker.md) to review at start of next meeting
+- Use [action items tracker](meeting-1/handouts/action-items-tracker.md) to review at start of next meeting
 - Follow [between-meetings activities](../activities/between-meetings.md)
 
 ---
 
-**Questions about facilitation?** See [discussion practices](../activities/discussion-practices.md) or Meeting 1 [leader-cheatsheet.md](meeting-1/leader-cheatsheet.md)
+**Questions about facilitation?** See [discussion practices](../activities/discussion-practices.md) or Meeting 1 [leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md)

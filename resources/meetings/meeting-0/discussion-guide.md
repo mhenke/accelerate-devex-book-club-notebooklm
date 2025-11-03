@@ -185,7 +185,7 @@ Before Meeting 1, explore these resources:
 - ⬜ Complete [24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)
 
 **Optional:**
-- ⬜ Listen to [NotebookLM Brief Podcast](../../notebooklm-prompts/podcasts/brief.md)
+- ⬜ Listen to [NotebookLM Brief Podcast](../meeting-1/notebooklm/podcast-brief.md)
 - ⬜ Review [DORA Metrics Template](../../assessments/dora-metrics-template.md)
 - ⬜ Document current deployment practices and pain points
 

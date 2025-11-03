@@ -359,7 +359,7 @@ ___________________________________________________________________________
 
 ### Optional Prep
 
-- ⬜ Listen to Meeting 3 [NotebookLM podcast](../../notebooklm-prompts/podcasts/brief.md)
+- ⬜ Listen to Meeting 3 [NotebookLM podcast](../meeting-3/notebooklm/podcast-brief.md)
 - ⬜ Review [24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md) - focus on lean management (15-19)
 - ⬜ Observe deployment pain levels in your team
 
@@ -381,7 +381,7 @@ ___________________________________________________________________________
 
 ### Materials Needed for Meeting 3
 
-- ⬜ Updated [handouts](../../handouts/meeting-3/)
+- ⬜ Updated [handouts](../meeting-3/handouts/)
 - ⬜ CD experiment results
 - ⬜ Updated DORA metrics
 - ⬜ Architecture coupling documentation

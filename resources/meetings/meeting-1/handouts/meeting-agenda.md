@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome participants and review meeting objectives
 - ✅ **Icebreaker:** "Share one deployment anxiety story from your experience"
-- ✅ Review [Discussion Practices](../../activities/discussion-practices.md) ground rules
+- ✅ Review discussion practices ground rules
 
 **Materials:**
 - [Attendee Guide](attendee-guide.md) - printed for all participants
@@ -129,7 +129,7 @@
 
 **Materials:**
 - Meeting 2 preview handout (optional)
-- [NotebookLM podcast links](../../notebooklm-prompts/) for Meeting 2 prep
+- NotebookLM podcast links for Meeting 2 prep
 
 ---
 
@@ -138,14 +138,14 @@
 ### Before Meeting (1 week prior):
 - ⬜ Send calendar invite with chapters to read
 - ⬜ Share [Attendee Guide](attendee-guide.md) as prep material
-- ⬜ (Optional) Generate and share [NotebookLM Brief podcast](../../notebooklm-prompts/podcasts/brief.md)
-- ⬜ Review [Leader Cheatsheet](../../meetings/meeting-1/leader-cheatsheet.md)
+- ⬜ (Optional) Generate and share [NotebookLM Brief podcast](../notebooklm/podcast-brief.md)
+- ⬜ Review [Leader Cheatsheet](../leadership/leader-cheatsheet.md)
 
 ### Before Meeting (1 day prior):
 - ⬜ Print [Attendee Guide](attendee-guide.md) for all participants
 - ⬜ Print [Action Items Tracking Sheet](action-items-tracker.md)
 - ⬜ Prepare DORA metrics visual
-- ⬜ Review discussion questions in [Discussion Guide](../../meetings/meeting-1/discussion-guide.md)
+- ⬜ Review discussion questions in [Discussion Guide](../leadership/discussion-guide.md)
 
 ### Day of Meeting:
 - ⬜ Arrive 10 minutes early
@@ -155,7 +155,7 @@
 - ⬜ Have backup discussion questions ready
 
 ### After Meeting (within 24 hours):
-- ⬜ Send meeting notes using [Meeting Notes Template](../../templates/meeting-notes-template.md)
+- ⬜ Send meeting notes using [Meeting Notes Template](../../../templates/meeting-notes-template.md)
 - ⬜ Share action items commitments with all participants
 - ⬜ Send Meeting 2 preparation materials
 - ⬜ (Optional) Schedule 1-on-1 check-ins for those who need support
@@ -172,8 +172,8 @@
 
 **Optional but Helpful:**
 - ✅ Name tags
-- ✅ [DORA Metrics Template](../../assessments/dora-metrics-template.md) - printed copies
-- ✅ [Culture Assessment Worksheet](../../assessments/culture-assessment-worksheet.md) - printed copies
+- ✅ [DORA Metrics Template](../../../assessments/dora-metrics-template.md) - printed copies
+- ✅ [Culture Assessment Worksheet](../../../assessments/culture-assessment-worksheet.md) - printed copies
 - ✅ Laptop/projector for showing visuals
 - ✅ Timer for time management
 
@@ -182,7 +182,7 @@
 ## Time Management Tips
 
 **If Running Ahead:**
-- Use additional discussion questions from [Discussion Guide](../../meetings/meeting-1/discussion-guide.md)
+- Use additional discussion questions from [Discussion Guide](../leadership/discussion-guide.md)
 - Go deeper on culture discussion with scenario exploration
 - Allow more time for action items planning
 
@@ -226,11 +226,10 @@ By end of meeting, participants should:
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../../meetings/meeting-1/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../meetings/meeting-1/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../../meetings/meeting-1/discussion-guide.md)
-- **Facilitation best practices:** [Discussion Practices](../../activities/discussion-practices.md)
+- **Complete facilitation guide:** [Outline](../outline.md)
+- **Quick reference:** [Leader Cheatsheet](../leadership/leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
 
 ---
 
-**Next Meeting:** [Meeting 2 Agenda](../meeting-2/meeting-agenda.md)
+**Next Meeting:** [Meeting 2 Agenda](../../meeting-2/handouts/meeting-agenda.md)
