@@ -10,7 +10,7 @@
 |------|----------|-------|
 | **0-5 min** | Welcome & Check-in | Icebreaker: "Share one deployment anxiety story" |
 | **5-15 min** | DORA Metrics Overview | Focus on "what" not "how to measure" |
-| **15-30 min** | Speed + Stability Discussion | Use [Key Question](../../key-questions.md#meeting-1) |
+| **15-30 min** | Speed + Stability Discussion | Use [Key Question](../../../key-questions.md#meeting-1) |
 | **30-40 min** | Westrum Culture Types | Have participants self-assess using examples |
 | **40-45 min** | AI Tool Spotlight | Demo NotebookLM summary to reinforce key concepts |
 | **45-55 min** | Action Items & Commitments | Each person commits to one metric to track |
@@ -71,7 +71,7 @@ This immediately surfaces deployment pain and makes the research personal.
 ### Time-Saving Tips
 
 ✅ **Do:**
-- Use [Key Question](../../key-questions.md#meeting-1) to focus discussion
+- Use [Key Question](../../../key-questions.md#meeting-1) to focus discussion
 - Reference specific page numbers/quotes from book
 - Encourage personal examples over abstract discussion
 - Keep DORA metrics explanation simple (detailed measurement in Meeting 2)
