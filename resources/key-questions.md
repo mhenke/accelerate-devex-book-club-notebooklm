@@ -3,7 +3,7 @@
 This document contains the central reflection questions that connect all four meetings of the book club. These questions are designed to help your team explore how technical systems, team culture, and organizational performance are deeply intertwined and mutually reinforcing.
 
 <a id="overall"></a>
-## Overall Framing Question
+## Overall Framing Question <a class="permalink" href="#overall" aria-hidden="true">¶</a>
 
 Throughout your reading of _Accelerate_, return to this central question:
 
@@ -14,7 +14,7 @@ This question serves as the thread connecting each meeting, reflecting the book'
 ---
 
 <a id="meeting-1"></a>
-## Meeting 1: The Foundation
+## Meeting 1: The Foundation <a class="permalink" href="#meeting-1" aria-hidden="true">¶</a>
 
 **Chapters:** 1-3 (Accelerate, Measuring Performance, Measuring and Changing Culture)
 
@@ -32,7 +32,7 @@ This question directly challenges the common metrics discussed in Chapter 2 (lin
 ---
 
 <a id="meeting-2"></a>
-## Meeting 2: The Technical Engine
+## Meeting 2: The Technical Engine <a class="permalink" href="#meeting-2" aria-hidden="true">¶</a>
 
 **Chapters:** 4-6 (Technical Practices, Architecture, Integrating Infosec)
 
@@ -50,7 +50,7 @@ This question combines the central ideas of Chapters 4, 5, and 6. It asks the gr
 ---
 
 <a id="meeting-3"></a>
-## Meeting 3: The Human Systems
+## Meeting 3: The Human Systems <a class="permalink" href="#meeting-3" aria-hidden="true">¶</a>
 
 **Chapters:** 7-10 (Management Practices, Product Development, Making Work Sustainable, Employee Satisfaction)
 
@@ -68,7 +68,7 @@ This question creates a direct link between the Lean management practices in Cha
 ---
 
 <a id="meeting-4"></a>
-## Meeting 4: Leadership & Transformation
+## Meeting 4: Leadership & Transformation <a class="permalink" href="#meeting-4" aria-hidden="true">¶</a>
 
 **Chapters:** 11, 16, and Conclusion (Leaders and Managers, High-Performance Leadership case study, wrap-up)
 
