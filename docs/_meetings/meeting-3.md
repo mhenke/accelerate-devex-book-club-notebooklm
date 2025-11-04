@@ -607,22 +607,22 @@ document.addEventListener('keydown', function(event) {
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
     <h2>Discussion Questions</h2>
-    <p class="false-choice-subtitle">Reflect on these questions as a team to deepen your understanding</p>
+    <p class="false-choice-subtitle">Challenge assumptions with research-backed questions from the comprehensive discussion guide</p>
 
     <div class="discussion-questions-list">
       <div class="deployment-signal">
-        <h4>Lean Management & Approval Processes</h4>
-        <p>Which lean management practices do you currently use? How do approval processes affect delivery speed and team autonomy? Can everyone see work flow from ideation to delivery?</p>
+        <h4>The CAB Challenge (Controversial)</h4>
+        <p>Given the research showing CABs are <strong>negatively correlated with performance AND show ZERO stability improvement</strong>, what approval processes could replace your CAB? Who would need to be convinced, and what data would convince them?</p>
       </div>
 
       <div class="deployment-signal">
-        <h4>Deployment Pain & Work-Life Balance</h4>
-        <p>On a scale of 1-10, how painful are your deployments? What causes the anxiety? How does deployment stress affect work-life balance and burnout risk?</p>
+        <h4>The Burnout Causation Question (High-Impact)</h4>
+        <p>Research shows toxic workplace behavior predicts <strong>60% of burnout variance</strong>. Is burnout addressed on your team through individual interventions (resilience training, wellness programs) or systemic solutions (process improvements, workload management)? What systemic changes would reduce burnout more than individual training?</p>
       </div>
 
       <div class="deployment-signal">
-        <h4>Employee Engagement</h4>
-        <p>How would your team score on employee Net Promoter Score? Which of the four satisfaction pillars (meaningful work, learning, support, tools) needs the most improvement?</p>
+        <h4>The Batch Size Reality Check (Impactful)</h4>
+        <p>Your team deploys monthly releases containing 20-30 features. Last deployment caused an outage, and it took 6 hours to identify which of 25 changes caused the problem. Leadership proposes <strong>QUARTERLY</strong> releases to "reduce risk." How do you respond using the book's research on <strong>near-quadratic risk growth</strong> with batch size?</p>
       </div>
     </div>
 
