@@ -28,37 +28,29 @@ Research shows transformational leadership explains **18-50% of variance** in jo
 
 ## Quick Start: Recommended Meeting Flow
 
-**Total Time: 60 minutes | Questions Used: 10-12**
+**Full Meeting: 60 minutes (25 min core discussion + 35 min other activities) | Questions Used: 6-8**
 
-### Opening (5 min)
-- **Icebreaker (Question 3):** "Think of the best leader you've worked with. Which of the 5 transformational leadership characteristics did they demonstrate most strongly?"
+*Note: The agenda allocates 25 minutes for core discussion. Opening/wrap-up happen in other agenda sections (welcome, action items).*
 
-### Part 1: Transformational Leadership (15 min)
+### Part 1: Transformational Leadership (10 min)
 - **Question 1:** Of the 5 transformational leadership characteristics (vision, inspirational communication, intellectual stimulation, supportive leadership, personal recognition), which is strongest in your organization? Which needs most development?
 - **Question 5:** How do leaders in your organization respond when teams need time to fix technical debt or improve processes?
 - **Question 11:** Research shows transformational leadership explains 18-50% of variance in outcomes. What evidence of leadership impact do you see in your team's performance?
 
-### Part 2: Capabilities & Transformation (15 min)
+### Part 2: Capabilities & Transformation (10 min)
 - **Question 17:** Of the 24 capabilities, which 2-3 would have the highest impact if improved in your organization right now?
 - **Question 19:** Does your organization treat DevOps transformation as a journey (continuous improvement) or a destination (maturity model)? How does that affect behavior?
 - **Question 24:** The book warns against "maturity models" that suggest you can finish. What evidence do you see that transformation is viewed as ongoing or as a completable project?
 
-### Part 3: Integration & Reality (10 min)
-- **Question 27:** Which is harder: implementing technical practices (CI/CD, automation) or changing culture (psychological safety, learning from failures)? Why?
-- **Question 32:** Do executives in your organization understand where you really are in the transformation journey? What creates that gap?
-
-### Part 4: Final Reflections & Commitments (10 min)
+### Part 3: Final Reflections (5 min)
 - **Question 37:** Across all four meetings, what's the single most important insight you're taking away from "Accelerate"?
 - **Question 40:** What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?
-
-### Wrap-Up (5 min)
-- **Question 39:** What commitments will you make to continue this transformation journey after the book club ends?
 
 ---
 
 ## Question Bank: All Options
 
-**Instructions:** Browse questions below and select 8-10 that fit your team's context. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical 60-minute meeting.
+**Instructions:** Browse questions below and select 6-8 that fit your team's context for the **25-minute core discussion**. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical meeting.
 
 ### Section A: Understanding Current State
 
@@ -195,14 +187,14 @@ Leadership reads about ING's transformation success and wants to copy their prac
 ### For Facilitators
 
 **Step 1: Choose Your Approach**
-- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (10-12 pre-selected questions)
-- **Option B:** Build custom discussion by selecting 8-10 questions from the [Question Bank](#question-bank-all-options)
+- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (8 pre-selected questions for 25 min)
+- **Option B:** Build custom discussion by selecting 6-8 questions from the [Question Bank](#question-bank-all-options)
 
-**Step 2: Selection Guidelines**
-- **Always include:** 2-3 questions from Section E (Reflection & Commitment) at the end - this is your final meeting
-- **Balance theory and practice:** Include questions on transformational leadership characteristics AND practical application
-- **Make it personal:** Include reflection questions that help participants articulate key takeaways
-- **End with action:** Final questions should generate commitments to continue the journey
+**Step 2: Selection Guidelines (for 25-minute core discussion)**
+- **Start with leadership:** Select 2-3 questions from Section A on transformational leadership (10 min)
+- **Focus on transformation:** 2-3 questions from Section B on capabilities and transformation journey (10 min)
+- **Close with reflection:** 1-2 questions from Section E to capture key takeaways and commitments (5 min)
+- **Make it personal:** This is the final meeting - prioritize reflection and forward commitments
 
 **Step 3: Facilitation Tips**
 - **Use follow-up prompts** provided in each section to deepen superficial answers
@@ -221,21 +213,23 @@ Leadership reads about ING's transformation success and wants to copy their prac
 
 ### Meeting Time Allocation (60 minutes)
 
-**Using Quick Start Guide:**
-- Opening/Icebreaker: 5 min
-- Part 1 (Transformational Leadership): 15 min
-- Part 2 (Capabilities & Transformation): 15 min
-- Part 3 (Integration & Reality): 10 min
-- Part 4 (Final Reflections): 10 min
-- Wrap-Up: 5 min
+**Full Meeting Structure per Agenda:**
+- Welcome & Check-In: 5 min (from agenda)
+- Key Concepts Review: 10 min (from agenda)
+- **Core Discussion: 25 min** (this is where you use discussion questions)
+- AI Tool Spotlight: 5 min (from agenda)
+- Action Items & Commitments: 10 min (from agenda)
+- Wrap-Up & Celebrate: 5 min (from agenda)
 
-**Custom Discussion Flow:**
-- Opening: 5 min (1 icebreaker question)
-- Leadership Current State: 10 min (2 questions from Section A)
-- Core Concepts: 20-25 min (4-5 questions from Section B)
-- Scenarios OR Self-Assessment: 5-10 min (optional)
-- Final Reflection & Commitment: 15 min (3-4 questions from Section E)
-- Wrap-Up: 5 min
+**Core Discussion Time (25 minutes) - Using Quick Start Guide:**
+- Part 1 (Transformational Leadership): 10 min (3 questions)
+- Part 2 (Capabilities & Transformation): 10 min (3 questions)
+- Part 3 (Final Reflections): 5 min (2 questions)
+
+**Custom Discussion Flow (25 minutes):**
+- Leadership Current State: 10 min (2-3 questions from Section A)
+- Transformation Journey: 10 min (2-3 questions from Section B)
+- Final Reflection & Commitment: 5 min (1-2 questions from Section E)
 
 ---
 

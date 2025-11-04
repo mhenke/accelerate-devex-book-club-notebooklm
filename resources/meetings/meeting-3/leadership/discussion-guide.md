@@ -22,37 +22,29 @@ This question directly challenges organizational sacred cows (Change Advisory Bo
 
 ## Quick Start: Recommended Meeting Flow
 
-**Total Time: 60 minutes | Questions Used: 11-12**
+**Full Meeting: 60 minutes (25 min core discussion + 35 min other activities) | Questions Used: 6-8**
 
-### Opening (5 min)
-- **Icebreaker (Question 6):** "How many different projects or work items are you actively working on right now? How does that feel?"
+*Note: The agenda allocates 25 minutes for core discussion. Opening/wrap-up happen in other agenda sections (welcome, action items).*
 
-### Part 1: Lean Management Practices (15 min)
+### Part 1: Lean Management Practices (10 min)
 - **Question 1:** Does your team have explicit WIP limits? If yes, are they enforced? If no, how do you decide how much work to take on?
 - **Question 7:** What would happen if your team tried limiting WIP to 1-2 items per person? What resistance would you encounter?
 - **Question 14:** Given the research showing CABs are negatively correlated with performance and don't improve stability, what approval processes could replace your CAB?
 
-### Part 2: Product Development & Small Batches (15 min)
+### Part 2: Product Development & Small Batches (10 min)
 - **Question 17:** How large are your typical deployments (number of features/changes)? What prevents smaller releases?
 - **Question 19:** The research shows risk grows "near quadratically" with batch size. Can you recall a deployment where size contributed to problems?
 - **Question 22:** How long does customer feedback take to reach developers? What would "tightening the loop" look like?
 
-### Part 3: Burnout & Sustainability (10 min)
+### Part 3: Burnout & Sustainability (5 min)
 - **Question 25:** What contributes most to stress or burnout on your team: on-call burden, deployment anxiety, unclear priorities, or something else?
 - **Question 32:** Research shows toxic workplace behavior predicts 60% of burnout variance. What systemic workplace changes would reduce burnout more than individual resilience training?
-
-### Part 4: Commitment & Action (10 min)
-- **Question 38:** What WIP limit will you propose or experiment with before Meeting 4?
-- **Question 40:** What is one systemic change you'll advocate for to reduce burnout or deployment pain?
-
-### Wrap-Up (5 min)
-- **Question 36:** What's your biggest takeaway from Meeting 3?
 
 ---
 
 ## Question Bank: All Options
 
-**Instructions:** Browse questions below and select 8-10 that fit your team's context. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical 60-minute meeting.
+**Instructions:** Browse questions below and select 6-8 that fit your team's context for the **25-minute core discussion**. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical meeting.
 
 ### Section A: Understanding Current State
 
@@ -211,14 +203,14 @@ Your team deploys monthly releases containing 20-30 features. Last deployment ca
 ### For Facilitators
 
 **Step 1: Choose Your Approach**
-- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (11-12 pre-selected questions)
-- **Option B:** Build custom discussion by selecting 8-10 questions from the [Question Bank](#question-bank-all-options)
+- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (8 pre-selected questions for 25 min)
+- **Option B:** Build custom discussion by selecting 6-8 questions from the [Question Bank](#question-bank-all-options)
 
-**Step 2: Selection Guidelines**
-- **Always include:** 1-2 questions from Section E (Reflection & Commitment) at the end
-- **Start with current state:** Select 2-3 questions from Section A to ground discussion in team's experience
-- **Focus on 1-2 key concepts:** Choose either WIP/Lean practices OR burnout/sustainability, not both in depth
-- **Use scenarios sparingly:** Pick 1 scenario only if time permits (adds 10 minutes)
+**Step 2: Selection Guidelines (for 25-minute core discussion)**
+- **Start with current state:** Select 2-3 questions from Section A to ground discussion in team's experience (10 min)
+- **Focus on 1 key concept:** Choose either WIP/Lean practices OR burnout/sustainability for depth (10 min)
+- **Close with reflection:** 1-2 questions from Section E if time permits (5 min)
+- **Skip scenarios:** Scenarios add 10 minutes and won't fit in 25-minute discussion slot
 
 **Step 3: Facilitation Tips**
 - **Use follow-up prompts** provided in each section to deepen superficial answers
@@ -236,21 +228,23 @@ Your team deploys monthly releases containing 20-30 features. Last deployment ca
 
 ### Meeting Time Allocation (60 minutes)
 
-**Using Quick Start Guide:**
-- Opening/Icebreaker: 5 min
-- Part 1 (Lean Management): 15 min
-- Part 2 (Product & Small Batches): 15 min
-- Part 3 (Burnout & Sustainability): 10 min
-- Part 4 (Commitment): 10 min
-- Wrap-Up: 5 min
+**Full Meeting Structure per Agenda:**
+- Welcome & Check-In: 5 min (from agenda)
+- Key Concepts Review: 10 min (from agenda)
+- **Core Discussion: 25 min** (this is where you use discussion questions)
+- AI Tool Spotlight: 5 min (from agenda)
+- Action Items & Commitments: 10 min (from agenda)
+- Wrap-Up & Preview: 5 min (from agenda)
 
-**Custom Discussion Flow:**
-- Opening: 5 min (1 icebreaker question)
-- Current State: 10-15 min (2-3 questions from Section A)
-- Core Concepts: 20-25 min (4-6 questions from Section B)
-- Scenarios OR Self-Assessment: 5-10 min (optional)
-- Reflection & Commitment: 10 min (2-3 questions from Section E)
-- Wrap-Up: 5 min
+**Core Discussion Time (25 minutes) - Using Quick Start Guide:**
+- Part 1 (Lean Management): 10 min (3 questions)
+- Part 2 (Product & Small Batches): 10 min (3 questions)
+- Part 3 (Burnout & Sustainability): 5 min (2 questions)
+
+**Custom Discussion Flow (25 minutes):**
+- Current State: 10 min (2-3 questions from Section A)
+- Core Concepts: 10 min (2-3 questions from Section B)
+- Reflection: 5 min (1-2 questions from Section E)
 
 ---
 
