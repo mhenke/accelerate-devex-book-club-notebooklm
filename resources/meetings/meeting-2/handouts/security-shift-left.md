@@ -424,8 +424,8 @@ Review   Collab   Auto   Auto   Monitor
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 2: Technical Excellence](../../meeting-2/) - Full meeting guide
-- [Chapter 6 Notes](../../meeting-2/chapter-notes.md) - Detailed security discussion
+- [Meeting 2: Technical Excellence](../) - Full meeting guide
+- [Chapter 6 Notes](../chapter-notes.md) - Detailed security discussion
 
 **Other Handouts:**
 - [Architecture Guide](architecture-team-independence.md) - Securing loosely coupled systems

@@ -395,7 +395,7 @@ From "Accelerate" research across 23,000+ survey responses:
 - [Culture Change Model](culture-change-model.md) - How practices improve culture
 
 **Meeting Materials:**
-- [Meeting 1: Foundation](../../meeting-1/) - Full meeting guide
+- [Meeting 1: Foundation](../) - Full meeting guide
 - [Meeting 2: Technical Excellence](../../meeting-2/) - CD practices that improve metrics
 
 ---

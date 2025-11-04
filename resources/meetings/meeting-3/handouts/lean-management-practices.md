@@ -469,8 +469,8 @@ Less Pressure → Sustainable Pace
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 3: Management & Sustainability](../../../../meeting-3/) - Full meeting guide
-- [Chapter 7 Notes](../../chapter-notes.md) - Detailed lean management discussion
+- [Meeting 3: Management & Sustainability](../) - Full meeting guide
+- [Chapter 7 Notes](../chapter-notes.md) - Detailed lean management discussion
 
 **Other Handouts:**
 - [Deployment Pain & Burnout](deployment-pain-burnout.md) - How lean reduces burnout

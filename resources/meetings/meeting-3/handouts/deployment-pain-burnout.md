@@ -405,8 +405,8 @@ Christina Maslach's research identifies six organizational factors that cause bu
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 3: Management & Sustainability](../../../../meeting-3/) - Full meeting guide
-- [Chapter 9 Notes](../../chapter-notes.md) - Detailed burnout discussion
+- [Meeting 3: Management & Sustainability](../) - Full meeting guide
+- [Chapter 9 Notes](../chapter-notes.md) - Detailed burnout discussion
 
 **Other Handouts:**
 - [Employee Satisfaction](employee-satisfaction.md) - Four pillars of job satisfaction
