@@ -22,39 +22,29 @@ This question connects architecture (Ch. 5) to the technical practices (Ch. 4) a
 
 ## Quick Start: Recommended Meeting Flow
 
-**Total Time: 60 minutes | Questions Used: 10-12**
+**Full Meeting: 60 minutes (25 min core discussion + 35 min other activities) | Questions Used: 6-8**
 
-### Opening (5 min)
-- **Check-in (Meeting 1 Commitments):** What DORA metric did you track? What did you learn?
+*Note: The agenda allocates 25 minutes for core discussion. Opening/wrap-up happen in other agenda sections (welcome, action items).*
 
-### Part 1: Continuous Delivery Practices (15 min)
+### Part 1: Continuous Delivery Practices (10 min)
 - **Question 5:** How long-lived are your feature branches? Hours, days, weeks, or months?
 - **Question 7:** What prevents your team from merging to trunk/main daily?
 - **Question 11:** What percentage of your tests run automatically on every commit vs. manually?
 
-### Part 2: Change Approval & CABs (15 min)
+### Part 2: Change Approval & CABs (10 min)
 - **Question 19:** Does your organization use a Change Approval Board (CAB) for production changes?
 - **Question 20:** Given the research shows CABs are negatively correlated with performance and don't improve stability, how would you propose eliminating or replacing them?
 - **Question 22:** What would "lightweight approval" look like for your team?
 
-### Part 3: Architecture & Team Independence (10 min)
+### Part 3: Architecture & Team Independence (5 min)
 - **Question 25:** Can your team deploy changes independently without coordinating with other teams?
 - **Question 27:** What architectural dependencies force you to coordinate with other teams?
-- **Question 29:** Is your architecture optimized for testability and deployability?
-
-### Part 4: Security Integration (10 min)
-- **Question 33:** At what stage does security get involved in your development process?
-- **Question 35:** What security checks could be automated in your CI/CD pipeline?
-
-### Wrap-Up & Commitment (5 min)
-- **Question 42:** Which technical practice will you experiment with before Meeting 3?
-- **Question 45:** What's your biggest takeaway from Meeting 2?
 
 ---
 
 ## Question Bank: All Options
 
-**Instructions:** Browse questions below and select 8-10 that fit your team's context. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical 60-minute meeting.
+**Instructions:** Browse questions below and select 6-8 that fit your team's context for the **25-minute core discussion**. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical meeting.
 
 ### Section A: Understanding Current Technical Practices
 
@@ -199,14 +189,14 @@ Your organization is considering migrating from a monolith to microservices to "
 ### For Facilitators
 
 **Step 1: Choose Your Approach**
-- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (10-12 pre-selected questions)
-- **Option B:** Build custom discussion by selecting 8-10 questions from the [Question Bank](#question-bank-all-options)
+- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (8 pre-selected questions for 25 min)
+- **Option B:** Build custom discussion by selecting 6-8 questions from the [Question Bank](#question-bank-all-options)
 
-**Step 2: Selection Guidelines**
-- **Always include:** 1-2 questions from Section E (Reflection & Commitment) at the end
-- **Start with current state:** Select 2-3 questions from Section A to ground discussion in team's technical practices
-- **Focus on 1-2 key concepts:** Choose either CABs OR architecture OR security, not all three in depth
-- **Use scenarios sparingly:** Pick 1 scenario only if time permits (adds 10-15 minutes)
+**Step 2: Selection Guidelines (for 25-minute core discussion)**
+- **Start with current state:** Select 2-3 questions from Section A to ground discussion in team's technical practices (10 min)
+- **Focus on 1 key concept:** Choose either CABs OR architecture OR security for depth (10 min)
+- **Close with reflection:** 1-2 questions from Section E if time permits (5 min)
+- **Skip scenarios:** Scenarios add 10-15 minutes and won't fit in 25-minute discussion slot
 
 **Step 3: Facilitation Tips**
 - **Reference research statistics** (46x, 2.3x, "negatively correlated") when challenging assumptions
@@ -225,21 +215,23 @@ Your organization is considering migrating from a monolith to microservices to "
 
 ### Meeting Time Allocation (60 minutes)
 
-**Using Quick Start Guide:**
-- Opening/Check-in (Meeting 1): 5 min
-- Part 1 (CD Practices): 15 min
-- Part 2 (CABs): 15 min
-- Part 3 (Architecture): 10 min
-- Part 4 (Security): 10 min
-- Wrap-Up & Commitment: 5 min
+**Full Meeting Structure per Agenda:**
+- Welcome & Check-In: 5 min (from agenda)
+- Key Concepts Review: 10 min (from agenda)
+- **Core Discussion: 25 min** (this is where you use discussion questions)
+- AI Tool Spotlight: 5 min (from agenda)
+- Action Items & Commitments: 10 min (from agenda)
+- Wrap-Up & Preview: 5 min (from agenda)
 
-**Custom Discussion Flow:**
-- Opening: 5 min (check-in on Meeting 1 commitments)
-- Current State: 10-15 min (2-3 questions from Section A)
-- Core Concepts: 20-25 min (4-6 questions from Sections B, C, or D)
-- Scenarios: 5-15 min (optional, 1 scenario maximum)
-- Reflection & Commitment: 10 min (2-3 questions from Section E)
-- Wrap-Up: 5 min
+**Core Discussion Time (25 minutes) - Using Quick Start Guide:**
+- Part 1 (CD Practices): 10 min (3 questions)
+- Part 2 (CABs): 10 min (3 questions)
+- Part 3 (Architecture): 5 min (2 questions)
+
+**Custom Discussion Flow (25 minutes):**
+- Current State: 10 min (2-3 questions from Section A)
+- Core Concepts: 10 min (2-3 questions from Section B, C, or D)
+- Reflection: 5 min (1-2 questions from Section E)
 
 ---
 
@@ -262,4 +254,4 @@ Preview question to consider:
 
 ---
 
-[ê Meeting 2 Resources](../README.md) | [Key Questions](../../../key-questions.md) í
+[ÔøΩ Meeting 2 Resources](../README.md) | [Key Questions](../../../key-questions.md) ÔøΩ

@@ -22,37 +22,29 @@ This question challenges common metrics (lines of code, velocity) and prompts ev
 
 ## Quick Start: Recommended Meeting Flow
 
-**Total Time: 60 minutes | Questions Used: 10-12**
+**Full Meeting: 60 minutes (25 min core discussion + 35 min other activities) | Questions Used: 6-8**
 
-### Opening (5 min)
-- **Icebreaker (Question 6):** "On a scale of 1-10, how anxious are you before a production deployment? What specific factors contribute to that anxiety?"
+*Note: The agenda allocates 25 minutes for core discussion. Opening/wrap-up happen in other agenda sections (welcome, action items).*
 
-### Part 1: Understanding DORA Metrics (15 min)
+### Part 1: Understanding DORA Metrics (10 min)
 - **Question 1:** What metrics does your organization currently use to assess software delivery performance?
 - **Question 3:** If you could only track one metric starting tomorrow, which DORA metric would you choose and why?
 - **Question 17:** Which DORA metric would be easiest to improve? Which would be hardest?
 
-### Part 2: Speed vs. Stability Myth (15 min)
+### Part 2: Speed vs. Stability Myth (10 min)
 - **Question 13:** Before reading the book, did you believe there was a trade-off between speed and stability?
 - **Question 14:** How does the research finding (46x, 440x, 170x) challenge assumptions in your organization?
 - **Question 16:** Can you think of a time when slowing down deployment actually made things worse?
 
-### Part 3: Culture & Change (10 min)
+### Part 3: Culture & Change (5 min)
 - **Question 9:** Using Westrum's model, what culture type best describes your organization?
 - **Question 21:** Do you believe culture can be changed through implementing technical practices?
-
-### Part 4: Commitment & Action (10 min)
-- **Question 37:** Which DORA metric will you start tracking before Meeting 2?
-- **Question 39:** What deployment pain point will you document or address?
-
-### Wrap-Up (5 min)
-- **Question 36:** What's your biggest takeaway from Meeting 1?
 
 ---
 
 ## Question Bank: All Options
 
-**Instructions:** Browse questions below and select 8-10 that fit your team's context. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical 60-minute meeting.
+**Instructions:** Browse questions below and select 6-8 that fit your team's context for the **25-minute core discussion**. The [Quick Start Guide](#quick-start-recommended-meeting-flow) above provides a recommended selection for a typical meeting.
 
 ### Section A: Understanding Current State
 
@@ -194,14 +186,14 @@ Your team wants to adopt trunk-based development, but another team insists on lo
 ### For Facilitators
 
 **Step 1: Choose Your Approach**
-- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (10-12 pre-selected questions)
-- **Option B:** Build custom discussion by selecting 8-10 questions from the [Question Bank](#question-bank-all-options)
+- **Option A:** Use the [Quick Start Guide](#quick-start-recommended-meeting-flow) above (8 pre-selected questions for 25 min)
+- **Option B:** Build custom discussion by selecting 6-8 questions from the [Question Bank](#question-bank-all-options)
 
-**Step 2: Selection Guidelines**
-- **Always include:** 1-2 questions from Section E (Reflection & Commitment) at the end
-- **Start with current state:** Select 2-3 questions from Section A to ground discussion in team's experience
-- **Focus on 1-2 key concepts:** Choose either speed/stability myth OR culture change, not both in depth
-- **Use scenarios sparingly:** Pick 1 scenario only if time permits (adds 10 minutes)
+**Step 2: Selection Guidelines (for 25-minute core discussion)**
+- **Start with current state:** Select 2-3 questions from Section A to ground discussion in team's experience (10 min)
+- **Focus on 1 key concept:** Choose either speed/stability myth OR culture change for depth (10 min)
+- **Close with reflection:** 1-2 questions from Section E if time permits (5 min)
+- **Skip scenarios:** Scenarios add 10-15 minutes and won't fit in 25-minute discussion slot
 
 **Step 3: Facilitation Tips**
 - **Use follow-up prompts** provided in each section to deepen superficial answers
@@ -219,21 +211,23 @@ Your team wants to adopt trunk-based development, but another team insists on lo
 
 ### Meeting Time Allocation (60 minutes)
 
-**Using Quick Start Guide:**
-- Opening/Icebreaker: 5 min
-- Part 1 (DORA Metrics): 15 min
-- Part 2 (Speed vs Stability): 15 min
-- Part 3 (Culture): 10 min
-- Part 4 (Commitment): 10 min
-- Wrap-Up: 5 min
+**Full Meeting Structure per Agenda:**
+- Welcome & Icebreaker: 5 min (from agenda)
+- Key Concepts Review: 10 min (from agenda)
+- **Core Discussion: 25 min** (this is where you use discussion questions)
+- AI Tool Spotlight: 5 min (from agenda)
+- Action Items & Commitments: 10 min (from agenda)
+- Wrap-Up & Preview: 5 min (from agenda)
 
-**Custom Discussion Flow:**
-- Opening: 5 min (1 icebreaker question)
-- Current State: 10-15 min (2-3 questions from Section A)
-- Core Concepts: 20-25 min (4-6 questions from Section B)
-- Scenarios OR Self-Assessment: 5-10 min (optional)
-- Reflection & Commitment: 10 min (2-3 questions from Section E)
-- Wrap-Up: 5 min
+**Core Discussion Time (25 minutes) - Using Quick Start Guide:**
+- Part 1 (DORA Metrics): 10 min (3 questions)
+- Part 2 (Speed vs Stability): 10 min (3 questions)
+- Part 3 (Culture): 5 min (2 questions)
+
+**Custom Discussion Flow (25 minutes):**
+- Current State: 10 min (2-3 questions from Section A)
+- Core Concepts: 10 min (2-3 questions from Section B)
+- Culture OR Scenarios: 5 min (1-2 questions from Section C or D)
 
 ---
 
