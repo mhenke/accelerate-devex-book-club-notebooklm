@@ -263,7 +263,7 @@ Once culture is established, a virtuous cycle emerges:
 - [Between Meetings Activities](../../../activities/between-meetings.md) - Culture-building exercises
 
 **Meeting Materials:**
-- [Meeting 1: Foundation](../../meeting-1/) - Full meeting guide
+- [Meeting 1: Foundation](../) - Full meeting guide
 - [Meeting 3: Culture & Management](../../meeting-3/) - Deep dive on culture
 
 ---
