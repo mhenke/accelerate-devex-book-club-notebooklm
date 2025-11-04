@@ -180,15 +180,15 @@ Your team wants to adopt trunk-based development, but another team insists on lo
 
 Use these tools during or after discussion:
 
-- **[DORA Metrics Template](../../assessments/dora-metrics-template.md)** - Begin baseline tracking
-- **[Culture Assessment Worksheet](../../assessments/culture-assessment-worksheet.md)** - Identify current culture type
-- **[24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)** - Complete organizational baseline
+- **[DORA Metrics Template](../../../assessments/dora-metrics-template.md)** - Begin baseline tracking
+- **[Culture Assessment Worksheet](../../../assessments/culture-assessment-worksheet.md)** - Identify current culture type
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Complete organizational baseline
 
 ---
 
 ## Next Meeting Prep
 
-**[Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/)**
+**[Meeting 2: Technical Excellence & Continuous Delivery](../../meeting-2/)**
 
 Preview question to consider:
 > "Which of our current architectural or security practices create the most friction and dependencies for our teams?"
