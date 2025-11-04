@@ -37,7 +37,7 @@
 
 **Objective:** Identify improvements to reduce load and increase flow
 
-**Key Question Reference:** See [key-questions.md#meeting-3](../../key-questions.md#meeting-3)
+**Key Question Reference:** See [key-questions.md#meeting-3](../../../key-questions.md#meeting-3)
 
 **Discussion Flow:**
 
@@ -106,10 +106,10 @@
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../../../meeting-3/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../../meeting-3/leadership/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../../../meeting-3/leadership/discussion-guide.md)
+- **Complete facilitation guide:** [Outline](outline.md)
+- **Quick reference:** [Leader Cheatsheet](leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](discussion-guide.md)
 
 ---
 
-**Next Meeting:** [Meeting 4 Agenda](../meeting-4/meeting-agenda.md)
+**Next Meeting:** [Meeting 4 Agenda](../../meeting-4/leadership/agenda.md)

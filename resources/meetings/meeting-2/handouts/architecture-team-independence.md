@@ -400,8 +400,8 @@ Architecture isn't just about technology—it's about **enabling team independen
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 2: Technical Excellence](../../meeting-2/) - Full meeting guide
-- [Chapter 5 Notes](../../meeting-2/chapter-notes.md) - Detailed architecture discussion
+- [Meeting 2: Technical Excellence](../) - Full meeting guide
+- [Chapter 5 Notes](../chapter-notes.md) - Detailed architecture discussion
 
 **Other Handouts:**
 - [Security: Shift Left](security-shift-left.md) - Security in loosely coupled systems

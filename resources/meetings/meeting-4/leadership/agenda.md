@@ -37,7 +37,7 @@
 
 **Objective:** Map concrete leadership behaviors and near-term roadmap
 
-**Key Question Reference:** See [key-questions.md#meeting-4](../../key-questions.md#meeting-4)
+**Key Question Reference:** See [key-questions.md#meeting-4](../../../key-questions.md#meeting-4)
 
 **Discussion Flow:**
 
@@ -106,6 +106,6 @@
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../../../meeting-4/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../../meeting-4/leadership/leader-cheatsheet.md)
-- **Retrospective:** [Transformation Template](../../../meeting-4/retrospective.md)
+- **Complete facilitation guide:** [Outline](outline.md)
+- **Quick reference:** [Leader Cheatsheet](leader-cheatsheet.md)
+- **Retrospective:** [Transformation Template](../retrospective.md)

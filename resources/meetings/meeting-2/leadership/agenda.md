@@ -45,7 +45,7 @@
 
 **Objective:** Apply concepts to your team’s delivery system
 
-**Key Question Reference:** See [key-questions.md#meeting-2](../../key-questions.md#meeting-2)
+**Key Question Reference:** See [key-questions.md#meeting-2](../../../key-questions.md#meeting-2)
 
 **Discussion Flow:**
 
@@ -129,11 +129,11 @@
 
 ## Related Resources
 
-- **Complete facilitation guide:** [Outline](../../../meeting-2/outline.md)
-- **Quick reference:** [Leader Cheatsheet](../../../meeting-2/leadership/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../../../meeting-2/leadership/discussion-guide.md)
+- **Complete facilitation guide:** [Outline](outline.md)
+- **Quick reference:** [Leader Cheatsheet](leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](discussion-guide.md)
 - **Assessments:** [24 Capabilities](../../../../assessments/24-capabilities-assessment.md)
 
 ---
 
-**Next Meeting:** [Meeting 3 Agenda](../meeting-3/meeting-agenda.md)
+**Next Meeting:** [Meeting 3 Agenda](../../meeting-3/leadership/agenda.md)

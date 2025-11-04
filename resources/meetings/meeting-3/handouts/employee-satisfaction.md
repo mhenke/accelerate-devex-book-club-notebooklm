@@ -463,8 +463,8 @@ eNPS = % Promoters - % Detractors
 ## 🔗 Related Resources
 
 **Meeting Materials:**
-- [Meeting 3: Management & Sustainability](../../../../meeting-3/) - Full meeting guide
-- [Chapter 10 Notes](../../chapter-notes.md) - Detailed satisfaction discussion
+- [Meeting 3: Management & Sustainability](../) - Full meeting guide
+- [Chapter 10 Notes](../chapter-notes.md) - Detailed satisfaction discussion
 
 **Other Handouts:**
 - [Deployment Pain & Burnout](deployment-pain-burnout.md) - Preventing burnout
