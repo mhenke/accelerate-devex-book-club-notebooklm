@@ -94,35 +94,62 @@
 
 // Learning highlights list refinement
 .learning-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-sm);
+
+  @include mobile-only {
+    grid-template-columns: 1fr;
+  }
+
   .learning-category {
     background: var(--background-white);
     border: 1px solid var(--border-medium);
-    border-radius: var(--radius-lg);
-    padding: var(--space-md);
-    margin-bottom: var(--space-md);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm);
 
     h3 {
-      margin-top: 0;
+      margin: 0 0 var(--space-xs) 0;
+      font-size: var(--font-size-body);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
     }
     .achievement-list {
       list-style: none;
       padding: 0;
-      margin: var(--space-sm) 0 0;
+      margin: 0;
     }
     .achievement-list li {
       display: flex;
-      gap: var(--space-sm);
+      gap: var(--space-xs);
       align-items: flex-start;
       color: #475569;
-      margin-bottom: .5rem;
+      margin-bottom: var(--space-xs);
+      font-size: 0.9rem;
+      line-height: 1.4;
+
+      i {
+        flex-shrink: 0;
+        font-size: 0.85rem;
+        margin-top: 0.15rem;
+      }
     }
   }
 
   // Theme variants using design tokens
-  .meeting-1-theme { border-left: 4px solid var(--meeting-1-color); }
-  .meeting-2-theme { border-left: 4px solid var(--meeting-2-color); }
-  .meeting-3-theme { border-left: 4px solid var(--meeting-3-color); }
-  .meeting-4-theme { border-left: 4px solid var(--meeting-4-color); }
+  .meeting-1-theme {
+    border-left: 4px solid var(--meeting-1-color);
+  }
+  .meeting-2-theme {
+    border-left: 4px solid var(--meeting-2-color);
+  }
+  .meeting-3-theme {
+    border-left: 4px solid var(--meeting-3-color);
+  }
+  .meeting-4-theme {
+    border-left: 4px solid var(--meeting-4-color);
+  }
 }
 
 // Reflection section (radio cards)
