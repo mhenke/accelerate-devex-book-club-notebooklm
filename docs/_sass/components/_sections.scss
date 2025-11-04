@@ -200,7 +200,79 @@
     padding: var(--space-lg);
   }
 
-  // (Removed) action-items modifier with action-list, action-item, question-item, task-row, question-row, task-checkbox, task-details, question-content, due-date — not used in built HTML
+  // Action Items Modifier
+  &.action-items {
+    .action-header {
+      margin-bottom: var(--space-lg);
+
+      h2 {
+        margin-bottom: var(--space-sm);
+      }
+
+      .subtitle {
+        color: var(--text-muted);
+        font-size: var(--font-size-body);
+        margin: 0;
+      }
+    }
+
+    .action-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+
+    .action-item {
+      background: var(--bg-subtle);
+      border-radius: var(--radius-md);
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: var(--bg-hover);
+        transform: translateX(4px);
+      }
+    }
+
+    .task-row {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+    }
+
+    .task-checkbox {
+      flex-shrink: 0;
+      color: var(--accent-emerald);
+      font-size: var(--font-size-h4);
+      line-height: 1;
+      padding-top: 2px;
+
+      i {
+        display: block;
+      }
+    }
+
+    .task-title {
+      flex: 1;
+      font-size: var(--font-size-body);
+      line-height: 1.5;
+      color: var(--text-primary);
+    }
+
+    .due-date {
+      margin-top: var(--space-lg);
+      padding: var(--space-md);
+      background: var(--bg-emphasis);
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--accent-emerald);
+      text-align: center;
+
+      strong {
+        color: var(--theme-primary);
+        font-weight: var(--font-weight-semibold);
+      }
+    }
+  }
 
   // Unified h2 styling for section-cards (matches dark-theme structure)
   h2 {
