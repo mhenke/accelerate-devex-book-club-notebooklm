@@ -21,7 +21,7 @@ Today we explore:
 
 ## Key Question for Today
 
-> **"How could we apply Lean principles like limiting WIP and visualizing work to not only improve our delivery flow but also directly reduce 'deployment pain' and burnout, making our work more sustainable and satisfying?"**
+> **"Given the research showing CABs are negatively correlated with performance AND show zero stability improvement, and that toxic workplace behavior predicts 60% of burnout variance, how could we apply Lean principles like limiting WIP and visualizing work to reduce 'deployment pain' (where risk grows near-quadratically with batch size) and address burnout through systemic solutions rather than individual interventions?"**
 
 ---
 
@@ -530,9 +530,9 @@ ________________________________________________________________
 
 **Chapters to read:** 11, 16, and Conclusion (Leaders and Managers, High-Performance Leadership case study, transformation wrap-up)
 
-**Preview question:** _What single supportive behavior could our leaders adopt to best enable team experimentation and a generative culture?_
+**Preview question:** _"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"_
 
-**Think about:** The 5 characteristics of transformational leadership and how they show up (or don't) in your organization.
+**Think about:** This is THE culminating question—the transformation starting point. It embodies start small, focus on pain, act into culture, measure and iterate.
 
 **Optional prep:** Listen to [NotebookLM Brief podcast](../notebooklm/podcast-brief.md) (5-10 min)
 

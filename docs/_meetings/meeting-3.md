@@ -191,10 +191,10 @@ document.addEventListener('keydown', function(event) {
 <div class="key-question-banner" markdown="0">
 <div class="key-question-wrapper">
 <div class="key-question-label">MEETING 3 KEY QUESTION</div>
-<div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
+<div class="key-question-intro">Throughout this meeting, we'll challenge assumptions with research:</div>
 <div class="key-question-main">
 <div class="quote-mark-start">&ldquo;</div>
-<div class="question-text">How could we apply Lean principles like limiting WIP and visualizing work to not only improve our delivery flow but also directly reduce 'deployment pain' and burnout, making our work more sustainable and satisfying?</div>
+<div class="question-text">Given the research showing CABs are negatively correlated with performance AND show zero stability improvement, and that toxic workplace behavior predicts <strong>60% of burnout variance</strong>, how could we apply Lean principles like limiting WIP and visualizing work to reduce 'deployment pain' (where risk grows <strong>near-quadratically</strong> with batch size) and address burnout through systemic solutions rather than individual interventions?</div>
 <div class="quote-mark-end">&rdquo;</div>
 </div>
 </div>
