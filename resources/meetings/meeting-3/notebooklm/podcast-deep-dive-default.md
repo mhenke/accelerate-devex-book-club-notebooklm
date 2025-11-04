@@ -26,7 +26,7 @@
 ### Complete Prompt (Copy Everything Below)
 
 ```
-Assume listener is manager/practitioner for book club. Focus Ch 7-10 Accelerate. Create 15-20min: (1) Five Lean (limit WIP, visual mgmt, monitoring, lightweight approval, small batches) reduce cognitive load, (2) Product dev (customer-centric, small batches/MVP, empowered), (3) Deployment pain → burnout predictor, automation helps, (4) Satisfaction (tools, meaningful work, culture) drives performance. Discuss: WIP too high? Deployment pain? Burnout factors? Have tools/meaning?
+Assume listener is manager/practitioner. Focus Ch 7-10 Accelerate. Create 15-20min: (1) Five Lean Practices - WIP limits expose systemic issues (1-2 items/person), visual mgmt shows flow/blockers, proactive monitoring (AWS: 78% proactive detection), lightweight approval (CABs negatively correlated with performance AND zero stability benefit - use peer review instead), small batches (risk grows quadratically with size), (2) Product dev - customer feedback loops, MVPs for learning, team empowerment, (3) Deployment pain predicts burnout - 60% variance from toxic workplace (systemic problem), Microsoft Bing: 38%→75% satisfaction jump with CD, automation + culture change required, (4) Satisfaction four pillars - tools/automation, meaningful work, generative culture, learning. Creates virtuous cycle: satisfaction → performance → business success → reinvestment. Key: CABs harmful, batch risk exponential, burnout systemic not individual. Discuss: Current WIP? Using CABs? Pain score 1-10? Missing satisfaction factors? How shift to systemic solutions?
 ```
 
 ---
@@ -36,16 +36,27 @@ Assume listener is manager/practitioner for book club. Focus Ch 7-10 Accelerate.
 **Duration:** 15-20 minutes
 
 **Coverage:**
-- ✅ Five lean management practices (WIP limits, visual management, monitoring, lightweight approval, small batches)
-- ✅ Customer-centric product development
-- ✅ Deployment pain as burnout predictor
-- ✅ Employee satisfaction drivers
-- ✅ Connection between sustainability and performance
+- ✅ Five lean management practices framework with specific guidance
+- ✅ Critical statistics: 60% burnout variance, quadratic risk growth, CABs research
+- ✅ Microsoft Bing transformation story (38%→75% satisfaction)
+- ✅ Customer-centric product development with small batches
+- ✅ Deployment pain as systemic burnout predictor
+- ✅ Employee satisfaction four pillars
+- ✅ Connection between sustainability and performance (virtuous cycle)
+
+**Key Insights Emphasized:**
+- CABs are actively harmful (negatively correlated with performance, no stability benefit)
+- Batch size risk is nonlinear (near-quadratic growth)
+- Burnout requires systemic solutions, not individual interventions
+- Satisfaction drives performance, creating virtuous cycle
 
 ---
 
 ## Related Resources
 
+- **[Meeting 3 Discussion Guide](../leadership/discussion-guide.md)** - 48 questions with Quick Start flow
+- **[Meeting 3 Attendee Workbook](../handouts/attendee-guide.md)** - 550-line printable workbook
+- **[Action Items Tracker](../handouts/action-items-tracker.md)** - Commitment tracking for experiments
 - **[Meeting 3 Outline](../leadership/outline.md)** - Complete meeting structure
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 3
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Focus on lean management (15-19)

@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener is leader/practitioner. Focus Ch 11,16,Conclusion Accelerate. Create 15-20min: (1) Five transformational leadership characteristics enable practices, (2) ING Netherlands transformation (Obeya, catchball, squads), (3) Transformation roadmap (3/6/12 months). Discuss: leadership characteristics present? ING practices applicable? Starting point? Sustaining momentum?
+Assume listener is leader/practitioner. Focus Ch 11,16,Conclusion Accelerate. Create 15-20min: (1) Five Leadership Characteristics - vision, inspirational communication, intellectual stimulation, supportive leadership, personal recognition - explains 18-50% variance in satisfaction/commitment, 42% trust, leaders ENABLE practices (don't directly improve DORA), high performers 2.2x exceed goals, (2) ING Netherlands case - Obeya rooms (visual strategy spaces with catchball for vertical info flow), autonomous squads with coaching culture, CEO commitment critical, transformation required cultural not just technical change, (3) CULMINATING QUESTION: "What single smallest change would make next deployment less painful?" - this IS the starting point, (4) 30-60-90 day roadmap beginning with that question, small experiments compound, (5) Capabilities model (continuous improvement, context-specific) vs maturity models (finite endpoint, prescriptive, dangerous "we're done" mentality). Key: transformation journey not destination, focus on impactful capabilities not "completeness". Discuss: Which leadership characteristics YOUR leaders exhibit? ING practices adaptable to YOUR context? YOUR answer to culminating question? How sustain momentum beyond 90 days?
 ```
 
 ---
@@ -34,25 +34,28 @@ Assume listener is leader/practitioner. Focus Ch 11,16,Conclusion Accelerate. Cr
 **Duration:** 15-20 minutes
 
 **Coverage:**
-- ✅ Five transformational leadership characteristics
-- ✅ ING Netherlands case study with practical examples (Obeya, catchball)
-- ✅ Creating 3-6-12 month transformation roadmap
+- ✅ Five transformational leadership characteristics with impact statistics
+- ✅ Leadership's indirect role (18-50% variance, 42% trust, 2.2x exceed goals)
+- ✅ ING Netherlands case study (Obeya rooms, catchball, squads)
+- ✅ The culminating question as transformation starting point
+- ✅ 30-60-90 day roadmap (NOT 3-6-12 months)
+- ✅ Capabilities vs maturity models distinction
 - ✅ Strategies for sustaining improvement
-- ✅ Complete virtuous cycle from all 4 meetings
-- ✅ Practical next steps
 
 **Key Points Emphasized:**
-- Leadership enables practices, doesn't directly improve metrics
-- ING case study shows real-world transformation
-- Book club is beginning, not end
-- Small improvements compound over time
-- Sustaining momentum requires ongoing commitment
+- Leaders ENABLE practices, don't directly improve DORA metrics
+- ING case shows cultural + technical change required
+- Culminating question is THE starting point
+- Transformation is journey not destination
+- Small experiments compound over time
 
 ---
 
 ## Related Resources
 
+- **[Meeting 4 Discussion Guide](../leadership/discussion-guide.md)** - 45 questions with culminating question emphasis
+- **[Meeting 4 Attendee Workbook](../handouts/attendee-guide.md)** - 690-line comprehensive workbook
+- **[Transformation Roadmap Tracker](../handouts/action-items-tracker.md)** - 30-60-90 day plan
 - **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Final reflection and roadmap template
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 4
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - Post-book club guidance

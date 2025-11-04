@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener is skeptical. Focus Ch 7-10 Accelerate. Create 15-20min critical: (1) Lean reality (WIP limits disrupt flow? Visual overhead? Alert fatigue?), (2) Deployment causation (correlation vs causation? Other burnout factors?), (3) Satisfaction oversimplified (compensation? Growth? Work-life missing?). Discuss: when Lean doesn't work, other burnout causes, satisfaction complexity.
+Assume listener is skeptical. Focus Ch 7-10 Accelerate. Create 15-20min critique: (1) Lean limitations - WIP limits disrupt creative flow?, visual mgmt overhead?, AWS 78% stat (smaller orgs?), CABs research (but regulated industries?), batch size (large refactorings?), risk math assumes independence, (2) Causation questions - 60% burnout (correlation not causation?), pain symptom not cause?, Bing 38%→75% (what about failures?), automation requires investment, (3) Satisfaction oversimplified - missing compensation, growth, work-life, flexibility, safety beyond culture, may not generalize globally, (4) Implementation - tech company focus (manufacturing/healthcare different?), assumes mgmt support, years not months, conflicts with existing process. Discuss: When lean didn't work? Other burnout factors? Missing satisfaction factors? Your industry context?
 ```
 
 ---

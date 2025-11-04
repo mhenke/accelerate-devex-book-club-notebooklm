@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener values perspectives. Focus Ch 11,16,Conclusion Accelerate. Create 15-20min debate PRO/CON/synthesis: (1) Top-down vs bottom-up (PRO: leadership enables; CON: grassroots works; Synthesis: both?), (2) Big bang vs incremental (PRO: momentum; CON: risk; Synthesis: hybrid?), (3) Copy ING vs adapt (PRO: proven; CON: context; Synthesis: principles not tactics?). Discuss which resonates.
+Assume listener values perspectives. Focus Ch 11,16,Conclusion Accelerate. Create 15-20min debate PRO/CON/synthesis: (1) Top-down leadership (PRO: 18-50% variance, enables practices, CEO commitment like ING; CON: grassroots works, leadership turnover risk; Synthesis: leaders enable teams), (2) Culminating question approach (PRO: incremental reduces risk, "smallest change" psychologically safe; CON: big structural problems need bold moves, sounds weak; Synthesis: start small, expand based on learning), (3) 30-60-90 days vs years (PRO: quick wins build momentum, experiments; CON: culture takes years, unrealistic expectations; Synthesis: sprint-based with long-term vision), (4) Copy ING practices (PRO: proven at scale, Obeya/catchball work; CON: Dutch bank context, your org different; Synthesis: adapt principles not tactics), (5) Capabilities vs maturity (PRO: continuous fits innovation, context-specific; CON: vague, no "done", endless; Synthesis: focus impactful capabilities). Use 2.2x exceed goals stat. Discuss: Which resonates? YOUR synthesis?
 ```
 
 ---

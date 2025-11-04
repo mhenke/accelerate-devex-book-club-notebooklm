@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener wants comprehensive understanding. Focus Ch 11,16,Conclusion Accelerate. Create 20-25min detailed: (1) Five leadership WITH examples and indirect effect, (2) ING detailed (Obeya rooms, catchball process, squad model, CEO commitment, years), (3) Complete roadmap (reflect 7-week journey, 3/6/12 month milestones, sustaining). Discuss: developing each leadership, ING adaptation, complete plan.
+Assume listener wants comprehensive implementation. Focus Ch 11,16,Conclusion Accelerate. Create 20-25min: (1) Five Leadership detailed - vision (articulate future), inspirational communication (uncertain environments), intellectual stimulation (challenge assumptions), supportive leadership (psychological safety), personal recognition (celebrate progress) - explains 18-50% variance satisfaction, 42% trust, leaders ENABLE not fix, high performers 2.2x exceed goals, (2) ING Netherlands detailed - Obeya rooms (visual strategy spaces for alignment), catchball process (vertical information flow mechanism), autonomous squads with empowerment, coaching culture not command-control, CEO Ralph Hamers commitment essential, years-long transformation, cultural + technical, (3) CULMINATING QUESTION as transformation anchor: "What single smallest change would make next deployment less painful?" - embodies philosophy, (4) 30-60-90 day roadmap from that question (NOT 3-6-12 months), experiments compound, reflect on 7-week book club journey, (5) Capabilities vs maturity models - continuous vs finite, context-specific vs prescriptive, focus impactful not complete. Discuss: How develop each leadership char? ING practices for YOUR context? YOUR culminating answer? Sustaining beyond 90 days?
 ```
 
 ---
@@ -41,6 +41,8 @@ Assume listener wants comprehensive understanding. Focus Ch 11,16,Conclusion Acc
 
 ## Related Resources
 
-- **[Meeting 4 Outline](../leadership/outline.md)**
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Complete roadmap template
+- **[Meeting 4 Discussion Guide](../leadership/discussion-guide.md)** - 45 questions with culminating question emphasis
+- **[Meeting 4 Attendee Workbook](../handouts/attendee-guide.md)** - 690-line comprehensive workbook
+- **[Transformation Roadmap Tracker](../handouts/action-items-tracker.md)** - 30-60-90 day plan
+- **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - Post-book club guidance

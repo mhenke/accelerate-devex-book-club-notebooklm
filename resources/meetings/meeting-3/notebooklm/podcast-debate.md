@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener values perspectives. Focus Ch 7-10 Accelerate. Create 15-20min debate PRO/CON/synthesis: (1) WIP limits (PRO: focus; CON: rigidity; Synthesis: when?), (2) Monitoring (PRO: visibility; CON: alert fatigue; Synthesis: balance?), (3) Satisfaction formula (PRO: actionable; CON: incomplete; Synthesis: necessary not sufficient?). Discuss which resonates.
+Assume listener values perspectives. Focus Ch 7-10 Accelerate. Create 15-20min debate PRO/CON/synthesis: (1) WIP limits (PRO: expose systemic issues, focus; CON: constrain creativity, rigid; Synthesis: when appropriate?), (2) Eliminating CABs (PRO: negatively correlated + zero stability; CON: regulated compliance; Synthesis: lightweight vs heavyweight approval), (3) Batch size (PRO: risk quadratic, fast feedback; CON: large refactorings needed, release overhead; Synthesis: default small, plan exceptions), (4) Pain → burnout (PRO: 60% variance, automation helps; CON: correlation not causation, other factors; Synthesis: necessary not sufficient), (5) Satisfaction (PRO: actionable - tools, meaning, culture, learning; CON: missing compensation, work-life, growth; Synthesis: foundational not complete). Use Bing 38%→75% case. Discuss: Which resonates? Your synthesis point?
 ```
 
 ---

@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener is skeptical. Focus Ch 11,16,Conclusion Accelerate. Create 15-20min critical: (1) Leadership causation (correlation vs causation? Survivorship bias? Founder vs hired leaders?), (2) ING uniqueness (CEO commitment rare, years not months, Dutch context, size/resources), (3) Transformation reality (resistance, time, cost, backsliding). Discuss: when leadership doesn't help, ING applicability, realistic timeline.
+Assume listener is skeptical. Focus Ch 11,16,Conclusion Accelerate. Create 15-20min critique: (1) Leadership causation - 18-50% variance (correlation not causation?), survivorship bias?, founder vs hired?, transformational chars universal or cultural?, (2) ING uniqueness - CEO Hamers commitment (rare), years not months, Dutch context, bank size/resources, financial services regulation different from tech, (3) Culminating question limitations - "smallest change" sounds weak, what about big structural problems?, assumes deployment matters (not all orgs), (4) 30-60-90 days unrealistic - transformation takes years not quarters, executive patience required, quick wins vs deep change tension, (5) Capabilities model vague - no roadmap, no "done" state creates endless pressure, how know if improving?. Discuss: When leadership doesn't help? ING for YOUR context? Realistic timeline? Balance quick wins and deep change?
 ```
 
 ---
