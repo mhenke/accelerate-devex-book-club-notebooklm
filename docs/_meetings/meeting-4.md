@@ -376,23 +376,23 @@ document.addEventListener('keydown', function(event) {
       <h4>Leadership Impact on Performance</h4>
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-number">Strong</div>
-          <div class="stat-label">Correlation with Delivery Performance</div>
+          <div class="stat-number">18-50%</div>
+          <div class="stat-label">Variance Explained by Leadership</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">2.2x</div>
           <div class="stat-label">More Likely to Exceed Goals</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">Higher</div>
-          <div class="stat-label">Employee Engagement</div>
+          <div class="stat-number">42%</div>
+          <div class="stat-label">Trust in Supervisor (Transformational)</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">Generative</div>
-          <div class="stat-label">Culture Development</div>
+          <div class="stat-number">5</div>
+          <div class="stat-label">Key Leadership Characteristics</div>
         </div>
       </div>
-      <p class="stats-conclusion">Leaders create the environment—teams create the performance. Both are essential for sustained transformation.</p>
+      <p class="stats-conclusion">Leaders create the environment—teams create the performance. Research shows transformational leadership explains 18-50% of variance in job satisfaction, organizational commitment, and trust. Both leadership and team practices are essential for sustained transformation.</p>
     </div>
 
   </div>
@@ -416,6 +416,31 @@ document.addEventListener('keydown', function(event) {
       <h3><i class="fas fa-route" aria-hidden="true"></i> The Path Forward: Make It Your Own</h3>
       <p>Transformation principles for sustained success. The 24 capabilities are guides, not checklists. Learn the four principles: learn how to learn, go deep before wide, practice patience and discipline, and embrace evidence-based experimentation.</p>
       <p><strong>Transformation Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/handouts/transformation-principles.md" class="resource-link"><strong>Your Transformation Journey</strong></a></p>
+    </div>
+  </div>
+
+  <div class="step-header" style="margin-top: 2rem;">
+    <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Meeting Materials</h3>
+    <p class="section-intro">Comprehensive guides and worksheets for facilitators and participants</p>
+  </div>
+
+  <div class="resource-callout-grid">
+    <div class="resource-callout">
+      <h3><i class="fas fa-comments" aria-hidden="true"></i> Discussion Questions (45 Questions)</h3>
+      <p>Comprehensive question bank with Quick Start guide. Features the culminating question connecting all meetings: "What is the single smallest change we can make that would make our next deployment less painful?" Focus on transformational leadership and practical application.</p>
+      <p><strong>Facilitator Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/leadership/discussion-guide.md" class="resource-link"><strong>Discussion Questions</strong></a></p>
+    </div>
+
+    <div class="resource-callout">
+      <h3><i class="fas fa-print" aria-hidden="true"></i> Attendee Workbook (690 Lines)</h3>
+      <p>Comprehensive printable workbook covering the 5 transformational leadership characteristics, ING case study lessons, capabilities framework, and transformation planning. Includes personal reflection prompts and commitment tracking.</p>
+      <p><strong>Printable Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/handouts/attendee-guide.md" class="resource-link"><strong>Attendee Guide</strong></a></p>
+    </div>
+
+    <div class="resource-callout">
+      <h3><i class="fas fa-tasks" aria-hidden="true"></i> Transformation Roadmap Tracker</h3>
+      <p>Detailed 30-60-90 day transformation plan with capability focus, leadership practice commitments, and ongoing improvement tracking. Includes the "single smallest change" exercise and continuation resources for post-book club journey.</p>
+      <p><strong>Roadmap Tracker:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/handouts/action-items-tracker.md" class="resource-link"><strong>Action Items & Roadmap</strong></a></p>
     </div>
   </div>
 </div>
