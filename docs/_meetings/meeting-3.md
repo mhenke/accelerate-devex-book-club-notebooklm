@@ -506,8 +506,16 @@ document.addEventListener('keydown', function(event) {
           <div class="stat-number">38%→75%</div>
           <div class="stat-label">Work-Life Satisfaction (Microsoft)</div>
         </div>
+        <div class="stat-item">
+          <div class="stat-number">60%</div>
+          <div class="stat-label">Burnout Variance from Toxic Workplace</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Quadratic</div>
+          <div class="stat-label">Risk Growth with Batch Size</div>
+        </div>
       </div>
-      <p class="stats-conclusion">Lean practices create a virtuous cycle: better performance reduces stress, improving satisfaction and culture.</p>
+      <p class="stats-conclusion">Lean practices create a virtuous cycle: better performance reduces stress, improving satisfaction and culture. Research shows toxic workplace predicts 60% of burnout variance—systemic solutions required. Risk grows nearly quadratically with batch size—work in small increments.</p>
     </div>
 
   </div>
@@ -537,6 +545,31 @@ document.addEventListener('keydown', function(event) {
       <h3><i class="fas fa-users" aria-hidden="true"></i> Employee Satisfaction: The Four Pillars</h3>
       <p>High performers are 2.2× more likely to recommend their organization. Discover the four pillars of satisfaction—meaningful work, learning & growth, team support, and right tools—and how high-performance practices create them.</p>
       <p><strong>Satisfaction Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/employee-satisfaction.md" class="resource-link"><strong>Building Engagement</strong></a></p>
+    </div>
+  </div>
+
+  <div class="step-header" style="margin-top: 2rem;">
+    <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Meeting Materials</h3>
+    <p class="section-intro">Comprehensive guides and worksheets for facilitators and participants</p>
+  </div>
+
+  <div class="resource-callout-grid">
+    <div class="resource-callout">
+      <h3><i class="fas fa-comments" aria-hidden="true"></i> Discussion Questions (48 Questions)</h3>
+      <p>Comprehensive question bank with Quick Start guide. Select 8-10 questions for your 60-minute meeting or use the pre-selected Quick Start flow covering WIP limits, CABs, deployment pain, and burnout prevention.</p>
+      <p><strong>Facilitator Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/leadership/discussion-guide.md" class="resource-link"><strong>Discussion Questions</strong></a></p>
+    </div>
+
+    <div class="resource-callout">
+      <h3><i class="fas fa-print" aria-hidden="true"></i> Attendee Workbook (550 Lines)</h3>
+      <p>Printable workbook for participants with fill-in exercises on lean management, small batches, deployment pain tracking, and burnout risk assessment. Includes quick reference sections and personal reflection prompts.</p>
+      <p><strong>Printable Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/attendee-guide.md" class="resource-link"><strong>Attendee Guide</strong></a></p>
+    </div>
+
+    <div class="resource-callout">
+      <h3><i class="fas fa-tasks" aria-hidden="true"></i> Action Items Tracker</h3>
+      <p>Detailed tracker for commitments between meetings: lean practice experiments, small batch observations, deployment pain documentation, and burnout risk factors. Includes progress tracking and reflection prompts.</p>
+      <p><strong>Commitment Tracker:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/action-items-tracker.md" class="resource-link"><strong>Action Items</strong></a></p>
     </div>
   </div>
 </div>
