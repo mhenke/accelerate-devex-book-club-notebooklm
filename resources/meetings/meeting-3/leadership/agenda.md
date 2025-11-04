@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome + objectives
 - ✅ Quick round: "How sustainable did last week feel (1-10)?"
-- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md)
+- ✅ Review [Discussion Practices](../../../activities/discussion-practices.md)
 
 ---
 

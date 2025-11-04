@@ -139,13 +139,13 @@
 - ⬜ Send calendar invite with chapters to read
 - ⬜ Share [Attendee Guide](../handouts/attendee-guide.md) as prep material
 - ⬜ (Optional) Generate and share [NotebookLM Brief podcast](../notebooklm/podcast-brief.md)
-- ⬜ Review [Leader Cheatsheet](../leadership/leader-cheatsheet.md)
+- ⬜ Review [Leader Cheatsheet](leader-cheatsheet.md)
 
 ### Before Meeting (1 day prior):
 - ⬜ Print [Attendee Guide](../handouts/attendee-guide.md) for all participants
 - ⬜ Print [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 - ⬜ Prepare DORA metrics visual
-- ⬜ Review discussion questions in [Discussion Guide](../leadership/discussion-guide.md)
+- ⬜ Review discussion questions in [Discussion Guide](discussion-guide.md)
 
 ### Day of Meeting:
 - ⬜ Arrive 10 minutes early
@@ -172,8 +172,8 @@
 
 **Optional but Helpful:**
 - ✅ Name tags
-- ✅ [DORA Metrics Template](../../../../assessments/dora-metrics-template.md) - printed copies
-- ✅ [Culture Assessment Worksheet](../../../../assessments/culture-assessment-worksheet.md) - printed copies
+- ✅ [DORA Metrics Template](../../../assessments/dora-metrics-template.md) - printed copies
+- ✅ [Culture Assessment Worksheet](../../../assessments/culture-assessment-worksheet.md) - printed copies
 - ✅ Laptop/projector for showing visuals
 - ✅ Timer for time management
 

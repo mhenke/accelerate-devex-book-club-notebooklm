@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome + objectives
 - ✅ Quick round: "Who is a leader you admire and why?"
-- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md)
+- ✅ Review [Discussion Practices](../../../activities/discussion-practices.md)
 
 ---
 
