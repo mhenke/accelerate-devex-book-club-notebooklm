@@ -104,6 +104,6 @@ Use [podcast-deep-dive-shorter.md](podcast-deep-dive-shorter.md) instead (10-15 
 
 ## Related Resources
 
-- **[Meeting 2 Outline](../outline.md)** - Complete meeting structure
+- **[Meeting 2 Outline](../leadership/outline.md)** - Complete meeting structure
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 2
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Focus on CD practices (1-8)

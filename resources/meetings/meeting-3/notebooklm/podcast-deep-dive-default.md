@@ -46,6 +46,6 @@ Assume listener is manager/practitioner for book club. Focus Ch 7-10 Accelerate.
 
 ## Related Resources
 
-- **[Meeting 3 Outline](../outline.md)** - Complete meeting structure
+- **[Meeting 3 Outline](../leadership/outline.md)** - Complete meeting structure
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 3
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Focus on lean management (15-19)

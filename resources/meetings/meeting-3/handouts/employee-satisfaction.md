@@ -471,7 +471,7 @@ eNPS = % Promoters - % Detractors
 - [Lean Management Practices](lean-management-practices.md) - Enabling satisfaction
 
 **Assessments:**
-- [24 Capabilities Assessment](../../../../../../assessments/24-capabilities-assessment.md) - Organizational practices
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Organizational practices
 
 ---
 

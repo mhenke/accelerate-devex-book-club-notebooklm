@@ -108,4 +108,4 @@
 
 - **Complete facilitation guide:** [Outline](../../../meeting-4/outline.md)
 - **Quick reference:** [Leader Cheatsheet](../../../meeting-4/leadership/leader-cheatsheet.md)
-- **Retrospective:** [Transformation Template](../../../meeting-4/retrospective-template.md)
+- **Retrospective:** [Transformation Template](../../../meeting-4/retrospective.md)

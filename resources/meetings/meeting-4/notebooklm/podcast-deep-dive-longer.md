@@ -41,6 +41,6 @@ Assume listener wants comprehensive understanding. Focus Ch 11,16,Conclusion Acc
 
 ## Related Resources
 
-- **[Meeting 4 Outline](../outline.md)**
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/retrospective-template.md)** - Complete roadmap template
+- **[Meeting 4 Outline](../leadership/outline.md)**
+- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Complete roadmap template
 - **[Book Club Roadmap](../../book-club-roadmap.md)** - Post-book club guidance

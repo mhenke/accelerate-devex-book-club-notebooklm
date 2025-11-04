@@ -42,4 +42,4 @@ Assume listener needs essentials for book club. Focus on Ch 4-6 Accelerate. Crea
 ## Related Resources
 
 - **[Deep Dive (15-20 min)](podcast-deep-dive-default.md)** - For comprehensive coverage
-- **[Meeting 2 Outline](../outline.md)** - Complete meeting structure
+- **[Meeting 2 Outline](../leadership/outline.md)** - Complete meeting structure

@@ -185,7 +185,7 @@ Help listeners prepare to discuss:
 
 ## Related Resources
 
-- **[Meeting 1 Outline](../outline.md)** - Complete meeting structure
+- **[Meeting 1 Outline](../leadership/outline.md)** - Complete meeting structure
 - **[Meeting 1 Attendee Guide](../meeting-1/handouts/attendee-guide.md)** - Printable workbook
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 1
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Self-assessment tool

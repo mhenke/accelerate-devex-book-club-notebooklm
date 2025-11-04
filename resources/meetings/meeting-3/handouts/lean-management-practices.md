@@ -477,7 +477,7 @@ Less Pressure → Sustainable Pace
 - [Employee Satisfaction](employee-satisfaction.md) - How lean enables satisfaction
 
 **Assessments:**
-- [24 Capabilities Assessment](../../../../../../assessments/24-capabilities-assessment.md) - Lean practices included
+- [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Lean practices included
 
 ---
 
