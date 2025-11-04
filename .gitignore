@@ -91,3 +91,8 @@ lighthouse-local-config.js
 
 # PurgeCSS runtime report (generated, local only)
 planning/purgecss-report.json
+.gemini/commands/codellama.toml
+.gemini/commands/nomic.toml
+.gemini/commands/qwen2-7b.toml
+.gemini/commands/qwen2.toml
+.gemini/commands/qwen3.toml
