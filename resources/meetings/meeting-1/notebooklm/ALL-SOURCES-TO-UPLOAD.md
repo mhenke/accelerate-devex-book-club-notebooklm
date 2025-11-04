@@ -52,6 +52,9 @@ After uploading sources, choose your desired format:
 - **[podcast-critique.md](podcast-critique.md)** - Critical analysis of research methodology
 - **[podcast-debate.md](podcast-debate.md)** - Pro/con exploration of controversial topics
 
+### Facilitator Guide
+- **[discussion-facilitator.md](discussion-facilitator.md)** - 10-15 min guide for leading the 25-minute core discussion
+
 ### Video Format
 - **[video.md](video.md)** - Visual summary with key concepts
 
