@@ -14,9 +14,9 @@ See [Quick Start Guide](#quick-start-recommended-meeting-flow) below for a defau
 
 > **See [Key Questions - Meeting 3](../../../key-questions.md#meeting-3)**
 
-**"How could we apply Lean principles like limiting WIP and visualizing work to not only improve our delivery flow but also directly reduce 'deployment pain' and burnout, making our work more sustainable and satisfying?"**
+**"Given the research showing CABs are negatively correlated with performance AND show zero stability improvement, and that toxic workplace behavior predicts 60% of burnout variance, how could we apply Lean principles like limiting WIP and visualizing work to reduce 'deployment pain' (where risk grows near-quadratically with batch size) and address burnout through systemic solutions rather than individual interventions?"**
 
-This question links Lean management practices (Ch. 7) to sustainability outcomes (Ch. 9) and incorporates drivers of employee satisfaction (Ch. 10). It connects the technical "how" with the human "why," demonstrating that process improvements directly affect team wellbeing and engagement.
+This question directly challenges organizational sacred cows (Change Advisory Boards) with research findings, emphasizes the systemic nature of burnout (60% variance), and highlights the counterintuitive nonlinear risk of large batches. It links Lean management practices (Ch. 7) to sustainability outcomes (Ch. 9) and incorporates drivers of employee satisfaction (Ch. 10), framed as systemic organizational changes rather than individual wellness programs.
 
 ---
 
@@ -276,4 +276,4 @@ Preview question to consider:
 
 ---
 
-[ê Meeting 3 Resources](../README.md) | [Key Questions](../../../key-questions.md) í
+[ÔøΩ Meeting 3 Resources](../README.md) | [Key Questions](../../../key-questions.md) ÔøΩ

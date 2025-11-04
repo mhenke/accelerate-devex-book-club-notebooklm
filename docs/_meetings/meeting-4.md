@@ -172,12 +172,15 @@ document.addEventListener('keydown', function(event) {
 
 <div class="key-question-banner" markdown="0">
 <div class="key-question-wrapper">
-<div class="key-question-label">MEETING 4 KEY QUESTION</div>
-<div class="key-question-intro">Throughout this meeting, we'll return to this central reflection:</div>
+<div class="key-question-label">THE CULMINATING QUESTION</div>
+<div class="key-question-intro">This IS the transformation starting point—answer this precisely:</div>
 <div class="key-question-main">
 <div class="quote-mark-start">&ldquo;</div>
-<div class="question-text">What single supportive behavior could our leaders adopt to best enable team experimentation and a generative culture, and what practical steps (like the Obeya rooms or 'catchball' at ING) could we use to make that leadership support visible and effective?</div>
+<div class="question-text"><strong>What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?</strong></div>
 <div class="quote-mark-end">&rdquo;</div>
+</div>
+<div class="key-question-explanation">
+<p>This question embodies the entire philosophy of <em>Accelerate</em>: <strong>start small</strong> (incremental improvement), <strong>focus on pain</strong> (deployment as system health proxy), <strong>act your way into better culture</strong> (behavior before beliefs), <strong>measure and iterate</strong> (continuous improvement). Research shows transformational leadership explains <strong>18-50% of variance</strong> in outcomes and high performers are <strong>2.2x more likely to exceed goals</strong>. Leaders don't directly improve metrics—they enable teams to implement the practices that do.</p>
 </div>
 </div>
 </div>

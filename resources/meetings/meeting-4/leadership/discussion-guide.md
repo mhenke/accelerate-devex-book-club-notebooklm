@@ -10,13 +10,19 @@ See [Quick Start Guide](#quick-start-recommended-meeting-flow) below for a defau
 
 ---
 
-## Core Framing Question
+## The Culminating Question
 
 > **See [Key Questions - Meeting 4](../../../key-questions.md#meeting-4)**
 
-**"What single supportive behavior could our leaders adopt to best enable team experimentation and a generative culture, and what practical steps (like the Obeya rooms or 'catchball' at ING) could we use to make that leadership support visible and effective?"**
+**"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
 
-This question synthesizes transformational leadership theory (Ch. 11) with practical case study applications (Ch. 16). It pushes discussion from abstract leadership qualities to concrete, observable actions that foster the high-trust, learning-focused environment the book describes throughout.
+This IS the transformation starting point. This question embodies the entire philosophy of "Accelerate":
+- **Start small** (incremental improvement, not overwhelming transformation)
+- **Focus on pain** (deployment as proxy for system health)
+- **Act your way into better culture** (change behavior before beliefs)
+- **Measure and iterate** (continuous improvement, never "done")
+
+Research shows transformational leadership explains **18-50% of variance** in job satisfaction, organizational commitment, and trust (**42% of variance in trust in supervisor**), and high performers are **2.2x more likely to exceed organizational goals**. Leaders don't directly improve DORA metrics‚Äîthey enable teams to implement the practices that do. This question, combined with understanding of transformational leadership from Chapter 11 and practical lessons from the ING Netherlands case study in Chapter 16, provides the framework for beginning a **30-60-90 day transformation roadmap** based on small experiments, not a maturity model with a finite endpoint.
 
 ---
 
@@ -274,4 +280,4 @@ The research proves that investing in software delivery performance - through te
 
 ---
 
-[ê Meeting 4 Resources](../README.md) | [Key Questions](../../../key-questions.md) í
+[ÔøΩ Meeting 4 Resources](../README.md) | [Key Questions](../../../key-questions.md) ÔøΩ
