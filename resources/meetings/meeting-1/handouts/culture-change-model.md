@@ -443,7 +443,7 @@ Dr. Ron Westrum identified three organizational culture types:
 - [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Identify practices to adopt
 
 **Meeting Materials:**
-- [Meeting 1: Foundation](../../meeting-1/) - Introduction to culture and metrics
+- [Meeting 1: Foundation](../) - Introduction to culture and metrics
 - [Meeting 2: Technical Excellence](../../meeting-2/) - Practices that start the cycle
 - [Meeting 3: Management & Sustainability](../../meeting-3/) - Practices that sustain the cycle
 

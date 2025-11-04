@@ -16,7 +16,7 @@ Before generating any podcast or video, upload these sources to your NotebookLM 
 
 ## Optional But Recommended Sources
 
-3. **[Meeting 2 Chapter Notes](../../meeting-2/chapter-notes.md)**
+3. **[Meeting 2 Chapter Notes](../chapter-notes.md)**
    - Detailed summaries of key concepts
    - Research findings and statistics
    - Provides additional context for AI generation

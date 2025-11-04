@@ -53,7 +53,7 @@
 
 #### Part A: DORA Metrics (10 min) | 0:15-0:25
 
-**Key Question Reference:** See [key-questions.md#meeting-1](../../key-questions.md#meeting-1)
+**Key Question Reference:** See [key-questions.md#meeting-1](../../../key-questions.md#meeting-1)
 
 **Facilitator prompts:**
 1. "How does your team currently measure performance?"
