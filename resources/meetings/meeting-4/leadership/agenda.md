@@ -75,7 +75,7 @@
 **Objective:** Lock in leadership actions and transformation milestones
 
 **Facilitator Actions:**
-- ✅ Distribute [Action Items Tracking Sheet](action-items-tracker.md)
+- ✅ Distribute [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 - ✅ Each participant commits to:
 	- One leadership behavior to practice this week
 	- One enabling change for teams (e.g., reduce WIP, increase autonomy)

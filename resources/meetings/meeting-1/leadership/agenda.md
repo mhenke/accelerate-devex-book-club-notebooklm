@@ -21,7 +21,7 @@
 - ✅ Review discussion practices ground rules
 
 **Materials:**
-- [Attendee Guide](attendee-guide.md) - printed for all participants
+- [Attendee Guide](../handouts/attendee-guide.md) - printed for all participants
 - Name tags (if needed)
 
 ---
@@ -103,7 +103,7 @@
 **Objective:** Ensure each participant commits to specific actions
 
 **Facilitator Actions:**
-- ✅ Distribute [Action Items Tracking Sheet](action-items-tracker.md)
+- ✅ Distribute [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 - ✅ Each participant writes and shares their commitments:
   - Which DORA metric they'll track
   - How they'll track it
@@ -137,13 +137,13 @@
 
 ### Before Meeting (1 week prior):
 - ⬜ Send calendar invite with chapters to read
-- ⬜ Share [Attendee Guide](attendee-guide.md) as prep material
+- ⬜ Share [Attendee Guide](../handouts/attendee-guide.md) as prep material
 - ⬜ (Optional) Generate and share [NotebookLM Brief podcast](../notebooklm/podcast-brief.md)
 - ⬜ Review [Leader Cheatsheet](../leadership/leader-cheatsheet.md)
 
 ### Before Meeting (1 day prior):
-- ⬜ Print [Attendee Guide](attendee-guide.md) for all participants
-- ⬜ Print [Action Items Tracking Sheet](action-items-tracker.md)
+- ⬜ Print [Attendee Guide](../handouts/attendee-guide.md) for all participants
+- ⬜ Print [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 - ⬜ Prepare DORA metrics visual
 - ⬜ Review discussion questions in [Discussion Guide](../leadership/discussion-guide.md)
 
@@ -165,15 +165,15 @@
 ## Materials Checklist
 
 **Required:**
-- ✅ [Attendee Guide](attendee-guide.md) - printed, 1 per participant
-- ✅ [Action Items Tracking Sheet](action-items-tracker.md) - printed, 1 per participant
+- ✅ [Attendee Guide](../handouts/attendee-guide.md) - printed, 1 per participant
+- ✅ [Action Items Tracking Sheet](../handouts/action-items-tracker.md) - printed, 1 per participant
 - ✅ Pens/pencils
 - ✅ Whiteboard/flipchart and markers
 
 **Optional but Helpful:**
 - ✅ Name tags
-- ✅ [DORA Metrics Template](../../../../../assessments/dora-metrics-template.md) - printed copies
-- ✅ [Culture Assessment Worksheet](../../../../../assessments/culture-assessment-worksheet.md) - printed copies
+- ✅ [DORA Metrics Template](../../../../assessments/dora-metrics-template.md) - printed copies
+- ✅ [Culture Assessment Worksheet](../../../../assessments/culture-assessment-worksheet.md) - printed copies
 - ✅ Laptop/projector for showing visuals
 - ✅ Timer for time management
 
@@ -182,7 +182,7 @@
 ## Time Management Tips
 
 **If Running Ahead:**
-- Use additional discussion questions from [Discussion Guide](../leadership/discussion-guide.md)
+- Use additional discussion questions from [Discussion Guide](discussion-guide.md)
 - Go deeper on culture discussion with scenario exploration
 - Allow more time for action items planning
 
@@ -227,9 +227,9 @@ By end of meeting, participants should:
 ## Related Resources
 
 - **Complete facilitation guide:** [Outline](outline.md)
-- **Quick reference:** [Leader Cheatsheet](../leadership/leader-cheatsheet.md)
-- **All discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
+- **Quick reference:** [Leader Cheatsheet](leader-cheatsheet.md)
+- **All discussion questions:** [Discussion Guide](discussion-guide.md)
 
 ---
 
-**Next Meeting:** [Meeting 2 Agenda](../../meeting-2/handouts/meeting-agenda.md)
+**Next Meeting:** [Meeting 2 Agenda](../../meeting-2/leadership/agenda.md)
