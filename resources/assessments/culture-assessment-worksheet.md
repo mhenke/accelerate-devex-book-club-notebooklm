@@ -75,6 +75,13 @@ For each behavior below, select which culture type best describes your organizat
 ### 1. Information Flow
 **How does information flow in your organization?**
 
+_This measures whether people actively seek and share information across boundaries, or whether information is controlled, restricted, or flows only through official channels._
+
+**Examples:**
+- **Generative:** Engineers proactively check dashboards, share incident learnings in Slack, and reach out to other teams for context
+- **Bureaucratic:** Information distributed only through official meetings or email chains with limited visibility
+- **Pathological:** Critical details kept secret, data access restricted, information used as leverage
+
 - ☐ **Pathological:** Information is hoarded, withheld, or manipulated for political gain
 - ☐ **Bureaucratic:** Information flows through formal channels with narrow distribution
 - ☐ **Generative:** Information flows freely to anyone who needs it to do their job
@@ -87,6 +94,13 @@ _______________________________________________________________________________
 
 ### 2. Messenger Treatment
 **What happens when someone brings bad news (outages, bugs, delays)?**
+
+_This measures psychological safety—whether people can raise problems without fear of blame, or if reporting issues damages their reputation._
+
+**Examples:**
+- **Generative:** When an engineer reports "We'll miss the deadline," the team says "Thanks for raising this early, let's adjust scope"
+- **Bureaucratic:** Bad news is acknowledged but ignored, no consequences but also no action
+- **Pathological:** Person reporting the problem is blamed ("Why didn't you work harder?") or avoided by others
 
 - ☐ **Pathological:** Messengers are blamed, punished, or their careers suffer
 - ☐ **Bureaucratic:** Messengers are listened to but little action is taken
@@ -101,6 +115,13 @@ _______________________________________________________________________________
 ### 3. Responsibility
 **How do teams handle shared responsibilities?**
 
+_This measures whether teams take collective ownership or avoid accountability by narrowly defining their roles._
+
+**Examples:**
+- **Generative:** When production breaks, multiple teams coordinate to fix it regardless of who "owns" that component
+- **Bureaucratic:** Teams help only within their specific job scope, requiring tickets or formal requests for anything outside it
+- **Pathological:** Teams actively avoid taking on problems, saying "That's not our code" or "Not my team's responsibility"
+
 - ☐ **Pathological:** Responsibilities are shirked ("not my problem")
 - ☐ **Bureaucratic:** Narrow job descriptions ("not in my job description")
 - ☐ **Generative:** Risks and responsibilities are shared across teams
@@ -113,6 +134,13 @@ _______________________________________________________________________________
 
 ### 4. Cross-Team Collaboration
 **How does your organization treat people who bridge between teams or departments?**
+
+_This measures whether cross-functional work is valued or whether organizational silos prevent effective collaboration._
+
+**Examples:**
+- **Generative:** Engineers who help other teams are explicitly recognized in performance reviews; cross-team projects are career accelerators
+- **Bureaucratic:** Helping other teams is allowed but doesn't count toward your own team's metrics or goals
+- **Pathological:** Working with other teams is seen as "wasting time" or "not focusing on your real work"
 
 - ☐ **Pathological:** Bridging is discouraged; stay in your lane
 - ☐ **Bureaucratic:** Bridging is tolerated but not rewarded
@@ -127,6 +155,13 @@ _______________________________________________________________________________
 ### 5. Failure Response
 **What happens when something goes wrong?**
 
+_This measures whether failures are opportunities to learn and improve systems, or if they trigger blame, punishment, or rule enforcement._
+
+**Examples:**
+- **Generative:** Blameless postmortems ask "What systemic factors contributed?" and result in automated checks or process improvements
+- **Bureaucratic:** Incident reports focus on which policy was violated, little learning or system change occurs
+- **Pathological:** After an outage, someone is quietly removed from the project or their career is damaged
+
 - ☐ **Pathological:** Failure is covered up, hidden, or someone is blamed/punished
 - ☐ **Bureaucratic:** Failure leads to justice-seeking and finding who violated rules
 - ☐ **Generative:** Failure leads to inquiry, learning, and systemic improvement
@@ -139,6 +174,13 @@ _______________________________________________________________________________
 
 ### 6. Innovation & Novelty
 **How does your organization respond to new ideas?**
+
+_This measures whether innovation and experimentation are encouraged or whether new approaches are discouraged or heavily bureaucratic._
+
+**Examples:**
+- **Generative:** When someone proposes trying a new tool, the response is "Let's run a small experiment and measure results"
+- **Bureaucratic:** New ideas require extensive approval processes, committees, and business cases before any pilot can happen
+- **Pathological:** Suggesting changes is seen as criticism; innovators are told "If you don't like it, leave"
 
 - ☐ **Pathological:** Novelty is crushed; stick to the way we've always done it
 - ☐ **Bureaucratic:** Novelty creates problems and requires extensive approval
