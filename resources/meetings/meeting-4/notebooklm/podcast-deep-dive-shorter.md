@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener needs quick overview. Focus Ch 11,16,Conclusion Accelerate. Create 10-15min: (1) Five leadership LIST (vision, communication, stimulation, support, recognition), (2) ING takeaways (Obeya, catchball, empowered teams), (3) Roadmap approach. Discuss: leadership present/absent? ING practice to adapt? Priorities?
+Assume listener needs quick overview. Focus Ch 11,16,Conclusion Accelerate. Create 10-15min: (1) Five Leadership - vision, communication, stimulation, support, recognition - 18-50% variance, 42% trust, ENABLE not fix, (2) ING - Obeya rooms, catchball, squads, CEO commitment, (3) CULMINATING QUESTION: "What makes next deployment less painful?" - THE starting point, (4) 30-60-90 day roadmap, (5) Capabilities vs maturity. High performers 2.2x exceed goals. Discuss: Leadership present? ING adaptable? YOUR answer? Priorities?
 ```
 
 ---
@@ -34,14 +34,15 @@ Assume listener needs quick overview. Focus Ch 11,16,Conclusion Accelerate. Crea
 **Duration:** 10-15 minutes
 
 **Coverage:**
-- ✅ Five transformational leadership characteristics (names and brief explanations)
-- ✅ Three ING practices (Obeya, catchball, empowered teams)
-- ✅ Roadmap creation approach (3-6-12 months)
-- ✅ Sustainability basics
+- ✅ Five leadership characteristics with key statistics
+- ✅ ING Netherlands key practices (Obeya, catchball, squads)
+- ✅ The culminating question as starting point
+- ✅ 30-60-90 day roadmap approach (NOT 3-6-12 months)
+- ✅ Capabilities vs maturity models distinction
 
 **What's NOT included (use Default or Longer for these):**
-- ❌ Detailed leadership examples
-- ❌ Complete ING transformation story
+- ❌ Detailed leadership development examples
+- ❌ Complete ING transformation timeline
 - ❌ Detailed roadmap creation guidance
 - ❌ Deep dive on sustainability strategies
 
@@ -70,6 +71,8 @@ Assume listener needs quick overview. Focus Ch 11,16,Conclusion Accelerate. Crea
 
 ## Related Resources
 
+- **[Meeting 4 Discussion Guide](../leadership/discussion-guide.md)** - 45 questions with culminating question emphasis
+- **[Meeting 4 Attendee Workbook](../handouts/attendee-guide.md)** - 690-line workbook
+- **[Transformation Roadmap Tracker](../handouts/action-items-tracker.md)** - 30-60-90 day plan
 - **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Final reflection and roadmap
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 4

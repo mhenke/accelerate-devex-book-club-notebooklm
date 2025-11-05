@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume viewer is visual learner. Focus Ch 11,16,Conclusion Accelerate. Create 10-15min visual: (1) Five leadership WITH characteristics diagram (vision, communication, stimulation, support, recognition), (2) ING transformation WITH timeline/practices (Obeya, catchball, squads), (3) Roadmap WITH milestones (3/6/12 months). Discuss: leadership present? ING to adapt? Next steps?
+Assume viewer is visual learner. Focus Ch 11,16,Conclusion Accelerate. Create 10-15min visual: (1) Five Leadership diagram - vision, communication, stimulation, support, recognition WITH impact bars (18-50% variance satisfaction, 42% trust, 2.2x exceed goals), leaders ENABLE not fix (arrows showing indirect path), (2) ING transformation timeline - Obeya rooms visual (space layout), catchball vertical flow diagram, squad structure, CEO commitment icon, years-long progression, (3) CULMINATING QUESTION prominently: "What single smallest change would make next deployment less painful?" - THE starting point visual, (4) 30-60-90 day roadmap WITH milestones (NOT 3-6-12 months), small experiments compounding, (5) Capabilities vs maturity comparison chart - continuous/finite, context/prescriptive, impactful/complete. Color: leadership enables (green arrows), transformation journey (timeline), capabilities focus (highlight). Discuss: YOUR leaders exhibit which? ING adaptable HOW? YOUR answer to question? YOUR 30-day priority?
 ```
 
 ---
@@ -44,6 +44,8 @@ Assume viewer is visual learner. Focus Ch 11,16,Conclusion Accelerate. Create 10
 
 ## Related Resources
 
+- **[Meeting 4 Discussion Guide](../leadership/discussion-guide.md)** - 45 questions with culminating question emphasis
+- **[Meeting 4 Attendee Workbook](../handouts/attendee-guide.md)** - 690-line comprehensive workbook
+- **[Transformation Roadmap Tracker](../handouts/action-items-tracker.md)** - 30-60-90 day plan
 - **[Deep Dive Podcast (15-20 min)](podcast-deep-dive-default.md)** - Audio format
 - **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
-- **[Meeting 4 Retrospective](../../meetings/meeting-4/leadership/retrospective.md)** - Transformation roadmap template

@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume viewer is visual learner. Focus Ch 7-10 Accelerate. Create 10-15min visual: (1) Five Lean WITH flow diagrams (WIP, visual, monitoring, approval, batches), (2) Deployment pain → burnout WITH timeline, (3) Satisfaction formula WITH virtuous cycle diagram (tools + meaning + culture → performance). Discuss: WIP? Deployment pain? Satisfaction drivers?
+Assume viewer is visual learner. Focus Ch 7-10 Accelerate. Create 10-15min visual: (1) Five Lean WITH diagrams - WIP limits (1-2 items vs overloaded queue), visual boards (kanban with blocks), monitoring dashboards (AWS: 78% graphic), approval (CAB crossed out "negatively correlated", peer review), batches (CHART: quadratic risk curve), (2) Pain → burnout timeline - manual deploy anxiety/off-hours, 60% variance stat, Bing before/after bars (38%→75%), (3) Satisfaction virtuous cycle diagram - four pillars (tools, meaning, culture, learning) → performance → success → reinvestment (circular). Stats: 49% vs 38% time, 22% less unplanned. Color: red=problems, green=solutions. Discuss: YOUR team WIP? YOUR pain score? Which pillar needs work?
 ```
 
 ---

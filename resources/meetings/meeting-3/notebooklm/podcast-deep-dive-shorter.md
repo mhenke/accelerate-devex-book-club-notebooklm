@@ -24,7 +24,7 @@
 ## COPY-PASTE PROMPT FOR NOTEBOOKLM
 
 ```
-Assume listener needs quick overview. Focus Ch 7-10 Accelerate. Create 10-15min: (1) Five Lean (WIP, visual, monitoring, approval, batches), (2) Product (customer-centric, MVP), (3) Deployment pain → burnout, automation helps, (4) Satisfaction = tools + meaning + culture. Discuss: WIP? Pain? Satisfaction?
+Assume listener needs quick overview. Focus Ch 7-10 Accelerate. Create 10-15min: (1) Five Lean - WIP limits (1-2 items), visual boards, proactive monitoring, lightweight approval (CABs negatively correlated + zero stability), small batches (quadratic risk), (2) Product - customer feedback, MVPs, (3) Pain → burnout - 60% variance from toxic workplace, Microsoft Bing: 38%→75% with CD, (4) Satisfaction pillars - tools, meaning, culture, learning. Key: CABs harmful, batch risk nonlinear, burnout systemic. Discuss: WIP? Pain? Satisfaction?
 ```
 
 ---
@@ -34,14 +34,16 @@ Assume listener needs quick overview. Focus Ch 7-10 Accelerate. Create 10-15min:
 **Duration:** 10-15 minutes
 
 **Coverage:**
-- ✅ Five lean practices (names and brief explanations)
-- ✅ Deployment pain → burnout connection
-- ✅ Three employee satisfaction drivers
+- ✅ Five lean practices with key statistics
+- ✅ Critical insight: CABs negatively correlated with performance
+- ✅ Deployment pain → burnout connection (60% variance)
+- ✅ Microsoft Bing transformation story (38%→75%)
+- ✅ Four employee satisfaction pillars
 
 **What's NOT included (use Default or Longer for these):**
 - ❌ Detailed implementation guidance for lean practices
 - ❌ Product development chapter deep dive
-- ❌ Other burnout factors beyond deployment pain
+- ❌ All six burnout risk factors
 - ❌ Detailed examples and case studies
 
 ---
@@ -69,6 +71,8 @@ Assume listener needs quick overview. Focus Ch 7-10 Accelerate. Create 10-15min:
 
 ## Related Resources
 
+- **[Meeting 3 Discussion Guide](../leadership/discussion-guide.md)** - 48 questions with Quick Start flow
+- **[Meeting 3 Attendee Workbook](../handouts/attendee-guide.md)** - 550-line printable workbook
+- **[Action Items Tracker](../handouts/action-items-tracker.md)** - Commitment tracking
 - **[Meeting 3 Outline](../leadership/outline.md)** - Complete meeting structure
-- **[Meeting 3 Attendee Guide](../meeting-3/handouts/attendee-guide.md)** - Printable workbook (when created)
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 3
