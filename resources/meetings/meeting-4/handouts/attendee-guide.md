@@ -1,692 +1,180 @@
 # Meeting 4 Attendee Guide
-
-**Leadership, Research Methods & Transformation**
-
-**Week 7 | Chapters 11, 16, Conclusion | 1 Hour**
-
-_Print this guide and bring to the meeting_
-
----
-
-## Meeting Overview
-
-Today we explore:
-- The 5 characteristics of transformational leadership that drive performance
-- Why leadership explains 18-50% of variance in job satisfaction
-- The ING Netherlands case study: real-world transformation in action
-- Why capabilities beat maturity models for continuous improvement
-- The culminating question that ties everything together
-
----
+**Leadership, Research Methods & Transformation** | Week 7 | Chapters 11, 16, Conclusion | 1 Hour
 
 ## The Culminating Question
-
 > **"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
 
-This IS the transformation starting point. This question embodies the entire philosophy: **start small** (incremental), **focus on pain** (deployment as system health proxy), **act your way into better culture** (behavior before beliefs), **measure and iterate** (continuous improvement). Answer this precisely.
+This IS the transformation starting point. Embodies: **start small** (incremental), **focus on pain** (deployment as system health proxy), **act into culture** (behavior before beliefs), **measure and iterate** (continuous improvement).
 
----
+**Your answer:** ________________________________________________________________
+**Who needs involvement:** ________________________________________________________________
+**First step:** ________________________________________________________________  **When:** ___________
 
 ## The 5 Characteristics of Transformational Leadership
 
-Rate your organization's leaders on each characteristic (1-10):
-
-### 1. Vision
-
-**What it is:** Has clear understanding of where organization is going and can articulate where it should be in 5 years
-
-**Rating:** _____ / 10
-
-**Evidence:**
-- Leaders articulate compelling future state
-- Clear direction for next 5 years
-- Everyone understands where we're heading
-
-**Example from your experience:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-### 2. Inspirational Communication
-
-**What it is:** Communicates in a way that inspires and motivates, even in uncertain environments
-
-**Rating:** _____ / 10
-
-**Evidence:**
-- Communication creates sense of purpose
-- Messages inspire action
-- Maintains effectiveness during uncertainty
-
-**Example from your experience:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-### 3. Intellectual Stimulation
-
-**What it is:** Challenges followers to think about problems in new ways, encourages questioning assumptions
-
-**Rating:** _____ / 10
-
-**Evidence:**
-- Encourages innovative thinking
-- Safe to question assumptions
-- Promotes creative problem-solving
-
-**Example from your experience:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-### 4. Supportive Leadership
-
-**What it is:** Demonstrates care and consideration of followers' personal needs and feelings
-
-**Rating:** _____ / 10
-
-**Evidence:**
-- Shows empathy and emotional intelligence
-- Creates safe environment
-- Genuine care for wellbeing
-
-**Example from your experience:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-### 5. Personal Recognition
-
-**What it is:** Praises and acknowledges achievements, recognizes improvements, celebrates successes
-
-**Rating:** _____ / 10
-
-**Evidence:**
-- Achievements are recognized publicly
-- Improvements celebrated
-- Individual contributions acknowledged
-
-**Example from your experience:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
+| Characteristic | Definition | Rating (1-10) | Example from Your Experience |
+|----------------|------------|---------------|------------------------------|
+| **1. Vision** | Clear understanding of where org is going, can articulate 5-year future | _____ | ________________ |
+| **2. Inspirational Communication** | Inspires and motivates, even in uncertain environments | _____ | ________________ |
+| **3. Intellectual Stimulation** | Challenges to think differently, encourages questioning assumptions | _____ | ________________ |
+| **4. Supportive Leadership** | Demonstrates care for personal needs and feelings, creates safety | _____ | ________________ |
+| **5. Personal Recognition** | Praises achievements, recognizes improvements, celebrates successes | _____ | ________________ |
 
 ## Leadership's Measurable Impact
 
-### Key Statistics
+| Measure | Variance Explained |
+|---------|-------------------|
+| Job satisfaction | 18-23% |
+| Organizational commitment | 18-23% |
+| Trust in supervisor | 42% |
+| Leader-member exchange quality | 50% |
 
-**Transformational leadership explains:**
-- **18-23%** of variance in job satisfaction
-- **18-23%** of variance in organizational commitment
-- **42%** of variance in trust in supervisor
-- **50%** of variance in leader-member exchange quality
-
-### Why Leadership Matters
-
-**Critical Insight:** "A good leader affects a team's ability to deliver code, architect good systems, and apply Lean principles to how the team manages its work and develops products, all of which have a measurable impact on an organization's profitability, productivity, and market share."
-
-**Important:** Leadership helps, but isn't enough alone. Leaders need:
-- Teams executing work on suitable architecture
-- Good technical practices in place
-- Use of Lean principles
-- All 24 capabilities functioning
-
-**Why:** Even high-performing teams may burn out without leadership support.
-
----
+**Critical Insight:** "Good leader affects team's ability to deliver code, architect systems, apply Lean principles → measurable impact on profitability, productivity, market share."
+**Important:** Leadership helps but isn't enough. Need: suitable architecture, good technical practices, Lean principles, all 24 capabilities.
 
 ## Leadership vs. Management
 
-### What Leaders Do
+| Leaders Do | Managers Do |
+|------------|-------------|
+| Create & communicate vision | Remove blockers |
+| Inspire & motivate | Provide resources |
+| Challenge thinking | Foster respectful environment |
+| Support emotionally | Invest in development |
+| Recognize achievements | Give space to experiment |
 
-**Leaders:**
-- Create and communicate vision
-- Inspire and motivate
-- Challenge thinking
-- Support people emotionally
-- Recognize achievements
+**Your org:** ⬜ Strong leadership, weak mgmt ⬜ Strong mgmt, weak leadership ⬜ Both strong ⬜ Both weak
+**Biggest gap:** ________________________________________________________________
 
-### What Managers Do
+## ING Netherlands Case Study
 
-**Managers:**
-- Remove blockers and impediments
-- Provide resources and tools
-- Foster respectful environment
-- Invest in employee development
-- Give space to experiment
+**What ING did:** Culture transformation (→ Generative) | Transformational leadership | Cross-functional autonomous teams | DevOps practices
 
-**Your organization needs both.** Check which you see more of:
+**Critical Finding:** Understanding the **"why"** behind behaviors matters more than copying behaviors
 
-- Strong leadership, weak management
-- Strong management, weak leadership
-- Both strong
-- Both weak
+| ING Practice | Could Work Here? | What Would Need to Change? |
+|--------------|------------------|---------------------------|
+| Obeya rooms (visual mgmt) | | |
+| Catchball (collaborative planning) | | |
+| Squad-based structure | | |
+| Product-oriented org | | |
 
-**What's the biggest gap?**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## The ING Netherlands Case Study
-
-### Transformation Elements
-
-**What ING did:**
-1. **Culture transformation** - Moved toward generative (Westrum) culture
-2. **Leadership approach** - Applied transformational leadership principles
-3. **Teamwork restructuring** - Created cross-functional, autonomous teams
-4. **DevOps practices** - Implemented technical and process capabilities
-
-### Key Lessons
-
-**Critical Finding:** Understanding the **"why"** behind behaviors matters more than copying the behaviors themselves.
-
-**Examples of ING practices:**
-- Obeya rooms (visual management spaces)
-- Catchball (collaborative planning process)
-- Squad-based structure (autonomous teams)
-- Product-oriented organization
-
-**What practices could work in your context?**
-
-| ING Practice | Could It Work Here? | What Would Need to Change? |
-|--------------|---------------------|---------------------------|
-| Obeya rooms  |                     |                           |
-| Catchball    |                     |                           |
-| Squads       |                     |                           |
-| Product orgs |                     |                           |
-
-**Most important lesson from ING:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
+**Most important lesson:** ________________________________________________________________
 
 ## Capabilities vs. Maturity Models
 
-### Why Maturity Models Are Problematic
-
-**Maturity models suggest:**
-- Finite endpoint ("Level 5" = done)
-- You can "complete" transformation
-- One-size-fits-all progression
-
-**Problem:** High performers never stop improving. They don't declare transformation "done."
-
-### The Capabilities Model
-
-**Capabilities model emphasizes:**
-- Continuous improvement (no finish line)
-- Context-specific priorities
-- Focus on high-impact areas
-- Ongoing evolution
-
-**Key Insight:** "Innovative firms never declare transformation complete."
-
----
+| Maturity Models | Capabilities Model |
+|----------------|-------------------|
+| Finite endpoint ("Level 5" = done) | Continuous improvement (no finish line) |
+| Can "complete" transformation | Context-specific priorities |
+| One-size-fits-all progression | Focus on high-impact areas |
+| **Problem:** High performers never stop | **Key:** Innovative firms never declare done |
 
 ## The 24 Capabilities Framework
 
-### Five Categories
+| Category | Count | Capabilities |
+|----------|-------|--------------|
+| **Continuous Delivery** | 8 | Version control, deployment auto, CI, trunk-based, test auto, test data, shift left security, CD |
+| **Architecture** | 2 | Loosely coupled, empowered teams |
+| **Product & Process** | 4 | Customer feedback, value stream visibility, small batches, team experimentation |
+| **Lean Mgmt & Monitor** | 5 | Change approval, monitoring, proactive notification, WIP limits, visualizing work |
+| **Cultural** | 5 | Westrum culture, supporting learning, collaboration, job satisfaction, transformational leadership |
 
-**1. Continuous Delivery (8 capabilities)**
-- Version control, deployment automation, CI, trunk-based development
-- Test automation, test data management, shift left on security, continuous delivery
+### Your Capabilities Assessment
 
-**2. Architecture (2 capabilities)**
-- Loosely coupled architecture
-- Empowered teams
+| Category | Rating (1-10) | Top 2-3 Priorities | Why? |
+|----------|---------------|-------------------|------|
+| Continuous Delivery | _____ | 1. ____________ | ____________ |
+| Architecture | _____ | 2. ____________ | ____________ |
+| Product & Process | _____ | 3. ____________ | ____________ |
+| Lean Management | _____ | | |
+| Cultural | _____ | | |
 
-**3. Product and Process (4 capabilities)**
-- Customer feedback, value stream visibility
-- Working in small batches, team experimentation
-
-**4. Lean Management and Monitoring (5 capabilities)**
-- Change approval processes, monitoring, proactive notification
-- WIP limits, visualizing work
-
-**5. Cultural (5 capabilities)**
-- Westrum organizational culture, supporting learning
-- Collaboration among teams, job satisfaction
-- Transformational leadership
-
----
-
-## Your Capabilities Assessment
-
-### Where are you now?
-
-Rate your organization on each category (1-10):
-
-**Continuous Delivery:** _____ / 10
-
-**Architecture:** _____ / 10
-
-**Product and Process:** _____ / 10
-
-**Lean Management:** _____ / 10
-
-**Cultural:** _____ / 10
-
-### Which 2-3 capabilities would have highest impact?
-
-**Priority 1:** ____________________________________________________
-
-**Why:** _________________________________________________________
-
-________________________________________________________________
-
-**Priority 2:** ____________________________________________________
-
-**Why:** _________________________________________________________
-
-________________________________________________________________
-
-**Priority 3:** ____________________________________________________
-
-**Why:** _________________________________________________________
-
-________________________________________________________________
-
----
-
-## The Transformation Journey
-
-### Key Research Conclusions
+## Key Research Conclusions
 
 **1. Software Delivery Impacts Organizational Performance**
-- Both commercial and non-commercial outcomes
-- Speed and stability improve together (no trade-off)
-- Quality and speed reinforce each other
+- Commercial & non-commercial outcomes | Speed + stability together (no trade-off) | Quality + speed reinforce
 
-**2. Practices from Agile, Lean, and DevOps Work**
-- When done right, they impact delivery AND organizational performance
-- Evidence shows causal links, not just correlation
+**2. Agile, Lean, DevOps Practices Work**
+- Impact delivery AND organizational performance | Evidence shows causality, not just correlation
 
 **3. Capabilities Over Maturity Models**
-- Support continuous improvement
-- No "done" state
-- Context-specific priorities
+- Support continuous improvement | No "done" state | Context-specific priorities
 
-### The Executive Awareness Gap
-
-**Critical Finding:** Executives often think they're **further along** the transformation journey than those on the ground.
-
-**Do you see this gap?** Yes / No / Somewhat
-
-**Example:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**What metrics or transparency would close the gap?**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
+**Executive Awareness Gap:** Executives often think further along than reality
+**Do you see this?** ⬜ Yes ⬜ No ⬜ Somewhat **Example:** ________________
+**What metrics/transparency would close gap?** ________________________________________________________________
 
 ## The Accelerate Roadmap
 
-### Step 1: Measure
-- Implement DORA metrics (deployment frequency, lead time, MTTR, change fail rate)
-- Assess current state of 24 capabilities
-- Identify gaps and opportunities
-
-**Your current measurement:**
-
-________________________________________________________________
-
-### Step 2: Focus
-- Choose 2-3 capabilities to improve first
-- Start with high-impact, achievable improvements
-- Create feedback loops to track progress
-
-**Your focus areas (from priorities above):**
-
-1. _____________________________________________________________
-2. _____________________________________________________________
-3. _____________________________________________________________
-
-### Step 3: Improve
-- Implement practices from chosen capabilities
-- Measure impact on DORA metrics
-- Learn from experiments and adjust
-
-**First experiment to try:**
-
-________________________________________________________________
-
-### Step 4: Repeat
-- Continuous improvement cycle
-- Never declare transformation "complete"
-- Keep raising the bar
-
----
-
-## The Culminating Question
-
-> **"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
-
-This question ties together:
-- Technical practices (deployment automation)
-- Culture (psychological safety to discuss pain)
-- Management (removing impediments)
-- Leadership (supporting improvement)
-
-**Your answer:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Who needs to be involved?**
-
-________________________________________________________________
-
-**What's the first step?**
-
-________________________________________________________________
-
-**When will you start?**
-
-________________________________________________________________
-
----
-
-## Discussion Notes
-
-Use this space to capture key points during discussion:
-
-**Insights about transformational leadership:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**ING case study lessons:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Capabilities vs. maturity models:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Our transformation priorities:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**The virtuous cycle between systems and culture:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Questions to explore further:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Action Items (My Personal Commitments)
-
-### In the next 2 weeks, I will:
-
-** Practice one transformational leadership behavior:**
-
-Behavior: _______________________________________________________
-
-How I'll demonstrate it: ________________________________________
-
-________________________________________________________________
-
-How I'll measure impact: ________________________________________
-
-** Focus on one capability:**
-
-Capability: _____________________________________________________
-
-Specific practice to implement: _________________________________
-
-________________________________________________________________
-
-Success metrics: ________________________________________________
-
-** Answer the culminating question:**
-
-Smallest change for less painful deployment: ____________________
-
-________________________________________________________________
-
-Who needs to be involved: _______________________________________
-
-Timeline: Start _____________ Complete _____________
-
-** Share learnings with team:**
-
-What I learned from book club: __________________________________
-
-________________________________________________________________
-
-How it applies to our work: _____________________________________
-
-________________________________________________________________
-
-Next steps for team: ____________________________________________
-
----
-
-## Key Takeaways
-
-**Most transformative insight from the entire book:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**One thing I'll do differently starting tomorrow:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**One thing I'll advocate for at organizational level:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**How I'll continue the improvement journey:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Key Statistics from Chapters 11, 16, Conclusion
-
-### Leadership Impact
-- Transformational leadership: **18-50%** of variance in satisfaction, commitment, trust
-- Affects profitability, productivity, market share
-- Critical for sustainable high performance
-
-### High Performers vs. Low Performers (Overall)
-- Deployment frequency: **46x** more frequent
-- Lead time: **440x** faster
-- Recovery time: **24x** faster
-- Change fail rate: **5x** lower
-
-### Time Allocation (with CD)
-- **49%** time on new work (vs. 38% without)
-- **22%** less time on unplanned work
-- **29%** more time on new features
-
-### The Transformation Gap
-- Executives often perceive more progress than reality
-- Better measurement and transparency essential
-- Continuous improvement mindset required
-
----
-
-## Transformation Principles
-
-### What High-Performing Organizations Do
-
-**They focus on:**
-1. Consistent measurement of key metrics (DORA)
-2. Continuous improvement mindset
-3. Transformational leadership at all levels
-4. Culture of psychological safety and learning
-5. Integration of technical, process, and cultural practices
-
-**They avoid:**
-1. Declaring transformation "done"
-2. Copying behaviors without understanding "why"
-3. Maturity models with finite endpoints
-4. Individual interventions for systemic problems
-5. Speed vs. stability trade-offs
-
----
+| Step | Actions | Your Application |
+|------|---------|------------------|
+| **1. Measure** | Implement DORA metrics, assess 24 capabilities, identify gaps | ________________ |
+| **2. Focus** | Choose 2-3 capabilities, start with high-impact achievable | 1.______ 2.______ 3.______ |
+| **3. Improve** | Implement practices, measure DORA impact, learn and adjust | First experiment: ________________ |
+| **4. Repeat** | Continuous cycle, never declare "complete", keep raising bar | Entry point: ________________ |
 
 ## The Virtuous Cycle
 
-### How It All Connects
+**Technical Practices** (CI/CD, automation, architecture) → **Faster, safer delivery** → **Less deployment pain/stress** → **Better job satisfaction/culture** → **More experimentation/learning** → **Better technical practices** → *Cycle repeats*
 
-**Technical Practices** (CI/CD, automation, architecture)
-�
-Enable **faster, safer delivery**
-�
-Reduces **deployment pain and stress**
-�
-Improves **job satisfaction and culture**
-�
-Enables **experimentation and learning**
-�
-Drives **better technical practices**
-�
-*Cycle repeats, continuously improving*
+**Your entry point:** ________________________________________________________________
+**First action:** ________________________________________________________________
 
-**Where can you enter this cycle in your organization?**
+## Key Statistics
 
-Entry point: ____________________________________________________
-
-________________________________________________________________
-
-First action: ___________________________________________________
-
-________________________________________________________________
-
----
+| Metric | High vs. Low Performers |
+|--------|------------------------|
+| Deployment frequency | **46x** more |
+| Lead time | **440x** faster |
+| Recovery time | **24x** faster |
+| Change fail rate | **5x** lower |
+| Time on new work | **49%** vs. 38% (with CD) |
+| Unplanned work | **22%** less time |
 
 ## Myths Busted (Entire Book)
 
-### Myth: Speed and stability trade off
-**Reality:** High performers excel at BOTH simultaneously. Speed depends on stability.
+| Myth | Reality |
+|------|---------|
+| Speed and stability trade off | High performers excel at BOTH. Speed depends on stability |
+| CABs improve stability | Negatively correlated with performance, NO stability correlation |
+| Architecture type determines performance | Loose coupling matters more than monolith vs. microservices |
+| Feature branches improve quality | Long branches reduce frequency and increase risk |
+| Individual resilience solves burnout | Toxic workplace = 60% burnout. Need systemic solutions |
+| Leadership is "soft skills" | Measurably impacts profitability, productivity, market share |
+| Transformation has endpoint | High performers continuously improve. Never declare "done" |
 
-### Myth: CABs improve stability
-**Reality:** CABs negatively correlated with performance, no correlation with stability.
+## Action Items (Next 2 Weeks)
 
-### Myth: Architecture type determines performance
-**Reality:** Loose coupling matters more than monolith vs. microservices.
+| Action | Details |
+|--------|---------|
+| **⬜ Practice transformational leadership behavior** | Behavior: ____________ How demonstrate: ____________ Measure: ____________ |
+| **⬜ Focus on one capability** | Capability: ____________ Practice: ____________ Metrics: ____________ |
+| **⬜ Answer culminating question** | Change: ____________ Who: ____________ Timeline: _____ to _____ |
+| **⬜ Share learnings with team** | Learned: ____________ Applies: ____________ Next steps: ____________ |
 
-### Myth: Feature branches improve quality
-**Reality:** Long branches reduce deployment frequency and increase risk.
+## Discussion Notes
 
-### Myth: Individual resilience solves burnout
-**Reality:** Toxic workplace predicts 60% of burnout. Need systemic solutions.
+| Topic | Key Points |
+|-------|------------|
+| **Transformational leadership** | _____________________________________________ |
+| **ING case study lessons** | _____________________________________________ |
+| **Capabilities vs. maturity** | _____________________________________________ |
+| **Transformation priorities** | _____________________________________________ |
+| **Systems & culture virtuous cycle** | _____________________________________________ |
 
-### Myth: Leadership is "soft skills"
-**Reality:** Leadership measurably impacts profitability, productivity, market share.
-
-### Myth: Transformation has an endpoint
-**Reality:** High performers continuously improve. Never declare "done."
-
----
+## Key Takeaways
+**Most transformative insight from entire book:** ________________________________________________________________
+**One thing I'll do differently starting tomorrow:** ________________________________________________________________
+**One thing I'll advocate for at org level:** ________________________________________________________________
+**How I'll continue improvement journey:** ________________________________________________________________
 
 ## Continuing the Journey
 
-**Books to read next:**
-- _The DevOps Handbook_ by Gene Kim et al. (implementation guide)
-- _Continuous Delivery_ by Jez Humble and David Farley (technical practices)
-- _Lean Enterprise_ by Jez Humble et al. (organizational transformation)
-- _Team Topologies_ by Matthew Skelton and Manuel Pais (organizational design)
-
-**Resources to explore:**
-- DORA.dev - Capability assessments and guidance
-- State of DevOps Reports - Annual research updates
-- DevOps Enterprise Summit talks - Real transformation stories
-
-**Community:**
-- Stay connected with book club members
-- Share experiments and learnings
-- Support each other's improvement efforts
-
----
+**Next books:** _DevOps Handbook_ (Kim et al.) | _Continuous Delivery_ (Humble/Farley) | _Lean Enterprise_ (Humble et al.) | _Team Topologies_ (Skelton/Pais)
+**Resources:** DORA.dev | State of DevOps Reports | DevOps Enterprise Summit
+**Community:** Stay connected | Share experiments | Support improvement efforts
 
 ## Resources
+[Discussion Guide](../leadership/discussion-guide.md) | [ING Case Study](ing-case-study.md) | [24 Capabilities Worksheet](../../../assessments/24-capabilities-assessment.md) | Transformation Planning (transformation-principles.md)
 
-- **Full discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
-- **ING case study analysis:** [ING Netherlands Lessons](ing-case-study.md)
-- **Capabilities assessment:** [24 Capabilities Worksheet](../../../assessments/24-capabilities-assessment.md)
-- **Transformation planning:** Improvement Roadmap Template (see transformation-principles.md)
-
----
-
-## Thank You
-
-**To our facilitators:** For creating space for learning and discussion
-
-**To our participants:** For engaging honestly and sharing experiences
-
-**To the Accelerate authors:** For research-backed guidance on building better organizations
-
----
-
-**This is not the endit's the beginning of your continuous improvement journey!**
+**This is not the end—it's the beginning of your continuous improvement journey!**
