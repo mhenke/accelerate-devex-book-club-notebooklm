@@ -72,5 +72,5 @@ Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm/video.m
 
 ## Navigation
 
-- Previous [Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/outline.md)
-- Next [Meeting 4: Leadership, Research Methods & Transformation](../meeting-4/outline.md)
+- Previous [Meeting 2: Technical Excellence & Continuous Delivery](../../meeting-2/leadership/outline.md)
+- Next [Meeting 4: Leadership, Research Methods & Transformation](../../meeting-4/leadership/outline.md)

@@ -86,4 +86,4 @@ Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm/video.m
 
 ## Next Session
 
-[Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/outline.md)
+[Meeting 2: Technical Excellence & Continuous Delivery](../../meeting-2/leadership/outline.md)

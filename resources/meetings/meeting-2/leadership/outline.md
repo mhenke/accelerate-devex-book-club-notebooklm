@@ -97,5 +97,5 @@ Create a visual overview with the [Meeting 2 Video Prompt](../notebooklm/video.m
 
 ## Navigation
 
-- Previous [Meeting 1: Laying the Foundation](../meeting-1/outline.md)
-- Next [Meeting 3: Management, Product Development & Sustainability](../meeting-3/outline.md)
+- Previous [Meeting 1: Laying the Foundation](../../meeting-1/leadership/outline.md)
+- Next [Meeting 3: Management, Product Development & Sustainability](../../meeting-3/leadership/outline.md)

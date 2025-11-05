@@ -84,4 +84,4 @@ Congratulations! You've completed the structured book club journey. Continue you
 
 ## Navigation
 
-- Previous [Meeting 3: Management, Product Development & Sustainability](../meeting-3/outline.md)
+- Previous [Meeting 3: Management, Product Development & Sustainability](../../meeting-3/leadership/outline.md)
