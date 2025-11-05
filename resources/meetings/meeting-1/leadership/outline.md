@@ -78,11 +78,11 @@ Understanding how organizational culture affects information flow and performanc
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 1 Podcast Prompts](notebooklm/)
+Generate a discussion podcast using the [Meeting 1 Podcast Prompts](../notebooklm/)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 1 Video Prompt](notebooklm/video.md)
+Create a visual overview with the [Meeting 1 Video Prompt](../notebooklm/video.md)
 
 ## Next Session
 

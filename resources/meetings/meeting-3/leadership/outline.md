@@ -64,11 +64,11 @@
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 3 Podcast Prompts](notebooklm/)
+Generate a discussion podcast using the [Meeting 3 Podcast Prompts](../notebooklm/)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 3 Video Prompt](notebooklm/video.md)
+Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm/video.md)
 
 ## Navigation
 
