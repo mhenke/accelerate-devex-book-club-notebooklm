@@ -295,23 +295,98 @@ Two questions about culture transformation:
 
 ---
 
-## Troubleshooting Common Facilitation Challenges
+## Troubleshooting Interactive Mode Challenges
 
-**Challenge: "These numbers seem unrealistic"**
-→ Response: "What would it take to verify if they apply in our context? Could we measure our current baseline?"
+**Challenge: Join button not working**
+→ Solution: This feature only works on newly generated Audio Overviews. Regenerate using the prompt above and ensure "Interactive mode (BETA)" button is visible.
 
-**Challenge: Participants haven't read chapters**
-→ Response: Use first 2 minutes of each part to summarize key concept, then proceed with discussion questions
+**Challenge: Participants ask vague or generic questions**
+→ Solution: Remind them to include specific context: "Our team deploys monthly..." or "We use Story Points..." Give examples from the Prep Questions section.
 
-**Challenge: Discussion goes philosophical instead of practical**
-→ Response: "Interesting point. How would that look in our team specifically? Can you give a concrete example?"
+**Challenge: AI host gives incorrect or confusing answer**
+→ Solution: The feature is experimental. Pause playback, clarify with the group using the book, then continue. Note: Hosts can only reference uploaded sources.
 
-**Challenge: Running out of time**
-→ Response: Cut Part 3 (culture) short, but NEVER skip the closing commitment questions in the Action Items section
+**Challenge: Too many people want to Join at once**
+→ Solution: Facilitate like a classroom - take turns, limit to 2-3 Join interactions per topic section before moving forward.
 
-**Challenge: Team becomes defensive about current practices**
-→ Response: "We're not here to judge current state, we're here to learn what's possible. What small experiment could we try?"
+**Challenge: Participants haven't read chapters and ask basic questions**
+→ Solution: Let the base podcast cover fundamentals first. Encourage Join questions that apply concepts to their specific context, not requests for definitions.
+
+**Challenge: Running over time**
+→ Solution: Limit Join interactions to 2 minutes each. If needed, offer to stay after for additional Join questions from interested participants.
+
+**Challenge: Silence - no one wants to Join**
+→ Solution: Call on someone who prepared questions (from the prep email). Model good Join questions yourself. Start with lower-stakes questions about metrics before controversial topics.
 
 ---
 
-**Generated with NotebookLM AI for Meeting 1 Discussion Facilitation**
+## Sample Meeting Flow Using Interactive Mode
+
+**Total: 25-30 minutes (fits within 25-min core discussion slot from agenda)**
+
+**0:00-0:02** - Facilitator opens meeting
+- "We're going to use NotebookLM's Interactive Mode today"
+- "Listen to the hosts, then we'll pause after each section for Join questions"
+- "I sent prep questions yesterday - refer to those for ideas"
+
+**0:02-0:07** - Play Part 1: DORA Metrics (5 min)
+- Hosts introduce four metrics with key stats
+- Hosts discuss global vs local metrics
+
+**0:07-0:10** - Join Session 1 (3 min)
+- Pause playback
+- "Who has a question about DORA metrics for their context?"
+- Call on 2-3 people to press Join and ask
+- Resume playback
+
+**0:10-0:15** - Play Part 2: Speed+Stability (5 min)
+- Hosts debunk the myth
+- Hosts explain quadratic risk growth
+
+**0:15-0:18** - Join Session 2 (3 min)
+- Pause playback
+- "Who has experienced the speed/stability trade-off in their work?"
+- Call on 2-3 people to press Join and ask
+- Resume playback
+
+**0:18-0:22** - Play Part 3: Culture (4 min)
+- Hosts introduce Westrum types
+- Hosts explain technical practices change culture
+
+**0:22-0:25** - Join Session 3 (3 min)
+- Pause playback
+- "What culture type describes your org? What would you ask the hosts?"
+- Call on 1-2 people to press Join and ask
+- Resume playback
+
+**0:25-0:27** - Play Closing (2 min)
+- Hosts summarize and encourage commitment
+
+**0:27-0:30** - Facilitator closing
+- "Write down which DORA metric you'll track"
+- "We'll check in on this at Meeting 2"
+- Return to Action Items section of agenda
+
+---
+
+## Why This Works Better Than Traditional Discussion
+
+**Traditional facilitated discussion:**
+- Facilitator must be expert on all concepts
+- Relies on participants remembering chapter details
+- Quiet people don't participate
+- Discussions can go off-track
+
+**Interactive Mode with Join:**
+- AI hosts provide research-backed answers consistently
+- Base podcast refreshes key concepts before Join
+- Participants prepare specific questions (not just "discuss")
+- Join creates structured turn-taking
+- Hosts ground responses in uploaded sources
+- Same experience whether facilitator is expert or not
+
+**Best of both worlds:** Structure of a podcast + interactivity of discussion + research-backed responses + participatory engagement.
+
+---
+
+**Generated with NotebookLM AI for Meeting 1 Interactive Discussion**
