@@ -492,22 +492,23 @@ document.addEventListener('keydown', function(event) {
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
     <h2>Discussion Questions</h2>
-    <p class="false-choice-subtitle">Reflect on these questions as a team to complete your transformation journey</p>
+    <p class="false-choice-subtitle">Challenge assumptions and commit to action with research-backed questions</p>
 
     <div class="meeting-4-discussion-questions">
       <div class="deployment-signal">
-        <h4>Leadership Assessment</h4>
-        <p>What transformational leadership behaviors do you see in your organization? Which of the five characteristics (vision, communication, stimulation, support, recognition) are missing?</p>
+        <h4>The Executive Perception Gap (Controversial)</h4>
+        <p>Your executive team believes the organization is "well along" in its DevOps transformation. However, practitioners report manual deployments, no test automation, and approval bottlenecks. Executives point to cloud adoption and Agile ceremonies as evidence of maturity. Research shows executives and practitioners often disagree on transformation progress. What data would reveal the real state, and how do you communicate the gap without seeming negative?</p>
       </div>
 
       <div class="deployment-signal">
-        <h4>Learning & ING Case Study Adaptation</h4>
-        <p>How does your organization invest in developing team capabilities? Which practices from the ING case study could work in your context? What would need adaptation?</p>
+        <h4>The Leadership Blocker (High-Impact)</h4>
+        <p>A team wants to spend two weeks refactoring to improve testability and reduce deployment time. Their manager says "we don't have time for technical work—we need features." The team deploys monthly with 40% change failure rate. Research shows transformational leadership explains <strong>18-50% of variance in outcomes</strong>. How does this manager's behavior demonstrate lack of "supportive leadership," and how would you help them understand the connection between technical work and delivery performance?</p>
       </div>
 
       <div class="deployment-signal">
-        <h4>Transformation Roadmap</h4>
-        <p>Reflecting on the entire book journey, what is the single smallest change you can make to your technical practices that would start a virtuous cycle and improve both systems and culture?</p>
+        <h4>The Culminating Question</h4>
+        <p><strong>"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"</strong></p>
+        <p>This question embodies the entire philosophy: start small (incremental), focus on pain (deployment as system health proxy), act your way into better culture (behavior before beliefs), measure and iterate (continuous improvement). <strong>Answer this precisely.</strong></p>
       </div>
     </div>
 
