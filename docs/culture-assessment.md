@@ -53,6 +53,7 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="1">
     <h3>1. Information is actively sought</h3>
+    <p class="capability-description">People proactively look for information across teams and boundaries. Example: Engineers check monitoring dashboards, reach out to other teams for context, and actively gather data to understand problems rather than waiting to be told.</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-1" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-1" value="2"> 2 - Disagree</label>
@@ -66,6 +67,7 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="2">
     <h3>2. Messengers are not punished when they deliver news of failures or other bad news</h3>
+    <p class="capability-description">People can raise issues without fear of blame or career damage. Example: When an engineer reports a production outage or missed deadline, the response is "Let's understand what happened" not "Whose fault is this?"</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-2" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-2" value="2"> 2 - Disagree</label>
@@ -79,6 +81,7 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="3">
     <h3>3. Responsibilities are shared</h3>
+    <p class="capability-description">Teams take collective ownership rather than saying "not my job." Example: When production breaks, multiple teams coordinate to fix it together rather than pointing fingers about whose code or infrastructure caused it.</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-3" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-3" value="2"> 2 - Disagree</label>
@@ -92,6 +95,7 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="4">
     <h3>4. Cross-functional collaboration is encouraged and rewarded</h3>
+    <p class="capability-description">Working across team boundaries is valued, not seen as slowing you down. Example: Engineers who help other teams are recognized in performance reviews, and time spent on cross-team initiatives counts as "real work."</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-4" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-4" value="2"> 2 - Disagree</label>
@@ -105,6 +109,7 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="5">
     <h3>5. Failure causes inquiry</h3>
+    <p class="capability-description">When something goes wrong, the team investigates to learn and improve. Example: After an incident, you conduct a blameless postmortem asking "What systemic factors contributed?" rather than "Who screwed up?"</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-5" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-5" value="2"> 2 - Disagree</label>
@@ -118,6 +123,7 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="6">
     <h3>6. New ideas are welcomed</h3>
+    <p class="capability-description">People can propose new approaches without being shut down. Example: When someone suggests trying a new tool or process, the response is "Let's experiment" rather than "That's not how we do things here."</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-6" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-6" value="2"> 2 - Disagree</label>
@@ -131,6 +137,7 @@ title: Culture Assessment
 
   <div class="capability-item" data-capability="7">
     <h3>7. Failures are treated primarily as opportunities to improve the system</h3>
+    <p class="capability-description">Mistakes lead to systemic improvements, not individual punishment. Example: After a deployment issue, the team adds automated checks or improves monitoring rather than writing up the person who pushed the button.</p>
     <div class="rating-group">
       <label class="rating-label"><input type="radio" name="capability-7" value="1"> 1 - Strongly Disagree</label>
       <label class="rating-label"><input type="radio" name="capability-7" value="2"> 2 - Disagree</label>
