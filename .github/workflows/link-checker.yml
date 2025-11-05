@@ -1,0 +1,56 @@
+name: Check Markdown Links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - '.github/workflows/link-checker.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '**.md'
+  schedule:
+    # Run weekly on Mondays at 9 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check links with Lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check all markdown files
+          args: |
+            --verbose
+            --no-progress
+            --exclude-path node_modules
+            --exclude-path docs/_site
+            --exclude-path .git
+            --exclude 'http://localhost*'
+            --exclude 'http://127.0.0.1*'
+            --accept 200,206,429
+            --timeout 20
+            --retry-wait-time 10
+            --max-retries 3
+            '**/*.md'
+
+          # Fail action on broken links
+          fail: true
+
+          # Create GitHub issue on failure (optional)
+          # jobSummary: true
+
+      - name: Link Checker Summary
+        if: always()
+        run: |
+          echo "### Link Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f lychee/out.md ]; then
+            cat lychee/out.md >> $GITHUB_STEP_SUMMARY
+          fi
