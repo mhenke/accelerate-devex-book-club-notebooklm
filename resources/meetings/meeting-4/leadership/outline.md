@@ -69,19 +69,19 @@
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 4 Podcast Prompts](notebooklm/)
+Generate a discussion podcast using the [Meeting 4 Podcast Prompts](../notebooklm/)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 4 Video Prompt](notebooklm/video.md)
+Create a visual overview with the [Meeting 4 Video Prompt](../notebooklm/video.md)
 
 ## 🚀 Next Steps
 
 Congratulations! You've completed the structured book club journey. Continue your transformation with:
 
-- [Extension Resources](../book-club-materials/extensions.md)
-- [Post-Book Club Activities](../book-club-materials/)
+- Extension Resources (see book-club-roadmap.md for post-book club activities)
+- Post-Book Club Activities (see book-club-roadmap.md)
 
 ## Navigation
 
-- Previous [Meeting 3: Management, Product Development & Sustainability](../meeting-3/outline.md)
+- Previous [Meeting 3: Management, Product Development & Sustainability](../../meeting-3/leadership/outline.md)

@@ -470,7 +470,7 @@ ___________________________________________________________________________
 
 **Retrospective format:**
 
-⬜ Use [Accelerate retrospective template](../../templates/retrospective-format.md)
+⬜ Use [Accelerate retrospective template](../../../templates/retrospective-format.md)
 ⬜ Adapt existing retro format with Accelerate principles
 ⬜ Create custom format
 
@@ -627,7 +627,7 @@ ___________________________________________________________________________
 
 **Resources for Continued Learning:**
 
-- [Book Club Roadmap - Post-Book Club Section](../../book-club-roadmap.md#post-book-club-months-3)
+- [Book Club Roadmap - Post-Book Club Section](../../../book-club-roadmap.md#post-book-club-months-3)
 - [State of DevOps Report](https://dora.dev/research/)
 - [DORA Quick Check](https://dora.dev/quickcheck/)
 - [DevOps Enterprise Summit](https://events.itrevolution.com/)

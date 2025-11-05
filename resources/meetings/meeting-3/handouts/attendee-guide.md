@@ -541,9 +541,9 @@ ________________________________________________________________
 ## Resources
 
 - **Full discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
-- **WIP tracking template:** [Work-in-Progress Tracker](wip-limits-tracker.md)
-- **Burnout assessment:** [Team Sustainability Checklist](team-sustainability-checklist.md)
-- **Customer feedback template:** [Feedback Loop Mapping](customer-feedback-template.md)
+- **WIP tracking template:** Work-in-Progress Tracker (see lean-management-practices.md)
+- **Burnout assessment:** Team Sustainability Checklist (see deployment-pain-burnout.md)
+- **Customer feedback template:** Feedback Loop Mapping (see employee-satisfaction.md)
 
 ---
 

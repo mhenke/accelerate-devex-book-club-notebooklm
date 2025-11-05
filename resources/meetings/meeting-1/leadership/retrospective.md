@@ -312,8 +312,8 @@ ___________________________________________________________________________
 
 ### Optional Prep
 
-- ⬜ Listen to Meeting 2 [NotebookLM podcast](../meeting-2/notebooklm/podcast-brief.md)
-- ⬜ Review [24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md) - focus on CD practices (1-8)
+- ⬜ Listen to Meeting 2 [NotebookLM podcast](../../meeting-2/notebooklm/podcast-brief.md)
+- ⬜ Review [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - focus on CD practices (1-8)
 - ⬜ Experiment with one small CD practice improvement
 
 ---
@@ -334,7 +334,7 @@ ___________________________________________________________________________
 
 ### Materials Needed for Meeting 2
 
-- ⬜ Updated [handouts](../meeting-2/handouts/)
+- ⬜ Updated [handouts](../../meeting-2/handouts/)
 - ⬜ DORA metrics data from team tracking
 - ⬜ Deployment pain point documentation
 - ⬜ Culture observation examples

@@ -110,7 +110,7 @@ Between-meeting activities help participants:
 ### After Meeting 4 (Week 7+)
 
 **Sustaining the Learning:**
-1. Complete [Retrospective](../meetings/meeting-4/retrospective-template.md)
+1. Complete [Retrospective](../meetings/meeting-4/leadership/retrospective.md)
 2. Develop 90-day improvement plan
 3. Schedule 1-month check-in with book club cohort
 4. Share learnings with broader organization

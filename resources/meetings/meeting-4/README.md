@@ -44,12 +44,12 @@ Generate supplementary podcasts and videos using NotebookLM Prompts (in this fol
 6.  Prepare transformation planning materials
 
 ### For Participants
-1. =Ö Read chapters 11, 16, and Conclusion from "Accelerate"
-2. <§ (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
-3. =Ý Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
+1. =ï¿½ Read chapters 11, 16, and Conclusion from "Accelerate"
+2. <ï¿½ (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
+3. =ï¿½ Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
 4.  Complete action items from Meeting 3 (bring your tracker!)
 5. = Observe leadership behaviors in your organization
-6. =­ Reflect on lessons learned from all four meetings
+6. =ï¿½ Reflect on lessons learned from all four meetings
 
 ## Meeting Outcomes
 
@@ -167,8 +167,8 @@ After Meeting 4, participants should:
 
 ## Next Steps
 
-**[Back to All Meetings](../)** | **[Book Club Roadmap](../../book-club-roadmap.md)** | **[Extension Resources](../../extensions/)**
+**[Back to All Meetings](../)** | **[Book Club Roadmap](../../book-club-roadmap.md)**
 
 ---
 
-[ Meeting 3](../meeting-3/) | [Book Club Roadmap](../../book-club-roadmap.md) ’
+[ï¿½ Meeting 3](../meeting-3/) | [Book Club Roadmap](../../book-club-roadmap.md) ï¿½

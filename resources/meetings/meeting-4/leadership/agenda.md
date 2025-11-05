@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome + objectives
 - ✅ Quick round: "Who is a leader you admire and why?"
-- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md)
+- ✅ Review [Discussion Practices](../../../activities/discussion-practices.md)
 
 ---
 
@@ -75,7 +75,7 @@
 **Objective:** Lock in leadership actions and transformation milestones
 
 **Facilitator Actions:**
-- ✅ Distribute [Action Items Tracking Sheet](action-items-tracker.md)
+- ✅ Distribute [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 - ✅ Each participant commits to:
 	- One leadership behavior to practice this week
 	- One enabling change for teams (e.g., reduce WIP, increase autonomy)
@@ -108,4 +108,4 @@
 
 - **Complete facilitation guide:** [Outline](outline.md)
 - **Quick reference:** [Leader Cheatsheet](leader-cheatsheet.md)
-- **Retrospective:** [Transformation Template](../retrospective.md)
+- **Retrospective:** [Transformation Template](retrospective.md)

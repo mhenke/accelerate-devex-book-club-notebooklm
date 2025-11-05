@@ -58,4 +58,4 @@ Assume listener is leader/practitioner. Focus Ch 11,16,Conclusion Accelerate. Cr
 - **[Transformation Roadmap Tracker](../handouts/action-items-tracker.md)** - 30-60-90 day plan
 - **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
 - **[Key Questions](../../../key-questions.md)** - Core framing question for Meeting 4
-- **[Book Club Roadmap](../../book-club-roadmap.md)** - Post-book club guidance
+- **[Book Club Roadmap](../../../book-club-roadmap.md)** - Post-book club guidance
