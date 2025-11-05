@@ -1,440 +1,122 @@
-# Meeting 2 Retrospective & Recap
-
-**Date:** ___________
-**Attendees:** ___________
-**Facilitator:** ___________
-
----
-
-## Meeting Overview
-
-**Chapters Covered:** 4-6 (Technical Practices, Architecture, Integrating Infosec)
-**Key Question:** "How can we reduce the _pain_ of deployment and shift security _left_ without slowing down?"
-
----
-
-## What We Learned Today
-
-### Continuous Delivery Technical Practices
-
-**Which CD practices are we already doing well?**
-
-⬜ Version control
-⬜ Deployment automation
-⬜ Continuous integration
-⬜ Trunk-based development
-⬜ Test automation
-⬜ Test data management
-⬜ Shift-left security
-
-**Biggest gaps identified:**
-
-1. _____________________________________________________________________
-2. _____________________________________________________________________
-3. _____________________________________________________________________
-
-### Loosely Coupled Architecture
-
-**Our architecture's current state:**
-
-⬜ Loosely coupled - teams can deploy independently
-⬜ Moderately coupled - some dependencies require coordination
-⬜ Tightly coupled - most changes require cross-team coordination
-
-**Specific coupling pain points:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Security as Code
-
-**Current security integration:**
-
-⬜ Security reviews happen late (pre-production)
-⬜ Some security automation in pipeline
-⬜ Security fully integrated into development workflow
-
-**Opportunities to shift security left:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
----
-
-## Progress Review from Meeting 1
-
-### DORA Metrics Tracking
-
-**Metrics we successfully tracked:**
-
-| Metric | Baseline Data | Insights Gained |
-|--------|--------------|-----------------|
-| Lead Time | | |
-| Deployment Frequency | | |
-| Time to Restore | | |
-| Change Fail Rate | | |
-
-**Challenges with measurement:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Deployment Pain Points Documented
-
-**Pain points identified:**
-
-1. _____________________________________________________________________
-   - **Impact:** ___________________________________________________________
-   - **Potential solution:** ______________________________________________
-
-2. _____________________________________________________________________
-   - **Impact:** ___________________________________________________________
-   - **Potential solution:** ______________________________________________
-
-3. _____________________________________________________________________
-   - **Impact:** ___________________________________________________________
-   - **Potential solution:** ______________________________________________
-
-### Culture Observations
-
-**Generative behaviors observed:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**Pathological/bureaucratic behaviors observed:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**Changes since Meeting 1:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
----
-
-## Discussion Highlights
-
-### Most Insightful Comment
-
-**Who said it:** _______________________
-
-**What they said:** __________________________________________________________
-
-___________________________________________________________________________
-
-**Why it mattered:** _________________________________________________________
-
-___________________________________________________________________________
-
-### Most Challenging Question
-
-**Question:** _______________________________________________________________
-
-___________________________________________________________________________
-
-**Team response:** __________________________________________________________
-
-___________________________________________________________________________
-
-### Aha! Moments
-
-**1.** _____________________________________________________________________
-
-**2.** _____________________________________________________________________
-
-**3.** _____________________________________________________________________
-
----
-
-## Team Commitments Review
-
-### CD Practice Experiments
-
-**Experiments committed to:**
-
-| Name | Practice to Try | Hypothesis | Success Measure |
-|------|----------------|------------|-----------------|
-|      |                |            |                 |
-|      |                |            |                 |
-|      |                |            |                 |
-
-**Team experiment (if any):**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Architecture Improvements
-
-**Dependencies to decouple:**
-
-1. _____________________________________________________________________
-   - **Who:** _______________________
-   - **By when:** ___________________
-
-2. _____________________________________________________________________
-   - **Who:** _______________________
-   - **By when:** ___________________
-
-### Security Shifts
-
-**Security automation to add:**
-
-___________________________________________________________________________
-
-**Who's responsible:** ______________________________________________________
-
----
-
-## What Went Well
-
-**Participation:**
-- ✅ Balanced discussion (everyone contributed)
-- ⚠️ Some voices louder than others
-- ❌ Low participation
-
-**Technical Depth:**
-- ✅ Good balance of theory and practice
-- ⚠️ Too abstract at times
-- ❌ Not enough concrete examples
-
-**Progress Tracking:**
-- ✅ Clear progress from Meeting 1 commitments
-- ⚠️ Some commitments incomplete
-- ❌ Most commitments not completed
+# Meeting 2 Retrospective
+**Date:** __________ **Facilitator:** __________ **Attendees:** _____ / _____ (present/invited)
+**Duration:** _____ minutes (Target: 60 min) **Chapters 4-6:** Technical Practices, Architecture, Integrating Infosec
+
+## What Went Well ✅
+
+| Aspect | Rating (1-5) | Notes |
+|--------|--------------|-------|
+| **Participation** | ___/5 | ⬜ Balanced ⬜ Some louder ⬜ Low   Who contributed most: _____ Quiet: _____ |
+| **Psychological Safety** | ___/5 | ⬜ Safe sharing ⬜ Some hesitation ⬜ Defensive   Topics where hesitant: _____ |
+| **Time Management** | ___/5 | ⬜ On time ⬜ Rushed ⬜ Over   Sections rushed: _____ |
+| **Discussion Depth** | ___/5 | ⬜ Deep insights ⬜ Adequate ⬜ Surface   Best discussion: _____ |
+| **Technical vs Process Balance** | ___/5 | ⬜ Good mix ⬜ Too technical ⬜ Too process   Adjust: _____ |
+| **Facilitator Effectiveness** | ___/5 | ⬜ Clear ⬜ Adequate ⬜ Unclear   What worked: _____ |
 
 **Specific wins:**
+- ________________________________________________________________
+- ________________________________________________________________
+- ________________________________________________________________
 
-___________________________________________________________________________
+**Most insightful moment:** ________________ (by ________) **Why it mattered:** ________________
 
-___________________________________________________________________________
+## Progress from Meeting 1
 
----
+**Commitments completed:** ___/___
+**DORA baseline data collected:** ⬜ Yes ⬜ Partial ⬜ No   **Quality:** ___/5
+**Deployment pain documented:** ⬜ Yes ⬜ Partial ⬜ No   **Useful:** ___/5
+**Culture observations shared:** ⬜ Yes ⬜ Partial ⬜ No   **Insightful:** ___/5
 
-## What Could Be Better
+**Follow-through issues:** ________________________________________________________________
+**Wins from between-meeting work:** ________________________________________________________________
 
-### Meeting Facilitation
+## What Didn't Go Well ⚠️
 
-**What to improve for Meeting 3:**
+**Challenges encountered:**
+1. ________________________________________________________________ (Impact: H/M/L)
+2. ________________________________________________________________ (Impact: H/M/L)
+3. ________________________________________________________________ (Impact: H/M/L)
 
-___________________________________________________________________________
+**Participation issues:** ________________________________________________________________
+**CAB discussion reaction:** ⬜ Defensive ⬜ Open ⬜ Curious **Notes:** ________________
+**Technical depth:** ⬜ Too shallow ⬜ Just right ⬜ Too deep **Adjust:** ________________
+**Time pressure points:** ________________________________________________________________
 
-___________________________________________________________________________
+## Interesting Observations 💡
 
-### Discussion Depth
+**Unexpected reactions:** ________________________________________________________________
+**Topics that sparked energy:** ________________________________________________________________
+**Topics that fell flat:** ________________________________________________________________
+**Group dynamics noted:** ________________________________________________________________
+**Aha! moments:** 1. ________________ 2. ________________ 3. ________________
+**Resistance observed:** ________________________________________________________________
 
-**Topics that need more time:**
+## Team Commitments Captured
 
-___________________________________________________________________________
+| Action | Owners | Due | Confidence (H/M/L) |
+|--------|--------|-----|--------------------|
+| Document deployment process | ________________ | Week 4 | |
+| Map architectural dependencies | ________________ | Week 4 | |
+| Experiment with CD practice | ________________ | Week 4 | |
+| Observe approval bottlenecks | ________________ | Week 4 | |
 
-___________________________________________________________________________
+**Team experiment:** ________________________________________________________________
+**Concerns about commitments:** ________________________________________________________________
+**Support needed:** ________________________________________________________________
 
-### Accountability
+## What to Improve for Meeting 3
 
-**How to better track commitments:**
+| Issue | Specific Improvement | Who/How |
+|-------|---------------------|---------|
+| **Participation** | ________________ | ________________ |
+| **Time management** | ________________ | ________________ |
+| **Discussion depth** | ________________ | ________________ |
+| **Materials** | ________________ | ________________ |
+| **Facilitation** | ________________ | ________________ |
 
-___________________________________________________________________________
+**Topics need more time next meeting:** ________________
+**Topics to reduce time:** ________________
+**New approaches to try:** ________________________________________________________________
 
-___________________________________________________________________________
+## Facilitator Action Items
 
----
+**Before Meeting 3:**
+- ⬜ Follow up on incomplete commitments with: ________________
+- ⬜ ________________________________________________________________
+- ⬜ ________________________________________________________________
 
-## Connection to Our Work
+**Follow up with:** ________________ (about: ________________)
+**Materials to prepare:** ⬜ Handouts ⬜ Deployment data ⬜ Dependency examples ⬜ Experiment templates ⬜ Other: _____
+**Logistics to adjust:** ________________________________________________________________
 
-### How This Applies to Our Organization
+## Meeting 3 Planning Notes
 
-**CD practices already in place:**
+**Based on today, Meeting 3 should:**
+- ________________________________________________________________
+- ________________________________________________________________
 
-1. _____________________________________________________________________
-2. _____________________________________________________________________
+**Burnout discussion approach:** ________________________________________________________________
+**WIP limits framing:** ________________________________________________________________
+**Momentum to maintain:** ________________
+**Concerns to address:** ________________
 
-**CD practices to prioritize:**
+## Metrics & Assessment
 
-1. _____________________________________________________________________
-   - **Impact on DORA metrics:** ___________________________________________
-   - **Difficulty:** ⬜ Low ⬜ Medium ⬜ High
+**Overall meeting effectiveness:** ___/5
+**Likelihood team will complete commitments:** ___/5
+**Energy level at end:** ⬜ Energized ⬜ Neutral ⬜ Tired ⬜ Concerned
+**Confidence in transformation journey:** ⬜ High ⬜ Medium ⬜ Low
 
-2. _____________________________________________________________________
-   - **Impact on DORA metrics:** ___________________________________________
-   - **Difficulty:** ⬜ Low ⬜ Medium ⬜ High
+**Team sentiment on CAB findings:** ________________________________________________________________
+**Facilitator confidence for Meeting 3:** ___/5
 
-### Potential Quick Wins
+## Quick Notes
 
-**Low-effort, high-impact technical changes:**
-
-1. _____________________________________________________________________
-   - **Who:** _______________________
-   - **By when:** ___________________
-
-2. _____________________________________________________________________
-   - **Who:** _______________________
-   - **By when:** ___________________
-
-### Long-term Architectural Considerations
-
-**Systemic architecture changes to explore:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**Who needs to be involved:** _______________________________________________
-
----
-
-## Accelerate Principles in Action
-
-### CD Practices Impact on DORA Metrics
-
-**Which practice would improve our weakest metric?**
-
-Weakest metric: _______________________
-
-Practice to focus on: __________________________________________________
-
-**Expected improvement:** ___________________________________________________
-
-### Architecture & Team Autonomy
-
-**Can teams deploy independently?**
-
-⬜ Yes - most teams can deploy without coordination
-⬜ Partially - some teams depend on others
-⬜ No - most deployments require cross-team coordination
-
-**What architecture change would increase autonomy?**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
+**Random observations:** ________________________________________________________________
+**Things to remember:** ________________________________________________________________
+**Ideas for future meetings:** ________________________________________________________________
 
 ---
 
-## Questions & Blockers
-
-### Questions to Research Before Meeting 3
-
-1. _____________________________________________________________________
-2. _____________________________________________________________________
-3. _____________________________________________________________________
-
-### Blockers Identified
-
-**Blocker:** _______________________________________________________________
-
-**Impact:** ________________________________________________________________
-
-**Who can help:** __________________________________________________________
-
----
-
-## Meeting 3 Preparation
-
-### Reading Assignment
-
-**Chapters 7-10:** Lean Management, Product Development, Burnout, Employee Satisfaction
-
-**Key concepts to focus on:**
-- WIP limits and visualization
-- Small batch work
-- Burnout factors and prevention
-- Lean change approval
-
-### Action Items Due Before Meeting 3
-
-| Action | Owner | Due Date | Status |
-|--------|-------|----------|--------|
-| Try CD practice experiment | | Week 4 | ⬜ |
-| Continue DORA tracking | | Ongoing | ⬜ |
-| Document architecture coupling | | Week 4 | ⬜ |
-| Read Chapters 7-10 | All | Week 5 | ⬜ |
-
-### Optional Prep
-
-- ⬜ Listen to Meeting 3 [NotebookLM podcast](../../meeting-3/notebooklm/podcast-brief.md)
-- ⬜ Review [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - focus on lean management (15-19)
-- ⬜ Observe deployment pain levels in your team
-
----
-
-## Facilitator Notes
-
-### What Worked
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### What to Change for Meeting 3
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Materials Needed for Meeting 3
-
-- ⬜ Updated [handouts](../../meeting-3/handouts/)
-- ⬜ CD experiment results
-- ⬜ Updated DORA metrics
-- ⬜ Architecture coupling documentation
-
----
-
-## Metrics Captured
-
-### Meeting Effectiveness (1-5 scale)
-
-**Overall satisfaction:** _____ / 5
-
-**Relevance to our work:** _____ / 5
-
-**Quality of discussion:** _____ / 5
-
-**Action item clarity:** _____ / 5
-
-### Team Sentiment
-
-**Energy level at end of meeting:**
-- ⬜ Energized and motivated
-- ⬜ Neutral
-- ⬜ Tired or discouraged
-
-**Confidence in CD practices:**
-- ⬜ High - we know what to do
-- ⬜ Medium - need more clarity
-- ⬜ Low - seems overwhelming
-
----
-
-## Closing Reflection
-
-**Most important takeaway from Meeting 2:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**One CD practice we'll implement this week:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**What we're most curious about for Meeting 3:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
----
-
-**Next Meeting:** Meeting 3 - Week 5 - Management & Sustainability
-**Facilitator for next time:** _______________________
+**Retrospective completed by:** __________________ **Date:** __________
+**Next Meeting:** Meeting 3 - Week 5 - Management, Product Dev & Sustainability
