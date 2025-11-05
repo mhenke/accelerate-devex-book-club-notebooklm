@@ -4,7 +4,7 @@
 
 ## Purpose of This Document
 
-This is a **question bank** containing 40+ discussion questions for Meeting 1. **You will NOT use all of these questions.** Facilitators should select 8-10 questions that best fit their team's context and the 60-minute meeting format.
+This is a **question bank** containing 40+ discussion questions for Meeting 1. **You will NOT use all of these questions.** Facilitators should select 6-8 questions that best fit their team's context for the **25-minute core discussion period** (the full 60-minute meeting includes other activities per the agenda).
 
 See [Quick Start Guide](#quick-start-recommended-meeting-flow) below for a default meeting flow, or browse the [Question Bank](#question-bank-all-options) to customize your discussion.
 

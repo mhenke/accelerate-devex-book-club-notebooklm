@@ -145,11 +145,11 @@ Use this guide to prepare for the kickoff by:
 
 ### Time Management
 
-Since this is a 30-minute meeting, select **8-10 questions maximum**:
+Since this is a 30-minute meeting, select **6-8 questions maximum**:
 
-- **Understanding Context (10 min):** Questions 1-6
-- **Exploring Expectations (8 min):** Questions 13-16 or 1 scenario
-- **Commitment (7 min):** Questions 25-27
+- **Understanding Context (10 min):** 3-4 questions from Questions 1-6
+- **Exploring Expectations (8 min):** 2-3 questions from Questions 13-16 or 1 scenario
+- **Commitment (7 min):** Questions 25-27 (2 questions)
 - **Wrap-up (5 min):** Preparation checklist
 
 ---
