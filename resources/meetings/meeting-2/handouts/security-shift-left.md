@@ -429,7 +429,7 @@ Review   Collab   Auto   Auto   Monitor
 
 **Other Handouts:**
 - [Architecture Guide](architecture-team-independence.md) - Securing loosely coupled systems
-- [DORA Metrics Guide](dora-metrics-guide.md) - Measuring security's impact on delivery
+- [DORA Metrics Guide](../../meeting-1/handouts/dora-metrics-guide.md) - Measuring security's impact on delivery
 
 **Assessments:**
 - [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Includes security questions

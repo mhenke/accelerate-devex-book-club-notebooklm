@@ -45,4 +45,4 @@ Assume listener wants comprehensive implementation. Focus Ch 11,16,Conclusion Ac
 - **[Meeting 4 Attendee Workbook](../handouts/attendee-guide.md)** - 690-line comprehensive workbook
 - **[Transformation Roadmap Tracker](../handouts/action-items-tracker.md)** - 30-60-90 day plan
 - **[Meeting 4 Outline](../leadership/outline.md)** - Complete meeting structure
-- **[Book Club Roadmap](../../book-club-roadmap.md)** - Post-book club guidance
+- **[Book Club Roadmap](../../../book-club-roadmap.md)** - Post-book club guidance

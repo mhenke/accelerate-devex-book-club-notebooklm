@@ -177,5 +177,5 @@ Comprehensive orientation for facilitators and highly engaged participants of "A
 ## Related Resources
 
 - **[Book Club Roadmap](../../../book-club-roadmap.md)** - Complete 2-month structure
-- **[Meeting 1 Outline](../../meeting-1/outline.md)** - First meeting details
+- **[Meeting 1 Outline](../../meeting-1/leadership/outline.md)** - First meeting details
 - **[Facilitation Guide](../../../activities/facilitation-guide.md)** - Tips for leading discussions

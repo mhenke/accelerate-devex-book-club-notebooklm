@@ -119,4 +119,4 @@ Skip detailed meeting format breakdown, extensive preparation checklist. Focus o
 ## Related Resources
 
 - **[Book Club Roadmap](../../../book-club-roadmap.md)** - Complete structure
-- **[Meeting 1 Outline](../../meeting-1/outline.md)** - First meeting preview
+- **[Meeting 1 Outline](../../meeting-1/leadership/outline.md)** - First meeting preview

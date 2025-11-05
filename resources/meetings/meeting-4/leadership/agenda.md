@@ -108,4 +108,4 @@
 
 - **Complete facilitation guide:** [Outline](outline.md)
 - **Quick reference:** [Leader Cheatsheet](leader-cheatsheet.md)
-- **Retrospective:** [Transformation Template](../retrospective.md)
+- **Retrospective:** [Transformation Template](retrospective.md)

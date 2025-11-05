@@ -280,9 +280,9 @@ After reading *Accelerate*, you'll be able to:
 
 ## Questions About the Book?
 
-See the individual [meeting resources](../meetings/) for chapter-specific discussion guides, discussion questions, and deeper exploration of each section.
+See the individual [meeting resources](meetings/) for chapter-specific discussion guides, discussion questions, and deeper exploration of each section.
 
-**Ready to start?** Begin with [Meeting 0: Kickoff](../meetings/meeting-0/)
+**Ready to start?** Begin with [Meeting 0: Kickoff](meetings/meeting-0/)
 
 ---
 

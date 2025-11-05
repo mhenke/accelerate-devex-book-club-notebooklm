@@ -674,8 +674,8 @@ ________________________________________________________________
 
 - **Full discussion questions:** [Discussion Guide](../leadership/discussion-guide.md)
 - **ING case study analysis:** [ING Netherlands Lessons](ing-case-study.md)
-- **Capabilities assessment:** [24 Capabilities Worksheet](capabilities-assessment.md)
-- **Transformation planning:** [Improvement Roadmap Template](transformation-roadmap.md)
+- **Capabilities assessment:** [24 Capabilities Worksheet](../../../assessments/24-capabilities-assessment.md)
+- **Transformation planning:** Improvement Roadmap Template (see transformation-principles.md)
 
 ---
 

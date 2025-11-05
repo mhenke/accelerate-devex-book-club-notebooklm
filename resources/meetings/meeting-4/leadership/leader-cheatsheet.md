@@ -26,7 +26,7 @@
 ### Materials
 
 - ✅ [Discussion Guide](discussion-guide.md)
-- ✅ [Transformation Template](../retrospective-template.md)
+- ✅ [Transformation Template](retrospective.md)
 - ✅ [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 
 ### Tips

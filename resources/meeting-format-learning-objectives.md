@@ -406,7 +406,7 @@ See individual meeting folders for:
 - Leader cheatsheets
 - Chapter summaries
 
-**Ready to start?** [Go to Meeting 0: Kickoff](../meetings/meeting-0/)
+**Ready to start?** [Go to Meeting 0: Kickoff](meetings/meeting-0/)
 
 ---
 

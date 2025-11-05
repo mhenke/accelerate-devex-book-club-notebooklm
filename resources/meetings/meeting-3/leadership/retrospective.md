@@ -372,8 +372,8 @@ ___________________________________________________________________________
 
 ### Optional Prep
 
-- ⬜ Listen to Meeting 4 [NotebookLM podcast](../meeting-4/notebooklm/podcast-brief.md)
-- ⬜ Review [24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md) - all capabilities for final review
+- ⬜ Listen to Meeting 4 [NotebookLM podcast](../../meeting-4/notebooklm/podcast-brief.md)
+- ⬜ Review [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - all capabilities for final review
 - ⬜ Prepare examples of effective/ineffective leadership
 
 ---
@@ -394,7 +394,7 @@ ___________________________________________________________________________
 
 ### Materials Needed for Meeting 4
 
-- ⬜ Updated [handouts](../meeting-4/handouts/)
+- ⬜ Updated [handouts](../../meeting-4/handouts/)
 - ⬜ WIP limit experiment results
 - ⬜ Complete DORA metrics trend data (Weeks 1-7)
 - ⬜ Burnout assessment summary

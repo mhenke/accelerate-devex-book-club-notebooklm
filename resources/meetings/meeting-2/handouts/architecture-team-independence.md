@@ -405,7 +405,7 @@ Architecture isn't just about technology—it's about **enabling team independen
 
 **Other Handouts:**
 - [Security: Shift Left](security-shift-left.md) - Security in loosely coupled systems
-- [Culture Before Metrics](culture-before-metrics.md) - Why culture enables architectural change
+- [Culture Before Metrics](../../meeting-1/handouts/culture-before-metrics.md) - Why culture enables architectural change
 
 **Assessments:**
 - [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - Includes architecture questions

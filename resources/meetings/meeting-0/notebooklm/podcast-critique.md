@@ -169,4 +169,4 @@ Present both genuine concerns AND potential benefits. Help listener decide if:
 ## Related Resources
 
 - **[Book Club Roadmap](../../../book-club-roadmap.md)** - Complete structure
-- **[Meeting 1 Outline](../../meeting-1/outline.md)** - First meeting details
+- **[Meeting 1 Outline](../../meeting-1/leadership/outline.md)** - First meeting details
