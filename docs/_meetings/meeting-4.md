@@ -249,7 +249,71 @@ document.addEventListener('keydown', function(event) {
             </div>
           </div>
 
-          <!-- Deep dive and critique items moved to Meeting 3 per updated assignment -->
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/_Structural_Blueprint_vs_Bottom-Up_Learning.m4a"
+               data-title="Structural Blueprint vs Bottom-Up Learning: The Great Debate on Scaling Tech Transformation"
+               data-duration="18:18"
+               data-type="debate">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Transformation Scaling Debate">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Structural Blueprint vs Bottom-Up Learning: The Great Debate on Scaling Tech Transformation
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type debate">Debate</span>
+                <span class="podcast-duration">18:18</span>
+              </div>
+              <div class="podcast-subtitle">Should ING's structural transformation be copied or adapted? A structured debate on scaling approaches</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/Diagnosing_DevOps_Leadership_The_Tough_Questions_Your_Accelerat.m4a"
+               data-title="Diagnosing DevOps Leadership: The Tough Questions Your Accelerate Book Club Must Ask"
+               data-duration="10:54"
+               data-type="critique">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Leadership Diagnosis Critique">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Diagnosing DevOps Leadership: The Tough Questions Your Accelerate Book Club Must Ask
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type critique">Critique</span>
+                <span class="podcast-duration">10:54</span>
+              </div>
+              <div class="podcast-subtitle">Critical analysis of leadership gaps and the uncomfortable questions teams must confront</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- Shared Player at Bottom -->
           <div class="playlist-player">
