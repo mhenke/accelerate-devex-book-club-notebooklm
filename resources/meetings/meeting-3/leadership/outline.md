@@ -64,13 +64,13 @@
 
 ### Audio Podcast
 
-Generate a discussion podcast using the [Meeting 3 Podcast Prompts](notebooklm/)
+Generate a discussion podcast using the [Meeting 3 Podcast Prompts](../notebooklm/)
 
 ### Video Summary
 
-Create a visual overview with the [Meeting 3 Video Prompt](notebooklm/video.md)
+Create a visual overview with the [Meeting 3 Video Prompt](../notebooklm/video.md)
 
 ## Navigation
 
-- Previous [Meeting 2: Technical Excellence & Continuous Delivery](../meeting-2/outline.md)
-- Next [Meeting 4: Leadership, Research Methods & Transformation](../meeting-4/outline.md)
+- Previous [Meeting 2: Technical Excellence & Continuous Delivery](../../meeting-2/leadership/outline.md)
+- Next [Meeting 4: Leadership, Research Methods & Transformation](../../meeting-4/leadership/outline.md)

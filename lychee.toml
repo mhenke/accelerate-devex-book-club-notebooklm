@@ -1,0 +1,49 @@
+# Lychee link checker configuration
+# https://github.com/lycheeverse/lychee
+
+# Maximum number of concurrent network requests
+max_concurrency = 10
+
+# Check links inside `<code>` and `<pre>` blocks
+include_verbatim = false
+
+# Exclude URLs matching these patterns
+exclude = [
+  # Localhost
+  'http://localhost*',
+  'http://127.0.0.1*',
+
+  # Common placeholders
+  'example.com',
+  'example.org',
+
+  # GitHub edit links (these are intentionally dynamic)
+  '*/edit/*',
+  '*/new/*',
+]
+
+# Exclude files/directories
+exclude_path = [
+  'node_modules',
+  'docs/_site',
+  '.git',
+  'vendor',
+]
+
+# Accept these HTTP status codes as valid
+accept = [200, 206, 429]
+
+# Timeout for each request (in seconds)
+timeout = 20
+
+# Maximum number of retries per request
+max_retries = 3
+
+# Wait time between retries (in seconds)
+retry_wait_time = 10
+
+# Check links in these file types
+include = ['*.md', '*.html']
+
+# User agent
+user_agent = "lychee-link-checker"

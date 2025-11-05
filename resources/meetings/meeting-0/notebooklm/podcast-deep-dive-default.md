@@ -163,4 +163,4 @@ Use [podcast-deep-dive-shorter.md](podcast-deep-dive-shorter.md) instead (10-15 
 
 - **[Book Club Roadmap](../../../book-club-roadmap.md)** - Complete 2-month structure
 - **[Meeting Overview](../../../README.md)** - Repository introduction
-- **[Meeting 1 Outline](../../meeting-1/outline.md)** - Preview of first meeting
+- **[Meeting 1 Outline](../../meeting-1/leadership/outline.md)** - Preview of first meeting

@@ -237,9 +237,9 @@ Leadership reads about ING's transformation success and wants to copy their prac
 
 Use these tools during or after discussion:
 
-- **[Transformational Leadership Assessment](../../../assessments/transformational-leadership-assessment.md)** - Evaluate leadership effectiveness
+- **Transformational Leadership Assessment** - Evaluate leadership effectiveness (see handouts/transformation-principles.md)
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Complete final organizational assessment
-- **[Transformation Roadmap Template](../../../templates/transformation-roadmap.md)** - Plan next steps beyond book club
+- **Transformation Roadmap Template** - Plan next steps beyond book club (see handouts/transformation-principles.md)
 - **[DORA Metrics Dashboard](../../../assessments/dora-metrics-template.md)** - Review progress on key metrics
 
 ---

@@ -28,7 +28,7 @@ This directory contains complete facilitator guides and supporting materials for
 ### Available Resources
 
 **In [meeting-1/](meeting-1/) folder:**
-- **[outline.md](meeting-1/outline.md)** - Complete meeting structure with objectives, timing, discussion flow
+- **[outline.md](meeting-1/leadership/outline.md)** - Complete meeting structure with objectives, timing, discussion flow
 - **[leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md)** - 1-page quick reference for facilitators
 - **[discussion-guide.md](meeting-1/leadership/discussion-guide.md)** - 40+ open-ended discussion questions and scenarios
 - **[chapter-notes.md](meeting-1/chapter-notes.md)** - Detailed summaries of chapters 1-3
@@ -37,7 +37,7 @@ This directory contains complete facilitator guides and supporting materials for
 
 **Related handouts (in [meeting-1/handouts/](meeting-1/handouts/)):**
 - [Attendee Guide](meeting-1/handouts/attendee-guide.md) - Printable participant workbook
-- [Meeting Agenda](meeting-1/handouts/agenda.md) - 60-minute structured agenda
+- [Meeting Agenda](meeting-1/leadership/agenda.md) - 60-minute structured agenda
 - [Action Items Tracker](meeting-1/handouts/action-items-tracker.md) - Commitment tracking sheet
 
 **Related assessments:**
@@ -61,7 +61,7 @@ This directory contains complete facilitator guides and supporting materials for
 ### Available Resources
 
 **In [meeting-2/](meeting-2/) folder:**
-- **[outline.md](meeting-2/outline.md)** - Complete meeting structure
+- **[outline.md](meeting-2/leadership/outline.md)** - Complete meeting structure
 - **[chapter-notes.md](meeting-2/chapter-notes.md)** - Detailed summaries of chapters 4-6
 - **[leadership/retrospective.md](meeting-2/leadership/retrospective.md)** - Post-meeting reflection format
 
@@ -96,7 +96,7 @@ This directory contains complete facilitator guides and supporting materials for
 ### Available Resources
 
 **In [meeting-3/](meeting-3/) folder:**
-- **[outline.md](meeting-3/outline.md)** - Complete meeting structure
+- **[outline.md](meeting-3/leadership/outline.md)** - Complete meeting structure
 - **[chapter-notes.md](meeting-3/chapter-notes.md)** - Detailed summaries of chapters 7-10
 - **[leadership/retrospective.md](meeting-3/leadership/retrospective.md)** - Post-meeting reflection format
 
@@ -131,7 +131,7 @@ This directory contains complete facilitator guides and supporting materials for
 ### Available Resources
 
 **In [meeting-4/](meeting-4/) folder:**
-- **[outline.md](meeting-4/outline.md)** - Complete meeting structure
+- **[outline.md](meeting-4/leadership/outline.md)** - Complete meeting structure
 - **[chapter-notes.md](meeting-4/chapter-notes.md)** - Detailed summaries of chapters 11, 16, conclusion
 - **[leadership/retrospective.md](meeting-4/leadership/retrospective.md)** - Post-meeting reflection and transformation roadmap
 
@@ -240,8 +240,6 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
    - Same section headings
    - Same troubleshooting approach
 
-**See [REORGANIZATION-STATUS.md](../REORGANIZATION-STATUS.md) for detailed templates and variables**
-
 ---
 
 ## How to Use These Resources
@@ -249,7 +247,7 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 ### Before Each Meeting (1 week prior)
 
 1. **Facilitator prep:**
-   - Read [outline.md](meeting-1/outline.md) for complete meeting plan
+   - Read [outline.md](meeting-1/leadership/outline.md) for complete meeting plan
    - Review [leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md) for quick reference
    - Scan [discussion-guide.md](meeting-1/leadership/discussion-guide.md) for question options
    - Read [chapter-notes.md](meeting-1/chapter-notes.md) to refresh on key concepts
@@ -266,7 +264,7 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 
 ### During Meeting
 
-1. **Use [meeting agenda](meeting-1/handouts/agenda.md)** for minute-by-minute timing
+1. **Use [meeting agenda](meeting-1/leadership/agenda.md)** for minute-by-minute timing
 2. **Keep [leader-cheatsheet.md](meeting-1/leadership/leader-cheatsheet.md)** at your side for quick reference
 3. **Pull from [discussion-guide.md](meeting-1/leadership/discussion-guide.md)** if discussion needs prompting
 4. **Distribute [action items tracker](meeting-1/handouts/action-items-tracker.md)** during commitment segment
@@ -303,7 +301,7 @@ Meeting 1 is complete and serves as a template for Meetings 2-4. To complete the
 
 ### Time Management
 - Use the 60-minute standard structure
-- Keep [meeting agenda](meeting-1/handouts/agenda.md) visible for timing
+- Keep [meeting agenda](meeting-1/leadership/agenda.md) visible for timing
 - **Never skip action items segment** - critical for accountability
 - If running behind, shorten concepts review, not discussion or commitments
 

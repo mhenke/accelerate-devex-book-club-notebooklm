@@ -23,7 +23,7 @@ You **are** responsible for:
 
 **Content Preparation:**
 - [ ] Read assigned chapters thoroughly
-- [ ] Review [meeting outline](../meetings/meeting-1/outline.md) for your session
+- [ ] Review [meeting outline](../meetings/meeting-1/leadership/outline.md) for your session
 - [ ] Prepare 2-3 personal examples to seed discussion
 - [ ] Review previous meeting's action items
 

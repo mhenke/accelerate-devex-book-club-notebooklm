@@ -129,8 +129,6 @@ Continue your transformation journey after completing the four sessions:
 3. **Capability Implementation:** Form working groups around specific capabilities
 4. **ING Case Study Deep Dive:** Study their transformation approach for applicable practices
 
-[View Extension Resources →](extensions/)
-
 ---
 
 ## Resources Quick Links
@@ -188,7 +186,6 @@ Each meeting folder contains:
 
 For questions, facilitation support, or to share your book club's transformation story:
 
-- Review the [Extension Resources](extensions/) for continuing your journey
 - Use the [Templates](templates/) to document and share your learnings
 - Consider presenting your results at team meetings or conferences
 

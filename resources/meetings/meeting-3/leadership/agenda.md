@@ -18,7 +18,7 @@
 **Facilitator Actions:**
 - ✅ Welcome + objectives
 - ✅ Quick round: "How sustainable did last week feel (1-10)?"
-- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md)
+- ✅ Review [Discussion Practices](../../../activities/discussion-practices.md)
 
 ---
 
@@ -75,7 +75,7 @@
 **Objective:** Commit to concrete improvements for sustainability
 
 **Facilitator Actions:**
-- ✅ Distribute [Action Items Tracking Sheet](action-items-tracker.md)
+- ✅ Distribute [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 - ✅ Each participant commits to:
 	- One WIP policy or visualization improvement
 	- One automation to reduce deployment pain

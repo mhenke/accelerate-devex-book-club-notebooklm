@@ -252,9 +252,9 @@ Your team deploys monthly releases containing 20-30 features. Last deployment ca
 
 Use these tools during or after discussion:
 
-- **[WIP Limits Workshop](../../../activities/wip-limits-workshop.md)** - Experiment with constraining work in progress
-- **[Deployment Pain Assessment](../../../assessments/deployment-pain-assessment.md)** - Measure and track deployment anxiety
-- **[Burnout Indicators Survey](../../../assessments/burnout-indicators.md)** - Assess team sustainability
+- **WIP Limits Workshop** - Experiment with constraining work in progress (see ../handouts/lean-management-practices.md)
+- **Deployment Pain Assessment** - Measure and track deployment anxiety (see ../handouts/deployment-pain-burnout.md)
+- **Burnout Indicators Survey** - Assess team sustainability (see ../handouts/deployment-pain-burnout.md)
 - **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Track progress on Lean management capabilities
 
 ---

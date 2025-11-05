@@ -356,5 +356,5 @@ Key visuals to create:
 ## Related Resources
 
 - **[Book Club Roadmap](../../../book-club-roadmap.md)** - Complete structure
-- **[Meeting 1 Outline](../../meeting-1/outline.md)** - First meeting preview
+- **[Meeting 1 Outline](../../meeting-1/leadership/outline.md)** - First meeting preview
 - **[Facilitation Guide](../../../activities/facilitation-guide.md)** - Leading book club

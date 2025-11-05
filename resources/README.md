@@ -184,7 +184,7 @@ Templates for capturing meeting outcomes and reflections:
 
 3. **Prepare Meeting 1 materials:**
    - Print [Meeting 1 handouts](meetings/meeting-1/handouts/)
-   - Review [Meeting 1 outline](meetings/meeting-1/outline.md)
+   - Review [Meeting 1 outline](meetings/meeting-1/leadership/outline.md)
    - Review [leader cheatsheet](meetings/meeting-1/leadership/leader-cheatsheet.md)
    - (Optional) Generate Deep Dive podcast from [meetings/meeting-1/notebooklm/](meetings/meeting-1/notebooklm/) for pre-meeting prep
 

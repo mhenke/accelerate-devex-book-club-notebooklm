@@ -18,10 +18,10 @@
 **Facilitator Actions:**
 - ✅ Welcome participants and review meeting objectives
 - ✅ Quick round: "What’s one technical practice that’s working well for you now?"
-- ✅ Review [Discussion Practices](../../../../activities/discussion-practices.md) ground rules
+- ✅ Review [Discussion Practices](../../../activities/discussion-practices.md) ground rules
 
 **Materials:**
-- [Attendee Guide](attendee-guide.md) - printed for all participants
+- [Attendee Guide](../handouts/attendee-guide.md) - printed for all participants
 - Whiteboard/markers
 
 ---
@@ -87,7 +87,7 @@
 **Objective:** Ensure each participant commits to specific changes
 
 **Facilitator Actions:**
-- ✅ Distribute [Action Items Tracking Sheet](action-items-tracker.md)
+- ✅ Distribute [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
 - ✅ Each participant commits to:
 	- One CD practice to implement/strengthen
 	- One architecture change to explore for independence
@@ -132,7 +132,7 @@
 - **Complete facilitation guide:** [Outline](outline.md)
 - **Quick reference:** [Leader Cheatsheet](leader-cheatsheet.md)
 - **All discussion questions:** [Discussion Guide](discussion-guide.md)
-- **Assessments:** [24 Capabilities](../../../../assessments/24-capabilities-assessment.md)
+- **Assessments:** [24 Capabilities](../../../assessments/24-capabilities-assessment.md)
 
 ---
 

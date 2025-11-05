@@ -142,7 +142,7 @@ This immediately surfaces deployment pain and makes the research personal.
 
 ---
 
-**Need more detail?** See full [Meeting Outline](../outline.md)
+**Need more detail?** See full [Meeting Outline](outline.md)
 
 **Questions during facilitation?** Refer to [Discussion Guide](discussion-guide.md)
 
