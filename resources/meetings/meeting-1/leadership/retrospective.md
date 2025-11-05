@@ -1,393 +1,91 @@
 # Meeting 1 Retrospective & Recap
+**Date:** __________ **Attendees:** __________ **Facilitator:** __________
 
-**Date:** ___________
-**Attendees:** ___________
-**Facilitator:** ___________
+**Chapters 1-3:** Measuring Performance, Speed + Stability, Westrum Culture
+**Key Question:** _How do we currently perceive and measure performance, and could our metrics reinforce wrong behaviors?_
 
----
+## What We Learned
 
-## Meeting Overview
-
-**Chapters Covered:** 1-3 (Measuring Performance, Speed + Stability, Westrum Culture)
-**Key Question:** "How do we currently _perceive_ and _measure_ performance, and could our metrics be reinforcing the wrong behaviors?"
-
----
-
-## What We Learned Today
-
-### DORA Metrics - The Four Key Measures
-
-**Which metrics resonated most with the team?**
-
-⬜ Lead Time for Changes
-⬜ Deployment Frequency
-⬜ Time to Restore Service
-⬜ Change Fail Rate
-
-**Key insight:** ___________________________________________________________
-
-___________________________________________________________________________
-
-### Speed + Stability - Debunking the Myth
-
-**Before this meeting, how many believed speed and stability trade off?**
-
-Show of hands: _______ / _______ (believed / total)
-
-**After discussing the research, what changed?**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**Examples from our work that support the research:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Westrum's Organizational Culture Types
-
-**Our team's current culture type (Pathological / Bureaucratic / Generative):**
-
-Team assessment: _______________________
-
-**Specific behaviors we observed:**
-
-- **Pathological (power-oriented):** ___________________________________________
-- **Bureaucratic (rule-oriented):** ____________________________________________
-- **Generative (performance-oriented):** _______________________________________
-
-**What would it take to move toward generative culture?**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
----
+| Topic | Key Insights | Team Assessment |
+|-------|-------------|-----------------|
+| **DORA Metrics** | ⬜ Lead Time ⬜ Deployment Freq ⬜ Time to Restore ⬜ Change Fail Rate | Most resonant: ________________ Insight: ________________ |
+| **Speed + Stability Myth** | Before: ___/___  believed trade-off | After: ________________ Examples: ________________ |
+| **Westrum Culture Types** | P = Pathological, B = Bureaucratic, G = Generative | Our type: _____ Behaviors: P: _____ B: _____ G: _____ To move toward generative: ________________ |
 
 ## Discussion Highlights
 
-### Most Insightful Comment
+**Most insightful comment:** ________________ (by ________) Why: ________________
+**Most challenging question:** ________________ Response: ________________
+**Aha! moments:** 1. ________________ 2. ________________ 3. ________________
 
-**Who said it:** _______________________
+## Team Commitments
 
-**What they said:** __________________________________________________________
+| Name | DORA Metric Tracking | Measurement Approach | Deployment Pain | Culture Observation |
+|------|---------------------|---------------------|-----------------|---------------------|
+| | | | | |
+| | | | | |
 
-___________________________________________________________________________
+**Team goal:** Baseline data for _____ metric(s) by Meeting 2
+**Top 3 deployment pain points:** 1. ________________ 2. ________________ 3. ________________
+**Culture watching for:** Information flow | Failure response | Collaboration patterns
 
-**Why it mattered:** _________________________________________________________
+## Retrospective Assessment
 
-___________________________________________________________________________
+| Category | Status | Notes |
+|----------|--------|-------|
+| **Participation** | ⬜ Balanced ⬜ Some louder ⬜ Low | ________________ |
+| **Psychological Safety** | ⬜ Safe ⬜ Some hesitation ⬜ Defensive | ________________ |
+| **Time Management** | ⬜ On time ⬜ Rushed ⬜ Over time | ________________ |
+| **Specific wins** | | ________________ |
 
-### Most Challenging Question
-
-**Question:** _______________________________________________________________
-
-___________________________________________________________________________
-
-**Team response:** __________________________________________________________
-
-___________________________________________________________________________
-
-### Aha! Moments
-
-**1.** _____________________________________________________________________
-
-**2.** _____________________________________________________________________
-
-**3.** _____________________________________________________________________
-
----
-
-## Team Commitments Review
-
-### DORA Metrics Tracking
-
-| Name | Metric Tracking | Measurement Approach |
-|------|----------------|---------------------|
-|      |                |                     |
-|      |                |                     |
-|      |                |                     |
-|      |                |                     |
-
-**Team goal:** By Meeting 2, we will have baseline data for _______ metric(s)
-
-### Deployment Pain Points to Document
-
-**Top 3 pain points identified:**
-
-1. _____________________________________________________________________
-2. _____________________________________________________________________
-3. _____________________________________________________________________
-
-**Who's documenting:** _____________________________________________________
-
-### Culture Observations
-
-**Team members committed to observing culture behaviors:** ___________________
-
-**What we're watching for:**
-- Information flow (generative vs. pathological)
-- Response to failures (learning vs. blaming)
-- Collaboration patterns (cross-functional vs. siloed)
-
----
-
-## What Went Well
-
-**Participation:**
-- ✅ Balanced discussion (everyone contributed)
-- ⚠️ Some voices louder than others
-- ❌ Low participation
-
-**Psychological Safety:**
-- ✅ Team felt safe sharing challenges
-- ⚠️ Some hesitation on sensitive topics
-- ❌ Defensive responses
-
-**Time Management:**
-- ✅ Covered all topics within 60 minutes
-- ⚠️ Rushed some sections
-- ❌ Ran significantly over time
-
-**Specific wins:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
----
-
-## What Could Be Better
-
-### Meeting Facilitation
-
-**What to improve for Meeting 2:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Discussion Depth
-
-**Topics that need more time:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Logistics
-
-**Room setup, materials, technology:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
----
+**Improve for Meeting 2:** ________________
+**Topics need more time:** ________________
+**Logistics improvements:** ________________
 
 ## Connection to Our Work
 
-### How This Applies to Our Organization
+**Doing well (high performer alignment):** 1. ________________ 2. ________________
+**Gaps identified:** 1. ________________ 2. ________________ 3. ________________
 
-**What we're doing well (aligned with high performers):**
+**Quick wins:** 1. ________________ (Who: _____ By: _____) 2. ________________ (Who: _____ By: _____)
+**Systemic changes to explore:** ________________ Involve: ________________
 
-1. _____________________________________________________________________
-2. _____________________________________________________________________
+## Capabilities Discussed
 
-**Areas for improvement (gaps identified):**
+**From 24 Capabilities:** ⬜ Version control ⬜ Deployment auto ⬜ CI ⬜ Trunk-based ⬜ Test auto ⬜ Test data ⬜ Security ⬜ CD ⬜ Loose coupling ⬜ Empowered teams ⬜ Customer feedback ⬜ Value stream ⬜ Small batches ⬜ Team experiment ⬜ Change approval ⬜ Monitoring ⬜ Proactive notify ⬜ WIP limits ⬜ Visual displays ⬜ Westrum culture ⬜ Learning ⬜ Collaboration ⬜ Job satisfaction ⬜ Leadership
 
-1. _____________________________________________________________________
-2. _____________________________________________________________________
-3. _____________________________________________________________________
-
-### Potential Quick Wins
-
-**Low-effort, high-impact changes we could make:**
-
-1. _____________________________________________________________________
-   - **Who:** _______________________
-   - **By when:** ___________________
-
-2. _____________________________________________________________________
-   - **Who:** _______________________
-   - **By when:** ___________________
-
-### Long-term Considerations
-
-**Systemic changes to explore:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**Who needs to be involved:** _______________________________________________
-
----
-
-## Accelerate Principles in Action
-
-### Which of the 24 Capabilities Did We Discuss?
-
-**From Continuous Delivery (Capabilities 1-8):**
-- ⬜ Version control
-- ⬜ Deployment automation
-- ⬜ Continuous integration
-- ⬜ Trunk-based development
-- ⬜ Test automation
-- ⬜ Test data management
-- ⬜ Shift-left security
-- ⬜ Continuous delivery
-
-**From Architecture (Capabilities 9-10):**
-- ⬜ Loosely coupled architecture
-- ⬜ Empowered teams
-
-**From Product & Process (Capabilities 11-14):**
-- ⬜ Customer feedback
-- ⬜ Value stream
-- ⬜ Small batches
-- ⬜ Team experimentation
-
-**From Lean Management (Capabilities 15-19):**
-- ⬜ Change approval
-- ⬜ Monitoring
-- ⬜ Proactive notifications
-- ⬜ WIP limits
-- ⬜ Visual displays
-
-**From Culture (Capabilities 20-24):**
-- ⬜ Westrum culture
-- ⬜ Learning culture
-- ⬜ Collaboration
-- ⬜ Job satisfaction
-- ⬜ Transformational leadership
-
-**Capabilities to prioritize for improvement:**
-
-1. _____________________________________________________________________
-2. _____________________________________________________________________
-3. _____________________________________________________________________
-
----
+**Prioritize for improvement:** 1. ________________ 2. ________________ 3. ________________
 
 ## Questions & Blockers
 
-### Questions to Research Before Meeting 2
+**Research before Meeting 2:** 1. ________________ 2. ________________ 3. ________________
+**Blocker:** ________________ Impact: ________________ Who helps: ________________
 
-1. _____________________________________________________________________
-2. _____________________________________________________________________
-3. _____________________________________________________________________
+## Meeting 2 Prep (Chapters 4-6: Technical Practices, Architecture, Security)
 
-### Blockers Identified
-
-**Blocker:** _______________________________________________________________
-
-**Impact:** ________________________________________________________________
-
-**Who can help:** __________________________________________________________
-
----
-
-## Meeting 2 Preparation
-
-### Reading Assignment
-
-**Chapters 4-6:** Technical Practices, Architecture, Integrating Infosec
-
-**Key concepts to focus on:**
-- Continuous delivery practices
-- Loosely coupled architecture
-- Security as code
-
-### Action Items Due Before Meeting 2
-
-| Action | Owner | Due Date | Status |
-|--------|-------|----------|--------|
+| Action | Owner | Due | Status |
+|--------|-------|-----|--------|
 | Track DORA metric baseline | | Week 2 | ⬜ |
-| Document deployment pain points | | Week 2 | ⬜ |
+| Document deployment pain | | Week 2 | ⬜ |
 | Observe culture behaviors | | Ongoing | ⬜ |
 | Read Chapters 4-6 | All | Week 3 | ⬜ |
 
-### Optional Prep
-
-- ⬜ Listen to Meeting 2 [NotebookLM podcast](../../meeting-2/notebooklm/podcast-brief.md)
-- ⬜ Review [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - focus on CD practices (1-8)
-- ⬜ Experiment with one small CD practice improvement
-
----
+**Optional:** ⬜ Meeting 2 podcast ⬜ 24 Capabilities Assessment (CD 1-8) ⬜ Small CD improvement experiment
 
 ## Facilitator Notes
 
-### What Worked
+**Worked:** ________________ **Change for Meeting 2:** ________________
+**Materials needed:** ⬜ Handouts ⬜ DORA data ⬜ Pain documentation ⬜ Culture examples
 
-___________________________________________________________________________
+## Metrics
 
-___________________________________________________________________________
-
-### What to Change for Meeting 2
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-### Materials Needed for Meeting 2
-
-- ⬜ Updated [handouts](../../meeting-2/handouts/)
-- ⬜ DORA metrics data from team tracking
-- ⬜ Deployment pain point documentation
-- ⬜ Culture observation examples
-
----
-
-## Metrics Captured
-
-### Meeting Effectiveness (1-5 scale)
-
-**Overall satisfaction:** _____ / 5
-
-**Relevance to our work:** _____ / 5
-
-**Quality of discussion:** _____ / 5
-
-**Action item clarity:** _____ / 5
-
-### Team Sentiment
-
-**Energy level at end of meeting:**
-- ⬜ Energized and motivated
-- ⬜ Neutral
-- ⬜ Tired or discouraged
-
-**Confidence in our ability to improve:**
-- ⬜ High - we can do this
-- ⬜ Medium - it will be challenging
-- ⬜ Low - seems overwhelming
-
----
+**Effectiveness (1-5):** Overall: ___/5 | Relevance: ___/5 | Discussion: ___/5 | Action clarity: ___/5
+**Team sentiment:** ⬜ Energized ⬜ Neutral ⬜ Tired | Confidence: ⬜ High ⬜ Medium ⬜ Low
 
 ## Closing Reflection
 
-**Most important takeaway from Meeting 1:**
+**Most important takeaway:** ________________
+**Do differently tomorrow:** ________________
+**Curious about for Meeting 2:** ________________
 
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**One thing we'll do differently starting tomorrow:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
-**What we're most curious about for Meeting 2:**
-
-___________________________________________________________________________
-
-___________________________________________________________________________
-
----
-
-**Next Meeting:** Meeting 2 - Week 3 - Technical Excellence
-**Facilitator for next time:** _______________________
+**Next Meeting:** Meeting 2 - Week 3 - Technical Excellence | **Facilitator:** __________________
