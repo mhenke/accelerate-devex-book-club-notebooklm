@@ -381,6 +381,25 @@
   .podcast-duration {
     font-size: 0.75rem;
   }
+
+  .podcast-end {
+    min-width: 60px;
+  }
+
+  .podcast-equalizer {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+
+    .equalizer {
+      height: 16px;
+      gap: 1.5px;
+
+      .bar {
+        width: 2.5px;
+      }
+    }
+  }
 }
 
 // (Removed) print hiding of .playing-indicator and .podcast-controls — elements not present
