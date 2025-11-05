@@ -1,295 +1,80 @@
 # Meeting 1: Action Items Tracker
+**Name:** __________________ **Date:** __________ | _Bring to Meeting 2 (Week 3) to share progress_
 
-**Name:** _______________________________
-**Date:** _______________________________
+## My Commitments for Meeting 2
 
-_Complete this during the meeting and bring to Meeting 2 to share progress_
+| Action | Details | How/Metric |
+|--------|---------|------------|
+| **1. Track DORA Metric** | ⬜ Lead Time ⬜ Deployment Freq ⬜ Time to Restore ⬜ Change Fail Rate | Method: ⬜ Manual ⬜ Tool: _____ ⬜ Spreadsheet ⬜ Team |
+| Baseline (if known) | ________________ | Measurement plan: ________________ |
+| **2. Document Deployment Pain** | Biggest pain: ________________ | Why painful: ________________ |
+| Impact | ________________ | Root cause: ________________ |
+| **3. Observe Culture Behaviors** | Watching for: ________________ | Pattern to track: ________________ |
 
----
+## Culture Behavior Log
 
-## My Commitments for Meeting 2 (Week 3)
+| Date | Situation | Behavior Observed | Type* | Notes |
+|------|-----------|-------------------|-------|-------|
+| | | | | |
+| | | | | |
+| | | | | |
 
-### 1. DORA Metric Tracking
+*P = Pathological | B = Bureaucratic | G = Generative
 
-**I will track this metric:**
+## Weeks 1-2 Progress Tracking
 
-⬜ Lead Time for Changes
-⬜ Deployment Frequency
-⬜ Time to Restore Service
-⬜ Change Fail Rate
-
-**How I'll measure it:**
-
-⬜ Manual observation/notes
-⬜ Existing tool: _____________________
-⬜ Spreadsheet tracking
-⬜ Team collaboration: _____________________
-
-**My measurement plan:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Baseline/Current State (if known):**
-
-________________________________________________________________
-
----
-
-### 2. Deployment Pain Point Documentation
-
-**My team's biggest deployment pain point:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Why this causes pain:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Impact on team/business:**
-
-________________________________________________________________
-
-**Who is affected:**
-
-________________________________________________________________
-
-**Root cause (if known):**
-
-________________________________________________________________
-
----
-
-### 3. Culture Behavior Observations
-
-**I will observe and document these culture patterns:**
-
-| Date | Situation | Behavior Observed | Culture Type (P/B/G)* | Notes |
-|------|-----------|-------------------|----------------------|-------|
-|      |           |                   |                      |       |
-|      |           |                   |                      |       |
-|      |           |                   |                      |       |
-|      |           |                   |                      |       |
-|      |           |                   |                      |       |
-
-*P = Pathological, B = Bureaucratic, G = Generative
-
-**Specific behaviors I'm watching for:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Progress Tracking
-
-### Week 1 (This week)
-
-**DORA Metric data collected:**
-
-________________________________________________________________
-
-**Deployment pain observed:**
-
-________________________________________________________________
-
-**Culture patterns noted:**
-
-________________________________________________________________
-
-**Challenges encountered:**
-
-________________________________________________________________
-
-**Help needed:**
-
-________________________________________________________________
-
----
-
-### Week 2 (Next week)
-
-**DORA Metric data collected:**
-
-________________________________________________________________
-
-**Deployment pain observed:**
-
-________________________________________________________________
-
-**Culture patterns noted:**
-
-________________________________________________________________
-
-**Challenges encountered:**
-
-________________________________________________________________
-
-**Help needed:**
-
-________________________________________________________________
-
----
+| Week | DORA Data Collected | Deployment Pain Observed | Culture Patterns | Challenges/Help Needed |
+|------|---------------------|-------------------------|------------------|------------------------|
+| **1** | | | | |
+| **2** | | | | |
 
 ## Insights & Questions
 
-**What I'm learning from tracking:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Patterns I'm noticing:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Questions to bring to Meeting 2:**
-
+**Learning from tracking:** ________________________________________________________________
+**Patterns noticed:** ________________________________________________________________
+**Questions for Meeting 2:**
 1. ________________________________________________________________
-
 2. ________________________________________________________________
-
 3. ________________________________________________________________
 
-**Ideas for improvement:**
+**Improvement ideas:** ________________________________________________________________
 
-________________________________________________________________
+## Optional Experiment
 
-________________________________________________________________
+**Experiment:** ________________ **Timeline:** Start _____ End _____
+**Hypothesis:** If ________________ then ________________
+**Measure success:** ________________
+**Results:** ________________________________________________________________
 
-________________________________________________________________
+## Meeting 2 Prep (Chapters 4-6)
 
----
-
-## Small Experiment (Optional)
-
-Based on what I learned in Meeting 1, I will try this small change:
-
-**Experiment:** ___________________________________________________
-
-________________________________________________________________
-
-**Hypothesis:** If I change ______________________________________,
-
-then ____________________________________________________________
-
-**How I'll measure success:** ____________________________________
-
-________________________________________________________________
-
-**Timeline:** Start _____________ End _____________
-
-**Results:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Meeting 2 Preparation
-
-**Chapters to read:** 4-6 (Technical Practices, Architecture, Integrating Infosec)
-
-**Questions I have from reading:**
-
+**Reading questions:**
 1. ________________________________________________________________
-
 2. ________________________________________________________________
 
-**Examples from my work related to chapters 4-6:**
+**Work examples related to chapters:** ________________________________________________________________
 
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Team Commitments (Record during meeting)
-
-_Facilitator: Use this section to capture all team commitments for accountability_
+## Team Commitments (Facilitator Use)
 
 | Name | Metric Tracking | Deployment Pain | Culture Observation |
 |------|----------------|-----------------|---------------------|
-|      |                |                 |                     |
-|      |                |                 |                     |
-|      |                |                 |                     |
-|      |                |                 |                     |
-|      |                |                 |                     |
-|      |                |                 |                     |
+| | | | |
+| | | | |
 
-**Group experiment/shared action (if any):**
+**Group action:** ________________________________________________________________
+
+## Notes
 
 ________________________________________________________________
-
 ________________________________________________________________
-
----
-
-## Notes Space
-
-Use this space for additional notes, ideas, or reflections:
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
 ________________________________________________________________
 
 ---
 
-**Bring this completed tracker to Meeting 2 to share your progress!**
+## Quick Reference
 
----
+**DORA Metrics:** Lead Time (commit → production) | Deployment Frequency (how often) | Time to Restore (incident recovery) | Change Fail Rate (% deployments causing failures)
 
-## Quick Reference: DORA Metrics Definitions
+**Culture Types:** Pathological (power, low cooperation, messengers shot) | Bureaucratic (rules, modest cooperation, messengers neglected) | Generative (performance, high cooperation, messengers trained)
 
-**Lead Time:** Time from code commit to production deployment
-
-**Deployment Frequency:** How often code deploys to production
-
-**Time to Restore:** How long to restore service after incident
-
-**Change Fail Rate:** % of deployments causing production failures
-
----
-
-## Quick Reference: Culture Types
-
-**Pathological:** Power-oriented, low cooperation, messengers shot
-**Bureaucratic:** Rule-oriented, modest cooperation, messengers neglected
-**Generative:** Performance-oriented, high cooperation, messengers trained
-
----
-
-**Questions?** Contact facilitator: _______________________________
+**Facilitator Contact:** __________________
