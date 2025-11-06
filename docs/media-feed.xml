@@ -19,60 +19,9 @@ layout: null
     <webMaster>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</webMaster>
     <copyright>{{ site.time | date: "%Y" }} {{ site.author | default: "Accelerate DevEx Book Club" }}</copyright>
 
-    <!-- Meeting Episodes with both audio and video -->
+    <!-- Meeting Episodes - Only Supplementary Media (No "Main" Entries) -->
     {% assign meetings = site.meetings | sort: 'week' %}
     {% for meeting in meetings %}
-      <!-- Audio Episode -->
-      {% if meeting.meeting == 0 %}
-        {% assign podcast_file = 'meeting-0/accelerate-mastery-deep-dive.m4a' %}
-      {% else %}
-        {% assign podcast_file = 'meeting-' | append: meeting.meeting | append: '-podcast.m4a' %}
-      {% endif %}
-  {% assign full_podcast_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: podcast_file %}
-      
-      <item>
-        <title>{{ meeting.title | xml_escape }} - Podcast</title>
-        <description>{{ meeting.subtitle | xml_escape }} - Audio podcast covering chapters {{ meeting.chapters }} of Accelerate.</description>
-        <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#listen-meeting-{{ meeting.week }}-podcast</link>
-        <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#podcast</guid>
-        <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
-        <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
-        <enclosure url="{{ full_podcast_url }}" type="audio/x-m4a" length="0"/>
-        <category>Audio</category>
-        <category>Podcast</category>
-        <category>DevOps</category>
-        
-        <!-- Media RSS -->
-        <media:content url="{{ full_podcast_url }}" type="audio/x-m4a" medium="audio">
-          <media:title>{{ meeting.title | xml_escape }} - Podcast</media:title>
-          <media:description>{{ meeting.subtitle | xml_escape }}</media:description>
-          <media:keywords>devops, accelerate, dora metrics, podcast, audio</media:keywords>
-        </media:content>
-      </item>
-      
-      <!-- Video Episode -->
-      {% assign video_file = 'meeting-' | append: meeting.meeting | append: '-video.mp4' %}
-  {% assign full_video_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: video_file %}
-      
-      <item>
-        <title>{{ meeting.title | xml_escape }} - Video</title>
-        <description>{{ meeting.subtitle | xml_escape }} - Video presentation covering chapters {{ meeting.chapters }} of Accelerate.</description>
-        <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#watch-meeting-{{ meeting.week }}-video</link>
-        <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#video</guid>
-        <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
-        <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
-        <enclosure url="{{ full_video_url }}" type="video/mp4" length="0"/>
-        <category>Video</category>
-        <category>DevOps</category>
-        
-        <!-- Media RSS -->
-        <media:content url="{{ full_video_url }}" type="video/mp4" medium="video">
-          <media:title>{{ meeting.title | xml_escape }} - Video</media:title>
-          <media:description>{{ meeting.subtitle | xml_escape }}</media:description>
-          <media:keywords>devops, accelerate, dora metrics, video</media:keywords>
-        </media:content>
-      </item>
-      
       <!-- Supplementary audio files for this meeting -->
       {% assign meeting_key = 'meeting_' | append: meeting.week %}
       {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].audio %}

@@ -42,45 +42,9 @@ layout: null
     <itunes:explicit>clean</itunes:explicit>
     <itunes:type>episodic</itunes:type>
 
-    <!-- Meeting Episodes -->
+    <!-- Meeting Episodes - Only Supplementary Media (No "Main" Entries) -->
     {% assign meetings = site.meetings | sort: 'week' %}
     {% for meeting in meetings %}
-      {% if meeting.meeting == 0 %}
-        {% assign podcast_file = 'meeting-0/accelerate-mastery-deep-dive.m4a' %}
-      {% else %}
-        {% assign podcast_file = 'meeting-' | append: meeting.meeting | append: '-podcast.m4a' %}
-      {% endif %}
-  {% assign full_podcast_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: podcast_file %}
-      
-      <item>
-        <title>{{ meeting.title | xml_escape }}</title>
-        <description>{{ meeting.subtitle | xml_escape }} - {{ meeting.content | strip_html | truncatewords: 50 | xml_escape }}</description>
-        <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}</link>
-        <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}</guid>
-        <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
-        <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
-        
-        <!-- Media enclosure for podcast -->
-        <enclosure url="{{ full_podcast_url }}" type="audio/x-m4a" length="0"/>
-        
-        <!-- iTunes-specific episode tags -->
-        <itunes:title>{{ meeting.title | xml_escape }}</itunes:title>
-        <itunes:subtitle>{{ meeting.subtitle | xml_escape }}</itunes:subtitle>
-        <itunes:summary>{{ meeting.subtitle | xml_escape }} - This episode covers chapters {{ meeting.chapters }} of Accelerate, focusing on {{ meeting.content | strip_html | truncatewords: 30 | xml_escape }}</itunes:summary>
-        <itunes:author>{{ site.author | default: "Accelerate DevEx Book Club" }}</itunes:author>
-        <itunes:duration>{{ meeting.duration | default: "20:00" }}</itunes:duration>
-        <itunes:episode>{{ meeting.week }}</itunes:episode>
-        <itunes:episodeType>full</itunes:episodeType>
-        <itunes:explicit>clean</itunes:explicit>
-        
-        <!-- Media RSS for richer content -->
-        <media:content url="{{ full_podcast_url }}" type="audio/x-m4a" medium="audio">
-          <media:title>{{ meeting.title | xml_escape }}</media:title>
-          <media:description>{{ meeting.subtitle | xml_escape }}</media:description>
-          <media:keywords>devops, accelerate, dora metrics, continuous delivery, culture, transformation</media:keywords>
-        </media:content>
-      </item>
-      
       <!-- Supplementary audio files for this meeting -->
       {% assign meeting_key = 'meeting_' | append: meeting.week %}
       {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].audio %}

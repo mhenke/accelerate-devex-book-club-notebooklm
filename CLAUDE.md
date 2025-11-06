@@ -126,8 +126,35 @@ npm run test:jekyll-audit  # Full audit suite
 - **Workflow:**
   1. Place media files in local `media/` folder
   2. Upload to AWS S3 bucket
-  3. Reference S3 URLs in Jekyll pages (meeting pages, media sections)
+  3. Add files to `docs/_data/supplementary_media.yml` using the correct YAML key structure (see below)
+  4. Reference S3 URLs in Jekyll pages (meeting pages, media sections)
+  5. Rebuild site with `npm run build` to regenerate RSS feeds
 - **Note:** The `media/` folder is excluded from git tracking to keep repository size small
+
+### RSS Feed & YAML Key Structure (CRITICAL)
+
+**IMPORTANT**: In `docs/_data/supplementary_media.yml`, keys must match **week numbers**, NOT meeting numbers:
+
+- `meeting_0` → Meeting 0 (Week 0)
+- `meeting_1` → Meeting 1 (Week 1)
+- `meeting_3` → Meeting 2 (Week 3) ⚠️ **Note: Week 3, not meeting_2**
+- `meeting_5` → Meeting 3 (Week 5) ⚠️ **Note: Week 5, not meeting_3**
+- `meeting_7` → Meeting 4 (Week 7) ⚠️ **Note: Week 7, not meeting_4**
+
+**Why this matters:**
+- RSS feed templates (`docs/podcast.xml`, `docs/videos.xml`, `docs/media-feed.xml`) use `meeting.week` from Jekyll collection front matter to lookup media entries
+- The meeting schedule is biweekly: Week 0, Week 1, Week 3, Week 5, Week 7
+- Keys MUST match the `week:` value defined in each meeting's front matter
+
+**Example from meeting front matter:**
+```yaml
+---
+layout: meeting
+title: "Technical Excellence"
+week: 3        # ← This maps to meeting_3 in supplementary_media.yml
+meeting: 2     # ← This is just the meeting number
+---
+```
 
 ### Extracting Media Durations
 

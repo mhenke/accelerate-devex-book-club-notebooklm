@@ -42,8 +42,15 @@ When updating meeting media, follow this short operational checklist so the site
 - Update the times by running `node extract-durations.js` and apply the MM:SS durations to meeting pages (and optionally to `docs/_data/supplementary_media.yml`).
 - Make sure local `media/` and S3 structures are in sync (use `aws s3 sync media/ s3://<bucket>/meeting-X/` without ACL flags on buckets that disallow ACLs).
 - After changes, rebuild the site to regenerate feeds: `npm run build` (or `npm run validate` for full checks). Verify the generated files under `docs/_site` (e.g., `media-feed.xml`, `podcast.xml`, `videos.xml`) contain the new entries.
+- **IMPORTANT - YAML Key Structure**: In `docs/_data/supplementary_media.yml`, keys must match **week numbers**, NOT meeting numbers:
+  - `meeting_0` → Meeting 0 (Week 0)
+  - `meeting_1` → Meeting 1 (Week 1)
+  - `meeting_3` → Meeting 2 (Week 3) ⚠️ Note: Week 3, not meeting_2
+  - `meeting_5` → Meeting 3 (Week 5) ⚠️ Note: Week 5, not meeting_3
+  - `meeting_7` → Meeting 4 (Week 7) ⚠️ Note: Week 7, not meeting_4
+  - RSS feed templates use `meeting.week` from Jekyll collections to lookup entries, so keys MUST match the week number defined in each meeting's front matter.
 
-These steps reflect recent updates and common gotchas (ACL-disabled buckets, YAML indentation in `docs/_data/supplementary_media.yml`, and staged-but-uncommitted edits). Adding these to the instructions helps avoid missed steps when publishing new meeting media.
+These steps reflect recent updates and common gotchas (ACL-disabled buckets, YAML indentation in `docs/_data/supplementary_media.yml`, week-based key structure, and staged-but-uncommitted edits). Adding these to the instructions helps avoid missed steps when publishing new meeting media.
 
 6) Integration points & dependencies to be aware of
 - Jekyll (Ruby) for site generation: `bundle` + `jekyll` in `docs/`.

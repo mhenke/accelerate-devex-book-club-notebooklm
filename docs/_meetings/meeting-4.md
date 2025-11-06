@@ -205,7 +205,7 @@ document.addEventListener('keydown', function(event) {
           <div class="alternative-video">
             <h4>Previous Videos</h4>
             <ul>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/leadership-transformation-roadmap.mp4" target="_blank">Leadership & Transformation Roadmap</a></li>
+              <li>More videos coming soon</li>
             </ul>
           </div>
         </div>

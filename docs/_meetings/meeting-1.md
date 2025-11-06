@@ -200,7 +200,7 @@ document.addEventListener('keydown', function(event) {
             <h4>Previous Videos</h4>
             <ul>
               <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1/the-explainer-unpacking-accelerate.mp4" target="_blank">The Explainer: Unpacking "Accelerate"</a> (5:48, Oct 1, 2025)</li>
-              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" target="_blank">Meeting 1 Video</a> (8:11, Oct 1, 2025)</li>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-1-video.mp4" target="_blank">Meeting 1 Overview Video</a> (8:11, Oct 1, 2025)</li>
             </ul>
           </div>
         </div>
