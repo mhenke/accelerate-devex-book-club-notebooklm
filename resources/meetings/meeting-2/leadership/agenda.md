@@ -67,18 +67,18 @@
 
 ### 4. AI Tool Spotlight (5 minutes) | 0:40-0:45
 
-**Objective:** Showcase NotebookLM for rapid recap and supplementary learning
+**Objective:** Showcase GitHub Copilot for accelerating CD practices
 
 **Facilitator Actions:**
-- ✅ Play a 60-90 second clip from the NotebookLM podcast/video or summarize generated insights
-- ✅ Highlight how NotebookLM can reinforce CD practices between sessions
-- ✅ Share the direct link to Meeting 2 prompts in `notebooklm/`
-- ✅ Capture questions on using AI responsibly for technical learning
+- ✅ Demonstrate GitHub Copilot generating unit tests or boilerplate code (live demo or video)
+- ✅ Highlight how Copilot reduces friction in test automation and trunk-based development
+- ✅ Show examples of security pattern suggestions (shift-left security integration)
+- ✅ Capture questions on using AI pair programming in daily workflow
 
 **Materials:**
-- Laptop with audio output (or speaker)
-- [NotebookLM Brief Podcast Prompt](../notebooklm/podcast-brief.md)
-- QR code or short URL linking to NotebookLM resources
+- IDE with GitHub Copilot installed (VS Code, JetBrains, etc.) OR prepared demo video
+- Code example ready for live demonstration (test generation or refactoring)
+- QR code or short URL to GitHub Copilot documentation
 
 ---
 

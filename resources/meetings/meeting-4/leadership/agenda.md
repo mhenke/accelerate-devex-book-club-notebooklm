@@ -56,17 +56,18 @@
 
 ### 4. AI Tool Spotlight (5 minutes) | 0:40-0:45
 
-**Objective:** Use NotebookLM to anchor leadership commitments
+**Objective:** Showcase Claude Code for development and documentation
 
 **Facilitator Actions:**
-- ✅ Play a 60-90 second clip or summarize generated insights
-- ✅ Encourage leaders to use NotebookLM for weekly reflection prompts
-- ✅ Share the direct link to Meeting 4 prompts in `notebooklm/`
+- ✅ Demonstrate Claude Code refactoring or documentation capabilities (live demo or video)
+- ✅ Show how Claude Code maintains context across entire codebase (Chapter 11 connection to transformation)
+- ✅ Highlight documentation generation and Git commit message quality
+- ✅ Discuss how AI tools enable better practices (testing, documentation, consistent patterns)
 
 **Materials:**
-- Laptop with audio output (or speaker)
-- [NotebookLM Brief Podcast Prompt](../notebooklm/podcast-brief.md)
-- QR code or short URL linking to NotebookLM resources
+- Browser or IDE with Claude Code access OR prepared demo video
+- Example refactoring or documentation task ready for demonstration
+- QR code or short URL to Claude Code website (claude.ai/code)
 
 ---
 

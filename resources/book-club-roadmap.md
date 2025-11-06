@@ -51,7 +51,7 @@ The technical engine of high performance.
 - **Core Focus:** Continuous delivery practices, loosely coupled architecture, shift-left security
 - **Key Insight:** "Act your way into a better culture" through implementing CD practices
 - **Action Items:** Identify automation opportunities, map deployment dependencies, experiment with one CD practice
-- **AI Tool Spotlight:** Claude Code (development & documentation assistance)
+- **AI Tool Spotlight:** GitHub Copilot (AI pair programming to accelerate development)
 
 [View Meeting Resources →](meetings/meeting-2/)
 
@@ -79,7 +79,7 @@ Leadership's role in enabling and sustaining transformation.
 - **Core Focus:** Transformational leadership, ING Netherlands case study, making it your own
 - **Key Insight:** Leaders enable high performance indirectly by supporting technical and lean practices
 - **Culminating Question:** "What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"
-- **AI Tool Spotlight:** GitHub Copilot (AI pair programming to accelerate development)
+- **AI Tool Spotlight:** Claude Code (development & documentation assistance)
 
 [View Meeting Resources →](meetings/meeting-4/)
 

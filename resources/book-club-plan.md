@@ -94,7 +94,7 @@ A comprehensive, evidence-based learning program spanning 2 months with 4 biweek
 - Identify automation opportunities
 - Experiment with one CD practice and measure results
 - Assess architecture coupling and team structure alignment
-- **AI Tool Spotlight:** Claude Code (development & documentation assistance)
+- **AI Tool Spotlight:** GitHub Copilot (AI pair programming to accelerate development)
 
 **Preparation After Meeting 2:**
 - Read *Accelerate* Chapters 7-10
@@ -164,7 +164,7 @@ A comprehensive, evidence-based learning program spanning 2 months with 4 biweek
 - Create team transformation roadmaps (3-6 months)
 - Commit to ongoing measurement and improvement
 - Plan continuation beyond the book club
-- **AI Tool Spotlight:** GitHub Copilot (AI pair programming to accelerate development)
+- **AI Tool Spotlight:** Claude Code (development & documentation assistance)
 
 **Post-Book Club Continuation:**
 - Monthly check-ins for 6 months

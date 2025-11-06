@@ -524,19 +524,19 @@ document.addEventListener('keydown', function(event) {
   <div class="spotlight-content">
     <div class="tool-card">
       <div class="tool-header">
-        <h3><i class="fas fa-code" aria-hidden="true"></i> Claude Code</h3>
-        <span class="tool-badge">Development & Documentation</span>
+        <h3><i class="fab fa-github" aria-hidden="true"></i> GitHub Copilot</h3>
+        <span class="tool-badge">AI Pair Programming</span>
       </div>
 
       <div class="tool-description">
-        <p><strong>What it does:</strong> Anthropic's Claude Code is an AI-powered coding assistant that helps build, test, and refactor code while maintaining context across your entire codebase.</p>
+        <p><strong>What it does:</strong> GitHub Copilot is an AI-powered code completion tool that suggests whole lines or blocks of code as you type, acting as an intelligent pair programmer integrated directly into your IDE.</p>
 
-        <p><strong>How we use it:</strong> This entire book club website (Jekyll, SCSS, JavaScript) was built with Claude Code. It handles complex refactoring, creates consistent documentation, generates meeting pages, and even commits changes to Git with proper messaging.</p>
+        <p><strong>How it accelerates CD:</strong> Copilot speeds up test automation (Chapter 4) by generating test cases, helps with trunk-based development by quickly scaffolding code for small changes, and accelerates security integration by suggesting secure coding patterns inline.</p>
 
-        <p><strong>Key benefit:</strong> Accelerates development velocity while maintaining quality. Perfect example of "acting your way to better culture" - the tool enables better practices (testing, documentation, consistent patterns) that would be tedious manually.</p>
+        <p><strong>Key benefit:</strong> Reduces the friction of writing boilerplate, tests, and documentation - three activities that often slow down continuous delivery adoption. Perfect example of "acting your way to better culture" by making good practices (testing, documentation) less tedious.</p>
 
         <div class="tool-demo">
-          <p><i class="fas fa-external-link-alt"></i> <a href="https://claude.ai/code" target="_blank">Try Claude Code</a> | <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm" target="_blank">View this site's code</a></p>
+          <p><i class="fas fa-external-link-alt"></i> <a href="https://github.com/features/copilot" target="_blank">Try GitHub Copilot</a> | <a href="https://docs.github.com/copilot" target="_blank">Documentation</a></p>
         </div>
       </div>
     </div>
@@ -609,7 +609,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Experiment with Claude Code: Use it to refactor a function or write unit tests</span>
+        <span class="task-title">Experiment with GitHub Copilot: Use it to generate unit tests or write boilerplate code</span>
       </div>
     </div>
 

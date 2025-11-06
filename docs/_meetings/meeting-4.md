@@ -536,19 +536,19 @@ document.addEventListener('keydown', function(event) {
   <div class="spotlight-content">
     <div class="tool-card">
       <div class="tool-header">
-        <h3><i class="fab fa-github" aria-hidden="true"></i> GitHub Copilot</h3>
-        <span class="tool-badge">AI Pair Programming</span>
+        <h3><i class="fas fa-code" aria-hidden="true"></i> Claude Code</h3>
+        <span class="tool-badge">Development & Documentation</span>
       </div>
 
       <div class="tool-description">
-        <p><strong>What it does:</strong> GitHub Copilot is Microsoft's AI coding assistant that provides real-time code suggestions, completions, and explanations directly in your editor (VS Code, JetBrains, Vim, etc.). Includes CLI for terminal commands and chat for technical questions.</p>
+        <p><strong>What it does:</strong> Anthropic's Claude Code is an AI-powered coding assistant that helps build, test, and refactor code while maintaining context across your entire codebase.</p>
 
-        <p><strong>How we use it:</strong> Accelerate development by generating boilerplate code, writing tests, explaining complex functions, and suggesting best practices. The CLI helps with git operations, shell commands, and infrastructure tasks. Chat provides instant answers to technical questions without leaving your workflow.</p>
+        <p><strong>How we use it:</strong> This entire book club website (Jekyll, SCSS, JavaScript) was built with Claude Code. It handles complex refactoring, creates consistent documentation, generates meeting pages, and even commits changes to Git with proper messaging.</p>
 
-        <p><strong>Key benefit:</strong> Reduces cognitive load and speeds up learning. Perfect embodiment of "investing in dev tooling" (Chapter 11) - the tool enables developers to focus on solving problems rather than syntax. Directly supports continuous learning and reduces time-to-productivity for new team members.</p>
+        <p><strong>Key benefit:</strong> Accelerates development velocity while maintaining quality. Perfect example of "acting your way to better culture" (Chapter 11) - the tool enables better practices (testing, documentation, consistent patterns) that would be tedious manually.</p>
 
         <div class="tool-demo">
-          <p><i class="fas fa-external-link-alt"></i> <a href="https://github.com/features/copilot" target="_blank">Try GitHub Copilot</a> | <a href="https://githubnext.com/projects/copilot-cli" target="_blank">Copilot CLI</a></p>
+          <p><i class="fas fa-external-link-alt"></i> <a href="https://claude.ai/code" target="_blank">Try Claude Code</a> | <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm" target="_blank">View this site's code</a></p>
         </div>
       </div>
     </div>
@@ -622,7 +622,7 @@ document.addEventListener('keydown', function(event) {
         <div class="task-checkbox">
           <i class="far fa-square"></i>
         </div>
-        <span class="task-title">Experiment with GitHub Copilot: Use CLI for git operations or chat to explain code</span>
+        <span class="task-title">Experiment with Claude Code: Use it to refactor a function or write unit tests</span>
       </div>
     </div>
 
