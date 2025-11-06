@@ -1,103 +1,453 @@
 # Meeting 3 Retrospective & Recap
-**Date:** __________ **Attendees:** __________ **Facilitator:** __________
 
-**Chapters 7-10:** Lean Management, Product Development, Burnout, Employee Satisfaction
-**Key Question:** _How can we work in small batches, limit WIP, and prevent burnout while maintaining high performance?_
+**Date:** ___________
+**Attendees:** ___________
+**Facilitator:** ___________
 
-## What We Learned
+---
 
-| Topic | Assessment | Key Insights |
-|-------|------------|--------------|
-| **Lean Practices Using** | ⬜ WIP limits ⬜ Visual displays ⬜ Lightweight approval ⬜ Monitoring ⬜ Proactive notify | Opportunities: 1. _____ 2. _____ 3. _____ |
-| **Batch Size** | ⬜ Small (<1wk) ⬜ Medium (1-2wk) ⬜ Large (2+wk) | Impact: ________________ Reduce how: ________________ |
-| **Burnout Risk Factors** | ⬜ Deploy pain ⬜ Poor leadership ⬜ Unclear objectives ⬜ No autonomy ⬜ Culture | Avg level: ___/5 Protective factors: ________________ |
+## Meeting Overview
+
+**Chapters Covered:** 7-10 (Lean Management, Product Development, Burnout, Employee Satisfaction)
+**Key Question:** "How can we work in _small batches_, limit _work in progress_, and prevent _burnout_ while maintaining high performance?"
+
+---
+
+## What We Learned Today
+
+### Lean Management Practices
+
+**Which lean practices are we using?**
+
+⬜ WIP limits
+⬜ Visual work displays
+⬜ Lightweight change approval
+⬜ Monitoring and observability
+⬜ Proactive notifications
+
+**Biggest opportunities:**
+
+1. _____________________________________________________________________
+2. _____________________________________________________________________
+3. _____________________________________________________________________
+
+### Product Development & Small Batches
+
+**Our current batch size:**
+
+⬜ Small - work breaks down into < 1 week increments
+⬜ Medium - work typically 1-2 weeks
+⬜ Large - work often 2+ weeks
+
+**Impact of current batch size:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+**Opportunities to reduce batch size:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+### Burnout & Employee Satisfaction
+
+**Burnout risk factors present in our team:**
+
+⬜ Deployment pain
+⬜ Ineffective leadership
+⬜ Unclear objectives
+⬜ Lack of autonomy
+⬜ Organizational culture issues
+⬜ Other: _______________________________________________________________
+
+**Team burnout level (1-5, 5=high risk):**
+
+Average rating: _____ / 5
+
+**Protective factors:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+---
 
 ## Progress Review from Meeting 2
 
-| CD Practice Tried | Results | DORA Impact | Continue? |
-|------------------|---------|-------------|-----------|
-| | | | ⬜ Yes ⬜ No |
-| | | | ⬜ Yes ⬜ No |
+### CD Practice Experiments
 
-**Key learnings:** ________________
-**DORA trends:** Improving: ________________ Declining: ________________ Action: ________________
-**Architecture dependencies:** Mapped: _____ Reduced: _____ Blockers: ________________
+**Experiments completed:**
+
+| Practice Tried | Results | Impact on DORA Metrics | Continue? |
+|---------------|---------|------------------------|-----------|
+|               |         |                        | ⬜ Yes ⬜ No |
+|               |         |                        | ⬜ Yes ⬜ No |
+|               |         |                        | ⬜ Yes ⬜ No |
+
+**Key learnings:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+### DORA Metrics Trends
+
+**Metrics improving:**
+
+___________________________________________________________________________
+
+**Metrics stagnant or declining:**
+
+___________________________________________________________________________
+
+**Connection to practices:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+### Architecture Decoupling
+
+**Dependencies documented:**
+
+___________________________________________________________________________
+
+**Coupling reduced:**
+
+___________________________________________________________________________
+
+**Remaining challenges:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+---
 
 ## Discussion Highlights
 
-**Most insightful comment:** ________________ (by ________) Why: ________________
-**Most challenging question:** ________________ Response: ________________
-**Aha! moments:** 1. ________________ 2. ________________ 3. ________________
+### Most Insightful Comment
 
-## Team Commitments
+**Who said it:** _______________________
 
-| Name | Lean Practice | Small Batch Experiment | Deployment Pain Action | Burnout Factor Addressed |
-|------|--------------|------------------------|------------------------|-------------------------|
-| | | | | |
-| | | | | |
+**What they said:** __________________________________________________________
 
-**Team WIP limit experiment:** ________________ (Limit: _____ per person)
-**Small batch pilot:** ________________ (Target: < _____ days)
-**Deployment pain reduction:** ________________ (Expected impact: _____)
-**Burnout systemic solution:** ________________ (Who: _____ Timeline: _____)
+___________________________________________________________________________
 
-## Retrospective Assessment
+**Why it mattered:** _________________________________________________________
 
-| Category | Status | Notes |
-|----------|--------|-------|
-| **Participation** | ⬜ Balanced ⬜ Some louder ⬜ Low | ________________ |
-| **Psychological Safety** | ⬜ Safe discussing burnout ⬜ Some hesitation ⬜ Avoided tough topics | ________________ |
-| **Time Management** | ⬜ On time ⬜ Rushed ⬜ Over time | Burnout discussion: ⬜ Sufficient ⬜ Needs more |
+___________________________________________________________________________
 
-**Improve for Meeting 4:** ________________
-**Topics need more time:** ________________
+### Most Challenging Question
+
+**Question:** _______________________________________________________________
+
+___________________________________________________________________________
+
+**Team response:** __________________________________________________________
+
+___________________________________________________________________________
+
+### Aha! Moments
+
+**1.** _____________________________________________________________________
+
+**2.** _____________________________________________________________________
+
+**3.** _____________________________________________________________________
+
+---
+
+## Team Commitments Review
+
+### WIP Limit Experiments
+
+**Current WIP per person/team:** _______________________
+
+**New WIP limit to try:** _______________________
+
+**How we'll track:** _________________________________________________________
+
+___________________________________________________________________________
+
+### Work Visualization
+
+**Visualization approach committed to:**
+
+⬜ Physical kanban board
+⬜ Digital tool: ___________________
+⬜ Team calendar/timeline
+⬜ Other: _________________________
+
+**Who's setting it up:** ____________________________________________________
+
+**By when:** _______________
+
+### Burnout Prevention Actions
+
+**Team commitments to reduce burnout:**
+
+1. _____________________________________________________________________
+   - **Who:** _______________________
+   - **By when:** ___________________
+
+2. _____________________________________________________________________
+   - **Who:** _______________________
+   - **By when:** ___________________
+
+3. _____________________________________________________________________
+   - **Who:** _______________________
+   - **By when:** ___________________
+
+---
+
+## What Went Well
+
+**Participation:**
+- ✅ Balanced discussion (everyone contributed)
+- ⚠️ Some voices louder than others
+- ❌ Low participation
+
+**Vulnerability:**
+- ✅ Team felt safe discussing burnout and challenges
+- ⚠️ Some hesitation on sensitive topics
+- ❌ Defensive or surface-level responses
+
+**Progress Recognition:**
+- ✅ Celebrated improvements from Meetings 1-2
+- ⚠️ Acknowledged progress but focused on gaps
+- ❌ Little recognition of progress made
+
+**Specific wins:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+---
+
+## What Could Be Better
+
+### Meeting Facilitation
+
+**What to improve for Meeting 4:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+### Discussion Depth
+
+**Topics that need more time:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+### Momentum Maintenance
+
+**How to sustain energy between meetings:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+---
 
 ## Connection to Our Work
 
-**Lean practices to adopt:** 1. ________________ (Impact: H/M/L) 2. ________________ (Impact: H/M/L)
-**Small batch opportunities:** 1. ________________ (Feature: _____ Timeline: _____) 2. ________________
-**Deployment pain root causes:** 1. ________________ 2. ________________ 3. ________________
-**Burnout systemic issues:** 1. ________________ 2. ________________ Org changes needed: ________________
+### How This Applies to Our Organization
 
-**Quick wins:** 1. ________________ (Who: _____ By: _____) 2. ________________ (Who: _____ By: _____)
+**Lean practices already in place:**
 
-## CAB & Risk Discussion
+1. _____________________________________________________________________
+2. _____________________________________________________________________
 
-**CAB impact on our team:** ⬜ Significant delays ⬜ Moderate friction ⬜ Minimal impact ⬜ No CAB
-**Small batch risk insights:** ________________
-**Team reaction to "risk grows quadratically":** ________________
+**Lean practices to prioritize:**
 
-## Questions & Action Items
+1. _____________________________________________________________________
+   - **Impact on burnout/performance:** ____________________________________
+   - **Difficulty:** ⬜ Low ⬜ Medium ⬜ High
 
-**Research before Meeting 4:** 1. ________________ 2. ________________ 3. ________________
-**Blocker:** ________________ Impact: ________________ Who helps: ________________
+2. _____________________________________________________________________
+   - **Impact on burnout/performance:** ____________________________________
+   - **Difficulty:** ⬜ Low ⬜ Medium ⬜ High
 
-## Meeting 4 Prep (Chapters 11, 16, Conclusion: Leadership & Transformation)
+### Potential Quick Wins
 
-| Action | Owner | Due | Status |
-|--------|-------|-----|--------|
-| Experiment with lean practice | | Week 6 | ⬜ |
-| Try small batch approach | | Week 6 | ⬜ |
-| Document deployment pain | | Week 6 | ⬜ |
-| Observe burnout factors | | Week 6 | ⬜ |
+**Low-effort, high-impact management/process changes:**
+
+1. _____________________________________________________________________
+   - **Who:** _______________________
+   - **By when:** ___________________
+
+2. _____________________________________________________________________
+   - **Who:** _______________________
+   - **By when:** ___________________
+
+### Long-term Process Considerations
+
+**Systemic process/management changes to explore:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+**Who needs to be involved:** _______________________________________________
+
+---
+
+## Accelerate Principles in Action
+
+### WIP Limits & Flow
+
+**What happens when we limit WIP?**
+
+Expected benefits: _________________________________________________________
+
+___________________________________________________________________________
+
+**How will we measure impact?**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+### Deployment Pain & Burnout Connection
+
+**Is deployment pain contributing to burnout?**
+
+⬜ Yes - significant contributor
+⬜ Somewhat - one of several factors
+⬜ No - not a major factor
+
+**If yes, what CD practice would reduce deployment pain most?**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+---
+
+## Questions & Blockers
+
+### Questions to Research Before Meeting 4
+
+1. _____________________________________________________________________
+2. _____________________________________________________________________
+3. _____________________________________________________________________
+
+### Blockers Identified
+
+**Blocker:** _______________________________________________________________
+
+**Impact:** ________________________________________________________________
+
+**Who can help:** __________________________________________________________
+
+---
+
+## Meeting 4 Preparation
+
+### Reading Assignment
+
+**Chapters 11, 16, Conclusion:** Transformational Leadership, High-Performance Leadership, Summary
+
+**Key concepts to focus on:**
+- Characteristics of transformational leaders
+- ING case study
+- Creating and sustaining transformation
+
+### Action Items Due Before Meeting 4
+
+| Action | Owner | Due Date | Status |
+|--------|-------|----------|--------|
+| Try WIP limit experiment | | Week 6 | ⬜ |
+| Implement work visualization | | Week 6 | ⬜ |
+| Continue DORA tracking | | Ongoing | ⬜ |
+| Assess burnout factors | | Week 6 | ⬜ |
 | Read Chapters 11, 16, Conclusion | All | Week 7 | ⬜ |
 
-**Optional:** ⬜ Meeting 4 podcast ⬜ Leadership self-assessment ⬜ ING case study review
+### Optional Prep
+
+- ⬜ Listen to Meeting 4 [NotebookLM podcast](../../meeting-4/notebooklm/podcast-brief.md)
+- ⬜ Review [24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md) - all capabilities for final review
+- ⬜ Prepare examples of effective/ineffective leadership
+
+---
 
 ## Facilitator Notes
 
-**Worked:** ________________ **Change for Meeting 4:** ________________
-**Materials needed:** ⬜ Handouts ⬜ Lean experiment data ⬜ Batch size examples ⬜ Burnout assessment results
+### What Worked
 
-## Metrics
+___________________________________________________________________________
 
-**Effectiveness (1-5):** Overall: ___/5 | Relevance: ___/5 | Discussion: ___/5 | Action clarity: ___/5
-**Team sentiment:** ⬜ Energized ⬜ Neutral ⬜ Concerned about burnout | Burnout awareness: ⬜ High ⬜ Medium ⬜ Low
+___________________________________________________________________________
+
+### What to Change for Meeting 4
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+### Materials Needed for Meeting 4
+
+- ⬜ Updated [handouts](../../meeting-4/handouts/)
+- ⬜ WIP limit experiment results
+- ⬜ Complete DORA metrics trend data (Weeks 1-7)
+- ⬜ Burnout assessment summary
+
+---
+
+## Metrics Captured
+
+### Meeting Effectiveness (1-5 scale)
+
+**Overall satisfaction:** _____ / 5
+
+**Relevance to our work:** _____ / 5
+
+**Quality of discussion:** _____ / 5
+
+**Action item clarity:** _____ / 5
+
+### Team Sentiment
+
+**Energy level at end of meeting:**
+- ⬜ Energized and motivated
+- ⬜ Neutral
+- ⬜ Tired or discouraged
+
+**Confidence in lean management:**
+- ⬜ High - we know what to do
+- ⬜ Medium - need more clarity
+- ⬜ Low - seems overwhelming
+
+---
 
 ## Closing Reflection
 
-**Most important takeaway:** ________________
-**One systemic change to pursue:** ________________
-**Curious about for Meeting 4:** ________________
+**Most important takeaway from Meeting 3:**
 
-**Next Meeting:** Meeting 4 - Week 7 - Leadership & Transformation | **Facilitator:** __________________
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+**One lean practice we'll implement this week:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+**What we're most curious about for Meeting 4:**
+
+___________________________________________________________________________
+
+___________________________________________________________________________
+
+---
+
+**Next Meeting:** Meeting 4 - Week 7 - Leadership & Transformation
+**Facilitator for next time:** _______________________
