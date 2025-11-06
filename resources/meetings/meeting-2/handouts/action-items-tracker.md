@@ -1,393 +1,112 @@
 # Meeting 2: Action Items Tracker
+**Name:** __________________ **Date:** __________ | _Bring to Meeting 3 (Week 5) to share progress_
 
-**Name:** _______________________________
-**Date:** _______________________________
+## My Commitments for Meeting 3
 
-_Complete this during the meeting and bring to Meeting 3 to share progress_
+### 1. Deployment Process & Automation
 
----
+| Step # | Activity | Who | Manual/Auto | Time | **Pain Point** |
+|--------|----------|-----|-------------|------|----------------|
+| 1 | | | | | ⬜ Most painful |
+| 2 | | | | | ⬜ Most painful |
+| 3 | | | | | ⬜ Most painful |
+| 4 | | | | | ⬜ Most painful |
 
-## My Commitments for Meeting 3 (Week 5)
+**Total manual:** _____ **Total time:** _____ **Automation opportunity:** ________________
+**Expected impact:** ________________ **Resources needed:** ________________
 
-### 1. Document Deployment Process & Identify Automation Opportunity
+### 2. Architectural Dependencies
 
-**Current deployment process (step-by-step):**
+| Team Name | System/Service | Coordination Reason | Coupling Type* | Impact |
+|-----------|----------------|---------------------|----------------|--------|
+| | | | | |
+| | | | | |
+| | | | | |
 
-| Step # | Activity | Who | Manual/Auto | Time |
-|--------|----------|-----|-------------|------|
-| 1      |          |     |             |      |
-| 2      |          |     |             |      |
-| 3      |          |     |             |      |
-| 4      |          |     |             |      |
-| 5      |          |     |             |      |
-| 6      |          |     |             |      |
+*Data, API, Shared DB, Deployment Order, Other
 
-**Total manual steps:** _______
-**Total deployment time:** _______
+**Biggest blocker:** ________________ **One dependency to eliminate:** ________________
+**How to decouple:** ________________________________________________________________
 
-**Most painful/time-consuming manual step:**
+### 3. CD Practice Experiment
 
-________________________________________________________________
+**Experiment:** ⬜ Trunk-based dev ⬜ Deployment auto ⬜ Test auto ⬜ CI improvement ⬜ Test data ⬜ Security auto ⬜ Other: _____
+**Details:** ________________________________________________________________
+**Hypothesis:** If ________________ then ________________
+**Success measure:** ________________ **Timeline:** _____ to _____ **Resources:** ________________
 
-________________________________________________________________
+### 4. Change Approval Process Tracking
 
-**Automation opportunity I'll pursue:**
+**Current process:** ⬜ All changes → CAB ⬜ High-risk only → External ⬜ Peer review only ⬜ No approval
 
-________________________________________________________________
+| Date | Change Description | Request Date | Approved Date | Delay (days) | Bottleneck |
+|------|-------------------|--------------|---------------|--------------|------------|
+| | | | | | |
+| | | | | | |
 
-________________________________________________________________
+**Avg delay:** _____ days **CAB prevented incidents?** ⬜ Yes ⬜ No ⬜ Unknown **Problems slip through?** ⬜ Yes ⬜ No
+**Lightweight alternatives:** ________________________________________________________________
 
-**Expected impact:**
+## Weeks 3-4 Progress Tracking
 
-________________________________________________________________
+| Week | Deployment Automation | Dependencies Mapped | CD Experiment | Approval Observations | Challenges/Help |
+|------|----------------------|--------------------|--------------|-----------------------|-----------------|
+| **3** | | | | | |
+| **4** | | | | | |
 
-**Resources/help needed:**
+## CD Experiment Detailed Tracking
 
-________________________________________________________________
+**Experiment:** ________________
 
----
+| Week | Date | Activity | Observation | Metric/Result |
+|------|------|----------|-------------|---------------|
+| **3** | | | | |
+| | | | | |
+| **4** | | | | |
+| | | | | |
 
-### 2. Map Architectural Dependencies
-
-**Teams we must coordinate with for deployments:**
-
-| Team Name | System/Service | Reason for Coordination | Type of Coupling* | Impact |
-|-----------|----------------|------------------------|-------------------|--------|
-|           |                |                        |                   |        |
-|           |                |                        |                   |        |
-|           |                |                        |                   |        |
-|           |                |                        |                   |        |
-|           |                |                        |                   |        |
-
-*Type: Data, API, Shared Database, Deployment Order, Other
-
-**Biggest blocker to team independence:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**One dependency we could eliminate or reduce:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**How to decouple (ideas):**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-### 3. Experiment with One CD Practice
-
-**I will experiment with:**
-
- Trunk-based development (shorter branches)
- Deployment automation (automate one manual step)
- Test automation (add automated tests)
- Continuous integration (improve CI pipeline)
- Test data management (automate test data)
- Security automation (add security scan to CI)
- Other: _____________________
-
-**Specific experiment details:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Hypothesis:** If I implement ____________________________________,
-
-then _____________________________________________________________
-
-**How I'll measure success:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Timeline:** Start _____________ End _____________
-
-**Resources needed:**
-
-________________________________________________________________
-
----
-
-### 4. Observe Change Approval Process & Document Bottlenecks
-
-**My organization's approval process:**
-
- All changes require external approval (CAB)
- High-risk changes only require external approval
- Peer review only
- No approval process
-
-**Approval observations:**
-
-| Date | Change Description | Approval Request | Approval Granted | Delay (days) | Bottleneck/Notes |
-|------|-------------------|------------------|------------------|--------------|------------------|
-|      |                   |                  |                  |              |                  |
-|      |                   |                  |                  |              |                  |
-|      |                   |                  |                  |              |                  |
-|      |                   |                  |                  |              |                  |
-
-**Average approval delay:** _______________ days
-
-**Has CAB prevented production incidents?**  Yes  No  Unknown
-
-**If yes, provide example:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Do problems slip through CAB anyway?**  Yes  No
-
-**Lightweight alternatives we could try:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Progress Tracking
-
-### Week 3 (This week)
-
-**Deployment automation progress:**
-
-________________________________________________________________
-
-**Architectural dependencies mapped:**
-
-________________________________________________________________
-
-**CD practice experiment:**
-
-________________________________________________________________
-
-**Change approval observations:**
-
-________________________________________________________________
-
-**Challenges encountered:**
-
-________________________________________________________________
-
-**Help needed:**
-
-________________________________________________________________
-
----
-
-### Week 4 (Next week)
-
-**Deployment automation progress:**
-
-________________________________________________________________
-
-**Architectural dependencies mapped:**
-
-________________________________________________________________
-
-**CD practice experiment results:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Change approval observations:**
-
-________________________________________________________________
-
-**Challenges encountered:**
-
-________________________________________________________________
-
-**Help needed:**
-
-________________________________________________________________
-
----
+**Success criteria met?** ⬜ Yes ⬜ Partially ⬜ No **Why?** ________________
+**Continue practice?** ⬜ Yes ⬜ No ⬜ Modify **Next steps:** ________________
 
 ## Insights & Questions
 
-**What I'm learning from my experiment:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Patterns I'm noticing:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Unexpected findings:**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Questions to bring to Meeting 3:**
-
+**Learning:** ________________________________________________________________
+**Patterns:** ________________________________________________________________
+**Unexpected findings:** ________________________________________________________________
+**Questions for Meeting 3:**
 1. ________________________________________________________________
-
 2. ________________________________________________________________
-
 3. ________________________________________________________________
 
-**Ideas for further improvement:**
+**Further improvements:** ________________________________________________________________
 
-________________________________________________________________
+## Meeting 3 Prep (Chapters 7-10)
 
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## CD Practice Experiment Detailed Tracking
-
-**Experiment:** ___________________________________________________
-
-**Week 3 Results:**
-
-| Date | Activity | Observation | Metric/Result |
-|------|----------|-------------|---------------|
-|      |          |             |               |
-|      |          |             |               |
-|      |          |             |               |
-
-**Week 4 Results:**
-
-| Date | Activity | Observation | Metric/Result |
-|------|----------|-------------|---------------|
-|      |          |             |               |
-|      |          |             |               |
-|      |          |             |               |
-
-**Success criteria met?**  Yes  Partially  No
-
-**Why or why not?**
-
-________________________________________________________________
-
-________________________________________________________________
-
-**Will I continue this practice?**  Yes  No  Modify
-
-**Next steps:**
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Meeting 3 Preparation
-
-**Chapters to read:** 7-10 (Management Practices, Product Development, Sustainability, Employee Satisfaction)
-
-**Questions I have from reading:**
-
+**Reading questions:**
 1. ________________________________________________________________
-
 2. ________________________________________________________________
 
-**Examples from my work related to chapters 7-10:**
+**Work examples:** ________________________________________________________________
+
+## Team Commitments (Facilitator Use)
+
+| Name | Automation | Dependencies | CD Experiment | Approval Tracking |
+|------|-----------|--------------|---------------|-------------------|
+| | | | | |
+
+**Group action:** ________________________________________________________________
+
+## Notes
 
 ________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-## Team Commitments (Record during meeting)
-
-_Facilitator: Use this section to capture all team commitments for accountability_
-
-| Name | Automation Opportunity | Dependency Mapping | CD Experiment | Approval Tracking |
-|------|----------------------|-------------------|---------------|-------------------|
-|      |                      |                   |               |                   |
-|      |                      |                   |               |                   |
-|      |                      |                   |               |                   |
-|      |                      |                   |               |                   |
-|      |                      |                   |               |                   |
-
-**Group experiment/shared action (if any):**
-
-________________________________________________________________
-
 ________________________________________________________________
 
 ---
 
-## Notes Space
+## Quick Reference
 
-Use this space for additional notes, ideas, or reflections:
+**8 CD Capabilities:** Version Control | Deployment Automation | CI | Trunk-Based Dev | Test Automation | Test Data Mgmt | Shift Left Security | Continuous Delivery
 
-________________________________________________________________
+**Key Findings:** Trunk-based (2.3x elite) | CABs (negative correlation, NO stability improvement) | Architecture (loose coupling > type) | Security (70%+ shift left)
 
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
-________________________________________________________________
-
----
-
-**Bring this completed tracker to Meeting 3 to share your progress!**
-
----
-
-## Quick Reference: 8 Continuous Delivery Capabilities
-
-1. **Version Control** - Code, config, infrastructure all in version control
-2. **Deployment Automation** - Automated, repeatable deployments
-3. **Continuous Integration** - Every commit triggers build and tests
-4. **Trunk-Based Development** - < 3 branches, < 1 day lifetime
-5. **Test Automation** - Comprehensive automated test suites
-6. **Test Data Management** - On-demand test data in any environment
-7. **Shift Left on Security** - Security integrated early and automated
-8. **Continuous Delivery** - Deploy to production on demand safely
-
----
-
-## Quick Reference: Key Research Findings
-
-**Trunk-Based Development:** Elite performers 2.3x more likely, keep branches < 1 day
-
-**CABs:** Negatively correlated with performance, NO correlation with stability
-
-**Architecture:** Type matters less than loose coupling for team independence
-
-**Security:** 70%+ organizations successfully shift left
-
----
-
-**Questions?** Contact facilitator: _______________________________
+**Facilitator:** __________________
