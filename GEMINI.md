@@ -47,4 +47,5 @@ Then open `http://127.0.0.1:4000/accelerate-devex-book-club-notebooklm/` in your
 *   Global styles and tokens can be modified in `docs/_sass/abstracts/_tokens.scss`.
 *   SCSS partials in `docs/assets/` require YAML front matter for Jekyll compilation.
 *   Prefer CSS/SVG for graphics to ensure accessibility and responsiveness.
+*   When adding meeting media: update both meeting markdown (`docs/_meetings/meeting-X.md`) AND `docs/_data/supplementary_media.yml` in the corresponding `meeting_N` section (week number, not meeting number). Maintain podcast order: brief, deep dive, debate, critique.
 *   Run `npm run validate` before submitting a pull request.

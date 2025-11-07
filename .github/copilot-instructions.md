@@ -39,7 +39,8 @@ When updating meeting media, follow this short operational checklist so the site
 - Remember to update the "Now Playing" default player source for each meeting (set the brief or configured default in the meeting page).
 - The order in the playlist should always be: brief, deep dive, debate, critic.
 - Push changes after each meeting is fully updated so CI/build picks up the changes and regenerates feeds.
-- Update the times by running `node extract-durations.js` and apply the MM:SS durations to meeting pages (and optionally to `docs/_data/supplementary_media.yml`).
+- Update the times by running `node extract-durations.js` and apply the MM:SS durations to meeting pages.
+- Add entries to `docs/_data/supplementary_media.yml` in the corresponding `meeting_N` section (where N matches the week number from the meeting's front matter). Maintain podcast order: brief, deep dive, debate, critique.
 - Make sure local `media/` and S3 structures are in sync (use `aws s3 sync media/ s3://<bucket>/meeting-X/` without ACL flags on buckets that disallow ACLs).
 - After changes, rebuild the site to regenerate feeds: `npm run build` (or `npm run validate` for full checks). Verify the generated files under `docs/_site` (e.g., `media-feed.xml`, `podcast.xml`, `videos.xml`) contain the new entries.
 - **IMPORTANT - YAML Key Structure**: In `docs/_data/supplementary_media.yml`, keys must match **week numbers**, NOT meeting numbers:

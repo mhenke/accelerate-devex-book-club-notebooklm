@@ -102,6 +102,18 @@ npm run test:jekyll-audit  # Full audit suite
 2. **Before committing**: `npm run validate` (full check)
 3. **Before major releases**: `npm run audit` (comprehensive)
 
+### Media Update Workflow
+
+When adding meeting media (podcasts/videos):
+
+1. Upload audio/video file to `media/meeting-X/` locally
+2. Run `node extract-durations.js` to get MM:SS duration
+3. Update `docs/_meetings/meeting-X.md` with podcast entry (maintain order: brief, deep dive, debate, critique)
+4. Update `docs/_data/supplementary_media.yml` in the corresponding `meeting_N` section (N = week number from front matter, not meeting number)
+5. Upload to S3: `aws s3 sync media/meeting-X/ s3://accelerate-devex-book-club-notebooklm/meeting-X/`
+6. Run `npm run build` to regenerate feeds
+7. Verify entries appear in generated `docs/_site/podcast.xml` and `docs/_site/media-feed.xml`
+
 ### Styling and Visual Updates
 
 - Edit SCSS in `docs/assets/main.scss` (must include YAML front matter)

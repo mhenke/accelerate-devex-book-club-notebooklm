@@ -250,6 +250,39 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/The_Blueprint_of_Breakthrough__How_Transformational_Leaders_Ach.m4a"
+               data-title="The Blueprint of Breakthrough: How Transformational Leaders Achieve Elite Performance"
+               data-duration="14:19"
+               data-type="deep-dive">
+             <div class="podcast-start">
+               <button type="button" class="play-btn" aria-label="Play Breakthrough Leadership Deep Dive">
+                 <i class="fas fa-play" aria-hidden="true"></i>
+               </button>
+             </div>
+
+             <div class="podcast-content">
+               <div class="podcast-headline">
+                 The Blueprint of Breakthrough: How Transformational Leaders Achieve Elite Performance
+               </div>
+               <div class="podcast-meta">
+                 <span class="podcast-type deep-dive">Deep Dive</span>
+                 <span class="podcast-duration">14:19</span>
+               </div>
+               <div class="podcast-subtitle">In-depth exploration of transformational leadership principles and their direct impact on organizational performance</div>
+             </div>
+
+             <div class="podcast-end">
+               <div class="podcast-equalizer">
+                 <div class="equalizer">
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="podcast-item" tabindex="0"
                data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-4/_Structural_Blueprint_vs_Bottom-Up_Learning.m4a"
                data-title="Structural Blueprint vs Bottom-Up Learning: The Great Debate on Scaling Tech Transformation"
                data-duration="18:18"

@@ -57,7 +57,7 @@ Updating video and podcast links for Meetings 0-4. Each meeting gets:
 - [x] Brief Podcast
 - [x] Debate Podcast
 - [x] Critic Podcast
-- [ ] Deep Dive Podcast (default)
+- [x] Deep Dive Podcast (default)
 
 **Status:** ⏳ PARTIALLY UPDATED
 
