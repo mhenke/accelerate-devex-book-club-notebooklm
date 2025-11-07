@@ -10,6 +10,14 @@ Chapters 11, 16 & Conclusion Overview
 
 ---
 
+The Culminating Question
+
+**"What is the single smallest change we can make that would make our next deployment just a tiny bit less painful?"**
+
+This IS the transformation starting point. It embodies: **start small** (incremental improvement), **focus on pain** (deployment as system health proxy), **act your way into culture** (behavior before beliefs), **measure and iterate** (continuous improvement).
+
+---
+
 Leadership's Indirect Impact
 
 - Leaders don't directly improve DORA metrics
@@ -30,13 +38,14 @@ Five Transformational Leadership Characteristics
 
 ---
 
-Leadership Impact on Performance
+Leadership's Measurable Impact
 
-- Strong correlation with software delivery performance
-- 2.2x more likely to exceed organizational goals
-- Higher employee engagement and satisfaction
-- Enables development of generative culture
-- Leaders create the environment, teams create the performance
+- **18-50% variance explained:** Job satisfaction, organizational commitment, trust
+- **2.2x more likely** to exceed organizational goals
+- **42% variance** in trust in supervisor
+- **50% variance** in leader-member exchange quality
+- **Critical Insight:** Leaders enable teams to implement technical & lean practices
+- Leadership helps but isn't enough - need architecture, practices, and all 24 capabilities
 
 ---
 

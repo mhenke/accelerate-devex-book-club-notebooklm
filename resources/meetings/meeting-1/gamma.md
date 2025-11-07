@@ -5,17 +5,34 @@ Chapters 1-3 Overview
 - Chapter 1: Accelerate - Software delivery capability drives organizational success
 - Chapter 2: Measuring Performance - DORA metrics replace flawed traditional metrics
 - Chapter 3: Measuring & Changing Culture - Culture can be measured and intentionally improved
-- Evidence-based approach: 23,000+ survey responses identifying 24 key capabilities
-- High performers achieve both speed AND stability simultaneously
+- Evidence-based approach: 23,000+ survey responses, 2,000+ organizations over 4 years
+- High performers achieve both speed AND stability simultaneously - no trade-offs required
 
 ---
 
-The Problem: False Choice
+Meeting 1 Key Question
+
+**"How do we currently perceive and measure performance, and what would it take to shift our focus from local outputs (like utilization or story points) to the global outcomes of speed and stability that the research proves matter?"**
+
+This question challenges teams to examine whether they're measuring what actually drives organizational success.
+
+---
+
+The Problem: False Choice Between Speed and Stability
 
 - Most teams believe they must choose between fast delivery OR stable systems
 - Fast delivery is seen as high risk, stable systems are seen as slow pace
-- Deployment anxiety is a signal of deeper systemic problems in your organization
-- That knot in your stomach before deployment isn't personal weakness
+- **The truth:** High performers achieve BOTH speed AND stability simultaneously
+- No trade-offs required - practices that make you faster also make you more stable
+
+---
+
+Addressing Deployment Pain
+
+- Deployment anxiety is a **signal of process problems**, not personal failure
+- That knot in your stomach before deployment reveals systemic inefficiencies
+- Root causes: Complex manual deployment processes, poor architecture, lack of automation
+- Cultural signal: Fear indicates pathological or bureaucratic culture
 - Your organization is sending you a message through deployment pain
 
 ---
@@ -40,13 +57,27 @@ Research Impact: High Performers Achieve
 
 ---
 
-Westrum Culture Types
+Westrum's Organizational Culture Types
 
-- Pathological: Power-oriented, fear-driven, information hoarding
-- Bureaucratic: Rule-oriented, departmental silos, narrow responsibilities
-- Generative: Performance-oriented, high cooperation, shared risks
-- Generative culture strongly predicts software delivery and organizational performance
-- Key insight: "You can act your way to a better culture" through technical practices
+**🚨 Pathological (Power-Oriented)**
+- Low cooperation across groups
+- Messengers "shot" for bringing bad news
+- Responsibilities shirked when failure occurs
+- Information hoarded or withheld for political reasons
+
+**📋 Bureaucratic (Rule-Oriented)**
+- Modest cooperation between departments
+- Messengers neglected - not welcomed but not punished
+- Responsibility compartmentalized by rules and departments
+- Information flows through official channels
+
+**🚀 Generative (Performance-Oriented)**
+- High cooperation across the organization
+- Messengers trained and developed
+- Risks and responsibilities shared
+- Information sought actively and shared freely
+
+**Key Insight:** Generative culture strongly predicts software delivery and organizational performance
 
 ---
 
@@ -71,8 +102,9 @@ Discussion Questions
 
 Action Items for Next Meeting
 
-- Record lead time for most recent production deploy
-- Count deployments in the last 14 days
-- Write a one-line deployment pain summary
-- Read Chapters 4-6 (Technical Practices, Architecture, Security)
-- Review the Culture Before Metrics handout
+- Begin informal tracking of one DORA metric for your team
+- Identify your biggest deployment pain point and document it
+- Observe examples of pathological, bureaucratic, or generative culture behaviors
+- Record anxiety level (1-10) before your next deployment and why
+- Read Chapters 4-6 (Technical Practices, Architecture, Integrating Infosec)
+- Preview question for Meeting 2: Which architectural or security practices create the most friction for our teams?

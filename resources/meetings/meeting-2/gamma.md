@@ -29,26 +29,20 @@ The Wall of Confusion
 
 ---
 
-Five Continuous Delivery Principles
+Continuous Delivery: Principles & Capabilities
 
-- Build Quality In: Start with quality rather than inspecting it later
-- Work in Small Batches: Break tasks into manageable, testable units
-- Automate Repetitive Tasks: Free humans for creative problem-solving
-- Pursue Continuous Improvement: Regular reflection and experimentation
-- Everyone is Responsible: Shared ownership of delivery outcomes
+**Five Principles:**
+Build quality in | Work in small batches | Automate repetition | Pursue improvement | Everyone responsible
 
----
-
-Eight Continuous Delivery Capabilities
-
-- Version Control: Everything in source control (code, config, infrastructure, scripts)
-- Deployment Automation: Automated, repeatable deployment processes
-- Continuous Integration: Regular check-ins trigger automated build and test
-- Trunk-Based Development: Short-lived branches (less than one day)
-- Test Automation: Comprehensive automated testing at multiple levels
-- Test Data Management: Automated test data provisioning
-- Shift-Left Security: Build security into delivery process from the beginning
-- Continuous Delivery: On-demand, low-risk deployments with fast rollback
+**Eight Key Capabilities:**
+- Version Control (everything: code, config, infrastructure, scripts)
+- Deployment Automation (repeatable, reliable processes)
+- Continuous Integration (automated build & test on check-in)
+- Trunk-Based Development (branches < 1 day)
+- Test Automation (comprehensive, multiple levels)
+- Test Data Management (automated provisioning)
+- Shift-Left Security (integrated from start)
+- On-Demand Delivery (low-risk, fast rollback)
 
 ---
 
@@ -78,25 +72,20 @@ Change Approval Processes: Critical Research
 
 ---
 
-Architecture for Team Independence
+Architecture & Security: Enabling Independence
 
-- Loosely coupled systems: Teams deploy on demand without coordination
-- Services are testable: Most testing without integrated environment
-- Teams choose tools: Appropriate tech stack without constraints
+**Loosely Coupled Architecture (Ch 5):**
+- Teams deploy on demand without coordination
+- Services testable without integrated environments
+- Teams choose appropriate tools independently
 - Conway's Law Inverse: Organize teams to create desired architecture
 - Architecture type matters less than loose coupling
-- Independence enables experimentation and rapid iteration
 
----
-
-Shift-Left Security Practices
-
-- Security reviews conducted for all major features (during development, not at gates)
-- Information security team provides feedback and collaboration throughout
-- Application security testing integrated into deployment pipeline
-- Security teams use shared repositories and automated scanning tools
-- **Key Finding:** Security and speed are NOT in conflict - both improve together
-- 70%+ of organizations successfully shift security left into CI/CD
+**Shift-Left Security (Ch 6):**
+- Security reviews during development, not at gates
+- Security testing integrated into deployment pipeline
+- 70%+ successfully shift security left into CI/CD
+- **Key Finding:** Security and speed improve together - NOT in conflict
 
 ---
 

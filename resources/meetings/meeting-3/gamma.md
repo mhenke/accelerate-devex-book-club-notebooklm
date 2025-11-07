@@ -6,7 +6,15 @@ Chapters 7-10 Overview
 - Chapter 8: Product Development - Lean approach to the "fuzzy front end"
 - Chapter 9: Making Work Sustainable - Deployment pain and burnout are symptoms
 - Chapter 10: Employee Satisfaction - Satisfaction drives business outcomes
-- Same practices that improve performance also improve work-life balance
+- Same practices that improve performance also improve work-life balance and reduce burnout
+
+---
+
+Meeting 3 Key Question
+
+**"Given CABs are negatively correlated with performance AND show zero stability improvement, and toxic workplace predicts 60% of burnout variance, how could we apply Lean principles (limiting WIP, visualizing work) to reduce deployment pain (risk grows near-quadratically with batch size) and address burnout through systemic solutions?"**
+
+This question connects CABs, lean management, deployment pain, and burnout—showing they're all symptoms of the same systemic problems.
 
 ---
 
@@ -20,13 +28,24 @@ Traditional vs Lean Management
 
 ---
 
-Five Lean Management Practices
+Three Core Lean Management Practices
 
-- Limit Work In Progress (WIP): Expose systemic problems and drive improvement
-- Visualize Work: Dashboards and Kanban boards make work visible
-- Monitor for Business Decisions: Leverage production data for business choices
-- Lightweight Change Approval: Peer review over external approval boards
-- Work in Small Batches: Decompose work into pieces completed in less than a week
+- **Limit Work In Progress (WIP):** Using limits to expose systemic problems and drive process improvement
+- **Visualize Work:** Dashboards showing quality, productivity metrics, bottlenecks at a glance
+- **Feedback from Production:** Application/infrastructure data used for daily business decisions
+  - AWS detects 78% of incidents proactively through automation and monitoring
+  - Proactive alerts enable action before customers are affected
+
+---
+
+Lean Product Development
+
+- **Customer Feedback Integration:** Actively seeking and incorporating customer input into design
+- **Value Stream Visibility:** Understanding work flow from business to customers
+- **Team Experimentation:** Authority to create/change specifications without external approval
+- **Work in Small Batches:** Features completed in less than one week
+  - **Critical:** Risk grows near-quadratically with batch size
+  - Benefits: Easier problem identification, simple rollback, shorter cycles, lower failures
 
 ---
 
@@ -40,13 +59,15 @@ Lean Management Impact
 
 ---
 
-Deployment Pain: The Burnout Predictor
+Deployment Pain & Burnout Prevention
 
-- Deployment pain is the strongest predictor of burnout
-- Fear and anxiety during releases indicate friction between dev and ops
-- Manual, error-prone deployment processes create sustained anxiety
+- **Deployment pain is the strongest predictor of burnout**
+- Fear during releases indicates friction between dev and ops
+- Manual, error-prone processes create sustained anxiety
+- **Toxic workplace predicts 60% of burnout variance**
+- **Six burnout risk factors:** Work overload, lack of control, insufficient rewards, community breakdown, absence of fairness, value conflicts
 - Technical practices eliminate pain at its source, not just symptoms
-- Six burnout risk factors: overload, lack of control, insufficient rewards, community breakdown, unfairness, value conflicts
+- Microsoft Bing: Work-life satisfaction improved from 38% → 75% with CD practices
 
 ---
 
