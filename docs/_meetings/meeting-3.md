@@ -525,51 +525,26 @@ document.addEventListener('keydown', function(event) {
 <div class="section-card" markdown="0">
   <div class="step-header">
     <h2><i class="fas fa-book-reader" aria-hidden="true"></i> Resources</h2>
-    <p class="section-intro">Deep-dive guides on lean management, burnout prevention, and employee satisfaction</p>
+    <p class="section-intro">Essential tools for lean management, sustainability, and burnout prevention</p>
   </div>
 
   <div class="resource-callout-grid">
     <div class="resource-callout">
-      <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Lean Management Practices</h3>
-      <p>How lean principles enable flow, reduce waste, and improve performance. Learn the four key practices: limit WIP, visualize work, monitor for business decisions, and use lightweight approval to optimize flow over utilization.</p>
-      <p><strong>Management Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/lean-management-practices.md" class="resource-link"><strong>Optimizing for Flow</strong></a></p>
+      <h3><i class="fas fa-file-pdf" aria-hidden="true"></i> Lean Management & Sustainability Presentation</h3>
+      <p>Complete presentation deck covering Chapters 7-10: Lean Management Practices, Product Development, Making Work Sustainable, and Employee Satisfaction. Includes discussion questions, action items, and key insights for facilitators and participants.</p>
+      <p><strong>Presentation PDF:</strong> <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean-Management-and-Sustainability.pdf" class="resource-link" target="_blank"><strong>Download Slides</strong></a></p>
     </div>
 
     <div class="resource-callout">
-      <h3><i class="fas fa-fire" aria-hidden="true"></i> Deployment Pain: The Burnout Predictor</h3>
-      <p>Deployment pain is the strongest predictor of burnout. Learn how manual, error-prone deployment processes create sustained anxiety and how technical practices eliminate pain at its source—not by treating symptoms.</p>
-      <p><strong>Burnout Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/deployment-pain-burnout.md" class="resource-link"><strong>Preventing Burnout</strong></a></p>
+      <h3><i class="fas fa-clipboard-check" aria-hidden="true"></i> 24 Capabilities Assessment</h3>
+      <p>Comprehensive self-assessment covering all 24 capabilities from Accelerate research, including lean management practices, WIP limits, and team experimentation. Identify which capabilities to focus on for your transformation journey.</p>
+      <p><strong>Assessment Tool:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/assessments/24-capabilities-assessment.md" class="resource-link"><strong>Assess Your Capabilities</strong></a></p>
     </div>
 
     <div class="resource-callout">
-      <h3><i class="fas fa-users" aria-hidden="true"></i> Employee Satisfaction: The Four Pillars</h3>
-      <p>High performers are 2.2× more likely to recommend their organization. Discover the four pillars of satisfaction—meaningful work, learning & growth, team support, and right tools—and how high-performance practices create them.</p>
-      <p><strong>Satisfaction Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/employee-satisfaction.md" class="resource-link"><strong>Building Engagement</strong></a></p>
-    </div>
-  </div>
-
-  <div class="step-header" style="margin-top: 2rem;">
-    <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Meeting Materials</h3>
-    <p class="section-intro">Comprehensive guides and worksheets for facilitators and participants</p>
-  </div>
-
-  <div class="resource-callout-grid">
-    <div class="resource-callout">
-      <h3><i class="fas fa-comments" aria-hidden="true"></i> Discussion Questions (48 Questions)</h3>
-      <p>Comprehensive question bank with Quick Start guide. Select 8-10 questions for your 60-minute meeting or use the pre-selected Quick Start flow covering WIP limits, CABs, deployment pain, and burnout prevention.</p>
-      <p><strong>Facilitator Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/leadership/discussion-guide.md" class="resource-link"><strong>Discussion Questions</strong></a></p>
-    </div>
-
-    <div class="resource-callout">
-      <h3><i class="fas fa-print" aria-hidden="true"></i> Attendee Workbook (550 Lines)</h3>
-      <p>Printable workbook for participants with fill-in exercises on lean management, small batches, deployment pain tracking, and burnout risk assessment. Includes quick reference sections and personal reflection prompts.</p>
+      <h3><i class="fas fa-print" aria-hidden="true"></i> Attendee Workbook</h3>
+      <p>Printable workbook for participants with fill-in exercises on lean management, small batches, deployment pain tracking, and burnout risk assessment. Includes quick reference sections and personal reflection prompts for all key concepts.</p>
       <p><strong>Printable Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/attendee-guide.md" class="resource-link"><strong>Attendee Guide</strong></a></p>
-    </div>
-
-    <div class="resource-callout">
-      <h3><i class="fas fa-tasks" aria-hidden="true"></i> Action Items Tracker</h3>
-      <p>Detailed tracker for commitments between meetings: lean practice experiments, small batch observations, deployment pain documentation, and burnout risk factors. Includes progress tracking and reflection prompts.</p>
-      <p><strong>Commitment Tracker:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/handouts/action-items-tracker.md" class="resource-link"><strong>Action Items</strong></a></p>
     </div>
   </div>
 </div>
