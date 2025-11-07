@@ -511,6 +511,12 @@ document.addEventListener('keydown', function(event) {
       <p>Security and speed are NOT in conflict. Shifting security left—integrating it throughout development—creates both better security AND faster delivery. Learn the four practices that enable 50% faster remediation with better security posture.</p>
       <p><strong>Security Guide:</strong> <a href="https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-2/handouts/security-shift-left.md" class="resource-link"><strong>Building Security In</strong></a></p>
     </div>
+
+    <div class="resource-callout">
+      <h3><i class="fas fa-file-pdf" aria-hidden="true"></i> Technical Excellence Presentation</h3>
+      <p>Complete presentation deck covering Chapters 4-6: Technical Practices, Architecture, and Integrating Infosec. Includes discussion questions, action items, and key insights for facilitators and participants.</p>
+      <p><strong>Presentation PDF:</strong> <a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/Technical-Excellence.pdf" class="resource-link" target="_blank"><strong>Download Slides</strong></a></p>
+    </div>
   </div>
 </div>
 
