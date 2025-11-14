@@ -4,7 +4,7 @@ const STATIC_ASSETS = [
   '/accelerate-devex-book-club-notebooklm/',
   '/accelerate-devex-book-club-notebooklm/assets/main.css',
   '/accelerate-devex-book-club-notebooklm/meetings/',
-  '/accelerate-devex-book-club-notebooklm/resources/',
+  '/accelerate-devex-book-club-notebooklm/ai_tools/',
   '/accelerate-devex-book-club-notebooklm/transformation-complete/',
 ];
 

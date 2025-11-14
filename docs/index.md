@@ -191,7 +191,7 @@ title: Home
 <h3>Resources & Support</h3>
 <p>Downloads, handouts, assessments, and facilitator guides</p>
 <div class="resource-links">
-<a href="{{ '/resources' | relative_url }}" class="btn btn--primary-action">View All Resources →</a>
+<a href="{{ '/ai_tools' | relative_url }}" class="btn btn--primary-action">View All AI Tools →</a>
 </div>
 </div>
 </div>

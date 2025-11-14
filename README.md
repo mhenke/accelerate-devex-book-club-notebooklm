@@ -67,6 +67,7 @@ Useful links
 - Meeting prompts & AI tools: `resources/`
 - SCSS main: `docs/assets/main.scss`
 - Agent guidance: `.github/copilot-instructions.md`
+- AI Tools Used: `AI_TOOLS.md`
 
 If you'd like this shortened further (one-line quick start) or expanded with a contributor checklist and PR template, tell me which and I'll update it.
 

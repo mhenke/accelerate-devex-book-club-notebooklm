@@ -41,6 +41,40 @@
 
 ⚠️ Don’t: deep-dive tooling debates; schedule follow-up if needed
 
+### Pre-Meeting Checklist
+
+- ✅ Send meeting announcement/invite (1 week prior)
+- ✅ Remind participants to read chapters (3-4 days prior)
+- ✅ Share optional supplementary materials (e.g., NotebookLM podcasts)
+- ✅ Confirm facilitator availability and roles
+- ✅ Prepare discussion questions and activities
+- ✅ Set up meeting tech (video conference, screen sharing, etc.)
+- ✅ Review previous meeting's action items
+
+> **Subject: Accelerate Book Club: Meeting [Meeting #] - [Meeting Topic] is coming up!**
+>
+> Hi team,
+>
+> A friendly reminder that our next Accelerate Book Club meeting is just around the corner!
+>
+> **Meeting [Meeting #]: [Meeting Topic]**
+> **Date:** [Date]
+> **Time:** [Time]
+> **Location:** [Video Conference Link]
+>
+> To prepare, please read **Chapters [Chapter Numbers]**.
+>
+> You can find the full meeting guide and resources here:
+> [Link to Meeting Guide]
+>
+> For a quick refresher, you can also listen to the optional AI-generated podcast:
+> [Link to NotebookLM Podcast]
+>
+> Looking forward to another great discussion and exploring how we can apply these concepts to our work. See you there!
+>
+> Best,
+> [Your Name]
+
 ### Post-Meeting Follow-Up
 
 - Send notes and commitments; share NotebookLM recap links
