@@ -146,8 +146,8 @@ This helps participants articulate their personal goals and creates buy-in from 
 > You can find the full meeting guide and resources here:
 > [Link to Meeting 0 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-0/README.md)
 >
-> For a quick refresher on the book club format, you can also listen to the optional AI-generated podcast:
-> [Link to NotebookLM Kickoff Podcast](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-0/notebooklm/podcast-brief.md)
+> For a quick refresher, you can also watch or listen to the optional AI-generated media:
+> [Link to Meeting 0 Media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-0/#media)
 >
 > Looking forward to starting this journey with you all. See you there!
 >

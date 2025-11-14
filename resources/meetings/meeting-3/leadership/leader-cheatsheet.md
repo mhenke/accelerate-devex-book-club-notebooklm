@@ -43,8 +43,8 @@
 > You can find the full meeting guide and resources here:
 > [Link to Meeting 3 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/README.md)
 >
-> For a quick refresher, you can also listen to the optional AI-generated podcast:
-> [Link to NotebookLM Meeting 3 Podcast](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-3/notebooklm/podcast-brief.md)
+> For a quick refresher, you can also watch or listen to the optional AI-generated media:
+> [Link to Meeting 3 Media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-3/#media)
 >
 > Looking forward to another great discussion and exploring how we can apply these concepts to our work. See you there!
 >
