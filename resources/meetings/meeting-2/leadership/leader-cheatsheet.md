@@ -27,7 +27,15 @@
 
 - "Which CD practice would most reduce our lead time in the next 2 weeks?"
 - "Where are we blocked by other teams when deploying?"
-- "What’s one way to integrate a security check earlier without slowing flow?"
+- "What's one way to integrate a security check earlier without slowing flow?"
+
+### Icebreaker / Opening Question
+
+**"Share one technical practice your team does well—something you're proud of or that makes your work easier."**
+
+This opens the meeting on a positive note, surfaces existing strengths to build on, and makes the technical discussion personal. Examples might include: automated testing, trunk-based development, infrastructure as code, code review practices, monitoring/observability, deployment automation, etc.
+
+**Alternative if group needs more structure:** "On a scale of 1-5, how automated is your deployment process? (1 = completely manual, 5 = fully automated). What's the biggest manual step remaining?"
 
 ### Materials Needed
 

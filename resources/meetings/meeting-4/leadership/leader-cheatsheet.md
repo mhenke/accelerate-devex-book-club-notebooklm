@@ -54,8 +54,18 @@
 ### Backup Questions
 
 - "Which leadership characteristic would have the biggest impact if improved?"
-- "What’s one decision we can push closer to the team this month?"
+- "What's one decision we can push closer to the team this month?"
 - "How will we know the transformation is working in 3 months?"
+
+### Icebreaker / Opening Question
+
+**"Think of a leader you admire (in your organization or elsewhere). Which of the five transformational leadership characteristics do they demonstrate most strongly?"**
+
+This icebreaker connects directly to Meeting 4's focus on the five characteristics of transformational leadership (vision, inspirational communication, intellectual stimulation, supportive leadership, personal recognition). It's aspirational rather than critical, helps participants internalize the leadership framework, and sets a positive tone for the final meeting.
+
+**Alternative for reflection on the journey:** "In one sentence, what's the biggest insight you've gained from this book club that you're committing to act on?"
+
+This alternative works well as a final meeting icebreaker, allowing participants to reflect on their 2-month learning journey and create accountability for ongoing transformation.
 
 ### Materials
 

@@ -53,9 +53,19 @@
 
 ### Backup Questions
 
-- "Where is work waiting? What’s our largest queue?"
-- "What’s the last time deployment caused off-hours work? Why?"
+- "Where is work waiting? What's our largest queue?"
+- "What's the last time deployment caused off-hours work? Why?"
 - "Which satisfaction driver is weakest for the team right now?"
+
+### Icebreaker / Opening Question
+
+**"On a scale of 1-10, how sustainable does your current work pace feel? What's one thing that makes it better or worse?"**
+
+This icebreaker immediately surfaces burnout risks and work-life balance issues—the core of Meeting 3's focus on sustainability. It's personal, low-stakes, and helps participants recognize that deployment pain and work sustainability are connected to system design, not personal failings.
+
+**Alternative if group prefers concrete examples:** "Share one time in the past month when work felt 'in flow' vs. one time it felt chaotic. What was different?"
+
+This alternative helps surface the concepts of WIP limits, batch size, and visual management through real experiences.
 
 ### Materials
 
