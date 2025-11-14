@@ -384,35 +384,56 @@ document.addEventListener('keydown', function(event) {
         <div class="step-content">
           <h3>The Problem: Traditional Silos</h3>
           
-          <div class="org-chart">
-            <div class="org-label">Organization Structure</div>
-            <div class="team-list">
-              <div class="team-item">Frontend Team</div>
-              <div class="team-item">Backend Team</div>
-              <div class="team-item">Database Team</div>
-              <div class="team-item">QA Team</div>
-              <div class="team-item">Security Team</div>
+          <!-- Internal vertical flow -->
+          <div class="conways-internal-flow">
+            
+            <!-- Org Structure Step -->
+            <div class="conways-internal-step">
+              <div class="org-chart">
+                <div class="org-label">Organization Structure</div>
+                <div class="team-list">
+                  <div class="team-item">Frontend Team</div>
+                  <div class="team-item">Backend Team</div>
+                  <div class="team-item">Database Team</div>
+                  <div class="team-item">QA Team</div>
+                  <div class="team-item">Security Team</div>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="produces-arrow">
-            <i class="fas fa-arrow-down"></i>
-            <span>Produces</span>
-          </div>
-
-          <div class="system-chart">
-            <div class="system-label">System Architecture</div>
-            <div class="layer-list">
-              <div class="layer-item">Frontend Layer</div>
-              <div class="layer-item">API Layer</div>
-              <div class="layer-item">Data Layer</div>
-              <div class="layer-item">Test Suite</div>
-              <div class="layer-item">Security Review</div>
+            <!-- Arrow Down -->
+            <div class="conways-internal-arrow">
+              <i class="fas fa-arrow-down"></i>
+              <span class="arrow-label">Produces</span>
             </div>
-          </div>
 
-          <div class="consequence-box negative">
-            <strong>Result:</strong> Tightly coupled system requiring coordination across 5+ teams to deploy any change. Deployment becomes a multi-week orchestration nightmare.
+            <!-- System Architecture Step -->
+            <div class="conways-internal-step">
+              <div class="system-chart">
+                <div class="system-label">System Architecture</div>
+                <div class="layer-list">
+                  <div class="layer-item">Frontend Layer</div>
+                  <div class="layer-item">API Layer</div>
+                  <div class="layer-item">Data Layer</div>
+                  <div class="layer-item">Test Suite</div>
+                  <div class="layer-item">Security Review</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arrow Down -->
+            <div class="conways-internal-arrow">
+              <i class="fas fa-arrow-down"></i>
+              <span class="arrow-label">Results In</span>
+            </div>
+
+            <!-- Consequence Step -->
+            <div class="conways-internal-step">
+              <div class="consequence-box negative">
+                <strong>Result:</strong> Tightly coupled system requiring coordination across 5+ teams to deploy any change. Deployment becomes a multi-week orchestration nightmare.
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -427,41 +448,62 @@ document.addEventListener('keydown', function(event) {
         <div class="step-content">
           <h3>The Solution: Inverse Conway Maneuver</h3>
           
-          <div class="system-chart desired">
-            <div class="system-label">Desired Architecture (Design First!)</div>
-            <div class="service-list">
-              <div class="service-item">
-                <i class="fas fa-cube"></i>
-                <span>Loosely Coupled Services</span>
+          <!-- Internal vertical flow -->
+          <div class="conways-internal-flow">
+            
+            <!-- Architecture Design Step -->
+            <div class="conways-internal-step">
+              <div class="system-chart desired">
+                <div class="system-label">Desired Architecture (Design First!)</div>
+                <div class="service-list">
+                  <div class="service-item">
+                    <i class="fas fa-cube"></i>
+                    <span>Loosely Coupled Services</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="produces-arrow">
-            <i class="fas fa-arrow-down"></i>
-            <span>Requires</span>
-          </div>
+            <!-- Arrow Down -->
+            <div class="conways-internal-arrow">
+              <i class="fas fa-arrow-down"></i>
+              <span class="arrow-label">Requires</span>
+            </div>
 
-          <div class="org-chart cross-functional">
-            <div class="org-label">Organization Structure</div>
-            <div class="team-list">
-              <div class="team-item cross-functional">
-                <strong>Product Team A</strong>
-                <small>Full-stack, QA, Security</small>
-              </div>
-              <div class="team-item cross-functional">
-                <strong>Product Team B</strong>
-                <small>Full-stack, QA, Security</small>
-              </div>
-              <div class="team-item cross-functional">
-                <strong>Product Team C</strong>
-                <small>Full-stack, QA, Security</small>
+            <!-- Org Structure Step -->
+            <div class="conways-internal-step">
+              <div class="org-chart cross-functional">
+                <div class="org-label">Organization Structure</div>
+                <div class="team-list">
+                  <div class="team-item cross-functional">
+                    <strong>Product Team A</strong>
+                    <small>Full-stack, QA, Security</small>
+                  </div>
+                  <div class="team-item cross-functional">
+                    <strong>Product Team B</strong>
+                    <small>Full-stack, QA, Security</small>
+                  </div>
+                  <div class="team-item cross-functional">
+                    <strong>Product Team C</strong>
+                    <small>Full-stack, QA, Security</small>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="consequence-box positive">
-            <strong>Result:</strong> Teams can deploy independently, on demand, without coordination. Each team owns their service end-to-end.
+            <!-- Arrow Down -->
+            <div class="conways-internal-arrow">
+              <i class="fas fa-arrow-down"></i>
+              <span class="arrow-label">Results In</span>
+            </div>
+
+            <!-- Consequence Step -->
+            <div class="conways-internal-step">
+              <div class="consequence-box positive">
+                <strong>Result:</strong> Teams can deploy independently, on demand, without coordination. Each team owns their service end-to-end.
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -505,41 +547,81 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
-<!-- THE WALL OF CONFUSION -->
+<!-- SHIFT LEFT: SECURITY & TESTING -->
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
-    <h2><i class="fas fa-divide" aria-hidden="true"></i> The Wall of Confusion</h2>
-    <h3 class="false-choice-subtitle">Traditional organizations create conflicting incentives between development and operations</h3>
+    <h2><i class="fas fa-angle-double-left" aria-hidden="true"></i> Shift Left: Build Quality & Security In</h2>
+    <h3 class="false-choice-subtitle">Don't bolt on quality and security at the end—integrate them from the start</h3>
 
-    <div class="choice-options">
+    <div class="choice-options" style="display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: var(--space-lg); align-items: center;">
       <div class="choice-option">
         <div class="choice-circle">
-          <i class="fas fa-code" aria-hidden="true"></i>
+          <i class="fas fa-shield-alt" aria-hidden="true"></i>
         </div>
-        <h4 class="choice-label">Development</h4>
-        <p class="choice-consequence">Optimize for Throughput</p>
+        <h4 class="choice-label">Shift-Left Security</h4>
+        <p class="choice-consequence">Integrate security throughout development</p>
+        <ul style="text-align: left; margin-top: var(--space-md); padding-left: var(--space-lg); font-size: var(--font-size-small);">
+          <li>Security reviews for all major features</li>
+          <li>Security team provides feedback during development</li>
+          <li>Application security testing in deployment pipeline</li>
+          <li>Shared repositories for security collaboration</li>
+        </ul>
       </div>
 
       <div class="vs-separator">
         <div class="vs-circle">
-          VS
+          +
         </div>
       </div>
 
       <div class="choice-option">
         <div class="choice-circle">
-          <i class="fas fa-server" aria-hidden="true"></i>
+          <i class="fas fa-vial" aria-hidden="true"></i>
         </div>
-        <h4 class="choice-label">Operations</h4>
-        <p class="choice-consequence">Optimize for Stability</p>
+        <h4 class="choice-label">Shift-Left Testing</h4>
+        <p class="choice-consequence">Developers write and maintain automated tests</p>
+        <ul style="text-align: left; margin-top: var(--space-md); padding-left: var(--space-lg); font-size: var(--font-size-small);">
+          <li>Unit tests written alongside code</li>
+          <li>Integration tests before integration</li>
+          <li>Test failures block deployment</li>
+          <li>Fast feedback loops (minutes, not hours)</li>
+        </ul>
+      </div>
+
+      <div class="vs-separator">
+        <div class="vs-circle">
+          +
+        </div>
+      </div>
+
+      <div class="choice-option">
+        <div class="choice-circle">
+          <i class="fas fa-layer-group" aria-hidden="true"></i>
+        </div>
+        <h4 class="choice-label">Shift-Down Complexity</h4>
+        <p class="choice-consequence">Move complexity to platform/infrastructure</p>
+        <ul style="text-align: left; margin-top: var(--space-md); padding-left: var(--space-lg); font-size: var(--font-size-small);">
+          <li>Dynamic, on-demand isolated environments</li>
+          <li>Production-like sandboxes for testing</li>
+          <li>Platform teams abstract infrastructure complexity</li>
+          <li>Self-service deployment without local setup pain</li>
+        </ul>
       </div>
     </div>
 
     <div class="deployment-signal">
-      <h4>The Signal: Change Advisory Boards (CABs)</h4>
-      <p>The existence of manual change approval processes signals that your organization lacks the technical practices necessary to deploy safely at speed.</p>
+      <h4>The Research: Shift-Left + Shift-Down = Elite Performance</h4>
+      <p><strong>Teams with shift-left security spend 50% less time on security remediation</strong> and have better security posture. Testing early and often reduces the cost of finding and fixing defects by <strong>10-100x</strong> compared to finding issues in production.</p>
+      <p><strong>Shift-down complements shift-left:</strong> Instead of burdening developers with complex local environments, shift complexity down to the platform level. Dynamic, on-demand environments (like isolated Kubernetes sandboxes) improve all four DORA metrics—faster lead time, higher deployment frequency, lower failure rates, and faster recovery—by providing realistic, production-like testing without the cognitive load of manual setup.</p>
     </div>
 
+  </div>
+  
+  <!-- Wall of Confusion Note -->
+  <div style="margin-top: var(--space-xl); padding: var(--space-md) var(--space-lg); background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.08)); border-radius: var(--radius-lg); border: 2px solid rgba(239, 68, 68, 0.3);">
+    <p style="margin: 0; font-size: var(--font-size-small); line-height: var(--line-height-relaxed); color: rgba(255, 255, 255, 0.85);">
+      <strong style="color: rgba(255, 255, 255, 0.95);">Note: The Wall of Confusion</strong> — Traditional organizations create conflicting incentives between development (optimize for throughput) and operations (optimize for stability). The existence of manual change approval processes (like Change Advisory Boards) signals that your organization lacks the technical practices necessary to deploy safely at speed. Shift-left practices eliminate this false choice.
+    </p>
   </div>
 </div>
 
