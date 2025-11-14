@@ -90,4 +90,4 @@ Before Meeting 1 (Week 1), participants must:
 
 ---
 
-[← Back to All Meetings](../) | [Book Club Roadmap](../../book-club-roadmap.md) →
+[Back to All Meetings](../) | [Book Club Roadmap](../../book-club-roadmap.md)

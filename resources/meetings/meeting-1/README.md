@@ -95,4 +95,4 @@ Before Meeting 2 (Week 3), participants should:
 
 ---
 
-[← Back to All Meetings](../) | [Book Club Roadmap](../../book-club-roadmap.md) →
+[Back to All Meetings](../) | [Book Club Roadmap](../../book-club-roadmap.md)

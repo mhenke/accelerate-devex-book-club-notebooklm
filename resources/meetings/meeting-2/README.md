@@ -35,27 +35,27 @@ Generate supplementary podcasts and videos using NotebookLM Prompts (in this fol
 ## Pre-Meeting Preparation
 
 ### For Facilitators
-1.  Read chapters 4-6 thoroughly
-2.  Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](leadership/outline.md)
-3.  Generate optional [NotebookLM content](notebooklm/) and review
-4.  Review participants' progress on Meeting 1 action items
-5.  Review [Key Question](../../key-questions.md#meeting-2) to frame discussion
+1. Read chapters 4-6 thoroughly
+2. Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](leadership/outline.md)
+3. Generate optional [NotebookLM content](notebooklm/) and review
+4. Review participants' progress on Meeting 1 action items
+5. Review [Key Question](../../key-questions.md#meeting-2) to frame discussion
 
 ### For Participants
-1. =Ö Read chapters 4-6 from "Accelerate"
-2. <§ (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
-3. =Ý Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
-4. = Complete Meeting 1 action items and prepare to share findings
-5. =Ê Observe technical practices and architecture patterns in your team
+1. Read chapters 4-6 from "Accelerate"
+2. (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
+3. Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
+4. Complete Meeting 1 action items and prepare to share findings
+5. Observe technical practices and architecture patterns in your team
 
 ## Meeting Outcomes
 
 By the end of Meeting 2, participants should:
--  **Understand** the 8 continuous delivery capabilities and their impact
--  **Recognize** how trunk-based development enables faster, safer deployments
--  **Identify** architectural coupling that prevents independent team deployment
--  **Understand** why Change Approval Boards (CABs) harm performance without improving stability
--  **Plan** one technical practice experiment to try before Meeting 3
+- **Understand** the 8 continuous delivery capabilities and their impact
+- **Recognize** how trunk-based development enables faster, safer deployments
+- **Identify** architectural coupling that prevents independent team deployment
+- **Understand** why Change Approval Boards (CABs) harm performance without improving stability
+- **Plan** one technical practice experiment to try before Meeting 3
 
 ## Key Concepts Covered
 
@@ -105,10 +105,10 @@ By the end of Meeting 2, participants should:
 ## Action Items for Next Meeting
 
 Before Meeting 3 (Week 5), participants should:
--  Document current deployment process and identify one automation opportunity
--  Map architectural dependencies that require cross-team coordination
--  Experiment with one CD practice (trunk-based dev, test automation, deployment automation)
--  Observe change approval process and document bottlenecks
+- Document current deployment process and identify one automation opportunity
+- Map architectural dependencies that require cross-team coordination
+- Experiment with one CD practice (trunk-based dev, test automation, deployment automation)
+- Observe change approval process and document bottlenecks
 
 ## Next Meeting
 
@@ -119,4 +119,4 @@ Before Meeting 3 (Week 5), participants should:
 
 ---
 
-[ Meeting 1](../meeting-1/) | [Book Club Roadmap](../../book-club-roadmap.md) | [Meeting 3 ’](../meeting-3/)
+[Meeting 1](../meeting-1/) | [Book Club Roadmap](../../book-club-roadmap.md) | [Meeting 3](../meeting-3/)

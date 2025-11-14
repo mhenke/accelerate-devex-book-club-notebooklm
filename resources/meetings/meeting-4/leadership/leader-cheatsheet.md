@@ -41,7 +41,7 @@
 > To prepare, please read **Chapters 11, 16, and the Conclusion**.
 >
 > You can find the full meeting guide and resources here:
-> [Link to Meeting 4 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/README.md)
+> [Link to Meeting 4 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-4/README.md#for-participants)
 >
 > For a quick refresher, you can also watch or listen to the optional AI-generated media:
 > [Link to Meeting 4 Media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-4/#media)

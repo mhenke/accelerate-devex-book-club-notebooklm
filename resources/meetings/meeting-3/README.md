@@ -35,27 +35,27 @@ Generate supplementary podcasts and videos using NotebookLM Prompts (in this fol
 ## Pre-Meeting Preparation
 
 ### For Facilitators
-1.  Read chapters 7-10 thoroughly
-2.  Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](leadership/outline.md)
-3.  Generate optional [NotebookLM content](notebooklm/) and review
-4.  Review participants' progress on Meeting 2 action items
-5.  Review [Key Question](../../key-questions.md#meeting-3) to frame discussion
+1. Read chapters 7-10 thoroughly
+2. Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](leadership/outline.md)
+3. Generate optional [NotebookLM content](notebooklm/) and review
+4. Review participants' progress on Meeting 2 action items
+5. Review [Key Question](../../key-questions.md#meeting-3) to frame discussion
 
 ### For Participants
-1. =Ö Read chapters 7-10 from "Accelerate"
-2. <§ (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
-3. =Ý Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
-4. = Complete Meeting 2 action items and prepare to share findings
-5. =Ê Observe work-in-progress, batch size, and burnout indicators in your team
+1. Read chapters 7-10 from "Accelerate"
+2. (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
+3. Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
+4. Complete Meeting 2 action items and prepare to share findings
+5. Observe work-in-progress, batch size, and burnout indicators in your team
 
 ## Meeting Outcomes
 
 By the end of Meeting 3, participants should:
--  **Understand** lean management practices (WIP limits, visual management, monitoring)
--  **Recognize** that batch size has near-quadratic relationship with deployment risk
--  **Identify** burnout risk factors and understand systemic solutions
--  **Understand** factors that drive job satisfaction and employee engagement
--  **Plan** work visualization and WIP limit experiments to try before Meeting 4
+- **Understand** lean management practices (WIP limits, visual management, monitoring)
+- **Recognize** that batch size has near-quadratic relationship with deployment risk
+- **Identify** burnout risk factors and understand systemic solutions
+- **Understand** factors that drive job satisfaction and employee engagement
+- **Plan** work visualization and WIP limit experiments to try before Meeting 4
 
 ## Key Concepts Covered
 
@@ -78,7 +78,7 @@ By the end of Meeting 3, participants should:
 - **Burnout Research:** Toxic workplace predicts 60% of burnout variance
 - **Systemic Solutions:** Organizational interventions more effective than individual training
 - **Manager Actions:** Foster respect, communicate purpose, invest in development, remove blockers
-- **Key Insight:** "If it hurts, do it more often"frequent deployments force improvements
+- **Key Insight:** "If it hurts, do it more often"frequent deployments force improvements
 
 ### Employee Satisfaction (Chapter 10)
 - **Job Satisfaction Factors:** Control/autonomy, clear vision, experimentation, diversity, customer connection
@@ -103,7 +103,7 @@ By the end of Meeting 3, participants should:
 - Satisfaction has **significant correlation** with customer feedback-driven development
 
 ### Continuous Delivery Impact
-- Organizations with CD spend **49%** time on new work vs. **38%** without CD
+- Organizations with CD spend **49%** of time on new work vs. **38%** without CD
 - High performers spend **22%** less time on unplanned work/rework
 - High performers spend **29%** more time on new features
 
@@ -114,11 +114,11 @@ By the end of Meeting 3, participants should:
 ## Action Items for Next Meeting
 
 Before Meeting 4 (Week 7), participants should:
--  Implement work visualization (board, dashboard) and observe for one sprint/week
--  Experiment with WIP limits (1-3 items per person) and document bottlenecks
--  Measure typical batch size (features per deployment) and work to reduce
--  Assess team burnout risk factors and identify one systemic improvement
--  Gather customer feedback and document how it reaches developers
+- Implement work visualization (board, dashboard) and observe for one sprint/week
+- Experiment with WIP limits (1-3 items per person) and document bottlenecks
+- Measure typical batch size (features per deployment) and work to reduce
+- Assess team burnout risk factors and identify one systemic improvement
+- Gather customer feedback and document how it reaches developers
 
 ## Next Meeting
 
@@ -129,4 +129,4 @@ Before Meeting 4 (Week 7), participants should:
 
 ---
 
-[ Meeting 2](../meeting-2/) | [Book Club Roadmap](../../book-club-roadmap.md) | [Meeting 4 ’](../meeting-4/)
+[Meeting 2](../meeting-2/) | [Book Club Roadmap](../../book-club-roadmap.md) | [Meeting 4](../meeting-4/)

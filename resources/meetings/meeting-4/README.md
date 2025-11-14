@@ -36,29 +36,29 @@ Generate supplementary podcasts and videos using NotebookLM Prompts (in this fol
 ## Pre-Meeting Preparation
 
 ### For Facilitators
-1.  Read chapters 11, 16, and Conclusion thoroughly
-2.  Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](leadership/outline.md)
-3.  Generate optional [NotebookLM content](notebooklm/) and review
-4.  Review Meeting 3 action items progress
-5.  Review [Key Question](../../key-questions.md#meeting-4) to frame discussion
-6.  Prepare transformation planning materials
+1. Read chapters 11, 16, and Conclusion thoroughly
+2. Review [Leader Cheatsheet](leadership/leader-cheatsheet.md) and [Outline](leadership/outline.md)
+3. Generate optional [NotebookLM content](notebooklm/) and review
+4. Review Meeting 3 action items progress
+5. Review [Key Question](../../key-questions.md#meeting-4) to frame discussion
+6. Prepare transformation planning materials
 
 ### For Participants
-1. =� Read chapters 11, 16, and Conclusion from "Accelerate"
-2. <� (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
-3. =� Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
-4.  Complete action items from Meeting 3 (bring your tracker!)
-5. = Observe leadership behaviors in your organization
-6. =� Reflect on lessons learned from all four meetings
+1. Read chapters 11, 16, and Conclusion from "Accelerate"
+2. (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
+3. Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
+4. Complete action items from Meeting 3 (bring your tracker!)
+5. Observe leadership behaviors in your organization
+6. Reflect on lessons learned from all four meetings
 
 ## Meeting Outcomes
 
 By the end of Meeting 4, participants should:
--  **Understand** the five characteristics of transformational leadership
--  **Recognize** how leadership explains 18-50% of variance in key outcomes
--  **Apply** lessons from the ING Netherlands transformation case study
--  **Commit** to capabilities-based continuous improvement (not maturity models)
--  **Create** a personal transformation roadmap with small experiments
+- **Understand** the five characteristics of transformational leadership
+- **Recognize** how leadership explains 18-50% of variance in key outcomes
+- **Apply** lessons from the ING Netherlands transformation case study
+- **Commit** to capabilities-based continuous improvement (not maturity models)
+- **Create** a personal transformation roadmap with small experiments
 
 ## Key Concepts Covered
 
@@ -147,12 +147,12 @@ This question embodies the book's core philosophy:
 ## Action Items for Ongoing Transformation
 
 After Meeting 4, participants should:
--  Implement their "single smallest change" from the culminating question
--  Practice one transformational leadership characteristic
--  Continue DORA metrics tracking (establish regular cadence)
--  Complete quarterly 24 capabilities assessments
--  Run monthly team retrospectives focused on system improvements
--  Share learnings with broader organization
+- Implement their "single smallest change" from the culminating question
+- Practice one transformational leadership characteristic
+- Continue DORA metrics tracking (establish regular cadence)
+- Complete quarterly 24 capabilities assessments
+- Run monthly team retrospectives focused on system improvements
+- Share learnings with broader organization
 
 ## Continuing the Journey
 
@@ -171,4 +171,4 @@ After Meeting 4, participants should:
 
 ---
 
-[� Meeting 3](../meeting-3/) | [Book Club Roadmap](../../book-club-roadmap.md) �
+[Meeting 3](../meeting-3/) | [Book Club Roadmap](../../book-club-roadmap.md)

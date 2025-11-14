@@ -65,7 +65,7 @@
 > To prepare, please read **Chapters 4-6**.
 >
 > You can find the full meeting guide and resources here:
-> [Link to Meeting 2 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-2/README.md)
+[Link to Meeting 2 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-2/README.md#for-participants)
 >
 > For a quick refresher, you can also watch or listen to the optional AI-generated media:
 > [Link to Meeting 2 Media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-2/#media)

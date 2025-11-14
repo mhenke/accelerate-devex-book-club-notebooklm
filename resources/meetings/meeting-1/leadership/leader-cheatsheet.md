@@ -157,9 +157,9 @@ This immediately surfaces deployment pain and makes the research personal.
 > To prepare, please read **Chapters 1-3**.
 >
 > You can find the full meeting guide and resources here:
-> [Link to Meeting 1 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/README.md)
 >
 > For a quick refresher, you can also watch or listen to the optional AI-generated media:
+[Link to Meeting 1 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/README.md#for-participants)
 > [Link to Meeting 1 Media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-1/#media)
 >
 > Looking forward to another great discussion and exploring how we can apply these concepts to our work. See you there!
