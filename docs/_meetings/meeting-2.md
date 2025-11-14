@@ -368,6 +368,128 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- THE FRAMEWORK - Technical Practices Enable Culture -->
+<div class="section-card" markdown="0">
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2><i class="fas fa-tools" aria-hidden="true"></i> The Framework: Technical Practices Drive Performance</h2>
+      <p class="research-foundation">Research shows these <strong>5 key practices</strong> distinguish high performers:</p>
+    </div>
+
+    <div class="causal-flow">
+      <!-- Step 1: Version Control -->
+      <div class="causal-step step-business">
+        <div class="step-content">
+          <h3>Version Control</h3>
+          <p class="step-chapter">Chapter 4: Foundation</p>
+          <div class="step-metrics">
+            <div class="metric-item">Application Code</div>
+            <div class="metric-item">Configuration</div>
+            <div class="metric-item">Scripts</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="causal-arrow">
+        <span class="arrow-label">enables</span>
+      </div>
+
+      <!-- Step 2: Test Automation -->
+      <div class="causal-step step-measurement">
+        <div class="step-content">
+          <h3>Test Automation</h3>
+          <p class="step-chapter">Chapter 4: Quality</p>
+          <div class="step-metrics">
+            <div class="metric-item">Unit Tests</div>
+            <div class="metric-item">Integration Tests</div>
+            <div class="metric-item">Acceptance Tests</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="causal-arrow">
+        <span class="arrow-label">supports</span>
+      </div>
+
+      <!-- Step 3: Trunk-Based Development -->
+      <div class="causal-step step-culture">
+        <div class="step-content">
+          <h3>Trunk-Based Dev</h3>
+          <p class="step-chapter">Chapter 4: Integration</p>
+          <div class="step-metrics">
+            <div class="metric-item">Short-Lived Branches</div>
+            <div class="metric-item">Daily Integration</div>
+            <div class="metric-item">Fast Feedback</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 3 -->
+      <div class="causal-arrow">
+        <span class="arrow-label">enables</span>
+      </div>
+
+      <!-- Step 4: Continuous Integration -->
+      <div class="causal-step step-measurement">
+        <div class="step-content">
+          <h3>Continuous Integration</h3>
+          <p class="step-chapter">Chapter 4: Automation</p>
+          <div class="step-metrics">
+            <div class="metric-item">Automated Build</div>
+            <div class="metric-item">Automated Tests</div>
+            <div class="metric-item">Fast Feedback</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow 4 -->
+      <div class="causal-arrow">
+        <span class="arrow-label">secures</span>
+      </div>
+
+      <!-- Step 5: Shift-Left Security -->
+      <div class="causal-step step-culture">
+        <div class="step-content">
+          <h3>Shift-Left Security</h3>
+          <p class="step-chapter">Chapter 6: Security</p>
+          <div class="step-metrics">
+            <div class="metric-item">Security Reviews</div>
+            <div class="metric-item">Security Testing in Pipeline</div>
+            <div class="metric-item">Shared Repositories</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impact Stats Callout -->
+    <div class="impact-stats">
+      <h4>Continuous Delivery Impact</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2x</div>
+          <div class="stat-label">More Likely to Exceed Goals</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50%</div>
+          <div class="stat-label">Less Time on Unplanned Work</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">22%</div>
+          <div class="stat-label">Less Time on Manual Work</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">29%</div>
+          <div class="stat-label">More Time on New Work</div>
+        </div>
+      </div>
+      <p class="stats-conclusion">Teams with comprehensive CD practices spend more time creating value and less time fighting fires.</p>
+    </div>
+
+  </div>
+</div>
+
 <!-- CONWAY'S LAW & INVERSE CONWAY MANEUVER -->
 <div class="section-card" markdown="0">
   <div class="causal-chain-container">
@@ -622,92 +744,6 @@ document.addEventListener('keydown', function(event) {
     <p style="margin: 0; font-size: var(--font-size-small); line-height: var(--line-height-relaxed); color: rgba(255, 255, 255, 0.85);">
       <strong style="color: rgba(255, 255, 255, 0.95);">Note: The Wall of Confusion</strong> — Traditional organizations create conflicting incentives between development (optimize for throughput) and operations (optimize for stability). The existence of manual change approval processes (like Change Advisory Boards) signals that your organization lacks the technical practices necessary to deploy safely at speed. Shift-left practices eliminate this false choice.
     </p>
-  </div>
-</div>
-
-<!-- THE FRAMEWORK - Technical Practices Enable Culture -->
-<div class="section-card" markdown="0">
-  <div class="causal-chain-container">
-    <div class="infographic-header">
-      <h2><i class="fas fa-tools" aria-hidden="true"></i> The Framework: Technical Practices Drive Performance</h2>
-      <p class="research-foundation">Research shows these <strong>5 key practices</strong> distinguish high performers:</p>
-    </div>
-
-    <div class="causal-flow">
-      <!-- Step 1: Version Control -->
-      <div class="causal-step step-business">
-        <div class="step-content">
-          <h3>Version Control</h3>
-          <p class="step-chapter">Chapter 4: Foundation</p>
-          <div class="step-metrics">
-            <div class="metric-item">Application Code</div>
-            <div class="metric-item">Configuration</div>
-            <div class="metric-item">Scripts</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 1 -->
-      <div class="causal-arrow">
-        <span class="arrow-label">enables</span>
-      </div>
-
-      <!-- Step 2: Test Automation -->
-      <div class="causal-step step-measurement">
-        <div class="step-content">
-          <h3>Test Automation</h3>
-          <p class="step-chapter">Chapter 4: Quality</p>
-          <div class="step-metrics">
-            <div class="metric-item">Unit Tests</div>
-            <div class="metric-item">Integration Tests</div>
-            <div class="metric-item">Acceptance Tests</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrow 2 -->
-      <div class="causal-arrow">
-        <span class="arrow-label">supports</span>
-      </div>
-
-      <!-- Step 3: Trunk-Based Development -->
-      <div class="causal-step step-culture">
-        <div class="step-content">
-          <h3>Trunk-Based Dev</h3>
-          <p class="step-chapter">Chapter 4: Integration</p>
-          <div class="step-metrics">
-            <div class="metric-item">Short-Lived Branches</div>
-            <div class="metric-item">Daily Integration</div>
-            <div class="metric-item">Fast Feedback</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Impact Stats Callout -->
-    <div class="impact-stats">
-      <h4>Continuous Delivery Impact</h4>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">2x</div>
-          <div class="stat-label">More Likely to Exceed Goals</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">50%</div>
-          <div class="stat-label">Less Time on Unplanned Work</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">22%</div>
-          <div class="stat-label">Less Time on Manual Work</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">29%</div>
-          <div class="stat-label">More Time on New Work</div>
-        </div>
-      </div>
-      <p class="stats-conclusion">Teams with comprehensive CD practices spend more time creating value and less time fighting fires.</p>
-    </div>
-
   </div>
 </div>
 
