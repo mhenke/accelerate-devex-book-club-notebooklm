@@ -51,24 +51,24 @@
 - ✅ Set up meeting tech (video conference, screen sharing, etc.)
 - ✅ Review previous meeting's action items
 
-> **Subject: Accelerate Book Club: Meeting [Meeting #] - [Meeting Topic] is coming up!**
+> **Subject: Accelerate Book Club: Meeting 2 - Technical Excellence & CD is coming up!**
 >
 > Hi team,
 >
 > A friendly reminder that our next Accelerate Book Club meeting is just around the corner!
 >
-> **Meeting [Meeting #]: [Meeting Topic]**
-> **Date:** [Date]
-> **Time:** [Time]
-> **Location:** [Video Conference Link]
+> **Meeting 2: Technical Excellence & CD**
+> **Date:** Wednesday, November 19, 2025
+> **Time:** 12:00 PM - 1:00 PM
+> **Location:** [Your Meeting Location/Zoom Link]
 >
-> To prepare, please read **Chapters [Chapter Numbers]**.
+> To prepare, please read **Chapters 4-6**.
 >
 > You can find the full meeting guide and resources here:
-> [Link to Meeting Guide]
+> [Link to Meeting 2 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-2/README.md)
 >
 > For a quick refresher, you can also listen to the optional AI-generated podcast:
-> [Link to NotebookLM Podcast]
+> [Link to NotebookLM Meeting 2 Podcast](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-2/notebooklm/podcast-brief.md)
 >
 > Looking forward to another great discussion and exploring how we can apply these concepts to our work. See you there!
 >

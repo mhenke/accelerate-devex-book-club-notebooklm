@@ -143,24 +143,24 @@ This immediately surfaces deployment pain and makes the research personal.
 - ✅ Set up meeting tech (video conference, screen sharing, etc.)
 - ✅ Review previous meeting's action items
 
-> **Subject: Accelerate Book Club: Meeting [Meeting #] - [Meeting Topic] is coming up!**
+> **Subject: Accelerate Book Club: Meeting 1 - Foundation: Myth & Measurement is coming up!**
 >
 > Hi team,
 >
-> A friendly reminder that our next Accelerate Book Club meeting is just around the corner!
+> A friendly reminder that our first official Accelerate Book Club meeting is just around the corner!
 >
-> **Meeting [Meeting #]: [Meeting Topic]**
-> **Date:** [Date]
-> **Time:** [Time]
-> **Location:** [Video Conference Link]
+> **Meeting 1: Foundation: Myth & Measurement**
+> **Date:** Wednesday, November 5, 2025
+> **Time:** 12:00 PM - 1:00 PM
+> **Location:** [Your Meeting Location/Zoom Link]
 >
-> To prepare, please read **Chapters [Chapter Numbers]**.
+> To prepare, please read **Chapters 1-3**.
 >
 > You can find the full meeting guide and resources here:
-> [Link to Meeting Guide]
+> [Link to Meeting 1 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/README.md)
 >
 > For a quick refresher, you can also listen to the optional AI-generated podcast:
-> [Link to NotebookLM Podcast]
+> [Link to NotebookLM Meeting 1 Podcast](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-1/notebooklm/podcast-brief.md)
 >
 > Looking forward to another great discussion and exploring how we can apply these concepts to our work. See you there!
 >

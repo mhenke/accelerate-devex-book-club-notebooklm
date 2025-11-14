@@ -130,26 +130,26 @@ This helps participants articulate their personal goals and creates buy-in from 
 - ✅ Set up meeting tech (video conference, screen sharing, etc.)
 - ✅ Review previous meeting's action items
 
-> **Subject: Accelerate Book Club: Meeting [Meeting #] - [Meeting Topic] is coming up!**
+> **Subject: Accelerate Book Club: Meeting 0 - Kickoff & Book Giveaway is coming up!**
 >
 > Hi team,
 >
-> A friendly reminder that our next Accelerate Book Club meeting is just around the corner!
+> A friendly reminder that our Accelerate Book Club kickoff meeting is just around the corner!
 >
-> **Meeting [Meeting #]: [Meeting Topic]**
-> **Date:** [Date]
-> **Time:** [Time]
-> **Location:** [Video Conference Link]
+> **Meeting 0: Kickoff & Book Giveaway**
+> **Date:** Wednesday, October 22, 2025
+> **Time:** 12:00 PM - 12:30 PM
+> **Location:** [Your Meeting Location/Zoom Link]
 >
-> To prepare, please read **Chapters [Chapter Numbers]**.
+> To prepare, there is no reading required for this kickoff session.
 >
 > You can find the full meeting guide and resources here:
-> [Link to Meeting Guide]
+> [Link to Meeting 0 Guide](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-0/README.md)
 >
-> For a quick refresher, you can also listen to the optional AI-generated podcast:
-> [Link to NotebookLM Podcast]
+> For a quick refresher on the book club format, you can also listen to the optional AI-generated podcast:
+> [Link to NotebookLM Kickoff Podcast](https://github.com/mhenke/accelerate-devex-book-club-notebooklm/blob/main/resources/meetings/meeting-0/notebooklm/podcast-brief.md)
 >
-> Looking forward to another great discussion and exploring how we can apply these concepts to our work. See you there!
+> Looking forward to starting this journey with you all. See you there!
 >
 > Best,
 > [Your Name]
