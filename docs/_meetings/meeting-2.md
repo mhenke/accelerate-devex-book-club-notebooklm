@@ -368,10 +368,147 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- CONWAY'S LAW & INVERSE CONWAY MANEUVER -->
+<div class="section-card" markdown="0">
+  <div class="causal-chain-container">
+    <div class="infographic-header">
+      <h2><i class="fas fa-sitemap" aria-hidden="true"></i> Conway's Law: Your Organization Chart IS Your Architecture</h2>
+      <p class="research-foundation"><strong>The Law:</strong> "Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations." — Melvin Conway, 1967</p>
+    </div>
+
+    <!-- Horizontal Causal Flow Comparison -->
+    <div class="causal-flow conways-flow">
+      
+      <!-- The Problem: Traditional Silos -->
+      <div class="causal-step step-business conways-problem">
+        <div class="step-content">
+          <h3>The Problem: Traditional Silos</h3>
+          
+          <div class="org-chart">
+            <div class="org-label">Organization Structure</div>
+            <div class="team-list">
+              <div class="team-item">Frontend Team</div>
+              <div class="team-item">Backend Team</div>
+              <div class="team-item">Database Team</div>
+              <div class="team-item">QA Team</div>
+              <div class="team-item">Security Team</div>
+            </div>
+          </div>
+
+          <div class="produces-arrow">
+            <i class="fas fa-arrow-down"></i>
+            <span>Produces</span>
+          </div>
+
+          <div class="system-chart">
+            <div class="system-label">System Architecture</div>
+            <div class="layer-list">
+              <div class="layer-item">Frontend Layer</div>
+              <div class="layer-item">API Layer</div>
+              <div class="layer-item">Data Layer</div>
+              <div class="layer-item">Test Suite</div>
+              <div class="layer-item">Security Review</div>
+            </div>
+          </div>
+
+          <div class="consequence-box negative">
+            <strong>Result:</strong> Tightly coupled system requiring coordination across 5+ teams to deploy any change. Deployment becomes a multi-week orchestration nightmare.
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow between problem and solution -->
+      <div class="causal-arrow conways-arrow">
+        <span class="arrow-label">vs</span>
+      </div>
+
+      <!-- The Solution: Inverse Conway Maneuver -->
+      <div class="causal-step step-culture conways-solution">
+        <div class="step-content">
+          <h3>The Solution: Inverse Conway Maneuver</h3>
+          
+          <div class="system-chart desired">
+            <div class="system-label">Desired Architecture (Design First!)</div>
+            <div class="service-list">
+              <div class="service-item">
+                <i class="fas fa-cube"></i>
+                <span>Loosely Coupled Services</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="produces-arrow">
+            <i class="fas fa-arrow-down"></i>
+            <span>Requires</span>
+          </div>
+
+          <div class="org-chart cross-functional">
+            <div class="org-label">Organization Structure</div>
+            <div class="team-list">
+              <div class="team-item cross-functional">
+                <strong>Product Team A</strong>
+                <small>Full-stack, QA, Security</small>
+              </div>
+              <div class="team-item cross-functional">
+                <strong>Product Team B</strong>
+                <small>Full-stack, QA, Security</small>
+              </div>
+              <div class="team-item cross-functional">
+                <strong>Product Team C</strong>
+                <small>Full-stack, QA, Security</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="consequence-box positive">
+            <strong>Result:</strong> Teams can deploy independently, on demand, without coordination. Each team owns their service end-to-end.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Key Insights -->
+    <div class="impact-stats conways-insights">
+      <h4>Research Findings on Architecture & Teams</h4>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="stat-content">
+            <div class="stat-label">Loosely Coupled Architecture</div>
+            <div class="stat-description">Strongest predictor of continuous delivery performance</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-content">
+            <div class="stat-label">Cross-Functional Teams</div>
+            <div class="stat-description">Can deploy on demand without depending on other teams</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+          <div class="stat-content">
+            <div class="stat-label">Independent Deployment</div>
+            <div class="stat-description">Test without integrated environments, choose own tools</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="deployment-signal">
+        <h4>The Critical Question</h4>
+        <p><strong>Can your team deploy during business hours without coordinating with other teams, creating tickets, or getting approval?</strong></p>
+        <p>If the answer is "no," your architecture (or organization structure) needs attention. The research is clear: <strong>architectural coupling kills delivery performance</strong>.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- THE WALL OF CONFUSION -->
 <div class="section-card dark-theme full-width" markdown="0">
   <div class="false-choice-container">
-    <h2><i class="fas fa-wall-brick" aria-hidden="true"></i> The Wall of Confusion</h2>
+    <h2><i class="fas fa-divide" aria-hidden="true"></i> The Wall of Confusion</h2>
     <h3 class="false-choice-subtitle">Traditional organizations create conflicting incentives between development and operations</h3>
 
     <div class="choice-options">

@@ -226,12 +226,7 @@
     .action-item {
       background: var(--bg-subtle);
       border-radius: var(--radius-md);
-      transition: all 0.2s ease;
-
-      &:hover {
-        background: var(--bg-hover);
-        transform: translateX(4px);
-      }
+      padding: var(--space-md);
     }
 
     .task-row {
