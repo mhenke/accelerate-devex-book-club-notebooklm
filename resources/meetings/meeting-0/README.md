@@ -79,7 +79,7 @@ Before Meeting 1 (Week 1), participants must:
 - ⬜ Read Chapters 1-3 (Foundation, Measurement, Culture)
 - ⬜ Complete [24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)
 - ⬜ Review [Key Questions - Meeting 1](../../key-questions.md#meeting-1)
-- ⬜ (Optional) Listen to NotebookLM Brief Podcast (see meeting-1/notebooklm/podcast-brief.md)
+- ⬜ (Optional) Listen to [Meeting 1 AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-1/#media)
 
 ## Next Meeting
 

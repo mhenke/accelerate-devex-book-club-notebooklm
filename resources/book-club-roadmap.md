@@ -168,7 +168,9 @@ Each meeting folder contains:
 2. **Before Each Meeting:**
    - Complete assigned chapter reading
    - Review meeting-specific [Key Question](key-questions.md)
-   - (Optional) Listen to NotebookLM podcast (found in each meeting's `notebooklm/` folder) for supplementary insights
+      - Track one DORA metric from [Meeting 1](meetings/meeting-1/)
+   - Read assigned chapters
+   - (Optional) Listen to [AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/) for supplementary insights
 
 3. **During Each Meeting:**
    - Follow facilitator [Outline](meetings/)

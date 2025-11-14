@@ -382,7 +382,7 @@ Focus on: Organizational performance, culture transformation, leadership charact
 - ✅ Complete the reading (2.5 hours typical)
 - ✅ Reflect on questions: How does this apply to my work?
 - ✅ Come with one story or example from your context
-- ✅ Optional: Listen to NotebookLM podcast for quick summary
+- ✅ Optional: Listen to [AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/) for quick summary
 
 ### During Each Meeting
 - ✅ Share honestly, even if it's uncomfortable

@@ -177,17 +177,11 @@ Before Meeting 1, explore these resources:
 
 ---
 
-## Preparation for Meeting 1
-
-**Required:**
-- ⬜ Get the book _Accelerate_
-- ⬜ Read Chapters 1-3 (Foundation, Measurement, Culture)
-- ⬜ Complete [24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)
-
-**Optional:**
-- ⬜ Listen to [NotebookLM Brief Podcast](../meeting-1/notebooklm/podcast-brief.md)
-- ⬜ Review [DORA Metrics Template](../../assessments/dora-metrics-template.md)
-- ⬜ Document current deployment practices and pain points
+### Post-Meeting Action Items (Required)
+- ⬜ Obtain book _Accelerate_
+- ⬜ Read chapters 1-3
+- ⬜ Complete [24 Capabilities Assessment](../../assessments/24-capabilities-assessment.md)
+- ⬜ Listen to [Meeting 1 AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-1/#media)
 
 ---
 

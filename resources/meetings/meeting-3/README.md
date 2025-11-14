@@ -43,7 +43,7 @@ Generate supplementary podcasts and videos using NotebookLM Prompts (in this fol
 
 ### For Participants
 1. Read chapters 7-10 from "Accelerate"
-2. (Optional) Listen to [Brief](notebooklm/podcast-brief.md) or [Deep Dive](notebooklm/podcast-deep-dive-default.md) podcast
+2. (Optional) Listen to the [AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-3/#media)
 3. Review [Discussion Guide](leadership/discussion-guide.md) and note personal examples
 4. Complete Meeting 2 action items and prepare to share findings
 5. Observe work-in-progress, batch size, and burnout indicators in your team

@@ -71,6 +71,18 @@ Between-meeting activities help participants:
 
 ## Activity Schedule by Meeting
 
+### Between Meeting 0 and Meeting 1 (Week 0-1)
+
+**Required:**
+1. Get the book _Accelerate_
+2. Read Chapters 1-3 (Foundation, Measurement, Culture)
+3. Complete [24 Capabilities Self-Assessment](../assessments/24-capabilities-assessment.md)
+
+**Optional:**
+4. Listen to [Meeting 1 media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-1/#media)
+5. Review [Key Questions - Meeting 1](../key-questions.md#meeting-1)
+6. Document current deployment practices and pain points
+
 ### Between Meeting 1 and Meeting 2 (Weeks 1-3)
 
 **Required:**
@@ -78,8 +90,8 @@ Between-meeting activities help participants:
 2. Observe and document culture behaviors (3-5 examples)
 3. Read chapters 4-6
 
-**Optional:**
-4. Listen to [Meeting 2 NotebookLM podcast](../meetings/meeting-2/notebooklm/podcast-brief.md)
+**Optional:** 
+4. Listen to [Meeting 2 media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-2/#media)
 5. Complete [24 Capabilities Assessment](../assessments/24-capabilities-assessment.md) - focus on CD practices (1-8)
 6. Interview one team member about deployment anxiety
 
@@ -91,7 +103,7 @@ Between-meeting activities help participants:
 3. Read chapters 7-10
 
 **Optional:**
-4. Listen to [Meeting 3 NotebookLM podcast](../meetings/meeting-3/notebooklm/podcast-brief.md)
+4. Listen to [Meeting 3 media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-3/#media)
 5. Map dependencies for your team's current work
 6. Measure WIP (work in progress) for 1 week
 
@@ -103,7 +115,7 @@ Between-meeting activities help participants:
 3. Read chapters 11, 16, and Conclusion
 
 **Optional:**
-4. Listen to [Meeting 4 NotebookLM podcast](../meetings/meeting-4/notebooklm/podcast-brief.md)
+4. Listen to [Meeting 4 media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-4/#media)
 5. Interview a leader about transformation challenges
 6. Document product development flow
 

@@ -227,7 +227,7 @@ Before Meeting 1 (Week 1), participants need to:
 - ⬜ Read Chapters 1-3
 - ⬜ Complete [24 Capabilities Self-Assessment](../../assessments/24-capabilities-assessment.md)
 - ⬜ Review [Key Questions - Meeting 1](../../key-questions.md#meeting-1)
-- ⬜ (Optional) Listen to NotebookLM podcast
+- ⬜ (Optional) Listen to [Meeting 1 AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-1/#media)
 
 **Resources distributed:**
 - ⬜ Meeting schedule
@@ -336,7 +336,7 @@ ___________________________________________________________________________
 
 ### Optional Prep
 
-- ⬜ Listen to [NotebookLM Brief Podcast](../meeting-1/notebooklm/podcast-brief.md)
+- ⬜ Listen to [Meeting 1 AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/meeting-1/#media)
 - ⬜ Review [DORA Metrics Template](../../assessments/dora-metrics-template.md)
 - ⬜ Document current deployment practices
 

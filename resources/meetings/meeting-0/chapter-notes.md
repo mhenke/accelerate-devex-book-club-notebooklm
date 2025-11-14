@@ -250,7 +250,7 @@ This rigor allows teams to make informed decisions about where to invest improve
 **For the Busy:**
 - Read chapter summaries first
 - Focus on chapters assigned for each meeting
-- Listen to NotebookLM podcasts for quick overviews
+- Listen to [AI-generated media](https://mhenke.github.io/accelerate-devex-book-club-notebooklm/meetings/) for quick overviews
 
 ### Note-Taking Approach
 
