@@ -99,6 +99,45 @@
   }
 }
 
+// Secondary Button - Outlined style for less prominent actions
+.btn--secondary {
+  @extend %btn-base;
+
+  background: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+  padding: var(--space-sm) var(--space-md); // Smaller padding for secondary buttons
+  min-height: 44px; // Slightly smaller than primary
+  font-size: var(--font-size-body); // Smaller text
+  text-transform: none; // No uppercase for secondary
+
+  &:hover,
+  &:hover:not(:disabled) {
+    background: #f1f8f4;
+    color: #45a049;
+    text-decoration: none;
+    border-color: #45a049;
+    box-shadow: 0 3px 8px rgba(76, 175, 80, 0.3);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(76, 175, 80, 0.2);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(76, 175, 80, 0.3);
+    outline-offset: 2px;
+  }
+
+  // Icon spacing
+  i {
+    margin-right: var(--space-xs);
+  }
+}
+
 // Removed unused variants: tonal, outlined, and text buttons
 
 // Removed unused variant: Floating Action Button (FAB)
