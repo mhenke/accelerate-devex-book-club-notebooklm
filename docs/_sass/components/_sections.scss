@@ -224,9 +224,8 @@
     }
 
     .action-item {
-      background: var(--bg-subtle);
+      background: rgba(255, 255, 255, 0.05);
       border-radius: var(--radius-md);
-      padding: var(--space-md);
     }
 
     .task-row {
