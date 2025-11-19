@@ -28,7 +28,7 @@ permalink: /feeds/
   </div>
   <div class="feed-actions">
     <a href="{{ site.baseurl }}/podcast.xml" class="btn btn--primary-action" target="_blank">
-      <i class="fas fa-rss"></i> View Feed
+      <i class="fas fa-rss"></i> VIEW FEED
     </a>
     <a href="https://podcasts.apple.com/podcast/subscribe?url={{ site.url | url_encode }}{{ site.baseurl | url_encode }}/podcast.xml" class="btn btn--secondary" target="_blank">
       <i class="fab fa-apple"></i> Apple Podcasts
@@ -55,7 +55,7 @@ permalink: /feeds/
   </div>
   <div class="feed-actions">
     <a href="{{ site.baseurl }}/videos.xml" class="btn btn--primary-action" target="_blank">
-      <i class="fas fa-rss"></i> View Feed
+      <i class="fas fa-rss"></i> VIEW FEED
     </a>
   </div>
 </div>
@@ -76,7 +76,7 @@ permalink: /feeds/
   </div>
   <div class="feed-actions">
     <a href="{{ site.baseurl }}/media-feed.xml" class="btn btn--primary-action" target="_blank">
-      <i class="fas fa-rss"></i> View Feed
+      <i class="fas fa-rss"></i> VIEW FEED
     </a>
   </div>
 </div>
