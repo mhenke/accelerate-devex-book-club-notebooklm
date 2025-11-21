@@ -39,33 +39,6 @@
   margin-top: var(--space-lg);
 }
 
-// Quick Start Section
-.quick-start {
-  @include section-card-interactive;
-
-  max-width: var(--text-max-width);
-
-  h2 {
-    text-align: left;
-  }
-
-  p {
-    color: var(--text-muted);
-    font-size: var(--font-size-h6);
-    line-height: var(--line-height-relaxed);
-    margin-bottom: var(--space-lg);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    strong {
-      color: var(--text-dark);
-      font-weight: var(--font-weight-semibold);
-    }
-  }
-}
-
 // What You'll Learn Section
 .what-youll-learn-section {
   @include section-card-base;

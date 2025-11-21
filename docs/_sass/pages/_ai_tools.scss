@@ -2,15 +2,6 @@
 // =============================================================================
 // Extracted from resources.md inline styles
 
-// Reduce excessive whitespace on resources page
-.page-container .section-card {
-  margin: var(--space-sm) auto; // 8px instead of 24px - much more compact
-  padding: var(--space-md); // 16px instead of 24px
-
-  h2 {
-    margin: 0 0 var(--space-sm) 0; // Reduce h2 bottom margin
-  }
-}
 
 // Make resource callout grid more compact - 2 columns on desktop
 .page-container .resource-callout-grid {
