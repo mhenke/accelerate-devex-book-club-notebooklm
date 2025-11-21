@@ -1,0 +1,81 @@
+// =============================================================================
+// TYPOGRAPHY BASE COMPONENT
+// =============================================================================
+// Non-critical typography styles moved from _critical.scss
+// These styles are loaded after critical above-the-fold content
+
+// Heading styles (h3-h6)
+// =====================
+h3 {
+  @include heading-3;
+}
+
+h4 {
+  @include heading-4;
+}
+
+h5 {
+  @include heading-5;
+}
+
+h6 {
+  @include heading-6;
+}
+
+// Paragraph styles
+// ===============
+p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-lg);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Link styles
+// ===========
+a {
+  color: var(--meeting-1-color);
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-teal);
+  }
+
+  &:focus {
+    @include focus-ring;
+  }
+
+  @include high-contrast {
+    text-decoration: underline;
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+// Font Awesome icon normalization
+// ===============================
+// Moved from _critical.scss - not critical path
+.fas,
+.far,
+[class^="fa-"],
+[class*=" fa-"] {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "FontAwesome", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas {
+  font-weight: 900;
+}
+
+.far {
+  font-weight: 400;
+}

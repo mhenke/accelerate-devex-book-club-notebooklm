@@ -1,0 +1,630 @@
+// =============================================================================
+// HOMEPAGE STYLES
+// =============================================================================
+// This file contains all homepage-specific component styles extracted from
+// _critical.scss to reduce critical CSS footprint. These styles are loaded
+// after critical above-the-fold content.
+
+.welcome-compact {
+  background: var(--gradient-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  margin: var(--space-lg) auto;
+  text-align: center;
+  box-shadow: var(--elevation-2);
+
+  p {
+    color: var(--text-dark);
+    font-size: var(--font-size-h6);
+    font-weight: var(--font-weight-medium);
+    margin: 0 0 var(--space-md);
+    line-height: var(--line-height-relaxed);
+  }
+
+  .welcome-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .welcome-cta-subtitle {
+    color: var(--text-muted);
+    font-size: var(--font-size-body);
+    margin: 0;
+    font-weight: var(--font-weight-medium);
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+.welcome-cta--offset {
+  margin-top: var(--space-lg);
+}
+
+// About the Book Club Section - Material Design
+.quick-start {
+  background: var(--gradient-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  margin: var(--space-lg) auto;
+  max-width: var(--text-max-width);
+  text-align: center;
+  box-shadow: var(--elevation-2);
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
+
+  position: relative;
+  transition: var(--transition-spring);
+
+  &:hover {
+    box-shadow: var(--shadow-emerald-light);
+    transform: translateY(-2px);
+  }
+
+  p {
+    color: var(--text-muted);
+    font-size: var(--font-size-h6);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-lg);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text-dark);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+}
+
+// What You'll Learn Section
+.what-youll-learn-section {
+  background: var(--gradient-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  margin: var(--space-lg) auto;
+  text-align: center;
+  box-shadow: var(--elevation-2);
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+
+  h2 {
+    // Inherit standardized h2 styling with icons and left alignment
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    i,
+    em {
+      color: var(--accent-emerald);
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(
+        135deg,
+        rgba(var(--theme-primary-rgb), 0.1),
+        rgba(var(--accent-teal-rgb), 0.1)
+      );
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-h5);
+      flex-shrink: 0;
+      font-style: normal; // Override em italic styling
+    }
+  }
+}
+
+// Enhanced Success Metrics with Material Design (compact version)
+.success-metrics-compact {
+  background: linear-gradient(
+    135deg,
+    #e8f5e9 0%,
+    #c8e6c9 100%
+  );
+  border: 1px solid rgba(var(--theme-primary-rgb), 0.2);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-2xl);
+  margin: var(--space-xl) auto;
+  box-shadow: 0 8px 24px rgba(var(--theme-primary-rgb), 0.15), 0 4px 12px rgba(var(--text-dark-rgb), 0.1);
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    // Inherit standardized h2 styling with icons and left alignment
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    i,
+    em {
+      color: var(--accent-emerald);
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(
+        135deg,
+        rgba(var(--theme-primary-rgb), 0.1),
+        rgba(var(--accent-teal-rgb), 0.1)
+      );
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-h5);
+      flex-shrink: 0;
+      font-style: normal; // Override em italic styling
+    }
+  }
+
+  .outcome-item {
+    @extend %item-card;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-xl) var(--space-lg);
+    border: 1px solid rgba(var(--theme-primary-rgb), 0.1);
+    border-radius: var(--radius-xl); // Material Design 3 radius
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-dark);
+
+    // Material Design elevation
+    box-shadow: 0 1px 3px rgba(var(--text-dark-rgb), 0.12), 0 1px 2px rgba(var(--text-dark-rgb), 0.24);
+    overflow: hidden;
+
+    &:hover {
+      border-color: rgba(var(--theme-primary-rgb), 0.2);
+
+      i {
+        color: var(--accent-teal);
+      }
+    }
+
+    i {
+      color: var(--accent-emerald);
+      font-size: var(
+        --font-size-h5
+      ); // Much larger icons for prominence
+
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+        135deg,
+        rgba(var(--theme-primary-rgb), 0.1),
+        rgba(var(--accent-teal-rgb), 0.1)
+      );
+      border-radius: var(--radius-full);
+      transition: var(--transition-material);
+      margin-bottom: var(--space-xs);
+    }
+
+    // Interactive enhancements
+    cursor: pointer;
+
+    .outcome-indicator {
+      position: absolute;
+      top: var(--space-sm);
+      right: var(--space-sm);
+      opacity: 0.6;
+      transition: all 0.3s ease;
+      font-size: var(--font-size-body);
+      color: var(--accent-emerald);
+    }
+
+    &:hover .outcome-indicator {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    &.active {
+      border-color: var(--accent-emerald);
+      box-shadow: 0 4px 12px rgba(var(--theme-primary-rgb), 0.2);
+
+      .outcome-indicator {
+        transform: rotate(180deg);
+        color: var(--accent-teal);
+      }
+    }
+  }
+}
+
+// Interactive Outcome Details Section
+.outcome-details {
+  padding: var(--space-xl);
+  background: linear-gradient(
+    135deg,
+    rgba(var(--theme-primary-rgb), 0.05),
+    rgba(var(--accent-teal-rgb), 0.05)
+  );
+  border: 1px solid rgba(var(--theme-primary-rgb), 0.2);
+  border-radius: var(--radius-lg);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+  overflow: hidden;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 1000px;
+  }
+
+  .outcome-detail {
+    display: none;
+    animation: fadeInUp 0.5s ease forwards;
+
+    &.active {
+      display: block;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      color: var(--text-dark);
+      margin-bottom: var(--space-lg);
+      font-size: var(--font-size-h4);
+      font-weight: var(--font-weight-bold);
+
+      i {
+        color: var(--accent-emerald);
+        font-size: var(--font-size-h5);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          rgba(var(--theme-primary-rgb), 0.1),
+          rgba(var(--accent-teal-rgb), 0.1)
+        );
+        border-radius: var(--radius-full);
+      }
+    }
+
+    p {
+      font-size: var(--font-size-h6);
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: var(--space-lg);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+        padding-left: var(--space-xl);
+        margin-bottom: var(--space-md);
+        font-size: var(--font-size-body);
+        line-height: 1.5;
+        color: var(--text-muted);
+
+        &::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: var(--accent-emerald);
+          font-weight: bold;
+          font-size: var(--font-size-h6);
+        }
+      }
+    }
+  }
+}
+
+.get-started-section {
+  background: linear-gradient(
+    135deg,
+    #e3f2fd 0%,
+    #bbdefb 100%
+  );
+  border: 1px solid rgba(var(--material-blue-500-rgb), 0.2);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-2xl);
+  margin: var(--space-xl) auto;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(var(--material-blue-500-rgb), 0.15), 0 4px 12px rgba(var(--text-dark-rgb), 0.1);
+  position: relative;
+  overflow: hidden;
+
+  // Enhance visual prominence with accent border
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #2196f3, var(--meeting-1-color));
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  }
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
+
+  .get-started-card {
+    @extend %item-card;
+
+    // Use simple-mode for both primary and secondary variants
+    &.primary {
+      @extend %item-card;
+    }
+
+    &.secondary {
+      @extend %item-card;
+    }
+
+    .resource-links {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+
+      @media (min-width: #{$small}) {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}
+.learning-highlights {
+  padding: var(--space-md) 0;
+}
+
+.highlight-card {
+  @extend %item-card;
+
+  // Specific styling for What You'll Learn cards
+  border-radius: var(--radius-xl); // Material Design 3 radius
+  padding: var(
+    --space-lg
+  ); // Further reduced from xl to lg for more compact height
+
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+
+  // Use flexbox to ensure consistent footer positioning
+  display: flex;
+  flex-direction: column;
+
+  // Enhanced Material Design elevation for dark theme
+  box-shadow: 0 4px 12px rgba(var(--text-dark-rgb), 0.25), 0 2px 6px rgba(var(--text-dark-rgb), 0.15);
+  color: white;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(var(--text-dark-rgb), 0.12);
+    border-color: rgba(var(--text-dark-rgb), 0.2);
+    border-top-color: var(--accent-teal);
+  }
+
+  // Create a header section with icon and title side by side
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+  }
+
+  .highlight-icon {
+    @include flex-center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-h4);
+    position: relative;
+    z-index: 1;
+    border: 2px solid rgba(var(--theme-primary-rgb), 0.3);
+    background: rgba(var(--theme-primary-rgb), 0.1);
+    backdrop-filter: var(--backdrop-blur-lg);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  h3 {
+    color: white; // White text for dark theme
+    font-family: var(--font-display);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-semibold);
+    margin: 0; // Remove margin since it's now inline with icon
+    position: relative;
+    z-index: 1;
+    flex: 1; // Take up remaining space
+  }
+
+  p {
+    color: rgba(var(--text-on-dark-rgb), 0.85); // Light gray text for dark theme
+    margin: 0 0 var(--space-sm); // Reduced bottom margin for more compact cards
+    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-h6);
+    position: relative;
+    z-index: 1;
+    flex: 1; // Allow paragraph content to grow and push footer down
+  }
+
+  &:hover .highlight-icon {
+    color: var(--accent-teal);
+    border-color: rgba(var(--accent-teal-rgb), 0.4);
+    background: rgba(var(--accent-teal-rgb), 0.15);
+    transform: scale(1.05);
+  }
+
+  .meeting-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-white);
+    margin: 0 auto var(--space-md);
+    box-shadow: 0 4px 12px rgba(var(--text-dark-rgb), 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    min-width: fit-content;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(var(--text-dark-rgb), 0.25);
+    }
+
+    // Ensure text appears above shimmer effect
+    span {
+      position: relative;
+      z-index: 2;
+      white-space: nowrap;
+    }
+
+    span:first-child {
+      margin-right: var(--space-xs);
+    }
+  }
+
+  .meeting-subtitle {
+    font-size: var(--font-size-body);
+    text-align: center;
+    font-style: italic;
+    line-height: var(
+      --line-height-normal
+    ); // Tighter line height for compactness
+
+    padding: 0 var(--space-md);
+    font-weight: var(
+      --font-weight-semibold
+    ); // Bolder weight for better visibility
+
+    margin-top: var(--space-xs); // Reduced margin for compactness
+    opacity: 0.8; // Subtle opacity for visual hierarchy
+  }
+
+  // Ensure card footer stays at bottom
+  .card-footer {
+    margin-top: auto; // Push footer to bottom when using flexbox
+  }
+}
+
+.highlight-card--full-span {
+  grid-column: 1 / -1;
+}
+
+// Meeting-specific styling for highlight cards
+
+// Meeting-specific highlight card styles using mixin
+.highlight-card.meeting-1 {
+  @include meeting-highlight-card(var(--theme-primary));
+}
+
+.highlight-card.meeting-2 {
+  @include meeting-highlight-card(var(--meeting-2-color), #238636);
+}
+
+.highlight-card.meeting-3 {
+  @include meeting-highlight-card(var(--meeting-3-color), #f59e0b);
+}
+
+.highlight-card.meeting-4 {
+  @include meeting-highlight-card(var(--meeting-4-color), #a78bfa);
+}
+
+.required-reading-section {
+  background: var(--gradient-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  margin: var(--space-lg) auto;
+  text-align: center;
+  box-shadow: var(--elevation-2);
+
+  h2 {
+    text-align: left; // Override center alignment for consistency
+  }
+
+  .book-showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+
+    @media (min-width: #{$mobile}) {
+      grid-template-columns: 280px 1fr;
+      gap: var(--space-3xl);
+    }
+  }
+
+  .book-visual {
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--elevation-3);
+      transition: transform 0.3s ease-out;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--elevation-4);
+      }
+
+      @media (min-width: #{$mobile}) {
+        max-width: 200px;
+      }
+    }
+  }
+
+  .book-info {
+    h3 {
+      color: var(--accent-coral);
+      margin-bottom: var(--space-md);
+      font-weight: var(--font-weight-semibold);
+    }
+
+    p:not(.book-description) {
+      color: var(--text-muted);
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-h5);
+      margin-bottom: var(--space-md);
+    }
+
+    .book-description {
+      margin: var(--space-lg) 0;
+      line-height: var(--line-height-relaxed);
+      color: var(--text-dark);
+    }
+
+    // Book section buttons use primary button styling
+    .btn {
+      margin-top: var(--space-xl);
+      padding: var(--space-lg) var(--space-2xl);
+    }
+  }
+}

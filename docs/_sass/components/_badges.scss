@@ -30,7 +30,7 @@
   background: var(--accent-emerald);
   color: var(--text-white);
   font-weight: var(--font-weight-semibold);
-  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 2px 8px rgba(var(--theme-primary-rgb), 0.2);
   width: 100%;
   justify-content: center;
   margin-bottom: var(--space-md);
@@ -38,7 +38,7 @@
   &:hover {
     background: var(--accent-emerald);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 12px rgba(var(--theme-primary-rgb), 0.3);
   }
 }
 

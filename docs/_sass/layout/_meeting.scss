@@ -6,7 +6,7 @@
 /* Meeting Header Styling */
 .meeting-header {
   background: var(--hero-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(var(--text-on-dark-rgb), 0.1);
   padding: var(--space-lg) 0;
   text-align: center;
   position: relative;
@@ -49,7 +49,7 @@
         display: flex;
         align-items: center;
         gap: var(--space-sm);
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(var(--text-on-dark-rgb), 0.9);
         font-size: var(--font-size-body);
 
         i {
@@ -66,7 +66,7 @@
   }
 
   .subtitle {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(var(--text-on-dark-rgb), 0.9);
     font-size: var(--font-size-h5);
     font-weight: var(--font-weight-medium);
   }
@@ -109,7 +109,7 @@
     bottom: 0;
     background: radial-gradient(
       circle at top right,
-      rgba(9, 105, 218, 0.1),
+      rgba(var(--accent-blue-rgb), 0.1),
       transparent 60%
     );
     pointer-events: none;
@@ -169,14 +169,14 @@
     .footer-key-question {
       .key-question-content {
         .footer-key-question-quote {
-          background: rgba(0, 0, 0, 0.3);
+          background: rgba(var(--text-dark-rgb), 0.3);
           border-left: 4px solid #7adad1;
           padding: var(--space-sm);
           margin: var(--space-md) 0;
           border-radius: var(--radius-md);
           font-style: italic;
           font-size: 1rem;
-          color: rgba(255, 255, 255, 0.9);
+          color: rgba(var(--text-on-dark-rgb), 0.9);
         }
 
         .key-question-explanation {
@@ -191,7 +191,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(148, 163, 184, 0.3);
+    border-top: 1px solid rgba(var(--slate-gray-rgb), 0.3);
     padding-top: var(--space-sm);
 
     .footer-attribution p {

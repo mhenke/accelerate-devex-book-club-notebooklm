@@ -33,6 +33,33 @@
   }
 }
 
+@mixin tablet-only {
+  @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+// Custom breakpoint mixin
+@mixin breakpoint($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}
+
+// =============================================================================
+// MATERIAL DESIGN TYPOGRAPHY MIXINS
+// =============================================================================
+
+// Material Design Display (Hero text)
+@mixin display-small {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+}
+
+// Material Design Headline Styles (h1-h3)
 @mixin headline-large {
   font-family: var(--font-primary);
   font-size: var(--font-size-h1);
@@ -188,6 +215,61 @@
   justify-content: center;
 }
 
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Essential grid mixin (still used)
+@mixin grid-auto-fit($min-width: 250px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: var(--space-lg);
+}
+
+// Other unused layout mixins removed (flex-column-center, grid-auto-fill, container, section-spacing)
+
+// =============================================================================
+// VISUAL EFFECTS MIXINS
+// =============================================================================
+
+// Card styling with consistent elevation
+@mixin card($elevation: "md") {
+  background: var(--background-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-medium);
+
+  @if $elevation == "sm" {
+    box-shadow: var(--elevation-1);
+  } @else if $elevation == "md" {
+    box-shadow: var(--elevation-1);
+  } @else if $elevation == "lg" {
+    box-shadow: var(--elevation-2);
+  } @else if $elevation == "xl" {
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+// Hover card with smooth transitions
+@mixin card-hover {
+  @include card;
+
+  transition: transform 0.3s ease-out,
+    box-shadow 0.3s ease-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+// Button base styling
 @mixin button-base {
   display: inline-flex;
   align-items: center;
@@ -224,7 +306,7 @@
 
   background: var(--button-gradient);
   color: var(--text-white);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  box-shadow: var(--button-shadow);
 
   &:hover:not(:disabled) {
     background: var(--button-hover-gradient);
@@ -234,6 +316,25 @@
 }
 
 // Secondary button styling
+@mixin button-secondary {
+  @include button-base;
+
+  background: transparent;
+  color: var(--accent-coral);
+  border: 2px solid var(--accent-coral);
+
+  &:hover:not(:disabled) {
+    background: var(--accent-coral);
+    color: var(--text-white);
+    transform: translateY(-2px);
+  }
+}
+
+// =============================================================================
+// ACCESSIBILITY MIXINS
+// =============================================================================
+
+// Focus ring for keyboard navigation
 @mixin focus-ring($color: var(--focus-ring-color)) {
   outline: var(--focus-ring-width) solid $color;
   outline-offset: var(--focus-ring-offset);
@@ -241,17 +342,18 @@
 
 // Screen reader only text
 @mixin sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
+// Skip link styling
 @mixin skip-link {
   @include sr-only;
 
@@ -315,6 +417,133 @@
 // Will-change optimization removed - not used in static site
 
 // GPU acceleration for animations
+@mixin hardware-acceleration {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+  @include reduced-motion {
+    transform: none;
+    backface-visibility: visible;
+    perspective: none;
+  }
+}
+
+// Smooth scrolling
+@mixin smooth-scroll {
+  scroll-behavior: smooth;
+
+  @include reduced-motion {
+    scroll-behavior: auto;
+  }
+}
+
+// =============================================================================
+// GRADIENT MIXINS
+// =============================================================================
+
+// Hero gradient
+@mixin hero-gradient {
+  background: var(--hero-dark);
+}
+
+// DORA gradient mixins removed - not used
+
+// =============================================================================
+// ANIMATION MIXINS
+// =============================================================================
+
+// Animation mixins removed - not used in static site
+
+// Float animation removed - not used in static site
+
+// =============================================================================
+// COMPONENT-SPECIFIC MIXINS
+// =============================================================================
+
+// Component-specific mixins removed - not used (hero-banner, metric-card, section-accent)
+
+// =============================================================================
+// UTILITY FUNCTIONS
+// =============================================================================
+
+// Strip units from values
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// Convert px to em
+@function em($pixels, $context: 16) {
+  @return #{$pixels / $context}em;
+}
+
+// Convert px to rem with fallback
+@function rem-with-fallback($pixels, $base: 16) {
+  $rem: #{$pixels / $base}rem;
+
+  @return $rem;
+}
+
+// Calculate fluid typography
+@function fluid-type($min-size,
+  $max-size,
+  $min-width: $mobile,
+  $max-width: $desktop) {
+  $min-size-px: strip-unit($min-size);
+  $max-size-px: strip-unit($max-size);
+  $min-width-px: strip-unit($min-width);
+  $max-width-px: strip-unit($max-width);
+  $slope: (
+    $max-size-px - $min-size-px) / ($max-width-px - $min-width-px
+  );
+$intercept: $min-size-px - $slope * $min-width-px;
+
+@return clamp(#{$min-size},
+  #{$intercept}px + #{$slope * 100}vw,
+  #{$max-size});
+}
+
+// =============================================================================
+// PATTERN CONSOLIDATION MIXINS
+// =============================================================================
+
+/// Hover lift effect - consistent transform on hover
+/// @param {Number} $distance - Distance to lift in px (default: 2px)
+@mixin hover-lift($distance: 2px) {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+  &:hover {
+    transform: translateY(-#{$distance});
+  }
+}
+
+/// Circular icon badge with centered content
+/// @param {Size} $size - Diameter of circle (default: 40px)
+/// @param {Color} $bg - Background color or gradient
+/// @param {Color} $border - Optional border color
+@mixin icon-circle($size: 40px, $bg: transparent, $border: null) {
+  @include flex-center;
+
+  width: $size;
+  height: $size;
+  border-radius: var(--radius-full);
+  background: $bg;
+
+  @if $border {
+    border: 2px solid $border;
+  }
+}
+
+/// Glassmorphic effect
+@mixin glassmorphic {
+  backdrop-filter: var(--backdrop-blur-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/// Generate meeting-specific button gradient
+/// @param {Color} $primary - Primary gradient color
+/// @param {Color} $secondary - Secondary gradient color (defaults to teal)
 @mixin meeting-button-gradient($primary, $secondary: var(--accent-teal)) {
   background: linear-gradient(135deg, #4CAF50, $primary);
 

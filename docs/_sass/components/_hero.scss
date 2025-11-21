@@ -3,12 +3,8 @@
 // Hero banners, page headers, and banner patterns
 
 .hero-banner {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark) 0%,
-    #16213e 100%
-  );
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, var(--hero-dark) 0%, #16213e 100%);
+  border-bottom: 1px solid rgba(var(--text-on-dark-rgb), 0.1);
   color: var(--text-white);
   padding: var(--space-lg) var(--space-lg);
   position: relative;
@@ -18,10 +14,8 @@
   align-items: center;
   text-align: center;
   margin: 0;
-  margin-top: -1px; // Pull up to eliminate gap with site header
+  margin-top: -1px;
   border-radius: 0;
-
-  // Performance optimization with CSS containment for layout-heavy section
   contain: layout style paint;
 
   // Subtle gradient overlay
@@ -34,7 +28,7 @@
     bottom: 0;
     background: radial-gradient(
       circle at top right,
-      rgba(9, 105, 218, 0.1),
+      rgba(var(--accent-blue-rgb), 0.1),
       transparent 60%
     );
     pointer-events: none;
@@ -47,40 +41,27 @@
   }
 
   @include mobile-only {
-    padding: var(--space-md) var(--space-sm); // 16px 8px (reduced from 24px 16px)
-    border-radius: 0;
-    min-height: 20vh; // Reduce minimum height on mobile
-
-    h1 {
-      font-size: clamp(
-        var(--font-size-h4),
-        8vw,
-        var(--font-size-h1)
-      );
-    }
-
-    .hero-subtitle {
-      font-size: var(--font-size-h6);
-    }
+    padding: var(--space-md) var(--space-sm);
+    min-height: 20vh;
   }
-}
 
-.hero-content {
-  margin: 0 auto;
-  padding: 0 var(--space-md);
-  z-index: 2;
-  position: relative;
-
-  @include mobile-only {
-    padding: 0 var(--space-sm); // 8px on mobile
+  @include desktop-up {
+    padding: var(--space-xl) 0;
   }
-}
 
-// Nested hero elements that appear inside .hero-banner
-.hero-banner {
+  // Nested elements
   .hero-content {
     position: relative;
     z-index: 1;
+  }
+
+  .hero-subtitle {
+    color: rgba(var(--text-on-dark-rgb), 0.85);
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-weight-medium);
+    margin-top: var(--space-sm);
+    text-shadow: var(--text-shadow-md);
+    animation: fadeInUp 1s ease-out 0.3s both;
   }
 
   .hero-headline {
@@ -95,94 +76,67 @@
   .site-title {
     margin: var(--space-lg) 0;
     perspective: 1000px;
-    animation: floatUp 2s ease-out;
 
     h3 {
-      background: linear-gradient(
-        135deg,
-        var(--accent-teal),
-        var(--accent-coral),
-        var(--accent-emerald)
-      );
+      background: linear-gradient(135deg, var(--accent-teal), var(--accent-coral), var(--accent-emerald));
       background-size: 200% 200%;
       background-clip: text;
-      /* stylelint-disable-next-line property-no-vendor-prefix */
-      -webkit-background-clip: text;
-      /* stylelint-disable-next-line property-no-vendor-prefix */
       -webkit-text-fill-color: transparent;
       color: transparent;
-      font-size: clamp(
-        var(--font-size-h5),
-        4vw,
-        var(--font-size-h1)
-      );
+      font-size: clamp(var(--font-size-h5), 4vw, var(--font-size-h1));
       font-weight: var(--font-weight-bold);
       margin: 0;
       padding: var(--space-md) var(--space-lg);
       border-radius: var(--radius-xl);
       backdrop-filter: var(--backdrop-blur-lg);
-      background-color: var(--color-white-10);
-      border: var(--border-white-light);
-      box-shadow: var(--shadow-hero-cta), 0 0 20px rgba(122, 218, 209, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      animation: shimmer 3s ease-in-out infinite, float 4s ease-in-out infinite;
-      transform-style: preserve-3d;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border-white-light);
+      box-shadow: var(--shadow-hero-cta), 0 0 20px rgba(var(--accent-teal-rgb), 0.4);
       transition: var(--transition-spring);
-      position: relative;
-      overflow: hidden;
 
       &:hover {
-        transform: translateY(-4px) rotateX(5deg);
-        box-shadow: var(--shadow-hero-cta-hover),
-          0 0 30px rgba(122, 218, 209, 0.6),
-          inset 0 1px 0 rgba(255, 255, 255, 0.3);
-        border-color: rgba(255, 255, 255, 0.4);
-        background-color: rgba(255, 255, 255, 0.15);
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-hero-cta-hover), 0 0 30px rgba(var(--accent-teal-rgb), 0.6);
       }
     }
   }
 }
 
-// (Removed) legacy hero title, subtitle, and CTA blocks — unused
+.hero-content {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
 
-// =============================================================================
-// ADDITIONAL HEADER & BANNER COMPONENTS (from _headers.scss)
-// =============================================================================
-
-// (Removed) celebration/section/transform/page/announcement headers — unused
-
-// (Removed) bounce keyframes — only used by removed celebration header
-
-// =============================================================================
-// ACCESSIBILITY & REDUCED MOTION
-// =============================================================================
-
-// High contrast support
-@include high-contrast {
+// Homepage-specific hero (moved from critical)
+@include mobile-up {
   .hero-banner {
-    border: 2px solid white;
+    padding: var(--space-xl) 0;
   }
 }
 
-// Reduced motion support
-@include reduced-motion {
-  .hero-banner::before {
-    background: none !important;
+@include mobile-only {
+  .hero-banner {
+    padding: var(--space-lg) var(--space-sm);
   }
 }
 
-// =============================================================================
-// PRINT STYLES
-// =============================================================================
-
-@media print {
+@include desktop-up {
   .hero-banner {
-    background: none !important;
-    color: black !important;
-
+    padding: calc(var(--space-xl) * 1.5) 0;
+    
     &::before {
-      display: none !important;
+      background: radial-gradient(
+        ellipse at top right,
+        rgba(var(--accent-blue-rgb), 0.15),
+        transparent 70%
+      );
+    }
+  }
+
+  .hero-banner {
+    .site-title h3 {
+      font-size: var(--font-size-display);
     }
   }
 }

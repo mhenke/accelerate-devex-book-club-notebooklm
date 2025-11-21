@@ -12,7 +12,7 @@
   margin-top: var(--space-md);
   box-shadow: var(--elevation-1);
 
-  @include mobile-only {
+  @media (max-width: 768px) {
     padding: var(--space-md);
   }
 }
@@ -68,7 +68,7 @@
     }
   }
 
-  @include desktop-up {
+  @media (min-width: 769px) {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -95,25 +95,30 @@
   gap: var(--space-sm);
   align-items: stretch;
 
-  @include desktop-up {
+  @media (min-width: 769px) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  // Button styling - consolidated
+  // Make buttons full width on mobile, auto on desktop
   .btn,
   .btn--primary-action,
   .btn--secondary {
     width: 100%;
 
+    @media (min-width: 769px) {
+      width: auto;
+      flex: 0 1 auto;
+    }
+  }
+
+  // Ensure icons and text are properly spaced
+  .btn,
+  .btn--primary-action,
+  .btn--secondary {
     i {
       margin-right: var(--space-xs);
       font-size: 1.1em;
-    }
-
-    @include desktop-up {
-      width: auto;
-      flex: 0 1 auto;
     }
   }
 }

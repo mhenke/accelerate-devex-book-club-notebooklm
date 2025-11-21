@@ -67,13 +67,11 @@
   }
 }
 
-// Site header nav links (desktop)
-.site-nav-link {
+// Base nav link styles (shared)
+%nav-link-base {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: var(--space-sm);
-  padding: var(--space-sm) var(--space-lg);
   color: var(--accent-teal);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
@@ -85,44 +83,31 @@
   &:hover,
   &:focus {
     color: var(--text-white);
-    background: rgba(122, 218, 209, 0.15);
+    background: rgba(var(--accent-teal-rgb), 0.15);
     border-color: var(--accent-teal);
   }
 
   &.active {
     color: var(--text-white);
-    background: rgba(122, 218, 209, 0.2);
+    background: rgba(var(--accent-teal-rgb), 0.2);
     border-color: var(--accent-teal);
   }
 }
 
-// Site header nav links (mobile)
+// Desktop nav link
+.site-nav-link {
+  @extend %nav-link-base;
+
+  justify-content: center;
+  padding: var(--space-sm) var(--space-lg);
+}
+
+// Mobile nav link
 .site-nav-link-mobile {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+  @extend %nav-link-base;
+
   padding: var(--space-md) var(--space-lg);
-  color: var(--accent-teal);
-  text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  border-radius: var(--radius-md);
-  background: transparent;
-  border: var(--border-width-thin) solid transparent;
-  transition: all var(--duration-normal) var(--ease-out);
   width: 100%;
-
-  &:hover,
-  &:focus {
-    color: var(--text-white);
-    background: rgba(122, 218, 209, 0.15);
-    border-color: var(--accent-teal);
-  }
-
-  &.active {
-    color: var(--text-white);
-    background: rgba(122, 218, 209, 0.2);
-    border-color: var(--accent-teal);
-  }
 }
 
 // (Removed) Legacy `.nav-container`, `.site-logo`, `.main-nav`, `.nav-link` blocks were unused.

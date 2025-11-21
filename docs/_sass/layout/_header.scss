@@ -2,8 +2,6 @@
 // ======================================
 // Main site header structure for immediate rendering
 
-// (Removed) header-container — not used in built HTML
-
 // Skip link for accessibility - critical for screen readers
 .skip-link {
   position: absolute;
@@ -23,4 +21,91 @@
     outline: 2px solid #ff7f50;
     top: var(--space-sm);
   }
+}
+
+// Site header container
+.site-header {
+  background: var(--hero-dark);
+  color: var(--text-white);
+  padding: var(--space-sm) var(--space-xl);
+  border-bottom: var(--border-width-thin) solid var(--border-white-subtle);
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  position: relative;
+  overflow: visible;
+
+  --site-header-height: 56px;
+
+  @media (min-width: #{$mobile}) {
+    overflow: hidden;
+  }
+
+  // Subtle gradient overlay (matches footer and key-question-banner)
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at top right,
+      rgba(9, 105, 218, 0.1),
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // Ensure content is above the overlay
+  .site-header-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.site-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-nav__brand {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-white);
+  gap: var(--space-md);
+}
+
+.site-nav__brand-icon {
+  font-size: 2rem;
+  margin-right: 0;
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+.site-nav__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.site-nav__brand-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-nav__brand-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
