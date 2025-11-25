@@ -44,12 +44,12 @@
     }
   };
 
-  function init() {
-    const player = document.getElementById('shared-player');
-    const playerSource = document.getElementById('shared-player-source');
-    const nowPlayingTitle = document.getElementById('now-playing-title');
-    const playlistContainer = document.querySelector('.playlist-player');
-    const tracks = document.querySelectorAll('.podcast-item[data-src]');
+  function initPlayer(playerId, sourceId, titleId) {
+    const player = document.getElementById(playerId);
+    const playerSource = document.getElementById(sourceId);
+    const nowPlayingTitle = document.getElementById(titleId);
+    const playlistContainer = player ? player.closest('.podcast-playlist')?.querySelector('.playlist-player') : null;
+    const tracks = player ? Array.from(player.closest('.podcast-playlist')?.querySelectorAll('.podcast-item[data-src]') || []) : [];
 
     if (!player || !tracks.length) {
       return;
@@ -205,7 +205,15 @@
     // Removed: time display and related event listeners (timeupdate, loadedmetadata)
   }
 
-  // Initialize when DOM is ready
+  // Initialize all players when DOM is ready
+  function init() {
+    // Initialize main player
+    initPlayer('shared-player', 'shared-player-source', 'now-playing-title');
+
+    // Initialize security champions player if it exists
+    initPlayer('security-shared-player', 'security-shared-player-source', 'security-now-playing-title');
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

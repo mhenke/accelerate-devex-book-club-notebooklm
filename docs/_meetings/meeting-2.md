@@ -747,6 +747,168 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- SECURITY CHAMPIONS SPOTLIGHT -->
+<div class="section-card" markdown="0" style="background: linear-gradient(135deg, rgba(26, 127, 55, 0.1), rgba(22, 101, 52, 0.05)); border-left: 4px solid var(--meeting-2-primary);">
+  <div class="step-header">
+    <h2><i class="fas fa-shield-alt" aria-hidden="true"></i> Security Champions Spotlight: Chapter 6 Deep Dive</h2>
+    <p class="section-intro">Focused exploration of integrating information security into continuous delivery</p>
+  </div>
+
+  <div class="media-content">
+    <div class="feature-grid">
+      <!-- Video Section -->
+      <div class="media-section video-section">
+        <div class="video-card">
+          <h3 style="margin-bottom: var(--space-md); color: var(--meeting-2-primary);"><i class="fas fa-video"></i> Security Champions Explainer</h3>
+          <div class="media-controls">
+            <video controls width="100%" class="meeting-video">
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/security-champions/Secure_%26_Accelerate.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Podcast Section -->
+      <div class="media-section podcast-section">
+        <section class="podcast-playlist" aria-label="Security Champions podcast playlist">
+          <h3 style="margin-bottom: var(--space-md); color: var(--meeting-2-primary);"><i class="fas fa-podcast"></i> Security Champions Audio Series</h3>
+
+          <!-- Podcast Item: Debate -->
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/security-champions/Shifting_Left_Security_Drives_Speed_Or_Needs_Architecture.m4a"
+               data-title="Shifting Left Security Drives Speed Or Needs Architecture"
+               data-duration="13:54"
+               data-type="debate">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Shifting Left Security Drives Speed Or Needs Architecture">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Shifting Left Security Drives Speed Or Needs Architecture
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type debate">Debate</span>
+                <span class="podcast-duration">13:54</span>
+              </div>
+              <div class="podcast-subtitle">Does shift-left security drive speed or require architectural changes?</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Podcast Item: Critique -->
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/security-champions/Security_Champions_Must_Build_Not_Audit.m4a"
+               data-title="Security Champions Must Build Not Audit"
+               data-duration="11:52"
+               data-type="critic">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play Security Champions Must Build Not Audit">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                Security Champions Must Build Not Audit
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type critic">Critic</span>
+                <span class="podcast-duration">11:52</span>
+              </div>
+              <div class="podcast-subtitle">Critical analysis: Security champions as builders, not auditors</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Podcast Item: Deep Dive -->
+          <div class="podcast-item" tabindex="0"
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/security-champions/The_Technical_Shortcut_to_Security_Shift_Left.m4a"
+               data-title="The Technical Shortcut to Security Shift Left"
+               data-duration="13:39"
+               data-type="deep-dive">
+            <div class="podcast-start">
+              <button type="button" class="play-btn" aria-label="Play The Technical Shortcut to Security Shift Left">
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="podcast-content">
+              <div class="podcast-headline">
+                The Technical Shortcut to Security Shift Left
+              </div>
+              <div class="podcast-meta">
+                <span class="podcast-type deep-dive">Deep Dive</span>
+                <span class="podcast-duration">13:39</span>
+              </div>
+              <div class="podcast-subtitle">Practical technical approaches to implementing shift-left security</div>
+            </div>
+
+            <div class="podcast-end">
+              <div class="podcast-equalizer">
+                <div class="equalizer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shared Player -->
+          <div class="playlist-player">
+            <div class="now-playing-header">
+              <div class="now-playing-info">
+                <div class="playing-indicator-large"></div>
+                <div class="now-playing-text-wrapper">
+                  <div class="now-playing-label">Now Playing</div>
+                  <div class="now-playing-title" id="security-now-playing-title">Shifting Left Security Drives Speed Or Needs Architecture</div>
+                </div>
+              </div>
+            </div>
+            <audio id="security-shared-player" controls>
+              <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-2/security-champions/Shifting_Left_Security_Drives_Speed_Or_Needs_Architecture.m4a" type="audio/mp4" id="security-shared-player-source">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Key Insights Callout -->
+    <div style="margin-top: var(--space-xl); padding: var(--space-lg); background: rgba(26, 127, 55, 0.05); border-radius: var(--radius-lg); border: 2px solid rgba(26, 127, 55, 0.2);">
+      <h4 style="margin-top: 0; color: var(--meeting-2-primary);"><i class="fas fa-lightbulb"></i> Key Research Findings</h4>
+      <ul style="margin-bottom: 0; line-height: var(--line-height-relaxed);">
+        <li><strong>50% faster security remediation:</strong> Teams with shift-left security practices spend half the time fixing security issues</li>
+        <li><strong>Better security posture:</strong> Integrating security early improves overall security outcomes</li>
+        <li><strong>Four critical practices:</strong> Security reviews, feedback during development, automated testing in pipeline, shared repositories</li>
+        <li><strong>No speed-security tradeoff:</strong> Shift-left security enables both faster delivery AND better security</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <!-- RESOURCES -->
 <div class="section-card" markdown="0">
   <div class="step-header">

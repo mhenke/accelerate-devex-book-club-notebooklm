@@ -278,9 +278,15 @@
     color: #7b1fa2;
   }
 
-  &.critique {
+  &.debate {
     background: #fff3e0;
     color: #f57c00;
+  }
+
+  &.critic,
+  &.critique {
+    background: #ffebee;
+    color: #c62828;
   }
 }
 

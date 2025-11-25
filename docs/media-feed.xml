@@ -37,11 +37,35 @@ layout: null
             <enclosure url="{{ supp_audio_url }}" type="{{ audio.type }}" length="0"/>
             <category>Audio</category>
             <category>Bonus Content</category>
-            
+
             <media:content url="{{ supp_audio_url }}" type="{{ audio.type }}" medium="audio">
               <media:title>{{ audio.title | xml_escape }}</media:title>
               <media:description>{{ audio.description | xml_escape }}</media:description>
               <media:keywords>devops, accelerate, bonus, supplementary</media:keywords>
+            </media:content>
+          </item>
+        {% endfor %}
+      {% endif %}
+
+      <!-- Security Champions audio files for this meeting -->
+      {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].audio_security_champions %}
+        {% for audio in site.data.supplementary_media[meeting_key].audio_security_champions %}
+          {% assign supp_audio_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: audio.filename %}
+          <item>
+            <title>{{ audio.title | xml_escape }} (Security Champions)</title>
+            <description>{{ audio.description | xml_escape }} - Security Champions spotlight from meeting {{ meeting.week }}</description>
+            <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#security-champions</link>
+            <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#security-{{ audio.filename }}</guid>
+            <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+            <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+            <enclosure url="{{ supp_audio_url }}" type="{{ audio.type }}" length="0"/>
+            <category>Audio</category>
+            <category>Security Champions</category>
+
+            <media:content url="{{ supp_audio_url }}" type="{{ audio.type }}" medium="audio">
+              <media:title>{{ audio.title | xml_escape }}</media:title>
+              <media:description>{{ audio.description | xml_escape }}</media:description>
+              <media:keywords>devops, accelerate, security, shift-left, security champions</media:keywords>
             </media:content>
           </item>
         {% endfor %}
@@ -61,11 +85,35 @@ layout: null
             <enclosure url="{{ supp_video_url }}" type="{{ video.type }}" length="0"/>
             <category>Video</category>
             <category>Bonus Content</category>
-            
+
             <media:content url="{{ supp_video_url }}" type="{{ video.type }}" medium="video">
               <media:title>{{ video.title | xml_escape }}</media:title>
               <media:description>{{ video.description | xml_escape }}</media:description>
               <media:keywords>devops, accelerate, bonus, supplementary, video</media:keywords>
+            </media:content>
+          </item>
+        {% endfor %}
+      {% endif %}
+
+      <!-- Security Champions video files for this meeting -->
+      {% if site.data.supplementary_media[meeting_key] and site.data.supplementary_media[meeting_key].video_security_champions %}
+        {% for video in site.data.supplementary_media[meeting_key].video_security_champions %}
+          {% assign supp_video_url = 'https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/' | append: video.filename %}
+          <item>
+            <title>{{ video.title | xml_escape }} (Security Champions)</title>
+            <description>{{ video.description | xml_escape }} - Security Champions spotlight from meeting {{ meeting.week }}</description>
+            <link>{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#security-champions</link>
+            <guid isPermaLink="false">{{ site.url }}{{ site.baseurl }}{{ meeting.url }}#security-video-{{ video.filename }}</guid>
+            <pubDate>{{ meeting.date | default: site.time | date_to_rfc822 }}</pubDate>
+            <author>{{ site.email | default: "contact@example.com" }} ({{ site.author | default: "Accelerate DevEx Book Club" }})</author>
+            <enclosure url="{{ supp_video_url }}" type="{{ video.type }}" length="0"/>
+            <category>Video</category>
+            <category>Security Champions</category>
+
+            <media:content url="{{ supp_video_url }}" type="{{ video.type }}" medium="video">
+              <media:title>{{ video.title | xml_escape }}</media:title>
+              <media:description>{{ video.description | xml_escape }}</media:description>
+              <media:keywords>devops, accelerate, security, shift-left, security champions, video</media:keywords>
             </media:content>
           </item>
         {% endfor %}
