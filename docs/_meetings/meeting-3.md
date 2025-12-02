@@ -331,25 +331,25 @@ document.addEventListener('keydown', function(event) {
           </div>
 
           <div class="podcast-item" tabindex="0"
-               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Beyond_the_Code__Challenging_Lean,_Burnout,_and_Loyalty_Through.m4a"
-               data-title="Beyond the Code: Challenging Lean, Burnout, and Loyalty"
-               data-duration="11:13"
-               data-type="critique">
+               data-src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Toxic_Culture_Versus_Technical_Fixes_Burnout.m4a"
+               data-title="Toxic Culture Versus Technical Fixes: Burnout"
+               data-duration="12:28"
+               data-type="critic">
             <div class="podcast-start">
-              <button type="button" class="play-btn" aria-label="Play Beyond the Code Critique">
+              <button type="button" class="play-btn" aria-label="Play Toxic Culture Versus Technical Fixes: Burnout">
                 <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
             <div class="podcast-content">
               <div class="podcast-headline">
-                Beyond the Code: Critique
+                Toxic Culture Versus Technical Fixes: Burnout
               </div>
               <div class="podcast-meta">
-                <span class="podcast-type critique">Critique</span>
-                <span class="podcast-duration">16:00</span>
+                <span class="podcast-type critic">Critic</span>
+                <span class="podcast-duration">12:28</span>
               </div>
-              <div class="podcast-subtitle">Challenging Lean, Burnout, and Loyalty Through Operational Friction</div>
+              <div class="podcast-subtitle">Critical analysis of whether burnout is driven by culture or fixable through technical improvements</div>
             </div>
 
             <div class="podcast-end">
@@ -379,6 +379,14 @@ document.addEventListener('keydown', function(event) {
               <source src="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Lean,_Less_Burnout,_and_the_Data_That_Proves_Tech_Fixes_Employe.m4a" type="audio/mp4" id="shared-player-source">
               Your browser does not support the audio tag.
             </audio>
+          </div>
+
+          <!-- Alternative Podcasts -->
+          <div class="alternative-podcasts">
+            <h4>Previous Podcasts</h4>
+            <ul>
+              <li><a href="https://accelerate-devex-book-club-notebooklm.s3.amazonaws.com/meeting-3/Beyond_the_Code__Challenging_Lean,_Burnout,_and_Loyalty_Through.m4a" target="_blank">Beyond the Code: Challenging Lean, Burnout, and Loyalty</a> (Critic, 16:00)</li>
+            </ul>
           </div>
         </section>
       </div>

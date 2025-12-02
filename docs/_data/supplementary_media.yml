@@ -142,9 +142,9 @@ meeting_5:
       filename: "meeting-3/Lean_Mechanics_vs_Human_Cost_The_High-Stakes_Debate_on_Performance_and_Burnout.m4a"
       description: "A debate about WIP limits, system trade-offs, and human cost"
       type: "audio/x-m4a"
-    - title: "Beyond the Code: Challenging Lean, Burnout, and Loyalty Through Operational Friction and Structural Reality"
-      filename: "meeting-3/Beyond_the_Code__Challenging_Lean,_Burnout,_and_Loyalty_Through.m4a"
-      description: "Critique exploring lean trade-offs, burnout, and organizational friction"
+    - title: "Toxic Culture Versus Technical Fixes: Burnout"
+      filename: "meeting-3/Toxic_Culture_Versus_Technical_Fixes_Burnout.m4a"
+      description: "Critical analysis of whether burnout is driven by culture or fixable through technical improvements"
       type: "audio/x-m4a"
   video:
     - title: "Meeting 3 Main Video"
