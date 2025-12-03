@@ -81,6 +81,30 @@ title: AI Tools
           <a href="https://github.com/features/copilot" class="btn btn--primary-action" target="_blank" rel="noopener noreferrer">Official Site</a>
         </div>
       </div>
+      <div class="highlight-card dark-theme">
+        <div class="card-header">
+          <div class="highlight-icon">
+            <i class="fas fa-robot" role="img" aria-label="Robot"></i>
+          </div>
+          <h3>Google Jules</h3>
+        </div>
+        <p>An autonomous AI coding agent that integrates with GitHub workflows to fix bugs, update dependencies, and add features. Uses Gemini 3 Pro for advanced coding reasoning.</p>
+        <div class="card-footer">
+          <a href="https://jules.google" class="btn btn--primary-action" target="_blank" rel="noopener noreferrer">Official Site</a>
+        </div>
+      </div>
+      <div class="highlight-card dark-theme">
+        <div class="card-header">
+          <div class="highlight-icon">
+            <i class="fas fa-laptop-code" role="img" aria-label="Laptop Code"></i>
+          </div>
+          <h3>Google Antigravity</h3>
+        </div>
+        <p>An agentic development platform and AI-powered IDE that enables autonomous AI agents to plan, execute, and verify complex coding tasks. Built as a fork of VS Code.</p>
+        <div class="card-footer">
+          <a href="https://antigravity.google" class="btn btn--primary-action" target="_blank" rel="noopener noreferrer">Official Site</a>
+        </div>
+      </div>
     </div>
   </div>
 

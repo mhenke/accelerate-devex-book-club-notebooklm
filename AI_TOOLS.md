@@ -31,6 +31,16 @@ This document provides a comprehensive list of the AI tools and services used to
 - **Purpose:** Provided AI-powered code completion and assistance within the IDE, helping to accelerate development and write documentation.
 - **Official Site:** [github.com/features/copilot](https://github.com/features/copilot)
 
+### Google Jules
+
+- **Purpose:** An autonomous AI coding agent that integrates with GitHub workflows to fix bugs, update dependencies, migrate code, and add features. Uses Gemini 3 Pro for advanced coding reasoning and operates asynchronously in cloud VMs.
+- **Official Site:** [jules.google](https://jules.google)
+
+### Google Antigravity
+
+- **Purpose:** An agentic development platform and AI-powered IDE that enables autonomous AI agents to plan, execute, and verify complex coding tasks. Built as a fork of VS Code with support for multiple AI models including Gemini 3 Pro and Claude Sonnet 4.5.
+- **Official Site:** [antigravity.google](https://antigravity.google)
+
 
 
 ## Visuals and Presentations

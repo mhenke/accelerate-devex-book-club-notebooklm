@@ -51,6 +51,18 @@
 - Documentation support
 - Automation scripts
 
+### Google Jules
+
+- Autonomous AI coding agent for GitHub workflows
+- Bug fixes, dependency updates, and feature implementation
+- Asynchronous code development using Gemini 3 Pro
+
+### Google Antigravity
+
+- Agentic development platform and AI-powered IDE
+- Complex task planning, execution, and verification
+- Multi-model support for autonomous coding agents
+
 ### Human Curation and Direction
 
 - Strategic guidance and content direction
