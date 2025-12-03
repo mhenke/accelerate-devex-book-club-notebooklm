@@ -77,7 +77,7 @@
 **Objective:** Commit to concrete improvements for sustainability
 
 **Facilitator Actions:**
-- ✅ Distribute [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
+- ✅ Prepare a method to track action items (e.g., whiteboard, shared document).
 - ✅ Each participant commits to:
 	- One WIP policy or visualization improvement
 	- One automation to reduce deployment pain

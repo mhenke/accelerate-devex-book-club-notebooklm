@@ -3,42 +3,41 @@
 
 ## Pop Quiz!
 
-Test your knowledge of the concepts from Chapters 5-7.
+Test your knowledge of the concepts from Chapters 7-10.
 
-**1. What is a primary benefit of a loosely coupled architecture?**
+**1. What is a key benefit of limiting Work in Progress (WIP)?**
 
-    a) It makes the system more complex.
-    b) It allows teams to deploy their services independently.
-    c) It reduces the need for testing.
+    a) It allows for more context switching.
+    b) It helps identify bottlenecks in the workflow.
+    c) It increases the number of features worked on simultaneously.
 
-**2. Which of the following is NOT one of the four key metrics of software delivery performance?**
+**2. What is a characteristic of a "lean product development" approach?**
 
-    a) Lead time
-    b) Deployment frequency
-    c) Number of lines of code
-    d) Change fail percentage
+    a) Working in large batches to maximize efficiency.
+    b) Empowering teams to experiment and learn.
+    c) Prioritizing features based on the highest-paid person's opinion.
 
-**3. What is the main purpose of limiting Work in Progress (WIP)?**
+**3. What is "deployment pain" a strong indicator of?**
 
-    a) To increase the amount of work being done at once.
-    b) To improve flow and reduce context switching.
-    c) To make it harder to track progress.
+    a) A healthy and sustainable work environment.
+    b) Problems in the software delivery process.
+    c) A team that is not working hard enough.
 
-**4. What is a common characteristic of a monolithic architecture?**
+**4. What is eNPS (Employee Net Promoter Score) used to measure?**
 
-    a) It is composed of many small, independent services.
-    b) It is difficult to deploy.
-    c) It is a single, large application.
+    a) The number of features a team deploys.
+    b) The likelihood that an employee would recommend their organization as a great place to work.
+    c) The amount of revenue a product generates.
 
 ## Discussion Questions
 
-1.  Share an example of a time when a tightly coupled architecture caused a problem in a project you were working on.
-2.  How can we as a team improve our monitoring practices to be more proactive?
-3.  What are some of the challenges of implementing continuous delivery in a large organization?
+1.  How can we better visualize our work to identify bottlenecks?
+2.  What is one experiment our team could run to get faster customer feedback?
+3.  What are the biggest contributors to "deployment pain" in our team, and how can we address them?
 
 ---
 ### Answers
 1. b
-2. c
+2. b
 3. b
-4. c
+4. b

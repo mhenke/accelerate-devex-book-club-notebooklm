@@ -60,6 +60,15 @@
 - [ ] Identify one change approval step that could be streamlined
 - [ ] Observe and document burnout risk factors in your environment
 
+## Related Assessments
+
+Use these tools during or after discussion:
+
+- **WIP Limits Workshop** - Experiment with constraining work in progress.
+- **Deployment Pain Assessment** - Measure and track deployment anxiety.
+- **Burnout Indicators Survey** - Assess team sustainability.
+- **[24 Capabilities Assessment](../../../assessments/24-capabilities-assessment.md)** - Track progress on Lean management capabilities
+
 ## Supplementary Content
 
 ### Audio Podcast

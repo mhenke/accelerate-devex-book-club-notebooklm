@@ -3,29 +3,33 @@
 
 ## The Essentials
 
-### Architectural Capabilities (Chapter 5)
+### Lean Management (Chapter 7)
 
-*   **Goal:** Build systems that can be changed and deployed quickly and safely.
-*   **Key Idea:** Loosely coupled architecture. Teams can work on their own parts without breaking everything else.
-*   **Big Question:** Can we deploy our service without coordinating with other teams?
-
-### Continuous Delivery (Chapter 6)
-
-*   **Goal:** Make deployments boring, not terrifying.
-*   **Key Idea:** Automate the path to production with a deployment pipeline.
-*   **The Magic Numbers (DORA Metrics):**
-    *   **Lead Time:** How long from code commit to production? (Shorter is better)
-    *   **Deployment Frequency:** How often do we deploy? (More often is better)
-    *   **Mean Time to Restore (MTTR):** How long to fix a failure? (Shorter is better)
-    *   **Change Fail %:** How often do our changes cause failures? (Lower is better)
-
-### Lean Management & Monitoring (Chapter 7)
-
-*   **Goal:** Improve the flow of work and get faster feedback.
+*   **Goal:** Improve flow and get faster feedback.
 *   **Key Idea:** Limit Work in Progress (WIP). Stop starting, start finishing.
 *   **See Your Work:** Use visual tools (like Kanban boards) to understand your workflow.
-*   **Look Ahead:** Proactive monitoring helps you find problems before your users do.
+*   **Lightweight Approvals:** Peer review is better than external change boards.
+
+### Product Development (Chapter 8)
+
+*   **Goal:** Build the right thing, and build it right.
+*   **Key Idea:** Work in small batches to reduce risk and get faster feedback.
+*   **Customer Feedback:** Integrate customer feedback directly into the development process.
+*   **Team Experimentation:** Give teams the autonomy to innovate.
+
+### Making Work Sustainable (Chapter 9)
+
+*   **Goal:** Avoid burnout and keep teams productive long-term.
+*   **Key Idea:** "Deployment pain" is a sign of problems in your delivery process, not a personal failing.
+*   **Address Burnout Systemically:** Don't just tell people to "be more resilient." Fix the system that is causing the burnout.
+
+### Employee Satisfaction (Chapter 10)
+
+*   **Goal:** Create a workplace where people can do their best work.
+*   **Key Idea:** High-performing organizations have employees with high job satisfaction.
+*   **Measure What Matters:** Use eNPS to gauge employee loyalty and satisfaction.
+*   **Invest in Your People:** Autonomy, meaningful work, and good tools are key drivers of satisfaction.
 
 ---
 
-**Quote of the Week:** "The goal is not to be busy, but to deliver value."
+**Quote of the Week:** "The goal of a leader is to create an environment in which others can do great work."
