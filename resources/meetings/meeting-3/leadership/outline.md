@@ -26,6 +26,7 @@
 - **Value Stream Visibility:** Understanding work flow from business to customers
 - **Team Experimentation:** Authority to create/change specifications without external approval
 - **MVP Approach:** Prototype with just enough features for validated learning
+- **Avoiding Faux Agile:** Recognize and avoid practices that undermine genuine agile in product development.
 
 ### 3. Making Work Sustainable
 
