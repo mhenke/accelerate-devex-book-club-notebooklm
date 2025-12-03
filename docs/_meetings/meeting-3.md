@@ -106,7 +106,9 @@ let currentActiveChapter_meeting3 = null;
 const meeting3Container = document.getElementById('meeting-3-chapters');
 
 function showChapterDetail_meeting3(chapterId) {
-  if (!meeting3Container) return; // Safety check
+  if (!meeting3Container) {
+    return; // Safety check
+  }
   
   const detailsContainer = document.getElementById('chapter-details-meeting3');
   const targetDetail = document.getElementById('detail-' + chapterId + '-meeting3');
@@ -149,7 +151,9 @@ function showChapterDetail_meeting3(chapterId) {
 }
 
 function hideChapterDetails_meeting3() {
-  if (!meeting3Container) return; // Safety check
+  if (!meeting3Container) {
+    return; // Safety check
+  }
   
   const detailsContainer = document.getElementById('chapter-details-meeting3');
 
@@ -173,7 +177,9 @@ function hideChapterDetails_meeting3() {
 
 // Close details when clicking outside (scoped to meeting 3)
 document.addEventListener('click', function(event) {
-  if (!meeting3Container) return;
+  if (!meeting3Container) {
+    return;
+  }
   
   const detailsContainer = document.getElementById('chapter-details-meeting3');
   const chapterItems = meeting3Container.querySelectorAll('.chapter-item');
