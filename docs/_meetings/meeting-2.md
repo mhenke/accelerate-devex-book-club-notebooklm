@@ -44,7 +44,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
 </div>
 
 <!-- Expandable Details Section -->
-<div class="chapter-details" id="chapter-details-meeting2" hidden>
+<div class="chapter-details" id="chapter-details-meeting2" style="display: none;">
   <div class="chapter-detail" id="detail-technical-meeting2">
     <h3>Technical Practices</h3>
     <p>Five key practices that distinguish high-performing teams: version control, test automation, trunk-based development, continuous integration, and shift-left security.</p>

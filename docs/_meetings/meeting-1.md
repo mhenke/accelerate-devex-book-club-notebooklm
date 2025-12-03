@@ -44,7 +44,7 @@ dora_color: "#0969da" # $meeting-1-primary
 </div>
 
 <!-- Expandable Details Section -->
-<div class="chapter-details" id="chapter-details" hidden>
+<div class="chapter-details" id="chapter-details" style="display: none;">
   <div class="chapter-detail" id="detail-accelerate">
     <h3>Accelerate</h3>
     <p>Software delivery capability drives organizational success across all industries. This chapter presents evidence from 23,000+ survey responses showing that digital transformation is real and software delivery creates competitive advantage.</p>

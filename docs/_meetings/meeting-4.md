@@ -44,7 +44,7 @@ dora_color: "#8b5cf6" # $meeting-4-primary
 </div>
 
 <!-- Expandable Details Section -->
-<div class="chapter-details" id="chapter-details" hidden>
+<div class="chapter-details" id="chapter-details" style="display: none;">
   <div class="chapter-detail" id="detail-leaders">
     <h3>Leaders and Managers</h3>
     <p>Transformational leadership drives performance indirectly by enabling teams to implement technical and lean practices. Five key characteristics amplify team effectiveness.</p>

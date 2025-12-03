@@ -53,7 +53,7 @@ dora_color: "#d97706" # $meeting-3-primary
 </div>
 
 <!-- Expandable Details Section -->
-<div class="chapter-details" id="chapter-details-meeting3" hidden>
+<div class="chapter-details" id="chapter-details-meeting3" style="display: none;">
   <div class="chapter-detail" id="detail-management-meeting3">
     <h3>Management Practices for Software</h3>
     <p>Lean management for software delivery: limiting WIP, visualizing work, and using monitoring for business decisions. Lightweight change approval processes outperform formal external approval bodies.</p>
