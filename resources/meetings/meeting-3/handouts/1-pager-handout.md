@@ -16,6 +16,7 @@
 *   **Key Idea:** Work in small batches to reduce risk and get faster feedback.
 *   **Customer Feedback:** Integrate customer feedback directly into the development process.
 *   **Team Experimentation:** Give teams the autonomy to innovate.
+*   **Avoiding Faux Agile:** Be wary of processes that seem agile but lack true substance or empowerment.
 
 ### Making Work Sustainable (Chapter 9)
 
