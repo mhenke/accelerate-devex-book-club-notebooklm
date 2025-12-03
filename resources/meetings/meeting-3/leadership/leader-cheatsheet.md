@@ -13,7 +13,7 @@
 | **15-25 min** | Flow & WIP | Identify queues and batch sizes |
 | **25-35 min** | Deployment Pain | Target biggest manual/off-hours pain point |
 | **35-40 min** | Satisfaction | Tools, meaning, culture quick check |
-| **40-45 min** | AI Tool Spotlight | Demo NotebookLM clip for reflection prompts |
+| **40-45 min** | Faux Agile Check | How to distinguish genuine agile from "faux agile" |
 | **45-55 min** | Action Items & Commitments | One WIP policy + one automation + one satisfaction step |
 | **55-60 min** | Preview Meeting 4 | Leadership & transformation |
 
@@ -70,9 +70,8 @@ This alternative helps surface the concepts of WIP limits, batch size, and visua
 ### Materials
 
 - ✅ [Discussion Guide](discussion-guide.md)
-- ✅ [Action Items Tracking Sheet](../handouts/action-items-tracker.md)
+- ✅ Prepare method for tracking action items (e.g., whiteboard, shared document)
 - ✅ Whiteboard/markers
-
 ### Tips
 
 ✅ Keep the focus on small, high-leverage changes this week.

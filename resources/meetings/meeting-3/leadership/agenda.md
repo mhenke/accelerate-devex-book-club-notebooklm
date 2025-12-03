@@ -33,9 +33,9 @@
 
 ---
 
-### 3. Core Discussion (25 minutes) | 0:15-0:40
+### 3. Core Discussion (30 minutes) | 0:15-0:45
 
-**Objective:** Identify improvements to reduce load and increase flow
+**Objective:** Identify improvements to reduce load and increase flow, and recognize Faux Agile patterns.
 
 **Key Question Reference:** See [key-questions.md#meeting-3](../../../key-questions.md#meeting-3)
 
@@ -52,16 +52,18 @@
 #### Part C: Satisfaction (5 min) | 0:35-0:40
 1. Do we have the tools we need? Is work meaningful? Is culture supportive?
 
+#### Part D: Faux Agile Check (5 min) | 0:40-0:45
+1. How do we distinguish genuine agile from "faux agile" practices in our work? (Refer to [Faux Agile for Leaders](faux-agile-for-leaders.md))
+
 ---
 
-### 4. AI Tool Spotlight (5 minutes) | 0:40-0:45
+### 4. AI Tool Spotlight (Optional - for between meetings) | 0:45-0:45 (No dedicated time in meeting)
 
-**Objective:** Use NotebookLM to reinforce lean and sustainability concepts
+**Objective:** Encourage use of NotebookLM to reinforce lean and sustainability concepts for individual reflection.
 
 **Facilitator Actions:**
-- ✅ Play a 60-90 second clip or summarize generated insights
-- ✅ Show how to use NotebookLM for quick reflection between sessions
-- ✅ Share the direct link to Meeting 3 prompts in `notebooklm/`
+- ✅ Briefly remind participants of NotebookLM resources.
+- ✅ Share the direct link to Meeting 3 prompts in `notebooklm/` for self-paced use.
 
 **Materials:**
 - Laptop with audio output (or speaker)
