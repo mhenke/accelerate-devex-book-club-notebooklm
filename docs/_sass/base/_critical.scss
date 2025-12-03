@@ -1,1309 +1,159 @@
-// (Removed) subtleShimmer animation — unused
-
-// =====================================
-// These styles are critical for above-the-fold content rendering.
-// They should be inlined in the HTML <head> for optimal performance.
-// ANIMATIONS & KEYFRAMES
-// =============================================================================
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
+/*! Critical CSS - Optimized for above-the-fold content */
 
 // =============================================================================
-// RESET AND NORMALIZE - CRITICAL ONLY
+// CRITICAL PATH CSS ONLY
 // =============================================================================
+// This file contains ONLY styles required for above-the-fold rendering
+// All other styles have been moved to their respective component files
 
-// Essential reset for consistent rendering
-* {
+// 1. CRITICAL VARIABLES
+// =====================
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --transition-base: 0.2s ease;
+}
+
+// 2. CRITICAL FONT LOADING
+// ========================
+// Preloaded in HTML <head> for optimal performance
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/assets/fonts/inter-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+// 3. CRITICAL RESET
+// =================
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// Root element optimization
+// 4. CRITICAL BASE STYLES
+// =======================
 html {
-  font-size: var(--font-size-h6, 16px); // use token, fallback to 16px
-  line-height: 1.6;
-  text-size-adjust: 100%;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  -webkit-text-size-adjust: 100%; /* stylelint-disable-line property-no-vendor-prefix */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   max-width: 100vw;
-
-  @include smooth-scroll;
 }
 
-// Body foundation
 body {
-  @include body-text;
-
-  background-color: var(--background-white);
-  position: relative;
-
-  // Prevent horizontal scroll
+  font-family: var(--font-sans);
+  background-color: var(--background-white, #ffffff);
+  color: var(--text-primary, #1a1a1a);
+  line-height: var(--line-height-base);
   overflow-x: hidden;
   max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
-.site-header // Ensure site header connects seamlessly with page content
+// 5. CRITICAL LAYOUT
+// ==================
 .site-header {
-  margin-bottom: 0; // Remove any bottom margin
+  margin-bottom: 0;
+  position: relative;
+  z-index: 100;
 }
 
 #main-content {
-  margin-top: 0; // Remove any top margin that could create gaps
-}
-
-// Additional fix: ensure hero banner connects with site header
-header > .hero-banner {
   margin-top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-// =============================================================================
-// CRITICAL TYPOGRAPHY
-// =============================================================================
+.hero-banner {
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+}
 
-// Design tokens and mixins are imported in main.scss already
-// @import "abstracts/tokens";
-// @import "abstracts/mixins";
+// 6. CRITICAL TYPOGRAPHY (Above-the-fold only)
+// ============================================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-heading, #1a1a1a);
+}
 
-// Heading hierarchy - WCAG compliance
+// Only h1 and h2 are typically above-the-fold
 h1 {
-  @include heading-1;
+  font-size: var(--font-size-h1, 2.5rem);
+  margin-bottom: 1rem;
 }
 
 h2 {
-  @include heading-2;
+  font-size: var(--font-size-h2, 2rem);
+  margin-bottom: 0.75rem;
 }
 
-// Standardized h2 styling for all sections (except dark theme and key-question sections)
-.section-card:not(.dark-theme) h2,
-.page-content > h2 {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  text-align: left;
-  justify-content: flex-start;
-  color: var(--text-dark);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-md);
-
-  i,
-  em {
-    color: var(--accent-emerald);
-    font-size: var(--font-size-h4);
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-      135deg,
-      rgba(16, 185, 129, 0.1),
-      rgba(122, 218, 209, 0.1)
-    );
-    font-style: normal; // Override em italic styling
-    border-radius: var(--radius-full);
-    border: var(--border-emerald-light);
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-  }
-
-  &:hover i {
-    color: var(--accent-teal);
-    background: linear-gradient(
-      135deg,
-      rgba(122, 218, 209, 0.15),
-      rgba(16, 185, 129, 0.15)
-    );
-    border-color: rgba(122, 218, 209, 0.3);
-    transform: scale(1.05);
-  }
+// 7. CRITICAL ACCESSIBILITY
+// =========================
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-h3 {
-  @include heading-3;
-}
-
-h4 {
-  @include heading-4;
-}
-
-h5 {
-  @include heading-5;
-}
-
-h6 {
-  @include heading-6;
-}
-
-// Paragraph styles
-p {
-  @include body-text;
-
-  margin-bottom: var(--space-lg);
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-// Link styles - accessible and consistent
-a {
-  color: var(--meeting-1-color);
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-teal);
-  }
-
-  &:focus {
-    @include focus-ring;
-  }
-
-  // Ensure sufficient contrast
-  @include high-contrast {
-    text-decoration: underline;
-    font-weight: var(--font-weight-semibold);
-  }
-}
-
-// =============================================================================
-// CRITICAL LAYOUT COMPONENTS
-// =============================================================================
-
-// Skip link - WCAG requirement
 .skip-link {
   @include skip-link;
 }
 
-// Main layout containers
-.site-header {
-  /* No overlay gradients for nav header, match Meeting 1 */
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-  // Performance optimizations
-  contain: layout style;
-  will-change: auto; // Managed dynamically via JavaScript
-  background: var(--hero-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-  > * {
-    position: relative;
-    z-index: 1;
-  }
+// 8. CRITICAL ANIMATIONS
+// =====================
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-// (Removed) .site-main — not used in current layouts
-
-// Font Awesome fallback support for Jekyll HTML conversion
-.fas,
-.far,
-[class^="fa-"],
-[class*=" fa-"] {
-  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "FontAwesome",
-    sans-serif !important;
-  font-style: normal !important;
-  font-variant: normal !important;
-  line-height: 1 !important;
-  text-rendering: auto !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-  vertical-align: middle !important;
+@keyframes slideUp {
+  from { transform: translateY(20px); }
+  to { transform: translateY(0); }
 }
 
-// FontAwesome solid icons
-.fas {
-  font-weight: 900 !important; // FontAwesome requires exact 900 weight, no design token equivalent
-}
-
-// FontAwesome regular icons
-.far {
-  font-weight: var(
-    --font-weight-normal
-  ) !important; // 400 - matches design token
-}
-
-// (Removed) AI Attribution Footer block (.ai-attribution) — not used in built pages
-
-// =============================================================================
-// HERO ANIMATIONS - GLOBAL KEYFRAMES
-// =============================================================================
-
-// Keyframe animations for hero site-title effects
-@keyframes floatUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes shimmer {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes shine {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-// =============================================================================
-// HERO BANNER - STYLES MOVED TO components/_hero.scss
-// =============================================================================
-// All .hero-banner styles now consolidated in _hero.scss for better organization
-
-// (Removed) Hero metrics blocks (.hero-metrics, .metric-icon) — legacy visual no longer used
-
-// =============================================================================
-// DORA METRICS VISUAL - CRITICAL CONTENT
-// =============================================================================
-
-// (Removed) DORA metrics visual and cards (.dora-metrics-visual, .metrics-categories, .metrics-category, .metric-card) — unused
-
-// =============================================================================
-// MATERIAL DESIGN SECTIONS - WELCOME & ABOUT
-// =============================================================================
-
-// Welcome Compact - Above the Fold Focus
-.welcome-compact {
-  background: var(--gradient-surface);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-lg);
-  padding: var(--space-sm);
-  margin: var(--space-lg) auto;
-  max-width: var(--content-max-width);
-  text-align: center;
-  box-shadow: var(--elevation-2);
-
-  p {
-    color: var(--text-dark);
-    font-size: var(--font-size-h6);
-    font-weight: var(--font-weight-medium);
-    margin: 0 0 var(--space-md);
-    line-height: var(--line-height-relaxed);
-  }
-
-  .welcome-cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-sm);
-  }
-
-  .welcome-cta-subtitle {
-    color: #666;
-    font-size: var(--font-size-body);
-    margin: 0;
-    font-weight: var(--font-weight-medium);
-
-    a {
-      color: inherit;
-      text-decoration: underline;
-    }
-  }
-}
-
-.welcome-cta--offset {
-  margin-top: var(--space-lg);
-}
-
-// About the Book Club Section - Material Design
-.quick-start {
-  background: var(--gradient-surface);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-lg);
-  padding: var(--space-sm);
-  margin: var(--space-lg) auto;
-  max-width: var(--text-max-width);
-  text-align: center;
-  box-shadow: var(--elevation-2);
-
-  h2 {
-    text-align: left; // Override center alignment for consistency
-  }
-
-  position: relative;
-  transition: var(--transition-spring);
-
-  &:hover {
-    box-shadow: var(--shadow-emerald-light);
-    transform: translateY(-2px);
-  }
-
-  p {
-    color: #666;
-    font-size: var(--font-size-h6);
-    line-height: var(--line-height-relaxed);
-    margin-bottom: var(--space-lg);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    strong {
-      color: var(--text-dark);
-      font-weight: var(--font-weight-semibold);
-    }
-  }
-}
-
-// What You'll Learn Section
-.what-youll-learn-section {
-  background: var(--gradient-surface);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-lg);
-  padding: var(--space-sm);
-  margin: var(--space-lg) auto;
-  text-align: center;
-  box-shadow: var(--elevation-2);
-  animation: fadeInUp 0.8s ease-out 0.2s both;
-
-  h2 {
-    // Inherit standardized h2 styling with icons and left alignment
-    display: flex;
-    align-items: center;
-    text-align: left;
-
-    i,
-    em {
-      color: var(--accent-emerald);
-      width: 32px;
-      height: 32px;
-      background: linear-gradient(
-        135deg,
-        rgba(16, 185, 129, 0.1),
-        rgba(122, 218, 209, 0.1)
-      );
-      border-radius: var(--radius-full);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: var(--font-size-h5);
-      flex-shrink: 0;
-      font-style: normal; // Override em italic styling
-    }
-  }
-}
-
-// Enhanced Success Metrics with Material Design (compact version)
-.success-metrics-compact {
-  background: linear-gradient(
-    135deg,
-    #e8f5e9 0%,
-    #c8e6c9 100%
-  );
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  border-radius: var(--radius-xl);
-  padding: var(--space-xl) var(--space-2xl);
-  margin: var(--space-xl) auto;
-  max-width: var(--content-max-width);
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 0.8s ease-out 0.4s both;
-  position: relative;
-  overflow: hidden;
-
-  h2 {
-    // Inherit standardized h2 styling with icons and left alignment
-    display: flex;
-    align-items: center;
-    text-align: left;
-
-    i,
-    em {
-      color: var(--accent-emerald);
-      width: 32px;
-      height: 32px;
-      background: linear-gradient(
-        135deg,
-        rgba(16, 185, 129, 0.1),
-        rgba(122, 218, 209, 0.1)
-      );
-      border-radius: var(--radius-full);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: var(--font-size-h5);
-      flex-shrink: 0;
-      font-style: normal; // Override em italic styling
-    }
-  }
-
-  // (Removed) .outcomes-grid — container not used
-
-  .outcome-item {
-    @extend %item-card;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--space-xl) var(--space-lg);
-    border: 1px solid rgba(16, 185, 129, 0.1);
-    border-radius: var(--radius-xl); // Material Design 3 radius
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-semibold);
-    color: var(--text-dark);
-
-    // Material Design elevation
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    overflow: hidden;
-
-    &:hover {
-      border-color: rgba(16, 185, 129, 0.2);
-
-      i {
-        color: var(--accent-teal);
-      }
-    }
-
-    i {
-      color: var(--accent-emerald);
-      font-size: var(
-        --font-size-h5
-      ); // Much larger icons for prominence
-
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(
-        135deg,
-        rgba(16, 185, 129, 0.1),
-        rgba(122, 218, 209, 0.1)
-      );
-      border-radius: var(--radius-full);
-      transition: var(--transition-material);
-      margin-bottom: var(--space-xs);
-    }
-
-    // (Removed) .metric-text — not used in built HTML
-
-    // Interactive enhancements
-    cursor: pointer;
-
-    .outcome-indicator {
-      position: absolute;
-      top: var(--space-sm);
-      right: var(--space-sm);
-      opacity: 0.6;
-      transition: all 0.3s ease;
-      font-size: var(--font-size-body);
-      color: var(--accent-emerald);
-    }
-
-    &:hover .outcome-indicator {
-      opacity: 1;
-      transform: scale(1.1);
-    }
-
-    &.active {
-      border-color: var(--accent-emerald);
-      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
-
-      .outcome-indicator {
-        transform: rotate(180deg);
-        color: var(--accent-teal);
-      }
-    }
-  }
-}
-
-// Interactive Outcome Details Section
-.outcome-details {
-  padding: var(--space-xl);
-  background: linear-gradient(
-    135deg,
-    rgba(16, 185, 129, 0.05),
-    rgba(122, 218, 209, 0.05)
-  );
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  border-radius: var(--radius-lg);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  transform: translateY(-10px);
-  max-height: 0;
-  overflow: hidden;
-
-  &.show {
-    opacity: 1;
-    transform: translateY(0);
-    max-height: 1000px;
-  }
-
-  .outcome-detail {
-    display: none;
-    animation: fadeInUp 0.5s ease forwards;
-
-    &.active {
-      display: block;
-    }
-
-    h3 {
-      display: flex;
-      align-items: center;
-      color: var(--text-dark);
-      margin-bottom: var(--space-lg);
-      font-size: var(--font-size-h4);
-      font-weight: var(--font-weight-bold);
-
-      i {
-        color: var(--accent-emerald);
-        font-size: var(--font-size-h5);
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(
-          135deg,
-          rgba(16, 185, 129, 0.1),
-          rgba(122, 218, 209, 0.1)
-        );
-        border-radius: var(--radius-full);
-      }
-    }
-
-    p {
-      font-size: var(--font-size-h6);
-      line-height: 1.6;
-      color: #666;
-      margin-bottom: var(--space-lg);
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        position: relative;
-        padding-left: var(--space-xl);
-        margin-bottom: var(--space-md);
-        font-size: var(--font-size-body);
-        line-height: 1.5;
-        color: #666;
-
-        &::before {
-          content: "✓";
-          position: absolute;
-          left: 0;
-          top: 0;
-          color: var(--accent-emerald);
-          font-weight: bold;
-          font-size: var(--font-size-h6);
-        }
-      }
-    }
-  }
-}
-
-// Enhanced Get Started Section with Material Design
-.get-started-section {
-  background: linear-gradient(
-    135deg,
-    #e3f2fd 0%,
-    #bbdefb 100%
-  );
-  border: 1px solid rgba(33, 150, 243, 0.2);
-  border-radius: var(--radius-xl);
-  padding: var(--space-xl) var(--space-2xl);
-  margin: var(--space-xl) auto;
-  max-width: var(--content-max-width);
-  text-align: center;
-  box-shadow: 0 8px 24px rgba(33, 150, 243, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-
-  // Enhance visual prominence with accent border
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, #2196f3, var(--meeting-1-color));
-    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-  }
-
-  h2 {
-    text-align: left; // Override center alignment for consistency
-  }
-
-  // (Removed) .get-started-grid — replaced by .feature-grid structure
-
-  .get-started-card {
-    @extend %item-card;
-
-    // Use simple-mode for both primary and secondary variants
-    &.primary {
-      @extend %item-card;
-    }
-
-    &.secondary {
-      @extend %item-card;
-    }
-
-    .resource-links {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-sm);
-
-      @media (min-width: #{$small}) {
-        flex-direction: row;
-        justify-content: center;
-      }
-    }
-  }
-}
-
-// (Removed) .btn-meeting-1 — superseded by meeting badge/btn variants
-
-// Meeting themed buttons using data-meeting attribute system
-[data-meeting] {
-  .btn,
-  .btn-primary {
-    &:not(.btn--primary-action, .btn--secondary-action, .btn--meeting-nav) {
-      background: linear-gradient(
-        135deg,
-        var(--theme-primary),
-        var(--accent-teal)
-      );
-      box-shadow: var(--elevation-2);
-
-      &:hover:not(:disabled) {
-        background: linear-gradient(135deg, var(--accent-teal), var(--theme-primary));
-        box-shadow: var(--elevation-4);
-        transform: translateY(-1px);
-      }
-
-      &:focus-visible {
-        outline: 3px solid var(--accent-coral);
-        outline-offset: 2px;
-      }
-
-      &:active {
-        transform: translateY(0);
-        box-shadow: var(--elevation-2);
-      }
-    }
-  }
-
-  // Meeting-specific button base backgrounds
-  .btn--meeting-1 {
-    background: linear-gradient(135deg, #4CAF50, var(--meeting-1-color));
-  }
-
-  .btn--meeting-2 {
-    background: linear-gradient(135deg, #4CAF50, var(--meeting-2-color));
-  }
-
-  .btn--meeting-3 {
-    background: linear-gradient(135deg, #4CAF50, var(--meeting-3-color));
-  }
-
-  .btn--meeting-4 {
-    background: linear-gradient(135deg, #4CAF50, var(--meeting-4-color));
-  }
-
-  // Meeting-specific button classes should use their theme colors
-  .btn--meeting-1:hover:not(:disabled) {
-    background: linear-gradient(135deg, var(--accent-teal), var(--meeting-1-color));
-  }
-
-  .btn--meeting-2:hover:not(:disabled) {
-    background: linear-gradient(135deg, #2ea043, var(--meeting-2-color));
-  }
-
-  .btn--meeting-3:hover:not(:disabled) {
-    background: linear-gradient(135deg, #fbbf24, var(--meeting-3-color));
-  }
-
-  .btn--meeting-4:hover:not(:disabled) {
-    background: linear-gradient(135deg, #a78bfa, var(--meeting-4-color));
-  }
-
-  // Icon color pattern: H2 uses theme primary, others gray
-  h2:not(.key-question h2) {
-    i,
-    em {
-      color: var(--theme-primary) !important;
-    }
-  }
-}
-
-// =============================================================================
-// LEARNING HIGHLIGHTS - WHAT YOU'LL LEARN SECTION
-// =============================================================================
-
-.learning-highlights {
-  padding: var(--space-md) 0;
-}
-
-// (Removed) .highlight-grid — not used; layout handled elsewhere
-
-.highlight-card {
-  @extend %item-card;
-
-  // Specific styling for What You'll Learn cards
-  border-radius: var(--radius-xl); // Material Design 3 radius
-  padding: var(
-    --space-lg
-  ); // Further reduced from xl to lg for more compact height
-
-  text-align: left;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-
-  // Use flexbox to ensure consistent footer positioning
-  display: flex;
-  flex-direction: column;
-
-  // Enhanced Material Design elevation for dark theme
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
-  color: white;
-
-  &:hover {
-    // Enhanced hover elevation for dark theme
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 4px 12px rgba(0, 0, 0, 0.25);
-    transform: translateY(-3px);
-    border-color: rgba(255, 255, 255, 0.15);
-    border-top-color: var(--accent-teal);
-  }
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    border-color: rgba(0, 0, 0, 0.2);
-  }
-
-  // Create a header section with icon and title side by side
-  .card-header {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-sm);
-    margin-bottom: var(--space-sm);
-  }
-
-  .highlight-icon {
-    @include flex-center;
-
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-md);
-    font-size: var(--font-size-h4);
-    position: relative;
-    z-index: 1;
-    border: 2px solid rgba(16, 185, 129, 0.3);
-    background: rgba(16, 185, 129, 0.1);
-    backdrop-filter: var(--backdrop-blur-lg);
-    transition: all 0.3s ease;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-
-  h3 {
-    color: white; // White text for dark theme
-    font-family: var(--font-display);
-    font-size: var(--font-size-h4);
-    font-weight: var(--font-weight-semibold);
-    margin: 0; // Remove margin since it's now inline with icon
-    position: relative;
-    z-index: 1;
-    flex: 1; // Take up remaining space
-  }
-
-  p {
-    color: rgba(255, 255, 255, 0.85); // Light gray text for dark theme
-    margin: 0 0 var(--space-sm); // Reduced bottom margin for more compact cards
-    line-height: var(--line-height-relaxed);
-    font-size: var(--font-size-h6);
-    position: relative;
-    z-index: 1;
-    flex: 1; // Allow paragraph content to grow and push footer down
-  }
-
-  &:hover .highlight-icon {
-    color: var(--accent-teal);
-    border-color: rgba(122, 218, 209, 0.4);
-    background: rgba(122, 218, 209, 0.15);
-    transform: scale(1.05);
-  }
-
-  // (Removed) legacy .meeting-link block — unused
-
-  .meeting-badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-sm) var(--space-lg);
-    border-radius: var(--radius-lg);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-bold);
-    color: var(--text-white);
-    margin: 0 auto var(--space-md);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    text-decoration: none;
-    white-space: nowrap;
-    min-width: fit-content;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    }
-
-    // Ensure text appears above shimmer effect
-    span {
-      position: relative;
-      z-index: 2;
-      white-space: nowrap;
-    }
-
-    span:first-child {
-      margin-right: var(--space-xs);
-    }
-  }
-
-  .meeting-subtitle {
-    font-size: var(--font-size-body);
-    text-align: center;
-    font-style: italic;
-    line-height: var(
-      --line-height-normal
-    ); // Tighter line height for compactness
-
-    padding: 0 var(--space-md);
-    font-weight: var(
-      --font-weight-semibold
-    ); // Bolder weight for better visibility
-
-    margin-top: var(--space-xs); // Reduced margin for compactness
-    opacity: 0.8; // Subtle opacity for visual hierarchy
-  }
-
-  // Ensure card footer stays at bottom
-  .card-footer {
-    margin-top: auto; // Push footer to bottom when using flexbox
-  }
-}
-
-.highlight-card--full-span {
-  grid-column: 1 / -1;
-}
-
-// Meeting-specific styling for highlight cards
-.highlight-card.meeting-1 {
-  .highlight-icon {
-    background: linear-gradient(
-      135deg,
-      var(--theme-primary),
-      var(--accent-teal)
-    );
-  }
-
-  .meeting-badge {
-    background: var(--meeting-1-color);
-  }
-
-  &:hover {
-    border-top-color: var(--meeting-1-color);
-  }
-}
-
-.highlight-card.meeting-2 {
-  .highlight-icon {
-    background: linear-gradient(135deg, var(--meeting-2-color), #238636);
-  }
-
-  .meeting-badge {
-    background: var(--meeting-2-color);
-  }
-
-  &:hover {
-    border-top-color: var(--meeting-2-color);
-  }
-}
-
-.highlight-card.meeting-3 {
-  .highlight-icon {
-    background: linear-gradient(135deg, var(--meeting-3-color), #f59e0b);
-  }
-
-  .meeting-badge {
-    background: var(--meeting-3-color);
-  }
-
-  &:hover {
-    border-top-color: var(--meeting-3-color);
-  }
-}
-
-.highlight-card.meeting-4 {
-  .highlight-icon {
-    background: linear-gradient(135deg, var(--meeting-4-color), #a78bfa);
-  }
-
-  .meeting-badge {
-    background: var(--meeting-4-color);
-  }
-
-  &:hover {
-    border-top-color: var(--meeting-4-color);
-  }
-}
-
-// Responsive behavior
-@include mobile-only {
-  // (Removed) .highlight-grid mobile tweaks — grid removed
-}
-
-// =============================================================================
-// BUTTON STYLES - CRITICAL INTERACTIONS
-// =============================================================================
-// BUTTON STYLES - Defined in components/_buttons.scss
-// Removed duplicate definitions to prevent cascade conflicts
-// =============================================================================
-
-// Button focus states for accessibility (keep in critical for a11y)
-.btn:focus,
-button:focus,
-[role="button"]:focus {
-  @include focus-ring;
-}
-
-// =============================================================================
-// ACCESSIBILITY ENHANCEMENTS - CRITICAL
-// =============================================================================
-
-// Focus management
-.focus-visible {
-  outline: 3px solid var(--accent-teal) !important;
-  outline-offset: 2px !important;
-}
-
-// High contrast support for critical elements
-@include high-contrast {
-  // (Removed) high-contrast outlines for legacy metric elements — unused
-}
-
-// Reduced motion support for critical animations
+// 9. REDUCED MOTION SUPPORT
+// =========================
 @include reduced-motion {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-
-  // .hero-banner::before moved to components/_hero.scss
 }
 
-// =============================================================================
-// PERFORMANCE OPTIMIZATIONS - CRITICAL
-// =============================================================================
-
-// .hero-banner will-change moved to components/_hero.scss
-// (Removed) GPU acceleration for legacy metric elements — unused
-
-// =============================================================================
-// MOBILE OPTIMIZATIONS - CRITICAL
-// =============================================================================
-
-@include mobile-only {
-  // .hero-banner mobile styles moved to components/_hero.scss
-  // (Removed) .metrics-categories — legacy DORA layout not used
-}
-
-// =============================================================================
-// PRINT STYLES - CRITICAL
-// =============================================================================
-
+// 10. PRINT OPTIMIZATION
+// =====================
 @media print {
-  // .hero-banner print styles moved to components/_hero.scss
-
-  // (Removed) .metric-icon print overrides — unused
-
-  // Remove shadows and transitions for print
   * {
     box-shadow: none !important;
     transition: none !important;
     animation: none !important;
   }
 }
-
-// =============================================================================
-// PERFORMANCE MONITORING HOOKS
-// =============================================================================
-
-// =============================================================================
-// HOMEPAGE CONTENT SECTIONS - Material Design Styling
-// =============================================================================
-
-// (Removed) Legacy Success Metrics section (.success-metrics) — replaced by compact version
-
-// (Removed) Legacy Key Question section (.key-question) — superseded by .key-question-banner
-
-// (Removed) Legacy resources grid/cards (.resources-grid, .resource-card) — resources now use section-card/callouts
-
-// Required Reading Section - Material Design Card
-.required-reading-section {
-  background: var(--gradient-surface);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-lg);
-  padding: var(--space-sm);
-  margin: var(--space-lg) auto;
-  text-align: center;
-  box-shadow: var(--elevation-2);
-
-  h2 {
-    text-align: left; // Override center alignment for consistency
-  }
-
-  .book-showcase {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-2xl);
-    align-items: center;
-
-    @media (min-width: #{$mobile}) {
-      grid-template-columns: 280px 1fr;
-      gap: var(--space-3xl);
-    }
-  }
-
-  .book-visual {
-    text-align: center;
-
-    img {
-      width: 100%;
-      max-width: 220px;
-      height: auto;
-      aspect-ratio: 3/4;
-      object-fit: cover;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--elevation-3);
-      transition: transform 0.3s ease-out;
-
-      &:hover {
-        transform: translateY(-4px);
-        box-shadow: var(--elevation-4);
-      }
-
-      @media (min-width: #{$mobile}) {
-        max-width: 200px;
-      }
-    }
-  }
-
-  .book-info {
-    h3 {
-      color: var(--accent-coral);
-      margin-bottom: var(--space-md);
-      font-weight: var(--font-weight-semibold);
-    }
-
-    p:not(.book-description) {
-      color: #666;
-      font-weight: var(--font-weight-medium);
-      font-size: var(--font-size-h5);
-      margin-bottom: var(--space-md);
-    }
-
-    .book-description {
-      margin: var(--space-lg) 0;
-      line-height: var(--line-height-relaxed);
-      color: var(--text-dark);
-    }
-
-    // Maximum specificity override for book section buttons
-    .btn,
-    a.btn,
-    .btn.btn-primary,
-    a.btn.btn-primary {
-      @include button-primary;
-
-      margin-top: var(--space-xl) !important;
-      font-size: var(--font-size-h6) !important;
-      padding: var(--space-lg) var(--space-2xl) !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: var(--space-sm) !important;
-      border-radius: var(--radius-lg) !important;
-      font-weight: var(--font-weight-semibold) !important;
-      text-decoration: none;
-      cursor: pointer !important;
-      transition: all 0.3s ease-out !important;
-  min-height: 48px !important;
-
-      // Ensure consistent emerald styling
-      background: linear-gradient(
-        135deg,
-        var(--accent-emerald),
-        var(--hover-emerald)
-      ) !important;
-      color: white !important;
-      border: none !important;
-      box-shadow: var(--shadow-card-metric), var(--shadow-subtle) !important;
-
-      &:hover {
-        background: linear-gradient(
-          135deg,
-          var(--hover-emerald),
-          var(--accent-emerald)
-        ) !important;
-        color: white !important;
-        transform: translateY(-2px) !important;
-        box-shadow: var(--shadow-card-metric-hover) !important;
-      }
-    }
-  }
-}
-
-// (Removed) .perf-measure-start marker — not present in HTML
-
-// =============================================================================
-// MEETING LAYOUT STYLES
-// =============================================================================
-
-// (Removed) .meeting-main-content — unused
-
-// (Removed) .meeting-sidebar — unused
-
-// (Removed) mobile ordering for legacy chapter intro grid
-
-// (Removed) Media card pattern and nested resource/material variants — unused
-
-.next-meeting-complete__cta {
-  background: linear-gradient(135deg, #a78bfa, #c4b5fd);
-  color: #3c1361;
-
-  &:hover:not(:disabled) {
-    background: linear-gradient(135deg, #a78bfa, #c4b5fd) !important;
-    color: #3c1361 !important;
-    box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
-  }
-
-  &:focus-visible {
-    outline: 3px solid rgba(139, 92, 246, 0.4);
-    outline-offset: 2px;
-  }
-}
-
-// (Removed) Chapter intro grid styles — replaced by compact chapter components
-
-// (Removed) Simple card pattern — superseded by section-card and material variants
-
-// Resources section specific styling
-// (Removed) .resources-clean — unused
-// (Removed) Legacy metric-card and theme wrappers — not used in current layouts
-
-// =============================================================================
-// CRITICAL CSS SIZE OPTIMIZATION
-// =============================================================================
-
-/*
-CRITICAL CSS PERFORMANCE NOTES:
-
-TARGET SIZE: < 14KB (compressed)
-CURRENT ESTIMATED: ~8KB (before compression)
-
-OPTIMIZATION STRATEGIES:
-1. Only above-the-fold styles included
-2. Minimal color palette used
-3. Efficient selectors (avoid deep nesting)
-4. No vendor prefixes (handled by autoprefixer)
-5. Compressed custom properties usage
-
-WHAT'S NOT INCLUDED (loaded async):
-- Component styles beyond hero/DORA metrics  
-- Page-specific styles
-- Animation keyframes (except critical ones)
-- Complex layout grids
-- Form styling
-- Footer styling
-
-MEASUREMENT:
-- Use Lighthouse to verify critical CSS size
-- Monitor First Contentful Paint (FCP)
-- Track Largest Contentful Paint (LCP)
-- Ensure Cumulative Layout Shift (CLS) < 0.1
-
-BROWSER SUPPORT:
-- CSS Custom Properties: 96%+ support
-- CSS Grid: 95%+ support  
-- Flexbox: 99%+ support
-- Modern units (clamp, vw, vh): 90%+ support
-
-ACCESSIBILITY COMPLIANCE:
-- WCAG 2.2 AA compliant
-- Touch targets ≥ 44px
-- Focus indicators clearly visible
-- Sufficient color contrast ratios
-- Reduced motion respected
-*/

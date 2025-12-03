@@ -2,15 +2,6 @@
 // =============================================================================
 // Extracted from resources.md inline styles
 
-// Reduce excessive whitespace on resources page
-.page-container .section-card {
-  margin: var(--space-sm) auto; // 8px instead of 24px - much more compact
-  padding: var(--space-md); // 16px instead of 24px
-
-  h2 {
-    margin: 0 0 var(--space-sm) 0; // Reduce h2 bottom margin
-  }
-}
 
 // Make resource callout grid more compact - 2 columns on desktop
 .page-container .resource-callout-grid {
@@ -36,7 +27,20 @@
     margin-bottom: var(--space-xs);
     line-height: 1.4;
   }
+
+  blockquote {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid currentColor;
+    font-style: italic;
+    border-radius: var(--radius-sm);
+  }
 }
+
+// (Removed) .ai-content-info — not used in built HTML
+
+// (Removed) .roadmap-features list — not used in built HTML
 
 // Compact card grid for meeting handouts
 .what-youll-learn-section .card-grid {
@@ -62,8 +66,6 @@
     line-height: 1.3;
   }
 
-  // Removed unused nested .resource-list overrides
-
   .card-footer {
     margin-top: var(--space-xs);
 
@@ -73,8 +75,6 @@
     }
   }
 }
-
-// (Removed) .resource-list styles — not used in built HTML
 
 // Resource link styling
 .resource-link {
@@ -93,19 +93,3 @@
   font-size: 0.85rem;
   margin-top: var(--space-xs);
 }
-
-// Blockquote styling for key question on resources page
-.page-container .resource-callout {
-  blockquote {
-    margin: var(--space-lg) 0;
-    padding: var(--space-md);
-    background: rgba(255, 255, 255, 0.1);
-    border-left: 4px solid currentColor;
-    font-style: italic;
-    border-radius: var(--radius-sm);
-  }
-}
-
-// (Removed) .ai-content-info — not used in built HTML
-
-// (Removed) .roadmap-features list — not used in built HTML

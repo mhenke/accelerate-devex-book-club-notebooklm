@@ -1,0 +1,105 @@
+// =============================================================================
+// CONSOLIDATED DIAGRAM PATTERNS
+// =============================================================================
+// Reusable diagram components - simplified without @extend
+// Used by: causal-chain, conways-law flows (40 lines vs original 133)
+
+// Conway's Law Internal Flow - Simplified
+.conways-internal-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    margin-top: var(--space-md);
+}
+
+.conways-internal-step {
+    width: 100%;
+
+    .org-chart,
+    .system-chart {
+        width: 100%;
+        background: rgba(var(--text-on-dark-rgb), 0.9);
+        padding: var(--space-md);
+        border-radius: var(--radius-md);
+        border: 2px solid rgba(var(--slate-gray-rgb), 0.3);
+
+        .org-label,
+        .system-label {
+            font-size: var(--font-size-small);
+            font-weight: var(--font-weight-bold);
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: var(--space-sm);
+            text-align: center;
+        }
+    }
+
+    .team-list,
+    .layer-list,
+    .service-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
+
+        .team-item,
+        .layer-item,
+        .service-item {
+            padding: var(--space-xs) var(--space-sm);
+            background: rgba(var(--slate-gray-rgb), 0.1);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(var(--slate-gray-rgb), 0.2);
+            font-size: var(--font-size-small);
+            text-align: center;
+
+            &.cross-functional {
+                background: rgba(var(--theme-primary-rgb), 0.15);
+                border-color: rgba(var(--theme-primary-rgb), 0.3);
+                color: #065f46;
+                font-weight: var(--font-weight-semibold);
+            }
+        }
+    }
+
+    .consequence-box {
+        width: 100%;
+        padding: var(--space-md);
+        border-radius: var(--radius-md);
+        font-size: var(--font-size-small);
+        text-align: center;
+
+        &.negative {
+            background: rgba(var(--red-rgb), 0.05);
+            border: 2px solid rgba(var(--red-rgb), 0.3);
+            color: #991b1b;
+        }
+
+        &.positive {
+            background: rgba(var(--theme-primary-rgb), 0.05);
+            border: 2px solid rgba(var(--theme-primary-rgb), 0.3);
+            color: #065f46;
+        }
+    }
+}
+
+.conways-internal-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md) 0;
+    gap: var(--space-xs);
+
+    i {
+        font-size: var(--font-size-h3);
+        color: var(--accent-teal);
+    }
+
+    .arrow-label {
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-semibold);
+        color: #475569;
+        text-transform: uppercase;
+    }
+}

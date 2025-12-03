@@ -37,7 +37,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(255, 255, 255, 0.2),
+      rgba(var(--text-on-dark-rgb), 0.2),
       transparent
     );
     transition: left 0.5s ease;
@@ -76,25 +76,25 @@
   background: #4CAF50; // Clean green
   color: white;
   border: none;
-  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+  box-shadow: 0 2px 8px rgba(var(--theme-primary-rgb), 0.3);
 
   &:hover,
   &:hover:not(:disabled) {
     background: #45a049;
     color: white;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+    box-shadow: 0 4px 12px rgba(var(--theme-primary-rgb), 0.4);
     transform: translateY(-1px);
     border: none;
   }
 
   &:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 2px 4px rgba(var(--theme-primary-rgb), 0.3);
   }
 
   &:focus-visible {
-    outline: 3px solid rgba(76, 175, 80, 0.4);
+    outline: 3px solid rgba(var(--theme-primary-rgb), 0.4);
     outline-offset: 2px;
   }
 }
@@ -106,7 +106,7 @@
   background: white;
   color: #4CAF50;
   border: 2px solid #4CAF50;
-  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 2px 4px rgba(var(--theme-primary-rgb), 0.2);
   padding: var(--space-sm) var(--space-md); // Smaller padding for secondary buttons
   min-height: 44px; // Slightly smaller than primary
   font-size: var(--font-size-body); // Smaller text
@@ -118,17 +118,17 @@
     color: #45a049;
     text-decoration: none;
     border-color: #45a049;
-    box-shadow: 0 3px 8px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 3px 8px rgba(var(--theme-primary-rgb), 0.3);
     transform: translateY(-1px);
   }
 
   &:active {
     transform: translateY(0);
-    box-shadow: 0 1px 3px rgba(76, 175, 80, 0.2);
+    box-shadow: 0 1px 3px rgba(var(--theme-primary-rgb), 0.2);
   }
 
   &:focus-visible {
-    outline: 3px solid rgba(76, 175, 80, 0.3);
+    outline: 3px solid rgba(var(--theme-primary-rgb), 0.3);
     outline-offset: 2px;
   }
 
@@ -137,10 +137,6 @@
     margin-right: var(--space-xs);
   }
 }
-
-// Removed unused variants: tonal, outlined, and text buttons
-
-// Removed unused variant: Floating Action Button (FAB)
 
 // =============================================================================
 // SPECIALIZED BUTTON VARIANTS
@@ -153,7 +149,7 @@
   background: #4CAF50;
   color: white;
   border: none;
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  box-shadow: 0 4px 12px rgba(var(--theme-primary-rgb), 0.3);
   border-radius: var(--radius-lg);
   min-height: 52px;
   padding: 16px 32px;
@@ -166,24 +162,20 @@
     color: white;
     text-decoration: none;
     border: none;
-    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+    box-shadow: 0 6px 16px rgba(var(--theme-primary-rgb), 0.4);
     transform: translateY(-2px);
   }
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 8px rgba(var(--theme-primary-rgb), 0.3);
   }
 
   &:focus-visible {
-    outline: 3px solid rgba(76, 175, 80, 0.4);
+    outline: 3px solid rgba(var(--theme-primary-rgb), 0.4);
     outline-offset: 2px;
   }
 }
-
-// Removed unused specialized variants: secondary-action and meeting-nav
-
-// Removed unused meeting-specific button theme overrides
 
 // =============================================================================
 // MEETING BADGE BUTTONS
@@ -208,14 +200,76 @@
   }
 }
 
-// Removed unused meeting-specific badge color variants
+// =============================================================================
+// MEETING-SPECIFIC BUTTON THEMING
+// =============================================================================
+// Moved from base/_critical.scss - not critical path
 
-// Removed unused sizes: .btn--small and .btn--large
+// Meeting themed buttons using data-meeting attribute system
+[data-meeting] {
+  .btn,
+  .btn-primary {
+    &:not(.btn--primary-action, .btn--secondary-action, .btn--meeting-nav) {
+      background: linear-gradient(
+        135deg,
+        var(--theme-primary),
+        var(--accent-teal)
+      );
+      box-shadow: var(--elevation-2);
 
-// Removed unused button group patterns
+      &:hover:not(:disabled) {
+        background: linear-gradient(135deg, var(--accent-teal), var(--theme-primary));
+        box-shadow: var(--elevation-4);
+        transform: translateY(-1px);
+      }
 
-// Removed unused button states and loading animation
+      &:focus-visible {
+        outline: 3px solid var(--accent-coral);
+        outline-offset: 2px;
+      }
 
-// Removed unused responsive helpers
+      &:active {
+        transform: translateY(0);
+        box-shadow: var(--elevation-2);
+      }
+    }
+  }
 
-// Removed high-contrast and reduced-motion rules for unused variants
+  // Meeting-specific button gradients using mixin
+  .btn--meeting-1 {
+    @include meeting-button-gradient(var(--meeting-1-color));
+  }
+
+  .btn--meeting-2 {
+    @include meeting-button-gradient(var(--meeting-2-color), #2ea043);
+  }
+
+  .btn--meeting-3 {
+    @include meeting-button-gradient(var(--meeting-3-color), #fbbf24);
+  }
+
+  .btn--meeting-4 {
+    @include meeting-button-gradient(var(--meeting-4-color), #a78bfa);
+  }
+
+  // Icon color pattern: H2 uses theme primary, others gray
+  h2:not(.key-question h2) {
+    i,
+    em {
+      color: var(--theme-primary);
+    }
+  }
+}
+
+// Button focus states for accessibility
+.btn:focus,
+button:focus,
+[role="button"]:focus {
+  @include focus-ring;
+}
+
+// Focus management
+.focus-visible {
+  outline: 3px solid var(--accent-teal) !important;
+  outline-offset: 2px !important;
+}

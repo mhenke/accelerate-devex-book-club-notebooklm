@@ -1,0 +1,88 @@
+// =============================================================================
+// HOMEPAGE MIXINS
+// =============================================================================
+// Reusable mixins for homepage components to reduce duplication
+
+// Base section card styling (used by 5+ sections)
+@mixin section-card-base {
+  background: var(--gradient-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  margin: var(--space-lg) auto;
+  text-align: center;
+  box-shadow: var(--elevation-2);
+}
+
+// Section card with hover effect
+@mixin section-card-interactive {
+  @include section-card-base;
+
+  position: relative;
+  transition: var(--transition-spring);
+
+  &:hover {
+    box-shadow: var(--shadow-emerald);
+    transform: translateY(-2px);
+  }
+}
+
+// Standardized h2 with icon (used in 4+ sections)
+@mixin section-heading-with-icon {
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  i,
+  em {
+    color: var(--accent-emerald);
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(
+      135deg,
+      rgba(var(--theme-primary-rgb), 0.1),
+      rgba(var(--accent-teal-rgb), 0.1)
+    );
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-h5);
+    flex-shrink: 0;
+    font-style: normal;
+  }
+}
+
+// Gradient card with accent border (used by success-metrics, get-started)
+@mixin gradient-card($bg-start, $bg-end, $border-color, $shadow-color) {
+  background: linear-gradient(135deg, $bg-start 0%, $bg-end 100%);
+  border: 1px solid rgba($border-color, 0.2);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-2xl);
+  margin: var(--space-xl) auto;
+  text-align: center;
+  box-shadow:
+    0 8px 24px rgba($shadow-color, 0.15),
+    0 4px 12px rgba(var(--text-dark-rgb), 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+// Icon container (used 4+ times)
+@mixin icon-container($size: 40px, $font-size: var(--font-size-h5)) {
+  width: $size;
+  height: $size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--theme-primary-rgb), 0.1),
+    rgba(var(--accent-teal-rgb), 0.1)
+  );
+  border-radius: var(--radius-full);
+  font-size: $font-size;
+  color: var(--accent-emerald);
+  flex-shrink: 0;
+  transition: var(--transition-material);
+}

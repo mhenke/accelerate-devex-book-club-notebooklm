@@ -14,11 +14,11 @@
 // Stronger visual separation for "Now Playing" area
 // Make the header look like a distinct card beneath the playlist
 .playlist-player .now-playing-header {
-  background: linear-gradient(135deg, rgba(25,118,210,0.14), rgba(25,118,210,0.06));
-  border: 1px solid rgba(25,118,210,0.28);
+  background: linear-gradient(135deg, rgba(var(--material-blue-rgb),0.14), rgba(var(--material-blue-rgb),0.06));
+  border: 1px solid rgba(var(--material-blue-rgb),0.28);
   border-radius: 10px;
   padding: var(--space-sm) var(--space-md);
-  box-shadow: 0 3px 10px rgba(25, 118, 210, 0.12);
+  box-shadow: 0 3px 10px rgba(var(--material-blue-rgb), 0.12);
   margin-top: var(--space-sm);
 }
 
@@ -31,7 +31,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-sm);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 4px rgba(var(--text-dark-rgb),0.08);
 }
 
 .now-playing-label {
@@ -95,9 +95,9 @@
   flex-direction: column;
   background: var(--background-white);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(var(--text-dark-rgb), 0.08);
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(var(--text-dark-rgb), 0.04);
   max-width: 100%;
 }
 
@@ -114,7 +114,7 @@
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
   background: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(var(--text-dark-rgb), 0.06);
   transition: background 0.2s ease;
   position: relative;
   min-height: 72px;
@@ -177,14 +177,14 @@
   padding: 0;
   font-size: 0.9rem;
   line-height: 1;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px rgba(var(--text-dark-rgb),0.12);
 }
 
 // When the track is playing, invert the button to white with blue icon (subtle outline)
 .podcast-item.is-playing .play-btn {
   background: #fff;
   color: #1976d2; // keep icon blue when playing
-  border: 1px solid rgba(25, 118, 210, 0.12);
+  border: 1px solid rgba(var(--material-blue-rgb), 0.12);
 }
 
 // Ensure the FontAwesome <em> icon inside the button scales and remains centered
@@ -278,9 +278,15 @@
     color: #7b1fa2;
   }
 
-  &.critique {
+  &.debate {
     background: #fff3e0;
     color: #f57c00;
+  }
+
+  &.critic,
+  &.critique {
+    background: #ffebee;
+    color: #c62828;
   }
 }
 

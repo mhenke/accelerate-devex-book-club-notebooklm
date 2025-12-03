@@ -1,0 +1,52 @@
+// =============================================================================
+// CELEBRATION/COMPLETION PAGE MIXINS
+// =============================================================================
+// Reusable mixins for graduation/completion pages
+
+// Base interactive card (used 4+ times)
+@mixin celebration-card {
+  background: var(--background-white);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--elevation-1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-2px);
+  }
+}
+
+// Compact card variant
+@mixin celebration-card-compact {
+  @include celebration-card;
+
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+}
+
+// Auto-fit responsive grid
+@mixin celebration-grid($min-width: 240px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: var(--space-md);
+
+  @include mobile-only {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Meeting theme border accent
+@mixin meeting-theme-border($meeting-num, $position: left) {
+  .meeting-#{$meeting-num}-theme {
+    border-#{$position}: 4px solid var(--meeting-#{$meeting-num}-color);
+  }
+}
+
+// Timeline border accent
+@mixin timeline-border($class, $color, $position: top) {
+  &.#{$class} {
+    border-#{$position}: 4px solid $color;
+  }
+}

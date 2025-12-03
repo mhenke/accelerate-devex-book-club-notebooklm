@@ -9,25 +9,31 @@
 // 1. ABSTRACTS - Design tokens and utilities (no CSS output)
 @import "abstracts/tokens"; // Design system tokens
 @import "abstracts/mixins"; // Utility mixins and functions
+@import "abstracts/home-mixins"; // Homepage-specific mixins (reusable)
+@import "abstracts/celebration-mixins"; // Celebration/completion page mixins
 
 // 2. BASE - Critical above-the-fold styles (inlined in HTML)
 @import "base/critical"; // Critical CSS for hero, DORA metrics, typography
 
 // 3. COMPONENTS - Reusable UI components (loaded async after critical)
+@import "components/typography-base"; // Base typography (h3-h6, p, a) - moved from critical
 @import "components/hero"; // Hero banner component - critical for landing
-@import "components/buttons"; // Button variations and states
+@import "components/buttons"; // Button variations and states (includes meeting theming)
 @import "components/navigation"; // Site navigation and menus
-@import "components/cards"; // Modular card system with BEM methodology (defines %card placeholder)
 @import "components/badges"; // Badge and label components
 @import "components/icons"; // Font Awesome with Material Design integration
 @import "components/media"; // Material Design 3 podcast playlist and media components
-@import "components/sections"; // Section layouts and content containers
+@import "components/section-base"; // Base section card and modifiers (200 lines)
+@import "components/section-interactive"; // Interactive cards and choices (400 lines)
+@import "components/section-diagrams"; // Causal flows and Conway's Law (300 lines)
+@import "components/section-content"; // Key questions and resource callouts (250 lines)
 @import "components/assessments"; // Assessment forms and feedback
 @import "components/meeting-themes"; // Meeting-specific color themes
 @import "components/meeting-content"; // Meeting content styles
 @import "components/meeting-layout"; // Meeting layout styles
 // Removed duplicate checkpoint partial; assessment UI lives in components/_assessments.scss
 // (Removed) inline-components import — DORA metric card styles not used in built HTML
+// (Removed) cards import — unused BEM card system; all cards use %item-card from sections
 
 // 4. LAYOUT - Major layout components (loaded after critical)
 @import "layout/header"; // Site header and branding
@@ -35,6 +41,7 @@
 @import "layout/meeting"; // Meeting layout styles
 
 // 5. PAGE-SPECIFIC - Page-specific styles
+@import "pages/home"; // Homepage-specific styles (extracted from critical)
 @import "pages/404"; // 404 error page styles
 @import "pages/offline"; // Offline page styles
 @import "pages/ai_tools"; // AI Tools page styles
@@ -51,84 +58,7 @@
   box-sizing: border-box;
 }
 
-.site-header {
-  background: var(--hero-dark);
-  color: var(--text-white);
-  padding: var(--space-sm) var(--space-xl);
-  border-bottom: var(--border-width-thin) solid var(--border-white-subtle);
-  display: flex;
-  align-items: center;
-  min-height: 56px;
-  position: relative;
-  overflow: visible;
-  --site-header-height: 56px;
-
-  @media (min-width: #{$mobile}) {
-    overflow: hidden;
-  }
-
-  // Subtle gradient overlay (matches footer and key-question-banner)
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-      circle at top right,
-      rgba(9, 105, 218, 0.1),
-      transparent 60%
-    );
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  // Ensure content is above the overlay
-  .site-header-content {
-    position: relative;
-    z-index: 1;
-  }
-}
-.site-header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.site-nav__brand {
-  display: flex;
-  align-items: center;
-}
-.site-nav__brand-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text-white);
-  gap: var(--space-md);
-}
-.site-nav__brand-icon {
-  font-size: 2rem;
-  margin-right: 0;
-  margin-left: 0;
-  vertical-align: middle;
-}
-.site-nav__brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-.site-nav__brand-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-.site-nav__brand-subtitle {
-  font-size: 1rem;
-  font-weight: 400;
-  opacity: 0.8;
-}
-// (Removed) `.nav-item` and `.nav-content` blocks are unused in built HTML.
+// Site header styles moved to layout/_header.scss to avoid duplication
 
 // =============================================================================
 // HAMBURGER MENU - Mobile Navigation
