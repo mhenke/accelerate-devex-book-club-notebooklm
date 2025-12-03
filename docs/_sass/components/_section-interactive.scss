@@ -156,6 +156,12 @@
       border-top-color: var(--theme-primary);
     }
   }
+
+  /* Ensure only the active chapter detail is visible */
+  .chapter-details {
+    .chapter-detail { display: none; }
+    .chapter-detail.active { display: block; }
+  }
 }
 
 @keyframes pulse-glow {
