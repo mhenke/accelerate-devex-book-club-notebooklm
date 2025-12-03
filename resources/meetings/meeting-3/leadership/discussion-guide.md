@@ -1,5 +1,7 @@
 # Meeting 3 Discussion Questions Resource Bank
 
+**Note for Facilitator:** This is a comprehensive question bank. For the meeting, select 6-8 questions to fit a 25-minute discussion. If printing, ensure your selected questions fit within a 2-page handout.
+
 **The Human Systems  Management, Product, and Sustainability**
 
 ## Purpose of This Document
@@ -142,6 +144,14 @@ Your team deploys monthly releases containing 20-30 features. Last deployment ca
 - Why do larger batches increase rather than decrease risk?
 - How to demonstrate small batches are safer?
 - What would enable weekly or daily releases?
+
+**Scenario 4: The "Faux Agile" Theater**
+Your team has all the agile ceremonies: daily stand-ups, sprints, retrospectives. However, developers have little say in what they work on, estimates are treated as deadlines, and the "Product Owner" is a committee of stakeholders who provide conflicting requirements. How do you start a conversation about moving from "faux agile" to genuine agile practices?
+
+**Discussion points:**
+- How can we use retrospectives to address the process itself, not just the work?
+- What small, concrete changes can the team make to increase their autonomy?
+- How can we better educate stakeholders on agile principles?
 
 ### Section D: Team Self-Assessment
 
