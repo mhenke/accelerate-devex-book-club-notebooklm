@@ -12,10 +12,10 @@ dora_color: "#1a7f37" # $meeting-2-primary
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
 <!-- Modern Chapters Overview -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact section-card" id="meeting-2-chapters" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 4-6 Overview</h2>
 <div class="chapters-grid">
-<div class="chapter-item" data-chapter="technical" onclick="showChapterDetail('technical')">
+<div class="chapter-item" data-chapter="technical" onclick="showChapterDetail_meeting2('technical')">
  
   <div class="chapter-content">
     <div class="chapter-number">Chapter 4</div>
@@ -24,7 +24,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-<div class="chapter-item" data-chapter="architecture" onclick="showChapterDetail('architecture')">
+<div class="chapter-item" data-chapter="architecture" onclick="showChapterDetail_meeting2('architecture')">
  
   <div class="chapter-content">
     <div class="chapter-number">Chapter 5</div>
@@ -33,7 +33,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-<div class="chapter-item" data-chapter="integrating" onclick="showChapterDetail('integrating')">
+<div class="chapter-item" data-chapter="integrating" onclick="showChapterDetail_meeting2('integrating')">
  
   <div class="chapter-content">
     <div class="chapter-number">Chapter 6</div>
@@ -44,8 +44,8 @@ dora_color: "#1a7f37" # $meeting-2-primary
 </div>
 
 <!-- Expandable Details Section -->
-<div class="chapter-details" id="chapter-details" hidden>
-  <div class="chapter-detail" id="detail-technical">
+<div class="chapter-details" id="chapter-details-meeting2" hidden>
+  <div class="chapter-detail" id="detail-technical-meeting2">
     <h3>Technical Practices</h3>
     <p>Five key practices that distinguish high-performing teams: version control, test automation, trunk-based development, continuous integration, and shift-left security.</p>
     <ul>
@@ -57,7 +57,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
     </ul>
   </div>
 
-  <div class="chapter-detail" id="detail-architecture">
+  <div class="chapter-detail" id="detail-architecture-meeting2">
     <h3>Architecture</h3>
     <p>Loosely coupled architecture enables teams to deploy independently and test effectively without requiring integrated environments.</p>
     <ul>
@@ -68,7 +68,7 @@ dora_color: "#1a7f37" # $meeting-2-primary
     </ul>
   </div>
 
-  <div class="chapter-detail" id="detail-integrating">
+  <div class="chapter-detail" id="detail-integrating-meeting2">
     <h3>Integrating Information Security</h3>
     <p>Security must be integrated throughout the software delivery lifecycle, not bolted on at the end. This "shift-left" approach improves both security and delivery performance.</p>
     <ul>
@@ -81,27 +81,30 @@ dora_color: "#1a7f37" # $meeting-2-primary
 </div>
 
 <script>
-// Interactive Chapter Overview Functionality
-let currentActiveChapter = null;
+// Interactive Chapter Overview Functionality for Meeting 2
+let currentActiveChapter_meeting2 = null;
+const meeting2Container = document.getElementById('meeting-2-chapters');
 
-function showChapterDetail(chapterId) {
-  const detailsContainer = document.getElementById('chapter-details');
-  const targetDetail = document.getElementById('detail-' + chapterId);
-  const clickedItem = document.querySelector('[data-chapter="' + chapterId + '"]');
+function showChapterDetail_meeting2(chapterId) {
+  if (!meeting2Container) return; // Safety check
+  
+  const detailsContainer = document.getElementById('chapter-details-meeting2');
+  const targetDetail = document.getElementById('detail-' + chapterId + '-meeting2');
+  const clickedItem = meeting2Container.querySelector('[data-chapter="' + chapterId + '"]');
 
   // If clicking the same item that's already active, close it
-  if (currentActiveChapter === chapterId) {
-    hideChapterDetails();
+  if (currentActiveChapter_meeting2 === chapterId) {
+    hideChapterDetails_meeting2();
     return;
   }
 
-  // Remove active state from all items
-  document.querySelectorAll('.chapter-item').forEach(item => {
+  // Remove active state from all items in this meeting
+  meeting2Container.querySelectorAll('.chapter-item').forEach(item => {
     item.classList.remove('active');
   });
 
-  // Hide all detail sections
-  document.querySelectorAll('.chapter-detail').forEach(detail => {
+  // Hide all detail sections in this meeting
+  detailsContainer.querySelectorAll('.chapter-detail').forEach(detail => {
     detail.classList.remove('active');
   });
 
@@ -114,7 +117,7 @@ function showChapterDetail(chapterId) {
   // Show the specific detail and mark item as active
   targetDetail.classList.add('active');
   clickedItem.classList.add('active');
-  currentActiveChapter = chapterId;
+  currentActiveChapter_meeting2 = chapterId;
 
   // Smooth scroll to the details section
   setTimeout(() => {
@@ -125,15 +128,17 @@ function showChapterDetail(chapterId) {
   }, 300);
 }
 
-function hideChapterDetails() {
-  const detailsContainer = document.getElementById('chapter-details');
+function hideChapterDetails_meeting2() {
+  if (!meeting2Container) return; // Safety check
+  
+  const detailsContainer = document.getElementById('chapter-details-meeting2');
 
   // Remove active states
-  document.querySelectorAll('.chapter-item').forEach(item => {
+  meeting2Container.querySelectorAll('.chapter-item').forEach(item => {
     item.classList.remove('active');
   });
 
-  document.querySelectorAll('.chapter-detail').forEach(detail => {
+  detailsContainer.querySelectorAll('.chapter-detail').forEach(detail => {
     detail.classList.remove('active');
   });
 
@@ -143,25 +148,27 @@ function hideChapterDetails() {
     detailsContainer.style.display = 'none';
   }, 400);
 
-  currentActiveChapter = null;
+  currentActiveChapter_meeting2 = null;
 }
 
-// Close details when clicking outside
+// Close details when clicking outside (scoped to meeting 2)
 document.addEventListener('click', function(event) {
-  const detailsContainer = document.getElementById('chapter-details');
-  const chapterItems = document.querySelectorAll('.chapter-item');
+  if (!meeting2Container) return;
+  
+  const detailsContainer = document.getElementById('chapter-details-meeting2');
+  const chapterItems = meeting2Container.querySelectorAll('.chapter-item');
 
-  if (currentActiveChapter &&
+  if (currentActiveChapter_meeting2 &&
       !detailsContainer.contains(event.target) &&
       !Array.from(chapterItems).some(item => item.contains(event.target))) {
-    hideChapterDetails();
+    hideChapterDetails_meeting2();
   }
 });
 
-// Keyboard accessibility
+// Keyboard accessibility (scoped to meeting 2)
 document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape' && currentActiveChapter) {
-    hideChapterDetails();
+  if (event.key === 'Escape' && currentActiveChapter_meeting2) {
+    hideChapterDetails_meeting2();
   }
 });
 </script>

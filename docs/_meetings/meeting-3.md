@@ -12,10 +12,10 @@ dora_color: "#d97706" # $meeting-3-primary
 <!-- Main Content Layout: 70% Content + 30% Sidebar -->
 
 <!-- Modern Chapters Overview -->
-<div class="chapter-metrics-compact section-card" markdown="0">
+<div class="chapter-metrics-compact section-card" id="meeting-3-chapters" markdown="0">
 <h2><i class="fas fa-book-open" aria-hidden="true"></i> Chapters 7-10 Overview</h2>
 <div class="chapters-grid">
-<div class="chapter-item" data-chapter="management" onclick="showChapterDetail('management')">
+<div class="chapter-item" data-chapter="management" onclick="showChapterDetail_meeting3('management')">
  
   <div class="chapter-content">
     <div class="chapter-number">Chapter 7</div>
@@ -24,7 +24,7 @@ dora_color: "#d97706" # $meeting-3-primary
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-<div class="chapter-item" data-chapter="product" onclick="showChapterDetail('product')">
+<div class="chapter-item" data-chapter="product" onclick="showChapterDetail_meeting3('product')">
  
   <div class="chapter-content">
     <div class="chapter-number">Chapter 8</div>
@@ -33,7 +33,7 @@ dora_color: "#d97706" # $meeting-3-primary
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-<div class="chapter-item" data-chapter="sustainable" onclick="showChapterDetail('sustainable')">
+<div class="chapter-item" data-chapter="sustainable" onclick="showChapterDetail_meeting3('sustainable')">
  
   <div class="chapter-content">
     <div class="chapter-number">Chapter 9</div>
@@ -42,7 +42,7 @@ dora_color: "#d97706" # $meeting-3-primary
   <div class="chapter-indicator"><i class="fas fa-chevron-down"></i></div>
 </div>
 
-<div class="chapter-item" data-chapter="satisfaction" onclick="showChapterDetail('satisfaction')">
+<div class="chapter-item" data-chapter="satisfaction" onclick="showChapterDetail_meeting3('satisfaction')">
  
   <div class="chapter-content">
     <div class="chapter-number">Chapter 10</div>
@@ -53,8 +53,8 @@ dora_color: "#d97706" # $meeting-3-primary
 </div>
 
 <!-- Expandable Details Section -->
-<div class="chapter-details" id="chapter-details" hidden>
-  <div class="chapter-detail" id="detail-management">
+<div class="chapter-details" id="chapter-details-meeting3" hidden>
+  <div class="chapter-detail" id="detail-management-meeting3">
     <h3>Management Practices for Software</h3>
     <p>Lean management for software delivery: limiting WIP, visualizing work, and using monitoring for business decisions. Lightweight change approval processes outperform formal external approval bodies.</p>
     <ul>
@@ -65,18 +65,19 @@ dora_color: "#d97706" # $meeting-3-primary
     </ul>
   </div>
 
-  <div class="chapter-detail" id="detail-product">
+  <div class="chapter-detail" id="detail-product-meeting3">
     <h3>Product Development</h3>
-    <p>Lean approach to the "fuzzy front end" of product development, emphasizing continuous user research and experimental approach from the beginning.</p>
+    <p>Lean approach to the "fuzzy front end" of product development, emphasizing continuous user research and experimental approach from the beginning. Beware "faux Agile"—organizations that adopt Agile practices but fail to address wider organizational culture and processes.</p>
     <ul>
       <li>Working in Small Batches: Decomposing work into pieces completed in less than a week for faster feedback</li>
       <li>Making Work Visible: Clear understanding of flow from business ideation to customer delivery</li>
       <li>Customer Feedback Integration: Actively seeking and incorporating customer input throughout the lifecycle</li>
       <li>Team Experimentation: Authority to try ideas and change specifications without external approval</li>
+      <li><strong>Faux Agile Warning:</strong> Months of budgeting/analysis before work begins, batching into large projects with infrequent releases, treating customer feedback as afterthought—these signal superficial Agile adoption without cultural transformation</li>
     </ul>
   </div>
 
-  <div class="chapter-detail" id="detail-sustainable">
+  <div class="chapter-detail" id="detail-sustainable-meeting3">
     <h3>Making Work Sustainable</h3>
     <p>Deployment pain and burnout are symptoms of systemic issues, not inevitable consequences. The same practices that improve performance also improve work-life balance.</p>
     <ul>
@@ -87,7 +88,7 @@ dora_color: "#d97706" # $meeting-3-primary
     </ul>
   </div>
 
-  <div class="chapter-detail" id="detail-satisfaction">
+  <div class="chapter-detail" id="detail-satisfaction-meeting3">
     <h3>Employee Satisfaction, Identity, and Engagement</h3>
     <p>Employee satisfaction drives business outcomes. High performers are 2.2x more likely to recommend their organization, creating competitive advantage through engagement.</p>
     <ul>
@@ -100,27 +101,30 @@ dora_color: "#d97706" # $meeting-3-primary
 </div>
 
 <script>
-// Interactive Chapter Overview Functionality
-let currentActiveChapter = null;
+// Interactive Chapter Overview Functionality for Meeting 3
+let currentActiveChapter_meeting3 = null;
+const meeting3Container = document.getElementById('meeting-3-chapters');
 
-function showChapterDetail(chapterId) {
-  const detailsContainer = document.getElementById('chapter-details');
-  const targetDetail = document.getElementById('detail-' + chapterId);
-  const clickedItem = document.querySelector('[data-chapter="' + chapterId + '"]');
+function showChapterDetail_meeting3(chapterId) {
+  if (!meeting3Container) return; // Safety check
+  
+  const detailsContainer = document.getElementById('chapter-details-meeting3');
+  const targetDetail = document.getElementById('detail-' + chapterId + '-meeting3');
+  const clickedItem = meeting3Container.querySelector('[data-chapter="' + chapterId + '"]');
 
   // If clicking the same item that's already active, close it
-  if (currentActiveChapter === chapterId) {
-    hideChapterDetails();
+  if (currentActiveChapter_meeting3 === chapterId) {
+    hideChapterDetails_meeting3();
     return;
   }
 
-  // Remove active state from all items
-  document.querySelectorAll('.chapter-item').forEach(item => {
+  // Remove active state from all items in this meeting
+  meeting3Container.querySelectorAll('.chapter-item').forEach(item => {
     item.classList.remove('active');
   });
 
-  // Hide all detail sections
-  document.querySelectorAll('.chapter-detail').forEach(detail => {
+  // Hide all detail sections in this meeting
+  detailsContainer.querySelectorAll('.chapter-detail').forEach(detail => {
     detail.classList.remove('active');
   });
 
@@ -133,7 +137,7 @@ function showChapterDetail(chapterId) {
   // Show the specific detail and mark item as active
   targetDetail.classList.add('active');
   clickedItem.classList.add('active');
-  currentActiveChapter = chapterId;
+  currentActiveChapter_meeting3 = chapterId;
 
   // Smooth scroll to the details section
   setTimeout(() => {
@@ -144,15 +148,17 @@ function showChapterDetail(chapterId) {
   }, 300);
 }
 
-function hideChapterDetails() {
-  const detailsContainer = document.getElementById('chapter-details');
+function hideChapterDetails_meeting3() {
+  if (!meeting3Container) return; // Safety check
+  
+  const detailsContainer = document.getElementById('chapter-details-meeting3');
 
   // Remove active states
-  document.querySelectorAll('.chapter-item').forEach(item => {
+  meeting3Container.querySelectorAll('.chapter-item').forEach(item => {
     item.classList.remove('active');
   });
 
-  document.querySelectorAll('.chapter-detail').forEach(detail => {
+  detailsContainer.querySelectorAll('.chapter-detail').forEach(detail => {
     detail.classList.remove('active');
   });
 
@@ -162,25 +168,27 @@ function hideChapterDetails() {
     detailsContainer.style.display = 'none';
   }, 400);
 
-  currentActiveChapter = null;
+  currentActiveChapter_meeting3 = null;
 }
 
-// Close details when clicking outside
+// Close details when clicking outside (scoped to meeting 3)
 document.addEventListener('click', function(event) {
-  const detailsContainer = document.getElementById('chapter-details');
-  const chapterItems = document.querySelectorAll('.chapter-item');
+  if (!meeting3Container) return;
+  
+  const detailsContainer = document.getElementById('chapter-details-meeting3');
+  const chapterItems = meeting3Container.querySelectorAll('.chapter-item');
 
-  if (currentActiveChapter &&
+  if (currentActiveChapter_meeting3 &&
       !detailsContainer.contains(event.target) &&
       !Array.from(chapterItems).some(item => item.contains(event.target))) {
-    hideChapterDetails();
+    hideChapterDetails_meeting3();
   }
 });
 
-// Keyboard accessibility
+// Keyboard accessibility (scoped to meeting 3)
 document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape' && currentActiveChapter) {
-    hideChapterDetails();
+  if (event.key === 'Escape' && currentActiveChapter_meeting3) {
+    hideChapterDetails_meeting3();
   }
 });
 </script>
@@ -521,6 +529,66 @@ document.addEventListener('keydown', function(event) {
   </div>
 </div>
 
+<!-- FAUX AGILE VS LEAN PRODUCT DEVELOPMENT -->
+<div class="section-card dark-theme full-width" markdown="0">
+  <div class="false-choice-container">
+    <h2><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Faux Agile vs. Lean Product Development</h2>
+    <h3 class="false-choice-subtitle">Agile won the methodology wars—but much of what's implemented is "faux Agile"</h3>
+
+    <div class="choice-options" style="display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--space-lg); align-items: center;">
+      <div class="choice-option warning-choice">
+        <div class="choice-circle">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </div>
+        <h4 class="choice-label">Faux Agile</h4>
+        <p class="choice-consequence">Adopting practices without addressing culture and processes</p>
+        <ul style="text-align: left; margin-top: var(--space-md); padding-left: var(--space-lg); font-size: var(--font-size-small); line-height: var(--line-height-relaxed);">
+          <li><strong>Months of budgeting and analysis</strong> before work begins</li>
+          <li><strong>Large batches</strong>: Projects with 20-30 features, infrequent releases</li>
+          <li><strong>Customer feedback as afterthought</strong>: Surveys after launch, no iteration</li>
+          <li><strong>Process theater</strong>: Daily standups without addressing blockers</li>
+          <li><strong>External approvals</strong>: Teams can't change specs without committees</li>
+        </ul>
+        <div style="margin-top: var(--space-md); padding: var(--space-sm) var(--space-md); background: rgba(239, 68, 68, 0.15); border-radius: var(--radius-md); border-left: 4px solid rgba(239, 68, 68, 0.6);">
+          <p style="margin: 0; font-size: var(--font-size-small); color: rgba(255, 255, 255, 0.9);"><strong>Result:</strong> Agile vocabulary with waterfall culture—no improvement in delivery performance or outcomes.</p>
+        </div>
+      </div>
+
+      <div class="vs-separator">
+        <div class="vs-circle">
+          vs
+        </div>
+      </div>
+
+      <div class="choice-option success-choice">
+        <div class="choice-circle">
+          <i class="fas fa-check" aria-hidden="true"></i>
+        </div>
+        <h4 class="choice-label">Lean Product Development</h4>
+        <p class="choice-consequence">Experimental approach with continuous user research</p>
+        <ul style="text-align: left; margin-top: var(--space-md); padding-left: var(--space-lg); font-size: var(--font-size-small); line-height: var(--line-height-relaxed);">
+          <li><strong>Work in small batches</strong>: Features completed in less than a week</li>
+          <li><strong>Continuous customer feedback</strong>: User research throughout lifecycle</li>
+          <li><strong>Team experimentation</strong>: Authority to try ideas without external approval</li>
+          <li><strong>Making work visible</strong>: Clear flow from ideation to delivery</li>
+          <li><strong>Rapid iteration</strong>: Deploy, measure, learn, adjust—weekly cadence</li>
+        </ul>
+        <div style="margin-top: var(--space-md); padding: var(--space-sm) var(--space-md); background: rgba(34, 197, 94, 0.15); border-radius: var(--radius-md); border-left: 4px solid rgba(34, 197, 94, 0.6);">
+          <p style="margin: 0; font-size: var(--font-size-small); color: rgba(255, 255, 255, 0.9);"><strong>Result:</strong> Genuine organizational transformation—faster delivery, better outcomes, reduced risk.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="deployment-signal" style="margin-top: var(--space-xl);">
+      <h4>The Critical Distinction</h4>
+      <p><strong>Faux Agile adopts the vocabulary but preserves the old culture.</strong> Teams have standups and retrospectives, but leadership still demands quarterly roadmaps with locked-in scope. Features are batched into monthly releases instead of deployed continuously. Customer feedback happens after launch, not during development.</p>
+      <p><strong>Lean Product Development transforms how decisions are made.</strong> Teams have authority to experiment, customer research is ongoing, work is decomposed into small batches that can be completed and validated quickly. Risk shrinks because batch sizes are tiny—not near-quadratic growth from large, infrequent releases.</p>
+      <p style="margin-top: var(--space-md); font-style: italic; color: rgba(255, 255, 255, 0.75);">Ask yourself: Does your team follow Agile practices, or has it actually transformed the way your organization makes product decisions?</p>
+    </div>
+
+  </div>
+</div>
+
 <!-- RESOURCES -->
 <div class="section-card" markdown="0">
   <div class="step-header">
@@ -598,6 +666,11 @@ document.addEventListener('keydown', function(event) {
       <div class="deployment-signal">
         <h4>The Batch Size Reality Check (Impactful)</h4>
         <p>Your team deploys monthly releases containing 20-30 features. Last deployment caused an outage, and it took 6 hours to identify which of 25 changes caused the problem. Leadership proposes <strong>QUARTERLY</strong> releases to "reduce risk." How do you respond using the book's research on <strong>near-quadratic risk growth</strong> with batch size?</p>
+      </div>
+
+      <div class="deployment-signal">
+        <h4>The Faux Agile Diagnosis (Self-Assessment)</h4>
+        <p>While Agile has "won the methodology wars," much implementation is <strong>"faux Agile"</strong>—following practices without addressing culture. Does your team spend months on budgeting/analysis before coding, batch work into large projects with infrequent releases, or treat customer feedback as an afterthought? Which <strong>one</strong> faux Agile symptom could you address immediately to move toward genuine Lean product development?</p>
       </div>
     </div>
 
